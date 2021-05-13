@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    line-height: 25px;
+}
+
+body {
+    background-color: #E61C23;
+}
+
+main {
+    background-color: white;
+    width: 1500px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: solid;
+}
+
+section {
+    border-bottom: solid rgba(253, 68, 68, 0.226);
+}
+
+h2 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+h1 em, h5 em {
+    font-weight: 100;
+    font-size: smaller;
+}
+
+h1, h5 {
+    text-decoration: underline;
+}
+
+p {
+    text-align: justify;
+    padding-bottom: 20px;
+}
+
+p em {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: right;
+}
+
+.presumably-dead {
+    text-decoration: line-through;
+}
+
+.dead {
+    text-decoration: line-through underline;
+}
+
+.mcu {
+    text-decoration: underline;
+}
+
+.aether {
+    background-color: black;
+    color: #921c1c;
+}
+
+.tesseract {
+    background-color: black;
+    color: #2222e0;
+}
+
+.power-stone {
+    background-color: black;
+    color: #8b1ce6;
+}
+
+.mind-stone {
+    background-color: black;
+    color: #e4d128;
+}
+
+/* PERSONAJES */
+
+.boss {
+    color: #383838;
+}
+
+.enemy {
+    color: dimgray;
+}
+
+.secundary {
+    color: darkseagreen;
+}
+
+.captain-america {
+    color: blue;
+}
+
+.winter-soldier {
+    color: darkblue;
+}
+
+.peggy-carter {
+    color: forestgreen;
+}
+
+.howard-stark {
+    color: darkred;
+}
+
+.dottie {
+    color: violet;
+}
+
+.jarvis {
+    color: darkslategray;
+}
+
+.captain-marvel {
+    color: firebrick;
+}
+
+.talos {
+    color: olivedrab;
+}
+
+.fury {
+    color: mediumslateblue;
+}
+
+.coulson {
+    color: royalblue;
+}
+
+.goose {
+    color: darkorange;
+}
+
+.maria-rambeau {
+    color: blueviolet;
+}
+
+.monica-rambeau {
+    color: darkorchid;
+}
+
+.iron-man {
+    color: crimson;
+}
+
+.war-machine {
+    color: lightskyblue;
+}
+
+.pepper {
+    color: darkgoldenrod;
+}
+
+.black-widow {
+    color: brown;
+}
+
+.hulk {
+    color: limegreen;
+}
+
+.betty {
+    color: skyblue;
+}
+
+.odin {
+    color: aqua;
+}
+
+.frigga {
+    color: aquamarine;
+}
+
+.thor {
+    color: orangered;
+}
+
+.loki {
+    color: seagreen;
+}
+
+.sif {
+    color: burlywood;
+}
+
+.jane {
+    color: coral;
+}
+
+.darcy {
+    color: indigo;
+}
+
+.hawkeye {
+    color: darkmagenta;
+}
+
+.heimdall {
+    color: sienna;
+}
+
+.maria-hill {
+    color: navy;
+}
+
+.cavalry {
+    color: silver;
+}
+
+.ward {
+    color: darkslateblue;
+}
+
+.skye {
+    color: tomato;
+}
+
+.victoria-hand {
+    color: mediumvioletred;
+}
+
+.falcon {
+    color: #4e3b19;
+}
+
+.pietro {
+    color: #54b8aa;
+}
+
+.scarlet-witch {
+    color: #68091e;
+}
+
+.sharon-carter {
+    color: chartreuse;
+}
+
+.deathlok {
+    color: darkolivegreen;
+}
+
+.star-lord {
+    color: maroon;
+}
+
+.gamora {
+    color: lawngreen;
+}
+
+.rocket {
+    color: #684e1e;
+}
+
+.groot {
+    color: olive;
+}
+
+.drax {
+    color: #1d0b0f;
+}
+
+.mantis {
+    color: #f1c8c9;
+}
+
+.nebula {
+    color: #04459b;
+}
+
+.daredevil {
+    color: #3f0b0b;
+}
+
+.claire {
+    color: #379689;
+}
+
+.jessica-jones {
+    color: #4c00ff;
+}
+
+.luke-cage {
+    color: #e6a226;
+}
+
+.bobbi-morse {
+    color: #f07d30;
+}
+
+.jiaying {
+    color: #a3f87c;
+}
+
+.vision {
+    color: #3087f8;
+}
+
+.wasp {
+    color: #460520;
+}
+
+.ant-man {
+    color: #915255;
+}
