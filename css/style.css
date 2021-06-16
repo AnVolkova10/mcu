@@ -23,6 +23,9 @@ main {
     padding-bottom: 10px;
     border: solid;
 }
+article {
+    margin: auto;
+}
 
 section {
     border-bottom: solid rgba(253, 68, 68, 0.226);
@@ -318,9 +321,17 @@ footer {
 }
 
 .the-punisher {
-    color: #000725;
+    color: #010b38;
 }
 
 .elektra {
     color: #2e0505;
+}
+
+.cloak {
+    color: #010829;
+}
+
+.dagger {
+    color: gainsboro;
 }
