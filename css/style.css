@@ -189,7 +189,7 @@ footer {
 }
 
 .thor {
-    color: orangered;
+    color: #ffbf10;
 }
 
 .loki {
@@ -225,7 +225,7 @@ footer {
 }
 
 .ward {
-    color: darkslateblue;
+    color: dimgray;
 }
 
 .skye {
@@ -334,4 +334,16 @@ footer {
 
 .dagger {
     color: gainsboro;
+}
+
+.iron-fist {
+    color: #e6c50d;
+}
+
+.black-panther {
+    color: black;
+}
+
+.spiderman {
+    color:#882107 ;
 }
