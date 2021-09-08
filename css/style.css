@@ -90,6 +90,11 @@ footer {
     color: #e4d128;
 }
 
+.eye-of-agamotto {
+    background-color: black;
+    color: #09bb3f;
+}
+
 /* PERSONAJES */
 
 .boss {
@@ -366,4 +371,8 @@ footer {
 
 .colleen-wing {
     color: #c4c4c4;
+}
+
+.doctor-strange {
+    color: #1c71e0;
 }
