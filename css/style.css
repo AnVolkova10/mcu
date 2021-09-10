@@ -238,7 +238,7 @@ footer {
 }
 
 .victoria-hand {
-    color: mediumvioletred;
+    color: rgb(66, 44, 58);
 }
 
 .falcon {
@@ -375,4 +375,8 @@ footer {
 
 .doctor-strange {
     color: #1c71e0;
+}
+
+.valkyrie{
+    color: #cf9800;
 }
