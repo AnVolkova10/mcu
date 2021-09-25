@@ -99,6 +99,11 @@ footer {
     color: #09bb3f;
 }
 
+.soul-stone {
+    background-color: black;
+    color:#e78223
+}
+
 /* PERSONAJES */
 
 .boss {
@@ -242,7 +247,7 @@ footer {
 }
 
 .victoria-hand {
-    color: rgb(66, 44, 58);
+    color: #422c3a;
 }
 
 .falcon {
