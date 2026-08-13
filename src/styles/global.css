@@ -1,0 +1,161 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+
+  body {
+    background-color: #0b0f19;
+    color: #f1f5f9;
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+    min-height: 100vh;
+  }
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0b0f19;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #232d42;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Marvel Glow Animations */
+@keyframes glow-pulse {
+  0%, 100% {
+    opacity: 0.8;
+    filter: drop-shadow(0 0 15px currentColor);
+  }
+  50% {
+    opacity: 1;
+    filter: drop-shadow(0 0 25px currentColor);
+  }
+}
+
+.animate-glow {
+  animation: glow-pulse 3s infinite ease-in-out;
+}
+
+/* Marvel Original Timeline Tag Stylings & Color Presets */
+.mcu-html-content strong {
+  font-weight: 600;
+}
+
+.mcu-html-content em {
+  font-style: italic;
+}
+
+.mcu-html-content .presumably-dead {
+  text-decoration: line-through;
+  opacity: 0.85;
+}
+
+.mcu-html-content .dead {
+  text-decoration: line-through underline;
+  color: #f87171 !important;
+}
+
+.mcu-html-content .mcu {
+  text-decoration: underline;
+  text-decoration-color: #f59e0b;
+  text-decoration-thickness: 2px;
+  color: #fef08a;
+}
+
+/* Stone Tags */
+.mcu-html-content .tesseract {
+  background-color: rgba(59, 130, 246, 0.18);
+  color: #93c5fd;
+  padding: 1px 6px;
+  border-radius: 4px;
+  border: 1px solid rgba(59, 130, 246, 0.4);
+}
+
+.mcu-html-content .aether {
+  background-color: rgba(239, 68, 68, 0.18);
+  color: #fca5a5;
+  padding: 1px 6px;
+  border-radius: 4px;
+  border: 1px solid rgba(239, 68, 68, 0.4);
+}
+
+.mcu-html-content .power-stone {
+  background-color: rgba(168, 85, 247, 0.18);
+  color: #d8b4fe;
+  padding: 1px 6px;
+  border-radius: 4px;
+  border: 1px solid rgba(168, 85, 247, 0.4);
+}
+
+.mcu-html-content .mind-stone {
+  background-color: rgba(234, 179, 8, 0.18);
+  color: #fde047;
+  padding: 1px 6px;
+  border-radius: 4px;
+  border: 1px solid rgba(234, 179, 8, 0.4);
+}
+
+.mcu-html-content .eye-of-agamotto {
+  background-color: rgba(34, 197, 94, 0.18);
+  color: #86efac;
+  padding: 1px 6px;
+  border-radius: 4px;
+  border: 1px solid rgba(34, 197, 94, 0.4);
+}
+
+.mcu-html-content .soul-stone {
+  background-color: rgba(249, 115, 22, 0.18);
+  color: #fdba74;
+  padding: 1px 6px;
+  border-radius: 4px;
+  border: 1px solid rgba(249, 115, 22, 0.4);
+}
+
+/* Character Color Tags */
+.mcu-html-content .captain-america { color: #60a5fa; }
+.mcu-html-content .winter-soldier { color: #38bdf8; }
+.mcu-html-content .peggy-carter { color: #34d399; }
+.mcu-html-content .howard-stark { color: #f87171; }
+.mcu-html-content .iron-man { color: #ef4444; }
+.mcu-html-content .thor { color: #fbbf24; }
+.mcu-html-content .loki { color: #4ade80; }
+.mcu-html-content .hulk { color: #4ade80; }
+.mcu-html-content .black-widow { color: #c084fc; }
+.mcu-html-content .hawkeye { color: #c084fc; }
+.mcu-html-content .star-lord { color: #f43f5e; }
+.mcu-html-content .gamora { color: #a3e635; }
+.mcu-html-content .rocket { color: #fb923c; }
+.mcu-html-content .groot { color: #a3e635; }
+.mcu-html-content .drax { color: #fb7185; }
+.mcu-html-content .doctor-strange { color: #38bdf8; }
+.mcu-html-content .spider-man { color: #f87171; }
+.mcu-html-content .black-panther { color: #e2e8f0; font-weight: 700; }
+.mcu-html-content .scarlet-witch { color: #f43f5e; }
+.mcu-html-content .vision { color: #60a5fa; }
+.mcu-html-content .ant-man { color: #f87171; }
+.mcu-html-content .wasp { color: #fde047; }
+.mcu-html-content .daredevil { color: #f87171; }
+.mcu-html-content .jessica-jones { color: #c084fc; }
+.mcu-html-content .luke-cage { color: #fbbf24; }
+.mcu-html-content .iron-fist { color: #fde047; }
+.mcu-html-content .the-punisher { color: #e2e8f0; }
+.mcu-html-content .coulson { color: #60a5fa; }
+.mcu-html-content .fury { color: #818cf8; }
+.mcu-html-content .may { color: #cbd5e1; }
+.mcu-html-content .skye { color: #fb923c; }
+.mcu-html-content .enemy { color: #94a3b8; font-weight: 600; }
+.mcu-html-content .secundary { color: #a7f3d0; }
+.mcu-html-content .boss { color: #cbd5e1; font-weight: 700; }
