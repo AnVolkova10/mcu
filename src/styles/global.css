@@ -3,7 +3,7 @@
 
 @layer base {
   :root {
-    --font-sans: 'URW DIN', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-sans: 'URW DIN', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     --font-marvel: 'Marvel', 'Impact', sans-serif;
     --font-marvel2: 'Marvel2', 'Impact', sans-serif;
   }
@@ -14,17 +14,41 @@
     font-family: var(--font-sans);
     overflow-x: hidden;
     min-height: 100vh;
-    letter-spacing: 0.015em;
+    letter-spacing: 0.01em;
   }
 
-  h1, h2, h3, .font-title {
+  /* Universal Clickable Pointer Cursor & Transitions */
+  button, 
+  select, 
+  [role="button"], 
+  a, 
+  input[type="checkbox"], 
+  input[type="radio"],
+  summary,
+  .cursor-pointer {
+    cursor: pointer !important;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-sans);
+    font-weight: 900;
+    letter-spacing: 0.02em;
+  }
+
+  .font-title {
+    font-family: var(--font-sans);
+    font-weight: 900;
+    letter-spacing: 0.03em;
+  }
+
+  .font-marvel {
     font-family: var(--font-marvel);
-    letter-spacing: 0.04em;
+    letter-spacing: 0.12em;
   }
 
-  .font-title-alt {
+  .font-marvel2 {
     font-family: var(--font-marvel2);
-    letter-spacing: 0.04em;
+    letter-spacing: 0.08em;
   }
 
   .font-din {
@@ -67,22 +91,7 @@
   animation: glow-pulse 3s infinite ease-in-out;
 }
 
-/* Comic Halftone / Dot Grid Background */
-.comic-bg-grid {
-  background-image: radial-gradient(rgba(230, 36, 41, 0.08) 1px, transparent 0);
-  background-size: 24px 24px;
-}
-
-.comic-border {
-  border: 1px solid #27272a;
-  transition: all 0.2s ease-in-out;
-}
-
-.comic-border:hover {
-  border-color: #e62429;
-}
-
-/* Marvel Original Timeline Tag Stylings */
+/* Marvel Original Timeline Tag Stylings & Interactive Click Cursors */
 .mcu-html-content strong {
   font-weight: 700;
   color: #ffffff;
@@ -107,7 +116,23 @@
   text-decoration-color: #e62429;
   text-decoration-thickness: 2px;
   color: #ffffff;
-  font-weight: 600;
+  font-weight: 700;
+}
+
+/* Clickable Tag Spans inside event text */
+.mcu-html-content span {
+  cursor: pointer;
+  display: inline-block;
+  transition: all 0.15s ease-in-out;
+  border-radius: 3px;
+  padding: 0 2px;
+}
+
+.mcu-html-content span:hover {
+  filter: brightness(1.35);
+  transform: translateY(-1px);
+  text-shadow: 0 0 8px currentColor;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
 }
 
 /* Stone Tags */

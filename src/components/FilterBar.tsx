@@ -31,12 +31,12 @@ export const FilterBar: React.FC = () => {
 
   const categories: { id: TimelineCategory | 'all'; label: string }[] = [
     { id: 'all', label: 'TODA LA CRONOLOGÍA' },
-    { id: 'ancient', label: 'ANCESTRAL / ORÍGENES' },
+    { id: 'ancient', label: 'ANCESTRAL' },
     { id: 'early-century', label: '1930 - 1960' },
     { id: 'golden-age', label: '1970 - 2009' },
-    { id: 'avengers-era', label: '2010 - 2017 (AVENGERS)' },
-    { id: 'infinity-war', label: '2018 - 2020 (THANOS)' },
-    { id: 'future', label: 'MULTIVERSO / FUTURO' },
+    { id: 'avengers-era', label: 'ERA VENGADORES' },
+    { id: 'infinity-war', label: 'GUERRA INFINITO' },
+    { id: 'future', label: 'MULTIVERSO' },
   ];
 
   const phases = ['Phase 1', 'Phase 2', 'Phase 3', 'Phase 4', 'Marvel Television', 'One-Shot'];
@@ -70,7 +70,7 @@ export const FilterBar: React.FC = () => {
           {filters.searchQuery && (
             <button
               onClick={() => setSearchQuery('')}
-              className="absolute right-3 top-1/2 -translate-y-1/2 text-zinc-400 hover:text-white"
+              className="absolute right-3 top-1/2 -translate-y-1/2 text-zinc-400 hover:text-white cursor-pointer"
             >
               <X className="w-4 h-4" />
             </button>
@@ -81,7 +81,7 @@ export const FilterBar: React.FC = () => {
         <div className="flex items-center gap-2 flex-wrap sm:flex-nowrap">
           <button
             onClick={toggleOnlyAlternative}
-            className={`flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-bold font-title tracking-wider uppercase border transition-all ${
+            className={`flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-bold font-title tracking-wider uppercase border transition-all cursor-pointer whitespace-nowrap ${
               filters.onlyAlternative
                 ? 'bg-[#e62429] text-white border-[#e62429] shadow-md shadow-[#e62429]/30'
                 : 'bg-[#0a0a0a] text-zinc-400 border-[#2f2f2f] hover:text-white hover:border-zinc-500'
@@ -93,7 +93,7 @@ export const FilterBar: React.FC = () => {
 
           <button
             onClick={toggleOnlyDeaths}
-            className={`flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-bold font-title tracking-wider uppercase border transition-all ${
+            className={`flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-bold font-title tracking-wider uppercase border transition-all cursor-pointer whitespace-nowrap ${
               filters.onlyDeaths
                 ? 'bg-[#e62429] text-white border-[#e62429] shadow-md shadow-[#e62429]/30'
                 : 'bg-[#0a0a0a] text-zinc-400 border-[#2f2f2f] hover:text-white hover:border-zinc-500'
@@ -106,7 +106,7 @@ export const FilterBar: React.FC = () => {
           {hasActiveFilters && (
             <button
               onClick={resetFilters}
-              className="flex items-center gap-1 px-3 py-2 rounded-lg text-xs font-bold font-title tracking-wider uppercase bg-[#222222] hover:bg-[#2e2e2e] text-zinc-300 hover:text-white transition-colors ml-auto sm:ml-0 border border-[#333333]"
+              className="flex items-center gap-1 px-3 py-2 rounded-lg text-xs font-bold font-title tracking-wider uppercase bg-[#222222] hover:bg-[#2e2e2e] text-zinc-300 hover:text-white transition-colors ml-auto sm:ml-0 border border-[#333333] cursor-pointer whitespace-nowrap"
               title="Limpiar filtros"
             >
               <RotateCcw className="w-3.5 h-3.5 text-[#e62429]" />
@@ -116,19 +116,20 @@ export const FilterBar: React.FC = () => {
         </div>
       </div>
 
-      {/* Categories Row */}
-      <div className="flex items-center gap-1.5 overflow-x-auto pb-2 mb-3 no-scrollbar">
+      {/* Categories Row (Single Clean Row on Desktop) */}
+      <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-2 mb-4">
         {categories.map((cat) => {
           const isSelected = filters.selectedCategory === cat.id;
           return (
             <button
               key={cat.id}
               onClick={() => setSelectedCategory(cat.id)}
-              className={`px-3.5 py-1.5 rounded text-xs whitespace-nowrap font-bold tracking-wider font-title uppercase transition-all ${
+              className={`px-2.5 py-2 rounded text-xs font-bold tracking-wider font-title uppercase transition-all cursor-pointer text-center truncate ${
                 isSelected
                   ? 'bg-[#e62429] text-white shadow-md shadow-[#e62429]/30'
-                  : 'bg-[#0a0a0a] text-zinc-400 border border-[#2a2a2a] hover:text-white hover:border-zinc-600'
+                  : 'bg-[#0a0a0a] text-zinc-400 border border-[#2a2a2a] hover:text-white hover:border-zinc-500 hover:bg-[#181818]'
               }`}
+              title={cat.label}
             >
               {cat.label}
             </button>
@@ -137,13 +138,13 @@ export const FilterBar: React.FC = () => {
       </div>
 
       {/* Advanced Selectors (Character, Media, Phase, Stones) */}
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-2.5 border-t border-[#222222]">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2 pt-3 border-t border-[#222222]">
         
         {/* Character Selector */}
         <select
           value={filters.selectedCharacter || ''}
           onChange={(e) => setSelectedCharacterFilter(e.target.value || null)}
-          className="bg-[#0a0a0a] border border-[#2a2a2a] text-zinc-300 text-xs rounded-lg px-2.5 py-2 focus:outline-none focus:border-[#e62429] font-din"
+          className="bg-[#0a0a0a] border border-[#2a2a2a] text-zinc-300 text-xs rounded-lg px-2.5 py-2 focus:outline-none focus:border-[#e62429] font-din cursor-pointer hover:border-zinc-500 transition-colors"
         >
           <option value="">👤 Todos los Personajes</option>
           {allCharacters.map((c) => (
@@ -157,7 +158,7 @@ export const FilterBar: React.FC = () => {
         <select
           value={filters.selectedMedia || ''}
           onChange={(e) => setSelectedMediaFilter(e.target.value || null)}
-          className="bg-[#0a0a0a] border border-[#2a2a2a] text-zinc-300 text-xs rounded-lg px-2.5 py-2 focus:outline-none focus:border-[#e62429] font-din"
+          className="bg-[#0a0a0a] border border-[#2a2a2a] text-zinc-300 text-xs rounded-lg px-2.5 py-2 focus:outline-none focus:border-[#e62429] font-din cursor-pointer hover:border-zinc-500 transition-colors"
         >
           <option value="">🎬 Películas / Series</option>
           {allMedia.map((m) => (
@@ -171,7 +172,7 @@ export const FilterBar: React.FC = () => {
         <select
           value={filters.selectedPhase || ''}
           onChange={(e) => setSelectedPhaseFilter(e.target.value || null)}
-          className="bg-[#0a0a0a] border border-[#2a2a2a] text-zinc-300 text-xs rounded-lg px-2.5 py-2 focus:outline-none focus:border-[#e62429] font-din"
+          className="bg-[#0a0a0a] border border-[#2a2a2a] text-zinc-300 text-xs rounded-lg px-2.5 py-2 focus:outline-none focus:border-[#e62429] font-din cursor-pointer hover:border-zinc-500 transition-colors"
         >
           <option value="">🪐 Todas las Fases</option>
           {phases.map((p) => (
@@ -185,7 +186,7 @@ export const FilterBar: React.FC = () => {
         <select
           value={filters.selectedStone || ''}
           onChange={(e) => setSelectedStoneFilter(e.target.value || null)}
-          className="bg-[#0a0a0a] border border-[#2a2a2a] text-zinc-300 text-xs rounded-lg px-2.5 py-2 focus:outline-none focus:border-[#e62429] font-din"
+          className="bg-[#0a0a0a] border border-[#2a2a2a] text-zinc-300 text-xs rounded-lg px-2.5 py-2 focus:outline-none focus:border-[#e62429] font-din cursor-pointer hover:border-zinc-500 transition-colors"
         >
           <option value="">💎 Gemas del Infinito</option>
           {infinityStonesData.map((s) => (

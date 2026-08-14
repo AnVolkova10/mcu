@@ -90,19 +90,19 @@ export const TimelineScreen: React.FC = () => {
   };
 
   return (
-    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       
       {/* Hero Banner with Marvel Red & Black Contrast */}
       <div className="relative rounded-2xl overflow-hidden bg-gradient-to-br from-[#1b0607] via-[#111111] to-[#080808] border-2 border-[#331113] p-6 sm:p-10 mb-8 shadow-2xl">
-        <div className="relative z-10 max-w-3xl">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded bg-[#e62429] text-white text-xs font-bold font-title tracking-widest uppercase mb-4 shadow">
+        <div className="relative z-10 max-w-4xl">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded bg-[#e62429] text-white text-xs font-bold tracking-widest uppercase mb-4 shadow font-din">
             <Shield className="w-3.5 h-3.5" />
             <span>SAGRADA LÍNEA TEMPORAL DEL MCU</span>
           </div>
-          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-none mb-4 font-title uppercase">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-white tracking-wide leading-tight mb-4 uppercase font-title">
             CRONOLOGÍA DEFINITIVA DEL <span className="text-[#e62429]">MCU</span>
           </h1>
-          <p className="text-sm sm:text-base text-zinc-300 leading-relaxed max-w-2xl font-din">
+          <p className="text-sm sm:text-base text-zinc-300 leading-relaxed max-w-3xl font-din">
             Explora cada acontecimiento histórico del Universo Cinematográfico de Marvel en orden cronológico exacto: desde la creación de las Gemas del Infinito y el origen de Wakanda, hasta la Guerra del Infinito y las líneas temporales alternas.
           </p>
         </div>
@@ -123,15 +123,15 @@ export const TimelineScreen: React.FC = () => {
 
       {/* Timeline Stream */}
       {filteredEras.length === 0 ? (
-        <div className="text-center py-20 bg-[#141414] border border-[#27272a] rounded-xl p-8">
+        <div className="text-center py-20 bg-[#141414] border border-[#27272a] rounded-xl p-8 font-din">
           <FilterX className="w-12 h-12 text-zinc-600 mx-auto mb-3" />
           <h3 className="text-xl font-bold text-white mb-1 font-title uppercase">No se encontraron eventos</h3>
-          <p className="text-sm text-zinc-400 max-w-md mx-auto mb-5 font-din">
+          <p className="text-sm text-zinc-400 max-w-md mx-auto mb-5">
             No hay eventos en la cronología que coincidan con los filtros o la búsqueda seleccionada.
           </p>
           <button
             onClick={resetFilters}
-            className="px-4 py-2 rounded bg-[#e62429] hover:bg-[#c5191e] text-white text-xs font-bold font-title tracking-wider uppercase transition-all shadow-lg"
+            className="px-4 py-2 rounded bg-[#e62429] hover:bg-[#c5191e] text-white text-xs font-bold tracking-wider uppercase transition-all shadow-lg font-din cursor-pointer"
           >
             RESTABLECER TODOS LOS FILTROS
           </button>
@@ -142,14 +142,14 @@ export const TimelineScreen: React.FC = () => {
             <section key={era.id} id={era.id} className="relative">
               
               {/* Era Header */}
-              <div className="sticky top-20 z-20 py-2.5 mb-6 backdrop-blur-md bg-[#000000]/95 border-y-2 border-[#e62429] -mx-4 px-4 sm:rounded-lg sm:mx-0 sm:px-6 flex items-center justify-between shadow-2xl">
+              <div className="sticky top-24 z-20 py-3 mb-6 backdrop-blur-md bg-[#000000]/95 border-y-2 border-[#e62429] -mx-4 px-4 sm:rounded-lg sm:mx-0 sm:px-6 flex items-center justify-between shadow-2xl">
                 <div className="flex items-center gap-3">
                   <div className="w-3 h-3 bg-[#e62429] rotate-45" />
-                  <h2 className="text-xl sm:text-2xl font-black text-white tracking-wider font-title uppercase">
+                  <h2 className="text-xl sm:text-2xl font-black text-white tracking-wide uppercase font-title">
                     {era.title}
                   </h2>
                 </div>
-                <span className="text-xs font-bold font-title tracking-widest uppercase px-3 py-1 rounded bg-[#161616] border border-[#333333] text-zinc-300">
+                <span className="text-xs font-bold tracking-widest uppercase px-3 py-1 rounded bg-[#161616] border border-[#333333] text-zinc-300 font-din">
                   {era.events.length} {era.events.length === 1 ? 'EVENTO' : 'EVENTOS'}
                 </span>
               </div>
@@ -169,7 +169,7 @@ export const TimelineScreen: React.FC = () => {
       {/* Floating Scroll to Top */}
       <button
         onClick={scrollToTop}
-        className="fixed bottom-6 right-6 p-3 rounded-lg bg-[#e62429] hover:bg-[#c5191e] text-white shadow-2xl border border-red-400/40 transition-transform hover:scale-110 z-30"
+        className="fixed bottom-6 right-6 p-3 rounded-lg bg-[#e62429] hover:bg-[#c5191e] text-white shadow-2xl border border-red-400/40 transition-transform hover:scale-110 z-30 cursor-pointer"
         title="Volver arriba"
       >
         <ArrowUp className="w-5 h-5" />

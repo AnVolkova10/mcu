@@ -68,15 +68,15 @@ export const CharactersScreen: React.FC = () => {
           />
         </div>
 
-        <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar">
+        <div className="flex flex-wrap items-center gap-1.5">
           {roles.map((r) => (
             <button
               key={r}
               onClick={() => setRoleFilter(r)}
-              className={`px-3 py-1.5 rounded text-xs font-bold font-title tracking-wider uppercase transition-all whitespace-nowrap ${
+              className={`px-3 py-1.5 rounded text-xs font-bold font-title tracking-wider uppercase transition-all whitespace-nowrap cursor-pointer ${
                 roleFilter === r
                   ? 'bg-[#e62429] text-white shadow-md'
-                  : 'bg-[#000000] text-zinc-400 border border-[#2a2a2a] hover:text-white hover:border-zinc-500'
+                  : 'bg-[#000000] text-zinc-400 border border-[#2a2a2a] hover:text-white hover:border-zinc-500 hover:bg-[#181818]'
               }`}
             >
               {r === 'all' ? 'TODOS LOS ROLES' : r}
