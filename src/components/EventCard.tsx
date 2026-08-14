@@ -6,7 +6,8 @@ import {
   CheckCircle2, 
   Circle, 
   GitFork, 
-  Film, 
+  Tv, 
+  Clapperboard, 
   Sparkles, 
   Skull, 
   Tag, 
@@ -34,6 +35,16 @@ export const EventCard: React.FC<EventCardProps> = ({ event }) => {
   const bookmarked = isBookmarked(event.id);
   const read = isRead(event.id);
   const media = mediaData[event.mediaKey];
+
+  const renderMediaIcon = () => {
+    if (media?.type === 'series') {
+      return <Tv className="w-3.5 h-3.5 text-sky-400 group-hover/media:text-white transition-colors" />;
+    }
+    if (media?.type === 'oneshot' || media?.type === 'special') {
+      return <Sparkles className="w-3.5 h-3.5 text-amber-400 group-hover/media:text-white transition-colors" />;
+    }
+    return <Clapperboard className="w-3.5 h-3.5 text-[#e62429] group-hover/media:text-white transition-colors" />;
+  };
 
   const handleContentClick = (e: React.MouseEvent<HTMLDivElement>) => {
     const target = e.target as HTMLElement;
@@ -87,14 +98,14 @@ export const EventCard: React.FC<EventCardProps> = ({ event }) => {
       {/* Top Media & Tags Header */}
       <div className="flex flex-wrap items-center justify-between gap-2 mb-4 pb-3 border-b border-[#242424]">
         
-        {/* Media Tag / Title */}
+        {/* Media Tag / Title with differentiated icon */}
         <div className="flex items-center gap-2 flex-wrap">
           <button
             onClick={() => setSelectedMediaId(event.mediaKey)}
-            className="flex items-center gap-1.5 px-2.5 py-1 rounded bg-[#000000] hover:bg-[#e62429] text-white border border-[#333333] hover:border-[#e62429] transition-all group/media font-title tracking-wider text-xs cursor-pointer"
-            title="Ver detalles de esta película / serie"
+            className="flex items-center gap-1.5 px-2.5 py-1 rounded bg-[#000000] hover:bg-[#e62429] text-white border border-[#333333] hover:border-[#e62429] transition-all group/media font-title tracking-wider text-xs cursor-pointer shadow-sm"
+            title={`Ver detalles de ${media?.type === 'series' ? 'esta serie' : media?.type === 'oneshot' ? 'este cortometraje' : 'esta película'}`}
           >
-            <Film className="w-3.5 h-3.5 text-[#e62429] group-hover/media:text-white transition-colors" />
+            {renderMediaIcon()}
             <span>{event.mediaTitle.toUpperCase()}</span>
             {media?.releaseYear && (
               <span className="text-zinc-400 group-hover/media:text-zinc-200 text-[11px] font-normal font-din">({media.releaseYear})</span>

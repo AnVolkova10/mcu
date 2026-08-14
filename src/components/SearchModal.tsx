@@ -10,6 +10,8 @@ import {
   Clock, 
   Users, 
   Film, 
+  Tv, 
+  Clapperboard, 
   Sparkles, 
   ArrowRight 
 } from 'lucide-react';
@@ -119,6 +121,16 @@ export const SearchModal: React.FC = () => {
     }, 150);
   };
 
+  const renderMediaIcon = (type: string) => {
+    if (type === 'series') {
+      return <Tv className="w-4 h-4 text-sky-400" />;
+    }
+    if (type === 'oneshot' || type === 'special') {
+      return <Sparkles className="w-4 h-4 text-amber-400" />;
+    }
+    return <Clapperboard className="w-4 h-4 text-white" />;
+  };
+
   return (
     <div className="fixed inset-0 z-50 flex items-start justify-center pt-16 sm:pt-24 px-4 bg-black/85 backdrop-blur-md font-din">
       <div className="relative w-full max-w-2xl bg-[#0d0d0d] border border-[#27272a] rounded-2xl shadow-2xl overflow-hidden flex flex-col max-h-[80vh]">
@@ -136,7 +148,7 @@ export const SearchModal: React.FC = () => {
           />
           <button
             onClick={() => setIsSearchOpen(false)}
-            className="p-1.5 rounded bg-[#0a0a0a] text-zinc-400 hover:text-white border border-[#2e2e2e]"
+            className="p-1.5 rounded bg-[#0a0a0a] text-zinc-400 hover:text-white border border-[#2e2e2e] cursor-pointer"
           >
             <X className="w-4 h-4" />
           </button>
@@ -189,7 +201,7 @@ export const SearchModal: React.FC = () => {
           {matchedMedia.length > 0 && (
             <div>
               <h4 className="text-xs font-bold uppercase tracking-wider text-zinc-400 mb-2 flex items-center gap-1.5 font-title">
-                <Film className="w-3.5 h-3.5 text-[#e62429]" />
+                <Clapperboard className="w-3.5 h-3.5 text-[#e62429]" />
                 <span>PELÍCULAS & SERIES</span>
               </h4>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
@@ -206,13 +218,15 @@ export const SearchModal: React.FC = () => {
                       className="w-8 h-8 rounded flex items-center justify-center text-white text-xs font-bold shrink-0"
                       style={{ backgroundColor: m.posterColor }}
                     >
-                      <Film className="w-4 h-4" />
+                      {renderMediaIcon(m.type)}
                     </div>
                     <div className="min-w-0 flex-1">
                       <p className="text-xs font-bold text-white truncate group-hover:text-[#e62429] transition-colors font-title uppercase tracking-wide">
                         {m.title}
                       </p>
-                      <p className="text-[10px] text-zinc-400 truncate">{m.phase} ({m.releaseYear})</p>
+                      <p className="text-[10px] text-zinc-400 truncate">
+                        {m.type === 'series' ? 'Serie' : m.type === 'oneshot' ? 'Corto' : 'Película'} • {m.phase} ({m.releaseYear})
+                      </p>
                     </div>
                   </div>
                 ))}

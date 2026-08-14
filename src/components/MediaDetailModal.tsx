@@ -5,6 +5,9 @@ import { timelineEras } from '@/data/timelineData';
 import { 
   X, 
   Film, 
+  Tv, 
+  Clapperboard, 
+  Sparkles, 
   Calendar, 
   Layers, 
   ArrowRight,
@@ -48,6 +51,16 @@ export const MediaDetailModal: React.FC = () => {
     }, 150);
   };
 
+  const renderModalIcon = () => {
+    if (media.type === 'series') {
+      return <Tv className="w-8 h-8 text-sky-400" />;
+    }
+    if (media.type === 'oneshot' || media.type === 'special') {
+      return <Sparkles className="w-8 h-8 text-amber-400" />;
+    }
+    return <Clapperboard className="w-8 h-8 text-white" />;
+  };
+
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md transition-opacity font-din">
       <div className="relative w-full max-w-2xl max-h-[90vh] bg-[#0d0d0d] border border-[#27272a] rounded-2xl shadow-2xl p-6 sm:p-8 overflow-y-auto">
@@ -55,7 +68,7 @@ export const MediaDetailModal: React.FC = () => {
         {/* Close Button */}
         <button
           onClick={() => setSelectedMediaId(null)}
-          className="absolute top-5 right-5 p-2 rounded bg-[#141414] text-zinc-400 hover:text-white border border-[#2e2e2e] transition-colors"
+          className="absolute top-5 right-5 p-2 rounded bg-[#141414] text-zinc-400 hover:text-white border border-[#2e2e2e] transition-colors cursor-pointer"
         >
           <X className="w-5 h-5" />
         </button>
@@ -66,7 +79,7 @@ export const MediaDetailModal: React.FC = () => {
             className="w-16 h-16 rounded-xl flex items-center justify-center text-white text-2xl shadow-lg shrink-0 border border-white/20"
             style={{ backgroundColor: media.posterColor }}
           >
-            <Film className="w-8 h-8" />
+            {renderModalIcon()}
           </div>
 
           <div>
@@ -74,8 +87,8 @@ export const MediaDetailModal: React.FC = () => {
               <span className="text-[10px] font-bold font-title tracking-widest uppercase px-2.5 py-0.5 rounded bg-[#e62429] text-white">
                 {media.phase}
               </span>
-              <span className="text-[10px] font-bold font-title tracking-widest uppercase px-2 py-0.5 rounded bg-[#161616] border border-[#2e2e2e] text-zinc-400">
-                {media.type}
+              <span className="text-[10px] font-bold font-title tracking-widest uppercase px-2 py-0.5 rounded bg-[#161616] border border-[#2e2e2e] text-zinc-300">
+                {media.type === 'series' ? 'SERIE TV' : media.type === 'oneshot' ? 'CORTOMETRAJE' : 'PELÍCULA'}
               </span>
             </div>
             <h2 className="text-2xl font-black text-white mt-1.5 font-title uppercase tracking-wide">{media.title}</h2>
