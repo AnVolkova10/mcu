@@ -25,6 +25,8 @@ interface AppState {
   setSearchQuery: (query: string) => void;
   setSelectedCategory: (category: TimelineCategory | 'all') => void;
   setSelectedCharacterFilter: (charId: string | null) => void;
+  setSelectedGroupFilter: (group: string | null) => void;
+  setSelectedOriginFilter: (origin: string | null) => void;
   setSelectedMediaFilter: (mediaId: string | null) => void;
   setSelectedStoneFilter: (stoneId: string | null) => void;
   setSelectedPhaseFilter: (phase: string | null) => void;
@@ -45,6 +47,8 @@ interface AppState {
 const initialFilters: TimelineFilterState = {
   searchQuery: '',
   selectedCharacter: null,
+  selectedGroup: null,
+  selectedOrigin: null,
   selectedMedia: null,
   selectedStone: null,
   selectedPhase: null,
@@ -87,6 +91,16 @@ export const useStore = create<AppState>()(
       setSelectedCharacterFilter: (charId) =>
         set((state) => ({
           filters: { ...state.filters, selectedCharacter: charId },
+        })),
+
+      setSelectedGroupFilter: (group) =>
+        set((state) => ({
+          filters: { ...state.filters, selectedGroup: group },
+        })),
+
+      setSelectedOriginFilter: (origin) =>
+        set((state) => ({
+          filters: { ...state.filters, selectedOrigin: origin },
         })),
 
       setSelectedMediaFilter: (mediaId) =>

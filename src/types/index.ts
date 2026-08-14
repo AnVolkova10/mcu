@@ -62,6 +62,8 @@ export interface Character {
   borderBadge: string;
   role: 'hero' | 'villain' | 'anti-hero' | 'secondary' | 'cosmic' | 'civilian';
   affiliation: string;
+  groups: string[];
+  originLocation: string;
   status: CharacterStatus;
   bio: string;
   imageIcon?: string;
@@ -74,7 +76,7 @@ export interface MediaItem {
   shortTitle: string;
   releaseYear: string;
   type: 'movie' | 'series' | 'oneshot' | 'special';
-  phase: 'Phase 1' | 'Phase 2' | 'Phase 3' | 'Phase 4' | 'Marvel Television' | 'One-Shot';
+  phase: 'Phase 1' | 'Phase 2' | 'Phase 3' | 'Phase 4' | 'Phase 5' | 'Phase 6' | 'Marvel Television' | 'One-Shot';
   posterColor: string;
   timelineOrder: number;
   description: string;
@@ -102,6 +104,8 @@ export interface InfinityStone {
 export interface TimelineFilterState {
   searchQuery: string;
   selectedCharacter: string | null;
+  selectedGroup: string | null;
+  selectedOrigin: string | null;
   selectedMedia: string | null;
   selectedStone: string | null;
   selectedPhase: string | null;

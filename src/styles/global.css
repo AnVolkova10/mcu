@@ -210,7 +210,7 @@
 .mcu-html-content .daredevil { color: #ef4444; }
 .mcu-html-content .jessica-jones { color: #c084fc; }
 .mcu-html-content .luke-cage { color: #fcd34d; }
-.mcu-html-content .iron-fist { color: #fde047; }
+.mcu-html-content .iron-fist { color: #facc15; font-weight: 700; text-shadow: 0 0 8px rgba(250, 204, 21, 0.5); }
 .mcu-html-content .the-punisher { color: #ffffff; font-weight: 700; }
 .mcu-html-content .coulson { color: #93c5fd; }
 .mcu-html-content .fury { color: #a5b4fc; }
@@ -219,3 +219,11 @@
 .mcu-html-content .enemy { color: #a1a1aa; font-weight: 600; }
 .mcu-html-content .secundary { color: #a7f3d0; }
 .mcu-html-content .boss { color: #f4f4f5; font-weight: 700; }
+.mcu-html-content .noni { color: #a78bfa; font-weight: 600; }
+.mcu-html-content .the-lion { color: #f59e0b; font-weight: 600; }
+.mcu-html-content .memnon { color: #60a5fa; font-weight: 600; }
+.mcu-html-content .jorani { color: #facc15; font-weight: 700; text-shadow: 0 0 8px rgba(250, 204, 21, 0.5); }
+.mcu-html-content .kuda { color: #c084fc; font-weight: 600; }
+.mcu-html-content .prince-tafari { color: #fbbf24; font-weight: 700; }
+.mcu-html-content .last-black-panther { color: #e879f9; font-weight: 700; text-decoration: underline; text-decoration-color: #9333ea; }
+

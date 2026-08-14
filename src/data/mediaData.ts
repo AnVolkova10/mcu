@@ -648,6 +648,18 @@ export const mediaData: Record<string, MediaItem> = {
     "posterColor": "#2c5282",
     "timelineOrder": 54,
     "description": "Official entry in the Marvel Cinematic Universe - Marvel Television (2019)"
+  },
+  "eyes-of-wakanda-i": {
+    "id": "eyes-of-wakanda-i",
+    "cssClass": "eyes-of-wakanda-i",
+    "title": "Eyes of Wakanda (Season 1)",
+    "shortTitle": "Eyes of Wakanda",
+    "releaseYear": "2025",
+    "type": "series",
+    "phase": "Phase 5",
+    "posterColor": "#9333ea",
+    "timelineOrder": 55,
+    "description": "Marvel Animation anthology following the Hatut Zeraze retrieving lost Vibranium artifacts throughout human history."
   }
 };
 

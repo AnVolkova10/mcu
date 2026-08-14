@@ -31,7 +31,7 @@ export const MediaScreen: React.FC = () => {
     });
   });
 
-  const phases = ['all', 'Phase 1', 'Phase 2', 'Phase 3', 'Phase 4', 'Marvel Television', 'One-Shot'];
+  const phases = ['all', 'Phase 1', 'Phase 2', 'Phase 3', 'Phase 4', 'Phase 5', 'Marvel Television', 'One-Shot'];
 
   const filteredMedia = allMedia.filter((m) => {
     if (selectedPhase !== 'all' && m.phase !== selectedPhase) return false;

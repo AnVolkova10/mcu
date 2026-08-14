@@ -1,6 +1,7 @@
 import React, { useMemo } from 'react';
 import { useStore } from '@/store/useStore';
 import { timelineEras } from '@/data/timelineData';
+import { charactersData } from '@/data/charactersData';
 import { FilterBar } from '@/components/FilterBar';
 import { EventCard } from '@/components/EventCard';
 import { 
@@ -42,6 +43,24 @@ export const TimelineScreen: React.FC = () => {
             const hasChar = evt.characters.includes(filters.selectedCharacter) ||
                             evt.rawHtml.toLowerCase().includes(filters.selectedCharacter);
             if (!hasChar) return false;
+          }
+
+          // Faction / Group Filter
+          if (filters.selectedGroup) {
+            const matchGroup = evt.characters.some((cId) => {
+              const char = charactersData[cId];
+              return char && char.groups && char.groups.includes(filters.selectedGroup!);
+            }) || evt.rawHtml.toLowerCase().includes(filters.selectedGroup.toLowerCase());
+            if (!matchGroup) return false;
+          }
+
+          // Origin / Location Filter
+          if (filters.selectedOrigin) {
+            const matchOrigin = evt.characters.some((cId) => {
+              const char = charactersData[cId];
+              return char && char.originLocation && char.originLocation.toLowerCase().includes(filters.selectedOrigin!.toLowerCase());
+            }) || evt.rawHtml.toLowerCase().includes(filters.selectedOrigin.toLowerCase());
+            if (!matchOrigin) return false;
           }
 
           // Media Filter

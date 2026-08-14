@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { useStore } from '@/store/useStore';
 import { TimelineCategory } from '@/types';
 import { 
@@ -21,6 +21,8 @@ export const FilterBar: React.FC = () => {
     setSearchQuery,
     setSelectedCategory,
     setSelectedCharacterFilter,
+    setSelectedGroupFilter,
+    setSelectedOriginFilter,
     setSelectedMediaFilter,
     setSelectedStoneFilter,
     setSelectedPhaseFilter,
@@ -39,12 +41,35 @@ export const FilterBar: React.FC = () => {
     { id: 'future', label: 'MULTIVERSO' },
   ];
 
-  const phases = ['Phase 1', 'Phase 2', 'Phase 3', 'Phase 4', 'Marvel Television', 'One-Shot'];
+  const phases = ['Phase 1', 'Phase 2', 'Phase 3', 'Phase 4', 'Phase 5', 'Marvel Television', 'One-Shot'];
+
+  // Extract all unique groups
+  const allGroups = useMemo(() => {
+    const groupSet = new Set<string>();
+    allCharacters.forEach((c) => {
+      if (c.groups) {
+        c.groups.forEach((g) => groupSet.add(g));
+      }
+    });
+    return Array.from(groupSet).sort();
+  }, []);
+
+  // Preset location filters
+  const origins = [
+    { id: 'Wakanda', label: '🌍 Wakanda' },
+    { id: 'Earth', label: '🌐 Tierra' },
+    { id: 'Asgard', label: '⚡ Asgard' },
+    { id: 'K\'un-Lun', label: '🐉 K\'un-Lun' },
+    { id: 'Cosmic', label: '🪐 Cósmico / Espacio' },
+    { id: 'Titan', label: '🌑 Titán' },
+  ];
 
   const hasActiveFilters = Boolean(
     filters.searchQuery ||
     filters.selectedCategory !== 'all' ||
     filters.selectedCharacter ||
+    filters.selectedGroup ||
+    filters.selectedOrigin ||
     filters.selectedMedia ||
     filters.selectedStone ||
     filters.selectedPhase ||
@@ -53,7 +78,7 @@ export const FilterBar: React.FC = () => {
   );
 
   return (
-    <div className="bg-[#141414] border border-[#262626] rounded-xl p-4 sm:p-5 shadow-2xl mb-8">
+    <div className="bg-[#141414] border border-[#262626] rounded-xl p-4 sm:p-5 shadow-2xl mb-8 font-din">
       {/* Top Search & Toggles Row */}
       <div className="flex flex-col md:flex-row gap-3 items-stretch md:items-center justify-between mb-4">
         
@@ -64,7 +89,7 @@ export const FilterBar: React.FC = () => {
             type="text"
             value={filters.searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            placeholder="Buscar por personaje, evento, S.H.I.E.L.D., Hydra, Thanos..."
+            placeholder="Buscar por personaje, evento, Hatut Zeraze, S.H.I.E.L.D., Wakanda, K'un-Lun..."
             className="w-full bg-[#0a0a0a] border border-[#2f2f2f] rounded-lg pl-10 pr-9 py-2.5 text-sm text-white placeholder-zinc-500 focus:outline-none focus:border-[#e62429] focus:ring-1 focus:ring-[#e62429] transition-all font-din"
           />
           {filters.searchQuery && (
@@ -137,14 +162,14 @@ export const FilterBar: React.FC = () => {
         })}
       </div>
 
-      {/* Advanced Selectors (Character, Media, Phase, Stones) */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2 pt-3 border-t border-[#222222]">
+      {/* Advanced Selectors (Character, Group, Origin, Media, Phase, Stones) */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2 pt-3 border-t border-[#222222]">
         
         {/* Character Selector */}
         <select
           value={filters.selectedCharacter || ''}
           onChange={(e) => setSelectedCharacterFilter(e.target.value || null)}
-          className="bg-[#0a0a0a] border border-[#2a2a2a] text-zinc-300 text-xs rounded-lg px-2.5 py-2 focus:outline-none focus:border-[#e62429] font-din cursor-pointer hover:border-zinc-500 transition-colors"
+          className="bg-[#0a0a0a] border border-[#2a2a2a] text-zinc-300 text-xs rounded-lg px-2 py-2 focus:outline-none focus:border-[#e62429] font-din cursor-pointer hover:border-zinc-500 transition-colors truncate"
         >
           <option value="">👤 Todos los Personajes</option>
           {allCharacters.map((c) => (
@@ -154,11 +179,39 @@ export const FilterBar: React.FC = () => {
           ))}
         </select>
 
+        {/* Group / Faction Selector */}
+        <select
+          value={filters.selectedGroup || ''}
+          onChange={(e) => setSelectedGroupFilter(e.target.value || null)}
+          className="bg-[#0a0a0a] border border-[#2a2a2a] text-zinc-300 text-xs rounded-lg px-2 py-2 focus:outline-none focus:border-[#e62429] font-din cursor-pointer hover:border-zinc-500 transition-colors truncate"
+        >
+          <option value="">🛡️ Todas las Agrupaciones</option>
+          {allGroups.map((g) => (
+            <option key={g} value={g}>
+              {g}
+            </option>
+          ))}
+        </select>
+
+        {/* Origin / Location Selector */}
+        <select
+          value={filters.selectedOrigin || ''}
+          onChange={(e) => setSelectedOriginFilter(e.target.value || null)}
+          className="bg-[#0a0a0a] border border-[#2a2a2a] text-zinc-300 text-xs rounded-lg px-2 py-2 focus:outline-none focus:border-[#e62429] font-din cursor-pointer hover:border-zinc-500 transition-colors truncate"
+        >
+          <option value="">🌍 Origen / Reino</option>
+          {origins.map((o) => (
+            <option key={o.id} value={o.id}>
+              {o.label}
+            </option>
+          ))}
+        </select>
+
         {/* Media Selector */}
         <select
           value={filters.selectedMedia || ''}
           onChange={(e) => setSelectedMediaFilter(e.target.value || null)}
-          className="bg-[#0a0a0a] border border-[#2a2a2a] text-zinc-300 text-xs rounded-lg px-2.5 py-2 focus:outline-none focus:border-[#e62429] font-din cursor-pointer hover:border-zinc-500 transition-colors"
+          className="bg-[#0a0a0a] border border-[#2a2a2a] text-zinc-300 text-xs rounded-lg px-2 py-2 focus:outline-none focus:border-[#e62429] font-din cursor-pointer hover:border-zinc-500 transition-colors truncate"
         >
           <option value="">🎬 Películas / Series</option>
           {allMedia.map((m) => (
@@ -172,7 +225,7 @@ export const FilterBar: React.FC = () => {
         <select
           value={filters.selectedPhase || ''}
           onChange={(e) => setSelectedPhaseFilter(e.target.value || null)}
-          className="bg-[#0a0a0a] border border-[#2a2a2a] text-zinc-300 text-xs rounded-lg px-2.5 py-2 focus:outline-none focus:border-[#e62429] font-din cursor-pointer hover:border-zinc-500 transition-colors"
+          className="bg-[#0a0a0a] border border-[#2a2a2a] text-zinc-300 text-xs rounded-lg px-2 py-2 focus:outline-none focus:border-[#e62429] font-din cursor-pointer hover:border-zinc-500 transition-colors truncate"
         >
           <option value="">🪐 Todas las Fases</option>
           {phases.map((p) => (
@@ -186,7 +239,7 @@ export const FilterBar: React.FC = () => {
         <select
           value={filters.selectedStone || ''}
           onChange={(e) => setSelectedStoneFilter(e.target.value || null)}
-          className="bg-[#0a0a0a] border border-[#2a2a2a] text-zinc-300 text-xs rounded-lg px-2.5 py-2 focus:outline-none focus:border-[#e62429] font-din cursor-pointer hover:border-zinc-500 transition-colors"
+          className="bg-[#0a0a0a] border border-[#2a2a2a] text-zinc-300 text-xs rounded-lg px-2 py-2 focus:outline-none focus:border-[#e62429] font-din cursor-pointer hover:border-zinc-500 transition-colors truncate"
         >
           <option value="">💎 Gemas del Infinito</option>
           {infinityStonesData.map((s) => (

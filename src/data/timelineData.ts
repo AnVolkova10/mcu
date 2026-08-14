@@ -116,6 +116,76 @@ export const timelineEras: EraGroup[] = [
     ]
   },
   {
+    "id": "era-_1260_BCE_",
+    "title": "-1260 B.C.E.-",
+    "cleanTitle": "1260 B.C.E.",
+    "category": "ancient",
+    "events": [
+      {
+        "id": "event-_1260_BCE_-1",
+        "eraId": "era-_1260_BCE_",
+        "eraTitle": "1260 B.C.E.",
+        "mediaKey": "eyes-of-wakanda-i",
+        "mediaTitle": "Eyes of Wakanda (Season 1)",
+        "mediaType": "series",
+        "mediaPhase": "Phase 5",
+        "isAlternativeTimeline": false,
+        "rawClasses": [
+          "eyes-of-wakanda-i"
+        ],
+        "rawHtml": "<p>In Crete, disgraced former Dora Milaje warrior turned <strong class=\"mcu\">Hatut Zeraze</strong> agent <strong class=\"noni\">Noni</strong> embarks on a clandestine hunt across the Mediterranean to track down <strong class=\"the-lion\">The Lion</strong>, a rogue War Dog warlord who stole sacred Vibranium weapons and forged an unauthorized empire threatening to expose the secrets of <strong class=\"mcu\">Wakanda</strong> to the ancient world.</p>",
+        "paragraphs": [
+          "In Crete, disgraced former Dora Milaje warrior turned <strong class=\"mcu\">Hatut Zeraze</strong> agent <strong class=\"noni\">Noni</strong> embarks on a clandestine hunt across the Mediterranean to track down <strong class=\"the-lion\">The Lion</strong>, a rogue War Dog warlord who stole sacred Vibranium weapons and forged an unauthorized empire threatening to expose the secrets of <strong class=\"mcu\">Wakanda</strong> to the ancient world."
+        ],
+        "characters": [
+          "noni",
+          "the-lion"
+        ],
+        "stones": [],
+        "deaths": [
+          "The Lion"
+        ],
+        "mcuHighlights": [
+          "Hatut Zeraze",
+          "Wakanda"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "era-_1200_BCE_",
+    "title": "-c. 1200 B.C.E.-",
+    "cleanTitle": "c. 1200 B.C.E.",
+    "category": "ancient",
+    "events": [
+      {
+        "id": "event-_1200_BCE_-1",
+        "eraId": "era-_1200_BCE_",
+        "eraTitle": "c. 1200 B.C.E.",
+        "mediaKey": "eyes-of-wakanda-i",
+        "mediaTitle": "Eyes of Wakanda (Season 1)",
+        "mediaType": "series",
+        "mediaPhase": "Phase 5",
+        "isAlternativeTimeline": false,
+        "rawClasses": [
+          "eyes-of-wakanda-i"
+        ],
+        "rawHtml": "<p>After spending nine agonizing years undercover as a frontline Myrmidon warrior alongside the legendary warrior Achilles during the Trojan War, <strong class=\"mcu\">Hatut Zeraze</strong> operative <strong class=\"memnon\">Memnon</strong> executes his secret oath to reclaim a stolen Vibranium spear before mortal kings weaponize divine Wakandan metallurgy.</p>",
+        "paragraphs": [
+          "After spending nine agonizing years undercover as a frontline Myrmidon warrior alongside the legendary warrior Achilles during the Trojan War, <strong class=\"mcu\">Hatut Zeraze</strong> operative <strong class=\"memnon\">Memnon</strong> executes his secret oath to reclaim a stolen Vibranium spear before mortal kings weaponize divine Wakandan metallurgy."
+        ],
+        "characters": [
+          "memnon"
+        ],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "Hatut Zeraze"
+        ]
+      }
+    ]
+  },
+  {
     "id": "era-_2000_years_ago_",
     "title": "-2000 years ago-",
     "cleanTitle": "2000 years ago",
@@ -133,14 +203,19 @@ export const timelineEras: EraGroup[] = [
         "rawClasses": [
           "the-defenders-i"
         ],
-        "rawHtml": "<p>\r\n                    The elders of <em>K'un-Lun</em> came together to study the healing powers of qi, but five among them\r\n                    wished to use this power to live forever and were cast out. They became <em>the five fingers of the\r\n                        Hand</em>.\r\n                </p>",
+        "rawHtml": "<p>The elders of <strong class=\"iron-fist\">K'un-Lun</strong> came together to study the healing powers of dragon qi, but five among them wished to use this power to live forever and were cast out. They became <em>the five fingers of the Hand</em>.</p>",
         "paragraphs": [
-          "The elders of <em>K'un-Lun</em> came together to study the healing powers of qi, but five among them wished to use this power to live forever and were cast out. They became <em>the five fingers of the Hand</em>."
+          "The elders of <strong class=\"iron-fist\">K'un-Lun</strong> came together to study the healing powers of dragon qi, but five among them wished to use this power to live forever and were cast out. They became <em>the five fingers of the Hand</em>."
         ],
-        "characters": [],
+        "characters": [
+          "iron-fist"
+        ],
         "stones": [],
         "deaths": [],
-        "mcuHighlights": []
+        "mcuHighlights": [
+          "K'un-Lun",
+          "the five fingers of the Hand"
+        ]
       }
     ]
   },
@@ -162,7 +237,7 @@ export const timelineEras: EraGroup[] = [
         "rawClasses": [
           "thor-1"
         ],
-        "rawHtml": "<p><strong class=\"odin\">Odin</strong>, king of Asgard, wages war against the <em>Frost Giants of\r\n                        Jotunheim</em> and their leader <strong class=\"enemy\">Laufey</strong>, to prevent them from\r\n                    conquering the nine realms, starting with Earth. The Asgardian warriors defeat the Frost Giants in\r\n                    Tønsberg, Norway, and seize the source of their power, <strong class=\"mcu\">the Casket of Ancient\r\n                        Winters.</strong></p>",
+        "rawHtml": "<p><strong class=\"odin\">Odin</strong>, king of Asgard, wages war against the <em>Frost Giants of Jotunheim</em> and their leader <strong class=\"enemy\">Laufey</strong>, to prevent them from conquering the nine realms, starting with Earth. The Asgardian warriors defeat the Frost Giants in Tønsberg, Norway, and seize the source of their power, <strong class=\"mcu\">the Casket of Ancient Winters.</strong></p>",
         "paragraphs": [
           "<strong class=\"odin\">Odin</strong>, king of Asgard, wages war against the <em>Frost Giants of Jotunheim</em> and their leader <strong class=\"enemy\">Laufey</strong>, to prevent them from conquering the nine realms, starting with Earth. The Asgardian warriors defeat the Frost Giants in Tønsberg, Norway, and seize the source of their power, <strong class=\"mcu\">the Casket of Ancient Winters.</strong>"
         ],
@@ -173,6 +248,75 @@ export const timelineEras: EraGroup[] = [
         "deaths": [],
         "mcuHighlights": [
           "the Casket of Ancient\r\n                        Winters."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "era-_1400_CE_",
+    "title": "-c. 1400 C.E.-",
+    "cleanTitle": "c. 1400 C.E.",
+    "category": "ancient",
+    "events": [
+      {
+        "id": "event-_1400_CE_-1",
+        "eraId": "era-_1400_CE_",
+        "eraTitle": "c. 1400 C.E.",
+        "mediaKey": "eyes-of-wakanda-i",
+        "mediaTitle": "Eyes of Wakanda (Season 1)",
+        "mediaType": "series",
+        "mediaPhase": "Phase 5",
+        "isAlternativeTimeline": false,
+        "rawClasses": [
+          "eyes-of-wakanda-i"
+        ],
+        "rawHtml": "<p>In medieval China, a covert <strong class=\"mcu\">Hatut Zeraze</strong> recovery mission for lost Vibranium artifacts crosses paths with <strong class=\"jorani iron-fist\">Jorani</strong>, a formidable female warrior and the reigning <strong class=\"iron-fist\">Iron Fist</strong> from the mystical capital of K'un-Lun. Uniting Wakandan Vibranium science and mystical dragon Chi, they secure the ancient relic from opportunistic warlords.</p>",
+        "paragraphs": [
+          "In medieval China, a covert <strong class=\"mcu\">Hatut Zeraze</strong> recovery mission for lost Vibranium artifacts crosses paths with <strong class=\"jorani iron-fist\">Jorani</strong>, a formidable female warrior and the reigning <strong class=\"iron-fist\">Iron Fist</strong> from the mystical capital of K'un-Lun. Uniting Wakandan Vibranium science and mystical dragon Chi, they secure the ancient relic from opportunistic warlords."
+        ],
+        "characters": [
+          "jorani",
+          "iron-fist"
+        ],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "Hatut Zeraze",
+          "Iron Fist"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "era-_1896_",
+    "title": "-1896-",
+    "cleanTitle": "1896",
+    "category": "early-century",
+    "events": [
+      {
+        "id": "event-_1896_-1",
+        "eraId": "era-_1896_",
+        "eraTitle": "1896",
+        "mediaKey": "eyes-of-wakanda-i",
+        "mediaTitle": "Eyes of Wakanda (Season 1)",
+        "mediaType": "series",
+        "mediaPhase": "Phase 5",
+        "isAlternativeTimeline": false,
+        "rawClasses": [
+          "eyes-of-wakanda-i"
+        ],
+        "rawHtml": "<p>During the First Italo-Ethiopian War and the historic Battle of Adwa, veteran War Dog <strong class=\"kuda\">Kuda</strong> mentors the young <strong class=\"prince-tafari\">Prince Tafari</strong> on a dangerous rite-of-passage mission into the active battlefield to retrieve a sacred Vibranium battle axe from Ethiopian warriors resisting colonial invasion.</p>",
+        "paragraphs": [
+          "During the First Italo-Ethiopian War and the historic Battle of Adwa, veteran War Dog <strong class=\"kuda\">Kuda</strong> mentors the young <strong class=\"prince-tafari\">Prince Tafari</strong> on a dangerous rite-of-passage mission into the active battlefield to retrieve a sacred Vibranium battle axe from Ethiopian warriors resisting colonial invasion."
+        ],
+        "characters": [
+          "kuda",
+          "prince-tafari"
+        ],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "Battle of Adwa"
         ]
       }
     ]
@@ -3162,6 +3306,44 @@ export const timelineEras: EraGroup[] = [
           "Sinara"
         ],
         "mcuHighlights": []
+      }
+    ]
+  },
+  {
+    "id": "era-_c_2400_CE_",
+    "title": "-c. 2400 C.E.-",
+    "cleanTitle": "c. 2400 C.E.",
+    "category": "future",
+    "events": [
+      {
+        "id": "event-_c_2400_CE_-1",
+        "eraId": "era-_c_2400_CE_",
+        "eraTitle": "c. 2400 C.E.",
+        "mediaKey": "eyes-of-wakanda-i",
+        "mediaTitle": "Eyes of Wakanda (Season 1)",
+        "mediaType": "series",
+        "mediaPhase": "Phase 5",
+        "isAlternativeTimeline": true,
+        "rawClasses": [
+          "eyes-of-wakanda-i",
+          "alternative"
+        ],
+        "rawHtml": "<p>Five hundred years into a catastrophic future, <strong class=\"mcu\">Wakanda</strong> is completely obliterated by the apocalyptic alien conquerors known as <strong>the Horde</strong> due to centuries of rigid isolationism and refusal to build global alliances. Armed with temporal displacement technology, the <strong class=\"last-black-panther\">Last Black Panther</strong> (the future Queen of Wakanda) travels back in time to 1896 to intercept <strong class=\"kuda\">Kuda</strong> and <strong class=\"prince-tafari\">Prince Tafari</strong>, convincing them to leave the Vibranium axe in Africa so future kings will recognize the vital need for global unity and avert the dark future.</p>",
+        "paragraphs": [
+          "Five hundred years into a catastrophic future, <strong class=\"mcu\">Wakanda</strong> is completely obliterated by the apocalyptic alien conquerors known as <strong>the Horde</strong> due to centuries of rigid isolationism and refusal to build global alliances. Armed with temporal displacement technology, the <strong class=\"last-black-panther\">Last Black Panther</strong> (the future Queen of Wakanda) travels back in time to 1896 to intercept <strong class=\"kuda\">Kuda</strong> and <strong class=\"prince-tafari\">Prince Tafari</strong>, convincing them to leave the Vibranium axe in Africa so future kings will recognize the vital need for global unity and avert the dark future."
+        ],
+        "characters": [
+          "kuda",
+          "prince-tafari",
+          "last-black-panther"
+        ],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "Wakanda",
+          "the Horde",
+          "temporal displacement"
+        ]
       }
     ]
   }

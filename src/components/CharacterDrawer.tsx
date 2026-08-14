@@ -4,12 +4,14 @@ import { charactersData } from '@/data/charactersData';
 import { timelineEras } from '@/data/timelineData';
 import { 
   X, 
-  User, 
   Shield, 
-  HeartPulse, 
+  Sparkles, 
   Clock, 
-  ArrowRight,
-  Sparkles
+  ArrowRight, 
+  ExternalLink,
+  MapPin,
+  Layers,
+  Globe2
 } from 'lucide-react';
 
 export const CharacterDrawer: React.FC = () => {
@@ -20,17 +22,22 @@ export const CharacterDrawer: React.FC = () => {
   const character = charactersData[selectedCharacterId];
   if (!character) return null;
 
-  // Find all events mentioning this character
-  const appearances: { eraTitle: string; eventId: string; mediaTitle: string; snippet: string }[] = [];
+  // Find all timeline events where this character appears
+  const appearances: {
+    eventId: string;
+    eraTitle: string;
+    mediaTitle: string;
+    snippet: string;
+  }[] = [];
 
   timelineEras.forEach((era) => {
     era.events.forEach((evt) => {
-      if (evt.characters.includes(character.id) || evt.rawHtml.toLowerCase().includes(character.id)) {
+      if (evt.characters.includes(character.id) || evt.rawHtml.includes(`class="${character.cssClass}`)) {
         appearances.push({
-          eraTitle: era.cleanTitle,
           eventId: evt.id,
+          eraTitle: era.cleanTitle,
           mediaTitle: evt.mediaTitle,
-          snippet: evt.paragraphs[0] ? evt.paragraphs[0].replace(/<[^>]+>/g, '').slice(0, 140) + '...' : '',
+          snippet: evt.paragraphs[0]?.replace(/<[^>]*>?/gm, '').slice(0, 140) + '...' || '',
         });
       }
     });
@@ -56,7 +63,7 @@ export const CharacterDrawer: React.FC = () => {
         {/* Close Button */}
         <button
           onClick={() => setSelectedCharacterId(null)}
-          className="absolute top-4 right-4 p-2 rounded bg-[#141414] text-zinc-400 hover:text-white border border-[#2e2e2e] transition-colors"
+          className="absolute top-4 right-4 p-2 rounded bg-[#141414] text-zinc-400 hover:text-white border border-[#2e2e2e] transition-colors cursor-pointer"
         >
           <X className="w-5 h-5" />
         </button>
@@ -86,13 +93,13 @@ export const CharacterDrawer: React.FC = () => {
         </div>
 
         {/* Info Grid */}
-        <div className="grid grid-cols-2 gap-3 mb-6">
+        <div className="grid grid-cols-2 gap-3 mb-4">
           <div className="p-3 rounded-lg bg-[#141414] border border-[#27272a]">
             <div className="flex items-center gap-1.5 text-xs text-zinc-400 mb-1">
-              <Shield className="w-3.5 h-3.5 text-[#e62429]" />
-              <span className="font-semibold uppercase text-[10px] tracking-wider font-title">Afiliación</span>
+              <Globe2 className="w-3.5 h-3.5 text-sky-400" />
+              <span className="font-semibold uppercase text-[10px] tracking-wider font-title">Planeta / Origen</span>
             </div>
-            <p className="text-xs font-semibold text-zinc-200">{character.affiliation}</p>
+            <p className="text-xs font-semibold text-zinc-200 truncate">{character.originLocation || 'Desconocido'}</p>
           </div>
 
           <div className="p-3 rounded-lg bg-[#141414] border border-[#27272a]">
@@ -103,6 +110,26 @@ export const CharacterDrawer: React.FC = () => {
             <p className="text-xs font-semibold text-zinc-200">{appearances.length} eventos registrados</p>
           </div>
         </div>
+
+        {/* Groups / Factions Section */}
+        {character.groups && character.groups.length > 0 && (
+          <div className="p-3.5 rounded-lg bg-[#141414] border border-[#27272a] mb-4">
+            <div className="flex items-center gap-1.5 text-xs font-bold text-zinc-400 uppercase tracking-wider mb-2 font-title">
+              <Layers className="w-3.5 h-3.5 text-[#e62429]" />
+              <span>AGRUPACIONES & FACCIONES</span>
+            </div>
+            <div className="flex flex-wrap gap-1.5">
+              {character.groups.map((grp) => (
+                <span
+                  key={grp}
+                  className="px-2.5 py-1 rounded text-xs font-bold font-title tracking-wider uppercase bg-[#000000] border border-[#2e2e2e] text-zinc-200"
+                >
+                  {grp}
+                </span>
+              ))}
+            </div>
+          </div>
+        )}
 
         {/* Bio */}
         <div className="p-4 rounded-lg bg-[#141414] border border-[#27272a] mb-6">
