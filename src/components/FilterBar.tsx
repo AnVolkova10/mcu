@@ -9,7 +9,8 @@ import {
   Skull, 
   Sparkles,
   Layers,
-  Filter
+  Filter,
+  Globe2
 } from 'lucide-react';
 import { allMedia } from '@/data/mediaData';
 import { allCharacters } from '@/data/charactersData';
@@ -26,6 +27,7 @@ export const FilterBar: React.FC = () => {
     setSelectedMediaFilter,
     setSelectedStoneFilter,
     setSelectedPhaseFilter,
+    setSelectedUniverseFilter,
     toggleOnlyAlternative,
     toggleOnlyDeaths,
     resetFilters,
@@ -64,6 +66,13 @@ export const FilterBar: React.FC = () => {
     { id: 'Titan', label: '🌑 Titan' },
   ];
 
+  const universes = [
+    { id: 'sacred-616', label: '🛡️ Earth-616 (Sacred Timeline)' },
+    { id: 'branches', label: '⏳ Earth-616 Branches (All)' },
+    { id: 'time-heists', label: '⌛ Endgame Time Heists (1970, 2012, 2014)' },
+    { id: '2091', label: '🌑 Earth-TRN676 (2091 Shattered Earth)' },
+  ];
+
   const hasActiveFilters = Boolean(
     filters.searchQuery ||
     filters.selectedCategory !== 'all' ||
@@ -73,6 +82,7 @@ export const FilterBar: React.FC = () => {
     filters.selectedMedia ||
     filters.selectedStone ||
     filters.selectedPhase ||
+    filters.selectedUniverse ||
     filters.onlyAlternative ||
     filters.onlyDeaths
   );
@@ -162,8 +172,8 @@ export const FilterBar: React.FC = () => {
         })}
       </div>
 
-      {/* Advanced Selectors (Character, Group, Origin, Media, Phase, Stones) */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2 pt-3 border-t border-[#222222]">
+      {/* Advanced Selectors (Character, Group, Origin, Media, Phase, Stones, Universe/Earth) */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-2 pt-3 border-t border-[#222222]">
         
         {/* Character Selector */}
         <select
@@ -245,6 +255,20 @@ export const FilterBar: React.FC = () => {
           {infinityStonesData.map((s) => (
             <option key={s.id} value={s.id}>
               {s.name} ({s.vessel})
+            </option>
+          ))}
+        </select>
+
+        {/* Universe / Earth Designation Selector */}
+        <select
+          value={filters.selectedUniverse || ''}
+          onChange={(e) => setSelectedUniverseFilter(e.target.value || null)}
+          className="bg-[#0a0a0a] border border-[#2a2a2a] text-zinc-300 text-xs rounded-lg px-2 py-2 focus:outline-none focus:border-[#e62429] font-din cursor-pointer hover:border-zinc-500 transition-colors truncate"
+        >
+          <option value="">🌐 Earth / Reality</option>
+          {universes.map((u) => (
+            <option key={u.id} value={u.id}>
+              {u.label}
             </option>
           ))}
         </select>

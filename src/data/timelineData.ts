@@ -30,7 +30,9 @@ export const timelineEras: EraGroup[] = [
         "deaths": [],
         "mcuHighlights": [
           "the Aether within a stone\r\n                        column"
-        ]
+        ],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       }
     ]
   },
@@ -61,7 +63,9 @@ export const timelineEras: EraGroup[] = [
         "deaths": [],
         "mcuHighlights": [
           "meteorite containing the metal\r\n                        vibranium"
-        ]
+        ],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       }
     ]
   },
@@ -90,7 +94,9 @@ export const timelineEras: EraGroup[] = [
         "characters": [],
         "stones": [],
         "deaths": [],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       },
       {
         "id": "event-_5000_years_ago_-2",
@@ -111,7 +117,9 @@ export const timelineEras: EraGroup[] = [
         "characters": [],
         "stones": [],
         "deaths": [],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       }
     ]
   },
@@ -148,7 +156,9 @@ export const timelineEras: EraGroup[] = [
         "mcuHighlights": [
           "Hatut Zeraze",
           "Wakanda"
-        ]
+        ],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       }
     ]
   },
@@ -181,7 +191,9 @@ export const timelineEras: EraGroup[] = [
         "deaths": [],
         "mcuHighlights": [
           "Hatut Zeraze"
-        ]
+        ],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       }
     ]
   },
@@ -215,7 +227,9 @@ export const timelineEras: EraGroup[] = [
         "mcuHighlights": [
           "K'un-Lun",
           "the five fingers of the Hand"
-        ]
+        ],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       }
     ]
   },
@@ -248,7 +262,9 @@ export const timelineEras: EraGroup[] = [
         "deaths": [],
         "mcuHighlights": [
           "the Casket of Ancient\r\n                        Winters."
-        ]
+        ],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       }
     ]
   },
@@ -283,7 +299,9 @@ export const timelineEras: EraGroup[] = [
         "mcuHighlights": [
           "Hatut Zeraze",
           "Iron Fist"
-        ]
+        ],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       }
     ]
   },
@@ -317,7 +335,9 @@ export const timelineEras: EraGroup[] = [
         "deaths": [],
         "mcuHighlights": [
           "Battle of Adwa"
-        ]
+        ],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       }
     ]
   },
@@ -353,7 +373,10 @@ export const timelineEras: EraGroup[] = [
         ],
         "stones": [],
         "deaths": [],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "branched-616",
+        "earthDesignation": "Earth-616 Branch (1931 Chronicom Loop)",
+        "branchDetails": "1931 Alternate Timeline Branch"
       }
     ]
   },
@@ -384,7 +407,9 @@ export const timelineEras: EraGroup[] = [
           "space"
         ],
         "deaths": [],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       }
     ]
   },
@@ -424,7 +449,9 @@ export const timelineEras: EraGroup[] = [
         ],
         "mcuHighlights": [
           "serum\r\n                        gets destroy"
-        ]
+        ],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       }
     ]
   },
@@ -466,7 +493,9 @@ export const timelineEras: EraGroup[] = [
           "Schmidt",
           "Rogers"
         ],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       }
     ]
   },
@@ -500,7 +529,9 @@ export const timelineEras: EraGroup[] = [
         "deaths": [],
         "mcuHighlights": [
           "throws to the ocean Steve's blood"
-        ]
+        ],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       },
       {
         "id": "event-_1946_-2",
@@ -521,7 +552,9 @@ export const timelineEras: EraGroup[] = [
         "characters": [],
         "stones": [],
         "deaths": [],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       },
       {
         "id": "event-_1946_-3",
@@ -545,7 +578,9 @@ export const timelineEras: EraGroup[] = [
         ],
         "stones": [],
         "deaths": [],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       }
     ]
   },
@@ -576,7 +611,9 @@ export const timelineEras: EraGroup[] = [
         ],
         "stones": [],
         "deaths": [],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       }
     ]
   },
@@ -606,7 +643,10 @@ export const timelineEras: EraGroup[] = [
         "characters": [],
         "stones": [],
         "deaths": [],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "branched-616",
+        "earthDesignation": "Earth-616 Branched Reality",
+        "branchDetails": "Alternate Timeline Branch"
       }
     ]
   },
@@ -638,7 +678,10 @@ export const timelineEras: EraGroup[] = [
         "deaths": [
           "Wilfred Mallick"
         ],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "branched-616",
+        "earthDesignation": "Earth-616 Branched Reality",
+        "branchDetails": "Alternate Timeline Branch"
       }
     ]
   },
@@ -667,7 +710,9 @@ export const timelineEras: EraGroup[] = [
         "characters": [],
         "stones": [],
         "deaths": [],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       }
     ]
   },
@@ -698,7 +743,9 @@ export const timelineEras: EraGroup[] = [
         ],
         "stones": [],
         "deaths": [],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       }
     ]
   },
@@ -728,7 +775,10 @@ export const timelineEras: EraGroup[] = [
         "characters": [],
         "stones": [],
         "deaths": [],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "branched-616",
+        "earthDesignation": "Earth-616 Branched Reality",
+        "branchDetails": "Alternate Timeline Branch"
       }
     ]
   },
@@ -757,7 +807,9 @@ export const timelineEras: EraGroup[] = [
         "characters": [],
         "stones": [],
         "deaths": [],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       }
     ]
   },
@@ -790,7 +842,9 @@ export const timelineEras: EraGroup[] = [
         "deaths": [
           "Meredith"
         ],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       }
     ]
   },
@@ -824,7 +878,9 @@ export const timelineEras: EraGroup[] = [
           "Carol Danvers",
           "Mar-Vell"
         ],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       },
       {
         "id": "event-_1989_-2",
@@ -845,7 +901,9 @@ export const timelineEras: EraGroup[] = [
         "characters": [],
         "stones": [],
         "deaths": [],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       },
       {
         "id": "event-_1989_-3",
@@ -870,7 +928,9 @@ export const timelineEras: EraGroup[] = [
         "deaths": [
           "Jiaying"
         ],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       }
     ]
   },
@@ -899,7 +959,9 @@ export const timelineEras: EraGroup[] = [
         "characters": [],
         "stones": [],
         "deaths": [],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       }
     ]
   },
@@ -930,7 +992,9 @@ export const timelineEras: EraGroup[] = [
         ],
         "stones": [],
         "deaths": [],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       },
       {
         "id": "event-_1991_-2",
@@ -953,7 +1017,9 @@ export const timelineEras: EraGroup[] = [
         ],
         "stones": [],
         "deaths": [],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       },
       {
         "id": "event-_1991_-3",
@@ -984,7 +1050,9 @@ export const timelineEras: EraGroup[] = [
         ],
         "mcuHighlights": [
           "a case of super-soldier serum."
-        ]
+        ],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       }
     ]
   },
@@ -1015,7 +1083,9 @@ export const timelineEras: EraGroup[] = [
         "deaths": [
           "N'Jobu"
         ],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       }
     ]
   },
@@ -1061,7 +1131,9 @@ export const timelineEras: EraGroup[] = [
           "drafts an initiative",
           "\"Avenger\".",
           "regurgitates the"
-        ]
+        ],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       },
       {
         "id": "event-_1995_-2",
@@ -1084,7 +1156,9 @@ export const timelineEras: EraGroup[] = [
         ],
         "stones": [],
         "deaths": [],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       }
     ]
   },
@@ -1115,7 +1189,9 @@ export const timelineEras: EraGroup[] = [
         ],
         "stones": [],
         "deaths": [],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       },
       {
         "id": "event-_1999_-2",
@@ -1136,7 +1212,9 @@ export const timelineEras: EraGroup[] = [
         "characters": [],
         "stones": [],
         "deaths": [],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       }
     ]
   },
@@ -1167,7 +1245,9 @@ export const timelineEras: EraGroup[] = [
         ],
         "stones": [],
         "deaths": [],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       },
       {
         "id": "event-_2005_-2",
@@ -1191,7 +1271,9 @@ export const timelineEras: EraGroup[] = [
         ],
         "stones": [],
         "deaths": [],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       }
     ]
   },
@@ -1230,7 +1312,9 @@ export const timelineEras: EraGroup[] = [
         "deaths": [
           "Yinsen"
         ],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       }
     ]
   },
@@ -1265,7 +1349,9 @@ export const timelineEras: EraGroup[] = [
           "Nathan Bowen",
           "Billy\r\n                            Jonhson"
         ],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       }
     ]
   },
@@ -1305,7 +1391,9 @@ export const timelineEras: EraGroup[] = [
           "Anton\r\n                            Vanko",
           "Vanko"
         ],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       },
       {
         "id": "event-_2010_-2",
@@ -1332,7 +1420,9 @@ export const timelineEras: EraGroup[] = [
         "deaths": [],
         "mcuHighlights": [
           "the Casket"
-        ]
+        ],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       },
       {
         "id": "event-_2010_-3",
@@ -1357,7 +1447,9 @@ export const timelineEras: EraGroup[] = [
         "deaths": [],
         "mcuHighlights": [
           "large\r\n                            hammer"
-        ]
+        ],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       },
       {
         "id": "event-_2010_-4",
@@ -1395,7 +1487,9 @@ export const timelineEras: EraGroup[] = [
         ],
         "mcuHighlights": [
           "Bifröst"
-        ]
+        ],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       },
       {
         "id": "event-_2010_-5",
@@ -1422,7 +1516,9 @@ export const timelineEras: EraGroup[] = [
         "deaths": [
           "Sterns"
         ],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       },
       {
         "id": "event-_2010_-6",
@@ -1449,7 +1545,9 @@ export const timelineEras: EraGroup[] = [
         "mcuHighlights": [
           "the Avengers Initiative",
           "team is being put together"
-        ]
+        ],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       }
     ]
   },
@@ -1481,7 +1579,9 @@ export const timelineEras: EraGroup[] = [
         ],
         "stones": [],
         "deaths": [],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       }
     ]
   },
@@ -1537,7 +1637,9 @@ export const timelineEras: EraGroup[] = [
           "closes it.",
           "returns\r\n                            Loki and the",
           "to\r\n                            Asgard"
-        ]
+        ],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       },
       {
         "id": "event-_2012_-2",
@@ -1558,7 +1660,9 @@ export const timelineEras: EraGroup[] = [
         "characters": [],
         "stones": [],
         "deaths": [],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       },
       {
         "id": "event-_2012_-3",
@@ -1581,7 +1685,9 @@ export const timelineEras: EraGroup[] = [
         ],
         "stones": [],
         "deaths": [],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       },
       {
         "id": "event-_2012_-4",
@@ -1613,7 +1719,9 @@ export const timelineEras: EraGroup[] = [
         ],
         "stones": [],
         "deaths": [],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       }
     ]
   },
@@ -1654,7 +1762,9 @@ export const timelineEras: EraGroup[] = [
           "Hansen",
           "Potts"
         ],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       },
       {
         "id": "event-_2013_-2",
@@ -1693,7 +1803,9 @@ export const timelineEras: EraGroup[] = [
         ],
         "mcuHighlights": [
           "his desire to acquire the other five Stones."
-        ]
+        ],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       }
     ]
   },
@@ -1722,7 +1834,9 @@ export const timelineEras: EraGroup[] = [
         "characters": [],
         "stones": [],
         "deaths": [],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       },
       {
         "id": "event-_2014_-2",
@@ -1743,7 +1857,9 @@ export const timelineEras: EraGroup[] = [
         "characters": [],
         "stones": [],
         "deaths": [],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       },
       {
         "id": "event-_2014_-3",
@@ -1766,7 +1882,9 @@ export const timelineEras: EraGroup[] = [
         ],
         "stones": [],
         "deaths": [],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       },
       {
         "id": "event-_2014_-4",
@@ -1791,7 +1909,9 @@ export const timelineEras: EraGroup[] = [
         "deaths": [
           "Reva"
         ],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       },
       {
         "id": "event-_2014_-5",
@@ -1822,7 +1942,9 @@ export const timelineEras: EraGroup[] = [
         "deaths": [
           "GH325 (fluids of blue alien corpse)"
         ],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       },
       {
         "id": "event-_2014_-6",
@@ -1866,7 +1988,9 @@ export const timelineEras: EraGroup[] = [
         "mcuHighlights": [
           "energy-filled\r\n                            scepter",
           "two test subjects: one with superhuman speed, the other with telekinetic\r\n                            powers"
-        ]
+        ],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       },
       {
         "id": "event-_2014_-7",
@@ -1901,7 +2025,9 @@ export const timelineEras: EraGroup[] = [
           "Victoria\r\n                            Hand",
           "Eric Koenig"
         ],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       },
       {
         "id": "event-_2014_-8",
@@ -1945,7 +2071,9 @@ export const timelineEras: EraGroup[] = [
           "Ronan's\r\n                            warhammer",
           "they did not deliver Quill to his father per their contract",
           "he is only half-human"
-        ]
+        ],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       },
       {
         "id": "event-_2014_-9",
@@ -1983,7 +2111,9 @@ export const timelineEras: EraGroup[] = [
         ],
         "mcuHighlights": [
           "the Guardians of the\r\n                            Galaxy"
-        ]
+        ],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       }
     ]
   },
@@ -2021,7 +2151,9 @@ export const timelineEras: EraGroup[] = [
         ],
         "mcuHighlights": [
           "After the Battle of New York, Hell's Kitchen is struggling to\r\n                            recover."
-        ]
+        ],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       },
       {
         "id": "event-_2015_-2",
@@ -2049,7 +2181,9 @@ export const timelineEras: EraGroup[] = [
           "Dr.\r\n                            Wendy Ross-Hogarth",
           "Kilgrave"
         ],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       },
       {
         "id": "event-_2015_-3",
@@ -2086,7 +2220,9 @@ export const timelineEras: EraGroup[] = [
         ],
         "mcuHighlights": [
           "-The\r\n                            Twins-"
-        ]
+        ],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       },
       {
         "id": "event-_2015_-4",
@@ -2138,7 +2274,9 @@ export const timelineEras: EraGroup[] = [
           "his vision",
           "the six Infinity\r\n                            Stones",
           "gauntlet"
-        ]
+        ],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       },
       {
         "id": "event-_2015_-5",
@@ -2174,7 +2312,9 @@ export const timelineEras: EraGroup[] = [
           "Gonzales",
           "Gordon"
         ],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       },
       {
         "id": "event-_2015_-6",
@@ -2205,7 +2345,9 @@ export const timelineEras: EraGroup[] = [
           "Janet's",
           "Cross"
         ],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       },
       {
         "id": "event-_2015_-7",
@@ -2236,7 +2378,9 @@ export const timelineEras: EraGroup[] = [
           "Elektra",
           "Nobu"
         ],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       },
       {
         "id": "event-_2015_-8",
@@ -2267,7 +2411,9 @@ export const timelineEras: EraGroup[] = [
         ],
         "mcuHighlights": [
           "the Judas bullet, built from alien metal and\r\n                            based on a prototype stolen from Hammer Industries"
-        ]
+        ],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       }
     ]
   },
@@ -2300,7 +2446,9 @@ export const timelineEras: EraGroup[] = [
         ],
         "stones": [],
         "deaths": [],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       },
       {
         "id": "event-_2016_-2",
@@ -2328,7 +2476,9 @@ export const timelineEras: EraGroup[] = [
           "Ben\r\n                            Urich",
           "Andre"
         ],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       },
       {
         "id": "event-_2016_-3",
@@ -2362,7 +2512,9 @@ export const timelineEras: EraGroup[] = [
           "Malick",
           "Rosalind"
         ],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       },
       {
         "id": "event-_2016_-4",
@@ -2390,7 +2542,9 @@ export const timelineEras: EraGroup[] = [
         "deaths": [
           "Harold"
         ],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       },
       {
         "id": "event-_2016_-5",
@@ -2432,7 +2586,9 @@ export const timelineEras: EraGroup[] = [
         ],
         "mcuHighlights": [
           "book containing the trigger words that\r\n                            activate Barnes' brainwashing"
-        ]
+        ],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       },
       {
         "id": "event-_2016_-6",
@@ -2462,7 +2618,9 @@ export const timelineEras: EraGroup[] = [
         "deaths": [
           "Dreykov"
         ],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       },
       {
         "id": "event-_2016_-7",
@@ -2497,7 +2655,9 @@ export const timelineEras: EraGroup[] = [
           "T'Challa",
           "Killmonger"
         ],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       },
       {
         "id": "event-_2016_-8",
@@ -2529,7 +2689,9 @@ export const timelineEras: EraGroup[] = [
           "Lash",
           "Hive"
         ],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       },
       {
         "id": "event-_2016_-9",
@@ -2555,7 +2717,9 @@ export const timelineEras: EraGroup[] = [
         ],
         "stones": [],
         "deaths": [],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       },
       {
         "id": "event-_2016_-10",
@@ -2580,7 +2744,9 @@ export const timelineEras: EraGroup[] = [
         "deaths": [
           "Maximus"
         ],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       },
       {
         "id": "event-_2016_-11",
@@ -2618,7 +2784,9 @@ export const timelineEras: EraGroup[] = [
           "Elektra",
           "Gao and Murakami"
         ],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       },
       {
         "id": "event-_2016_-12",
@@ -2643,7 +2811,9 @@ export const timelineEras: EraGroup[] = [
         ],
         "stones": [],
         "deaths": [],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       }
     ]
   },
@@ -2675,7 +2845,9 @@ export const timelineEras: EraGroup[] = [
         ],
         "stones": [],
         "deaths": [],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       },
       {
         "id": "event-_2017_-2",
@@ -2703,7 +2875,9 @@ export const timelineEras: EraGroup[] = [
           "Colonel Schoonover",
           "Agent Orange"
         ],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       },
       {
         "id": "event-_2017_-3",
@@ -2733,7 +2907,9 @@ export const timelineEras: EraGroup[] = [
           "Malus",
           "Alisa"
         ],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       },
       {
         "id": "event-_2017_-4",
@@ -2760,7 +2936,9 @@ export const timelineEras: EraGroup[] = [
         "deaths": [
           "Mariah Dillard"
         ],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       },
       {
         "id": "event-_2017_-5",
@@ -2787,7 +2965,9 @@ export const timelineEras: EraGroup[] = [
         ],
         "stones": [],
         "deaths": [],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       },
       {
         "id": "event-_2017_-6",
@@ -2816,7 +2996,9 @@ export const timelineEras: EraGroup[] = [
           "Lantom",
           "Nadeem"
         ],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       },
       {
         "id": "event-_2017_-7",
@@ -2841,7 +3023,9 @@ export const timelineEras: EraGroup[] = [
         "deaths": [
           "Russo"
         ],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       },
       {
         "id": "event-_2017_-8",
@@ -2870,7 +3054,9 @@ export const timelineEras: EraGroup[] = [
           "Dorothy",
           "Salinger"
         ],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       },
       {
         "id": "event-_2017_-9",
@@ -2901,7 +3087,9 @@ export const timelineEras: EraGroup[] = [
         "deaths": [],
         "mcuHighlights": [
           "dimension"
-        ]
+        ],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       },
       {
         "id": "event-_2017_-10",
@@ -2939,7 +3127,9 @@ export const timelineEras: EraGroup[] = [
           "Astral plane",
           "Mirror Dimension",
           "Dark Dimension"
-        ]
+        ],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       },
       {
         "id": "event-_2017_-11",
@@ -2982,7 +3172,9 @@ export const timelineEras: EraGroup[] = [
         ],
         "mcuHighlights": [
           "Mjolnir"
-        ]
+        ],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       },
       {
         "id": "event-_2017_-12",
@@ -3015,7 +3207,9 @@ export const timelineEras: EraGroup[] = [
           "Radcliffe",
           "Aida"
         ],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       },
       {
         "id": "event-_2017_-13",
@@ -3052,7 +3246,9 @@ export const timelineEras: EraGroup[] = [
           "Ruby",
           "Hale"
         ],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       }
     ]
   },
@@ -3093,7 +3289,9 @@ export const timelineEras: EraGroup[] = [
           "Izel",
           "Pachacutiq"
         ],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       },
       {
         "id": "event-_2018_-2",
@@ -3120,7 +3318,9 @@ export const timelineEras: EraGroup[] = [
         "deaths": [
           "Enoch"
         ],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       },
       {
         "id": "event-_2018_-3",
@@ -3205,7 +3405,9 @@ export const timelineEras: EraGroup[] = [
           "Infinity Gauntlet",
           "Gauntlet by\r\n                            snapping his fingers before teleporting away.",
           "Half of all life across the universe disintegrates,"
-        ]
+        ],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       },
       {
         "id": "event-_2018_-4",
@@ -3230,7 +3432,9 @@ export const timelineEras: EraGroup[] = [
         "deaths": [],
         "mcuHighlights": [
           "activated pager"
-        ]
+        ],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       }
     ]
   },
@@ -3264,7 +3468,9 @@ export const timelineEras: EraGroup[] = [
         "deaths": [
           "Romanoff"
         ],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
       }
     ]
   },
@@ -3305,7 +3511,10 @@ export const timelineEras: EraGroup[] = [
           "Kasius",
           "Sinara"
         ],
-        "mcuHighlights": []
+        "mcuHighlights": [],
+        "timelineType": "branched-616",
+        "earthDesignation": "Earth-TRN676 (2091 Shattered Earth)",
+        "branchDetails": "2091 Dystopian Shattered Earth (Kasius Monolith Loop)"
       }
     ]
   },
@@ -3343,7 +3552,10 @@ export const timelineEras: EraGroup[] = [
           "Wakanda",
           "the Horde",
           "temporal displacement"
-        ]
+        ],
+        "timelineType": "branched-616",
+        "earthDesignation": "Earth-616 Branched Reality",
+        "branchDetails": "Alternate Timeline Branch"
       }
     ]
   }

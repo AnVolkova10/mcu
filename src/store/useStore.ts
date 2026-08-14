@@ -30,6 +30,7 @@ interface AppState {
   setSelectedMediaFilter: (mediaId: string | null) => void;
   setSelectedStoneFilter: (stoneId: string | null) => void;
   setSelectedPhaseFilter: (phase: string | null) => void;
+  setSelectedUniverseFilter: (universe: string | null) => void;
   toggleOnlyAlternative: () => void;
   toggleOnlyDeaths: () => void;
   resetFilters: () => void;
@@ -53,6 +54,7 @@ const initialFilters: TimelineFilterState = {
   selectedStone: null,
   selectedPhase: null,
   selectedCategory: 'all',
+  selectedUniverse: null,
   onlyAlternative: false,
   onlyCanon: false,
   onlyDeaths: false,
@@ -116,6 +118,11 @@ export const useStore = create<AppState>()(
       setSelectedPhaseFilter: (phase) =>
         set((state) => ({
           filters: { ...state.filters, selectedPhase: phase },
+        })),
+
+      setSelectedUniverseFilter: (universe) =>
+        set((state) => ({
+          filters: { ...state.filters, selectedUniverse: universe },
         })),
 
       toggleOnlyAlternative: () =>

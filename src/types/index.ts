@@ -14,6 +14,12 @@ export type TimelineCategory =
   | 'infinity-war' 
   | 'future';
 
+export type TimelineType = 
+  | 'sacred-616' 
+  | 'branched-616' 
+  | 'outside-time' 
+  | 'multiverse-alternate';
+
 export type CharacterStatus = 'alive' | 'deceased' | 'presumably-dead' | 'variable';
 
 export interface CharacterMention {
@@ -34,6 +40,9 @@ export interface TimelineEvent {
   mediaType: 'movie' | 'series' | 'oneshot' | 'special';
   mediaPhase: string;
   isAlternativeTimeline: boolean;
+  timelineType?: TimelineType;
+  earthDesignation?: string;
+  branchDetails?: string;
   rawClasses: string[];
   rawHtml: string;
   paragraphs: string[];
@@ -82,6 +91,8 @@ export interface MediaItem {
   description: string;
   isAnimated?: boolean;
   chronologicalEra?: string;
+  timelineType?: TimelineType;
+  primaryUniverse?: string;
 }
 
 export interface InfinityStone {
@@ -112,6 +123,7 @@ export interface TimelineFilterState {
   selectedStone: string | null;
   selectedPhase: string | null;
   selectedCategory: TimelineCategory | 'all';
+  selectedUniverse: string | null;
   onlyAlternative: boolean;
   onlyCanon: boolean;
   onlyDeaths: boolean;

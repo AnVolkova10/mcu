@@ -119,11 +119,17 @@ export const EventCard: React.FC<EventCardProps> = ({ event }) => {
             </span>
           )}
 
-          {/* Alternative Timeline Badge */}
-          {event.isAlternativeTimeline && (
-            <span className="flex items-center gap-1 text-[10px] font-bold font-title tracking-wider px-2 py-0.5 rounded bg-amber-950/80 border border-amber-600/60 text-amber-300 select-none">
-              <GitFork className="w-3 h-3" />
-              <span>ALTERNATE TIMELINE</span>
+          {/* Earth / Universe Designation Badge */}
+          {event.isAlternativeTimeline ? (
+            <div className="flex items-center gap-1.5 flex-wrap">
+              <span className="flex items-center gap-1 text-[10px] font-bold font-title tracking-wider px-2 py-0.5 rounded bg-amber-950/90 border border-amber-600 text-amber-300 select-none shadow-sm">
+                <GitFork className="w-3 h-3" />
+                <span>{event.earthDesignation || 'EARTH-616 BRANCH'}</span>
+              </span>
+            </div>
+          ) : (
+            <span className="text-[10px] font-bold font-title tracking-widest uppercase px-2 py-0.5 rounded bg-[#0a0a0a] border border-[#262626] text-zinc-400 select-none">
+              EARTH-616
             </span>
           )}
         </div>
