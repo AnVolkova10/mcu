@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { useStore } from '@/store/useStore';
 import { allMedia } from '@/data/mediaData';
 import { timelineEras } from '@/data/timelineData';
@@ -10,43 +10,196 @@ import {
   Filter, 
   Tv, 
   Clapperboard, 
-  Sparkles 
+  Sparkles,
+  ArrowUpDown,
+  Search,
+  Palette,
+  Hourglass,
+  Tag,
+  X,
+  Video
 } from 'lucide-react';
 
 export const MediaScreen: React.FC = () => {
   const { setSelectedMediaId } = useStore();
+  const [search, setSearch] = useState('');
   const [selectedPhase, setSelectedPhase] = useState<string>('all');
-  const [selectedType, setSelectedType] = useState<string>('all');
+  const [selectedFormat, setSelectedFormat] = useState<string>('all');
+  const [selectedVisualType, setSelectedVisualType] = useState<string>('all');
+  const [selectedYear, setSelectedYear] = useState<string>('all');
+  const [sortBy, setSortBy] = useState<string>('chronological');
 
-  // Count events for each media
-  const eventCounts: Record<string, number> = {};
-  timelineEras.forEach((era) => {
-    era.events.forEach((evt) => {
-      eventCounts[evt.mediaKey] = (eventCounts[evt.mediaKey] || 0) + 1;
-      evt.rawClasses.forEach((cls) => {
-        if (cls !== evt.mediaKey && cls !== 'alternative') {
-          eventCounts[cls] = (eventCounts[cls] || 0) + 1;
+  // Compute event counts and earliest chronological era index for each media item
+  const mediaTimelineStats = useMemo(() => {
+    const counts: Record<string, number> = {};
+    const firstEraIndex: Record<string, number> = {};
+    const firstEraTitle: Record<string, string> = {};
+
+    timelineEras.forEach((era, eraIdx) => {
+      era.events.forEach((evt) => {
+        // Main media key
+        counts[evt.mediaKey] = (counts[evt.mediaKey] || 0) + 1;
+        if (firstEraIndex[evt.mediaKey] === undefined) {
+          firstEraIndex[evt.mediaKey] = eraIdx;
+          firstEraTitle[evt.mediaKey] = era.cleanTitle;
         }
+
+        // Additional raw classes
+        evt.rawClasses.forEach((cls) => {
+          if (cls !== evt.mediaKey && cls !== 'alternative') {
+            counts[cls] = (counts[cls] || 0) + 1;
+            if (firstEraIndex[cls] === undefined) {
+              firstEraIndex[cls] = eraIdx;
+              firstEraTitle[cls] = era.cleanTitle;
+            }
+          }
+        });
       });
     });
-  });
+
+    return { counts, firstEraIndex, firstEraTitle };
+  }, []);
+
+  // Extract all available release years
+  const availableYears = useMemo(() => {
+    const yearSet = new Set<string>();
+    allMedia.forEach((m) => {
+      const match = m.releaseYear.match(/\d{4}/);
+      if (match) yearSet.add(match[0]);
+    });
+    return ['all', ...Array.from(yearSet).sort()];
+  }, []);
 
   const phases = ['all', 'Phase 1', 'Phase 2', 'Phase 3', 'Phase 4', 'Phase 5', 'Marvel Television', 'One-Shot'];
 
-  const filteredMedia = allMedia.filter((m) => {
-    if (selectedPhase !== 'all' && m.phase !== selectedPhase) return false;
-    if (selectedType !== 'all' && m.type !== selectedType) return false;
-    return true;
-  });
+  const formats = [
+    { id: 'all', label: 'TODOS LOS FORMATOS' },
+    { id: 'movie', label: '🎬 PELÍCULAS' },
+    { id: 'series', label: '📺 SERIES TV' },
+    { id: 'oneshot', label: '✨ CORTOMETRAJES' },
+  ];
 
-  const renderMediaIcon = (type: string) => {
-    if (type === 'series') {
-      return <Tv className="w-5 h-5 text-sky-400" />;
+  const visualTypes = [
+    { id: 'all', label: 'TODAS LAS TÉCNICAS' },
+    { id: 'live-action', label: '🎭 LIVE-ACTION' },
+    { id: 'animated', label: '🎨 ANIMACIÓN' },
+  ];
+
+  const sortOptions = [
+    { id: 'chronological', label: '⏳ CRONOLÓGICO MCU (HISTORIA)' },
+    { id: 'release-asc', label: '📅 ESTRENO: MÁS ANTIGUAS (2008 →)' },
+    { id: 'release-desc', label: '📅 ESTRENO: MÁS RECIENTES (2025 →)' },
+    { id: 'alpha-asc', label: '🔤 ALFABÉTICO (A - Z)' },
+    { id: 'alpha-desc', label: '🔤 ALFABÉTICO (Z - A)' },
+    { id: 'events-desc', label: '🔥 MAYOR PRESENCIA / EVENTOS' },
+  ];
+
+  // Filter and sort media
+  const filteredAndSortedMedia = useMemo(() => {
+    return allMedia
+      .filter((m) => {
+        // Search filter
+        if (search.trim()) {
+          const q = search.toLowerCase().trim();
+          const matchTitle = m.title.toLowerCase().includes(q);
+          const matchShort = m.shortTitle.toLowerCase().includes(q);
+          const matchDesc = m.description.toLowerCase().includes(q);
+          const matchPhase = m.phase.toLowerCase().includes(q);
+          if (!matchTitle && !matchShort && !matchDesc && !matchPhase) return false;
+        }
+
+        // Phase filter
+        if (selectedPhase !== 'all' && m.phase !== selectedPhase) return false;
+
+        // Year filter
+        if (selectedYear !== 'all') {
+          if (!m.releaseYear.includes(selectedYear)) return false;
+        }
+
+        // Format filter (Movie / Series / One-Shot)
+        if (selectedFormat === 'movie' && m.type !== 'movie') return false;
+        if (selectedFormat === 'series' && m.type !== 'series') return false;
+        if (selectedFormat === 'oneshot' && m.type !== 'oneshot' && m.type !== 'special') return false;
+
+        // Visual Technique filter (Live-Action vs Animated)
+        if (selectedVisualType === 'animated' && !m.isAnimated) return false;
+        if (selectedVisualType === 'live-action' && m.isAnimated) return false;
+
+        return true;
+      })
+      .sort((a, b) => {
+        if (sortBy === 'chronological') {
+          const eraA = mediaTimelineStats.firstEraIndex[a.id] ?? 999;
+          const eraB = mediaTimelineStats.firstEraIndex[b.id] ?? 999;
+          if (eraA !== eraB) return eraA - eraB;
+          return a.timelineOrder - b.timelineOrder;
+        }
+
+        if (sortBy === 'release-asc') {
+          const yearA = parseInt(a.releaseYear.match(/\d{4}/)?.[0] || '9999', 10);
+          const yearB = parseInt(b.releaseYear.match(/\d{4}/)?.[0] || '9999', 10);
+          if (yearA !== yearB) return yearA - yearB;
+          return a.title.localeCompare(b.title);
+        }
+
+        if (sortBy === 'release-desc') {
+          const yearA = parseInt(a.releaseYear.match(/\d{4}/)?.[0] || '0', 10);
+          const yearB = parseInt(b.releaseYear.match(/\d{4}/)?.[0] || '0', 10);
+          if (yearA !== yearB) return yearB - yearA;
+          return a.title.localeCompare(b.title);
+        }
+
+        if (sortBy === 'alpha-asc') {
+          return a.title.localeCompare(b.title);
+        }
+
+        if (sortBy === 'alpha-desc') {
+          return b.title.localeCompare(a.title);
+        }
+
+        if (sortBy === 'events-desc') {
+          const countA = mediaTimelineStats.counts[a.id] || 0;
+          const countB = mediaTimelineStats.counts[b.id] || 0;
+          return countB - countA;
+        }
+
+        return 0;
+      });
+  }, [search, selectedPhase, selectedFormat, selectedVisualType, selectedYear, sortBy, mediaTimelineStats]);
+
+  const renderMediaIcon = (m: (typeof allMedia)[0]) => {
+    if (m.type === 'series') {
+      return <Tv className="w-4 h-4 text-sky-400" />;
     }
-    if (type === 'oneshot' || type === 'special') {
-      return <Sparkles className="w-5 h-5 text-amber-400" />;
+    if (m.type === 'oneshot' || m.type === 'special') {
+      return <Sparkles className="w-4 h-4 text-amber-400" />;
     }
-    return <Clapperboard className="w-5 h-5 text-[#e62429]" />;
+    return <Clapperboard className="w-4 h-4 text-[#e62429]" />;
+  };
+
+  const getFormatLabel = (m: (typeof allMedia)[0]) => {
+    if (m.type === 'series') return 'SERIE TV';
+    if (m.type === 'oneshot') return 'CORTOMETRAJE';
+    if (m.type === 'special') return 'ESPECIAL';
+    return 'PELÍCULA';
+  };
+
+  const hasActiveFilters = Boolean(
+    search ||
+    selectedPhase !== 'all' ||
+    selectedFormat !== 'all' ||
+    selectedVisualType !== 'all' ||
+    selectedYear !== 'all' ||
+    sortBy !== 'chronological'
+  );
+
+  const resetMediaFilters = () => {
+    setSearch('');
+    setSelectedPhase('all');
+    setSelectedFormat('all');
+    setSelectedVisualType('all');
+    setSelectedYear('all');
+    setSortBy('chronological');
   };
 
   return (
@@ -63,31 +216,162 @@ export const MediaScreen: React.FC = () => {
         </p>
       </div>
 
-      {/* Filter Chips */}
-      <div className="flex flex-wrap items-center gap-2 mb-8 bg-[#141414] p-3.5 rounded-xl border border-[#27272a]">
-        <span className="text-xs font-bold text-zinc-400 uppercase tracking-wider mr-2 flex items-center gap-1.5 font-title">
-          <Filter className="w-3.5 h-3.5 text-[#e62429]" />
-          <span>FILTRAR POR FASE:</span>
-        </span>
-        {phases.map((p) => (
-          <button
-            key={p}
-            onClick={() => setSelectedPhase(p)}
-            className={`px-3 py-1.5 rounded text-xs font-bold font-title tracking-wider uppercase transition-all cursor-pointer ${
-              selectedPhase === p
-                ? 'bg-[#e62429] text-white shadow-md'
-                : 'bg-[#000000] text-zinc-400 border border-[#2a2a2a] hover:text-white hover:border-zinc-500 hover:bg-[#181818]'
-            }`}
-          >
-            {p === 'all' ? 'TODAS LAS FASES' : p}
-          </button>
-        ))}
+      {/* Filter & Sort Control Center */}
+      <div className="bg-[#141414] p-5 rounded-xl border border-[#27272a] shadow-xl mb-8 space-y-4 font-din">
+        
+        {/* Search & Sort Row */}
+        <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 justify-between">
+          
+          {/* Search Box */}
+          <div className="relative flex-1">
+            <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-400" />
+            <input
+              type="text"
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              placeholder="Buscar por título, fase o descripción..."
+              className="w-full bg-[#0a0a0a] border border-[#2f2f2f] rounded-lg pl-10 pr-9 py-2 text-sm text-white placeholder-zinc-500 focus:outline-none focus:border-[#e62429] font-din"
+            />
+            {search && (
+              <button
+                onClick={() => setSearch('')}
+                className="absolute right-3 top-1/2 -translate-y-1/2 text-zinc-400 hover:text-white cursor-pointer"
+              >
+                <X className="w-4 h-4" />
+              </button>
+            )}
+          </div>
+
+          {/* Sort Selector */}
+          <div className="flex items-center gap-2">
+            <ArrowUpDown className="w-4 h-4 text-[#e62429] shrink-0" />
+            <select
+              value={sortBy}
+              onChange={(e) => setSortBy(e.target.value)}
+              className="bg-[#0a0a0a] border border-[#2f2f2f] text-zinc-200 text-xs font-bold font-title tracking-wider rounded-lg px-3 py-2 focus:outline-none focus:border-[#e62429] cursor-pointer hover:border-zinc-500 transition-colors uppercase"
+            >
+              {sortOptions.map((opt) => (
+                <option key={opt.id} value={opt.id}>
+                  {opt.label}
+                </option>
+              ))}
+            </select>
+          </div>
+
+          {/* Year Dropdown */}
+          <div className="flex items-center gap-2">
+            <Calendar className="w-4 h-4 text-amber-400 shrink-0" />
+            <select
+              value={selectedYear}
+              onChange={(e) => setSelectedYear(e.target.value)}
+              className="bg-[#0a0a0a] border border-[#2f2f2f] text-zinc-200 text-xs font-bold font-title tracking-wider rounded-lg px-3 py-2 focus:outline-none focus:border-[#e62429] cursor-pointer hover:border-zinc-500 transition-colors uppercase"
+            >
+              <option value="all">📅 TODOS LOS AÑOS</option>
+              {availableYears.filter((y) => y !== 'all').map((y) => (
+                <option key={y} value={y}>
+                  AÑO {y}
+                </option>
+              ))}
+            </select>
+          </div>
+
+          {hasActiveFilters && (
+            <button
+              onClick={resetMediaFilters}
+              className="px-3 py-2 rounded-lg text-xs font-bold font-title tracking-wider uppercase bg-[#222222] hover:bg-[#2e2e2e] text-zinc-300 hover:text-white transition-colors border border-[#333333] cursor-pointer whitespace-nowrap"
+            >
+              LIMPIAR
+            </button>
+          )}
+        </div>
+
+        {/* Formats & Visual Technique Row */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 pt-2 border-t border-[#222222]">
+          
+          {/* Format Selection */}
+          <div>
+            <div className="flex items-center gap-1.5 text-xs font-bold text-zinc-400 uppercase tracking-wider mb-2 font-title">
+              <Film className="w-3.5 h-3.5 text-sky-400" />
+              <span>FORMATO:</span>
+            </div>
+            <div className="flex flex-wrap items-center gap-1.5">
+              {formats.map((f) => (
+                <button
+                  key={f.id}
+                  onClick={() => setSelectedFormat(f.id)}
+                  className={`px-3 py-1 rounded text-xs font-bold font-title tracking-wider uppercase transition-all cursor-pointer whitespace-nowrap ${
+                    selectedFormat === f.id
+                      ? 'bg-sky-600 text-white shadow-md'
+                      : 'bg-[#000000] text-zinc-400 border border-[#2a2a2a] hover:text-white hover:border-zinc-500 hover:bg-[#181818]'
+                  }`}
+                >
+                  {f.label}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {/* Visual Technique Selection */}
+          <div>
+            <div className="flex items-center gap-1.5 text-xs font-bold text-zinc-400 uppercase tracking-wider mb-2 font-title">
+              <Palette className="w-3.5 h-3.5 text-purple-400" />
+              <span>TÉCNICA VISUAL:</span>
+            </div>
+            <div className="flex flex-wrap items-center gap-1.5">
+              {visualTypes.map((v) => (
+                <button
+                  key={v.id}
+                  onClick={() => setSelectedVisualType(v.id)}
+                  className={`px-3 py-1 rounded text-xs font-bold font-title tracking-wider uppercase transition-all cursor-pointer whitespace-nowrap ${
+                    selectedVisualType === v.id
+                      ? 'bg-purple-700 text-white shadow-md'
+                      : 'bg-[#000000] text-zinc-400 border border-[#2a2a2a] hover:text-white hover:border-zinc-500 hover:bg-[#181818]'
+                  }`}
+                >
+                  {v.label}
+                </button>
+              ))}
+            </div>
+          </div>
+
+        </div>
+
+        {/* Phase Filter Chips */}
+        <div className="pt-2 border-t border-[#222222]">
+          <div className="flex items-center gap-1.5 text-xs font-bold text-zinc-400 uppercase tracking-wider mb-2 font-title">
+            <Layers className="w-3.5 h-3.5 text-[#e62429]" />
+            <span>FILTRAR POR FASE / UNIVERSO:</span>
+          </div>
+          <div className="flex flex-wrap items-center gap-1.5">
+            {phases.map((p) => (
+              <button
+                key={p}
+                onClick={() => setSelectedPhase(p)}
+                className={`px-2.5 py-1 rounded text-xs font-bold font-title tracking-wider uppercase transition-all cursor-pointer whitespace-nowrap ${
+                  selectedPhase === p
+                    ? 'bg-[#e62429] text-white shadow-md'
+                    : 'bg-[#000000] text-zinc-400 border border-[#2a2a2a] hover:text-white hover:border-zinc-500 hover:bg-[#181818]'
+                }`}
+              >
+                {p === 'all' ? 'TODAS LAS FASES' : p}
+              </button>
+            ))}
+          </div>
+        </div>
+
+      </div>
+
+      {/* Results Header Count */}
+      <div className="flex items-center justify-between text-xs text-zinc-400 mb-4 px-1 font-din">
+        <span>Mostrando <strong className="text-white font-title">{filteredAndSortedMedia.length}</strong> producciones</span>
+        <span className="text-zinc-500">Orden actual: <strong className="text-zinc-300 uppercase font-title">{sortOptions.find(s => s.id === sortBy)?.label}</strong></span>
       </div>
 
       {/* Media Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-        {filteredMedia.map((m) => {
-          const totalEvents = eventCounts[m.id] || 0;
+        {filteredAndSortedMedia.map((m) => {
+          const totalEvents = mediaTimelineStats.counts[m.id] || 0;
+          const earliestEra = mediaTimelineStats.firstEraTitle[m.id];
           return (
             <div
               key={m.id}
@@ -95,29 +379,52 @@ export const MediaScreen: React.FC = () => {
               className="group relative rounded-xl bg-[#141414] border border-[#27272a] hover:border-[#e62429] hover:bg-[#181818] transition-all p-5 flex flex-col justify-between shadow-xl cursor-pointer"
             >
               <div>
-                {/* Top Badge Row */}
+                {/* Top Badge Row (Format + Visual Technique + Release Year) */}
                 <div className="flex items-center justify-between gap-2 mb-3">
-                  <div className="flex items-center gap-1.5">
-                    {renderMediaIcon(m.type)}
+                  <div className="flex items-center gap-1.5 flex-wrap">
+                    {renderMediaIcon(m)}
+                    
+                    {/* Format Badge: Película vs Serie TV vs Cortometraje */}
                     <span className="text-[10px] font-bold font-title tracking-widest uppercase px-2 py-0.5 rounded bg-[#000000] border border-[#2f2f2f] text-zinc-300">
-                      {m.type === 'series' ? 'SERIE TV' : m.type === 'oneshot' ? 'CORTOMETRAJE' : 'PELÍCULA'}
+                      {getFormatLabel(m)}
                     </span>
+
+                    {/* Technique Badge: Animación vs Live-Action */}
+                    {m.isAnimated ? (
+                      <span className="text-[10px] font-bold font-title tracking-widest uppercase px-2 py-0.5 rounded bg-purple-950/90 border border-purple-600 text-purple-300 flex items-center gap-1">
+                        <Palette className="w-2.5 h-2.5" />
+                        ANIMACIÓN
+                      </span>
+                    ) : (
+                      <span className="text-[10px] font-bold font-title tracking-widest uppercase px-2 py-0.5 rounded bg-[#0a0a0a] border border-[#262626] text-zinc-500">
+                        LIVE-ACTION
+                      </span>
+                    )}
                   </div>
-                  <span className="text-xs font-semibold text-zinc-400 flex items-center gap-1 font-din">
+
+                  <span className="text-xs font-semibold text-zinc-400 flex items-center gap-1 font-din shrink-0">
                     <Calendar className="w-3 h-3 text-zinc-500" />
                     {m.releaseYear}
                   </span>
                 </div>
 
                 {/* Title */}
-                <h3 className="text-lg font-bold text-white group-hover:text-[#e62429] transition-colors mb-2 font-title uppercase tracking-wide">
+                <h3 className="text-lg font-bold text-white group-hover:text-[#e62429] transition-colors mb-1.5 font-title uppercase tracking-wide">
                   {m.title}
                 </h3>
 
-                {/* Phase */}
-                <p className="text-xs font-bold text-[#e62429] mb-3 font-title tracking-wider uppercase">
-                  {m.phase}
-                </p>
+                {/* Phase & Chronological Era */}
+                <div className="flex flex-wrap items-center gap-2 mb-3">
+                  <span className="text-[11px] font-bold text-[#e62429] font-title tracking-wider uppercase">
+                    {m.phase}
+                  </span>
+                  {earliestEra && (
+                    <span className="text-[10px] font-bold font-title tracking-wider uppercase px-2 py-0.5 rounded bg-[#000000] border border-[#2d2d2d] text-amber-400 flex items-center gap-1">
+                      <Hourglass className="w-3 h-3" />
+                      ERA MCU: {earliestEra}
+                    </span>
+                  )}
+                </div>
 
                 {/* Description */}
                 <p className="text-xs text-zinc-400 line-clamp-2 leading-relaxed mb-4 font-din">

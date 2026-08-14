@@ -80,6 +80,8 @@ export interface MediaItem {
   posterColor: string;
   timelineOrder: number;
   description: string;
+  isAnimated?: boolean;
+  chronologicalEra?: string;
 }
 
 export interface InfinityStone {

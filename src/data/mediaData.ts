@@ -659,6 +659,7 @@ export const mediaData: Record<string, MediaItem> = {
     "phase": "Phase 5",
     "posterColor": "#9333ea",
     "timelineOrder": 55,
+    "isAnimated": true,
     "description": "Marvel Animation anthology following the Hatut Zeraze retrieving lost Vibranium artifacts throughout human history."
   }
 };
