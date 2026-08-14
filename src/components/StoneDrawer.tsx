@@ -34,7 +34,7 @@ export const StoneDrawer: React.FC = () => {
         {/* Close Button */}
         <button
           onClick={() => setSelectedStoneId(null)}
-          className="absolute top-5 right-5 p-2 rounded bg-[#141414] text-zinc-400 hover:text-white border border-[#2e2e2e] transition-colors"
+          className="absolute top-5 right-5 p-2 rounded bg-[#141414] text-zinc-400 hover:text-white border border-[#2e2e2e] transition-colors cursor-pointer"
         >
           <X className="w-5 h-5" />
         </button>
@@ -60,11 +60,11 @@ export const StoneDrawer: React.FC = () => {
                 color: stone.colorHex
               }}
             >
-              GEMA DEL INFINITO
+              INFINITY STONE
             </span>
             <h2 className="text-2xl sm:text-3xl font-black text-white mt-2 font-title uppercase tracking-wide">{stone.name}</h2>
             <p className="text-sm font-semibold text-zinc-400 mt-0.5">
-              Contenedor: <span className="text-white font-bold">{stone.vessel}</span>
+              Vessel / Container: <span className="text-white font-bold">{stone.vessel}</span>
             </p>
           </div>
         </div>
@@ -73,7 +73,7 @@ export const StoneDrawer: React.FC = () => {
         <div className="p-4 rounded-xl bg-[#141414] border border-[#27272a] mb-6">
           <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-zinc-400 mb-2 font-title">
             <Zap className="w-4 h-4 text-amber-400" />
-            <span>PODER CÓSMICO</span>
+            <span>COSMIC POWER & ABILITIES</span>
           </div>
           <p className="text-xs text-zinc-200 leading-relaxed">{stone.powerDescription}</p>
         </div>
@@ -81,11 +81,11 @@ export const StoneDrawer: React.FC = () => {
         {/* Info Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
           <div className="p-3.5 rounded-lg bg-[#141414] border border-[#27272a]">
-            <span className="text-[10px] font-bold uppercase tracking-wider text-zinc-400 block mb-1 font-title">Primera Aparición en MCU:</span>
+            <span className="text-[10px] font-bold uppercase tracking-wider text-zinc-400 block mb-1 font-title">First MCU Appearance:</span>
             <p className="text-xs font-bold text-zinc-200">{stone.firstAppearance}</p>
           </div>
           <div className="p-3.5 rounded-lg bg-[#141414] border border-[#27272a]">
-            <span className="text-[10px] font-bold uppercase tracking-wider text-zinc-400 block mb-1 font-title">Estado Actual:</span>
+            <span className="text-[10px] font-bold uppercase tracking-wider text-zinc-400 block mb-1 font-title">Current Canon Status:</span>
             <p className="text-xs font-bold text-zinc-200">{stone.currentStatus}</p>
           </div>
         </div>
@@ -94,7 +94,7 @@ export const StoneDrawer: React.FC = () => {
         <div>
           <h3 className="text-xs font-bold uppercase tracking-wider text-zinc-300 mb-4 flex items-center gap-2 font-title">
             <Clock className="w-4 h-4 text-[#e62429]" />
-            <span>TRAYECTORIA Y PORTADORES A TRAVÉS DEL TIEMPO</span>
+            <span>HISTORICAL JOURNEY & BEARERS THROUGH TIME</span>
           </h3>
 
           <div className="relative pl-6 border-l border-[#27272a] space-y-4">
@@ -122,7 +122,7 @@ export const StoneDrawer: React.FC = () => {
 
                   <p className="text-xs font-bold text-white flex items-center gap-1.5 mb-1">
                     <UserCheck className="w-3.5 h-3.5 text-zinc-400" />
-                    <span>Portador: {step.holder}</span>
+                    <span>Bearer: {step.holder}</span>
                   </p>
                   <p className="text-xs text-zinc-400 leading-relaxed">{step.eventSummary}</p>
                 </div>

@@ -73,25 +73,25 @@ export const MediaScreen: React.FC = () => {
   const phases = ['all', 'Phase 1', 'Phase 2', 'Phase 3', 'Phase 4', 'Phase 5', 'Marvel Television', 'One-Shot'];
 
   const formats = [
-    { id: 'all', label: 'TODOS LOS FORMATOS' },
-    { id: 'movie', label: '🎬 PELÍCULAS' },
-    { id: 'series', label: '📺 SERIES TV' },
-    { id: 'oneshot', label: '✨ CORTOMETRAJES' },
+    { id: 'all', label: 'ALL FORMATS' },
+    { id: 'movie', label: '🎬 MOVIES' },
+    { id: 'series', label: '📺 TV SERIES' },
+    { id: 'oneshot', label: '✨ SHORTS & SPECIALS' },
   ];
 
   const visualTypes = [
-    { id: 'all', label: 'TODAS LAS TÉCNICAS' },
+    { id: 'all', label: 'ALL TECHNIQUES' },
     { id: 'live-action', label: '🎭 LIVE-ACTION' },
-    { id: 'animated', label: '🎨 ANIMACIÓN' },
+    { id: 'animated', label: '🎨 ANIMATION' },
   ];
 
   const sortOptions = [
-    { id: 'chronological', label: '⏳ CRONOLÓGICO MCU (HISTORIA)' },
-    { id: 'release-asc', label: '📅 ESTRENO: MÁS ANTIGUAS (2008 →)' },
-    { id: 'release-desc', label: '📅 ESTRENO: MÁS RECIENTES (2025 →)' },
-    { id: 'alpha-asc', label: '🔤 ALFABÉTICO (A - Z)' },
-    { id: 'alpha-desc', label: '🔤 ALFABÉTICO (Z - A)' },
-    { id: 'events-desc', label: '🔥 MAYOR PRESENCIA / EVENTOS' },
+    { id: 'chronological', label: '⏳ MCU CHRONOLOGICAL (STORY)' },
+    { id: 'release-asc', label: '📅 RELEASE: OLDEST FIRST (2008 →)' },
+    { id: 'release-desc', label: '📅 RELEASE: NEWEST FIRST (2025 →)' },
+    { id: 'alpha-asc', label: '🔤 ALPHABETICAL (A - Z)' },
+    { id: 'alpha-desc', label: '🔤 ALPHABETICAL (Z - A)' },
+    { id: 'events-desc', label: '🔥 MOST TIMELINE EVENTS' },
   ];
 
   // Filter and sort media
@@ -178,10 +178,10 @@ export const MediaScreen: React.FC = () => {
   };
 
   const getFormatLabel = (m: (typeof allMedia)[0]) => {
-    if (m.type === 'series') return 'SERIE TV';
-    if (m.type === 'oneshot') return 'CORTOMETRAJE';
-    if (m.type === 'special') return 'ESPECIAL';
-    return 'PELÍCULA';
+    if (m.type === 'series') return 'TV SERIES';
+    if (m.type === 'oneshot') return 'SHORT FILM';
+    if (m.type === 'special') return 'SPECIAL';
+    return 'MOVIE';
   };
 
   const hasActiveFilters = Boolean(
@@ -209,10 +209,10 @@ export const MediaScreen: React.FC = () => {
       <div className="mb-8">
         <h1 className="text-3xl sm:text-4xl font-black text-white tracking-wider flex items-center gap-3 font-title uppercase">
           <Clapperboard className="w-8 h-8 text-[#e62429]" />
-          <span>PELÍCULAS, SERIES & CORTOMETRAJES</span>
+          <span>MOVIES, SERIES & SHORTS</span>
         </h1>
         <p className="text-sm text-zinc-400 mt-1 font-din">
-          Catálogo completo de producciones de Marvel Studios y Marvel Television que componen la cronología oficial.
+          Complete production archive of Marvel Studios and Marvel Television releases comprising the official timeline.
         </p>
       </div>
 
@@ -229,7 +229,7 @@ export const MediaScreen: React.FC = () => {
               type="text"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              placeholder="Buscar por título, fase o descripción..."
+              placeholder="Search by title, phase, or description..."
               className="w-full bg-[#0a0a0a] border border-[#2f2f2f] rounded-lg pl-10 pr-9 py-2 text-sm text-white placeholder-zinc-500 focus:outline-none focus:border-[#e62429] font-din"
             />
             {search && (
@@ -266,10 +266,10 @@ export const MediaScreen: React.FC = () => {
               onChange={(e) => setSelectedYear(e.target.value)}
               className="bg-[#0a0a0a] border border-[#2f2f2f] text-zinc-200 text-xs font-bold font-title tracking-wider rounded-lg px-3 py-2 focus:outline-none focus:border-[#e62429] cursor-pointer hover:border-zinc-500 transition-colors uppercase"
             >
-              <option value="all">📅 TODOS LOS AÑOS</option>
+              <option value="all">📅 ALL YEARS</option>
               {availableYears.filter((y) => y !== 'all').map((y) => (
                 <option key={y} value={y}>
-                  AÑO {y}
+                  YEAR {y}
                 </option>
               ))}
             </select>
@@ -280,7 +280,7 @@ export const MediaScreen: React.FC = () => {
               onClick={resetMediaFilters}
               className="px-3 py-2 rounded-lg text-xs font-bold font-title tracking-wider uppercase bg-[#222222] hover:bg-[#2e2e2e] text-zinc-300 hover:text-white transition-colors border border-[#333333] cursor-pointer whitespace-nowrap"
             >
-              LIMPIAR
+              RESET
             </button>
           )}
         </div>
@@ -292,7 +292,7 @@ export const MediaScreen: React.FC = () => {
           <div>
             <div className="flex items-center gap-1.5 text-xs font-bold text-zinc-400 uppercase tracking-wider mb-2 font-title">
               <Film className="w-3.5 h-3.5 text-sky-400" />
-              <span>FORMATO:</span>
+              <span>FORMAT:</span>
             </div>
             <div className="flex flex-wrap items-center gap-1.5">
               {formats.map((f) => (
@@ -315,7 +315,7 @@ export const MediaScreen: React.FC = () => {
           <div>
             <div className="flex items-center gap-1.5 text-xs font-bold text-zinc-400 uppercase tracking-wider mb-2 font-title">
               <Palette className="w-3.5 h-3.5 text-purple-400" />
-              <span>TÉCNICA VISUAL:</span>
+              <span>VISUAL TECHNIQUE:</span>
             </div>
             <div className="flex flex-wrap items-center gap-1.5">
               {visualTypes.map((v) => (
@@ -340,7 +340,7 @@ export const MediaScreen: React.FC = () => {
         <div className="pt-2 border-t border-[#222222]">
           <div className="flex items-center gap-1.5 text-xs font-bold text-zinc-400 uppercase tracking-wider mb-2 font-title">
             <Layers className="w-3.5 h-3.5 text-[#e62429]" />
-            <span>FILTRAR POR FASE / UNIVERSO:</span>
+            <span>FILTER BY PHASE / UNIVERSE:</span>
           </div>
           <div className="flex flex-wrap items-center gap-1.5">
             {phases.map((p) => (
@@ -353,7 +353,7 @@ export const MediaScreen: React.FC = () => {
                     : 'bg-[#000000] text-zinc-400 border border-[#2a2a2a] hover:text-white hover:border-zinc-500 hover:bg-[#181818]'
                 }`}
               >
-                {p === 'all' ? 'TODAS LAS FASES' : p}
+                {p === 'all' ? 'ALL PHASES' : p}
               </button>
             ))}
           </div>
@@ -363,8 +363,8 @@ export const MediaScreen: React.FC = () => {
 
       {/* Results Header Count */}
       <div className="flex items-center justify-between text-xs text-zinc-400 mb-4 px-1 font-din">
-        <span>Mostrando <strong className="text-white font-title">{filteredAndSortedMedia.length}</strong> producciones</span>
-        <span className="text-zinc-500">Orden actual: <strong className="text-zinc-300 uppercase font-title">{sortOptions.find(s => s.id === sortBy)?.label}</strong></span>
+        <span>Showing <strong className="text-white font-title">{filteredAndSortedMedia.length}</strong> titles</span>
+        <span className="text-zinc-500">Sorted by: <strong className="text-zinc-300 uppercase font-title">{sortOptions.find(s => s.id === sortBy)?.label}</strong></span>
       </div>
 
       {/* Media Grid */}
@@ -384,16 +384,16 @@ export const MediaScreen: React.FC = () => {
                   <div className="flex items-center gap-1.5 flex-wrap">
                     {renderMediaIcon(m)}
                     
-                    {/* Format Badge: Película vs Serie TV vs Cortometraje */}
+                    {/* Format Badge: Movie vs TV Series vs Short */}
                     <span className="text-[10px] font-bold font-title tracking-widest uppercase px-2 py-0.5 rounded bg-[#000000] border border-[#2f2f2f] text-zinc-300">
                       {getFormatLabel(m)}
                     </span>
 
-                    {/* Technique Badge: Animación vs Live-Action */}
+                    {/* Technique Badge: Animation vs Live-Action */}
                     {m.isAnimated ? (
                       <span className="text-[10px] font-bold font-title tracking-widest uppercase px-2 py-0.5 rounded bg-purple-950/90 border border-purple-600 text-purple-300 flex items-center gap-1">
                         <Palette className="w-2.5 h-2.5" />
-                        ANIMACIÓN
+                        ANIMATION
                       </span>
                     ) : (
                       <span className="text-[10px] font-bold font-title tracking-widest uppercase px-2 py-0.5 rounded bg-[#0a0a0a] border border-[#262626] text-zinc-500">
@@ -421,7 +421,7 @@ export const MediaScreen: React.FC = () => {
                   {earliestEra && (
                     <span className="text-[10px] font-bold font-title tracking-wider uppercase px-2 py-0.5 rounded bg-[#000000] border border-[#2d2d2d] text-amber-400 flex items-center gap-1">
                       <Hourglass className="w-3 h-3" />
-                      ERA MCU: {earliestEra}
+                      MCU ERA: {earliestEra}
                     </span>
                   )}
                 </div>
@@ -434,10 +434,10 @@ export const MediaScreen: React.FC = () => {
 
               {/* Footer Events Count */}
               <div className="pt-3 border-t border-[#242424] flex items-center justify-between text-xs font-din">
-                <span className="text-zinc-500 text-[11px] uppercase font-semibold">PRESENCIA CRONOLÓGICA</span>
+                <span className="text-zinc-500 text-[11px] uppercase font-semibold">TIMELINE PRESENCE</span>
                 <span className="font-bold text-[#e62429] flex items-center gap-1 text-xs">
                   <Clock className="w-3 h-3" />
-                  {totalEvents} {totalEvents === 1 ? 'evento' : 'eventos'}
+                  {totalEvents} {totalEvents === 1 ? 'event' : 'events'}
                 </span>
               </div>
             </div>

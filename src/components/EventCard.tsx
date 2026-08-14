@@ -103,7 +103,7 @@ export const EventCard: React.FC<EventCardProps> = ({ event }) => {
           <button
             onClick={() => setSelectedMediaId(event.mediaKey)}
             className="flex items-center gap-1.5 px-2.5 py-1 rounded bg-[#000000] hover:bg-[#e62429] text-white border border-[#333333] hover:border-[#e62429] transition-all group/media font-title tracking-wider text-xs cursor-pointer shadow-sm"
-            title={`Ver detalles de ${media?.type === 'series' ? 'esta serie' : media?.type === 'oneshot' ? 'este cortometraje' : 'esta película'}`}
+            title={`View details for ${event.mediaTitle}`}
           >
             {renderMediaIcon()}
             <span>{event.mediaTitle.toUpperCase()}</span>
@@ -123,7 +123,7 @@ export const EventCard: React.FC<EventCardProps> = ({ event }) => {
           {event.isAlternativeTimeline && (
             <span className="flex items-center gap-1 text-[10px] font-bold font-title tracking-wider px-2 py-0.5 rounded bg-amber-950/80 border border-amber-600/60 text-amber-300 select-none">
               <GitFork className="w-3 h-3" />
-              <span>LÍNEA TEMPORAL ALTERNATIVA</span>
+              <span>ALTERNATE TIMELINE</span>
             </span>
           )}
         </div>
@@ -138,17 +138,17 @@ export const EventCard: React.FC<EventCardProps> = ({ event }) => {
                 ? 'bg-emerald-950 text-emerald-300 border-emerald-600 hover:bg-emerald-900'
                 : 'bg-[#000000] text-zinc-400 border-[#2a2a2a] hover:text-white hover:border-zinc-500'
             }`}
-            title={read ? 'Marcar como no leído' : 'Marcar como leído / visto'}
+            title={read ? 'Mark as unread' : 'Mark as read / watched'}
           >
             {read ? (
               <>
                 <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
-                <span className="hidden sm:inline text-[11px]">LEÍDO</span>
+                <span className="hidden sm:inline text-[11px]">READ</span>
               </>
             ) : (
               <>
                 <Circle className="w-3.5 h-3.5" />
-                <span className="hidden sm:inline text-[11px]">POR LEER</span>
+                <span className="hidden sm:inline text-[11px]">UNREAD</span>
               </>
             )}
           </button>
@@ -161,7 +161,7 @@ export const EventCard: React.FC<EventCardProps> = ({ event }) => {
                 ? 'bg-[#e62429] text-white border-[#e62429] shadow-md hover:bg-[#c5191e]'
                 : 'bg-[#000000] text-zinc-400 border-[#2a2a2a] hover:text-white hover:border-zinc-500'
             }`}
-            title={bookmarked ? 'Quitar de guardados' : 'Guardar evento'}
+            title={bookmarked ? 'Remove bookmark' : 'Bookmark event'}
           >
             <Bookmark className={`w-3.5 h-3.5 ${bookmarked ? 'fill-white' : ''}`} />
           </button>
@@ -200,7 +200,7 @@ export const EventCard: React.FC<EventCardProps> = ({ event }) => {
                   borderColor: `${stone.colorHex}77`,
                   color: stone.colorHex,
                 }}
-                title={`Ver historia de la Gema ${stone.name}`}
+                title={`View journey for ${stone.name} (${stone.vessel})`}
               >
                 <Sparkles className="w-3 h-3 animate-spin" style={{ animationDuration: '6s' }} />
                 <span>{stone.vessel.toUpperCase()}</span>
@@ -217,7 +217,7 @@ export const EventCard: React.FC<EventCardProps> = ({ event }) => {
                 key={cId}
                 onClick={() => setSelectedCharacterId(char.id)}
                 className="flex items-center gap-1.5 px-2.5 py-1 rounded text-xs font-semibold bg-[#000000] border border-[#2e2e2e] hover:border-[#e62429] hover:bg-[#1a1a1a] text-zinc-300 hover:text-white transition-all font-din cursor-pointer shadow-sm"
-                title={`Abrir expediente de ${char.name}`}
+                title={`Open dossier for ${char.name}`}
               >
                 <span
                   className="w-2 h-2 rounded-full shrink-0"
@@ -232,7 +232,7 @@ export const EventCard: React.FC<EventCardProps> = ({ event }) => {
           {event.deaths.length > 0 && (
             <div className="flex items-center gap-1 px-2.5 py-1 rounded text-xs font-bold bg-[#330c0e] border border-[#e62429]/60 text-red-300 font-din select-none">
               <Skull className="w-3.5 h-3.5 text-[#e62429]" />
-              <span>Bajas: {event.deaths.join(', ')}</span>
+              <span>Casualties: {event.deaths.join(', ')}</span>
             </div>
           )}
         </div>

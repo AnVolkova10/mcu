@@ -3,211 +3,211 @@ import { InfinityStone } from '@/types';
 export const infinityStonesData: InfinityStone[] = [
   {
     "id": "space",
-    "name": "Space Stone (Gema del Espacio)",
+    "name": "Space Stone",
     "cssClass": "tesseract",
-    "color": "Azul Cósmico",
+    "color": "Cosmic Blue",
     "colorHex": "#3b82f6",
     "glowColor": "rgba(59, 130, 246, 0.6)",
     "vessel": "Tesseract / Cosmic Cube",
-    "powerDescription": "Permite teletransportarse a través del universo y manipular el tejido del espacio-tiempo.",
+    "powerDescription": "Grants omnipresent teleportation across universal space, portal creation, and manipulation of space-time fabric.",
     "firstAppearance": "Captain America: The First Avenger / Thor",
-    "currentStatus": "Destruida por Thanos en 2018 tras el Chasquido.",
+    "currentStatus": "Destroyed by Thanos in 2018 following the Snap.",
     "journey": [
       {
         "era": "965 AD",
-        "location": "Tønsberg, Noruega",
+        "location": "Tønsberg, Norway",
         "holder": "Odin (Asgard)",
-        "eventSummary": "Odin oculta el Tesseract en un templo nórdico tras vencer a los Gigantes de Hielo."
+        "eventSummary": "Odin conceals the Tesseract in a Norse temple after triumphing over the Frost Giants of Jotunheim."
       },
       {
         "era": "1942",
-        "location": "Tønsberg, Noruega",
+        "location": "Tønsberg, Norway",
         "holder": "Johann Schmidt (Red Skull)",
-        "eventSummary": "Red Skull roba el Tesseract para alimentar las armas científicas de HYDRA."
+        "eventSummary": "Red Skull steals the Tesseract to power HYDRA's advanced scientific weaponry."
       },
       {
         "era": "1945",
-        "location": "Océano Ártico",
+        "location": "Arctic Ocean",
         "holder": "Howard Stark / SSR",
-        "eventSummary": "Howard Stark recupera el Tesseract del fondo del océano."
+        "eventSummary": "Howard Stark recovers the glowing Tesseract from the ocean floor while searching for Captain America."
       },
       {
         "era": "1995",
-        "location": "Laboratorio de Mar-Vell",
+        "location": "Mar-Vell's Orbital Lab",
         "holder": "Mar-Vell / Goose / Nick Fury",
-        "eventSummary": "Goose el Flerken ingiere el Tesseract y luego lo regurgita en el escritorio de Nick Fury en SHIELD."
+        "eventSummary": "Goose the Flerken swallows the Tesseract and later coughs it up onto Nick Fury's desk at S.H.I.E.L.D."
       },
       {
         "era": "2012",
-        "location": "Nueva York",
+        "location": "New York City",
         "holder": "Loki / Thor",
-        "eventSummary": "Loki abre el portal Chitauri; tras la batalla de NY, Thor lo lleva a la bóveda de Asgard."
+        "eventSummary": "Loki opens the Chitauri portal; after the Battle of NY, Thor transports it to the royal vault on Asgard."
       },
       {
         "era": "2017",
         "location": "Asgard / Ragnarok",
         "holder": "Loki",
-        "eventSummary": "Loki recupera el Tesseract de la bóveda de Asgard antes de la destrucción por Surtur."
+        "eventSummary": "Loki snatches the Tesseract from the Asgardian vault moments before the realm's destruction by Surtur."
       },
       {
         "era": "2018",
-        "location": "Statesman (Nave Asgardiana)",
+        "location": "Statesman (Asgardian Refugee Vessel)",
         "holder": "Thanos",
-        "eventSummary": "Thanos rompe el Tesseract y coloca la Gema del Espacio en el Guantelete del Infinito."
+        "eventSummary": "Thanos crushes the Tesseract casing with his bare hands and slots the Space Stone into the Infinity Gauntlet."
       }
     ]
   },
   {
     "id": "reality",
-    "name": "Reality Stone (Gema de la Realidad)",
+    "name": "Reality Stone",
     "cssClass": "aether",
-    "color": "Rojo Carmesí",
+    "color": "Crimson Red",
     "colorHex": "#ef4444",
     "glowColor": "rgba(239, 68, 68, 0.6)",
-    "vessel": "Aether (Éter)",
-    "powerDescription": "Capaz de alterar la realidad misma, transformando materia según la voluntad del portador.",
+    "vessel": "Aether",
+    "powerDescription": "Capable of altering the fundamental laws of physics and reality, transmuting matter according to the wielder's desire.",
     "firstAppearance": "Thor: The Dark World",
-    "currentStatus": "Destruida por Thanos en 2018.",
+    "currentStatus": "Destroyed by Thanos in 2018.",
     "journey": [
       {
         "era": "Eons ago",
         "location": "Svartalfheim",
-        "holder": "Bor (Padre de Odin)",
-        "eventSummary": "Bor derrota a Malekith y a los Elfos Oscuros, escondiendo el Éter en una columna de piedra."
+        "holder": "Bor (Father of Odin)",
+        "eventSummary": "King Bor defeats Malekith and the Dark Elves, encasing the fluid Aether deep within a stone obelisk."
       },
       {
         "era": "2013",
-        "location": "Svartalfheim / Asgard / Londres",
-        "holder": "Jane Foster / Malekith / Thor / Coleccionista",
-        "eventSummary": "Jane Foster absorbe accidentalmente el Éter; Thor vence a Malekith y los guerreros de Asgard se lo entregan al Coleccionista en Knowhere."
+        "location": "Svartalfheim / Asgard / London",
+        "holder": "Jane Foster / Malekith / Thor / The Collector",
+        "eventSummary": "Jane Foster absorbs the Aether; Thor defeats Malekith and Asgardian warriors deliver it to The Collector on Knowhere."
       },
       {
         "era": "2018",
         "location": "Knowhere",
         "holder": "Thanos",
-        "eventSummary": "Thanos embosca al Coleccionista y obtiene la Gema de la Realidad."
+        "eventSummary": "Thanos ravages Knowhere, ambushes the Guardians of the Galaxy with reality illusions, and claims the Reality Stone."
       }
     ]
   },
   {
     "id": "power",
-    "name": "Power Stone (Gema del Poder)",
+    "name": "Power Stone",
     "cssClass": "power-stone",
-    "color": "Púrpura Destructor",
+    "color": "Destructive Purple",
     "colorHex": "#a855f7",
     "glowColor": "rgba(168, 85, 247, 0.6)",
-    "vessel": "El Orbe de Morag",
-    "powerDescription": "Otorga fuerza sobrehumana inconmensurable y el poder de erradicar civilizaciones y planetas enteros.",
+    "vessel": "The Orb of Morag",
+    "powerDescription": "Bestows boundless superhuman strength and the cataclysmic energy required to obliterate entire planets and cosmic fleets.",
     "firstAppearance": "Guardians of the Galaxy",
-    "currentStatus": "Destruida por Thanos en 2018.",
+    "currentStatus": "Destroyed by Thanos in 2018.",
     "journey": [
       {
-        "era": "Ancestral",
+        "era": "Ancient Era",
         "location": "Morag",
-        "holder": "Templarios Celestiales",
-        "eventSummary": "Encapsulada dentro del Orbe en las profundidades del templo sumergido de Morag."
+        "holder": "Celestial Templars",
+        "eventSummary": "Encapsulated inside the protective Orb and submerged deep within the temple vault on the ocean planet Morag."
       },
       {
         "era": "2014",
         "location": "Morag / Xandar",
-        "holder": "Peter Quill / Ronan el Acusador / Nova Corps",
-        "eventSummary": "Los Guardianes de la Galaxia canalizan su energía juntos para destruir a Ronan y entregan el Orbe a la seguridad de Nova Corps en Xandar."
+        "holder": "Peter Quill / Ronan the Accuser / Nova Corps",
+        "eventSummary": "The Guardians of the Galaxy link hands to contain its raw surge, destroy Ronan, and entrust the Orb to the Nova Corps on Xandar."
       },
       {
         "era": "2018",
         "location": "Xandar",
         "holder": "Thanos",
-        "eventSummary": "Thanos diezma Xandar y toma la primera gema de su guantelete."
+        "eventSummary": "Thanos decimates Xandar off-screen to secure the Power Stone as the first gem in his quest."
       }
     ]
   },
   {
     "id": "mind",
-    "name": "Mind Stone (Gema de la Mente)",
+    "name": "Mind Stone",
     "cssClass": "mind-stone",
-    "color": "Amarillo Astral",
+    "color": "Astral Yellow",
     "colorHex": "#eab308",
     "glowColor": "rgba(234, 179, 8, 0.6)",
-    "vessel": "Cetro Chitauri / Frente de Vision",
-    "powerDescription": "Control mental absoluto, telepatía, intelecto supremo y chispa vital capaz de crear conciencias sintéticas.",
+    "vessel": "Chitauri Scepter / Vision's Forehead",
+    "powerDescription": "Provides absolute psionic domination, telepathy, supreme intellect, and the primordial spark capable of birthing synthetic consciousness.",
     "firstAppearance": "The Avengers / Avengers: Age of Ultron",
-    "currentStatus": "Arrancada de la frente de Visión por Thanos en Wakanda (2018).",
+    "currentStatus": "Ripped from Vision's forehead by Thanos in Wakanda (2018).",
     "journey": [
       {
         "era": "2012",
-        "location": "Santuario / Nueva York",
+        "location": "Sanctuary / New York City",
         "holder": "Thanos / Loki / S.H.I.E.L.D. (HYDRA)",
-        "eventSummary": "Thanos presta el cetro a Loki para la invasión de la Tierra; tras la batalla es confiscado por HYDRA encubierta."
+        "eventSummary": "Thanos loans the scepter to Loki for the invasion of Earth; recovered after the battle by undercover HYDRA operatives."
       },
       {
         "era": "2015",
-        "location": "Sokovia / Torre de los Vengadores",
+        "location": "Sokovia / Avengers Tower",
         "holder": "Baron Strucker / Ultron / Vision",
-        "eventSummary": "Strucker experimenta en Wanda y Pietro; Ultron crea el cuerpo sintético de Visión donde la gema cobra vida."
+        "eventSummary": "Strucker enhances Wanda and Pietro; Ultron crafts Vision's vibranium body where the Mind Stone awakens sentient life."
       },
       {
         "era": "2018",
         "location": "Wakanda",
         "holder": "Thanos",
-        "eventSummary": "Thanos retrocede el tiempo con la Gema del Tiempo tras la detonación de Wanda y arranca la gema de Visión."
+        "eventSummary": "Thanos reverses time with the Time Stone to undo Wanda's destruction of the stone and tears it from Vision's head."
       }
     ]
   },
   {
     "id": "time",
-    "name": "Time Stone (Gema del Tiempo)",
+    "name": "Time Stone",
     "cssClass": "eye-of-agamotto",
-    "color": "Verde Temporal",
+    "color": "Temporal Green",
     "colorHex": "#22c55e",
     "glowColor": "rgba(34, 197, 94, 0.6)",
-    "vessel": "Ojo de Agamotto",
-    "powerDescription": "Permite manipular el flujo temporal: retroceder, avanzar, crear bucles temporales y ver futuros alternos.",
+    "vessel": "Eye of Agamotto",
+    "powerDescription": "Grants mastery over the temporal stream: rewinding, fast-forwarding, creating causal time loops, and viewing alternate timelines.",
     "firstAppearance": "Doctor Strange",
-    "currentStatus": "Destruida por Thanos en 2018.",
+    "currentStatus": "Destroyed by Thanos in 2018.",
     "journey": [
       {
-        "era": "Ancestral",
+        "era": "Ancient Era",
         "location": "Kamar-Taj",
-        "holder": "Agamotto / Ancestral",
-        "eventSummary": "El primer Hechicero Supremo Agamotto crea el amuleto protector para salvaguardar la Tierra."
+        "holder": "Agamotto / Ancient One",
+        "eventSummary": "The first Sorcerer Supreme, Agamotto, crafts the mystical amulet relic to defend Earth from interdimensional threats."
       },
       {
         "era": "2016",
-        "location": "Hong Kong / Dimensión Oscura",
+        "location": "Hong Kong / Dark Dimension",
         "holder": "Doctor Stephen Strange",
-        "eventSummary": "Strange atrapa a Dormammu en un bucle temporal infinito para salvar el planeta."
+        "eventSummary": "Strange traps Dormammu in an infinite temporal loop to force a cosmic bargain and safeguard Earth."
       },
       {
         "era": "2018",
-        "location": "Titán",
+        "location": "Titan",
         "holder": "Thanos",
-        "eventSummary": "Doctor Strange entrega la Gema del Tiempo a Thanos para salvar la vida de Tony Stark y asegurar el único futuro victorioso (1 en 14,000,605)."
+        "eventSummary": "Doctor Strange surrenders the Time Stone to Thanos to spare Tony Stark's life and ensure the single victorious future (1 in 14,000,605)."
       }
     ]
   },
   {
     "id": "soul",
-    "name": "Soul Stone (Gema del Alma)",
+    "name": "Soul Stone",
     "cssClass": "soul-stone",
-    "color": "Naranja Etéreo",
+    "color": "Ethereal Orange",
     "colorHex": "#f97316",
     "glowColor": "rgba(249, 115, 22, 0.6)",
-    "vessel": "Altar de Vormir",
-    "powerDescription": "Gobierna sobre la vida, la muerte y el plano astral de las almas. Exige un sacrificio irreparable (\"un alma por un alma\").",
+    "vessel": "Altar of Vormir",
+    "powerDescription": "Commands authority over life, death, and the metaphysical astral plane of souls. Demands an irreparable sacrifice: 'a soul for a soul'.",
     "firstAppearance": "Avengers: Infinity War",
-    "currentStatus": "Destruida por Thanos en 2018.",
+    "currentStatus": "Destroyed by Thanos in 2018.",
     "journey": [
       {
         "era": "Eons ago",
         "location": "Vormir",
-        "holder": "Guardián de la Piedra (Red Skull)",
-        "eventSummary": "Johann Schmidt es transportado por el Tesseract a Vormir como castigo cósmico para guiar a otros."
+        "holder": "Stonekeeper (Red Skull)",
+        "eventSummary": "Johann Schmidt is banished across the cosmos to Vormir as a spectral guide who leads others to a treasure he cannot possess."
       },
       {
         "era": "2018",
         "location": "Vormir",
         "holder": "Thanos",
-        "eventSummary": "Thanos sacrifica a su hija adoptiva Gamora lanzándola por el acantilado para reclamar la Gema del Alma."
+        "eventSummary": "Thanos sacrifices his adopted daughter Gamora off the cliff edge to manifest and claim the Soul Stone."
       }
     ]
   }

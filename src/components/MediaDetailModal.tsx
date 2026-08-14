@@ -11,7 +11,8 @@ import {
   Calendar, 
   Layers, 
   ArrowRight,
-  Clock
+  Clock,
+  Palette
 } from 'lucide-react';
 
 export const MediaDetailModal: React.FC = () => {
@@ -61,6 +62,13 @@ export const MediaDetailModal: React.FC = () => {
     return <Clapperboard className="w-8 h-8 text-white" />;
   };
 
+  const getFormatLabel = () => {
+    if (media.type === 'series') return 'TV SERIES';
+    if (media.type === 'oneshot') return 'SHORT FILM';
+    if (media.type === 'special') return 'SPECIAL';
+    return 'MOVIE';
+  };
+
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md transition-opacity font-din">
       <div className="relative w-full max-w-2xl max-h-[90vh] bg-[#0d0d0d] border border-[#27272a] rounded-2xl shadow-2xl p-6 sm:p-8 overflow-y-auto">
@@ -88,13 +96,19 @@ export const MediaDetailModal: React.FC = () => {
                 {media.phase}
               </span>
               <span className="text-[10px] font-bold font-title tracking-widest uppercase px-2 py-0.5 rounded bg-[#161616] border border-[#2e2e2e] text-zinc-300">
-                {media.type === 'series' ? 'SERIE TV' : media.type === 'oneshot' ? 'CORTOMETRAJE' : 'PELÍCULA'}
+                {getFormatLabel()}
               </span>
+              {media.isAnimated && (
+                <span className="text-[10px] font-bold font-title tracking-widest uppercase px-2 py-0.5 rounded bg-purple-950 border border-purple-600 text-purple-300 flex items-center gap-1">
+                  <Palette className="w-2.5 h-2.5" />
+                  ANIMATION
+                </span>
+              )}
             </div>
             <h2 className="text-2xl font-black text-white mt-1.5 font-title uppercase tracking-wide">{media.title}</h2>
             <p className="text-xs text-zinc-400 mt-0.5 flex items-center gap-1.5 font-din">
               <Calendar className="w-3.5 h-3.5 text-zinc-500" />
-              <span>Año de Estreno: {media.releaseYear}</span>
+              <span>Release Year: {media.releaseYear}</span>
             </p>
           </div>
         </div>
@@ -108,12 +122,12 @@ export const MediaDetailModal: React.FC = () => {
         <div>
           <h3 className="text-xs font-bold uppercase tracking-wider text-zinc-300 mb-3 flex items-center gap-2 font-title">
             <Clock className="w-4 h-4 text-[#e62429]" />
-            <span>EVENTOS DE ESTA OBRA EN LA CRONOLOGÍA ({events.length})</span>
+            <span>TIMELINE EVENTS FROM THIS TITLE ({events.length})</span>
           </h3>
 
           <div className="space-y-3">
             {events.length === 0 ? (
-              <p className="text-xs text-zinc-500 italic">No hay eventos directos registrados para este título.</p>
+              <p className="text-xs text-zinc-500 italic">No direct chronological events registered for this title.</p>
             ) : (
               events.map((evt, idx) => (
                 <div
@@ -123,10 +137,10 @@ export const MediaDetailModal: React.FC = () => {
                 >
                   <div className="flex items-center justify-between gap-2 mb-2">
                     <span className="text-xs font-bold text-[#e62429] font-title tracking-wider">
-                      AÑO EN CRONOLOGÍA: {evt.eraTitle}
+                      TIMELINE ERA: {evt.eraTitle}
                     </span>
                     <span className="text-[11px] text-zinc-400 flex items-center gap-1 group-hover:text-white transition-colors">
-                      Ir al punto en la cronología <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
+                      Jump to timeline event <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
                     </span>
                   </div>
 

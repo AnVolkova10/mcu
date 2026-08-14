@@ -43,14 +43,14 @@ export const StatsScreen: React.FC = () => {
       <div className="mb-8">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded bg-[#e62429] text-white text-xs font-bold font-title tracking-widest uppercase mb-3 shadow">
           <ShieldCheck className="w-3.5 h-3.5" />
-          <span>NIVEL DE SEGURIDAD: ALPHA-OMEGA</span>
+          <span>SECURITY CLEARANCE: ALPHA-OMEGA</span>
         </div>
         <h1 className="text-3xl sm:text-4xl font-black text-white tracking-wider flex items-center gap-3 font-title uppercase">
           <BarChart2 className="w-8 h-8 text-[#e62429]" />
-          <span>TERMINAL S.H.I.E.L.D. & ESTADÍSTICAS</span>
+          <span>S.H.I.E.L.D. ARCHIVE & TIMELINE METRICS</span>
         </h1>
         <p className="text-sm text-zinc-400 mt-1 font-din">
-          Métricas consolidadas, progreso de lectura y desglose de eventos de la Sagrada Línea Temporal.
+          Consolidated intelligence, reading progress, and event distribution across the Sacred Timeline.
         </p>
       </div>
 
@@ -60,10 +60,10 @@ export const StatsScreen: React.FC = () => {
           <div>
             <h2 className="text-xl font-bold text-white flex items-center gap-2 font-title uppercase tracking-wide">
               <CheckCircle2 className="w-5 h-5 text-[#e62429]" />
-              <span>Progreso de Lectura de la Cronología</span>
+              <span>Timeline Archive Reading Progress</span>
             </h2>
             <p className="text-xs text-zinc-400 mt-0.5 font-din">
-              Has revisado {readEventIds.length} de {totalEvents} acontecimientos registrados.
+              You have read {readEventIds.length} of {totalEvents} recorded chronological events.
             </p>
           </div>
           <span className="text-3xl font-black text-[#e62429] font-title">{progressPercent}%</span>
@@ -84,37 +84,37 @@ export const StatsScreen: React.FC = () => {
         <div className="p-4 rounded-xl bg-[#141414] border border-[#27272a] text-center">
           <Clock className="w-5 h-5 text-[#e62429] mx-auto mb-2" />
           <span className="text-2xl font-black text-white block font-title">{totalEras}</span>
-          <span className="text-[11px] font-bold text-zinc-400 uppercase font-title tracking-wider">Épocas / Años</span>
+          <span className="text-[11px] font-bold text-zinc-400 uppercase font-title tracking-wider">Historical Eras</span>
         </div>
 
         <div className="p-4 rounded-xl bg-[#141414] border border-[#27272a] text-center">
           <Film className="w-5 h-5 text-[#e62429] mx-auto mb-2" />
           <span className="text-2xl font-black text-white block font-title">{totalEvents}</span>
-          <span className="text-[11px] font-bold text-zinc-400 uppercase font-title tracking-wider">Eventos Totales</span>
+          <span className="text-[11px] font-bold text-zinc-400 uppercase font-title tracking-wider">Total Events</span>
         </div>
 
         <div className="p-4 rounded-xl bg-[#141414] border border-[#27272a] text-center">
           <Users className="w-5 h-5 text-[#e62429] mx-auto mb-2" />
           <span className="text-2xl font-black text-white block font-title">{totalCharacters}</span>
-          <span className="text-[11px] font-bold text-zinc-400 uppercase font-title tracking-wider">Personajes</span>
+          <span className="text-[11px] font-bold text-zinc-400 uppercase font-title tracking-wider">Characters</span>
         </div>
 
         <div className="p-4 rounded-xl bg-[#141414] border border-[#27272a] text-center">
           <Sparkles className="w-5 h-5 text-amber-500 mx-auto mb-2" />
           <span className="text-2xl font-black text-white block font-title">6</span>
-          <span className="text-[11px] font-bold text-zinc-400 uppercase font-title tracking-wider">Gemas Infinito</span>
+          <span className="text-[11px] font-bold text-zinc-400 uppercase font-title tracking-wider">Infinity Stones</span>
         </div>
 
         <div className="p-4 rounded-xl bg-[#141414] border border-[#27272a] text-center">
           <GitFork className="w-5 h-5 text-amber-400 mx-auto mb-2" />
           <span className="text-2xl font-black text-white block font-title">{alternativeCount}</span>
-          <span className="text-[11px] font-bold text-zinc-400 uppercase font-title tracking-wider">Líneas Alternas</span>
+          <span className="text-[11px] font-bold text-zinc-400 uppercase font-title tracking-wider">Branches / Alts</span>
         </div>
 
         <div className="p-4 rounded-xl bg-[#141414] border border-[#27272a] text-center">
           <Bookmark className="w-5 h-5 text-[#e62429] mx-auto mb-2" />
           <span className="text-2xl font-black text-white block font-title">{bookmarkedEventIds.length}</span>
-          <span className="text-[11px] font-bold text-zinc-400 uppercase font-title tracking-wider">Guardados</span>
+          <span className="text-[11px] font-bold text-zinc-400 uppercase font-title tracking-wider">Saved Events</span>
         </div>
 
       </div>
@@ -123,15 +123,15 @@ export const StatsScreen: React.FC = () => {
       <div className="flex flex-wrap gap-3 justify-center">
         <button
           onClick={() => setActiveScreen('timeline')}
-          className="px-5 py-2.5 rounded bg-[#e62429] hover:bg-[#c5191e] text-white text-xs font-bold font-title tracking-wider uppercase transition-all shadow-lg"
+          className="px-5 py-2.5 rounded bg-[#e62429] hover:bg-[#c5191e] text-white text-xs font-bold font-title tracking-wider uppercase transition-all shadow-lg cursor-pointer"
         >
-          EXPLORAR CRONOLOGÍA COMPLETA
+          EXPLORE COMPLETE TIMELINE
         </button>
         <button
           onClick={() => setActiveScreen('stones')}
-          className="px-5 py-2.5 rounded bg-[#141414] hover:bg-[#222222] text-zinc-200 text-xs font-bold font-title tracking-wider uppercase border border-[#2e2e2e] transition-all"
+          className="px-5 py-2.5 rounded bg-[#141414] hover:bg-[#222222] text-zinc-200 text-xs font-bold font-title tracking-wider uppercase border border-[#2e2e2e] transition-all cursor-pointer"
         >
-          BÓVEDA DE GEMAS DEL INFINITO
+          INFINITY STONES VAULT
         </button>
       </div>
 

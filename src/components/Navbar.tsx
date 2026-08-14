@@ -23,13 +23,13 @@ export const Navbar: React.FC = () => {
   } = useStore();
 
   const navItems: { id: ActiveScreen; label: string; icon: React.ReactNode }[] = [
-    { id: 'timeline', label: 'CRONOLOGÍA', icon: <Clock className="w-3.5 h-3.5" /> },
-    { id: 'media', label: 'PELÍCULAS & SERIES', icon: <Film className="w-3.5 h-3.5" /> },
-    { id: 'characters', label: 'PERSONAJES', icon: <Users className="w-3.5 h-3.5" /> },
-    { id: 'stones', label: 'GEMAS DEL INFINITO', icon: <Sparkles className="w-3.5 h-3.5" /> },
+    { id: 'timeline', label: 'TIMELINE', icon: <Clock className="w-3.5 h-3.5" /> },
+    { id: 'media', label: 'MOVIES & SERIES', icon: <Film className="w-3.5 h-3.5" /> },
+    { id: 'characters', label: 'CHARACTERS', icon: <Users className="w-3.5 h-3.5" /> },
+    { id: 'stones', label: 'INFINITY STONES', icon: <Sparkles className="w-3.5 h-3.5" /> },
     { 
       id: 'bookmarks', 
-      label: 'GUARDADOS', 
+      label: 'SAVED', 
       icon: (
         <div className="relative">
           <Bookmark className="w-3.5 h-3.5" />
@@ -63,7 +63,7 @@ export const Navbar: React.FC = () => {
               </span>
             </div>
             <span className="hidden md:inline text-[10px] uppercase tracking-widest text-zinc-500 font-bold border-l border-zinc-800 pl-3">
-              Sagrada Línea Temporal
+              Sacred Timeline
             </span>
           </div>
 
@@ -84,11 +84,11 @@ export const Navbar: React.FC = () => {
             {/* Global Search Button */}
             <button
               onClick={() => setIsSearchOpen(true)}
-              className="flex items-center gap-2 px-3 py-1.5 rounded-md bg-[#161616] hover:bg-[#202020] text-zinc-300 hover:text-white border border-[#2e2e2e] hover:border-[#e62429] text-xs font-bold transition-all group font-din shadow-inner"
-              title="Buscar (Ctrl + K)"
+              className="flex items-center gap-2 px-3 py-1.5 rounded-md bg-[#161616] hover:bg-[#202020] text-zinc-300 hover:text-white border border-[#2e2e2e] hover:border-[#e62429] text-xs font-bold transition-all group font-din shadow-inner cursor-pointer"
+              title="Search Archive (Ctrl + K)"
             >
               <Search className="w-3.5 h-3.5 text-zinc-400 group-hover:text-[#e62429] transition-colors" />
-              <span className="hidden sm:inline uppercase text-[11px] tracking-wider font-bold">BUSCAR</span>
+              <span className="hidden sm:inline uppercase text-[11px] tracking-wider font-bold">SEARCH</span>
               <kbd className="hidden lg:inline-block px-1.5 py-0.5 text-[9px] bg-[#0a0a0a] border border-[#333333] rounded text-zinc-400 font-mono">
                 ⌘K
               </kbd>
@@ -97,12 +97,12 @@ export const Navbar: React.FC = () => {
             {/* Read Progress Badge */}
             <button 
               onClick={() => setActiveScreen('stats')}
-              className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-md bg-[#161616] hover:bg-[#202020] border border-[#2e2e2e] hover:border-[#e62429] text-[11px] text-zinc-300 transition-colors font-bold font-din"
-              title="Ver progreso en Base S.H.I.E.L.D."
+              className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-md bg-[#161616] hover:bg-[#202020] border border-[#2e2e2e] hover:border-[#e62429] text-[11px] text-zinc-300 transition-colors font-bold font-din cursor-pointer"
+              title="View S.H.I.E.L.D. archive reading progress"
             >
               <ShieldCheck className="w-3.5 h-3.5 text-[#e62429]" />
               <span className="hidden sm:inline">{readEventIds.length}</span>
-              <span className="hidden md:inline uppercase text-[10px] text-zinc-400">LEÍDOS</span>
+              <span className="hidden md:inline uppercase text-[10px] text-zinc-400">READ</span>
             </button>
           </div>
 
@@ -118,7 +118,7 @@ export const Navbar: React.FC = () => {
               <button
                 key={item.id}
                 onClick={() => setActiveScreen(item.id)}
-                className={`relative flex items-center gap-2 px-3 py-2.5 text-xs font-bold tracking-widest uppercase transition-all duration-150 whitespace-nowrap font-din select-none shrink-0 ${
+                className={`relative flex items-center gap-2 px-3 py-2.5 text-xs font-bold tracking-widest uppercase transition-all duration-150 whitespace-nowrap font-din select-none shrink-0 cursor-pointer ${
                   isActive
                     ? 'text-white border-b-2 border-[#e62429] font-black'
                     : 'text-zinc-400 hover:text-white hover:border-b-2 hover:border-zinc-500'

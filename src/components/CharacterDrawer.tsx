@@ -97,17 +97,17 @@ export const CharacterDrawer: React.FC = () => {
           <div className="p-3 rounded-lg bg-[#141414] border border-[#27272a]">
             <div className="flex items-center gap-1.5 text-xs text-zinc-400 mb-1">
               <Globe2 className="w-3.5 h-3.5 text-sky-400" />
-              <span className="font-semibold uppercase text-[10px] tracking-wider font-title">Planeta / Origen</span>
+              <span className="font-semibold uppercase text-[10px] tracking-wider font-title">Realm / Origin</span>
             </div>
-            <p className="text-xs font-semibold text-zinc-200 truncate">{character.originLocation || 'Desconocido'}</p>
+            <p className="text-xs font-semibold text-zinc-200 truncate">{character.originLocation || 'Unknown'}</p>
           </div>
 
           <div className="p-3 rounded-lg bg-[#141414] border border-[#27272a]">
             <div className="flex items-center gap-1.5 text-xs text-zinc-400 mb-1">
               <Clock className="w-3.5 h-3.5 text-amber-400" />
-              <span className="font-semibold uppercase text-[10px] tracking-wider font-title">Apariciones</span>
+              <span className="font-semibold uppercase text-[10px] tracking-wider font-title">Appearances</span>
             </div>
-            <p className="text-xs font-semibold text-zinc-200">{appearances.length} eventos registrados</p>
+            <p className="text-xs font-semibold text-zinc-200">{appearances.length} timeline events</p>
           </div>
         </div>
 
@@ -116,7 +116,7 @@ export const CharacterDrawer: React.FC = () => {
           <div className="p-3.5 rounded-lg bg-[#141414] border border-[#27272a] mb-4">
             <div className="flex items-center gap-1.5 text-xs font-bold text-zinc-400 uppercase tracking-wider mb-2 font-title">
               <Layers className="w-3.5 h-3.5 text-[#e62429]" />
-              <span>AGRUPACIONES & FACCIONES</span>
+              <span>FACTIONS & GROUPS</span>
             </div>
             <div className="flex flex-wrap gap-1.5">
               {character.groups.map((grp) => (
@@ -134,7 +134,7 @@ export const CharacterDrawer: React.FC = () => {
         {/* Bio */}
         <div className="p-4 rounded-lg bg-[#141414] border border-[#27272a] mb-6">
           <h3 className="text-xs font-bold uppercase tracking-wider text-[#e62429] mb-1.5 font-title">
-            EXPEDIENTE S.H.I.E.L.D.
+            S.H.I.E.L.D. DOSSIER
           </h3>
           <p className="text-xs text-zinc-300 leading-relaxed">{character.bio}</p>
         </div>
@@ -143,12 +143,12 @@ export const CharacterDrawer: React.FC = () => {
         <div className="flex-1">
           <h3 className="text-xs font-bold uppercase tracking-wider text-zinc-400 mb-3 flex items-center gap-1.5 font-title">
             <Sparkles className="w-3.5 h-3.5 text-[#e62429]" />
-            <span>RUTA CRONOLÓGICA DEL PERSONAJE</span>
+            <span>CHARACTER CHRONOLOGICAL JOURNEY</span>
           </h3>
 
           <div className="space-y-2.5">
             {appearances.length === 0 ? (
-              <p className="text-xs text-zinc-500 italic">No hay apariciones registradas directamente.</p>
+              <p className="text-xs text-zinc-500 italic">No direct chronological appearances recorded.</p>
             ) : (
               appearances.map((app, idx) => (
                 <div
@@ -157,9 +157,9 @@ export const CharacterDrawer: React.FC = () => {
                   className="p-3 rounded-lg bg-[#141414] border border-[#27272a] hover:border-[#e62429] hover:bg-[#181818] cursor-pointer transition-all group"
                 >
                   <div className="flex items-center justify-between text-xs mb-1">
-                    <span className="font-bold text-[#e62429] font-title tracking-wider">AÑO: {app.eraTitle}</span>
+                    <span className="font-bold text-[#e62429] font-title tracking-wider">ERA: {app.eraTitle}</span>
                     <span className="text-[11px] text-zinc-400 flex items-center gap-1 group-hover:text-white transition-colors">
-                      Ver en cronología <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
+                      View in timeline <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
                     </span>
                   </div>
                   <p className="text-xs font-bold text-white mb-1 font-title tracking-wide uppercase">{app.mediaTitle}</p>

@@ -143,7 +143,7 @@ export const SearchModal: React.FC = () => {
             type="text"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Buscar en todo el MCU (ej. Tesseract, Steve Rogers, Thanos, 1945)..."
+            placeholder="Search across the MCU archive (e.g. Tesseract, Steve Rogers, Thanos, 1945)..."
             className="w-full bg-transparent text-white placeholder-zinc-500 text-sm focus:outline-none"
           />
           <button
@@ -158,7 +158,7 @@ export const SearchModal: React.FC = () => {
         <div className="p-4 overflow-y-auto space-y-5">
           {!cleanQuery && (
             <div className="py-12 text-center text-zinc-500 text-xs font-din">
-              Escribe algo para buscar en la base de datos de Marvel Cinematic Universe...
+              Type to search the Marvel Cinematic Universe database...
             </div>
           )}
 
@@ -167,7 +167,7 @@ export const SearchModal: React.FC = () => {
             <div>
               <h4 className="text-xs font-bold uppercase tracking-wider text-zinc-400 mb-2 flex items-center gap-1.5 font-title">
                 <Users className="w-3.5 h-3.5 text-[#e62429]" />
-                <span>PERSONAJES</span>
+                <span>CHARACTERS</span>
               </h4>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                 {matchedCharacters.map((c) => (
@@ -202,7 +202,7 @@ export const SearchModal: React.FC = () => {
             <div>
               <h4 className="text-xs font-bold uppercase tracking-wider text-zinc-400 mb-2 flex items-center gap-1.5 font-title">
                 <Clapperboard className="w-3.5 h-3.5 text-[#e62429]" />
-                <span>PELÍCULAS & SERIES</span>
+                <span>MOVIES & SERIES</span>
               </h4>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                 {matchedMedia.map((m) => (
@@ -225,7 +225,7 @@ export const SearchModal: React.FC = () => {
                         {m.title}
                       </p>
                       <p className="text-[10px] text-zinc-400 truncate">
-                        {m.type === 'series' ? 'Serie' : m.type === 'oneshot' ? 'Corto' : 'Película'} • {m.phase} ({m.releaseYear})
+                        {m.type === 'series' ? 'Series' : m.type === 'oneshot' ? 'Short' : 'Movie'} • {m.phase} ({m.releaseYear})
                       </p>
                     </div>
                   </div>
@@ -239,7 +239,7 @@ export const SearchModal: React.FC = () => {
             <div>
               <h4 className="text-xs font-bold uppercase tracking-wider text-zinc-400 mb-2 flex items-center gap-1.5 font-title">
                 <Sparkles className="w-3.5 h-3.5 text-amber-400" />
-                <span>GEMAS DEL INFINITO</span>
+                <span>INFINITY STONES</span>
               </h4>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                 {matchedStones.map((s) => (
@@ -274,7 +274,7 @@ export const SearchModal: React.FC = () => {
             <div>
               <h4 className="text-xs font-bold uppercase tracking-wider text-zinc-400 mb-2 flex items-center gap-1.5 font-title">
                 <Clock className="w-3.5 h-3.5 text-[#e62429]" />
-                <span>EVENTOS DE LA CRONOLOGÍA</span>
+                <span>TIMELINE EVENTS</span>
               </h4>
               <div className="space-y-2">
                 {matchedEvents.map((evt) => (
@@ -284,7 +284,7 @@ export const SearchModal: React.FC = () => {
                     className="p-3 rounded-lg bg-[#141414] border border-[#27272a] hover:border-[#e62429] hover:bg-[#181818] cursor-pointer transition-all group"
                   >
                     <div className="flex items-center justify-between text-xs mb-1">
-                      <span className="font-bold text-[#e62429] font-title tracking-wider">AÑO: {evt.eraTitle}</span>
+                      <span className="font-bold text-[#e62429] font-title tracking-wider">ERA: {evt.eraTitle}</span>
                       <span className="text-[10px] text-zinc-400 font-bold uppercase font-title">{evt.mediaTitle}</span>
                     </div>
                     <p className="text-[11px] text-zinc-300 line-clamp-2 font-din">{evt.snippet}</p>
@@ -300,7 +300,7 @@ export const SearchModal: React.FC = () => {
             matchedStones.length === 0 &&
             matchedEvents.length === 0 && (
               <div className="py-12 text-center text-zinc-500 text-xs">
-                No se encontraron resultados para &quot;{query}&quot;.
+                No results found for &quot;{query}&quot;.
               </div>
             )}
         </div>

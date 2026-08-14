@@ -60,25 +60,25 @@ export const App: React.FC = () => {
           </div>
 
           <p className="text-zinc-400 text-[11px]">
-            Cronología interactiva oficial del Universo Cinematográfico de Marvel.
+            Official interactive timeline and cinematic universe database.
           </p>
 
           <div className="flex items-center gap-4 text-zinc-400 text-xs font-title tracking-wider">
             <button 
               onClick={() => setActiveScreen('timeline')}
-              className="hover:text-[#e62429] transition-colors uppercase"
+              className="hover:text-[#e62429] transition-colors uppercase cursor-pointer"
             >
-              CRONOLOGÍA
+              TIMELINE
             </button>
             <button 
               onClick={() => setActiveScreen('stones')}
-              className="hover:text-amber-400 transition-colors uppercase"
+              className="hover:text-amber-400 transition-colors uppercase cursor-pointer"
             >
-              GEMAS
+              STONES
             </button>
             <button 
               onClick={() => setActiveScreen('stats')}
-              className="hover:text-[#e62429] transition-colors uppercase"
+              className="hover:text-[#e62429] transition-colors uppercase cursor-pointer"
             >
               S.H.I.E.L.D.
             </button>

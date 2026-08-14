@@ -19,13 +19,13 @@ export const StonesScreen: React.FC = () => {
       <div className="mb-8 text-center max-w-3xl mx-auto">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded bg-[#e62429] text-white text-xs font-bold font-title tracking-widest uppercase mb-4 shadow">
           <Sparkles className="w-3.5 h-3.5" />
-          <span>RELIQUIAS DE LA CREACIÓN CÓSMICA</span>
+          <span>RELICS OF COSMIC CREATION</span>
         </div>
         <h1 className="text-3xl sm:text-5xl font-black text-white tracking-wider mb-3 font-title uppercase">
-          LAS 6 GEMAS DEL INFINITO
+          THE 6 INFINITY STONES
         </h1>
         <p className="text-sm sm:text-base text-zinc-300 leading-relaxed font-din">
-          Antes de la creación misma, existían seis singularidades. Luego el universo explotó y los restos de estos sistemas fueron concentrados en lingotes concentrados: las Gemas del Infinito.
+          Before creation itself, there were six singularities. Then the universe exploded into existence, and the remnants of these systems were forged into concentrated ingots: the Infinity Stones.
         </p>
       </div>
 
@@ -76,7 +76,7 @@ export const StonesScreen: React.FC = () => {
                 {stone.name}
               </h3>
               <p className="text-xs font-semibold text-zinc-400 mb-3 font-din">
-                Contenedor: <span className="text-white font-bold">{stone.vessel}</span>
+                Vessel / Container: <span className="text-white font-bold">{stone.vessel}</span>
               </p>
 
               {/* Power Summary */}
@@ -88,13 +88,13 @@ export const StonesScreen: React.FC = () => {
             {/* Bottom Actions */}
             <div className="pt-4 border-t border-[#242424] flex items-center justify-between text-xs font-din">
               <span className="text-zinc-500 font-semibold uppercase text-[11px]">
-                {stone.journey.length} hitos temporales
+                {stone.journey.length} timeline milestones
               </span>
               <span
                 className="font-bold flex items-center gap-1 group-hover:translate-x-1 transition-transform font-title tracking-wider uppercase text-xs"
                 style={{ color: stone.colorHex }}
               >
-                <span>VER HISTORIAL</span>
+                <span>VIEW JOURNEY</span>
                 <ArrowRight className="w-3.5 h-3.5" />
               </span>
             </div>
