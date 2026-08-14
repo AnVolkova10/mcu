@@ -38,40 +38,40 @@ export const EventCard: React.FC<EventCardProps> = ({ event }) => {
   return (
     <article
       id={event.id}
-      className={`group relative rounded-2xl p-5 sm:p-6 transition-all duration-300 border ${
+      className={`group relative rounded-xl p-5 sm:p-6 transition-all duration-200 border ${
         event.isAlternativeTimeline
-          ? 'bg-slate-900/70 border-amber-500/30 hover:border-amber-500/60 shadow-lg shadow-amber-950/20'
-          : 'bg-slate-900/60 border-slate-800/80 hover:border-slate-700/90 hover:bg-slate-900/90 shadow-lg shadow-black/40'
-      } backdrop-blur-md`}
+          ? 'bg-[#181818] border-amber-600/40 hover:border-amber-500 shadow-xl'
+          : 'bg-[#141414] border-[#262626] hover:border-zinc-600 hover:bg-[#181818] shadow-xl'
+      }`}
     >
       {/* Top Media & Tags Header */}
-      <div className="flex flex-wrap items-center justify-between gap-2 mb-4 pb-3 border-b border-slate-800/80">
+      <div className="flex flex-wrap items-center justify-between gap-2 mb-4 pb-3 border-b border-[#242424]">
         
         {/* Media Tag / Title */}
         <div className="flex items-center gap-2 flex-wrap">
           <button
             onClick={() => setSelectedMediaId(event.mediaKey)}
-            className="flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-xs font-bold bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700/80 transition-colors group/media"
+            className="flex items-center gap-1.5 px-2.5 py-1 rounded bg-[#000000] hover:bg-[#e62429] text-white border border-[#333333] hover:border-[#e62429] transition-all group/media font-title tracking-wider text-xs"
           >
-            <Film className="w-3.5 h-3.5 text-red-400 group-hover/media:scale-110 transition-transform" />
-            <span>{event.mediaTitle}</span>
+            <Film className="w-3.5 h-3.5 text-[#e62429] group-hover/media:text-white transition-colors" />
+            <span>{event.mediaTitle.toUpperCase()}</span>
             {media?.releaseYear && (
-              <span className="text-slate-400 text-[11px] font-normal">({media.releaseYear})</span>
+              <span className="text-zinc-400 group-hover/media:text-zinc-200 text-[11px] font-normal font-din">({media.releaseYear})</span>
             )}
           </button>
 
           {/* Phase Badge */}
           {event.mediaPhase && (
-            <span className="text-[11px] font-medium px-2 py-0.5 rounded-md bg-slate-950/80 border border-slate-800 text-slate-400">
+            <span className="text-[10px] font-bold font-title tracking-widest uppercase px-2 py-0.5 rounded bg-[#000000] border border-[#2a2a2a] text-zinc-400">
               {event.mediaPhase}
             </span>
           )}
 
           {/* Alternative Timeline Badge */}
           {event.isAlternativeTimeline && (
-            <span className="flex items-center gap-1 text-[11px] font-semibold px-2 py-0.5 rounded-md bg-amber-500/20 border border-amber-500/40 text-amber-300">
+            <span className="flex items-center gap-1 text-[10px] font-bold font-title tracking-wider px-2 py-0.5 rounded bg-amber-950/80 border border-amber-600/60 text-amber-300">
               <GitFork className="w-3 h-3" />
-              <span>Línea Temporal Alternativa</span>
+              <span>LÍNEA TEMPORAL ALTERNATIVA</span>
             </span>
           )}
         </div>
@@ -81,22 +81,22 @@ export const EventCard: React.FC<EventCardProps> = ({ event }) => {
           {/* Read / Watched Toggle */}
           <button
             onClick={() => toggleReadEvent(event.id)}
-            className={`flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-medium border transition-all ${
+            className={`flex items-center gap-1 px-2.5 py-1 rounded text-xs font-bold font-title tracking-wider uppercase border transition-all ${
               read
-                ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500/40'
-                : 'bg-slate-950/40 text-slate-400 border-slate-800 hover:text-slate-200 hover:border-slate-700'
+                ? 'bg-emerald-950 text-emerald-300 border-emerald-600'
+                : 'bg-[#000000] text-zinc-400 border-[#2a2a2a] hover:text-white hover:border-zinc-500'
             }`}
             title={read ? 'Marcar como no leído' : 'Marcar como leído / visto'}
           >
             {read ? (
               <>
                 <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
-                <span className="hidden sm:inline text-[11px]">Leído</span>
+                <span className="hidden sm:inline text-[11px]">LEÍDO</span>
               </>
             ) : (
               <>
                 <Circle className="w-3.5 h-3.5" />
-                <span className="hidden sm:inline text-[11px]">Por leer</span>
+                <span className="hidden sm:inline text-[11px]">POR LEER</span>
               </>
             )}
           </button>
@@ -104,32 +104,32 @@ export const EventCard: React.FC<EventCardProps> = ({ event }) => {
           {/* Bookmark Toggle */}
           <button
             onClick={() => toggleBookmark(event.id)}
-            className={`p-1.5 rounded-lg border transition-all ${
+            className={`p-1.5 rounded border transition-all ${
               bookmarked
-                ? 'bg-red-500/20 text-red-400 border-red-500/50'
-                : 'bg-slate-950/40 text-slate-400 border-slate-800 hover:text-slate-200 hover:border-slate-700'
+                ? 'bg-[#e62429] text-white border-[#e62429] shadow-md'
+                : 'bg-[#000000] text-zinc-400 border-[#2a2a2a] hover:text-white hover:border-zinc-500'
             }`}
             title={bookmarked ? 'Quitar de guardados' : 'Guardar evento'}
           >
-            <Bookmark className={`w-3.5 h-3.5 ${bookmarked ? 'fill-red-500' : ''}`} />
+            <Bookmark className={`w-3.5 h-3.5 ${bookmarked ? 'fill-white' : ''}`} />
           </button>
         </div>
       </div>
 
       {/* Paragraphs with Marvel Rich Highlighting */}
-      <div className="space-y-3 text-slate-300 text-sm leading-relaxed mb-4 mcu-html-content">
+      <div className="space-y-3.5 text-zinc-200 text-sm leading-relaxed mb-4 font-din mcu-html-content">
         {event.paragraphs.map((p, idx) => (
           <p
             key={idx}
             dangerouslySetInnerHTML={{ __html: p }}
-            className="text-justify selection:bg-red-900 selection:text-white"
+            className="text-justify selection:bg-[#e62429] selection:text-white"
           />
         ))}
       </div>
 
       {/* Footer Tags & Entity Links */}
       {(event.characters.length > 0 || event.stones.length > 0 || event.deaths.length > 0) && (
-        <div className="pt-3 border-t border-slate-800/60 flex flex-wrap gap-2 items-center">
+        <div className="pt-3 border-t border-[#222222] flex flex-wrap gap-2 items-center">
           
           {/* Infinity Stones Tag Pills */}
           {event.stones.map((sId) => {
@@ -139,15 +139,15 @@ export const EventCard: React.FC<EventCardProps> = ({ event }) => {
               <button
                 key={sId}
                 onClick={() => setSelectedStoneId(stone.id)}
-                className="flex items-center gap-1 px-2 py-0.5 rounded-md text-xs font-semibold border transition-transform hover:scale-105"
+                className="flex items-center gap-1 px-2.5 py-0.5 rounded text-xs font-bold font-title tracking-wider border transition-all hover:scale-105"
                 style={{
                   backgroundColor: `${stone.colorHex}22`,
-                  borderColor: `${stone.colorHex}66`,
+                  borderColor: `${stone.colorHex}77`,
                   color: stone.colorHex,
                 }}
               >
                 <Sparkles className="w-3 h-3 animate-spin" style={{ animationDuration: '6s' }} />
-                <span>{stone.vessel}</span>
+                <span>{stone.vessel.toUpperCase()}</span>
               </button>
             );
           })}
@@ -160,7 +160,7 @@ export const EventCard: React.FC<EventCardProps> = ({ event }) => {
               <button
                 key={cId}
                 onClick={() => setSelectedCharacterId(char.id)}
-                className="flex items-center gap-1.5 px-2 py-0.5 rounded-md text-[11px] font-medium bg-slate-950 border border-slate-800 hover:border-slate-700 text-slate-300 hover:text-white transition-all hover:bg-slate-800"
+                className="flex items-center gap-1.5 px-2.5 py-0.5 rounded text-xs font-semibold bg-[#000000] border border-[#2e2e2e] hover:border-zinc-500 text-zinc-300 hover:text-white transition-all font-din"
               >
                 <span
                   className="w-2 h-2 rounded-full shrink-0"
@@ -173,8 +173,8 @@ export const EventCard: React.FC<EventCardProps> = ({ event }) => {
 
           {/* Fallen / Deaths Highlight */}
           {event.deaths.length > 0 && (
-            <div className="flex items-center gap-1 px-2 py-0.5 rounded-md text-[11px] font-semibold bg-red-950/60 border border-red-800/60 text-red-400">
-              <Skull className="w-3 h-3" />
+            <div className="flex items-center gap-1 px-2.5 py-0.5 rounded text-xs font-bold bg-[#330c0e] border border-[#e62429]/60 text-red-300 font-din">
+              <Skull className="w-3.5 h-3.5 text-[#e62429]" />
               <span>Bajas: {event.deaths.join(', ')}</span>
             </div>
           )}

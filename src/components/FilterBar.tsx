@@ -8,7 +8,8 @@ import {
   GitFork, 
   Skull, 
   Sparkles,
-  Layers
+  Layers,
+  Filter
 } from 'lucide-react';
 import { allMedia } from '@/data/mediaData';
 import { allCharacters } from '@/data/charactersData';
@@ -29,13 +30,13 @@ export const FilterBar: React.FC = () => {
   } = useStore();
 
   const categories: { id: TimelineCategory | 'all'; label: string }[] = [
-    { id: 'all', label: 'Toda la Cronología' },
-    { id: 'ancient', label: 'Ancestral / Orígenes' },
+    { id: 'all', label: 'TODA LA CRONOLOGÍA' },
+    { id: 'ancient', label: 'ANCESTRAL / ORÍGENES' },
     { id: 'early-century', label: '1930 - 1960' },
     { id: 'golden-age', label: '1970 - 2009' },
-    { id: 'avengers-era', label: '2010 - 2017 (Avengers)' },
-    { id: 'infinity-war', label: '2018 - 2020 (Thanos)' },
-    { id: 'future', label: 'Multiverso / Futuro' },
+    { id: 'avengers-era', label: '2010 - 2017 (AVENGERS)' },
+    { id: 'infinity-war', label: '2018 - 2020 (THANOS)' },
+    { id: 'future', label: 'MULTIVERSO / FUTURO' },
   ];
 
   const phases = ['Phase 1', 'Phase 2', 'Phase 3', 'Phase 4', 'Marvel Television', 'One-Shot'];
@@ -52,24 +53,24 @@ export const FilterBar: React.FC = () => {
   );
 
   return (
-    <div className="bg-slate-900/90 border border-slate-800 rounded-2xl p-4 sm:p-5 shadow-xl backdrop-blur-md mb-8">
+    <div className="bg-[#141414] border border-[#262626] rounded-xl p-4 sm:p-5 shadow-2xl mb-8">
       {/* Top Search & Toggles Row */}
       <div className="flex flex-col md:flex-row gap-3 items-stretch md:items-center justify-between mb-4">
         
         {/* Search Box */}
         <div className="relative flex-1">
-          <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
+          <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-400" />
           <input
             type="text"
             value={filters.searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            placeholder="Buscar por personaje, evento, Hydra, S.H.I.E.L.D., Thanos..."
-            className="w-full bg-slate-950/80 border border-slate-700/80 rounded-xl pl-10 pr-9 py-2 text-sm text-white placeholder-slate-400 focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500 transition-all"
+            placeholder="Buscar por personaje, evento, S.H.I.E.L.D., Hydra, Thanos..."
+            className="w-full bg-[#0a0a0a] border border-[#2f2f2f] rounded-lg pl-10 pr-9 py-2.5 text-sm text-white placeholder-zinc-500 focus:outline-none focus:border-[#e62429] focus:ring-1 focus:ring-[#e62429] transition-all font-din"
           />
           {filters.searchQuery && (
             <button
               onClick={() => setSearchQuery('')}
-              className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-white"
+              className="absolute right-3 top-1/2 -translate-y-1/2 text-zinc-400 hover:text-white"
             >
               <X className="w-4 h-4" />
             </button>
@@ -80,36 +81,36 @@ export const FilterBar: React.FC = () => {
         <div className="flex items-center gap-2 flex-wrap sm:flex-nowrap">
           <button
             onClick={toggleOnlyAlternative}
-            className={`flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-semibold border transition-all ${
+            className={`flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-bold font-title tracking-wider uppercase border transition-all ${
               filters.onlyAlternative
-                ? 'bg-amber-500/20 text-amber-300 border-amber-500/50 shadow-sm shadow-amber-500/20'
-                : 'bg-slate-950/60 text-slate-400 border-slate-800 hover:text-slate-200 hover:border-slate-700'
+                ? 'bg-[#e62429] text-white border-[#e62429] shadow-md shadow-[#e62429]/30'
+                : 'bg-[#0a0a0a] text-zinc-400 border-[#2f2f2f] hover:text-white hover:border-zinc-500'
             }`}
           >
             <GitFork className="w-3.5 h-3.5" />
-            <span>Líneas Alternas</span>
+            <span>LÍNEAS ALTERNAS</span>
           </button>
 
           <button
             onClick={toggleOnlyDeaths}
-            className={`flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-semibold border transition-all ${
+            className={`flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-bold font-title tracking-wider uppercase border transition-all ${
               filters.onlyDeaths
-                ? 'bg-red-500/20 text-red-300 border-red-500/50 shadow-sm shadow-red-500/20'
-                : 'bg-slate-950/60 text-slate-400 border-slate-800 hover:text-slate-200 hover:border-slate-700'
+                ? 'bg-[#e62429] text-white border-[#e62429] shadow-md shadow-[#e62429]/30'
+                : 'bg-[#0a0a0a] text-zinc-400 border-[#2f2f2f] hover:text-white hover:border-zinc-500'
             }`}
           >
             <Skull className="w-3.5 h-3.5" />
-            <span>Muertes</span>
+            <span>BAJAS / MUERTES</span>
           </button>
 
           {hasActiveFilters && (
             <button
               onClick={resetFilters}
-              className="flex items-center gap-1 px-3 py-2 rounded-xl text-xs font-semibold bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition-colors ml-auto sm:ml-0"
+              className="flex items-center gap-1 px-3 py-2 rounded-lg text-xs font-bold font-title tracking-wider uppercase bg-[#222222] hover:bg-[#2e2e2e] text-zinc-300 hover:text-white transition-colors ml-auto sm:ml-0 border border-[#333333]"
               title="Limpiar filtros"
             >
-              <RotateCcw className="w-3.5 h-3.5 text-red-400" />
-              <span>Limpiar</span>
+              <RotateCcw className="w-3.5 h-3.5 text-[#e62429]" />
+              <span>LIMPIAR</span>
             </button>
           )}
         </div>
@@ -123,10 +124,10 @@ export const FilterBar: React.FC = () => {
             <button
               key={cat.id}
               onClick={() => setSelectedCategory(cat.id)}
-              className={`px-3 py-1.5 rounded-lg text-xs whitespace-nowrap font-medium transition-all ${
+              className={`px-3.5 py-1.5 rounded text-xs whitespace-nowrap font-bold tracking-wider font-title uppercase transition-all ${
                 isSelected
-                  ? 'bg-red-600 text-white font-bold shadow-md shadow-red-600/30'
-                  : 'bg-slate-950/50 text-slate-400 border border-slate-800/80 hover:text-slate-200 hover:bg-slate-800/50'
+                  ? 'bg-[#e62429] text-white shadow-md shadow-[#e62429]/30'
+                  : 'bg-[#0a0a0a] text-zinc-400 border border-[#2a2a2a] hover:text-white hover:border-zinc-600'
               }`}
             >
               {cat.label}
@@ -136,13 +137,13 @@ export const FilterBar: React.FC = () => {
       </div>
 
       {/* Advanced Selectors (Character, Media, Phase, Stones) */}
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-2 border-t border-slate-800/70">
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-2.5 border-t border-[#222222]">
         
         {/* Character Selector */}
         <select
           value={filters.selectedCharacter || ''}
           onChange={(e) => setSelectedCharacterFilter(e.target.value || null)}
-          className="bg-slate-950 border border-slate-800 text-slate-300 text-xs rounded-lg px-2.5 py-1.5 focus:outline-none focus:border-red-500"
+          className="bg-[#0a0a0a] border border-[#2a2a2a] text-zinc-300 text-xs rounded-lg px-2.5 py-2 focus:outline-none focus:border-[#e62429] font-din"
         >
           <option value="">👤 Todos los Personajes</option>
           {allCharacters.map((c) => (
@@ -156,9 +157,9 @@ export const FilterBar: React.FC = () => {
         <select
           value={filters.selectedMedia || ''}
           onChange={(e) => setSelectedMediaFilter(e.target.value || null)}
-          className="bg-slate-950 border border-slate-800 text-slate-300 text-xs rounded-lg px-2.5 py-1.5 focus:outline-none focus:border-red-500"
+          className="bg-[#0a0a0a] border border-[#2a2a2a] text-zinc-300 text-xs rounded-lg px-2.5 py-2 focus:outline-none focus:border-[#e62429] font-din"
         >
-          <option value="">🎬 Todas las Películas / Series</option>
+          <option value="">🎬 Películas / Series</option>
           {allMedia.map((m) => (
             <option key={m.id} value={m.id}>
               {m.title} ({m.releaseYear})
@@ -170,7 +171,7 @@ export const FilterBar: React.FC = () => {
         <select
           value={filters.selectedPhase || ''}
           onChange={(e) => setSelectedPhaseFilter(e.target.value || null)}
-          className="bg-slate-950 border border-slate-800 text-slate-300 text-xs rounded-lg px-2.5 py-1.5 focus:outline-none focus:border-red-500"
+          className="bg-[#0a0a0a] border border-[#2a2a2a] text-zinc-300 text-xs rounded-lg px-2.5 py-2 focus:outline-none focus:border-[#e62429] font-din"
         >
           <option value="">🪐 Todas las Fases</option>
           {phases.map((p) => (
@@ -184,9 +185,9 @@ export const FilterBar: React.FC = () => {
         <select
           value={filters.selectedStone || ''}
           onChange={(e) => setSelectedStoneFilter(e.target.value || null)}
-          className="bg-slate-950 border border-slate-800 text-slate-300 text-xs rounded-lg px-2.5 py-1.5 focus:outline-none focus:border-red-500"
+          className="bg-[#0a0a0a] border border-[#2a2a2a] text-zinc-300 text-xs rounded-lg px-2.5 py-2 focus:outline-none focus:border-[#e62429] font-din"
         >
-          <option value="">💎 Todas las Gemas</option>
+          <option value="">💎 Gemas del Infinito</option>
           {infinityStonesData.map((s) => (
             <option key={s.id} value={s.id}>
               {s.name} ({s.vessel})

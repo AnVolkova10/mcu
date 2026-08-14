@@ -1,0 +1,67 @@
+/* Marvel Title Font 1 */
+@font-face {
+  font-family: 'Marvel';
+  src: url('@assets/fonts/Marvel-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Marvel Title Font 2 */
+@font-face {
+  font-family: 'Marvel2';
+  src: url('@assets/fonts/marvel 2.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* URW DIN - Regular */
+@font-face {
+  font-family: 'URW DIN';
+  src: url('@assets/fonts/URWDIN-Regular.woff2') format('woff2'),
+       url('@assets/fonts/URWDIN-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* URW DIN - Medium */
+@font-face {
+  font-family: 'URW DIN';
+  src: url('@assets/fonts/URWDIN-Medium.woff2') format('woff2'),
+       url('@assets/fonts/URWDIN-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* URW DIN - Bold */
+@font-face {
+  font-family: 'URW DIN';
+  src: url('@assets/fonts/URWDIN-Bold.woff2') format('woff2'),
+       url('@assets/fonts/URWDIN-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* URW DIN - Black */
+@font-face {
+  font-family: 'URW DIN';
+  src: url('@assets/fonts/URWDIN-Black.woff2') format('woff2'),
+       url('@assets/fonts/URWDIN-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* URW DIN - Italic */
+@font-face {
+  font-family: 'URW DIN';
+  src: url('@assets/fonts/URWDIN-Italic.woff2') format('woff2'),
+       url('@assets/fonts/URWDIN-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}

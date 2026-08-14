@@ -1,47 +1,65 @@
+@import "./fonts.css";
 @import "tailwindcss";
 
 @layer base {
   :root {
-    --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    --font-sans: 'URW DIN', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-marvel: 'Marvel', 'Impact', sans-serif;
+    --font-marvel2: 'Marvel2', 'Impact', sans-serif;
   }
 
   body {
-    background-color: #0b0f19;
-    color: #f1f5f9;
+    background-color: #0d0d0d;
+    color: #f4f4f5;
     font-family: var(--font-sans);
     overflow-x: hidden;
     min-height: 100vh;
+    letter-spacing: 0.015em;
+  }
+
+  h1, h2, h3, .font-title {
+    font-family: var(--font-marvel);
+    letter-spacing: 0.04em;
+  }
+
+  .font-title-alt {
+    font-family: var(--font-marvel2);
+    letter-spacing: 0.04em;
+  }
+
+  .font-din {
+    font-family: var(--font-sans);
   }
 }
 
-/* Custom Scrollbars */
+/* Custom Scrollbars in Marvel Black & Red */
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 7px;
+  height: 7px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #0b0f19;
+  background: #0d0d0d;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #232d42;
-  border-radius: 4px;
+  background: #27272a;
+  border-radius: 2px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #334155;
+  background: #e62429;
 }
 
 /* Marvel Glow Animations */
 @keyframes glow-pulse {
   0%, 100% {
-    opacity: 0.8;
-    filter: drop-shadow(0 0 15px currentColor);
+    opacity: 0.85;
+    filter: drop-shadow(0 0 12px currentColor);
   }
   50% {
     opacity: 1;
-    filter: drop-shadow(0 0 25px currentColor);
+    filter: drop-shadow(0 0 22px currentColor);
   }
 }
 
@@ -49,9 +67,25 @@
   animation: glow-pulse 3s infinite ease-in-out;
 }
 
-/* Marvel Original Timeline Tag Stylings & Color Presets */
+/* Comic Halftone / Dot Grid Background */
+.comic-bg-grid {
+  background-image: radial-gradient(rgba(230, 36, 41, 0.08) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+.comic-border {
+  border: 1px solid #27272a;
+  transition: all 0.2s ease-in-out;
+}
+
+.comic-border:hover {
+  border-color: #e62429;
+}
+
+/* Marvel Original Timeline Tag Stylings */
 .mcu-html-content strong {
-  font-weight: 600;
+  font-weight: 700;
+  color: #ffffff;
 }
 
 .mcu-html-content em {
@@ -60,7 +94,7 @@
 
 .mcu-html-content .presumably-dead {
   text-decoration: line-through;
-  opacity: 0.85;
+  opacity: 0.8;
 }
 
 .mcu-html-content .dead {
@@ -70,14 +104,15 @@
 
 .mcu-html-content .mcu {
   text-decoration: underline;
-  text-decoration-color: #f59e0b;
+  text-decoration-color: #e62429;
   text-decoration-thickness: 2px;
-  color: #fef08a;
+  color: #ffffff;
+  font-weight: 600;
 }
 
 /* Stone Tags */
 .mcu-html-content .tesseract {
-  background-color: rgba(59, 130, 246, 0.18);
+  background-color: rgba(59, 130, 246, 0.15);
   color: #93c5fd;
   padding: 1px 6px;
   border-radius: 4px;
@@ -85,7 +120,7 @@
 }
 
 .mcu-html-content .aether {
-  background-color: rgba(239, 68, 68, 0.18);
+  background-color: rgba(239, 68, 68, 0.15);
   color: #fca5a5;
   padding: 1px 6px;
   border-radius: 4px;
@@ -93,7 +128,7 @@
 }
 
 .mcu-html-content .power-stone {
-  background-color: rgba(168, 85, 247, 0.18);
+  background-color: rgba(168, 85, 247, 0.15);
   color: #d8b4fe;
   padding: 1px 6px;
   border-radius: 4px;
@@ -101,7 +136,7 @@
 }
 
 .mcu-html-content .mind-stone {
-  background-color: rgba(234, 179, 8, 0.18);
+  background-color: rgba(234, 179, 8, 0.15);
   color: #fde047;
   padding: 1px 6px;
   border-radius: 4px;
@@ -109,7 +144,7 @@
 }
 
 .mcu-html-content .eye-of-agamotto {
-  background-color: rgba(34, 197, 94, 0.18);
+  background-color: rgba(34, 197, 94, 0.15);
   color: #86efac;
   padding: 1px 6px;
   border-radius: 4px;
@@ -117,7 +152,7 @@
 }
 
 .mcu-html-content .soul-stone {
-  background-color: rgba(249, 115, 22, 0.18);
+  background-color: rgba(249, 115, 22, 0.15);
   color: #fdba74;
   padding: 1px 6px;
   border-radius: 4px;
@@ -125,37 +160,37 @@
 }
 
 /* Character Color Tags */
-.mcu-html-content .captain-america { color: #60a5fa; }
-.mcu-html-content .winter-soldier { color: #38bdf8; }
-.mcu-html-content .peggy-carter { color: #34d399; }
-.mcu-html-content .howard-stark { color: #f87171; }
+.mcu-html-content .captain-america { color: #93c5fd; }
+.mcu-html-content .winter-soldier { color: #7dd3fc; }
+.mcu-html-content .peggy-carter { color: #6ee7b7; }
+.mcu-html-content .howard-stark { color: #fca5a5; }
 .mcu-html-content .iron-man { color: #ef4444; }
-.mcu-html-content .thor { color: #fbbf24; }
-.mcu-html-content .loki { color: #4ade80; }
+.mcu-html-content .thor { color: #fcd34d; }
+.mcu-html-content .loki { color: #86efac; }
 .mcu-html-content .hulk { color: #4ade80; }
-.mcu-html-content .black-widow { color: #c084fc; }
+.mcu-html-content .black-widow { color: #d8b4fe; }
 .mcu-html-content .hawkeye { color: #c084fc; }
-.mcu-html-content .star-lord { color: #f43f5e; }
-.mcu-html-content .gamora { color: #a3e635; }
-.mcu-html-content .rocket { color: #fb923c; }
+.mcu-html-content .star-lord { color: #fb7185; }
+.mcu-html-content .gamora { color: #bef264; }
+.mcu-html-content .rocket { color: #fdba74; }
 .mcu-html-content .groot { color: #a3e635; }
-.mcu-html-content .drax { color: #fb7185; }
+.mcu-html-content .drax { color: #fda4af; }
 .mcu-html-content .doctor-strange { color: #38bdf8; }
 .mcu-html-content .spider-man { color: #f87171; }
-.mcu-html-content .black-panther { color: #e2e8f0; font-weight: 700; }
+.mcu-html-content .black-panther { color: #ffffff; font-weight: 700; text-decoration: underline; text-decoration-color: #52525b; }
 .mcu-html-content .scarlet-witch { color: #f43f5e; }
-.mcu-html-content .vision { color: #60a5fa; }
+.mcu-html-content .vision { color: #93c5fd; }
 .mcu-html-content .ant-man { color: #f87171; }
 .mcu-html-content .wasp { color: #fde047; }
-.mcu-html-content .daredevil { color: #f87171; }
+.mcu-html-content .daredevil { color: #ef4444; }
 .mcu-html-content .jessica-jones { color: #c084fc; }
-.mcu-html-content .luke-cage { color: #fbbf24; }
+.mcu-html-content .luke-cage { color: #fcd34d; }
 .mcu-html-content .iron-fist { color: #fde047; }
-.mcu-html-content .the-punisher { color: #e2e8f0; }
-.mcu-html-content .coulson { color: #60a5fa; }
-.mcu-html-content .fury { color: #818cf8; }
-.mcu-html-content .may { color: #cbd5e1; }
-.mcu-html-content .skye { color: #fb923c; }
-.mcu-html-content .enemy { color: #94a3b8; font-weight: 600; }
+.mcu-html-content .the-punisher { color: #ffffff; font-weight: 700; }
+.mcu-html-content .coulson { color: #93c5fd; }
+.mcu-html-content .fury { color: #a5b4fc; }
+.mcu-html-content .may { color: #e4e4e7; }
+.mcu-html-content .skye { color: #fdba74; }
+.mcu-html-content .enemy { color: #a1a1aa; font-weight: 600; }
 .mcu-html-content .secundary { color: #a7f3d0; }
-.mcu-html-content .boss { color: #cbd5e1; font-weight: 700; }
+.mcu-html-content .boss { color: #f4f4f5; font-weight: 700; }

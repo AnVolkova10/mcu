@@ -44,32 +44,32 @@ export const MediaScreen: React.FC = () => {
       
       {/* Header */}
       <div className="mb-8">
-        <h1 className="text-3xl font-black text-white tracking-tight flex items-center gap-3">
-          <Film className="w-8 h-8 text-red-500" />
-          <span>Películas, Series & Cortometrajes</span>
+        <h1 className="text-3xl sm:text-4xl font-black text-white tracking-wider flex items-center gap-3 font-title uppercase">
+          <Film className="w-8 h-8 text-[#e62429]" />
+          <span>PELÍCULAS, SERIES & CORTOMETRAJES</span>
         </h1>
-        <p className="text-sm text-slate-400 mt-1">
-          Catálogo completo de producciones de Marvel Studios y Marvel Television que componen la cronología.
+        <p className="text-sm text-zinc-400 mt-1 font-din">
+          Catálogo completo de producciones de Marvel Studios y Marvel Television que componen la cronología oficial.
         </p>
       </div>
 
       {/* Filter Chips */}
-      <div className="flex flex-wrap items-center gap-2 mb-8 bg-slate-900/80 p-3 rounded-2xl border border-slate-800 backdrop-blur-md">
-        <span className="text-xs font-bold text-slate-400 uppercase tracking-wider mr-2 flex items-center gap-1.5">
-          <Filter className="w-3.5 h-3.5 text-red-400" />
-          <span>Filtrar por Fase:</span>
+      <div className="flex flex-wrap items-center gap-2 mb-8 bg-[#141414] p-3.5 rounded-xl border border-[#27272a]">
+        <span className="text-xs font-bold text-zinc-400 uppercase tracking-wider mr-2 flex items-center gap-1.5 font-title">
+          <Filter className="w-3.5 h-3.5 text-[#e62429]" />
+          <span>FILTRAR POR FASE:</span>
         </span>
         {phases.map((p) => (
           <button
             key={p}
             onClick={() => setSelectedPhase(p)}
-            className={`px-3 py-1.5 rounded-xl text-xs font-semibold transition-all ${
+            className={`px-3 py-1.5 rounded text-xs font-bold font-title tracking-wider uppercase transition-all ${
               selectedPhase === p
-                ? 'bg-red-600 text-white shadow-md shadow-red-600/30'
-                : 'bg-slate-950 text-slate-400 border border-slate-800 hover:text-white hover:bg-slate-800'
+                ? 'bg-[#e62429] text-white shadow-md'
+                : 'bg-[#000000] text-zinc-400 border border-[#2a2a2a] hover:text-white hover:border-zinc-500'
             }`}
           >
-            {p === 'all' ? 'Todas las Fases' : p}
+            {p === 'all' ? 'TODAS LAS FASES' : p}
           </button>
         ))}
       </div>
@@ -82,34 +82,34 @@ export const MediaScreen: React.FC = () => {
             <div
               key={m.id}
               onClick={() => setSelectedMediaId(m.id)}
-              className="group relative rounded-2xl bg-slate-900/70 border border-slate-800 hover:border-slate-700 hover:bg-slate-900 transition-all p-5 flex flex-col justify-between shadow-xl cursor-pointer"
+              className="group relative rounded-xl bg-[#141414] border border-[#27272a] hover:border-[#e62429] hover:bg-[#181818] transition-all p-5 flex flex-col justify-between shadow-xl cursor-pointer"
             >
               <div>
                 {/* Top Badge Row */}
                 <div className="flex items-center justify-between gap-2 mb-3">
-                  <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-red-950/80 border border-red-800 text-red-300">
+                  <span className="text-[10px] font-bold font-title tracking-widest uppercase px-2 py-0.5 rounded bg-[#000000] border border-[#2f2f2f] text-[#e62429]">
                     {m.phase}
                   </span>
-                  <span className="text-[11px] font-semibold text-slate-400 flex items-center gap-1">
-                    <Calendar className="w-3 h-3 text-slate-500" />
+                  <span className="text-xs font-semibold text-zinc-400 flex items-center gap-1 font-din">
+                    <Calendar className="w-3 h-3 text-zinc-500" />
                     {m.releaseYear}
                   </span>
                 </div>
 
                 {/* Title */}
-                <h3 className="text-base font-bold text-white group-hover:text-red-400 transition-colors mb-2">
+                <h3 className="text-lg font-bold text-white group-hover:text-[#e62429] transition-colors mb-2 font-title uppercase tracking-wide">
                   {m.title}
                 </h3>
               </div>
 
               {/* Bottom Meta */}
-              <div className="pt-3 mt-4 border-t border-slate-800/80 flex items-center justify-between text-xs">
-                <span className="text-slate-400 uppercase font-medium text-[10px]">
+              <div className="pt-3 mt-4 border-t border-[#242424] flex items-center justify-between text-xs font-din">
+                <span className="text-zinc-400 uppercase font-semibold text-[11px]">
                   {m.type}
                 </span>
-                <span className="font-semibold text-red-400 flex items-center gap-1">
+                <span className="font-bold text-[#e62429] flex items-center gap-1">
                   <Clock className="w-3 h-3" />
-                  {totalEvents} {totalEvents === 1 ? 'evento' : 'eventos'} en cronología
+                  {totalEvents} {totalEvents === 1 ? 'evento' : 'eventos'}
                 </span>
               </div>
             </div>

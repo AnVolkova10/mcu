@@ -113,30 +113,30 @@ export const SearchModal: React.FC = () => {
       const el = document.getElementById(eventId);
       if (el) {
         el.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        el.classList.add('ring-2', 'ring-red-500');
-        setTimeout(() => el.classList.remove('ring-2', 'ring-red-500'), 3000);
+        el.classList.add('ring-2', 'ring-[#e62429]');
+        setTimeout(() => el.classList.remove('ring-2', 'ring-[#e62429]'), 3000);
       }
     }, 150);
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-start justify-center pt-16 sm:pt-24 px-4 bg-black/80 backdrop-blur-md">
-      <div className="relative w-full max-w-2xl bg-slate-950 border border-slate-800 rounded-3xl shadow-2xl overflow-hidden flex flex-col max-h-[80vh]">
+    <div className="fixed inset-0 z-50 flex items-start justify-center pt-16 sm:pt-24 px-4 bg-black/85 backdrop-blur-md font-din">
+      <div className="relative w-full max-w-2xl bg-[#0d0d0d] border border-[#27272a] rounded-2xl shadow-2xl overflow-hidden flex flex-col max-h-[80vh]">
         
         {/* Search Input Bar */}
-        <div className="p-4 border-b border-slate-800 flex items-center gap-3">
-          <Search className="w-5 h-5 text-red-500 shrink-0" />
+        <div className="p-4 border-b border-[#222222] flex items-center gap-3 bg-[#141414]">
+          <Search className="w-5 h-5 text-[#e62429] shrink-0" />
           <input
             ref={inputRef}
             type="text"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Buscar en todo el MCU (ej. Tesseract, Steve Rogers, Thanos, 1945)..."
-            className="w-full bg-transparent text-white placeholder-slate-500 text-sm focus:outline-none"
+            className="w-full bg-transparent text-white placeholder-zinc-500 text-sm focus:outline-none"
           />
           <button
             onClick={() => setIsSearchOpen(false)}
-            className="p-1.5 rounded-lg bg-slate-900 text-slate-400 hover:text-white border border-slate-800"
+            className="p-1.5 rounded bg-[#0a0a0a] text-zinc-400 hover:text-white border border-[#2e2e2e]"
           >
             <X className="w-4 h-4" />
           </button>
@@ -145,7 +145,7 @@ export const SearchModal: React.FC = () => {
         {/* Results Body */}
         <div className="p-4 overflow-y-auto space-y-5">
           {!cleanQuery && (
-            <div className="py-12 text-center text-slate-500 text-xs">
+            <div className="py-12 text-center text-zinc-500 text-xs font-din">
               Escribe algo para buscar en la base de datos de Marvel Cinematic Universe...
             </div>
           )}
@@ -153,9 +153,9 @@ export const SearchModal: React.FC = () => {
           {/* Characters Section */}
           {matchedCharacters.length > 0 && (
             <div>
-              <h4 className="text-[11px] font-bold uppercase tracking-wider text-slate-400 mb-2 flex items-center gap-1.5">
-                <Users className="w-3.5 h-3.5 text-blue-400" />
-                <span>Personajes</span>
+              <h4 className="text-xs font-bold uppercase tracking-wider text-zinc-400 mb-2 flex items-center gap-1.5 font-title">
+                <Users className="w-3.5 h-3.5 text-[#e62429]" />
+                <span>PERSONAJES</span>
               </h4>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                 {matchedCharacters.map((c) => (
@@ -165,19 +165,19 @@ export const SearchModal: React.FC = () => {
                       setIsSearchOpen(false);
                       setSelectedCharacterId(c.id);
                     }}
-                    className="p-2.5 rounded-xl bg-slate-900/80 border border-slate-800 hover:border-slate-700 cursor-pointer flex items-center gap-3 group"
+                    className="p-2.5 rounded-lg bg-[#141414] border border-[#27272a] hover:border-[#e62429] hover:bg-[#181818] cursor-pointer flex items-center gap-3 group"
                   >
                     <div
-                      className="w-8 h-8 rounded-lg flex items-center justify-center text-white text-xs font-bold shrink-0"
+                      className="w-8 h-8 rounded flex items-center justify-center text-white text-xs font-black shrink-0 font-title"
                       style={{ backgroundColor: c.color }}
                     >
                       {(c.alias || c.name).slice(0, 2)}
                     </div>
                     <div className="min-w-0 flex-1">
-                      <p className="text-xs font-bold text-white truncate group-hover:text-red-400 transition-colors">
+                      <p className="text-xs font-bold text-white truncate group-hover:text-[#e62429] transition-colors font-title uppercase tracking-wide">
                         {c.name}
                       </p>
-                      <p className="text-[10px] text-slate-400 truncate">{c.affiliation}</p>
+                      <p className="text-[10px] text-zinc-400 truncate">{c.affiliation}</p>
                     </div>
                   </div>
                 ))}
@@ -188,9 +188,9 @@ export const SearchModal: React.FC = () => {
           {/* Media Section */}
           {matchedMedia.length > 0 && (
             <div>
-              <h4 className="text-[11px] font-bold uppercase tracking-wider text-slate-400 mb-2 flex items-center gap-1.5">
-                <Film className="w-3.5 h-3.5 text-red-400" />
-                <span>Películas & Series</span>
+              <h4 className="text-xs font-bold uppercase tracking-wider text-zinc-400 mb-2 flex items-center gap-1.5 font-title">
+                <Film className="w-3.5 h-3.5 text-[#e62429]" />
+                <span>PELÍCULAS & SERIES</span>
               </h4>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                 {matchedMedia.map((m) => (
@@ -200,19 +200,19 @@ export const SearchModal: React.FC = () => {
                       setIsSearchOpen(false);
                       setSelectedMediaId(m.id);
                     }}
-                    className="p-2.5 rounded-xl bg-slate-900/80 border border-slate-800 hover:border-slate-700 cursor-pointer flex items-center gap-3 group"
+                    className="p-2.5 rounded-lg bg-[#141414] border border-[#27272a] hover:border-[#e62429] hover:bg-[#181818] cursor-pointer flex items-center gap-3 group"
                   >
                     <div
-                      className="w-8 h-8 rounded-lg flex items-center justify-center text-white text-xs font-bold shrink-0"
+                      className="w-8 h-8 rounded flex items-center justify-center text-white text-xs font-bold shrink-0"
                       style={{ backgroundColor: m.posterColor }}
                     >
                       <Film className="w-4 h-4" />
                     </div>
                     <div className="min-w-0 flex-1">
-                      <p className="text-xs font-bold text-white truncate group-hover:text-red-400 transition-colors">
+                      <p className="text-xs font-bold text-white truncate group-hover:text-[#e62429] transition-colors font-title uppercase tracking-wide">
                         {m.title}
                       </p>
-                      <p className="text-[10px] text-slate-400 truncate">{m.phase} ({m.releaseYear})</p>
+                      <p className="text-[10px] text-zinc-400 truncate">{m.phase} ({m.releaseYear})</p>
                     </div>
                   </div>
                 ))}
@@ -223,9 +223,9 @@ export const SearchModal: React.FC = () => {
           {/* Stones Section */}
           {matchedStones.length > 0 && (
             <div>
-              <h4 className="text-[11px] font-bold uppercase tracking-wider text-slate-400 mb-2 flex items-center gap-1.5">
+              <h4 className="text-xs font-bold uppercase tracking-wider text-zinc-400 mb-2 flex items-center gap-1.5 font-title">
                 <Sparkles className="w-3.5 h-3.5 text-amber-400" />
-                <span>Gemas del Infinito</span>
+                <span>GEMAS DEL INFINITO</span>
               </h4>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                 {matchedStones.map((s) => (
@@ -235,19 +235,19 @@ export const SearchModal: React.FC = () => {
                       setIsSearchOpen(false);
                       setSelectedStoneId(s.id);
                     }}
-                    className="p-2.5 rounded-xl bg-slate-900/80 border border-slate-800 hover:border-slate-700 cursor-pointer flex items-center gap-3 group"
+                    className="p-2.5 rounded-lg bg-[#141414] border border-[#27272a] hover:border-amber-400 hover:bg-[#181818] cursor-pointer flex items-center gap-3 group"
                   >
                     <div
-                      className="w-8 h-8 rounded-lg flex items-center justify-center text-white text-xs font-bold shrink-0"
+                      className="w-8 h-8 rounded flex items-center justify-center text-white text-xs font-bold shrink-0"
                       style={{ backgroundColor: s.colorHex }}
                     >
                       <Sparkles className="w-4 h-4" />
                     </div>
                     <div className="min-w-0 flex-1">
-                      <p className="text-xs font-bold text-white truncate group-hover:text-red-400 transition-colors">
+                      <p className="text-xs font-bold text-white truncate group-hover:text-amber-400 transition-colors font-title uppercase tracking-wide">
                         {s.name}
                       </p>
-                      <p className="text-[10px] text-slate-400 truncate">{s.vessel}</p>
+                      <p className="text-[10px] text-zinc-400 truncate">{s.vessel}</p>
                     </div>
                   </div>
                 ))}
@@ -258,22 +258,22 @@ export const SearchModal: React.FC = () => {
           {/* Events Section */}
           {matchedEvents.length > 0 && (
             <div>
-              <h4 className="text-[11px] font-bold uppercase tracking-wider text-slate-400 mb-2 flex items-center gap-1.5">
-                <Clock className="w-3.5 h-3.5 text-emerald-400" />
-                <span>Eventos de la Cronología</span>
+              <h4 className="text-xs font-bold uppercase tracking-wider text-zinc-400 mb-2 flex items-center gap-1.5 font-title">
+                <Clock className="w-3.5 h-3.5 text-[#e62429]" />
+                <span>EVENTOS DE LA CRONOLOGÍA</span>
               </h4>
               <div className="space-y-2">
                 {matchedEvents.map((evt) => (
                   <div
                     key={evt.id}
                     onClick={() => handleSelectEvent(evt.id)}
-                    className="p-3 rounded-xl bg-slate-900/80 border border-slate-800 hover:border-slate-700 cursor-pointer transition-all group"
+                    className="p-3 rounded-lg bg-[#141414] border border-[#27272a] hover:border-[#e62429] hover:bg-[#181818] cursor-pointer transition-all group"
                   >
                     <div className="flex items-center justify-between text-xs mb-1">
-                      <span className="font-bold text-red-400">Año: {evt.eraTitle}</span>
-                      <span className="text-[10px] text-slate-500 font-semibold">{evt.mediaTitle}</span>
+                      <span className="font-bold text-[#e62429] font-title tracking-wider">AÑO: {evt.eraTitle}</span>
+                      <span className="text-[10px] text-zinc-400 font-bold uppercase font-title">{evt.mediaTitle}</span>
                     </div>
-                    <p className="text-[11px] text-slate-300 line-clamp-2">{evt.snippet}</p>
+                    <p className="text-[11px] text-zinc-300 line-clamp-2 font-din">{evt.snippet}</p>
                   </div>
                 ))}
               </div>
@@ -285,7 +285,7 @@ export const SearchModal: React.FC = () => {
             matchedMedia.length === 0 &&
             matchedStones.length === 0 &&
             matchedEvents.length === 0 && (
-              <div className="py-12 text-center text-slate-500 text-xs">
+              <div className="py-12 text-center text-zinc-500 text-xs">
                 No se encontraron resultados para &quot;{query}&quot;.
               </div>
             )}

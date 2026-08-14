@@ -42,20 +42,20 @@ export const MediaDetailModal: React.FC = () => {
       const el = document.getElementById(eventId);
       if (el) {
         el.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        el.classList.add('ring-2', 'ring-red-500', 'transition-all');
-        setTimeout(() => el.classList.remove('ring-2', 'ring-red-500'), 3000);
+        el.classList.add('ring-2', 'ring-[#e62429]', 'transition-all');
+        setTimeout(() => el.classList.remove('ring-2', 'ring-[#e62429]'), 3000);
       }
     }, 150);
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md transition-opacity">
-      <div className="relative w-full max-w-2xl max-h-[90vh] bg-slate-950 border border-slate-800 rounded-3xl shadow-2xl p-6 sm:p-8 overflow-y-auto">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md transition-opacity font-din">
+      <div className="relative w-full max-w-2xl max-h-[90vh] bg-[#0d0d0d] border border-[#27272a] rounded-2xl shadow-2xl p-6 sm:p-8 overflow-y-auto">
         
         {/* Close Button */}
         <button
           onClick={() => setSelectedMediaId(null)}
-          className="absolute top-5 right-5 p-2 rounded-xl bg-slate-900 text-slate-400 hover:text-white border border-slate-800 transition-colors"
+          className="absolute top-5 right-5 p-2 rounded bg-[#141414] text-zinc-400 hover:text-white border border-[#2e2e2e] transition-colors"
         >
           <X className="w-5 h-5" />
         </button>
@@ -63,7 +63,7 @@ export const MediaDetailModal: React.FC = () => {
         {/* Media Header */}
         <div className="flex items-start gap-4 mb-6">
           <div
-            className="w-16 h-16 rounded-2xl flex items-center justify-center text-white text-2xl shadow-lg shrink-0 border border-white/20"
+            className="w-16 h-16 rounded-xl flex items-center justify-center text-white text-2xl shadow-lg shrink-0 border border-white/20"
             style={{ backgroundColor: media.posterColor }}
           >
             <Film className="w-8 h-8" />
@@ -71,53 +71,53 @@ export const MediaDetailModal: React.FC = () => {
 
           <div>
             <div className="flex items-center gap-2 flex-wrap">
-              <span className="text-[11px] font-bold uppercase px-2.5 py-0.5 rounded bg-red-950/80 border border-red-800 text-red-300">
+              <span className="text-[10px] font-bold font-title tracking-widest uppercase px-2.5 py-0.5 rounded bg-[#e62429] text-white">
                 {media.phase}
               </span>
-              <span className="text-[11px] font-semibold uppercase px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">
+              <span className="text-[10px] font-bold font-title tracking-widest uppercase px-2 py-0.5 rounded bg-[#161616] border border-[#2e2e2e] text-zinc-400">
                 {media.type}
               </span>
             </div>
-            <h2 className="text-xl sm:text-2xl font-black text-white mt-1.5">{media.title}</h2>
-            <p className="text-xs text-slate-400 mt-0.5 flex items-center gap-1.5">
-              <Calendar className="w-3.5 h-3.5 text-slate-500" />
+            <h2 className="text-2xl font-black text-white mt-1.5 font-title uppercase tracking-wide">{media.title}</h2>
+            <p className="text-xs text-zinc-400 mt-0.5 flex items-center gap-1.5 font-din">
+              <Calendar className="w-3.5 h-3.5 text-zinc-500" />
               <span>Año de Estreno: {media.releaseYear}</span>
             </p>
           </div>
         </div>
 
         {/* Description */}
-        <p className="text-sm text-slate-300 mb-6 leading-relaxed bg-slate-900/50 p-4 rounded-2xl border border-slate-800/80">
+        <p className="text-xs text-zinc-300 mb-6 leading-relaxed bg-[#141414] p-4 rounded-xl border border-[#27272a]">
           {media.description}
         </p>
 
         {/* Timeline Events from this media */}
         <div>
-          <h3 className="text-xs font-black uppercase tracking-wider text-slate-400 mb-3 flex items-center gap-2">
-            <Clock className="w-4 h-4 text-red-400" />
-            <span>Eventos de esta obra en la cronología ({events.length})</span>
+          <h3 className="text-xs font-bold uppercase tracking-wider text-zinc-300 mb-3 flex items-center gap-2 font-title">
+            <Clock className="w-4 h-4 text-[#e62429]" />
+            <span>EVENTOS DE ESTA OBRA EN LA CRONOLOGÍA ({events.length})</span>
           </h3>
 
           <div className="space-y-3">
             {events.length === 0 ? (
-              <p className="text-xs text-slate-500 italic">No hay eventos directos registrados para este título.</p>
+              <p className="text-xs text-zinc-500 italic">No hay eventos directos registrados para este título.</p>
             ) : (
               events.map((evt, idx) => (
                 <div
                   key={idx}
                   onClick={() => jumpToEvent(evt.eventId)}
-                  className="p-4 rounded-xl bg-slate-900/80 border border-slate-800 hover:border-slate-700 hover:bg-slate-850 cursor-pointer transition-all group"
+                  className="p-4 rounded-xl bg-[#141414] border border-[#27272a] hover:border-[#e62429] hover:bg-[#181818] cursor-pointer transition-all group"
                 >
                   <div className="flex items-center justify-between gap-2 mb-2">
-                    <span className="text-xs font-black text-red-400">
-                      Año en Cronología: {evt.eraTitle}
+                    <span className="text-xs font-bold text-[#e62429] font-title tracking-wider">
+                      AÑO EN CRONOLOGÍA: {evt.eraTitle}
                     </span>
-                    <span className="text-[11px] text-slate-400 flex items-center gap-1 group-hover:text-white transition-colors">
+                    <span className="text-[11px] text-zinc-400 flex items-center gap-1 group-hover:text-white transition-colors">
                       Ir al punto en la cronología <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
                     </span>
                   </div>
 
-                  <div className="text-xs text-slate-300 space-y-1.5 mcu-html-content line-clamp-4">
+                  <div className="text-xs text-zinc-300 space-y-1.5 mcu-html-content line-clamp-4">
                     {evt.paragraphs.map((p, pIdx) => (
                       <p key={pIdx} dangerouslySetInnerHTML={{ __html: p }} />
                     ))}

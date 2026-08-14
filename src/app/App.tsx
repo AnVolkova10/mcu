@@ -11,7 +11,7 @@ import { CharacterDrawer } from '@/components/CharacterDrawer';
 import { StoneDrawer } from '@/components/StoneDrawer';
 import { MediaDetailModal } from '@/components/MediaDetailModal';
 import { SearchModal } from '@/components/SearchModal';
-import { Shield, Sparkles, Heart } from 'lucide-react';
+import marvelLogo from '@/assets/marvel-logo.svg';
 
 export const App: React.FC = () => {
   const { activeScreen, setActiveScreen } = useStore();
@@ -36,7 +36,7 @@ export const App: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#0b0f19] text-slate-100 flex flex-col font-sans selection:bg-red-600 selection:text-white">
+    <div className="min-h-screen bg-[#0d0d0d] text-zinc-100 flex flex-col font-sans selection:bg-[#e62429] selection:text-white">
       {/* Top Navbar */}
       <Navbar />
 
@@ -52,35 +52,33 @@ export const App: React.FC = () => {
       <SearchModal />
 
       {/* Footer */}
-      <footer className="border-t border-slate-900 bg-slate-950/80 py-8 px-4 text-center text-xs text-slate-500">
+      <footer className="border-t border-[#1f1f1f] bg-[#000000] py-8 px-4 text-center text-xs text-zinc-500 font-din">
         <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div className="flex items-center gap-2">
-            <span className="bg-red-600 text-white font-black px-2 py-0.5 rounded text-[10px] tracking-tight uppercase">
-              MARVEL
-            </span>
-            <span className="text-slate-400 font-semibold">MCU Timeline & Archive Database</span>
+          <div className="flex items-center gap-3">
+            <img src={marvelLogo} alt="MARVEL" className="h-6 w-auto object-contain" />
+            <span className="text-zinc-300 font-bold font-title tracking-wider">MCU TIMELINE ARCHIVE</span>
           </div>
 
-          <p className="text-slate-500 text-[11px]">
-            Diseñado para amantes y exploradores del Universo Cinematográfico de Marvel.
+          <p className="text-zinc-400 text-[11px]">
+            Cronología interactiva oficial del Universo Cinematográfico de Marvel.
           </p>
 
-          <div className="flex items-center gap-4 text-slate-400 text-xs">
+          <div className="flex items-center gap-4 text-zinc-400 text-xs font-title tracking-wider">
             <button 
               onClick={() => setActiveScreen('timeline')}
-              className="hover:text-red-400 transition-colors"
+              className="hover:text-[#e62429] transition-colors uppercase"
             >
-              Cronología
+              CRONOLOGÍA
             </button>
             <button 
               onClick={() => setActiveScreen('stones')}
-              className="hover:text-amber-400 transition-colors"
+              className="hover:text-amber-400 transition-colors uppercase"
             >
-              Gemas
+              GEMAS
             </button>
             <button 
               onClick={() => setActiveScreen('stats')}
-              className="hover:text-blue-400 transition-colors"
+              className="hover:text-[#e62429] transition-colors uppercase"
             >
               S.H.I.E.L.D.
             </button>
