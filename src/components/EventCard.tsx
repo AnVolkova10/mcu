@@ -13,7 +13,7 @@ import {
   Tag, 
   ExternalLink 
 } from 'lucide-react';
-import { charactersData } from '@/data/charactersData';
+import { charactersData, allCharacters } from '@/data/charactersData';
 import { infinityStonesData } from '@/data/infinityStonesData';
 import { mediaData } from '@/data/mediaData';
 
@@ -48,39 +48,44 @@ export const EventCard: React.FC<EventCardProps> = ({ event }) => {
 
   const handleContentClick = (e: React.MouseEvent<HTMLDivElement>) => {
     const target = e.target as HTMLElement;
-    const span = target.closest('span');
-    if (!span) return;
+    const el = target.closest('strong, span, em, a');
+    if (!el) return;
 
     // Check Infinity Stones
-    if (span.classList.contains('tesseract')) {
+    if (el.classList.contains('tesseract')) {
       setSelectedStoneId('space');
       return;
     }
-    if (span.classList.contains('aether')) {
+    if (el.classList.contains('aether')) {
       setSelectedStoneId('reality');
       return;
     }
-    if (span.classList.contains('power-stone')) {
+    if (el.classList.contains('power-stone')) {
       setSelectedStoneId('power');
       return;
     }
-    if (span.classList.contains('mind-stone')) {
+    if (el.classList.contains('mind-stone')) {
       setSelectedStoneId('mind');
       return;
     }
-    if (span.classList.contains('eye-of-agamotto')) {
+    if (el.classList.contains('eye-of-agamotto')) {
       setSelectedStoneId('time');
       return;
     }
-    if (span.classList.contains('soul-stone')) {
+    if (el.classList.contains('soul-stone')) {
       setSelectedStoneId('soul');
       return;
     }
 
-    // Check Characters by matching CSS class names
-    for (const className of Array.from(span.classList)) {
+    // Check Characters by matching character ID or CSS class name
+    for (const className of Array.from(el.classList)) {
       if (charactersData[className]) {
         setSelectedCharacterId(className);
+        return;
+      }
+      const charByCss = allCharacters.find((c) => c.cssClass === className);
+      if (charByCss) {
+        setSelectedCharacterId(charByCss.id);
         return;
       }
     }

@@ -525,16 +525,22 @@ export const timelineEras: EraGroup[] = [
         "rawClasses": [
           "captain-america-1"
         ],
-        "rawHtml": "<h1>Captain America: The First Avenger <em>(2011)</em></h1>\r\n                <p>In Tønsberg a German-occupied Norway town, Lieutenant general <strong class=\"enemy\">Johann\r\n                        Schmidt</strong> steals a mysterious relic called the\r\n                    <strong class=\"tesseract\">Tesseract</strong> which possesses untold godly powers.\r\n                </p>",
+        "rawHtml": "<p>In Tønsberg, a German-occupied town in Norway, Nazi SS officer and head of HYDRA <strong class=\"red-skull\">Johann Schmidt</strong> storms an ancient Norse crypt and steals a legendary cosmic relic known as <strong class=\"tesseract\">the Tesseract (Space Stone)</strong>, hidden behind an intricate Yggdrasil relief. Schmidt tasks his chief biochemist, Dr. <strong class=\"arnim-zola\">Arnim Zola</strong>, with harnessing its infinite cosmic blue energy to power a destructive arsenal of advanced weaponry, planning to break away from Adolf Hitler's Third Reich and establish <strong class=\"enemy\">HYDRA</strong> as the supreme global power.</p>",
         "paragraphs": [
-          "In Tønsberg a German-occupied Norway town, Lieutenant general <strong class=\"enemy\">Johann Schmidt</strong> steals a mysterious relic called the <strong class=\"tesseract\">Tesseract</strong> which possesses untold godly powers."
+          "In Tønsberg, a German-occupied town in Norway, Nazi SS officer and head of HYDRA <strong class=\"red-skull\">Johann Schmidt</strong> storms an ancient Norse crypt and steals a legendary cosmic relic known as <strong class=\"tesseract\">the Tesseract (Space Stone)</strong>, hidden behind an intricate Yggdrasil relief. Schmidt tasks his chief biochemist, Dr. <strong class=\"arnim-zola\">Arnim Zola</strong>, with harnessing its infinite cosmic blue energy to power a destructive arsenal of advanced weaponry, planning to break away from Adolf Hitler's Third Reich and establish <strong class=\"enemy\">HYDRA</strong> as the supreme global power."
         ],
-        "characters": [],
+        "characters": [
+          "red-skull",
+          "arnim-zola"
+        ],
         "stones": [
           "space"
         ],
         "deaths": [],
-        "mcuHighlights": [],
+        "mcuHighlights": [
+          "Discovery of the Tesseract in Norway",
+          "HYDRA's Energy Weaponry Project"
+        ],
         "timelineType": "sacred-616",
         "earthDesignation": "Earth-616 (The Sacred Timeline)"
       }
@@ -558,24 +564,36 @@ export const timelineEras: EraGroup[] = [
         "rawClasses": [
           "captain-america-1"
         ],
-        "rawHtml": "<p>New York City, <strong class=\"captain-america\">Steve Rogers</strong> attends to <em>Stark Expo</em>\r\n                    with his best friend, Sgt. <strong class=\"winter-soldier\">James \"Bucky\" Barnes</strong>. Dr. <strong\r\n                        class=\"secundary\">Abraham Erskine</strong> allows Rogers to enlist into the <em>Strategic\r\n                        Scientific Reserve (SSR)</em> as part of a <strong>\"super-soldier\" experiment with\r\n                        \"vita-rays\"</strong> under Erskine, Colonel <strong class=\"secundary\">Chester Phillips</strong>,\r\n                    and British agent <strong class=\"peggy-carter\">Peggy Carter</strong>. Schmidt underwent an imperfect\r\n                    or\r\n                    unready version of the procedure and suffered permanent side-effects. Schmidt and Dr. <strong\r\n                        class=\"enemy\">Arnim Zola</strong> harness the energies of the Tesseract, intending to\r\n                    <strong>use the power to fuel Zola's inventions.</strong>\r\n                </p>\r\n                <p>\r\n                    Schmidt sends assassin <strong class=\"enemy\">Heinz Kruger</strong> to kill <strong\r\n                        class=\"secundary dead\">Erskine</strong> and flees with a\r\n                    <strong>vial of the serum.</strong> Rogers pursues and captures <strong\r\n                        class=\"enemy dead\">Kruger</strong>, but he commits suicide and the <strong class=\"mcu\">serum\r\n                        gets destroy</strong>. Rogers has Carter and engineer <strong class=\"howard-stark\">Howard\r\n                        Stark</strong> fly him behind enemy lines to rescue\r\n                    Barnes. Rogers infiltrates the fortress of Schmidt's Nazi division <em>Hydra</em>, freeing him and\r\n                    the other prisoners. Rogers recruits Barnes, <strong class=\"secundary\"> Dum Dum Dugan, Gabe Jones,\r\n                        Jim Morita, James Montgomery Falsworth, and Jacques Dernier</strong> to attack other known Hydra\r\n                    bases.\r\n                </p>",
+        "rawHtml": "<p>In Brooklyn, New York, sickly and asthmatic 90-pound <strong class=\"captain-america\">Steve Rogers</strong> is repeatedly rejected for military service. While attending the <em>Stark World Exposition of Tomorrow</em> with his lifelong friend, Sgt. <strong class=\"winter-soldier\">James \"Bucky\" Barnes</strong> (shipping out to Europe with the 107th Infantry), German-defector scientist Dr. <strong class=\"abraham-erskine\">Abraham Erskine</strong> overhears Steve's pure-hearted desire to fight bullies and enlists him into the <em>Strategic Scientific Reserve (SSR)</em>. At Camp Lehigh, Colonel <strong class=\"chester-phillips\">Chester Phillips</strong> and British intelligence agent <strong class=\"peggy-carter\">Peggy Carter</strong> put recruits through rigorous trials, where Steve demonstrates unmatched selflessness by jumping on a dummy grenade. In a secret Brooklyn laboratory powered by engineer <strong class=\"howard-stark\">Howard Stark</strong>, Erskine administers the experimental <strong>Super-Soldier Serum</strong> and bombards Steve with <strong>Vita-Rays</strong>, transforming him into a peak-human super-soldier. Tragically, undercover HYDRA operative <strong class=\"enemy\">Heinz Kruger</strong> shoots and kills <strong class=\"abraham-erskine dead\">Erskine</strong> and destroys the remaining serum vials before Rogers pursues and captures him, with <strong class=\"enemy dead\">Kruger</strong> committing suicide by cyanide.</p>\n<p>With the serum formula lost, the US government relegates Steve to a theatrical costumed mascot dubbed <strong>\"Captain America\"</strong> to sell war bonds on tour. In November 1943, while touring near the Italian front lines, Steve learns that Bucky's unit—the 107th Infantry—was captured at Azzano by HYDRA. Refusing orders to stand down, Rogers goes rogue and mounts a daring solo infiltration into HYDRA's heavily fortified Austrian weapons facility, flown behind enemy lines by <strong class=\"peggy-carter\">Peggy Carter</strong> and <strong class=\"howard-stark\">Howard Stark</strong>. Steve liberates Barnes and over 400 Allied prisoners of war, destroying the weapons plant. During the escape, Steve confronts <strong class=\"red-skull\">Johann Schmidt</strong>, who removes his synthetic human face mask to reveal his horrifying crimson visage: <strong class=\"red-skull\">The Red Skull</strong>—the consequence of an imperfect, premature dose of Erskine's serum.</p>\n<p>Officially promoted to Captain by Colonel Phillips, Steve forms an elite strike unit called the <strong>Howling Commandos</strong>, recruiting <strong class=\"winter-soldier\">Bucky Barnes</strong>, <strong class=\"dum-dum-dugan\">Timothy \"Dum Dum\" Dugan</strong>, <strong class=\"secundary\">Gabe Jones</strong>, <strong class=\"secundary\">Jim Morita</strong>, <strong class=\"secundary\">James Montgomery Falsworth</strong>, and <strong class=\"secundary\">Jacques Dernier</strong>. In London's underground SSR bunker, <strong class=\"howard-stark\">Howard Stark</strong> equips Steve with tailored tactical combat armor and presents him with a prototype circular shield forged from pure <strong>Vibranium</strong>—a rare Wakandan metal possessing total kinetic shock absorption. Rogers adopts the shield and paints it with his signature stars and stripes. Over the following months, Captain America and the Howling Commandos systematically raid and obliterate HYDRA's manufacturing facilities across Europe.</p>",
         "paragraphs": [
-          "New York City, <strong class=\"captain-america\">Steve Rogers</strong> attends to <em>Stark Expo</em> with his best friend, Sgt. <strong class=\"winter-soldier\">James \"Bucky\" Barnes</strong>. Dr. <strong class=\"secundary\">Abraham Erskine</strong> allows Rogers to enlist into the <em>Strategic Scientific Reserve (SSR)</em> as part of a <strong>\"super-soldier\" experiment with \"vita-rays\"</strong> under Erskine, Colonel <strong class=\"secundary\">Chester Phillips</strong>, and British agent <strong class=\"peggy-carter\">Peggy Carter</strong>. Schmidt underwent an imperfect or unready version of the procedure and suffered permanent side-effects. Schmidt and Dr. <strong class=\"enemy\">Arnim Zola</strong> harness the energies of the Tesseract, intending to <strong>use the power to fuel Zola's inventions.</strong>",
-          "Schmidt sends assassin <strong class=\"enemy\">Heinz Kruger</strong> to kill <strong class=\"secundary dead\">Erskine</strong> and flees with a <strong>vial of the serum.</strong> Rogers pursues and captures <strong class=\"enemy dead\">Kruger</strong>, but he commits suicide and the <strong class=\"mcu\">serum gets destroy</strong>. Rogers has Carter and engineer <strong class=\"howard-stark\">Howard Stark</strong> fly him behind enemy lines to rescue Barnes. Rogers infiltrates the fortress of Schmidt's Nazi division <em>Hydra</em>, freeing him and the other prisoners. Rogers recruits Barnes, <strong class=\"secundary\"> Dum Dum Dugan, Gabe Jones, Jim Morita, James Montgomery Falsworth, and Jacques Dernier</strong> to attack other known Hydra bases."
+          "In Brooklyn, New York, sickly and asthmatic 90-pound <strong class=\"captain-america\">Steve Rogers</strong> is repeatedly rejected for military service. While attending the <em>Stark World Exposition of Tomorrow</em> with his lifelong friend, Sgt. <strong class=\"winter-soldier\">James \"Bucky\" Barnes</strong> (shipping out to Europe with the 107th Infantry), German-defector scientist Dr. <strong class=\"abraham-erskine\">Abraham Erskine</strong> overhears Steve's pure-hearted desire to fight bullies and enlists him into the <em>Strategic Scientific Reserve (SSR)</em>. At Camp Lehigh, Colonel <strong class=\"chester-phillips\">Chester Phillips</strong> and British intelligence agent <strong class=\"peggy-carter\">Peggy Carter</strong> put recruits through rigorous trials, where Steve demonstrates unmatched selflessness by jumping on a dummy grenade. In a secret Brooklyn laboratory powered by engineer <strong class=\"howard-stark\">Howard Stark</strong>, Erskine administers the experimental <strong>Super-Soldier Serum</strong> and bombards Steve with <strong>Vita-Rays</strong>, transforming him into a peak-human super-soldier. Tragically, undercover HYDRA operative <strong class=\"enemy\">Heinz Kruger</strong> shoots and kills <strong class=\"abraham-erskine dead\">Erskine</strong> and destroys the remaining serum vials before Rogers pursues and captures him, with <strong class=\"enemy dead\">Kruger</strong> committing suicide by cyanide.",
+          "With the serum formula lost, the US government relegates Steve to a theatrical costumed mascot dubbed <strong>\"Captain America\"</strong> to sell war bonds on tour. In November 1943, while touring near the Italian front lines, Steve learns that Bucky's unit—the 107th Infantry—was captured at Azzano by HYDRA. Refusing orders to stand down, Rogers goes rogue and mounts a daring solo infiltration into HYDRA's heavily fortified Austrian weapons facility, flown behind enemy lines by <strong class=\"peggy-carter\">Peggy Carter</strong> and <strong class=\"howard-stark\">Howard Stark</strong>. Steve liberates Barnes and over 400 Allied prisoners of war, destroying the weapons plant. During the escape, Steve confronts <strong class=\"red-skull\">Johann Schmidt</strong>, who removes his synthetic human face mask to reveal his horrifying crimson visage: <strong class=\"red-skull\">The Red Skull</strong>—the consequence of an imperfect, premature dose of Erskine's serum.",
+          "Officially promoted to Captain by Colonel Phillips, Steve forms an elite strike unit called the <strong>Howling Commandos</strong>, recruiting <strong class=\"winter-soldier\">Bucky Barnes</strong>, <strong class=\"dum-dum-dugan\">Timothy \"Dum Dum\" Dugan</strong>, <strong class=\"secundary\">Gabe Jones</strong>, <strong class=\"secundary\">Jim Morita</strong>, <strong class=\"secundary\">James Montgomery Falsworth</strong>, and <strong class=\"secundary\">Jacques Dernier</strong>. In London's underground SSR bunker, <strong class=\"howard-stark\">Howard Stark</strong> equips Steve with tailored tactical combat armor and presents him with a prototype circular shield forged from pure <strong>Vibranium</strong>—a rare Wakandan metal possessing total kinetic shock absorption. Rogers adopts the shield and paints it with his signature stars and stripes. Over the following months, Captain America and the Howling Commandos systematically raid and obliterate HYDRA's manufacturing facilities across Europe."
         ],
         "characters": [
-          "captain-america",
-          "winter-soldier",
+          "steve-rogers",
+          "bucky-barnes",
+          "abraham-erskine",
+          "chester-phillips",
           "peggy-carter",
-          "howard-stark"
+          "howard-stark",
+          "red-skull",
+          "arnim-zola",
+          "dum-dum-dugan"
         ],
-        "stones": [],
+        "stones": [
+          "space"
+        ],
         "deaths": [
           "Erskine",
           "Kruger"
         ],
         "mcuHighlights": [
-          "serum\r\n                        gets destroy"
+          "Project Rebirth & Vita-Ray Transformation",
+          "Rescue of the 107th at Azzano",
+          "Unmasking of the Red Skull",
+          "The Vibranium Shield",
+          "Formation of the Howling Commandos"
         ],
         "timelineType": "sacred-616",
         "earthDesignation": "Earth-616 (The Sacred Timeline)"
@@ -601,26 +619,37 @@ export const timelineEras: EraGroup[] = [
           "captain-america-1",
           "agents-of-shield-ii"
         ],
-        "rawHtml": "<p>\r\n                    <strong class=\"peggy-carter\">Peggy</strong> recovers from <strong class=\"enemy\">Dr.\r\n                        Whitehall</strong>\r\n                    <strong>the first 084: The Obelisk.</strong> whit the help from <strong class=\"secundary\">Dum Dum\r\n                        Dungan</strong>.\r\n                </p>\r\n                <p><strong class=\"winter-soldier presumably-dead\">Barnes</strong> falls from the train to his apparent\r\n                    death. During the last fight, the Tesseract's container is\r\n                    damaged. <strong class=\"enemy presumably-dead\">Schmidt</strong> physically handles the Tesseract,\r\n                    which opens a <strong>wormhole into space</strong>, sucking him into\r\n                    it. The Tesseract burns through the plane and is lost in the ocean with <strong\r\n                        class=\"captain-america presumably-dead\">Rogers</strong>. <strong class=\"howard-stark\">Howard\r\n                        Stark</strong> later recovers the <strong class=\"tesseract\">Tesseract</strong> from the\r\n                    ocean floor.\r\n                </p>",
+        "rawHtml": "<p><strong class=\"peggy-carter\">Peggy Carter</strong> and <strong class=\"dum-dum-dugan\">Dum Dum Dugan</strong> lead an SSR strike team to raid the final European HYDRA redoubt, capturing Nazi scientist <strong class=\"enemy\">Werner Reinhardt (Dr. Whitehall)</strong> and securing the world's first classified 0-8-4 alien artifact: <strong>The Obelisk (The Diviner)</strong>.</p>\n<p>During a high-speed SSR raid on an armored HYDRA mountain train in the Swiss Alps, the team captures chief scientist Dr. <strong class=\"arnim-zola\">Arnim Zola</strong>. However, a hull breach sends <strong class=\"winter-soldier presumably-dead\">Bucky Barnes</strong> plunging over the rail into a bottomless icy chasm to his apparent death. Broken by grief, Rogers leads the SSR and Howling Commandos in a final assault on the Red Skull's central mountain fortress. Red Skull launches his colossal flying-wing super-bomber, <strong>The Valkyrie</strong>, armed with Tesseract-charged atomic ordnance targeting New York, Washington, and American metropolitan centers.</p>\n<p>Rogers boards the Valkyrie and battles Schmidt in the cockpit. During the firefight, the Tesseract's energy containment matrix is damaged. When <strong class=\"red-skull presumably-dead\">Johann Schmidt</strong> grabs the glowing <strong class=\"tesseract\">Tesseract</strong> directly with his bare hands, the cosmic relic activates a blinding wormhole, dissolving and teleporting the Red Skull across deep space to Vormir. The Tesseract melts through the aircraft hull and sinks into the Atlantic Ocean. Realizing the autopilot is locked on New York, Rogers makes the ultimate sacrifice: he radios <strong class=\"peggy-carter\">Peggy Carter</strong> to say goodbye, promising her a raincheck dance, before manually plunging the <em>Valkyrie</em> into the Arctic ice sheet to save millions. In the aftermath, <strong class=\"howard-stark\">Howard Stark</strong> leads a naval recovery expedition, retrieving the glowing <strong class=\"tesseract\">Tesseract</strong> from the seabed while Steve remains lost in the frozen north.</p>",
         "paragraphs": [
-          "<strong class=\"peggy-carter\">Peggy</strong> recovers from <strong class=\"enemy\">Dr. Whitehall</strong> <strong>the first 084: The Obelisk.</strong> whit the help from <strong class=\"secundary\">Dum Dum Dungan</strong>.",
-          "<strong class=\"winter-soldier presumably-dead\">Barnes</strong> falls from the train to his apparent death. During the last fight, the Tesseract's container is damaged. <strong class=\"enemy presumably-dead\">Schmidt</strong> physically handles the Tesseract, which opens a <strong>wormhole into space</strong>, sucking him into it. The Tesseract burns through the plane and is lost in the ocean with <strong class=\"captain-america presumably-dead\">Rogers</strong>. <strong class=\"howard-stark\">Howard Stark</strong> later recovers the <strong class=\"tesseract\">Tesseract</strong> from the ocean floor."
+          "<strong class=\"peggy-carter\">Peggy Carter</strong> and <strong class=\"dum-dum-dugan\">Dum Dum Dugan</strong> lead an SSR strike team to raid the final European HYDRA redoubt, capturing Nazi scientist <strong class=\"enemy\">Werner Reinhardt (Dr. Whitehall)</strong> and securing the world's first classified 0-8-4 alien artifact: <strong>The Obelisk (The Diviner)</strong>.",
+          "During a high-speed SSR raid on an armored HYDRA mountain train in the Swiss Alps, the team captures chief scientist Dr. <strong class=\"arnim-zola\">Arnim Zola</strong>. However, a hull breach sends <strong class=\"winter-soldier presumably-dead\">Bucky Barnes</strong> plunging over the rail into a bottomless icy chasm to his apparent death. Broken by grief, Rogers leads the SSR and Howling Commandos in a final assault on the Red Skull's central mountain fortress. Red Skull launches his colossal flying-wing super-bomber, <strong>The Valkyrie</strong>, armed with Tesseract-charged atomic ordnance targeting New York, Washington, and American metropolitan centers.",
+          "Rogers boards the Valkyrie and battles Schmidt in the cockpit. During the firefight, the Tesseract's energy containment matrix is damaged. When <strong class=\"red-skull presumably-dead\">Johann Schmidt</strong> grabs the glowing <strong class=\"tesseract\">Tesseract</strong> directly with his bare hands, the cosmic relic activates a blinding wormhole, dissolving and teleporting the Red Skull across deep space to Vormir. The Tesseract melts through the aircraft hull and sinks into the Atlantic Ocean. Realizing the autopilot is locked on New York, Rogers makes the ultimate sacrifice: he radios <strong class=\"peggy-carter\">Peggy Carter</strong> to say goodbye, promising her a raincheck dance, before manually plunging the <em>Valkyrie</em> into the Arctic ice sheet to save millions. In the aftermath, <strong class=\"howard-stark\">Howard Stark</strong> leads a naval recovery expedition, retrieving the glowing <strong class=\"tesseract\">Tesseract</strong> from the seabed while Steve remains lost in the frozen north."
         ],
         "characters": [
           "peggy-carter",
-          "winter-soldier",
-          "captain-america",
+          "dum-dum-dugan",
+          "bucky-barnes",
+          "steve-rogers",
+          "red-skull",
+          "arnim-zola",
           "howard-stark"
         ],
         "stones": [
           "space"
         ],
         "deaths": [
-          "Barnes",
-          "Schmidt",
-          "Rogers"
+          "Bucky Barnes (Presumed Dead)",
+          "Johann Schmidt (Teleported to Vormir)",
+          "Steve Rogers (Presumed Lost)"
         ],
-        "mcuHighlights": [],
+        "mcuHighlights": [
+          "Capture of the First 0-8-4 Obelisk",
+          "The Fall of Bucky Barnes in the Alps",
+          "Red Skull Teleported by the Tesseract",
+          "Captain America Crashes The Valkyrie in the Arctic",
+          "Steve & Peggy's Dance Promise",
+          "Howard Stark Recovers the Tesseract from the Ocean"
+        ],
         "timelineType": "sacred-616",
         "earthDesignation": "Earth-616 (The Sacred Timeline)"
       }
@@ -998,7 +1027,7 @@ export const timelineEras: EraGroup[] = [
           "<strong class=\"captain-marvel presumably-dead\">Carol Danvers</strong> dies in crash with <strong class=\"secundary dead\">Mar-Vell</strong> killed by <strong class=\"enemy\">Yon-Rogg</strong> who kidnaps Carol with no memory."
         ],
         "characters": [
-          "captain-marvel"
+          "carol-danvers"
         ],
         "stones": [],
         "deaths": [
@@ -1168,7 +1197,7 @@ export const timelineEras: EraGroup[] = [
         ],
         "characters": [
           "howard-stark",
-          "winter-soldier"
+          "bucky-barnes"
         ],
         "stones": [],
         "deaths": [
@@ -1242,7 +1271,7 @@ export const timelineEras: EraGroup[] = [
           "Meanwhile, Fury <strong class=\"mcu\">drafts an initiative</strong> to locate heroes like Danvers, naming it after her Air Force call sign, <strong class=\"mcu\">\"Avenger\".</strong> In another time and alone, Goose climbs onto Fury's desk and <strong class=\"mcu\">regurgitates the</strong> <strong class=\"tesseract\">Tesseract</strong>."
         ],
         "characters": [
-          "captain-marvel",
+          "carol-danvers",
           "talos",
           "fury",
           "coulson",
@@ -1312,7 +1341,7 @@ export const timelineEras: EraGroup[] = [
           "At a New Year's Eve party, <strong class=\"iron-man\">Tony Stark</strong> meets scientist <strong class=\"enemy\">Maya Hansen</strong>, the inventor of an experimental regenerative treatment named <strong>Extremis</strong> that allows recovery from crippling injuries he also meets <strong class=\"secundary\">Yinsen</strong> a medic. Disabled scientist <strong class=\"enemy\">Aldrich Killian</strong> offers them a place in his company <em>Advanced Idea Mechanics</em>, but Stark rejects him."
         ],
         "characters": [
-          "iron-man"
+          "tony-stark"
         ],
         "stones": [],
         "deaths": [],
@@ -1430,7 +1459,7 @@ export const timelineEras: EraGroup[] = [
           "<strong class=\"fury\">Nick Fury</strong> visits Stark at home and explains that he wants to discuss the <em>\"Avenger Initiative\".</em>"
         ],
         "characters": [
-          "iron-man",
+          "tony-stark",
           "war-machine",
           "coulson",
           "fury"
@@ -1508,7 +1537,7 @@ export const timelineEras: EraGroup[] = [
           "At a debriefing, Fury informs Stark that because of his difficult personality, S.H.I.E.L.D. intends to use him only as a <strong>consultant</strong>."
         ],
         "characters": [
-          "iron-man",
+          "tony-stark",
           "black-widow",
           "war-machine",
           "fury"
@@ -1665,7 +1694,7 @@ export const timelineEras: EraGroup[] = [
         ],
         "characters": [
           "coulson",
-          "iron-man"
+          "tony-stark"
         ],
         "stones": [],
         "deaths": [],
@@ -1696,17 +1725,21 @@ export const timelineEras: EraGroup[] = [
         "rawClasses": [
           "captain-america-1"
         ],
-        "rawHtml": "<p>\r\n                        <strong class=\"captain-america\">Captain America</strong> is found. <em>S.H.I.E.L.D.</em>\r\n                        director\r\n                        <strong class=\"fury\">Nick Fury</strong> informs him that he has been <strong>\"asleep\" for nearly\r\n                            70\r\n                            years.</strong>\r\n                    </p>",
+        "rawHtml": "<p>Deep in the Arctic ice sheet, a S.H.I.E.L.D. recovery team discovers the frozen wreckage of the <em>Valkyrie</em> containing <strong class=\"captain-america\">Steve Rogers</strong> preserved in cryogenic suspended animation. Steve awakens inside a retro 1940s hospital room simulation in New York City. Recognizing a radio broadcast of a 1941 Brooklyn Dodgers game he attended in person, Steve realizes the deception, breaks out of the facility, and runs into the bustling, neon-lit modern world of Times Square. S.H.I.E.L.D. Director <strong class=\"fury\">Nick Fury</strong> arrives with tactical agents to de-escalate the situation, gently informing him that he has been asleep for nearly seventy years. Grieving the life he lost, Rogers somberly replies: <em>\"I had a date.\"</em></p>",
         "paragraphs": [
-          "<strong class=\"captain-america\">Captain America</strong> is found. <em>S.H.I.E.L.D.</em> director <strong class=\"fury\">Nick Fury</strong> informs him that he has been <strong>\"asleep\" for nearly 70 years.</strong>"
+          "Deep in the Arctic ice sheet, a S.H.I.E.L.D. recovery team discovers the frozen wreckage of the <em>Valkyrie</em> containing <strong class=\"captain-america\">Steve Rogers</strong> preserved in cryogenic suspended animation. Steve awakens inside a retro 1940s hospital room simulation in New York City. Recognizing a radio broadcast of a 1941 Brooklyn Dodgers game he attended in person, Steve realizes the deception, breaks out of the facility, and runs into the bustling, neon-lit modern world of Times Square. S.H.I.E.L.D. Director <strong class=\"fury\">Nick Fury</strong> arrives with tactical agents to de-escalate the situation, gently informing him that he has been asleep for nearly seventy years. Grieving the life he lost, Rogers somberly replies: <em>\"I had a date.\"</em>"
         ],
         "characters": [
-          "captain-america",
+          "steve-rogers",
           "fury"
         ],
         "stones": [],
         "deaths": [],
-        "mcuHighlights": [],
+        "mcuHighlights": [
+          "Discovery of Captain America in the Arctic Ice",
+          "Steve Rogers Awakens in 21st Century Times Square",
+          "\"I Had a Date\""
+        ],
         "timelineType": "sacred-616",
         "earthDesignation": "Earth-616 (The Sacred Timeline)"
       }
@@ -1746,8 +1779,8 @@ export const timelineEras: EraGroup[] = [
           "coulson",
           "black-widow",
           "hulk",
-          "iron-man",
-          "captain-america",
+          "tony-stark",
+          "steve-rogers",
           "thor"
         ],
         "stones": [
@@ -1808,7 +1841,7 @@ export const timelineEras: EraGroup[] = [
           "<strong class=\"iron-man\">Tony Stark</strong> and the federal government orders the <em>United States Department of Damage Control</em> to clean the aftermath of the battle, driving salvage company owner <strong class=\"enemy\">Adrian Toomes</strong> out of business. Toomes convinces his crew to not surrender the <strong>Chitauri technology</strong> already scavenged from the battle and use it to further a criminal agenda."
         ],
         "characters": [
-          "iron-man"
+          "tony-stark"
         ],
         "stones": [],
         "deaths": [],
@@ -1880,7 +1913,7 @@ export const timelineEras: EraGroup[] = [
           "Tony is telling all that happened to <strong class=\"hulk\">Bruce</strong> who wakes up without even hearing the story."
         ],
         "characters": [
-          "iron-man",
+          "tony-stark",
           "war-machine",
           "hulk"
         ],
@@ -2095,7 +2128,7 @@ export const timelineEras: EraGroup[] = [
           "<strong class=\"enemy\">Baron Wolfgang von Strucker</strong>, at a Hydra lab, proclaims that the \"age of miracles\" has begun as scientists examine an <strong class=\"mcu\">energy-filled scepter</strong> and <strong class=\"mcu\">two test subjects: one with superhuman speed, the other with telekinetic powers</strong> (<strong class=\"pietro\">Pietro</strong> & <strong class=\"scarlet-witch\">Wanda</strong>). <strong class=\"winter-soldier\">Barnes</strong> visits his own memorial at the Smithsonian Institution."
         ],
         "characters": [
-          "captain-america",
+          "steve-rogers",
           "black-widow",
           "fury",
           "peggy-carter",
@@ -2103,7 +2136,7 @@ export const timelineEras: EraGroup[] = [
           "falcon",
           "pietro",
           "scarlet-witch",
-          "winter-soldier"
+          "bucky-barnes"
         ],
         "stones": [],
         "deaths": [
@@ -2373,8 +2406,8 @@ export const timelineEras: EraGroup[] = [
           "<strong class=\"boss\">Thanos</strong>, dissatisfied by the failures of his pawns, dons a <strong class=\"mcu\">gauntlet</strong> and <strong>vows to retrieve the Infinity Stones himself</strong>."
         ],
         "characters": [
-          "iron-man",
-          "captain-america",
+          "tony-stark",
+          "steve-rogers",
           "thor",
           "hulk",
           "black-widow",
@@ -2694,11 +2727,11 @@ export const timelineEras: EraGroup[] = [
           "In the aftermath, Stark provides Rhodes with exoskeletal leg braces that allow him to walk again, while Rogers breaks his allies out of the Raft. Barnes, granted asylum in Wakanda, <strong>chooses to return to cryogenic sleep until a cure for his brainwashing is found.</strong> Parker explores the features of the web shooters built for him by Stark."
         ],
         "characters": [
-          "captain-america",
+          "steve-rogers",
           "black-widow",
           "falcon",
           "scarlet-witch",
-          "iron-man",
+          "tony-stark",
           "black-panther",
           "war-machine",
           "hawkeye",
@@ -2739,7 +2772,7 @@ export const timelineEras: EraGroup[] = [
         ],
         "characters": [
           "black-widow",
-          "captain-america"
+          "steve-rogers"
         ],
         "stones": [],
         "deaths": [
@@ -2774,7 +2807,7 @@ export const timelineEras: EraGroup[] = [
           "okoye",
           "nakia",
           "shuri",
-          "winter-soldier"
+          "bucky-barnes"
         ],
         "stones": [],
         "deaths": [
@@ -2933,7 +2966,7 @@ export const timelineEras: EraGroup[] = [
           "the fifteen-year-old sophomore and <strong class=\"iron-man\">Tony Stark</strong>'s protégé, <strong class=\"spider-man\">Peter Parker</strong>, finds himself back to his hometown of Queens, New York, trying to juggle high school and his super-hero alter-ego. Waiting for his mentor or <strong class=\"secundary\">Happy</strong> to give him a chance to prove his mettle and become an official Avenger, instead, Stark, intent on protecting him, keeps Peter on a short leash, fearful that, one of these days, the boy may bite off more than he can chew. And then, the Vulture, a winged super-criminal brandishing advanced Chitauri weaponry, emerges, and of course, Parker sees his arrival as a golden opportunity to demonstrate that he has what it takes to be part of the Earth's mightiest team of super-heroes. He then stops The Vulture from stealing from the Department of Damage Control and from a Tony's airplane. Tony finally decides that Peter is ready but he think it is a test and refuse it. <strong class=\"pepper\">Pepper Pots</strong> is mad and Peter's aunt learns about his secret."
         ],
         "characters": [
-          "iron-man",
+          "tony-stark",
           "spider-man"
         ],
         "stones": [],
@@ -3477,7 +3510,7 @@ export const timelineEras: EraGroup[] = [
           "hulk",
           "loki",
           "doctor-strange",
-          "iron-man",
+          "tony-stark",
           "spider-man",
           "star-lord",
           "gamora",
@@ -3487,11 +3520,11 @@ export const timelineEras: EraGroup[] = [
           "nebula",
           "scarlet-witch",
           "vision",
-          "captain-america",
+          "steve-rogers",
           "black-widow",
           "falcon",
           "war-machine",
-          "winter-soldier",
+          "bucky-barnes",
           "black-panther",
           "shuri",
           "maria-hill",
@@ -3553,7 +3586,7 @@ export const timelineEras: EraGroup[] = [
           "The <strong class=\"mcu\">activated pager</strong> is being monitored by <em>the Avengers</em> when <strong class=\"captain-marvel\">Danvers</strong> appears."
         ],
         "characters": [
-          "captain-marvel"
+          "carol-danvers"
         ],
         "stones": [],
         "deaths": [],

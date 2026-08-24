@@ -12,7 +12,12 @@ export const charactersData: Record<string, Character> = {
     "borderBadge": "border-blue-700",
     "role": "hero",
     "affiliation": "Avengers / SSR",
-    "groups": ["Avengers", "Howling Commandos", "SSR", "S.H.I.E.L.D."],
+    "groups": [
+      "Avengers",
+      "Howling Commandos",
+      "SSR",
+      "S.H.I.E.L.D."
+    ],
     "originLocation": "Brooklyn, New York (Earth)",
     "status": "alive",
     "bio": "Super-soldier leader of the Avengers and WWII war hero."
@@ -28,7 +33,12 @@ export const charactersData: Record<string, Character> = {
     "borderBadge": "border-sky-700",
     "role": "anti-hero",
     "affiliation": "Avengers / Wakanda / Howling Commandos",
-    "groups": ["Howling Commandos", "HYDRA / Winter Soldier", "Avengers", "Wakanda"],
+    "groups": [
+      "Howling Commandos",
+      "HYDRA / Winter Soldier",
+      "Avengers",
+      "Wakanda"
+    ],
     "originLocation": "Brooklyn, New York (Earth)",
     "status": "alive",
     "bio": "Enhanced assassin who broke free from HYDRA mind control and found redemption in Wakanda."
@@ -44,7 +54,11 @@ export const charactersData: Record<string, Character> = {
     "borderBadge": "border-emerald-700",
     "role": "hero",
     "affiliation": "SSR / S.H.I.E.L.D. Founder",
-    "groups": ["SSR", "S.H.I.E.L.D.", "Howling Commandos"],
+    "groups": [
+      "SSR",
+      "S.H.I.E.L.D.",
+      "Howling Commandos"
+    ],
     "originLocation": "London, England (Earth)",
     "status": "deceased",
     "bio": "Founding director of S.H.I.E.L.D. and legendary SSR field agent."
@@ -60,7 +74,11 @@ export const charactersData: Record<string, Character> = {
     "borderBadge": "border-red-700",
     "role": "hero",
     "affiliation": "Stark Industries / S.H.I.E.L.D. Founder",
-    "groups": ["Stark Industries", "SSR", "S.H.I.E.L.D."],
+    "groups": [
+      "Stark Industries",
+      "SSR",
+      "S.H.I.E.L.D."
+    ],
     "originLocation": "New York (Earth)",
     "status": "deceased",
     "bio": "Visionary engineer, founder of Stark Industries and co-founder of S.H.I.E.L.D."
@@ -76,7 +94,11 @@ export const charactersData: Record<string, Character> = {
     "borderBadge": "border-red-700",
     "role": "hero",
     "affiliation": "Avengers / Stark Industries",
-    "groups": ["Avengers", "Stark Industries", "Illuminati"],
+    "groups": [
+      "Avengers",
+      "Stark Industries",
+      "Illuminati"
+    ],
     "originLocation": "New York / Malibu (Earth)",
     "status": "deceased",
     "bio": "Genius, billionaire, playboy, philanthropist who forged the Iron Man armor and saved the universe."
@@ -92,7 +114,12 @@ export const charactersData: Record<string, Character> = {
     "borderBadge": "border-amber-700",
     "role": "hero",
     "affiliation": "Asgardian Royalty / Avengers",
-    "groups": ["Avengers", "Asgardian Royalty", "Revengers", "Guardians of the Galaxy"],
+    "groups": [
+      "Avengers",
+      "Asgardian Royalty",
+      "Revengers",
+      "Guardians of the Galaxy"
+    ],
     "originLocation": "Asgard (Nine Realms)",
     "status": "alive",
     "bio": "Asgardian God of Thunder, wielder of Mjolnir and Stormbreaker."
@@ -108,7 +135,12 @@ export const charactersData: Record<string, Character> = {
     "borderBadge": "border-green-700",
     "role": "anti-hero",
     "affiliation": "Asgard / TVA / Multiverse",
-    "groups": ["Asgardian Royalty", "Frost Giants of Jotunheim", "Revengers", "TVA"],
+    "groups": [
+      "Asgardian Royalty",
+      "Frost Giants of Jotunheim",
+      "Revengers",
+      "TVA"
+    ],
     "originLocation": "Jotunheim / Asgard",
     "status": "alive",
     "bio": "God of Mischief who became the God of Stories and protector of the Multiverse."
@@ -124,7 +156,11 @@ export const charactersData: Record<string, Character> = {
     "borderBadge": "border-emerald-700",
     "role": "hero",
     "affiliation": "Avengers",
-    "groups": ["Avengers", "Revengers", "Sakaar Champions"],
+    "groups": [
+      "Avengers",
+      "Revengers",
+      "Sakaar Champions"
+    ],
     "originLocation": "Dayton, Ohio (Earth)",
     "status": "alive",
     "bio": "Gamma radiation scientist who shares his body with the Incredible Hulk."
@@ -140,7 +176,11 @@ export const charactersData: Record<string, Character> = {
     "borderBadge": "border-purple-700",
     "role": "hero",
     "affiliation": "Avengers / S.H.I.E.L.D. / Red Room",
-    "groups": ["Avengers", "S.H.I.E.L.D.", "Red Room Widows"],
+    "groups": [
+      "Avengers",
+      "S.H.I.E.L.D.",
+      "Red Room Widows"
+    ],
     "originLocation": "Stalingrad, Russia (Earth)",
     "status": "deceased",
     "bio": "Master spy and founding Avenger who sacrificed herself on Vormir for the Soul Stone."
@@ -156,7 +196,11 @@ export const charactersData: Record<string, Character> = {
     "borderBadge": "border-purple-700",
     "role": "hero",
     "affiliation": "Avengers / S.H.I.E.L.D.",
-    "groups": ["Avengers", "S.H.I.E.L.D.", "Ronin"],
+    "groups": [
+      "Avengers",
+      "S.H.I.E.L.D.",
+      "Ronin"
+    ],
     "originLocation": "Waverly, Iowa (Earth)",
     "status": "alive",
     "bio": "Master marksman, master archer, and founding Avenger."
@@ -172,7 +216,10 @@ export const charactersData: Record<string, Character> = {
     "borderBadge": "border-rose-700",
     "role": "hero",
     "affiliation": "Guardians of the Galaxy / Ravagers",
-    "groups": ["Guardians of the Galaxy", "Ravagers"],
+    "groups": [
+      "Guardians of the Galaxy",
+      "Ravagers"
+    ],
     "originLocation": "Missouri (Earth) / Cosmic",
     "status": "alive",
     "bio": "Human-Celestial hybrid and leader of the Guardians of the Galaxy."
@@ -188,7 +235,11 @@ export const charactersData: Record<string, Character> = {
     "borderBadge": "border-lime-700",
     "role": "hero",
     "affiliation": "Guardians of the Galaxy / Ravagers",
-    "groups": ["Guardians of the Galaxy", "Children of Thanos", "Ravagers"],
+    "groups": [
+      "Guardians of the Galaxy",
+      "Children of Thanos",
+      "Ravagers"
+    ],
     "originLocation": "Zen-Whoberi (Cosmic)",
     "status": "alive",
     "bio": "Adopted daughter of Thanos who rebelled to become a Guardian of the Galaxy."
@@ -204,7 +255,10 @@ export const charactersData: Record<string, Character> = {
     "borderBadge": "border-orange-700",
     "role": "hero",
     "affiliation": "Guardians of the Galaxy / Avengers",
-    "groups": ["Guardians of the Galaxy", "Avengers"],
+    "groups": [
+      "Guardians of the Galaxy",
+      "Avengers"
+    ],
     "originLocation": "Counter-Earth / Halfworld (Cosmic)",
     "status": "alive",
     "bio": "Genetically enhanced tactical genius and captain of the Guardians."
@@ -220,7 +274,10 @@ export const charactersData: Record<string, Character> = {
     "borderBadge": "border-lime-700",
     "role": "hero",
     "affiliation": "Guardians of the Galaxy",
-    "groups": ["Guardians of the Galaxy", "Avengers"],
+    "groups": [
+      "Guardians of the Galaxy",
+      "Avengers"
+    ],
     "originLocation": "Planet X (Cosmic)",
     "status": "alive",
     "bio": "Flora colossus and loyal Guardian of the Galaxy."
@@ -236,7 +293,9 @@ export const charactersData: Record<string, Character> = {
     "borderBadge": "border-rose-700",
     "role": "hero",
     "affiliation": "Guardians of the Galaxy",
-    "groups": ["Guardians of the Galaxy"],
+    "groups": [
+      "Guardians of the Galaxy"
+    ],
     "originLocation": "Kylos (Cosmic)",
     "status": "alive",
     "bio": "Fierce warrior driven by honor and loyalty to his adopted family."
@@ -252,7 +311,11 @@ export const charactersData: Record<string, Character> = {
     "borderBadge": "border-sky-700",
     "role": "hero",
     "affiliation": "Masters of the Mystic Arts / Avengers",
-    "groups": ["Masters of the Mystic Arts", "Avengers", "Midnight Sons"],
+    "groups": [
+      "Masters of the Mystic Arts",
+      "Avengers",
+      "Midnight Sons"
+    ],
     "originLocation": "New York / Kamar-Taj (Earth)",
     "status": "alive",
     "bio": "Master of the Mystic Arts and guardian of Earth's magical realms."
@@ -268,7 +331,10 @@ export const charactersData: Record<string, Character> = {
     "borderBadge": "border-red-700",
     "role": "hero",
     "affiliation": "Avengers / Queens Vigilantes",
-    "groups": ["Avengers", "Queens Vigilantes"],
+    "groups": [
+      "Avengers",
+      "Queens Vigilantes"
+    ],
     "originLocation": "Queens, New York (Earth)",
     "status": "alive",
     "bio": "Friendly neighborhood web-slinger empowered by a radioactive spider bite."
@@ -284,7 +350,11 @@ export const charactersData: Record<string, Character> = {
     "borderBadge": "border-zinc-500",
     "role": "hero",
     "affiliation": "Wakandan Royal Family / Avengers",
-    "groups": ["Wakandan Royal Family", "Avengers", "Hatut Zeraze Overseers"],
+    "groups": [
+      "Wakandan Royal Family",
+      "Avengers",
+      "Hatut Zeraze Overseers"
+    ],
     "originLocation": "Birnin Zana, Wakanda (Earth)",
     "status": "deceased",
     "bio": "King of Wakanda and Black Panther who opened his nation's secrets to the world."
@@ -300,7 +370,11 @@ export const charactersData: Record<string, Character> = {
     "borderBadge": "border-rose-700",
     "role": "anti-hero",
     "affiliation": "Avengers / Westview",
-    "groups": ["Avengers", "HYDRA Experiments", "Coven of Chaos"],
+    "groups": [
+      "Avengers",
+      "HYDRA Experiments",
+      "Coven of Chaos"
+    ],
     "originLocation": "Sokovia (Earth)",
     "status": "variable",
     "bio": "Mythological wielder of Chaos Magic and the prophesied Scarlet Witch."
@@ -316,7 +390,10 @@ export const charactersData: Record<string, Character> = {
     "borderBadge": "border-sky-700",
     "role": "hero",
     "affiliation": "Avengers",
-    "groups": ["Avengers", "S.W.O.R.D."],
+    "groups": [
+      "Avengers",
+      "S.W.O.R.D."
+    ],
     "originLocation": "Avengers Tower / Wakanda (Earth)",
     "status": "alive",
     "bio": "Synthezoid born of vibranium and the Mind Stone."
@@ -332,7 +409,10 @@ export const charactersData: Record<string, Character> = {
     "borderBadge": "border-sky-700",
     "role": "hero",
     "affiliation": "Avengers / US Air Force",
-    "groups": ["Avengers", "US Air Force"],
+    "groups": [
+      "Avengers",
+      "US Air Force"
+    ],
     "originLocation": "Delacroix, Louisiana (Earth)",
     "status": "alive",
     "bio": "USAF pararescue veteran who took up the mantle and vibranium shield of Captain America."
@@ -348,7 +428,10 @@ export const charactersData: Record<string, Character> = {
     "borderBadge": "border-slate-700",
     "role": "hero",
     "affiliation": "US Air Force / Avengers",
-    "groups": ["Avengers", "US Air Force"],
+    "groups": [
+      "Avengers",
+      "US Air Force"
+    ],
     "originLocation": "Philadelphia (Earth)",
     "status": "alive",
     "bio": "Colonel James Rhodes, heavily armored Avenger."
@@ -364,7 +447,11 @@ export const charactersData: Record<string, Character> = {
     "borderBadge": "border-red-700",
     "role": "hero",
     "affiliation": "Avengers / Pym Technologies",
-    "groups": ["Avengers", "Pym Technologies", "Quantum Explorers"],
+    "groups": [
+      "Avengers",
+      "Pym Technologies",
+      "Quantum Explorers"
+    ],
     "originLocation": "San Francisco, California (Earth)",
     "status": "alive",
     "bio": "Master thief turned size-changing Avenger and explorer of the Quantum Realm."
@@ -380,7 +467,11 @@ export const charactersData: Record<string, Character> = {
     "borderBadge": "border-amber-700",
     "role": "hero",
     "affiliation": "Avengers / Pym Technologies",
-    "groups": ["Avengers", "Pym Technologies", "Quantum Explorers"],
+    "groups": [
+      "Avengers",
+      "Pym Technologies",
+      "Quantum Explorers"
+    ],
     "originLocation": "San Francisco, California (Earth)",
     "status": "alive",
     "bio": "Skilled martial artist and winged size-changer."
@@ -396,7 +487,11 @@ export const charactersData: Record<string, Character> = {
     "borderBadge": "border-red-700",
     "role": "hero",
     "affiliation": "Defenders / Nelson & Murdock",
-    "groups": ["Defenders", "Nelson & Murdock", "Midnight Sons"],
+    "groups": [
+      "Defenders",
+      "Nelson & Murdock",
+      "Midnight Sons"
+    ],
     "originLocation": "Hell's Kitchen, New York (Earth)",
     "status": "alive",
     "bio": "Blind lawyer turned vigilante Man Without Fear."
@@ -412,7 +507,10 @@ export const charactersData: Record<string, Character> = {
     "borderBadge": "border-purple-700",
     "role": "hero",
     "affiliation": "Defenders / Alias Investigations",
-    "groups": ["Defenders", "Alias Investigations"],
+    "groups": [
+      "Defenders",
+      "Alias Investigations"
+    ],
     "originLocation": "New York (Earth)",
     "status": "alive",
     "bio": "Super-strong private investigator."
@@ -428,7 +526,11 @@ export const charactersData: Record<string, Character> = {
     "borderBadge": "border-amber-700",
     "role": "hero",
     "affiliation": "Defenders / Harlem",
-    "groups": ["Defenders", "Heroes for Hire", "Harlem Defenders"],
+    "groups": [
+      "Defenders",
+      "Heroes for Hire",
+      "Harlem Defenders"
+    ],
     "originLocation": "Harlem, New York (Earth)",
     "status": "alive",
     "bio": "Bulletproof hero and guardian of Harlem."
@@ -444,7 +546,12 @@ export const charactersData: Record<string, Character> = {
     "borderBadge": "border-amber-600",
     "role": "hero",
     "affiliation": "K'un-Lun / Defenders",
-    "groups": ["K'un-Lun Order", "Defenders", "Heroes for Hire", "Rand Enterprises"],
+    "groups": [
+      "K'un-Lun Order",
+      "Defenders",
+      "Heroes for Hire",
+      "Rand Enterprises"
+    ],
     "originLocation": "K'un-Lun / New York",
     "status": "alive",
     "bio": "Immortal weapon of K'un-Lun who defeated Shou-Lao the Undying and channels dragon Chi into glowing golden fists."
@@ -460,7 +567,10 @@ export const charactersData: Record<string, Character> = {
     "borderBadge": "border-zinc-700",
     "role": "anti-hero",
     "affiliation": "US Marine Corps / Vigilantes",
-    "groups": ["US Marine Corps", "Vigilantes"],
+    "groups": [
+      "US Marine Corps",
+      "Vigilantes"
+    ],
     "originLocation": "New York (Earth)",
     "status": "alive",
     "bio": "War veteran waging a one-man war on organized crime."
@@ -476,7 +586,11 @@ export const charactersData: Record<string, Character> = {
     "borderBadge": "border-sky-700",
     "role": "hero",
     "affiliation": "S.H.I.E.L.D. / Secret Warriors",
-    "groups": ["S.H.I.E.L.D.", "Agents of S.H.I.E.L.D.", "Avengers Initiative"],
+    "groups": [
+      "S.H.I.E.L.D.",
+      "Agents of S.H.I.E.L.D.",
+      "Avengers Initiative"
+    ],
     "originLocation": "Manitowoc, Wisconsin (Earth)",
     "status": "alive",
     "bio": "Heart of S.H.I.E.L.D., architect of the Avengers Initiative and director of the underground agency."
@@ -492,7 +606,11 @@ export const charactersData: Record<string, Character> = {
     "borderBadge": "border-indigo-700",
     "role": "hero",
     "affiliation": "S.H.I.E.L.D. / S.A.B.E.R.",
-    "groups": ["S.H.I.E.L.D.", "S.A.B.E.R.", "Avengers Initiative"],
+    "groups": [
+      "S.H.I.E.L.D.",
+      "S.A.B.E.R.",
+      "Avengers Initiative"
+    ],
     "originLocation": "Earth / S.A.B.E.R. Station",
     "status": "alive",
     "bio": "Former Director of S.H.I.E.L.D. and founder of the Avengers."
@@ -508,7 +626,10 @@ export const charactersData: Record<string, Character> = {
     "borderBadge": "border-zinc-700",
     "role": "hero",
     "affiliation": "S.H.I.E.L.D.",
-    "groups": ["S.H.I.E.L.D.", "Agents of S.H.I.E.L.D."],
+    "groups": [
+      "S.H.I.E.L.D.",
+      "Agents of S.H.I.E.L.D."
+    ],
     "originLocation": "Earth",
     "status": "alive",
     "bio": "Legendary S.H.I.E.L.D. combat pilot and martial artist known as The Cavalry."
@@ -524,7 +645,12 @@ export const charactersData: Record<string, Character> = {
     "borderBadge": "border-orange-700",
     "role": "hero",
     "affiliation": "S.H.I.E.L.D. / Secret Warriors / Inhumans",
-    "groups": ["S.H.I.E.L.D.", "Agents of S.H.I.E.L.D.", "Secret Warriors", "Inhumans"],
+    "groups": [
+      "S.H.I.E.L.D.",
+      "Agents of S.H.I.E.L.D.",
+      "Secret Warriors",
+      "Inhumans"
+    ],
     "originLocation": "Hunan, China (Earth)",
     "status": "alive",
     "bio": "Inhuman seismic agent, hacker, and director of the Secret Warriors."
@@ -540,7 +666,10 @@ export const charactersData: Record<string, Character> = {
     "borderBadge": "border-purple-700",
     "role": "villain",
     "affiliation": "Black Order / Titan",
-    "groups": ["Black Order", "Titan Survivors"],
+    "groups": [
+      "Black Order",
+      "Titan Survivors"
+    ],
     "originLocation": "Titan (Cosmic)",
     "status": "deceased",
     "bio": "The Mad Titan who assembled the Infinity Gauntlet and wiped out half of all universal life."
@@ -556,7 +685,10 @@ export const charactersData: Record<string, Character> = {
     "borderBadge": "border-amber-700",
     "role": "hero",
     "affiliation": "Asgardian Royalty",
-    "groups": ["Asgardian Royalty", "Nine Realms Protectors"],
+    "groups": [
+      "Asgardian Royalty",
+      "Nine Realms Protectors"
+    ],
     "originLocation": "Asgard (Nine Realms)",
     "status": "deceased",
     "bio": "King of Asgard, protector of the Nine Realms and father of Thor and Loki."
@@ -572,7 +704,11 @@ export const charactersData: Record<string, Character> = {
     "borderBadge": "border-purple-700",
     "role": "hero",
     "affiliation": "Hatut Zeraze / Wakanda",
-    "groups": ["Hatut Zeraze", "Dora Milaje", "Wakanda"],
+    "groups": [
+      "Hatut Zeraze",
+      "Dora Milaje",
+      "Wakanda"
+    ],
     "originLocation": "Crete / Wakanda (Earth)",
     "status": "alive",
     "bio": "Former Dora Milaje warrior turned Hatut Zeraze operative who hunted rogue War Dogs in 1260 B.C.E. Crete."
@@ -588,7 +724,10 @@ export const charactersData: Record<string, Character> = {
     "borderBadge": "border-amber-700",
     "role": "villain",
     "affiliation": "Rogue War Dogs / Crete Warlords",
-    "groups": ["Rogue War Dogs", "Wakanda Exiles"],
+    "groups": [
+      "Rogue War Dogs",
+      "Wakanda Exiles"
+    ],
     "originLocation": "Crete / Wakanda (Earth)",
     "status": "deceased",
     "bio": "Traitorous War Dog warlord who built an illicit Vibranium weapon empire in ancient Crete."
@@ -604,7 +743,11 @@ export const charactersData: Record<string, Character> = {
     "borderBadge": "border-blue-700",
     "role": "hero",
     "affiliation": "Hatut Zeraze / Myrmidons",
-    "groups": ["Hatut Zeraze", "Myrmidons", "Wakanda"],
+    "groups": [
+      "Hatut Zeraze",
+      "Myrmidons",
+      "Wakanda"
+    ],
     "originLocation": "Troy / Wakanda (Earth)",
     "status": "alive",
     "bio": "Wakandan spy embedded undercover alongside Achilles during the Trojan War to reclaim Vibranium relics."
@@ -620,7 +763,11 @@ export const charactersData: Record<string, Character> = {
     "borderBadge": "border-amber-600",
     "role": "hero",
     "affiliation": "K'un-Lun / Iron Fist",
-    "groups": ["K'un-Lun Order", "Iron Fist", "Masters of Chi"],
+    "groups": [
+      "K'un-Lun Order",
+      "Iron Fist",
+      "Masters of Chi"
+    ],
     "originLocation": "K'un-Lun / Medieval China",
     "status": "alive",
     "bio": "Legendary female Iron Fist of K'un-Lun who wielded the golden dragon Chi in 15th-century China alongside the Hatut Zeraze."
@@ -636,7 +783,10 @@ export const charactersData: Record<string, Character> = {
     "borderBadge": "border-purple-700",
     "role": "hero",
     "affiliation": "Hatut Zeraze / Wakanda",
-    "groups": ["Hatut Zeraze", "Wakanda"],
+    "groups": [
+      "Hatut Zeraze",
+      "Wakanda"
+    ],
     "originLocation": "Adwa, Ethiopia / Wakanda (Earth)",
     "status": "alive",
     "bio": "Veteran War Dog operative who guided Prince Tafari during the 1896 Battle of Adwa."
@@ -652,7 +802,10 @@ export const charactersData: Record<string, Character> = {
     "borderBadge": "border-amber-700",
     "role": "hero",
     "affiliation": "Wakandan Royal Family",
-    "groups": ["Wakandan Royal Family", "Wakanda"],
+    "groups": [
+      "Wakandan Royal Family",
+      "Wakanda"
+    ],
     "originLocation": "Wakanda (Earth)",
     "status": "alive",
     "bio": "Young Wakandan prince on his rite-of-passage mission into 1896 Ethiopia."
@@ -668,7 +821,11 @@ export const charactersData: Record<string, Character> = {
     "borderBadge": "border-fuchsia-700",
     "role": "hero",
     "affiliation": "Future Wakanda (c. 2400 C.E.)",
-    "groups": ["Wakandan Royal Family", "Future Wakanda", "Time Travelers"],
+    "groups": [
+      "Wakandan Royal Family",
+      "Future Wakanda",
+      "Time Travelers"
+    ],
     "originLocation": "Future Wakanda (c. 2400 C.E.)",
     "status": "alive",
     "bio": "Queen of Wakanda and final Black Panther who traveled back 500 years in time to prevent the fall of Wakanda against the alien Horde."
@@ -684,7 +841,11 @@ export const charactersData: Record<string, Character> = {
     "borderBadge": "border-slate-600",
     "role": "hero",
     "affiliation": "Private Investigator / The Spider",
-    "groups": ["Spider-Verse", "Earth-90214 Heroes", "1930s New York"],
+    "groups": [
+      "Spider-Verse",
+      "Earth-90214 Heroes",
+      "1930s New York"
+    ],
     "originLocation": "New York City (Earth-90214)",
     "status": "alive",
     "bio": "Grizzled Great War veteran turned 1930s private investigator who gained arachnid abilities after being bitten by a mutated test subject during a wartime POW rescue mission."
@@ -700,7 +861,10 @@ export const charactersData: Record<string, Character> = {
     "borderBadge": "border-yellow-600",
     "role": "villain",
     "affiliation": "Silvermane Crime Syndicate",
-    "groups": ["Silvermane Syndicate", "Earth-90214 Villains"],
+    "groups": [
+      "Silvermane Syndicate",
+      "Earth-90214 Villains"
+    ],
     "originLocation": "New York City (Earth-90214)",
     "status": "alive",
     "bio": "Volatile criminal enforcer who survived wartime POW experiments, developing the deadly ability to project devastating bio-electric charges."
@@ -716,7 +880,10 @@ export const charactersData: Record<string, Character> = {
     "borderBadge": "border-sky-600",
     "role": "secondary",
     "affiliation": "The Daily Bugle",
-    "groups": ["Daily Bugle", "1930s New York"],
+    "groups": [
+      "Daily Bugle",
+      "1930s New York"
+    ],
     "originLocation": "New York City (Earth-90214)",
     "status": "alive",
     "bio": "Courageous Daily Bugle journalist who partners with Ben Reilly to expose underworld corruption."
@@ -732,7 +899,11 @@ export const charactersData: Record<string, Character> = {
     "borderBadge": "border-zinc-600",
     "role": "villain",
     "affiliation": "Silvermane Crime Syndicate",
-    "groups": ["Silvermane Syndicate", "Earth-90214 Villains", "Organized Crime"],
+    "groups": [
+      "Silvermane Syndicate",
+      "Earth-90214 Villains",
+      "Organized Crime"
+    ],
     "originLocation": "New York City (Earth-90214)",
     "status": "alive",
     "bio": "Ruthless aging mob kingpin ruling the New York underworld during the Great Depression."
@@ -748,7 +919,10 @@ export const charactersData: Record<string, Character> = {
     "borderBadge": "border-purple-600",
     "role": "anti-hero",
     "affiliation": "The Black Cat Club / Freelance",
-    "groups": ["1930s New York", "Spider-Verse"],
+    "groups": [
+      "1930s New York",
+      "Spider-Verse"
+    ],
     "originLocation": "New York City (Earth-90214)",
     "status": "alive",
     "bio": "Glamorous and shrewd nightclub singer caught between rival mob bosses and her dangerous allure with Ben Reilly."
@@ -764,7 +938,10 @@ export const charactersData: Record<string, Character> = {
     "borderBadge": "border-amber-600",
     "role": "villain",
     "affiliation": "Underworld Enforcer",
-    "groups": ["Earth-90214 Villains", "Organized Crime"],
+    "groups": [
+      "Earth-90214 Villains",
+      "Organized Crime"
+    ],
     "originLocation": "New York City (Earth-90214)",
     "status": "alive",
     "bio": "Superpowered enforcer with dense, sand-manipulating physical durability in the service of criminal syndicates."
@@ -780,7 +957,10 @@ export const charactersData: Record<string, Character> = {
     "borderBadge": "border-slate-500",
     "role": "villain",
     "affiliation": "Underworld Enforcer",
-    "groups": ["Earth-90214 Villains", "Organized Crime"],
+    "groups": [
+      "Earth-90214 Villains",
+      "Organized Crime"
+    ],
     "originLocation": "New York City (Earth-90214)",
     "status": "alive",
     "bio": "Towering, stone-faced mob enforcer feared across 1930s New York for his brutal physical dominance."
@@ -796,7 +976,9 @@ export const charactersData: Record<string, Character> = {
     "borderBadge": "border-rose-600",
     "role": "civilian",
     "affiliation": "Ben Reilly's Fiancée",
-    "groups": ["1930s New York"],
+    "groups": [
+      "1930s New York"
+    ],
     "originLocation": "New York City (Earth-90214)",
     "status": "deceased",
     "bio": "Ben Reilly's beloved fiancée whose tragic assassination by mobsters caused him to abandon his superhero mantle."
@@ -812,13 +994,406 @@ export const charactersData: Record<string, Character> = {
     "borderBadge": "border-emerald-600",
     "role": "civilian",
     "affiliation": "Ben Reilly Detective Agency",
-    "groups": ["1930s New York", "Earth-90214 Allies"],
+    "groups": [
+      "1930s New York",
+      "Earth-90214 Allies"
+    ],
     "originLocation": "New York City (Earth-90214)",
     "status": "alive",
     "bio": "Ben Reilly's sharp-witted, loyal, and street-smart secretary at his private investigation agency who manages clients and keeps him grounded."
+  },
+  "red-skull": {
+    "id": "red-skull",
+    "name": "Johann Schmidt / Red Skull",
+    "alias": "Red Skull",
+    "cssClass": "red-skull",
+    "color": "#ef4444",
+    "bgBadge": "bg-red-950/90 hover:bg-red-900/90",
+    "textBadge": "text-red-300",
+    "borderBadge": "border-red-600",
+    "role": "villain",
+    "affiliation": "HYDRA / Nazi Special Weapons Division",
+    "groups": [
+      "HYDRA",
+      "Third Reich (Defected)"
+    ],
+    "originLocation": "Germany (Earth)",
+    "status": "presumably-dead",
+    "bio": "Ruthless founder of HYDRA who took an early imperfect super-soldier serum and wielded the Tesseract to achieve global conquest."
+  },
+  "arnim-zola": {
+    "id": "arnim-zola",
+    "name": "Dr. Arnim Zola",
+    "alias": "Arnim Zola",
+    "cssClass": "arnim-zola",
+    "color": "#a3e635",
+    "bgBadge": "bg-lime-950/80 hover:bg-lime-900/90",
+    "textBadge": "text-lime-300",
+    "borderBadge": "border-lime-700",
+    "role": "villain",
+    "affiliation": "HYDRA / S.H.I.E.L.D.",
+    "groups": [
+      "HYDRA",
+      "SSR / Operation Paperclip",
+      "S.H.I.E.L.D."
+    ],
+    "originLocation": "Switzerland / Germany (Earth)",
+    "status": "deceased",
+    "bio": "Brilliant HYDRA biochemist and geneticist who harnessed the Tesseract energy and later secretly planted HYDRA's parasite inside S.H.I.E.L.D."
+  },
+  "abraham-erskine": {
+    "id": "abraham-erskine",
+    "name": "Dr. Abraham Erskine",
+    "alias": "Dr. Erskine",
+    "cssClass": "abraham-erskine",
+    "color": "#60a5fa",
+    "bgBadge": "bg-blue-950/80 hover:bg-blue-900/90",
+    "textBadge": "text-blue-300",
+    "borderBadge": "border-blue-700",
+    "role": "secondary",
+    "affiliation": "Strategic Scientific Reserve (SSR)",
+    "groups": [
+      "SSR",
+      "Project Rebirth"
+    ],
+    "originLocation": "Augsburg, Germany (Earth)",
+    "status": "deceased",
+    "bio": "German biochemist who fled Nazi Germany and developed the legendary Super-Soldier Serum, selecting Steve Rogers for his good heart."
+  },
+  "chester-phillips": {
+    "id": "chester-phillips",
+    "name": "Colonel Chester Phillips",
+    "alias": "Colonel Phillips",
+    "cssClass": "chester-phillips",
+    "color": "#a1a1aa",
+    "bgBadge": "bg-zinc-950/80 hover:bg-zinc-900/90",
+    "textBadge": "text-zinc-300",
+    "borderBadge": "border-zinc-700",
+    "role": "secondary",
+    "affiliation": "SSR Military Commander / S.H.I.E.L.D. Founder",
+    "groups": [
+      "SSR",
+      "US Army",
+      "S.H.I.E.L.D."
+    ],
+    "originLocation": "United States (Earth)",
+    "status": "deceased",
+    "bio": "No-nonsense US Army colonel and military head of the Strategic Scientific Reserve during World War II."
+  },
+  "dum-dum-dugan": {
+    "id": "dum-dum-dugan",
+    "name": "Timothy 'Dum Dum' Dugan",
+    "alias": "Dum Dum Dugan",
+    "cssClass": "dum-dum-dugan",
+    "color": "#f59e0b",
+    "bgBadge": "bg-amber-950/80 hover:bg-amber-900/90",
+    "textBadge": "text-amber-300",
+    "borderBadge": "border-amber-700",
+    "role": "hero",
+    "affiliation": "Howling Commandos / SSR / S.H.I.E.L.D.",
+    "groups": [
+      "Howling Commandos",
+      "SSR",
+      "S.H.I.E.L.D."
+    ],
+    "originLocation": "Boston, Massachusetts (Earth)",
+    "status": "deceased",
+    "bio": "Iconic bowler-hat-wearing marksman and second-in-command of Captain America's Howling Commandos."
+  },
+  "maria-hill": {
+    "id": "maria-hill",
+    "name": "Maria Hill",
+    "alias": "Agent Hill",
+    "cssClass": "maria-hill",
+    "color": "#94a3b8",
+    "bgBadge": "bg-slate-950/80 hover:bg-slate-900/90",
+    "textBadge": "text-slate-300",
+    "borderBadge": "border-slate-600",
+    "role": "hero",
+    "affiliation": "S.H.I.E.L.D. / Stark Industries",
+    "groups": [
+      "S.H.I.E.L.D.",
+      "Avengers Allies"
+    ],
+    "originLocation": "Chicago, Illinois (Earth)",
+    "status": "deceased",
+    "bio": "Deputy Director of S.H.I.E.L.D. and Nick Fury's most trusted right hand."
+  },
+  "shuri": {
+    "id": "shuri",
+    "name": "Shuri / Black Panther",
+    "alias": "Black Panther",
+    "cssClass": "shuri",
+    "color": "#c084fc",
+    "bgBadge": "bg-purple-950/80 hover:bg-purple-900/90",
+    "textBadge": "text-purple-300",
+    "borderBadge": "border-purple-600",
+    "role": "hero",
+    "affiliation": "Wakandan Royal Family / Black Panther",
+    "groups": [
+      "Wakandan Royal Family",
+      "Wakanda",
+      "Avengers Allies"
+    ],
+    "originLocation": "Birnin Zana, Wakanda (Earth)",
+    "status": "alive",
+    "bio": "Princess of Wakanda, genius head of the Wakandan Design Group, and successor Black Panther."
+  },
+  "okoye": {
+    "id": "okoye",
+    "name": "Okoye",
+    "alias": "General Okoye",
+    "cssClass": "okoye",
+    "color": "#f59e0b",
+    "bgBadge": "bg-amber-950/80 hover:bg-amber-900/90",
+    "textBadge": "text-amber-300",
+    "borderBadge": "border-amber-600",
+    "role": "hero",
+    "affiliation": "Dora Milaje / Midnight Angels",
+    "groups": [
+      "Dora Milaje",
+      "Wakanda",
+      "Midnight Angels",
+      "Avengers"
+    ],
+    "originLocation": "Wakanda (Earth)",
+    "status": "alive",
+    "bio": "Fiercely loyal General of the Dora Milaje and champion warrior of Wakanda."
+  },
+  "nakia": {
+    "id": "nakia",
+    "name": "Nakia",
+    "alias": "Nakia",
+    "cssClass": "nakia",
+    "color": "#10b981",
+    "bgBadge": "bg-emerald-950/80 hover:bg-emerald-900/90",
+    "textBadge": "text-emerald-300",
+    "borderBadge": "border-emerald-600",
+    "role": "hero",
+    "affiliation": "War Dogs / Wakanda",
+    "groups": [
+      "War Dogs",
+      "Wakanda"
+    ],
+    "originLocation": "Wakanda (Earth)",
+    "status": "alive",
+    "bio": "Elite War Dog undercover operative who dedicated her life to saving oppressed people worldwide."
+  },
+  "nebula": {
+    "id": "nebula",
+    "name": "Nebula",
+    "alias": "Nebula",
+    "cssClass": "nebula",
+    "color": "#38bdf8",
+    "bgBadge": "bg-sky-950/80 hover:bg-sky-900/90",
+    "textBadge": "text-sky-300",
+    "borderBadge": "border-sky-600",
+    "role": "hero",
+    "affiliation": "Guardians of the Galaxy / Avengers",
+    "groups": [
+      "Guardians of the Galaxy",
+      "Avengers",
+      "Children of Thanos"
+    ],
+    "originLocation": "Luphom Prime (Cosmic)",
+    "status": "alive",
+    "bio": "Cybernetically enhanced assassin daughter of Thanos who broke free to become a Guardian of the Galaxy."
+  },
+  "mantis": {
+    "id": "mantis",
+    "name": "Mantis",
+    "alias": "Mantis",
+    "cssClass": "mantis",
+    "color": "#a3e635",
+    "bgBadge": "bg-lime-950/80 hover:bg-lime-900/90",
+    "textBadge": "text-lime-300",
+    "borderBadge": "border-lime-600",
+    "role": "hero",
+    "affiliation": "Guardians of the Galaxy",
+    "groups": [
+      "Guardians of the Galaxy"
+    ],
+    "originLocation": "Ego's Planet (Cosmic)",
+    "status": "alive",
+    "bio": "Empathic alien with antennae capable of sensing and manipulating emotions, daughter of Ego and sister of Peter Quill."
+  },
+  "valkyrie": {
+    "id": "valkyrie",
+    "name": "Brunnhilde / King Valkyrie",
+    "alias": "King Valkyrie",
+    "cssClass": "valkyrie",
+    "color": "#38bdf8",
+    "bgBadge": "bg-sky-950/80 hover:bg-sky-900/90",
+    "textBadge": "text-sky-300",
+    "borderBadge": "border-sky-600",
+    "role": "hero",
+    "affiliation": "Asgard / New Asgard",
+    "groups": [
+      "Valkyrior",
+      "Asgard / New Asgard",
+      "Revengers"
+    ],
+    "originLocation": "Asgard (Cosmic / Asgard)",
+    "status": "alive",
+    "bio": "Legendary Asgardian warrior who survived the slaughter by Hela and later became King of New Asgard."
+  },
+  "colleen-wing": {
+    "id": "colleen-wing",
+    "name": "Colleen Wing",
+    "alias": "Colleen Wing",
+    "cssClass": "colleen-wing",
+    "color": "#facc15",
+    "bgBadge": "bg-yellow-950/80 hover:bg-yellow-900/90",
+    "textBadge": "text-yellow-300",
+    "borderBadge": "border-yellow-600",
+    "role": "hero",
+    "affiliation": "Daughters of the Dragon / Iron Fist",
+    "groups": [
+      "Daughters of the Dragon",
+      "Defenders Allies",
+      "The Hand (Defected)"
+    ],
+    "originLocation": "New York City (Earth)",
+    "status": "alive",
+    "bio": "Master martial artist and katana wielder who learned to channel the glowing Chi of the Iron Fist through her blade."
+  },
+  "pietro": {
+    "id": "pietro",
+    "name": "Pietro Maximoff / Quicksilver",
+    "alias": "Quicksilver",
+    "cssClass": "pietro",
+    "color": "#38bdf8",
+    "bgBadge": "bg-sky-950/80 hover:bg-sky-900/90",
+    "textBadge": "text-sky-300",
+    "borderBadge": "border-sky-600",
+    "role": "hero",
+    "affiliation": "Avengers",
+    "groups": [
+      "Avengers",
+      "HYDRA Volunteers"
+    ],
+    "originLocation": "Sokovia (Earth)",
+    "status": "deceased",
+    "bio": "Sokovian speedster enhanced by the Mind Stone who sacrificed his life to save Hawkeye and a child in the Battle of Sokovia."
+  },
+  "carol-danvers": {
+    "id": "carol-danvers",
+    "name": "Carol Danvers / Captain Marvel",
+    "alias": "Captain Marvel",
+    "cssClass": "captain-marvel",
+    "color": "#fbbf24",
+    "bgBadge": "bg-amber-950/80 hover:bg-amber-900/90",
+    "textBadge": "text-amber-300",
+    "borderBadge": "border-amber-600",
+    "role": "hero",
+    "affiliation": "Avengers / Starforce",
+    "groups": [
+      "Avengers",
+      "Starforce (Defected)",
+      "US Air Force"
+    ],
+    "originLocation": "Boston, Massachusetts (Earth)",
+    "status": "alive",
+    "bio": "Cosmic powerhouse infused with Space Stone energy after surviving an experimental light-speed engine explosion."
+  },
+  "talos": {
+    "id": "talos",
+    "name": "Talos",
+    "alias": "General Talos",
+    "cssClass": "talos",
+    "color": "#4ade80",
+    "bgBadge": "bg-emerald-950/80 hover:bg-emerald-900/90",
+    "textBadge": "text-emerald-300",
+    "borderBadge": "border-emerald-600",
+    "role": "hero",
+    "affiliation": "Skrulls / S.H.I.E.L.D. Allies",
+    "groups": [
+      "Skrulls",
+      "Nick Fury Allies"
+    ],
+    "originLocation": "Skrullos (Cosmic)",
+    "status": "deceased",
+    "bio": "Skrull general and shapeshifter who allied with Carol Danvers and Nick Fury to protect Skrull refugees."
+  },
+  "goose": {
+    "id": "goose",
+    "name": "Goose",
+    "alias": "Goose the Flerken",
+    "cssClass": "goose",
+    "color": "#fb923c",
+    "bgBadge": "bg-orange-950/80 hover:bg-orange-900/90",
+    "textBadge": "text-orange-300",
+    "borderBadge": "border-orange-600",
+    "role": "hero",
+    "affiliation": "Carol Danvers / Nick Fury Companion",
+    "groups": [
+      "Flerkens",
+      "Cosmic Creatures"
+    ],
+    "originLocation": "Cosmic",
+    "status": "alive",
+    "bio": "Alien Flerken resembling a ginger tabby cat that houses pocket dimensions and tentacles in its mouth."
+  },
+  "elektra": {
+    "id": "elektra",
+    "name": "Elektra Natchios / Black Sky",
+    "alias": "Elektra",
+    "cssClass": "elektra",
+    "color": "#f43f5e",
+    "bgBadge": "bg-rose-950/80 hover:bg-rose-900/90",
+    "textBadge": "text-rose-300",
+    "borderBadge": "border-rose-600",
+    "role": "anti-hero",
+    "affiliation": "The Hand / Matt Murdock Ally",
+    "groups": [
+      "The Hand / Black Sky",
+      "Chaste"
+    ],
+    "originLocation": "New York City (Earth)",
+    "status": "deceased",
+    "bio": "Lethal sai-wielding assassin resurrected by The Hand as the ultimate living weapon known as the Black Sky."
+  },
+  "cloak": {
+    "id": "cloak",
+    "name": "Tyrone Johnson / Cloak",
+    "alias": "Cloak",
+    "cssClass": "cloak",
+    "color": "#818cf8",
+    "bgBadge": "bg-indigo-950/80 hover:bg-indigo-900/90",
+    "textBadge": "text-indigo-300",
+    "borderBadge": "border-indigo-600",
+    "role": "hero",
+    "affiliation": "Cloak and Dagger",
+    "groups": [
+      "Cloak and Dagger",
+      "Marvel Knights"
+    ],
+    "originLocation": "New Orleans, Louisiana (Earth)",
+    "status": "alive",
+    "bio": "Hero connected to the Darkforce dimension, capable of teleportation and intangible shadowy engulfment."
+  },
+  "dagger": {
+    "id": "dagger",
+    "name": "Tandy Bowen / Dagger",
+    "alias": "Dagger",
+    "cssClass": "dagger",
+    "color": "#fef08a",
+    "bgBadge": "bg-yellow-950/80 hover:bg-yellow-900/90",
+    "textBadge": "text-yellow-300",
+    "borderBadge": "border-yellow-600",
+    "role": "hero",
+    "affiliation": "Cloak and Dagger",
+    "groups": [
+      "Cloak and Dagger",
+      "Marvel Knights"
+    ],
+    "originLocation": "New Orleans, Louisiana (Earth)",
+    "status": "alive",
+    "bio": "Hero capable of generating concentrated hard-light daggers and purging darkness from human souls."
   }
 };
 
 export const allCharacters: Character[] = Object.values(charactersData);
+
 
 
