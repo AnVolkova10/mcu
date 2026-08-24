@@ -170,7 +170,7 @@ export const TimelineScreen: React.FC = () => {
             <section key={era.id} id={era.id} className="relative">
               
               {/* Era Header */}
-              <div className="sticky top-24 z-20 py-3 mb-6 backdrop-blur-md bg-[#000000]/95 border-y-2 border-[#e62429] -mx-4 px-4 sm:rounded-lg sm:mx-0 sm:px-6 flex items-center justify-between shadow-2xl">
+              <div className="sticky top-[108px] sm:top-[116px] z-20 py-3 mb-6 backdrop-blur-md bg-[#000000]/95 border-y-2 border-[#e62429] -mx-4 px-4 sm:rounded-lg sm:mx-0 sm:px-6 flex items-center justify-between shadow-2xl">
                 <div className="flex items-center gap-3">
                   <div className="w-3 h-3 bg-[#e62429] rotate-45" />
                   <h2 className="text-xl sm:text-2xl font-black text-white tracking-wide uppercase font-title">

@@ -616,23 +616,21 @@ export const timelineEras: EraGroup[] = [
         "mediaPhase": "Phase 1",
         "isAlternativeTimeline": false,
         "rawClasses": [
-          "captain-america-1",
-          "agents-of-shield-ii"
+          "captain-america-1"
         ],
-        "rawHtml": "<p><strong class=\"peggy-carter\">Peggy Carter</strong> and <strong class=\"dum-dum-dugan\">Dum Dum Dugan</strong> lead an SSR strike team to raid the final European HYDRA redoubt, capturing Nazi scientist <strong class=\"enemy\">Werner Reinhardt (Dr. Whitehall)</strong> and securing the world's first classified 0-8-4 alien artifact: <strong>The Obelisk (The Diviner)</strong>.</p>\n<p>During a high-speed SSR raid on an armored HYDRA mountain train in the Swiss Alps, the team captures chief scientist Dr. <strong class=\"arnim-zola\">Arnim Zola</strong>. However, a hull breach sends <strong class=\"winter-soldier presumably-dead\">Bucky Barnes</strong> plunging over the rail into a bottomless icy chasm to his apparent death. Broken by grief, Rogers leads the SSR and Howling Commandos in a final assault on the Red Skull's central mountain fortress. Red Skull launches his colossal flying-wing super-bomber, <strong>The Valkyrie</strong>, armed with Tesseract-charged atomic ordnance targeting New York, Washington, and American metropolitan centers.</p>\n<p>Rogers boards the Valkyrie and battles Schmidt in the cockpit. During the firefight, the Tesseract's energy containment matrix is damaged. When <strong class=\"red-skull presumably-dead\">Johann Schmidt</strong> grabs the glowing <strong class=\"tesseract\">Tesseract</strong> directly with his bare hands, the cosmic relic activates a blinding wormhole, dissolving and teleporting the Red Skull across deep space to Vormir. The Tesseract melts through the aircraft hull and sinks into the Atlantic Ocean. Realizing the autopilot is locked on New York, Rogers makes the ultimate sacrifice: he radios <strong class=\"peggy-carter\">Peggy Carter</strong> to say goodbye, promising her a raincheck dance, before manually plunging the <em>Valkyrie</em> into the Arctic ice sheet to save millions. In the aftermath, <strong class=\"howard-stark\">Howard Stark</strong> leads a naval recovery expedition, retrieving the glowing <strong class=\"tesseract\">Tesseract</strong> from the seabed while Steve remains lost in the frozen north.</p>",
+        "rawHtml": "<p>During a high-speed SSR raid on an armored HYDRA mountain train in the Swiss Alps, Captain America's team captures chief scientist Dr. <strong class=\"arnim-zola\">Arnim Zola</strong>. However, a hull breach sends <strong class=\"bucky-barnes presumably-dead\">Bucky Barnes</strong> plunging over the rail into a bottomless icy chasm to his apparent death. Broken by grief, <strong class=\"steve-rogers\">Steve Rogers</strong> leads the SSR and Howling Commandos in a massive final assault on the Red Skull's central mountain fortress. Red Skull launches his colossal flying-wing super-bomber, <strong>The Valkyrie</strong>, armed with Tesseract-charged atomic ordnance targeting New York, Washington, and American metropolitan centers.</p>\n<p>Rogers boards the Valkyrie and battles Schmidt in the cockpit. During the firefight, the Tesseract's energy containment matrix is damaged. When <strong class=\"red-skull presumably-dead\">Johann Schmidt</strong> grabs the glowing <strong class=\"tesseract\">Tesseract</strong> directly with his bare hands, the cosmic relic activates a blinding wormhole, dissolving and teleporting the Red Skull across deep space to Vormir. The Tesseract melts through the aircraft hull and sinks into the Atlantic Ocean. Realizing the autopilot is locked on New York, Rogers makes the ultimate sacrifice: he radios <strong class=\"peggy-carter\">Peggy Carter</strong> to say goodbye, promising her a raincheck dance, before manually plunging the <em>Valkyrie</em> into the Arctic ice sheet to save millions. In the aftermath, <strong class=\"howard-stark\">Howard Stark</strong> leads a naval recovery expedition, retrieving the glowing <strong class=\"tesseract\">Tesseract</strong> from the seabed while Steve remains lost in the frozen north.</p>",
         "paragraphs": [
-          "<strong class=\"peggy-carter\">Peggy Carter</strong> and <strong class=\"dum-dum-dugan\">Dum Dum Dugan</strong> lead an SSR strike team to raid the final European HYDRA redoubt, capturing Nazi scientist <strong class=\"enemy\">Werner Reinhardt (Dr. Whitehall)</strong> and securing the world's first classified 0-8-4 alien artifact: <strong>The Obelisk (The Diviner)</strong>.",
-          "During a high-speed SSR raid on an armored HYDRA mountain train in the Swiss Alps, the team captures chief scientist Dr. <strong class=\"arnim-zola\">Arnim Zola</strong>. However, a hull breach sends <strong class=\"winter-soldier presumably-dead\">Bucky Barnes</strong> plunging over the rail into a bottomless icy chasm to his apparent death. Broken by grief, Rogers leads the SSR and Howling Commandos in a final assault on the Red Skull's central mountain fortress. Red Skull launches his colossal flying-wing super-bomber, <strong>The Valkyrie</strong>, armed with Tesseract-charged atomic ordnance targeting New York, Washington, and American metropolitan centers.",
+          "During a high-speed SSR raid on an armored HYDRA mountain train in the Swiss Alps, Captain America's team captures chief scientist Dr. <strong class=\"arnim-zola\">Arnim Zola</strong>. However, a hull breach sends <strong class=\"bucky-barnes presumably-dead\">Bucky Barnes</strong> plunging over the rail into a bottomless icy chasm to his apparent death. Broken by grief, <strong class=\"steve-rogers\">Steve Rogers</strong> leads the SSR and Howling Commandos in a massive final assault on the Red Skull's central mountain fortress. Red Skull launches his colossal flying-wing super-bomber, <strong>The Valkyrie</strong>, armed with Tesseract-charged atomic ordnance targeting New York, Washington, and American metropolitan centers.",
           "Rogers boards the Valkyrie and battles Schmidt in the cockpit. During the firefight, the Tesseract's energy containment matrix is damaged. When <strong class=\"red-skull presumably-dead\">Johann Schmidt</strong> grabs the glowing <strong class=\"tesseract\">Tesseract</strong> directly with his bare hands, the cosmic relic activates a blinding wormhole, dissolving and teleporting the Red Skull across deep space to Vormir. The Tesseract melts through the aircraft hull and sinks into the Atlantic Ocean. Realizing the autopilot is locked on New York, Rogers makes the ultimate sacrifice: he radios <strong class=\"peggy-carter\">Peggy Carter</strong> to say goodbye, promising her a raincheck dance, before manually plunging the <em>Valkyrie</em> into the Arctic ice sheet to save millions. In the aftermath, <strong class=\"howard-stark\">Howard Stark</strong> leads a naval recovery expedition, retrieving the glowing <strong class=\"tesseract\">Tesseract</strong> from the seabed while Steve remains lost in the frozen north."
         ],
         "characters": [
-          "peggy-carter",
-          "dum-dum-dugan",
-          "bucky-barnes",
           "steve-rogers",
+          "bucky-barnes",
           "red-skull",
           "arnim-zola",
-          "howard-stark"
+          "peggy-carter",
+          "howard-stark",
+          "dum-dum-dugan"
         ],
         "stones": [
           "space"
@@ -643,12 +641,40 @@ export const timelineEras: EraGroup[] = [
           "Steve Rogers (Presumed Lost)"
         ],
         "mcuHighlights": [
-          "Capture of the First 0-8-4 Obelisk",
           "The Fall of Bucky Barnes in the Alps",
-          "Red Skull Teleported by the Tesseract",
+          "Red Skull Teleported by the Tesseract to Vormir",
           "Captain America Crashes The Valkyrie in the Arctic",
           "Steve & Peggy's Dance Promise",
           "Howard Stark Recovers the Tesseract from the Ocean"
+        ],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
+      },
+      {
+        "id": "event-_1945_-2",
+        "eraId": "era-_1945_",
+        "eraTitle": "1945",
+        "mediaKey": "agents-of-shield-ii",
+        "mediaTitle": "Agents Of S.H.I.E.L.D. ( Season 2: e01 / 2014)",
+        "mediaType": "series",
+        "mediaPhase": "Marvel Television",
+        "isAlternativeTimeline": false,
+        "rawClasses": [
+          "agents-of-shield-ii"
+        ],
+        "rawHtml": "<p><strong class=\"peggy-carter\">Peggy Carter</strong>, <strong class=\"dum-dum-dugan\">Dum Dum Dugan</strong>, and Jim Morita lead an SSR tactical strike team to raid the final European HYDRA research fortress in Austria. They successfully capture high-ranking Nazi scientist <strong class=\"enemy\">Werner Reinhardt (Dr. Whitehall)</strong>, seizing his experimental equipment and confiscating the world's first classified 0-8-4 extraterrestrial artifact: <strong>The Obelisk (The Diviner)</strong>, sealing it inside SSR containment vaults.</p>",
+        "paragraphs": [
+          "<strong class=\"peggy-carter\">Peggy Carter</strong>, <strong class=\"dum-dum-dugan\">Dum Dum Dugan</strong>, and Jim Morita lead an SSR tactical strike team to raid the final European HYDRA research fortress in Austria. They successfully capture high-ranking Nazi scientist <strong class=\"enemy\">Werner Reinhardt (Dr. Whitehall)</strong>, seizing his experimental equipment and confiscating the world's first classified 0-8-4 extraterrestrial artifact: <strong>The Obelisk (The Diviner)</strong>, sealing it inside SSR containment vaults."
+        ],
+        "characters": [
+          "peggy-carter",
+          "dum-dum-dugan"
+        ],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "Capture of Werner Reinhardt (Dr. Whitehall)",
+          "Confiscation of the First 0-8-4 (The Obelisk / Diviner)"
         ],
         "timelineType": "sacred-616",
         "earthDesignation": "Earth-616 (The Sacred Timeline)"
