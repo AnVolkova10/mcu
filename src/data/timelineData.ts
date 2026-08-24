@@ -692,75 +692,105 @@ export const timelineEras: EraGroup[] = [
         "eraId": "era-_1946_",
         "eraTitle": "1946",
         "mediaKey": "agent-carter-i",
-        "mediaTitle": "MARVEL'S Agent Carter (2015-2016)",
+        "mediaTitle": "Marvel's Agent Carter (Season 1)",
         "mediaType": "series",
         "mediaPhase": "Marvel Television",
         "isAlternativeTimeline": false,
         "rawClasses": [
           "agent-carter-i"
         ],
-        "rawHtml": "<h1>MARVEL'S Agent Carter <em>(2015-2016)</em></h1>\r\n                <p><strong class=\"peggy-carter\">Peggy Carter</strong> having to balance the routine for the\r\n                    <em>Strategic Scientific Reserve (SSR)</em> in New York City with secretly assisting <strong\r\n                        class=\"howard-stark\">Howard Stark</strong>, who finds himself framed for supplying deadly\r\n                    weapons <strong>(Midnight Oil)</strong> to enemies of the United States. <strong\r\n                        class=\"enemy\">Zola</strong> appears at the end to help <strong class=\"enemy\">Johann\r\n                        Fennhoff</strong> in prison. <strong class=\"dottie\">Dottie</strong> I love you. Carter is\r\n                    assisted by Stark's butler, <strong class=\"jarvis\">Edwin Jarvis</strong>, to find those responsible\r\n                    and dispose of the weapons. Peggy <strong class=\"mcu\">throws to the ocean Steve's blood</strong>.\r\n                </p>",
+        "rawHtml": "<p><strong class=\"peggy-carter\">Peggy Carter</strong> balances her routine at the <em>Strategic Scientific Reserve (SSR)</em> in New York City with covertly assisting <strong class=\"howard-stark\">Howard Stark</strong>, who has been framed for treason and trafficking devastating weapons (<strong class=\"mcu\">Midnight Oil</strong>) to enemies of the United States. Assisted in the field by Stark's loyal, refined butler <strong class=\"edwin-jarvis\">Edwin Jarvis</strong>, Peggy uncovers a web of Soviet subversion orchestrated by the shadow syndicate <strong>Leviathan</strong>, led by master hypnotist <strong class=\"johann-fennhoff\">Dr. Johann Fennhoff</strong> and lethal Red Room Black Widow assassin <strong class=\"dottie-underwood\">Dottie Underwood</strong> (<em>Dottie I love you</em>). After foiling a catastrophic plot to gas and bomb Manhattan, Fennhoff is imprisoned alongside <strong class=\"arnim-zola\">Dr. Arnim Zola</strong>, planting the seeds for future psychological conditioning protocols. Having cleared Stark's name, Peggy finds personal peace and releases the final vial of <strong class=\"mcu\">Steve Rogers' Super-Soldier blood</strong> into the ocean from the Brooklyn Bridge.</p>",
         "paragraphs": [
-          "<strong class=\"peggy-carter\">Peggy Carter</strong> having to balance the routine for the <em>Strategic Scientific Reserve (SSR)</em> in New York City with secretly assisting <strong class=\"howard-stark\">Howard Stark</strong>, who finds himself framed for supplying deadly weapons <strong>(Midnight Oil)</strong> to enemies of the United States. <strong class=\"enemy\">Zola</strong> appears at the end to help <strong class=\"enemy\">Johann Fennhoff</strong> in prison. <strong class=\"dottie\">Dottie</strong> I love you. Carter is assisted by Stark's butler, <strong class=\"jarvis\">Edwin Jarvis</strong>, to find those responsible and dispose of the weapons. Peggy <strong class=\"mcu\">throws to the ocean Steve's blood</strong>."
+          "<strong class=\"peggy-carter\">Peggy Carter</strong> balances her routine at the <em>Strategic Scientific Reserve (SSR)</em> in New York City with covertly assisting <strong class=\"howard-stark\">Howard Stark</strong>, who has been framed for treason and trafficking devastating weapons (<strong class=\"mcu\">Midnight Oil</strong>) to enemies of the United States. Assisted in the field by Stark's loyal, refined butler <strong class=\"edwin-jarvis\">Edwin Jarvis</strong>, Peggy uncovers a web of Soviet subversion orchestrated by the shadow syndicate <strong>Leviathan</strong>, led by master hypnotist <strong class=\"johann-fennhoff\">Dr. Johann Fennhoff</strong> and lethal Red Room Black Widow assassin <strong class=\"dottie-underwood\">Dottie Underwood</strong> (<em>Dottie I love you</em>). After foiling a catastrophic plot to gas and bomb Manhattan, Fennhoff is imprisoned alongside <strong class=\"arnim-zola\">Dr. Arnim Zola</strong>, planting the seeds for future psychological conditioning protocols. Having cleared Stark's name, Peggy finds personal peace and releases the final vial of <strong class=\"mcu\">Steve Rogers' Super-Soldier blood</strong> into the ocean from the Brooklyn Bridge."
         ],
         "characters": [
           "peggy-carter",
-          "howard-stark"
+          "howard-stark",
+          "edwin-jarvis",
+          "dottie-underwood",
+          "johann-fennhoff",
+          "arnim-zola"
         ],
         "stones": [],
         "deaths": [],
         "mcuHighlights": [
-          "throws to the ocean Steve's blood"
+          "The Midnight Oil Conspiracy",
+          "Leviathan Infiltration & Dottie Underwood",
+          "Release of Steve Rogers' Blood Vial into the East River"
         ],
         "timelineType": "sacred-616",
         "earthDesignation": "Earth-616 (The Sacred Timeline)"
-      },
+      }
+    ]
+  },
+  {
+    "id": "era-_1947_",
+    "title": "-1947-",
+    "cleanTitle": "1947",
+    "category": "early-century",
+    "events": [
       {
-        "id": "event-_1946_-2",
-        "eraId": "era-_1946_",
-        "eraTitle": "1946",
+        "id": "event-_1947_-1",
+        "eraId": "era-_1947_",
+        "eraTitle": "1947",
         "mediaKey": "agent-carter-ii",
-        "mediaTitle": "Agent Carter (Season 2)",
+        "mediaTitle": "Marvel's Agent Carter (Season 2)",
         "mediaType": "series",
         "mediaPhase": "Marvel Television",
         "isAlternativeTimeline": false,
         "rawClasses": [
           "agent-carter-ii"
         ],
-        "rawHtml": "<p> Months later, Carter moves to Los Angeles to deal with the threats of\r\n                    the <strong>new Atomic Age by the Secret Empire (Roxxon Industries) in the aftermath of World War II\r\n                        Zero\r\n                        Matter</strong> was found and destroyed. <strong class=\"secundary\">Daniel Sousa</strong> becomes\r\n                    Peggy's husband.\r\n                </p>",
+        "rawHtml": "<p><strong class=\"peggy-carter\">Peggy Carter</strong> travels to Los Angeles to assist West Coast SSR Chief <strong class=\"daniel-sousa\">Daniel Sousa</strong> in investigating an impossible homicide: a body frozen solid in a lake during a sweltering heatwave. The case leads them to <em>Isodyne Energy</em>, where quantum physicist <strong class=\"jason-wilkes\">Dr. Jason Wilkes</strong> tapped into an extra-dimensional anomaly called <strong class=\"mcu\">Zero Matter (Darkforce)</strong>. An explosion leaves Wilkes phased in an intangible state and infects brilliant actress <strong class=\"whitney-frost\">Agnes Cully (Whitney Frost / Madame Masque)</strong>, granting her the terrifying power to absorb living matter on contact. Backed by the clandestine <strong class=\"enemy\">Council of Nine</strong>, Frost seeks total cosmic power. Working alongside <strong class=\"edwin-jarvis\">Edwin Jarvis</strong>, <strong class=\"howard-stark\">Howard Stark</strong>, and Sousa, Peggy deploys a gamma rift cannon at Stark Pictures to extract the Zero Matter from Frost and restore Wilkes' physical form. In the aftermath, Peggy and Daniel Sousa share a romantic embrace, while SSR Chief Jack Thompson is ambushed and shot in his hotel room by an unknown assassin who steals Peggy's classified file.</p>",
         "paragraphs": [
-          "Months later, Carter moves to Los Angeles to deal with the threats of the <strong>new Atomic Age by the Secret Empire (Roxxon Industries) in the aftermath of World War II Zero Matter</strong> was found and destroyed. <strong class=\"secundary\">Daniel Sousa</strong> becomes Peggy's husband."
-        ],
-        "characters": [],
-        "stones": [],
-        "deaths": [],
-        "mcuHighlights": [],
-        "timelineType": "sacred-616",
-        "earthDesignation": "Earth-616 (The Sacred Timeline)"
-      },
-      {
-        "id": "event-_1946_-3",
-        "eraId": "era-_1946_",
-        "eraTitle": "1946",
-        "mediaKey": "one-shot-agent-carter",
-        "mediaTitle": "MARVEL One Shot - Agent Carter (2013)",
-        "mediaType": "oneshot",
-        "mediaPhase": "One-Shot",
-        "isAlternativeTimeline": false,
-        "rawClasses": [
-          "one-shot-agent-carter"
-        ],
-        "rawHtml": "<h1>MARVEL One Shot - Agent Carter <em>(2013)</em></h1>\r\n                <p><strong class=\"peggy-carter\">Peggy Carter</strong> gets a call from <strong\r\n                        class=\"howard-stark\">Howard Stark</strong> (<strong class=\"secundary\">Dum Dum Dugan</strong> is\r\n                    with him) to run <em>S.H.I.E.L.D.S.</em> in Washington. </p>",
-        "paragraphs": [
-          "<strong class=\"peggy-carter\">Peggy Carter</strong> gets a call from <strong class=\"howard-stark\">Howard Stark</strong> (<strong class=\"secundary\">Dum Dum Dugan</strong> is with him) to run <em>S.H.I.E.L.D.S.</em> in Washington."
+          "<strong class=\"peggy-carter\">Peggy Carter</strong> travels to Los Angeles to assist West Coast SSR Chief <strong class=\"daniel-sousa\">Daniel Sousa</strong> in investigating an impossible homicide: a body frozen solid in a lake during a sweltering heatwave. The case leads them to <em>Isodyne Energy</em>, where quantum physicist <strong class=\"jason-wilkes\">Dr. Jason Wilkes</strong> tapped into an extra-dimensional anomaly called <strong class=\"mcu\">Zero Matter (Darkforce)</strong>. An explosion leaves Wilkes phased in an intangible state and infects brilliant actress <strong class=\"whitney-frost\">Agnes Cully (Whitney Frost / Madame Masque)</strong>, granting her the terrifying power to absorb living matter on contact. Backed by the clandestine <strong class=\"enemy\">Council of Nine</strong>, Frost seeks total cosmic power. Working alongside <strong class=\"edwin-jarvis\">Edwin Jarvis</strong>, <strong class=\"howard-stark\">Howard Stark</strong>, and Sousa, Peggy deploys a gamma rift cannon at Stark Pictures to extract the Zero Matter from Frost and restore Wilkes' physical form. In the aftermath, Peggy and Daniel Sousa share a romantic embrace, while SSR Chief Jack Thompson is ambushed and shot in his hotel room by an unknown assassin who steals Peggy's classified file."
         ],
         "characters": [
           "peggy-carter",
+          "daniel-sousa",
+          "jason-wilkes",
+          "whitney-frost",
+          "edwin-jarvis",
           "howard-stark"
         ],
         "stones": [],
         "deaths": [],
-        "mcuHighlights": [],
+        "mcuHighlights": [
+          "Discovery of Zero Matter (Darkforce)",
+          "Whitney Frost / Madame Masque Absorption",
+          "Stark Pictures Rift Generator",
+          "Romantic Union of Peggy Carter & Daniel Sousa"
+        ],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)"
+      },
+      {
+        "id": "event-_1947_-2",
+        "eraId": "era-_1947_",
+        "eraTitle": "1947",
+        "mediaKey": "one-shot-agent-carter",
+        "mediaTitle": "Marvel One-Shot: Agent Carter (2013)",
+        "mediaType": "oneshot",
+        "mediaPhase": "Phase 2",
+        "isAlternativeTimeline": false,
+        "rawClasses": [
+          "one-shot-agent-carter"
+        ],
+        "rawHtml": "<p>Relegated to data analysis by her sexist superior Agent Flynn at the New York SSR, <strong class=\"peggy-carter\">Peggy Carter</strong> intercepts an urgent classified lead regarding the dangerous terrorist organization <strong>Zodiac</strong>. Operating solo under the cover of night, Peggy infiltrates the Zodiac compound, neutralizes all armed guards with surgical precision, and retrieves the mystical Zodiac serum. The following morning, <strong class=\"howard-stark\">Howard Stark</strong> calls Flynn directly to announce that Peggy Carter has been selected to co-direct and lead the newly created sovereign intelligence agency: <strong>S.H.I.E.L.D.</strong> alongside Howard Stark and Colonel <strong class=\"chester-phillips\">Chester Phillips</strong> in Washington.</p>",
+        "paragraphs": [
+          "Relegated to data analysis by her sexist superior Agent Flynn at the New York SSR, <strong class=\"peggy-carter\">Peggy Carter</strong> intercepts an urgent classified lead regarding the dangerous terrorist organization <strong>Zodiac</strong>. Operating solo under the cover of night, Peggy infiltrates the Zodiac compound, neutralizes all armed guards with surgical precision, and retrieves the mystical Zodiac serum. The following morning, <strong class=\"howard-stark\">Howard Stark</strong> calls Flynn directly to announce that Peggy Carter has been selected to co-direct and lead the newly created sovereign intelligence agency: <strong>S.H.I.E.L.D.</strong> alongside Howard Stark and Colonel <strong class=\"chester-phillips\">Chester Phillips</strong> in Washington."
+        ],
+        "characters": [
+          "peggy-carter",
+          "howard-stark",
+          "chester-phillips"
+        ],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "Peggy Carter's Solo Zodiac Infiltration",
+          "Official Founding of S.H.I.E.L.D."
+        ],
         "timelineType": "sacred-616",
         "earthDesignation": "Earth-616 (The Sacred Timeline)"
       }
@@ -776,24 +806,26 @@ export const timelineEras: EraGroup[] = [
         "id": "event-_1953_-1",
         "eraId": "era-_1953_",
         "eraTitle": "1953",
-        "mediaKey": "captain-america-2",
-        "mediaTitle": "Peggy Carter 1953 Smithsonian Interview (2015)",
-        "mediaType": "movie",
+        "mediaKey": "peggy-carter-1953-interview",
+        "mediaTitle": "Peggy Carter's 1953 Smithsonian Interview",
+        "mediaType": "special",
         "mediaPhase": "Phase 2",
         "isAlternativeTimeline": false,
         "rawClasses": [
-          "captain-america-2"
+          "peggy-carter-1953-interview"
         ],
-        "rawHtml": "<h1>Peggy Carter 1953 Smithsonian Interview <em>(2015)</em></h1>\r\n                <p><strong class=\"peggy-carter\">Peggy Carter</strong> loved Captain America and also he saved her\r\n                    husband in the war. </p>",
+        "rawHtml": "<p>In 1953, <strong class=\"peggy-carter\">Peggy Carter</strong> is interviewed on camera for the Smithsonian Institution's historical archive, reflecting with profound emotion on the legacy of Captain America, the war, and how Steve Rogers saved a thousand men—including the soldier who would become her husband.</p>",
         "paragraphs": [
-          "<strong class=\"peggy-carter\">Peggy Carter</strong> loved Captain America and also he saved her husband in the war."
+          "In 1953, <strong class=\"peggy-carter\">Peggy Carter</strong> is interviewed on camera for the Smithsonian Institution's historical archive, reflecting with profound emotion on the legacy of Captain America, the war, and how Steve Rogers saved a thousand men—including the soldier who would become her husband."
         ],
         "characters": [
           "peggy-carter"
         ],
         "stones": [],
         "deaths": [],
-        "mcuHighlights": [],
+        "mcuHighlights": [
+          "Archival Smithsonian Interview on Captain America"
+        ],
         "timelineType": "sacred-616",
         "earthDesignation": "Earth-616 (The Sacred Timeline)"
       }

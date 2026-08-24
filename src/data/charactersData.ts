@@ -1390,6 +1390,123 @@ export const charactersData: Record<string, Character> = {
     "originLocation": "New Orleans, Louisiana (Earth)",
     "status": "alive",
     "bio": "Hero capable of generating concentrated hard-light daggers and purging darkness from human souls."
+  },
+  "edwin-jarvis": {
+    "id": "edwin-jarvis",
+    "name": "Edwin Jarvis",
+    "alias": "Jarvis",
+    "cssClass": "edwin-jarvis",
+    "color": "#38bdf8",
+    "bgBadge": "bg-sky-950/80 hover:bg-sky-900/90",
+    "textBadge": "text-sky-300",
+    "borderBadge": "border-sky-600",
+    "role": "hero",
+    "affiliation": "Stark Household / SSR Ally",
+    "groups": [
+      "Stark Household",
+      "SSR Allies",
+      "Avengers Allies"
+    ],
+    "originLocation": "London, England (Earth)",
+    "status": "deceased",
+    "bio": "Howard Stark's exceptionally loyal and capable British butler who partnered with Peggy Carter on high-stakes covert field missions."
+  },
+  "daniel-sousa": {
+    "id": "daniel-sousa",
+    "name": "Daniel Sousa",
+    "alias": "Chief Sousa",
+    "cssClass": "daniel-sousa",
+    "color": "#10b981",
+    "bgBadge": "bg-emerald-950/80 hover:bg-emerald-900/90",
+    "textBadge": "text-emerald-300",
+    "borderBadge": "border-emerald-600",
+    "role": "hero",
+    "affiliation": "SSR Chief (Los Angeles) / S.H.I.E.L.D.",
+    "groups": [
+      "SSR",
+      "S.H.I.E.L.D.",
+      "Time Travelers"
+    ],
+    "originLocation": "United States (Earth)",
+    "status": "alive",
+    "bio": "Honorable WWII veteran and brilliant SSR Los Angeles Chief who fought alongside Peggy Carter against the Council of Nine."
+  },
+  "dottie-underwood": {
+    "id": "dottie-underwood",
+    "name": "Dottie Underwood",
+    "alias": "Black Widow",
+    "cssClass": "dottie-underwood",
+    "color": "#f43f5e",
+    "bgBadge": "bg-rose-950/80 hover:bg-rose-900/90",
+    "textBadge": "text-rose-300",
+    "borderBadge": "border-rose-600",
+    "role": "villain",
+    "affiliation": "Red Room / Leviathan",
+    "groups": [
+      "Red Room / Black Widows",
+      "Leviathan"
+    ],
+    "originLocation": "Soviet Union (Earth)",
+    "status": "alive",
+    "bio": "Deadly, ruthless Soviet Black Widow assassin trained in the Red Room who served as Leviathan's primary enforcer in 1946 New York."
+  },
+  "johann-fennhoff": {
+    "id": "johann-fennhoff",
+    "name": "Dr. Johann Fennhoff",
+    "alias": "Dr. Faustus",
+    "cssClass": "johann-fennhoff",
+    "color": "#c084fc",
+    "bgBadge": "bg-purple-950/80 hover:bg-purple-900/90",
+    "textBadge": "text-purple-300",
+    "borderBadge": "border-purple-600",
+    "role": "villain",
+    "affiliation": "Leviathan / HYDRA Collaborator",
+    "groups": [
+      "Leviathan",
+      "HYDRA Allies"
+    ],
+    "originLocation": "Russia (Earth)",
+    "status": "deceased",
+    "bio": "Master Soviet psychiatrist and hypnotist for Leviathan whose psychological manipulation techniques influenced Arnim Zola's Winter Soldier programming."
+  },
+  "whitney-frost": {
+    "id": "whitney-frost",
+    "name": "Agnes Cully / Whitney Frost",
+    "alias": "Madame Masque",
+    "cssClass": "whitney-frost",
+    "color": "#818cf8",
+    "bgBadge": "bg-indigo-950/80 hover:bg-indigo-900/90",
+    "textBadge": "text-indigo-300",
+    "borderBadge": "border-indigo-600",
+    "role": "villain",
+    "affiliation": "Council of Nine / Isodyne Energy",
+    "groups": [
+      "Council of Nine",
+      "Zero Matter Hosts",
+      "Secret Empire"
+    ],
+    "originLocation": "Hollywood, California (Earth)",
+    "status": "alive",
+    "bio": "Genius scientist and glamorous Hollywood actress who absorbed extra-dimensional Zero Matter, gaining the terrifying power to consume living matter on contact."
+  },
+  "jason-wilkes": {
+    "id": "jason-wilkes",
+    "name": "Dr. Jason Wilkes",
+    "alias": "Dr. Wilkes",
+    "cssClass": "jason-wilkes",
+    "color": "#2dd4bf",
+    "bgBadge": "bg-teal-950/80 hover:bg-teal-900/90",
+    "textBadge": "text-teal-300",
+    "borderBadge": "border-teal-600",
+    "role": "hero",
+    "affiliation": "Isodyne Energy / SSR Ally",
+    "groups": [
+      "SSR Allies",
+      "Zero Matter Research"
+    ],
+    "originLocation": "Los Angeles, California (Earth)",
+    "status": "alive",
+    "bio": "Brilliant quantum physicist whose research into the Darkforce rift left him intangibly phased until cured by Peggy Carter and Howard Stark."
   }
 };
 

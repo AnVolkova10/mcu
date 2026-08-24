@@ -91,6 +91,28 @@ export const EventCard: React.FC<EventCardProps> = ({ event }) => {
     }
   };
 
+  const renderStudioBadge = () => {
+    if (!media?.studio) return null;
+    const studioStyles: Record<string, string> = {
+      'Marvel Studios': 'bg-red-950/90 border-red-600/70 text-red-300',
+      'Disney+': 'bg-indigo-950/90 border-indigo-500/70 text-indigo-300',
+      'ABC': 'bg-emerald-950/90 border-emerald-600/70 text-emerald-300',
+      'Netflix': 'bg-orange-950/90 border-orange-600/70 text-orange-300',
+      'Prime Video': 'bg-sky-950/90 border-sky-500/70 text-sky-300',
+      'Freeform': 'bg-purple-950/90 border-purple-600/70 text-purple-300',
+      'One Shot': 'bg-teal-950/90 border-teal-600/70 text-teal-300',
+      'Fox': 'bg-amber-950/90 border-amber-600/70 text-amber-300',
+      'Sony': 'bg-blue-950/90 border-blue-600/70 text-blue-300',
+      'Other': 'bg-zinc-900 border-zinc-700 text-zinc-400',
+    };
+    const style = studioStyles[media.studio] || 'bg-zinc-900 border-zinc-700 text-zinc-400';
+    return (
+      <span className={`text-[10px] font-black font-title tracking-wider uppercase px-2 py-0.5 rounded border ${style} select-none shadow-sm`}>
+        {media.studio}
+      </span>
+    );
+  };
+
   return (
     <article
       id={event.id}
@@ -116,6 +138,9 @@ export const EventCard: React.FC<EventCardProps> = ({ event }) => {
               <span className="text-zinc-400 group-hover/media:text-zinc-200 text-[11px] font-normal font-din">({media.releaseYear})</span>
             )}
           </button>
+
+          {/* Network / Studio / Platform Badge */}
+          {renderStudioBadge()}
 
           {/* Phase Badge */}
           {event.mediaPhase && (

@@ -11,7 +11,8 @@ export const mediaData: Record<string, MediaItem> = {
     "phase": "Phase 1",
     "posterColor": "#ffbf10",
     "timelineOrder": 1,
-    "description": "Official entry in the Marvel Cinematic Universe - Phase 1 (2011)"
+    "description": "Official entry in the Marvel Cinematic Universe - Phase 1 (2011)",
+    "studio": "Marvel Studios"
   },
   "thor-2": {
     "id": "thor-2",
@@ -23,7 +24,8 @@ export const mediaData: Record<string, MediaItem> = {
     "phase": "Phase 2",
     "posterColor": "#921c1c",
     "timelineOrder": 2,
-    "description": "Official entry in the Marvel Cinematic Universe - Phase 2 (2013)"
+    "description": "Official entry in the Marvel Cinematic Universe - Phase 2 (2013)",
+    "studio": "Marvel Studios"
   },
   "thor-3": {
     "id": "thor-3",
@@ -35,7 +37,8 @@ export const mediaData: Record<string, MediaItem> = {
     "phase": "Phase 3",
     "posterColor": "#00d2be",
     "timelineOrder": 3,
-    "description": "Official entry in the Marvel Cinematic Universe - Phase 3 (2017)"
+    "description": "Official entry in the Marvel Cinematic Universe - Phase 3 (2017)",
+    "studio": "Marvel Studios"
   },
   "black-panther-1": {
     "id": "black-panther-1",
@@ -47,7 +50,8 @@ export const mediaData: Record<string, MediaItem> = {
     "phase": "Phase 3",
     "posterColor": "#9b5de5",
     "timelineOrder": 4,
-    "description": "Official entry in the Marvel Cinematic Universe - Phase 3 (2018)"
+    "description": "Official entry in the Marvel Cinematic Universe - Phase 3 (2018)",
+    "studio": "Marvel Studios"
   },
   "agents-of-shield-i": {
     "id": "agents-of-shield-i",
@@ -59,7 +63,8 @@ export const mediaData: Record<string, MediaItem> = {
     "phase": "Marvel Television",
     "posterColor": "#4a5568",
     "timelineOrder": 5,
-    "description": "Official entry in the Marvel Cinematic Universe - Marvel Television (2013-2014)"
+    "description": "Official entry in the Marvel Cinematic Universe - Marvel Television (2013-2014)",
+    "studio": "ABC"
   },
   "agents-of-shield-ii": {
     "id": "agents-of-shield-ii",
@@ -71,7 +76,8 @@ export const mediaData: Record<string, MediaItem> = {
     "phase": "Marvel Television",
     "posterColor": "#4a5568",
     "timelineOrder": 6,
-    "description": "Official entry in the Marvel Cinematic Universe - Marvel Television (2014-2015)"
+    "description": "Official entry in the Marvel Cinematic Universe - Marvel Television (2014-2015)",
+    "studio": "ABC"
   },
   "agents-of-shield-iii": {
     "id": "agents-of-shield-iii",
@@ -83,7 +89,8 @@ export const mediaData: Record<string, MediaItem> = {
     "phase": "Marvel Television",
     "posterColor": "#4a5568",
     "timelineOrder": 7,
-    "description": "Official entry in the Marvel Cinematic Universe - Marvel Television (2015-2016)"
+    "description": "Official entry in the Marvel Cinematic Universe - Marvel Television (2015-2016)",
+    "studio": "ABC"
   },
   "agents-of-shield-iv": {
     "id": "agents-of-shield-iv",
@@ -95,7 +102,8 @@ export const mediaData: Record<string, MediaItem> = {
     "phase": "Marvel Television",
     "posterColor": "#4a5568",
     "timelineOrder": 8,
-    "description": "Official entry in the Marvel Cinematic Universe - Marvel Television (2016-2017)"
+    "description": "Official entry in the Marvel Cinematic Universe - Marvel Television (2016-2017)",
+    "studio": "ABC"
   },
   "agents-of-shield-v": {
     "id": "agents-of-shield-v",
@@ -107,7 +115,8 @@ export const mediaData: Record<string, MediaItem> = {
     "phase": "Marvel Television",
     "posterColor": "#4a5568",
     "timelineOrder": 9,
-    "description": "Official entry in the Marvel Cinematic Universe - Marvel Television (2017-2018)"
+    "description": "Official entry in the Marvel Cinematic Universe - Marvel Television (2017-2018)",
+    "studio": "ABC"
   },
   "agents-of-shield-vi": {
     "id": "agents-of-shield-vi",
@@ -119,7 +128,8 @@ export const mediaData: Record<string, MediaItem> = {
     "phase": "Marvel Television",
     "posterColor": "#4a5568",
     "timelineOrder": 10,
-    "description": "Official entry in the Marvel Cinematic Universe - Marvel Television (2019)"
+    "description": "Official entry in the Marvel Cinematic Universe - Marvel Television (2019)",
+    "studio": "ABC"
   },
   "agents-of-shield-vii": {
     "id": "agents-of-shield-vii",
@@ -131,7 +141,8 @@ export const mediaData: Record<string, MediaItem> = {
     "phase": "Marvel Television",
     "posterColor": "#4a5568",
     "timelineOrder": 11,
-    "description": "Official entry in the Marvel Cinematic Universe - Marvel Television (2020)"
+    "description": "Official entry in the Marvel Cinematic Universe - Marvel Television (2020)",
+    "studio": "ABC"
   },
   "agents-of-shield-slingshot": {
     "id": "agents-of-shield-slingshot",
@@ -143,7 +154,8 @@ export const mediaData: Record<string, MediaItem> = {
     "phase": "Marvel Television",
     "posterColor": "#319795",
     "timelineOrder": 12,
-    "description": "Official entry in the Marvel Cinematic Universe - Marvel Television (2016)"
+    "description": "Official entry in the Marvel Cinematic Universe - Marvel Television (2016)",
+    "studio": "ABC"
   },
   "inhumans-i": {
     "id": "inhumans-i",
@@ -155,7 +167,8 @@ export const mediaData: Record<string, MediaItem> = {
     "phase": "Marvel Television",
     "posterColor": "#2b6cb0",
     "timelineOrder": 13,
-    "description": "Official entry in the Marvel Cinematic Universe - Marvel Television (2017)"
+    "description": "Official entry in the Marvel Cinematic Universe - Marvel Television (2017)",
+    "studio": "ABC"
   },
   "the-defenders-i": {
     "id": "the-defenders-i",
@@ -167,7 +180,8 @@ export const mediaData: Record<string, MediaItem> = {
     "phase": "Marvel Television",
     "posterColor": "#c53030",
     "timelineOrder": 14,
-    "description": "Official entry in the Marvel Cinematic Universe - Marvel Television (2017)"
+    "description": "Official entry in the Marvel Cinematic Universe - Marvel Television (2017)",
+    "studio": "Netflix"
   },
   "captain-america-1": {
     "id": "captain-america-1",
@@ -179,7 +193,8 @@ export const mediaData: Record<string, MediaItem> = {
     "phase": "Phase 1",
     "posterColor": "#2b6cb0",
     "timelineOrder": 15,
-    "description": "Official entry in the Marvel Cinematic Universe - Phase 1 (2011)"
+    "description": "Official entry in the Marvel Cinematic Universe - Phase 1 (2011)",
+    "studio": "Marvel Studios"
   },
   "captain-america-2": {
     "id": "captain-america-2",
@@ -191,7 +206,8 @@ export const mediaData: Record<string, MediaItem> = {
     "phase": "Phase 2",
     "posterColor": "#2c5282",
     "timelineOrder": 16,
-    "description": "Official entry in the Marvel Cinematic Universe - Phase 2 (2014)"
+    "description": "Official entry in the Marvel Cinematic Universe - Phase 2 (2014)",
+    "studio": "Marvel Studios"
   },
   "captain-america-3": {
     "id": "captain-america-3",
@@ -203,7 +219,8 @@ export const mediaData: Record<string, MediaItem> = {
     "phase": "Phase 3",
     "posterColor": "#9b2c2c",
     "timelineOrder": 17,
-    "description": "Official entry in the Marvel Cinematic Universe - Phase 3 (2016)"
+    "description": "Official entry in the Marvel Cinematic Universe - Phase 3 (2016)",
+    "studio": "Marvel Studios"
   },
   "agent-carter-i": {
     "id": "agent-carter-i",
@@ -215,7 +232,8 @@ export const mediaData: Record<string, MediaItem> = {
     "phase": "Marvel Television",
     "posterColor": "#2f855a",
     "timelineOrder": 18,
-    "description": "Official entry in the Marvel Cinematic Universe - Marvel Television (2015)"
+    "description": "Official entry in the Marvel Cinematic Universe - Marvel Television (2015)",
+    "studio": "ABC"
   },
   "agent-carter-ii": {
     "id": "agent-carter-ii",
@@ -227,7 +245,8 @@ export const mediaData: Record<string, MediaItem> = {
     "phase": "Marvel Television",
     "posterColor": "#276749",
     "timelineOrder": 19,
-    "description": "Official entry in the Marvel Cinematic Universe - Marvel Television (2016)"
+    "description": "Official entry in the Marvel Cinematic Universe - Marvel Television (2016)",
+    "studio": "ABC"
   },
   "one-shot-agent-carter": {
     "id": "one-shot-agent-carter",
@@ -239,7 +258,8 @@ export const mediaData: Record<string, MediaItem> = {
     "phase": "One-Shot",
     "posterColor": "#38a169",
     "timelineOrder": 20,
-    "description": "Official entry in the Marvel Cinematic Universe - One-Shot (2013)"
+    "description": "Official entry in the Marvel Cinematic Universe - One-Shot (2013)",
+    "studio": "One Shot"
   },
   "one-shot-a-funny-thing": {
     "id": "one-shot-a-funny-thing",
@@ -251,7 +271,8 @@ export const mediaData: Record<string, MediaItem> = {
     "phase": "One-Shot",
     "posterColor": "#d69e2e",
     "timelineOrder": 21,
-    "description": "Official entry in the Marvel Cinematic Universe - One-Shot (2011)"
+    "description": "Official entry in the Marvel Cinematic Universe - One-Shot (2011)",
+    "studio": "One Shot"
   },
   "one-shot-the-consultant": {
     "id": "one-shot-the-consultant",
@@ -263,7 +284,8 @@ export const mediaData: Record<string, MediaItem> = {
     "phase": "One-Shot",
     "posterColor": "#805ad5",
     "timelineOrder": 22,
-    "description": "Official entry in the Marvel Cinematic Universe - One-Shot (2011)"
+    "description": "Official entry in the Marvel Cinematic Universe - One-Shot (2011)",
+    "studio": "One Shot"
   },
   "one-shot-item-47": {
     "id": "one-shot-item-47",
@@ -275,7 +297,8 @@ export const mediaData: Record<string, MediaItem> = {
     "phase": "One-Shot",
     "posterColor": "#4a5568",
     "timelineOrder": 23,
-    "description": "Official entry in the Marvel Cinematic Universe - One-Shot (2012)"
+    "description": "Official entry in the Marvel Cinematic Universe - One-Shot (2012)",
+    "studio": "One Shot"
   },
   "one-shot-all-hail": {
     "id": "one-shot-all-hail",
@@ -287,7 +310,8 @@ export const mediaData: Record<string, MediaItem> = {
     "phase": "One-Shot",
     "posterColor": "#e53e3e",
     "timelineOrder": 24,
-    "description": "Official entry in the Marvel Cinematic Universe - One-Shot (2014)"
+    "description": "Official entry in the Marvel Cinematic Universe - One-Shot (2014)",
+    "studio": "One Shot"
   },
   "team-thor": {
     "id": "team-thor",
@@ -299,7 +323,8 @@ export const mediaData: Record<string, MediaItem> = {
     "phase": "One-Shot",
     "posterColor": "#ecc94b",
     "timelineOrder": 25,
-    "description": "Official entry in the Marvel Cinematic Universe - One-Shot (2016)"
+    "description": "Official entry in the Marvel Cinematic Universe - One-Shot (2016)",
+    "studio": "One Shot"
   },
   "iron-man-1": {
     "id": "iron-man-1",
@@ -311,7 +336,8 @@ export const mediaData: Record<string, MediaItem> = {
     "phase": "Phase 1",
     "posterColor": "#e53e3e",
     "timelineOrder": 26,
-    "description": "Official entry in the Marvel Cinematic Universe - Phase 1 (2008)"
+    "description": "Official entry in the Marvel Cinematic Universe - Phase 1 (2008)",
+    "studio": "Marvel Studios"
   },
   "iron-man-2": {
     "id": "iron-man-2",
@@ -323,7 +349,8 @@ export const mediaData: Record<string, MediaItem> = {
     "phase": "Phase 1",
     "posterColor": "#dd6b20",
     "timelineOrder": 27,
-    "description": "Official entry in the Marvel Cinematic Universe - Phase 1 (2010)"
+    "description": "Official entry in the Marvel Cinematic Universe - Phase 1 (2010)",
+    "studio": "Marvel Studios"
   },
   "iron-man-3": {
     "id": "iron-man-3",
@@ -335,7 +362,8 @@ export const mediaData: Record<string, MediaItem> = {
     "phase": "Phase 2",
     "posterColor": "#c53030",
     "timelineOrder": 28,
-    "description": "Official entry in the Marvel Cinematic Universe - Phase 2 (2013)"
+    "description": "Official entry in the Marvel Cinematic Universe - Phase 2 (2013)",
+    "studio": "Marvel Studios"
   },
   "hulk-1": {
     "id": "hulk-1",
@@ -347,7 +375,8 @@ export const mediaData: Record<string, MediaItem> = {
     "phase": "Phase 1",
     "posterColor": "#38a169",
     "timelineOrder": 29,
-    "description": "Official entry in the Marvel Cinematic Universe - Phase 1 (2008)"
+    "description": "Official entry in the Marvel Cinematic Universe - Phase 1 (2008)",
+    "studio": "Marvel Studios"
   },
   "guardians-of-the-galaxy-1": {
     "id": "guardians-of-the-galaxy-1",
@@ -359,7 +388,8 @@ export const mediaData: Record<string, MediaItem> = {
     "phase": "Phase 2",
     "posterColor": "#805ad5",
     "timelineOrder": 30,
-    "description": "Official entry in the Marvel Cinematic Universe - Phase 2 (2014)"
+    "description": "Official entry in the Marvel Cinematic Universe - Phase 2 (2014)",
+    "studio": "Marvel Studios"
   },
   "guardians-of-the-galaxy-2": {
     "id": "guardians-of-the-galaxy-2",
@@ -371,7 +401,8 @@ export const mediaData: Record<string, MediaItem> = {
     "phase": "Phase 3",
     "posterColor": "#d53f8c",
     "timelineOrder": 31,
-    "description": "Official entry in the Marvel Cinematic Universe - Phase 3 (2017)"
+    "description": "Official entry in the Marvel Cinematic Universe - Phase 3 (2017)",
+    "studio": "Marvel Studios"
   },
   "captain-marvel-1": {
     "id": "captain-marvel-1",
@@ -383,7 +414,8 @@ export const mediaData: Record<string, MediaItem> = {
     "phase": "Phase 3",
     "posterColor": "#e53e3e",
     "timelineOrder": 32,
-    "description": "Official entry in the Marvel Cinematic Universe - Phase 3 (2019)"
+    "description": "Official entry in the Marvel Cinematic Universe - Phase 3 (2019)",
+    "studio": "Marvel Studios"
   },
   "ant-man-1": {
     "id": "ant-man-1",
@@ -395,7 +427,8 @@ export const mediaData: Record<string, MediaItem> = {
     "phase": "Phase 2",
     "posterColor": "#9b2c2c",
     "timelineOrder": 33,
-    "description": "Official entry in the Marvel Cinematic Universe - Phase 2 (2015)"
+    "description": "Official entry in the Marvel Cinematic Universe - Phase 2 (2015)",
+    "studio": "Marvel Studios"
   },
   "ant-man-2": {
     "id": "ant-man-2",
@@ -407,7 +440,8 @@ export const mediaData: Record<string, MediaItem> = {
     "phase": "Phase 3",
     "posterColor": "#d69e2e",
     "timelineOrder": 34,
-    "description": "Official entry in the Marvel Cinematic Universe - Phase 3 (2018)"
+    "description": "Official entry in the Marvel Cinematic Universe - Phase 3 (2018)",
+    "studio": "Marvel Studios"
   },
   "daredevil-i": {
     "id": "daredevil-i",
@@ -419,7 +453,8 @@ export const mediaData: Record<string, MediaItem> = {
     "phase": "Marvel Television",
     "posterColor": "#9b2c2c",
     "timelineOrder": 35,
-    "description": "Official entry in the Marvel Cinematic Universe - Marvel Television (2015)"
+    "description": "Official entry in the Marvel Cinematic Universe - Marvel Television (2015)",
+    "studio": "Netflix"
   },
   "daredevil-ii": {
     "id": "daredevil-ii",
@@ -431,7 +466,8 @@ export const mediaData: Record<string, MediaItem> = {
     "phase": "Marvel Television",
     "posterColor": "#742a2a",
     "timelineOrder": 36,
-    "description": "Official entry in the Marvel Cinematic Universe - Marvel Television (2016)"
+    "description": "Official entry in the Marvel Cinematic Universe - Marvel Television (2016)",
+    "studio": "Netflix"
   },
   "daredevil-iii": {
     "id": "daredevil-iii",
@@ -443,7 +479,8 @@ export const mediaData: Record<string, MediaItem> = {
     "phase": "Marvel Television",
     "posterColor": "#521b1b",
     "timelineOrder": 37,
-    "description": "Official entry in the Marvel Cinematic Universe - Marvel Television (2018)"
+    "description": "Official entry in the Marvel Cinematic Universe - Marvel Television (2018)",
+    "studio": "Netflix"
   },
   "iron-fist-i": {
     "id": "iron-fist-i",
@@ -455,7 +492,8 @@ export const mediaData: Record<string, MediaItem> = {
     "phase": "Marvel Television",
     "posterColor": "#d69e2e",
     "timelineOrder": 38,
-    "description": "Official entry in the Marvel Cinematic Universe - Marvel Television (2017)"
+    "description": "Official entry in the Marvel Cinematic Universe - Marvel Television (2017)",
+    "studio": "Netflix"
   },
   "iron-fist-ii": {
     "id": "iron-fist-ii",
@@ -467,7 +505,8 @@ export const mediaData: Record<string, MediaItem> = {
     "phase": "Marvel Television",
     "posterColor": "#b7791f",
     "timelineOrder": 39,
-    "description": "Official entry in the Marvel Cinematic Universe - Marvel Television (2018)"
+    "description": "Official entry in the Marvel Cinematic Universe - Marvel Television (2018)",
+    "studio": "Netflix"
   },
   "jessica-jones-i": {
     "id": "jessica-jones-i",
@@ -479,7 +518,8 @@ export const mediaData: Record<string, MediaItem> = {
     "phase": "Marvel Television",
     "posterColor": "#553c9a",
     "timelineOrder": 40,
-    "description": "Official entry in the Marvel Cinematic Universe - Marvel Television (2015)"
+    "description": "Official entry in the Marvel Cinematic Universe - Marvel Television (2015)",
+    "studio": "Netflix"
   },
   "jessica-jones-ii": {
     "id": "jessica-jones-ii",
@@ -491,7 +531,8 @@ export const mediaData: Record<string, MediaItem> = {
     "phase": "Marvel Television",
     "posterColor": "#44337a",
     "timelineOrder": 41,
-    "description": "Official entry in the Marvel Cinematic Universe - Marvel Television (2018)"
+    "description": "Official entry in the Marvel Cinematic Universe - Marvel Television (2018)",
+    "studio": "Netflix"
   },
   "jessica-jones-iii": {
     "id": "jessica-jones-iii",
@@ -503,7 +544,8 @@ export const mediaData: Record<string, MediaItem> = {
     "phase": "Marvel Television",
     "posterColor": "#322659",
     "timelineOrder": 42,
-    "description": "Official entry in the Marvel Cinematic Universe - Marvel Television (2019)"
+    "description": "Official entry in the Marvel Cinematic Universe - Marvel Television (2019)",
+    "studio": "Netflix"
   },
   "luke-cage-i": {
     "id": "luke-cage-i",
@@ -515,7 +557,8 @@ export const mediaData: Record<string, MediaItem> = {
     "phase": "Marvel Television",
     "posterColor": "#dd6b20",
     "timelineOrder": 43,
-    "description": "Official entry in the Marvel Cinematic Universe - Marvel Television (2016)"
+    "description": "Official entry in the Marvel Cinematic Universe - Marvel Television (2016)",
+    "studio": "Netflix"
   },
   "luke-cage-ii": {
     "id": "luke-cage-ii",
@@ -527,7 +570,8 @@ export const mediaData: Record<string, MediaItem> = {
     "phase": "Marvel Television",
     "posterColor": "#c05621",
     "timelineOrder": 44,
-    "description": "Official entry in the Marvel Cinematic Universe - Marvel Television (2018)"
+    "description": "Official entry in the Marvel Cinematic Universe - Marvel Television (2018)",
+    "studio": "Netflix"
   },
   "the-punisher-i": {
     "id": "the-punisher-i",
@@ -539,7 +583,8 @@ export const mediaData: Record<string, MediaItem> = {
     "phase": "Marvel Television",
     "posterColor": "#1a202c",
     "timelineOrder": 45,
-    "description": "Official entry in the Marvel Cinematic Universe - Marvel Television (2017)"
+    "description": "Official entry in the Marvel Cinematic Universe - Marvel Television (2017)",
+    "studio": "Netflix"
   },
   "the-punisher-ii": {
     "id": "the-punisher-ii",
@@ -551,7 +596,8 @@ export const mediaData: Record<string, MediaItem> = {
     "phase": "Marvel Television",
     "posterColor": "#2d3748",
     "timelineOrder": 46,
-    "description": "Official entry in the Marvel Cinematic Universe - Marvel Television (2019)"
+    "description": "Official entry in the Marvel Cinematic Universe - Marvel Television (2019)",
+    "studio": "Netflix"
   },
   "black-widow-1": {
     "id": "black-widow-1",
@@ -563,7 +609,8 @@ export const mediaData: Record<string, MediaItem> = {
     "phase": "Phase 4",
     "posterColor": "#742a2a",
     "timelineOrder": 47,
-    "description": "Official entry in the Marvel Cinematic Universe - Phase 4 (2021)"
+    "description": "Official entry in the Marvel Cinematic Universe - Phase 4 (2021)",
+    "studio": "Marvel Studios"
   },
   "avengers-1": {
     "id": "avengers-1",
@@ -575,7 +622,8 @@ export const mediaData: Record<string, MediaItem> = {
     "phase": "Phase 1",
     "posterColor": "#3182ce",
     "timelineOrder": 48,
-    "description": "Official entry in the Marvel Cinematic Universe - Phase 1 (2012)"
+    "description": "Official entry in the Marvel Cinematic Universe - Phase 1 (2012)",
+    "studio": "Marvel Studios"
   },
   "avengers-2": {
     "id": "avengers-2",
@@ -587,7 +635,8 @@ export const mediaData: Record<string, MediaItem> = {
     "phase": "Phase 2",
     "posterColor": "#319795",
     "timelineOrder": 49,
-    "description": "Official entry in the Marvel Cinematic Universe - Phase 2 (2015)"
+    "description": "Official entry in the Marvel Cinematic Universe - Phase 2 (2015)",
+    "studio": "Marvel Studios"
   },
   "avengers-3": {
     "id": "avengers-3",
@@ -599,7 +648,8 @@ export const mediaData: Record<string, MediaItem> = {
     "phase": "Phase 3",
     "posterColor": "#6b46c1",
     "timelineOrder": 50,
-    "description": "Official entry in the Marvel Cinematic Universe - Phase 3 (2018)"
+    "description": "Official entry in the Marvel Cinematic Universe - Phase 3 (2018)",
+    "studio": "Marvel Studios"
   },
   "spider-man-1": {
     "id": "spider-man-1",
@@ -611,7 +661,8 @@ export const mediaData: Record<string, MediaItem> = {
     "phase": "Phase 3",
     "posterColor": "#c53030",
     "timelineOrder": 51,
-    "description": "Official entry in the Marvel Cinematic Universe - Phase 3 (2017)"
+    "description": "Official entry in the Marvel Cinematic Universe - Phase 3 (2017)",
+    "studio": "Marvel Studios"
   },
   "doctor-strange-1": {
     "id": "doctor-strange-1",
@@ -623,7 +674,8 @@ export const mediaData: Record<string, MediaItem> = {
     "phase": "Phase 3",
     "posterColor": "#2b6cb0",
     "timelineOrder": 52,
-    "description": "Official entry in the Marvel Cinematic Universe - Phase 3 (2016)"
+    "description": "Official entry in the Marvel Cinematic Universe - Phase 3 (2016)",
+    "studio": "Marvel Studios"
   },
   "cloak-&-dagger-i": {
     "id": "cloak-&-dagger-i",
@@ -635,7 +687,8 @@ export const mediaData: Record<string, MediaItem> = {
     "phase": "Marvel Television",
     "posterColor": "#2b6cb0",
     "timelineOrder": 53,
-    "description": "Official entry in the Marvel Cinematic Universe - Marvel Television (2018)"
+    "description": "Official entry in the Marvel Cinematic Universe - Marvel Television (2018)",
+    "studio": "Freeform"
   },
   "cloak-&-dagger-ii": {
     "id": "cloak-&-dagger-ii",
@@ -647,7 +700,8 @@ export const mediaData: Record<string, MediaItem> = {
     "phase": "Marvel Television",
     "posterColor": "#2c5282",
     "timelineOrder": 54,
-    "description": "Official entry in the Marvel Cinematic Universe - Marvel Television (2019)"
+    "description": "Official entry in the Marvel Cinematic Universe - Marvel Television (2019)",
+    "studio": "Freeform"
   },
   "eyes-of-wakanda-i": {
     "id": "eyes-of-wakanda-i",
@@ -660,7 +714,8 @@ export const mediaData: Record<string, MediaItem> = {
     "posterColor": "#9333ea",
     "timelineOrder": 55,
     "isAnimated": true,
-    "description": "Marvel Animation anthology following the Hatut Zeraze retrieving lost Vibranium artifacts throughout human history."
+    "description": "Marvel Animation anthology following the Hatut Zeraze retrieving lost Vibranium artifacts throughout human history.",
+    "studio": "Disney+"
   },
   "spider-noir-i": {
     "id": "spider-noir-i",
@@ -674,7 +729,23 @@ export const mediaData: Record<string, MediaItem> = {
     "timelineOrder": 56,
     "timelineType": "multiverse-alternate",
     "primaryUniverse": "Earth-90214 (Spider-Noir)",
-    "description": "Live-action superhero noir following veteran private investigator Ben Reilly in 1930s Great Depression New York as he confronts his past as The Spider."
+    "description": "Live-action superhero noir following veteran private investigator Ben Reilly in 1930s Great Depression New York as he confronts his past as The Spider.",
+    "studio": "Prime Video"
+  },
+  "peggy-carter-1953-interview": {
+    "id": "peggy-carter-1953-interview",
+    "cssClass": "captain-america-2",
+    "title": "Peggy Carter's 1953 Smithsonian Interview",
+    "shortTitle": "Peggy Carter 1953 Interview",
+    "releaseYear": "2014",
+    "type": "special",
+    "phase": "Phase 2",
+    "posterColor": "#c53030",
+    "timelineOrder": 57,
+    "timelineType": "sacred-616",
+    "primaryUniverse": "Earth-616 (Sacred Timeline)",
+    "studio": "Marvel Studios",
+    "description": "Official canon archival featurette produced by Marvel Studios and released as an exclusive bonus extra on the Captain America: The Winter Soldier Blu-ray and Digital Home Media editions (September 2014)."
   }
 };
 

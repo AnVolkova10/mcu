@@ -93,6 +93,7 @@ export interface MediaItem {
   chronologicalEra?: string;
   timelineType?: TimelineType;
   primaryUniverse?: string;
+  studio?: 'Marvel Studios' | 'Disney+' | 'ABC' | 'Netflix' | 'Freeform' | 'Prime Video' | 'One Shot' | 'Other' | 'Fox' | 'Sony';
 }
 
 export interface InfinityStone {
