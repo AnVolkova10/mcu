@@ -68,6 +68,7 @@ export const FilterBar: React.FC = () => {
 
   const universes = [
     { id: 'sacred-616', label: '🛡️ Earth-616 (Sacred Timeline)' },
+    { id: 'earth-90214', label: '🕷️ Earth-90214 (Spider-Noir)' },
     { id: 'branches', label: '⏳ Earth-616 Branches (All)' },
     { id: 'time-heists', label: '⌛ Endgame Time Heists (1970, 2012, 2014)' },
     { id: '2091', label: '🌑 Earth-TRN676 (2091 Shattered Earth)' },

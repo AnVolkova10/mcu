@@ -342,6 +342,84 @@ export const timelineEras: EraGroup[] = [
     ]
   },
   {
+    "id": "era-1917-spider-noir",
+    "title": "-c. 1917 - 1918 (Earth-90214 / World War I)-",
+    "cleanTitle": "c. 1917 - 1918 (Earth-90214 / WWI)",
+    "category": "early-century",
+    "events": [
+      {
+        "id": "event-1917-spider-noir-1",
+        "eraId": "era-1917-spider-noir",
+        "eraTitle": "c. 1917 - 1918 (Earth-90214 / WWI)",
+        "mediaKey": "spider-noir-i",
+        "mediaTitle": "Spider-Noir (Season 1)",
+        "mediaType": "series",
+        "mediaPhase": "Marvel Television",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-90214 (Spider-Noir)",
+        "branchDetails": "Wartime POW Experiments & Rescue",
+        "rawClasses": [
+          "spider-noir-i"
+        ],
+        "rawHtml": "<p>During World War I in Europe, soldier <strong class=\"ben-reilly-noir\">Ben Reilly</strong> infiltrates a clandestine enemy laboratory where prisoners of war are subjected to illegal genetic animal-hybrid experimentation. During a daring rescue mission to liberate the captive POWs, Ben is accidentally bitten by a mutated half-spider test subject. While other subjects suffer fatal biological instability, Ben's genetics adapt, granting him superhuman arachnid strength, heightened reflexes, wall-crawling, and a preternatural spider-sense. Meanwhile, fellow captive <strong class=\"megawatt-noir\">Dirk Leyden</strong> survives brutal electrical experiments, developing volatile bio-electric generation powers and adopting the moniker <strong class=\"megawatt-noir\">Megawatt</strong>.</p>",
+        "paragraphs": [
+          "During World War I in Europe, soldier <strong class=\"ben-reilly-noir\">Ben Reilly</strong> infiltrates a clandestine enemy laboratory where prisoners of war are subjected to illegal genetic animal-hybrid experimentation. During a daring rescue mission to liberate the captive POWs, Ben is accidentally bitten by a mutated half-spider test subject. While other subjects suffer fatal biological instability, Ben's genetics adapt, granting him superhuman arachnid strength, heightened reflexes, wall-crawling, and a preternatural spider-sense. Meanwhile, fellow captive <strong class=\"megawatt-noir\">Dirk Leyden</strong> survives brutal electrical experiments, developing volatile bio-electric generation powers and adopting the moniker <strong class=\"megawatt-noir\">Megawatt</strong>."
+        ],
+        "characters": [
+          "ben-reilly-noir",
+          "megawatt-noir"
+        ],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "Wartime Genetic POW Experiments",
+          "Birth of The Spider on Earth-90214"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "era-1928-spider-noir",
+    "title": "-c. 1928 - 1930 (Earth-90214)-",
+    "cleanTitle": "c. 1928 - 1930 (Earth-90214)",
+    "category": "early-century",
+    "events": [
+      {
+        "id": "event-1928-spider-noir-1",
+        "eraId": "era-1928-spider-noir",
+        "eraTitle": "c. 1928 - 1930 (Earth-90214)",
+        "mediaKey": "spider-noir-i",
+        "mediaTitle": "Spider-Noir (Season 1)",
+        "mediaType": "series",
+        "mediaPhase": "Marvel Television",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-90214 (Spider-Noir)",
+        "branchDetails": "The Vigilante Crusade & Murder of Ruby Williams",
+        "rawClasses": [
+          "spider-noir-i"
+        ],
+        "rawHtml": "<p>Returning from the Great War under the assumed identity of <strong class=\"ben-reilly-noir\">Ben Reilly</strong>, he dons a trench coat, fedora, and dark goggles to operate as <strong class=\"ben-reilly-noir\">The Spider</strong>, New York City's only masked superhero combating rampant mobsters and corrupt syndicates. However, his crusade turns to tragedy when a retaliatory underworld ambush claims the life of his beloved fiancée, <strong class=\"ruby-williams-noir dead\">Ruby Williams</strong>. Devastated by grief and crushed by guilt over the consequences of his double life, Ben hangs up his mask and coat, abandoning his vigilante mantle for five years of reclusive despair.</p>",
+        "paragraphs": [
+          "Returning from the Great War under the assumed identity of <strong class=\"ben-reilly-noir\">Ben Reilly</strong>, he dons a trench coat, fedora, and dark goggles to operate as <strong class=\"ben-reilly-noir\">The Spider</strong>, New York City's only masked superhero combating rampant mobsters and corrupt syndicates. However, his crusade turns to tragedy when a retaliatory underworld ambush claims the life of his beloved fiancée, <strong class=\"ruby-williams-noir dead\">Ruby Williams</strong>. Devastated by grief and crushed by guilt over the consequences of his double life, Ben hangs up his mask and coat, abandoning his vigilante mantle for five years of reclusive despair."
+        ],
+        "characters": [
+          "ben-reilly-noir",
+          "ruby-williams-noir"
+        ],
+        "stones": [],
+        "deaths": [
+          "Ruby Williams"
+        ],
+        "mcuHighlights": [
+          "The Spider's Crusade",
+          "Tragic Death of Ruby Williams"
+        ]
+      }
+    ]
+  },
+  {
     "id": "era-_1931_",
     "title": "-1931-",
     "cleanTitle": "1931",
@@ -377,6 +455,55 @@ export const timelineEras: EraGroup[] = [
         "timelineType": "branched-616",
         "earthDesignation": "Earth-616 Branch (1931 Chronicom Loop)",
         "branchDetails": "1931 Alternate Timeline Branch"
+      }
+    ]
+  },
+  {
+    "id": "era-1935-spider-noir",
+    "title": "-1935 (Earth-90214 / Great Depression)-",
+    "cleanTitle": "1935 (Earth-90214)",
+    "category": "early-century",
+    "events": [
+      {
+        "id": "event-1935-spider-noir-1",
+        "eraId": "era-1935-spider-noir",
+        "eraTitle": "1935 (Earth-90214)",
+        "mediaKey": "spider-noir-i",
+        "mediaTitle": "Spider-Noir (Season 1)",
+        "mediaType": "series",
+        "mediaPhase": "Marvel Television",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-90214 (Spider-Noir)",
+        "branchDetails": "The Silvermane Syndicate War & Rebirth of The Spider",
+        "rawClasses": [
+          "spider-noir-i"
+        ],
+        "rawHtml": "<p>In 1935 Great Depression New York, weary and reclusive private investigator <strong class=\"ben-reilly-noir\">Ben Reilly</strong> operates a modest detective agency alongside his sharp-witted, fiercely loyal secretary <strong class=\"janet-ruiz-noir\">Janet Ruiz</strong>, who manages the office and shields Ben from troublesome clients. The office is suddenly thrust into the underworld spotlight when aging kingpin <strong class=\"silvermane-noir\">Finbar Byrne (Silvermane)</strong> hires Ben following a series of coordinated, superpowered strikes against his syndicate. Silvermane suspects an inside leak and contracts Ben to root out the saboteur. Teaming up with fearless <em>Daily Bugle</em> reporter <strong class=\"robbie-robertson-noir\">Robbie Robertson</strong> and crossing paths with the alluring nightclub singer <strong class=\"cat-hardy-noir\">Cat Hardy</strong> at the Black Cat Club, Ben uncovers a far darker conspiracy: Silvermane is secretly harvesting mutated human subjects to synthesize an unstable enhancement formula and build an unstoppable private army to seize absolute dominion over the city.</p>\n<p>As the investigation deepens, Ben is hunted by Silvermane's lethal enforcers—the dense, towering <strong class=\"tombstone-noir\">Lonnie Lincoln (Tombstone)</strong>, the sand-manipulating brute <strong class=\"sandman-noir\">Flint Marko (Sandman)</strong>, and the violently unstable bio-electric powerhouse <strong class=\"megawatt-noir\">Dirk Leyden (Megawatt)</strong>. Leyden unleashes destructive high-voltage blackouts and bombings across Manhattan. Facing Leyden forces Ben to confront their shared past, recognizing that Megawatt's monstrous powers stem from the very same wartime POW experiments in Europe that originally altered Ben's own DNA.</p>\n<p>When Silvermane double-crosses his own enforcers to eliminate all loose ends, a desperate struggle erupts across New York over vials of a stabilizing chemical antidote. Recognizing Silvermane's psychopathic betrayal, <strong class=\"sandman-noir\">Sandman</strong> turns on his masters and secretly allies with Ben to disrupt Megawatt's assault. During the climactic waterfront warehouse confrontation, Robbie is taken hostage and placed in mortal peril. Pushed beyond his physical limits, Ben Reilly sheds five years of trauma and cynicism, dons his iconic trench coat, fedora, and dark goggles, and publicly reveals his identity to rescue Robbie and neutralize Megawatt in a massive electrical surge. With Silvermane's syndicate shattered, Ben fully embraces his calling, reborn as <strong class=\"ben-reilly-noir\">The Spider</strong> to watch over New York from the shadows.</p>",
+        "paragraphs": [
+          "In 1935 Great Depression New York, weary and reclusive private investigator <strong class=\"ben-reilly-noir\">Ben Reilly</strong> operates a modest detective agency alongside his sharp-witted, fiercely loyal secretary <strong class=\"janet-ruiz-noir\">Janet Ruiz</strong>, who manages the office and shields Ben from troublesome clients. The office is suddenly thrust into the underworld spotlight when aging kingpin <strong class=\"silvermane-noir\">Finbar Byrne (Silvermane)</strong> hires Ben following a series of coordinated, superpowered strikes against his syndicate. Silvermane suspects an inside leak and contracts Ben to root out the saboteur. Teaming up with fearless <em>Daily Bugle</em> reporter <strong class=\"robbie-robertson-noir\">Robbie Robertson</strong> and crossing paths with the alluring nightclub singer <strong class=\"cat-hardy-noir\">Cat Hardy</strong> at the Black Cat Club, Ben uncovers a far darker conspiracy: Silvermane is secretly harvesting mutated human subjects to synthesize an unstable enhancement formula and build an unstoppable private army to seize absolute dominion over the city.",
+          "As the investigation deepens, Ben is hunted by Silvermane's lethal enforcers—the dense, towering <strong class=\"tombstone-noir\">Lonnie Lincoln (Tombstone)</strong>, the sand-manipulating brute <strong class=\"sandman-noir\">Flint Marko (Sandman)</strong>, and the violently unstable bio-electric powerhouse <strong class=\"megawatt-noir\">Dirk Leyden (Megawatt)</strong>. Leyden unleashes destructive high-voltage blackouts and bombings across Manhattan. Facing Leyden forces Ben to confront their shared past, recognizing that Megawatt's monstrous powers stem from the very same wartime POW experiments in Europe that originally altered Ben's own DNA.",
+          "When Silvermane double-crosses his own enforcers to eliminate all loose ends, a desperate struggle erupts across New York over vials of a stabilizing chemical antidote. Recognizing Silvermane's psychopathic betrayal, <strong class=\"sandman-noir\">Sandman</strong> turns on his masters and secretly allies with Ben to disrupt Megawatt's assault. During the climactic waterfront warehouse confrontation, Robbie is taken hostage and placed in mortal peril. Pushed beyond his physical limits, Ben Reilly sheds five years of trauma and cynicism, dons his iconic trench coat, fedora, and dark goggles, and publicly reveals his identity to rescue Robbie and neutralize Megawatt in a massive electrical surge. With Silvermane's syndicate shattered, Ben fully embraces his calling, reborn as <strong class=\"ben-reilly-noir\">The Spider</strong> to watch over New York from the shadows."
+        ],
+        "characters": [
+          "ben-reilly-noir",
+          "silvermane-noir",
+          "robbie-robertson-noir",
+          "cat-hardy-noir",
+          "sandman-noir",
+          "tombstone-noir",
+          "megawatt-noir",
+          "janet-ruiz-noir"
+        ],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "The Silvermane Syndicate Conspiracy",
+          "Megawatt's Voltage Blackout on Manhattan",
+          "Sandman's Turncoat Alliance",
+          "Rescue of Robbie Robertson",
+          "Rebirth of The Spider as New York's Protector"
+        ]
       }
     ]
   },

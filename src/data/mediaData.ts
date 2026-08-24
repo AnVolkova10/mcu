@@ -661,7 +661,22 @@ export const mediaData: Record<string, MediaItem> = {
     "timelineOrder": 55,
     "isAnimated": true,
     "description": "Marvel Animation anthology following the Hatut Zeraze retrieving lost Vibranium artifacts throughout human history."
+  },
+  "spider-noir-i": {
+    "id": "spider-noir-i",
+    "cssClass": "spider-noir-i",
+    "title": "Spider-Noir (Season 1)",
+    "shortTitle": "Spider-Noir",
+    "releaseYear": "2026",
+    "type": "series",
+    "phase": "Marvel Television",
+    "posterColor": "#334155",
+    "timelineOrder": 56,
+    "timelineType": "multiverse-alternate",
+    "primaryUniverse": "Earth-90214 (Spider-Noir)",
+    "description": "Live-action superhero noir following veteran private investigator Ben Reilly in 1930s Great Depression New York as he confronts his past as The Spider."
   }
 };
 
 export const allMedia: MediaItem[] = Object.values(mediaData);
+
