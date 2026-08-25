@@ -339,6 +339,19 @@ export const mediaData: Record<string, MediaItem> = {
     "description": "Official entry in the Marvel Cinematic Universe - Phase 1 (2008)",
     "studio": "Marvel Studios"
   },
+  "stark-expo-1974": {
+    "id": "stark-expo-1974",
+    "cssClass": "stark-expo-1974",
+    "title": "Stark Expo 1974 & S.H.I.E.L.D. Classified Files",
+    "shortTitle": "Stark Expo 1974",
+    "releaseYear": "2010",
+    "type": "oneshot",
+    "phase": "Phase 1",
+    "posterColor": "#dd6b20",
+    "timelineOrder": 26,
+    "description": "Official Marvel Studios in-universe canon short film & archival video prologue for Iron Man 2 (2010)",
+    "studio": "Marvel Studios"
+  },
   "iron-man-2": {
     "id": "iron-man-2",
     "cssClass": "iron-man-2",

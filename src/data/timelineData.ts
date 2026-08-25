@@ -1713,24 +1713,60 @@ export const timelineEras: EraGroup[] = [
         "id": "event-_1974_-1",
         "eraId": "era-_1974_",
         "eraTitle": "1974",
-        "mediaKey": "iron-man-2",
-        "mediaTitle": "Iron Man 2",
-        "mediaType": "movie",
+        "mediaKey": "stark-expo-1974",
+        "mediaTitle": "Stark Expo 1974 & S.H.I.E.L.D. Classified Files (2010)",
+        "mediaType": "oneshot",
         "mediaPhase": "Phase 1",
         "isAlternativeTimeline": false,
         "rawClasses": [
+          "stark-expo-1974",
           "iron-man-2"
         ],
-        "rawHtml": "<p>Stark Expo 1974</p>",
+        "rawHtml": "<p>At the <strong>Stark Expo 1974</strong> in Flushing Meadows, Queens, <strong class=\"howard-stark\">Howard Stark</strong> unveils the monumental architectural diorama for the <em>City of the Future</em>. Limited by the technology of his era, Howard secretly encodes the atomic lattice structure of a revolutionary synthetic element directly into the park's physical layout as a hidden scientific blueprint for his son, <strong>Tony Stark</strong>.</p>\n<p>In a classified archival film reel preserved in the <strong class=\"mcu\">S.H.I.E.L.D. Archives</strong> (<em>Howard Stark S.H.I.E.L.D. Classified Files</em>), Howard halts filming the public Expo broadcast to record a profound, emotional message across time to Tony: <em>\"What is and always will be my greatest creation... is you.\"</em> Howard securely locks away the film reel alongside classified Arc Reactor blueprints and S.H.I.E.L.D. historical dossiers for future discovery.</p>",
         "paragraphs": [
-          "Stark Expo 1974"
+          "At the <strong>Stark Expo 1974</strong> in Flushing Meadows, Queens, <strong class=\"howard-stark\">Howard Stark</strong> unveils the monumental architectural diorama for the <em>City of the Future</em>. Limited by the technology of his era, Howard secretly encodes the atomic lattice structure of a revolutionary synthetic element directly into the park's physical layout as a hidden scientific blueprint for his son, <strong>Tony Stark</strong>.",
+          "In a classified archival film reel preserved in the <strong class=\"mcu\">S.H.I.E.L.D. Archives</strong> (<em>Howard Stark S.H.I.E.L.D. Classified Files</em>), Howard halts filming the public Expo broadcast to record a profound, emotional message across time to Tony: <em>\"What is and always will be my greatest creation... is you.\"</em> Howard securely locks away the film reel alongside classified Arc Reactor blueprints and S.H.I.E.L.D. historical dossiers for future discovery."
         ],
-        "characters": [],
+        "characters": [
+          "howard-stark"
+        ],
         "stones": [],
         "deaths": [],
-        "mcuHighlights": [],
+        "mcuHighlights": [
+          "Stark Expo 1974 Architectural Model",
+          "Howard Stark's S.H.I.E.L.D. Classified Video to Tony",
+          "Hidden Blueprint of the New Badassium Element"
+        ],
         "timelineType": "sacred-616",
-        "earthDesignation": "Earth-616 (The Sacred Timeline)"
+        "earthDesignation": "Earth-616 (The Sacred Timeline)",
+        "locations": [
+          {
+            "name": "Flushing Meadows–Corona Park (Stark Expo Pavilion)",
+            "cityOrRegion": "Queens, New York",
+            "countryOrRealm": "United States",
+            "planet": "Earth",
+            "coordinates": [
+              40.7498,
+              -73.8407
+            ],
+            "characters": [
+              "howard-stark"
+            ]
+          },
+          {
+            "name": "Stark Industries Research & S.H.I.E.L.D. Archive",
+            "cityOrRegion": "Long Island, New York",
+            "countryOrRealm": "United States",
+            "planet": "Earth",
+            "coordinates": [
+              40.7891,
+              -73.135
+            ],
+            "characters": [
+              "howard-stark"
+            ]
+          }
+        ]
       }
     ]
   },
