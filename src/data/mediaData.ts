@@ -774,8 +774,22 @@ export const mediaData: Record<string, MediaItem> = {
     "primaryUniverse": "Earth-10005 (Fox X-Men Universe)",
     "studio": "Fox",
     "description": "In the 1960s during the height of the Cold War, mutant scholars Charles Xavier and Erik Lehnsherr unite gifted individuals into Division X to prevent a nuclear apocalypse orchestrated by Sebastian Shaw's Hellfire Club."
+  },
+  "x-men-origins-wolverine": {
+    "id": "x-men-origins-wolverine",
+    "cssClass": "x-men-origins-wolverine",
+    "title": "X-Men Origins: Wolverine",
+    "shortTitle": "X-Men Origins: Wolverine",
+    "releaseYear": "2009",
+    "type": "movie",
+    "phase": "Phase 1",
+    "posterColor": "#d97706",
+    "timelineOrder": 59,
+    "timelineType": "multiverse-alternate",
+    "primaryUniverse": "Earth-10005 (Fox X-Men Universe)",
+    "studio": "Fox",
+    "description": "The epic origin of Wolverine, spanning over a century of wars, Team X, and the agonizing Weapon X Adamantium bonding program."
   }
 };
 
 export const allMedia: MediaItem[] = Object.values(mediaData);
-

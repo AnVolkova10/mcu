@@ -1699,15 +1699,190 @@ export const charactersData: Record<string, Character> = {
     "textBadge": "text-amber-300",
     "borderBadge": "border-amber-500",
     "role": "hero",
-    "affiliation": "X-Men / Weapon X",
+    "affiliation": "X-Men / Weapon X / Team X",
     "groups": [
       "X-Men",
       "Weapon X",
+      "Team X",
       "Mutants"
     ],
-    "originLocation": "Cold Lake, Alberta, Canada (Earth-10005)",
+    "originLocation": "Northwest Territories, Canada (Earth-10005)",
     "status": "alive",
-    "bio": "Centuries-old mutant warrior endowed with enhanced animal senses, a regenerative healing factor, retractable bone claws, and an iconic bad attitude."
+    "bio": "Centuries-old mutant warrior endowed with enhanced animal senses, a regenerative healing factor, retractable bone claws fused with indestructible Adamantium, and an iconic bad attitude."
+  },
+  "victor-creed": {
+    "id": "victor-creed",
+    "name": "Victor Creed / Sabretooth",
+    "alias": "Sabretooth",
+    "cssClass": "victor-creed",
+    "color": "#f97316",
+    "bgBadge": "bg-orange-950/80 hover:bg-orange-900/90",
+    "textBadge": "text-orange-300",
+    "borderBadge": "border-orange-600",
+    "role": "villain",
+    "affiliation": "Team X / Weapon X / Brotherhood",
+    "groups": [
+      "Team X",
+      "Weapon X",
+      "Mutants"
+    ],
+    "originLocation": "Northwest Territories, Canada (Earth-10005)",
+    "status": "alive",
+    "bio": "Feral mutant predator possessing rapid cellular regeneration, feline fangs, razor-sharp claws, and an insatiable bloodlust; half-brother and eternal rival to Wolverine."
+  },
+  "william-stryker": {
+    "id": "william-stryker",
+    "name": "Colonel William Stryker",
+    "alias": "Col. Stryker",
+    "cssClass": "william-stryker",
+    "color": "#71717a",
+    "bgBadge": "bg-zinc-950/80 hover:bg-zinc-900/90",
+    "textBadge": "text-zinc-300",
+    "borderBadge": "border-zinc-500",
+    "role": "villain",
+    "affiliation": "Weapon X / US Armed Forces",
+    "groups": [
+      "Weapon X",
+      "US Army",
+      "Anti-Mutant Coalition"
+    ],
+    "originLocation": "United States (Earth-10005)",
+    "status": "alive",
+    "bio": "Ruthless military intelligence colonel obsessed with harvesting mutant biology, commander of Team X and the architect of the Weapon X Adamantium procedure and Weapon XI."
+  },
+  "kayla-silverfox": {
+    "id": "kayla-silverfox",
+    "name": "Kayla Silverfox",
+    "alias": "Silver Fox",
+    "cssClass": "kayla-silverfox",
+    "color": "#a855f7",
+    "bgBadge": "bg-purple-950/80 hover:bg-purple-900/90",
+    "textBadge": "text-purple-300",
+    "borderBadge": "border-purple-600",
+    "role": "hero",
+    "affiliation": "Schoolteacher / Weapon X Prisoner",
+    "groups": [
+      "Mutants"
+    ],
+    "originLocation": "Canadian Rockies, Canada (Earth-10005)",
+    "status": "deceased",
+    "bio": "Gentle mutant endowed with tactile hypnotic persuasion; Logan's beloved partner in the Canadian Rockies who sacrifices her life to ensure the freedom of captive mutant children."
+  },
+  "remy-lebeau-gambit": {
+    "id": "remy-lebeau-gambit",
+    "name": "Remy LeBeau / Gambit",
+    "alias": "Gambit",
+    "cssClass": "remy-lebeau-gambit",
+    "color": "#ec4899",
+    "bgBadge": "bg-pink-950/80 hover:bg-pink-900/90",
+    "textBadge": "text-pink-300",
+    "borderBadge": "border-pink-600",
+    "role": "hero",
+    "affiliation": "Cajun Thief / X-Men Ally",
+    "groups": [
+      "Mutants",
+      "X-Men Allies"
+    ],
+    "originLocation": "New Orleans, Louisiana (Earth-10005)",
+    "status": "alive",
+    "bio": "Charming Cajun mutant gambler capable of charging inanimate objects with volatile kinetic explosive energy, wielding an acrobatic bo staff and playing cards."
+  },
+  "wade-wilson": {
+    "id": "wade-wilson",
+    "name": "Wade Wilson / Weapon XI",
+    "alias": "Deadpool / Weapon XI",
+    "cssClass": "wade-wilson",
+    "color": "#dc2626",
+    "bgBadge": "bg-red-950/80 hover:bg-red-900/90",
+    "textBadge": "text-red-300",
+    "borderBadge": "border-red-600",
+    "role": "anti-hero",
+    "affiliation": "Team X / Weapon X",
+    "groups": [
+      "Team X",
+      "Weapon X",
+      "Mutants"
+    ],
+    "originLocation": "Canada / United States (Earth-10005)",
+    "status": "variable",
+    "bio": "Mouthy mercenary swordsman transformed through surgical gene splicing into Weapon XI (The Mutant Killer) with teleportation, optic blasts, and adamantium arm blades."
+  },
+  "john-wraith": {
+    "id": "john-wraith",
+    "name": "John Wraith / Kestrel",
+    "alias": "Kestrel",
+    "cssClass": "john-wraith",
+    "color": "#06b6d4",
+    "bgBadge": "bg-cyan-950/80 hover:bg-cyan-900/90",
+    "textBadge": "text-cyan-300",
+    "borderBadge": "border-cyan-600",
+    "role": "hero",
+    "affiliation": "Team X / Las Vegas Boxing Manager",
+    "groups": [
+      "Team X",
+      "Mutants"
+    ],
+    "originLocation": "United States (Earth-10005)",
+    "status": "deceased",
+    "bio": "Loyal mutant veteran of Team X capable of instantaneous line-of-sight spatial teleportation; ally to Logan murdered by Victor Creed."
+  },
+  "fred-dukes": {
+    "id": "fred-dukes",
+    "name": "Fred J. Dukes / Blob",
+    "alias": "The Blob",
+    "cssClass": "fred-dukes",
+    "color": "#ca8a04",
+    "bgBadge": "bg-yellow-950/80 hover:bg-yellow-900/90",
+    "textBadge": "text-yellow-300",
+    "borderBadge": "border-yellow-600",
+    "role": "anti-hero",
+    "affiliation": "Team X / Underground Boxing",
+    "groups": [
+      "Team X",
+      "Mutants"
+    ],
+    "originLocation": "United States (Earth-10005)",
+    "status": "alive",
+    "bio": "Former Team X powerhouse possessing superhuman kinetic mass, elastic skin, and an impenetrable gravitational center."
+  },
+  "agent-zero": {
+    "id": "agent-zero",
+    "name": "David North / Agent Zero",
+    "alias": "Agent Zero / Maverick",
+    "cssClass": "agent-zero",
+    "color": "#64748b",
+    "bgBadge": "bg-slate-950/80 hover:bg-slate-900/90",
+    "textBadge": "text-slate-300",
+    "borderBadge": "border-slate-500",
+    "role": "villain",
+    "affiliation": "Team X / Weapon X",
+    "groups": [
+      "Team X",
+      "Weapon X",
+      "Mutants"
+    ],
+    "originLocation": "United States (Earth-10005)",
+    "status": "deceased",
+    "bio": "Cold-blooded mutant tracker and lethal marksman possessing inhuman projectile reflexes, sniper accuracy, and kinetic impact absorption."
+  },
+  "cyclops-scott-summers": {
+    "id": "cyclops-scott-summers",
+    "name": "Scott Summers / Cyclops",
+    "alias": "Cyclops",
+    "cssClass": "cyclops-scott-summers",
+    "color": "#3b82f6",
+    "bgBadge": "bg-blue-950/80 hover:bg-blue-900/90",
+    "textBadge": "text-blue-300",
+    "borderBadge": "border-blue-600",
+    "role": "hero",
+    "affiliation": "Xavier's School for Gifted Youngsters / X-Men",
+    "groups": [
+      "X-Men",
+      "Mutants"
+    ],
+    "originLocation": "United States (Earth-10005)",
+    "status": "alive",
+    "bio": "Mutant leader gifted with powerful, uncontrollable beams of ruby-red concussive optic energy emitted constantly from his eyes, harnessed through specialized quartz-ruby visors."
   }
 };
 

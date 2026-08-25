@@ -472,6 +472,117 @@ export const timelineEras: EraGroup[] = [
     ]
   },
   {
+    "id": "era-1845-xmen-origins",
+    "title": "-1845 (Earth-10005 / Origin)-",
+    "cleanTitle": "1845 (Earth-10005)",
+    "category": "early-century",
+    "events": [
+      {
+        "id": "event-1845-xmen-origins-1",
+        "eraId": "era-1845-xmen-origins",
+        "eraTitle": "1845 (Earth-10005)",
+        "mediaKey": "x-men-origins-wolverine",
+        "mediaTitle": "X-Men Origins: Wolverine (2009)",
+        "mediaType": "movie",
+        "mediaPhase": "Phase 1",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-10005 (Fox X-Men Universe)",
+        "branchDetails": "Awakening of Logan & Victor Creed's Mutant Mutations",
+        "rawClasses": [
+          "x-men-origins-wolverine"
+        ],
+        "rawHtml": "<p>In the Northwest Territories of Canada in 1845, sickly young boy <strong class=\"logan-wolverine\">James Howlett</strong> witnesses the murder of his father John by groundskeeper Thomas Logan. In a violent surge of mutant awakening, bone claws sprout from James's knuckles as he impales Thomas—who reveals with his dying breath that he is James's true biological father. Horrified and rejected by his mother, James flees into the freezing Canadian wilderness alongside his older half-brother <strong class=\"victor-creed\">Victor Creed</strong>, swearing a lifelong oath to protect one another as their accelerated healing factors and feral mutations emerge.</p>",
+        "paragraphs": [
+          "In the Northwest Territories of Canada in 1845, sickly young boy <strong class=\"logan-wolverine\">James Howlett</strong> witnesses the murder of his father John by groundskeeper Thomas Logan. In a violent surge of mutant awakening, bone claws sprout from James's knuckles as he impales Thomas—who reveals with his dying breath that he is James's true biological father. Horrified and rejected by his mother, James flees into the freezing Canadian wilderness alongside his older half-brother <strong class=\"victor-creed\">Victor Creed</strong>, swearing a lifelong oath to protect one another as their accelerated healing factors and feral mutations emerge."
+        ],
+        "characters": [
+          "logan-wolverine",
+          "victor-creed"
+        ],
+        "stones": [],
+        "deaths": [
+          "Thomas Logan",
+          "John Howlett"
+        ],
+        "mcuHighlights": [
+          "Origin of Wolverine & Bone Claws Awakening",
+          "Blood Oath of Logan & Victor Creed"
+        ],
+        "locations": [
+          {
+            "name": "Howlett Estate & Northwest Wilderness",
+            "cityOrRegion": "Northwest Territories",
+            "countryOrRealm": "Canada",
+            "planet": "Earth-10005",
+            "coordinates": [
+              62.454,
+              -114.371
+            ],
+            "characters": [
+              "logan-wolverine",
+              "victor-creed"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "era-1861-1865-xmen-origins",
+    "title": "-1861 - 1865 (Earth-10005 / American Civil War)-",
+    "cleanTitle": "1861 - 1865 (Earth-10005)",
+    "category": "early-century",
+    "events": [
+      {
+        "id": "event-1861-1865-xmen-origins-1",
+        "eraId": "era-1861-1865-xmen-origins",
+        "eraTitle": "1861 - 1865 (Earth-10005)",
+        "mediaKey": "x-men-origins-wolverine",
+        "mediaTitle": "X-Men Origins: Wolverine (2009)",
+        "mediaType": "movie",
+        "mediaPhase": "Phase 1",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-10005 (Fox X-Men Universe)",
+        "branchDetails": "American Civil War Frontline Service",
+        "rawClasses": [
+          "x-men-origins-wolverine"
+        ],
+        "rawHtml": "<p>During the American Civil War (1861–1865), immortal mutant brothers <strong class=\"logan-wolverine\">James (Logan)</strong> and <strong class=\"victor-creed\">Victor Creed</strong> enlist in the Union Army. Charging into smoke-filled battlefields with fixed bayonets, they fight relentlessly on the frontlines, discovering that their rapid cellular regeneration heals gunshot wounds and saber strikes almost instantaneously.</p>",
+        "paragraphs": [
+          "During the American Civil War (1861–1865), immortal mutant brothers <strong class=\"logan-wolverine\">James (Logan)</strong> and <strong class=\"victor-creed\">Victor Creed</strong> enlist in the Union Army. Charging into smoke-filled battlefields with fixed bayonets, they fight relentlessly on the frontlines, discovering that their rapid cellular regeneration heals gunshot wounds and saber strikes almost instantaneously."
+        ],
+        "characters": [
+          "logan-wolverine",
+          "victor-creed"
+        ],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "Union Army Frontline Service",
+          "Early Discovery of Combat Regeneration"
+        ],
+        "locations": [
+          {
+            "name": "American Civil War Battlefield",
+            "cityOrRegion": "Virginia / Maryland",
+            "countryOrRealm": "United States",
+            "planet": "Earth-10005",
+            "coordinates": [
+              37.431,
+              -78.656
+            ],
+            "characters": [
+              "logan-wolverine",
+              "victor-creed"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "era-_1896_",
     "title": "-1896-",
     "cleanTitle": "1896",
@@ -585,6 +696,60 @@ export const timelineEras: EraGroup[] = [
             "characters": [
               "ben-reilly-noir",
               "megawatt-noir"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "era-1917-1918-xmen-origins",
+    "title": "-1917 - 1918 (Earth-10005 / World War I)-",
+    "cleanTitle": "1917 - 1918 (Earth-10005)",
+    "category": "early-century",
+    "events": [
+      {
+        "id": "event-1917-1918-xmen-origins-1",
+        "eraId": "era-1917-1918-xmen-origins",
+        "eraTitle": "1917 - 1918 (Earth-10005)",
+        "mediaKey": "x-men-origins-wolverine",
+        "mediaTitle": "X-Men Origins: Wolverine (2009)",
+        "mediaType": "movie",
+        "mediaPhase": "Phase 1",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-10005 (Fox X-Men Universe)",
+        "branchDetails": "World War I Western Front Trench Warfare",
+        "rawClasses": [
+          "x-men-origins-wolverine"
+        ],
+        "rawHtml": "<p>In the muddy, devastated trenches of the Western Front in Europe during World War I (1917–1918), <strong class=\"logan-wolverine\">James (Logan)</strong> and <strong class=\"victor-creed\">Victor Creed</strong> fight in the infantry under relentless artillery bombardment and toxic gas attacks. Wearing gas masks and charging through machine gun crossfire in No Man's Land, the brothers repeatedly survive catastrophic shell blasts that would annihilate ordinary mortal men.</p>",
+        "paragraphs": [
+          "In the muddy, devastated trenches of the Western Front in Europe during World War I (1917–1918), <strong class=\"logan-wolverine\">James (Logan)</strong> and <strong class=\"victor-creed\">Victor Creed</strong> fight in the infantry under relentless artillery bombardment and toxic gas attacks. Wearing gas masks and charging through machine gun crossfire in No Man's Land, the brothers repeatedly survive catastrophic shell blasts that would annihilate ordinary mortal men."
+        ],
+        "characters": [
+          "logan-wolverine",
+          "victor-creed"
+        ],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "World War I Western Front Trench Warfare",
+          "Surviving Chemical Gas & Artillery Shelling"
+        ],
+        "locations": [
+          {
+            "name": "Western Front Allied Trenches",
+            "cityOrRegion": "Grand Est / Normandy",
+            "countryOrRealm": "France",
+            "planet": "Earth-10005",
+            "coordinates": [
+              49.258,
+              4.031
+            ],
+            "characters": [
+              "logan-wolverine",
+              "victor-creed"
             ]
           }
         ]
@@ -1042,6 +1207,60 @@ export const timelineEras: EraGroup[] = [
             "characters": [
               "charles-xavier",
               "raven-darkholme"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "era-1944-dday-xmen-origins",
+    "title": "-1944 (Earth-10005 / D-Day Omaha Beach)-",
+    "cleanTitle": "1944 (Earth-10005 / D-Day)",
+    "category": "early-century",
+    "events": [
+      {
+        "id": "event-1944-dday-xmen-origins-1",
+        "eraId": "era-1944-dday-xmen-origins",
+        "eraTitle": "1944 (Earth-10005 / D-Day)",
+        "mediaKey": "x-men-origins-wolverine",
+        "mediaTitle": "X-Men Origins: Wolverine (2009)",
+        "mediaType": "movie",
+        "mediaPhase": "Phase 1",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-10005 (Fox X-Men Universe)",
+        "branchDetails": "World War II Normandy Landings Frontline Assault",
+        "rawClasses": [
+          "x-men-origins-wolverine"
+        ],
+        "rawHtml": "<p>On June 6, 1944, during the Allied invasion of Normandy in World War II, <strong class=\"logan-wolverine\">James (Logan)</strong> and <strong class=\"victor-creed\">Victor Creed</strong> storm the sands of Omaha Beach. Charging directly through heavily fortified German machine gun bunkers and explosive artillery fire, the mutant brothers lead the frontline assault from the amphibious landing craft onto the bluffs, shrugging off deadly bullet wounds with their unstoppable healing factors.</p>",
+        "paragraphs": [
+          "On June 6, 1944, during the Allied invasion of Normandy in World War II, <strong class=\"logan-wolverine\">James (Logan)</strong> and <strong class=\"victor-creed\">Victor Creed</strong> storm the sands of Omaha Beach. Charging directly through heavily fortified German machine gun bunkers and explosive artillery fire, the mutant brothers lead the frontline assault from the amphibious landing craft onto the bluffs, shrugging off deadly bullet wounds with their unstoppable healing factors."
+        ],
+        "characters": [
+          "logan-wolverine",
+          "victor-creed"
+        ],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "D-Day Omaha Beach Amphibious Assault",
+          "Allied Frontline Breach of Nazi Fortifications"
+        ],
+        "locations": [
+          {
+            "name": "Normandy Invasion Beachhead (Omaha Beach)",
+            "cityOrRegion": "Normandy",
+            "countryOrRealm": "France",
+            "planet": "Earth-10005",
+            "coordinates": [
+              49.370,
+              -0.880
+            ],
+            "characters": [
+              "logan-wolverine",
+              "victor-creed"
             ]
           }
         ]
@@ -1771,6 +1990,127 @@ export const timelineEras: EraGroup[] = [
     ]
   },
   {
+    "id": "era-1973-xmen-origins",
+    "title": "-1973 (Earth-10005 / Vietnam War)-",
+    "cleanTitle": "1973 (Earth-10005)",
+    "category": "golden-age",
+    "events": [
+      {
+        "id": "event-1973-xmen-origins-1",
+        "eraId": "era-1973-xmen-origins",
+        "eraTitle": "1973 (Earth-10005)",
+        "mediaKey": "x-men-origins-wolverine",
+        "mediaTitle": "X-Men Origins: Wolverine (2009)",
+        "mediaType": "movie",
+        "mediaPhase": "Phase 1",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-10005 (Fox X-Men Universe)",
+        "branchDetails": "Vietnam Firing Squad Survival & Stryker's Team X Recruitment",
+        "rawClasses": [
+          "x-men-origins-wolverine"
+        ],
+        "rawHtml": "<p>During the Vietnam War in 1973, <strong class=\"victor-creed\">Victor Creed</strong> attempts to assault a local village woman and brutally murders a senior American officer who intervenes. When <strong class=\"logan-wolverine\">James (Logan)</strong> defends his brother, both are condemned to execution by firing squad. Tied to wooden posts, they withstand the volley of bullets unharmed due to their rapid healing factors. Major <strong class=\"william-stryker\">William Stryker</strong> visits their military prison cell and recruits them into <strong>Team X</strong>, a covert black-ops strike unit of mutant specialists.</p>",
+        "paragraphs": [
+          "During the Vietnam War in 1973, <strong class=\"victor-creed\">Victor Creed</strong> attempts to assault a local village woman and brutally murders a senior American officer who intervenes. When <strong class=\"logan-wolverine\">James (Logan)</strong> defends his brother, both are condemned to execution by firing squad. Tied to wooden posts, they withstand the volley of bullets unharmed due to their rapid healing factors. Major <strong class=\"william-stryker\">William Stryker</strong> visits their military prison cell and recruits them into <strong>Team X</strong>, a covert black-ops strike unit of mutant specialists."
+        ],
+        "characters": [
+          "logan-wolverine",
+          "victor-creed",
+          "william-stryker"
+        ],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "Vietnam Firing Squad Execution Survival",
+          "Major William Stryker Recruits Team X"
+        ],
+        "locations": [
+          {
+            "name": "Military Stockade & Da Nang Outpost",
+            "cityOrRegion": "Da Nang",
+            "countryOrRealm": "Vietnam",
+            "planet": "Earth-10005",
+            "coordinates": [
+              16.054,
+              108.202
+            ],
+            "characters": [
+              "logan-wolverine",
+              "victor-creed",
+              "william-stryker"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "era-1979-xmen-origins",
+    "title": "-1979 (Earth-10005 / Team X Lagos Raid)-",
+    "cleanTitle": "1979 (Earth-10005)",
+    "category": "golden-age",
+    "events": [
+      {
+        "id": "event-1979-xmen-origins-1",
+        "eraId": "era-1979-xmen-origins",
+        "eraTitle": "1979 (Earth-10005)",
+        "mediaKey": "x-men-origins-wolverine",
+        "mediaTitle": "X-Men Origins: Wolverine (2009)",
+        "mediaType": "movie",
+        "mediaPhase": "Phase 1",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-10005 (Fox X-Men Universe)",
+        "branchDetails": "Team X Lagos Meteorite Raid & Logan Leaves Team X",
+        "rawClasses": [
+          "x-men-origins-wolverine"
+        ],
+        "rawHtml": "<p>In 1979 in Lagos, Nigeria, <strong class=\"william-stryker\">William Stryker</strong> deploys <strong>Team X</strong>—the dual-katana assassin <strong class=\"wade-wilson\">Wade Wilson</strong>, lethal marksman <strong class=\"agent-zero\">Agent Zero</strong>, teleporter <strong class=\"john-wraith\">John Wraith</strong>, super-dense bruiser <strong class=\"fred-dukes\">Fred Dukes (Blob)</strong>, <strong class=\"logan-wolverine\">Logan</strong>, and <strong class=\"victor-creed\">Victor Creed</strong>—to raid a rebel warlord compound and secure an extraterrestrial meteorite containing raw <strong>Adamantium</strong>. Disgusted when Stryker orders the execution of innocent African villagers, Logan refuses to murder civilians and walks away into the night, permanently severing ties with Victor and the unit.</p>",
+        "paragraphs": [
+          "In 1979 in Lagos, Nigeria, <strong class=\"william-stryker\">William Stryker</strong> deploys <strong>Team X</strong>—the dual-katana assassin <strong class=\"wade-wilson\">Wade Wilson</strong>, lethal marksman <strong class=\"agent-zero\">Agent Zero</strong>, teleporter <strong class=\"john-wraith\">John Wraith</strong>, super-dense bruiser <strong class=\"fred-dukes\">Fred Dukes (Blob)</strong>, <strong class=\"logan-wolverine\">Logan</strong>, and <strong class=\"victor-creed\">Victor Creed</strong>—to raid a rebel warlord compound and secure an extraterrestrial meteorite containing raw <strong>Adamantium</strong>. Disgusted when Stryker orders the execution of innocent African villagers, Logan refuses to murder civilians and walks away into the night, permanently severing ties with Victor and the unit."
+        ],
+        "characters": [
+          "logan-wolverine",
+          "victor-creed",
+          "william-stryker",
+          "wade-wilson",
+          "agent-zero",
+          "john-wraith",
+          "fred-dukes"
+        ],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "Wade Wilson's Dual-Sword Infiltration",
+          "Lagos Adamantium Meteorite Raid",
+          "Logan Refuses War Crimes & Abandons Team X"
+        ],
+        "locations": [
+          {
+            "name": "Lagos Warlord Compound & Adamantium Extraction Site",
+            "cityOrRegion": "Lagos",
+            "countryOrRealm": "Nigeria",
+            "planet": "Earth-10005",
+            "coordinates": [
+              6.524,
+              3.379
+            ],
+            "characters": [
+              "logan-wolverine",
+              "victor-creed",
+              "william-stryker",
+              "wade-wilson",
+              "agent-zero",
+              "john-wraith",
+              "fred-dukes"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "era-_1980_",
     "title": "-1980-",
     "cleanTitle": "1980",
@@ -1837,6 +2177,62 @@ export const timelineEras: EraGroup[] = [
     ]
   },
   {
+    "id": "era-1985-xmen-origins",
+    "title": "-1985 (Earth-10005 / Canadian Rockies)-",
+    "cleanTitle": "1985 (Earth-10005)",
+    "category": "golden-age",
+    "events": [
+      {
+        "id": "event-1985-xmen-origins-1",
+        "eraId": "era-1985-xmen-origins",
+        "eraTitle": "1985 (Earth-10005)",
+        "mediaKey": "x-men-origins-wolverine",
+        "mediaTitle": "X-Men Origins: Wolverine (2009)",
+        "mediaType": "movie",
+        "mediaPhase": "Phase 1",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-10005 (Fox X-Men Universe)",
+        "branchDetails": "Logan's Secluded Life & Sabretooth's Revenge",
+        "rawClasses": [
+          "x-men-origins-wolverine"
+        ],
+        "rawHtml": "<p>Six years after walking away from Team X, <strong class=\"logan-wolverine\">Logan</strong> lives in peaceful seclusion as a lumberjack in the Canadian Rockies alongside his beloved schoolteacher partner, <strong class=\"kayla-silverfox\">Kayla Silverfox</strong>. Meanwhile, <strong class=\"victor-creed\">Victor Creed</strong> hunts down their former squadmates, executing Chris Bradley in Ohio and staging the horrific slaughter of Kayla in the woods to bait Logan into a blood-feud. Overpowered and beaten by Victor, a grief-stricken Logan vows revenge at any cost.</p>",
+        "paragraphs": [
+          "Six years after walking away from Team X, <strong class=\"logan-wolverine\">Logan</strong> lives in peaceful seclusion as a lumberjack in the Canadian Rockies alongside his beloved schoolteacher partner, <strong class=\"kayla-silverfox\">Kayla Silverfox</strong>. Meanwhile, <strong class=\"victor-creed\">Victor Creed</strong> hunts down their former squadmates, executing Chris Bradley in Ohio and staging the horrific slaughter of Kayla in the woods to bait Logan into a blood-feud. Overpowered and beaten by Victor, a grief-stricken Logan vows revenge at any cost."
+        ],
+        "characters": [
+          "logan-wolverine",
+          "kayla-silverfox",
+          "victor-creed"
+        ],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "Logan's Peaceful Years in the Canadian Rockies",
+          "Sabretooth Fakes the Slaughter of Kayla Silverfox"
+        ],
+        "locations": [
+          {
+            "name": "Canadian Rockies Homestead",
+            "cityOrRegion": "Canadian Rockies",
+            "countryOrRealm": "Canada",
+            "planet": "Earth-10005",
+            "coordinates": [
+              51.178,
+              -115.570
+            ],
+            "characters": [
+              "logan-wolverine",
+              "kayla-silverfox",
+              "victor-creed"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "era-_1987_",
     "title": "-1987-",
     "cleanTitle": "1987",
@@ -1864,6 +2260,150 @@ export const timelineEras: EraGroup[] = [
         "mcuHighlights": [],
         "timelineType": "sacred-616",
         "earthDesignation": "Earth-616 (The Sacred Timeline)"
+      }
+    ]
+  },
+  {
+    "id": "era-1987-xmen-origins",
+    "title": "-1987 (Earth-10005 / Weapon X & Three Mile Island)-",
+    "cleanTitle": "1987 (Earth-10005)",
+    "category": "golden-age",
+    "events": [
+      {
+        "id": "event-1987-xmen-origins-weapon-x-1",
+        "eraId": "era-1987-xmen-origins",
+        "eraTitle": "1987 (Earth-10005)",
+        "mediaKey": "x-men-origins-wolverine",
+        "mediaTitle": "X-Men Origins: Wolverine (2009)",
+        "mediaType": "movie",
+        "mediaPhase": "Phase 1",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-10005 (Fox X-Men Universe)",
+        "branchDetails": "Weapon X Adamantium Bonding Procedure & Alkali Lake Escape",
+        "rawClasses": [
+          "x-men-origins-wolverine"
+        ],
+        "rawHtml": "<p>Desperate for the strength to defeat Victor Creed, <strong class=\"logan-wolverine\">Logan</strong> agrees to Colonel <strong class=\"william-stryker\">William Stryker</strong>'s proposition: undergoing the agonizing <strong>Weapon X</strong> surgical procedure to fuse indestructible <strong>Adamantium</strong> alloy directly onto his entire skeletal structure at the subterranean <strong>Alkali Lake Facility</strong>.</p>\n<p>Surviving the torturous cellular bonding process, Logan overhears Stryker order his memory wiped to turn him into a mindless assassin. Flying into a feral fury, Wolverine shatters out of the water tank with gleaming metallic claws and tears through the compound into the wilderness. When Stryker sends <strong class=\"agent-zero\">Agent Zero</strong> to murder the elderly couple who sheltered him, Logan ambushes Zero's helicopter, leaps through the air to sever the rotor blades with his claws, and detonates the fuel tank—killing Agent Zero.</p>",
+        "paragraphs": [
+          "Desperate for the strength to defeat Victor Creed, <strong class=\"logan-wolverine\">Logan</strong> agrees to Colonel <strong class=\"william-stryker\">William Stryker</strong>'s proposition: undergoing the agonizing <strong>Weapon X</strong> surgical procedure to fuse indestructible <strong>Adamantium</strong> alloy directly onto his entire skeletal structure at the subterranean <strong>Alkali Lake Facility</strong>.",
+          "Surviving the torturous cellular bonding process, Logan overhears Stryker order his memory wiped to turn him into a mindless assassin. Flying into a feral fury, Wolverine shatters out of the water tank with gleaming metallic claws and tears through the compound into the wilderness. When Stryker sends <strong class=\"agent-zero\">Agent Zero</strong> to murder the elderly couple who sheltered him, Logan ambushes Zero's helicopter, leaps through the air to sever the rotor blades with his claws, and detonates the fuel tank—killing Agent Zero."
+        ],
+        "characters": [
+          "logan-wolverine",
+          "william-stryker",
+          "agent-zero"
+        ],
+        "stones": [],
+        "deaths": [
+          "David North / Agent Zero"
+        ],
+        "mcuHighlights": [
+          "Weapon X Adamantium Bonding Procedure",
+          "Wolverine's Berserker Rage & Alkali Lake Escape",
+          "Wolverine Destroys Agent Zero's Helicopter"
+        ],
+        "locations": [
+          {
+            "name": "Alkali Lake Weapon X Facility",
+            "cityOrRegion": "Alberta / British Columbia",
+            "countryOrRealm": "Canada",
+            "planet": "Earth-10005",
+            "coordinates": [
+              51.253,
+              -115.570
+            ],
+            "characters": [
+              "logan-wolverine",
+              "william-stryker",
+              "agent-zero"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "event-1987-xmen-origins-three-mile-island-1",
+        "eraId": "era-1987-xmen-origins",
+        "eraTitle": "1987 (Earth-10005)",
+        "mediaKey": "x-men-origins-wolverine",
+        "mediaTitle": "X-Men Origins: Wolverine (2009)",
+        "mediaType": "movie",
+        "mediaPhase": "Phase 1",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-10005 (Fox X-Men Universe)",
+        "branchDetails": "Three Mile Island Battle, Weapon XI Decapitation & Wolverine Amnesia",
+        "rawClasses": [
+          "x-men-origins-wolverine"
+        ],
+        "rawHtml": "<p>In search of Stryker's hidden mutant research island, <strong class=\"logan-wolverine\">Logan</strong> teams up with <strong class=\"john-wraith\">John Wraith</strong>, confronting an obese <strong class=\"fred-dukes\">Fred Dukes</strong> in Las Vegas and the kinetically powered Cajun card-shark <strong class=\"remy-lebeau-gambit\">Remy LeBeau (Gambit)</strong> in New Orleans—the sole escapee from Stryker's facility. Outside the club, <strong class=\"victor-creed\">Victor Creed</strong> ambushes and murders Wraith to harvest his teleportation DNA. Gambit agrees to fly Logan by seaplane to the secret facility located inside the <strong>Three Mile Island Nuclear Generating Station</strong> in Pennsylvania.</p>\n<p>Inside the facility, Logan discovers <strong class=\"kayla-silverfox\">Kayla</strong> is alive, having manipulated Logan under coercion to protect her captive sister Emma. Logan liberates dozens of imprisoned young mutants—including <strong class=\"cyclops-scott-summers\">Scott Summers (Cyclops)</strong>—who are guided to safety outside by a telepathic rescue helicopter piloted by <strong class=\"charles-xavier\">Charles Xavier (Professor X)</strong>. To eliminate Logan, Stryker activates <strong>Weapon XI (The Mutant Killer)</strong>—a genetically modified <strong class=\"wade-wilson\">Wade Wilson</strong> possessing Wolverine's healing, Wraith's teleportation, Cyclops' optic blasts, and long adamantium forearm katanas. Logan and Victor unite as brothers on top of the cooling tower to battle Weapon XI, with Logan decapitating the composite killer before the nuclear tower collapses.</p>\n<p>In the aftermath, Stryker shoots Kayla in the stomach and shoots Logan twice in the forehead with <strong>Adamantium bullets</strong>, piercing his skull and inflicting permanent retrograde amnesia. A dying Kayla uses her tactile hypnotic persuasion to command Stryker: <em>\"Walk until your feet bleed... and keep walking.\"</em> Logan awakens with total memory loss next to Kayla's body, discovers his military dog tags stamped <strong>\"WOLVERINE\"</strong>, and departs with Gambit to walk his own solitary path.</p>",
+        "paragraphs": [
+          "In search of Stryker's hidden mutant research island, <strong class=\"logan-wolverine\">Logan</strong> teams up with <strong class=\"john-wraith\">John Wraith</strong>, confronting an obese <strong class=\"fred-dukes\">Fred Dukes</strong> in Las Vegas and the kinetically powered Cajun card-shark <strong class=\"remy-lebeau-gambit\">Remy LeBeau (Gambit)</strong> in New Orleans—the sole escapee from Stryker's facility. Outside the club, <strong class=\"victor-creed\">Victor Creed</strong> ambushes and murders Wraith to harvest his teleportation DNA. Gambit agrees to fly Logan by seaplane to the secret facility located inside the <strong>Three Mile Island Nuclear Generating Station</strong> in Pennsylvania.",
+          "Inside the facility, Logan discovers <strong class=\"kayla-silverfox\">Kayla</strong> is alive, having manipulated Logan under coercion to protect her captive sister Emma. Logan liberates dozens of imprisoned young mutants—including <strong class=\"cyclops-scott-summers\">Scott Summers (Cyclops)</strong>—who are guided to safety outside by a telepathic rescue helicopter piloted by <strong class=\"charles-xavier\">Charles Xavier (Professor X)</strong>. To eliminate Logan, Stryker activates <strong>Weapon XI (The Mutant Killer)</strong>—a genetically modified <strong class=\"wade-wilson\">Wade Wilson</strong> possessing Wolverine's healing, Wraith's teleportation, Cyclops' optic blasts, and long adamantium forearm katanas. Logan and Victor unite as brothers on top of the cooling tower to battle Weapon XI, with Logan decapitating the composite killer before the nuclear tower collapses.",
+          "In the aftermath, Stryker shoots Kayla in the stomach and shoots Logan twice in the forehead with <strong>Adamantium bullets</strong>, piercing his skull and inflicting permanent retrograde amnesia. A dying Kayla uses her tactile hypnotic persuasion to command Stryker: <em>\"Walk until your feet bleed... and keep walking.\"</em> Logan awakens with total memory loss next to Kayla's body, discovers his military dog tags stamped <strong>\"WOLVERINE\"</strong>, and departs with Gambit to walk his own solitary path."
+        ],
+        "characters": [
+          "logan-wolverine",
+          "victor-creed",
+          "william-stryker",
+          "wade-wilson",
+          "kayla-silverfox",
+          "remy-lebeau-gambit",
+          "cyclops-scott-summers",
+          "charles-xavier",
+          "john-wraith",
+          "fred-dukes"
+        ],
+        "stones": [],
+        "deaths": [
+          "John Wraith / Kestrel",
+          "Kayla Silverfox",
+          "Weapon XI (Decapitation)"
+        ],
+        "mcuHighlights": [
+          "Logan & Gambit Duel in New Orleans",
+          "Liberation of Cyclops & Professor X Rescue Helicopter",
+          "Wolverine & Sabretooth vs. Weapon XI Cooling Tower Battle",
+          "Stryker Fires Adamantium Bullets & Wolverine's Amnesia"
+        ],
+        "locations": [
+          {
+            "name": "French Quarter Underground Poker Club",
+            "cityOrRegion": "New Orleans, Louisiana",
+            "countryOrRealm": "United States",
+            "planet": "Earth-10005",
+            "coordinates": [
+              29.958,
+              -90.064
+            ],
+            "characters": [
+              "logan-wolverine",
+              "john-wraith",
+              "remy-lebeau-gambit",
+              "victor-creed"
+            ]
+          },
+          {
+            "name": "Three Mile Island Nuclear Facility & Weapon XI Laboratory",
+            "cityOrRegion": "Dauphin County, Pennsylvania",
+            "countryOrRealm": "United States",
+            "planet": "Earth-10005",
+            "coordinates": [
+              40.154,
+              -76.724
+            ],
+            "characters": [
+              "logan-wolverine",
+              "victor-creed",
+              "william-stryker",
+              "wade-wilson",
+              "kayla-silverfox",
+              "remy-lebeau-gambit",
+              "cyclops-scott-summers",
+              "charles-xavier"
+            ]
+          }
+        ]
       }
     ]
   },

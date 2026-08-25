@@ -14,7 +14,8 @@ import {
   Clock, 
   GitFork, 
   Skull,
-  Bookmark
+  Bookmark,
+  ExternalLink
 } from 'lucide-react';
 
 export const StatsScreen: React.FC = () => {
@@ -117,6 +118,32 @@ export const StatsScreen: React.FC = () => {
           <span className="text-[11px] font-bold text-zinc-400 uppercase font-title tracking-wider">Saved Events</span>
         </div>
 
+      </div>
+
+      {/* Archive Credits & Intelligence Attributions */}
+      <div className="bg-[#101010] border border-[#1f1f1f] rounded-xl p-5 mb-8">
+        <h3 className="text-xs font-bold text-zinc-300 font-title tracking-wider uppercase mb-2 flex items-center gap-2">
+          <ShieldCheck className="w-4 h-4 text-[#e62429]" />
+          <span>PROJECT CREDITS & ATTRIBUTION</span>
+        </h3>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-zinc-400 font-din">
+          <div className="p-3 bg-[#0a0a0a] rounded-lg border border-[#181818]">
+            <span className="text-zinc-500 block text-[10px] uppercase font-title tracking-wider">Architecture & Engineering</span>
+            <span className="text-zinc-200 font-semibold text-xs">Ángela Curzi (2026)</span>
+          </div>
+          <div className="p-3 bg-[#0a0a0a] rounded-lg border border-[#181818]">
+            <span className="text-zinc-500 block text-[10px] uppercase font-title tracking-wider">Original Timeline Compilation</span>
+            <a
+              href="https://aaronperris.com/mcu/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-zinc-200 hover:text-[#e62429] font-semibold text-xs transition-colors inline-flex items-center gap-1.5 mt-0.5 group"
+            >
+              <span>Aaron Perris (aaronperris.com/mcu)</span>
+              <ExternalLink className="w-3 h-3 text-zinc-500 group-hover:text-[#e62429] transition-colors" />
+            </a>
+          </div>
+        </div>
       </div>
 
       {/* Quick Action Navigation */}
