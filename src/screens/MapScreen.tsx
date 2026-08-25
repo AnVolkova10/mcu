@@ -846,7 +846,9 @@ export const MapScreen: React.FC = () => {
     selectedMapStoneTrajectoryId, 
     setSelectedMapStoneTrajectoryId,
     selectedMapCharacterId,
-    setSelectedMapCharacterId
+    setSelectedMapCharacterId,
+    selectedMapLocationPin,
+    setSelectedMapLocationPin,
   } = useStore();
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedUniverse, setSelectedUniverse] = useState<string>('all');
@@ -918,8 +920,10 @@ export const MapScreen: React.FC = () => {
       const normalizedId = normalizeStoneId(selectedMapStoneTrajectoryId);
       setActiveStoneTrajectoryId(normalizedId);
       setActiveCharacterId(null);
+      setSelectedMapCharacterId(null);
       setSelectedTrajectoryStopIndex(0);
       setMapViewMode('earth');
+      setIsTracingTrajectory(false);
       const traj = normalizedId ? STONE_TRAJECTORIES[normalizedId] : null;
       if (traj && traj.stops.length > 0) {
         setTimeout(() => {
@@ -938,8 +942,34 @@ export const MapScreen: React.FC = () => {
       const normalizedId = normalizeCharacterId(selectedMapCharacterId);
       setActiveCharacterId(normalizedId);
       setActiveStoneTrajectoryId(null);
+      setSelectedMapStoneTrajectoryId(null);
       setSelectedTrajectoryStopIndex(0);
       setMapViewMode('earth');
+      setIsTracingTrajectory(false);
+
+      setTimeout(() => {
+        mapInstanceRef.current?.invalidateSize();
+        const char = charactersData[normalizedId || ''];
+        if (char) {
+          const stops: [number, number][] = [];
+          timelineEras.forEach((era) => {
+            era.events.forEach((evt) => {
+              const isPresent = evt.characters.includes(char.id) || evt.rawHtml.includes(`class="${char.cssClass}`);
+              if (isPresent && evt.locations) {
+                evt.locations.forEach((loc) => {
+                  if (loc.coordinates) {
+                    stops.push(loc.coordinates);
+                  }
+                });
+              }
+            });
+          });
+          if (stops.length > 0 && mapInstanceRef.current) {
+            const poly = L.polyline(stops);
+            mapInstanceRef.current.fitBounds(poly.getBounds().pad(0.18), { maxZoom: 5, animate: true });
+          }
+        }
+      }, 150);
     }
   }, [selectedMapCharacterId]);
 
@@ -1045,9 +1075,26 @@ export const MapScreen: React.FC = () => {
             const name = charInfo?.name || charId;
             const alias = charInfo?.alias;
             const role = charInfo?.role || 'hero';
+            const cssClass = charInfo?.cssClass || charId;
 
             evt.locations!.forEach((loc) => {
               if (loc.coordinates) {
+                // Check if character was actually present at this specific location
+                if (loc.characters && loc.characters.length > 0) {
+                  const normLocChars = loc.characters.map((c) => normalizeCharacterId(c) || c);
+                  if (!normLocChars.includes(charId) && !loc.characters.includes(rawCharId)) return;
+                } else if (evt.locations!.length > 1 && evt.paragraphs && evt.paragraphs.length > 1) {
+                  const locKeywords = [loc.name.toLowerCase(), loc.cityOrRegion?.toLowerCase(), loc.countryOrRealm?.toLowerCase()].filter(Boolean);
+                  const charKeywords = [charId.toLowerCase(), cssClass.toLowerCase(), name.toLowerCase()];
+                  const inSamePara = evt.paragraphs.some((p) => {
+                    const pLower = p.toLowerCase();
+                    const hasChar = charKeywords.some((k) => pLower.includes(k));
+                    const hasLoc = locKeywords.some((k) => k && pLower.includes(k));
+                    return hasChar && hasLoc;
+                  });
+                  if (!inSamePara) return;
+                }
+
                 const dedupeKey = `${charId}-${loc.name}-${loc.coordinates[0]}-${loc.coordinates[1]}`;
                 if (!seen.has(dedupeKey)) {
                   seen.add(dedupeKey);
@@ -1100,6 +1147,22 @@ export const MapScreen: React.FC = () => {
         if (isPresent && evt.locations && evt.locations.length > 0) {
           evt.locations.forEach((loc) => {
             if (loc.coordinates) {
+              // Check if character was actually present at this specific location
+              if (loc.characters && loc.characters.length > 0) {
+                const normLocChars = loc.characters.map((c) => normalizeCharacterId(c) || c);
+                if (!normLocChars.includes(char.id) && !loc.characters.includes(char.id)) return;
+              } else if (evt.locations!.length > 1 && evt.paragraphs && evt.paragraphs.length > 1) {
+                const locKeywords = [loc.name.toLowerCase(), loc.cityOrRegion?.toLowerCase(), loc.countryOrRealm?.toLowerCase()].filter(Boolean);
+                const charKeywords = [char.id.toLowerCase(), char.cssClass.toLowerCase(), char.name.toLowerCase()];
+                const inSamePara = evt.paragraphs.some((p) => {
+                  const pLower = p.toLowerCase();
+                  const hasChar = charKeywords.some((k) => pLower.includes(k));
+                  const hasLoc = locKeywords.some((k) => k && pLower.includes(k));
+                  return hasChar && hasLoc;
+                });
+                if (!inSamePara) return;
+              }
+
               const lastStop = stops[stops.length - 1];
               const isSameCoord = lastStop && 
                 Math.abs(lastStop.coordinates[0] - loc.coordinates[0]) < 0.001 &&
@@ -1113,7 +1176,7 @@ export const MapScreen: React.FC = () => {
                   era: era.cleanTitle.split(' (')[0],
                   vessel: `Mission: ${evt.mediaTitle}`,
                   coordinates: loc.coordinates,
-                  description: evt.paragraphs[0]?.replace(/<[^>]*>?/gm, '').slice(0, 180) + '...' || '',
+                  description: evt.paragraphs[0]?.replace(/<[^>]*>?/gm, '').slice(180) ? evt.paragraphs[0]?.replace(/<[^>]*>?/gm, '').slice(0, 180) + '...' : evt.paragraphs[0]?.replace(/<[^>]*>?/gm, '') || '',
                   media: evt.mediaTitle,
                   eventId: evt.id,
                 });
@@ -1246,6 +1309,62 @@ export const MapScreen: React.FC = () => {
     if (!selectedPinId) return filteredPins[0] || null;
     return allPins.find((p) => p.id === selectedPinId) || filteredPins[0] || null;
   }, [allPins, filteredPins, selectedPinId]);
+
+  // Listen to external location selection from Timeline EventCard
+  useEffect(() => {
+    if (selectedMapLocationPin) {
+      setActiveStoneTrajectoryId(null);
+      setActiveCharacterId(null);
+      setSelectedMapStoneTrajectoryId(null);
+      setSelectedMapCharacterId(null);
+      setMapViewMode('earth');
+      setSelectedSnapshotTab('locations');
+      setSnapshotLayerMode('locations');
+
+      // Find matching pin in allPins
+      const match = allPins.find((p) => {
+        if (selectedMapLocationPin.coordinates && p.coordinates) {
+          const latDiff = Math.abs(p.coordinates[0] - selectedMapLocationPin.coordinates[0]);
+          const lngDiff = Math.abs(p.coordinates[1] - selectedMapLocationPin.coordinates[1]);
+          if (latDiff < 0.01 && lngDiff < 0.01) return true;
+        }
+        return p.name.toLowerCase().includes(selectedMapLocationPin.name.toLowerCase()) ||
+               selectedMapLocationPin.name.toLowerCase().includes(p.name.toLowerCase()) ||
+               (p.cityOrRegion && p.cityOrRegion.toLowerCase().includes(selectedMapLocationPin.name.toLowerCase()));
+      });
+
+      if (match) {
+        setSelectedPinId(match.id);
+
+        // Check matching event
+        const matchingEvent = match.events.find(e => e.event.id === selectedMapLocationPin.eventId) || match.events[0];
+        if (matchingEvent) {
+          const [startYr, endYr] = parseYearRange(matchingEvent.eraCleanTitle);
+          const matchingPreset = ERA_PRESETS.find(p => p.id !== 'all' && startYr >= p.range[0] && endYr <= p.range[1]);
+          if (matchingPreset) {
+            setSelectedPreset(matchingPreset.id);
+            setCustomRange(matchingPreset.range);
+          } else {
+            setCustomRange([startYr, endYr]);
+            setSelectedPreset('all');
+          }
+        }
+
+        // If Earth designation has universe, make sure selectedUniverse doesn't hide it
+        if (selectedUniverse !== 'all' && match.universeGroup !== selectedUniverse) {
+          setSelectedUniverse('all');
+        }
+
+        setTimeout(() => {
+          mapInstanceRef.current?.invalidateSize();
+          const targetLat = Math.min(65, Math.max(-60, match.coordinates[0]));
+          mapInstanceRef.current?.flyTo([targetLat, match.coordinates[1]], 6, { duration: 1.2 });
+        }, 150);
+      }
+
+      setSelectedMapLocationPin(null);
+    }
+  }, [selectedMapLocationPin, allPins]);
 
   // Set Preset Range
   const handleSelectPreset = (presetKey: EraPresetKey) => {

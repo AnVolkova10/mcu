@@ -226,6 +226,10 @@ export const timelineEras: EraGroup[] = [
             "coordinates": [
               35.298,
               25.163
+            ],
+            "characters": [
+              "noni",
+              "the-lion"
             ]
           },
           {
@@ -236,6 +240,9 @@ export const timelineEras: EraGroup[] = [
             "coordinates": [
               -3.382,
               36.682
+            ],
+            "characters": [
+              "noni"
             ]
           }
         ]
@@ -283,6 +290,9 @@ export const timelineEras: EraGroup[] = [
             "coordinates": [
               39.957,
               26.238
+            ],
+            "characters": [
+              "memnon"
             ]
           }
         ]
@@ -437,6 +447,10 @@ export const timelineEras: EraGroup[] = [
             "coordinates": [
               34.341,
               108.939
+            ],
+            "characters": [
+              "jorani",
+              "iron-fist"
             ]
           },
           {
@@ -447,6 +461,10 @@ export const timelineEras: EraGroup[] = [
             "coordinates": [
               35,
               80
+            ],
+            "characters": [
+              "jorani",
+              "iron-fist"
             ]
           }
         ]
@@ -495,6 +513,10 @@ export const timelineEras: EraGroup[] = [
             "coordinates": [
               14.164,
               38.896
+            ],
+            "characters": [
+              "kuda",
+              "prince-tafari"
             ]
           },
           {
@@ -505,6 +527,10 @@ export const timelineEras: EraGroup[] = [
             "coordinates": [
               -3.382,
               36.682
+            ],
+            "characters": [
+              "kuda",
+              "prince-tafari"
             ]
           }
         ]
@@ -555,6 +581,10 @@ export const timelineEras: EraGroup[] = [
             "coordinates": [
               49.258,
               4.031
+            ],
+            "characters": [
+              "ben-reilly-noir",
+              "megawatt-noir"
             ]
           }
         ]
@@ -607,6 +637,10 @@ export const timelineEras: EraGroup[] = [
             "coordinates": [
               40.7128,
               -74.006
+            ],
+            "characters": [
+              "ben-reilly-noir",
+              "ruby-williams-noir"
             ]
           }
         ]
@@ -707,6 +741,11 @@ export const timelineEras: EraGroup[] = [
             "coordinates": [
               40.7128,
               -74.006
+            ],
+            "characters": [
+              "ben-reilly-noir",
+              "janet-ruiz-noir",
+              "silvermane-noir"
             ]
           },
           {
@@ -717,6 +756,10 @@ export const timelineEras: EraGroup[] = [
             "coordinates": [
               40.8116,
               -73.9465
+            ],
+            "characters": [
+              "ben-reilly-noir",
+              "cat-hardy-noir"
             ]
           },
           {
@@ -727,6 +770,10 @@ export const timelineEras: EraGroup[] = [
             "coordinates": [
               40.7505,
               -73.9934
+            ],
+            "characters": [
+              "ben-reilly-noir",
+              "robbie-robertson-noir"
             ]
           },
           {
@@ -737,6 +784,14 @@ export const timelineEras: EraGroup[] = [
             "coordinates": [
               40.702,
               -73.985
+            ],
+            "characters": [
+              "ben-reilly-noir",
+              "silvermane-noir",
+              "sandman-noir",
+              "tombstone-noir",
+              "megawatt-noir",
+              "robbie-robertson-noir"
             ]
           }
         ]
@@ -788,6 +843,10 @@ export const timelineEras: EraGroup[] = [
             "coordinates": [
               59.267,
               10.407
+            ],
+            "characters": [
+              "red-skull",
+              "arnim-zola"
             ]
           },
           {
@@ -798,6 +857,10 @@ export const timelineEras: EraGroup[] = [
             "coordinates": [
               51.165,
               10.451
+            ],
+            "characters": [
+              "red-skull",
+              "arnim-zola"
             ]
           }
         ]
@@ -864,6 +927,13 @@ export const timelineEras: EraGroup[] = [
             "coordinates": [
               40.7028,
               -73.987
+            ],
+            "characters": [
+              "steve-rogers",
+              "abraham-erskine",
+              "chester-phillips",
+              "peggy-carter",
+              "howard-stark"
             ]
           },
           {
@@ -874,6 +944,12 @@ export const timelineEras: EraGroup[] = [
             "coordinates": [
               40.584,
               -74.245
+            ],
+            "characters": [
+              "steve-rogers",
+              "chester-phillips",
+              "peggy-carter",
+              "abraham-erskine"
             ]
           },
           {
@@ -884,6 +960,14 @@ export const timelineEras: EraGroup[] = [
             "coordinates": [
               46.069,
               13.238
+            ],
+            "characters": [
+              "steve-rogers",
+              "bucky-barnes",
+              "red-skull",
+              "peggy-carter",
+              "howard-stark",
+              "dum-dum-dugan"
             ]
           }
         ]
@@ -940,6 +1024,10 @@ export const timelineEras: EraGroup[] = [
             "coordinates": [
               50.0344,
               19.2098
+            ],
+            "characters": [
+              "erik-lehnsherr",
+              "sebastian-shaw"
             ]
           },
           {
@@ -950,6 +1038,10 @@ export const timelineEras: EraGroup[] = [
             "coordinates": [
               41.122,
               -73.7949
+            ],
+            "characters": [
+              "charles-xavier",
+              "raven-darkholme"
             ]
           }
         ]
@@ -1014,6 +1106,12 @@ export const timelineEras: EraGroup[] = [
             "coordinates": [
               46.818,
               8.227
+            ],
+            "characters": [
+              "steve-rogers",
+              "bucky-barnes",
+              "arnim-zola",
+              "dum-dum-dugan"
             ]
           },
           {
@@ -1024,6 +1122,13 @@ export const timelineEras: EraGroup[] = [
             "coordinates": [
               47.516,
               14.55
+            ],
+            "characters": [
+              "steve-rogers",
+              "red-skull",
+              "peggy-carter",
+              "howard-stark",
+              "dum-dum-dugan"
             ]
           },
           {
@@ -1034,6 +1139,10 @@ export const timelineEras: EraGroup[] = [
             "coordinates": [
               67.5,
               -35.0
+            ],
+            "characters": [
+              "steve-rogers",
+              "howard-stark"
             ]
           }
         ]
@@ -1129,6 +1238,14 @@ export const timelineEras: EraGroup[] = [
             "coordinates": [
               40.7128,
               -74.006
+            ],
+            "characters": [
+              "peggy-carter",
+              "howard-stark",
+              "edwin-jarvis",
+              "dottie-underwood",
+              "johann-fennhoff",
+              "arnim-zola"
             ]
           },
           {
@@ -1139,6 +1256,11 @@ export const timelineEras: EraGroup[] = [
             "coordinates": [
               40.7891,
               -73.135
+            ],
+            "characters": [
+              "peggy-carter",
+              "howard-stark",
+              "edwin-jarvis"
             ]
           },
           {
@@ -1149,6 +1271,9 @@ export const timelineEras: EraGroup[] = [
             "coordinates": [
               40.7061,
               -73.9969
+            ],
+            "characters": [
+              "peggy-carter"
             ]
           }
         ]
@@ -1204,6 +1329,12 @@ export const timelineEras: EraGroup[] = [
             "coordinates": [
               34.0522,
               -118.2437
+            ],
+            "characters": [
+              "peggy-carter",
+              "daniel-sousa",
+              "edwin-jarvis",
+              "howard-stark"
             ]
           },
           {
@@ -1214,6 +1345,12 @@ export const timelineEras: EraGroup[] = [
             "coordinates": [
               34.1478,
               -118.1445
+            ],
+            "characters": [
+              "peggy-carter",
+              "daniel-sousa",
+              "jason-wilkes",
+              "whitney-frost"
             ]
           },
           {
@@ -1224,6 +1361,14 @@ export const timelineEras: EraGroup[] = [
             "coordinates": [
               34.0928,
               -118.3287
+            ],
+            "characters": [
+              "peggy-carter",
+              "daniel-sousa",
+              "jason-wilkes",
+              "whitney-frost",
+              "edwin-jarvis",
+              "howard-stark"
             ]
           }
         ]
@@ -1266,6 +1411,9 @@ export const timelineEras: EraGroup[] = [
             "coordinates": [
               40.7128,
               -74.006
+            ],
+            "characters": [
+              "peggy-carter"
             ]
           },
           {
@@ -1276,6 +1424,11 @@ export const timelineEras: EraGroup[] = [
             "coordinates": [
               38.9072,
               -77.0369
+            ],
+            "characters": [
+              "peggy-carter",
+              "howard-stark",
+              "chester-phillips"
             ]
           }
         ]
@@ -1422,6 +1575,10 @@ export const timelineEras: EraGroup[] = [
             "coordinates": [
               -37.2633,
               -56.9731
+            ],
+            "characters": [
+              "erik-lehnsherr",
+              "sebastian-shaw"
             ]
           },
           {
@@ -1432,6 +1589,10 @@ export const timelineEras: EraGroup[] = [
             "coordinates": [
               51.7548,
               -1.2544
+            ],
+            "characters": [
+              "charles-xavier",
+              "raven-darkholme"
             ]
           },
           {
@@ -1442,6 +1603,12 @@ export const timelineEras: EraGroup[] = [
             "coordinates": [
               25.7617,
               -80.1918
+            ],
+            "characters": [
+              "erik-lehnsherr",
+              "charles-xavier",
+              "sebastian-shaw",
+              "raven-darkholme"
             ]
           },
           {
@@ -1452,6 +1619,14 @@ export const timelineEras: EraGroup[] = [
             "coordinates": [
               38.9468,
               -77.1589
+            ],
+            "characters": [
+              "charles-xavier",
+              "erik-lehnsherr",
+              "raven-darkholme",
+              "hank-mccoy",
+              "alex-summers",
+              "sean-cassidy"
             ]
           },
           {
@@ -1462,6 +1637,15 @@ export const timelineEras: EraGroup[] = [
             "coordinates": [
               21.5218,
               -77.7812
+            ],
+            "characters": [
+              "charles-xavier",
+              "erik-lehnsherr",
+              "sebastian-shaw",
+              "raven-darkholme",
+              "hank-mccoy",
+              "alex-summers",
+              "sean-cassidy"
             ]
           },
           {
@@ -1472,6 +1656,12 @@ export const timelineEras: EraGroup[] = [
             "coordinates": [
               41.122,
               -73.7949
+            ],
+            "characters": [
+              "charles-xavier",
+              "hank-mccoy",
+              "alex-summers",
+              "sean-cassidy"
             ]
           }
         ]

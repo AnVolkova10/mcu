@@ -31,6 +31,7 @@ export const EventCard: React.FC<EventCardProps> = ({ event }) => {
     setSelectedCharacterId,
     setSelectedStoneId,
     setSelectedMediaId,
+    setSelectedMapLocationPin,
     setActiveScreen,
   } = useStore();
 
@@ -228,7 +229,14 @@ export const EventCard: React.FC<EventCardProps> = ({ event }) => {
           {event.locations && event.locations.map((loc, lIdx) => (
             <button
               key={`loc-${lIdx}`}
-              onClick={() => setActiveScreen('map')}
+              onClick={() => {
+                setSelectedMapLocationPin({
+                  name: loc.name,
+                  coordinates: loc.coordinates,
+                  eventId: event.id,
+                });
+                setActiveScreen('map');
+              }}
               className="flex items-center gap-1.5 px-2.5 py-1 rounded text-xs font-semibold bg-[#0a192f]/80 hover:bg-[#0f284c] border border-sky-800/60 hover:border-sky-500 text-sky-300 hover:text-white transition-all font-din cursor-pointer shadow-sm group/loc"
               title={`View ${loc.name} on Global Tactical Map`}
             >

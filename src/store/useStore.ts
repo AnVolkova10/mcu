@@ -23,6 +23,13 @@ interface AppState {
   selectedMapCharacterId: string | null;
   setSelectedMapCharacterId: (id: string | null) => void;
 
+  selectedMapLocationPin: {
+    name: string;
+    coordinates?: [number, number];
+    eventId?: string;
+  } | null;
+  setSelectedMapLocationPin: (loc: { name: string; coordinates?: [number, number]; eventId?: string } | null) => void;
+
   isSearchOpen: boolean;
   setIsSearchOpen: (open: boolean) => void;
 
@@ -86,6 +93,9 @@ export const useStore = create<AppState>()(
 
       selectedMapCharacterId: null,
       setSelectedMapCharacterId: (selectedMapCharacterId) => set({ selectedMapCharacterId }),
+
+      selectedMapLocationPin: null,
+      setSelectedMapLocationPin: (selectedMapLocationPin) => set({ selectedMapLocationPin }),
 
       isSearchOpen: false,
       setIsSearchOpen: (isSearchOpen) => set({ isSearchOpen }),

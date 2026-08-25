@@ -29,6 +29,7 @@ export interface EventLocation {
   countryOrRealm: string;   // e.g. "United States", "Poland", "Wakanda", "Norway", "Greece", "Asgard"
   planet?: string;          // e.g. "Earth", "Asgard", "Jotunheim", "Vormir", "K'un-Lun"
   coordinates?: [number, number]; // [lat, lng]
+  characters?: string[];    // Optional explicit character IDs present at this specific location
 }
 
 export interface CharacterMention {
