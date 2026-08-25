@@ -182,6 +182,59 @@ export const timelineEras: EraGroup[] = [
     ]
   },
   {
+    "id": "era-3000-bce-apocalypse",
+    "title": "-c. 3000 B.C.E. (Earth-10005 / Ancient Egypt)-",
+    "cleanTitle": "c. 3000 B.C.E. (Earth-10005)",
+    "category": "ancient",
+    "events": [
+      {
+        "id": "event-3000-bce-apocalypse-1",
+        "eraId": "era-3000-bce-apocalypse",
+        "eraTitle": "c. 3000 B.C.E. (Earth-10005)",
+        "mediaKey": "x-men-days-of-future-past",
+        "mediaTitle": "X-Men: Days of Future Past (2014)",
+        "mediaType": "movie",
+        "mediaPhase": "Phase 2",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-10005 (Fox X-Men Universe)",
+        "branchDetails": "Origins of the World's First Mutant",
+        "rawClasses": [
+          "x-men-days-of-future-past"
+        ],
+        "rawHtml": "<p>In Ancient Egypt circa 3000 B.C.E., a cloaked grey-skinned adolescent mutant named <strong class=\"en-sabah-nur-apocalypse\">En Sabah Nur (Apocalypse)</strong> uses immense godlike telekinesis to assemble the Great Pyramids from floating sandstone blocks across the desert. Thousands of ancient Egyptian worshippers prostrate themselves on the sand, chanting <em>\"En Sabah Nur\"</em> in reverent worship, as his Four Horsemen look on from horseback atop the dunes.</p>",
+        "paragraphs": [
+          "In Ancient Egypt circa 3000 B.C.E., a cloaked grey-skinned adolescent mutant named <strong class=\"en-sabah-nur-apocalypse\">En Sabah Nur (Apocalypse)</strong> uses immense godlike telekinesis to assemble the Great Pyramids from floating sandstone blocks across the desert. Thousands of ancient Egyptian worshippers prostrate themselves on the sand, chanting <em>\"En Sabah Nur\"</em> in reverent worship, as his Four Horsemen look on from horseback atop the dunes."
+        ],
+        "characters": [
+          "en-sabah-nur-apocalypse"
+        ],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "Awakening of En Sabah Nur (Apocalypse)",
+          "Telekinetic Construction of the Great Pyramids",
+          "The Ancient Four Horsemen"
+        ],
+        "locations": [
+          {
+            "name": "Giza Plateau & Great Pyramids",
+            "cityOrRegion": "Giza",
+            "countryOrRealm": "Egypt",
+            "planet": "Earth-10005",
+            "coordinates": [
+              29.9792,
+              31.1342
+            ],
+            "characters": [
+              "en-sabah-nur-apocalypse"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "era-_1260_BCE_",
     "title": "-1260 B.C.E.-",
     "cleanTitle": "1260 B.C.E.",
@@ -2046,6 +2099,245 @@ export const timelineEras: EraGroup[] = [
     ]
   },
   {
+    "id": "era-1973-days-of-future-past",
+    "title": "-1973 (Earth-10005 / Days of Future Past)-",
+    "cleanTitle": "1973 (Earth-10005 / Past)",
+    "category": "golden-age",
+    "events": [
+      {
+        "id": "event-1973-dofp-1",
+        "eraId": "era-1973-days-of-future-past",
+        "eraTitle": "1973 (Earth-10005 / Past)",
+        "mediaKey": "x-men-days-of-future-past",
+        "mediaTitle": "X-Men: Days of Future Past (2014)",
+        "mediaType": "movie",
+        "mediaPhase": "Phase 2",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-10005 (Fox X-Men Universe)",
+        "branchDetails": "Temporal Nexus Point: 1973 Consciousness Arrival & Pentagon Breakout",
+        "rawClasses": [
+          "x-men-days-of-future-past"
+        ],
+        "rawHtml": "<p>Awakening in his younger 1973 body in New York with bone claws, <strong class=\"logan-wolverine\">Logan</strong> travels to Westchester to find the X-Mansion deserted. A broken, reclusive <strong class=\"charles-xavier\">Charles Xavier</strong>—reliant on a genetic serum brewed by <strong class=\"hank-mccoy\">Hank McCoy (Beast)</strong> that restores his ability to walk at the cost of suppressing his telepathy—initially refuses to help. Logan convinces them that only they can prevent Mystique from assassinating weapons industrialist Bolivar Trask and causing a mutant genocide.</p>\n<p>To infiltrate the Pentagon and liberate the imprisoned <strong class=\"erik-lehnsherr\">Erik Lehnsherr (Magneto)</strong>—held in a maximum-security subterranean plastic chamber 100 feet beneath the Pentagon for the alleged assassination of JFK—the team enlists hypersonic teenager <strong class=\"quicksilver-peter-maximoff\">Peter Maximoff (Quicksilver)</strong>. Moving at superhuman velocity during a security ambush in the kitchen, Quicksilver effortlessly neutralizes the guards, redirecting bullets and tasting soup mid-stride to successfully extract Magneto.</p>",
+        "paragraphs": [
+          "Awakening in his younger 1973 body in New York with bone claws, <strong class=\"logan-wolverine\">Logan</strong> travels to Westchester to find the X-Mansion deserted. A broken, reclusive <strong class=\"charles-xavier\">Charles Xavier</strong>—reliant on a genetic serum brewed by <strong class=\"hank-mccoy\">Hank McCoy (Beast)</strong> that restores his ability to walk at the cost of suppressing his telepathy—initially refuses to help. Logan convinces them that only they can prevent Mystique from assassinating weapons industrialist Bolivar Trask and causing a mutant genocide.",
+          "To infiltrate the Pentagon and liberate the imprisoned <strong class=\"erik-lehnsherr\">Erik Lehnsherr (Magneto)</strong>—held in a maximum-security subterranean plastic chamber 100 feet beneath the Pentagon for the alleged assassination of JFK—the team enlists hypersonic teenager <strong class=\"quicksilver-peter-maximoff\">Peter Maximoff (Quicksilver)</strong>. Moving at superhuman velocity during a security ambush in the kitchen, Quicksilver effortlessly neutralizes the guards, redirecting bullets and tasting soup mid-stride to successfully extract Magneto."
+        ],
+        "characters": [
+          "logan-wolverine",
+          "charles-xavier",
+          "hank-mccoy",
+          "quicksilver-peter-maximoff",
+          "erik-lehnsherr"
+        ],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "Wolverine's 1973 Temporal Mind Projection",
+          "Quicksilver's Pentagon Kitchen Super-Speed Run",
+          "Magneto Liberated from Subterranean Plastic Cell"
+        ],
+        "locations": [
+          {
+            "name": "Xavier's School for Gifted Youngsters",
+            "cityOrRegion": "Westchester County, New York",
+            "countryOrRealm": "United States",
+            "planet": "Earth-10005",
+            "coordinates": [
+              41.122,
+              -73.7949
+            ],
+            "characters": [
+              "logan-wolverine",
+              "charles-xavier",
+              "hank-mccoy"
+            ]
+          },
+          {
+            "name": "Maximoff Family Residence",
+            "cityOrRegion": "Washington D.C. Suburbs, Virginia",
+            "countryOrRealm": "United States",
+            "planet": "Earth-10005",
+            "coordinates": [
+              38.889,
+              -77.050
+            ],
+            "characters": [
+              "logan-wolverine",
+              "charles-xavier",
+              "hank-mccoy",
+              "quicksilver-peter-maximoff"
+            ]
+          },
+          {
+            "name": "The Pentagon Subterranean Incarceration Facility",
+            "cityOrRegion": "Arlington, Virginia",
+            "countryOrRealm": "United States",
+            "planet": "Earth-10005",
+            "coordinates": [
+              38.8719,
+              -77.0563
+            ],
+            "characters": [
+              "logan-wolverine",
+              "charles-xavier",
+              "hank-mccoy",
+              "quicksilver-peter-maximoff",
+              "erik-lehnsherr"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "event-1973-dofp-2",
+        "eraId": "era-1973-days-of-future-past",
+        "eraTitle": "1973 (Earth-10005 / Past)",
+        "mediaKey": "x-men-days-of-future-past",
+        "mediaTitle": "X-Men: Days of Future Past (2014)",
+        "mediaType": "movie",
+        "mediaPhase": "Phase 2",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-10005 (Fox X-Men Universe)",
+        "branchDetails": "Temporal Nexus Point: Paris Peace Accords & Sentinel Rail Hijacking",
+        "rawClasses": [
+          "x-men-days-of-future-past"
+        ],
+        "rawHtml": "<p>In Paris during the Vietnam War Peace Summit, <strong class=\"raven-darkholme\">Raven Darkhölme (Mystique)</strong> disguises herself as a South Vietnamese General to infiltrate the secret meeting where weapons mogul <strong class=\"bolivar-trask\">Dr. Bolivar Trask</strong> pitches his mutant-hunting Sentinel program to international diplomats. Just as Raven corners and prepares to shoot Trask, <strong class=\"charles-xavier\">Charles</strong>, <strong class=\"logan-wolverine\">Logan</strong>, <strong class=\"hank-mccoy\">Hank</strong>, and <strong class=\"erik-lehnsherr\">Erik</strong> burst into the room to intervene.</p>\n<p>Believing Raven's death is the only absolute guarantee to stop Trask Industries from harvesting her genetic material for adaptive Sentinels, Magneto ruthlessly turns a gun on her and fires, wounding her leg as she leaps out the second-story window. A furious Beast transforms and tackles Magneto into a fountain, sparking a chaotic public brawl captured by international news cameras that exposes the existence of mutantkind to the entire globe. Slipping away through the crowd, Raven's shed blood is covertly collected by Trask's military scientists.</p>\n<p>En route to Washington, Magneto intercepts the freight train transporting prototype Mark I Sentinels, utilizing his magnetism to weave steel railway tracks into the polymer chassis of each robot—secretly converting Trask's automated army into his personal metallic puppets.</p>",
+        "paragraphs": [
+          "In Paris during the Vietnam War Peace Summit, <strong class=\"raven-darkholme\">Raven Darkhölme (Mystique)</strong> disguises herself as a South Vietnamese General to infiltrate the secret meeting where weapons mogul <strong class=\"bolivar-trask\">Dr. Bolivar Trask</strong> pitches his mutant-hunting Sentinel program to international diplomats. Just as Raven corners and prepares to shoot Trask, <strong class=\"charles-xavier\">Charles</strong>, <strong class=\"logan-wolverine\">Logan</strong>, <strong class=\"hank-mccoy\">Hank</strong>, and <strong class=\"erik-lehnsherr\">Erik</strong> burst into the room to intervene.",
+          "Believing Raven's death is the only absolute guarantee to stop Trask Industries from harvesting her genetic material for adaptive Sentinels, Magneto ruthlessly turns a gun on her and fires, wounding her leg as she leaps out the second-story window. A furious Beast transforms and tackles Magneto into a fountain, sparking a chaotic public brawl captured by international news cameras that exposes the existence of mutantkind to the entire globe. Slipping away through the crowd, Raven's shed blood is covertly collected by Trask's military scientists.",
+          "En route to Washington, Magneto intercepts the freight train transporting prototype Mark I Sentinels, utilizing his magnetism to weave steel railway tracks into the polymer chassis of each robot—secretly converting Trask's automated army into his personal metallic puppets."
+        ],
+        "characters": [
+          "raven-darkholme",
+          "bolivar-trask",
+          "erik-lehnsherr",
+          "charles-xavier",
+          "hank-mccoy",
+          "logan-wolverine",
+          "william-stryker"
+        ],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "Paris Peace Accords Sentinel Infiltration",
+          "Public Mutant Reveal in Paris Fountain Brawl",
+          "Magneto Laces Mark I Sentinels with Railway Steel"
+        ],
+        "locations": [
+          {
+            "name": "Hotel Royal Monceau (Paris Peace Accords)",
+            "cityOrRegion": "Paris",
+            "countryOrRealm": "France",
+            "planet": "Earth-10005",
+            "coordinates": [
+              48.8756,
+              2.3012
+            ],
+            "characters": [
+              "raven-darkholme",
+              "bolivar-trask",
+              "erik-lehnsherr",
+              "charles-xavier",
+              "hank-mccoy",
+              "logan-wolverine",
+              "william-stryker"
+            ]
+          },
+          {
+            "name": "Sentinel Prototype Rail Transit Yard",
+            "cityOrRegion": "Maryland / Pennsylvania",
+            "countryOrRealm": "United States",
+            "planet": "Earth-10005",
+            "coordinates": [
+              39.2904,
+              -76.6122
+            ],
+            "characters": [
+              "erik-lehnsherr"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "event-1973-dofp-3",
+        "eraId": "era-1973-days-of-future-past",
+        "eraTitle": "1973 (Earth-10005 / Past)",
+        "mediaKey": "x-men-days-of-future-past",
+        "mediaTitle": "X-Men: Days of Future Past (2014)",
+        "mediaType": "movie",
+        "mediaPhase": "Phase 2",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-10005 (Fox X-Men Universe)",
+        "branchDetails": "Timeline Divergence: Mystique Spares Trask & History Rewritten",
+        "rawClasses": [
+          "x-men-days-of-future-past"
+        ],
+        "rawHtml": "<p>On the White House South Lawn, President Richard Nixon hosts a national press conference unveiling the Mark I Sentinels. <strong class=\"erik-lehnsherr\">Magneto</strong> launches a full-scale aerial assault, ripping the massive 50,000-seat <strong>RFK Memorial Stadium</strong> out of its concrete foundations and slamming it down around the White House to encircle the executive grounds. Taking control of the steel-laced Sentinels, Magneto turns the war machines against the Secret Service, impales <strong class=\"logan-wolverine\">Logan</strong> with heavy iron rebar, and hurls him deep into the bottom of the Potomac River.</p>\n<p>Magneto extracts the President's fortified steel bunker from the White House, broadcasting an ultimatum across global airwaves declaring mutant supremacy. Disguised as a Secret Service agent, <strong class=\"raven-darkholme\">Raven</strong> shoots Erik in the neck with a plastic pistol, disabling his powers. Aiming her gun at a terrified <strong class=\"bolivar-trask\">Bolivar Trask</strong>, Raven is telepathically contacted by <strong class=\"charles-xavier\">Charles Xavier</strong>, who chooses not to control her mind and instead appeals to her conscience: <em>\"You can show them who we really are.\"</em></p>\n<p>In a historic turning point, Raven lowers and drops her weapon, sparing Trask's life and demonstrating to humanity that mutants are protectors rather than monsters. This single act of mercy convinces the US government to shut down the Sentinel initiative, arresting Trask for selling military secrets and creating a brand-new, peaceful future. In the Potomac River, military officer <strong class=\"william-stryker\">William Stryker</strong>—secretly Mystique with glowing yellow eyes—retrieves Logan's waterlogged body.</p>",
+        "paragraphs": [
+          "On the White House South Lawn, President Richard Nixon hosts a national press conference unveiling the Mark I Sentinels. <strong class=\"erik-lehnsherr\">Magneto</strong> launches a full-scale aerial assault, ripping the massive 50,000-seat <strong>RFK Memorial Stadium</strong> out of its concrete foundations and slamming it down around the White House to encircle the executive grounds. Taking control of the steel-laced Sentinels, Magneto turns the war machines against the Secret Service, impales <strong class=\"logan-wolverine\">Logan</strong> with heavy iron rebar, and hurls him deep into the bottom of the Potomac River.",
+          "Magneto extracts the President's fortified steel bunker from the White House, broadcasting an ultimatum across global airwaves declaring mutant supremacy. Disguised as a Secret Service agent, <strong class=\"raven-darkholme\">Raven</strong> shoots Erik in the neck with a plastic pistol, disabling his powers. Aiming her gun at a terrified <strong class=\"bolivar-trask\">Bolivar Trask</strong>, Raven is telepathically contacted by <strong class=\"charles-xavier\">Charles Xavier</strong>, who chooses not to control her mind and instead appeals to her conscience: <em>\"You can show them who we really are.\"</em>",
+          "In a historic turning point, Raven lowers and drops her weapon, sparing Trask's life and demonstrating to humanity that mutants are protectors rather than monsters. This single act of mercy convinces the US government to shut down the Sentinel initiative, arresting Trask for selling military secrets and creating a brand-new, peaceful future. In the Potomac River, military officer <strong class=\"william-stryker\">William Stryker</strong>—secretly Mystique with glowing yellow eyes—retrieves Logan's waterlogged body."
+        ],
+        "characters": [
+          "erik-lehnsherr",
+          "charles-xavier",
+          "raven-darkholme",
+          "logan-wolverine",
+          "hank-mccoy",
+          "bolivar-trask",
+          "william-stryker"
+        ],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "Magneto Drops RFK Stadium Around the White House",
+          "Wolverine Impaled with Rebar & Thrown into Potomac",
+          "Mystique Spares Trask & Resets the Future Timeline",
+          "Mystique Disguised as Stryker Rescues Logan"
+        ],
+        "locations": [
+          {
+            "name": "The White House Lawn & RFK Stadium",
+            "cityOrRegion": "Washington D.C.",
+            "countryOrRealm": "United States",
+            "planet": "Earth-10005",
+            "coordinates": [
+              38.8977,
+              -77.0365
+            ],
+            "characters": [
+              "erik-lehnsherr",
+              "charles-xavier",
+              "raven-darkholme",
+              "logan-wolverine",
+              "hank-mccoy",
+              "bolivar-trask"
+            ]
+          },
+          {
+            "name": "Potomac River Recovery",
+            "cityOrRegion": "Washington D.C.",
+            "countryOrRealm": "United States",
+            "planet": "Earth-10005",
+            "coordinates": [
+              38.885,
+              -77.055
+            ],
+            "characters": [
+              "logan-wolverine",
+              "william-stryker",
+              "raven-darkholme"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "era-1979-xmen-origins",
     "title": "-1979 (Earth-10005 / Team X Lagos Raid)-",
     "cleanTitle": "1979 (Earth-10005)",
@@ -2367,6 +2659,21 @@ export const timelineEras: EraGroup[] = [
           "Stryker Fires Adamantium Bullets & Wolverine's Amnesia"
         ],
         "locations": [
+          {
+            "name": "Las Vegas Underground Boxing Gym",
+            "cityOrRegion": "Las Vegas, Nevada",
+            "countryOrRealm": "United States",
+            "planet": "Earth-10005",
+            "coordinates": [
+              36.1699,
+              -115.1398
+            ],
+            "characters": [
+              "logan-wolverine",
+              "john-wraith",
+              "fred-dukes"
+            ]
+          },
           {
             "name": "French Quarter Underground Poker Club",
             "cityOrRegion": "New Orleans, Louisiana",
@@ -5091,6 +5398,201 @@ export const timelineEras: EraGroup[] = [
         "mcuHighlights": [],
         "timelineType": "sacred-616",
         "earthDesignation": "Earth-616 (The Sacred Timeline)"
+      }
+    ]
+  },
+  {
+    "id": "era-2023-days-of-future-past",
+    "title": "-2023 (Earth-10005 / Sentinel War & Revised Future)-",
+    "cleanTitle": "2023 (Earth-10005 / Dystopia & Reset)",
+    "category": "future",
+    "events": [
+      {
+        "id": "event-2023-dofp-1",
+        "eraId": "era-2023-days-of-future-past",
+        "eraTitle": "2023 (Earth-10005 / Dystopia & Reset)",
+        "mediaKey": "x-men-days-of-future-past",
+        "mediaTitle": "X-Men: Days of Future Past (2014)",
+        "mediaType": "movie",
+        "mediaPhase": "Phase 2",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-10005 (Original Dark Timeline)",
+        "branchDetails": "Original Dystopian Future: Moscow Sentinel Ambush & Phase Rewinds",
+        "rawClasses": [
+          "x-men-days-of-future-past"
+        ],
+        "rawHtml": "<p>In a dark, dystopian 2023, the world lies in smoking ruins. Advanced, biomechanically adaptive <strong>Sentinels</strong>—capable of mimicking any mutant power and weaponized with DNA harvested from Mystique in 1973—have exterminated millions of mutants and humans alike. In the devastated subways of Moscow, a ragtag mutant resistance strike team comprising <strong class=\"kitty-pryde\">Kitty Pryde (Shadowcat)</strong>, <strong class=\"bishop-lucas-bishop\">Lucas Bishop</strong>, <strong class=\"iceman-bobby-drake\">Bobby Drake (Iceman)</strong>, <strong class=\"colossus-piotr-rasputin\">Piotr Rasputin (Colossus)</strong>, <strong class=\"blink-clarice-ferguson\">Clarice Ferguson (Blink)</strong>, <strong class=\"sunspot-roberto-da-costa\">Roberto da Costa (Sunspot)</strong>, and <strong class=\"warpath-james-proudstar\">James Proudstar (Warpath)</strong> mounts a desperate stand.</p>\n<p>As adaptive Sentinels breach the bunker with thermal drills, the squad fights heroically to the death while Kitty uses her chronal phase-shifting ability to project Bishop's consciousness four days into the past—warning their past selves, averting the massacre, and narrowly slipping away into the global shadows.</p>",
+        "paragraphs": [
+          "In a dark, dystopian 2023, the world lies in smoking ruins. Advanced, biomechanically adaptive <strong>Sentinels</strong>—capable of mimicking any mutant power and weaponized with DNA harvested from Mystique in 1973—have exterminated millions of mutants and humans alike. In the devastated subways of Moscow, a ragtag mutant resistance strike team comprising <strong class=\"kitty-pryde\">Kitty Pryde (Shadowcat)</strong>, <strong class=\"bishop-lucas-bishop\">Lucas Bishop</strong>, <strong class=\"iceman-bobby-drake\">Bobby Drake (Iceman)</strong>, <strong class=\"colossus-piotr-rasputin\">Piotr Rasputin (Colossus)</strong>, <strong class=\"blink-clarice-ferguson\">Clarice Ferguson (Blink)</strong>, <strong class=\"sunspot-roberto-da-costa\">Roberto da Costa (Sunspot)</strong>, and <strong class=\"warpath-james-proudstar\">James Proudstar (Warpath)</strong> mounts a desperate stand.",
+          "As adaptive Sentinels breach the bunker with thermal drills, the squad fights heroically to the death while Kitty uses her chronal phase-shifting ability to project Bishop's consciousness four days into the past—warning their past selves, averting the massacre, and narrowly slipping away into the global shadows."
+        ],
+        "characters": [
+          "kitty-pryde",
+          "bishop-lucas-bishop",
+          "iceman-bobby-drake",
+          "colossus-piotr-rasputin",
+          "blink-clarice-ferguson",
+          "sunspot-roberto-da-costa",
+          "warpath-james-proudstar"
+        ],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "Adaptive Nimrod Sentinels Extermination War",
+          "Moscow Underground Metro Guerrilla Ambush",
+          "Kitty Pryde's Chronal Mind-Shift Rewind"
+        ],
+        "locations": [
+          {
+            "name": "Ruined Underground Metro Catacombs",
+            "cityOrRegion": "Moscow",
+            "countryOrRealm": "Russia",
+            "planet": "Earth-10005",
+            "coordinates": [
+              55.7558,
+              37.6173
+            ],
+            "characters": [
+              "kitty-pryde",
+              "bishop-lucas-bishop",
+              "iceman-bobby-drake",
+              "colossus-piotr-rasputin",
+              "blink-clarice-ferguson",
+              "sunspot-roberto-da-costa",
+              "warpath-james-proudstar"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "event-2023-dofp-2",
+        "eraId": "era-2023-days-of-future-past",
+        "eraTitle": "2023 (Earth-10005 / Dystopia & Reset)",
+        "mediaKey": "x-men-days-of-future-past",
+        "mediaTitle": "X-Men: Days of Future Past (2014)",
+        "mediaType": "movie",
+        "mediaPhase": "Phase 2",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-10005 (Original Dark Timeline)",
+        "branchDetails": "Original Dystopian Future: Wulin Last Stand & Erased Timeline",
+        "rawClasses": [
+          "x-men-days-of-future-past"
+        ],
+        "rawHtml": "<p>Rendezvousing at a remote mountain monastery high in the Himalayas, the resistance unites with veteran X-Men leaders <strong class=\"charles-xavier\">Professor Charles Xavier</strong>, <strong class=\"erik-lehnsherr\">Magneto</strong>, <strong class=\"storm-ororo-munroe\">Storm</strong>, and <strong class=\"logan-wolverine\">Logan (Wolverine)</strong>. Xavier and Magneto formulate a final, suicidal gambit: sending someone back fifty years to 1973 to prevent Mystique from assassinating Bolivar Trask. Because a fifty-year jump would tear any mortal mind to shreds, only Wolverine's indestructible brain and cellular regeneration can survive the temporal trauma.</p>\n<p>As Kitty locks into Logan's temples to initiate the transfer, a massive armada of Sentinel warships descends upon the mountain. In a heart-wrenching final stand, Storm, Bishop, Blink, Sunspot, Colossus, Iceman, and Magneto fight to their absolute deaths against endless hordes of adaptive machines to buy every crucial second. As Sentinels breach the inner sanctum and aim their incinerator beams at Kitty and Logan, the 1973 timeline rewrite takes effect—instantly wiping the apocalyptic Sentinels out of existence.</p>",
+        "paragraphs": [
+          "Rendezvousing at a remote mountain monastery high in the Himalayas, the resistance unites with veteran X-Men leaders <strong class=\"charles-xavier\">Professor Charles Xavier</strong>, <strong class=\"erik-lehnsherr\">Magneto</strong>, <strong class=\"storm-ororo-munroe\">Storm</strong>, and <strong class=\"logan-wolverine\">Logan (Wolverine)</strong>. Xavier and Magneto formulate a final, suicidal gambit: sending someone back fifty years to 1973 to prevent Mystique from assassinating Bolivar Trask. Because a fifty-year jump would tear any mortal mind to shreds, only Wolverine's indestructible brain and cellular regeneration can survive the temporal trauma.",
+          "As Kitty locks into Logan's temples to initiate the transfer, a massive armada of Sentinel warships descends upon the mountain. In a heart-wrenching final stand, Storm, Bishop, Blink, Sunspot, Colossus, Iceman, and Magneto fight to their absolute deaths against endless hordes of adaptive machines to buy every crucial second. As Sentinels breach the inner sanctum and aim their incinerator beams at Kitty and Logan, the 1973 timeline rewrite takes effect—instantly wiping the apocalyptic Sentinels out of existence."
+        ],
+        "characters": [
+          "logan-wolverine",
+          "kitty-pryde",
+          "charles-xavier",
+          "erik-lehnsherr",
+          "storm-ororo-munroe",
+          "bishop-lucas-bishop",
+          "iceman-bobby-drake",
+          "colossus-piotr-rasputin",
+          "blink-clarice-ferguson",
+          "sunspot-roberto-da-costa",
+          "warpath-james-proudstar"
+        ],
+        "stones": [],
+        "deaths": [
+          "Storm (Sentinel Harpoon)",
+          "Bishop (Overload Detonation)",
+          "Blink (Sentinel Impalement)",
+          "Sunspot (Cryo-Decapitation)",
+          "Colossus (Bisection)",
+          "Iceman (Decapitation)"
+        ],
+        "mcuHighlights": [
+          "Wolverine's 50-Year Mind Displacement",
+          "The X-Men's Sacrificial Defense of Wulin Monastery",
+          "Erasure of the Dystopian Sentinel Reality"
+        ],
+        "locations": [
+          {
+            "name": "Wulin Mountain Sanctuary & Monastery",
+            "cityOrRegion": "Himalayas",
+            "countryOrRealm": "China / Tibet",
+            "planet": "Earth-10005",
+            "coordinates": [
+              28.000,
+              86.852
+            ],
+            "characters": [
+              "logan-wolverine",
+              "kitty-pryde",
+              "charles-xavier",
+              "erik-lehnsherr",
+              "storm-ororo-munroe",
+              "bishop-lucas-bishop",
+              "iceman-bobby-drake",
+              "colossus-piotr-rasputin",
+              "blink-clarice-ferguson",
+              "sunspot-roberto-da-costa",
+              "warpath-james-proudstar"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "event-2023-dofp-3",
+        "eraId": "era-2023-days-of-future-past",
+        "eraTitle": "2023 (Earth-10005 / Dystopia & Reset)",
+        "mediaKey": "x-men-days-of-future-past",
+        "mediaTitle": "X-Men: Days of Future Past (2014)",
+        "mediaType": "movie",
+        "mediaPhase": "Phase 2",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-10005 (Revised Post-DOFP Timeline)",
+        "branchDetails": "Revised Peaceful Future: Logan Awakens with Cyclops & Jean Alive",
+        "rawClasses": [
+          "x-men-days-of-future-past"
+        ],
+        "rawHtml": "<p>Logan awakens in a comfortable bed at the sunlit, magnificent <strong>Xavier's School for Gifted Youngsters</strong> in Westchester County, New York. Wandering through the peaceful hallways, he is stunned to discover that the dark future has been completely rewritten: mutant students attend classes in peace, <strong class=\"hank-mccoy\">Hank McCoy (Beast)</strong> greets him, and his fallen comrades <strong class=\"storm-ororo-munroe\">Storm</strong>, <strong class=\"cyclops-scott-summers\">Scott Summers (Cyclops)</strong>, and <strong class=\"jean-grey\">Jean Grey (Phoenix)</strong> are alive and flourishing.</p>\n<p>Entering the headmaster's office, Logan meets an elderly <strong class=\"charles-xavier\">Charles Xavier</strong>. Having lived through fifty years of a timeline he only partially remembers, Logan asks Charles for a history lesson on everything that transpired since 1973—with Charles smiling warmly and welcoming him home.</p>",
+        "paragraphs": [
+          "Logan awakens in a comfortable bed at the sunlit, magnificent <strong>Xavier's School for Gifted Youngsters</strong> in Westchester County, New York. Wandering through the peaceful hallways, he is stunned to discover that the dark future has been completely rewritten: mutant students attend classes in peace, <strong class=\"hank-mccoy\">Hank McCoy (Beast)</strong> greets him, and his fallen comrades <strong class=\"storm-ororo-munroe\">Storm</strong>, <strong class=\"cyclops-scott-summers\">Scott Summers (Cyclops)</strong>, and <strong class=\"jean-grey\">Jean Grey (Phoenix)</strong> are alive and flourishing.",
+          "Entering the headmaster's office, Logan meets an elderly <strong class=\"charles-xavier\">Charles Xavier</strong>. Having lived through fifty years of a timeline he only partially remembers, Logan asks Charles for a history lesson on everything that transpired since 1973—with Charles smiling warmly and welcoming him home."
+        ],
+        "characters": [
+          "logan-wolverine",
+          "charles-xavier",
+          "cyclops-scott-summers",
+          "jean-grey",
+          "storm-ororo-munroe",
+          "hank-mccoy"
+        ],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "Logan Awakens in the Revised 2023 Timeline",
+          "Resurrection of Cyclops & Jean Grey",
+          "Charles Xavier Welcomes Wolverine Home"
+        ],
+        "locations": [
+          {
+            "name": "Xavier's School for Gifted Youngsters",
+            "cityOrRegion": "Westchester County, New York",
+            "countryOrRealm": "United States",
+            "planet": "Earth-10005",
+            "coordinates": [
+              41.122,
+              -73.7949
+            ],
+            "characters": [
+              "logan-wolverine",
+              "charles-xavier",
+              "cyclops-scott-summers",
+              "jean-grey",
+              "storm-ororo-munroe",
+              "hank-mccoy"
+            ]
+          }
+        ]
       }
     ]
   },

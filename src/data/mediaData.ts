@@ -789,6 +789,21 @@ export const mediaData: Record<string, MediaItem> = {
     "primaryUniverse": "Earth-10005 (Fox X-Men Universe)",
     "studio": "Fox",
     "description": "The epic origin of Wolverine, spanning over a century of wars, Team X, and the agonizing Weapon X Adamantium bonding program."
+  },
+  "x-men-days-of-future-past": {
+    "id": "x-men-days-of-future-past",
+    "cssClass": "x-men-days-of-future-past",
+    "title": "X-Men: Days of Future Past",
+    "shortTitle": "X-Men: Days of Future Past",
+    "releaseYear": "2014",
+    "type": "movie",
+    "phase": "Phase 2",
+    "posterColor": "#581c87",
+    "timelineOrder": 60,
+    "timelineType": "multiverse-alternate",
+    "primaryUniverse": "Earth-10005 (Fox X-Men Universe)",
+    "studio": "Fox",
+    "description": "To prevent the total annihilation of mutantkind and humanity by adaptive Sentinels in a dystopian 2023, Wolverine's consciousness is projected into 1973 to unite the broken younger Charles Xavier and Magneto and stop Mystique from assassinating Bolivar Trask."
   }
 };
 

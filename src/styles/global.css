@@ -266,6 +266,18 @@
 .mcu-html-content .fred-dukes { color: #eab308; font-weight: 700; }
 .mcu-html-content .agent-zero { color: #94a3b8; font-weight: 700; }
 .mcu-html-content .cyclops-scott-summers { color: #60a5fa; font-weight: 700; }
+.mcu-html-content .quicksilver-peter-maximoff { color: #93c5fd; font-weight: 700; text-shadow: 0 0 6px rgba(147, 197, 253, 0.4); }
+.mcu-html-content .bolivar-trask { color: #d97706; font-weight: 700; }
+.mcu-html-content .kitty-pryde { color: #a78bfa; font-weight: 700; }
+.mcu-html-content .storm-ororo-munroe { color: #38bdf8; font-weight: 700; text-shadow: 0 0 8px rgba(56, 189, 248, 0.5); }
+.mcu-html-content .iceman-bobby-drake { color: #67e8f9; font-weight: 700; text-shadow: 0 0 8px rgba(103, 232, 249, 0.5); }
+.mcu-html-content .colossus-piotr-rasputin { color: #e2e8f0; font-weight: 700; }
+.mcu-html-content .bishop-lucas-bishop { color: #f87171; font-weight: 700; }
+.mcu-html-content .blink-clarice-ferguson { color: #c084fc; font-weight: 700; text-shadow: 0 0 8px rgba(192, 132, 252, 0.5); }
+.mcu-html-content .sunspot-roberto-da-costa { color: #fb923c; font-weight: 700; text-shadow: 0 0 8px rgba(251, 146, 60, 0.5); }
+.mcu-html-content .warpath-james-proudstar { color: #a8a29e; font-weight: 700; }
+.mcu-html-content .en-sabah-nur-apocalypse { color: #818cf8; font-weight: 700; text-shadow: 0 0 10px rgba(129, 140, 248, 0.6); }
+.mcu-html-content .jean-grey { color: #f97316; font-weight: 700; text-shadow: 0 0 8px rgba(249, 115, 22, 0.5); }
 
 /* Leaflet Marvel Tactical Dark Mode */
 .leaflet-container {

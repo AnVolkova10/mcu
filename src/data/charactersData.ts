@@ -1883,6 +1883,229 @@ export const charactersData: Record<string, Character> = {
     "originLocation": "United States (Earth-10005)",
     "status": "alive",
     "bio": "Mutant leader gifted with powerful, uncontrollable beams of ruby-red concussive optic energy emitted constantly from his eyes, harnessed through specialized quartz-ruby visors."
+  },
+  "quicksilver-peter-maximoff": {
+    "id": "quicksilver-peter-maximoff",
+    "name": "Peter Maximoff / Quicksilver",
+    "alias": "Quicksilver",
+    "cssClass": "quicksilver-peter-maximoff",
+    "color": "#93c5fd",
+    "bgBadge": "bg-sky-950/80 hover:bg-sky-900/90",
+    "textBadge": "text-sky-300",
+    "borderBadge": "border-sky-500",
+    "role": "hero",
+    "affiliation": "X-Men / Independent",
+    "groups": [
+      "X-Men",
+      "Mutants"
+    ],
+    "originLocation": "Virginia, United States (Earth-10005)",
+    "status": "alive",
+    "bio": "Playful and hyper-accelerated mutant capable of moving and reacting at extreme hypersonic speeds, making bullets and physical environments appear virtually frozen in time."
+  },
+  "bolivar-trask": {
+    "id": "bolivar-trask",
+    "name": "Dr. Bolivar Trask",
+    "alias": "Trask",
+    "cssClass": "bolivar-trask",
+    "color": "#d97706",
+    "bgBadge": "bg-amber-950/80 hover:bg-amber-900/90",
+    "textBadge": "text-amber-300",
+    "borderBadge": "border-amber-600",
+    "role": "villain",
+    "affiliation": "Trask Industries / US Department of Defense",
+    "groups": [
+      "Trask Industries",
+      "Humanity"
+    ],
+    "originLocation": "United States (Earth-10005)",
+    "status": "alive",
+    "bio": "Visionary military scientist and founder of Trask Industries who designed the robotic Sentinel program, harvesting mutant genetic tissue to construct humanity's ultimate anti-mutant defense systems."
+  },
+  "kitty-pryde": {
+    "id": "kitty-pryde",
+    "name": "Kitty Pryde / Shadowcat",
+    "alias": "Shadowcat",
+    "cssClass": "kitty-pryde",
+    "color": "#a78bfa",
+    "bgBadge": "bg-purple-950/80 hover:bg-purple-900/90",
+    "textBadge": "text-purple-300",
+    "borderBadge": "border-purple-500",
+    "role": "hero",
+    "affiliation": "Mutant Resistance / X-Men",
+    "groups": [
+      "X-Men",
+      "Mutants"
+    ],
+    "originLocation": "United States (Earth-10005)",
+    "status": "alive",
+    "bio": "Mutant with the power of molecular phasing who developed a chronal phase-shift ability, allowing her to send a person's consciousness back through time to change historical events."
+  },
+  "storm-ororo-munroe": {
+    "id": "storm-ororo-munroe",
+    "name": "Ororo Munroe / Storm",
+    "alias": "Storm",
+    "cssClass": "storm-ororo-munroe",
+    "color": "#38bdf8",
+    "bgBadge": "bg-cyan-950/80 hover:bg-cyan-900/90",
+    "textBadge": "text-cyan-300",
+    "borderBadge": "border-cyan-500",
+    "role": "hero",
+    "affiliation": "Xavier's School for Gifted Youngsters / X-Men",
+    "groups": [
+      "X-Men",
+      "Mutants"
+    ],
+    "originLocation": "Earth-10005",
+    "status": "alive",
+    "bio": "Veteran X-Men leader with atmospheric godlike control over weather patterns, summoning torrential blizzards, lightning strikes, hurricane gale-force winds, and tornado shields."
+  },
+  "iceman-bobby-drake": {
+    "id": "iceman-bobby-drake",
+    "name": "Bobby Drake / Iceman",
+    "alias": "Iceman",
+    "cssClass": "iceman-bobby-drake",
+    "color": "#67e8f9",
+    "bgBadge": "bg-sky-950/80 hover:bg-sky-900/90",
+    "textBadge": "text-sky-300",
+    "borderBadge": "border-sky-400",
+    "role": "hero",
+    "affiliation": "Mutant Resistance / X-Men",
+    "groups": [
+      "X-Men",
+      "Mutants"
+    ],
+    "originLocation": "United States (Earth-10005)",
+    "status": "alive",
+    "bio": "Omega-level mutant capable of lowering his thermal body temperature to absolute zero, transforming his physical form into solid organic ice and generating massive cryokinetic ice slides and frost blasts."
+  },
+  "colossus-piotr-rasputin": {
+    "id": "colossus-piotr-rasputin",
+    "name": "Piotr Rasputin / Colossus",
+    "alias": "Colossus",
+    "cssClass": "colossus-piotr-rasputin",
+    "color": "#e2e8f0",
+    "bgBadge": "bg-slate-900/80 hover:bg-slate-800/90",
+    "textBadge": "text-slate-200",
+    "borderBadge": "border-slate-400",
+    "role": "hero",
+    "affiliation": "Mutant Resistance / X-Men",
+    "groups": [
+      "X-Men",
+      "Mutants"
+    ],
+    "originLocation": "Russia (Earth-10005)",
+    "status": "alive",
+    "bio": "Heroic Russian mutant who can willingly convert his entire epidermis and muscular tissue into impervious organic steel, granting him godlike brute strength and near-impenetrable durability."
+  },
+  "bishop-lucas-bishop": {
+    "id": "bishop-lucas-bishop",
+    "name": "Lucas Bishop",
+    "alias": "Bishop",
+    "cssClass": "bishop-lucas-bishop",
+    "color": "#f87171",
+    "bgBadge": "bg-red-950/80 hover:bg-red-900/90",
+    "textBadge": "text-red-300",
+    "borderBadge": "border-red-600",
+    "role": "hero",
+    "affiliation": "Mutant Resistance",
+    "groups": [
+      "Mutants"
+    ],
+    "originLocation": "Earth-10005",
+    "status": "alive",
+    "bio": "Futuristic guerrilla warrior possessing the mutant ability to absorb all forms of kinetic, thermal, and directed energy and redirect it through high-caliber tactical plasma weaponry."
+  },
+  "blink-clarice-ferguson": {
+    "id": "blink-clarice-ferguson",
+    "name": "Clarice Ferguson / Blink",
+    "alias": "Blink",
+    "cssClass": "blink-clarice-ferguson",
+    "color": "#c084fc",
+    "bgBadge": "bg-fuchsia-950/80 hover:bg-fuchsia-900/90",
+    "textBadge": "text-fuchsia-300",
+    "borderBadge": "border-fuchsia-500",
+    "role": "hero",
+    "affiliation": "Mutant Resistance",
+    "groups": [
+      "Mutants"
+    ],
+    "originLocation": "Earth-10005",
+    "status": "alive",
+    "bio": "Skilled tactical resistance fighter who creates shimmering spatial teleportation portals by throwing purple crystalline energy daggers across the battlefield."
+  },
+  "sunspot-roberto-da-costa": {
+    "id": "sunspot-roberto-da-costa",
+    "name": "Roberto da Costa / Sunspot",
+    "alias": "Sunspot",
+    "cssClass": "sunspot-roberto-da-costa",
+    "color": "#fb923c",
+    "bgBadge": "bg-orange-950/80 hover:bg-orange-900/90",
+    "textBadge": "text-orange-300",
+    "borderBadge": "border-orange-500",
+    "role": "hero",
+    "affiliation": "Mutant Resistance",
+    "groups": [
+      "Mutants"
+    ],
+    "originLocation": "Brazil (Earth-10005)",
+    "status": "alive",
+    "bio": "Brazilian mutant who absorbs and channels solar radiation to combust into a fiery solar plasma form capable of supersonic flight and devastating thermal energy blasts."
+  },
+  "warpath-james-proudstar": {
+    "id": "warpath-james-proudstar",
+    "name": "James Proudstar / Warpath",
+    "alias": "Warpath",
+    "cssClass": "warpath-james-proudstar",
+    "color": "#a8a29e",
+    "bgBadge": "bg-stone-900/80 hover:bg-stone-800/90",
+    "textBadge": "text-stone-300",
+    "borderBadge": "border-stone-500",
+    "role": "hero",
+    "affiliation": "Mutant Resistance",
+    "groups": [
+      "Mutants"
+    ],
+    "originLocation": "United States (Earth-10005)",
+    "status": "alive",
+    "bio": "Apache warrior mutant with hyper-heightened superhuman senses, superhuman agility, physical invulnerability, and deadly dual vibranium bowie combat knives."
+  },
+  "en-sabah-nur-apocalypse": {
+    "id": "en-sabah-nur-apocalypse",
+    "name": "En Sabah Nur / Apocalypse",
+    "alias": "Apocalypse",
+    "cssClass": "en-sabah-nur-apocalypse",
+    "color": "#818cf8",
+    "bgBadge": "bg-indigo-950/80 hover:bg-indigo-900/90",
+    "textBadge": "text-indigo-300",
+    "borderBadge": "border-indigo-500",
+    "role": "villain",
+    "affiliation": "The Four Horsemen of Apocalypse",
+    "groups": [
+      "Mutants"
+    ],
+    "originLocation": "Ancient Egypt (Earth-10005)",
+    "status": "alive",
+    "bio": "The world's first ancient mutant, revered as an omnipotent deity in Ancient Egypt who wields near-limitless telekinesis, molecular manipulation, and physical transmigration."
+  },
+  "jean-grey": {
+    "id": "jean-grey",
+    "name": "Jean Grey / Phoenix",
+    "alias": "Phoenix",
+    "cssClass": "jean-grey",
+    "color": "#f97316",
+    "bgBadge": "bg-orange-950/80 hover:bg-orange-900/90",
+    "textBadge": "text-orange-300",
+    "borderBadge": "border-orange-500",
+    "role": "hero",
+    "affiliation": "Xavier's School for Gifted Youngsters / X-Men",
+    "groups": [
+      "X-Men",
+      "Mutants"
+    ],
+    "originLocation": "United States (Earth-10005)",
+    "status": "alive",
+    "bio": "Omega-level mutant telepath and telekinetic endowed with limitless psionic potential, capable of rearranging matter at the subatomic level and channeling the primordial Phoenix Force."
   }
 };
 
