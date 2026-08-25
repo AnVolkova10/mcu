@@ -283,6 +283,44 @@
 .mcu-html-content .archangel-warren-worthington { color: #cbd5e1; font-weight: 700; text-shadow: 0 0 6px rgba(203, 213, 225, 0.4); }
 .mcu-html-content .vuk-dbari { color: #c7d2fe; font-weight: 700; text-shadow: 0 0 8px rgba(199, 210, 254, 0.6); }
 
+/* X-Men: The Animated Series & Additional Mutants */
+.mcu-html-content .jubilee-jubilation-lee { color: #facc15; font-weight: 700; text-shadow: 0 0 8px rgba(250, 204, 21, 0.5); }
+.mcu-html-content .gambit-remy-lebeau { color: #f472b6; font-weight: 700; text-shadow: 0 0 8px rgba(244, 114, 182, 0.5); }
+.mcu-html-content .rogue-anna-marie { color: #34d399; font-weight: 700; text-shadow: 0 0 8px rgba(52, 211, 153, 0.5); }
+.mcu-html-content .cable-nathan-summers { color: #38bdf8; font-weight: 700; text-shadow: 0 0 8px rgba(56, 189, 248, 0.5); }
+.mcu-html-content .morph-kevin-sydney { color: #a78bfa; font-weight: 700; text-shadow: 0 0 6px rgba(167, 139, 250, 0.4); }
+.mcu-html-content .juggernaut-cain-marko { color: #ef4444; font-weight: 700; text-shadow: 0 0 8px rgba(239, 68, 68, 0.5); }
+.mcu-html-content .master-mold { color: #a855f7; font-weight: 700; text-shadow: 0 0 8px rgba(168, 85, 247, 0.6); }
+.mcu-html-content .senator-robert-kelly { color: #94a3b8; font-weight: 600; }
+.mcu-html-content .azazel { color: #dc2626; font-weight: 700; text-shadow: 0 0 6px rgba(220, 38, 38, 0.4); }
+
+/* Eyes of Wakanda & Spider-Noir Operatives */
+.mcu-html-content .basha { color: #10b981; font-weight: 600; }
+.mcu-html-content .valkyrie-norn { color: #38bdf8; font-weight: 700; text-shadow: 0 0 6px rgba(56, 189, 248, 0.4); }
+.mcu-html-content .edward-addison { color: #94a3b8; font-weight: 600; }
+.mcu-html-content .flint-marko-noir { color: #fbbf24; font-weight: 700; text-shadow: 0 0 6px rgba(251, 191, 36, 0.4); }
+
+/* Additional MCU Canon Entities */
+.mcu-html-content .falcon { color: #f87171; font-weight: 600; }
+.mcu-html-content .war-machine { color: #94a3b8; font-weight: 600; }
+.mcu-html-content .thanos { color: #a855f7; font-weight: 700; text-shadow: 0 0 8px rgba(168, 85, 247, 0.5); }
+.mcu-html-content .odin { color: #f59e0b; font-weight: 700; text-shadow: 0 0 8px rgba(245, 158, 11, 0.5); }
+.mcu-html-content .maria-hill { color: #94a3b8; font-weight: 600; }
+.mcu-html-content .shuri { color: #a855f7; font-weight: 700; }
+.mcu-html-content .okoye { color: #f59e0b; font-weight: 700; }
+.mcu-html-content .nakia { color: #34d399; font-weight: 600; }
+.mcu-html-content .nebula { color: #38bdf8; font-weight: 700; }
+.mcu-html-content .mantis { color: #a3e635; font-weight: 600; }
+.mcu-html-content .valkyrie { color: #38bdf8; font-weight: 700; }
+.mcu-html-content .colleen-wing { color: #facc15; font-weight: 600; }
+.mcu-html-content .pietro { color: #93c5fd; font-weight: 700; }
+.mcu-html-content .captain-marvel { color: #fbbf24; font-weight: 700; text-shadow: 0 0 8px rgba(251, 191, 36, 0.6); }
+.mcu-html-content .talos { color: #84cc16; font-weight: 600; }
+.mcu-html-content .goose { color: #f97316; font-weight: 600; }
+.mcu-html-content .elektra { color: #ef4444; font-weight: 700; }
+.mcu-html-content .cloak { color: #6366f1; font-weight: 700; text-shadow: 0 0 8px rgba(99, 102, 241, 0.6); }
+.mcu-html-content .dagger { color: #e0f2fe; font-weight: 700; text-shadow: 0 0 8px rgba(224, 242, 254, 0.8); }
+
 /* Leaflet Marvel Tactical Dark Mode */
 .leaflet-container {
   background-color: #030712 !important;

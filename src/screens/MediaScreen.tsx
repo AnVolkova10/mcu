@@ -17,7 +17,9 @@ import {
   Hourglass,
   Tag,
   X,
-  Video
+  Video,
+  ChevronDown,
+  Globe2
 } from 'lucide-react';
 
 export const MediaScreen: React.FC = () => {
@@ -26,6 +28,7 @@ export const MediaScreen: React.FC = () => {
   const [selectedPhase, setSelectedPhase] = useState<string>('all');
   const [selectedFormat, setSelectedFormat] = useState<string>('all');
   const [selectedVisualType, setSelectedVisualType] = useState<string>('all');
+  const [selectedUniverse, setSelectedUniverse] = useState<string>('all');
   const [selectedYear, setSelectedYear] = useState<string>('all');
   const [sortBy, setSortBy] = useState<string>('chronological');
 
@@ -72,6 +75,14 @@ export const MediaScreen: React.FC = () => {
 
   const phases = ['all', 'Phase 1', 'Phase 2', 'Phase 3', 'Phase 4', 'Phase 5', 'Marvel Television', 'One-Shot'];
 
+  const universes = [
+    { id: 'all', label: 'ALL REALITIES' },
+    { id: 'sacred-616', label: '🛡️ SACRED TIMELINE (616)' },
+    { id: 'earth-10005', label: '🧬 FOX X-MEN (10005)' },
+    { id: 'earth-92131', label: '📺 X-MEN TAS (92131)' },
+    { id: 'earth-90214', label: '🕷️ SPIDER-NOIR (90214)' },
+  ];
+
   const formats = [
     { id: 'all', label: 'ALL FORMATS' },
     { id: 'movie', label: '🎬 MOVIES' },
@@ -105,11 +116,18 @@ export const MediaScreen: React.FC = () => {
           const matchShort = m.shortTitle.toLowerCase().includes(q);
           const matchDesc = m.description.toLowerCase().includes(q);
           const matchPhase = m.phase.toLowerCase().includes(q);
-          if (!matchTitle && !matchShort && !matchDesc && !matchPhase) return false;
+          const matchUniverse = m.primaryUniverse?.toLowerCase().includes(q);
+          if (!matchTitle && !matchShort && !matchDesc && !matchPhase && !matchUniverse) return false;
         }
 
         // Phase filter
         if (selectedPhase !== 'all' && m.phase !== selectedPhase) return false;
+
+        // Universe filter
+        if (selectedUniverse === 'sacred-616' && (m.timelineType === 'multiverse-alternate' || (m.primaryUniverse && !m.primaryUniverse.includes('616')))) return false;
+        if (selectedUniverse === 'earth-10005' && !m.primaryUniverse?.includes('10005')) return false;
+        if (selectedUniverse === 'earth-92131' && !m.primaryUniverse?.includes('92131')) return false;
+        if (selectedUniverse === 'earth-90214' && !m.primaryUniverse?.includes('90214')) return false;
 
         // Year filter
         if (selectedYear !== 'all') {
@@ -165,7 +183,26 @@ export const MediaScreen: React.FC = () => {
 
         return 0;
       });
-  }, [search, selectedPhase, selectedFormat, selectedVisualType, selectedYear, sortBy, mediaTimelineStats]);
+  }, [search, selectedPhase, selectedUniverse, selectedFormat, selectedVisualType, selectedYear, sortBy, mediaTimelineStats]);
+
+  const hasActiveFilters = 
+    Boolean(search.trim()) || 
+    selectedPhase !== 'all' || 
+    selectedUniverse !== 'all' || 
+    selectedFormat !== 'all' || 
+    selectedVisualType !== 'all' || 
+    selectedYear !== 'all' || 
+    sortBy !== 'chronological';
+
+  const resetMediaFilters = () => {
+    setSearch('');
+    setSelectedPhase('all');
+    setSelectedUniverse('all');
+    setSelectedFormat('all');
+    setSelectedVisualType('all');
+    setSelectedYear('all');
+    setSortBy('chronological');
+  };
 
   const renderMediaIcon = (m: (typeof allMedia)[0]) => {
     if (m.type === 'series') {
@@ -204,24 +241,6 @@ export const MediaScreen: React.FC = () => {
     if (m.type === 'oneshot') return 'SHORT FILM';
     if (m.type === 'special') return 'SPECIAL';
     return 'MOVIE';
-  };
-
-  const hasActiveFilters = Boolean(
-    search ||
-    selectedPhase !== 'all' ||
-    selectedFormat !== 'all' ||
-    selectedVisualType !== 'all' ||
-    selectedYear !== 'all' ||
-    sortBy !== 'chronological'
-  );
-
-  const resetMediaFilters = () => {
-    setSearch('');
-    setSelectedPhase('all');
-    setSelectedFormat('all');
-    setSelectedVisualType('all');
-    setSelectedYear('all');
-    setSortBy('chronological');
   };
 
   return (
@@ -265,12 +284,11 @@ export const MediaScreen: React.FC = () => {
           </div>
 
           {/* Sort Selector */}
-          <div className="flex items-center gap-2">
-            <ArrowUpDown className="w-4 h-4 text-[#e62429] shrink-0" />
+          <div className="relative">
             <select
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value)}
-              className="bg-[#0a0a0a] border border-[#2f2f2f] text-zinc-200 text-xs font-bold font-title tracking-wider rounded-lg px-3 py-2 focus:outline-none focus:border-[#e62429] cursor-pointer hover:border-zinc-500 transition-colors uppercase"
+              className="bg-[#0a0a0a] border border-[#2f2f2f] text-zinc-200 text-xs font-bold font-title tracking-wider rounded-lg pl-8 pr-8 py-2 focus:outline-none focus:border-[#e62429] cursor-pointer hover:border-zinc-500 transition-colors uppercase appearance-none"
             >
               {sortOptions.map((opt) => (
                 <option key={opt.id} value={opt.id}>
@@ -278,23 +296,26 @@ export const MediaScreen: React.FC = () => {
                 </option>
               ))}
             </select>
+            <ArrowUpDown className="absolute left-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-[#e62429] pointer-events-none" />
+            <ChevronDown className="absolute right-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-zinc-500 pointer-events-none" />
           </div>
 
           {/* Year Dropdown */}
-          <div className="flex items-center gap-2">
-            <Calendar className="w-4 h-4 text-amber-400 shrink-0" />
+          <div className="relative">
             <select
               value={selectedYear}
               onChange={(e) => setSelectedYear(e.target.value)}
-              className="bg-[#0a0a0a] border border-[#2f2f2f] text-zinc-200 text-xs font-bold font-title tracking-wider rounded-lg px-3 py-2 focus:outline-none focus:border-[#e62429] cursor-pointer hover:border-zinc-500 transition-colors uppercase"
+              className="bg-[#0a0a0a] border border-[#2f2f2f] text-zinc-200 text-xs font-bold font-title tracking-wider rounded-lg pl-8 pr-8 py-2 focus:outline-none focus:border-[#e62429] cursor-pointer hover:border-zinc-500 transition-colors uppercase appearance-none"
             >
-              <option value="all">📅 ALL YEARS</option>
+              <option value="all">ALL YEARS</option>
               {availableYears.filter((y) => y !== 'all').map((y) => (
                 <option key={y} value={y}>
                   YEAR {y}
                 </option>
               ))}
             </select>
+            <Calendar className="absolute left-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-amber-400 pointer-events-none" />
+            <ChevronDown className="absolute right-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-zinc-500 pointer-events-none" />
           </div>
 
           {hasActiveFilters && (
@@ -362,7 +383,7 @@ export const MediaScreen: React.FC = () => {
         <div className="pt-2 border-t border-[#222222]">
           <div className="flex items-center gap-1.5 text-xs font-bold text-zinc-400 uppercase tracking-wider mb-2 font-title">
             <Layers className="w-3.5 h-3.5 text-[#e62429]" />
-            <span>FILTER BY PHASE / UNIVERSE:</span>
+            <span>FILTER BY PRODUCTION PHASE:</span>
           </div>
           <div className="flex flex-wrap items-center gap-1.5">
             {phases.map((p) => (
@@ -376,6 +397,29 @@ export const MediaScreen: React.FC = () => {
                 }`}
               >
                 {p === 'all' ? 'ALL PHASES' : p}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* Universe / Multiverse Filter Chips */}
+        <div className="pt-2 border-t border-[#222222]">
+          <div className="flex items-center gap-1.5 text-xs font-bold text-zinc-400 uppercase tracking-wider mb-2 font-title">
+            <Globe2 className="w-3.5 h-3.5 text-sky-400" />
+            <span>FILTER BY UNIVERSE / REALITY:</span>
+          </div>
+          <div className="flex flex-wrap items-center gap-1.5">
+            {universes.map((u) => (
+              <button
+                key={u.id}
+                onClick={() => setSelectedUniverse(u.id)}
+                className={`px-2.5 py-1 rounded text-xs font-bold font-title tracking-wider uppercase transition-all cursor-pointer whitespace-nowrap ${
+                  selectedUniverse === u.id
+                    ? 'bg-sky-600 text-white shadow-md'
+                    : 'bg-[#000000] text-zinc-400 border border-[#2a2a2a] hover:text-white hover:border-zinc-500 hover:bg-[#181818]'
+                }`}
+              >
+                {u.label}
               </button>
             ))}
           </div>
