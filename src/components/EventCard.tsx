@@ -232,7 +232,13 @@ export const EventCard: React.FC<EventCardProps> = ({ event }) => {
               onClick={() => {
                 setSelectedMapLocationPin({
                   name: loc.name,
+                  cityOrRegion: loc.cityOrRegion,
+                  countryOrRealm: loc.countryOrRealm,
+                  planet: loc.planet,
                   coordinates: loc.coordinates,
+                  orbitType: loc.orbitType,
+                  altitudeKm: loc.altitudeKm,
+                  celestialSystem: loc.celestialSystem,
                   eventId: event.id,
                 });
                 setActiveScreen('map');

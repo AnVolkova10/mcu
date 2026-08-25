@@ -2161,6 +2161,270 @@ export const charactersData: Record<string, Character> = {
     "originLocation": "Earth-10005",
     "status": "deceased",
     "bio": "Mutant aerial combatant originally gifted with feathered wings, bio-mechanically enhanced by Apocalypse with impenetrable metallic razor wings that fire lethal razor-sharp steel flechettes."
+  },
+  "vuk-dbari": {
+    "id": "vuk-dbari",
+    "name": "Vuk (D'Bari Leader)",
+    "alias": "Vuk",
+    "cssClass": "vuk-dbari",
+    "color": "#c7d2fe",
+    "bgBadge": "bg-indigo-950/80 hover:bg-indigo-900/90",
+    "textBadge": "text-indigo-200",
+    "borderBadge": "border-indigo-400",
+    "role": "villain",
+    "affiliation": "D'Bari Empire",
+    "groups": [
+      "D'Bari Empire",
+      "Aliens"
+    ],
+    "originLocation": "D'Bari Homeworld (Extraterrestrial)",
+    "status": "deceased",
+    "bio": "Ruthless shapeshifting extraterrestrial leader of the D'Bari race whose planet was consumed by the cosmic Phoenix entity, who infiltrates Earth to manipulate Jean Grey and siphon the entity's limitless primordial power."
+  },
+  "jubilee-jubilation-lee": {
+    "id": "jubilee-jubilation-lee",
+    "name": "Jubilation Lee / Jubilee",
+    "alias": "Jubilee",
+    "cssClass": "jubilee-jubilation-lee",
+    "color": "#facc15",
+    "bgBadge": "bg-yellow-950/80 hover:bg-yellow-900/90",
+    "textBadge": "text-yellow-300",
+    "borderBadge": "border-yellow-500",
+    "role": "hero",
+    "affiliation": "Xavier's School for Gifted Youngsters / X-Men",
+    "groups": [
+      "X-Men",
+      "Mutants"
+    ],
+    "originLocation": "Beverly Hills, California (Earth-92131)",
+    "status": "alive",
+    "bio": "Spirited young mutant capable of generating and detonating multi-colored pyrotechnic energy plasmoids ('fireworks') with explosive concussive force."
+  },
+  "morph-kevin-sydney": {
+    "id": "morph-kevin-sydney",
+    "name": "Kevin Sydney / Morph",
+    "alias": "Morph",
+    "cssClass": "morph-kevin-sydney",
+    "color": "#a855f7",
+    "bgBadge": "bg-purple-950/80 hover:bg-purple-900/90",
+    "textBadge": "text-purple-300",
+    "borderBadge": "border-purple-500",
+    "role": "hero",
+    "affiliation": "X-Men",
+    "groups": [
+      "X-Men",
+      "Mutants"
+    ],
+    "originLocation": "United States (Earth-92131)",
+    "status": "alive",
+    "bio": "Jovial mutant shapeshifter capable of altering his physical cellular structure and vocal cords to flawlessly duplicate any human or mutant appearance."
+  },
+  "gambit-remy-lebeau": {
+    "id": "gambit-remy-lebeau",
+    "name": "Remy LeBeau / Gambit",
+    "alias": "Gambit",
+    "cssClass": "gambit-remy-lebeau",
+    "color": "#ec4899",
+    "bgBadge": "bg-pink-950/80 hover:bg-pink-900/90",
+    "textBadge": "text-pink-300",
+    "borderBadge": "border-pink-500",
+    "role": "hero",
+    "affiliation": "X-Men / Thieves Guild",
+    "groups": [
+      "X-Men",
+      "Mutants",
+      "Thieves Guild"
+    ],
+    "originLocation": "New Orleans, Louisiana (Earth-92131)",
+    "status": "alive",
+    "bio": "Cajun mutant rogue possessing the ability to charge inanimate objects with potent explosive bio-kinetic energy, favored with his kinetic playing cards and bo staff."
+  },
+  "rogue-anna-marie": {
+    "id": "rogue-anna-marie",
+    "name": "Anna Marie / Rogue",
+    "alias": "Rogue",
+    "cssClass": "rogue-anna-marie",
+    "color": "#10b981",
+    "bgBadge": "bg-emerald-950/80 hover:bg-emerald-900/90",
+    "textBadge": "text-emerald-300",
+    "borderBadge": "border-emerald-500",
+    "role": "hero",
+    "affiliation": "X-Men",
+    "groups": [
+      "X-Men",
+      "Mutants"
+    ],
+    "originLocation": "Caldecott County, Mississippi (Earth-92131)",
+    "status": "alive",
+    "bio": "Southern powerhouse mutant who absorbs memories, physical vitality, and superpowers through skin-to-skin touch, endowed with permanent flight and superhuman strength."
+  },
+  "cable-nathan-summers": {
+    "id": "cable-nathan-summers",
+    "name": "Nathan Summers / Cable",
+    "alias": "Cable",
+    "cssClass": "cable-nathan-summers",
+    "color": "#38bdf8",
+    "bgBadge": "bg-sky-950/80 hover:bg-sky-900/90",
+    "textBadge": "text-sky-300",
+    "borderBadge": "border-sky-500",
+    "role": "anti-hero",
+    "affiliation": "Clan Chosen / X-Force",
+    "groups": [
+      "Mutants"
+    ],
+    "originLocation": "Far Future (Earth-92131)",
+    "status": "alive",
+    "bio": "Time-traveling cybernetic mutant soldier from the 40th century armed with futuristic plasma weaponry and telekinetic shielding, waging a temporal war against Apocalypse."
+  },
+  "juggernaut-cain-marko": {
+    "id": "juggernaut-cain-marko",
+    "name": "Cain Marko / Juggernaut",
+    "alias": "Juggernaut",
+    "cssClass": "juggernaut-cain-marko",
+    "color": "#b91c1c",
+    "bgBadge": "bg-red-950/80 hover:bg-red-900/90",
+    "textBadge": "text-red-300",
+    "borderBadge": "border-red-600",
+    "role": "villain",
+    "affiliation": "Brotherhood of Evil Mutants",
+    "groups": [
+      "Villains"
+    ],
+    "originLocation": "United States (Earth-92131)",
+    "status": "alive",
+    "bio": "Stepbrother of Charles Xavier endowed with mystical superhuman strength and unstoppable physical kinetic momentum by the ancient Crimson Gem of Cyttorak."
+  },
+  "master-mold": {
+    "id": "master-mold",
+    "name": "Master Mold",
+    "alias": "Master Mold",
+    "cssClass": "master-mold",
+    "color": "#a855f7",
+    "bgBadge": "bg-purple-950/80 hover:bg-purple-900/90",
+    "textBadge": "text-purple-300",
+    "borderBadge": "border-purple-500",
+    "role": "villain",
+    "affiliation": "Sentinel Core",
+    "groups": [
+      "Sentinels",
+      "Artificial Intelligence"
+    ],
+    "originLocation": "Sentinel Fabrication Complex (Earth-92131)",
+    "status": "deceased",
+    "bio": "Colossal sentient AI supercomputer designed to manufacture and command Sentinels, which calculated that replacing human world leaders with brainwashed clones is the only logical path."
+  },
+  "senator-robert-kelly": {
+    "id": "senator-robert-kelly",
+    "name": "Senator Robert Kelly",
+    "alias": "Senator Kelly",
+    "cssClass": "senator-robert-kelly",
+    "color": "#64748b",
+    "bgBadge": "bg-slate-900/80 hover:bg-slate-800/90",
+    "textBadge": "text-slate-300",
+    "borderBadge": "border-slate-500",
+    "role": "anti-hero",
+    "affiliation": "United States Senate",
+    "groups": [
+      "Government"
+    ],
+    "originLocation": "Washington D.C. (Earth-92131)",
+    "status": "alive",
+    "bio": "Anti-mutant presidential candidate whose life was saved by the X-Men from Master Mold, leading him to advocate for peaceful human-mutant coexistence."
+  },
+  "basha": {
+    "id": "basha",
+    "name": "Basha",
+    "alias": "Basha",
+    "cssClass": "basha",
+    "color": "#10b981",
+    "bgBadge": "bg-emerald-950/80 hover:bg-emerald-900/90",
+    "textBadge": "text-emerald-300",
+    "borderBadge": "border-emerald-600",
+    "role": "hero",
+    "affiliation": "Hatut Zeraze / War Dogs",
+    "groups": [
+      "Wakandans",
+      "Hatut Zeraze"
+    ],
+    "originLocation": "Wakanda (Earth-616)",
+    "status": "deceased",
+    "bio": "Elite Hatut Zeraze operative dispatched to ancient Bronze Age Crete in 1260 B.C.E. alongside Kuda to retrieve a stolen Vibranium relic from the Knossos labyrinth."
+  },
+  "valkyrie-norn": {
+    "id": "valkyrie-norn",
+    "name": "Valkyrie of the Norns",
+    "alias": "Norn Valkyrie",
+    "cssClass": "valkyrie-norn",
+    "color": "#38bdf8",
+    "bgBadge": "bg-sky-950/80 hover:bg-sky-900/90",
+    "textBadge": "text-sky-300",
+    "borderBadge": "border-sky-500",
+    "role": "hero",
+    "affiliation": "Asgardian Shieldmaidens / Norns",
+    "groups": [
+      "Asgardians",
+      "Valkyries"
+    ],
+    "originLocation": "Asgard / Nornheim",
+    "status": "deceased",
+    "bio": "Fierce Asgardian warrior and shieldmaiden guided by the Norns who forged an ancient alliance with Wakandan War Dogs during their Mediterranean campaign in 1260 B.C.E."
+  },
+  "edward-addison": {
+    "id": "edward-addison",
+    "name": "Edward Addison",
+    "alias": "Captain Addison",
+    "cssClass": "edward-addison",
+    "color": "#94a3b8",
+    "bgBadge": "bg-slate-900/80 hover:bg-slate-800/90",
+    "textBadge": "text-slate-300",
+    "borderBadge": "border-slate-500",
+    "role": "hero",
+    "affiliation": "New York City Police Department",
+    "groups": [
+      "Law Enforcement",
+      "Humanity"
+    ],
+    "originLocation": "New York City (Earth-90214)",
+    "status": "alive",
+    "bio": "Veteran 1930s NYPD precinct captain in Great Depression Manhattan who collaborates with private investigator Ben Reilly against organized mob syndicates."
+  },
+  "flint-marko-noir": {
+    "id": "flint-marko-noir",
+    "name": "Flint Marko (Spider-Noir)",
+    "alias": "The Sandman",
+    "cssClass": "flint-marko-noir",
+    "color": "#d97706",
+    "bgBadge": "bg-amber-950/80 hover:bg-amber-900/90",
+    "textBadge": "text-amber-300",
+    "borderBadge": "border-amber-600",
+    "role": "villain",
+    "affiliation": "Manhattan Crime Syndicate",
+    "groups": [
+      "Villains",
+      "Criminals"
+    ],
+    "originLocation": "New York City (Earth-90214)",
+    "status": "alive",
+    "bio": "Ruthless 1930s enforcement muscle for the Goblin's underworld crime syndicate whose brute physical strength poses a lethal threat to Spider-Noir."
+  },
+  "azazel": {
+    "id": "azazel",
+    "name": "Azazel",
+    "alias": "Azazel",
+    "cssClass": "azazel",
+    "color": "#dc2626",
+    "bgBadge": "bg-red-950/80 hover:bg-red-900/90",
+    "textBadge": "text-red-300",
+    "borderBadge": "border-red-600",
+    "role": "villain",
+    "affiliation": "Hellfire Club / Brotherhood of Mutants",
+    "groups": [
+      "Hellfire Club",
+      "Mutants"
+    ],
+    "originLocation": "Earth-10005",
+    "status": "deceased",
+    "bio": "Demonic red-skinned mutant possessing instant interdimensional teleportation via brimstone smoke portals, serving as Sebastian Shaw's chief enforcer during the Cuban Missile Crisis."
   }
 };
 

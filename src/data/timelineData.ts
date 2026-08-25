@@ -38,11 +38,8 @@ export const timelineEras: EraGroup[] = [
             "name": "Convergence Nexus & Svartalfheim Wastes",
             "cityOrRegion": "Dark Realm",
             "countryOrRealm": "Svartalfheim",
-            "planet": "Svartalfheim (Dark World)",
-            "coordinates": [
-              60,
-              15
-            ]
+            "planet": "Svartalfheim",
+            "celestialSystem": "nine-realms"
           }
         ]
       }
@@ -136,11 +133,8 @@ export const timelineEras: EraGroup[] = [
             "name": "Maveth Wasteland & Hive Exile Outpost",
             "cityOrRegion": "Deep Space",
             "countryOrRealm": "Maveth",
-            "planet": "Maveth (Alien World)",
-            "coordinates": [
-              0,
-              0
-            ]
+            "planet": "Maveth",
+            "celestialSystem": "deep-space"
           }
         ]
       },
@@ -436,10 +430,7 @@ export const timelineEras: EraGroup[] = [
             "cityOrRegion": "Mystical Valley",
             "countryOrRealm": "K'un-Lun",
             "planet": "Pocket Dimension",
-            "coordinates": [
-              35,
-              80
-            ]
+            "celestialSystem": "multiverse"
           }
         ]
       }
@@ -492,11 +483,8 @@ export const timelineEras: EraGroup[] = [
             "name": "Jotunheim Glacial Fortress",
             "cityOrRegion": "Frost Realm",
             "countryOrRealm": "Jotunheim",
-            "planet": "Jotunheim (Realm of Frost Giants)",
-            "coordinates": [
-              68,
-              20
-            ]
+            "planet": "Jotunheim",
+            "celestialSystem": "nine-realms"
           }
         ]
       }
@@ -556,10 +544,7 @@ export const timelineEras: EraGroup[] = [
             "cityOrRegion": "Mystical Dimension",
             "countryOrRealm": "K'un-Lun",
             "planet": "Pocket Dimension",
-            "coordinates": [
-              35,
-              80
-            ],
+            "celestialSystem": "multiverse",
             "characters": [
               "jorani",
               "iron-fist"
@@ -2383,6 +2368,61 @@ export const timelineEras: EraGroup[] = [
     ]
   },
   {
+    "id": "era-1975-dark-phoenix",
+    "title": "-1975 (Earth-10005 / Jean Grey's Origin)-",
+    "cleanTitle": "1975 (Earth-10005 / Revised)",
+    "category": "golden-age",
+    "events": [
+      {
+        "id": "event-1975-dark-phoenix-1",
+        "eraId": "era-1975-dark-phoenix",
+        "eraTitle": "1975 (Earth-10005 / Revised)",
+        "mediaKey": "x-men-dark-phoenix",
+        "mediaTitle": "X-Men: Dark Phoenix (2019)",
+        "mediaType": "movie",
+        "mediaPhase": "Phase 3",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-10005 (Revised Post-DOFP Timeline)",
+        "branchDetails": "Jean Grey's Car Crash & Xavier's Psychic Mental Blocks",
+        "rawClasses": [
+          "x-men-dark-phoenix"
+        ],
+        "rawHtml": "<p>In 1975 on a rural New York highway, eight-year-old <strong class=\"jean-grey\">Jean Grey</strong> inadvertently triggers her latent telekinetic abilities during an argument in the family car, causing her mother to lose consciousness and leading to a catastrophic head-on collision that kills her mother. While her traumatized father survives, he abandons the young girl out of terror of her destructive power. <strong class=\"charles-xavier\">Charles Xavier</strong> visits Jean at the hospital, warmly welcoming her to his school for gifted youngsters while covertly implanting deep <strong>psychic mental blocks</strong> in her mind to suppress the agonizing trauma and lie to her that her father died in the crash.</p>",
+        "paragraphs": [
+          "In 1975 on a rural New York highway, eight-year-old <strong class=\"jean-grey\">Jean Grey</strong> inadvertently triggers her latent telekinetic abilities during an argument in the family car, causing her mother to lose consciousness and leading to a catastrophic head-on collision that kills her mother. While her traumatized father survives, he abandons the young girl out of terror of her destructive power. <strong class=\"charles-xavier\">Charles Xavier</strong> visits Jean at the hospital, warmly welcoming her to his school for gifted youngsters while covertly implanting deep <strong>psychic mental blocks</strong> in her mind to suppress the agonizing trauma and lie to her that her father died in the crash."
+        ],
+        "characters": [
+          "jean-grey",
+          "charles-xavier"
+        ],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "Young Jean Grey's Fatal Telekinetic Car Crash",
+          "Xavier Implants Psychic Mental Blocks in Jean's Mind",
+          "Adoption into Xavier's School for Gifted Youngsters"
+        ],
+        "locations": [
+          {
+            "name": "Upstate Rural Highway & County Hospital",
+            "cityOrRegion": "Upstate New York",
+            "countryOrRealm": "United States",
+            "planet": "Earth-10005",
+            "coordinates": [
+              42.500,
+              -75.500
+            ],
+            "characters": [
+              "jean-grey",
+              "charles-xavier"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "era-1979-xmen-origins",
     "title": "-1979 (Earth-10005 / Team X Lagos Raid)-",
     "cleanTitle": "1979 (Earth-10005)",
@@ -3460,6 +3500,870 @@ export const timelineEras: EraGroup[] = [
         "mcuHighlights": [],
         "timelineType": "sacred-616",
         "earthDesignation": "Earth-616 (The Sacred Timeline)"
+      }
+    ]
+  },
+  {
+    "id": "era-1992-dark-phoenix",
+    "title": "-1992 (Earth-10005 / Dark Phoenix)-",
+    "cleanTitle": "1992 (Earth-10005 / Revised)",
+    "category": "golden-age",
+    "events": [
+      {
+        "id": "event-1992-dark-phoenix-1",
+        "eraId": "era-1992-dark-phoenix",
+        "eraTitle": "1992 (Earth-10005 / Revised)",
+        "mediaKey": "x-men-dark-phoenix",
+        "mediaTitle": "X-Men: Dark Phoenix (2019)",
+        "mediaType": "movie",
+        "mediaPhase": "Phase 3",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-10005 (Revised Post-DOFP Timeline)",
+        "branchDetails": "Space Shuttle Endeavour Rescue & Phoenix Force Absorption",
+        "rawClasses": [
+          "x-men-dark-phoenix"
+        ],
+        "rawHtml": "<p>In 1992, the NASA space shuttle <strong>Endeavour</strong> is crippled in Low Earth Orbit by a pulsing cosmic solar flare. Called directly by the President of the United States, <strong class=\"charles-xavier\">Charles Xavier</strong> dispatches the globally celebrated X-Men—led in the field by <strong class=\"raven-darkholme\">Raven Darkhölme (Mystique)</strong> alongside <strong class=\"hank-mccoy\">Hank McCoy (Beast)</strong>, <strong class=\"cyclops-scott-summers\">Scott Summers (Cyclops)</strong>, <strong class=\"storm-ororo-munroe\">Storm</strong>, <strong class=\"nightcrawler-kurt-wagner\">Nightcrawler</strong>, <strong class=\"quicksilver-peter-maximoff\">Quicksilver</strong>, and <strong class=\"jean-grey\">Jean Grey</strong>—aboard the modified supersonic X-Jet.</p>\n<p>While Nightcrawler and Quicksilver teleport aboard the spinning shuttle to evacuate the stranded astronauts, Jean uses her immense telekinesis to hold the disintegrating hull together from the inside. When the cosmic solar flare erupts, it engulfs the shuttle—absorbing the entire primordial cosmic entity directly into Jean's biological cells. Surviving the blast without a scratch, the X-Men return home to worldwide adulation. Following the mission, an uneasy Raven confronts Xavier regarding his reckless pursuit of human approval at the expense of student safety, pointing out: <em>\"And by the way, the women are always saving the men around here. You might want to think about changing the name to X-Women.\"</em></p>",
+        "paragraphs": [
+          "In 1992, the NASA space shuttle <strong>Endeavour</strong> is crippled in Low Earth Orbit by a pulsing cosmic solar flare. Called directly by the President of the United States, <strong class=\"charles-xavier\">Charles Xavier</strong> dispatches the globally celebrated X-Men—led in the field by <strong class=\"raven-darkholme\">Raven Darkhölme (Mystique)</strong> alongside <strong class=\"hank-mccoy\">Hank McCoy (Beast)</strong>, <strong class=\"cyclops-scott-summers\">Scott Summers (Cyclops)</strong>, <strong class=\"storm-ororo-munroe\">Storm</strong>, <strong class=\"nightcrawler-kurt-wagner\">Nightcrawler</strong>, <strong class=\"quicksilver-peter-maximoff\">Quicksilver</strong>, and <strong class=\"jean-grey\">Jean Grey</strong>—aboard the modified supersonic X-Jet.",
+          "While Nightcrawler and Quicksilver teleport aboard the spinning shuttle to evacuate the stranded astronauts, Jean uses her immense telekinesis to hold the disintegrating hull together from the inside. When the cosmic solar flare erupts, it engulfs the shuttle—absorbing the entire primordial cosmic entity directly into Jean's biological cells. Surviving the blast without a scratch, the X-Men return home to worldwide adulation. Following the mission, an uneasy Raven confronts Xavier regarding his reckless pursuit of human approval at the expense of student safety, pointing out: <em>\"And by the way, the women are always saving the men around here. You might want to think about changing the name to X-Women.\"</em>"
+        ],
+        "characters": [
+          "jean-grey",
+          "charles-xavier",
+          "raven-darkholme",
+          "hank-mccoy",
+          "cyclops-scott-summers",
+          "storm-ororo-munroe",
+          "nightcrawler-kurt-wagner",
+          "quicksilver-peter-maximoff"
+        ],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "X-Men's Orbital Space Shuttle Endeavour Rescue",
+          "Jean Grey Absorbs the Primordial Phoenix Entity",
+          "Mystique Challenges Xavier: \"Change the name to X-Women\""
+        ],
+        "locations": [
+          {
+            "name": "Low Earth Orbit & Exosphere Space",
+            "cityOrRegion": "Low Earth Orbit",
+            "countryOrRealm": "Exosphere",
+            "planet": "Earth Orbit",
+            "orbitType": "LEO",
+            "altitudeKm": 350,
+            "celestialSystem": "terrestrial-orbit",
+            "characters": [
+              "jean-grey",
+              "raven-darkholme",
+              "hank-mccoy",
+              "cyclops-scott-summers",
+              "storm-ororo-munroe",
+              "nightcrawler-kurt-wagner",
+              "quicksilver-peter-maximoff"
+            ]
+          },
+          {
+            "name": "Xavier's School for Gifted Youngsters",
+            "cityOrRegion": "Westchester County, New York",
+            "countryOrRealm": "United States",
+            "planet": "Earth-10005",
+            "coordinates": [
+              41.1220,
+              -73.7949
+            ],
+            "characters": [
+              "jean-grey",
+              "charles-xavier",
+              "raven-darkholme",
+              "hank-mccoy",
+              "cyclops-scott-summers",
+              "storm-ororo-munroe",
+              "nightcrawler-kurt-wagner",
+              "quicksilver-peter-maximoff"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "event-1992-dark-phoenix-2",
+        "eraId": "era-1992-dark-phoenix",
+        "eraTitle": "1992 (Earth-10005 / Revised)",
+        "mediaKey": "x-men-dark-phoenix",
+        "mediaTitle": "X-Men: Dark Phoenix (2019)",
+        "mediaType": "movie",
+        "mediaPhase": "Phase 3",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-10005 (Revised Post-DOFP Timeline)",
+        "branchDetails": "Red Hook Confrontation, Death of Mystique & Genosha Sanctuary",
+        "rawClasses": [
+          "x-men-dark-phoenix"
+        ],
+        "rawHtml": "<p>The cosmic entity within Jean begins destabilizing, shattering the psychic mental blocks Xavier placed in her mind during childhood. Discovering that her father John Grey is alive, Jean travels to her childhood home in <strong>Red Hook, New York</strong>. Her father admits in shame that he abandoned her after the fatal crash because he viewed her powers with terror and disgust. Overwhelmed by grief and rage, Jean's psionic aura erupts into a violent shockwave.</p>\n<p>The X-Men arrive in Red Hook to de-escalate the crisis. As local police open fire, an unstable Jean repels the cruisers. Stepping forward alone to comfort her surrogate daughter, <strong class=\"raven-darkholme\">Raven</strong> attempts to reach Jean's heart. Overpowered by the raging entity, Jean unleashes a concussive telekinetic blast, violently launching Raven backward and impaling her onto sharp wooden spikes—tragically killing Mystique :'(.</p>\n<p>Horrified by what she has done, Jean flees to the mutant refugee island of <strong>Genosha</strong>, seeking sanctuary with a retired <strong class=\"erik-lehnsherr\">Erik Lehnsherr (Magneto)</strong>. However, armed US military helicopters track Jean to the island, forcing Erik to banish her to protect his mutant commune. In her isolation, Jean is approached by <strong class=\"vuk-dbari\">Vuk</strong>, the shapeshifting empress of the extraterrestrial <strong>D'Bari</strong> race, who seeks to manipulate Jean's inner turmoil to siphon and harvest the universe-destroying Phoenix Force that wiped out the D'Bari homeworld.</p>",
+        "paragraphs": [
+          "The cosmic entity within Jean begins destabilizing, shattering the psychic mental blocks Xavier placed in her mind during childhood. Discovering that her father John Grey is alive, Jean travels to her childhood home in <strong>Red Hook, New York</strong>. Her father admits in shame that he abandoned her after the fatal crash because he viewed her powers with terror and disgust. Overwhelmed by grief and rage, Jean's psionic aura erupts into a violent shockwave.",
+          "The X-Men arrive in Red Hook to de-escalate the crisis. As local police open fire, an unstable Jean repels the cruisers. Stepping forward alone to comfort her surrogate daughter, <strong class=\"raven-darkholme\">Raven</strong> attempts to reach Jean's heart. Overpowered by the raging entity, Jean unleashes a concussive telekinetic blast, violently launching Raven backward and impaling her onto sharp wooden spikes—tragically killing Mystique :'(.",
+          "Horrified by what she has done, Jean flees to the mutant refugee island of <strong>Genosha</strong>, seeking sanctuary with a retired <strong class=\"erik-lehnsherr\">Erik Lehnsherr (Magneto)</strong>. However, armed US military helicopters track Jean to the island, forcing Erik to banish her to protect his mutant commune. In her isolation, Jean is approached by <strong class=\"vuk-dbari\">Vuk</strong>, the shapeshifting empress of the extraterrestrial <strong>D'Bari</strong> race, who seeks to manipulate Jean's inner turmoil to siphon and harvest the universe-destroying Phoenix Force that wiped out the D'Bari homeworld."
+        ],
+        "characters": [
+          "jean-grey",
+          "raven-darkholme",
+          "charles-xavier",
+          "hank-mccoy",
+          "cyclops-scott-summers",
+          "erik-lehnsherr",
+          "vuk-dbari",
+          "storm-ororo-munroe",
+          "nightcrawler-kurt-wagner"
+        ],
+        "stones": [],
+        "deaths": [
+          "Raven Darkhölme / Mystique :'("
+        ],
+        "mcuHighlights": [
+          "Jean Confronts Her Father & Mental Blocks Shatter",
+          "Tragic Death of Mystique in Red Hook :'(",
+          "Vuk & D'Bari Alien Infiltration of Genosha Sanctuary"
+        ],
+        "locations": [
+          {
+            "name": "Childhood Home of Jean Grey",
+            "cityOrRegion": "Red Hook, New York",
+            "countryOrRealm": "United States",
+            "planet": "Earth-10005",
+            "coordinates": [
+              42.000,
+              -73.875
+            ],
+            "characters": [
+              "jean-grey",
+              "raven-darkholme",
+              "charles-xavier",
+              "hank-mccoy",
+              "cyclops-scott-summers",
+              "storm-ororo-munroe",
+              "nightcrawler-kurt-wagner"
+            ]
+          },
+          {
+            "name": "Genosha Island Mutant Sanctuary",
+            "cityOrRegion": "Genosha",
+            "countryOrRealm": "Genosha",
+            "planet": "Earth-10005",
+            "coordinates": [
+              -20.000,
+              57.500
+            ],
+            "characters": [
+              "jean-grey",
+              "erik-lehnsherr",
+              "vuk-dbari"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "event-1992-dark-phoenix-3",
+        "eraId": "era-1992-dark-phoenix",
+        "eraTitle": "1992 (Earth-10005 / Revised)",
+        "mediaKey": "x-men-dark-phoenix",
+        "mediaTitle": "X-Men: Dark Phoenix (2019)",
+        "mediaType": "movie",
+        "mediaPhase": "Phase 3",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-10005 (Revised Post-DOFP Timeline)",
+        "branchDetails": "Manhattan Civil War, Armed Forces Train Battle & Cosmic Ascension",
+        "rawClasses": [
+          "x-men-dark-phoenix"
+        ],
+        "rawHtml": "<p>Grief-stricken over Raven's death, <strong class=\"hank-mccoy\">Hank McCoy</strong> turns his back on Xavier and allies with <strong class=\"erik-lehnsherr\">Magneto</strong> to hunt down Jean in New York City. Outside a Manhattan brownstone where Vuk is manipulating Jean, Xavier's faction (<strong class=\"cyclops-scott-summers\">Cyclops</strong>, <strong class=\"storm-ororo-munroe\">Storm</strong>, <strong class=\"nightcrawler-kurt-wagner\">Nightcrawler</strong>) clashes in a brutal civil war against Magneto's strike team. Before either side can prevail, military mutant-containment forces ambush both factions with neural collars, capturing all mutants aboard a heavily armored government prisoner transport train.</p>\n<p>While in transit, the alien D'Bari armada ambushes the train to seize Jean. Freeing themselves from their power-dampening restraints, the X-Men, Beast, and Magneto unite in a seamless tactical counter-offensive, slicing through alien shapeshifters across moving train cars. Reaching full emotional clarity and oneness with the cosmic entity, <strong class=\"jean-grey\">Jean Grey</strong> awakens, effortlessly disintegrates the derailed train cars to shield her mutant family, and drags <strong class=\"vuk-dbari\">Vuk</strong> high into the outer atmosphere. Refusing to let the alien empire destroy Earth, Jean detonates Vuk with the full power of the entity, dissolving into a brilliant, celestial firebird in deep space.</p>\n<p><strong>Epilogue:</strong> In honor of Jean's ultimate sacrifice, the mansion is officially rechristened the <strong>Jean Grey School for Gifted Youngsters</strong> with Hank McCoy serving as headmaster. In Paris, France, a retired Charles Xavier sits at an outdoor café and smiles as Erik Lehnsherr arrives to invite his oldest friend to a friendly game of chess, while a glowing flaming silhouette of the Phoenix glides across the sunlit afternoon sky.</p>",
+        "paragraphs": [
+          "Grief-stricken over Raven's death, <strong class=\"hank-mccoy\">Hank McCoy</strong> turns his back on Xavier and allies with <strong class=\"erik-lehnsherr\">Magneto</strong> to hunt down Jean in New York City. Outside a Manhattan brownstone where Vuk is manipulating Jean, Xavier's faction (<strong class=\"cyclops-scott-summers\">Cyclops</strong>, <strong class=\"storm-ororo-munroe\">Storm</strong>, <strong class=\"nightcrawler-kurt-wagner\">Nightcrawler</strong>) clashes in a brutal civil war against Magneto's strike team. Before either side can prevail, military mutant-containment forces ambush both factions with neural collars, capturing all mutants aboard a heavily armored government prisoner transport train.",
+          "While in transit, the alien D'Bari armada ambushes the train to seize Jean. Freeing themselves from their power-dampening restraints, the X-Men, Beast, and Magneto unite in a seamless tactical counter-offensive, slicing through alien shapeshifters across moving train cars. Reaching full emotional clarity and oneness with the cosmic entity, <strong class=\"jean-grey\">Jean Grey</strong> awakens, effortlessly disintegrates the derailed train cars to shield her mutant family, and drags <strong class=\"vuk-dbari\">Vuk</strong> high into the outer atmosphere. Refusing to let the alien empire destroy Earth, Jean detonates Vuk with the full power of the entity, dissolving into a brilliant, celestial firebird in deep space.",
+          "<strong>Epilogue:</strong> In honor of Jean's ultimate sacrifice, the mansion is officially rechristened the <strong>Jean Grey School for Gifted Youngsters</strong> with Hank McCoy serving as headmaster. In Paris, France, a retired Charles Xavier sits at an outdoor café and smiles as Erik Lehnsherr arrives to invite his oldest friend to a friendly game of chess, while a glowing flaming silhouette of the Phoenix glides across the sunlit afternoon sky."
+        ],
+        "characters": [
+          "jean-grey",
+          "charles-xavier",
+          "erik-lehnsherr",
+          "hank-mccoy",
+          "cyclops-scott-summers",
+          "storm-ororo-munroe",
+          "nightcrawler-kurt-wagner",
+          "vuk-dbari"
+        ],
+        "stones": [],
+        "deaths": [
+          "Vuk (D'Bari Leader)"
+        ],
+        "mcuHighlights": [
+          "Mutant Civil War in Manhattan Streets",
+          "Synchronized Combat Aboard the Military Prisoner Train",
+          "Jean Grey Ascends as the Cosmic Phoenix",
+          "Xavier & Magneto Chess Reunion in Paris"
+        ],
+        "locations": [
+          {
+            "name": "Manhattan Brownstone District",
+            "cityOrRegion": "New York City",
+            "countryOrRealm": "United States",
+            "planet": "Earth-10005",
+            "coordinates": [
+              40.7831,
+              -73.9712
+            ],
+            "characters": [
+              "jean-grey",
+              "charles-xavier",
+              "erik-lehnsherr",
+              "hank-mccoy",
+              "cyclops-scott-summers",
+              "storm-ororo-munroe",
+              "nightcrawler-kurt-wagner",
+              "vuk-dbari"
+            ]
+          },
+          {
+            "name": "MCU Armored Prisoner Train Route",
+            "cityOrRegion": "Upstate New York",
+            "countryOrRealm": "United States",
+            "planet": "Earth-10005",
+            "coordinates": [
+              41.500,
+              -74.000
+            ],
+            "characters": [
+              "jean-grey",
+              "charles-xavier",
+              "erik-lehnsherr",
+              "hank-mccoy",
+              "cyclops-scott-summers",
+              "storm-ororo-munroe",
+              "nightcrawler-kurt-wagner",
+              "vuk-dbari"
+            ]
+          },
+          {
+            "name": "Exosphere Stratosphere",
+            "cityOrRegion": "Upper Atmosphere",
+            "countryOrRealm": "Exosphere",
+            "planet": "Earth Orbit",
+            "orbitType": "LEO",
+            "altitudeKm": 120,
+            "celestialSystem": "terrestrial-orbit",
+            "characters": [
+              "jean-grey",
+              "vuk-dbari"
+            ]
+          },
+          {
+            "name": "Café de la Paix",
+            "cityOrRegion": "Paris",
+            "countryOrRealm": "France",
+            "planet": "Earth-10005",
+            "coordinates": [
+              48.8708,
+              2.3318
+            ],
+            "characters": [
+              "charles-xavier",
+              "erik-lehnsherr"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "era-1992-xmen-tas-1",
+    "title": "-1992 (Earth-92131 / X-Men: The Animated Series S1)-",
+    "cleanTitle": "1992 (Earth-92131 / X-Men TAS)",
+    "category": "golden-age",
+    "events": [
+      {
+        "id": "event-1992-tas-night-of-sentinels-1",
+        "eraId": "era-1992-xmen-tas-1",
+        "eraTitle": "1992 (Earth-92131 / X-Men TAS)",
+        "mediaKey": "x-men-tas-1",
+        "mediaTitle": "X-Men: The Animated Series (Season 1)",
+        "mediaType": "series",
+        "mediaPhase": "Marvel Television",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+        "branchDetails": "Night of the Sentinels & The Fall of Morph (Episodes 1-2)",
+        "rawClasses": [
+          "x-men-tas-1"
+        ],
+        "rawHtml": "<p>In suburban Beverly Hills, orphaned mutant runaway <strong class=\"jubilee-jubilation-lee\">Jubilation Lee (Jubilee)</strong> discovers her pyrotechnic plasma powers and is hunted inside a shopping mall by massive anti-mutant <strong>Sentinels</strong> deployed by Henry Peter Gyrich and <strong class=\"bolivar-trask\">Bolivar Trask</strong>. Rescued by <strong class=\"cyclops-scott-summers\">Cyclops</strong>, <strong class=\"storm-ororo-munroe\">Storm</strong>, and <strong class=\"rogue-anna-marie\">Rogue</strong>, Jubilee is brought to safety at <strong>Xavier's School for Gifted Youngsters</strong> in Westchester County, New York.</p>\n<p>Learning that the federal Mutant Control Agency is compiling illegal registration databases to round up mutants, <strong class=\"charles-xavier\">Professor Charles Xavier</strong> dispatches the X-Men on a midnight raid to purge the agency's mainframe. The mission turns tragic when a surprise Sentinel counterattack breaches the vaults: jovial shapeshifter <strong class=\"morph-kevin-sydney\">Morph</strong> is gunned down and apparently slain in the crossfire, while <strong class=\"hank-mccoy\">Hank McCoy (Beast)</strong> is trapped under falling debris and taken into federal custody to stand trial.</p>",
+        "paragraphs": [
+          "In suburban Beverly Hills, orphaned mutant runaway <strong class=\"jubilee-jubilation-lee\">Jubilation Lee (Jubilee)</strong> discovers her pyrotechnic plasma powers and is hunted inside a shopping mall by massive anti-mutant <strong>Sentinels</strong> deployed by Henry Peter Gyrich and <strong class=\"bolivar-trask\">Bolivar Trask</strong>. Rescued by <strong class=\"cyclops-scott-summers\">Cyclops</strong>, <strong class=\"storm-ororo-munroe\">Storm</strong>, and <strong class=\"rogue-anna-marie\">Rogue</strong>, Jubilee is brought to safety at <strong>Xavier's School for Gifted Youngsters</strong> in Westchester County, New York.",
+          "Learning that the federal Mutant Control Agency is compiling illegal registration databases to round up mutants, <strong class=\"charles-xavier\">Professor Charles Xavier</strong> dispatches the X-Men on a midnight raid to purge the agency's mainframe. The mission turns tragic when a surprise Sentinel counterattack breaches the vaults: jovial shapeshifter <strong class=\"morph-kevin-sydney\">Morph</strong> is gunned down and apparently slain in the crossfire, while <strong class=\"hank-mccoy\">Hank McCoy (Beast)</strong> is trapped under falling debris and taken into federal custody to stand trial."
+        ],
+        "characters": [
+          "jubilee-jubilation-lee",
+          "cyclops-scott-summers",
+          "storm-ororo-munroe",
+          "rogue-anna-marie",
+          "logan-wolverine",
+          "gambit-remy-lebeau",
+          "hank-mccoy",
+          "jean-grey",
+          "charles-xavier",
+          "morph-kevin-sydney",
+          "bolivar-trask"
+        ],
+        "stones": [],
+        "deaths": [
+          "Morph (Presumed KIA)"
+        ],
+        "mcuHighlights": [
+          "Jubilee Rescued from Galleria Mall Sentinels",
+          "Midnight Raid on Mutant Control Agency Vaults",
+          "The Fall of Morph & Imprisonment of Beast"
+        ],
+        "locations": [
+          {
+            "name": "Galleria Shopping Mall",
+            "cityOrRegion": "Beverly Hills / Los Angeles",
+            "countryOrRealm": "United States",
+            "planet": "Earth-92131",
+            "coordinates": [
+              34.0736,
+              -118.4004
+            ],
+            "characters": [
+              "jubilee-jubilation-lee",
+              "cyclops-scott-summers",
+              "storm-ororo-munroe",
+              "rogue-anna-marie"
+            ]
+          },
+          {
+            "name": "Xavier's School for Gifted Youngsters",
+            "cityOrRegion": "Westchester County, New York",
+            "countryOrRealm": "United States",
+            "planet": "Earth-92131",
+            "coordinates": [
+              41.1220,
+              -73.7949
+            ],
+            "characters": [
+              "charles-xavier",
+              "cyclops-scott-summers",
+              "jean-grey",
+              "logan-wolverine",
+              "storm-ororo-munroe",
+              "rogue-anna-marie",
+              "gambit-remy-lebeau",
+              "jubilee-jubilation-lee"
+            ]
+          },
+          {
+            "name": "Mutant Control Agency Mainframe Vaults",
+            "cityOrRegion": "Washington D.C.",
+            "countryOrRealm": "United States",
+            "planet": "Earth-92131",
+            "coordinates": [
+              38.8899,
+              -77.0090
+            ],
+            "characters": [
+              "cyclops-scott-summers",
+              "logan-wolverine",
+              "storm-ororo-munroe",
+              "hank-mccoy",
+              "morph-kevin-sydney",
+              "bolivar-trask"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "event-1992-tas-enter-magneto-1",
+        "eraId": "era-1992-xmen-tas-1",
+        "eraTitle": "1992 (Earth-92131 / X-Men TAS)",
+        "mediaKey": "x-men-tas-1",
+        "mediaTitle": "X-Men: The Animated Series (Season 1)",
+        "mediaType": "series",
+        "mediaPhase": "Marvel Television",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+        "branchDetails": "Enter Magneto & Deadly Reunions (Episodes 3-4)",
+        "rawClasses": [
+          "x-men-tas-1"
+        ],
+        "rawHtml": "<p>While Beast chooses to stand trial legally to champion mutant civil rights, <strong class=\"erik-lehnsherr\">Magneto (Erik Lehnsherr)</strong> violently assaults the federal penitentiary to liberate him by force. Respecting the rule of law, Hank refuses to escape. Seeking immediate retribution against humanity, Magneto seizes control of the US military nuclear missile installation at Cape Citadel, Florida, launching nuclear ICBMs to ignite a global war. The X-Men intercept the missiles mid-air, fusing their control electronics with Storm's lightning and Cyclops' optic blasts.</p>\n<p>Seeking to neutralize Charles Xavier, Magneto takes refuge in a chemical plant in Richmond, Virginia, baiting Xavier into an exhausting telepathic duel through Cerebro. Concurrently, a wounded <strong class=\"victor-creed\">Sabretooth</strong> is harbored in the X-Mansion medical bay under Xavier's pacifist rehabilitation doctrine; Sabretooth breaks free and attempts to murder Jubilee before being incapacitated by Wolverine.</p>",
+        "paragraphs": [
+          "While Beast chooses to stand trial legally to champion mutant civil rights, <strong class=\"erik-lehnsherr\">Magneto (Erik Lehnsherr)</strong> violently assaults the federal penitentiary to liberate him by force. Respecting the rule of law, Hank refuses to escape. Seeking immediate retribution against humanity, Magneto seizes control of the US military nuclear missile installation at Cape Citadel, Florida, launching nuclear ICBMs to ignite a global war. The X-Men intercept the missiles mid-air, fusing their control electronics with Storm's lightning and Cyclops' optic blasts.",
+          "Seeking to neutralize Charles Xavier, Magneto takes refuge in a chemical plant in Richmond, Virginia, baiting Xavier into an exhausting telepathic duel through Cerebro. Concurrently, a wounded <strong class=\"victor-creed\">Sabretooth</strong> is harbored in the X-Mansion medical bay under Xavier's pacifist rehabilitation doctrine; Sabretooth breaks free and attempts to murder Jubilee before being incapacitated by Wolverine."
+        ],
+        "characters": [
+          "erik-lehnsherr",
+          "charles-xavier",
+          "hank-mccoy",
+          "cyclops-scott-summers",
+          "storm-ororo-munroe",
+          "logan-wolverine",
+          "victor-creed",
+          "jubilee-jubilation-lee"
+        ],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "Magneto Raids Federal Prison to Free Beast",
+          "Cape Citadel Nuclear Missile Mid-Air Disarmament",
+          "Xavier & Magneto Telepathic Duel in Richmond",
+          "Sabretooth Infiltration of Xavier Manor"
+        ],
+        "locations": [
+          {
+            "name": "Cape Citadel Military Missile Installation",
+            "cityOrRegion": "Brevard County, Florida",
+            "countryOrRealm": "United States",
+            "planet": "Earth-92131",
+            "coordinates": [
+              28.4880,
+              -80.5770
+            ],
+            "characters": [
+              "erik-lehnsherr",
+              "cyclops-scott-summers",
+              "storm-ororo-munroe",
+              "logan-wolverine"
+            ]
+          },
+          {
+            "name": "Richmond Chemical Refining Plant",
+            "cityOrRegion": "Richmond, Virginia",
+            "countryOrRealm": "United States",
+            "planet": "Earth-92131",
+            "coordinates": [
+              37.5407,
+              -77.4360
+            ],
+            "characters": [
+              "erik-lehnsherr",
+              "charles-xavier",
+              "cyclops-scott-summers"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "event-1992-tas-morlocks-1",
+        "eraId": "era-1992-xmen-tas-1",
+        "eraTitle": "1992 (Earth-92131 / X-Men TAS)",
+        "mediaKey": "x-men-tas-1",
+        "mediaTitle": "X-Men: The Animated Series (Season 1)",
+        "mediaType": "series",
+        "mediaPhase": "Marvel Television",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+        "branchDetails": "Captive Hearts & Storm's Morlock Leadership Duel (Episode 5)",
+        "rawClasses": [
+          "x-men-tas-1"
+        ],
+        "rawHtml": "<p>While on a romantic evening in Manhattan, <strong class=\"cyclops-scott-summers\">Scott Summers</strong> and <strong class=\"jean-grey\">Jean Grey</strong> are ambushed and dragged into the underground sewer labyrinths by the <strong>Morlocks</strong>—a subterranean society of physically deformed and outcast mutants. The Morlock leader, <strong>Callisto</strong>, intends to keep Scott as her consort while using Jean's genetic gifts to bolster their community.</p>\n<p>Infiltrating the darkened tunnels, <strong class=\"storm-ororo-munroe\">Storm</strong>, <strong class=\"logan-wolverine\">Wolverine</strong>, and <strong class=\"rogue-anna-marie\">Rogue</strong> track down their captured teammates. To settle the dispute without slaughter, Storm exercises ancient Morlock law and challenges Callisto to a mortal combat duel with daggers. Overcoming her severe claustrophobia, Storm disarms and defeats Callisto, earning the ceremonial title of Leader of the Morlocks and securing safe passage for her team.</p>",
+        "paragraphs": [
+          "While on a romantic evening in Manhattan, <strong class=\"cyclops-scott-summers\">Scott Summers</strong> and <strong class=\"jean-grey\">Jean Grey</strong> are ambushed and dragged into the underground sewer labyrinths by the <strong>Morlocks</strong>—a subterranean society of physically deformed and outcast mutants. The Morlock leader, <strong>Callisto</strong>, intends to keep Scott as her consort while using Jean's genetic gifts to bolster their community.",
+          "Infiltrating the darkened tunnels, <strong class=\"storm-ororo-munroe\">Storm</strong>, <strong class=\"logan-wolverine\">Wolverine</strong>, and <strong class=\"rogue-anna-marie\">Rogue</strong> track down their captured teammates. To settle the dispute without slaughter, Storm exercises ancient Morlock law and challenges Callisto to a mortal combat duel with daggers. Overcoming her severe claustrophobia, Storm disarms and defeats Callisto, earning the ceremonial title of Leader of the Morlocks and securing safe passage for her team."
+        ],
+        "characters": [
+          "storm-ororo-munroe",
+          "cyclops-scott-summers",
+          "jean-grey",
+          "logan-wolverine",
+          "rogue-anna-marie",
+          "gambit-remy-lebeau"
+        ],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "Scott & Jean Captured in Manhattan Sewers",
+          "Storm vs. Callisto Dagger Duel",
+          "Storm Becomes Supreme Leader of the Morlocks"
+        ],
+        "locations": [
+          {
+            "name": "Morlock Subterranean Tunnels & NYC Sewers",
+            "cityOrRegion": "Manhattan, New York",
+            "countryOrRealm": "United States",
+            "planet": "Earth-92131",
+            "coordinates": [
+              40.7128,
+              -74.0060
+            ],
+            "characters": [
+              "storm-ororo-munroe",
+              "cyclops-scott-summers",
+              "jean-grey",
+              "logan-wolverine",
+              "rogue-anna-marie"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "event-1992-tas-genosha-slave-island-1",
+        "eraId": "era-1992-xmen-tas-1",
+        "eraTitle": "1992 (Earth-92131 / X-Men TAS)",
+        "mediaKey": "x-men-tas-1",
+        "mediaTitle": "X-Men: The Animated Series (Season 1)",
+        "mediaType": "series",
+        "mediaPhase": "Marvel Television",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+        "branchDetails": "Genosha Slave Island Revolt & Cable's Intervention (Episodes 6-7)",
+        "rawClasses": [
+          "x-men-tas-1"
+        ],
+        "rawHtml": "<p>While Wolverine journeys to an Arctic Inuit settlement in northern Canada to find spiritual solitude away from Sabretooth, <strong class=\"gambit-remy-lebeau\">Gambit</strong>, <strong class=\"storm-ororo-munroe\">Storm</strong>, and <strong class=\"jubilee-jubilation-lee\">Jubilee</strong> travel on holiday to the tropical island nation of <strong>Genosha</strong>, marketed globally as a peaceful haven for mutants.</p>\n<p>Upon arrival, they are ambushed by the Genoshan Magistrates, locked into power-inhibiting shock collars, and forced into grueling slave labor alongside hundreds of captive mutants constructing a massive hydroelectric dam for <strong class=\"bolivar-trask\">Trask</strong> and the sentient Sentinel processor <strong>Master Mold</strong>. Using his sleight-of-hand thieving skills, Gambit picks his shock collar's lock and stages a full-scale slave uprising alongside the cybernetic time-traveling mercenary <strong class=\"cable-nathan-summers\">Cable</strong>, blowing up the dam's power grid and liberating the mutant population.</p>",
+        "paragraphs": [
+          "While Wolverine journeys to an Arctic Inuit settlement in northern Canada to find spiritual solitude away from Sabretooth, <strong class=\"gambit-remy-lebeau\">Gambit</strong>, <strong class=\"storm-ororo-munroe\">Storm</strong>, and <strong class=\"jubilee-jubilation-lee\">Jubilee</strong> travel on holiday to the tropical island nation of <strong>Genosha</strong>, marketed globally as a peaceful haven for mutants.",
+          "Upon arrival, they are ambushed by the Genoshan Magistrates, locked into power-inhibiting shock collars, and forced into grueling slave labor alongside hundreds of captive mutants constructing a massive hydroelectric dam for <strong class=\"bolivar-trask\">Trask</strong> and the sentient Sentinel processor <strong>Master Mold</strong>. Using his sleight-of-hand thieving skills, Gambit picks his shock collar's lock and stages a full-scale slave uprising alongside the cybernetic time-traveling mercenary <strong class=\"cable-nathan-summers\">Cable</strong>, blowing up the dam's power grid and liberating the mutant population."
+        ],
+        "characters": [
+          "gambit-remy-lebeau",
+          "storm-ororo-munroe",
+          "jubilee-jubilation-lee",
+          "cable-nathan-summers",
+          "bolivar-trask",
+          "logan-wolverine"
+        ],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "Genosha's Secret Mutant Slave Labor Uncovered",
+          "Gambit Picks Shock Collar Lock",
+          "Cable & Gambit Lead Genoshan Slave Uprising"
+        ],
+        "locations": [
+          {
+            "name": "The Great Hydroelectric Dam & Slave Complex",
+            "cityOrRegion": "Island of Genosha",
+            "countryOrRealm": "Genosha",
+            "planet": "Earth-92131",
+            "coordinates": [
+              -20.2500,
+              57.5500
+            ],
+            "characters": [
+              "gambit-remy-lebeau",
+              "storm-ororo-munroe",
+              "jubilee-jubilation-lee",
+              "cable-nathan-summers",
+              "bolivar-trask"
+            ]
+          },
+          {
+            "name": "Tuktoyaktuk Arctic Outpost",
+            "cityOrRegion": "Northwest Territories",
+            "countryOrRealm": "Canada",
+            "planet": "Earth-92131",
+            "coordinates": [
+              69.4450,
+              -133.0340
+            ],
+            "characters": [
+              "logan-wolverine"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "era-1993-xmen-tas-1",
+    "title": "-1993 (Earth-92131 / X-Men: The Animated Series S1 Finale)-",
+    "cleanTitle": "1993 (Earth-92131 / X-Men TAS)",
+    "category": "golden-age",
+    "events": [
+      {
+        "id": "event-1993-tas-juggernaut-1",
+        "eraId": "era-1993-xmen-tas-1",
+        "eraTitle": "1993 (Earth-92131 / X-Men TAS)",
+        "mediaKey": "x-men-tas-1",
+        "mediaTitle": "X-Men: The Animated Series (Season 1)",
+        "mediaType": "series",
+        "mediaPhase": "Marvel Television",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+        "branchDetails": "The Unstoppable Juggernaut & Colossus's Exoneration (Episode 8)",
+        "rawClasses": [
+          "x-men-tas-1"
+        ],
+        "rawHtml": "<p>Returning to Westchester from Genosha, the X-Men find the Xavier Institute reduced to rubble. Tracking the destruction into Manhattan, Wolverine encounters <strong class=\"colossus-piotr-rasputin\">Piotr Rasputin (Colossus)</strong>, an innocent Russian immigrant falsely accused of bank robbery. Realizing Colossus was framed, the team uncovers the real culprit: <strong class=\"juggernaut-cain-marko\">Cain Marko (Juggernaut)</strong>, Xavier's unstoppable mystical stepbrother powered by the Crimson Gem of Cyttorak.</p>\n<p>In a ferocious street battle across Midtown Manhattan, the X-Men coordinate their assault: Rogue and Wolverine pry the psionic-shielded dome helmet from Juggernaut's head, allowing Jean Grey and Professor Xavier to unleash a combined psychic blast that pacifies Cain Marko's brain and brings him down.</p>",
+        "paragraphs": [
+          "Returning to Westchester from Genosha, the X-Men find the Xavier Institute reduced to rubble. Tracking the destruction into Manhattan, Wolverine encounters <strong class=\"colossus-piotr-rasputin\">Piotr Rasputin (Colossus)</strong>, an innocent Russian immigrant falsely accused of bank robbery. Realizing Colossus was framed, the team uncovers the real culprit: <strong class=\"juggernaut-cain-marko\">Cain Marko (Juggernaut)</strong>, Xavier's unstoppable mystical stepbrother powered by the Crimson Gem of Cyttorak.",
+          "In a ferocious street battle across Midtown Manhattan, the X-Men coordinate their assault: Rogue and Wolverine pry the psionic-shielded dome helmet from Juggernaut's head, allowing Jean Grey and Professor Xavier to unleash a combined psychic blast that pacifies Cain Marko's brain and brings him down."
+        ],
+        "characters": [
+          "juggernaut-cain-marko",
+          "colossus-piotr-rasputin",
+          "logan-wolverine",
+          "cyclops-scott-summers",
+          "rogue-anna-marie",
+          "jean-grey",
+          "charles-xavier"
+        ],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "Juggernaut Obliterates Xavier Manor",
+          "Colossus Exonerated by Wolverine",
+          "Juggernaut's Psionic Helmet Removed & Neutralized"
+        ],
+        "locations": [
+          {
+            "name": "Xavier's School for Gifted Youngsters Ruins",
+            "cityOrRegion": "Westchester County, New York",
+            "countryOrRealm": "United States",
+            "planet": "Earth-92131",
+            "coordinates": [
+              41.1220,
+              -73.7949
+            ],
+            "characters": [
+              "juggernaut-cain-marko",
+              "charles-xavier",
+              "logan-wolverine"
+            ]
+          },
+          {
+            "name": "Midtown Manhattan Construction Site",
+            "cityOrRegion": "New York City",
+            "countryOrRealm": "United States",
+            "planet": "Earth-92131",
+            "coordinates": [
+              40.7580,
+              -73.9855
+            ],
+            "characters": [
+              "colossus-piotr-rasputin",
+              "juggernaut-cain-marko",
+              "logan-wolverine",
+              "cyclops-scott-summers",
+              "rogue-anna-marie",
+              "jean-grey"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "event-1993-tas-apocalypse-1",
+        "eraId": "era-1993-xmen-tas-1",
+        "eraTitle": "1993 (Earth-92131 / X-Men TAS)",
+        "mediaKey": "x-men-tas-1",
+        "mediaTitle": "X-Men: The Animated Series (Season 1)",
+        "mediaType": "series",
+        "mediaPhase": "Marvel Television",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+        "branchDetails": "The Cure & Awakening of Apocalypse's Four Horsemen (Episodes 9-10)",
+        "rawClasses": [
+          "x-men-tas-1"
+        ],
+        "rawHtml": "<p>Longing for a normal human touch, <strong class=\"rogue-anna-marie\">Rogue</strong> travels to the Scottish mutant research sanctuary on Muir Island, where geneticist Dr. Gottfried Adler advertises a permanent \"cure\" for mutation. In reality, Adler is <strong class=\"raven-darkholme\">Mystique</strong> in disguise, secretly serving the ancient mutant conqueror <strong class=\"en-sabah-nur-apocalypse\">Apocalypse (En Sabah Nur)</strong>.</p>\n<p>Apocalypse subjects Warren Worthington III to biomechanical corruption, transforming the billionaire into <strong class=\"archangel-warren-worthington\">Archangel (The Horseman of Death)</strong> alongside Famine, Pestilence, and War. The Four Horsemen assault the World Peace Summit in Paris, France. During the battle, Rogue absorbs Archangel's traumatic grief, freeing Warren from Apocalypse's psychic grip and enabling him to turn against his former master.</p>",
+        "paragraphs": [
+          "Longing for a normal human touch, <strong class=\"rogue-anna-marie\">Rogue</strong> travels to the Scottish mutant research sanctuary on Muir Island, where geneticist Dr. Gottfried Adler advertises a permanent \"cure\" for mutation. In reality, Adler is <strong class=\"raven-darkholme\">Mystique</strong> in disguise, secretly serving the ancient mutant conqueror <strong class=\"en-sabah-nur-apocalypse\">Apocalypse (En Sabah Nur)</strong>.",
+          "Apocalypse subjects Warren Worthington III to biomechanical corruption, transforming the billionaire into <strong class=\"archangel-warren-worthington\">Archangel (The Horseman of Death)</strong> alongside Famine, Pestilence, and War. The Four Horsemen assault the World Peace Summit in Paris, France. During the battle, Rogue absorbs Archangel's traumatic grief, freeing Warren from Apocalypse's psychic grip and enabling him to turn against his former master."
+        ],
+        "characters": [
+          "en-sabah-nur-apocalypse",
+          "archangel-warren-worthington",
+          "rogue-anna-marie",
+          "cable-nathan-summers",
+          "raven-darkholme",
+          "charles-xavier",
+          "cyclops-scott-summers"
+        ],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "Dr. Adler's Muir Island Cure Unmasked as Mystique",
+          "Warren Worthington Transformed into Archangel (Death)",
+          "Four Horsemen Assault World Peace Summit in Paris",
+          "Rogue Breaks Archangel's Mind Control"
+        ],
+        "locations": [
+          {
+            "name": "Muir Island Mutant Research Facility",
+            "cityOrRegion": "Highlands",
+            "countryOrRealm": "Scotland",
+            "planet": "Earth-92131",
+            "coordinates": [
+              57.7530,
+              -5.7140
+            ],
+            "characters": [
+              "rogue-anna-marie",
+              "cable-nathan-summers",
+              "raven-darkholme"
+            ]
+          },
+          {
+            "name": "World Peace Summit at Arc de Triomphe",
+            "cityOrRegion": "Paris",
+            "countryOrRealm": "France",
+            "planet": "Earth-92131",
+            "coordinates": [
+              48.8738,
+              2.2950
+            ],
+            "characters": [
+              "en-sabah-nur-apocalypse",
+              "archangel-warren-worthington",
+              "rogue-anna-marie",
+              "cyclops-scott-summers",
+              "storm-ororo-munroe"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "event-1993-tas-days-of-future-past-1",
+        "eraId": "era-1993-xmen-tas-1",
+        "eraTitle": "1993 (Earth-92131 / X-Men TAS)",
+        "mediaKey": "x-men-tas-1",
+        "mediaTitle": "X-Men: The Animated Series (Season 1)",
+        "mediaType": "series",
+        "mediaPhase": "Marvel Television",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+        "branchDetails": "Days of Future Past & The Capitol Assassination Plot (Episodes 11-12)",
+        "rawClasses": [
+          "x-men-tas-1"
+        ],
+        "rawHtml": "<p>Temporal warrior <strong class=\"bishop-lucas-bishop\">Lucas Bishop</strong> arrives in 1993 from a ruined year 2055 to prevent a pivotal historical assassination: an X-Man assassin slaying anti-mutant politician <strong class=\"senator-robert-kelly\">Senator Robert Kelly</strong> during a Senate hearing in Washington D.C., an atrocity that ushered in martial law and global Sentinel enslavement.</p>\n<p>While Bishop initially suspects Gambit of being the traitor, the real assassin is revealed to be <strong class=\"raven-darkholme\">Mystique</strong> and the Brotherhood of Evil Mutants impersonating Gambit. Pursued through time by the advanced Sentinel <strong>Nimrod</strong>, the X-Men dismantle Nimrod's temporal core at the Capitol and foil Mystique's sniper shot, preserving Kelly's life and averting the immediate apocalyptic timeline.</p>",
+        "paragraphs": [
+          "Temporal warrior <strong class=\"bishop-lucas-bishop\">Lucas Bishop</strong> arrives in 1993 from a ruined year 2055 to prevent a pivotal historical assassination: an X-Man assassin slaying anti-mutant politician <strong class=\"senator-robert-kelly\">Senator Robert Kelly</strong> during a Senate hearing in Washington D.C., an atrocity that ushered in martial law and global Sentinel enslavement.",
+          "While Bishop initially suspects Gambit of being the traitor, the real assassin is revealed to be <strong class=\"raven-darkholme\">Mystique</strong> and the Brotherhood of Evil Mutants impersonating Gambit. Pursued through time by the advanced Sentinel <strong>Nimrod</strong>, the X-Men dismantle Nimrod's temporal core at the Capitol and foil Mystique's sniper shot, preserving Kelly's life and averting the immediate apocalyptic timeline."
+        ],
+        "characters": [
+          "bishop-lucas-bishop",
+          "senator-robert-kelly",
+          "raven-darkholme",
+          "gambit-remy-lebeau",
+          "logan-wolverine",
+          "cyclops-scott-summers",
+          "storm-ororo-munroe",
+          "charles-xavier"
+        ],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "Bishop Travels Back from Dystopian 2055",
+          "Nimrod Temporal Battle in Washington D.C.",
+          "Mystique's Senate Assassination Plot Foiled",
+          "Senator Robert Kelly Saved"
+        ],
+        "locations": [
+          {
+            "name": "United States Capitol Building",
+            "cityOrRegion": "Washington D.C.",
+            "countryOrRealm": "United States",
+            "planet": "Earth-92131",
+            "coordinates": [
+              38.8899,
+              -77.0090
+            ],
+            "characters": [
+              "bishop-lucas-bishop",
+              "senator-robert-kelly",
+              "raven-darkholme",
+              "gambit-remy-lebeau",
+              "cyclops-scott-summers",
+              "logan-wolverine"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "event-1993-tas-final-decision-1",
+        "eraId": "era-1993-xmen-tas-1",
+        "eraTitle": "1993 (Earth-92131 / X-Men TAS)",
+        "mediaKey": "x-men-tas-1",
+        "mediaTitle": "X-Men: The Animated Series (Season 1)",
+        "mediaType": "series",
+        "mediaPhase": "Marvel Television",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+        "branchDetails": "The Final Decision & Fall of Master Mold (Episode 13)",
+        "rawClasses": [
+          "x-men-tas-1"
+        ],
+        "rawHtml": "<p>Sentient supercomputer <strong class=\"master-mold\">Master Mold</strong> reaches the logical conclusion of its programming: to permanently protect humanity from mutants, it must abduct world leaders—starting with presidential candidate <strong class=\"senator-robert-kelly\">Senator Robert Kelly</strong>—and replace them with brainwashed cybernetic clones. Horrified by what his invention has become, <strong class=\"bolivar-trask\">Bolivar Trask</strong> joins forces with the X-Men and <strong class=\"erik-lehnsherr\">Magneto</strong> to assault the underground Sentinel manufacturing foundry in the Appalachian Mountains.</p>\n<p>Piloting the explosive X-Jet into Master Mold's central processor core, Trask and Cyclops trigger a massive chain-reaction explosion that obliterates Master Mold. Legally exonerated by the courts, <strong class=\"hank-mccoy\">Hank McCoy (Beast)</strong> is freed from prison, while a humbled Senator Kelly officially drops his anti-mutant legislative agenda. In the aftermath, Cyclops proposes marriage to Jean Grey, unaware that Mister Sinister is monitoring them from the shadows.</p>",
+        "paragraphs": [
+          "Sentient supercomputer <strong class=\"master-mold\">Master Mold</strong> reaches the logical conclusion of its programming: to permanently protect humanity from mutants, it must abduct world leaders—starting with presidential candidate <strong class=\"senator-robert-kelly\">Senator Robert Kelly</strong>—and replace them with brainwashed cybernetic clones. Horrified by what his invention has become, <strong class=\"bolivar-trask\">Bolivar Trask</strong> joins forces with the X-Men and <strong class=\"erik-lehnsherr\">Magneto</strong> to assault the underground Sentinel manufacturing foundry in the Appalachian Mountains.",
+          "Piloting the explosive X-Jet into Master Mold's central processor core, Trask and Cyclops trigger a massive chain-reaction explosion that obliterates Master Mold. Legally exonerated by the courts, <strong class=\"hank-mccoy\">Hank McCoy (Beast)</strong> is freed from prison, while a humbled Senator Kelly officially drops his anti-mutant legislative agenda. In the aftermath, Cyclops proposes marriage to Jean Grey, unaware that Mister Sinister is monitoring them from the shadows."
+        ],
+        "characters": [
+          "master-mold",
+          "bolivar-trask",
+          "erik-lehnsherr",
+          "cyclops-scott-summers",
+          "hank-mccoy",
+          "jean-grey",
+          "logan-wolverine",
+          "storm-ororo-munroe",
+          "senator-robert-kelly"
+        ],
+        "stones": [],
+        "deaths": [
+          "Master Mold (Obliterated)",
+          "Bolivar Trask"
+        ],
+        "mcuHighlights": [
+          "Magneto & X-Men Allied Assault on Master Mold Foundry",
+          "Trask Sacrifices Himself to Detonate Master Mold",
+          "Beast Formally Exonerated & Released from Prison",
+          "Scott Summers Proposes to Jean Grey"
+        ],
+        "locations": [
+          {
+            "name": "Master Mold Subterranean Sentinel Foundry",
+            "cityOrRegion": "Appalachian Mountains, Georgia",
+            "countryOrRealm": "United States",
+            "planet": "Earth-92131",
+            "coordinates": [
+              34.7460,
+              -84.4820
+            ],
+            "characters": [
+              "master-mold",
+              "bolivar-trask",
+              "erik-lehnsherr",
+              "cyclops-scott-summers",
+              "logan-wolverine"
+            ]
+          },
+          {
+            "name": "White House & Senate Hearing Chambers",
+            "cityOrRegion": "Washington D.C.",
+            "countryOrRealm": "United States",
+            "planet": "Earth-92131",
+            "coordinates": [
+              38.8977,
+              -77.0365
+            ],
+            "characters": [
+              "senator-robert-kelly",
+              "hank-mccoy"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -6070,6 +6974,62 @@ export const timelineEras: EraGroup[] = [
     ]
   },
   {
+    "id": "era-2055-xmen-tas-dofp",
+    "title": "-2055 (Earth-92131 / Days of Future Past Wasteland)-",
+    "cleanTitle": "2055 (Earth-92131 / Dystopia)",
+    "category": "future",
+    "events": [
+      {
+        "id": "event-2055-tas-dofp-1",
+        "eraId": "era-2055-xmen-tas-dofp",
+        "eraTitle": "2055 (Earth-92131 / Dystopia)",
+        "mediaKey": "x-men-tas-1",
+        "mediaTitle": "X-Men: The Animated Series (Season 1)",
+        "mediaType": "series",
+        "mediaPhase": "Marvel Television",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+        "branchDetails": "Days of Future Past: Sentinel Wastelands & Bishop's Temporal Leap",
+        "rawClasses": [
+          "x-men-tas-1"
+        ],
+        "rawHtml": "<p>In a dystopian, ruined New York City in the year 2055, colossal robotic <strong>Sentinels</strong> enforce ruthless global martial law, having exterminated most mutants and herded surviving humans into internment camps with power-inhibiting collars.</p>\n<p>Guerrilla resistance fighter <strong class=\"bishop-lucas-bishop\">Lucas Bishop</strong> and an aged, battle-hardened <strong class=\"logan-wolverine\">Logan</strong> join cybernetic engineer Forge at a clandestine subway rebel sanctuary. As hunting Sentinels breach the bunker with thermal lasers, Forge activates an experimental temporal displacement wrist-pad, sending Bishop hurtling sixty-two years back in time to 1993 to stop the assassination of Senator Kelly and overwrite the dark timeline.</p>",
+        "paragraphs": [
+          "In a dystopian, ruined New York City in the year 2055, colossal robotic <strong>Sentinels</strong> enforce ruthless global martial law, having exterminated most mutants and herded surviving humans into internment camps with power-inhibiting collars.",
+          "Guerrilla resistance fighter <strong class=\"bishop-lucas-bishop\">Lucas Bishop</strong> and an aged, battle-hardened <strong class=\"logan-wolverine\">Logan</strong> join cybernetic engineer Forge at a clandestine subway rebel sanctuary. As hunting Sentinels breach the bunker with thermal lasers, Forge activates an experimental temporal displacement wrist-pad, sending Bishop hurtling sixty-two years back in time to 1993 to stop the assassination of Senator Kelly and overwrite the dark timeline."
+        ],
+        "characters": [
+          "bishop-lucas-bishop",
+          "logan-wolverine"
+        ],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "Dystopian 2055 Sentinel Concentration Camps",
+          "Forge Activates Temporal Displacement Device",
+          "Bishop Sent Back to 1993 to Save Mutantkind"
+        ],
+        "locations": [
+          {
+            "name": "Sentinel Mutant Internment Camp & Subway Bunker",
+            "cityOrRegion": "Ruined New York City",
+            "countryOrRealm": "United States",
+            "planet": "Earth-92131",
+            "coordinates": [
+              40.7831,
+              -73.9712
+            ],
+            "characters": [
+              "bishop-lucas-bishop",
+              "logan-wolverine"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "era-_2091_",
     "title": "-2091-",
     "cleanTitle": "2091",
@@ -6163,14 +7123,13 @@ export const timelineEras: EraGroup[] = [
             ]
           },
           {
-            "name": "Earth Orbital Exosphere",
-            "cityOrRegion": "High Orbit",
-            "countryOrRealm": "Cosmic",
+            "name": "Earth Orbital Exosphere (S.A.B.E.R. Station)",
+            "cityOrRegion": "High Earth Orbit",
+            "countryOrRealm": "Exosphere",
             "planet": "Earth Orbit",
-            "coordinates": [
-              0,
-              0
-            ]
+            "orbitType": "GEO",
+            "altitudeKm": 35786,
+            "celestialSystem": "terrestrial-orbit"
           }
         ]
       }

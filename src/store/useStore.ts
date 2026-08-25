@@ -25,10 +25,26 @@ interface AppState {
 
   selectedMapLocationPin: {
     name: string;
+    cityOrRegion?: string;
+    countryOrRealm?: string;
+    planet?: string;
     coordinates?: [number, number];
+    orbitType?: 'LEO' | 'GEO' | 'lunar' | 'deep-space' | 'realm' | 'dimension';
+    altitudeKm?: number;
+    celestialSystem?: 'terrestrial-orbit' | 'solar-system' | 'nine-realms' | 'deep-space' | 'multiverse';
     eventId?: string;
   } | null;
-  setSelectedMapLocationPin: (loc: { name: string; coordinates?: [number, number]; eventId?: string } | null) => void;
+  setSelectedMapLocationPin: (loc: {
+    name: string;
+    cityOrRegion?: string;
+    countryOrRealm?: string;
+    planet?: string;
+    coordinates?: [number, number];
+    orbitType?: 'LEO' | 'GEO' | 'lunar' | 'deep-space' | 'realm' | 'dimension';
+    altitudeKm?: number;
+    celestialSystem?: 'terrestrial-orbit' | 'solar-system' | 'nine-realms' | 'deep-space' | 'multiverse';
+    eventId?: string;
+  } | null) => void;
 
   isSearchOpen: boolean;
   setIsSearchOpen: (open: boolean) => void;

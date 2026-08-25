@@ -27,8 +27,11 @@ export interface EventLocation {
   name: string;             // e.g. "Auschwitz", "Isodyne Energy", "Tønsberg Crypt", "Brooklyn Docks"
   cityOrRegion?: string;    // e.g. "New York City", "Bavaria", "Swiss Alps", "Crete", "Hollywood"
   countryOrRealm: string;   // e.g. "United States", "Poland", "Wakanda", "Norway", "Greece", "Asgard"
-  planet?: string;          // e.g. "Earth", "Asgard", "Jotunheim", "Vormir", "K'un-Lun"
-  coordinates?: [number, number]; // [lat, lng]
+  planet?: string;          // e.g. "Earth", "Asgard", "Jotunheim", "Vormir", "K'un-Lun", "Earth Orbit"
+  coordinates?: [number, number]; // [lat, lng] for Earth surface locations
+  orbitType?: 'LEO' | 'GEO' | 'lunar' | 'deep-space' | 'realm' | 'dimension'; // For orbital & off-world locations
+  altitudeKm?: number;      // e.g. 350 for LEO, 35786 for GEO, 384400 for Moon
+  celestialSystem?: 'terrestrial-orbit' | 'solar-system' | 'nine-realms' | 'deep-space' | 'multiverse';
   characters?: string[];    // Optional explicit character IDs present at this specific location
 }
 

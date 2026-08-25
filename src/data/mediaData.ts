@@ -834,6 +834,37 @@ export const mediaData: Record<string, MediaItem> = {
     "primaryUniverse": "Earth-616 (The Sacred Timeline)",
     "studio": "Marvel Studios",
     "description": "A vintage 1980s retro-styled in-universe tourism broadcast produced by the Wakandan Department of Tourism, projecting the facade of an isolated, simple agrarian African nation to keep its advanced Vibranium metropolis hidden from the world."
+  },
+  "x-men-dark-phoenix": {
+    "id": "x-men-dark-phoenix",
+    "cssClass": "x-men-dark-phoenix",
+    "title": "X-Men: Dark Phoenix",
+    "shortTitle": "X-Men: Dark Phoenix",
+    "releaseYear": "2019",
+    "type": "movie",
+    "phase": "Phase 3",
+    "posterColor": "#b91c1c",
+    "timelineOrder": 63,
+    "timelineType": "multiverse-alternate",
+    "primaryUniverse": "Earth-10005 (Revised Post-DOFP Timeline)",
+    "studio": "Fox",
+    "description": "In 1992, during a daring space rescue mission, Jean Grey is hit by a mysterious cosmic force that unlocks immense, destructive psionic power and buried childhood trauma, tearing the X-Men apart as an alien empire seeks to weaponize the Phoenix."
+  },
+  "x-men-tas-1": {
+    "id": "x-men-tas-1",
+    "cssClass": "x-men-tas-1",
+    "title": "X-Men: The Animated Series (Season 1)",
+    "shortTitle": "X-Men: TAS (Season 1)",
+    "releaseYear": "1992-1993",
+    "type": "series",
+    "phase": "Marvel Television",
+    "posterColor": "#eab308",
+    "timelineOrder": 64,
+    "isAnimated": true,
+    "timelineType": "multiverse-alternate",
+    "primaryUniverse": "Earth-92131 (Marvel Animated Universe)",
+    "studio": "Fox",
+    "description": "In 1992, the X-Men combat Bolivar Trask's anti-mutant Sentinels, Magneto's ideological rebellion, and the emergence of Apocalypse and Master Mold, while time-traveler Bishop attempts to avert a bleak dystopian future."
   }
 };
 

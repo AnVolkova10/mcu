@@ -37,7 +37,9 @@ import {
   Navigation,
   User,
   Users,
-  ChevronDown
+  ChevronDown,
+  Plus,
+  Minus
 } from 'lucide-react';
 import { mediaData } from '@/data/mediaData';
 import { allCharacters, charactersData } from '@/data/charactersData';
@@ -109,7 +111,7 @@ interface MapPinItem {
     endYear: number;
   }[];
   earthDesignation: string;
-  universeGroup: '616' | '10005' | '90214' | 'cosmic';
+  universeGroup: '616' | '10005' | '90214' | '92131' | 'cosmic';
   minYear: number;
   maxYear: number;
 }
@@ -117,13 +119,17 @@ interface MapPinItem {
 interface CosmicRealm {
   id: string;
   name: string;
-  type: 'realm' | 'cosmic' | 'multiverse' | 'dimension';
+  type: 'orbital' | 'realm' | 'cosmic' | 'multiverse' | 'dimension';
+  category: 'orbital' | 'nine-realms' | 'deep-space' | 'dimensions' | 'multiverse';
+  systemGroup: string;
+  altitudeOrDistance?: string;
   description: string;
   color: string;
   x: number;
   y: number;
   radius: number;
-  universeFilterKey?: '616' | '10005' | '90214' | 'cosmic';
+  icon?: string;
+  universeFilterKey?: '616' | '10005' | '90214' | '92131' | 'cosmic';
   eventsCount: number;
   featuredEvents: {
     title: string;
@@ -839,6 +845,312 @@ export const DragScrollRow: React.FC<{
   );
 };
 
+// Cosmic & Multiverse Orrery Realms Constant Data
+export const COSMIC_REALMS: CosmicRealm[] = [
+  // 1. Central Terrestrial Earth
+  {
+    id: 'midgard',
+    name: 'Earth-616 (Sacred Timeline / Midgard)',
+    type: 'realm',
+    category: 'orbital',
+    systemGroup: 'Terrestrial Anchor',
+    altitudeOrDistance: 'Surface / Terrestrial Plane',
+    description: 'The central reality and anchor of the Sacred Timeline where the Avengers, SSR, S.H.I.E.L.D., and Wakanda defend history.',
+    color: '#38bdf8',
+    x: 50,
+    y: 50,
+    radius: 46,
+    icon: '🌍',
+    universeFilterKey: '616',
+    eventsCount: 15,
+    featuredEvents: [
+      { title: 'Project Rebirth & Captain America', era: '1943', media: 'Captain America: The First Avenger', eventId: 'event-_1943_-1' },
+      { title: 'The Battle of Adwa & Wakanda', era: '1896', media: 'Eyes of Wakanda', eventId: 'event-_1896_-1' },
+      { title: 'Battle of New York & Avengers Assembly', era: '2012', media: 'The Avengers' }
+    ]
+  },
+
+  // 2. ORBITAL LAYER 1: Low Earth Orbit (LEO - 100 to 400 km)
+  {
+    id: 'leo-endeavour',
+    name: 'Low Earth Orbit (NASA Endeavour Rescue)',
+    type: 'orbital',
+    category: 'orbital',
+    systemGroup: 'Terrestrial Orbit',
+    altitudeOrDistance: '350 km (Low Earth Orbit)',
+    description: 'The supersonic X-Jet launches into orbit to rescue NASA astronauts trapped aboard the crippled space shuttle Endeavour.',
+    color: '#f97316',
+    x: 29,
+    y: 38,
+    radius: 24,
+    icon: '🚀',
+    universeFilterKey: '10005',
+    eventsCount: 1,
+    featuredEvents: [
+      { title: 'Space Shuttle Endeavour Rescue & Phoenix Force Absorption', era: '1992', media: 'X-Men: Dark Phoenix', eventId: 'event-1992-dark-phoenix-1' }
+    ]
+  },
+  {
+    id: 'leo-phoenix-ascension',
+    name: 'Exosphere Stratosphere (Phoenix Ascension)',
+    type: 'orbital',
+    category: 'orbital',
+    systemGroup: 'Terrestrial Orbit',
+    altitudeOrDistance: '120 km (Upper Atmosphere)',
+    description: 'Jean Grey ascends to the boundary of space to incinerate Vuk and transmutes into the celestial Phoenix firebird.',
+    color: '#ef4444',
+    x: 63,
+    y: 44,
+    radius: 24,
+    icon: '🔥',
+    universeFilterKey: '10005',
+    eventsCount: 1,
+    featuredEvents: [
+      { title: 'Jean Grey Destroys Vuk & Cosmic Phoenix Ascension', era: '1992', media: 'X-Men: Dark Phoenix', eventId: 'event-1992-dark-phoenix-3' }
+    ]
+  },
+
+  // 3. ORBITAL LAYER 2: Geostationary Orbit (GEO - 35,786 km)
+  {
+    id: 'geo-saber',
+    name: 'S.A.B.E.R. Deep Space Defense Station',
+    type: 'orbital',
+    category: 'orbital',
+    systemGroup: 'Terrestrial Orbit',
+    altitudeOrDistance: '35,786 km (Geostationary Orbit)',
+    description: "Nick Fury and S.W.O.R.D.'s intergalactic planetary defense station safeguarding Earth from alien armadas and jump point breaches.",
+    color: '#0284c7',
+    x: 32,
+    y: 58,
+    radius: 28,
+    icon: '🛰️',
+    universeFilterKey: '616',
+    eventsCount: 1,
+    featuredEvents: [
+      { title: 'S.A.B.E.R. Space Station Operations & Flerken Evacuation', era: '2026', media: 'The Marvels' }
+    ]
+  },
+
+  // 4. LUNAR SYSTEM (384,400 km)
+  {
+    id: 'lunar-moon',
+    name: 'The Moon & Attilan (Blue Area of the Moon)',
+    type: 'orbital',
+    category: 'orbital',
+    systemGroup: 'Lunar System',
+    altitudeOrDistance: '384,400 km (Earth Satellite)',
+    description: 'The ancient refuge and hidden citadel of Attilan, home to the Inhuman Royal Family and watcher sanctuaries.',
+    color: '#cbd5e1',
+    x: 80,
+    y: 62,
+    radius: 28,
+    icon: '🌕',
+    universeFilterKey: '616',
+    eventsCount: 2,
+    featuredEvents: [
+      { title: 'Ancient Terrigenesis Sanctuaries & Royal Court', era: '5000 years ago', media: 'Inhumans', eventId: 'event-_5000_years_ago_-2' }
+    ]
+  },
+
+  // 5. THE NINE REALMS (Yggdrasil Dimension)
+  {
+    id: 'asgard',
+    name: 'Asgard (Realm of the Gods)',
+    type: 'realm',
+    category: 'nine-realms',
+    systemGroup: 'The Nine Realms (Yggdrasil)',
+    altitudeOrDistance: 'Cosmic Axis of Yggdrasil',
+    description: 'Golden realm ruled by Odin Allfather, protector of the Nine Realms and home to Thor, Loki, and the Bifrost Bridge.',
+    color: '#eab308',
+    x: 50,
+    y: 7,
+    radius: 36,
+    icon: '⚡',
+    universeFilterKey: '616',
+    eventsCount: 4,
+    featuredEvents: [
+      { title: 'Battle of Tønsberg & Frost Giants Defeat', era: '965 AD', media: 'Thor', eventId: 'event-_965_AD_-1' },
+      { title: 'Ancient War with Dark Elves & The Aether', era: '5000 years ago', media: 'Thor: The Dark World', eventId: 'event-_5000_years_ago_-1' }
+    ]
+  },
+  {
+    id: 'svartalfheim',
+    name: 'Svartalfheim (Dark World Wastes)',
+    type: 'realm',
+    category: 'nine-realms',
+    systemGroup: 'The Nine Realms (Yggdrasil)',
+    altitudeOrDistance: 'Dark Matter Realm',
+    description: 'Desolate, perpetual night world of Malekith and the Dark Elves, where King Bor of Asgard buried the fluid Aether.',
+    color: '#a855f7',
+    x: 16,
+    y: 15,
+    radius: 28,
+    icon: '🌑',
+    universeFilterKey: '616',
+    eventsCount: 1,
+    featuredEvents: [
+      { title: 'Malekith Weaponizes the Aether & Asgardian Sealing', era: 'Eons ago', media: 'Thor: The Dark World', eventId: 'event-_Eons_ago_-1' }
+    ]
+  },
+  {
+    id: 'jotunheim',
+    name: 'Jotunheim (Frost Giant Fortress)',
+    type: 'realm',
+    category: 'nine-realms',
+    systemGroup: 'The Nine Realms (Yggdrasil)',
+    altitudeOrDistance: 'Glacial Realm',
+    description: 'Frozen realm of jagged blue ice, home to King Laufey and the Frost Giants who waged war on Midgard with the Casket of Ancient Winters.',
+    color: '#06b6d4',
+    x: 84,
+    y: 15,
+    radius: 28,
+    icon: '❄️',
+    universeFilterKey: '616',
+    eventsCount: 1,
+    featuredEvents: [
+      { title: 'Laufey Invades Midgard & Casket Seizure', era: '965 AD', media: 'Thor', eventId: 'event-_965_AD_-1' }
+    ]
+  },
+
+  // 6. DEEP SPACE & GALACTIC SECTORS (Guardians / Cosmic Marvel)
+  {
+    id: 'maveth',
+    name: "Maveth (Hive's Alien World)",
+    type: 'cosmic',
+    category: 'deep-space',
+    systemGroup: 'Outer Galactic Sector',
+    altitudeOrDistance: 'Deep Space Desolate Planet',
+    description: 'Barren planet where ancient Kree-modified parasitic mutant Hive was exiled through the Monolith portal by early human HYDRA worshipers.',
+    color: '#64748b',
+    x: 7,
+    y: 88,
+    radius: 28,
+    icon: '🪐',
+    universeFilterKey: '616',
+    eventsCount: 1,
+    featuredEvents: [
+      { title: 'Hive Exiled to Maveth via Monolith', era: '5000 years ago', media: 'Agents of S.H.I.E.L.D.', eventId: 'event-_5000_years_ago_-1' }
+    ]
+  },
+  {
+    id: 'xandar',
+    name: 'Planet Xandar (Nova Corps Citadel)',
+    type: 'cosmic',
+    category: 'deep-space',
+    systemGroup: 'Andromeda Galaxy',
+    altitudeOrDistance: 'Trinary Star System',
+    description: 'Lush capital world of the Nova Empire and Nova Prime Irani Rael, protected by the Nova Corps and target of Ronan the Accuser.',
+    color: '#3b82f6',
+    x: 93,
+    y: 88,
+    radius: 30,
+    icon: '🌟',
+    universeFilterKey: '616',
+    eventsCount: 2,
+    featuredEvents: [
+      { title: 'Guardians of the Galaxy Battle of Xandar', era: '2014', media: 'Guardians of the Galaxy' }
+    ]
+  },
+  {
+    id: 'knowhere',
+    name: 'Knowhere (Severed Celestial Head)',
+    type: 'cosmic',
+    category: 'deep-space',
+    systemGroup: 'Mining Colony at Edge of Universe',
+    altitudeOrDistance: 'Decapitated Celestial Brain Cavity',
+    description: 'The ancient decapitated head of a Celestial converted into a lawless mining colony and home to Taneleer Tivan (The Collector).',
+    color: '#e11d48',
+    x: 95,
+    y: 48,
+    radius: 30,
+    icon: '💀',
+    universeFilterKey: '616',
+    eventsCount: 2,
+    featuredEvents: [
+      { title: "The Collector's Museum & Infinity Stone Explanation", era: '2014', media: 'Guardians of the Galaxy' }
+    ]
+  },
+  {
+    id: 'morag',
+    name: 'Planet Morag (Submerged Ocean Ruins)',
+    type: 'cosmic',
+    category: 'deep-space',
+    systemGroup: 'M-340W Galactic System',
+    altitudeOrDistance: 'Boiling Ocean Temple Vault',
+    description: 'Submerged desolate world where oceans recede every 300 years, exposing the ancient temple holding the Power Stone Orb.',
+    color: '#0ea5e9',
+    x: 5,
+    y: 48,
+    radius: 28,
+    icon: '🌊',
+    universeFilterKey: '616',
+    eventsCount: 2,
+    featuredEvents: [
+      { title: 'Star-Lord Steals the Orb from Morag', era: '2014', media: 'Guardians of the Galaxy' }
+    ]
+  },
+  {
+    id: 'vormir',
+    name: 'Planet Vormir (Soul Stone Altar)',
+    type: 'cosmic',
+    category: 'deep-space',
+    systemGroup: 'Center of Celestial Existence',
+    altitudeOrDistance: 'Resting Place of the Soul Stone',
+    description: 'Eerie mountain pinnacle in the center of the universe guarded by the spectral Red Skull, demanding a soul for a soul.',
+    color: '#ea580c',
+    x: 50,
+    y: 93,
+    radius: 30,
+    icon: '🧡',
+    universeFilterKey: '616',
+    eventsCount: 2,
+    featuredEvents: [
+      { title: 'Thanos Sacrifices Gamora for the Soul Stone', era: '2018', media: 'Avengers: Infinity War' }
+    ]
+  },
+
+  // 7. POCKET DIMENSIONS & MULTIVERSE BRANCHES
+  {
+    id: 'kun-lun',
+    name: "K'un-Lun & Ancient Relics",
+    type: 'dimension',
+    category: 'dimensions',
+    systemGroup: 'Seven Capital Cities of Heaven',
+    altitudeOrDistance: 'Pocket Dimension',
+    description: 'One of the Seven Capital Cities of Heaven, a mystical pocket dimension connecting to Earth, protected by the Immortal Iron Fist.',
+    color: '#10b981',
+    x: 87,
+    y: 74,
+    radius: 28,
+    icon: '🐉',
+    universeFilterKey: 'cosmic',
+    eventsCount: 2,
+    featuredEvents: [
+      { title: 'Dragon Bone Burial Chamber in Kunlun Mountains', era: 'Ancient Times', media: 'The Defenders', eventId: 'event-_Eons_ago_-2' },
+      { title: 'Hatut Zeraze crosses paths with Iron Fist', era: 'c. 1400 C.E.', media: 'Eyes of Wakanda', eventId: 'event-_1400_CE_-1' }
+    ]
+  },
+  {
+    id: 'quantum-realm',
+    name: 'Quantum Realm (Subatomic Microverse)',
+    type: 'dimension',
+    category: 'dimensions',
+    systemGroup: 'Subatomic Realm',
+    altitudeOrDistance: 'Outside Space and Time',
+    description: 'Microverse outside the laws of standard space and time, accessible through Pym Particles or time vortexes.',
+    color: '#ec4899',
+    x: 13,
+    y: 74,
+    radius: 28,
+    icon: '⚛️',
+    universeFilterKey: '616',
+    eventsCount: 1,
+    featuredEvents: [
+      { title: 'Janet van Dyne Sub-Atomic Rescue & Time Heists', era: '1987 / 2023', media: 'Avengers: Endgame' }
+    ]
+  }
+];
+
 export const MapScreen: React.FC = () => {
   const { 
     setActiveScreen, 
@@ -855,6 +1167,80 @@ export const MapScreen: React.FC = () => {
   const [selectedPinId, setSelectedPinId] = useState<string | null>(null);
   const [mapViewMode, setMapViewMode] = useState<'earth' | 'cosmic'>('earth');
   const [selectedCosmicRealmId, setSelectedCosmicRealmId] = useState<string | null>(null);
+  const [cosmicCategory, setCosmicCategory] = useState<'all' | 'orbital' | 'nine-realms' | 'deep-space' | 'dimensions' | 'multiverse'>('all');
+  const [cosmicScale, setCosmicScale] = useState<number>(1);
+  const [cosmicPan, setCosmicPan] = useState<{ x: number; y: number }>({ x: 0, y: 0 });
+  const [isPanningCosmic, setIsPanningCosmic] = useState(false);
+  const cosmicContainerRef = useRef<HTMLDivElement>(null);
+  const cosmicDragStartRef = useRef<{ startX: number; startY: number; initPanX: number; initPanY: number }>({
+    startX: 0,
+    startY: 0,
+    initPanX: 0,
+    initPanY: 0,
+  });
+  const hasDraggedCosmicRef = useRef(false);
+
+  // Pointer drag and pan handlers for Cosmic Orrery
+  const handleCosmicPointerDown = (e: React.PointerEvent<HTMLDivElement>) => {
+    if (e.button !== 0 && e.pointerType === 'mouse') return;
+    // Never capture pointer if clicking on a button or interactive control
+    if ((e.target as HTMLElement).closest('button, .floating-controls')) {
+      return;
+    }
+    setIsPanningCosmic(true);
+    hasDraggedCosmicRef.current = false;
+    cosmicDragStartRef.current = {
+      startX: e.clientX,
+      startY: e.clientY,
+      initPanX: cosmicPan.x,
+      initPanY: cosmicPan.y,
+    };
+    try {
+      (e.currentTarget as HTMLElement).setPointerCapture(e.pointerId);
+    } catch {}
+  };
+
+  const handleCosmicPointerMove = (e: React.PointerEvent<HTMLDivElement>) => {
+    if (!isPanningCosmic) return;
+    const dx = e.clientX - cosmicDragStartRef.current.startX;
+    const dy = e.clientY - cosmicDragStartRef.current.startY;
+    if (Math.abs(dx) > 3 || Math.abs(dy) > 3) {
+      hasDraggedCosmicRef.current = true;
+    }
+    setCosmicPan({
+      x: cosmicDragStartRef.current.initPanX + dx,
+      y: cosmicDragStartRef.current.initPanY + dy,
+    });
+  };
+
+  const handleCosmicPointerUp = (e: React.PointerEvent<HTMLDivElement>) => {
+    if (!isPanningCosmic) return;
+    setIsPanningCosmic(false);
+    try {
+      (e.currentTarget as HTMLElement).releasePointerCapture(e.pointerId);
+    } catch {}
+  };
+
+  // Native non-passive wheel listener on Cosmic Canvas to completely prevent page scrolling
+  useEffect(() => {
+    const el = cosmicContainerRef.current;
+    if (!el) return;
+
+    const handleCosmicWheel = (e: WheelEvent) => {
+      e.preventDefault();
+      e.stopPropagation();
+      if (e.deltaY < 0) {
+        setCosmicScale((prev) => Math.min(2.5, prev + 0.12));
+      } else if (e.deltaY > 0) {
+        setCosmicScale((prev) => Math.max(0.6, prev - 0.12));
+      }
+    };
+
+    el.addEventListener('wheel', handleCosmicWheel, { passive: false });
+    return () => {
+      el.removeEventListener('wheel', handleCosmicWheel);
+    };
+  }, [mapViewMode]);
 
   // Helper to normalize stone trajectory ID
   const normalizeStoneId = (id: string | null) => {
@@ -1043,7 +1429,7 @@ export const MapScreen: React.FC = () => {
       eraCleanTitle: string;
       mediaTitle: string;
       eventId: string;
-      universeGroup: '616' | '10005' | '90214' | 'cosmic';
+      universeGroup: '616' | '10005' | '90214' | '92131' | 'cosmic';
     }[] = [];
 
     const seen = new Set<string>();
@@ -1054,9 +1440,11 @@ export const MapScreen: React.FC = () => {
       if (!inRange) return;
 
       era.events.forEach((evt) => {
-        let universeGroup: '616' | '10005' | '90214' | 'cosmic' = '616';
+        let universeGroup: '616' | '10005' | '90214' | '92131' | 'cosmic' = '616';
         if (evt.earthDesignation?.includes('10005')) {
           universeGroup = '10005';
+        } else if (evt.earthDesignation?.includes('92131')) {
+          universeGroup = '92131';
         } else if (evt.earthDesignation?.includes('90214')) {
           universeGroup = '90214';
         } else if (evt.locations?.some((l) => l.planet && l.planet !== 'Earth')) {
@@ -1223,9 +1611,11 @@ export const MapScreen: React.FC = () => {
             if (loc.coordinates) {
               const key = `${loc.name}-${loc.countryOrRealm}-${loc.coordinates[0]}-${loc.coordinates[1]}`;
               
-              let universeGroup: '616' | '10005' | '90214' | 'cosmic' = '616';
+              let universeGroup: '616' | '10005' | '90214' | '92131' | 'cosmic' = '616';
               if (evt.earthDesignation?.includes('10005') || loc.planet?.includes('10005')) {
                 universeGroup = '10005';
+              } else if (evt.earthDesignation?.includes('92131') || loc.planet?.includes('92131')) {
+                universeGroup = '92131';
               } else if (evt.earthDesignation?.includes('90214') || loc.planet?.includes('90214')) {
                 universeGroup = '90214';
               } else if (loc.planet && loc.planet !== 'Earth') {
@@ -1282,6 +1672,7 @@ export const MapScreen: React.FC = () => {
       // 2. Universe Filter
       if (selectedUniverse === '616' && pin.universeGroup !== '616') return false;
       if (selectedUniverse === '10005' && pin.universeGroup !== '10005') return false;
+      if (selectedUniverse === '92131' && pin.universeGroup !== '92131') return false;
       if (selectedUniverse === '90214' && pin.universeGroup !== '90214') return false;
       if (selectedUniverse === 'cosmic' && pin.universeGroup !== 'cosmic') return false;
 
@@ -1317,49 +1708,107 @@ export const MapScreen: React.FC = () => {
       setActiveCharacterId(null);
       setSelectedMapStoneTrajectoryId(null);
       setSelectedMapCharacterId(null);
-      setMapViewMode('earth');
-      setSelectedSnapshotTab('locations');
-      setSnapshotLayerMode('locations');
 
-      // Find matching pin in allPins
-      const match = allPins.find((p) => {
-        if (selectedMapLocationPin.coordinates && p.coordinates) {
-          const latDiff = Math.abs(p.coordinates[0] - selectedMapLocationPin.coordinates[0]);
-          const lngDiff = Math.abs(p.coordinates[1] - selectedMapLocationPin.coordinates[1]);
-          if (latDiff < 0.01 && lngDiff < 0.01) return true;
-        }
-        return p.name.toLowerCase().includes(selectedMapLocationPin.name.toLowerCase()) ||
-               selectedMapLocationPin.name.toLowerCase().includes(p.name.toLowerCase()) ||
-               (p.cityOrRegion && p.cityOrRegion.toLowerCase().includes(selectedMapLocationPin.name.toLowerCase()));
-      });
+      const locName = (selectedMapLocationPin.name || '').toLowerCase();
+      const locCity = (selectedMapLocationPin.cityOrRegion || '').toLowerCase();
+      const locCountry = (selectedMapLocationPin.countryOrRealm || '').toLowerCase();
+      const locPlanet = (selectedMapLocationPin.planet || '').toLowerCase();
+      const isOffWorld = !selectedMapLocationPin.coordinates || 
+        selectedMapLocationPin.orbitType || 
+        selectedMapLocationPin.celestialSystem || 
+        (locPlanet && !locPlanet.includes('earth')) ||
+        locName.includes('orbit') ||
+        locName.includes('exosphere') ||
+        locName.includes('stratosphere') ||
+        locName.includes('s.a.b.e.r') ||
+        locName.includes('asgard') ||
+        locName.includes('jotunheim') ||
+        locName.includes('svartalfheim') ||
+        locName.includes('maveth') ||
+        locName.includes('kun-lun') ||
+        locName.includes("k'un-lun") ||
+        locName.includes('quantum') ||
+        locName.includes('xandar') ||
+        locName.includes('knowhere') ||
+        locName.includes('morag') ||
+        locName.includes('vormir');
 
-      if (match) {
-        setSelectedPinId(match.id);
+      if (isOffWorld) {
+        setMapViewMode('cosmic');
 
-        // Check matching event
-        const matchingEvent = match.events.find(e => e.event.id === selectedMapLocationPin.eventId) || match.events[0];
-        if (matchingEvent) {
-          const [startYr, endYr] = parseYearRange(matchingEvent.eraCleanTitle);
-          const matchingPreset = ERA_PRESETS.find(p => p.id !== 'all' && startYr >= p.range[0] && endYr <= p.range[1]);
-          if (matchingPreset) {
-            setSelectedPreset(matchingPreset.id);
-            setCustomRange(matchingPreset.range);
-          } else {
-            setCustomRange([startYr, endYr]);
-            setSelectedPreset('all');
+        // Match against COSMIC_REALMS
+        const match = COSMIC_REALMS.find((realm) => {
+          if (selectedMapLocationPin.eventId && realm.featuredEvents.some(e => e.eventId === selectedMapLocationPin.eventId)) {
+            return true;
           }
-        }
+          const rName = realm.name.toLowerCase();
+          const rSystem = realm.systemGroup.toLowerCase();
+          return rName.includes(locName) || locName.includes(rName.split(' (')[0].toLowerCase()) ||
+                 rSystem.includes(locCountry) || locCountry.includes(realm.id) ||
+                 (selectedMapLocationPin.orbitType === 'LEO' && (realm.id === 'leo-endeavour' || realm.id === 'leo-phoenix-ascension')) ||
+                 (selectedMapLocationPin.orbitType === 'GEO' && realm.id === 'geo-saber') ||
+                 (selectedMapLocationPin.orbitType === 'lunar' && realm.id === 'lunar-moon') ||
+                 (realm.id === 'leo-endeavour' && (locName.includes('orbit') || locName.includes('endeavour'))) ||
+                 (realm.id === 'leo-phoenix-ascension' && (locName.includes('stratosphere') || locName.includes('ascension'))) ||
+                 (realm.id === 'geo-saber' && locName.includes('s.a.b.e.r')) ||
+                 (realm.id === 'svartalfheim' && (locName.includes('svartalfheim') || locCountry.includes('svartalfheim'))) ||
+                 (realm.id === 'jotunheim' && (locName.includes('jotunheim') || locCountry.includes('jotunheim'))) ||
+                 (realm.id === 'maveth' && (locName.includes('maveth') || locCountry.includes('maveth'))) ||
+                 (realm.id === 'kun-lun' && (locName.includes('kun-lun') || locCountry.includes("k'un-lun") || locName.includes('dragon bone')));
+        });
 
-        // If Earth designation has universe, make sure selectedUniverse doesn't hide it
-        if (selectedUniverse !== 'all' && match.universeGroup !== selectedUniverse) {
-          setSelectedUniverse('all');
+        if (match) {
+          setSelectedCosmicRealmId(match.id);
+          setCosmicCategory(match.category);
+        } else {
+          setSelectedCosmicRealmId('leo-endeavour');
+          setCosmicCategory('orbital');
         }
+      } else {
+        setMapViewMode('earth');
+        setSelectedSnapshotTab('locations');
+        setSnapshotLayerMode('locations');
 
-        setTimeout(() => {
-          mapInstanceRef.current?.invalidateSize();
-          const targetLat = Math.min(65, Math.max(-60, match.coordinates[0]));
-          mapInstanceRef.current?.flyTo([targetLat, match.coordinates[1]], 6, { duration: 1.2 });
-        }, 150);
+        // Find matching pin in allPins
+        const match = allPins.find((p) => {
+          if (selectedMapLocationPin.coordinates && p.coordinates) {
+            const latDiff = Math.abs(p.coordinates[0] - selectedMapLocationPin.coordinates[0]);
+            const lngDiff = Math.abs(p.coordinates[1] - selectedMapLocationPin.coordinates[1]);
+            if (latDiff < 0.01 && lngDiff < 0.01) return true;
+          }
+          return p.name.toLowerCase().includes(selectedMapLocationPin.name.toLowerCase()) ||
+                 selectedMapLocationPin.name.toLowerCase().includes(p.name.toLowerCase()) ||
+                 (p.cityOrRegion && p.cityOrRegion.toLowerCase().includes(selectedMapLocationPin.name.toLowerCase()));
+        });
+
+        if (match) {
+          setSelectedPinId(match.id);
+
+          // Check matching event
+          const matchingEvent = match.events.find(e => e.event.id === selectedMapLocationPin.eventId) || match.events[0];
+          if (matchingEvent) {
+            const [startYr, endYr] = parseYearRange(matchingEvent.eraCleanTitle);
+            const matchingPreset = ERA_PRESETS.find(p => p.id !== 'all' && startYr >= p.range[0] && endYr <= p.range[1]);
+            if (matchingPreset) {
+              setSelectedPreset(matchingPreset.id);
+              setCustomRange(matchingPreset.range);
+            } else {
+              setCustomRange([startYr, endYr]);
+              setSelectedPreset('all');
+            }
+          }
+
+          // If Earth designation has universe, make sure selectedUniverse doesn't hide it
+          if (selectedUniverse !== 'all' && match.universeGroup !== selectedUniverse) {
+            setSelectedUniverse('all');
+          }
+
+          setTimeout(() => {
+            mapInstanceRef.current?.invalidateSize();
+            const targetLat = Math.min(65, Math.max(-60, match.coordinates[0]));
+            mapInstanceRef.current?.flyTo([targetLat, match.coordinates[1]], 6, { duration: 1.2 });
+          }, 150);
+        }
       }
 
       setSelectedMapLocationPin(null);
@@ -1452,6 +1901,8 @@ export const MapScreen: React.FC = () => {
     switch (group) {
       case '10005':
         return '#f59e0b'; // Gold for Fox X-Men
+      case '92131':
+        return '#eab308'; // Classic Mutant Yellow for Earth-92131 X-Men TAS
       case '90214':
         return '#c084fc'; // Purple for Spider-Noir
       case 'cosmic':
@@ -1471,15 +1922,16 @@ export const MapScreen: React.FC = () => {
       const mapBounds = L.latLngBounds(southWest, northEast);
 
       const map = L.map(mapContainerRef.current, {
-        center: [25, 0],
+        center: [20, 0],
         zoom: 2.3,
-        minZoom: 2,
+        minZoom: 2.0,
         maxZoom: 18,
         zoomControl: false,
         attributionControl: true,
         worldCopyJump: false,
         maxBounds: mapBounds,
         maxBoundsViscosity: 1.0,
+        scrollWheelZoom: true,
       });
 
       // 1. Dark Base Map (Landmasses, oceans, borders)
@@ -1495,8 +1947,6 @@ export const MapScreen: React.FC = () => {
         maxZoom: 16,
         noWrap: false,
       }).addTo(map);
-
-      L.control.zoom({ position: 'topright' }).addTo(map);
 
       mapInstanceRef.current = map;
     }
@@ -1694,22 +2144,14 @@ export const MapScreen: React.FC = () => {
 
   }, [filteredPins, activePin, currentTrajectory, selectedTrajectoryStopIndex, snapshotLayerMode, activeSnapshotCharacters, activeSnapshotStones]);
 
-  // When switching to Earth mode, invalidate size
+  // When switching to Earth mode, invalidate size cleanly without forced zoom-in animations
   useEffect(() => {
     if (mapViewMode === 'earth' && mapInstanceRef.current) {
       setTimeout(() => {
         mapInstanceRef.current?.invalidateSize();
-        if (currentTrajectory && currentTrajectory.stops.length > 0) {
-          const polyCoords = currentTrajectory.stops.map((s) => s.coordinates);
-          const poly = L.polyline(polyCoords);
-          mapInstanceRef.current?.fitBounds(poly.getBounds().pad(0.18), { maxZoom: 5, animate: true });
-        } else if (activePin) {
-          const targetLat = Math.min(65, Math.max(-60, activePin.coordinates[0]));
-          mapInstanceRef.current?.flyTo([targetLat, activePin.coordinates[1]], 4.5, { duration: 1.2 });
-        }
-      }, 100);
+      }, 50);
     }
-  }, [mapViewMode, currentTrajectory]);
+  }, [mapViewMode]);
 
   // Select Infinity Stone Trajectory
   const handleSelectStoneTrajectory = (stoneId: string | null) => {
@@ -1799,146 +2241,35 @@ export const MapScreen: React.FC = () => {
     }, 150);
   };
 
-  // Cosmic & Multiverse Orrery Realms Data
-  const cosmicRealms: CosmicRealm[] = useMemo(() => [
-    {
-      id: 'midgard',
-      name: 'Earth-616 (Sacred Timeline / Midgard)',
-      type: 'realm',
-      description: 'The central reality and anchor of the Sacred Timeline where the Avengers, SSR, S.H.I.E.L.D., and Wakanda defend history.',
-      color: '#38bdf8',
-      x: 50,
-      y: 50,
-      radius: 42,
-      universeFilterKey: '616',
-      eventsCount: 15,
-      featuredEvents: [
-        { title: 'Project Rebirth & Captain America', era: '1943', media: 'Captain America: The First Avenger', eventId: 'event-_1943_-1' },
-        { title: 'The Battle of Adwa & Wakanda', era: '1896', media: 'Eyes of Wakanda', eventId: 'event-_1896_-1' },
-        { title: 'Leviathan Infiltration & Stark Weapons', era: '1946', media: "Marvel's Agent Carter", eventId: 'event-_1946_-1' }
-      ]
-    },
-    {
-      id: 'earth-10005',
-      name: 'Earth-10005 (Fox X-Men Universe)',
-      type: 'multiverse',
-      description: 'Parallel timeline where Homo Superior emerges during the Cold War under the opposing leadership of Charles Xavier and Magneto.',
-      color: '#f59e0b',
-      x: 24,
-      y: 35,
-      radius: 36,
-      universeFilterKey: '10005',
-      eventsCount: 2,
-      featuredEvents: [
-        { title: 'Auschwitz Discovery & Magneto Awakening', era: '1944', media: 'X-Men: First Class', eventId: 'event-1944-xmen-1' },
-        { title: 'Cuban Missile Crisis & Division X Split', era: '1962', media: 'X-Men: First Class', eventId: 'event-1962-xmen-1' }
-      ]
-    },
-    {
-      id: 'earth-90214',
-      name: 'Earth-90214 (Spider-Noir Universe)',
-      type: 'multiverse',
-      description: 'Alternate gritty 1930s Great Depression New York universe where Ben Reilly operates as the fedora-wearing vigilante The Spider.',
-      color: '#c084fc',
-      x: 76,
-      y: 35,
-      radius: 34,
-      universeFilterKey: '90214',
-      eventsCount: 3,
-      featuredEvents: [
-        { title: 'WWI Laboratory Rescue & Spider Bite', era: 'c. 1917', media: 'Spider-Noir', eventId: 'event-1917-spider-noir-1' },
-        { title: 'Great Depression Vigilante Rebirth', era: '1935', media: 'Spider-Noir', eventId: 'event-1935-spider-noir-1' }
-      ]
-    },
-    {
-      id: 'asgard',
-      name: 'Asgard (Realm of the Gods)',
-      type: 'realm',
-      description: 'Golden realm ruled by Odin Allfather, protector of the Nine Realms and home to Thor, Loki, and the Bifrost Bridge.',
-      color: '#eab308',
-      x: 50,
-      y: 18,
-      radius: 32,
-      universeFilterKey: '616',
-      eventsCount: 4,
-      featuredEvents: [
-        { title: 'Battle of Tønsberg & Frost Giants Defeat', era: '965 AD', media: 'Thor', eventId: 'event-_965_AD_-1' },
-        { title: 'Ancient War with Dark Elves & The Aether', era: '5000 years ago', media: 'Thor: The Dark World', eventId: 'event-_5000_years_ago_-1' }
-      ]
-    },
-    {
-      id: 'kun-lun',
-      name: "K'un-Lun & Ancient Relics",
-      type: 'dimension',
-      description: "One of the Seven Capital Cities of Heaven, a mystical pocket dimension connecting to Earth, protected by the Immortal Iron Fist.",
-      color: '#10b981',
-      x: 72,
-      y: 68,
-      radius: 28,
-      universeFilterKey: 'cosmic',
-      eventsCount: 1,
-      featuredEvents: [
-        { title: 'Hatut Zeraze crosses paths with Iron Fist', era: 'c. 1400 C.E.', media: 'Eyes of Wakanda', eventId: 'event-_1400_CE_-1' }
-      ]
-    },
-    {
-      id: 'quantum-realm',
-      name: 'Quantum Realm (Subatomic Dimension)',
-      type: 'dimension',
-      description: 'Microverse outside the laws of standard space and time, accessible through Pym Particles or time vortexes.',
-      color: '#f43f5e',
-      x: 28,
-      y: 68,
-      radius: 28,
-      universeFilterKey: '616',
-      eventsCount: 1,
-      featuredEvents: [
-        { title: 'Endgame Quantum Time Heists Preparation', era: '2023 / Outside Time', media: 'Avengers: Endgame' }
-      ]
-    },
-    {
-      id: 'future-2091',
-      name: 'Earth-TRN676 (2091 Shattered Earth)',
-      type: 'multiverse',
-      description: 'Dystopian future timeline where planet Earth was shattered and its remnants are ruled by the Kree at the Lighthouse station.',
-      color: '#94a3b8',
-      x: 50,
-      y: 84,
-      radius: 26,
-      universeFilterKey: '616',
-      eventsCount: 1,
-      featuredEvents: [
-        { title: 'S.H.I.E.L.D. Future Time Displacement', era: '2091', media: 'Agents of S.H.I.E.L.D. (Season 5)', eventId: 'event-_2091_-1' }
-      ]
-    }
-  ], []);
+  // Reference to top-level COSMIC_REALMS
+  const cosmicRealms = COSMIC_REALMS;
 
   const activeCosmicRealm = useMemo(() => {
     if (!selectedCosmicRealmId) return cosmicRealms[0];
     return cosmicRealms.find((r) => r.id === selectedCosmicRealmId) || cosmicRealms[0];
   }, [cosmicRealms, selectedCosmicRealmId]);
 
-  // Navigate directly from Cosmic Orrery to an Earth on the Real Map
-  const navigateToEarthUniverse = (universeKey?: '616' | '10005' | '90214' | 'cosmic' | 'all') => {
+  // Navigate directly from Cosmic Orrery to an Earth on the Real Map (Instantly fully zoomed out, zero animation)
+  const navigateToEarthUniverse = (universeKey?: '616' | '10005' | '90214' | '92131' | 'cosmic' | 'all') => {
     const targetUniverse = universeKey || 'all';
     setSelectedUniverse(targetUniverse);
+    setSelectedPinId(null);
+    setSelectedMapLocationPin(null);
+    setActiveCharacterId(null);
+    setActiveStoneTrajectoryId(null);
+    setSelectedMapCharacterId(null);
+    setSelectedMapStoneTrajectoryId(null);
     setMapViewMode('earth');
+    setCosmicScale(1);
+    setCosmicPan({ x: 0, y: 0 });
 
     setTimeout(() => {
       if (mapInstanceRef.current) {
         mapInstanceRef.current.invalidateSize();
-        const pinsForUniverse = allPins.filter(
-          (p) => targetUniverse === 'all' || p.universeGroup === targetUniverse
-        );
-        if (pinsForUniverse.length > 0) {
-          const targetPin = pinsForUniverse[0];
-          setSelectedPinId(targetPin.id);
-          mapInstanceRef.current.flyTo(targetPin.coordinates, 4.5, { duration: 1.2 });
-        } else {
-          mapInstanceRef.current.setView([25, 0], 2.3);
-        }
+        // Instantly position on fully zoomed-out global Earth with no animation
+        mapInstanceRef.current.setView([20, 0], 2.3, { animate: false });
       }
-    }, 150);
+    }, 40);
   };
 
   const formatYearLabel = (yr: number) => {
@@ -2032,26 +2363,26 @@ export const MapScreen: React.FC = () => {
       {/* VIEW 1: EARTH THEATRE (Real Leaflet Dark Map) */}
       <div className={mapViewMode === 'earth' ? 'block' : 'hidden'}>
         
-        {/* Top Filter Bar: Search + Realities */}
-        <div className="bg-[#121622] border border-sky-950 rounded-xl p-3 mb-4 flex flex-col md:flex-row gap-3 items-stretch md:items-center justify-between shadow-xl">
+        {/* Top Filter Bar: Search + Realities (Locked to exact 54px height) */}
+        <div className="h-[54px] min-h-[54px] max-h-[54px] bg-[#121622] border border-sky-950 rounded-xl px-3 mb-4 flex items-center justify-between gap-3 shadow-xl overflow-hidden">
           
           {/* Search */}
-          <div className="relative flex-1">
-            <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-400" />
+          <div className="relative flex-1 min-w-[180px] max-w-[420px]">
+            <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-400" />
             <input
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Search location (e.g. Brooklyn, Auschwitz, Crete, Oxford, Villa Gesell, Tønsberg)..."
-              className="w-full bg-[#090d14] border border-[#232f45] rounded-lg pl-10 pr-4 py-1.5 text-xs sm:text-sm text-white placeholder-zinc-500 focus:outline-none focus:border-sky-500 font-din"
+              placeholder="Search location (e.g. Brooklyn, Auschwitz, Crete)..."
+              className="w-full bg-[#090d14] border border-[#232f45] rounded-lg pl-9 pr-3 py-1.5 text-xs text-white placeholder-zinc-500 focus:outline-none focus:border-sky-500 font-din"
             />
           </div>
 
           {/* Universe & Reality Selector */}
-          <div className="flex items-center gap-1.5 flex-wrap">
+          <div className="flex items-center gap-1.5 shrink-0 overflow-x-auto no-scrollbar">
             <button
               onClick={() => setSelectedUniverse('all')}
-              className={`px-2.5 py-1.5 rounded-lg text-xs font-bold font-title tracking-wider uppercase transition-all cursor-pointer ${
+              className={`px-2.5 py-1 rounded-lg text-xs font-bold font-title tracking-wider uppercase transition-all cursor-pointer ${
                 selectedUniverse === 'all'
                   ? 'bg-sky-600 text-white shadow'
                   : 'bg-[#090d14] text-zinc-400 border border-[#232f45] hover:text-white'
@@ -2061,7 +2392,7 @@ export const MapScreen: React.FC = () => {
             </button>
             <button
               onClick={() => setSelectedUniverse('616')}
-              className={`flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-xs font-bold font-title tracking-wider uppercase transition-all cursor-pointer ${
+              className={`flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-bold font-title tracking-wider uppercase transition-all cursor-pointer ${
                 selectedUniverse === '616'
                   ? 'bg-[#e62429] text-white shadow'
                   : 'bg-[#090d14] text-zinc-400 border border-[#232f45] hover:text-white'
@@ -2072,7 +2403,7 @@ export const MapScreen: React.FC = () => {
             </button>
             <button
               onClick={() => setSelectedUniverse('10005')}
-              className={`flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-xs font-bold font-title tracking-wider uppercase transition-all cursor-pointer ${
+              className={`flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-bold font-title tracking-wider uppercase transition-all cursor-pointer ${
                 selectedUniverse === '10005'
                   ? 'bg-amber-600 text-white shadow'
                   : 'bg-[#090d14] text-zinc-400 border border-[#232f45] hover:text-white'
@@ -2082,8 +2413,19 @@ export const MapScreen: React.FC = () => {
               Fox X-Men
             </button>
             <button
+              onClick={() => setSelectedUniverse('92131')}
+              className={`flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-bold font-title tracking-wider uppercase transition-all cursor-pointer ${
+                selectedUniverse === '92131'
+                  ? 'bg-yellow-600 text-white shadow'
+                  : 'bg-[#090d14] text-zinc-400 border border-[#232f45] hover:text-white'
+              }`}
+            >
+              <span className="w-2 h-2 rounded-full bg-yellow-400" />
+              X-Men '92 / TAS
+            </button>
+            <button
               onClick={() => setSelectedUniverse('90214')}
-              className={`flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-xs font-bold font-title tracking-wider uppercase transition-all cursor-pointer ${
+              className={`flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-bold font-title tracking-wider uppercase transition-all cursor-pointer ${
                 selectedUniverse === '90214'
                   ? 'bg-purple-600 text-white shadow'
                   : 'bg-[#090d14] text-zinc-400 border border-[#232f45] hover:text-white'
@@ -2094,7 +2436,7 @@ export const MapScreen: React.FC = () => {
             </button>
             <button
               onClick={() => setSelectedUniverse('cosmic')}
-              className={`flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-xs font-bold font-title tracking-wider uppercase transition-all cursor-pointer ${
+              className={`flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-bold font-title tracking-wider uppercase transition-all cursor-pointer ${
                 selectedUniverse === 'cosmic'
                   ? 'bg-emerald-600 text-white shadow'
                   : 'bg-[#090d14] text-zinc-400 border border-[#232f45] hover:text-white'
@@ -2116,8 +2458,8 @@ export const MapScreen: React.FC = () => {
             {/* Map Frame */}
             <div className="bg-[#090d14] border-2 border-sky-950 rounded-2xl p-3 sm:p-4 relative shadow-2xl">
               
-              {/* Tactical Status Header */}
-              <div className="flex items-center justify-between mb-3 pb-2 border-b border-sky-950/80 text-xs font-mono text-sky-400/80">
+              {/* Tactical Status Header (Locked to 28px) */}
+              <div className="h-[28px] flex items-center justify-between mb-3 pb-2 border-b border-sky-950/80 text-xs font-mono text-sky-400/80">
                 <div className="flex items-center gap-2">
                   <Crosshair className="w-4 h-4 text-sky-400 animate-pulse" />
                   <span>
@@ -2139,11 +2481,45 @@ export const MapScreen: React.FC = () => {
               {/* Leaflet Map Big Canvas */}
               <div 
                 ref={mapContainerRef} 
-                className="w-full h-[480px] sm:h-[540px] lg:h-[620px] rounded-xl overflow-hidden border border-sky-900/50 shadow-inner z-10"
-              />
+                className="w-full h-[520px] sm:h-[580px] lg:h-[620px] rounded-xl overflow-hidden border border-sky-900/50 shadow-inner z-10 relative group/earthmap"
+              >
+                {/* Normalized Floating Tactical Controls: +, -, 1:1, Mode Switch */}
+                <div className="absolute top-3 right-3 z-[1000] flex flex-col gap-1.5 bg-[#0a0d18]/90 border border-sky-800/60 p-1.5 rounded-xl backdrop-blur-md shadow-2xl">
+                  <button
+                    onClick={() => mapInstanceRef.current?.zoomIn()}
+                    className="p-2 rounded-lg bg-sky-950/80 hover:bg-sky-800 text-sky-200 hover:text-white transition-all cursor-pointer font-bold text-xs flex items-center justify-center active:scale-95 shadow-sm"
+                    title="Zoom In"
+                  >
+                    <Plus className="w-3.5 h-3.5" />
+                  </button>
+                  <button
+                    onClick={() => mapInstanceRef.current?.zoomOut()}
+                    className="p-2 rounded-lg bg-sky-950/80 hover:bg-sky-800 text-sky-200 hover:text-white transition-all cursor-pointer font-bold text-xs flex items-center justify-center active:scale-95 shadow-sm"
+                    title="Zoom Out"
+                  >
+                    <Minus className="w-3.5 h-3.5" />
+                  </button>
+                  <button
+                    onClick={() => {
+                      mapInstanceRef.current?.setView([20, 0], 2.3);
+                    }}
+                    className="p-2 rounded-lg bg-[#141829] hover:bg-sky-900 text-zinc-400 hover:text-white transition-all cursor-pointer text-[9px] font-mono font-bold flex items-center justify-center active:scale-95"
+                    title="Reset View to Full Earth"
+                  >
+                    1:1
+                  </button>
+                  <button
+                    onClick={() => setMapViewMode('cosmic')}
+                    className="p-2 rounded-lg bg-purple-600 hover:bg-purple-500 text-white transition-all cursor-pointer flex items-center justify-center shadow-md active:scale-95 group/sw"
+                    title="Switch to Cosmic Orrery"
+                  >
+                    <Orbit className="w-3.5 h-3.5 group-hover/sw:rotate-90 transition-transform" />
+                  </button>
+                </div>
+              </div>
 
-              {/* Map Quick Legend / Trajectory Controller */}
-              <div className="mt-3 pt-2 border-t border-sky-950/80 flex flex-wrap items-center justify-between gap-3 text-xs text-zinc-400 font-din">
+              {/* Map Quick Legend / Trajectory Controller (Locked to 34px) */}
+              <div className="h-[34px] mt-3 pt-2 border-t border-sky-950/80 flex items-center justify-between gap-3 text-xs text-zinc-400 font-din">
                 {currentTrajectory ? (
                   <div className="flex items-center gap-2.5 flex-wrap">
                     <span 
@@ -2919,136 +3295,369 @@ export const MapScreen: React.FC = () => {
 
       </div>
 
-      {/* VIEW 2: COSMIC ORRERY & MULTIVERSE REALMS */}
+      {/* VIEW 2: COSMIC ORRERY & ORBITAL CELESTIAL CANVASES */}
       <div className={mapViewMode === 'cosmic' ? 'block' : 'hidden'}>
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        {/* Sector Filter Tabs (Locked to exact 54px height) */}
+        <div className="h-[54px] min-h-[54px] max-h-[54px] bg-[#0b0e17] border border-purple-950/80 rounded-xl px-3 mb-4 shadow-xl flex items-center justify-between gap-2 overflow-x-auto no-scrollbar">
+          <div className="flex items-center gap-1.5 shrink-0">
+            <button
+              onClick={() => setCosmicCategory('all')}
+              className={`px-3 py-1 rounded-lg text-xs font-bold font-title uppercase tracking-wider transition-all cursor-pointer ${
+                cosmicCategory === 'all'
+                  ? 'bg-purple-600 text-white shadow-md'
+                  : 'bg-[#121624] text-zinc-400 hover:text-white border border-[#1f273d]'
+              }`}
+            >
+              ALL CELESTIAL SECTORS ({cosmicRealms.length})
+            </button>
+
+            <button
+              onClick={() => setCosmicCategory('orbital')}
+              className={`flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-bold font-title uppercase tracking-wider transition-all cursor-pointer ${
+                cosmicCategory === 'orbital'
+                  ? 'bg-sky-600 text-white shadow-md'
+                  : 'bg-[#121624] text-zinc-400 hover:text-white border border-[#1f273d]'
+              }`}
+            >
+              <span>🛰️</span>
+              <span>EARTH ORBIT & STATIONS ({cosmicRealms.filter(r => r.category === 'orbital').length})</span>
+            </button>
+
+            <button
+              onClick={() => setCosmicCategory('nine-realms')}
+              className={`flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-bold font-title uppercase tracking-wider transition-all cursor-pointer ${
+                cosmicCategory === 'nine-realms'
+                  ? 'bg-amber-600 text-white shadow-md'
+                  : 'bg-[#121624] text-zinc-400 hover:text-white border border-[#1f273d]'
+              }`}
+            >
+              <span>🪐</span>
+              <span>THE NINE REALMS ({cosmicRealms.filter(r => r.category === 'nine-realms').length})</span>
+            </button>
+
+            <button
+              onClick={() => setCosmicCategory('deep-space')}
+              className={`flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-bold font-title uppercase tracking-wider transition-all cursor-pointer ${
+                cosmicCategory === 'deep-space'
+                  ? 'bg-rose-600 text-white shadow-md'
+                  : 'bg-[#121624] text-zinc-400 hover:text-white border border-[#1f273d]'
+              }`}
+            >
+              <span>🌌</span>
+              <span>DEEP SPACE & GALAXIES ({cosmicRealms.filter(r => r.category === 'deep-space').length})</span>
+            </button>
+
+            <button
+              onClick={() => setCosmicCategory('dimensions')}
+              className={`flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-bold font-title uppercase tracking-wider transition-all cursor-pointer ${
+                cosmicCategory === 'dimensions'
+                  ? 'bg-emerald-600 text-white shadow-md'
+                  : 'bg-[#121624] text-zinc-400 hover:text-white border border-[#1f273d]'
+              }`}
+            >
+              <span>🌀</span>
+              <span>DIMENSIONS & MULTIVERSE ({cosmicRealms.filter(r => r.category === 'dimensions' || r.category === 'multiverse').length})</span>
+            </button>
+          </div>
+
+          <div className="hidden lg:flex items-center gap-2 text-[11px] font-mono text-purple-400/80 px-2 shrink-0">
+            <Orbit className="w-3.5 h-3.5 text-purple-400 animate-spin" style={{ animationDuration: '15s' }} />
+            <span>REAL-TIME ASTRO-TACTICAL RECON</span>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 items-start">
           
           {/* Left 8 Cols: Celestial Space & Multiverse Interactive Orrery */}
-          <div className="lg:col-span-8 bg-[#060814] border-2 border-purple-950 rounded-2xl p-6 relative shadow-2xl overflow-hidden">
+          <div className="lg:col-span-8 space-y-4">
+            <div className="bg-[#090d14] border-2 border-purple-950/80 rounded-2xl p-3 sm:p-4 relative shadow-2xl">
             
-            {/* Header */}
-            <div className="flex items-center justify-between mb-4 pb-3 border-b border-purple-950 text-xs font-mono text-purple-300/80">
+            {/* Header (Locked to 28px) */}
+            <div className="h-[28px] flex items-center justify-between mb-3 pb-2 border-b border-purple-950 text-xs font-mono text-purple-300/80">
               <div className="flex items-center gap-2">
                 <Orbit className="w-4 h-4 text-purple-400 animate-spin" style={{ animationDuration: '20s' }} />
-                <span>MULTIVERSAL ORRERY & CELESTIAL REALMS CANVAS</span>
+                <span>EARTH-CENTERED CELESTIAL ORBIT & COSMIC SECTOR ORRERY</span>
               </div>
-              <span>COSMIC REALMS: <strong className="text-white">{cosmicRealms.length}</strong></span>
+              <div className="flex items-center gap-3 text-[11px]">
+                <span>CATEGORY: <strong className="text-white uppercase">{cosmicCategory}</strong></span>
+                <span>VISIBLE NODES: <strong className="text-white">{cosmicRealms.filter(r => cosmicCategory === 'all' || r.category === cosmicCategory || (cosmicCategory === 'dimensions' && r.category === 'multiverse')).length}</strong></span>
+              </div>
             </div>
 
-            {/* Orrery Canvas */}
-            <div className="relative w-full h-[520px] sm:h-[580px] bg-[#03040a] border border-purple-900/40 rounded-xl overflow-hidden shadow-inner flex items-center justify-center">
+            {/* Orrery Canvas with Ref for Non-Passive Wheel Interception and Pan/Drag */}
+            <div 
+              ref={cosmicContainerRef}
+              onPointerDown={handleCosmicPointerDown}
+              onPointerMove={handleCosmicPointerMove}
+              onPointerUp={handleCosmicPointerUp}
+              onPointerCancel={handleCosmicPointerUp}
+              onDoubleClick={() => {
+                setCosmicScale(1);
+                setCosmicPan({ x: 0, y: 0 });
+              }}
+              className={`relative w-full h-[520px] sm:h-[580px] lg:h-[620px] bg-[#020307] border border-purple-900/40 rounded-xl overflow-hidden shadow-inner flex items-center justify-center select-none touch-none ${
+                isPanningCosmic ? 'cursor-grabbing' : 'cursor-grab'
+              }`}
+            >
               
               {/* Cosmic Starfield & Nebula Background */}
-              <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-900/20 via-[#03040a] to-[#010206] pointer-events-none" />
+              <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-indigo-950/30 via-[#03040a] to-[#010204] pointer-events-none" />
               
-              {/* Concentric Orbital Rings */}
-              <div className="absolute w-[80%] aspect-square rounded-full border border-purple-500/10 pointer-events-none animate-spin" style={{ animationDuration: '90s' }} />
-              <div className="absolute w-[58%] aspect-square rounded-full border border-sky-500/15 pointer-events-none animate-spin" style={{ animationDuration: '60s' }} />
-              <div className="absolute w-[36%] aspect-square rounded-full border border-amber-500/20 pointer-events-none animate-spin" style={{ animationDuration: '40s' }} />
+              {/* Animated Background Star Dust */}
+              <div className="absolute inset-0 opacity-40 bg-[radial-gradient(#a855f7_1px,transparent_1px)] [background-size:24px_24px] pointer-events-none" />
 
-              {/* Celestial Nodes / Multiverse Spheres */}
-              {cosmicRealms.map((realm) => {
-                const isSelected = activeCosmicRealm.id === realm.id;
-                return (
-                  <button
-                    key={realm.id}
-                    onClick={() => {
-                      setSelectedCosmicRealmId(realm.id);
-                    }}
-                    style={{ left: `${realm.x}%`, top: `${realm.y}%` }}
-                    className="absolute -translate-x-1/2 -translate-y-1/2 group/realm cursor-pointer focus:outline-none transition-transform z-20"
-                  >
-                    {/* Pulsing Aura */}
-                    <div 
-                      className={`absolute -inset-4 rounded-full transition-all ${
-                        isSelected ? 'animate-pulse opacity-80' : 'opacity-20 group-hover/realm:opacity-60'
-                      }`}
-                      style={{ backgroundColor: realm.color, filter: 'blur(8px)' }}
-                    />
+              {/* Normalized Floating Tactical Controls: +, -, 1:1, Mode Switch */}
+              <div 
+                onPointerDown={(e) => e.stopPropagation()}
+                onPointerMove={(e) => e.stopPropagation()}
+                onPointerUp={(e) => e.stopPropagation()}
+                className="floating-controls absolute top-3 right-3 z-[1000] flex flex-col gap-1.5 bg-[#0a0d18]/90 border border-purple-800/60 p-1.5 rounded-xl backdrop-blur-md shadow-2xl pointer-events-auto"
+              >
+                <button
+                  onClick={() => setCosmicScale((prev) => Math.min(2.5, prev + 0.2))}
+                  className="p-2 rounded-lg bg-purple-950/80 hover:bg-purple-800 text-purple-200 hover:text-white transition-all cursor-pointer font-bold text-xs flex items-center justify-center active:scale-95 shadow-sm"
+                  title="Zoom In Cosmos"
+                >
+                  <Plus className="w-3.5 h-3.5" />
+                </button>
+                <button
+                  onClick={() => setCosmicScale((prev) => Math.max(0.6, prev - 0.2))}
+                  className="p-2 rounded-lg bg-purple-950/80 hover:bg-purple-800 text-purple-200 hover:text-white transition-all cursor-pointer font-bold text-xs flex items-center justify-center active:scale-95 shadow-sm"
+                  title="Zoom Out Cosmos"
+                >
+                  <Minus className="w-3.5 h-3.5" />
+                </button>
+                <button
+                  onClick={() => {
+                    setCosmicScale(1);
+                    setCosmicPan({ x: 0, y: 0 });
+                  }}
+                  className="p-2 rounded-lg bg-[#141829] hover:bg-purple-900 text-zinc-400 hover:text-white transition-all cursor-pointer text-[9px] font-mono font-bold flex items-center justify-center active:scale-95"
+                  title="Reset Scale & Pan Position (100%)"
+                >
+                  1:1
+                </button>
+                <button
+                  onClick={() => navigateToEarthUniverse('all')}
+                  className="p-2 rounded-lg bg-sky-600 hover:bg-sky-500 text-white transition-all cursor-pointer flex items-center justify-center shadow-md active:scale-95 group/sw"
+                  title="Switch to Earth Map"
+                >
+                  <Globe2 className="w-3.5 h-3.5 group-hover/sw:scale-110 transition-transform" />
+                </button>
+              </div>
 
-                    {/* Planet / Realm Sphere */}
-                    <div 
-                      className={`relative rounded-full flex items-center justify-center border-2 transition-all shadow-2xl ${
-                        isSelected 
-                          ? 'scale-125 ring-4 ring-white/60' 
-                          : 'group-hover:scale-110'
-                      }`}
-                      style={{
-                        width: `${realm.radius}px`,
-                        height: `${realm.radius}px`,
-                        backgroundColor: '#000000',
-                        borderColor: realm.color,
-                        boxShadow: `0 0 15px ${realm.color}`,
+              {/* Scalable & Pannable Orrery Solar & Planetary Planes */}
+              <div 
+                className="absolute inset-0 flex items-center justify-center pointer-events-none"
+                style={{ 
+                  transform: `translate3d(${cosmicPan.x}px, ${cosmicPan.y}px, 0) scale(${cosmicScale})`, 
+                  transformOrigin: 'center center', 
+                  transition: isPanningCosmic ? 'none' : 'transform 0.2s cubic-bezier(0.4, 0, 0.2, 1)' 
+                }}
+              >
+
+                {/* Concentric Orbital Rings with Tactical Legend */}
+                
+                {/* 1. Outer Deep Space & Galactic Sector Ring */}
+                <div className="absolute w-[98%] h-[95%] rounded-full border border-purple-500/20 pointer-events-none animate-spin" style={{ animationDuration: '160s' }}>
+                  <span className="absolute top-2 left-1/2 -translate-x-1/2 px-2.5 py-0.5 rounded bg-black/85 border border-purple-900/70 text-[9px] font-mono text-purple-400 tracking-wider">
+                    DEEP SPACE & GALACTIC EMPIRES • OUTER SECTORS
+                  </span>
+                </div>
+
+                {/* 2. Nine Realms Cosmic Axis Ring */}
+                <div className="absolute w-[86%] h-[82%] rounded-full border border-amber-500/25 pointer-events-none animate-spin" style={{ animationDuration: '100s', animationDirection: 'reverse' }}>
+                  <span className="absolute top-2 left-1/2 -translate-x-1/2 px-2.5 py-0.5 rounded bg-black/85 border border-amber-900/70 text-[9px] font-mono text-amber-400 tracking-wider">
+                    YGGDRASIL • THE NINE REALMS AXIS
+                  </span>
+                </div>
+
+                {/* 3. Lunar Orbit & Mystic Pocket Dimensions Ring */}
+                <div className="absolute w-[72%] h-[66%] rounded-full border border-slate-400/30 border-dashed pointer-events-none">
+                  <span className="absolute top-2 left-1/2 -translate-x-1/2 px-2.5 py-0.5 rounded bg-black/85 border border-slate-700 text-[8.5px] font-mono text-slate-300 tracking-wider">
+                    LUNAR ORBIT & MYSTIC SECTORS (384,400 KM)
+                  </span>
+                </div>
+
+                {/* 4. Geostationary High Earth Orbit (GEO - 35,786 km) */}
+                <div className="absolute w-[50%] h-[44%] rounded-full border border-sky-400/35 border-dashed pointer-events-none">
+                  <span className="absolute bottom-1.5 left-1/2 -translate-x-1/2 px-2 py-0.5 rounded bg-black/85 border border-sky-900 text-[8px] font-mono text-sky-400 tracking-wider">
+                    GEO HIGH ORBIT • 35,786 KM (S.A.B.E.R. STATION)
+                  </span>
+                </div>
+
+                {/* 5. Low Earth Orbit (LEO - 120-400 km) */}
+                <div className="absolute w-[28%] h-[24%] rounded-full border border-orange-500/40 border-dashed pointer-events-none">
+                  <span className="absolute top-1 left-1/2 -translate-x-1/2 px-1.5 py-0.5 rounded bg-black/85 border border-orange-900 text-[8px] font-mono text-orange-400 tracking-wider">
+                    LEO • 120–400 KM
+                  </span>
+                </div>
+
+                {/* Central Terrestrial Earth Interactive Hub */}
+                <button 
+                  onClick={() => {
+                    if (hasDraggedCosmicRef.current) return;
+                    navigateToEarthUniverse('all');
+                  }}
+                  className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-auto cursor-pointer z-30 group/earth focus:outline-none transition-transform hover:scale-115 active:scale-95"
+                  title="Click or Zoom In to open Terrestrial Earth Tactical Map"
+                >
+                  {/* Atmospheric Glow Ring */}
+                  <div className="absolute -inset-3 rounded-full bg-sky-400/20 blur-md group-hover/earth:bg-sky-400/45 group-hover/earth:scale-125 transition-all animate-pulse" />
+                  
+                  <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-tr from-sky-900 via-blue-700 to-teal-500 shadow-[0_0_35px_rgba(56,189,248,0.6)] border-2 border-sky-300 group-hover/earth:border-white flex items-center justify-center transition-all">
+                    <div className="absolute inset-0 rounded-full bg-[radial-gradient(circle_at_30%_30%,rgba(255,255,255,0.4),transparent_60%)]" />
+                    <Globe2 className="w-8 h-8 sm:w-10 sm:h-10 text-white drop-shadow-md group-hover/earth:scale-110 transition-transform" />
+                  </div>
+
+                  <div className="absolute left-1/2 -translate-x-1/2 top-full mt-1.5 px-2.5 py-0.5 rounded-md bg-sky-950 border border-sky-400 text-[9px] font-black font-title tracking-wider text-sky-200 group-hover/earth:bg-sky-600 group-hover/earth:text-white uppercase whitespace-nowrap shadow-xl transition-colors">
+                    🌍 EARTH • CLICK TO ENTER ➔
+                  </div>
+                </button>
+
+                {/* Celestial Nodes / Multiverse Spheres */}
+                {cosmicRealms.map((realm) => {
+                  const isSelected = activeCosmicRealm.id === realm.id;
+                  const isMatchingCategory = cosmicCategory === 'all' || 
+                    realm.category === cosmicCategory || 
+                    (cosmicCategory === 'dimensions' && realm.category === 'multiverse');
+
+                  if (!isMatchingCategory) return null;
+
+                  // Skip drawing center earth as a separate realm node since it is the central interactive hub
+                  if (realm.id === 'midgard') return null;
+
+                  return (
+                    <button
+                      key={realm.id}
+                      onClick={() => {
+                        if (hasDraggedCosmicRef.current) return;
+                        setSelectedCosmicRealmId(realm.id);
                       }}
+                      style={{ left: `${realm.x}%`, top: `${realm.y}%` }}
+                      className="absolute -translate-x-1/2 -translate-y-1/2 pointer-events-auto group/realm cursor-pointer focus:outline-none transition-transform z-20"
                     >
-                      <Sparkles className="w-3.5 h-3.5" style={{ color: realm.color }} />
-                    </div>
+                      {/* Pulsing Aura */}
+                      <div 
+                        className={`absolute -inset-4 rounded-full transition-all ${
+                          isSelected ? 'animate-pulse opacity-85' : 'opacity-25 group-hover/realm:opacity-70'
+                        }`}
+                        style={{ backgroundColor: realm.color, filter: 'blur(10px)' }}
+                      />
 
-                    {/* Label Badge */}
-                    <div 
-                      className={`absolute left-1/2 -translate-x-1/2 top-full mt-2 px-2.5 py-0.5 rounded text-[10px] font-bold font-title tracking-wider uppercase whitespace-nowrap transition-all shadow-xl ${
-                        isSelected 
-                          ? 'bg-white text-black ring-2 ring-purple-500' 
-                          : 'bg-black/90 text-zinc-300 border border-zinc-700 group-hover/realm:border-white'
-                      }`}
-                    >
-                      {realm.name.split(' (')[0]}
-                    </div>
-                  </button>
-                );
-              })}
+                      {/* Planet / Realm Sphere */}
+                      <div 
+                        className={`relative rounded-full flex items-center justify-center border-2 transition-all shadow-2xl ${
+                          isSelected 
+                            ? 'scale-125 ring-4 ring-white/80' 
+                            : 'group-hover:scale-110'
+                        }`}
+                        style={{
+                          width: `${realm.radius}px`,
+                          height: `${realm.radius}px`,
+                          backgroundColor: '#050711',
+                          borderColor: realm.color,
+                          boxShadow: `0 0 16px ${realm.color}`,
+                        }}
+                      >
+                        <span className="text-xs leading-none drop-shadow">
+                          {realm.icon || '✨'}
+                        </span>
+                      </div>
+
+                      {/* Label Badge */}
+                      <div 
+                        className={`absolute left-1/2 -translate-x-1/2 top-full mt-2 px-2 py-0.5 rounded text-[9.5px] font-bold font-title tracking-wider uppercase whitespace-nowrap transition-all shadow-xl ${
+                          isSelected 
+                            ? 'bg-white text-black ring-2 ring-purple-500 scale-105' 
+                            : 'bg-black/90 text-zinc-300 border border-zinc-700 group-hover/realm:border-white'
+                        }`}
+                      >
+                        <span>{realm.name.split(' (')[0]}</span>
+                        {realm.altitudeOrDistance && (
+                          <span className="block text-[8px] font-mono text-zinc-400 tracking-normal font-normal">
+                            {realm.altitudeOrDistance.split(' (')[0]}
+                          </span>
+                        )}
+                      </div>
+                    </button>
+                  );
+                })}
+
+              </div>
 
             </div>
 
-            {/* Back to Earth Map Button */}
-            <div className="mt-4 pt-3 border-t border-purple-950 flex items-center justify-between text-xs text-zinc-400 font-din">
-              <span className="text-purple-300">CLICK ANY CELESTIAL REALM TO VIEW ITS MULTIVERSAL DOSSIER</span>
+            {/* Tactical Footer Legend & Return Button (Locked to 34px) */}
+            <div className="h-[34px] mt-3 pt-2 border-t border-purple-950 flex items-center justify-between gap-3 text-xs text-zinc-400 font-din">
+              <div className="flex items-center gap-2 text-purple-300">
+                <Crosshair className="w-3.5 h-3.5 text-purple-400" />
+                <span>SELECT ANY ORBITAL NODE OR ALIEN REALM TO LOAD TELEMETRY DOSSIER</span>
+              </div>
+              
               <button
                 onClick={() => navigateToEarthUniverse('all')}
-                className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-sky-600 hover:bg-sky-500 text-white font-bold font-title uppercase text-xs cursor-pointer shadow transition-all"
+                className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-sky-600 hover:bg-sky-500 text-white font-bold font-title uppercase text-xs cursor-pointer shadow transition-all shrink-0"
               >
                 <Globe2 className="w-3.5 h-3.5" />
                 <span>RETURN TO EARTH MAP</span>
               </button>
             </div>
 
+            </div>
           </div>
 
           {/* Right 4 Cols: Celestial Realm Dossier */}
           <div className="lg:col-span-4">
-            <div className="bg-[#141414] border-2 border-purple-900/60 rounded-2xl p-6 shadow-2xl">
+            <div className="bg-[#0f1322] border-2 border-purple-900/60 rounded-2xl p-5 shadow-2xl">
               
               {/* Realm Header */}
               <div className="flex items-start justify-between gap-3 mb-4 pb-4 border-b border-[#242424]">
                 <div>
-                  <span className="text-[10px] font-bold font-title tracking-widest uppercase px-2 py-0.5 rounded bg-purple-950 border border-purple-600 text-purple-300">
-                    {activeCosmicRealm.type.toUpperCase()}
-                  </span>
-                  <h2 className="text-xl font-black text-white uppercase font-title leading-tight mt-2">
+                  <div className="flex items-center gap-2 flex-wrap mb-1.5">
+                    <span className="text-[10px] font-bold font-title tracking-widest uppercase px-2 py-0.5 rounded bg-purple-950 border border-purple-600 text-purple-300">
+                      {activeCosmicRealm.type.toUpperCase()}
+                    </span>
+                    <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-[#070a14] border border-[#26314d] text-zinc-400">
+                      {activeCosmicRealm.systemGroup}
+                    </span>
+                  </div>
+                  <h2 className="text-xl font-black text-white uppercase font-title leading-tight">
                     {activeCosmicRealm.name}
                   </h2>
                 </div>
 
                 <div 
-                  className="w-10 h-10 rounded-xl flex items-center justify-center text-white border shadow-lg shrink-0"
+                  className="w-11 h-11 rounded-xl flex items-center justify-center text-white border shadow-lg shrink-0 text-xl"
                   style={{ backgroundColor: `${activeCosmicRealm.color}22`, borderColor: activeCosmicRealm.color }}
                 >
-                  <Orbit className="w-5 h-5" style={{ color: activeCosmicRealm.color }} />
+                  {activeCosmicRealm.icon || '🪐'}
                 </div>
               </div>
 
-              {/* Enter Earth Reality Map Action */}
-              <button
-                onClick={() => navigateToEarthUniverse(activeCosmicRealm.universeFilterKey)}
-                className="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-gradient-to-r from-sky-600 to-blue-600 hover:from-sky-500 hover:to-blue-500 text-white font-bold font-title uppercase text-xs mb-4 shadow-lg cursor-pointer transition-all"
-              >
-                <Globe2 className="w-4 h-4" />
-                <span>EXPLORE THIS REALITY ON REAL MAP</span>
-                <ArrowRight className="w-4 h-4" />
-              </button>
+              {/* Telemetry Strip */}
+              {activeCosmicRealm.altitudeOrDistance && (
+                <div className="mb-4 p-2.5 rounded-xl bg-[#070a14] border border-purple-950 flex items-center justify-between text-xs font-mono">
+                  <span className="text-zinc-500 font-bold">ALTITUDE / RANGE:</span>
+                  <span className="text-purple-300 font-bold">{activeCosmicRealm.altitudeOrDistance}</span>
+                </div>
+              )}
+
+              {/* Enter Earth Reality Map Action (if terrestrial universe attached) */}
+              {activeCosmicRealm.universeFilterKey && (
+                <button
+                  onClick={() => navigateToEarthUniverse(activeCosmicRealm.universeFilterKey)}
+                  className="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-gradient-to-r from-sky-600 to-blue-600 hover:from-sky-500 hover:to-blue-500 text-white font-bold font-title uppercase text-xs mb-4 shadow-lg cursor-pointer transition-all"
+                >
+                  <Globe2 className="w-4 h-4" />
+                  <span>EXPLORE ON EARTH REALITY MAP</span>
+                  <ArrowRight className="w-4 h-4" />
+                </button>
+              )}
 
               {/* Description */}
-              <p className="text-xs text-zinc-300 leading-relaxed mb-6 bg-[#0a0a0a] p-4 rounded-xl border border-[#27272a]">
+              <p className="text-xs text-zinc-300 leading-relaxed mb-5 bg-[#070a14] p-4 rounded-xl border border-[#212b45]">
                 {activeCosmicRealm.description}
               </p>
 
@@ -3056,32 +3665,32 @@ export const MapScreen: React.FC = () => {
               <div>
                 <h3 className="text-xs font-bold uppercase tracking-wider text-zinc-400 mb-3 flex items-center gap-1.5 font-title">
                   <Clock className="w-3.5 h-3.5 text-purple-400" />
-                  <span>KEY EVENTS IN THIS REALM</span>
+                  <span>EVENTS IN THIS SECTOR ({activeCosmicRealm.featuredEvents.length})</span>
                 </h3>
 
                 <div className="space-y-3">
                   {activeCosmicRealm.featuredEvents.map((evt, idx) => (
                     <div 
                       key={idx}
-                      className="p-3.5 rounded-xl bg-[#181818] border border-[#2a2a2a] hover:border-purple-500/80 transition-all"
+                      className="p-3.5 rounded-xl bg-[#141a2d] border border-[#232f4e] hover:border-purple-500/80 transition-all"
                     >
                       <div className="flex items-center justify-between gap-2 mb-1">
                         <span className="text-xs font-black font-title tracking-wider text-white uppercase">
                           {evt.era}
                         </span>
-                        <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-[#0a0a0a] border border-[#333333] text-zinc-400 font-title uppercase">
+                        <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-[#090d19] border border-[#26314f] text-zinc-400 font-title uppercase">
                           {evt.media}
                         </span>
                       </div>
 
-                      <p className="text-xs text-zinc-300 mb-2 font-din">
+                      <p className="text-xs text-zinc-300 mb-2.5 font-din leading-relaxed">
                         {evt.title}
                       </p>
 
                       {evt.eventId && (
                         <button
                           onClick={() => jumpToTimelineEvent(evt.eventId!)}
-                          className="w-full flex items-center justify-center gap-1.5 py-1 rounded bg-[#000000] hover:bg-purple-600 text-zinc-300 hover:text-white border border-[#333333] text-[11px] font-bold font-title tracking-wider uppercase transition-all cursor-pointer"
+                          className="w-full flex items-center justify-center gap-1.5 py-1.5 rounded-lg bg-[#070a14] hover:bg-purple-600 text-zinc-300 hover:text-white border border-[#2e3b5e] text-[11px] font-bold font-title tracking-wider uppercase transition-all cursor-pointer shadow"
                         >
                           <span>OPEN IN TIMELINE</span>
                           <ArrowRight className="w-3 h-3" />

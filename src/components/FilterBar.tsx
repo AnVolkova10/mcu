@@ -70,6 +70,7 @@ export const FilterBar: React.FC = () => {
   const universes = [
     { id: 'sacred-616', label: '🛡️ Earth-616 (Sacred Timeline)' },
     { id: 'earth-10005', label: '🧬 Earth-10005 (Fox X-Men Universe)' },
+    { id: 'earth-92131', label: '📺 Earth-92131 (X-Men Animated / TAS)' },
     { id: 'earth-90214', label: '🕷️ Earth-90214 (Spider-Noir)' },
     { id: 'branches', label: '⏳ Earth-616 Branches (All)' },
     { id: 'time-heists', label: '⌛ Endgame Time Heists (1970, 2012, 2014)' },
