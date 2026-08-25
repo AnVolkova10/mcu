@@ -182,15 +182,15 @@ export const timelineEras: EraGroup[] = [
     ]
   },
   {
-    "id": "era-3000-bce-apocalypse",
-    "title": "-c. 3000 B.C.E. (Earth-10005 / Ancient Egypt)-",
-    "cleanTitle": "c. 3000 B.C.E. (Earth-10005)",
+    "id": "era-3600-bce-apocalypse",
+    "title": "-c. 3600 B.C.E. (Earth-10005 / Ancient Egypt)-",
+    "cleanTitle": "c. 3600 B.C.E. (Earth-10005)",
     "category": "ancient",
     "events": [
       {
-        "id": "event-3000-bce-apocalypse-1",
-        "eraId": "era-3000-bce-apocalypse",
-        "eraTitle": "c. 3000 B.C.E. (Earth-10005)",
+        "id": "event-3600-bce-apocalypse-1",
+        "eraId": "era-3600-bce-apocalypse",
+        "eraTitle": "c. 3600 B.C.E. (Earth-10005)",
         "mediaKey": "x-men-days-of-future-past",
         "mediaTitle": "X-Men: Days of Future Past (2014)",
         "mediaType": "movie",
@@ -198,13 +198,13 @@ export const timelineEras: EraGroup[] = [
         "isAlternativeTimeline": true,
         "timelineType": "multiverse-alternate",
         "earthDesignation": "Earth-10005 (Fox X-Men Universe)",
-        "branchDetails": "Origins of the World's First Mutant",
+        "branchDetails": "Origins of the World's First Mutant: Telekinetic Pyramid Construction",
         "rawClasses": [
           "x-men-days-of-future-past"
         ],
-        "rawHtml": "<p>In Ancient Egypt circa 3000 B.C.E., a cloaked grey-skinned adolescent mutant named <strong class=\"en-sabah-nur-apocalypse\">En Sabah Nur (Apocalypse)</strong> uses immense godlike telekinesis to assemble the Great Pyramids from floating sandstone blocks across the desert. Thousands of ancient Egyptian worshippers prostrate themselves on the sand, chanting <em>\"En Sabah Nur\"</em> in reverent worship, as his Four Horsemen look on from horseback atop the dunes.</p>",
+        "rawHtml": "<p>In Ancient Egypt circa 3600 B.C.E., a cloaked grey-skinned adolescent mutant named <strong class=\"en-sabah-nur-apocalypse\">En Sabah Nur (Apocalypse)</strong> uses immense godlike telekinesis to assemble the Great Pyramids from floating sandstone blocks across the desert. Thousands of ancient Egyptian worshippers prostrate themselves on the sand, chanting <em>\"En Sabah Nur\"</em> in reverent worship, as his Four Horsemen look on from horseback atop the dunes.</p>",
         "paragraphs": [
-          "In Ancient Egypt circa 3000 B.C.E., a cloaked grey-skinned adolescent mutant named <strong class=\"en-sabah-nur-apocalypse\">En Sabah Nur (Apocalypse)</strong> uses immense godlike telekinesis to assemble the Great Pyramids from floating sandstone blocks across the desert. Thousands of ancient Egyptian worshippers prostrate themselves on the sand, chanting <em>\"En Sabah Nur\"</em> in reverent worship, as his Four Horsemen look on from horseback atop the dunes."
+          "In Ancient Egypt circa 3600 B.C.E., a cloaked grey-skinned adolescent mutant named <strong class=\"en-sabah-nur-apocalypse\">En Sabah Nur (Apocalypse)</strong> uses immense godlike telekinesis to assemble the Great Pyramids from floating sandstone blocks across the desert. Thousands of ancient Egyptian worshippers prostrate themselves on the sand, chanting <em>\"En Sabah Nur\"</em> in reverent worship, as his Four Horsemen look on from horseback atop the dunes."
         ],
         "characters": [
           "en-sabah-nur-apocalypse"
@@ -212,9 +212,9 @@ export const timelineEras: EraGroup[] = [
         "stones": [],
         "deaths": [],
         "mcuHighlights": [
-          "Awakening of En Sabah Nur (Apocalypse)",
           "Telekinetic Construction of the Great Pyramids",
-          "The Ancient Four Horsemen"
+          "The Ancient Four Horsemen",
+          "Worshippers Proclaim En Sabah Nur as God"
         ],
         "locations": [
           {
@@ -225,6 +225,51 @@ export const timelineEras: EraGroup[] = [
             "coordinates": [
               29.9792,
               31.1342
+            ],
+            "characters": [
+              "en-sabah-nur-apocalypse"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "event-3600-bce-apocalypse-2",
+        "eraId": "era-3600-bce-apocalypse",
+        "eraTitle": "c. 3600 B.C.E. (Earth-10005)",
+        "mediaKey": "x-men-apocalypse",
+        "mediaTitle": "X-Men: Apocalypse (2016)",
+        "mediaType": "movie",
+        "mediaPhase": "Phase 3",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-10005 (Fox X-Men Universe)",
+        "branchDetails": "Ancient Egyptian Transference Ritual & Pyramid Entombment",
+        "rawClasses": [
+          "x-men-apocalypse"
+        ],
+        "rawHtml": "<p>Following years of tyrannical rule over Ancient Egypt in 3600 B.C.E., the aging god-king mutant <strong class=\"en-sabah-nur-apocalypse\">En Sabah Nur (Apocalypse)</strong> leads a massive ritual procession into the apex of his golden pyramid to transfer his consciousness into the youthful body of a mutant endowed with cellular regeneration. As the solar eclipse alignment begins the mystical transference, Egyptian human resistance rebels sabotage the massive stone counterweights to collapse the monument. Apocalypse's Four Horsemen sacrifice their lives erecting psionic shields to protect their master, sealing En Sabah Nur in deep suspended animation under thousands of tons of rubble for millennia.</p>",
+        "paragraphs": [
+          "Following years of tyrannical rule over Ancient Egypt in 3600 B.C.E., the aging god-king mutant <strong class=\"en-sabah-nur-apocalypse\">En Sabah Nur (Apocalypse)</strong> leads a massive ritual procession into the apex of his golden pyramid to transfer his consciousness into the youthful body of a mutant endowed with cellular regeneration. As the solar eclipse alignment begins the mystical transference, Egyptian human resistance rebels sabotage the massive stone counterweights to collapse the monument. Apocalypse's Four Horsemen sacrifice their lives erecting psionic shields to protect their master, sealing En Sabah Nur in deep suspended animation under thousands of tons of rubble for millennia."
+        ],
+        "characters": [
+          "en-sabah-nur-apocalypse"
+        ],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "Solar Eclipse Transference Ritual",
+          "Sabotage of the Golden Pyramid",
+          "En Sabah Nur Entombed in Suspended Animation"
+        ],
+        "locations": [
+          {
+            "name": "Nile Valley Golden Pyramid of En Sabah Nur",
+            "cityOrRegion": "Nile Valley / Luxor",
+            "countryOrRealm": "Egypt",
+            "planet": "Earth-10005",
+            "coordinates": [
+              25.6872,
+              32.6396
             ],
             "characters": [
               "en-sabah-nur-apocalypse"
@@ -2465,6 +2510,434 @@ export const timelineEras: EraGroup[] = [
         "timelineType": "branched-616",
         "earthDesignation": "Earth-616 Branched Reality",
         "branchDetails": "Alternate Timeline Branch"
+      }
+    ]
+  },
+  {
+    "id": "era-1983-xmen-apocalypse",
+    "title": "-1983 (Earth-10005 / The Awakening of Apocalypse)-",
+    "cleanTitle": "1983 (Earth-10005 / Revised)",
+    "category": "golden-age",
+    "events": [
+      {
+        "id": "event-1983-apocalypse-1",
+        "eraId": "era-1983-xmen-apocalypse",
+        "eraTitle": "1983 (Earth-10005 / Revised)",
+        "mediaKey": "x-men-apocalypse",
+        "mediaTitle": "X-Men: Apocalypse (2016)",
+        "mediaType": "movie",
+        "mediaPhase": "Phase 3",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-10005 (Revised Post-DOFP Timeline)",
+        "branchDetails": "Awakening of Apocalypse & The Four Horsemen Recruitment",
+        "rawClasses": [
+          "x-men-apocalypse"
+        ],
+        "rawHtml": "<p>In 1983 Cairo, CIA operative <strong class=\"moira-mactaggert\">Moira MacTaggert</strong> investigates an underground mystical cult whose excavations accidentally channel sunlight into an ancient subterranean tomb, resurrecting <strong class=\"en-sabah-nur-apocalypse\">En Sabah Nur (Apocalypse)</strong> after thousands of years of dormancy. Wandering into the crowded alleyways, Apocalypse rescues teenage thief <strong class=\"storm-ororo-munroe\">Ororo Munroe (Storm)</strong> from merchants, magically enhancing her weather manipulation into godlike electrical storms and baptizing her as his <strong>First Horseman (Famine)</strong>.</p>\n<p>In East Berlin, <strong class=\"raven-darkholme\">Raven Darkhölme (Mystique)</strong> infiltrates a brutal underground mutant cage match, liberating the winged aerialist <strong class=\"archangel-warren-worthington\">Warren Worthington III (Angel)</strong> and the teleporting German youth <strong class=\"nightcrawler-kurt-wagner\">Kurt Wagner (Nightcrawler)</strong>. Apocalypse tracks down mutant broker Caliban, recruiting the psionic tracker <strong class=\"psylocke-betsy-braddock\">Betsy Braddock (Psylocke)</strong> as his <strong>Second Horseman (Pestilence)</strong> and bio-mechanically transmuting Angel's damaged feathered wings into razor-sharp metallic blades capable of firing lethal steel flechettes as his <strong>Third Horseman (Death)</strong>.</p>\n<p>In Pruszków, Poland, <strong class=\"erik-lehnsherr\">Erik Lehnsherr (Magneto)</strong> has spent ten years living under an alias as a foundry worker with his wife Magda and young daughter Nina. When local militia attempt to arrest him and accidentally slay his family with a misfired arrow, Erik butchers the squad in grief. Apocalypse intervenes, teleports Erik to the ruins of Auschwitz-Birkenau, and enhances his magnetism to tap into Earth's planetary electromagnetic core, coronating him as his <strong>Fourth Horseman (War)</strong>.</p>",
+        "paragraphs": [
+          "In 1983 Cairo, CIA operative <strong class=\"moira-mactaggert\">Moira MacTaggert</strong> investigates an underground mystical cult whose excavations accidentally channel sunlight into an ancient subterranean tomb, resurrecting <strong class=\"en-sabah-nur-apocalypse\">En Sabah Nur (Apocalypse)</strong> after thousands of years of dormancy. Wandering into the crowded alleyways, Apocalypse rescues teenage thief <strong class=\"storm-ororo-munroe\">Ororo Munroe (Storm)</strong> from merchants, magically enhancing her weather manipulation into godlike electrical storms and baptizing her as his <strong>First Horseman (Famine)</strong>.",
+          "In East Berlin, <strong class=\"raven-darkholme\">Raven Darkhölme (Mystique)</strong> infiltrates a brutal underground mutant cage match, liberating the winged aerialist <strong class=\"archangel-warren-worthington\">Warren Worthington III (Angel)</strong> and the teleporting German youth <strong class=\"nightcrawler-kurt-wagner\">Kurt Wagner (Nightcrawler)</strong>. Apocalypse tracks down mutant broker Caliban, recruiting the psionic tracker <strong class=\"psylocke-betsy-braddock\">Betsy Braddock (Psylocke)</strong> as his <strong>Second Horseman (Pestilence)</strong> and bio-mechanically transmuting Angel's damaged feathered wings into razor-sharp metallic blades capable of firing lethal steel flechettes as his <strong>Third Horseman (Death)</strong>.",
+          "In Pruszków, Poland, <strong class=\"erik-lehnsherr\">Erik Lehnsherr (Magneto)</strong> has spent ten years living under an alias as a foundry worker with his wife Magda and young daughter Nina. When local militia attempt to arrest him and accidentally slay his family with a misfired arrow, Erik butchers the squad in grief. Apocalypse intervenes, teleports Erik to the ruins of Auschwitz-Birkenau, and enhances his magnetism to tap into Earth's planetary electromagnetic core, coronating him as his <strong>Fourth Horseman (War)</strong>."
+        ],
+        "characters": [
+          "en-sabah-nur-apocalypse",
+          "storm-ororo-munroe",
+          "raven-darkholme",
+          "nightcrawler-kurt-wagner",
+          "psylocke-betsy-braddock",
+          "archangel-warren-worthington",
+          "erik-lehnsherr",
+          "moira-mactaggert"
+        ],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "Apocalypse Awakens in 1983 Cairo",
+          "Storm, Psylocke, and Archangel Reborn as Horsemen",
+          "Magneto Empowered with Planetary Magnetism at Auschwitz"
+        ],
+        "locations": [
+          {
+            "name": "Old Cairo Bazaars & Underground Tomb",
+            "cityOrRegion": "Cairo",
+            "countryOrRealm": "Egypt",
+            "planet": "Earth-10005",
+            "coordinates": [
+              30.0444,
+              31.2357
+            ],
+            "characters": [
+              "en-sabah-nur-apocalypse",
+              "storm-ororo-munroe",
+              "moira-mactaggert"
+            ]
+          },
+          {
+            "name": "Underground Mutant Fight Club",
+            "cityOrRegion": "East Berlin",
+            "countryOrRealm": "East Germany",
+            "planet": "Earth-10005",
+            "coordinates": [
+              52.5200,
+              13.4050
+            ],
+            "characters": [
+              "raven-darkholme",
+              "nightcrawler-kurt-wagner",
+              "archangel-warren-worthington",
+              "psylocke-betsy-braddock",
+              "en-sabah-nur-apocalypse"
+            ]
+          },
+          {
+            "name": "Forest Cottage & Steel Foundry",
+            "cityOrRegion": "Pruszków",
+            "countryOrRealm": "Poland",
+            "planet": "Earth-10005",
+            "coordinates": [
+              52.1670,
+              20.8140
+            ],
+            "characters": [
+              "erik-lehnsherr",
+              "en-sabah-nur-apocalypse"
+            ]
+          },
+          {
+            "name": "Auschwitz-Birkenau Camp Memorial",
+            "cityOrRegion": "Oświęcim",
+            "countryOrRealm": "Poland",
+            "planet": "Earth-10005",
+            "coordinates": [
+              50.0274,
+              19.2020
+            ],
+            "characters": [
+              "erik-lehnsherr",
+              "en-sabah-nur-apocalypse"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "event-1983-apocalypse-2",
+        "eraId": "era-1983-xmen-apocalypse",
+        "eraTitle": "1983 (Earth-10005 / Revised)",
+        "mediaKey": "x-men-apocalypse",
+        "mediaTitle": "X-Men: Apocalypse (2016)",
+        "mediaType": "movie",
+        "mediaPhase": "Phase 3",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-10005 (Revised Post-DOFP Timeline)",
+        "branchDetails": "Cerebro Nuclear Hijack, Mansion Blast & Quicksilver Rescue",
+        "rawClasses": [
+          "x-men-apocalypse"
+        ],
+        "rawHtml": "<p>At Xavier's School, <strong class=\"charles-xavier\">Charles Xavier</strong> welcomes teenage mutant <strong class=\"cyclops-scott-summers\">Scott Summers (Cyclops)</strong>, whose destructive optic blasts destroyed a high school bathroom, introducing him to telepathic student <strong class=\"jean-grey\">Jean Grey (Phoenix)</strong>. Joining forces with <strong class=\"moira-mactaggert\">Moira MacTaggert</strong> and <strong class=\"alex-summers\">Alex Summers (Havok)</strong>, Charles enters Cerebro to locate Erik. Apocalypse telepathically counter-hacks Cerebro, hijacking Xavier's neural pathways to order global military superpowers to launch all terrestrial nuclear warheads into deep space, effectively disarming the human race.</p>\n<p>Apocalypse and his Horsemen teleport directly into the mansion to abduct Charles. In a desperate attempt to sever the portal, Havok fires a high-potency plasma blast, accidentally striking the Blackbird jet's fuel core in the subterranean hangar and triggering a catastrophic explosion that tears through the entire estate.</p>\n<p>Arriving at the estate gates at the exact instant of detonation, <strong class=\"quicksilver-peter-maximoff\">Peter Maximoff (Quicksilver)</strong> accelerates into hypersonic velocity. In a breathtaking display of superhuman speed set to <em>\"Sweet Dreams\"</em>, Quicksilver races through collapsing flaming hallways, chucking dozens of students, teachers, and household pets out windows onto safety mattresses seconds ahead of the fireball. Havok tragically perishes at the blast epicenter. Seconds after the rescue, Colonel <strong class=\"william-stryker\">William Stryker</strong> arrives in military gunships, using a high-frequency acoustic EMP device to incapacitate and abduct <strong class=\"hank-mccoy\">Hank McCoy (Beast)</strong>, <strong class=\"raven-darkholme\">Raven</strong>, <strong class=\"quicksilver-peter-maximoff\">Quicksilver</strong>, and Moira to his secret Alkali Lake installation.</p>",
+        "paragraphs": [
+          "At Xavier's School, <strong class=\"charles-xavier\">Charles Xavier</strong> welcomes teenage mutant <strong class=\"cyclops-scott-summers\">Scott Summers (Cyclops)</strong>, whose destructive optic blasts destroyed a high school bathroom, introducing him to telepathic student <strong class=\"jean-grey\">Jean Grey (Phoenix)</strong>. Joining forces with <strong class=\"moira-mactaggert\">Moira MacTaggert</strong> and <strong class=\"alex-summers\">Alex Summers (Havok)</strong>, Charles enters Cerebro to locate Erik. Apocalypse telepathically counter-hacks Cerebro, hijacking Xavier's neural pathways to order global military superpowers to launch all terrestrial nuclear warheads into deep space, effectively disarming the human race.",
+          "Apocalypse and his Horsemen teleport directly into the mansion to abduct Charles. In a desperate attempt to sever the portal, Havok fires a high-potency plasma blast, accidentally striking the Blackbird jet's fuel core in the subterranean hangar and triggering a catastrophic explosion that tears through the entire estate.",
+          "Arriving at the estate gates at the exact instant of detonation, <strong class=\"quicksilver-peter-maximoff\">Peter Maximoff (Quicksilver)</strong> accelerates into hypersonic velocity. In a breathtaking display of superhuman speed set to <em>\"Sweet Dreams\"</em>, Quicksilver races through collapsing flaming hallways, chucking dozens of students, teachers, and household pets out windows onto safety mattresses seconds ahead of the fireball. Havok tragically perishes at the blast epicenter. Seconds after the rescue, Colonel <strong class=\"william-stryker\">William Stryker</strong> arrives in military gunships, using a high-frequency acoustic EMP device to incapacitate and abduct <strong class=\"hank-mccoy\">Hank McCoy (Beast)</strong>, <strong class=\"raven-darkholme\">Raven</strong>, <strong class=\"quicksilver-peter-maximoff\">Quicksilver</strong>, and Moira to his secret Alkali Lake installation."
+        ],
+        "characters": [
+          "charles-xavier",
+          "erik-lehnsherr",
+          "en-sabah-nur-apocalypse",
+          "quicksilver-peter-maximoff",
+          "alex-summers",
+          "hank-mccoy",
+          "raven-darkholme",
+          "cyclops-scott-summers",
+          "jean-grey",
+          "moira-mactaggert",
+          "william-stryker"
+        ],
+        "stones": [],
+        "deaths": [
+          "Alex Summers (Havok)"
+        ],
+        "mcuHighlights": [
+          "Apocalypse Launches Global Nuclear Arsenal into Space",
+          "Destruction of the Xavier Institute by Havok's Blast",
+          "Quicksilver's Hypersonic Sweet Dreams Mansion Evacuation",
+          "William Stryker Abducts the Senior X-Men"
+        ],
+        "locations": [
+          {
+            "name": "Xavier's School for Gifted Youngsters",
+            "cityOrRegion": "Westchester County, New York",
+            "countryOrRealm": "United States",
+            "planet": "Earth-10005",
+            "coordinates": [
+              41.1220,
+              -73.7949
+            ],
+            "characters": [
+              "charles-xavier",
+              "erik-lehnsherr",
+              "en-sabah-nur-apocalypse",
+              "quicksilver-peter-maximoff",
+              "alex-summers",
+              "hank-mccoy",
+              "raven-darkholme",
+              "cyclops-scott-summers",
+              "jean-grey",
+              "moira-mactaggert",
+              "william-stryker"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "event-1983-apocalypse-3",
+        "eraId": "era-1983-xmen-apocalypse",
+        "eraTitle": "1983 (Earth-10005 / Revised)",
+        "mediaKey": "x-men-apocalypse",
+        "mediaTitle": "X-Men: Apocalypse (2016)",
+        "mediaType": "movie",
+        "mediaPhase": "Phase 3",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-10005 (Revised Post-DOFP Timeline)",
+        "branchDetails": "Alkali Lake Infiltration & Weapon X Berserker Rampage",
+        "rawClasses": [
+          "x-men-apocalypse"
+        ],
+        "rawHtml": "<p>Stowing away aboard Stryker's military transport, young students <strong class=\"jean-grey\">Jean Grey</strong>, <strong class=\"cyclops-scott-summers\">Scott Summers</strong>, and <strong class=\"nightcrawler-kurt-wagner\">Kurt Wagner</strong> infiltrate the high-security subterranean <strong>Alkali Lake Weapon X Facility</strong> in the Canadian wilderness to liberate their captured teammates.</p>\n<p>Navigating the fortified corridors, Jean telepathically senses a feral presence locked behind a heavy containment blast door and releases **Weapon X**—a heavily conditioned <strong class=\"logan-wolverine\">Logan</strong> fitted with a neuro-targeting headset and gleaming Adamantium claws. Unleashing ferocious berserker rage, Logan tears through Stryker's heavily armed mercenary force in a gory hallway massacre, slaughtering dozens of guards and allowing the students to advance.</p>\n<p>Before Logan bolts into the freezing snowy forest, Jean gently approaches the feral beast, using her psychic touch to calm his fractured mind and restore a key memory fragment of his lost identity. Reunited with <strong class=\"hank-mccoy\">Hank</strong>, <strong class=\"raven-darkholme\">Raven</strong>, <strong class=\"quicksilver-peter-maximoff\">Quicksilver</strong>, and <strong class=\"moira-mactaggert\">Moira</strong>, the young mutant strike team dons experimental military flight suits, commandeers an advanced supersonic stealth jet, and charts a course for Cairo.</p>",
+        "paragraphs": [
+          "Stowing away aboard Stryker's military transport, young students <strong class=\"jean-grey\">Jean Grey</strong>, <strong class=\"cyclops-scott-summers\">Scott Summers</strong>, and <strong class=\"nightcrawler-kurt-wagner\">Kurt Wagner</strong> infiltrate the high-security subterranean <strong>Alkali Lake Weapon X Facility</strong> in the Canadian wilderness to liberate their captured teammates.",
+          "Navigating the fortified corridors, Jean telepathically senses a feral presence locked behind a heavy containment blast door and releases **Weapon X**—a heavily conditioned <strong class=\"logan-wolverine\">Logan</strong> fitted with a neuro-targeting headset and gleaming Adamantium claws. Unleashing ferocious berserker rage, Logan tears through Stryker's heavily armed mercenary force in a gory hallway massacre, slaughtering dozens of guards and allowing the students to advance.",
+          "Before Logan bolts into the freezing snowy forest, Jean gently approaches the feral beast, using her psychic touch to calm his fractured mind and restore a key memory fragment of his lost identity. Reunited with <strong class=\"hank-mccoy\">Hank</strong>, <strong class=\"raven-darkholme\">Raven</strong>, <strong class=\"quicksilver-peter-maximoff\">Quicksilver</strong>, and <strong class=\"moira-mactaggert\">Moira</strong>, the young mutant strike team dons experimental military flight suits, commandeers an advanced supersonic stealth jet, and charts a course for Cairo."
+        ],
+        "characters": [
+          "jean-grey",
+          "cyclops-scott-summers",
+          "nightcrawler-kurt-wagner",
+          "logan-wolverine",
+          "william-stryker",
+          "hank-mccoy",
+          "raven-darkholme",
+          "quicksilver-peter-maximoff",
+          "moira-mactaggert"
+        ],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "Jean Grey Liberates Weapon X (Wolverine)",
+          "Logan's Berserker Rampage in Alkali Lake Corridors",
+          "Jean Restores Logan's Fragmented Human Memories"
+        ],
+        "locations": [
+          {
+            "name": "Alkali Lake Subterranean Weapon X Facility",
+            "cityOrRegion": "Alberta / British Columbia",
+            "countryOrRealm": "Canada",
+            "planet": "Earth-10005",
+            "coordinates": [
+              51.2538,
+              -115.5708
+            ],
+            "characters": [
+              "jean-grey",
+              "cyclops-scott-summers",
+              "nightcrawler-kurt-wagner",
+              "logan-wolverine",
+              "william-stryker",
+              "hank-mccoy",
+              "raven-darkholme",
+              "quicksilver-peter-maximoff",
+              "moira-mactaggert"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "event-1983-apocalypse-4",
+        "eraId": "era-1983-xmen-apocalypse",
+        "eraTitle": "1983 (Earth-10005 / Revised)",
+        "mediaKey": "x-men-apocalypse",
+        "mediaTitle": "X-Men: Apocalypse (2016)",
+        "mediaType": "movie",
+        "mediaPhase": "Phase 3",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-10005 (Revised Post-DOFP Timeline)",
+        "branchDetails": "Battle of Cairo & Awakening of the Phoenix Force",
+        "rawClasses": [
+          "x-men-apocalypse"
+        ],
+        "rawHtml": "<p>In Cairo, <strong class=\"en-sabah-nur-apocalypse\">Apocalypse</strong> levels the modern metropolis into sand and erects a towering black pyramid. Positioning <strong class=\"charles-xavier\">Charles Xavier</strong> on a sacrificial altar, he initiates a consciousness transference ritual to assimilate Charles' telepathy and claim absolute psychic dominion over every mind on Earth. Aloft in the stratosphere, <strong class=\"erik-lehnsherr\">Magneto</strong> manipulates planetary geomagnetic fields, ripping metallic structures across continents into an orbiting shield of debris.</p>\n<p>The X-Men arrive in Cairo: <strong class=\"nightcrawler-kurt-wagner\">Nightcrawler</strong> teleports inside the pyramid and rescues Charles at the final second, though the partial transference causes Xavier's hair to fall out permanently. As the Four Horsemen engage the team, <strong class=\"quicksilver-peter-maximoff\">Quicksilver</strong> pummels Apocalypse at hypersonic velocity before the ancient mutant traps and snaps his leg. <strong class=\"raven-darkholme\">Mystique</strong> and Quicksilver appeal to Erik's conscience, reminding him he still has family. Erik turns against Apocalypse, impaling him with crossed steel girders, while <strong class=\"storm-ororo-munroe\">Storm</strong> rebels and unleashes lightning upon her former master.</p>\n<p>Fighting Apocalypse simultaneously on the physical battlefield and within Xavier's astral plane, the mutant team is slowly overwhelmed by Apocalypse's impenetrable shields. In a decisive moment of faith, Charles telepathically calls out to <strong class=\"jean-grey\">Jean Grey</strong>: <em>\"Jean, let go. Unleash your power.\"</em> Jean walks into the sky and releases the primordial <strong>Phoenix Force</strong>, manifesting an immense flaming raptor aura that shatters Apocalypse's psionic shield and incinerates his molecular structure into ash.</p>\n<p><strong>Epilogue:</strong> Erik and Jean use their immense powers to rebuild the Xavier Institute. Erik and Raven depart to forge their own paths, while Xavier, Hank, and Mystique assemble the next generation of X-Men—<strong class=\"cyclops-scott-summers\">Cyclops</strong>, <strong class=\"jean-grey\">Jean Grey</strong>, <strong class=\"storm-ororo-munroe\">Storm</strong>, <strong class=\"nightcrawler-kurt-wagner\">Nightcrawler</strong>, and <strong class=\"quicksilver-peter-maximoff\">Quicksilver</strong>—in customized tactical suits inside the <strong>Danger Room</strong> to train against giant prototype Sentinels.</p>",
+        "paragraphs": [
+          "In Cairo, <strong class=\"en-sabah-nur-apocalypse\">Apocalypse</strong> levels the modern metropolis into sand and erects a towering black pyramid. Positioning <strong class=\"charles-xavier\">Charles Xavier</strong> on a sacrificial altar, he initiates a consciousness transference ritual to assimilate Charles' telepathy and claim absolute psychic dominion over every mind on Earth. Aloft in the stratosphere, <strong class=\"erik-lehnsherr\">Magneto</strong> manipulates planetary geomagnetic fields, ripping metallic structures across continents into an orbiting shield of debris.",
+          "The X-Men arrive in Cairo: <strong class=\"nightcrawler-kurt-wagner\">Nightcrawler</strong> teleports inside the pyramid and rescues Charles at the final second, though the partial transference causes Xavier's hair to fall out permanently. As the Four Horsemen engage the team, <strong class=\"quicksilver-peter-maximoff\">Quicksilver</strong> pummels Apocalypse at hypersonic velocity before the ancient mutant traps and snaps his leg. <strong class=\"raven-darkholme\">Mystique</strong> and Quicksilver appeal to Erik's conscience, reminding him he still has family. Erik turns against Apocalypse, impaling him with crossed steel girders, while <strong class=\"storm-ororo-munroe\">Storm</strong> rebels and unleashes lightning upon her former master.",
+          "Fighting Apocalypse simultaneously on the physical battlefield and within Xavier's astral plane, the mutant team is slowly overwhelmed by Apocalypse's impenetrable shields. In a decisive moment of faith, Charles telepathically calls out to <strong class=\"jean-grey\">Jean Grey</strong>: <em>\"Jean, let go. Unleash your power.\"</em> Jean walks into the sky and releases the primordial <strong>Phoenix Force</strong>, manifesting an immense flaming raptor aura that shatters Apocalypse's psionic shield and incinerates his molecular structure into ash.",
+          "<strong>Epilogue:</strong> Erik and Jean use their immense powers to rebuild the Xavier Institute. Erik and Raven depart to forge their own paths, while Xavier, Hank, and Mystique assemble the next generation of X-Men—<strong class=\"cyclops-scott-summers\">Cyclops</strong>, <strong class=\"jean-grey\">Jean Grey</strong>, <strong class=\"storm-ororo-munroe\">Storm</strong>, <strong class=\"nightcrawler-kurt-wagner\">Nightcrawler</strong>, and <strong class=\"quicksilver-peter-maximoff\">Quicksilver</strong>—in customized tactical suits inside the <strong>Danger Room</strong> to train against giant prototype Sentinels."
+        ],
+        "characters": [
+          "charles-xavier",
+          "en-sabah-nur-apocalypse",
+          "jean-grey",
+          "cyclops-scott-summers",
+          "erik-lehnsherr",
+          "storm-ororo-munroe",
+          "hank-mccoy",
+          "raven-darkholme",
+          "quicksilver-peter-maximoff",
+          "nightcrawler-kurt-wagner",
+          "psylocke-betsy-braddock",
+          "archangel-warren-worthington"
+        ],
+        "stones": [],
+        "deaths": [
+          "En Sabah Nur (Apocalypse)",
+          "Warren Worthington III (Archangel)"
+        ],
+        "mcuHighlights": [
+          "Nightcrawler Rescues Xavier from the Transference Pyramid",
+          "Magneto and Storm Turn Against Apocalypse",
+          "Jean Grey Unleashes the Phoenix Force to Destroy Apocalypse",
+          "Formation of the 1980s X-Men in the Danger Room"
+        ],
+        "locations": [
+          {
+            "name": "Apocalypse's Grand Pyramid & Metropolitan Cairo Ruins",
+            "cityOrRegion": "Cairo",
+            "countryOrRealm": "Egypt",
+            "planet": "Earth-10005",
+            "coordinates": [
+              30.0444,
+              31.2357
+            ],
+            "characters": [
+              "charles-xavier",
+              "en-sabah-nur-apocalypse",
+              "jean-grey",
+              "cyclops-scott-summers",
+              "erik-lehnsherr",
+              "storm-ororo-munroe",
+              "hank-mccoy",
+              "raven-darkholme",
+              "quicksilver-peter-maximoff",
+              "nightcrawler-kurt-wagner",
+              "psylocke-betsy-braddock",
+              "archangel-warren-worthington"
+            ]
+          },
+          {
+            "name": "Rebuilt Xavier Manor & Danger Room",
+            "cityOrRegion": "Westchester County, New York",
+            "countryOrRealm": "United States",
+            "planet": "Earth-10005",
+            "coordinates": [
+              41.1220,
+              -73.7949
+            ],
+            "characters": [
+              "charles-xavier",
+              "hank-mccoy",
+              "raven-darkholme",
+              "cyclops-scott-summers",
+              "jean-grey",
+              "storm-ororo-munroe",
+              "nightcrawler-kurt-wagner",
+              "quicksilver-peter-maximoff"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "event-1983-apocalypse-5",
+        "eraId": "era-1983-xmen-apocalypse",
+        "eraTitle": "1983 (Earth-10005 / Revised)",
+        "mediaKey": "x-men-apocalypse",
+        "mediaTitle": "X-Men: Apocalypse (2016)",
+        "mediaType": "movie",
+        "mediaPhase": "Phase 3",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-10005 (Revised Post-DOFP Timeline)",
+        "branchDetails": "Essex Corp Weapon X Blood Extraction (Post-Credits Scene)",
+        "rawClasses": [
+          "x-men-apocalypse"
+        ],
+        "rawHtml": "<p>In the aftermath of Wolverine's bloody escape from the Alkali Lake facility, a cleanup crew in dark business suits representing <strong>Essex Corp</strong> inspects the bullet-riddled, bloodstained containment laboratory. Bypassing dead bodies, an operative retrieves a glass vial of Wolverine's mutant blood labeled <em>\"Weapon X\"</em> and places it into an Essex Corp briefcase—laying the groundwork for future human cloning and the genetic creation of Laura Kinney (X-23).</p>",
+        "paragraphs": [
+          "In the aftermath of Wolverine's bloody escape from the Alkali Lake facility, a cleanup crew in dark business suits representing <strong>Essex Corp</strong> inspects the bullet-riddled, bloodstained containment laboratory. Bypassing dead bodies, an operative retrieves a glass vial of Wolverine's mutant blood labeled <em>\"Weapon X\"</em> and places it into an Essex Corp briefcase—laying the groundwork for future human cloning and the genetic creation of Laura Kinney (X-23)."
+        ],
+        "characters": [
+          "william-stryker"
+        ],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "Essex Corp Operatives Infiltrate Alkali Lake",
+          "Retrieval of the Weapon X Blood Vial",
+          "Foundational Genetic Precursor for X-23 / Logan"
+        ],
+        "locations": [
+          {
+            "name": "Abandoned Alkali Lake Facility",
+            "cityOrRegion": "Alberta / British Columbia",
+            "countryOrRealm": "Canada",
+            "planet": "Earth-10005",
+            "coordinates": [
+              51.2538,
+              -115.5708
+            ],
+            "characters": [
+              "william-stryker"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "era-_c_1984_",
+    "title": "-c. 1984-",
+    "cleanTitle": "c. 1984",
+    "category": "golden-age",
+    "events": [
+      {
+        "id": "event-_c_1984_-1",
+        "eraId": "era-_c_1984_",
+        "eraTitle": "c. 1984",
+        "mediaKey": "come-to-wakanda-before",
+        "mediaTitle": "Come To Wakanda - Before (2018)",
+        "mediaType": "oneshot",
+        "mediaPhase": "Phase 3",
+        "isAlternativeTimeline": false,
+        "rawClasses": [
+          "come-to-wakanda-before"
+        ],
+        "rawHtml": "<p>During the mid-1980s, the <strong class=\"mcu\">Wakandan Ministry of Tourism</strong> broadcasts a retro promotional tourist film across international television networks, portraying <strong class=\"mcu\">Wakanda</strong> as an idyllic, simple third-world African nation of subsistence farmers, shepherds, and hand-woven textile artisans. This carefully curated public facade serves as a global deception to conceal Wakanda's subterranean Vibranium deposits, holographic border cloaks, and hyper-futuristic Golden City from international intelligence agencies.</p>",
+        "paragraphs": [
+          "During the mid-1980s, the <strong class=\"mcu\">Wakandan Ministry of Tourism</strong> broadcasts a retro promotional tourist film across international television networks, portraying <strong class=\"mcu\">Wakanda</strong> as an idyllic, simple third-world African nation of subsistence farmers, shepherds, and hand-woven textile artisans. This carefully curated public facade serves as a global deception to conceal Wakanda's subterranean Vibranium deposits, holographic border cloaks, and hyper-futuristic Golden City from international intelligence agencies."
+        ],
+        "characters": [],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "Wakandan Ministry of Tourism 1980s Broadcast",
+          "Global Deception & Agrarian Third-World Facade",
+          "Concealment of Vibranium & The Golden City"
+        ],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)",
+        "locations": [
+          {
+            "name": "Wakandan Borderlands & Outer Pastoral Villages",
+            "cityOrRegion": "Wakanda",
+            "countryOrRealm": "Wakanda",
+            "planet": "Earth",
+            "coordinates": [
+              -3.382,
+              36.682
+            ]
+          }
+        ]
       }
     ]
   },

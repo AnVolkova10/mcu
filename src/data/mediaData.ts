@@ -804,6 +804,36 @@ export const mediaData: Record<string, MediaItem> = {
     "primaryUniverse": "Earth-10005 (Fox X-Men Universe)",
     "studio": "Fox",
     "description": "To prevent the total annihilation of mutantkind and humanity by adaptive Sentinels in a dystopian 2023, Wolverine's consciousness is projected into 1973 to unite the broken younger Charles Xavier and Magneto and stop Mystique from assassinating Bolivar Trask."
+  },
+  "x-men-apocalypse": {
+    "id": "x-men-apocalypse",
+    "cssClass": "x-men-apocalypse",
+    "title": "X-Men: Apocalypse",
+    "shortTitle": "X-Men: Apocalypse",
+    "releaseYear": "2016",
+    "type": "movie",
+    "phase": "Phase 3",
+    "posterColor": "#4338ca",
+    "timelineOrder": 61,
+    "timelineType": "multiverse-alternate",
+    "primaryUniverse": "Earth-10005 (Revised Post-DOFP Timeline)",
+    "studio": "Fox",
+    "description": "The ancient mutant god En Sabah Nur awakes in 1983, recruiting Magneto, Storm, Psylocke, and Archangel as his Four Horsemen to cleanse humanity, forcing Raven and Charles Xavier's new young X-Men to unleash their full power."
+  },
+  "come-to-wakanda-before": {
+    "id": "come-to-wakanda-before",
+    "cssClass": "come-to-wakanda-before",
+    "title": "Come To Wakanda - Before",
+    "shortTitle": "Come To Wakanda - Before",
+    "releaseYear": "2018",
+    "type": "oneshot",
+    "phase": "Phase 3",
+    "posterColor": "#065f46",
+    "timelineOrder": 62,
+    "timelineType": "sacred-616",
+    "primaryUniverse": "Earth-616 (The Sacred Timeline)",
+    "studio": "Marvel Studios",
+    "description": "A vintage 1980s retro-styled in-universe tourism broadcast produced by the Wakandan Department of Tourism, projecting the facade of an isolated, simple agrarian African nation to keep its advanced Vibranium metropolis hidden from the world."
   }
 };
 

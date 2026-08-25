@@ -2106,6 +2106,61 @@ export const charactersData: Record<string, Character> = {
     "originLocation": "United States (Earth-10005)",
     "status": "alive",
     "bio": "Omega-level mutant telepath and telekinetic endowed with limitless psionic potential, capable of rearranging matter at the subatomic level and channeling the primordial Phoenix Force."
+  },
+  "nightcrawler-kurt-wagner": {
+    "id": "nightcrawler-kurt-wagner",
+    "name": "Kurt Wagner / Nightcrawler",
+    "alias": "Nightcrawler",
+    "cssClass": "nightcrawler-kurt-wagner",
+    "color": "#60a5fa",
+    "bgBadge": "bg-indigo-950/80 hover:bg-indigo-900/90",
+    "textBadge": "text-indigo-300",
+    "borderBadge": "border-indigo-500",
+    "role": "hero",
+    "affiliation": "Xavier's School for Gifted Youngsters / X-Men",
+    "groups": [
+      "X-Men",
+      "Mutants"
+    ],
+    "originLocation": "Bavaria, Germany (Earth-10005)",
+    "status": "alive",
+    "bio": "Gentle, deeply spiritual mutant possessing indigo fur, acrobatic agility, a prehensile tail, and the ability to instantly teleport across space in a cloud of sulfurous blue smoke (BAMF)."
+  },
+  "psylocke-betsy-braddock": {
+    "id": "psylocke-betsy-braddock",
+    "name": "Betsy Braddock / Psylocke",
+    "alias": "Psylocke",
+    "cssClass": "psylocke-betsy-braddock",
+    "color": "#e879f9",
+    "bgBadge": "bg-fuchsia-950/80 hover:bg-fuchsia-900/90",
+    "textBadge": "text-fuchsia-300",
+    "borderBadge": "border-fuchsia-500",
+    "role": "villain",
+    "affiliation": "The Four Horsemen of Apocalypse (Pestilence)",
+    "groups": [
+      "Mutants"
+    ],
+    "originLocation": "Earth-10005",
+    "status": "alive",
+    "bio": "Deadly martial artist and mutant tracker capable of telepathic sensory tracking and manifesting lethal solid psionic energy blades, whips, and katanas from her hands."
+  },
+  "archangel-warren-worthington": {
+    "id": "archangel-warren-worthington",
+    "name": "Warren Worthington III / Archangel",
+    "alias": "Archangel",
+    "cssClass": "archangel-warren-worthington",
+    "color": "#cbd5e1",
+    "bgBadge": "bg-slate-900/80 hover:bg-slate-800/90",
+    "textBadge": "text-slate-300",
+    "borderBadge": "border-slate-500",
+    "role": "villain",
+    "affiliation": "The Four Horsemen of Apocalypse (Death)",
+    "groups": [
+      "Mutants"
+    ],
+    "originLocation": "Earth-10005",
+    "status": "deceased",
+    "bio": "Mutant aerial combatant originally gifted with feathered wings, bio-mechanically enhanced by Apocalypse with impenetrable metallic razor wings that fire lethal razor-sharp steel flechettes."
   }
 };
 
