@@ -34,9 +34,13 @@ import {
   ChevronRight,
   ChevronLeft,
   Route,
-  Navigation
+  Navigation,
+  User,
+  Users,
+  ChevronDown
 } from 'lucide-react';
 import { mediaData } from '@/data/mediaData';
+import { allCharacters, charactersData } from '@/data/charactersData';
 
 // Helper to extract a numeric year representation from cleanTitle
 export function parseYearRange(title: string): [number, number] {
@@ -185,10 +189,10 @@ const STONE_TRAJECTORIES: Record<string, StoneTrajectory> = {
       {
         order: 3,
         locationName: 'Valkyrie Crash Trench',
-        regionAndCountry: 'Arctic Ice Sheet',
+        regionAndCountry: 'Arctic Circle / Greenland Ice Sheet',
         era: '1945',
         vessel: 'Valkyrie Cockpit',
-        coordinates: [78.223, 15.646],
+        coordinates: [67.5, -35.0],
         description: 'Red Skull teleports through a wormhole; Tesseract burns through hull into the freezing Arctic ocean.',
         media: 'Captain America: The First Avenger',
         eventId: 'event-_1945_-1'
@@ -438,6 +442,333 @@ const STONE_TRAJECTORIES: Record<string, StoneTrajectory> = {
   }
 };
 
+export interface HistoricalStoneSnapshot {
+  stoneId: string;
+  name: string;
+  vessel: string;
+  colorHex: string;
+  coordinates: [number, number];
+  locationName: string;
+  regionAndCountry: string;
+  bearer: string;
+  yearRange: [number, number];
+  description: string;
+}
+
+export const HISTORICAL_STONE_SNAPSHOTS: HistoricalStoneSnapshot[] = [
+  // SPACE STONE (TESSERACT)
+  {
+    stoneId: 'space-stone',
+    name: 'Space Stone (Tesseract)',
+    vessel: 'Tesseract Relic',
+    colorHex: '#38bdf8',
+    coordinates: [64.15, -21.94],
+    locationName: 'Royal Vault of Odin',
+    regionAndCountry: 'Asgard',
+    bearer: 'King Bor / Odin Allfather',
+    yearRange: [-10000000, 964],
+    description: 'Brought to Earth by Odin during the Norse wars against the Frost Giants.'
+  },
+  {
+    stoneId: 'space-stone',
+    name: 'Space Stone (Tesseract)',
+    vessel: 'Church Crypt Relic',
+    colorHex: '#38bdf8',
+    coordinates: [59.267, 10.407],
+    locationName: 'Ancient Norse Crypt',
+    regionAndCountry: 'Tønsberg, Norway',
+    bearer: 'Norse Church Cult / Guardian',
+    yearRange: [965, 1941],
+    description: 'Concealed behind a stone fresco carved with Yggdrasil.'
+  },
+  {
+    stoneId: 'space-stone',
+    name: 'Space Stone (Tesseract)',
+    vessel: 'HYDRA Extraction Matrix',
+    colorHex: '#38bdf8',
+    coordinates: [51.165, 10.451],
+    locationName: 'Castle Kaufmann / HYDRA Weapons Lab',
+    regionAndCountry: 'Bavaria & Austrian Alps',
+    bearer: 'Johann Schmidt (Red Skull) & Arnim Zola',
+    yearRange: [1942, 1944],
+    description: 'Harnessed to power HYDRA energy weapons and the Valkyrie super-bomber.'
+  },
+  {
+    stoneId: 'space-stone',
+    name: 'Space Stone (Tesseract)',
+    vessel: 'SSR Deep Sea Recovery',
+    colorHex: '#38bdf8',
+    coordinates: [67.5, -35.0],
+    locationName: 'Arctic Ocean Seabed',
+    regionAndCountry: 'Arctic Circle / Greenland Trench',
+    bearer: 'Howard Stark / SSR Recovery Team',
+    yearRange: [1945, 1945],
+    description: 'Fell from the Valkyrie hull into the ice shelf; recovered by Howard Stark.'
+  },
+  {
+    stoneId: 'space-stone',
+    name: 'Space Stone (Tesseract)',
+    vessel: 'SSR / S.H.I.E.L.D. Secure Vault',
+    colorHex: '#38bdf8',
+    coordinates: [40.7128, -74.0060],
+    locationName: 'SSR Archives & Howard Stark Vault',
+    regionAndCountry: 'Manhattan, New York',
+    bearer: 'Howard Stark / Peggy Carter / S.H.I.E.L.D.',
+    yearRange: [1946, 1994],
+    description: 'Studied by Howard Stark and early S.H.I.E.L.D. founders.'
+  },
+  {
+    stoneId: 'space-stone',
+    name: 'Space Stone (Tesseract)',
+    vessel: 'Project P.E.G.A.S.U.S. Laboratory',
+    colorHex: '#38bdf8',
+    coordinates: [35.011, -115.473],
+    locationName: 'Joint Dark Energy Facility',
+    regionAndCountry: 'Mojave Desert, California',
+    bearer: 'Dr. Wendy Lawson (Mar-Vell) / Nick Fury / Dr. Erik Selvig',
+    yearRange: [1995, 2011],
+    description: 'Researched for light-speed engine propulsion and energy extraction.'
+  },
+  {
+    stoneId: 'space-stone',
+    name: 'Space Stone (Tesseract)',
+    vessel: 'Chitauri Wormhole Generator',
+    colorHex: '#38bdf8',
+    coordinates: [40.7580, -73.9855],
+    locationName: 'Stark Tower / Battle of New York',
+    regionAndCountry: 'Manhattan, New York City',
+    bearer: 'Loki / Avengers / Thor',
+    yearRange: [2012, 2012],
+    description: 'Thor returns the Tesseract to Asgard following the Battle of New York.'
+  },
+  {
+    stoneId: 'space-stone',
+    name: 'Space Stone (Tesseract)',
+    vessel: 'Asgard Royal Vault',
+    colorHex: '#38bdf8',
+    coordinates: [64.15, -21.94],
+    locationName: 'Odin\'s Vault',
+    regionAndCountry: 'Asgard',
+    bearer: 'Heimdall / Loki',
+    yearRange: [2013, 2017],
+    description: 'Locked in the Vault until Loki steals it during the destruction of Asgard.'
+  },
+  {
+    stoneId: 'space-stone',
+    name: 'Space Stone',
+    vessel: 'Infinity Gauntlet',
+    colorHex: '#38bdf8',
+    coordinates: [-3.382, 36.682],
+    locationName: 'Wakanda Battlefield',
+    regionAndCountry: 'Birnin Zana, Wakanda',
+    bearer: 'Thanos',
+    yearRange: [2018, 3000],
+    description: 'Crushed from the Tesseract and slotted into the Infinity Gauntlet.'
+  },
+
+  // TIME STONE (EYE OF AGAMOTTO)
+  {
+    stoneId: 'time-stone',
+    name: 'Time Stone (Eye of Agamotto)',
+    vessel: 'Eye of Agamotto Amulet',
+    colorHex: '#10b981',
+    coordinates: [27.7172, 85.3240],
+    locationName: 'Kamar-Taj Mystic Library',
+    regionAndCountry: 'Kathmandu, Nepal',
+    bearer: 'Agamotto / Ancient One / Masters of Mystic Arts',
+    yearRange: [-10000000, 2015],
+    description: 'Enshrined in the Eye of Agamotto to safeguard the flow of time and protect Earth from cosmic perils.'
+  },
+  {
+    stoneId: 'time-stone',
+    name: 'Time Stone (Eye of Agamotto)',
+    vessel: 'Doctor Strange Amulet',
+    colorHex: '#10b981',
+    coordinates: [40.7291, -73.9980],
+    locationName: 'New York Sanctum Sanctorum',
+    regionAndCountry: 'Manhattan, New York',
+    bearer: 'Doctor Stephen Strange',
+    yearRange: [2016, 2017],
+    description: 'Used by Doctor Strange to defeat Dormammu and protect the multiverse.'
+  },
+  {
+    stoneId: 'time-stone',
+    name: 'Time Stone',
+    vessel: 'Infinity Gauntlet',
+    colorHex: '#10b981',
+    coordinates: [-3.382, 36.682],
+    locationName: 'Wakanda Final Stand',
+    regionAndCountry: 'Birnin Zana, Wakanda',
+    bearer: 'Thanos',
+    yearRange: [2018, 3000],
+    description: 'Surrendered on Titan to save Tony Stark; used on Earth to undo Mind Stone destruction.'
+  },
+
+  // REALITY STONE (THE AETHER)
+  {
+    stoneId: 'reality-stone',
+    name: 'Reality Stone (The Aether)',
+    vessel: 'Fluid Dark Matter (Aether)',
+    colorHex: '#ef4444',
+    coordinates: [60.000, 15.000],
+    locationName: 'Svartalfheim Deep Chamber',
+    regionAndCountry: 'Dark World / Dimensional Void',
+    bearer: 'King Bor of Asgard (Sealed)',
+    yearRange: [-10000000, 2012],
+    description: 'Buried deep within a stone column where no one could ever find it.'
+  },
+  {
+    stoneId: 'reality-stone',
+    name: 'Reality Stone (The Aether)',
+    vessel: 'Host Infection / Extraction',
+    colorHex: '#ef4444',
+    coordinates: [51.4826, -0.0077],
+    locationName: 'Greenwich Convergence Zone',
+    regionAndCountry: 'London, United Kingdom',
+    bearer: 'Jane Foster / Malekith / Thor',
+    yearRange: [2013, 2013],
+    description: 'Absorbed by Jane Foster and weaponized by Malekith during the Nine Realms Convergence.'
+  },
+  {
+    stoneId: 'reality-stone',
+    name: 'Reality Stone (The Aether)',
+    vessel: 'The Collector\'s Museum Vault',
+    colorHex: '#ef4444',
+    coordinates: [18.2206, -66.5901],
+    locationName: 'Knowhere Mining Colony',
+    regionAndCountry: 'Celestial Severed Head (Knowhere)',
+    bearer: 'Taneleer Tivan (The Collector)',
+    yearRange: [2014, 2017],
+    description: 'Entrusted to The Collector by Asgardians because two stones should not remain together.'
+  },
+  {
+    stoneId: 'reality-stone',
+    name: 'Reality Stone',
+    vessel: 'Infinity Gauntlet',
+    colorHex: '#ef4444',
+    coordinates: [-3.382, 36.682],
+    locationName: 'Wakanda Battlefield',
+    regionAndCountry: 'Birnin Zana, Wakanda',
+    bearer: 'Thanos',
+    yearRange: [2018, 3000],
+    description: 'Claimed by Thanos on Knowhere to warp reality across the cosmos.'
+  },
+
+  // MIND STONE
+  {
+    stoneId: 'mind-stone',
+    name: 'Mind Stone',
+    vessel: 'Chitauri Scepter / S.H.I.E.L.D.',
+    colorHex: '#eab308',
+    coordinates: [40.7580, -73.9855],
+    locationName: 'Battle of New York / Stark Tower',
+    regionAndCountry: 'Manhattan, New York',
+    bearer: 'Loki / STRIKE HYDRA Unit',
+    yearRange: [2012, 2012],
+    description: 'Gifted to Loki by Thanos; covertly seized by undercover HYDRA operatives in S.H.I.E.L.D.'
+  },
+  {
+    stoneId: 'mind-stone',
+    name: 'Mind Stone',
+    vessel: 'Human Mutation Chamber',
+    colorHex: '#eab308',
+    coordinates: [45.8150, 15.9819],
+    locationName: 'HYDRA Sokovia Research Fortress',
+    regionAndCountry: 'Novi Grad, Sokovia',
+    bearer: 'Baron Wolfgang von Strucker / Dr. List',
+    yearRange: [2013, 2015],
+    description: 'Used to perform genetic human enhancement on Wanda and Pietro Maximoff.'
+  },
+  {
+    stoneId: 'mind-stone',
+    name: 'Mind Stone',
+    vessel: 'Vision Synthezoid Forehead',
+    colorHex: '#eab308',
+    coordinates: [41.3500, -73.9500],
+    locationName: 'Avengers Upstate Facility',
+    regionAndCountry: 'New York, United States',
+    bearer: 'Vision',
+    yearRange: [2015, 2017],
+    description: 'Implanted into Vision\'s synthetic vibranium body, providing him sapience and cosmic energy beams.'
+  },
+  {
+    stoneId: 'mind-stone',
+    name: 'Mind Stone',
+    vessel: 'Infinity Gauntlet',
+    colorHex: '#eab308',
+    coordinates: [-3.382, 36.682],
+    locationName: 'Wakanda Forest Stand',
+    regionAndCountry: 'Birnin Zana, Wakanda',
+    bearer: 'Thanos',
+    yearRange: [2018, 3000],
+    description: 'Ripped from Vision\'s forehead after Thanos reverses time.'
+  },
+
+  // POWER STONE (THE ORB)
+  {
+    stoneId: 'power-stone',
+    name: 'Power Stone (The Orb)',
+    vessel: 'The Orb Containment Shell',
+    colorHex: '#a855f7',
+    coordinates: [-12.000, 120.000],
+    locationName: 'Temple Vault of Morag',
+    regionAndCountry: 'Planet Morag (Submerged Ocean Ruins)',
+    bearer: 'Ancient Celestials / Temple Guardians',
+    yearRange: [-10000000, 2013],
+    description: 'Submerged beneath boiling oceans until the waters recede once every 300 years.'
+  },
+  {
+    stoneId: 'power-stone',
+    name: 'Power Stone (The Orb)',
+    vessel: 'Nova Corps High Security Vault',
+    colorHex: '#a855f7',
+    coordinates: [25.2048, 55.2708],
+    locationName: 'Nova Corps Citadel',
+    regionAndCountry: 'Planet Xandar',
+    bearer: 'Nova Prime Irani Rael & Nova Corps',
+    yearRange: [2014, 2017],
+    description: 'Entrusted to the Nova Corps for galactic defense following the defeat of Ronan the Accuser.'
+  },
+  {
+    stoneId: 'power-stone',
+    name: 'Power Stone',
+    vessel: 'Infinity Gauntlet',
+    colorHex: '#a855f7',
+    coordinates: [-3.382, 36.682],
+    locationName: 'Wakanda Battlefield',
+    regionAndCountry: 'Birnin Zana, Wakanda',
+    bearer: 'Thanos',
+    yearRange: [2018, 3000],
+    description: 'Thanos decimates Xandar to seize the Power Stone as his first relic.'
+  },
+
+  // SOUL STONE
+  {
+    stoneId: 'soul-stone',
+    name: 'Soul Stone',
+    vessel: 'Altar of Vormir',
+    colorHex: '#f97316',
+    coordinates: [15.000, 45.000],
+    locationName: 'Shrine of the Lost Soul',
+    regionAndCountry: 'Planet Vormir',
+    bearer: 'Red Skull (Stonekeeper)',
+    yearRange: [-10000000, 2017],
+    description: 'Guarded by the spectral Red Skull, awaiting a sacrifice of that which is loved most.'
+  },
+  {
+    stoneId: 'soul-stone',
+    name: 'Soul Stone',
+    vessel: 'Infinity Gauntlet',
+    colorHex: '#f97316',
+    coordinates: [-3.382, 36.682],
+    locationName: 'Wakanda Battlefield',
+    regionAndCountry: 'Birnin Zana, Wakanda',
+    bearer: 'Thanos',
+    yearRange: [2018, 3000],
+    description: 'Acquired through the sacrifice of Gamora on Vormir.'
+  }
+];
+
 type EraPresetKey = 'all' | 'ancient' | 'ww1-depression' | 'ww2' | 'cold-war' | 'avengers' | 'future';
 
 interface EraPreset {
@@ -458,18 +789,89 @@ const ERA_PRESETS: EraPreset[] = [
   { id: 'future', label: 'Future (2024–2400+)', icon: '🚀', range: [2024, 3000], description: 'Post-Endgame & 2400 Future.' },
 ];
 
+// Reusable Horizontal Drag-to-Scroll Container for Pills
+export const DragScrollRow: React.FC<{
+  children: React.ReactNode;
+  className?: string;
+}> = ({ children, className = '' }) => {
+  const rowRef = useRef<HTMLDivElement>(null);
+  const isDown = useRef(false);
+  const startX = useRef(0);
+  const scrollLeft = useRef(0);
+
+  const handleMouseDown = (e: React.MouseEvent) => {
+    const el = rowRef.current;
+    if (!el) return;
+    isDown.current = true;
+    startX.current = e.pageX - el.offsetLeft;
+    scrollLeft.current = el.scrollLeft;
+  };
+
+  const handleMouseLeave = () => {
+    isDown.current = false;
+  };
+
+  const handleMouseUp = () => {
+    isDown.current = false;
+  };
+
+  const handleMouseMove = (e: React.MouseEvent) => {
+    if (!isDown.current) return;
+    const el = rowRef.current;
+    if (!el) return;
+    e.preventDefault();
+    const x = e.pageX - el.offsetLeft;
+    const walk = (x - startX.current) * 1.5;
+    el.scrollLeft = scrollLeft.current - walk;
+  };
+
+  return (
+    <div
+      ref={rowRef}
+      onMouseDown={handleMouseDown}
+      onMouseLeave={handleMouseLeave}
+      onMouseUp={handleMouseUp}
+      onMouseMove={handleMouseMove}
+      className={`overflow-x-auto no-scrollbar cursor-grab active:cursor-grabbing select-none ${className}`}
+    >
+      {children}
+    </div>
+  );
+};
+
 export const MapScreen: React.FC = () => {
   const { 
     setActiveScreen, 
     setSelectedStoneId, 
     selectedMapStoneTrajectoryId, 
-    setSelectedMapStoneTrajectoryId 
+    setSelectedMapStoneTrajectoryId,
+    selectedMapCharacterId,
+    setSelectedMapCharacterId
   } = useStore();
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedUniverse, setSelectedUniverse] = useState<string>('all');
   const [selectedPinId, setSelectedPinId] = useState<string | null>(null);
   const [mapViewMode, setMapViewMode] = useState<'earth' | 'cosmic'>('earth');
   const [selectedCosmicRealmId, setSelectedCosmicRealmId] = useState<string | null>(null);
+
+  // Helper to normalize stone trajectory ID
+  const normalizeStoneId = (id: string | null) => {
+    if (!id) return null;
+    return id.endsWith('-stone') ? id : `${id}-stone`;
+  };
+
+  // Helper to normalize character ID (aliases -> canonical character keys)
+  const normalizeCharacterId = (id: string | null) => {
+    if (!id) return null;
+    if (id === 'spider-noir') return 'ben-reilly-noir';
+    if (id === 'captain-america') return 'steve-rogers';
+    if (id === 'agent-carter') return 'peggy-carter';
+    if (id === 'magneto') return 'erik-lehnsherr';
+    if (id === 'professor-x') return 'charles-xavier';
+    if (id === 'winter-soldier') return 'bucky-barnes';
+    if (id === 'wolverine') return 'logan-wolverine';
+    return id;
+  };
 
   // Temporal Range Controls State
   const [selectedPreset, setSelectedPreset] = useState<EraPresetKey>('all');
@@ -478,31 +880,272 @@ export const MapScreen: React.FC = () => {
   const [simulationIndex, setSimulationIndex] = useState(0);
 
   // Infinity Stone Trajectory Tracker State
-  const [activeStoneTrajectoryId, setActiveStoneTrajectoryId] = useState<string | null>(selectedMapStoneTrajectoryId || null);
+  const [activeStoneTrajectoryId, setActiveStoneTrajectoryId] = useState<string | null>(
+    selectedMapStoneTrajectoryId ? normalizeStoneId(selectedMapStoneTrajectoryId) : null
+  );
+  
+  // Character Trajectory Tracker State
+  const [activeCharacterId, setActiveCharacterId] = useState<string | null>(
+    selectedMapCharacterId ? normalizeCharacterId(selectedMapCharacterId) : null
+  );
   const [selectedTrajectoryStopIndex, setSelectedTrajectoryStopIndex] = useState<number | null>(null);
   const [isTracingTrajectory, setIsTracingTrajectory] = useState(false);
+
+  // Snapshot Multi-Entity Layer Mode (Locations, Characters, Stones, All)
+  const [snapshotLayerMode, setSnapshotLayerMode] = useState<'locations' | 'characters' | 'stones' | 'all'>('locations');
+  const [selectedSnapshotTab, setSelectedSnapshotTab] = useState<'locations' | 'characters' | 'stones'>('locations');
+
+  // Synchronized Handlers to keep Map Layers, Bottom Console and Right Dossier 100% in sync
+  const handleSelectSnapshotLayer = (layer: 'locations' | 'characters' | 'stones' | 'all') => {
+    setSnapshotLayerMode(layer);
+    if (layer === 'locations') {
+      setSelectedSnapshotTab('locations');
+    } else if (layer === 'characters') {
+      setSelectedSnapshotTab('characters');
+    } else if (layer === 'stones') {
+      setSelectedSnapshotTab('stones');
+    }
+  };
+
+  const handleSelectSnapshotTab = (tab: 'locations' | 'characters' | 'stones') => {
+    setSelectedSnapshotTab(tab);
+    setSnapshotLayerMode(tab);
+  };
 
   // Listen to external selection from StoneDrawer
   useEffect(() => {
     if (selectedMapStoneTrajectoryId) {
-      setActiveStoneTrajectoryId(selectedMapStoneTrajectoryId);
+      const normalizedId = normalizeStoneId(selectedMapStoneTrajectoryId);
+      setActiveStoneTrajectoryId(normalizedId);
+      setActiveCharacterId(null);
       setSelectedTrajectoryStopIndex(0);
       setMapViewMode('earth');
-      const traj = STONE_TRAJECTORIES[selectedMapStoneTrajectoryId];
+      const traj = normalizedId ? STONE_TRAJECTORIES[normalizedId] : null;
       if (traj && traj.stops.length > 0) {
         setTimeout(() => {
           mapInstanceRef.current?.invalidateSize();
-          mapInstanceRef.current?.flyTo(traj.stops[0].coordinates, 4.5, { duration: 1.2 });
+          const polyCoords = traj.stops.map((s) => s.coordinates);
+          const poly = L.polyline(polyCoords);
+          mapInstanceRef.current?.fitBounds(poly.getBounds().pad(0.18), { maxZoom: 5, animate: true });
         }, 150);
       }
     }
   }, [selectedMapStoneTrajectoryId]);
+
+  // Listen to external selection from CharacterDrawer
+  useEffect(() => {
+    if (selectedMapCharacterId) {
+      const normalizedId = normalizeCharacterId(selectedMapCharacterId);
+      setActiveCharacterId(normalizedId);
+      setActiveStoneTrajectoryId(null);
+      setSelectedTrajectoryStopIndex(0);
+      setMapViewMode('earth');
+    }
+  }, [selectedMapCharacterId]);
 
   const mapContainerRef = useRef<HTMLDivElement>(null);
   const mapInstanceRef = useRef<L.Map | null>(null);
   const markersRef = useRef<L.Marker[]>([]);
   const polylineRef = useRef<L.Polyline | null>(null);
   const trajectoryMarkersRef = useRef<L.Marker[]>([]);
+
+  // Distinct timeline eras for the horizontal chrono-ribbon
+  const chronoEras = useMemo(() => {
+    const list: { id: string; cleanTitle: string; title: string; year: number; eventCount: number }[] = [];
+    timelineEras.forEach((era) => {
+      const hasLocs = era.events.some((e) => e.locations && e.locations.length > 0);
+      if (hasLocs) {
+        const [startY] = parseYearRange(era.cleanTitle);
+        list.push({
+          id: era.id,
+          cleanTitle: era.cleanTitle,
+          title: era.title,
+          year: startY,
+          eventCount: era.events.length,
+        });
+      }
+    });
+    return list;
+  }, []);
+
+  // Characters sorted alphabetically (A-Z) by display name
+  const sortedCharacters = useMemo(() => {
+    return [...allCharacters].sort((a, b) => {
+      const nameA = (a.alias || a.name).toLowerCase();
+      const nameB = (b.alias || b.name).toLowerCase();
+      return nameA.localeCompare(nameB);
+    });
+  }, []);
+
+  // 6 Infinity Stones status snapshot in the current active temporal range
+  const activeSnapshotStones = useMemo(() => {
+    const [minY, maxY] = customRange;
+    const stonesMap = new Map<string, HistoricalStoneSnapshot>();
+
+    HISTORICAL_STONE_SNAPSHOTS.forEach((stone) => {
+      const [sMin, sMax] = stone.yearRange;
+      const overlaps = sMax >= minY && sMin <= maxY;
+      if (overlaps) {
+        if (!stonesMap.has(stone.stoneId)) {
+          stonesMap.set(stone.stoneId, stone);
+        }
+      }
+    });
+
+    return Array.from(stonesMap.values());
+  }, [customRange]);
+
+  // Active characters & operatives snapshot in the current temporal range and universe
+  const activeSnapshotCharacters = useMemo(() => {
+    const [minY, maxY] = customRange;
+    const charList: {
+      charId: string;
+      name: string;
+      alias?: string;
+      color: string;
+      role: string;
+      coordinates: [number, number];
+      locationName: string;
+      cityOrRegion?: string;
+      countryOrRealm: string;
+      planet: string;
+      eraTitle: string;
+      eraCleanTitle: string;
+      mediaTitle: string;
+      eventId: string;
+      universeGroup: '616' | '10005' | '90214' | 'cosmic';
+    }[] = [];
+
+    const seen = new Set<string>();
+
+    timelineEras.forEach((era) => {
+      const [startYr, endYr] = parseYearRange(era.cleanTitle);
+      const inRange = endYr >= minY && startYr <= maxY;
+      if (!inRange) return;
+
+      era.events.forEach((evt) => {
+        let universeGroup: '616' | '10005' | '90214' | 'cosmic' = '616';
+        if (evt.earthDesignation?.includes('10005')) {
+          universeGroup = '10005';
+        } else if (evt.earthDesignation?.includes('90214')) {
+          universeGroup = '90214';
+        } else if (evt.locations?.some((l) => l.planet && l.planet !== 'Earth')) {
+          universeGroup = 'cosmic';
+        }
+
+        if (selectedUniverse !== 'all' && universeGroup !== selectedUniverse) {
+          return;
+        }
+
+        if (evt.characters && evt.characters.length > 0 && evt.locations && evt.locations.length > 0) {
+          evt.characters.forEach((rawCharId) => {
+            const charId = normalizeCharacterId(rawCharId) || rawCharId;
+            const charInfo = charactersData[charId] || allCharacters.find((c) => c.id === charId);
+            const color = charInfo?.color || '#38bdf8';
+            const name = charInfo?.name || charId;
+            const alias = charInfo?.alias;
+            const role = charInfo?.role || 'hero';
+
+            evt.locations!.forEach((loc) => {
+              if (loc.coordinates) {
+                const dedupeKey = `${charId}-${loc.name}-${loc.coordinates[0]}-${loc.coordinates[1]}`;
+                if (!seen.has(dedupeKey)) {
+                  seen.add(dedupeKey);
+                  charList.push({
+                    charId,
+                    name,
+                    alias,
+                    color,
+                    role,
+                    coordinates: loc.coordinates,
+                    locationName: loc.name,
+                    cityOrRegion: loc.cityOrRegion,
+                    countryOrRealm: loc.countryOrRealm,
+                    planet: loc.planet || 'Earth',
+                    eraTitle: era.title,
+                    eraCleanTitle: era.cleanTitle,
+                    mediaTitle: evt.mediaTitle,
+                    eventId: evt.id,
+                    universeGroup,
+                  });
+                }
+              }
+            });
+          });
+        }
+      });
+    });
+
+    return charList;
+  }, [customRange, selectedUniverse]);
+
+  // Active stone trajectory object
+  const activeStoneTrajectory = useMemo(() => {
+    if (!activeStoneTrajectoryId) return null;
+    return STONE_TRAJECTORIES[activeStoneTrajectoryId] || null;
+  }, [activeStoneTrajectoryId]);
+
+  // Dynamic active character trajectory compiled from timeline data!
+  const activeCharacterTrajectory = useMemo(() => {
+    if (!activeCharacterId) return null;
+    const char = charactersData[activeCharacterId];
+    if (!char) return null;
+
+    const stops: StoneTrajectoryStop[] = [];
+    let order = 1;
+
+    timelineEras.forEach((era) => {
+      era.events.forEach((evt) => {
+        const isPresent = evt.characters.includes(char.id) || evt.rawHtml.includes(`class="${char.cssClass}`);
+        if (isPresent && evt.locations && evt.locations.length > 0) {
+          evt.locations.forEach((loc) => {
+            if (loc.coordinates) {
+              const lastStop = stops[stops.length - 1];
+              const isSameCoord = lastStop && 
+                Math.abs(lastStop.coordinates[0] - loc.coordinates[0]) < 0.001 &&
+                Math.abs(lastStop.coordinates[1] - loc.coordinates[1]) < 0.001;
+
+              if (!isSameCoord) {
+                stops.push({
+                  order: order++,
+                  locationName: loc.name,
+                  regionAndCountry: loc.cityOrRegion ? `${loc.cityOrRegion}, ${loc.countryOrRealm}` : loc.countryOrRealm,
+                  era: era.cleanTitle.split(' (')[0],
+                  vessel: `Mission: ${evt.mediaTitle}`,
+                  coordinates: loc.coordinates,
+                  description: evt.paragraphs[0]?.replace(/<[^>]*>?/gm, '').slice(0, 180) + '...' || '',
+                  media: evt.mediaTitle,
+                  eventId: evt.id,
+                });
+              }
+            }
+          });
+        }
+      });
+    });
+
+    return {
+      id: char.id,
+      name: char.alias || char.name,
+      fullName: char.name,
+      vessel: char.role || 'MCU Hero/Villain',
+      colorHex: char.color || '#38bdf8',
+      glowColor: `${char.color || '#38bdf8'}66`,
+      description: char.bio || 'Operative historical field missions recorded by S.H.I.E.L.D.',
+      stops,
+    };
+  }, [activeCharacterId]);
+
+  // Unified active trajectory (Stone OR Character)
+  const currentTrajectory = useMemo(() => {
+    if (activeCharacterTrajectory && activeCharacterTrajectory.stops.length > 0) {
+      return activeCharacterTrajectory;
+    }
+    if (activeStoneTrajectory) {
+      return activeStoneTrajectory;
+    }
+    return null;
+  }, [activeCharacterTrajectory, activeStoneTrajectory]);
 
   // Compile all unique geographic / cosmic pins across all timeline eras
   const allPins = useMemo<MapPinItem[]>(() => {
@@ -561,31 +1204,6 @@ export const MapScreen: React.FC = () => {
 
     return Array.from(pinsMap.values());
   }, []);
-
-  // Distinct timeline eras for the horizontal chrono-ribbon
-  const chronoEras = useMemo(() => {
-    const list: { id: string; cleanTitle: string; title: string; year: number; eventCount: number }[] = [];
-    timelineEras.forEach((era) => {
-      const hasLocs = era.events.some((e) => e.locations && e.locations.length > 0);
-      if (hasLocs) {
-        const [startY] = parseYearRange(era.cleanTitle);
-        list.push({
-          id: era.id,
-          cleanTitle: era.cleanTitle,
-          title: era.title,
-          year: startY,
-          eventCount: era.events.length,
-        });
-      }
-    });
-    return list;
-  }, []);
-
-  // Active stone trajectory object
-  const activeStoneTrajectory = useMemo(() => {
-    if (!activeStoneTrajectoryId) return null;
-    return STONE_TRAJECTORIES[activeStoneTrajectoryId] || null;
-  }, [activeStoneTrajectoryId]);
 
   // Filter pins based on Universe, Search, and Temporal Year Range!
   const filteredPins = useMemo(() => {
@@ -682,12 +1300,12 @@ export const MapScreen: React.FC = () => {
     return () => clearInterval(timer);
   }, [isPlayingSimulation]);
 
-  // Tracing Stone Trajectory Animation
+  // Tracing Active Trajectory Animation (Stones & Characters)
   useEffect(() => {
-    if (!isTracingTrajectory || !activeStoneTrajectory) return;
+    if (!isTracingTrajectory || !currentTrajectory) return;
 
     let currentIdx = 0;
-    const stops = activeStoneTrajectory.stops;
+    const stops = currentTrajectory.stops;
     if (stops.length === 0) return;
 
     const interval = setInterval(() => {
@@ -700,13 +1318,14 @@ export const MapScreen: React.FC = () => {
       const stop = stops[currentIdx];
       setSelectedTrajectoryStopIndex(currentIdx);
       if (mapInstanceRef.current && mapViewMode === 'earth') {
-        mapInstanceRef.current.flyTo(stop.coordinates, 5, { duration: 1.5 });
+        const targetLat = Math.min(65, Math.max(-60, stop.coordinates[0]));
+        mapInstanceRef.current.flyTo([targetLat, stop.coordinates[1]], 4.8, { duration: 1.5 });
       }
       currentIdx++;
     }, 2800);
 
     return () => clearInterval(interval);
-  }, [isTracingTrajectory, activeStoneTrajectory, mapViewMode]);
+  }, [isTracingTrajectory, currentTrajectory, mapViewMode]);
 
   // Helper for pin styling
   const getPinColor = (group: string, isSelected: boolean) => {
@@ -728,20 +1347,34 @@ export const MapScreen: React.FC = () => {
     if (!mapContainerRef.current) return;
 
     if (!mapInstanceRef.current) {
+      const southWest = L.latLng(-70, -180);
+      const northEast = L.latLng(75, 180);
+      const mapBounds = L.latLngBounds(southWest, northEast);
+
       const map = L.map(mapContainerRef.current, {
-        center: [30, 0],
-        zoom: 2.4,
-        minZoom: 1.8,
+        center: [25, 0],
+        zoom: 2.3,
+        minZoom: 2,
         maxZoom: 18,
         zoomControl: false,
         attributionControl: true,
-        worldCopyJump: true,
+        worldCopyJump: false,
+        maxBounds: mapBounds,
+        maxBoundsViscosity: 1.0,
       });
 
-      L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-        attribution: '&copy; <a href="https://carto.com/">CARTO</a> | S.H.I.E.L.D. Tactical Cartography',
-        subdomains: 'abcd',
-        maxZoom: 19,
+      // 1. Dark Base Map (Landmasses, oceans, borders)
+      L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+        attribution: 'Esri | S.H.I.E.L.D. Tactical Cartography',
+        maxZoom: 16,
+        noWrap: false,
+      }).addTo(map);
+
+      // 2. 100% English Reference Layer (Continents, Countries, Oceans, Cities in English)
+      L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Reference/MapServer/tile/{z}/{y}/{x}', {
+        attribution: 'Esri English Global Labels',
+        maxZoom: 16,
+        noWrap: false,
       }).addTo(map);
 
       L.control.zoom({ position: 'topright' }).addTo(map);
@@ -763,28 +1396,33 @@ export const MapScreen: React.FC = () => {
     trajectoryMarkersRef.current.forEach((m) => m.remove());
     trajectoryMarkersRef.current = [];
 
-    // 1. RENDER INFINITY STONE TRAJECTORY IF ACTIVE
-    if (activeStoneTrajectory) {
-      const latLngs = activeStoneTrajectory.stops.map((s) => s.coordinates);
+    // 1. RENDER ACTIVE TRAJECTORY IF ACTIVE (CHARACTER OR INFINITY STONE)
+    if (currentTrajectory && currentTrajectory.stops.length > 0) {
+      const latLngs = currentTrajectory.stops.map((s) => s.coordinates);
 
       // Draw Glowing Polyline Path
       const polyline = L.polyline(latLngs, {
-        color: activeStoneTrajectory.colorHex,
+        color: currentTrajectory.colorHex,
         weight: 3.5,
         opacity: 0.9,
         dashArray: '8, 10',
       }).addTo(map);
       polylineRef.current = polyline;
 
+      // Fit bounds automatically so all points are framed in the center without void!
+      if (!isTracingTrajectory) {
+        map.fitBounds(polyline.getBounds().pad(0.18), { maxZoom: 5, animate: true });
+      }
+
       // Draw Numbered Waypoint Markers
-      activeStoneTrajectory.stops.forEach((stop, index) => {
+      currentTrajectory.stops.forEach((stop, index) => {
         const isStopSelected = selectedTrajectoryStopIndex === index;
         const waypointIcon = L.divIcon({
-          className: 'stone-waypoint-pin',
+          className: 'trajectory-waypoint-pin',
           html: `
             <div style="position: relative; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; cursor: pointer;">
-              <div style="position: absolute; inset: -4px; border-radius: 50%; background-color: ${activeStoneTrajectory.colorHex}; opacity: ${isStopSelected ? '0.9' : '0.4'}; animation: ping 2s cubic-bezier(0,0,0.2,1) infinite;"></div>
-              <div style="position: relative; width: 22px; height: 22px; border-radius: 50%; background-color: #000000; border: 2px solid ${activeStoneTrajectory.colorHex}; box-shadow: 0 0 14px ${activeStoneTrajectory.colorHex}; display: flex; align-items: center; justify-content: center; color: ${activeStoneTrajectory.colorHex}; font-weight: 900; font-size: 11px; font-family: inherit;">
+              <div style="position: absolute; inset: -4px; border-radius: 50%; background-color: ${currentTrajectory.colorHex}; opacity: ${isStopSelected ? '0.9' : '0.4'}; animation: ping 2s cubic-bezier(0,0,0.2,1) infinite;"></div>
+              <div style="position: relative; width: 22px; height: 22px; border-radius: 50%; background-color: #000000; border: 2px solid ${currentTrajectory.colorHex}; box-shadow: 0 0 14px ${currentTrajectory.colorHex}; display: flex; align-items: center; justify-content: center; color: ${currentTrajectory.colorHex}; font-weight: 900; font-size: 11px; font-family: inherit;">
                 ${stop.order}
               </div>
             </div>
@@ -796,8 +1434,8 @@ export const MapScreen: React.FC = () => {
         const stopMarker = L.marker(stop.coordinates, { icon: waypointIcon }).addTo(map);
 
         stopMarker.bindTooltip(
-          `<div style="font-family: inherit; font-size: 11px; font-weight: 700; color: #ffffff; background: #000000; padding: 4px 8px; border-radius: 4px; border: 1px solid ${activeStoneTrajectory.colorHex};">
-            <div style="color: ${activeStoneTrajectory.colorHex}; font-size: 10px; font-weight: 800; text-transform: uppercase;">STOP ${stop.order} • ${stop.era}</div>
+          `<div style="font-family: inherit; font-size: 11px; font-weight: 700; color: #ffffff; background: #000000; padding: 4px 8px; border-radius: 4px; border: 1px solid ${currentTrajectory.colorHex};">
+            <div style="color: ${currentTrajectory.colorHex}; font-size: 10px; font-weight: 800; text-transform: uppercase;">STOP ${stop.order} • ${stop.era}</div>
             <div style="color: #ffffff;">${stop.locationName}</div>
             <div style="font-size: 9px; color: #94a3b8;">${stop.vessel}</div>
           </div>`,
@@ -806,83 +1444,227 @@ export const MapScreen: React.FC = () => {
 
         stopMarker.on('click', () => {
           setSelectedTrajectoryStopIndex(index);
-          map.flyTo(stop.coordinates, 5.5, { duration: 1.2 });
+          const targetLat = Math.min(65, Math.max(-60, stop.coordinates[0]));
+          map.flyTo([targetLat, stop.coordinates[1]], 5, { duration: 1.2 });
         });
 
         trajectoryMarkersRef.current.push(stopMarker);
       });
 
     } else {
-      // 2. RENDER NORMAL LOCATION PINS
-      filteredPins.forEach((pin) => {
-        const isSelected = activePin?.id === pin.id;
-        const color = getPinColor(pin.universeGroup, isSelected);
+      // 2. RENDER MULTI-ENTITY SNAPSHOT (LOCATIONS, CHARACTERS, AND INFINITY STONES)
 
-        const customIcon = L.divIcon({
-          className: 'custom-mcu-pin',
-          html: `
-            <div style="position: relative; width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; cursor: pointer;">
-              <div style="position: absolute; inset: -4px; border-radius: 50%; background-color: ${color}; opacity: ${isSelected ? '0.85' : '0.28'}; animation: ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;"></div>
-              <div style="position: relative; width: 15px; height: 15px; border-radius: 50%; background-color: ${color}; border: 2px solid #ffffff; box-shadow: 0 0 12px ${color}; display: flex; align-items: center; justify-content: center;">
-                <div style="width: 4px; height: 4px; border-radius: 50%; background-color: #000000;"></div>
+      // 2A. Standard Location Pins
+      if (snapshotLayerMode === 'all' || snapshotLayerMode === 'locations') {
+        filteredPins.forEach((pin) => {
+          const isSelected = activePin?.id === pin.id;
+          const color = getPinColor(pin.universeGroup, isSelected);
+
+          const customIcon = L.divIcon({
+            className: 'custom-mcu-pin',
+            html: `
+              <div style="position: relative; width: 26px; height: 26px; display: flex; align-items: center; justify-content: center; cursor: pointer;">
+                <div style="position: absolute; inset: -3px; border-radius: 50%; background-color: ${color}; opacity: ${isSelected ? '0.85' : '0.22'}; animation: ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;"></div>
+                <div style="position: relative; width: 14px; height: 14px; border-radius: 50%; background-color: ${color}; border: 2px solid #ffffff; box-shadow: 0 0 10px ${color}; display: flex; align-items: center; justify-content: center;">
+                  <div style="width: 3.5px; height: 3.5px; border-radius: 50%; background-color: #000000;"></div>
+                </div>
               </div>
-            </div>
-          `,
-          iconSize: [28, 28],
-          iconAnchor: [14, 14],
+            `,
+            iconSize: [26, 26],
+            iconAnchor: [13, 13],
+          });
+
+          const marker = L.marker(pin.coordinates, { icon: customIcon }).addTo(map);
+
+          marker.bindTooltip(
+            `<div style="font-family: inherit; font-size: 11px; font-weight: 700; color: #ffffff; background: #000000; padding: 3px 8px; border-radius: 4px; border: 1px solid ${color};">
+              <div>${pin.cityOrRegion ? `${pin.cityOrRegion}, ${pin.countryOrRealm}` : pin.name}</div>
+              <div style="font-size: 9px; color: #94a3b8; font-weight: normal;">${pin.events.map(e => e.eraCleanTitle).join(' • ')}</div>
+            </div>`,
+            { direction: 'top', offset: [0, -10], opacity: 0.95 }
+          );
+
+          marker.on('click', () => {
+            setSelectedPinId(pin.id);
+            const targetLat = Math.min(65, Math.max(-60, pin.coordinates[0]));
+            map.flyTo([targetLat, pin.coordinates[1]], Math.max(map.getZoom(), 4.8), { duration: 1.2 });
+          });
+
+          markersRef.current.push(marker);
         });
+      }
 
-        const marker = L.marker(pin.coordinates, { icon: customIcon }).addTo(map);
+      // 2B. Active Characters in this Era Snapshot
+      if (snapshotLayerMode === 'all' || snapshotLayerMode === 'characters') {
+        activeSnapshotCharacters.forEach((char) => {
+          const charIcon = L.divIcon({
+            className: 'snapshot-char-pin',
+            html: `
+              <div style="position: relative; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; cursor: pointer;">
+                <div style="position: absolute; inset: -2px; border-radius: 50%; background-color: ${char.color}; opacity: 0.35; animation: ping 2.5s cubic-bezier(0,0,0.2,1) infinite;"></div>
+                <div style="position: relative; width: 22px; height: 22px; border-radius: 50%; background-color: #050811; border: 2px solid ${char.color}; box-shadow: 0 0 10px ${char.color}; display: flex; align-items: center; justify-content: center; color: #ffffff; font-weight: 900; font-size: 9px; font-family: inherit;">
+                  ${(char.alias || char.name).substring(0, 2).toUpperCase()}
+                </div>
+              </div>
+            `,
+            iconSize: [30, 30],
+            iconAnchor: [15, 15],
+          });
 
-        marker.bindTooltip(
-          `<div style="font-family: inherit; font-size: 11px; font-weight: 700; color: #ffffff; background: #000000; padding: 3px 8px; border-radius: 4px; border: 1px solid ${color};">
-            <div>${pin.cityOrRegion ? `${pin.cityOrRegion}, ${pin.countryOrRealm}` : pin.name}</div>
-            <div style="font-size: 9px; color: #94a3b8; font-weight: normal;">${pin.events.map(e => e.eraCleanTitle).join(' • ')}</div>
-          </div>`,
-          { direction: 'top', offset: [0, -10], opacity: 0.95 }
-        );
+          const marker = L.marker(char.coordinates, { icon: charIcon }).addTo(map);
 
-        marker.on('click', () => {
-          setSelectedPinId(pin.id);
-          map.flyTo(pin.coordinates, Math.max(map.getZoom(), 5), { duration: 1.2 });
+          marker.bindTooltip(
+            `<div style="font-family: inherit; font-size: 11px; font-weight: 700; color: #ffffff; background: #000000; padding: 4px 8px; border-radius: 4px; border: 1px solid ${char.color};">
+              <div style="color: ${char.color}; font-size: 10px; font-weight: 800; text-transform: uppercase;">👤 ${char.alias || char.name} • ${char.role.toUpperCase()}</div>
+              <div style="color: #ffffff;">${char.locationName}</div>
+              <div style="font-size: 9px; color: #94a3b8;">${char.eraCleanTitle} • ${char.mediaTitle}</div>
+            </div>`,
+            { direction: 'top', offset: [0, -12], opacity: 0.95 }
+          );
+
+          marker.on('click', () => {
+            const targetLat = Math.min(65, Math.max(-60, char.coordinates[0]));
+            map.flyTo([targetLat, char.coordinates[1]], 5.5, { duration: 1.2 });
+          });
+
+          markersRef.current.push(marker);
         });
+      }
 
-        markersRef.current.push(marker);
-      });
+      // 2C. 6 Infinity Stones Global Status in this Era Snapshot
+      if (snapshotLayerMode === 'all' || snapshotLayerMode === 'stones') {
+        activeSnapshotStones.forEach((stone) => {
+          const stoneIcon = L.divIcon({
+            className: 'snapshot-stone-pin',
+            html: `
+              <div style="position: relative; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; cursor: pointer;">
+                <div style="position: absolute; inset: -3px; border-radius: 50%; background-color: ${stone.colorHex}; opacity: 0.5; animation: ping 1.8s cubic-bezier(0,0,0.2,1) infinite;"></div>
+                <div style="position: relative; width: 20px; height: 20px; border-radius: 4px; background-color: #000000; border: 2px solid ${stone.colorHex}; box-shadow: 0 0 14px ${stone.colorHex}; transform: rotate(45deg); display: flex; align-items: center; justify-content: center;">
+                  <div style="width: 7px; height: 7px; border-radius: 1.5px; background-color: ${stone.colorHex};"></div>
+                </div>
+              </div>
+            `,
+            iconSize: [32, 32],
+            iconAnchor: [16, 16],
+          });
+
+          const marker = L.marker(stone.coordinates, { icon: stoneIcon }).addTo(map);
+
+          marker.bindTooltip(
+            `<div style="font-family: inherit; font-size: 11px; font-weight: 700; color: #ffffff; background: #000000; padding: 4px 8px; border-radius: 4px; border: 1px solid ${stone.colorHex};">
+              <div style="color: ${stone.colorHex}; font-size: 10px; font-weight: 800; text-transform: uppercase;">💎 ${stone.name}</div>
+              <div style="color: #ffffff;">${stone.locationName} (${stone.regionAndCountry})</div>
+              <div style="font-size: 9px; color: #cbd5e1;">Bearer: ${stone.bearer} • ${stone.vessel}</div>
+            </div>`,
+            { direction: 'top', offset: [0, -14], opacity: 0.95 }
+          );
+
+          marker.on('click', () => {
+            const targetLat = Math.min(65, Math.max(-60, stone.coordinates[0]));
+            map.flyTo([targetLat, stone.coordinates[1]], 5.5, { duration: 1.2 });
+          });
+
+          markersRef.current.push(marker);
+        });
+      }
     }
 
     setTimeout(() => {
       map.invalidateSize();
     }, 150);
 
-  }, [filteredPins, activePin, activeStoneTrajectory, selectedTrajectoryStopIndex]);
+  }, [filteredPins, activePin, currentTrajectory, selectedTrajectoryStopIndex, snapshotLayerMode, activeSnapshotCharacters, activeSnapshotStones]);
 
   // When switching to Earth mode, invalidate size
   useEffect(() => {
     if (mapViewMode === 'earth' && mapInstanceRef.current) {
       setTimeout(() => {
         mapInstanceRef.current?.invalidateSize();
-        if (activeStoneTrajectory && activeStoneTrajectory.stops.length > 0) {
-          mapInstanceRef.current?.flyTo(activeStoneTrajectory.stops[0].coordinates, 4, { duration: 1.2 });
+        if (currentTrajectory && currentTrajectory.stops.length > 0) {
+          const polyCoords = currentTrajectory.stops.map((s) => s.coordinates);
+          const poly = L.polyline(polyCoords);
+          mapInstanceRef.current?.fitBounds(poly.getBounds().pad(0.18), { maxZoom: 5, animate: true });
         } else if (activePin) {
-          mapInstanceRef.current?.flyTo(activePin.coordinates, 4.5, { duration: 1.2 });
+          const targetLat = Math.min(65, Math.max(-60, activePin.coordinates[0]));
+          mapInstanceRef.current?.flyTo([targetLat, activePin.coordinates[1]], 4.5, { duration: 1.2 });
         }
       }, 100);
     }
-  }, [mapViewMode, activeStoneTrajectory]);
+  }, [mapViewMode, currentTrajectory]);
 
   // Select Infinity Stone Trajectory
   const handleSelectStoneTrajectory = (stoneId: string | null) => {
     setActiveStoneTrajectoryId(stoneId);
+    setActiveCharacterId(null);
     setSelectedMapStoneTrajectoryId(stoneId);
+    setSelectedMapCharacterId(null);
     setSelectedTrajectoryStopIndex(stoneId ? 0 : null);
     setIsTracingTrajectory(false);
 
     if (stoneId && mapInstanceRef.current && mapViewMode === 'earth') {
       const traj = STONE_TRAJECTORIES[stoneId];
       if (traj && traj.stops.length > 0) {
-        mapInstanceRef.current.flyTo(traj.stops[0].coordinates, 4, { duration: 1.2 });
+        const polyCoords = traj.stops.map((s) => s.coordinates);
+        const poly = L.polyline(polyCoords);
+        mapInstanceRef.current.fitBounds(poly.getBounds().pad(0.18), { maxZoom: 5, animate: true });
       }
+    }
+  };
+
+  // Select Character Trajectory
+  const handleSelectCharacterTrajectory = (rawCharId: string | null) => {
+    const charId = normalizeCharacterId(rawCharId);
+    setActiveCharacterId(charId);
+    setActiveStoneTrajectoryId(null);
+    setSelectedMapCharacterId(charId);
+    setSelectedMapStoneTrajectoryId(null);
+    setSelectedTrajectoryStopIndex(charId ? 0 : null);
+    setIsTracingTrajectory(false);
+
+    if (charId && mapInstanceRef.current && mapViewMode === 'earth') {
+      const char = charactersData[charId];
+      if (char) {
+        const stops: [number, number][] = [];
+        timelineEras.forEach((era) => {
+          era.events.forEach((evt) => {
+            const isPresent = evt.characters.includes(char.id) || evt.rawHtml.includes(`class="${char.cssClass}`);
+            if (isPresent && evt.locations) {
+              evt.locations.forEach((loc) => {
+                if (loc.coordinates) stops.push(loc.coordinates);
+              });
+            }
+          });
+        });
+        if (stops.length > 0) {
+          const poly = L.polyline(stops);
+          mapInstanceRef.current.fitBounds(poly.getBounds().pad(0.18), { maxZoom: 5, animate: true });
+        }
+      }
+    }
+  };
+
+  // Waypoint Stop Stepping Controller
+  const goToNextStop = () => {
+    if (!currentTrajectory || currentTrajectory.stops.length === 0) return;
+    const current = selectedTrajectoryStopIndex ?? 0;
+    const next = (current + 1) % currentTrajectory.stops.length;
+    setSelectedTrajectoryStopIndex(next);
+    const stop = currentTrajectory.stops[next];
+    if (mapInstanceRef.current && stop) {
+      const targetLat = Math.min(65, Math.max(-60, stop.coordinates[0]));
+      mapInstanceRef.current.flyTo([targetLat, stop.coordinates[1]], 5.5, { duration: 1.2 });
+    }
+  };
+
+  const goToPrevStop = () => {
+    if (!currentTrajectory || currentTrajectory.stops.length === 0) return;
+    const current = selectedTrajectoryStopIndex ?? 0;
+    const prev = (current - 1 + currentTrajectory.stops.length) % currentTrajectory.stops.length;
+    setSelectedTrajectoryStopIndex(prev);
+    const stop = currentTrajectory.stops[prev];
+    if (mapInstanceRef.current && stop) {
+      const targetLat = Math.min(65, Math.max(-60, stop.coordinates[0]));
+      mapInstanceRef.current.flyTo([targetLat, stop.coordinates[1]], 5.5, { duration: 1.2 });
     }
   };
 
@@ -1034,7 +1816,7 @@ export const MapScreen: React.FC = () => {
           setSelectedPinId(targetPin.id);
           mapInstanceRef.current.flyTo(targetPin.coordinates, 4.5, { duration: 1.2 });
         } else {
-          mapInstanceRef.current.setView([30, 0], 2.4);
+          mapInstanceRef.current.setView([25, 0], 2.3);
         }
       }
     }, 150);
@@ -1047,6 +1829,20 @@ export const MapScreen: React.FC = () => {
     return `${yr}`;
   };
 
+  // Prominent audited character chips for quick recon
+  const quickCharacters = [
+    { id: 'steve-rogers', label: 'Captain America', color: '#38bdf8' },
+    { id: 'peggy-carter', label: 'Agent Carter', color: '#ef4444' },
+    { id: 'erik-lehnsherr', label: 'Magneto', color: '#dc2626' },
+    { id: 'charles-xavier', label: 'Professor X', color: '#38bdf8' },
+    { id: 'ben-reilly-noir', label: 'Spider-Noir', color: '#c084fc' },
+    { id: 'bucky-barnes', label: 'Winter Soldier', color: '#94a3b8' },
+    { id: 'howard-stark', label: 'Howard Stark', color: '#f59e0b' },
+    { id: 'logan-wolverine', label: 'Wolverine', color: '#fbbf24' },
+    { id: 'shuri', label: 'Shuri', color: '#a855f7' },
+    { id: 'thor', label: 'Thor', color: '#eab308' },
+  ];
+
   return (
     <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-6 font-din">
       
@@ -1055,7 +1851,7 @@ export const MapScreen: React.FC = () => {
         <div>
           <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded bg-sky-600 text-white text-[11px] font-black tracking-widest uppercase mb-1 shadow font-title">
             <Compass className="w-3.5 h-3.5 animate-spin" style={{ animationDuration: '12s' }} />
-            <span>S.H.I.E.L.D. TACTICAL CARTOGRAPHY & INFINITY TRAJECTORY RECON</span>
+            <span>S.H.I.E.L.D. TACTICAL CARTOGRAPHY & OPERATIVE RECON</span>
           </div>
           <h1 className="text-2xl sm:text-3xl font-black text-white tracking-wide uppercase font-title leading-tight">
             GLOBAL & <span className="text-sky-400">CHRONOLOGICAL</span> THEATRE
@@ -1206,15 +2002,15 @@ export const MapScreen: React.FC = () => {
                 <div className="flex items-center gap-2">
                   <Crosshair className="w-4 h-4 text-sky-400 animate-pulse" />
                   <span>
-                    {activeStoneTrajectory
-                      ? `TRAJECTORY VECTOR ACTIVE • ${activeStoneTrajectory.name.toUpperCase()}`
+                    {currentTrajectory
+                      ? `TRAJECTORY VECTOR ACTIVE • ${currentTrajectory.name.toUpperCase()} (${currentTrajectory.stops.length} STOPS)`
                       : 'SATELLITE RECONNAISSANCE GRID • SYS.ONLINE'}
                   </span>
                 </div>
                 <div className="flex items-center gap-4 text-[11px]">
                   <span>
-                    {activeStoneTrajectory
-                      ? `STOPS: ${activeStoneTrajectory.stops.length}`
+                    {currentTrajectory
+                      ? `STOPS: ${currentTrajectory.stops.length}`
                       : `PINS: ${filteredPins.length}`}
                   </span>
                   <span className="hidden sm:inline">PAN & ZOOM ENABLED</span>
@@ -1229,20 +2025,48 @@ export const MapScreen: React.FC = () => {
 
               {/* Map Quick Legend / Trajectory Controller */}
               <div className="mt-3 pt-2 border-t border-sky-950/80 flex flex-wrap items-center justify-between gap-3 text-xs text-zinc-400 font-din">
-                {activeStoneTrajectory ? (
-                  <div className="flex items-center gap-3">
+                {currentTrajectory ? (
+                  <div className="flex items-center gap-2.5 flex-wrap">
                     <span 
                       className="px-2.5 py-1 rounded text-xs font-black font-title tracking-wider uppercase text-white shadow"
-                      style={{ backgroundColor: activeStoneTrajectory.colorHex }}
+                      style={{ backgroundColor: currentTrajectory.colorHex }}
                     >
-                      {activeStoneTrajectory.name}
+                      {currentTrajectory.name}
                     </span>
+
+                    {/* Interactive Step Arrows: Prev / Stop X of Total / Next */}
+                    <div className="flex items-center bg-[#000000] border border-[#232f45] rounded-lg p-0.5 shadow">
+                      <button
+                        onClick={goToPrevStop}
+                        className="px-2 py-1 rounded hover:bg-[#1f293d] text-zinc-300 hover:text-white flex items-center gap-1 text-xs font-bold font-title cursor-pointer transition-all active:scale-95"
+                        title="Previous Waypoint Stop"
+                      >
+                        <ChevronLeft className="w-4 h-4 text-sky-400" />
+                        <span className="hidden sm:inline">PREV</span>
+                      </button>
+
+                      <div className="px-2.5 py-1 text-xs font-mono font-bold text-sky-300 border-x border-[#232f45] flex items-center gap-1.5 whitespace-nowrap">
+                        <span className="w-2 h-2 rounded-full animate-ping" style={{ backgroundColor: currentTrajectory.colorHex }} />
+                        <span>STOP {(selectedTrajectoryStopIndex ?? 0) + 1} / {currentTrajectory.stops.length}</span>
+                      </div>
+
+                      <button
+                        onClick={goToNextStop}
+                        className="px-2 py-1 rounded hover:bg-[#1f293d] text-zinc-300 hover:text-white flex items-center gap-1 text-xs font-bold font-title cursor-pointer transition-all active:scale-95"
+                        title="Next Waypoint Stop"
+                      >
+                        <span className="hidden sm:inline">NEXT</span>
+                        <ChevronRight className="w-4 h-4 text-sky-400" />
+                      </button>
+                    </div>
+
+                    {/* Auto-Trace Play / Pause */}
                     <button
                       onClick={() => setIsTracingTrajectory(!isTracingTrajectory)}
-                      className="flex items-center gap-1.5 px-3 py-1 rounded bg-[#000000] border border-sky-600 text-sky-300 hover:text-white text-xs font-bold font-title uppercase tracking-wider cursor-pointer shadow transition-all"
+                      className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#000000] border border-sky-600 text-sky-300 hover:text-white text-xs font-bold font-title uppercase tracking-wider cursor-pointer shadow transition-all hover:bg-sky-950"
                     >
                       <Navigation className="w-3.5 h-3.5" />
-                      <span>{isTracingTrajectory ? 'STOP TRACING' : 'TRACE HISTORICAL TRAJECTORY'}</span>
+                      <span>{isTracingTrajectory ? 'PAUSE TRACE' : 'AUTO-TRACE'}</span>
                     </button>
                   </div>
                 ) : (
@@ -1277,11 +2101,199 @@ export const MapScreen: React.FC = () => {
 
             </div>
 
-            {/* INTEGRATED BOTTOM CONTROL CONSOLE: STONES + TIMELINE ERAS */}
+            {/* INTEGRATED BOTTOM CONTROL CONSOLE: HISTORICAL + CHARACTERS + STONES */}
             <div className="bg-[#10141f] border-2 border-sky-950 rounded-2xl p-4 sm:p-5 shadow-2xl space-y-4">
               
-              {/* SECTION 1: INFINITY STONE TRAJECTORY TRACKER */}
+              {/* SECTION 1: HISTORICAL ERA SCRUBBER & CHRONOLOGY */}
               <div className="pb-3 border-b border-sky-950/80">
+                <div className="flex items-center justify-between gap-3 mb-2.5 flex-wrap">
+                  <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-sky-300 font-title">
+                    <Calendar className="w-4 h-4 text-sky-400" />
+                    <span>HISTORICAL ERA SCRUBBER & CHRONOLOGY</span>
+                  </div>
+
+                  <div className="flex items-center gap-2 text-xs font-mono text-zinc-400 flex-wrap">
+                    <span className="hidden sm:inline">ACTIVE WINDOW:</span>
+                    <span className="px-2.5 py-0.5 rounded bg-[#040810] border border-sky-800 text-sky-300 font-bold">
+                      {formatYearLabel(customRange[0])} ➔ {formatYearLabel(customRange[1])}
+                    </span>
+                    <button
+                      onClick={() => handleSelectPreset('all')}
+                      className="p-1 rounded bg-[#1c2333] hover:bg-[#2a344d] text-zinc-400 hover:text-white cursor-pointer transition-colors"
+                      title="Reset to All History"
+                    >
+                      <RotateCcw className="w-3.5 h-3.5" />
+                    </button>
+                  </div>
+                </div>
+
+                {/* Snapshot Multi-Entity Layer Toggles (Locations First) */}
+                <div className="mb-2.5 flex items-center justify-between gap-2 flex-wrap">
+                  <span className="text-[10px] font-black text-sky-400/80 uppercase tracking-widest font-title">
+                    TEMPORAL SNAPSHOT LAYERS:
+                  </span>
+                  <div className="flex items-center gap-1.5 p-0.5 bg-[#050811] rounded-lg border border-sky-900/60 overflow-x-auto no-scrollbar">
+                    <button
+                      onClick={() => handleSelectSnapshotLayer('locations')}
+                      className={`flex items-center gap-1 px-2.5 py-1 rounded text-xs font-bold font-title uppercase tracking-wider transition-all cursor-pointer whitespace-nowrap ${
+                        snapshotLayerMode === 'locations'
+                          ? 'bg-sky-600 text-white shadow'
+                          : 'text-zinc-400 hover:text-white'
+                      }`}
+                    >
+                      <MapPin className="w-3 h-3" />
+                      <span>Locations ({filteredPins.length})</span>
+                    </button>
+                    <button
+                      onClick={() => handleSelectSnapshotLayer('characters')}
+                      className={`flex items-center gap-1 px-2.5 py-1 rounded text-xs font-bold font-title uppercase tracking-wider transition-all cursor-pointer whitespace-nowrap ${
+                        snapshotLayerMode === 'characters'
+                          ? 'bg-sky-500 text-white shadow'
+                          : 'text-zinc-400 hover:text-white'
+                      }`}
+                    >
+                      <Users className="w-3 h-3" />
+                      <span>Figures ({activeSnapshotCharacters.length})</span>
+                    </button>
+                    <button
+                      onClick={() => handleSelectSnapshotLayer('stones')}
+                      className={`flex items-center gap-1 px-2.5 py-1 rounded text-xs font-bold font-title uppercase tracking-wider transition-all cursor-pointer whitespace-nowrap ${
+                        snapshotLayerMode === 'stones'
+                          ? 'bg-indigo-600 text-white shadow'
+                          : 'text-zinc-400 hover:text-white'
+                      }`}
+                    >
+                      <Sparkles className="w-3 h-3" />
+                      <span>6 Stones ({activeSnapshotStones.length})</span>
+                    </button>
+                    <button
+                      onClick={() => handleSelectSnapshotLayer('all')}
+                      className={`px-2.5 py-1 rounded text-xs font-bold font-title uppercase tracking-wider transition-all cursor-pointer whitespace-nowrap ${
+                        snapshotLayerMode === 'all'
+                          ? 'bg-zinc-700 text-white shadow'
+                          : 'text-zinc-400 hover:text-white'
+                      }`}
+                    >
+                      🌐 All Snapshot
+                    </button>
+                  </div>
+                </div>
+
+                {/* Era Preset Buttons */}
+                <DragScrollRow className="flex items-center gap-2 pb-2">
+                  {ERA_PRESETS.map((preset) => {
+                    const isSelected = selectedPreset === preset.id;
+                    return (
+                      <button
+                        key={preset.id}
+                        onClick={() => handleSelectPreset(preset.id)}
+                        className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold font-title tracking-wider uppercase whitespace-nowrap transition-all cursor-pointer shrink-0 shadow-sm ${
+                          isSelected
+                            ? 'bg-sky-500 text-white ring-2 ring-sky-300 shadow-md'
+                            : 'bg-[#090d14] text-zinc-400 border border-[#1e293b] hover:border-sky-500 hover:text-white'
+                        }`}
+                        title={preset.description}
+                      >
+                        <span>{preset.icon}</span>
+                        <span>{preset.label}</span>
+                      </button>
+                    );
+                  })}
+                </DragScrollRow>
+
+                {/* Quick Specific Years Ribbon */}
+                <DragScrollRow className="pt-2 border-t border-sky-950/60 flex items-center gap-2">
+                  <span className="text-[10px] font-black text-zinc-500 uppercase tracking-widest shrink-0 font-title">
+                    QUICK YEARS:
+                  </span>
+                  {chronoEras.map((cEra) => (
+                    <button
+                      key={cEra.id}
+                      onClick={() => handleSelectChronoEra(cEra.cleanTitle)}
+                      className="px-2.5 py-1 rounded-md bg-[#060910] hover:bg-sky-900/60 border border-[#1e293b] hover:border-sky-400 text-zinc-300 hover:text-white text-[11px] font-mono whitespace-nowrap transition-all cursor-pointer shrink-0 shadow-sm"
+                    >
+                      {cEra.cleanTitle.split(' (')[0]}
+                    </button>
+                  ))}
+                </DragScrollRow>
+              </div>
+
+              {/* SECTION 2: CHARACTER RECON & TRAJECTORY TRACKER */}
+              <div className="pb-3 border-b border-sky-950/80">
+                <div className="flex items-center justify-between gap-3 mb-2.5 flex-wrap">
+                  <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-sky-300 font-title">
+                    <Users className="w-4 h-4 text-sky-400" />
+                    <span>CHARACTER RECON & MISSION TRAJECTORY:</span>
+                  </div>
+                  {activeCharacterTrajectory && (
+                    <span 
+                      className="px-2.5 py-0.5 rounded text-[11px] font-black font-title tracking-wider uppercase text-white shadow"
+                      style={{ backgroundColor: activeCharacterTrajectory.colorHex }}
+                    >
+                      ACTIVE: {activeCharacterTrajectory.name} ({activeCharacterTrajectory.stops.length} MISSIONS)
+                    </span>
+                  )}
+                </div>
+
+                {/* Character Quick Chips + Alphabetical Dropdown */}
+                <DragScrollRow className="flex items-center gap-2 pb-1">
+                  <button
+                    onClick={() => {
+                      handleSelectCharacterTrajectory(null);
+                      handleSelectStoneTrajectory(null);
+                    }}
+                    className={`px-3 py-1.5 rounded-lg text-xs font-bold font-title tracking-wider uppercase whitespace-nowrap transition-all cursor-pointer ${
+                      activeCharacterId === null && activeStoneTrajectoryId === null
+                        ? 'bg-zinc-700 text-white shadow'
+                        : 'bg-[#060910] text-zinc-400 border border-[#1e293b] hover:text-white'
+                    }`}
+                  >
+                    All Locations
+                  </button>
+
+                  {quickCharacters.map((qc) => {
+                    const isSelected = activeCharacterId === qc.id;
+                    return (
+                      <button
+                        key={qc.id}
+                        onClick={() => handleSelectCharacterTrajectory(qc.id)}
+                        className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold font-title tracking-wider uppercase whitespace-nowrap transition-all cursor-pointer shrink-0 shadow-sm ${
+                          isSelected
+                            ? 'text-white ring-2 ring-white shadow-lg'
+                            : 'bg-[#060910] text-zinc-400 border border-[#1e293b] hover:text-white'
+                        }`}
+                        style={{
+                          backgroundColor: isSelected ? qc.color : undefined,
+                          borderColor: isSelected ? qc.color : undefined,
+                        }}
+                      >
+                        <User className="w-3 h-3" style={{ color: isSelected ? '#ffffff' : qc.color }} />
+                        <span>{qc.label}</span>
+                      </button>
+                    );
+                  })}
+
+                  {/* Character Selector Dropdown (A-Z Sorted) */}
+                  <div className="relative shrink-0">
+                    <select
+                      value={activeCharacterId || ''}
+                      onChange={(e) => handleSelectCharacterTrajectory(e.target.value || null)}
+                      className="bg-[#060910] border border-[#1e293b] text-zinc-300 text-xs rounded-lg pl-3 pr-8 py-1.5 focus:outline-none focus:border-sky-500 font-din cursor-pointer hover:border-sky-400 transition-colors appearance-none"
+                    >
+                      <option value="">All Characters</option>
+                      {sortedCharacters.map((c) => (
+                        <option key={c.id} value={c.id}>
+                          {c.alias || c.name}
+                        </option>
+                      ))}
+                    </select>
+                    <ChevronDown className="absolute right-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-zinc-500 pointer-events-none" />
+                  </div>
+                </DragScrollRow>
+              </div>
+
+              {/* SECTION 3: INFINITY STONE TRAJECTORY TRACKER */}
+              <div>
                 <div className="flex items-center justify-between gap-3 mb-2.5 flex-wrap">
                   <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-indigo-300 font-title">
                     <Route className="w-4 h-4 text-indigo-400" />
@@ -1298,18 +2310,7 @@ export const MapScreen: React.FC = () => {
                 </div>
 
                 {/* 6 Stone Selector Buttons */}
-                <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar pb-1">
-                  <button
-                    onClick={() => handleSelectStoneTrajectory(null)}
-                    className={`px-3 py-1.5 rounded-lg text-xs font-bold font-title tracking-wider uppercase whitespace-nowrap transition-all cursor-pointer ${
-                      activeStoneTrajectoryId === null
-                        ? 'bg-zinc-700 text-white shadow'
-                        : 'bg-[#060910] text-zinc-400 border border-[#1e293b] hover:text-white'
-                    }`}
-                  >
-                    All Locations
-                  </button>
-
+                <DragScrollRow className="flex items-center gap-1.5 pb-1">
                   {Object.values(STONE_TRAJECTORIES).map((stone) => {
                     const isSelected = activeStoneTrajectoryId === stone.id;
                     return (
@@ -1331,122 +2332,97 @@ export const MapScreen: React.FC = () => {
                       </button>
                     );
                   })}
-                </div>
-              </div>
-
-              {/* SECTION 2: HISTORICAL ERA SCRUBBER & CHRONOLOGY */}
-              <div>
-                <div className="flex items-center justify-between gap-3 mb-2.5 flex-wrap">
-                  <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-sky-300 font-title">
-                    <Calendar className="w-4 h-4 text-sky-400" />
-                    <span>HISTORICAL ERA SCRUBBER & CHRONOLOGY</span>
-                  </div>
-
-                  <div className="flex items-center gap-2 text-xs font-mono text-zinc-400">
-                    <span className="hidden sm:inline">ACTIVE WINDOW:</span>
-                    <span className="px-2.5 py-0.5 rounded bg-[#040810] border border-sky-800 text-sky-300 font-bold">
-                      {formatYearLabel(customRange[0])} ➔ {formatYearLabel(customRange[1])}
-                    </span>
-                    <button
-                      onClick={() => handleSelectPreset('all')}
-                      className="p-1 rounded bg-[#1c2333] hover:bg-[#2a344d] text-zinc-400 hover:text-white cursor-pointer transition-colors"
-                      title="Reset to All History"
-                    >
-                      <RotateCcw className="w-3.5 h-3.5" />
-                    </button>
-                  </div>
-                </div>
-
-                {/* Era Preset Buttons */}
-                <div className="flex items-center gap-2 overflow-x-auto no-scrollbar pb-1">
-                  {ERA_PRESETS.map((preset) => {
-                    const isSelected = selectedPreset === preset.id;
-                    return (
-                      <button
-                        key={preset.id}
-                        onClick={() => handleSelectPreset(preset.id)}
-                        className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold font-title tracking-wider uppercase whitespace-nowrap transition-all cursor-pointer shrink-0 shadow-sm ${
-                          isSelected
-                            ? 'bg-sky-500 text-white ring-2 ring-sky-300 shadow-md'
-                            : 'bg-[#090d14] text-zinc-400 border border-[#1e293b] hover:border-sky-500 hover:text-white'
-                        }`}
-                        title={preset.description}
-                      >
-                        <span>{preset.icon}</span>
-                        <span>{preset.label}</span>
-                      </button>
-                    );
-                  })}
-                </div>
-              </div>
-
-              {/* SECTION 3: QUICK SPECIFIC YEARS RIBBON */}
-              <div className="pt-3 border-t border-sky-950/80 flex items-center gap-2 overflow-x-auto no-scrollbar">
-                <span className="text-[10px] font-black text-zinc-500 uppercase tracking-widest shrink-0 font-title">
-                  QUICK YEARS:
-                </span>
-                {chronoEras.map((cEra) => (
-                  <button
-                    key={cEra.id}
-                    onClick={() => handleSelectChronoEra(cEra.cleanTitle)}
-                    className="px-2.5 py-1 rounded-md bg-[#060910] hover:bg-sky-900/60 border border-[#1e293b] hover:border-sky-400 text-zinc-300 hover:text-white text-[11px] font-mono whitespace-nowrap transition-all cursor-pointer shrink-0 shadow-sm"
-                  >
-                    {cEra.cleanTitle.split(' (')[0]}
-                  </button>
-                ))}
+                </DragScrollRow>
               </div>
 
             </div>
 
           </div>
 
-          {/* Right 4 Cols: Location / Stone Trajectory Dossier */}
+          {/* Right 4 Cols: Location / Trajectory Dossier */}
           <div className="lg:col-span-4 space-y-4">
-            {activeStoneTrajectory ? (
-              // Stone Trajectory Intel Deck
-              <div className="bg-[#141414] border-2 rounded-2xl p-6 shadow-2xl relative overflow-hidden" style={{ borderColor: `${activeStoneTrajectory.colorHex}66` }}>
+            {currentTrajectory ? (
+              // Active Trajectory Intel Deck (Character or Infinity Stone)
+              <div className="bg-[#141414] border-2 rounded-2xl p-6 shadow-2xl relative overflow-hidden" style={{ borderColor: `${currentTrajectory.colorHex}66` }}>
                 
                 {/* Header Title */}
                 <div className="flex items-start justify-between gap-3 mb-4 pb-4 border-b border-[#242424]">
                   <div>
                     <div className="flex items-center gap-2 mb-1.5">
-                      <Sparkles className="w-3.5 h-3.5" style={{ color: activeStoneTrajectory.colorHex }} />
-                      <span className="text-[11px] font-bold tracking-widest uppercase font-title" style={{ color: activeStoneTrajectory.colorHex }}>
-                        INFINITY RELIC TRAJECTORY
+                      <Sparkles className="w-3.5 h-3.5" style={{ color: currentTrajectory.colorHex }} />
+                      <span className="text-[11px] font-bold tracking-widest uppercase font-title" style={{ color: currentTrajectory.colorHex }}>
+                        {activeCharacterTrajectory ? 'OPERATIVE MISSION VECTOR' : 'INFINITY RELIC TRAJECTORY'}
                       </span>
                     </div>
                     <h2 className="text-xl font-black text-white uppercase font-title leading-tight">
-                      {activeStoneTrajectory.name}
+                      {currentTrajectory.name}
                     </h2>
                     <p className="text-xs text-zinc-400 mt-0.5">
-                      Vessel: <strong className="text-zinc-200">{activeStoneTrajectory.vessel}</strong>
+                      {currentTrajectory.vessel}
                     </p>
                   </div>
 
-                  <button
-                    onClick={() => setSelectedStoneId(activeStoneTrajectory.id.replace('-stone', '') as any)}
-                    className="p-2 rounded-lg bg-[#090d14] border hover:border-white text-white transition-colors cursor-pointer"
-                    style={{ borderColor: activeStoneTrajectory.colorHex }}
-                    title="Open Full Infinity Stone Dossier"
-                  >
-                    <ExternalLink className="w-4 h-4" style={{ color: activeStoneTrajectory.colorHex }} />
-                  </button>
+                  {activeStoneTrajectory ? (
+                    <button
+                      onClick={() => setSelectedStoneId(activeStoneTrajectory.id.replace('-stone', '') as any)}
+                      className="p-2 rounded-lg bg-[#090d14] border hover:border-white text-white transition-colors cursor-pointer"
+                      style={{ borderColor: currentTrajectory.colorHex }}
+                      title="Open Full Infinity Stone Dossier"
+                    >
+                      <ExternalLink className="w-4 h-4" style={{ color: currentTrajectory.colorHex }} />
+                    </button>
+                  ) : activeCharacterId ? (
+                    <button
+                      onClick={() => {
+                        const { setSelectedCharacterId } = useStore.getState();
+                        setSelectedCharacterId(activeCharacterId);
+                      }}
+                      className="p-2 rounded-lg bg-[#090d14] border hover:border-white text-white transition-colors cursor-pointer"
+                      style={{ borderColor: currentTrajectory.colorHex }}
+                      title="Open Character Dossier"
+                    >
+                      <ExternalLink className="w-4 h-4" style={{ color: currentTrajectory.colorHex }} />
+                    </button>
+                  ) : null}
                 </div>
 
                 {/* Description */}
                 <p className="text-xs text-zinc-300 leading-relaxed mb-5 bg-[#0a0a0a] p-3.5 rounded-xl border border-[#27272a]">
-                  {activeStoneTrajectory.description}
+                  {currentTrajectory.description}
                 </p>
 
                 {/* Waypoints Sequence */}
                 <div>
-                  <h3 className="text-xs font-bold uppercase tracking-wider text-zinc-400 mb-3 flex items-center gap-1.5 font-title">
-                    <Route className="w-3.5 h-3.5" style={{ color: activeStoneTrajectory.colorHex }} />
-                    <span>CHRONOLOGICAL TRAJECTORY STOPS ({activeStoneTrajectory.stops.length})</span>
-                  </h3>
+                  <div className="flex items-center justify-between gap-2 mb-3 pb-2 border-b border-[#27272a]">
+                    <h3 className="text-xs font-bold uppercase tracking-wider text-zinc-400 flex items-center gap-1.5 font-title">
+                      <Route className="w-3.5 h-3.5" style={{ color: currentTrajectory.colorHex }} />
+                      <span>CHRONOLOGICAL STOPS ({currentTrajectory.stops.length})</span>
+                    </h3>
+
+                    {/* Step-by-Step Waypoint Arrows */}
+                    <div className="flex items-center gap-1">
+                      <button
+                        onClick={goToPrevStop}
+                        className="p-1 rounded bg-[#0a0a0a] border border-[#2e2e2e] hover:border-white text-zinc-400 hover:text-white cursor-pointer transition-colors"
+                        title="Previous stop"
+                      >
+                        <ChevronLeft className="w-3.5 h-3.5" />
+                      </button>
+                      <span className="text-[11px] font-mono font-bold text-sky-300 px-1.5">
+                        {(selectedTrajectoryStopIndex ?? 0) + 1}/{currentTrajectory.stops.length}
+                      </span>
+                      <button
+                        onClick={goToNextStop}
+                        className="p-1 rounded bg-[#0a0a0a] border border-[#2e2e2e] hover:border-white text-zinc-400 hover:text-white cursor-pointer transition-colors"
+                        title="Next stop"
+                      >
+                        <ChevronRight className="w-3.5 h-3.5" />
+                      </button>
+                    </div>
+                  </div>
 
                   <div className="space-y-3 max-h-[440px] overflow-y-auto pr-1">
-                    {activeStoneTrajectory.stops.map((stop, sIdx) => {
+                    {currentTrajectory.stops.map((stop, sIdx) => {
                       const isSelected = selectedTrajectoryStopIndex === sIdx;
                       return (
                         <div
@@ -1454,7 +2430,8 @@ export const MapScreen: React.FC = () => {
                           onClick={() => {
                             setSelectedTrajectoryStopIndex(sIdx);
                             if (mapInstanceRef.current) {
-                              mapInstanceRef.current.flyTo(stop.coordinates, 6, { duration: 1.2 });
+                              const targetLat = Math.min(65, Math.max(-60, stop.coordinates[0]));
+                              mapInstanceRef.current.flyTo([targetLat, stop.coordinates[1]], 5.5, { duration: 1.2 });
                             }
                           }}
                           className={`p-3.5 rounded-xl border transition-all cursor-pointer group ${
@@ -1463,14 +2440,14 @@ export const MapScreen: React.FC = () => {
                               : 'bg-[#181818] border-[#2a2a2a] hover:border-zinc-500'
                           }`}
                           style={{
-                            borderColor: isSelected ? activeStoneTrajectory.colorHex : undefined,
+                            borderColor: isSelected ? currentTrajectory.colorHex : undefined,
                           }}
                         >
                           <div className="flex items-center justify-between gap-2 mb-1.5">
                             <div className="flex items-center gap-2">
                               <span 
                                 className="w-5 h-5 rounded-full flex items-center justify-center text-[10px] font-black text-black font-title"
-                                style={{ backgroundColor: activeStoneTrajectory.colorHex }}
+                                style={{ backgroundColor: currentTrajectory.colorHex }}
                               >
                                 {stop.order}
                               </span>
@@ -1510,86 +2487,311 @@ export const MapScreen: React.FC = () => {
                 </div>
 
               </div>
-            ) : activePin ? (
-              // Regular Location Intel Dossier
-              <div className="bg-[#141414] border-2 border-sky-900/60 rounded-2xl p-6 shadow-2xl relative overflow-hidden">
+            ) : (
+              // Strategic Reconnaissance & Temporal Snapshot Intelligence Deck
+              <div className="bg-[#141414] border-2 border-sky-900/60 rounded-2xl p-5 shadow-2xl relative overflow-hidden space-y-4">
                 
                 {/* Header Title */}
-                <div className="flex items-start justify-between gap-3 mb-4 pb-4 border-b border-[#242424]">
-                  <div>
-                    <div className="flex items-center gap-2 mb-1.5">
-                      <span 
-                        className="w-2.5 h-2.5 rounded-full shrink-0" 
-                        style={{ backgroundColor: getPinColor(activePin.universeGroup, false) }}
-                      />
-                      <span className="text-[11px] font-bold tracking-widest text-sky-400 uppercase font-title">
-                        {activePin.earthDesignation}
+                <div className="border-b border-[#242424] pb-3">
+                  <div className="flex items-center justify-between gap-2 mb-1 flex-wrap">
+                    <div className="flex items-center gap-2">
+                      <Shield className="w-4 h-4 text-sky-400" />
+                      <span className="text-[11px] font-black tracking-widest text-sky-400 uppercase font-title">
+                        STRATEGIC RECONNAISSANCE INTEL
                       </span>
                     </div>
-                    <h2 className="text-xl font-black text-white uppercase font-title leading-tight">
-                      {activePin.name}
-                    </h2>
-                    <p className="text-xs text-zinc-400 mt-0.5">
-                      {activePin.cityOrRegion ? `${activePin.cityOrRegion}, ` : ''}{activePin.countryOrRealm} • <span className="text-zinc-300">{activePin.planet}</span>
-                    </p>
+                    <span className="px-2 py-0.5 rounded bg-[#090d14] border border-sky-900 text-sky-300 font-mono text-[10px] font-bold">
+                      {selectedUniverse === 'all' ? 'ALL REALITIES' : `UNIVERSE ${selectedUniverse}`}
+                    </span>
                   </div>
-
-                  <div className="p-2 rounded-lg bg-[#090d14] border border-sky-950 text-sky-400">
-                    <MapPin className="w-5 h-5" />
-                  </div>
+                  <h2 className="text-lg font-black text-white uppercase font-title leading-tight">
+                    WINDOW: {formatYearLabel(customRange[0])} ➔ {formatYearLabel(customRange[1])}
+                  </h2>
                 </div>
 
-                {/* Coordinates & Focus Action */}
-                <div className="flex items-center justify-between p-3 rounded-lg bg-[#0a0a0a] border border-[#262626] mb-5 text-xs font-mono">
-                  <span className="text-zinc-500">COORDINATES:</span>
-                  <span className="text-sky-300 font-bold">
-                    {activePin.coordinates[0].toFixed(4)}° N, {activePin.coordinates[1].toFixed(4)}° E
-                  </span>
+                {/* Sub-Tabs: Locations (First) / Figures (Second) / Stones (Third) */}
+                <div className="grid grid-cols-3 gap-1 p-1 bg-[#090d14] rounded-xl border border-[#232f45]">
+                  <button
+                    onClick={() => handleSelectSnapshotTab('locations')}
+                    className={`py-1.5 px-1.5 sm:px-2 rounded-lg text-xs font-bold font-title tracking-wider uppercase transition-all cursor-pointer text-center truncate ${
+                      selectedSnapshotTab === 'locations'
+                        ? 'bg-sky-600 text-white shadow'
+                        : 'text-zinc-400 hover:text-white'
+                    }`}
+                  >
+                    📍 Sites ({filteredPins.length})
+                  </button>
+                  <button
+                    onClick={() => handleSelectSnapshotTab('characters')}
+                    className={`py-1.5 px-1.5 sm:px-2 rounded-lg text-xs font-bold font-title tracking-wider uppercase transition-all cursor-pointer text-center truncate ${
+                      selectedSnapshotTab === 'characters'
+                        ? 'bg-sky-500 text-white shadow'
+                        : 'text-zinc-400 hover:text-white'
+                    }`}
+                  >
+                    👥 Figures ({activeSnapshotCharacters.length})
+                  </button>
+                  <button
+                    onClick={() => handleSelectSnapshotTab('stones')}
+                    className={`py-1.5 px-1.5 sm:px-2 rounded-lg text-xs font-bold font-title tracking-wider uppercase transition-all cursor-pointer text-center truncate ${
+                      selectedSnapshotTab === 'stones'
+                        ? 'bg-indigo-600 text-white shadow'
+                        : 'text-zinc-400 hover:text-white'
+                    }`}
+                  >
+                    💎 6 Stones ({activeSnapshotStones.length})
+                  </button>
                 </div>
 
-                {/* Associated Historical Events */}
-                <div>
-                  <h3 className="text-xs font-bold uppercase tracking-wider text-zinc-400 mb-3 flex items-center gap-1.5 font-title">
-                    <Clock className="w-3.5 h-3.5 text-[#e62429]" />
-                    <span>HISTORICAL EVENTS AT THIS SITE ({activePin.events.length})</span>
-                  </h3>
+                {/* TAB 1: LOCATIONS & ACTIVE PIN INTEL DOSSIER (FIRST PRIORITY) */}
+                {selectedSnapshotTab === 'locations' && (
+                  <div className="space-y-4 max-h-[500px] overflow-y-auto pr-1">
+                    {activePin ? (
+                      // Dedicated Detailed Location Dossier Card for the clicked pin
+                      <div className="bg-[#181818] border border-sky-600/70 rounded-xl p-4 shadow-lg space-y-3.5">
+                        {/* Header Title */}
+                        <div className="flex items-start justify-between gap-2 pb-2.5 border-b border-[#2d2d2d]">
+                          <div>
+                            <div className="flex items-center gap-1.5 mb-1">
+                              <span 
+                                className="w-2.5 h-2.5 rounded-full shrink-0" 
+                                style={{ backgroundColor: getPinColor(activePin.universeGroup, false) }}
+                              />
+                              <span className="text-[10px] font-bold tracking-widest text-sky-400 uppercase font-title">
+                                {activePin.earthDesignation}
+                              </span>
+                            </div>
+                            <h3 className="text-base font-black text-white uppercase font-title leading-snug">
+                              {activePin.name}
+                            </h3>
+                            <p className="text-[11px] text-zinc-400 mt-0.5">
+                              {activePin.cityOrRegion ? `${activePin.cityOrRegion}, ` : ''}{activePin.countryOrRealm} • <span className="text-zinc-300">{activePin.planet}</span>
+                            </p>
+                          </div>
 
-                  <div className="space-y-3 max-h-[460px] overflow-y-auto pr-1">
-                    {activePin.events.map(({ event, eraTitle, eraCleanTitle }) => (
-                      <div 
-                        key={event.id}
-                        className="p-3.5 rounded-xl bg-[#181818] border border-[#2a2a2a] hover:border-sky-500/80 transition-all group"
-                      >
-                        <div className="flex items-center justify-between gap-2 mb-2">
-                          <span className="text-xs font-black font-title tracking-wider text-white uppercase group-hover:text-sky-300 transition-colors">
-                            {eraTitle}
-                          </span>
-                          <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-[#0a0a0a] border border-[#333333] text-zinc-400 font-title uppercase">
-                            {event.mediaTitle}
+                          <div className="p-1.5 rounded bg-[#090d14] border border-sky-950 text-sky-400">
+                            <MapPin className="w-4 h-4" />
+                          </div>
+                        </div>
+
+                        {/* Coordinates */}
+                        <div className="flex items-center justify-between p-2 rounded-lg bg-[#0a0a0a] border border-[#262626] text-[11px] font-mono">
+                          <span className="text-zinc-500">COORDINATES:</span>
+                          <span className="text-sky-300 font-bold">
+                            {activePin.coordinates[0].toFixed(4)}° N, {activePin.coordinates[1].toFixed(4)}° E
                           </span>
                         </div>
 
-                        <p className="text-xs text-zinc-300 leading-relaxed mb-3 line-clamp-3 font-din">
-                          {event.paragraphs[0]?.replace(/<[^>]*>?/gm, '')}
-                        </p>
+                        {/* Associated Historical Events */}
+                        <div>
+                          <div className="text-[11px] font-bold uppercase tracking-wider text-zinc-400 mb-2 flex items-center gap-1.5 font-title">
+                            <Clock className="w-3.5 h-3.5 text-[#e62429]" />
+                            <span>EVENTS AT THIS SITE ({activePin.events.length})</span>
+                          </div>
 
-                        <button
-                          onClick={() => jumpToTimelineEvent(event.id)}
-                          className="w-full flex items-center justify-center gap-1.5 py-1.5 rounded-lg bg-[#000000] hover:bg-[#e62429] text-zinc-300 hover:text-white border border-[#333333] hover:border-[#e62429] text-xs font-bold font-title tracking-wider uppercase transition-all cursor-pointer shadow-sm"
+                          <div className="space-y-2.5">
+                            {activePin.events.map(({ event, eraTitle }) => (
+                              <div 
+                                key={event.id}
+                                className="p-3 rounded-lg bg-[#0e131d] border border-[#232f45] hover:border-sky-500/80 transition-all"
+                              >
+                                <div className="flex items-center justify-between gap-2 mb-1.5">
+                                  <span className="text-xs font-black font-title tracking-wider text-white uppercase">
+                                    {eraTitle}
+                                  </span>
+                                  <span className="text-[9px] font-bold px-1.5 py-0.5 rounded bg-[#060910] border border-[#333333] text-zinc-400 font-title uppercase">
+                                    {event.mediaTitle}
+                                  </span>
+                                </div>
+
+                                <p className="text-[11px] text-zinc-300 leading-relaxed mb-2.5 font-din line-clamp-3">
+                                  {event.paragraphs[0]?.replace(/<[^>]*>?/gm, '')}
+                                </p>
+
+                                <button
+                                  onClick={() => jumpToTimelineEvent(event.id)}
+                                  className="w-full flex items-center justify-center gap-1.5 py-1 rounded bg-[#000000] hover:bg-[#e62429] text-zinc-300 hover:text-white border border-[#333333] hover:border-[#e62429] text-[10px] font-bold font-title tracking-wider uppercase transition-all cursor-pointer"
+                                >
+                                  <span>OPEN IN TIMELINE</span>
+                                  <ArrowRight className="w-3 h-3" />
+                                </button>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+
+                        {/* Other Locations in Current Window */}
+                        {filteredPins.length > 1 && (
+                          <div className="pt-2.5 border-t border-[#2a2a2a]">
+                            <div className="text-[10px] font-bold uppercase tracking-wider text-zinc-500 mb-1.5 font-title">
+                              SWITCH LOCATION IN THIS ERA:
+                            </div>
+                            <div className="flex flex-wrap gap-1">
+                              {filteredPins.filter(p => p.id !== activePin.id).slice(0, 8).map((p) => (
+                                <button
+                                  key={p.id}
+                                  onClick={() => {
+                                    setSelectedPinId(p.id);
+                                    if (mapInstanceRef.current) {
+                                      const targetLat = Math.min(65, Math.max(-60, p.coordinates[0]));
+                                      mapInstanceRef.current.flyTo([targetLat, p.coordinates[1]], 5.5, { duration: 1.2 });
+                                    }
+                                  }}
+                                  className="px-2 py-0.5 rounded bg-[#090d14] hover:bg-sky-950 border border-[#232f45] hover:border-sky-400 text-zinc-300 hover:text-white text-[10px] font-din truncate max-w-[140px] cursor-pointer"
+                                >
+                                  {p.name}
+                                </button>
+                              ))}
+                            </div>
+                          </div>
+                        )}
+                      </div>
+                    ) : filteredPins.length === 0 ? (
+                      <div className="p-6 text-center text-zinc-500 text-xs font-din">
+                        No locations active in this period. Select another era below the map.
+                      </div>
+                    ) : (
+                      <div className="space-y-2.5">
+                        {filteredPins.map((pin) => (
+                          <div
+                            key={pin.id}
+                            onClick={() => {
+                              setSelectedPinId(pin.id);
+                              if (mapInstanceRef.current) {
+                                const targetLat = Math.min(65, Math.max(-60, pin.coordinates[0]));
+                                mapInstanceRef.current.flyTo([targetLat, pin.coordinates[1]], 5.5, { duration: 1.2 });
+                              }
+                            }}
+                            className="p-3 rounded-xl bg-[#181818] border border-[#2a2a2a] hover:border-sky-500/80 transition-all cursor-pointer group"
+                          >
+                            <div className="flex items-center justify-between gap-2 mb-1">
+                              <div className="flex items-center gap-2">
+                                <span 
+                                  className="w-2.5 h-2.5 rounded-full shrink-0"
+                                  style={{ backgroundColor: getPinColor(pin.universeGroup, false) }}
+                                />
+                                <span className="text-xs font-black font-title tracking-wider text-white uppercase group-hover:text-sky-300 transition-colors">
+                                  {pin.name}
+                                </span>
+                              </div>
+                              <span className="text-[9px] font-bold px-1.5 py-0.5 rounded bg-[#0a0a0a] border border-[#333333] text-zinc-400 font-title uppercase">
+                                {pin.earthDesignation.split(' (')[0]}
+                              </span>
+                            </div>
+
+                            <div className="text-[11px] text-zinc-400 font-din">
+                              {pin.cityOrRegion ? `${pin.cityOrRegion}, ` : ''}{pin.countryOrRealm}
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                )}
+
+                {/* TAB 2: ACTIVE CHARACTERS IN THIS ERA */}
+                {selectedSnapshotTab === 'characters' && (
+                  <div className="space-y-2.5 max-h-[500px] overflow-y-auto pr-1">
+                    {activeSnapshotCharacters.length === 0 ? (
+                      <div className="p-6 text-center text-zinc-500 text-xs font-din">
+                        No active characters documented in this specific timeline window.
+                      </div>
+                    ) : (
+                      activeSnapshotCharacters.map((char, cIdx) => (
+                        <div
+                          key={cIdx}
+                          onClick={() => {
+                            if (mapInstanceRef.current) {
+                              const targetLat = Math.min(65, Math.max(-60, char.coordinates[0]));
+                              mapInstanceRef.current.flyTo([targetLat, char.coordinates[1]], 5.5, { duration: 1.2 });
+                            }
+                          }}
+                          className="p-3 rounded-xl bg-[#181818] border border-[#2a2a2a] hover:border-sky-500/80 transition-all cursor-pointer group"
                         >
-                          <span>OPEN IN TIMELINE</span>
-                          <ArrowRight className="w-3.5 h-3.5" />
-                        </button>
+                          <div className="flex items-center justify-between gap-2 mb-1.5">
+                            <div className="flex items-center gap-2">
+                              <span 
+                                className="w-5 h-5 rounded-full flex items-center justify-center text-[9px] font-black text-black font-title shrink-0"
+                                style={{ backgroundColor: char.color }}
+                              >
+                                {(char.alias || char.name).substring(0, 2).toUpperCase()}
+                              </span>
+                              <span className="text-xs font-black font-title tracking-wider text-white uppercase group-hover:text-sky-300 transition-colors">
+                                {char.alias || char.name}
+                              </span>
+                            </div>
+                            <span 
+                              className="text-[9px] font-bold px-2 py-0.5 rounded uppercase font-title"
+                              style={{ 
+                                backgroundColor: `${char.color}20`,
+                                color: char.color,
+                                border: `1px solid ${char.color}40`
+                              }}
+                            >
+                              {char.role}
+                            </span>
+                          </div>
+
+                          <div className="text-[11px] text-zinc-300 font-din mb-1">
+                            📍 <strong>{char.locationName}</strong> {char.cityOrRegion ? `(${char.cityOrRegion}, ${char.countryOrRealm})` : `(${char.countryOrRealm})`}
+                          </div>
+                          <div className="text-[10px] text-zinc-500 flex items-center justify-between">
+                            <span>{char.eraCleanTitle}</span>
+                            <span className="text-zinc-400 font-bold">{char.mediaTitle}</span>
+                          </div>
+                        </div>
+                      ))
+                    )}
+                  </div>
+                )}
+
+                {/* TAB 3: 6 INFINITY STONES GLOBAL STATUS IN THIS ERA */}
+                {selectedSnapshotTab === 'stones' && (
+                  <div className="space-y-2.5 max-h-[500px] overflow-y-auto pr-1">
+                    {activeSnapshotStones.map((stone, sIdx) => (
+                      <div
+                        key={sIdx}
+                        onClick={() => {
+                          if (mapInstanceRef.current) {
+                            const targetLat = Math.min(65, Math.max(-60, stone.coordinates[0]));
+                            mapInstanceRef.current.flyTo([targetLat, stone.coordinates[1]], 5.5, { duration: 1.2 });
+                          }
+                        }}
+                        className="p-3.5 rounded-xl bg-[#181818] border transition-all cursor-pointer group hover:shadow-lg"
+                        style={{ borderColor: `${stone.colorHex}55` }}
+                      >
+                        <div className="flex items-center justify-between gap-2 mb-1.5">
+                          <div className="flex items-center gap-2">
+                            <span 
+                              className="w-4 h-4 rounded-sm rotate-45 flex items-center justify-center shrink-0 shadow"
+                              style={{ backgroundColor: stone.colorHex }}
+                            />
+                            <span className="text-xs font-black font-title tracking-wider text-white uppercase group-hover:text-sky-300 transition-colors">
+                              {stone.name}
+                            </span>
+                          </div>
+                          <span 
+                            className="text-[9px] font-black px-2 py-0.5 rounded uppercase font-title shadow-sm"
+                            style={{ backgroundColor: stone.colorHex, color: '#000000' }}
+                          >
+                            ACTIVE RELIC
+                          </span>
+                        </div>
+
+                        <div className="text-[11px] text-white font-bold font-din mb-1">
+                          📍 {stone.locationName} <span className="text-zinc-400 font-normal">({stone.regionAndCountry})</span>
+                        </div>
+                        <div className="text-[10px] text-zinc-300 font-mono mb-1.5">
+                          <span className="text-zinc-500 font-bold">BEARER/GUARDIAN:</span> {stone.bearer}
+                        </div>
+                        <p className="text-[11px] text-zinc-400 leading-relaxed font-din line-clamp-2">
+                          {stone.description}
+                        </p>
                       </div>
                     ))}
                   </div>
-                </div>
+                )}
 
-              </div>
-            ) : (
-              <div className="bg-[#141414] border border-[#27272a] rounded-2xl p-8 text-center text-zinc-500">
-                <Compass className="w-8 h-8 mx-auto mb-2 text-zinc-600" />
-                <p className="text-xs font-din">No locations active in this historical period. Select another era below the map.</p>
               </div>
             )}
           </div>

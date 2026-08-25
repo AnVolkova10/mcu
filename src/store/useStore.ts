@@ -20,6 +20,9 @@ interface AppState {
   selectedMapStoneTrajectoryId: string | null;
   setSelectedMapStoneTrajectoryId: (id: string | null) => void;
 
+  selectedMapCharacterId: string | null;
+  setSelectedMapCharacterId: (id: string | null) => void;
+
   isSearchOpen: boolean;
   setIsSearchOpen: (open: boolean) => void;
 
@@ -80,6 +83,9 @@ export const useStore = create<AppState>()(
 
       selectedMapStoneTrajectoryId: null,
       setSelectedMapStoneTrajectoryId: (selectedMapStoneTrajectoryId) => set({ selectedMapStoneTrajectoryId }),
+
+      selectedMapCharacterId: null,
+      setSelectedMapCharacterId: (selectedMapCharacterId) => set({ selectedMapCharacterId }),
 
       isSearchOpen: false,
       setIsSearchOpen: (isSearchOpen) => set({ isSearchOpen }),

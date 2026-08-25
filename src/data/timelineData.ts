@@ -1032,8 +1032,8 @@ export const timelineEras: EraGroup[] = [
             "countryOrRealm": "Arctic Ocean / Greenland",
             "planet": "Earth",
             "coordinates": [
-              78.223,
-              15.646
+              67.5,
+              -35.0
             ]
           }
         ]
@@ -2421,8 +2421,8 @@ export const timelineEras: EraGroup[] = [
             "countryOrRealm": "International Waters",
             "planet": "Earth",
             "coordinates": [
-              78.223,
-              15.646
+              67.5,
+              -35.0
             ]
           },
           {

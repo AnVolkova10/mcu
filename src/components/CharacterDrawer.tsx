@@ -8,14 +8,20 @@ import {
   Sparkles, 
   Clock, 
   ArrowRight, 
-  ExternalLink,
-  MapPin,
-  Layers,
-  Globe2
+  ExternalLink, 
+  MapPin, 
+  Layers, 
+  Globe2,
+  Route
 } from 'lucide-react';
 
 export const CharacterDrawer: React.FC = () => {
-  const { selectedCharacterId, setSelectedCharacterId, setActiveScreen } = useStore();
+  const { 
+    selectedCharacterId, 
+    setSelectedCharacterId, 
+    setActiveScreen,
+    setSelectedMapCharacterId 
+  } = useStore();
 
   if (!selectedCharacterId) return null;
 
@@ -56,6 +62,13 @@ export const CharacterDrawer: React.FC = () => {
     }, 150);
   };
 
+  const handleTraceOnMap = () => {
+    const charId = character.id;
+    setSelectedCharacterId(null);
+    setSelectedMapCharacterId(charId);
+    setActiveScreen('map');
+  };
+
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-end bg-black/80 backdrop-blur-sm transition-opacity">
       <div className="relative w-full max-w-lg h-full bg-[#0d0d0d] border-l border-[#262626] shadow-2xl p-6 overflow-y-auto flex flex-col font-din">
@@ -69,7 +82,7 @@ export const CharacterDrawer: React.FC = () => {
         </button>
 
         {/* Character Header */}
-        <div className="flex items-start gap-4 mb-6 pt-2">
+        <div className="flex items-start gap-4 mb-5 pt-2">
           <div
             className="w-16 h-16 rounded-lg flex items-center justify-center text-white text-xl font-black shadow-lg shrink-0 border border-white/20 font-title"
             style={{ backgroundColor: character.color }}
@@ -91,6 +104,20 @@ export const CharacterDrawer: React.FC = () => {
             </p>
           </div>
         </div>
+
+        {/* Action Button: Trace Character on Map */}
+        <button
+          onClick={handleTraceOnMap}
+          className="w-full mb-5 flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl text-white font-bold font-title uppercase text-xs tracking-wider shadow-xl transition-all cursor-pointer hover:brightness-110 active:scale-[0.99] border border-white/20"
+          style={{
+            backgroundColor: character.color,
+            boxShadow: `0 0 16px ${character.color}55`
+          }}
+        >
+          <Route className="w-4 h-4 text-white animate-pulse" />
+          <span>TRACE {(character.alias || character.name).toUpperCase()} ON GLOBAL MAP</span>
+          <ArrowRight className="w-4 h-4 text-white" />
+        </button>
 
         {/* Info Grid */}
         <div className="grid grid-cols-2 gap-3 mb-4">

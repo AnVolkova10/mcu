@@ -75,7 +75,7 @@ export const StoneDrawer: React.FC = () => {
         {/* Action Button: Trace Trajectory on Map */}
         <button
           onClick={() => {
-            const stoneKey = stone.id;
+            const stoneKey = stone.id.endsWith('-stone') ? stone.id : `${stone.id}-stone`;
             setSelectedStoneId(null);
             setSelectedMapStoneTrajectoryId(stoneKey);
             setActiveScreen('map');
