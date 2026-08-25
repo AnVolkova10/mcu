@@ -746,6 +746,21 @@ export const mediaData: Record<string, MediaItem> = {
     "primaryUniverse": "Earth-616 (Sacred Timeline)",
     "studio": "Marvel Studios",
     "description": "Official canon archival featurette produced by Marvel Studios and released as an exclusive bonus extra on the Captain America: The Winter Soldier Blu-ray and Digital Home Media editions (September 2014)."
+  },
+  "x-men-first-class": {
+    "id": "x-men-first-class",
+    "cssClass": "x-men-first-class",
+    "title": "X-Men: First Class",
+    "shortTitle": "X-Men: First Class",
+    "releaseYear": "2011",
+    "type": "movie",
+    "phase": "Phase 1",
+    "posterColor": "#1e3a8a",
+    "timelineOrder": 58,
+    "timelineType": "multiverse-alternate",
+    "primaryUniverse": "Earth-10005 (Fox X-Men Universe)",
+    "studio": "Fox",
+    "description": "In the 1960s during the height of the Cold War, mutant scholars Charles Xavier and Erik Lehnsherr unite gifted individuals into Division X to prevent a nuclear apocalypse orchestrated by Sebastian Shaw's Hellfire Club."
   }
 };
 

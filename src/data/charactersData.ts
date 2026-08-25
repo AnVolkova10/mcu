@@ -1507,6 +1507,207 @@ export const charactersData: Record<string, Character> = {
     "originLocation": "Los Angeles, California (Earth)",
     "status": "alive",
     "bio": "Brilliant quantum physicist whose research into the Darkforce rift left him intangibly phased until cured by Peggy Carter and Howard Stark."
+  },
+  "charles-xavier": {
+    "id": "charles-xavier",
+    "name": "Charles Xavier / Professor X",
+    "alias": "Professor X",
+    "cssClass": "charles-xavier",
+    "color": "#38bdf8",
+    "bgBadge": "bg-sky-950/80 hover:bg-sky-900/90",
+    "textBadge": "text-sky-300",
+    "borderBadge": "border-sky-600",
+    "role": "hero",
+    "affiliation": "X-Men / Xavier's School for Gifted Youngsters",
+    "groups": [
+      "X-Men",
+      "Division X",
+      "Illuminati",
+      "Mutants"
+    ],
+    "originLocation": "Westchester, New York (Earth-10005)",
+    "status": "alive",
+    "bio": "World's most powerful telepath and genetics scholar who dreams of peaceful coexistence between mutants and humanity, founder of Xavier's School and the X-Men."
+  },
+  "erik-lehnsherr": {
+    "id": "erik-lehnsherr",
+    "name": "Erik Lehnsherr / Magneto",
+    "alias": "Magneto",
+    "cssClass": "erik-lehnsherr",
+    "color": "#ef4444",
+    "bgBadge": "bg-red-950/80 hover:bg-red-900/90",
+    "textBadge": "text-red-300",
+    "borderBadge": "border-red-600",
+    "role": "anti-hero",
+    "affiliation": "Brotherhood of Mutants / Division X",
+    "groups": [
+      "Brotherhood of Mutants",
+      "Division X",
+      "Mutants"
+    ],
+    "originLocation": "Poland / Germany (Earth-10005)",
+    "status": "alive",
+    "bio": "Holocaust survivor and Master of Magnetism who believes mutantkind must defend itself by any means necessary against human prejudice."
+  },
+  "raven-darkholme": {
+    "id": "raven-darkholme",
+    "name": "Raven Darkhölme / Mystique",
+    "alias": "Mystique",
+    "cssClass": "raven-darkholme",
+    "color": "#60a5fa",
+    "bgBadge": "bg-blue-950/80 hover:bg-blue-900/90",
+    "textBadge": "text-blue-300",
+    "borderBadge": "border-blue-600",
+    "role": "anti-hero",
+    "affiliation": "Brotherhood of Mutants / X-Men",
+    "groups": [
+      "Brotherhood of Mutants",
+      "X-Men",
+      "Division X",
+      "Mutants"
+    ],
+    "originLocation": "Westchester, New York (Earth-10005)",
+    "status": "alive",
+    "bio": "Shapeshifting mutant with natural blue scales and yellow eyes, foster sister to Charles Xavier who chose to embrace her true mutant identity with Magneto."
+  },
+  "hank-mccoy": {
+    "id": "hank-mccoy",
+    "name": "Dr. Hank McCoy / Beast",
+    "alias": "Beast",
+    "cssClass": "hank-mccoy",
+    "color": "#3b82f6",
+    "bgBadge": "bg-blue-950/80 hover:bg-blue-900/90",
+    "textBadge": "text-blue-300",
+    "borderBadge": "border-blue-600",
+    "role": "hero",
+    "affiliation": "X-Men / Division X / CIA",
+    "groups": [
+      "X-Men",
+      "Division X",
+      "Mutants"
+    ],
+    "originLocation": "United States (Earth-10005)",
+    "status": "alive",
+    "bio": "Brilliant geneticist and aerospace engineer whose attempt to cure his prehensile feet resulted in a permanent transformation into a blue-furred powerhouse."
+  },
+  "sebastian-shaw": {
+    "id": "sebastian-shaw",
+    "name": "Sebastian Shaw / Dr. Klaus Schmidt",
+    "alias": "Black King",
+    "cssClass": "sebastian-shaw",
+    "color": "#dc2626",
+    "bgBadge": "bg-red-950/80 hover:bg-red-900/90",
+    "textBadge": "text-red-300",
+    "borderBadge": "border-red-700",
+    "role": "villain",
+    "affiliation": "Hellfire Club",
+    "groups": [
+      "Hellfire Club",
+      "Nazi Scientists",
+      "Mutants"
+    ],
+    "originLocation": "Germany / United States (Earth-10005)",
+    "status": "deceased",
+    "bio": "Ruthless leader of the Hellfire Club capable of absorbing kinetic and thermal energy to amplify his physical strength, murdered by Magneto with a Nazi coin."
+  },
+  "emma-frost": {
+    "id": "emma-frost",
+    "name": "Emma Frost",
+    "alias": "White Queen",
+    "cssClass": "emma-frost",
+    "color": "#e2e8f0",
+    "bgBadge": "bg-slate-900/80 hover:bg-slate-800/90",
+    "textBadge": "text-slate-200",
+    "borderBadge": "border-slate-400",
+    "role": "villain",
+    "affiliation": "Hellfire Club / Brotherhood of Mutants",
+    "groups": [
+      "Hellfire Club",
+      "Brotherhood of Mutants",
+      "Mutants"
+    ],
+    "originLocation": "Boston, Massachusetts (Earth-10005)",
+    "status": "alive",
+    "bio": "Formidable telepath who can transform her body into organic, bulletproof diamond at will, Shaw's chief lieutenant."
+  },
+  "moira-mactaggert": {
+    "id": "moira-mactaggert",
+    "name": "Moira MacTaggert",
+    "alias": "Agent MacTaggert",
+    "cssClass": "moira-mactaggert",
+    "color": "#94a3b8",
+    "bgBadge": "bg-slate-950/80 hover:bg-slate-900/90",
+    "textBadge": "text-slate-300",
+    "borderBadge": "border-slate-600",
+    "role": "secondary",
+    "affiliation": "Central Intelligence Agency (CIA) / X-Men Ally",
+    "groups": [
+      "CIA",
+      "Division X Allies"
+    ],
+    "originLocation": "United States (Earth-10005)",
+    "status": "alive",
+    "bio": "Fearless CIA operative who discovered the mutant threat posed by the Hellfire Club and partnered with Charles Xavier to establish Division X."
+  },
+  "alex-summers": {
+    "id": "alex-summers",
+    "name": "Alex Summers / Havok",
+    "alias": "Havok",
+    "cssClass": "alex-summers",
+    "color": "#f59e0b",
+    "bgBadge": "bg-amber-950/80 hover:bg-amber-900/90",
+    "textBadge": "text-amber-300",
+    "borderBadge": "border-amber-600",
+    "role": "hero",
+    "affiliation": "X-Men / Division X",
+    "groups": [
+      "X-Men",
+      "Division X",
+      "Mutants"
+    ],
+    "originLocation": "Omaha, Nebraska (Earth-10005)",
+    "status": "alive",
+    "bio": "Mutant capable of absorbing cosmic radiation and discharging destructive, concentric plasma energy rings from his chest."
+  },
+  "sean-cassidy": {
+    "id": "sean-cassidy",
+    "name": "Sean Cassidy / Banshee",
+    "alias": "Banshee",
+    "cssClass": "sean-cassidy",
+    "color": "#10b981",
+    "bgBadge": "bg-emerald-950/80 hover:bg-emerald-900/90",
+    "textBadge": "text-emerald-300",
+    "borderBadge": "border-emerald-600",
+    "role": "hero",
+    "affiliation": "X-Men / Division X",
+    "groups": [
+      "X-Men",
+      "Division X",
+      "Mutants"
+    ],
+    "originLocation": "Ireland (Earth-10005)",
+    "status": "alive",
+    "bio": "Young mutant gifted with powerful vocal cords capable of producing high-frequency acoustic shockwaves, sonic flight, and sonar echolocation."
+  },
+  "logan-wolverine": {
+    "id": "logan-wolverine",
+    "name": "James 'Logan' Howlett / Wolverine",
+    "alias": "Wolverine",
+    "cssClass": "logan-wolverine",
+    "color": "#fbbf24",
+    "bgBadge": "bg-amber-950/80 hover:bg-amber-900/90",
+    "textBadge": "text-amber-300",
+    "borderBadge": "border-amber-500",
+    "role": "hero",
+    "affiliation": "X-Men / Weapon X",
+    "groups": [
+      "X-Men",
+      "Weapon X",
+      "Mutants"
+    ],
+    "originLocation": "Cold Lake, Alberta, Canada (Earth-10005)",
+    "status": "alive",
+    "bio": "Centuries-old mutant warrior endowed with enhanced animal senses, a regenerative healing factor, retractable bone claws, and an iconic bad attitude."
   }
 };
 

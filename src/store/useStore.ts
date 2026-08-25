@@ -17,6 +17,9 @@ interface AppState {
   selectedStoneId: 'space' | 'reality' | 'power' | 'mind' | 'time' | 'soul' | null;
   setSelectedStoneId: (id: 'space' | 'reality' | 'power' | 'mind' | 'time' | 'soul' | null) => void;
 
+  selectedMapStoneTrajectoryId: string | null;
+  setSelectedMapStoneTrajectoryId: (id: string | null) => void;
+
   isSearchOpen: boolean;
   setIsSearchOpen: (open: boolean) => void;
 
@@ -74,6 +77,9 @@ export const useStore = create<AppState>()(
 
       selectedStoneId: null,
       setSelectedStoneId: (selectedStoneId) => set({ selectedStoneId }),
+
+      selectedMapStoneTrajectoryId: null,
+      setSelectedMapStoneTrajectoryId: (selectedMapStoneTrajectoryId) => set({ selectedMapStoneTrajectoryId }),
 
       isSearchOpen: false,
       setIsSearchOpen: (isSearchOpen) => set({ isSearchOpen }),

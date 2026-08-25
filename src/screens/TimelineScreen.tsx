@@ -82,8 +82,9 @@ export const TimelineScreen: React.FC = () => {
           // Universe / Earth Filter
           if (filters.selectedUniverse) {
             if (filters.selectedUniverse === 'sacred-616' && evt.isAlternativeTimeline) return false;
+            if (filters.selectedUniverse === 'earth-10005' && !evt.earthDesignation?.includes('Earth-10005')) return false;
             if (filters.selectedUniverse === 'earth-90214' && !evt.earthDesignation?.includes('Earth-90214')) return false;
-            if (filters.selectedUniverse === 'branches' && (!evt.isAlternativeTimeline || evt.earthDesignation?.includes('Earth-90214'))) return false;
+            if (filters.selectedUniverse === 'branches' && (!evt.isAlternativeTimeline || evt.earthDesignation?.includes('Earth-90214') || evt.earthDesignation?.includes('Earth-10005'))) return false;
             if (filters.selectedUniverse === '2091' && !evt.earthDesignation?.includes('2091')) return false;
             if (filters.selectedUniverse === 'time-heists' && !(evt.earthDesignation?.includes('Time Heist') || evt.branchDetails?.includes('Time Heist'))) return false;
           }

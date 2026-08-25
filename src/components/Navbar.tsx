@@ -9,7 +9,8 @@ import {
   Bookmark, 
   BarChart2, 
   Search,
-  ShieldCheck
+  ShieldCheck,
+  Globe2
 } from 'lucide-react';
 import marvelLogo from '@/assets/marvel-logo.svg';
 
@@ -27,6 +28,7 @@ export const Navbar: React.FC = () => {
     { id: 'media', label: 'MOVIES & SERIES', icon: <Film className="w-3.5 h-3.5" /> },
     { id: 'characters', label: 'CHARACTERS', icon: <Users className="w-3.5 h-3.5" /> },
     { id: 'stones', label: 'INFINITY STONES', icon: <Sparkles className="w-3.5 h-3.5" /> },
+    { id: 'map', label: 'MAP', icon: <Globe2 className="w-3.5 h-3.5" /> },
     { 
       id: 'bookmarks', 
       label: 'SAVED', 

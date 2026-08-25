@@ -8,11 +8,14 @@ import {
   UserCheck, 
   ShieldCheck, 
   Zap,
-  Clock
+  Clock,
+  Route,
+  ArrowRight,
+  Globe2
 } from 'lucide-react';
 
 export const StoneDrawer: React.FC = () => {
-  const { selectedStoneId, setSelectedStoneId } = useStore();
+  const { selectedStoneId, setSelectedStoneId, setActiveScreen, setSelectedMapStoneTrajectoryId } = useStore();
 
   if (!selectedStoneId) return null;
 
@@ -68,6 +71,25 @@ export const StoneDrawer: React.FC = () => {
             </p>
           </div>
         </div>
+
+        {/* Action Button: Trace Trajectory on Map */}
+        <button
+          onClick={() => {
+            const stoneKey = stone.id;
+            setSelectedStoneId(null);
+            setSelectedMapStoneTrajectoryId(stoneKey);
+            setActiveScreen('map');
+          }}
+          className="w-full mb-6 flex items-center justify-center gap-2 py-3 px-4 rounded-xl text-white font-bold font-title uppercase text-xs sm:text-sm tracking-wider shadow-xl transition-all cursor-pointer hover:brightness-110 active:scale-[0.99] border border-white/20"
+          style={{
+            backgroundColor: stone.colorHex,
+            boxShadow: `0 0 20px ${stone.colorHex}66`
+          }}
+        >
+          <Route className="w-4 h-4 text-white animate-pulse" />
+          <span>TRACE {stone.name.toUpperCase()} TRAJECTORY ON GLOBAL MAP</span>
+          <ArrowRight className="w-4 h-4 text-white" />
+        </button>
 
         {/* Power & Description */}
         <div className="p-4 rounded-xl bg-[#141414] border border-[#27272a] mb-6">

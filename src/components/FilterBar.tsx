@@ -10,7 +10,8 @@ import {
   Sparkles,
   Layers,
   Filter,
-  Globe2
+  Globe2,
+  ChevronDown
 } from 'lucide-react';
 import { allMedia } from '@/data/mediaData';
 import { allCharacters } from '@/data/charactersData';
@@ -25,8 +26,8 @@ export const FilterBar: React.FC = () => {
     setSelectedGroupFilter,
     setSelectedOriginFilter,
     setSelectedMediaFilter,
-    setSelectedStoneFilter,
     setSelectedPhaseFilter,
+    setSelectedStoneFilter,
     setSelectedUniverseFilter,
     toggleOnlyAlternative,
     toggleOnlyDeaths,
@@ -68,6 +69,7 @@ export const FilterBar: React.FC = () => {
 
   const universes = [
     { id: 'sacred-616', label: '🛡️ Earth-616 (Sacred Timeline)' },
+    { id: 'earth-10005', label: '🧬 Earth-10005 (Fox X-Men Universe)' },
     { id: 'earth-90214', label: '🕷️ Earth-90214 (Spider-Noir)' },
     { id: 'branches', label: '⏳ Earth-616 Branches (All)' },
     { id: 'time-heists', label: '⌛ Endgame Time Heists (1970, 2012, 2014)' },
@@ -177,102 +179,123 @@ export const FilterBar: React.FC = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-2 pt-3 border-t border-[#222222]">
         
         {/* Character Selector */}
-        <select
-          value={filters.selectedCharacter || ''}
-          onChange={(e) => setSelectedCharacterFilter(e.target.value || null)}
-          className="bg-[#0a0a0a] border border-[#2a2a2a] text-zinc-300 text-xs rounded-lg px-2 py-2 focus:outline-none focus:border-[#e62429] font-din cursor-pointer hover:border-zinc-500 transition-colors truncate"
-        >
-          <option value="">👤 All Characters</option>
-          {allCharacters.map((c) => (
-            <option key={c.id} value={c.id}>
-              {c.alias || c.name}
-            </option>
-          ))}
-        </select>
+        <div className="relative">
+          <select
+            value={filters.selectedCharacter || ''}
+            onChange={(e) => setSelectedCharacterFilter(e.target.value || null)}
+            className="w-full bg-[#0a0a0a] border border-[#2a2a2a] text-zinc-300 text-xs rounded-lg pl-3 pr-8 py-2 focus:outline-none focus:border-[#e62429] font-din cursor-pointer hover:border-zinc-500 transition-colors truncate appearance-none"
+          >
+            <option value="">👤 All Characters</option>
+            {allCharacters.map((c) => (
+              <option key={c.id} value={c.id}>
+                {c.alias || c.name}
+              </option>
+            ))}
+          </select>
+          <ChevronDown className="absolute right-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-zinc-500 pointer-events-none" />
+        </div>
 
         {/* Group / Faction Selector */}
-        <select
-          value={filters.selectedGroup || ''}
-          onChange={(e) => setSelectedGroupFilter(e.target.value || null)}
-          className="bg-[#0a0a0a] border border-[#2a2a2a] text-zinc-300 text-xs rounded-lg px-2 py-2 focus:outline-none focus:border-[#e62429] font-din cursor-pointer hover:border-zinc-500 transition-colors truncate"
-        >
-          <option value="">🛡️ All Factions & Groups</option>
-          {allGroups.map((g) => (
-            <option key={g} value={g}>
-              {g}
-            </option>
-          ))}
-        </select>
+        <div className="relative">
+          <select
+            value={filters.selectedGroup || ''}
+            onChange={(e) => setSelectedGroupFilter(e.target.value || null)}
+            className="w-full bg-[#0a0a0a] border border-[#2a2a2a] text-zinc-300 text-xs rounded-lg pl-3 pr-8 py-2 focus:outline-none focus:border-[#e62429] font-din cursor-pointer hover:border-zinc-500 transition-colors truncate appearance-none"
+          >
+            <option value="">🛡️ All Factions & Groups</option>
+            {allGroups.map((g) => (
+              <option key={g} value={g}>
+                {g}
+              </option>
+            ))}
+          </select>
+          <ChevronDown className="absolute right-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-zinc-500 pointer-events-none" />
+        </div>
 
         {/* Origin / Location Selector */}
-        <select
-          value={filters.selectedOrigin || ''}
-          onChange={(e) => setSelectedOriginFilter(e.target.value || null)}
-          className="bg-[#0a0a0a] border border-[#2a2a2a] text-zinc-300 text-xs rounded-lg px-2 py-2 focus:outline-none focus:border-[#e62429] font-din cursor-pointer hover:border-zinc-500 transition-colors truncate"
-        >
-          <option value="">🌍 Origin / Realm</option>
-          {origins.map((o) => (
-            <option key={o.id} value={o.id}>
-              {o.label}
-            </option>
-          ))}
-        </select>
+        <div className="relative">
+          <select
+            value={filters.selectedOrigin || ''}
+            onChange={(e) => setSelectedOriginFilter(e.target.value || null)}
+            className="w-full bg-[#0a0a0a] border border-[#2a2a2a] text-zinc-300 text-xs rounded-lg pl-3 pr-8 py-2 focus:outline-none focus:border-[#e62429] font-din cursor-pointer hover:border-zinc-500 transition-colors truncate appearance-none"
+          >
+            <option value="">🌍 Origin / Realm</option>
+            {origins.map((o) => (
+              <option key={o.id} value={o.id}>
+                {o.label}
+              </option>
+            ))}
+          </select>
+          <ChevronDown className="absolute right-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-zinc-500 pointer-events-none" />
+        </div>
 
         {/* Media Selector */}
-        <select
-          value={filters.selectedMedia || ''}
-          onChange={(e) => setSelectedMediaFilter(e.target.value || null)}
-          className="bg-[#0a0a0a] border border-[#2a2a2a] text-zinc-300 text-xs rounded-lg px-2 py-2 focus:outline-none focus:border-[#e62429] font-din cursor-pointer hover:border-zinc-500 transition-colors truncate"
-        >
-          <option value="">🎬 Movies & Series</option>
-          {allMedia.map((m) => (
-            <option key={m.id} value={m.id}>
-              {m.title} ({m.releaseYear})
-            </option>
-          ))}
-        </select>
+        <div className="relative">
+          <select
+            value={filters.selectedMedia || ''}
+            onChange={(e) => setSelectedMediaFilter(e.target.value || null)}
+            className="w-full bg-[#0a0a0a] border border-[#2a2a2a] text-zinc-300 text-xs rounded-lg pl-3 pr-8 py-2 focus:outline-none focus:border-[#e62429] font-din cursor-pointer hover:border-zinc-500 transition-colors truncate appearance-none"
+          >
+            <option value="">🎬 Movies & Series</option>
+            {allMedia.map((m) => (
+              <option key={m.id} value={m.id}>
+                {m.title} ({m.releaseYear})
+              </option>
+            ))}
+          </select>
+          <ChevronDown className="absolute right-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-zinc-500 pointer-events-none" />
+        </div>
 
         {/* Phase Selector */}
-        <select
-          value={filters.selectedPhase || ''}
-          onChange={(e) => setSelectedPhaseFilter(e.target.value || null)}
-          className="bg-[#0a0a0a] border border-[#2a2a2a] text-zinc-300 text-xs rounded-lg px-2 py-2 focus:outline-none focus:border-[#e62429] font-din cursor-pointer hover:border-zinc-500 transition-colors truncate"
-        >
-          <option value="">🪐 All MCU Phases</option>
-          {phases.map((p) => (
-            <option key={p} value={p}>
-              {p}
-            </option>
-          ))}
-        </select>
+        <div className="relative">
+          <select
+            value={filters.selectedPhase || ''}
+            onChange={(e) => setSelectedPhaseFilter(e.target.value || null)}
+            className="w-full bg-[#0a0a0a] border border-[#2a2a2a] text-zinc-300 text-xs rounded-lg pl-3 pr-8 py-2 focus:outline-none focus:border-[#e62429] font-din cursor-pointer hover:border-zinc-500 transition-colors truncate appearance-none"
+          >
+            <option value="">🪐 All MCU Phases</option>
+            {phases.map((p) => (
+              <option key={p} value={p}>
+                {p}
+              </option>
+            ))}
+          </select>
+          <ChevronDown className="absolute right-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-zinc-500 pointer-events-none" />
+        </div>
 
         {/* Stone Selector */}
-        <select
-          value={filters.selectedStone || ''}
-          onChange={(e) => setSelectedStoneFilter(e.target.value || null)}
-          className="bg-[#0a0a0a] border border-[#2a2a2a] text-zinc-300 text-xs rounded-lg px-2 py-2 focus:outline-none focus:border-[#e62429] font-din cursor-pointer hover:border-zinc-500 transition-colors truncate"
-        >
-          <option value="">💎 Infinity Stones</option>
-          {infinityStonesData.map((s) => (
-            <option key={s.id} value={s.id}>
-              {s.name} ({s.vessel})
-            </option>
-          ))}
-        </select>
+        <div className="relative">
+          <select
+            value={filters.selectedStone || ''}
+            onChange={(e) => setSelectedStoneFilter(e.target.value || null)}
+            className="w-full bg-[#0a0a0a] border border-[#2a2a2a] text-zinc-300 text-xs rounded-lg pl-3 pr-8 py-2 focus:outline-none focus:border-[#e62429] font-din cursor-pointer hover:border-zinc-500 transition-colors truncate appearance-none"
+          >
+            <option value="">💎 Infinity Stones</option>
+            {infinityStonesData.map((s) => (
+              <option key={s.id} value={s.id}>
+                {s.name} ({s.vessel})
+              </option>
+            ))}
+          </select>
+          <ChevronDown className="absolute right-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-zinc-500 pointer-events-none" />
+        </div>
 
         {/* Universe / Earth Designation Selector */}
-        <select
-          value={filters.selectedUniverse || ''}
-          onChange={(e) => setSelectedUniverseFilter(e.target.value || null)}
-          className="bg-[#0a0a0a] border border-[#2a2a2a] text-zinc-300 text-xs rounded-lg px-2 py-2 focus:outline-none focus:border-[#e62429] font-din cursor-pointer hover:border-zinc-500 transition-colors truncate"
-        >
-          <option value="">🌐 Earth / Reality</option>
-          {universes.map((u) => (
-            <option key={u.id} value={u.id}>
-              {u.label}
-            </option>
-          ))}
-        </select>
+        <div className="relative">
+          <select
+            value={filters.selectedUniverse || ''}
+            onChange={(e) => setSelectedUniverseFilter(e.target.value || null)}
+            className="w-full bg-[#0a0a0a] border border-[#2a2a2a] text-zinc-300 text-xs rounded-lg pl-3 pr-8 py-2 focus:outline-none focus:border-[#e62429] font-din cursor-pointer hover:border-zinc-500 transition-colors truncate appearance-none"
+          >
+            <option value="">🌐 Earth / Reality</option>
+            {universes.map((u) => (
+              <option key={u.id} value={u.id}>
+                {u.label}
+              </option>
+            ))}
+          </select>
+          <ChevronDown className="absolute right-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-zinc-500 pointer-events-none" />
+        </div>
 
       </div>
     </div>

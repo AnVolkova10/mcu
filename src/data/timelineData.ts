@@ -32,7 +32,19 @@ export const timelineEras: EraGroup[] = [
           "the Aether within a stone\r\n                        column"
         ],
         "timelineType": "sacred-616",
-        "earthDesignation": "Earth-616 (The Sacred Timeline)"
+        "earthDesignation": "Earth-616 (The Sacred Timeline)",
+        "locations": [
+          {
+            "name": "Convergence Nexus & Svartalfheim Wastes",
+            "cityOrRegion": "Dark Realm",
+            "countryOrRealm": "Svartalfheim",
+            "planet": "Svartalfheim (Dark World)",
+            "coordinates": [
+              60,
+              15
+            ]
+          }
+        ]
       }
     ]
   },
@@ -65,7 +77,19 @@ export const timelineEras: EraGroup[] = [
           "meteorite containing the metal\r\n                        vibranium"
         ],
         "timelineType": "sacred-616",
-        "earthDesignation": "Earth-616 (The Sacred Timeline)"
+        "earthDesignation": "Earth-616 (The Sacred Timeline)",
+        "locations": [
+          {
+            "name": "Vibranium Meteorite Crash Site",
+            "cityOrRegion": "Great Mound",
+            "countryOrRealm": "Wakanda",
+            "planet": "Earth",
+            "coordinates": [
+              -3.382,
+              36.682
+            ]
+          }
+        ]
       }
     ]
   },
@@ -96,7 +120,29 @@ export const timelineEras: EraGroup[] = [
         "deaths": [],
         "mcuHighlights": [],
         "timelineType": "sacred-616",
-        "earthDesignation": "Earth-616 (The Sacred Timeline)"
+        "earthDesignation": "Earth-616 (The Sacred Timeline)",
+        "locations": [
+          {
+            "name": "Ancient Monolith Incursion Site",
+            "cityOrRegion": "Middle East",
+            "countryOrRealm": "Mesopotamia",
+            "planet": "Earth",
+            "coordinates": [
+              33.223,
+              43.679
+            ]
+          },
+          {
+            "name": "Maveth Wasteland & Hive Exile Outpost",
+            "cityOrRegion": "Deep Space",
+            "countryOrRealm": "Maveth",
+            "planet": "Maveth (Alien World)",
+            "coordinates": [
+              0,
+              0
+            ]
+          }
+        ]
       },
       {
         "id": "event-_5000_years_ago_-2",
@@ -119,7 +165,19 @@ export const timelineEras: EraGroup[] = [
         "deaths": [],
         "mcuHighlights": [],
         "timelineType": "sacred-616",
-        "earthDesignation": "Earth-616 (The Sacred Timeline)"
+        "earthDesignation": "Earth-616 (The Sacred Timeline)",
+        "locations": [
+          {
+            "name": "Kree Early Human Genetic Laboratory",
+            "cityOrRegion": "Unknown Realm",
+            "countryOrRealm": "Earth",
+            "planet": "Earth",
+            "coordinates": [
+              30,
+              31
+            ]
+          }
+        ]
       }
     ]
   },
@@ -158,7 +216,29 @@ export const timelineEras: EraGroup[] = [
           "Wakanda"
         ],
         "timelineType": "sacred-616",
-        "earthDesignation": "Earth-616 (The Sacred Timeline)"
+        "earthDesignation": "Earth-616 (The Sacred Timeline)",
+        "locations": [
+          {
+            "name": "Knossos Palace & Mediterranean Outpost",
+            "cityOrRegion": "Crete",
+            "countryOrRealm": "Greece",
+            "planet": "Earth",
+            "coordinates": [
+              35.298,
+              25.163
+            ]
+          },
+          {
+            "name": "Birnin Zana Citadel",
+            "cityOrRegion": "Wakanda",
+            "countryOrRealm": "Wakanda",
+            "planet": "Earth",
+            "coordinates": [
+              -3.382,
+              36.682
+            ]
+          }
+        ]
       }
     ]
   },
@@ -193,7 +273,19 @@ export const timelineEras: EraGroup[] = [
           "Hatut Zeraze"
         ],
         "timelineType": "sacred-616",
-        "earthDesignation": "Earth-616 (The Sacred Timeline)"
+        "earthDesignation": "Earth-616 (The Sacred Timeline)",
+        "locations": [
+          {
+            "name": "Trojan Battlefield & Aegean Shore",
+            "cityOrRegion": "Troy / Anatolia",
+            "countryOrRealm": "Troas (Ancient Asia Minor)",
+            "planet": "Earth",
+            "coordinates": [
+              39.957,
+              26.238
+            ]
+          }
+        ]
       }
     ]
   },
@@ -229,7 +321,19 @@ export const timelineEras: EraGroup[] = [
           "the five fingers of the Hand"
         ],
         "timelineType": "sacred-616",
-        "earthDesignation": "Earth-616 (The Sacred Timeline)"
+        "earthDesignation": "Earth-616 (The Sacred Timeline)",
+        "locations": [
+          {
+            "name": "Subterranean Dragon Bone Burial Chamber",
+            "cityOrRegion": "Mystical Valley",
+            "countryOrRealm": "K'un-Lun",
+            "planet": "Pocket Dimension",
+            "coordinates": [
+              35,
+              80
+            ]
+          }
+        ]
       }
     ]
   },
@@ -264,7 +368,29 @@ export const timelineEras: EraGroup[] = [
           "the Casket of Ancient\r\n                        Winters."
         ],
         "timelineType": "sacred-616",
-        "earthDesignation": "Earth-616 (The Sacred Timeline)"
+        "earthDesignation": "Earth-616 (The Sacred Timeline)",
+        "locations": [
+          {
+            "name": "Ancient Norse Coastal Village",
+            "cityOrRegion": "Tønsberg",
+            "countryOrRealm": "Norway",
+            "planet": "Earth",
+            "coordinates": [
+              59.267,
+              10.407
+            ]
+          },
+          {
+            "name": "Jotunheim Glacial Fortress",
+            "cityOrRegion": "Frost Realm",
+            "countryOrRealm": "Jotunheim",
+            "planet": "Jotunheim (Realm of Frost Giants)",
+            "coordinates": [
+              68,
+              20
+            ]
+          }
+        ]
       }
     ]
   },
@@ -301,7 +427,29 @@ export const timelineEras: EraGroup[] = [
           "Iron Fist"
         ],
         "timelineType": "sacred-616",
-        "earthDesignation": "Earth-616 (The Sacred Timeline)"
+        "earthDesignation": "Earth-616 (The Sacred Timeline)",
+        "locations": [
+          {
+            "name": "Shaanxi Mountain Valley",
+            "cityOrRegion": "Central China",
+            "countryOrRealm": "China",
+            "planet": "Earth",
+            "coordinates": [
+              34.341,
+              108.939
+            ]
+          },
+          {
+            "name": "K'un-Lun Heavenly Gate",
+            "cityOrRegion": "Mystical Dimension",
+            "countryOrRealm": "K'un-Lun",
+            "planet": "Pocket Dimension",
+            "coordinates": [
+              35,
+              80
+            ]
+          }
+        ]
       }
     ]
   },
@@ -337,7 +485,29 @@ export const timelineEras: EraGroup[] = [
           "Battle of Adwa"
         ],
         "timelineType": "sacred-616",
-        "earthDesignation": "Earth-616 (The Sacred Timeline)"
+        "earthDesignation": "Earth-616 (The Sacred Timeline)",
+        "locations": [
+          {
+            "name": "Adwa Mountain Pass",
+            "cityOrRegion": "Tigray",
+            "countryOrRealm": "Ethiopia",
+            "planet": "Earth",
+            "coordinates": [
+              14.164,
+              38.896
+            ]
+          },
+          {
+            "name": "Royal Palace",
+            "cityOrRegion": "Birnin Zana",
+            "countryOrRealm": "Wakanda",
+            "planet": "Earth",
+            "coordinates": [
+              -3.382,
+              36.682
+            ]
+          }
+        ]
       }
     ]
   },
@@ -375,6 +545,18 @@ export const timelineEras: EraGroup[] = [
         "mcuHighlights": [
           "Wartime Genetic POW Experiments",
           "Birth of The Spider on Earth-90214"
+        ],
+        "locations": [
+          {
+            "name": "Clandestine POW Laboratory",
+            "cityOrRegion": "Western Front",
+            "countryOrRealm": "France / Europe",
+            "planet": "Earth-90214",
+            "coordinates": [
+              49.258,
+              4.031
+            ]
+          }
         ]
       }
     ]
@@ -415,6 +597,18 @@ export const timelineEras: EraGroup[] = [
         "mcuHighlights": [
           "The Spider's Crusade",
           "Tragic Death of Ruby Williams"
+        ],
+        "locations": [
+          {
+            "name": "Manhattan Alleyways & Williams Residence",
+            "cityOrRegion": "New York City",
+            "countryOrRealm": "United States",
+            "planet": "Earth-90214",
+            "coordinates": [
+              40.7128,
+              -74.006
+            ]
+          }
         ]
       }
     ]
@@ -503,6 +697,48 @@ export const timelineEras: EraGroup[] = [
           "Sandman's Turncoat Alliance",
           "Rescue of Robbie Robertson",
           "Rebirth of The Spider as New York's Protector"
+        ],
+        "locations": [
+          {
+            "name": "Reilly Investigation Office",
+            "cityOrRegion": "Manhattan, New York",
+            "countryOrRealm": "United States",
+            "planet": "Earth-90214",
+            "coordinates": [
+              40.7128,
+              -74.006
+            ]
+          },
+          {
+            "name": "The Cat's Meow Nightclub",
+            "cityOrRegion": "Harlem, New York",
+            "countryOrRealm": "United States",
+            "planet": "Earth-90214",
+            "coordinates": [
+              40.8116,
+              -73.9465
+            ]
+          },
+          {
+            "name": "Daily Bugle Headquarters",
+            "cityOrRegion": "Manhattan, New York",
+            "countryOrRealm": "United States",
+            "planet": "Earth-90214",
+            "coordinates": [
+              40.7505,
+              -73.9934
+            ]
+          },
+          {
+            "name": "Brooklyn Naval Docks",
+            "cityOrRegion": "Brooklyn, New York",
+            "countryOrRealm": "United States",
+            "planet": "Earth-90214",
+            "coordinates": [
+              40.702,
+              -73.985
+            ]
+          }
         ]
       }
     ]
@@ -542,7 +778,29 @@ export const timelineEras: EraGroup[] = [
           "HYDRA's Energy Weaponry Project"
         ],
         "timelineType": "sacred-616",
-        "earthDesignation": "Earth-616 (The Sacred Timeline)"
+        "earthDesignation": "Earth-616 (The Sacred Timeline)",
+        "locations": [
+          {
+            "name": "Ancient Norse Crypt",
+            "cityOrRegion": "Tønsberg",
+            "countryOrRealm": "Norway",
+            "planet": "Earth",
+            "coordinates": [
+              59.267,
+              10.407
+            ]
+          },
+          {
+            "name": "Castle Kaufmann HYDRA Weapons Division",
+            "cityOrRegion": "Bavaria",
+            "countryOrRealm": "Germany",
+            "planet": "Earth",
+            "coordinates": [
+              51.165,
+              10.451
+            ]
+          }
+        ]
       }
     ]
   },
@@ -596,7 +854,105 @@ export const timelineEras: EraGroup[] = [
           "Formation of the Howling Commandos"
         ],
         "timelineType": "sacred-616",
-        "earthDesignation": "Earth-616 (The Sacred Timeline)"
+        "earthDesignation": "Earth-616 (The Sacred Timeline)",
+        "locations": [
+          {
+            "name": "SSR Secret Laboratory & Vita-Ray Chamber",
+            "cityOrRegion": "Brooklyn, New York",
+            "countryOrRealm": "United States",
+            "planet": "Earth",
+            "coordinates": [
+              40.7028,
+              -73.987
+            ]
+          },
+          {
+            "name": "Camp Lehigh Military Training Base",
+            "cityOrRegion": "Wheaton, New Jersey",
+            "countryOrRealm": "United States",
+            "planet": "Earth",
+            "coordinates": [
+              40.584,
+              -74.245
+            ]
+          },
+          {
+            "name": "HYDRA 107th Prison Facility",
+            "cityOrRegion": "Azzano",
+            "countryOrRealm": "Italy",
+            "planet": "Earth",
+            "coordinates": [
+              46.069,
+              13.238
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "era-1944-xmen",
+    "title": "-1944 (Earth-10005 / WWII)-",
+    "cleanTitle": "1944 (Earth-10005 / WWII)",
+    "category": "early-century",
+    "events": [
+      {
+        "id": "event-1944-xmen-1",
+        "eraId": "era-1944-xmen",
+        "eraTitle": "1944 (Earth-10005 / WWII)",
+        "mediaKey": "x-men-first-class",
+        "mediaTitle": "X-Men: First Class",
+        "mediaType": "movie",
+        "mediaPhase": "Phase 1",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-10005 (Fox X-Men Universe)",
+        "branchDetails": "Multiverse Alternate: Fox X-Men Universe Timeline",
+        "rawClasses": [
+          "x-men-first-class"
+        ],
+        "rawHtml": "<p>In Nazi-occupied Poland at the Auschwitz concentration camp, young <strong class=\"erik-lehnsherr\">Erik Lehnsherr</strong> is violently torn from his parents. Overwhelmed by traumatic despair, his mutant magnetic powers awaken, warping and tearing the camp's heavy iron gates. Observing his power, sadistic Nazi scientist Dr. Klaus Schmidt (<strong class=\"sebastian-shaw\">Sebastian Shaw</strong>) shoots Erik's mother in cold blood to force Erik to unleash his devastating magnetic fury.</p>\n<p>Simultaneously in Westchester County, New York, young telepath <strong class=\"charles-xavier\">Charles Xavier</strong> discovers young shapeshifter <strong class=\"raven-darkholme\">Raven Darkhölme (Mystique)</strong> disguised as his mother stealing food in the kitchen. Recognizing they are both extraordinary, Charles warmly welcomes Raven into his wealthy family home as his beloved foster sister.</p>",
+        "paragraphs": [
+          "In Nazi-occupied Poland at the Auschwitz concentration camp, young <strong class=\"erik-lehnsherr\">Erik Lehnsherr</strong> is violently torn from his parents. Overwhelmed by traumatic despair, his mutant magnetic powers awaken, warping and tearing the camp's heavy iron gates. Observing his power, sadistic Nazi scientist Dr. Klaus Schmidt (<strong class=\"sebastian-shaw\">Sebastian Shaw</strong>) shoots Erik's mother in cold blood to force Erik to unleash his devastating magnetic fury.",
+          "Simultaneously in Westchester County, New York, young telepath <strong class=\"charles-xavier\">Charles Xavier</strong> discovers young shapeshifter <strong class=\"raven-darkholme\">Raven Darkhölme (Mystique)</strong> disguised as his mother stealing food in the kitchen. Recognizing they are both extraordinary, Charles warmly welcomes Raven into his wealthy family home as his beloved foster sister."
+        ],
+        "characters": [
+          "erik-lehnsherr",
+          "sebastian-shaw",
+          "charles-xavier",
+          "raven-darkholme"
+        ],
+        "stones": [],
+        "deaths": [
+          "Edie Lehnsherr"
+        ],
+        "mcuHighlights": [
+          "Awakening of Magneto's Magnetic Powers in Auschwitz",
+          "Murder of Erik's Mother by Sebastian Shaw",
+          "First Encounter of Charles Xavier & Raven Darkhölme"
+        ],
+        "locations": [
+          {
+            "name": "Auschwitz-Birkenau Concentration Camp",
+            "cityOrRegion": "Oświęcim",
+            "countryOrRealm": "Poland",
+            "planet": "Earth-10005",
+            "coordinates": [
+              50.0344,
+              19.2098
+            ]
+          },
+          {
+            "name": "Xavier Family Manor",
+            "cityOrRegion": "Westchester County, New York",
+            "countryOrRealm": "United States",
+            "planet": "Earth-10005",
+            "coordinates": [
+              41.122,
+              -73.7949
+            ]
+          }
+        ]
       }
     ]
   },
@@ -648,7 +1004,39 @@ export const timelineEras: EraGroup[] = [
           "Howard Stark Recovers the Tesseract from the Ocean"
         ],
         "timelineType": "sacred-616",
-        "earthDesignation": "Earth-616 (The Sacred Timeline)"
+        "earthDesignation": "Earth-616 (The Sacred Timeline)",
+        "locations": [
+          {
+            "name": "HYDRA Mountain Train Railway",
+            "cityOrRegion": "Swiss Alps",
+            "countryOrRealm": "Switzerland",
+            "planet": "Earth",
+            "coordinates": [
+              46.818,
+              8.227
+            ]
+          },
+          {
+            "name": "Kraussberg HYDRA Central Fortress",
+            "cityOrRegion": "Austrian Alps",
+            "countryOrRealm": "Austria",
+            "planet": "Earth",
+            "coordinates": [
+              47.516,
+              14.55
+            ]
+          },
+          {
+            "name": "Valkyrie Crash Site & Cryogenic Trench",
+            "cityOrRegion": "Arctic Ice Sheet",
+            "countryOrRealm": "Arctic Ocean / Greenland",
+            "planet": "Earth",
+            "coordinates": [
+              78.223,
+              15.646
+            ]
+          }
+        ]
       },
       {
         "id": "event-_1945_-2",
@@ -677,7 +1065,19 @@ export const timelineEras: EraGroup[] = [
           "Confiscation of the First 0-8-4 (The Obelisk / Diviner)"
         ],
         "timelineType": "sacred-616",
-        "earthDesignation": "Earth-616 (The Sacred Timeline)"
+        "earthDesignation": "Earth-616 (The Sacred Timeline)",
+        "locations": [
+          {
+            "name": "HYDRA Final European Research Base",
+            "cityOrRegion": "Austrian Alps",
+            "countryOrRealm": "Austria",
+            "planet": "Earth",
+            "coordinates": [
+              47.516,
+              14.55
+            ]
+          }
+        ]
       }
     ]
   },
@@ -719,7 +1119,39 @@ export const timelineEras: EraGroup[] = [
           "Release of Steve Rogers' Blood Vial into the East River"
         ],
         "timelineType": "sacred-616",
-        "earthDesignation": "Earth-616 (The Sacred Timeline)"
+        "earthDesignation": "Earth-616 (The Sacred Timeline)",
+        "locations": [
+          {
+            "name": "SSR New York Field Headquarters (The Automata)",
+            "cityOrRegion": "Manhattan, New York",
+            "countryOrRealm": "United States",
+            "planet": "Earth",
+            "coordinates": [
+              40.7128,
+              -74.006
+            ]
+          },
+          {
+            "name": "Stark Country Estate",
+            "cityOrRegion": "Long Island, New York",
+            "countryOrRealm": "United States",
+            "planet": "Earth",
+            "coordinates": [
+              40.7891,
+              -73.135
+            ]
+          },
+          {
+            "name": "Brooklyn Bridge",
+            "cityOrRegion": "New York City",
+            "countryOrRealm": "United States",
+            "planet": "Earth",
+            "coordinates": [
+              40.7061,
+              -73.9969
+            ]
+          }
+        ]
       }
     ]
   },
@@ -762,7 +1194,39 @@ export const timelineEras: EraGroup[] = [
           "Romantic Union of Peggy Carter & Daniel Sousa"
         ],
         "timelineType": "sacred-616",
-        "earthDesignation": "Earth-616 (The Sacred Timeline)"
+        "earthDesignation": "Earth-616 (The Sacred Timeline)",
+        "locations": [
+          {
+            "name": "SSR West Coast Branch",
+            "cityOrRegion": "Los Angeles",
+            "countryOrRealm": "United States",
+            "planet": "Earth",
+            "coordinates": [
+              34.0522,
+              -118.2437
+            ]
+          },
+          {
+            "name": "Isodyne Energy Particle Laboratory",
+            "cityOrRegion": "Pasadena / Los Angeles",
+            "countryOrRealm": "United States",
+            "planet": "Earth",
+            "coordinates": [
+              34.1478,
+              -118.1445
+            ]
+          },
+          {
+            "name": "Stark Pictures Motion Picture Studio",
+            "cityOrRegion": "Hollywood, California",
+            "countryOrRealm": "United States",
+            "planet": "Earth",
+            "coordinates": [
+              34.0928,
+              -118.3287
+            ]
+          }
+        ]
       },
       {
         "id": "event-_1947_-2",
@@ -792,7 +1256,29 @@ export const timelineEras: EraGroup[] = [
           "Official Founding of S.H.I.E.L.D."
         ],
         "timelineType": "sacred-616",
-        "earthDesignation": "Earth-616 (The Sacred Timeline)"
+        "earthDesignation": "Earth-616 (The Sacred Timeline)",
+        "locations": [
+          {
+            "name": "Zodiac Secret Warehouse",
+            "cityOrRegion": "New York City",
+            "countryOrRealm": "United States",
+            "planet": "Earth",
+            "coordinates": [
+              40.7128,
+              -74.006
+            ]
+          },
+          {
+            "name": "S.H.I.E.L.D. Headquarters Site",
+            "cityOrRegion": "Washington, D.C.",
+            "countryOrRealm": "United States",
+            "planet": "Earth",
+            "coordinates": [
+              38.9072,
+              -77.0369
+            ]
+          }
+        ]
       }
     ]
   },
@@ -827,7 +1313,19 @@ export const timelineEras: EraGroup[] = [
           "Archival Smithsonian Interview on Captain America"
         ],
         "timelineType": "sacred-616",
-        "earthDesignation": "Earth-616 (The Sacred Timeline)"
+        "earthDesignation": "Earth-616 (The Sacred Timeline)",
+        "locations": [
+          {
+            "name": "Smithsonian Institution National Museum",
+            "cityOrRegion": "Washington, D.C.",
+            "countryOrRealm": "United States",
+            "planet": "Earth",
+            "coordinates": [
+              38.8887,
+              -77.026
+            ]
+          }
+        ]
       }
     ]
   },
@@ -861,6 +1359,122 @@ export const timelineEras: EraGroup[] = [
         "timelineType": "branched-616",
         "earthDesignation": "Earth-616 Branched Reality",
         "branchDetails": "Alternate Timeline Branch"
+      }
+    ]
+  },
+  {
+    "id": "era-1962-xmen",
+    "title": "-1962 (Earth-10005 / Cuban Missile Crisis)-",
+    "cleanTitle": "1962 (Earth-10005 / Cuban Missile Crisis)",
+    "category": "early-century",
+    "events": [
+      {
+        "id": "event-1962-xmen-1",
+        "eraId": "era-1962-xmen",
+        "eraTitle": "1962 (Earth-10005 / Cuban Missile Crisis)",
+        "mediaKey": "x-men-first-class",
+        "mediaTitle": "X-Men: First Class",
+        "mediaType": "movie",
+        "mediaPhase": "Phase 1",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-10005 (Fox X-Men Universe)",
+        "branchDetails": "Multiverse Alternate: Fox X-Men Universe Timeline",
+        "rawClasses": [
+          "x-men-first-class"
+        ],
+        "rawHtml": "<p>In 1962 during the Cold War, adult <strong class=\"erik-lehnsherr\">Erik Lehnsherr</strong> hunts Nazi war criminals across South America, targeting energy-absorbing Hellfire Club leader <strong class=\"sebastian-shaw\">Sebastian Shaw</strong>. CIA Agent <strong class=\"moira-mactaggert\">Moira MacTaggert</strong> discovers Shaw's plot to trigger World War III and recruits Oxford genetics professor <strong class=\"charles-xavier\">Charles Xavier</strong> and <strong class=\"raven-darkholme\">Raven Darkhölme</strong>. In Miami, Charles telepathically saves Erik from drowning, forming a bond of brothers. They establish CIA <em>Division X</em>, recruiting young mutants <strong class=\"hank-mccoy\">Dr. Hank McCoy (Beast)</strong>, <strong class=\"alex-summers\">Alex Summers (Havok)</strong>, <strong class=\"sean-cassidy\">Sean Cassidy (Banshee)</strong>, Angel Salvadore, and Darwin (briefly crossing paths with <strong class=\"logan-wolverine\">Logan / Wolverine</strong> in a bar).</p>\n<p>Shaw, <strong class=\"emma-frost\">Emma Frost</strong>, Azazel, and Riptide ambush Division X, killing Darwin and convincing Angel to defect. In response, Hank develops an experimental genetic serum to cure his prehensile feet; however, it severely backfires, transforming him permanently into the blue-furred powerhouse known as <strong class=\"hank-mccoy\">Beast</strong>. At the Cuban Missile Crisis naval blockade, the X-Men intercept Shaw's nuclear submarine. Erik breaches the vessel, strips Shaw of his telepathy-blocking helmet, and avenges his mother by slowly driving a Nazi coin through Shaw's brain while Charles holds Shaw paralyzed in a shared mental link.</p>\n<p>When the terrified US and Soviet fleets unite to fire their full missile barrage at the mutants on the beach, Magneto stops the missiles mid-air and redirects them back to annihilate the warships. Charles tackles Erik to prevent the massacre; during the struggle, Moira fires at Erik, and a deflected bullet strikes Charles in the spine, paralyzing his lower body. Grieving the fracture of their dream, Raven, Angel, Azazel, and Riptide leave with Erik—who dons Shaw's helmet as <strong>Magneto</strong> to lead the <strong>Brotherhood of Mutants</strong>. Charles returns to his mansion in a wheelchair to establish <strong>Xavier's School for Gifted Youngsters</strong>, telepathically wiping Moira's memory of their location.</p>",
+        "paragraphs": [
+          "In 1962 during the Cold War, adult <strong class=\"erik-lehnsherr\">Erik Lehnsherr</strong> hunts Nazi war criminals across South America, targeting energy-absorbing Hellfire Club leader <strong class=\"sebastian-shaw\">Sebastian Shaw</strong>. CIA Agent <strong class=\"moira-mactaggert\">Moira MacTaggert</strong> discovers Shaw's plot to trigger World War III and recruits Oxford genetics professor <strong class=\"charles-xavier\">Charles Xavier</strong> and <strong class=\"raven-darkholme\">Raven Darkhölme</strong>. In Miami, Charles telepathically saves Erik from drowning, forming a bond of brothers. They establish CIA <em>Division X</em>, recruiting young mutants <strong class=\"hank-mccoy\">Dr. Hank McCoy (Beast)</strong>, <strong class=\"alex-summers\">Alex Summers (Havok)</strong>, <strong class=\"sean-cassidy\">Sean Cassidy (Banshee)</strong>, Angel Salvadore, and Darwin (briefly crossing paths with <strong class=\"logan-wolverine\">Logan / Wolverine</strong> in a bar).",
+          "Shaw, <strong class=\"emma-frost\">Emma Frost</strong>, Azazel, and Riptide ambush Division X, killing Darwin and convincing Angel to defect. In response, Hank develops an experimental genetic serum to cure his prehensile feet; however, it severely backfires, transforming him permanently into the blue-furred powerhouse known as <strong class=\"hank-mccoy\">Beast</strong>. At the Cuban Missile Crisis naval blockade, the X-Men intercept Shaw's nuclear submarine. Erik breaches the vessel, strips Shaw of his telepathy-blocking helmet, and avenges his mother by slowly driving a Nazi coin through Shaw's brain while Charles holds Shaw paralyzed in a shared mental link.",
+          "When the terrified US and Soviet fleets unite to fire their full missile barrage at the mutants on the beach, Magneto stops the missiles mid-air and redirects them back to annihilate the warships. Charles tackles Erik to prevent the massacre; during the struggle, Moira fires at Erik, and a deflected bullet strikes Charles in the spine, paralyzing his lower body. Grieving the fracture of their dream, Raven, Angel, Azazel, and Riptide leave with Erik—who dons Shaw's helmet as <strong>Magneto</strong> to lead the <strong>Brotherhood of Mutants</strong>. Charles returns to his mansion in a wheelchair to establish <strong>Xavier's School for Gifted Youngsters</strong>, telepathically wiping Moira's memory of their location."
+        ],
+        "characters": [
+          "erik-lehnsherr",
+          "charles-xavier",
+          "raven-darkholme",
+          "hank-mccoy",
+          "sebastian-shaw",
+          "emma-frost",
+          "moira-mactaggert",
+          "alex-summers",
+          "sean-cassidy",
+          "logan-wolverine"
+        ],
+        "stones": [],
+        "deaths": [
+          "Armando Muñoz / Darwin",
+          "Sebastian Shaw / Dr. Klaus Schmidt"
+        ],
+        "mcuHighlights": [
+          "Formation of Division X & Wolverine Bar Cameo",
+          "Transformation of Hank McCoy into Beast",
+          "Magneto Kills Sebastian Shaw with the Nazi Coin",
+          "Paralyzing of Charles Xavier on the Beach",
+          "Birth of the X-Men & The Brotherhood of Mutants"
+        ],
+        "locations": [
+          {
+            "name": "Villa Gesell Nazi Hideout",
+            "cityOrRegion": "Buenos Aires Province",
+            "countryOrRealm": "Argentina",
+            "planet": "Earth-10005",
+            "coordinates": [
+              -37.2633,
+              -56.9731
+            ]
+          },
+          {
+            "name": "Oxford University Faculty of Genetics",
+            "cityOrRegion": "Oxford",
+            "countryOrRealm": "England",
+            "planet": "Earth-10005",
+            "coordinates": [
+              51.7548,
+              -1.2544
+            ]
+          },
+          {
+            "name": "Miami Coastline & Shaw Yacht",
+            "cityOrRegion": "Miami, Florida",
+            "countryOrRealm": "United States",
+            "planet": "Earth-10005",
+            "coordinates": [
+              25.7617,
+              -80.1918
+            ]
+          },
+          {
+            "name": "CIA Division X Secret Facility",
+            "cityOrRegion": "Langley, Virginia",
+            "countryOrRealm": "United States",
+            "planet": "Earth-10005",
+            "coordinates": [
+              38.9468,
+              -77.1589
+            ]
+          },
+          {
+            "name": "Cuban Missile Crisis Naval Quarantine Line",
+            "cityOrRegion": "Caribbean Sea",
+            "countryOrRealm": "Cuba / International Waters",
+            "planet": "Earth-10005",
+            "coordinates": [
+              21.5218,
+              -77.7812
+            ]
+          },
+          {
+            "name": "Xavier's School for Gifted Youngsters",
+            "cityOrRegion": "Westchester County, New York",
+            "countryOrRealm": "United States",
+            "planet": "Earth-10005",
+            "coordinates": [
+              41.122,
+              -73.7949
+            ]
+          }
+        ]
       }
     ]
   },
@@ -1799,7 +2413,29 @@ export const timelineEras: EraGroup[] = [
           "\"I Had a Date\""
         ],
         "timelineType": "sacred-616",
-        "earthDesignation": "Earth-616 (The Sacred Timeline)"
+        "earthDesignation": "Earth-616 (The Sacred Timeline)",
+        "locations": [
+          {
+            "name": "S.H.I.E.L.D. Arctic Recovery Base",
+            "cityOrRegion": "Arctic Circle",
+            "countryOrRealm": "International Waters",
+            "planet": "Earth",
+            "coordinates": [
+              78.223,
+              15.646
+            ]
+          },
+          {
+            "name": "S.H.I.E.L.D. Times Square Bunker",
+            "cityOrRegion": "New York City",
+            "countryOrRealm": "United States",
+            "planet": "Earth",
+            "coordinates": [
+              40.758,
+              -73.9855
+            ]
+          }
+        ]
       }
     ]
   },
@@ -3773,7 +4409,29 @@ export const timelineEras: EraGroup[] = [
         ],
         "timelineType": "branched-616",
         "earthDesignation": "Earth-616 Branched Reality",
-        "branchDetails": "Alternate Timeline Branch"
+        "branchDetails": "Alternate Timeline Branch",
+        "locations": [
+          {
+            "name": "Ruins of the Great Mound",
+            "cityOrRegion": "Wakanda (Future Post-Apocalypse)",
+            "countryOrRealm": "Wakanda",
+            "planet": "Earth",
+            "coordinates": [
+              -3.382,
+              36.682
+            ]
+          },
+          {
+            "name": "Earth Orbital Exosphere",
+            "cityOrRegion": "High Orbit",
+            "countryOrRealm": "Cosmic",
+            "planet": "Earth Orbit",
+            "coordinates": [
+              0,
+              0
+            ]
+          }
+        ]
       }
     ]
   }

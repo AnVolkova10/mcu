@@ -3,6 +3,7 @@ export type ActiveScreen =
   | 'media' 
   | 'characters' 
   | 'stones' 
+  | 'map'
   | 'bookmarks' 
   | 'stats';
 
@@ -21,6 +22,14 @@ export type TimelineType =
   | 'multiverse-alternate';
 
 export type CharacterStatus = 'alive' | 'deceased' | 'presumably-dead' | 'variable';
+
+export interface EventLocation {
+  name: string;             // e.g. "Auschwitz", "Isodyne Energy", "Tønsberg Crypt", "Brooklyn Docks"
+  cityOrRegion?: string;    // e.g. "New York City", "Bavaria", "Swiss Alps", "Crete", "Hollywood"
+  countryOrRealm: string;   // e.g. "United States", "Poland", "Wakanda", "Norway", "Greece", "Asgard"
+  planet?: string;          // e.g. "Earth", "Asgard", "Jotunheim", "Vormir", "K'un-Lun"
+  coordinates?: [number, number]; // [lat, lng]
+}
 
 export interface CharacterMention {
   name: string;
@@ -50,6 +59,7 @@ export interface TimelineEvent {
   stones: string[];
   deaths: string[];
   mcuHighlights: string[];
+  locations?: EventLocation[];
 }
 
 export interface EraGroup {

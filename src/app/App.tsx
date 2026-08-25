@@ -7,6 +7,7 @@ import { CharactersScreen } from '@/screens/CharactersScreen';
 import { StonesScreen } from '@/screens/StonesScreen';
 import { BookmarksScreen } from '@/screens/BookmarksScreen';
 import { StatsScreen } from '@/screens/StatsScreen';
+import { MapScreen } from '@/screens/MapScreen';
 import { CharacterDrawer } from '@/components/CharacterDrawer';
 import { StoneDrawer } from '@/components/StoneDrawer';
 import { MediaDetailModal } from '@/components/MediaDetailModal';
@@ -26,6 +27,8 @@ export const App: React.FC = () => {
         return <CharactersScreen />;
       case 'stones':
         return <StonesScreen />;
+      case 'map':
+        return <MapScreen />;
       case 'bookmarks':
         return <BookmarksScreen />;
       case 'stats':

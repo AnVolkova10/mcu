@@ -11,7 +11,8 @@ import {
   Sparkles, 
   Skull, 
   Tag, 
-  ExternalLink 
+  ExternalLink,
+  MapPin 
 } from 'lucide-react';
 import { charactersData, allCharacters } from '@/data/charactersData';
 import { infinityStonesData } from '@/data/infinityStonesData';
@@ -30,6 +31,7 @@ export const EventCard: React.FC<EventCardProps> = ({ event }) => {
     setSelectedCharacterId,
     setSelectedStoneId,
     setSelectedMediaId,
+    setActiveScreen,
   } = useStore();
 
   const bookmarked = isBookmarked(event.id);
@@ -219,9 +221,25 @@ export const EventCard: React.FC<EventCardProps> = ({ event }) => {
       </div>
 
       {/* Footer Tags & Entity Links */}
-      {(event.characters.length > 0 || event.stones.length > 0 || event.deaths.length > 0) && (
+      {((event.locations && event.locations.length > 0) || event.characters.length > 0 || event.stones.length > 0 || event.deaths.length > 0) && (
         <div className="pt-3 border-t border-[#222222] flex flex-wrap gap-2 items-center">
           
+          {/* Location Pills */}
+          {event.locations && event.locations.map((loc, lIdx) => (
+            <button
+              key={`loc-${lIdx}`}
+              onClick={() => setActiveScreen('map')}
+              className="flex items-center gap-1.5 px-2.5 py-1 rounded text-xs font-semibold bg-[#0a192f]/80 hover:bg-[#0f284c] border border-sky-800/60 hover:border-sky-500 text-sky-300 hover:text-white transition-all font-din cursor-pointer shadow-sm group/loc"
+              title={`View ${loc.name} on Global Tactical Map`}
+            >
+              <MapPin className="w-3 h-3 text-sky-400 group-hover/loc:scale-110 transition-transform" />
+              <span>{loc.cityOrRegion ? `${loc.cityOrRegion}, ${loc.countryOrRealm}` : `${loc.name}, ${loc.countryOrRealm}`}</span>
+              {loc.planet && loc.planet !== 'Earth' && (
+                <span className="text-[10px] text-sky-400/80 font-normal">({loc.planet})</span>
+              )}
+            </button>
+          ))}
+
           {/* Infinity Stones Tag Pills */}
           {event.stones.map((sId) => {
             const stone = infinityStonesData.find((s) => s.id === sId);
