@@ -786,13 +786,13 @@ interface EraPreset {
 }
 
 const ERA_PRESETS: EraPreset[] = [
-  { id: 'all', label: 'All History', icon: '🌌', range: [-10000000, 3000], description: 'Full history across all epochs.' },
+  { id: 'all', label: 'All History', icon: '🌌', range: [-10000000, 4500], description: 'Full history across all epochs.' },
   { id: 'ancient', label: 'Ancient (Pre-1900)', icon: '🏛️', range: [-10000000, 1900], description: 'Knossos, Troy, Shaanxi, Adwa, Tønsberg 965.' },
   { id: 'ww1-depression', label: 'WWI & Noir (1914–1939)', icon: '🕵️', range: [1914, 1939], description: 'WWI Western Front & 1930s Great Depression (Spider-Noir).' },
   { id: 'ww2', label: 'World War II (1940–1945)', icon: '🛡️', range: [1940, 1945], description: 'Captain America TFA, Auschwitz 1944 (Magneto), AoS 1945.' },
   { id: 'cold-war', label: 'Cold War (1946–1970)', icon: '💼', range: [1946, 1970], description: 'Agent Carter (T1 & T2), Smithsonian 1953, Cuban Missile Crisis 1962.' },
   { id: 'avengers', label: 'Avengers Era (2008–2023)', icon: '⚡', range: [2008, 2023], description: 'Marvel Studios Infinity Saga.' },
-  { id: 'future', label: 'Future (2024–2400+)', icon: '🚀', range: [2024, 3000], description: 'Post-Endgame & 2400 Future.' },
+  { id: 'future', label: 'Future (2024–4000+)', icon: '🚀', range: [2024, 4500], description: 'Post-Endgame, 2055 Dystopia, 2400 Future, and 3999 Clan Chosen.' },
 ];
 
 // Reusable Horizontal Drag-to-Scroll Container for Pills
@@ -1147,6 +1147,25 @@ export const COSMIC_REALMS: CosmicRealm[] = [
     eventsCount: 1,
     featuredEvents: [
       { title: 'Janet van Dyne Sub-Atomic Rescue & Time Heists', era: '1987 / 2023', media: 'Avengers: Endgame' }
+    ]
+  },
+  {
+    id: 'mojoverse',
+    name: 'Mojoverse (Extradimensional Media Realm)',
+    type: 'dimension',
+    category: 'dimensions',
+    systemGroup: 'Extradimensional Broadcast Dimension',
+    altitudeOrDistance: 'Multiverse Pocket Dimension',
+    description: 'Bizarre extradimensional television reality ruled by the cybernetic media tyrant Mojo, where Wolverine and Rogue were abducted to battle in holographic gladiatorial death matches alongside Longshot.',
+    color: '#f59e0b',
+    x: 16,
+    y: 32,
+    radius: 28,
+    icon: '📺',
+    universeFilterKey: '92131',
+    eventsCount: 1,
+    featuredEvents: [
+      { title: "The Mojoverse Broadcast Arena & Longshot's Holographic Rebellion", era: '1994', media: 'X-Men: The Animated Series (Season 2)', eventId: 'event-1994-tas-2-mojovision' }
     ]
   }
 ];
@@ -1769,17 +1788,25 @@ export const MapScreen: React.FC = () => {
         setSelectedSnapshotTab('locations');
         setSnapshotLayerMode('locations');
 
-        // Find matching pin in allPins
-        const match = allPins.find((p) => {
-          if (selectedMapLocationPin.coordinates && p.coordinates) {
-            const latDiff = Math.abs(p.coordinates[0] - selectedMapLocationPin.coordinates[0]);
-            const lngDiff = Math.abs(p.coordinates[1] - selectedMapLocationPin.coordinates[1]);
-            if (latDiff < 0.01 && lngDiff < 0.01) return true;
-          }
-          return p.name.toLowerCase().includes(selectedMapLocationPin.name.toLowerCase()) ||
-                 selectedMapLocationPin.name.toLowerCase().includes(p.name.toLowerCase()) ||
-                 (p.cityOrRegion && p.cityOrRegion.toLowerCase().includes(selectedMapLocationPin.name.toLowerCase()));
-        });
+        // Find matching pin in allPins (first check by specific eventId, then name/coordinates)
+        let match = allPins.find((p) => 
+          selectedMapLocationPin.eventId && p.events.some((e) => e.event.id === selectedMapLocationPin.eventId)
+        );
+
+        if (!match) {
+          match = allPins.find((p) => {
+            const nameMatch = p.name.toLowerCase() === selectedMapLocationPin.name.toLowerCase() ||
+                              p.name.toLowerCase().includes(selectedMapLocationPin.name.toLowerCase()) ||
+                              selectedMapLocationPin.name.toLowerCase().includes(p.name.toLowerCase());
+            if (nameMatch) return true;
+            if (selectedMapLocationPin.coordinates && p.coordinates) {
+              const latDiff = Math.abs(p.coordinates[0] - selectedMapLocationPin.coordinates[0]);
+              const lngDiff = Math.abs(p.coordinates[1] - selectedMapLocationPin.coordinates[1]);
+              if (latDiff < 0.001 && lngDiff < 0.001) return true;
+            }
+            return false;
+          });
+        }
 
         if (match) {
           setSelectedPinId(match.id);
@@ -1793,7 +1820,7 @@ export const MapScreen: React.FC = () => {
               setSelectedPreset(matchingPreset.id);
               setCustomRange(matchingPreset.range);
             } else {
-              setCustomRange([startYr, endYr]);
+              setCustomRange([startYr - 5, endYr + 5]);
               setSelectedPreset('all');
             }
           }
@@ -1805,7 +1832,7 @@ export const MapScreen: React.FC = () => {
 
           setTimeout(() => {
             mapInstanceRef.current?.invalidateSize();
-            const targetLat = Math.min(65, Math.max(-60, match.coordinates[0]));
+            const targetLat = Math.min(84, Math.max(-84, match.coordinates[0]));
             mapInstanceRef.current?.flyTo([targetLat, match.coordinates[1]], 6, { duration: 1.2 });
           }, 150);
         }
@@ -1886,7 +1913,7 @@ export const MapScreen: React.FC = () => {
       const stop = stops[currentIdx];
       setSelectedTrajectoryStopIndex(currentIdx);
       if (mapInstanceRef.current && mapViewMode === 'earth') {
-        const targetLat = Math.min(65, Math.max(-60, stop.coordinates[0]));
+        const targetLat = Math.min(84, Math.max(-84, stop.coordinates[0]));
         mapInstanceRef.current.flyTo([targetLat, stop.coordinates[1]], 4.8, { duration: 1.5 });
       }
       currentIdx++;
@@ -2013,7 +2040,7 @@ export const MapScreen: React.FC = () => {
 
         stopMarker.on('click', () => {
           setSelectedTrajectoryStopIndex(index);
-          const targetLat = Math.min(65, Math.max(-60, stop.coordinates[0]));
+          const targetLat = Math.min(84, Math.max(-84, stop.coordinates[0]));
           map.flyTo([targetLat, stop.coordinates[1]], 5, { duration: 1.2 });
         });
 
@@ -2055,7 +2082,7 @@ export const MapScreen: React.FC = () => {
 
           marker.on('click', () => {
             setSelectedPinId(pin.id);
-            const targetLat = Math.min(65, Math.max(-60, pin.coordinates[0]));
+            const targetLat = Math.min(84, Math.max(-84, pin.coordinates[0]));
             map.flyTo([targetLat, pin.coordinates[1]], Math.max(map.getZoom(), 4.8), { duration: 1.2 });
           });
 
@@ -2092,7 +2119,7 @@ export const MapScreen: React.FC = () => {
           );
 
           marker.on('click', () => {
-            const targetLat = Math.min(65, Math.max(-60, char.coordinates[0]));
+            const targetLat = Math.min(84, Math.max(-84, char.coordinates[0]));
             map.flyTo([targetLat, char.coordinates[1]], 5.5, { duration: 1.2 });
           });
 
@@ -2129,7 +2156,7 @@ export const MapScreen: React.FC = () => {
           );
 
           marker.on('click', () => {
-            const targetLat = Math.min(65, Math.max(-60, stone.coordinates[0]));
+            const targetLat = Math.min(84, Math.max(-84, stone.coordinates[0]));
             map.flyTo([targetLat, stone.coordinates[1]], 5.5, { duration: 1.2 });
           });
 
@@ -2212,7 +2239,7 @@ export const MapScreen: React.FC = () => {
     setSelectedTrajectoryStopIndex(next);
     const stop = currentTrajectory.stops[next];
     if (mapInstanceRef.current && stop) {
-      const targetLat = Math.min(65, Math.max(-60, stop.coordinates[0]));
+      const targetLat = Math.min(84, Math.max(-84, stop.coordinates[0]));
       mapInstanceRef.current.flyTo([targetLat, stop.coordinates[1]], 5.5, { duration: 1.2 });
     }
   };
@@ -2224,7 +2251,7 @@ export const MapScreen: React.FC = () => {
     setSelectedTrajectoryStopIndex(prev);
     const stop = currentTrajectory.stops[prev];
     if (mapInstanceRef.current && stop) {
-      const targetLat = Math.min(65, Math.max(-60, stop.coordinates[0]));
+      const targetLat = Math.min(84, Math.max(-84, stop.coordinates[0]));
       mapInstanceRef.current.flyTo([targetLat, stop.coordinates[1]], 5.5, { duration: 1.2 });
     }
   };
@@ -2481,7 +2508,7 @@ export const MapScreen: React.FC = () => {
               {/* Leaflet Map Big Canvas */}
               <div 
                 ref={mapContainerRef} 
-                className="w-full h-[520px] sm:h-[580px] lg:h-[620px] rounded-xl overflow-hidden border border-sky-900/50 shadow-inner z-10 relative group/earthmap"
+                className="w-full h-[520px] sm:h-[580px] lg:h-[620px] rounded-xl overflow-hidden border border-sky-900/50 shadow-inner z-10 relative isolate group/earthmap"
               >
                 {/* Normalized Floating Tactical Controls: +, -, 1:1, Mode Switch */}
                 <div className="absolute top-3 right-3 z-[1000] flex flex-col gap-1.5 bg-[#0a0d18]/90 border border-sky-800/60 p-1.5 rounded-xl backdrop-blur-md shadow-2xl">
@@ -2925,7 +2952,7 @@ export const MapScreen: React.FC = () => {
                           onClick={() => {
                             setSelectedTrajectoryStopIndex(sIdx);
                             if (mapInstanceRef.current) {
-                              const targetLat = Math.min(65, Math.max(-60, stop.coordinates[0]));
+                              const targetLat = Math.min(84, Math.max(-84, stop.coordinates[0]));
                               mapInstanceRef.current.flyTo([targetLat, stop.coordinates[1]], 5.5, { duration: 1.2 });
                             }
                           }}
@@ -3128,7 +3155,7 @@ export const MapScreen: React.FC = () => {
                                   onClick={() => {
                                     setSelectedPinId(p.id);
                                     if (mapInstanceRef.current) {
-                                      const targetLat = Math.min(65, Math.max(-60, p.coordinates[0]));
+                                      const targetLat = Math.min(84, Math.max(-84, p.coordinates[0]));
                                       mapInstanceRef.current.flyTo([targetLat, p.coordinates[1]], 5.5, { duration: 1.2 });
                                     }
                                   }}
@@ -3153,7 +3180,7 @@ export const MapScreen: React.FC = () => {
                             onClick={() => {
                               setSelectedPinId(pin.id);
                               if (mapInstanceRef.current) {
-                                const targetLat = Math.min(65, Math.max(-60, pin.coordinates[0]));
+                                const targetLat = Math.min(84, Math.max(-84, pin.coordinates[0]));
                                 mapInstanceRef.current.flyTo([targetLat, pin.coordinates[1]], 5.5, { duration: 1.2 });
                               }
                             }}
@@ -3197,7 +3224,7 @@ export const MapScreen: React.FC = () => {
                           key={cIdx}
                           onClick={() => {
                             if (mapInstanceRef.current) {
-                              const targetLat = Math.min(65, Math.max(-60, char.coordinates[0]));
+                              const targetLat = Math.min(84, Math.max(-84, char.coordinates[0]));
                               mapInstanceRef.current.flyTo([targetLat, char.coordinates[1]], 5.5, { duration: 1.2 });
                             }
                           }}
@@ -3248,7 +3275,7 @@ export const MapScreen: React.FC = () => {
                         key={sIdx}
                         onClick={() => {
                           if (mapInstanceRef.current) {
-                            const targetLat = Math.min(65, Math.max(-60, stone.coordinates[0]));
+                            const targetLat = Math.min(84, Math.max(-84, stone.coordinates[0]));
                             mapInstanceRef.current.flyTo([targetLat, stone.coordinates[1]], 5.5, { duration: 1.2 });
                           }
                         }}
@@ -3396,7 +3423,7 @@ export const MapScreen: React.FC = () => {
                 setCosmicScale(1);
                 setCosmicPan({ x: 0, y: 0 });
               }}
-              className={`relative w-full h-[520px] sm:h-[580px] lg:h-[620px] bg-[#020307] border border-purple-900/40 rounded-xl overflow-hidden shadow-inner flex items-center justify-center select-none touch-none ${
+              className={`relative isolate w-full h-[520px] sm:h-[580px] lg:h-[620px] bg-[#020307] border border-purple-900/40 rounded-xl overflow-hidden shadow-inner flex items-center justify-center select-none touch-none ${
                 isPanningCosmic ? 'cursor-grabbing' : 'cursor-grab'
               }`}
             >

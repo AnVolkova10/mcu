@@ -2,6 +2,7 @@ import React, { useMemo } from 'react';
 import { useStore } from '@/store/useStore';
 import { timelineEras } from '@/data/timelineData';
 import { charactersData } from '@/data/charactersData';
+import { mediaData } from '@/data/mediaData';
 import { FilterBar } from '@/components/FilterBar';
 import { EventCard } from '@/components/EventCard';
 import { 
@@ -172,17 +173,54 @@ export const TimelineScreen: React.FC = () => {
             <section key={era.id} id={era.id} className="relative">
               
               {/* Era Header */}
-              <div className="sticky top-[108px] sm:top-[116px] z-20 py-3 mb-6 backdrop-blur-md bg-[#000000]/95 border-y-2 border-[#e62429] -mx-4 px-4 sm:rounded-lg sm:mx-0 sm:px-6 flex items-center justify-between shadow-2xl">
-                <div className="flex items-center gap-3">
-                  <div className="w-3 h-3 bg-[#e62429] rotate-45" />
-                  <h2 className="text-xl sm:text-2xl font-black text-white tracking-wide uppercase font-title">
-                    {era.title}
-                  </h2>
-                </div>
-                <span className="text-xs font-bold tracking-widest uppercase px-3 py-1 rounded bg-[#161616] border border-[#333333] text-zinc-300 font-din">
-                  {era.events.length} {era.events.length === 1 ? 'EVENT' : 'EVENTS'}
-                </span>
-              </div>
+              {(() => {
+                const mediaKeysSet = new Set<string>();
+                era.events.forEach((evt) => {
+                  if (evt.mediaKey) mediaKeysSet.add(evt.mediaKey);
+                  if (evt.rawClasses) {
+                    evt.rawClasses.forEach((cls) => {
+                      if (cls !== 'alternative' && mediaData[cls]) mediaKeysSet.add(cls);
+                    });
+                  }
+                });
+                const distinctMedia = Array.from(mediaKeysSet)
+                  .map((k) => mediaData[k])
+                  .filter(Boolean);
+
+                return (
+                  <div className="sticky top-[108px] sm:top-[116px] z-20 py-3 mb-6 backdrop-blur-md bg-[#000000]/95 border-y-2 border-[#e62429] -mx-4 px-4 sm:rounded-lg sm:mx-0 sm:px-6 flex items-center justify-between shadow-2xl gap-3 flex-wrap">
+                    <div className="flex items-center gap-3 flex-wrap">
+                      <div className="w-3 h-3 bg-[#e62429] rotate-45 shrink-0" />
+                      <h2 className="text-xl sm:text-2xl font-black text-white tracking-wide uppercase font-title shrink-0">
+                        {era.title}
+                      </h2>
+
+                      {/* Simplified Media Chips Present in this Era */}
+                      {distinctMedia.length > 0 && (
+                        <div className="flex items-center gap-1.5 flex-wrap">
+                          {distinctMedia.map((m) => (
+                            <span
+                              key={m.id}
+                              style={{
+                                borderColor: m.posterColor ? `${m.posterColor}80` : '#3f3f46',
+                                backgroundColor: m.posterColor ? `${m.posterColor}1a` : '#18181b',
+                                color: m.posterColor || '#e4e4e7',
+                              }}
+                              className="text-[10px] font-black font-title tracking-wider uppercase px-2 py-0.5 rounded border select-none shadow-sm flex items-center gap-1 whitespace-nowrap"
+                            >
+                              {m.isAnimated ? '🎨 ' : ''}
+                              {m.shortTitle || m.title}
+                            </span>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                    <span className="text-xs font-bold tracking-widest uppercase px-3 py-1 rounded bg-[#161616] border border-[#333333] text-zinc-300 font-din shrink-0">
+                      {era.events.length} {era.events.length === 1 ? 'EVENT' : 'EVENTS'}
+                    </span>
+                  </div>
+                );
+              })()}
 
               {/* Event Cards Grid / List */}
               <div className="grid grid-cols-1 gap-5">

@@ -865,6 +865,22 @@ export const mediaData: Record<string, MediaItem> = {
     "primaryUniverse": "Earth-92131 (Marvel Animated Universe)",
     "studio": "Fox",
     "description": "In 1992, the X-Men combat Bolivar Trask's anti-mutant Sentinels, Magneto's ideological rebellion, and the emergence of Apocalypse and Master Mold, while time-traveler Bishop attempts to avert a bleak dystopian future."
+  },
+  "x-men-tas-2": {
+    "id": "x-men-tas-2",
+    "cssClass": "x-men-tas-2",
+    "title": "X-Men: The Animated Series (Season 2)",
+    "shortTitle": "X-Men: TAS (Season 2)",
+    "releaseYear": "1993-1994",
+    "type": "series",
+    "phase": "Marvel Television",
+    "posterColor": "#eab308",
+    "timelineOrder": 65,
+    "isAnimated": true,
+    "timelineType": "multiverse-alternate",
+    "primaryUniverse": "Earth-92131 (Marvel Animated Universe)",
+    "studio": "Fox",
+    "description": "In 1993-1994, the X-Men face the genetic machinations of Mister Sinister, the trauma of Morph's resurrection, the psychic awakening of the Shadow King, Omega Red in Russia, the time paradoxes of Cable and Bishop, and an all-out war in the Savage Land."
   }
 };
 

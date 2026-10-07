@@ -2425,6 +2425,215 @@ export const charactersData: Record<string, Character> = {
     "originLocation": "Earth-10005",
     "status": "deceased",
     "bio": "Demonic red-skinned mutant possessing instant interdimensional teleportation via brimstone smoke portals, serving as Sebastian Shaw's chief enforcer during the Cuban Missile Crisis."
+  },
+  "mister-sinister-nathaniel-essex": {
+    "id": "mister-sinister-nathaniel-essex",
+    "name": "Nathaniel Essex",
+    "alias": "Mister Sinister",
+    "cssClass": "mister-sinister-nathaniel-essex",
+    "color": "#b91c1c",
+    "bgBadge": "bg-rose-950/80 hover:bg-rose-900/90",
+    "textBadge": "text-rose-300",
+    "borderBadge": "border-rose-600",
+    "role": "villain",
+    "affiliation": "The Nasty Boys / Genetic Citadel",
+    "groups": [
+      "Villains",
+      "Mutants"
+    ],
+    "originLocation": "London, England (Earth-92131)",
+    "status": "alive",
+    "bio": "Genius Victorian geneticist augmented into an immortal telepathic mutant commander who commands the Nasty Boys and harvests the DNA of Cyclops and Jean Grey to engineer the ultimate mutant weapon."
+  },
+  "omega-red-arkady-rossovich": {
+    "id": "omega-red-arkady-rossovich",
+    "name": "Arkady Rossovich",
+    "alias": "Omega Red",
+    "cssClass": "omega-red-arkady-rossovich",
+    "color": "#dc2626",
+    "bgBadge": "bg-red-950/80 hover:bg-red-900/90",
+    "textBadge": "text-red-300",
+    "borderBadge": "border-red-600",
+    "role": "villain",
+    "affiliation": "Soviet Super-Soldier Program / KGB",
+    "groups": [
+      "Villains",
+      "Mutants"
+    ],
+    "originLocation": "Moscow, Russian SFSR (Earth-92131)",
+    "status": "alive",
+    "bio": "Lethal Soviet cybernetic mutant equipped with retractable Carbonadium tentacles that siphon the life-force of his victims to sustain his synthetic Death Factor."
+  },
+  "shadow-king-amahl-farouk": {
+    "id": "shadow-king-amahl-farouk",
+    "name": "Amahl Farouk",
+    "alias": "Shadow King",
+    "cssClass": "shadow-king-amahl-farouk",
+    "color": "#8b5cf6",
+    "bgBadge": "bg-purple-950/80 hover:bg-purple-900/90",
+    "textBadge": "text-purple-300",
+    "borderBadge": "border-purple-600",
+    "role": "villain",
+    "affiliation": "Astral Entity / Cairo Underworld",
+    "groups": [
+      "Villains",
+      "Cosmic Entities"
+    ],
+    "originLocation": "The Astral Plane / Cairo, Egypt (Earth-92131)",
+    "status": "alive",
+    "bio": "Malevolent pure-telepathic entity inhabiting the Astral Plane who feeds on human hatred, possessing Storm's godson Mjnari in Mount Kilimanjaro to ensnare Ororo Munroe."
+  },
+  "graydon-creed": {
+    "id": "graydon-creed",
+    "name": "Graydon Creed",
+    "alias": "Graydon Creed",
+    "cssClass": "graydon-creed",
+    "color": "#94a3b8",
+    "bgBadge": "bg-slate-900/80 hover:bg-slate-800/90",
+    "textBadge": "text-slate-300",
+    "borderBadge": "border-slate-500",
+    "role": "villain",
+    "affiliation": "Friends of Humanity (FOH)",
+    "groups": [
+      "Villains",
+      "Friends of Humanity"
+    ],
+    "originLocation": "New York City (Earth-92131)",
+    "status": "alive",
+    "bio": "Fanatical anti-mutant demagogue and founder of the terrorist hate-group Friends of Humanity, secretly the baseline human offspring of Sabretooth and Mystique."
+  },
+  "carol-danvers-ms-marvel": {
+    "id": "carol-danvers-ms-marvel",
+    "name": "Carol Danvers",
+    "alias": "Ms. Marvel",
+    "cssClass": "carol-danvers-ms-marvel",
+    "color": "#38bdf8",
+    "bgBadge": "bg-sky-950/80 hover:bg-sky-900/90",
+    "textBadge": "text-sky-300",
+    "borderBadge": "border-sky-500",
+    "role": "hero",
+    "affiliation": "United States Air Force / Avengers",
+    "groups": [
+      "Avengers",
+      "Humanity"
+    ],
+    "originLocation": "Boston, Massachusetts (Earth-92131)",
+    "status": "alive",
+    "bio": "Cosmically empowered Avenger whose flight, invulnerability, and super-strength were permanently drained by Rogue during a battle in San Francisco, leaving her conscious echo locked inside Rogue's psyche."
+  },
+  "mojo": {
+    "id": "mojo",
+    "name": "Mojo",
+    "alias": "Mojo",
+    "cssClass": "mojo",
+    "color": "#eab308",
+    "bgBadge": "bg-yellow-950/80 hover:bg-yellow-900/90",
+    "textBadge": "text-yellow-300",
+    "borderBadge": "border-yellow-600",
+    "role": "villain",
+    "affiliation": "Mojoverse Television Network",
+    "groups": [
+      "Villains",
+      "Cosmic Entities"
+    ],
+    "originLocation": "Mojoverse Dimension",
+    "status": "alive",
+    "bio": "Grotesque, spineless alien tyrant who rules an extradimensional media empire through mechanical walker chairs, enslaving multiverse warriors for lethal broadcast gladiatorial television ratings."
+  },
+  "longshot": {
+    "id": "longshot",
+    "name": "Longshot",
+    "alias": "Longshot",
+    "cssClass": "longshot",
+    "color": "#38bdf8",
+    "bgBadge": "bg-sky-950/80 hover:bg-sky-900/90",
+    "textBadge": "text-sky-300",
+    "borderBadge": "border-sky-500",
+    "role": "hero",
+    "affiliation": "Mojoverse Rebellion / X-Men Allies",
+    "groups": [
+      "X-Men",
+      "Mutants"
+    ],
+    "originLocation": "Mojoverse Dimension",
+    "status": "alive",
+    "bio": "Genetically modified freedom fighter possessing four-fingered hands, hollow bones, and a subconscious probability-altering luck field who revolts against Mojo's gladiatorial network."
+  },
+  "ka-zar-kevin-plunder": {
+    "id": "ka-zar-kevin-plunder",
+    "name": "Kevin Plunder",
+    "alias": "Ka-Zar",
+    "cssClass": "ka-zar-kevin-plunder",
+    "color": "#f59e0b",
+    "bgBadge": "bg-amber-950/80 hover:bg-amber-900/90",
+    "textBadge": "text-amber-300",
+    "borderBadge": "border-amber-600",
+    "role": "hero",
+    "affiliation": "Fall People / Savage Land Protector",
+    "groups": [
+      "Humanity",
+      "Savage Land"
+    ],
+    "originLocation": "The Savage Land, Antarctica (Earth-92131)",
+    "status": "alive",
+    "bio": "Lord of the prehistoric Savage Land who, alongside his loyal sabretooth companion Zabu, unites the native tribes against Sauron and Mister Sinister's mutates."
+  },
+  "sauron-karl-lykos": {
+    "id": "sauron-karl-lykos",
+    "name": "Dr. Karl Lykos",
+    "alias": "Sauron",
+    "cssClass": "sauron-karl-lykos",
+    "color": "#84cc16",
+    "bgBadge": "bg-lime-950/80 hover:bg-lime-900/90",
+    "textBadge": "text-lime-300",
+    "borderBadge": "border-lime-600",
+    "role": "villain",
+    "affiliation": "Savage Land Mutates",
+    "groups": [
+      "Villains",
+      "Savage Land"
+    ],
+    "originLocation": "The Savage Land, Antarctica (Earth-92131)",
+    "status": "alive",
+    "bio": "Physician infected by mutant pterodactyl genetic parasites who transforms into a winged predatory bio-drainer when absorbing the life energy of other mutants."
+  },
+  "james-hudson-guardian": {
+    "id": "james-hudson-guardian",
+    "name": "James MacDonald Hudson",
+    "alias": "Vindicator (Guardian)",
+    "cssClass": "james-hudson-guardian",
+    "color": "#ef4444",
+    "bgBadge": "bg-red-950/80 hover:bg-red-900/90",
+    "textBadge": "text-red-300",
+    "borderBadge": "border-red-600",
+    "role": "hero",
+    "affiliation": "Alpha Flight / Department H",
+    "groups": [
+      "Alpha Flight",
+      "Humanity"
+    ],
+    "originLocation": "Calgary, Alberta, Canada (Earth-92131)",
+    "status": "alive",
+    "bio": "Canadian engineer and field commander of Alpha Flight who pilots an electromagnetic battlesuit powered by Earth's gravitational field, standing down once Department H's Adamantium theft conspiracy is uncovered."
+  },
+  "bella-donna-boudreaux": {
+    "id": "bella-donna-boudreaux",
+    "name": "Bella Donna Boudreaux",
+    "alias": "Bella Donna",
+    "cssClass": "bella-donna-boudreaux",
+    "color": "#ec4899",
+    "bgBadge": "bg-pink-950/80 hover:bg-pink-900/90",
+    "textBadge": "text-pink-300",
+    "borderBadge": "border-pink-600",
+    "role": "anti-hero",
+    "affiliation": "New Orleans Assassins Guild",
+    "groups": [
+      "Assassins Guild",
+      "Mutants"
+    ],
+    "originLocation": "New Orleans, Louisiana (Earth-92131)",
+    "status": "alive",
+    "bio": "Lethal plasma-wielding leader of the Assassins Guild and Gambit's former fiancée who coordinates the decennial tithe to the immortal alien X-Ternal Candra."
   }
 };
 

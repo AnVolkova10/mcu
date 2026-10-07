@@ -176,15 +176,15 @@ export const timelineEras: EraGroup[] = [
     ]
   },
   {
-    "id": "era-3600-bce-apocalypse",
-    "title": "-c. 3600 B.C.E. (Earth-10005 / Ancient Egypt)-",
-    "cleanTitle": "c. 3600 B.C.E. (Earth-10005)",
+    "id": "era-_c__3600_B_C_E__",
+    "title": "-c. 3600 B.C.E.-",
+    "cleanTitle": "c. 3600 B.C.E.",
     "category": "ancient",
     "events": [
       {
         "id": "event-3600-bce-apocalypse-1",
-        "eraId": "era-3600-bce-apocalypse",
-        "eraTitle": "c. 3600 B.C.E. (Earth-10005)",
+        "eraId": "era-_c__3600_B_C_E__",
+        "eraTitle": "c. 3600 B.C.E.",
         "mediaKey": "x-men-days-of-future-past",
         "mediaTitle": "X-Men: Days of Future Past (2014)",
         "mediaType": "movie",
@@ -228,8 +228,8 @@ export const timelineEras: EraGroup[] = [
       },
       {
         "id": "event-3600-bce-apocalypse-2",
-        "eraId": "era-3600-bce-apocalypse",
-        "eraTitle": "c. 3600 B.C.E. (Earth-10005)",
+        "eraId": "era-_c__3600_B_C_E__",
+        "eraTitle": "c. 3600 B.C.E.",
         "mediaKey": "x-men-apocalypse",
         "mediaTitle": "X-Men: Apocalypse (2016)",
         "mediaType": "movie",
@@ -274,14 +274,14 @@ export const timelineEras: EraGroup[] = [
     ]
   },
   {
-    "id": "era-_1260_BCE_",
+    "id": "era-_1260_B_C_E__",
     "title": "-1260 B.C.E.-",
     "cleanTitle": "1260 B.C.E.",
     "category": "ancient",
     "events": [
       {
         "id": "event-_1260_BCE_-1",
-        "eraId": "era-_1260_BCE_",
+        "eraId": "era-_1260_B_C_E__",
         "eraTitle": "1260 B.C.E.",
         "mediaKey": "eyes-of-wakanda-i",
         "mediaTitle": "Eyes of Wakanda (Season 1)",
@@ -342,14 +342,14 @@ export const timelineEras: EraGroup[] = [
     ]
   },
   {
-    "id": "era-_1200_BCE_",
+    "id": "era-_c__1200_B_C_E__",
     "title": "-c. 1200 B.C.E.-",
     "cleanTitle": "c. 1200 B.C.E.",
     "category": "ancient",
     "events": [
       {
         "id": "event-_1200_BCE_-1",
-        "eraId": "era-_1200_BCE_",
+        "eraId": "era-_c__1200_B_C_E__",
         "eraTitle": "c. 1200 B.C.E.",
         "mediaKey": "eyes-of-wakanda-i",
         "mediaTitle": "Eyes of Wakanda (Season 1)",
@@ -491,14 +491,14 @@ export const timelineEras: EraGroup[] = [
     ]
   },
   {
-    "id": "era-_1400_CE_",
+    "id": "era-_c__1400_C_E__",
     "title": "-c. 1400 C.E.-",
     "cleanTitle": "c. 1400 C.E.",
     "category": "ancient",
     "events": [
       {
         "id": "event-_1400_CE_-1",
-        "eraId": "era-_1400_CE_",
+        "eraId": "era-_c__1400_C_E__",
         "eraTitle": "c. 1400 C.E.",
         "mediaKey": "eyes-of-wakanda-i",
         "mediaTitle": "Eyes of Wakanda (Season 1)",
@@ -555,15 +555,15 @@ export const timelineEras: EraGroup[] = [
     ]
   },
   {
-    "id": "era-1845-xmen-origins",
-    "title": "-1845 (Earth-10005 / Origin)-",
-    "cleanTitle": "1845 (Earth-10005)",
+    "id": "era-_1845_",
+    "title": "-1845-",
+    "cleanTitle": "1845",
     "category": "early-century",
     "events": [
       {
         "id": "event-1845-xmen-origins-1",
-        "eraId": "era-1845-xmen-origins",
-        "eraTitle": "1845 (Earth-10005)",
+        "eraId": "era-_1845_",
+        "eraTitle": "1845",
         "mediaKey": "x-men-origins-wolverine",
         "mediaTitle": "X-Men Origins: Wolverine (2009)",
         "mediaType": "movie",
@@ -612,15 +612,15 @@ export const timelineEras: EraGroup[] = [
     ]
   },
   {
-    "id": "era-1861-1865-xmen-origins",
-    "title": "-1861 - 1865 (Earth-10005 / American Civil War)-",
-    "cleanTitle": "1861 - 1865 (Earth-10005)",
+    "id": "era-_1861___1865_",
+    "title": "-1861 - 1865-",
+    "cleanTitle": "1861 - 1865",
     "category": "early-century",
     "events": [
       {
         "id": "event-1861-1865-xmen-origins-1",
-        "eraId": "era-1861-1865-xmen-origins",
-        "eraTitle": "1861 - 1865 (Earth-10005)",
+        "eraId": "era-_1861___1865_",
+        "eraTitle": "1861 - 1865",
         "mediaKey": "x-men-origins-wolverine",
         "mediaTitle": "X-Men Origins: Wolverine (2009)",
         "mediaType": "movie",
@@ -732,15 +732,15 @@ export const timelineEras: EraGroup[] = [
     ]
   },
   {
-    "id": "era-1917-spider-noir",
-    "title": "-c. 1917 - 1918 (Earth-90214 / World War I)-",
-    "cleanTitle": "c. 1917 - 1918 (Earth-90214 / WWI)",
+    "id": "era-_1917___1918_",
+    "title": "-1917 - 1918-",
+    "cleanTitle": "1917 - 1918",
     "category": "early-century",
     "events": [
       {
         "id": "event-1917-spider-noir-1",
-        "eraId": "era-1917-spider-noir",
-        "eraTitle": "c. 1917 - 1918 (Earth-90214 / WWI)",
+        "eraId": "era-_1917___1918_",
+        "eraTitle": "1917 - 1918",
         "mediaKey": "spider-noir-i",
         "mediaTitle": "Spider-Noir (Season 1)",
         "mediaType": "series",
@@ -782,19 +782,11 @@ export const timelineEras: EraGroup[] = [
             ]
           }
         ]
-      }
-    ]
-  },
-  {
-    "id": "era-1917-1918-xmen-origins",
-    "title": "-1917 - 1918 (Earth-10005 / World War I)-",
-    "cleanTitle": "1917 - 1918 (Earth-10005)",
-    "category": "early-century",
-    "events": [
+      },
       {
         "id": "event-1917-1918-xmen-origins-1",
-        "eraId": "era-1917-1918-xmen-origins",
-        "eraTitle": "1917 - 1918 (Earth-10005)",
+        "eraId": "era-_1917___1918_",
+        "eraTitle": "1917 - 1918",
         "mediaKey": "x-men-origins-wolverine",
         "mediaTitle": "X-Men Origins: Wolverine (2009)",
         "mediaType": "movie",
@@ -840,15 +832,15 @@ export const timelineEras: EraGroup[] = [
     ]
   },
   {
-    "id": "era-1928-spider-noir",
-    "title": "-c. 1928 - 1930 (Earth-90214)-",
-    "cleanTitle": "c. 1928 - 1930 (Earth-90214)",
+    "id": "era-_c__1928___1930_",
+    "title": "-c. 1928 - 1930-",
+    "cleanTitle": "c. 1928 - 1930",
     "category": "early-century",
     "events": [
       {
         "id": "event-1928-spider-noir-1",
-        "eraId": "era-1928-spider-noir",
-        "eraTitle": "c. 1928 - 1930 (Earth-90214)",
+        "eraId": "era-_c__1928___1930_",
+        "eraTitle": "c. 1928 - 1930",
         "mediaKey": "spider-noir-i",
         "mediaTitle": "Spider-Noir (Season 1)",
         "mediaType": "series",
@@ -935,15 +927,15 @@ export const timelineEras: EraGroup[] = [
     ]
   },
   {
-    "id": "era-1935-spider-noir",
-    "title": "-1935 (Earth-90214 / Great Depression)-",
-    "cleanTitle": "1935 (Earth-90214)",
+    "id": "era-_1935_",
+    "title": "-1935-",
+    "cleanTitle": "1935",
     "category": "early-century",
     "events": [
       {
         "id": "event-1935-spider-noir-1",
-        "eraId": "era-1935-spider-noir",
-        "eraTitle": "1935 (Earth-90214)",
+        "eraId": "era-_1935_",
+        "eraTitle": "1935",
         "mediaKey": "spider-noir-i",
         "mediaTitle": "Spider-Noir (Season 1)",
         "mediaType": "series",
@@ -1223,15 +1215,15 @@ export const timelineEras: EraGroup[] = [
     ]
   },
   {
-    "id": "era-1944-xmen",
-    "title": "-1944 (Earth-10005 / WWII)-",
-    "cleanTitle": "1944 (Earth-10005 / WWII)",
+    "id": "era-_1944_",
+    "title": "-1944-",
+    "cleanTitle": "1944",
     "category": "early-century",
     "events": [
       {
         "id": "event-1944-xmen-1",
-        "eraId": "era-1944-xmen",
-        "eraTitle": "1944 (Earth-10005 / WWII)",
+        "eraId": "era-_1944_",
+        "eraTitle": "1944",
         "mediaKey": "x-men-first-class",
         "mediaTitle": "X-Men: First Class",
         "mediaType": "movie",
@@ -1293,19 +1285,11 @@ export const timelineEras: EraGroup[] = [
             ]
           }
         ]
-      }
-    ]
-  },
-  {
-    "id": "era-1944-dday-xmen-origins",
-    "title": "-1944 (Earth-10005 / D-Day Omaha Beach)-",
-    "cleanTitle": "1944 (Earth-10005 / D-Day)",
-    "category": "early-century",
-    "events": [
+      },
       {
         "id": "event-1944-dday-xmen-origins-1",
-        "eraId": "era-1944-dday-xmen-origins",
-        "eraTitle": "1944 (Earth-10005 / D-Day)",
+        "eraId": "era-_1944_",
+        "eraTitle": "1944",
         "mediaKey": "x-men-origins-wolverine",
         "mediaTitle": "X-Men Origins: Wolverine (2009)",
         "mediaType": "movie",
@@ -1338,8 +1322,8 @@ export const timelineEras: EraGroup[] = [
             "countryOrRealm": "France",
             "planet": "Earth-10005",
             "coordinates": [
-              49.370,
-              -0.880
+              49.37,
+              -0.88
             ],
             "characters": [
               "logan-wolverine",
@@ -1440,7 +1424,7 @@ export const timelineEras: EraGroup[] = [
             "planet": "Earth",
             "coordinates": [
               67.5,
-              -35.0
+              -35
             ],
             "characters": [
               "steve-rogers",
@@ -1818,15 +1802,15 @@ export const timelineEras: EraGroup[] = [
     ]
   },
   {
-    "id": "era-1962-xmen",
-    "title": "-1962 (Earth-10005 / Cuban Missile Crisis)-",
-    "cleanTitle": "1962 (Earth-10005 / Cuban Missile Crisis)",
+    "id": "era-_1962_",
+    "title": "-1962-",
+    "cleanTitle": "1962",
     "category": "early-century",
     "events": [
       {
         "id": "event-1962-xmen-1",
-        "eraId": "era-1962-xmen",
-        "eraTitle": "1962 (Earth-10005 / Cuban Missile Crisis)",
+        "eraId": "era-_1962_",
+        "eraTitle": "1962",
         "mediaKey": "x-men-first-class",
         "mediaTitle": "X-Men: First Class",
         "mediaType": "movie",
@@ -2002,86 +1986,11 @@ export const timelineEras: EraGroup[] = [
         "timelineType": "branched-616",
         "earthDesignation": "Earth-616 Branched Reality",
         "branchDetails": "Alternate Timeline Branch"
-      }
-    ]
-  },
-  {
-    "id": "era-_1974_",
-    "title": "-1974-",
-    "cleanTitle": "1974",
-    "category": "golden-age",
-    "events": [
-      {
-        "id": "event-_1974_-1",
-        "eraId": "era-_1974_",
-        "eraTitle": "1974",
-        "mediaKey": "stark-expo-1974",
-        "mediaTitle": "Stark Expo 1974 & S.H.I.E.L.D. Classified Files (2010)",
-        "mediaType": "oneshot",
-        "mediaPhase": "Phase 1",
-        "isAlternativeTimeline": false,
-        "rawClasses": [
-          "stark-expo-1974",
-          "iron-man-2"
-        ],
-        "rawHtml": "<p>At the <strong>Stark Expo 1974</strong> in Flushing Meadows, Queens, <strong class=\"howard-stark\">Howard Stark</strong> unveils the monumental architectural diorama for the <em>City of the Future</em>. Limited by the technology of his era, Howard secretly encodes the atomic lattice structure of a revolutionary synthetic element directly into the park's physical layout as a hidden scientific blueprint for his son, <strong>Tony Stark</strong>.</p>\n<p>In a classified archival film reel preserved in the <strong class=\"mcu\">S.H.I.E.L.D. Archives</strong> (<em>Howard Stark S.H.I.E.L.D. Classified Files</em>), Howard halts filming the public Expo broadcast to record a profound, emotional message across time to Tony: <em>\"What is and always will be my greatest creation... is you.\"</em> Howard securely locks away the film reel alongside classified Arc Reactor blueprints and S.H.I.E.L.D. historical dossiers for future discovery.</p>",
-        "paragraphs": [
-          "At the <strong>Stark Expo 1974</strong> in Flushing Meadows, Queens, <strong class=\"howard-stark\">Howard Stark</strong> unveils the monumental architectural diorama for the <em>City of the Future</em>. Limited by the technology of his era, Howard secretly encodes the atomic lattice structure of a revolutionary synthetic element directly into the park's physical layout as a hidden scientific blueprint for his son, <strong>Tony Stark</strong>.",
-          "In a classified archival film reel preserved in the <strong class=\"mcu\">S.H.I.E.L.D. Archives</strong> (<em>Howard Stark S.H.I.E.L.D. Classified Files</em>), Howard halts filming the public Expo broadcast to record a profound, emotional message across time to Tony: <em>\"What is and always will be my greatest creation... is you.\"</em> Howard securely locks away the film reel alongside classified Arc Reactor blueprints and S.H.I.E.L.D. historical dossiers for future discovery."
-        ],
-        "characters": [
-          "howard-stark"
-        ],
-        "stones": [],
-        "deaths": [],
-        "mcuHighlights": [
-          "Stark Expo 1974 Architectural Model",
-          "Howard Stark's S.H.I.E.L.D. Classified Video to Tony",
-          "Hidden Blueprint of the New Badassium Element"
-        ],
-        "timelineType": "sacred-616",
-        "earthDesignation": "Earth-616 (The Sacred Timeline)",
-        "locations": [
-          {
-            "name": "Flushing Meadows–Corona Park (Stark Expo Pavilion)",
-            "cityOrRegion": "Queens, New York",
-            "countryOrRealm": "United States",
-            "planet": "Earth",
-            "coordinates": [
-              40.7498,
-              -73.8407
-            ],
-            "characters": [
-              "howard-stark"
-            ]
-          },
-          {
-            "name": "Stark Industries Research & S.H.I.E.L.D. Archive",
-            "cityOrRegion": "Long Island, New York",
-            "countryOrRealm": "United States",
-            "planet": "Earth",
-            "coordinates": [
-              40.7891,
-              -73.135
-            ],
-            "characters": [
-              "howard-stark"
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "era-1973-xmen-origins",
-    "title": "-1973 (Earth-10005 / Vietnam War)-",
-    "cleanTitle": "1973 (Earth-10005)",
-    "category": "golden-age",
-    "events": [
+      },
       {
         "id": "event-1973-xmen-origins-1",
-        "eraId": "era-1973-xmen-origins",
-        "eraTitle": "1973 (Earth-10005)",
+        "eraId": "era-_1973_",
+        "eraTitle": "1973",
         "mediaKey": "x-men-origins-wolverine",
         "mediaTitle": "X-Men Origins: Wolverine (2009)",
         "mediaType": "movie",
@@ -2125,19 +2034,11 @@ export const timelineEras: EraGroup[] = [
             ]
           }
         ]
-      }
-    ]
-  },
-  {
-    "id": "era-1973-days-of-future-past",
-    "title": "-1973 (Earth-10005 / Days of Future Past)-",
-    "cleanTitle": "1973 (Earth-10005 / Past)",
-    "category": "golden-age",
-    "events": [
+      },
       {
         "id": "event-1973-dofp-1",
-        "eraId": "era-1973-days-of-future-past",
-        "eraTitle": "1973 (Earth-10005 / Past)",
+        "eraId": "era-_1973_",
+        "eraTitle": "1973",
         "mediaKey": "x-men-days-of-future-past",
         "mediaTitle": "X-Men: Days of Future Past (2014)",
         "mediaType": "movie",
@@ -2191,7 +2092,7 @@ export const timelineEras: EraGroup[] = [
             "planet": "Earth-10005",
             "coordinates": [
               38.889,
-              -77.050
+              -77.05
             ],
             "characters": [
               "logan-wolverine",
@@ -2221,8 +2122,8 @@ export const timelineEras: EraGroup[] = [
       },
       {
         "id": "event-1973-dofp-2",
-        "eraId": "era-1973-days-of-future-past",
-        "eraTitle": "1973 (Earth-10005 / Past)",
+        "eraId": "era-_1973_",
+        "eraTitle": "1973",
         "mediaKey": "x-men-days-of-future-past",
         "mediaTitle": "X-Men: Days of Future Past (2014)",
         "mediaType": "movie",
@@ -2293,8 +2194,8 @@ export const timelineEras: EraGroup[] = [
       },
       {
         "id": "event-1973-dofp-3",
-        "eraId": "era-1973-days-of-future-past",
-        "eraTitle": "1973 (Earth-10005 / Past)",
+        "eraId": "era-_1973_",
+        "eraTitle": "1973",
         "mediaKey": "x-men-days-of-future-past",
         "mediaTitle": "X-Men: Days of Future Past (2014)",
         "mediaType": "movie",
@@ -2368,15 +2269,82 @@ export const timelineEras: EraGroup[] = [
     ]
   },
   {
-    "id": "era-1975-dark-phoenix",
-    "title": "-1975 (Earth-10005 / Jean Grey's Origin)-",
-    "cleanTitle": "1975 (Earth-10005 / Revised)",
+    "id": "era-_1974_",
+    "title": "-1974-",
+    "cleanTitle": "1974",
+    "category": "golden-age",
+    "events": [
+      {
+        "id": "event-_1974_-1",
+        "eraId": "era-_1974_",
+        "eraTitle": "1974",
+        "mediaKey": "stark-expo-1974",
+        "mediaTitle": "Stark Expo 1974 & S.H.I.E.L.D. Classified Files (2010)",
+        "mediaType": "oneshot",
+        "mediaPhase": "Phase 1",
+        "isAlternativeTimeline": false,
+        "rawClasses": [
+          "stark-expo-1974",
+          "iron-man-2"
+        ],
+        "rawHtml": "<p>At the <strong>Stark Expo 1974</strong> in Flushing Meadows, Queens, <strong class=\"howard-stark\">Howard Stark</strong> unveils the monumental architectural diorama for the <em>City of the Future</em>. Limited by the technology of his era, Howard secretly encodes the atomic lattice structure of a revolutionary synthetic element directly into the park's physical layout as a hidden scientific blueprint for his son, <strong>Tony Stark</strong>.</p>\n<p>In a classified archival film reel preserved in the <strong class=\"mcu\">S.H.I.E.L.D. Archives</strong> (<em>Howard Stark S.H.I.E.L.D. Classified Files</em>), Howard halts filming the public Expo broadcast to record a profound, emotional message across time to Tony: <em>\"What is and always will be my greatest creation... is you.\"</em> Howard securely locks away the film reel alongside classified Arc Reactor blueprints and S.H.I.E.L.D. historical dossiers for future discovery.</p>",
+        "paragraphs": [
+          "At the <strong>Stark Expo 1974</strong> in Flushing Meadows, Queens, <strong class=\"howard-stark\">Howard Stark</strong> unveils the monumental architectural diorama for the <em>City of the Future</em>. Limited by the technology of his era, Howard secretly encodes the atomic lattice structure of a revolutionary synthetic element directly into the park's physical layout as a hidden scientific blueprint for his son, <strong>Tony Stark</strong>.",
+          "In a classified archival film reel preserved in the <strong class=\"mcu\">S.H.I.E.L.D. Archives</strong> (<em>Howard Stark S.H.I.E.L.D. Classified Files</em>), Howard halts filming the public Expo broadcast to record a profound, emotional message across time to Tony: <em>\"What is and always will be my greatest creation... is you.\"</em> Howard securely locks away the film reel alongside classified Arc Reactor blueprints and S.H.I.E.L.D. historical dossiers for future discovery."
+        ],
+        "characters": [
+          "howard-stark"
+        ],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "Stark Expo 1974 Architectural Model",
+          "Howard Stark's S.H.I.E.L.D. Classified Video to Tony",
+          "Hidden Blueprint of the New Badassium Element"
+        ],
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)",
+        "locations": [
+          {
+            "name": "Flushing Meadows–Corona Park (Stark Expo Pavilion)",
+            "cityOrRegion": "Queens, New York",
+            "countryOrRealm": "United States",
+            "planet": "Earth",
+            "coordinates": [
+              40.7498,
+              -73.8407
+            ],
+            "characters": [
+              "howard-stark"
+            ]
+          },
+          {
+            "name": "Stark Industries Research & S.H.I.E.L.D. Archive",
+            "cityOrRegion": "Long Island, New York",
+            "countryOrRealm": "United States",
+            "planet": "Earth",
+            "coordinates": [
+              40.7891,
+              -73.135
+            ],
+            "characters": [
+              "howard-stark"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "era-_1975_",
+    "title": "-1975-",
+    "cleanTitle": "1975",
     "category": "golden-age",
     "events": [
       {
         "id": "event-1975-dark-phoenix-1",
-        "eraId": "era-1975-dark-phoenix",
-        "eraTitle": "1975 (Earth-10005 / Revised)",
+        "eraId": "era-_1975_",
+        "eraTitle": "1975",
         "mediaKey": "x-men-dark-phoenix",
         "mediaTitle": "X-Men: Dark Phoenix (2019)",
         "mediaType": "movie",
@@ -2410,8 +2378,8 @@ export const timelineEras: EraGroup[] = [
             "countryOrRealm": "United States",
             "planet": "Earth-10005",
             "coordinates": [
-              42.500,
-              -75.500
+              42.5,
+              -75.5
             ],
             "characters": [
               "jean-grey",
@@ -2423,15 +2391,15 @@ export const timelineEras: EraGroup[] = [
     ]
   },
   {
-    "id": "era-1979-xmen-origins",
-    "title": "-1979 (Earth-10005 / Team X Lagos Raid)-",
-    "cleanTitle": "1979 (Earth-10005)",
+    "id": "era-_1979_",
+    "title": "-1979-",
+    "cleanTitle": "1979",
     "category": "golden-age",
     "events": [
       {
         "id": "event-1979-xmen-origins-1",
-        "eraId": "era-1979-xmen-origins",
-        "eraTitle": "1979 (Earth-10005)",
+        "eraId": "era-_1979_",
+        "eraTitle": "1979",
         "mediaKey": "x-men-origins-wolverine",
         "mediaTitle": "X-Men Origins: Wolverine (2009)",
         "mediaType": "movie",
@@ -2550,19 +2518,11 @@ export const timelineEras: EraGroup[] = [
         "timelineType": "branched-616",
         "earthDesignation": "Earth-616 Branched Reality",
         "branchDetails": "Alternate Timeline Branch"
-      }
-    ]
-  },
-  {
-    "id": "era-1983-xmen-apocalypse",
-    "title": "-1983 (Earth-10005 / The Awakening of Apocalypse)-",
-    "cleanTitle": "1983 (Earth-10005 / Revised)",
-    "category": "golden-age",
-    "events": [
+      },
       {
         "id": "event-1983-apocalypse-1",
-        "eraId": "era-1983-xmen-apocalypse",
-        "eraTitle": "1983 (Earth-10005 / Revised)",
+        "eraId": "era-_1983_",
+        "eraTitle": "1983",
         "mediaKey": "x-men-apocalypse",
         "mediaTitle": "X-Men: Apocalypse (2016)",
         "mediaType": "movie",
@@ -2619,8 +2579,8 @@ export const timelineEras: EraGroup[] = [
             "countryOrRealm": "East Germany",
             "planet": "Earth-10005",
             "coordinates": [
-              52.5200,
-              13.4050
+              52.52,
+              13.405
             ],
             "characters": [
               "raven-darkholme",
@@ -2636,8 +2596,8 @@ export const timelineEras: EraGroup[] = [
             "countryOrRealm": "Poland",
             "planet": "Earth-10005",
             "coordinates": [
-              52.1670,
-              20.8140
+              52.167,
+              20.814
             ],
             "characters": [
               "erik-lehnsherr",
@@ -2651,7 +2611,7 @@ export const timelineEras: EraGroup[] = [
             "planet": "Earth-10005",
             "coordinates": [
               50.0274,
-              19.2020
+              19.202
             ],
             "characters": [
               "erik-lehnsherr",
@@ -2662,8 +2622,8 @@ export const timelineEras: EraGroup[] = [
       },
       {
         "id": "event-1983-apocalypse-2",
-        "eraId": "era-1983-xmen-apocalypse",
-        "eraTitle": "1983 (Earth-10005 / Revised)",
+        "eraId": "era-_1983_",
+        "eraTitle": "1983",
         "mediaKey": "x-men-apocalypse",
         "mediaTitle": "X-Men: Apocalypse (2016)",
         "mediaType": "movie",
@@ -2711,7 +2671,7 @@ export const timelineEras: EraGroup[] = [
             "countryOrRealm": "United States",
             "planet": "Earth-10005",
             "coordinates": [
-              41.1220,
+              41.122,
               -73.7949
             ],
             "characters": [
@@ -2732,8 +2692,8 @@ export const timelineEras: EraGroup[] = [
       },
       {
         "id": "event-1983-apocalypse-3",
-        "eraId": "era-1983-xmen-apocalypse",
-        "eraTitle": "1983 (Earth-10005 / Revised)",
+        "eraId": "era-_1983_",
+        "eraTitle": "1983",
         "mediaKey": "x-men-apocalypse",
         "mediaTitle": "X-Men: Apocalypse (2016)",
         "mediaType": "movie",
@@ -2795,8 +2755,8 @@ export const timelineEras: EraGroup[] = [
       },
       {
         "id": "event-1983-apocalypse-4",
-        "eraId": "era-1983-xmen-apocalypse",
-        "eraTitle": "1983 (Earth-10005 / Revised)",
+        "eraId": "era-_1983_",
+        "eraTitle": "1983",
         "mediaKey": "x-men-apocalypse",
         "mediaTitle": "X-Men: Apocalypse (2016)",
         "mediaType": "movie",
@@ -2871,7 +2831,7 @@ export const timelineEras: EraGroup[] = [
             "countryOrRealm": "United States",
             "planet": "Earth-10005",
             "coordinates": [
-              41.1220,
+              41.122,
               -73.7949
             ],
             "characters": [
@@ -2889,8 +2849,8 @@ export const timelineEras: EraGroup[] = [
       },
       {
         "id": "event-1983-apocalypse-5",
-        "eraId": "era-1983-xmen-apocalypse",
-        "eraTitle": "1983 (Earth-10005 / Revised)",
+        "eraId": "era-_1983_",
+        "eraTitle": "1983",
         "mediaKey": "x-men-apocalypse",
         "mediaTitle": "X-Men: Apocalypse (2016)",
         "mediaType": "movie",
@@ -2935,14 +2895,14 @@ export const timelineEras: EraGroup[] = [
     ]
   },
   {
-    "id": "era-_c_1984_",
+    "id": "era-_c__1984_",
     "title": "-c. 1984-",
     "cleanTitle": "c. 1984",
     "category": "golden-age",
     "events": [
       {
         "id": "event-_c_1984_-1",
-        "eraId": "era-_c_1984_",
+        "eraId": "era-_c__1984_",
         "eraTitle": "c. 1984",
         "mediaKey": "come-to-wakanda-before",
         "mediaTitle": "Come To Wakanda - Before (2018)",
@@ -2982,15 +2942,15 @@ export const timelineEras: EraGroup[] = [
     ]
   },
   {
-    "id": "era-1985-xmen-origins",
-    "title": "-1985 (Earth-10005 / Canadian Rockies)-",
-    "cleanTitle": "1985 (Earth-10005)",
+    "id": "era-_1985_",
+    "title": "-1985-",
+    "cleanTitle": "1985",
     "category": "golden-age",
     "events": [
       {
         "id": "event-1985-xmen-origins-1",
-        "eraId": "era-1985-xmen-origins",
-        "eraTitle": "1985 (Earth-10005)",
+        "eraId": "era-_1985_",
+        "eraTitle": "1985",
         "mediaKey": "x-men-origins-wolverine",
         "mediaTitle": "X-Men Origins: Wolverine (2009)",
         "mediaType": "movie",
@@ -3025,7 +2985,7 @@ export const timelineEras: EraGroup[] = [
             "planet": "Earth-10005",
             "coordinates": [
               51.178,
-              -115.570
+              -115.57
             ],
             "characters": [
               "logan-wolverine",
@@ -3065,19 +3025,11 @@ export const timelineEras: EraGroup[] = [
         "mcuHighlights": [],
         "timelineType": "sacred-616",
         "earthDesignation": "Earth-616 (The Sacred Timeline)"
-      }
-    ]
-  },
-  {
-    "id": "era-1987-xmen-origins",
-    "title": "-1987 (Earth-10005 / Weapon X & Three Mile Island)-",
-    "cleanTitle": "1987 (Earth-10005)",
-    "category": "golden-age",
-    "events": [
+      },
       {
         "id": "event-1987-xmen-origins-weapon-x-1",
-        "eraId": "era-1987-xmen-origins",
-        "eraTitle": "1987 (Earth-10005)",
+        "eraId": "era-_1987_",
+        "eraTitle": "1987",
         "mediaKey": "x-men-origins-wolverine",
         "mediaTitle": "X-Men Origins: Wolverine (2009)",
         "mediaType": "movie",
@@ -3116,7 +3068,7 @@ export const timelineEras: EraGroup[] = [
             "planet": "Earth-10005",
             "coordinates": [
               51.253,
-              -115.570
+              -115.57
             ],
             "characters": [
               "logan-wolverine",
@@ -3128,8 +3080,8 @@ export const timelineEras: EraGroup[] = [
       },
       {
         "id": "event-1987-xmen-origins-three-mile-island-1",
-        "eraId": "era-1987-xmen-origins",
-        "eraTitle": "1987 (Earth-10005)",
+        "eraId": "era-_1987_",
+        "eraTitle": "1987",
         "mediaKey": "x-men-origins-wolverine",
         "mediaTitle": "X-Men Origins: Wolverine (2009)",
         "mediaType": "movie",
@@ -3500,19 +3452,11 @@ export const timelineEras: EraGroup[] = [
         "mcuHighlights": [],
         "timelineType": "sacred-616",
         "earthDesignation": "Earth-616 (The Sacred Timeline)"
-      }
-    ]
-  },
-  {
-    "id": "era-1992-dark-phoenix",
-    "title": "-1992 (Earth-10005 / Dark Phoenix)-",
-    "cleanTitle": "1992 (Earth-10005 / Revised)",
-    "category": "golden-age",
-    "events": [
+      },
       {
         "id": "event-1992-dark-phoenix-1",
-        "eraId": "era-1992-dark-phoenix",
-        "eraTitle": "1992 (Earth-10005 / Revised)",
+        "eraId": "era-_1992_",
+        "eraTitle": "1992",
         "mediaKey": "x-men-dark-phoenix",
         "mediaTitle": "X-Men: Dark Phoenix (2019)",
         "mediaType": "movie",
@@ -3571,7 +3515,7 @@ export const timelineEras: EraGroup[] = [
             "countryOrRealm": "United States",
             "planet": "Earth-10005",
             "coordinates": [
-              41.1220,
+              41.122,
               -73.7949
             ],
             "characters": [
@@ -3589,8 +3533,8 @@ export const timelineEras: EraGroup[] = [
       },
       {
         "id": "event-1992-dark-phoenix-2",
-        "eraId": "era-1992-dark-phoenix",
-        "eraTitle": "1992 (Earth-10005 / Revised)",
+        "eraId": "era-_1992_",
+        "eraTitle": "1992",
         "mediaKey": "x-men-dark-phoenix",
         "mediaTitle": "X-Men: Dark Phoenix (2019)",
         "mediaType": "movie",
@@ -3635,7 +3579,7 @@ export const timelineEras: EraGroup[] = [
             "countryOrRealm": "United States",
             "planet": "Earth-10005",
             "coordinates": [
-              42.000,
+              42,
               -73.875
             ],
             "characters": [
@@ -3654,8 +3598,8 @@ export const timelineEras: EraGroup[] = [
             "countryOrRealm": "Genosha",
             "planet": "Earth-10005",
             "coordinates": [
-              -20.000,
-              57.500
+              -20,
+              57.5
             ],
             "characters": [
               "jean-grey",
@@ -3667,8 +3611,8 @@ export const timelineEras: EraGroup[] = [
       },
       {
         "id": "event-1992-dark-phoenix-3",
-        "eraId": "era-1992-dark-phoenix",
-        "eraTitle": "1992 (Earth-10005 / Revised)",
+        "eraId": "era-_1992_",
+        "eraTitle": "1992",
         "mediaKey": "x-men-dark-phoenix",
         "mediaTitle": "X-Men: Dark Phoenix (2019)",
         "mediaType": "movie",
@@ -3733,8 +3677,8 @@ export const timelineEras: EraGroup[] = [
             "countryOrRealm": "United States",
             "planet": "Earth-10005",
             "coordinates": [
-              41.500,
-              -74.000
+              41.5,
+              -74
             ],
             "characters": [
               "jean-grey",
@@ -3775,19 +3719,11 @@ export const timelineEras: EraGroup[] = [
             ]
           }
         ]
-      }
-    ]
-  },
-  {
-    "id": "era-1992-xmen-tas-1",
-    "title": "-1992 (Earth-92131 / X-Men: The Animated Series S1)-",
-    "cleanTitle": "1992 (Earth-92131 / X-Men TAS)",
-    "category": "golden-age",
-    "events": [
+      },
       {
         "id": "event-1992-tas-night-of-sentinels-1",
-        "eraId": "era-1992-xmen-tas-1",
-        "eraTitle": "1992 (Earth-92131 / X-Men TAS)",
+        "eraId": "era-_1992_",
+        "eraTitle": "1992",
         "mediaKey": "x-men-tas-1",
         "mediaTitle": "X-Men: The Animated Series (Season 1)",
         "mediaType": "series",
@@ -3849,7 +3785,7 @@ export const timelineEras: EraGroup[] = [
             "countryOrRealm": "United States",
             "planet": "Earth-92131",
             "coordinates": [
-              41.1220,
+              41.122,
               -73.7949
             ],
             "characters": [
@@ -3870,7 +3806,7 @@ export const timelineEras: EraGroup[] = [
             "planet": "Earth-92131",
             "coordinates": [
               38.8899,
-              -77.0090
+              -77.009
             ],
             "characters": [
               "cyclops-scott-summers",
@@ -3885,8 +3821,8 @@ export const timelineEras: EraGroup[] = [
       },
       {
         "id": "event-1992-tas-enter-magneto-1",
-        "eraId": "era-1992-xmen-tas-1",
-        "eraTitle": "1992 (Earth-92131 / X-Men TAS)",
+        "eraId": "era-_1992_",
+        "eraTitle": "1992",
         "mediaKey": "x-men-tas-1",
         "mediaTitle": "X-Men: The Animated Series (Season 1)",
         "mediaType": "series",
@@ -3928,8 +3864,8 @@ export const timelineEras: EraGroup[] = [
             "countryOrRealm": "United States",
             "planet": "Earth-92131",
             "coordinates": [
-              28.4880,
-              -80.5770
+              28.488,
+              -80.577
             ],
             "characters": [
               "erik-lehnsherr",
@@ -3945,7 +3881,7 @@ export const timelineEras: EraGroup[] = [
             "planet": "Earth-92131",
             "coordinates": [
               37.5407,
-              -77.4360
+              -77.436
             ],
             "characters": [
               "erik-lehnsherr",
@@ -3957,8 +3893,8 @@ export const timelineEras: EraGroup[] = [
       },
       {
         "id": "event-1992-tas-morlocks-1",
-        "eraId": "era-1992-xmen-tas-1",
-        "eraTitle": "1992 (Earth-92131 / X-Men TAS)",
+        "eraId": "era-_1992_",
+        "eraTitle": "1992",
         "mediaKey": "x-men-tas-1",
         "mediaTitle": "X-Men: The Animated Series (Season 1)",
         "mediaType": "series",
@@ -3998,7 +3934,7 @@ export const timelineEras: EraGroup[] = [
             "planet": "Earth-92131",
             "coordinates": [
               40.7128,
-              -74.0060
+              -74.006
             ],
             "characters": [
               "storm-ororo-munroe",
@@ -4012,8 +3948,8 @@ export const timelineEras: EraGroup[] = [
       },
       {
         "id": "event-1992-tas-genosha-slave-island-1",
-        "eraId": "era-1992-xmen-tas-1",
-        "eraTitle": "1992 (Earth-92131 / X-Men TAS)",
+        "eraId": "era-_1992_",
+        "eraTitle": "1992",
         "mediaKey": "x-men-tas-1",
         "mediaTitle": "X-Men: The Animated Series (Season 1)",
         "mediaType": "series",
@@ -4052,8 +3988,8 @@ export const timelineEras: EraGroup[] = [
             "countryOrRealm": "Genosha",
             "planet": "Earth-92131",
             "coordinates": [
-              -20.2500,
-              57.5500
+              -20.25,
+              57.55
             ],
             "characters": [
               "gambit-remy-lebeau",
@@ -4069,8 +4005,8 @@ export const timelineEras: EraGroup[] = [
             "countryOrRealm": "Canada",
             "planet": "Earth-92131",
             "coordinates": [
-              69.4450,
-              -133.0340
+              69.445,
+              -133.034
             ],
             "characters": [
               "logan-wolverine"
@@ -4081,15 +4017,15 @@ export const timelineEras: EraGroup[] = [
     ]
   },
   {
-    "id": "era-1993-xmen-tas-1",
-    "title": "-1993 (Earth-92131 / X-Men: The Animated Series S1 Finale)-",
-    "cleanTitle": "1993 (Earth-92131 / X-Men TAS)",
+    "id": "era-_1993_",
+    "title": "-1993-",
+    "cleanTitle": "1993",
     "category": "golden-age",
     "events": [
       {
         "id": "event-1993-tas-juggernaut-1",
-        "eraId": "era-1993-xmen-tas-1",
-        "eraTitle": "1993 (Earth-92131 / X-Men TAS)",
+        "eraId": "era-_1993_",
+        "eraTitle": "1993",
         "mediaKey": "x-men-tas-1",
         "mediaTitle": "X-Men: The Animated Series (Season 1)",
         "mediaType": "series",
@@ -4129,7 +4065,7 @@ export const timelineEras: EraGroup[] = [
             "countryOrRealm": "United States",
             "planet": "Earth-92131",
             "coordinates": [
-              41.1220,
+              41.122,
               -73.7949
             ],
             "characters": [
@@ -4144,7 +4080,7 @@ export const timelineEras: EraGroup[] = [
             "countryOrRealm": "United States",
             "planet": "Earth-92131",
             "coordinates": [
-              40.7580,
+              40.758,
               -73.9855
             ],
             "characters": [
@@ -4160,8 +4096,8 @@ export const timelineEras: EraGroup[] = [
       },
       {
         "id": "event-1993-tas-apocalypse-1",
-        "eraId": "era-1993-xmen-tas-1",
-        "eraTitle": "1993 (Earth-92131 / X-Men TAS)",
+        "eraId": "era-_1993_",
+        "eraTitle": "1993",
         "mediaKey": "x-men-tas-1",
         "mediaTitle": "X-Men: The Animated Series (Season 1)",
         "mediaType": "series",
@@ -4202,8 +4138,8 @@ export const timelineEras: EraGroup[] = [
             "countryOrRealm": "Scotland",
             "planet": "Earth-92131",
             "coordinates": [
-              57.7530,
-              -5.7140
+              57.753,
+              -5.714
             ],
             "characters": [
               "rogue-anna-marie",
@@ -4218,7 +4154,7 @@ export const timelineEras: EraGroup[] = [
             "planet": "Earth-92131",
             "coordinates": [
               48.8738,
-              2.2950
+              2.295
             ],
             "characters": [
               "en-sabah-nur-apocalypse",
@@ -4232,8 +4168,8 @@ export const timelineEras: EraGroup[] = [
       },
       {
         "id": "event-1993-tas-days-of-future-past-1",
-        "eraId": "era-1993-xmen-tas-1",
-        "eraTitle": "1993 (Earth-92131 / X-Men TAS)",
+        "eraId": "era-_1993_",
+        "eraTitle": "1993",
         "mediaKey": "x-men-tas-1",
         "mediaTitle": "X-Men: The Animated Series (Season 1)",
         "mediaType": "series",
@@ -4276,7 +4212,7 @@ export const timelineEras: EraGroup[] = [
             "planet": "Earth-92131",
             "coordinates": [
               38.8899,
-              -77.0090
+              -77.009
             ],
             "characters": [
               "bishop-lucas-bishop",
@@ -4291,8 +4227,8 @@ export const timelineEras: EraGroup[] = [
       },
       {
         "id": "event-1993-tas-final-decision-1",
-        "eraId": "era-1993-xmen-tas-1",
-        "eraTitle": "1993 (Earth-92131 / X-Men TAS)",
+        "eraId": "era-_1993_",
+        "eraTitle": "1993",
         "mediaKey": "x-men-tas-1",
         "mediaTitle": "X-Men: The Animated Series (Season 1)",
         "mediaType": "series",
@@ -4338,8 +4274,8 @@ export const timelineEras: EraGroup[] = [
             "countryOrRealm": "United States",
             "planet": "Earth-92131",
             "coordinates": [
-              34.7460,
-              -84.4820
+              34.746,
+              -84.482
             ],
             "characters": [
               "master-mold",
@@ -4361,6 +4297,577 @@ export const timelineEras: EraGroup[] = [
             "characters": [
               "senator-robert-kelly",
               "hank-mccoy"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "event-1993-tas-2-wedding-sinister",
+        "eraId": "era-_1993_",
+        "eraTitle": "1993",
+        "mediaKey": "x-men-tas-2",
+        "mediaTitle": "X-Men: The Animated Series (Season 2)",
+        "mediaType": "series",
+        "mediaPhase": "Marvel Television",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+        "rawClasses": [
+          "x-men-tas-2"
+        ],
+        "rawHtml": "<p>At the Xavier Institute, <strong class=\"cyclops-scott-summers\">Scott Summers</strong> and <strong class=\"jean-grey\">Jean Grey</strong> are married in a joyful ceremony, unaware that a resurrected, psychologically fractured <strong class=\"morph-kevin-sydney\">Morph</strong> is operating under the dark psychic thrall of <strong class=\"mister-sinister-nathaniel-essex\">Mister Sinister</strong>. Infiltrating the mansion in shifting disguises, Morph stokes paranoia among the X-Men while <strong class=\"graydon-creed\">Graydon Creed</strong> and the terrorist hate-group <em>Friends of Humanity</em> orchestrate anti-mutant riots across Manhattan. During their Florida honeymoon, Scott and Jean are ambushed by the Nasty Boys and abducted to an abandoned mental hospital on St. Simons Island, Georgia, where Sinister begins harvesting their mutant genetic code to engineer the ultimate mutant lineage. <strong class=\"logan-wolverine\">Wolverine</strong> and the X-Men storm the facility; Wolverine appeals to Morph's buried humanity while Cyclops unleashes a maximum-optic blast that disintegrates Sinister into a liquid cellular sludge, though Morph flees in unresolved psychological torment.</p>",
+        "paragraphs": [
+          "At the Xavier Institute, <strong class=\"cyclops-scott-summers\">Scott Summers</strong> and <strong class=\"jean-grey\">Jean Grey</strong> are married in a joyful ceremony, unaware that a resurrected, psychologically fractured <strong class=\"morph-kevin-sydney\">Morph</strong> is operating under the dark psychic thrall of <strong class=\"mister-sinister-nathaniel-essex\">Mister Sinister</strong>. Infiltrating the mansion in shifting disguises, Morph stokes paranoia among the X-Men while <strong class=\"graydon-creed\">Graydon Creed</strong> and the terrorist hate-group <em>Friends of Humanity</em> orchestrate anti-mutant riots across Manhattan. During their Florida honeymoon, Scott and Jean are ambushed by the Nasty Boys and abducted to an abandoned mental hospital on St. Simons Island, Georgia, where Sinister begins harvesting their mutant genetic code to engineer the ultimate mutant lineage. <strong class=\"logan-wolverine\">Wolverine</strong> and the X-Men storm the facility; Wolverine appeals to Morph's buried humanity while Cyclops unleashes a maximum-optic blast that disintegrates Sinister into a liquid cellular sludge, though Morph flees in unresolved psychological torment."
+        ],
+        "characters": [
+          "cyclops-scott-summers",
+          "jean-grey",
+          "morph-kevin-sydney",
+          "mister-sinister-nathaniel-essex",
+          "graydon-creed",
+          "logan-wolverine",
+          "charles-xavier",
+          "gambit-remy-lebeau",
+          "rogue-anna-marie"
+        ],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "Wedding of Scott Summers & Jean Grey",
+          "Resurrection & Psychological Trauma of Morph",
+          "Mister Sinister's Summers-Grey Genetic Harvester Facility",
+          "Friends of Humanity Terrorist Riots"
+        ],
+        "locations": [
+          {
+            "name": "Xavier's School for Gifted Youngsters",
+            "cityOrRegion": "Salem Center, Westchester County, New York",
+            "countryOrRealm": "United States",
+            "planet": "Earth-92131",
+            "coordinates": [
+              41.3283,
+              -73.5937
+            ],
+            "characters": [
+              "cyclops-scott-summers",
+              "jean-grey",
+              "morph-kevin-sydney",
+              "charles-xavier"
+            ]
+          },
+          {
+            "name": "Mister Sinister's Subterranean Genetic Lab",
+            "cityOrRegion": "St. Simons Island, Georgia",
+            "countryOrRealm": "United States",
+            "planet": "Earth-92131",
+            "coordinates": [
+              31.135,
+              -81.39
+            ],
+            "characters": [
+              "mister-sinister-nathaniel-essex",
+              "cyclops-scott-summers",
+              "jean-grey",
+              "logan-wolverine"
+            ]
+          },
+          {
+            "name": "The Savage Land",
+            "cityOrRegion": "The Savage Land",
+            "countryOrRealm": "Antarctica (Earth-92131)",
+            "planet": "Earth-92131",
+            "coordinates": [
+              -69.5,
+              -65.5
+            ],
+            "characters": [
+              "charles-xavier",
+              "erik-lehnsherr"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "event-1993-tas-2-shadow-king",
+        "eraId": "era-_1993_",
+        "eraTitle": "1993",
+        "mediaKey": "x-men-tas-2",
+        "mediaTitle": "X-Men: The Animated Series (Season 2)",
+        "mediaType": "series",
+        "mediaPhase": "Marvel Television",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+        "rawClasses": [
+          "x-men-tas-2"
+        ],
+        "rawHtml": "<p>In the Serengeti beneath Mount Kilimanjaro, Kenya, the ancient astral parasite <strong class=\"shadow-king-amahl-farouk\">Shadow King (Amahl Farouk)</strong> breaks free from the Astral Plane and possesses the young mutant Mjnari, godson of <strong class=\"storm-ororo-munroe\">Ororo Munroe (Storm)</strong>. Sensing the spiritual disturbance, Storm travels to East Africa accompanied by <strong class=\"logan-wolverine\">Wolverine</strong> and <strong class=\"rogue-anna-marie\">Rogue</strong>. Storm projects her astral consciousness into the spirit plane to duel Farouk directly, summoning a concentrated atmospheric lightning vortex that purges the demon from Mjnari's body and seals the Shadow King back into the astral depths, securing the sacred balance of the African savannah.</p>",
+        "paragraphs": [
+          "In the Serengeti beneath Mount Kilimanjaro, Kenya, the ancient astral parasite <strong class=\"shadow-king-amahl-farouk\">Shadow King (Amahl Farouk)</strong> breaks free from the Astral Plane and possesses the young mutant Mjnari, godson of <strong class=\"storm-ororo-munroe\">Ororo Munroe (Storm)</strong>. Sensing the spiritual disturbance, Storm travels to East Africa accompanied by <strong class=\"logan-wolverine\">Wolverine</strong> and <strong class=\"rogue-anna-marie\">Rogue</strong>. Storm projects her astral consciousness into the spirit plane to duel Farouk directly, summoning a concentrated atmospheric lightning vortex that purges the demon from Mjnari's body and seals the Shadow King back into the astral depths, securing the sacred balance of the African savannah."
+        ],
+        "characters": [
+          "storm-ororo-munroe",
+          "shadow-king-amahl-farouk",
+          "logan-wolverine",
+          "rogue-anna-marie"
+        ],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "Shadow King's Astral Incursion",
+          "Storm's Mystical Battle at Mount Kilimanjaro",
+          "Purification of Mjnari and the Serengeti"
+        ],
+        "locations": [
+          {
+            "name": "Mount Kilimanjaro & Serengeti Foothills",
+            "cityOrRegion": "Kilimanjaro Region",
+            "countryOrRealm": "Kenya",
+            "planet": "Earth-92131",
+            "coordinates": [
+              -3.0674,
+              37.3556
+            ],
+            "characters": [
+              "storm-ororo-munroe",
+              "shadow-king-amahl-farouk",
+              "logan-wolverine",
+              "rogue-anna-marie"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "event-1993-tas-2-omega-red",
+        "eraId": "era-_1993_",
+        "eraTitle": "1993",
+        "mediaKey": "x-men-tas-2",
+        "mediaTitle": "X-Men: The Animated Series (Season 2)",
+        "mediaType": "series",
+        "mediaPhase": "Marvel Television",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+        "rawClasses": [
+          "x-men-tas-2"
+        ],
+        "rawHtml": "<p>In post-Soviet Moscow, hardline military conspirators revive the lethal Soviet cybernetic mutant <strong class=\"omega-red-arkady-rossovich\">Omega Red (Arkady Rossovich)</strong> from cryostasis to orchestrate a coup and resurrect the USSR. Desperate to protect his family and homeland, <strong class=\"colossus-piotr-rasputin\">Piotr Rasputin (Colossus)</strong> travels to New York to recruit the X-Men. <strong class=\"logan-wolverine\">Wolverine</strong>, <strong class=\"storm-ororo-munroe\">Storm</strong>, and <strong class=\"rogue-anna-marie\">Rogue</strong> accompany Colossus to Russia, infiltrating a fortified missile silo near Siberia where Wolverine battles his old Cold War nemesis. Leveraging Omega Red's dependency on life-force draining, Colossus and Storm supercharge and electrocute Omega Red's Carbonadium tentacles, freezing him in permafrost and saving Piotr's sister Illyana.</p>",
+        "paragraphs": [
+          "In post-Soviet Moscow, hardline military conspirators revive the lethal Soviet cybernetic mutant <strong class=\"omega-red-arkady-rossovich\">Omega Red (Arkady Rossovich)</strong> from cryostasis to orchestrate a coup and resurrect the USSR. Desperate to protect his family and homeland, <strong class=\"colossus-piotr-rasputin\">Piotr Rasputin (Colossus)</strong> travels to New York to recruit the X-Men. <strong class=\"logan-wolverine\">Wolverine</strong>, <strong class=\"storm-ororo-munroe\">Storm</strong>, and <strong class=\"rogue-anna-marie\">Rogue</strong> accompany Colossus to Russia, infiltrating a fortified missile silo near Siberia where Wolverine battles his old Cold War nemesis. Leveraging Omega Red's dependency on life-force draining, Colossus and Storm supercharge and electrocute Omega Red's Carbonadium tentacles, freezing him in permafrost and saving Piotr's sister Illyana."
+        ],
+        "characters": [
+          "omega-red-arkady-rossovich",
+          "colossus-piotr-rasputin",
+          "logan-wolverine",
+          "storm-ororo-munroe",
+          "rogue-anna-marie"
+        ],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "Awakening of Omega Red's Carbonadium Tentacles",
+          "Colossus's Defence of the Russian Federation",
+          "Cold War Weapon X Rivalry in Siberia"
+        ],
+        "locations": [
+          {
+            "name": "Red Square & Kremlin Military District",
+            "cityOrRegion": "Moscow",
+            "countryOrRealm": "Russian Federation",
+            "planet": "Earth-92131",
+            "coordinates": [
+              55.7558,
+              37.6173
+            ],
+            "characters": [
+              "colossus-piotr-rasputin",
+              "omega-red-arkady-rossovich"
+            ]
+          },
+          {
+            "name": "Siberian Cryogenic Bunker & ICBM Silo",
+            "cityOrRegion": "Siberian Federal District",
+            "countryOrRealm": "Russian Federation",
+            "planet": "Earth-92131",
+            "coordinates": [
+              60,
+              100
+            ],
+            "characters": [
+              "logan-wolverine",
+              "omega-red-arkady-rossovich",
+              "storm-ororo-munroe"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "event-1993-tas-2-alpha-flight",
+        "eraId": "era-_1993_",
+        "eraTitle": "1993",
+        "mediaKey": "x-men-tas-2",
+        "mediaTitle": "X-Men: The Animated Series (Season 2)",
+        "mediaType": "series",
+        "mediaPhase": "Marvel Television",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+        "rawClasses": [
+          "x-men-tas-2"
+        ],
+        "rawHtml": "<p><strong class=\"logan-wolverine\">Wolverine</strong> is lured back to the Canadian Rockies by his former squad, <em>Alpha Flight</em>, led by <strong class=\"james-hudson-guardian\">James Hudson (Vindicator/Guardian)</strong>, Heather Hudson, Puck, Sasquatch, Shaman, and Snowbird. Logan discovers that Canadian intelligence agency Department H and General Chasen deceived Alpha Flight into believing Logan had returned voluntarily, secretly plotting to surgically strip the indestructible Adamantium from Wolverine's skeleton to mass-produce cybernetic super-soldiers. Realizing the horrific state betrayal, Hudson turns against Department H command, sabotages the surgical extraction chamber, and aids Logan's escape into the wilderness.</p>",
+        "paragraphs": [
+          "<strong class=\"logan-wolverine\">Wolverine</strong> is lured back to the Canadian Rockies by his former squad, <em>Alpha Flight</em>, led by <strong class=\"james-hudson-guardian\">James Hudson (Vindicator/Guardian)</strong>, Heather Hudson, Puck, Sasquatch, Shaman, and Snowbird. Logan discovers that Canadian intelligence agency Department H and General Chasen deceived Alpha Flight into believing Logan had returned voluntarily, secretly plotting to surgically strip the indestructible Adamantium from Wolverine's skeleton to mass-produce cybernetic super-soldiers. Realizing the horrific state betrayal, Hudson turns against Department H command, sabotages the surgical extraction chamber, and aids Logan's escape into the wilderness."
+        ],
+        "characters": [
+          "logan-wolverine",
+          "james-hudson-guardian"
+        ],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "Department H Adamantium Reclamation Operation",
+          "Wolverine's Showdown with Alpha Flight",
+          "Vindicator's Rebellion Against Department H"
+        ],
+        "locations": [
+          {
+            "name": "Department H Subterranean Defense Complex",
+            "cityOrRegion": "Calgary, Alberta",
+            "countryOrRealm": "Canada",
+            "planet": "Earth-92131",
+            "coordinates": [
+              51.1784,
+              -115.5708
+            ],
+            "characters": [
+              "logan-wolverine",
+              "james-hudson-guardian"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "event-1993-tas-2-thieves-assassins-guild",
+        "eraId": "era-_1993_",
+        "eraTitle": "1993",
+        "mediaKey": "x-men-tas-2",
+        "mediaTitle": "X-Men: The Animated Series (Season 2)",
+        "mediaType": "series",
+        "mediaPhase": "Marvel Television",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+        "rawClasses": [
+          "x-men-tas-2"
+        ],
+        "rawHtml": "<p>In the bayous of New Orleans, <strong class=\"gambit-remy-lebeau\">Remy LeBeau (Gambit)</strong> is summoned back to his homeland when his brother Bobby is kidnapped by the Assassins Guild, led by Remy's former fiancée <strong class=\"bella-donna-boudreaux\">Bella Donna Boudreaux</strong>. The rival Guilds of Thieves and Assassins prepare for their decennial tribute to the mystical immortal alien Benefactress, the <em>X-Ternal (Candra)</em>, who bestows youth and power in exchange for sacred tithes. Accompanied by <strong class=\"rogue-anna-marie\">Rogue</strong>, <strong class=\"jean-grey\">Jean Grey</strong>, and <strong class=\"logan-wolverine\">Wolverine</strong>, Gambit exposes Bella Donna's betrayal, shatters the elixir of immortality, and frees both Guilds from Candra's supernatural dominion.</p>",
+        "paragraphs": [
+          "In the bayous of New Orleans, <strong class=\"gambit-remy-lebeau\">Remy LeBeau (Gambit)</strong> is summoned back to his homeland when his brother Bobby is kidnapped by the Assassins Guild, led by Remy's former fiancée <strong class=\"bella-donna-boudreaux\">Bella Donna Boudreaux</strong>. The rival Guilds of Thieves and Assassins prepare for their decennial tribute to the mystical immortal alien Benefactress, the <em>X-Ternal (Candra)</em>, who bestows youth and power in exchange for sacred tithes. Accompanied by <strong class=\"rogue-anna-marie\">Rogue</strong>, <strong class=\"jean-grey\">Jean Grey</strong>, and <strong class=\"logan-wolverine\">Wolverine</strong>, Gambit exposes Bella Donna's betrayal, shatters the elixir of immortality, and frees both Guilds from Candra's supernatural dominion."
+        ],
+        "characters": [
+          "gambit-remy-lebeau",
+          "bella-donna-boudreaux",
+          "rogue-anna-marie",
+          "jean-grey",
+          "logan-wolverine"
+        ],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "New Orleans Guild War Between Thieves & Assassins",
+          "Gambit & Bella Donna's Past Confrontation",
+          "Shattering of Candra the X-Ternal's Tithe"
+        ],
+        "locations": [
+          {
+            "name": "French Quarter & Bayou Lafourche Caverns",
+            "cityOrRegion": "New Orleans, Louisiana",
+            "countryOrRealm": "United States",
+            "planet": "Earth-92131",
+            "coordinates": [
+              29.9511,
+              -90.0715
+            ],
+            "characters": [
+              "gambit-remy-lebeau",
+              "bella-donna-boudreaux",
+              "rogue-anna-marie"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "event-1993-tas-2-time-fugitives-present",
+        "eraId": "era-_1993_",
+        "eraTitle": "1993",
+        "mediaKey": "x-men-tas-2",
+        "mediaTitle": "X-Men: The Animated Series (Season 2)",
+        "mediaType": "series",
+        "mediaPhase": "Marvel Television",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+        "rawClasses": [
+          "x-men-tas-2"
+        ],
+        "rawHtml": "<p>In Washington D.C., <strong class=\"graydon-creed\">Graydon Creed</strong> and the Friends of Humanity deploy a covert biological weapon engineered by <strong class=\"en-sabah-nur-apocalypse\">Apocalypse</strong> during a Senate mutant hearing, blaming mutantkind for a fatal global plague. Time-traveling warrior <strong class=\"bishop-lucas-bishop\">Bishop</strong> arrives from 2055 to stop the contagion, while cybernetic rebel <strong class=\"cable-nathan-summers\">Cable</strong> arrives from the year 3999 because stopping the plague entirely erases the antibodies necessary for the survival of the Clan Chosen in his future. Cable intentionally infects <strong class=\"logan-wolverine\">Wolverine</strong>, whose mutant healing factor synthesizes the global macro-antigen. Cable then incinerates Apocalypse's central virus canisters, creating the global cure and preserving both Bishop's 2055 and Cable's 3999 timelines.</p>",
+        "paragraphs": [
+          "In Washington D.C., <strong class=\"graydon-creed\">Graydon Creed</strong> and the Friends of Humanity deploy a covert biological weapon engineered by <strong class=\"en-sabah-nur-apocalypse\">Apocalypse</strong> during a Senate mutant hearing, blaming mutantkind for a fatal global plague. Time-traveling warrior <strong class=\"bishop-lucas-bishop\">Bishop</strong> arrives from 2055 to stop the contagion, while cybernetic rebel <strong class=\"cable-nathan-summers\">Cable</strong> arrives from the year 3999 because stopping the plague entirely erases the antibodies necessary for the survival of the Clan Chosen in his future. Cable intentionally infects <strong class=\"logan-wolverine\">Wolverine</strong>, whose mutant healing factor synthesizes the global macro-antigen. Cable then incinerates Apocalypse's central virus canisters, creating the global cure and preserving both Bishop's 2055 and Cable's 3999 timelines."
+        ],
+        "characters": [
+          "bishop-lucas-bishop",
+          "cable-nathan-summers",
+          "en-sabah-nur-apocalypse",
+          "logan-wolverine",
+          "graydon-creed",
+          "cyclops-scott-summers",
+          "jean-grey",
+          "charles-xavier"
+        ],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "The Time Fugitives Paradox (Cable vs. Bishop)",
+          "Apocalypse's Bio-Plague Bio-Weaponry in Washington D.C.",
+          "Wolverine's Healing Factor Macro-Antigen Synthesis",
+          "Convergence of 1993, 2055, and 3999 Timelines"
+        ],
+        "locations": [
+          {
+            "name": "United States Capitol & Trask Bio-Genetics Center",
+            "cityOrRegion": "Washington D.C.",
+            "countryOrRealm": "United States",
+            "planet": "Earth-92131",
+            "coordinates": [
+              38.8899,
+              -77.009
+            ],
+            "characters": [
+              "bishop-lucas-bishop",
+              "cable-nathan-summers",
+              "en-sabah-nur-apocalypse",
+              "logan-wolverine"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "era-_1994_",
+    "title": "-1994-",
+    "cleanTitle": "1994",
+    "category": "golden-age",
+    "events": [
+      {
+        "id": "event-1994-tas-2-rogue-carol-danvers",
+        "eraId": "era-_1994_",
+        "eraTitle": "1994",
+        "mediaKey": "x-men-tas-2",
+        "mediaTitle": "X-Men: The Animated Series (Season 2)",
+        "mediaType": "series",
+        "mediaPhase": "Marvel Television",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+        "rawClasses": [
+          "x-men-tas-2"
+        ],
+        "rawHtml": "<p><strong class=\"rogue-anna-marie\">Rogue</strong> suffers intense psychic convulsions as the suppressed consciousness of <strong class=\"carol-danvers-ms-marvel\">Carol Danvers (Ms. Marvel)</strong> awakens within her mindscape, demanding retribution for Rogue permanently stealing her powers, memories, and physical life years earlier in San Francisco. Goaded by <strong class=\"raven-darkholme\">Mystique</strong> posing as a hospital nurse, Rogue confronts Carol's comatose body at Star Memorial Hospital. <strong class=\"charles-xavier\">Professor Charles Xavier</strong> and <strong class=\"jean-grey\">Jean Grey</strong> enter Rogue's psyche through Cerebro, helping Rogue achieve emotional peace and psychic integration with Carol's lingering spirit.</p>",
+        "paragraphs": [
+          "<strong class=\"rogue-anna-marie\">Rogue</strong> suffers intense psychic convulsions as the suppressed consciousness of <strong class=\"carol-danvers-ms-marvel\">Carol Danvers (Ms. Marvel)</strong> awakens within her mindscape, demanding retribution for Rogue permanently stealing her powers, memories, and physical life years earlier in San Francisco. Goaded by <strong class=\"raven-darkholme\">Mystique</strong> posing as a hospital nurse, Rogue confronts Carol's comatose body at Star Memorial Hospital. <strong class=\"charles-xavier\">Professor Charles Xavier</strong> and <strong class=\"jean-grey\">Jean Grey</strong> enter Rogue's psyche through Cerebro, helping Rogue achieve emotional peace and psychic integration with Carol's lingering spirit."
+        ],
+        "characters": [
+          "rogue-anna-marie",
+          "carol-danvers-ms-marvel",
+          "raven-darkholme",
+          "charles-xavier",
+          "jean-grey"
+        ],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "Rogue's Past Origin & Ms. Marvel Power Theft",
+          "Carol Danvers's Psychic Emergence",
+          "Xavier & Jean Grey Mindscape Integration"
+        ],
+        "locations": [
+          {
+            "name": "Star Memorial Hospital & Golden Gate Overlook",
+            "cityOrRegion": "San Francisco, California",
+            "countryOrRealm": "United States",
+            "planet": "Earth-92131",
+            "coordinates": [
+              37.8199,
+              -122.4783
+            ],
+            "characters": [
+              "rogue-anna-marie",
+              "carol-danvers-ms-marvel",
+              "raven-darkholme"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "event-1994-tas-2-beauty-and-beast",
+        "eraId": "era-_1994_",
+        "eraTitle": "1994",
+        "mediaKey": "x-men-tas-2",
+        "mediaTitle": "X-Men: The Animated Series (Season 2)",
+        "mediaType": "series",
+        "mediaPhase": "Marvel Television",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+        "rawClasses": [
+          "x-men-tas-2"
+        ],
+        "rawHtml": "<p><strong class=\"hank-mccoy\">Dr. Hank McCoy (Beast)</strong> falls in love with blind patient Carly Hampton while performing pioneering genetic laser eye surgery to restore her vision in Manhattan. The terrorist hate-group <em>Friends of Humanity</em>, led by <strong class=\"graydon-creed\">Graydon Creed</strong>, abducts Carly to intimidate mutant sympathizers. <strong class=\"logan-wolverine\">Wolverine</strong> infiltrates the FOH headquarters in Queens, uncovering Creed's deepest genetic secret: Creed is the baseline human son of mutant terrorists <strong class=\"victor-creed\">Sabretooth (Victor Creed)</strong> and <strong class=\"raven-darkholme\">Mystique</strong>. Broadcasting this revelation on live national television, Beast and Wolverine humiliate Creed, rescue Carly, and dismantle the FOH chapter.</p>",
+        "paragraphs": [
+          "<strong class=\"hank-mccoy\">Dr. Hank McCoy (Beast)</strong> falls in love with blind patient Carly Hampton while performing pioneering genetic laser eye surgery to restore her vision in Manhattan. The terrorist hate-group <em>Friends of Humanity</em>, led by <strong class=\"graydon-creed\">Graydon Creed</strong>, abducts Carly to intimidate mutant sympathizers. <strong class=\"logan-wolverine\">Wolverine</strong> infiltrates the FOH headquarters in Queens, uncovering Creed's deepest genetic secret: Creed is the baseline human son of mutant terrorists <strong class=\"victor-creed\">Sabretooth (Victor Creed)</strong> and <strong class=\"raven-darkholme\">Mystique</strong>. Broadcasting this revelation on live national television, Beast and Wolverine humiliate Creed, rescue Carly, and dismantle the FOH chapter."
+        ],
+        "characters": [
+          "hank-mccoy",
+          "graydon-creed",
+          "logan-wolverine",
+          "victor-creed",
+          "raven-darkholme"
+        ],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "Beast's Genetic Eye Restoration Surgery",
+          "Friends of Humanity Terrorist Abduction",
+          "Graydon Creed's Sabretooth/Mystique Parentage Exposed"
+        ],
+        "locations": [
+          {
+            "name": "Manhattan Eye Infirmary & Queens FOH Compound",
+            "cityOrRegion": "New York City, New York",
+            "countryOrRealm": "United States",
+            "planet": "Earth-92131",
+            "coordinates": [
+              40.758,
+              -73.9855
+            ],
+            "characters": [
+              "hank-mccoy",
+              "graydon-creed",
+              "logan-wolverine"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "event-1994-tas-2-mojovision",
+        "eraId": "era-_1994_",
+        "eraTitle": "1994",
+        "mediaKey": "x-men-tas-2",
+        "mediaTitle": "X-Men: The Animated Series (Season 2)",
+        "mediaType": "series",
+        "mediaPhase": "Marvel Television",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+        "rawClasses": [
+          "x-men-tas-2"
+        ],
+        "rawHtml": "<p>While watching television at the mansion, the X-Men are abducted through an extradimensional electro-magnetic vortex into the <em>Mojoverse</em>, an alien television reality ruled by the grotesque tyrant <strong class=\"mojo\">Mojo</strong> and his six-armed sorceress lieutenant Spiral. Forced into televised death-match broadcasts for multiversal television ratings, the X-Men ally with freedom fighter <strong class=\"longshot\">Longshot</strong>. Utilizing Longshot's probability luck field and <strong class=\"logan-wolverine\">Wolverine</strong> and <strong class=\"rogue-anna-marie\">Rogue</strong>'s brute strength, they sabotage Mojo's master broadcast transmitter, collapsing his ratings empire and returning home through the interdimensional rift.</p>",
+        "paragraphs": [
+          "While watching television at the mansion, the X-Men are abducted through an extradimensional electro-magnetic vortex into the <em>Mojoverse</em>, an alien television reality ruled by the grotesque tyrant <strong class=\"mojo\">Mojo</strong> and his six-armed sorceress lieutenant Spiral. Forced into televised death-match broadcasts for multiversal television ratings, the X-Men ally with freedom fighter <strong class=\"longshot\">Longshot</strong>. Utilizing Longshot's probability luck field and <strong class=\"logan-wolverine\">Wolverine</strong> and <strong class=\"rogue-anna-marie\">Rogue</strong>'s brute strength, they sabotage Mojo's master broadcast transmitter, collapsing his ratings empire and returning home through the interdimensional rift."
+        ],
+        "characters": [
+          "mojo",
+          "longshot",
+          "logan-wolverine",
+          "rogue-anna-marie",
+          "cyclops-scott-summers",
+          "storm-ororo-munroe"
+        ],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "Interdimensional Abduction to the Mojoverse",
+          "Mojo's Broadcast Arena Ratings Death-Match",
+          "Longshot's Probability Luck Rebellion"
+        ],
+        "locations": [
+          {
+            "name": "Central Broadcast Arena & Studio City",
+            "cityOrRegion": "Mojoverse Dimension",
+            "countryOrRealm": "Mojoverse",
+            "planet": "Mojoverse",
+            "celestialSystem": "multiverse",
+            "characters": [
+              "mojo",
+              "longshot",
+              "logan-wolverine",
+              "rogue-anna-marie"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "event-1994-tas-2-savage-land-reunion",
+        "eraId": "era-_1994_",
+        "eraTitle": "1994",
+        "mediaKey": "x-men-tas-2",
+        "mediaTitle": "X-Men: The Animated Series (Season 2)",
+        "mediaType": "series",
+        "mediaPhase": "Marvel Television",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+        "rawClasses": [
+          "x-men-tas-2"
+        ],
+        "rawHtml": "<p>Deep within the prehistoric <em>Savage Land</em> in Antarctica, a powerless <strong class=\"charles-xavier\">Professor Charles Xavier</strong> and <strong class=\"erik-lehnsherr\">Magneto</strong> are captured by the mutant bio-vampire <strong class=\"sauron-karl-lykos\">Sauron</strong> and transported to <strong class=\"mister-sinister-nathaniel-essex\">Mister Sinister</strong>'s volcanic genetic citadel. Back in Westchester, Sinister's Nasty Boys and a brainwashed <strong class=\"morph-kevin-sydney\">Morph</strong> systematically incapacitate the remaining X-Men with neural-inhibitor collars. In the Savage Land, <strong class=\"logan-wolverine\">Wolverine</strong> joins jungle lord <strong class=\"ka-zar-kevin-plunder\">Ka-Zar</strong> and Zabu to mount a guerrilla rescue. <strong class=\"cyclops-scott-summers\">Cyclops</strong> manages to break Sinister's psychic grip over Morph; Morph turns a laser cannon onto Sinister while Cyclops unleashes an optic blast that obliterates Sinister's genetic form. The inhibitor generator is destroyed, restoring Xavier and Magneto's powers as Morph departs into the world to heal his fractured soul.</p>",
+        "paragraphs": [
+          "Deep within the prehistoric <em>Savage Land</em> in Antarctica, a powerless <strong class=\"charles-xavier\">Professor Charles Xavier</strong> and <strong class=\"erik-lehnsherr\">Magneto</strong> are captured by the mutant bio-vampire <strong class=\"sauron-karl-lykos\">Sauron</strong> and transported to <strong class=\"mister-sinister-nathaniel-essex\">Mister Sinister</strong>'s volcanic genetic citadel. Back in Westchester, Sinister's Nasty Boys and a brainwashed <strong class=\"morph-kevin-sydney\">Morph</strong> systematically incapacitate the remaining X-Men with neural-inhibitor collars. In the Savage Land, <strong class=\"logan-wolverine\">Wolverine</strong> joins jungle lord <strong class=\"ka-zar-kevin-plunder\">Ka-Zar</strong> and Zabu to mount a guerrilla rescue. <strong class=\"cyclops-scott-summers\">Cyclops</strong> manages to break Sinister's psychic grip over Morph; Morph turns a laser cannon onto Sinister while Cyclops unleashes an optic blast that obliterates Sinister's genetic form. The inhibitor generator is destroyed, restoring Xavier and Magneto's powers as Morph departs into the world to heal his fractured soul."
+        ],
+        "characters": [
+          "charles-xavier",
+          "erik-lehnsherr",
+          "sauron-karl-lykos",
+          "mister-sinister-nathaniel-essex",
+          "morph-kevin-sydney",
+          "ka-zar-kevin-plunder",
+          "logan-wolverine",
+          "cyclops-scott-summers",
+          "jean-grey",
+          "storm-ororo-munroe",
+          "rogue-anna-marie",
+          "gambit-remy-lebeau"
+        ],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "Savage Land Prehistoric War",
+          "Xavier & Magneto Powerless Alliance",
+          "Morph Breaks Sinister's Mind Control & Finds Redemption",
+          "Complete Destruction of Sinister's Savage Land Genetic Citadel"
+        ],
+        "locations": [
+          {
+            "name": "The Savage Land (Sinister's Volcanic Citadel)",
+            "cityOrRegion": "The Savage Land",
+            "countryOrRealm": "Antarctica (Earth-92131)",
+            "planet": "Earth-92131",
+            "coordinates": [
+              -69.5,
+              -65.5
+            ],
+            "characters": [
+              "mister-sinister-nathaniel-essex",
+              "sauron-karl-lykos",
+              "morph-kevin-sydney",
+              "ka-zar-kevin-plunder",
+              "charles-xavier",
+              "erik-lehnsherr",
+              "cyclops-scott-summers",
+              "logan-wolverine"
             ]
           }
         ]
@@ -4872,7 +5379,7 @@ export const timelineEras: EraGroup[] = [
             "planet": "Earth",
             "coordinates": [
               67.5,
-              -35.0
+              -35
             ]
           },
           {
@@ -6779,15 +7286,15 @@ export const timelineEras: EraGroup[] = [
     ]
   },
   {
-    "id": "era-2023-days-of-future-past",
-    "title": "-2023 (Earth-10005 / Sentinel War & Revised Future)-",
-    "cleanTitle": "2023 (Earth-10005 / Dystopia & Reset)",
+    "id": "era-_2023_",
+    "title": "-2023-",
+    "cleanTitle": "2023",
     "category": "future",
     "events": [
       {
         "id": "event-2023-dofp-1",
-        "eraId": "era-2023-days-of-future-past",
-        "eraTitle": "2023 (Earth-10005 / Dystopia & Reset)",
+        "eraId": "era-_2023_",
+        "eraTitle": "2023",
         "mediaKey": "x-men-days-of-future-past",
         "mediaTitle": "X-Men: Days of Future Past (2014)",
         "mediaType": "movie",
@@ -6844,8 +7351,8 @@ export const timelineEras: EraGroup[] = [
       },
       {
         "id": "event-2023-dofp-2",
-        "eraId": "era-2023-days-of-future-past",
-        "eraTitle": "2023 (Earth-10005 / Dystopia & Reset)",
+        "eraId": "era-_2023_",
+        "eraTitle": "2023",
         "mediaKey": "x-men-days-of-future-past",
         "mediaTitle": "X-Men: Days of Future Past (2014)",
         "mediaType": "movie",
@@ -6896,7 +7403,7 @@ export const timelineEras: EraGroup[] = [
             "countryOrRealm": "China / Tibet",
             "planet": "Earth-10005",
             "coordinates": [
-              28.000,
+              28,
               86.852
             ],
             "characters": [
@@ -6917,8 +7424,8 @@ export const timelineEras: EraGroup[] = [
       },
       {
         "id": "event-2023-dofp-3",
-        "eraId": "era-2023-days-of-future-past",
-        "eraTitle": "2023 (Earth-10005 / Dystopia & Reset)",
+        "eraId": "era-_2023_",
+        "eraTitle": "2023",
         "mediaKey": "x-men-days-of-future-past",
         "mediaTitle": "X-Men: Days of Future Past (2014)",
         "mediaType": "movie",
@@ -6974,15 +7481,15 @@ export const timelineEras: EraGroup[] = [
     ]
   },
   {
-    "id": "era-2055-xmen-tas-dofp",
-    "title": "-2055 (Earth-92131 / Days of Future Past Wasteland)-",
-    "cleanTitle": "2055 (Earth-92131 / Dystopia)",
+    "id": "era-_2055_",
+    "title": "-2055-",
+    "cleanTitle": "2055",
     "category": "future",
     "events": [
       {
         "id": "event-2055-tas-dofp-1",
-        "eraId": "era-2055-xmen-tas-dofp",
-        "eraTitle": "2055 (Earth-92131 / Dystopia)",
+        "eraId": "era-_2055_",
+        "eraTitle": "2055",
         "mediaKey": "x-men-tas-1",
         "mediaTitle": "X-Men: The Animated Series (Season 1)",
         "mediaType": "series",
@@ -7023,6 +7530,51 @@ export const timelineEras: EraGroup[] = [
             "characters": [
               "bishop-lucas-bishop",
               "logan-wolverine"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "event-2055-tas-time-fugitives-plague-leap",
+        "eraId": "era-_2055_",
+        "eraTitle": "2055",
+        "mediaKey": "x-men-tas-2",
+        "mediaTitle": "X-Men: The Animated Series (Season 2)",
+        "mediaType": "series",
+        "mediaPhase": "Marvel Television",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+        "rawClasses": [
+          "x-men-tas-2"
+        ],
+        "rawHtml": "<p>In the dystopian future of 2055, <strong class=\"bishop-lucas-bishop\">Bishop</strong> witnesses a catastrophic chronal paradox wave wash over Manhattan: the Sentinel occupation suddenly ceases because the mutant race was completely wiped out by a biological super-plague released in 1993 by the Friends of Humanity and <strong class=\"en-sabah-nur-apocalypse\">Apocalypse</strong>. Realizing that stopping Kelly's assassination created an alternate branch where mutantkind went extinct, Bishop activates Forge's temporal displacement gauntlet and leaps backward through time to 1993 to stop the release of the plague.</p>",
+        "paragraphs": [
+          "In the dystopian future of 2055, <strong class=\"bishop-lucas-bishop\">Bishop</strong> witnesses a catastrophic chronal paradox wave wash over Manhattan: the Sentinel occupation suddenly ceases because the mutant race was completely wiped out by a biological super-plague released in 1993 by the Friends of Humanity and <strong class=\"en-sabah-nur-apocalypse\">Apocalypse</strong>. Realizing that stopping Kelly's assassination created an alternate branch where mutantkind went extinct, Bishop activates Forge's temporal displacement gauntlet and leaps backward through time to 1993 to stop the release of the plague."
+        ],
+        "characters": [
+          "bishop-lucas-bishop",
+          "en-sabah-nur-apocalypse"
+        ],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "2055 Chronal Paradox Wave",
+          "Mutant Bio-Plague Extinction Timeline",
+          "Bishop's Second Temporal Leap to 1993"
+        ],
+        "locations": [
+          {
+            "name": "Ruins of Manhattan & Temporal Resistance Bunker",
+            "cityOrRegion": "New York City, New York",
+            "countryOrRealm": "United States",
+            "planet": "Earth-92131",
+            "coordinates": [
+              40.7128,
+              -74.006
+            ],
+            "characters": [
+              "bishop-lucas-bishop"
             ]
           }
         ]
@@ -7074,14 +7626,14 @@ export const timelineEras: EraGroup[] = [
     ]
   },
   {
-    "id": "era-_c_2400_CE_",
+    "id": "era-_c__2400_C_E__",
     "title": "-c. 2400 C.E.-",
     "cleanTitle": "c. 2400 C.E.",
     "category": "future",
     "events": [
       {
         "id": "event-_c_2400_CE_-1",
-        "eraId": "era-_c_2400_CE_",
+        "eraId": "era-_c__2400_C_E__",
         "eraTitle": "c. 2400 C.E.",
         "mediaKey": "eyes-of-wakanda-i",
         "mediaTitle": "Eyes of Wakanda (Season 1)",
@@ -7130,6 +7682,60 @@ export const timelineEras: EraGroup[] = [
             "orbitType": "GEO",
             "altitudeKm": 35786,
             "celestialSystem": "terrestrial-orbit"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "era-_3999_CE_",
+    "title": "-3999 CE-",
+    "cleanTitle": "3999 CE",
+    "category": "future",
+    "events": [
+      {
+        "id": "event-3999-tas-cable-temporal-dissolution",
+        "eraId": "era-_3999_CE_",
+        "eraTitle": "3999 CE",
+        "mediaKey": "x-men-tas-2",
+        "mediaTitle": "X-Men: The Animated Series (Season 2)",
+        "mediaType": "series",
+        "mediaPhase": "Marvel Television",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+        "rawClasses": [
+          "x-men-tas-2"
+        ],
+        "rawHtml": "<p>In the distant year 3999 CE, <strong class=\"cable-nathan-summers\">Cable (Nathan Summers)</strong> lives in a technologically advanced, harmonious civilization defended by his resistance faction, the <em>Clan Chosen</em>. Suddenly, a devastating temporal wave begins disintegrating the city and Cable's son Tyler. Historical records reveal that Bishop's intervention in 1993—destroying Apocalypse's virus before <strong class=\"logan-wolverine\">Wolverine</strong> could synthesize the macro-antibodies—prevented the mutant genome from developing the global immunity required to survive into the 40th Century. Cable boards his time-vessel and leaps backward through two millennia of time to 1993 to ensure Wolverine is infected and the macro-antigen is created.</p>",
+        "paragraphs": [
+          "In the distant year 3999 CE, <strong class=\"cable-nathan-summers\">Cable (Nathan Summers)</strong> lives in a technologically advanced, harmonious civilization defended by his resistance faction, the <em>Clan Chosen</em>. Suddenly, a devastating temporal wave begins disintegrating the city and Cable's son Tyler. Historical records reveal that Bishop's intervention in 1993—destroying Apocalypse's virus before <strong class=\"logan-wolverine\">Wolverine</strong> could synthesize the macro-antibodies—prevented the mutant genome from developing the global immunity required to survive into the 40th Century. Cable boards his time-vessel and leaps backward through two millennia of time to 1993 to ensure Wolverine is infected and the macro-antigen is created."
+        ],
+        "characters": [
+          "cable-nathan-summers",
+          "logan-wolverine",
+          "en-sabah-nur-apocalypse"
+        ],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "Cable's 40th Century Clan Chosen Civilization",
+          "Macro-Antibody Temporal Dissolution Paradox",
+          "Cable's Time Leap from 3999 to 1993"
+        ],
+        "locations": [
+          {
+            "name": "Clan Chosen High Citadel & Temporal Hangar",
+            "cityOrRegion": "New Hope, 40th Century Earth",
+            "countryOrRealm": "Earth-92131 (Year 3999)",
+            "planet": "Earth-92131",
+            "coordinates": [
+              40.3573,
+              -74.9513
+            ],
+            "characters": [
+              "cable-nathan-summers"
+            ]
           }
         ]
       }

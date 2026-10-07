@@ -92,7 +92,7 @@ export const MediaDetailModal: React.FC = () => {
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md transition-opacity font-din">
+    <div className="fixed inset-0 z-[60] flex items-center justify-center p-4 bg-black/85 backdrop-blur-md transition-opacity font-din">
       <div className="relative w-full max-w-2xl max-h-[90vh] bg-[#0d0d0d] border border-[#27272a] rounded-2xl shadow-2xl p-6 sm:p-8 overflow-y-auto">
         
         {/* Close Button */}

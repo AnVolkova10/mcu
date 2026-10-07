@@ -70,7 +70,7 @@ export const CharacterDrawer: React.FC = () => {
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-end bg-black/80 backdrop-blur-sm transition-opacity">
+    <div className="fixed inset-0 z-[60] flex items-center justify-end bg-black/80 backdrop-blur-sm transition-opacity">
       <div className="relative w-full max-w-lg h-full bg-[#0d0d0d] border-l border-[#262626] shadow-2xl p-6 overflow-y-auto flex flex-col font-din">
         
         {/* Close Button */}

@@ -47,7 +47,7 @@ export const Navbar: React.FC = () => {
   ];
 
   return (
-    <header className="sticky top-0 z-40 w-full bg-[#0d0d0d]/95 backdrop-blur-md border-b border-[#222222] shadow-2xl">
+    <header className="sticky top-0 z-50 w-full bg-[#0d0d0d]/95 backdrop-blur-md border-b border-[#222222] shadow-2xl">
       
       {/* Upper Main Header (Marvel.com Style) */}
       <div className="border-b border-[#1c1c1c] py-2.5 px-4 sm:px-8">
