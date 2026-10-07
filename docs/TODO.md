@@ -79,7 +79,24 @@ Integrar y auditar la totalidad de las 5 series nucleares del Universo Animado d
 
 ---
 
-## 📌 4. Backlog de Ideas & Tareas Pendientes
+## ⭐ 4. Auditoría Integral y Overhaul: Captain Marvel (2019) & Earth-616 Space Stone Arc
+- [x] **Resultado Observable**: Auditoría exhaustiva completada de *Captain Marvel (2019)* en el Sacred Timeline (Earth-616).
+- [x] **Criterios de Aceptación**:
+  - [x] **Dossiers de Personajes y Glows CSS**:
+    - [x] Creados 8 dossiers completos con roles, bios e iconografía de badge: `yon-rogg`, `mar-vell-wendy-lawson`, `maria-rambeau`, `monica-rambeau`, `supreme-intelligence`, `minn-erva`, `korath`, `ronan`.
+    - [x] Definidos los glows respectivos en `src/styles/global.css` (`.yon-rogg`, `.mar-vell-wendy-lawson`, `.maria-rambeau`, `.monica-rambeau`, `.supreme-intelligence`, `.minn-erva`, `.korath`, `.ronan`).
+  - [x] **Eventos Canónicos en Timeline (`src/data/timelineData.ts`)**:
+    - [x] `event-_1989_-1`: Vuelo de prueba del motor de velocidad luz con el Tesseract, muerte de Mar-Vell a manos de Yon-Rogg, absorción de energía cósmica por Carol Danvers, rescate y transformación en Vers. Locación: *Project P.E.G.A.S.U.S. Mojave Crash Range* con coordenadas geográficas precisas. Flag Space Stone activo.
+    - [x] `event-_1995_-1`: Eliminado tag `<h1>` residual y caracteres `\r\n`. Corregida errata de guion ("stro"). Inclusión de los 13 personajes participantes, highlights canónicos y 6 locaciones completas (*Blockbuster LA*, *Project Pegasus Mojave*, *Rambeau Residence New Orleans*, *Mar-Vell's Cloaked Orbital Laboratory*, *Hala Imperial City*, *Torfa Border World Outpost*).
+    - [x] `event-_2018_-4`: Escena post-créditos de alerta con el pager en el New Avengers Facility en Upstate New York con Steve Rogers, Natasha Romanoff, Bruce Banner y Rhodey.
+  - [x] **Cartografía Cósmica y Trayectoria de Infinity Stones (`src/screens/MapScreen.tsx`)**:
+    - [x] Nuevos reinos cósmicos en `COSMIC_REALMS`: *Mar-Vell's Cloaked Orbital Laboratory* (órbita terrestre) y *Planet Hala (Kree Empire Capital)* (espacio profundo).
+    - [x] Trayectoria de la Space Stone (*Tesseract*) expandida a 9 paradas cronológicas: incorpora el laboratorio orbital camuflado (Goose traga el cubo) y el despacho de Nick Fury en S.H.I.E.L.D. (Goose lo regurgita).
+  - [x] Compilación exitosa `npm run build` con 0 errores.
+
+---
+
+## 📌 5. Backlog de Ideas & Tareas Pendientes
 - [ ] Fase 2 Multiverso: Evaluación de *X-Men '97* (Disney+) y *Spider-Man Unlimited* como continuaciones posteriores.
-- [ ] Auditoría de películas live-action de los 90s (*Captain Marvel*, *Blade*) fuera de la burbuja animada de Earth-92131.
+- [ ] Auditoría de películas live-action complementarias de los 90s (*Blade (1998)*) fuera de la burbuja animada de Earth-92131.
 

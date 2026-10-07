@@ -3689,6 +3689,158 @@ export const charactersData: Record<string, Character> = {
     "status": "alive",
     "bio": "The legendary comic creator met by Spider-Man on top of a skyscraper in our real world in the emotional climax of Spider Wars ('Thanks for making me!')."
   },
+  "yon-rogg": {
+    "id": "yon-rogg",
+    "name": "Yon-Rogg",
+    "alias": "Commander Yon-Rogg",
+    "cssClass": "yon-rogg",
+    "color": "#0284c7",
+    "bgBadge": "bg-sky-950/80 hover:bg-sky-900/90",
+    "textBadge": "text-sky-300",
+    "borderBadge": "border-sky-600",
+    "role": "villain",
+    "affiliation": "Kree Imperial Military / Starforce",
+    "groups": [
+      "Starforce",
+      "Kree Empire"
+    ],
+    "originLocation": "Hala (Kree Empire)",
+    "status": "alive",
+    "bio": "Ruthless commander of the Kree Starforce who murdered Mar-Vell, abducted Carol Danvers, and manipulated her memories for six years before being overpowered and sent back to Hala as a warning."
+  },
+  "mar-vell-wendy-lawson": {
+    "id": "mar-vell-wendy-lawson",
+    "name": "Dr. Wendy Lawson / Mar-Vell",
+    "alias": "Mar-Vell",
+    "cssClass": "mar-vell-wendy-lawson",
+    "color": "#38bdf8",
+    "bgBadge": "bg-cyan-950/80 hover:bg-cyan-900/90",
+    "textBadge": "text-cyan-300",
+    "borderBadge": "border-cyan-600",
+    "role": "hero",
+    "affiliation": "Project P.E.G.A.S.U.S. / Skrull Protectors",
+    "groups": [
+      "Kree Renegades",
+      "Project P.E.G.A.S.U.S."
+    ],
+    "originLocation": "Hala (Kree Empire)",
+    "status": "deceased",
+    "bio": "Renegade Kree scientist who rejected imperial warmongering, infiltrated the U.S. Air Force as Dr. Wendy Lawson, and harnessed the Tesseract to build a light-speed engine to relocate Skrull refugees."
+  },
+  "maria-rambeau": {
+    "id": "maria-rambeau",
+    "name": "Maria Rambeau / Photon",
+    "alias": "Photon",
+    "cssClass": "maria-rambeau",
+    "color": "#eab308",
+    "bgBadge": "bg-yellow-950/80 hover:bg-yellow-900/90",
+    "textBadge": "text-yellow-300",
+    "borderBadge": "border-yellow-600",
+    "role": "hero",
+    "affiliation": "US Air Force / S.W.O.R.D.",
+    "groups": [
+      "US Air Force",
+      "S.W.O.R.D. Founders"
+    ],
+    "originLocation": "New Orleans, Louisiana (Earth)",
+    "status": "deceased",
+    "bio": "Ace U.S. Air Force pilot, single mother, and Carol Danvers' closest confidante who piloted the Quadjet during the 1995 Skrull rescue and went on to establish and direct S.W.O.R.D."
+  },
+  "monica-rambeau": {
+    "id": "monica-rambeau",
+    "name": "Monica Rambeau",
+    "alias": "Lieutenant Trouble / Photon",
+    "cssClass": "monica-rambeau",
+    "color": "#f97316",
+    "bgBadge": "bg-orange-950/80 hover:bg-orange-900/90",
+    "textBadge": "text-orange-300",
+    "borderBadge": "border-orange-600",
+    "role": "hero",
+    "affiliation": "S.W.O.R.D. / The Marvels",
+    "groups": [
+      "S.W.O.R.D.",
+      "The Marvels"
+    ],
+    "originLocation": "New Orleans, Louisiana (Earth)",
+    "status": "alive",
+    "bio": "Daughter of Maria Rambeau who as a child chose Carol Danvers' iconic red, blue, and gold suit colors, later gaining energy-spectrum manipulation powers as an adult S.W.O.R.D. captain."
+  },
+  "supreme-intelligence": {
+    "id": "supreme-intelligence",
+    "name": "The Supreme Intelligence",
+    "alias": "Ruler of the Kree",
+    "cssClass": "supreme-intelligence",
+    "color": "#22c55e",
+    "bgBadge": "bg-green-950/80 hover:bg-green-900/90",
+    "textBadge": "text-green-300",
+    "borderBadge": "border-green-600",
+    "role": "villain",
+    "affiliation": "Kree Empire",
+    "groups": [
+      "Kree Leadership",
+      "Artificial Intelligences"
+    ],
+    "originLocation": "Hala (Kree Empire)",
+    "status": "deceased",
+    "bio": "Vast organic artificial intelligence composing the greatest minds of the Kree Empire, appearing to individuals as the person they admire most to maintain imperial control."
+  },
+  "minn-erva": {
+    "id": "minn-erva",
+    "name": "Minn-Erva",
+    "alias": "Minn-Erva",
+    "cssClass": "minn-erva",
+    "color": "#06b6d4",
+    "bgBadge": "bg-cyan-950/80 hover:bg-cyan-900/90",
+    "textBadge": "text-cyan-300",
+    "borderBadge": "border-cyan-600",
+    "role": "villain",
+    "affiliation": "Starforce / Kree Empire",
+    "groups": [
+      "Starforce",
+      "Kree Military"
+    ],
+    "originLocation": "Hala (Kree Empire)",
+    "status": "deceased",
+    "bio": "Elite sniper and geneticist of the Kree Starforce whose disdain for Carol Danvers turned into deadly aerial combat over the Mojave Desert, where her ship was shot down by Maria Rambeau."
+  },
+  "korath": {
+    "id": "korath",
+    "name": "Korath the Pursuer",
+    "alias": "Korath",
+    "cssClass": "korath",
+    "color": "#64748b",
+    "bgBadge": "bg-slate-950/80 hover:bg-slate-900/90",
+    "textBadge": "text-slate-300",
+    "borderBadge": "border-slate-600",
+    "role": "villain",
+    "affiliation": "Starforce / Ronan's Accusers",
+    "groups": [
+      "Starforce",
+      "Accusers"
+    ],
+    "originLocation": "Hala (Kree Empire)",
+    "status": "deceased",
+    "bio": "Cybernetically augmented Starforce combatant and loyal warrior who fought alongside Carol Danvers in 1995 before defecting to Ronan the Accuser in 2014."
+  },
+  "ronan": {
+    "id": "ronan",
+    "name": "Ronan the Accuser",
+    "alias": "The Accuser",
+    "cssClass": "ronan",
+    "color": "#0284c7",
+    "bgBadge": "bg-sky-950/80 hover:bg-sky-900/90",
+    "textBadge": "text-sky-300",
+    "borderBadge": "border-sky-600",
+    "role": "villain",
+    "affiliation": "Kree Empire / Accusers",
+    "groups": [
+      "Accusers",
+      "Kree Military"
+    ],
+    "originLocation": "Hala (Kree Empire)",
+    "status": "deceased",
+    "bio": "Radical Kree military warlord and judicial Accuser who commanded ballistic orbital bombardments against Skrulls in 1995 before rebelling against the Nova Empire peace accord in 2014."
+  }
 };
 
 export const allCharacters: Character[] = Object.values(charactersData);

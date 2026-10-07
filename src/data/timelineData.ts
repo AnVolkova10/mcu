@@ -3232,21 +3232,41 @@ export const timelineEras: EraGroup[] = [
         "rawClasses": [
           "captain-marvel-1"
         ],
-        "rawHtml": "<p>\r\n                        <strong class=\"captain-marvel presumably-dead\">Carol Danvers</strong> dies in crash with <strong\r\n                            class=\"secundary dead\">Mar-Vell</strong> killed by <strong class=\"enemy\">Yon-Rogg</strong>\r\n                        who\r\n                        kidnaps Carol with no memory.\r\n                    </p>",
+        "rawHtml": "<p>Under the auspices of joint USAF-NASA initiative Project P.E.G.A.S.U.S., renegade Kree scientist <strong class=\"mar-vell-wendy-lawson\">Dr. Wendy Lawson (Mar-Vell)</strong> conducts a secret test flight of an experimental sub-orbital light-speed engine powered directly by the cosmic energy of the <strong class=\"tesseract\">Tesseract (Space Stone)</strong>, piloted by ace Air Force Captain <strong class=\"carol-danvers\">Carol Danvers</strong>. Intercepted by a Kree scout vessel, the experimental jet is shot down over the Mojave Desert. Kree Commander <strong class=\"yon-rogg\">Yon-Rogg</strong> executes Lawson on the crash site to secure the core. Refusing to yield the technology, Danvers destroys the engine with her service pistol, <strong class=\"mcu\">absorbing the catastrophic Space Stone explosion into her cellular matrix</strong>. Surviving with superhuman cosmic vitality but total retrograde amnesia, Carol is abducted by Yon-Rogg to Hala, infused with Kree blood, and refashioned as Starforce warrior 'Vers'.</p>",
         "paragraphs": [
-          "<strong class=\"captain-marvel presumably-dead\">Carol Danvers</strong> dies in crash with <strong class=\"secundary dead\">Mar-Vell</strong> killed by <strong class=\"enemy\">Yon-Rogg</strong> who kidnaps Carol with no memory."
+          "Under the auspices of joint USAF-NASA initiative Project P.E.G.A.S.U.S., renegade Kree scientist <strong class=\"mar-vell-wendy-lawson\">Dr. Wendy Lawson (Mar-Vell)</strong> conducts a secret test flight of an experimental sub-orbital light-speed engine powered directly by the cosmic energy of the <strong class=\"tesseract\">Tesseract (Space Stone)</strong>, piloted by ace Air Force Captain <strong class=\"carol-danvers\">Carol Danvers</strong>. Intercepted by a Kree scout vessel, the experimental jet is shot down over the Mojave Desert. Kree Commander <strong class=\"yon-rogg\">Yon-Rogg</strong> executes Lawson on the crash site to secure the core. Refusing to yield the technology, Danvers destroys the engine with her service pistol, <strong class=\"mcu\">absorbing the catastrophic Space Stone explosion into her cellular matrix</strong>. Surviving with superhuman cosmic vitality but total retrograde amnesia, Carol is abducted by Yon-Rogg to Hala, infused with Kree blood, and refashioned as Starforce warrior 'Vers'."
         ],
         "characters": [
-          "carol-danvers"
+          "carol-danvers",
+          "mar-vell-wendy-lawson",
+          "yon-rogg"
         ],
-        "stones": [],
+        "stones": [
+          "space"
+        ],
         "deaths": [
-          "Carol Danvers",
           "Mar-Vell"
         ],
-        "mcuHighlights": [],
+        "mcuHighlights": [
+          "Project P.E.G.A.S.U.S. Light-Speed Test Flight",
+          "Tesseract / Space Stone Energy Absorption",
+          "Carol Danvers Rebirth as Starforce Operative Vers"
+        ],
         "timelineType": "sacred-616",
-        "earthDesignation": "Earth-616 (The Sacred Timeline)"
+        "earthDesignation": "Earth-616 (The Sacred Timeline)",
+        "locations": [
+          {
+            "name": "Project P.E.G.A.S.U.S. Mojave Crash Range",
+            "cityOrRegion": "Mojave Desert, California",
+            "countryOrRealm": "United States",
+            "planet": "Earth",
+            "celestialSystem": "solar-system",
+            "coordinates": [
+              35.011,
+              -115.473
+            ]
+          }
+        ]
       },
       {
         "id": "event-_1989_-2",
@@ -5707,33 +5727,98 @@ export const timelineEras: EraGroup[] = [
         "rawClasses": [
           "captain-marvel-1"
         ],
-        "rawHtml": "<h1>Captain Marvel <em>(2019)</em></h1>\r\n                    <p>\r\n                        On the <em>Kree Empire</em>'s capital planet of Hala, <em>Starforce</em> member <strong\r\n                            class=\"captain-marvel\">Vers</strong> suffers from amnesia and recurring nightmares.\r\n                        <strong class=\"enemy\">Yon-Rogg</strong>, her mentor and commander, trains her to\r\n                        control her abilities while the <strong class=\"enemy\">Supreme Intelligence</strong>, the A.I.\r\n                        that\r\n                        rules the Kree, urges her to keep her emotions in check. Vers is captured by Skrull commander\r\n                        <strong class=\"talos\">Talos</strong>. Her fellows, <strong class=\"enemy\">Korath</strong> as one\r\n                        of\r\n                        them, couldn't reach her.\r\n                    </p>\r\n                    <p>\r\n                        Vers escapes and crash-lands in Los Angeles. Her presence\r\n                        attracts <em>S.H.I.E.L.D.</em> agents <strong class=\"fury\">Nick Fury</strong> and <strong\r\n                            class=\"coulson\">Phil Coulson</strong>, whose investigation is interrupted by a Skrull\r\n                        attack. In\r\n                        the <em>installation Project Pegasus</em> at a <em>U.S. Air Force</em> base. They discover Vers\r\n                        was\r\n                        a pilot presumed to have died in 1989 while testing an <strong>experimental light-speed\r\n                            engine</strong> designed by <strong class=\"secundary\">Dr. Wendy Lawson</strong>, whom Vers\r\n                        recognizes as the woman from her nightmares. They escape with a cat named <strong\r\n                            class=\"goose\">Goose</strong>. They fly to Louisiana to meet former pilot <strong\r\n                            class=\"maria-rambeau\">Maria Rambeau</strong>, the last person to see Vers and Lawson alive.\r\n                        Rambeau and her daughter <strong class=\"monica-rambeau\">Monica</strong> reveal that Vers is\r\n                        Carol\r\n                        Danvers, who was once like family to them. Talos, arriving unarmed, explains that the Skrulls\r\n                        are\r\n                        refugees searching for a new home and that Lawson was Mar-Vell, a renegade Kree scientist\r\n                        helping\r\n                        them. Talos plays a recovered recording from Lawson's jet, prompting Danvers to remember the\r\n                        crash:\r\n                        Yon-Rogg killed Lawson to prevent her from stro before the Kree could recover it.\r\n                        <strong>Destroying\r\n                            the engine herself</strong>, Danvers <strong class=\"mcu\">absorbed the energy from the\r\n                            ensuing\r\n                            explosion</strong>, <strong>gaining powers</strong> but losing her memory.\r\n                    </p>\r\n                    <p>\r\n                        Danvers, Talos, Fury, and Rambeau locate Lawson's cloaked laboratory orbiting Earth, where\r\n                        Lawson\r\n                        hid several Skrulls,\r\n                        including Talos' family, and the <strong class=\"tesseract\">Tesseract</strong>, the <strong>power\r\n                            source of\r\n                            Lawson's engine</strong>. There, Danvers is captured by Starforce and interfaces with the\r\n                        Supreme Intelligence. Danvers removes the <strong>Kree implant</strong> that suppressed her\r\n                        powers\r\n                        during their conversation, allowing her to reach her <strong>full potential</strong>. In the\r\n                        subsequent battle, Fury retrieves Goose, who is revealed to be an <strong class=\"goose\">alien\r\n                            Flerken</strong>, he <strong>swallows the Tesseract</strong> and scratches Fury's eye.\r\n                        Danvers\r\n                        destroys a Kree bomber, forcing Kree officer <strong class=\"enemy\">Ronan the Accuser</strong>\r\n                        and\r\n                        his squadron to retreat before overpowering Yon-Rogg on Earth and sending him back to Hala with\r\n                        a\r\n                        warning to the Supreme Intelligence. Danvers departs to help the Skrulls find a new homeworld,\r\n                        leaving Fury a <strong class=\"mcu\">modified pager to contact her in an emergency</strong>.\r\n                    </p>\r\n                    <p>\r\n                        Meanwhile, Fury <strong class=\"mcu\">drafts an initiative</strong> to locate heroes like Danvers,\r\n                        naming\r\n                        it after her Air Force call sign, <strong class=\"mcu\">\"Avenger\".</strong> In another time and\r\n                        alone,\r\n                        Goose climbs onto Fury's desk and <strong class=\"mcu\">regurgitates the</strong> <strong\r\n                            class=\"tesseract\">Tesseract</strong>.\r\n                    </p>",
+        "rawHtml": "<p>On the Kree capital planet of Hala, Starforce warrior <strong class=\"captain-marvel\">Vers</strong> trains under commander <strong class=\"yon-rogg\">Yon-Rogg</strong> while suppressed by the organic AI <strong class=\"supreme-intelligence\">Supreme Intelligence</strong>. During an extraction mission on border world Torfa, Vers is captured by Skrull commander <strong class=\"talos\">Talos</strong>, who probes her subconscious for memory coordinates of an experimental light-speed engine on Earth.</p><p>Escaping Kree custody, Vers crash-lands into a Blockbuster Video store in Los Angeles. Her presence attracts S.H.I.E.L.D. agents <strong class=\"fury\">Nick Fury</strong> and <strong class=\"coulson\">Phil Coulson</strong>. Infiltrating the underground Project P.E.G.A.S.U.S. facility in the Mojave Desert, Vers and Fury discover she was Air Force test pilot Carol Danvers, presumed dead since 1989 alongside Dr. Wendy Lawson. Accompanied by ginger cat <strong class=\"goose\">Goose</strong>, they escape aboard a Quadjet to Louisiana to meet veteran pilot <strong class=\"maria-rambeau\">Maria Rambeau</strong> and young <strong class=\"monica-rambeau\">Monica</strong>, who restore Carol's memories.</p><p>Talos arrives unarmed, revealing that Lawson was renegade Kree scientist Mar-Vell and that the Skrulls are displaced refugees fleeing Kree genocide. Using Lawson's coordinates, Danvers, Fury, Rambeau, and Talos board the Quadjet and dock with <strong class=\"mcu\">Mar-Vell's cloaked orbital laboratory</strong> hidden in Earth's orbit, discovering surviving Skrull families and the <strong class=\"tesseract\">Tesseract</strong>.</p><p>Starforce ambushes the station. Overcoming the Supreme Intelligence's psychic suppression and extracting her photon inhibitor implant, Danvers unlocks her full <strong>Binary cosmic potential</strong>. Goose reveals itself as an alien <strong>Flerken</strong>, swallowing the Tesseract and blinding Fury's left eye. Danvers obliterates the Kree ballistic warheads sent by <strong class=\"ronan\">Ronan the Accuser</strong>, subdues Yon-Rogg, and exiles him back to Hala. Leaving Fury a <strong class=\"mcu\">modified emergency transmitter pager</strong>, Carol departs for the stars to find the Skrulls a permanent homeworld. Inspired, Fury drafts the <strong>Avengers Initiative</strong>. Months later in his office, Goose regurgitates the Tesseract onto Fury's desk.</p>",
         "paragraphs": [
-          "On the <em>Kree Empire</em>'s capital planet of Hala, <em>Starforce</em> member <strong class=\"captain-marvel\">Vers</strong> suffers from amnesia and recurring nightmares. <strong class=\"enemy\">Yon-Rogg</strong>, her mentor and commander, trains her to control her abilities while the <strong class=\"enemy\">Supreme Intelligence</strong>, the A.I. that rules the Kree, urges her to keep her emotions in check. Vers is captured by Skrull commander <strong class=\"talos\">Talos</strong>. Her fellows, <strong class=\"enemy\">Korath</strong> as one of them, couldn't reach her.",
-          "Vers escapes and crash-lands in Los Angeles. Her presence attracts <em>S.H.I.E.L.D.</em> agents <strong class=\"fury\">Nick Fury</strong> and <strong class=\"coulson\">Phil Coulson</strong>, whose investigation is interrupted by a Skrull attack. In the <em>installation Project Pegasus</em> at a <em>U.S. Air Force</em> base. They discover Vers was a pilot presumed to have died in 1989 while testing an <strong>experimental light-speed engine</strong> designed by <strong class=\"secundary\">Dr. Wendy Lawson</strong>, whom Vers recognizes as the woman from her nightmares. They escape with a cat named <strong class=\"goose\">Goose</strong>. They fly to Louisiana to meet former pilot <strong class=\"maria-rambeau\">Maria Rambeau</strong>, the last person to see Vers and Lawson alive. Rambeau and her daughter <strong class=\"monica-rambeau\">Monica</strong> reveal that Vers is Carol Danvers, who was once like family to them. Talos, arriving unarmed, explains that the Skrulls are refugees searching for a new home and that Lawson was Mar-Vell, a renegade Kree scientist helping them. Talos plays a recovered recording from Lawson's jet, prompting Danvers to remember the crash: Yon-Rogg killed Lawson to prevent her from stro before the Kree could recover it. <strong>Destroying the engine herself</strong>, Danvers <strong class=\"mcu\">absorbed the energy from the ensuing explosion</strong>, <strong>gaining powers</strong> but losing her memory.",
-          "Danvers, Talos, Fury, and Rambeau locate Lawson's cloaked laboratory orbiting Earth, where Lawson hid several Skrulls, including Talos' family, and the <strong class=\"tesseract\">Tesseract</strong>, the <strong>power source of Lawson's engine</strong>. There, Danvers is captured by Starforce and interfaces with the Supreme Intelligence. Danvers removes the <strong>Kree implant</strong> that suppressed her powers during their conversation, allowing her to reach her <strong>full potential</strong>. In the subsequent battle, Fury retrieves Goose, who is revealed to be an <strong class=\"goose\">alien Flerken</strong>, he <strong>swallows the Tesseract</strong> and scratches Fury's eye. Danvers destroys a Kree bomber, forcing Kree officer <strong class=\"enemy\">Ronan the Accuser</strong> and his squadron to retreat before overpowering Yon-Rogg on Earth and sending him back to Hala with a warning to the Supreme Intelligence. Danvers departs to help the Skrulls find a new homeworld, leaving Fury a <strong class=\"mcu\">modified pager to contact her in an emergency</strong>.",
-          "Meanwhile, Fury <strong class=\"mcu\">drafts an initiative</strong> to locate heroes like Danvers, naming it after her Air Force call sign, <strong class=\"mcu\">\"Avenger\".</strong> In another time and alone, Goose climbs onto Fury's desk and <strong class=\"mcu\">regurgitates the</strong> <strong class=\"tesseract\">Tesseract</strong>."
+          "On the Kree capital planet of Hala, Starforce warrior <strong class=\"captain-marvel\">Vers</strong> trains under commander <strong class=\"yon-rogg\">Yon-Rogg</strong> while suppressed by the organic AI <strong class=\"supreme-intelligence\">Supreme Intelligence</strong>. During an extraction mission on border world Torfa, Vers is captured by Skrull commander <strong class=\"talos\">Talos</strong>, who probes her subconscious for memory coordinates of an experimental light-speed engine on Earth.",
+          "Escaping Kree custody, Vers crash-lands into a Blockbuster Video store in Los Angeles. Her presence attracts S.H.I.E.L.D. agents <strong class=\"fury\">Nick Fury</strong> and <strong class=\"coulson\">Phil Coulson</strong>. Infiltrating the underground Project P.E.G.A.S.U.S. facility in the Mojave Desert, Vers and Fury discover she was Air Force test pilot Carol Danvers, presumed dead since 1989 alongside Dr. Wendy Lawson. Accompanied by ginger cat <strong class=\"goose\">Goose</strong>, they escape aboard a Quadjet to Louisiana to meet veteran pilot <strong class=\"maria-rambeau\">Maria Rambeau</strong> and young <strong class=\"monica-rambeau\">Monica</strong>, who restore Carol's memories.",
+          "Talos arrives unarmed, revealing that Lawson was renegade Kree scientist Mar-Vell and that the Skrulls are displaced refugees fleeing Kree genocide. Using Lawson's coordinates, Danvers, Fury, Rambeau, and Talos board the Quadjet and dock with <strong class=\"mcu\">Mar-Vell's cloaked orbital laboratory</strong> hidden in Earth's orbit, discovering surviving Skrull families and the <strong class=\"tesseract\">Tesseract</strong>.",
+          "Starforce ambushes the station. Overcoming the Supreme Intelligence's psychic suppression and extracting her photon inhibitor implant, Danvers unlocks her full Binary cosmic potential. Goose reveals itself as an alien Flerken, swallowing the Tesseract and blinding Fury's left eye. Danvers obliterates the Kree ballistic warheads sent by Ronan the Accuser, subdues Yon-Rogg, and exiles him back to Hala. Leaving Fury a modified emergency transmitter pager, Carol departs for the stars to find the Skrulls a permanent homeworld. Inspired, Fury drafts the Avengers Initiative. Months later in his office, Goose regurgitates the Tesseract onto Fury's desk."
         ],
         "characters": [
           "carol-danvers",
-          "talos",
           "fury",
+          "talos",
           "coulson",
-          "goose"
+          "goose",
+          "yon-rogg",
+          "mar-vell-wendy-lawson",
+          "maria-rambeau",
+          "monica-rambeau",
+          "supreme-intelligence",
+          "minn-erva",
+          "korath",
+          "ronan"
         ],
         "stones": [
           "space"
         ],
-        "deaths": [],
+        "deaths": [
+          "Minn-Erva"
+        ],
         "mcuHighlights": [
-          "absorbed the energy from the\r\n                            ensuing\r\n                            explosion",
-          "modified pager to contact her in an emergency",
-          "drafts an initiative",
-          "\"Avenger\".",
-          "regurgitates the"
+          "Carol Danvers Binary Cosmic Power Awakening",
+          "Discovery of Mar-Vell's Cloaked Orbital Laboratory",
+          "Goose the Flerken Swallows the Tesseract",
+          "Creation of the Avengers Initiative & Emergency Pager"
         ],
         "timelineType": "sacred-616",
-        "earthDesignation": "Earth-616 (The Sacred Timeline)"
+        "earthDesignation": "Earth-616 (The Sacred Timeline)",
+        "locations": [
+          {
+            "name": "Blockbuster Video Crash Site & Metro Transit",
+            "cityOrRegion": "Los Angeles, California",
+            "countryOrRealm": "United States",
+            "planet": "Earth",
+            "celestialSystem": "solar-system",
+            "coordinates": [
+              34.0522,
+              -118.2437
+            ]
+          },
+          {
+            "name": "Project P.E.G.A.S.U.S. Joint Dark Energy Facility",
+            "cityOrRegion": "Mojave Desert, California",
+            "countryOrRealm": "United States",
+            "planet": "Earth",
+            "celestialSystem": "solar-system",
+            "coordinates": [
+              35.011,
+              -115.473
+            ]
+          },
+          {
+            "name": "Rambeau Residence & Louisiana Bayou",
+            "cityOrRegion": "New Orleans, Louisiana",
+            "countryOrRealm": "United States",
+            "planet": "Earth",
+            "celestialSystem": "solar-system",
+            "coordinates": [
+              29.9511,
+              -90.0715
+            ]
+          },
+          {
+            "name": "Mar-Vell's Cloaked Orbital Laboratory",
+            "cityOrRegion": "Low Earth Orbit",
+            "countryOrRealm": "Space",
+            "planet": "Earth",
+            "celestialSystem": "terrestrial-orbit"
+          },
+          {
+            "name": "Hala Imperial City",
+            "cityOrRegion": "Kree Imperium",
+            "countryOrRealm": "Kree Empire",
+            "planet": "Hala",
+            "celestialSystem": "deep-space"
+          },
+          {
+            "name": "Torfa Border World Outpost",
+            "cityOrRegion": "Torfa System",
+            "countryOrRealm": "Torfa",
+            "planet": "Torfa",
+            "celestialSystem": "deep-space"
+          }
+        ]
       },
       {
         "id": "event-_1995_-2",
@@ -8928,20 +9013,38 @@ export const timelineEras: EraGroup[] = [
         "rawClasses": [
           "captain-marvel-1"
         ],
-        "rawHtml": "<p>\r\n                        The <strong class=\"mcu\">activated pager</strong> is being monitored by <em>the Avengers</em>\r\n                        when\r\n                        <strong class=\"captain-marvel\">Danvers</strong> appears.\r\n                    </p>",
+        "rawHtml": "<p>In the catastrophic immediate aftermath of Thanos's Decimation, the surviving Avengers—<strong class=\"captain-america\">Steve Rogers</strong>, <strong class=\"black-widow\">Natasha Romanoff</strong>, <strong class=\"hulk\">Bruce Banner</strong>, and <strong class=\"war-machine\">James Rhodes</strong>—monitor Nick Fury's recovered cosmic transmitter pager as its signal battery suddenly terminates. Turning around in the central communications laboratory of the New Avengers Facility, <strong class=\"captain-marvel\">Carol Danvers</strong> abruptly materializes via photon light-speed, asking: <em>'Where's Fury?'</em></p>",
         "paragraphs": [
-          "The <strong class=\"mcu\">activated pager</strong> is being monitored by <em>the Avengers</em> when <strong class=\"captain-marvel\">Danvers</strong> appears."
+          "In the catastrophic immediate aftermath of Thanos's Decimation, the surviving Avengers—<strong class=\"captain-america\">Steve Rogers</strong>, <strong class=\"black-widow\">Natasha Romanoff</strong>, <strong class=\"hulk\">Bruce Banner</strong>, and <strong class=\"war-machine\">James Rhodes</strong>—monitor Nick Fury's recovered cosmic transmitter pager as its signal battery suddenly terminates. Turning around in the central communications laboratory of the New Avengers Facility, <strong class=\"captain-marvel\">Carol Danvers</strong> abruptly materializes via photon light-speed, asking: 'Where's Fury?'"
         ],
         "characters": [
-          "carol-danvers"
+          "carol-danvers",
+          "steve-rogers",
+          "black-widow",
+          "hulk",
+          "war-machine"
         ],
         "stones": [],
         "deaths": [],
         "mcuHighlights": [
-          "activated pager"
+          "Carol Danvers Returns to Earth Post-Snap",
+          "Activation of Nick Fury's Transmitter Pager"
         ],
         "timelineType": "sacred-616",
-        "earthDesignation": "Earth-616 (The Sacred Timeline)"
+        "earthDesignation": "Earth-616 (The Sacred Timeline)",
+        "locations": [
+          {
+            "name": "New Avengers Facility Central Lab",
+            "cityOrRegion": "Upstate New York",
+            "countryOrRealm": "United States",
+            "planet": "Earth",
+            "celestialSystem": "solar-system",
+            "coordinates": [
+              41.3500,
+              -73.9500
+            ]
+          }
+        ]
       }
     ]
   },

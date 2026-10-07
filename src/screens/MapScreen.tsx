@@ -215,16 +215,39 @@ const STONE_TRAJECTORIES: Record<string, StoneTrajectory> = {
       },
       {
         order: 5,
-        locationName: 'Project P.E.G.A.S.U.S. Joint Dark Energy Facility',
+        locationName: 'Project P.E.G.A.S.U.S. Mojave Facility',
         regionAndCountry: 'Mojave Desert, California',
-        era: '1995 / 2012',
-        vessel: 'Containment Vault',
+        era: '1989 / 1995',
+        vessel: 'Experimental Light-Speed Engine Core',
         coordinates: [35.011, -115.473],
-        description: 'Wendy Lawson & Dr. Selvig experiment on light-speed energy; Loki opens a portal to Earth.',
-        media: 'Captain Marvel / The Avengers'
+        description: 'Dr. Wendy Lawson powers light-speed engine tests with the Tesseract; Carol Danvers absorbs core energy during the 1989 crash.',
+        media: 'Captain Marvel',
+        eventId: 'event-_1989_-1'
       },
       {
         order: 6,
+        locationName: "Mar-Vell's Cloaked Orbital Laboratory",
+        regionAndCountry: 'Low Earth Orbit (Atmospheric Apex)',
+        era: '1995',
+        vessel: 'Lunchbox Vault / Goose the Flerken',
+        coordinates: [29.9511, -90.0715],
+        description: 'Hidden in cloaked orbit protecting Skrull refugees; Goose the Flerken swallows the Tesseract whole during the Starforce ambush.',
+        media: 'Captain Marvel',
+        eventId: 'event-_1995_-1'
+      },
+      {
+        order: 7,
+        locationName: "S.H.I.E.L.D. Headquarters (Triskelion / Fury's Office)",
+        regionAndCountry: 'Washington, D.C., United States',
+        era: '1995',
+        vessel: "Goose's Stomach / S.H.I.E.L.D. Custody",
+        coordinates: [38.8951, -77.0364],
+        description: "Months after Danvers departs, Goose regurgitates the Tesseract directly onto Director Nick Fury's desk, returning it to S.H.I.E.L.D. custody.",
+        media: 'Captain Marvel',
+        eventId: 'event-_1995_-1'
+      },
+      {
+        order: 8,
         locationName: 'Stark Tower (Battle of New York)',
         regionAndCountry: 'Manhattan, New York City',
         era: '2012',
@@ -234,7 +257,7 @@ const STONE_TRAJECTORIES: Record<string, StoneTrajectory> = {
         media: 'The Avengers'
       },
       {
-        order: 7,
+        order: 9,
         locationName: 'Wakanda Battlefield',
         regionAndCountry: 'Birnin Zana, Wakanda',
         era: '2018',
@@ -532,8 +555,20 @@ export const HISTORICAL_STONE_SNAPSHOTS: HistoricalStoneSnapshot[] = [
     locationName: 'Joint Dark Energy Facility',
     regionAndCountry: 'Mojave Desert, California',
     bearer: 'Dr. Wendy Lawson (Mar-Vell) / Nick Fury / Dr. Erik Selvig',
-    yearRange: [1995, 2011],
+    yearRange: [1989, 2011],
     description: 'Researched for light-speed engine propulsion and energy extraction.'
+  },
+  {
+    stoneId: 'space-stone',
+    name: 'Space Stone (Tesseract)',
+    vessel: 'Goose the Flerken / S.H.I.E.L.D. Custody',
+    colorHex: '#38bdf8',
+    coordinates: [38.8951, -77.0364],
+    locationName: "S.H.I.E.L.D. Headquarters (Director's Office)",
+    regionAndCountry: 'Washington, D.C.',
+    bearer: 'Goose the Flerken / Nick Fury',
+    yearRange: [1995, 1995],
+    description: 'Goose regurgitates the swallowed Tesseract onto Nick Fury\'s desk.'
   },
   {
     stoneId: 'space-stone',
@@ -949,6 +984,25 @@ export const COSMIC_REALMS: CosmicRealm[] = [
       { title: 'S.A.B.E.R. Space Station Operations & Flerken Evacuation', era: '2026', media: 'The Marvels' }
     ]
   },
+  {
+    id: 'mar-vell-orbital-lab',
+    name: "Mar-Vell's Cloaked Orbital Laboratory",
+    type: 'orbital',
+    category: 'orbital',
+    systemGroup: 'Terrestrial Orbit',
+    altitudeOrDistance: 'Low Earth Orbit (Camouflaged Apex)',
+    description: "Renegade Kree scientist Wendy Lawson's cloaked space station shielding Skrull refugee families and housing the Tesseract until 1995.",
+    color: '#06b6d4',
+    x: 65,
+    y: 36,
+    radius: 26,
+    icon: '🛰️',
+    universeFilterKey: '616',
+    eventsCount: 1,
+    featuredEvents: [
+      { title: "Discovery of Skrull Refugees & Flerken Swallows Tesseract", era: '1995', media: 'Captain Marvel (2019)', eventId: 'event-_1995_-1' }
+    ]
+  },
 
   // 4. LUNAR SYSTEM (384,400 km)
   {
@@ -1125,6 +1179,25 @@ export const COSMIC_REALMS: CosmicRealm[] = [
     eventsCount: 2,
     featuredEvents: [
       { title: 'Thanos Sacrifices Gamora for the Soul Stone', era: '2018', media: 'Avengers: Infinity War' }
+    ]
+  },
+  {
+    id: 'kree-imperium-hala',
+    name: 'Planet Hala (Kree Empire Capital)',
+    type: 'cosmic',
+    category: 'deep-space',
+    systemGroup: 'Large Magellanic Cloud / Kree Imperium',
+    altitudeOrDistance: 'Pama Galactic Sector',
+    description: 'Technologically supreme capital world of the militaristic Kree Empire, governed by the organic supercomputer Supreme Intelligence.',
+    color: '#0284c7',
+    x: 84,
+    y: 20,
+    radius: 30,
+    icon: '🪐',
+    universeFilterKey: '616',
+    eventsCount: 1,
+    featuredEvents: [
+      { title: 'Vers Trains Under Starforce & Supreme Intelligence', era: '1995', media: 'Captain Marvel (2019)', eventId: 'event-_1995_-1' }
     ]
   },
 
@@ -1826,7 +1899,10 @@ export const MapScreen: React.FC = () => {
         locName.includes('xandar') ||
         locName.includes('knowhere') ||
         locName.includes('morag') ||
-        locName.includes('vormir');
+        locName.includes('vormir') ||
+        locName.includes('hala') ||
+        locName.includes('torfa') ||
+        locName.includes('mar-vell');
 
       if (isOffWorld) {
         setMapViewMode('cosmic');
@@ -1846,6 +1922,8 @@ export const MapScreen: React.FC = () => {
                  (realm.id === 'leo-endeavour' && (locName.includes('orbit') || locName.includes('endeavour'))) ||
                  (realm.id === 'leo-phoenix-ascension' && (locName.includes('stratosphere') || locName.includes('ascension'))) ||
                  (realm.id === 'geo-saber' && locName.includes('s.a.b.e.r')) ||
+                 (realm.id === 'mar-vell-orbital-lab' && (locName.includes('mar-vell') || locName.includes('orbital laboratory'))) ||
+                 (realm.id === 'kree-imperium-hala' && (locName.includes('hala') || locCountry.includes('kree') || locName.includes('torfa'))) ||
                  (realm.id === 'svartalfheim' && (locName.includes('svartalfheim') || locCountry.includes('svartalfheim'))) ||
                  (realm.id === 'jotunheim' && (locName.includes('jotunheim') || locCountry.includes('jotunheim'))) ||
                  (realm.id === 'maveth' && (locName.includes('maveth') || locCountry.includes('maveth'))) ||
