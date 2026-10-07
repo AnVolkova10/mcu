@@ -4374,7 +4374,7 @@ export const timelineEras: EraGroup[] = [
           {
             "name": "The Savage Land",
             "cityOrRegion": "The Savage Land",
-            "countryOrRealm": "Antarctica (Earth-92131)",
+            "countryOrRealm": "Antarctica",
             "planet": "Earth-92131",
             "coordinates": [
               -69.5,
@@ -4853,7 +4853,7 @@ export const timelineEras: EraGroup[] = [
           {
             "name": "The Savage Land (Sinister's Volcanic Citadel)",
             "cityOrRegion": "The Savage Land",
-            "countryOrRealm": "Antarctica (Earth-92131)",
+            "countryOrRealm": "Antarctica",
             "planet": "Earth-92131",
             "coordinates": [
               -69.5,
@@ -4871,6 +4871,821 @@ export const timelineEras: EraGroup[] = [
             ]
           }
         ]
+      },
+      {
+        "id": "event-1994-tas-3-out-of-the-past",
+        "eraId": "era-_1994_",
+        "eraTitle": "1994",
+        "mediaKey": "x-men-tas-3",
+        "mediaTitle": "X-Men: The Animated Series (Season 3)",
+        "mediaType": "series",
+        "mediaPhase": "Marvel Television",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+        "rawClasses": [
+          "x-men-tas-3"
+        ],
+        "rawHtml": "<p>Seeking vengeance for her father Lord Dark Wind's stolen Adamantium secrets, <strong class=\"lady-deathstrike-yuriko-oyama\">Lady Deathstrike (Yuriko Oyama)</strong> and the cybernetic Reavers raid the subterranean Morlock tunnels beneath Manhattan. Unearthing a long-buried alien spaceship, Deathstrike lures <strong class=\"logan-wolverine\">Wolverine</strong> into the catacombs and uses his unbreakable claws to unseal the craft's bulkhead. The breach inadvertently unleashes the <strong>Spirit Drinker</strong>, a parasitic extraterrestrial entity that immediately drains the life-essences of the Reavers, Morlocks, and <strong class=\"jubilee-jubilation-lee\">Jubilee</strong>. Facing total extinction in the shadows of New York, Wolverine and Deathstrike forge a desperate truce; Logan exposes his own soul as bait, allowing the X-Men to reverse the alien containment matrix, purge the entity, and restore all drained lifeforces before Deathstrike flees into the night.</p>",
+        "paragraphs": [
+          "Seeking vengeance for her father Lord Dark Wind's stolen Adamantium secrets, <strong class=\"lady-deathstrike-yuriko-oyama\">Lady Deathstrike (Yuriko Oyama)</strong> and the cybernetic Reavers raid the subterranean Morlock tunnels beneath Manhattan. Unearthing a long-buried alien spaceship, Deathstrike lures <strong class=\"logan-wolverine\">Wolverine</strong> into the catacombs and uses his unbreakable claws to unseal the craft's bulkhead. The breach inadvertently unleashes the <strong>Spirit Drinker</strong>, a parasitic extraterrestrial entity that immediately drains the life-essences of the Reavers, Morlocks, and <strong class=\"jubilee-jubilation-lee\">Jubilee</strong>. Facing total extinction in the shadows of New York, Wolverine and Deathstrike forge a desperate truce; Logan exposes his own soul as bait, allowing the X-Men to reverse the alien containment matrix, purge the entity, and restore all drained lifeforces before Deathstrike flees into the night."
+        ],
+        "characters": [
+          "lady-deathstrike-yuriko-oyama",
+          "logan-wolverine",
+          "gambit-remy-lebeau",
+          "jubilee-jubilation-lee",
+          "cyclops-scott-summers",
+          "storm-ororo-munroe",
+          "charles-xavier",
+          "hank-mccoy"
+        ],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "Lady Deathstrike Adamantium Vendetta",
+          "Morlock Tunnels Extraterrestrial Excavation",
+          "Spirit Drinker Parasitic Entity Unleashed",
+          "Wolverine & Deathstrike Unholy Alliance"
+        ],
+        "locations": [
+          {
+            "name": "Morlock Tunnels & Subterranean Manhattan",
+            "cityOrRegion": "New York City, New York",
+            "countryOrRealm": "United States",
+            "planet": "Earth-92131",
+            "coordinates": [
+              40.7306,
+              -73.9352
+            ],
+            "characters": [
+              "lady-deathstrike-yuriko-oyama",
+              "logan-wolverine",
+              "jubilee-jubilation-lee"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "event-1994-tas-3-phoenix-earth",
+        "eraId": "era-_1994_",
+        "eraTitle": "1994",
+        "mediaKey": "x-men-tas-3",
+        "mediaTitle": "X-Men: The Animated Series (Season 3)",
+        "mediaType": "series",
+        "mediaPhase": "Marvel Television",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+        "rawClasses": [
+          "x-men-tas-3"
+        ],
+        "rawHtml": "<p>When an intense cosmic radiation flare cripples Dr. Peter Corbeau's Starcore space shuttle in orbit, <strong class=\"jean-grey\">Jean Grey</strong> telepathically pilots the damaged vessel through deadly solar flares. As the shuttle crash-lands into <em>Jamaica Bay, New York</em>, Jean bursts from the burning waters enveloped in a fiery avian raptor—reborn with godlike psionic power as the <strong>Phoenix</strong>. Meanwhile, <strong class=\"charles-xavier\">Professor Charles Xavier</strong> suffers debilitating psychic telepathic seizures warning of an imperial civil war across the stars, driven by visions of <strong class=\"lilandra-neramani\">Princess Lilandra Neramani</strong> of the Shi'ar Empire fleeing through a subspace Stargate to Earth. Pursued to ancestral <em>Cassidy Keep</em> in County Mayo, Ireland, the X-Men join forces with former Interpol agent <strong class=\"sean-cassidy\">Sean Cassidy (Banshee)</strong> to fend off mercenary <strong class=\"black-tom-cassidy\">Black Tom Cassidy</strong> and the unstoppable <strong class=\"cain-marko-juggernaut\">Juggernaut (Cain Marko)</strong>, successfully securing Lilandra and uncovering Emperor D'Ken's treasonous plot against the universe.</p>",
+        "paragraphs": [
+          "When an intense cosmic radiation flare cripples Dr. Peter Corbeau's Starcore space shuttle in orbit, <strong class=\"jean-grey\">Jean Grey</strong> telepathically pilots the damaged vessel through deadly solar flares. As the shuttle crash-lands into <em>Jamaica Bay, New York</em>, Jean bursts from the burning waters enveloped in a fiery avian raptor—reborn with godlike psionic power as the <strong>Phoenix</strong>. Meanwhile, <strong class=\"charles-xavier\">Professor Charles Xavier</strong> suffers debilitating psychic telepathic seizures warning of an imperial civil war across the stars, driven by visions of <strong class=\"lilandra-neramani\">Princess Lilandra Neramani</strong> of the Shi'ar Empire fleeing through a subspace Stargate to Earth. Pursued to ancestral <em>Cassidy Keep</em> in County Mayo, Ireland, the X-Men join forces with former Interpol agent <strong class=\"sean-cassidy\">Sean Cassidy (Banshee)</strong> to fend off mercenary <strong class=\"black-tom-cassidy\">Black Tom Cassidy</strong> and the unstoppable <strong class=\"cain-marko-juggernaut\">Juggernaut (Cain Marko)</strong>, successfully securing Lilandra and uncovering Emperor D'Ken's treasonous plot against the universe."
+        ],
+        "characters": [
+          "jean-grey",
+          "cyclops-scott-summers",
+          "charles-xavier",
+          "lilandra-neramani",
+          "sean-cassidy",
+          "black-tom-cassidy",
+          "cain-marko-juggernaut",
+          "logan-wolverine",
+          "storm-ororo-munroe",
+          "hank-mccoy"
+        ],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "Starcore Space Shuttle Cosmic Radiation Flare",
+          "Jean Grey's Emergence as the Phoenix at Jamaica Bay",
+          "Xavier's Stargate Psychic Seizures",
+          "Siege of Cassidy Keep in Ireland"
+        ],
+        "locations": [
+          {
+            "name": "Starcore Space Shuttle (Solar Flare Orbit)",
+            "cityOrRegion": "Low Earth Orbit (Exosphere)",
+            "countryOrRealm": "Outer Space",
+            "planet": "Earth Orbit (Earth-92131)",
+            "orbitType": "LEO",
+            "altitudeKm": 420,
+            "celestialSystem": "terrestrial-orbit",
+            "characters": [
+              "jean-grey",
+              "cyclops-scott-summers",
+              "charles-xavier"
+            ]
+          },
+          {
+            "name": "Jamaica Bay (Phoenix Ascension)",
+            "cityOrRegion": "Queens, New York",
+            "countryOrRealm": "United States",
+            "planet": "Earth-92131",
+            "coordinates": [
+              40.6186,
+              -73.8164
+            ],
+            "characters": [
+              "jean-grey",
+              "cyclops-scott-summers",
+              "charles-xavier"
+            ]
+          },
+          {
+            "name": "Cassidy Keep",
+            "cityOrRegion": "County Mayo",
+            "countryOrRealm": "Ireland",
+            "planet": "Earth-92131",
+            "coordinates": [
+              53.8007,
+              -9.5286
+            ],
+            "characters": [
+              "sean-cassidy",
+              "black-tom-cassidy",
+              "cain-marko-juggernaut",
+              "lilandra-neramani",
+              "logan-wolverine"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "event-1994-tas-3-phoenix-shiar",
+        "eraId": "era-_1994_",
+        "eraTitle": "1994",
+        "mediaKey": "x-men-tas-3",
+        "mediaTitle": "X-Men: The Animated Series (Season 3)",
+        "mediaType": "series",
+        "mediaPhase": "Marvel Television",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+        "rawClasses": [
+          "x-men-tas-3"
+        ],
+        "rawHtml": "<p>Traveling through the celestial Stargate into Shi'ar galactic space, the X-Men ally with <strong class=\"corsair-christopher-summers\">Corsair (Christopher Summers)</strong> and his rebel <em>Starjammers</em>. On the forbidden world housing the <strong>M'Kraan Crystal</strong>—the ancient nexus of all realities—the deranged <strong class=\"d-ken-neramani\">Emperor D'Ken</strong> breaches the cosmic lattice to usurp divine omnipotence, triggering universal gravitational shockwaves that threaten to collapse the cosmos into a singularity. Imperial Praetor <strong class=\"gladiator-kallark\">Gladiator</strong> and the Shi'ar Guard clash with the X-Men until D'Ken's cosmic madness is exposed. Channeling the collective life-energy and psionic spirit of the universe, <strong class=\"jean-grey\">Phoenix</strong> enters the fractured heart of the M'Kraan Crystal, repairing the cosmic nexus and neutralizing D'Ken. Bidding an emotional farewell to <strong class=\"cyclops-scott-summers\">Scott Summers</strong>, Jean ascends to the cosmos as an eternal guardian, leaving behind a restored galaxy and crowning <strong class=\"lilandra-neramani\">Lilandra</strong> as Majestrix.</p>",
+        "paragraphs": [
+          "Traveling through the celestial Stargate into Shi'ar galactic space, the X-Men ally with <strong class=\"corsair-christopher-summers\">Corsair (Christopher Summers)</strong> and his rebel <em>Starjammers</em>. On the forbidden world housing the <strong>M'Kraan Crystal</strong>—the ancient nexus of all realities—the deranged <strong class=\"d-ken-neramani\">Emperor D'Ken</strong> breaches the cosmic lattice to usurp divine omnipotence, triggering universal gravitational shockwaves that threaten to collapse the cosmos into a singularity. Imperial Praetor <strong class=\"gladiator-kallark\">Gladiator</strong> and the Shi'ar Guard clash with the X-Men until D'Ken's cosmic madness is exposed. Channeling the collective life-energy and psionic spirit of the universe, <strong class=\"jean-grey\">Phoenix</strong> enters the fractured heart of the M'Kraan Crystal, repairing the cosmic nexus and neutralizing D'Ken. Bidding an emotional farewell to <strong class=\"cyclops-scott-summers\">Scott Summers</strong>, Jean ascends to the cosmos as an eternal guardian, leaving behind a restored galaxy and crowning <strong class=\"lilandra-neramani\">Lilandra</strong> as Majestrix."
+        ],
+        "characters": [
+          "jean-grey",
+          "cyclops-scott-summers",
+          "corsair-christopher-summers",
+          "d-ken-neramani",
+          "lilandra-neramani",
+          "gladiator-kallark",
+          "charles-xavier",
+          "logan-wolverine",
+          "storm-ororo-munroe",
+          "rogue-anna-marie"
+        ],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "Starjammers Alliance & Corsair Summers Reunion",
+          "Emperor D'Ken Breaches the M'Kraan Crystal",
+          "Universal Reality Singularity Averted",
+          "Phoenix Ascends as Cosmic Guardian of the Crystal"
+        ],
+        "locations": [
+          {
+            "name": "M'Kraan Crystal Nexus World",
+            "cityOrRegion": "Shi'ar Imperium",
+            "countryOrRealm": "Shi'ar Galaxy",
+            "planet": "M'Kraan World",
+            "celestialSystem": "deep-space",
+            "characters": [
+              "jean-grey",
+              "cyclops-scott-summers",
+              "d-ken-neramani",
+              "lilandra-neramani",
+              "corsair-christopher-summers",
+              "gladiator-kallark"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "event-1994-tas-3-no-mutant-is-an-island",
+        "eraId": "era-_1994_",
+        "eraTitle": "1994",
+        "mediaKey": "x-men-tas-3",
+        "mediaTitle": "X-Men: The Animated Series (Season 5·E4 / Story Order: Season 3)",
+        "mediaType": "series",
+        "mediaPhase": "Marvel Television",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+        "rawClasses": [
+          "x-men-tas-3"
+        ],
+        "rawHtml": "<p><em>[Narrative Placement: Set immediately following Jean Grey's cosmic sacrifice in The Phoenix Saga. Delayed by two years due to animation re-draws and originally broadcast out of order in Season 5.]</em><br/><br/>Overwhelmed by paralyzing grief following Jean Grey's ascension, a shattered <strong class=\"cyclops-scott-summers\">Scott Summers (Cyclops)</strong> resigns from the X-Men and returns to the State Home for Foundlings in Omaha, Nebraska, seeking solace in his childhood roots. There, Scott discovers that wealthy political candidate <strong class=\"zebediah-killgrave\">Zebediah Killgrave (Purple Man)</strong> is adopting gifted mutant orphans—including pyrokinetic youth <strong class=\"rusty-collins-firefist\">Rusty Collins</strong>, Sally Blevins (Skids), Boom-Boom, and Wiz Kid—using hypnotic pheromones to brainwash them into a private metahuman strike team to seize the governor's mansion. Rallying Rusty's courage, Cyclops infiltrates Killgrave's estate, disrupts the psychic thrall, and rescues the children. Overcoming his sorrow, Scott embraces Xavier's dream with renewed purpose and returns home to Westchester.</p>",
+        "paragraphs": [
+          "[Narrative Placement: Set immediately following Jean Grey's cosmic sacrifice in The Phoenix Saga. Delayed by two years due to animation re-draws and originally broadcast out of order in Season 5.]",
+          "Overwhelmed by paralyzing grief following Jean Grey's ascension, a shattered <strong class=\"cyclops-scott-summers\">Scott Summers (Cyclops)</strong> resigns from the X-Men and returns to the State Home for Foundlings in Omaha, Nebraska, seeking solace in his childhood roots. There, Scott discovers that wealthy political candidate <strong class=\"zebediah-killgrave\">Zebediah Killgrave (Purple Man)</strong> is adopting gifted mutant orphans—including pyrokinetic youth <strong class=\"rusty-collins-firefist\">Rusty Collins</strong>, Sally Blevins (Skids), Boom-Boom, and Wiz Kid—using hypnotic pheromones to brainwash them into a private metahuman strike team to seize the governor's mansion. Rallying Rusty's courage, Cyclops infiltrates Killgrave's estate, disrupts the psychic thrall, and rescues the children. Overcoming his sorrow, Scott embraces Xavier's dream with renewed purpose and returns home to Westchester."
+        ],
+        "characters": [
+          "cyclops-scott-summers",
+          "zebediah-killgrave",
+          "rusty-collins-firefist",
+          "charles-xavier"
+        ],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "Cyclops's Grief-Driven Resignation from X-Men",
+          "State Home for Foundlings in Nebraska",
+          "Zebediah Killgrave's Pheromonal Mind-Control Scheme",
+          "Rescue of Rusty Collins & Orphan Mutants",
+          "Broadcast Production Delay Rectified to Story Order"
+        ],
+        "locations": [
+          {
+            "name": "State Home for Foundlings & Killgrave Estate",
+            "cityOrRegion": "Omaha, Nebraska",
+            "countryOrRealm": "United States",
+            "planet": "Earth-92131",
+            "coordinates": [
+              41.2565,
+              -95.9345
+            ],
+            "characters": [
+              "cyclops-scott-summers",
+              "zebediah-killgrave",
+              "rusty-collins-firefist"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "event-1994-tas-ironman-force-works",
+        "eraId": "era-_1994_",
+        "eraTitle": "1994",
+        "mediaKey": "iron-man-tas-1",
+        "mediaTitle": "Iron Man: The Animated Series (Season 1)",
+        "mediaType": "series",
+        "mediaPhase": "Marvel Television",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+        "rawClasses": [
+          "iron-man-tas-1"
+        ],
+        "rawHtml": "<p>On the West Coast, industrialist <strong class=\"tony-stark\">Tony Stark (Iron Man)</strong> establishes the tactical response collective <strong>Force Works</strong> at his coastal compound in Point Dume, California, joining forces with <strong class=\"james-rhodes\">James Rhodes (War Machine)</strong>, <strong class=\"julia-carpenter-spider-woman\">Julia Carpenter (Spider-Woman)</strong>, <strong class=\"century\">Century</strong>, <strong class=\"clint-barton\">Clint Barton (Hawkeye)</strong>, and <strong class=\"wanda-maximoff\">Wanda Maximoff (Scarlet Witch)</strong>. Warlord <strong class=\"mandarin\">The Mandarin</strong> unleashes his first strike by raising the sunken Russian nuclear submarine <em>Prometheus</em>, converting its deceased crew into radioactive zombies through dark Makluan science. When Force Works repels the underwater assault, Mandarin, backed by <strong class=\"modok-george-tarleton\">M.O.D.O.K.</strong> and corporate saboteur <strong class=\"justin-hammer\">Justin Hammer</strong>, awakens the colossal alien automaton <strong class=\"ultimo\">Ultimo</strong> from an active volcanic caldera. Iron Man deploys heavy modular munitions to sever Ultimo's thermal control conduit, subduing the titan and securing California.</p>",
+        "paragraphs": [
+          "On the West Coast, industrialist <strong class=\"tony-stark\">Tony Stark (Iron Man)</strong> establishes the tactical response collective <strong>Force Works</strong> at his coastal compound in Point Dume, California, joining forces with <strong class=\"james-rhodes\">James Rhodes (War Machine)</strong>, <strong class=\"julia-carpenter-spider-woman\">Julia Carpenter (Spider-Woman)</strong>, <strong class=\"century\">Century</strong>, <strong class=\"clint-barton\">Clint Barton (Hawkeye)</strong>, and <strong class=\"wanda-maximoff\">Wanda Maximoff (Scarlet Witch)</strong>. Warlord <strong class=\"mandarin\">The Mandarin</strong> unleashes his first strike by raising the sunken Russian nuclear submarine <em>Prometheus</em>, converting its deceased crew into radioactive zombies through dark Makluan science. When Force Works repels the underwater assault, Mandarin, backed by <strong class=\"modok-george-tarleton\">M.O.D.O.K.</strong> and corporate saboteur <strong class=\"justin-hammer\">Justin Hammer</strong>, awakens the colossal alien automaton <strong class=\"ultimo\">Ultimo</strong> from an active volcanic caldera. Iron Man deploys heavy modular munitions to sever Ultimo's thermal control conduit, subduing the titan and securing California."
+        ],
+        "characters": [
+          "tony-stark",
+          "james-rhodes",
+          "julia-carpenter-spider-woman",
+          "century",
+          "clint-barton",
+          "wanda-maximoff",
+          "mandarin",
+          "modok-george-tarleton",
+          "justin-hammer",
+          "ultimo"
+        ],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "Force Works Tactical Assembly on California Coast",
+          "Mandarin's Prometheus Radioactive Zombie Submarine Strike",
+          "Reactivation of Colossal Alien Juggernaut Ultimo",
+          "Iron Man Modular Armor Combat Deployments"
+        ],
+        "locations": [
+          {
+            "name": "Stark Enterprises & Force Works Compound",
+            "cityOrRegion": "Point Dume / Los Angeles, California",
+            "countryOrRealm": "United States",
+            "planet": "Earth-92131",
+            "coordinates": [
+              34.0016,
+              -118.8068
+            ],
+            "characters": [
+              "tony-stark",
+              "james-rhodes",
+              "julia-carpenter-spider-woman",
+              "century",
+              "clint-barton",
+              "wanda-maximoff"
+            ]
+          },
+          {
+            "name": "Mandarin's Volcanic Lair",
+            "cityOrRegion": "Valley of Spirits",
+            "countryOrRealm": "China",
+            "planet": "Earth-92131",
+            "coordinates": [
+              31.2304,
+              104.0668
+            ],
+            "characters": [
+              "mandarin",
+              "modok-george-tarleton",
+              "justin-hammer",
+              "ultimo"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "event-1994-tas-ironman-cyber-satellite",
+        "eraId": "era-_1994_",
+        "eraTitle": "1994",
+        "mediaKey": "iron-man-tas-1",
+        "mediaTitle": "Iron Man: The Animated Series (Season 1)",
+        "mediaType": "series",
+        "mediaPhase": "Marvel Television",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+        "rawClasses": [
+          "iron-man-tas-1"
+        ],
+        "rawHtml": "<p><strong class=\"modok-george-tarleton\">M.O.D.O.K.</strong> and <strong class=\"mandarin\">The Mandarin</strong> initiate a catastrophic cyber-warfare infiltration against Stark Enterprises, injecting a polymorphic worm into global financial exchanges and the military early warning network. Hijacking satellite telemetry, the villains briefly override War Machine's targeting HUD before <strong class=\"tony-stark\">Tony Stark</strong> expels the virus. Escalating the vendetta, Mandarin's syndicate abducts Rachel, the young daughter of <strong class=\"julia-carpenter-spider-woman\">Julia Carpenter (Spider-Woman)</strong>, to force Stark into surrendering his orbital particle-beam satellite. Battling severe power depletion within his armor's chest arc generator, Iron Man coordinates with <strong class=\"james-rhodes\">War Machine</strong> and Spider-Woman to storm Mandarin's mountain fortress, execute an extraction of Rachel, and disable the hijacked orbital payload.</p>",
+        "paragraphs": [
+          "<strong class=\"modok-george-tarleton\">M.O.D.O.K.</strong> and <strong class=\"mandarin\">The Mandarin</strong> initiate a catastrophic cyber-warfare infiltration against Stark Enterprises, injecting a polymorphic worm into global financial exchanges and the military early warning network. Hijacking satellite telemetry, the villains briefly override War Machine's targeting HUD before <strong class=\"tony-stark\">Tony Stark</strong> expels the virus. Escalating the vendetta, Mandarin's syndicate abducts Rachel, the young daughter of <strong class=\"julia-carpenter-spider-woman\">Julia Carpenter (Spider-Woman)</strong>, to force Stark into surrendering his orbital particle-beam satellite. Battling severe power depletion within his armor's chest arc generator, Iron Man coordinates with <strong class=\"james-rhodes\">War Machine</strong> and Spider-Woman to storm Mandarin's mountain fortress, execute an extraction of Rachel, and disable the hijacked orbital payload."
+        ],
+        "characters": [
+          "tony-stark",
+          "james-rhodes",
+          "julia-carpenter-spider-woman",
+          "mandarin",
+          "modok-george-tarleton",
+          "justin-hammer"
+        ],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "M.O.D.O.K. Polymorphic Cyber-Attack on Stark Mainframes",
+          "War Machine Armor Neural Disruption",
+          "Kidnapping of Rachel Carpenter",
+          "Iron Man Armor Power Core Depletion Crisis"
+        ],
+        "locations": [
+          {
+            "name": "Stark Pacific Cyber-Defense Center",
+            "cityOrRegion": "Los Angeles, California",
+            "countryOrRealm": "United States",
+            "planet": "Earth-92131",
+            "coordinates": [
+              34.0522,
+              -118.2437
+            ],
+            "characters": [
+              "tony-stark",
+              "james-rhodes",
+              "julia-carpenter-spider-woman"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "event-1994-tas-3-savage-land-heart",
+        "eraId": "era-_1994_",
+        "eraTitle": "1994",
+        "mediaKey": "x-men-tas-3",
+        "mediaTitle": "X-Men: The Animated Series (Season 3)",
+        "mediaType": "series",
+        "mediaPhase": "Marvel Television",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+        "rawClasses": [
+          "x-men-tas-3"
+        ],
+        "rawHtml": "<p>Tormented by his unquenchable hunger for life-energy, mutant pterosaur bio-vampire <strong class=\"sauron-karl-lykos\">Sauron (Dr. Karl Lykos)</strong> resurfaces in Manhattan and ambushes <strong class=\"storm-ororo-munroe\">Ororo Munroe (Storm)</strong>. Hypnotizing Storm, Sauron abducts her back to the prehistoric <em>Savage Land</em> in Antarctica, where sorceress Zaladane manipulates Storm's deepest emotional fears to unlock an unbridled elemental tempest. This atmospheric cataclysm awakens <strong class=\"garokk-petrified-man\">Garokk the Petrified Man</strong>, an ancient immortal sun-god who merges with the volcanic mantle of the Savage Land, triggering catastrophic heatwaves across the globe. Joined by <strong class=\"ka-zar-kevin-plunder\">Ka-Zar</strong> and Zabu, <strong class=\"logan-wolverine\">Wolverine</strong>, <strong class=\"rogue-anna-marie\">Rogue</strong>, and <strong class=\"hank-mccoy\">Beast</strong> journey south; Storm breaks Sauron's psychic shackles, summons a localized sub-zero blizzard that quenches the magma core, and seals Garokk back into volcanic dormancy.</p>",
+        "paragraphs": [
+          "Tormented by his unquenchable hunger for life-energy, mutant pterosaur bio-vampire <strong class=\"sauron-karl-lykos\">Sauron (Dr. Karl Lykos)</strong> resurfaces in Manhattan and ambushes <strong class=\"storm-ororo-munroe\">Ororo Munroe (Storm)</strong>. Hypnotizing Storm, Sauron abducts her back to the prehistoric <em>Savage Land</em> in Antarctica, where sorceress Zaladane manipulates Storm's deepest emotional fears to unlock an unbridled elemental tempest. This atmospheric cataclysm awakens <strong class=\"garokk-petrified-man\">Garokk the Petrified Man</strong>, an ancient immortal sun-god who merges with the volcanic mantle of the Savage Land, triggering catastrophic heatwaves across the globe. Joined by <strong class=\"ka-zar-kevin-plunder\">Ka-Zar</strong> and Zabu, <strong class=\"logan-wolverine\">Wolverine</strong>, <strong class=\"rogue-anna-marie\">Rogue</strong>, and <strong class=\"hank-mccoy\">Beast</strong> journey south; Storm breaks Sauron's psychic shackles, summons a localized sub-zero blizzard that quenches the magma core, and seals Garokk back into volcanic dormancy."
+        ],
+        "characters": [
+          "storm-ororo-munroe",
+          "sauron-karl-lykos",
+          "garokk-petrified-man",
+          "ka-zar-kevin-plunder",
+          "logan-wolverine",
+          "rogue-anna-marie",
+          "hank-mccoy",
+          "jubilee-jubilation-lee"
+        ],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "Sauron's Manhattan Stalking & Storm Abduction",
+          "Atmospheric Ley Line Overload in the Savage Land",
+          "Awakening of Garokk the Petrified Man",
+          "Storm Quenches the Volcanic Geosphere with Sub-Zero Blizzard"
+        ],
+        "locations": [
+          {
+            "name": "The Savage Land (Sun God Caldera)",
+            "cityOrRegion": "The Savage Land",
+            "countryOrRealm": "Antarctica",
+            "planet": "Earth-92131",
+            "coordinates": [
+              -69.5,
+              -65.5
+            ],
+            "characters": [
+              "storm-ororo-munroe",
+              "sauron-karl-lykos",
+              "garokk-petrified-man",
+              "ka-zar-kevin-plunder",
+              "logan-wolverine",
+              "rogue-anna-marie"
+            ]
+          }
+        ]
+      }
+    ,
+      {
+              "id": "event-1994-tas-ff-origin-cosmic",
+              "eraId": "era-_1994_",
+              "eraTitle": "1994",
+              "mediaKey": "fantastic-four-tas-1",
+              "mediaTitle": "Fantastic Four: The Animated Series (Season 1)",
+              "mediaType": "series",
+              "mediaPhase": "Marvel Television",
+              "isAlternativeTimeline": true,
+              "timelineType": "multiverse-alternate",
+              "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+              "rawClasses": [
+                      "fantastic-four-tas-1"
+              ],
+              "rawHtml": "<p>Scientific visionary <strong class=\"reed-richards\">Dr. Reed Richards</strong>, his fiancee <strong class=\"sue-storm\">Susan Storm</strong>, her brother <strong class=\"johnny-storm\">Johnny Storm</strong>, and ace military test pilot <strong class=\"ben-grimm\">Ben Grimm</strong> launch an unauthorized private rocket into deep space. Breaching the Van Allen radiation belt, an unexpected storm of cosmic rays penetrates their spacecraft hull, mutating their human genetics. Crash-landing in the Adirondacks, they discover their extraordinary transformations: Reed stretches with fluid plasticity as <strong>Mister Fantastic</strong>, Sue turns transparent and casts force fields as the <strong>Invisible Woman</strong>, Johnny erupts in plasma flight as the <strong>Human Torch</strong>, and Ben's flesh hardens into an orange rocky titan as <strong>The Thing</strong>. Setting up headquarters at Manhattan's Baxter Building, they defend the city from a television studio hostage crisis orchestrated by the <strong class=\"puppet-master\">Puppet Master</strong>.</p>",
+              "paragraphs": [
+                      "Scientific visionary <strong class=\"reed-richards\">Dr. Reed Richards</strong>, his fiancee <strong class=\"sue-storm\">Susan Storm</strong>, her brother <strong class=\"johnny-storm\">Johnny Storm</strong>, and ace military test pilot <strong class=\"ben-grimm\">Ben Grimm</strong> launch an unauthorized private rocket into deep space. Breaching the Van Allen radiation belt, an unexpected storm of cosmic rays penetrates their spacecraft hull, mutating their human genetics. Crash-landing in the Adirondacks, they discover their extraordinary transformations: Reed stretches with fluid plasticity as <strong>Mister Fantastic</strong>, Sue turns transparent and casts force fields as the <strong>Invisible Woman</strong>, Johnny erupts in plasma flight as the <strong>Human Torch</strong>, and Ben's flesh hardens into an orange rocky titan as <strong>The Thing</strong>. Setting up headquarters at Manhattan's Baxter Building, they defend the city from a television studio hostage crisis orchestrated by the <strong class=\"puppet-master\">Puppet Master</strong>."
+              ],
+              "characters": [
+                      "reed-richards",
+                      "sue-storm",
+                      "johnny-storm",
+                      "ben-grimm"
+              ],
+              "stones": [],
+              "deaths": [],
+              "mcuHighlights": [
+                      "Cosmic Radiation Exposure in Van Allen Belt",
+                      "Genesis of Marvel's First Family",
+                      "Establishment of Baxter Building Headquarters"
+              ],
+              "locations": [
+                      {
+                              "name": "Baxter Building & Upper Manhattan",
+                              "cityOrRegion": "New York City",
+                              "countryOrRealm": "United States",
+                              "planet": "Earth-92131",
+                              "celestialSystem": "solar-system"
+                      },
+                      {
+                              "name": "Cosmic Radiation Orbital Belt",
+                              "cityOrRegion": "Low Earth Orbit",
+                              "countryOrRealm": "Space",
+                              "planet": "Earth-92131",
+                              "celestialSystem": "solar-system"
+                      }
+              ]
+      },
+      {
+              "id": "event-1994-tas-ff-submariner",
+              "eraId": "era-_1994_",
+              "eraTitle": "1994",
+              "mediaKey": "fantastic-four-tas-1",
+              "mediaTitle": "Fantastic Four: The Animated Series (Season 1)",
+              "mediaType": "series",
+              "mediaPhase": "Marvel Television",
+              "isAlternativeTimeline": true,
+              "timelineType": "multiverse-alternate",
+              "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+              "rawClasses": [
+                      "fantastic-four-tas-1"
+              ],
+              "rawHtml": "<p>Surface naval torpedo tests inadvertently violate the sovereign waters of the hidden undersea empire of Atlantis. In retaliation, <strong class=\"namor-the-sub-mariner\">Prince Namor the Sub-Mariner</strong> surfaces along the Manhattan docks with an aquatic invasion force, kidnapping <strong class=\"sue-storm\">Susan Storm</strong> to be his undersea queen. <strong class=\"reed-richards\">Reed Richards</strong>, <strong class=\"johnny-storm\">Johnny Storm</strong>, and <strong class=\"ben-grimm\">The Thing</strong> plunge into the Atlantic oceanic trenches in the Bathyscaphe, waging an amphibious war before convincing Namor that humanity had no malicious intent, forging an uneasy diplomatic truce between surface dwellers and Atlantis.</p>",
+              "paragraphs": [
+                      "Surface naval torpedo tests inadvertently violate the sovereign waters of the hidden undersea empire of Atlantis. In retaliation, <strong class=\"namor-the-sub-mariner\">Prince Namor the Sub-Mariner</strong> surfaces along the Manhattan docks with an aquatic invasion force, kidnapping <strong class=\"sue-storm\">Susan Storm</strong> to be his undersea queen. <strong class=\"reed-richards\">Reed Richards</strong>, <strong class=\"johnny-storm\">Johnny Storm</strong>, and <strong class=\"ben-grimm\">The Thing</strong> plunge into the Atlantic oceanic trenches in the Bathyscaphe, waging an amphibious war before convincing Namor that humanity had no malicious intent, forging an uneasy diplomatic truce between surface dwellers and Atlantis."
+              ],
+              "characters": [
+                      "namor-the-sub-mariner",
+                      "reed-richards",
+                      "sue-storm",
+                      "ben-grimm",
+                      "johnny-storm"
+              ],
+              "stones": [],
+              "deaths": [],
+              "mcuHighlights": [
+                      "First Contact with the Kingdom of Atlantis",
+                      "Namor and Sue Storm's Complex Bond",
+                      "Diplomatic Truce with the Undersea Realm"
+              ],
+              "locations": [
+                      {
+                              "name": "Atlantis Sovereign Throne & Abyssal Trenches",
+                              "cityOrRegion": "North Atlantic Ocean",
+                              "countryOrRealm": "Atlantis",
+                              "planet": "Earth-92131",
+                              "celestialSystem": "solar-system"
+                      }
+              ]
+      },
+      {
+              "id": "event-1994-tas-ff-skrulls-galactus",
+              "eraId": "era-_1994_",
+              "eraTitle": "1994",
+              "mediaKey": "fantastic-four-tas-1",
+              "mediaTitle": "Fantastic Four: The Animated Series (Season 1)",
+              "mediaType": "series",
+              "mediaPhase": "Marvel Television",
+              "isAlternativeTimeline": true,
+              "timelineType": "multiverse-alternate",
+              "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+              "rawClasses": [
+                      "fantastic-four-tas-1"
+              ],
+              "rawHtml": "<p>The Skrull Empire launches an extraterrestrial infiltration against Earth, dispatching their genetically augmented warrior <strong class=\"super-skrull\">Super-Skrull (Kl'rt)</strong>, who possesses the replicated powers of all four Fantastic Four members. Soon after the team repels the invasion, the cosmic herald <strong class=\"silver-surfer\">Silver Surfer</strong> materializes across the Manhattan skyways, announcing the imminent arrival of <strong class=\"galactus\">Galactus the Devourer of Worlds</strong> to consume Earth's biosphere. Breaking his solemn vow of non-interference, <strong class=\"uatu-the-watcher\">Uatu the Watcher</strong> guides Reed Richards to retrieve the Ultimate Nullifier from Galactus's worldship. Touched by humanity's beauty through Alicia Masters, the Silver Surfer turns against his master, driving Galactus away from Earth forever.</p>",
+              "paragraphs": [
+                      "The Skrull Empire launches an extraterrestrial infiltration against Earth, dispatching their genetically augmented warrior <strong class=\"super-skrull\">Super-Skrull (Kl'rt)</strong>, who possesses the replicated powers of all four Fantastic Four members. Soon after the team repels the invasion, the cosmic herald <strong class=\"silver-surfer\">Silver Surfer</strong> materializes across the Manhattan skyways, announcing the imminent arrival of <strong class=\"galactus\">Galactus the Devourer of Worlds</strong> to consume Earth's biosphere. Breaking his solemn vow of non-interference, <strong class=\"uatu-the-watcher\">Uatu the Watcher</strong> guides Reed Richards to retrieve the Ultimate Nullifier from Galactus's worldship. Touched by humanity's beauty through Alicia Masters, the Silver Surfer turns against his master, driving Galactus away from Earth forever."
+              ],
+              "characters": [
+                      "reed-richards",
+                      "sue-storm",
+                      "johnny-storm",
+                      "ben-grimm",
+                      "silver-surfer",
+                      "galactus",
+                      "uatu-the-watcher",
+                      "super-skrull"
+              ],
+              "stones": [],
+              "deaths": [],
+              "mcuHighlights": [
+                      "The Coming of Galactus & Silver Surfer's Rebellion",
+                      "The Ultimate Nullifier Threat",
+                      "Uatu the Watcher Intervenes on Earth's Behalf"
+              ],
+              "locations": [
+                      {
+                              "name": "Manhattan Stratosphere & Taa II Worldship",
+                              "cityOrRegion": "New York City",
+                              "countryOrRealm": "United States",
+                              "planet": "Earth-92131",
+                              "celestialSystem": "solar-system"
+                      },
+                      {
+                              "name": "Blue Area of the Moon (Watcher's Citadel)",
+                              "cityOrRegion": "Lunar Surface",
+                              "countryOrRealm": "The Moon",
+                              "planet": "Luna",
+                              "celestialSystem": "solar-system"
+                      }
+              ]
+      },
+      {
+              "id": "event-1994-tas-ff-mask-of-doom",
+              "eraId": "era-_1994_",
+              "eraTitle": "1994",
+              "mediaKey": "fantastic-four-tas-1",
+              "mediaTitle": "Fantastic Four: The Animated Series (Season 1)",
+              "mediaType": "series",
+              "mediaPhase": "Marvel Television",
+              "isAlternativeTimeline": true,
+              "timelineType": "multiverse-alternate",
+              "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+              "rawClasses": [
+                      "fantastic-four-tas-1"
+              ],
+              "rawHtml": "<p>Latverian monarch <strong class=\"victor-von-doom\">Doctor Victor Von Doom</strong> infiltrates the Baxter Building, taking <strong class=\"sue-storm\">Susan Storm</strong> captive and holding her hostage at Castle Doom. Doom coerces <strong class=\"reed-richards\">Reed</strong>, <strong class=\"ben-grimm\">The Thing</strong>, and <strong class=\"johnny-storm\">Human Torch</strong> to enter his experimental <strong>Time Platform</strong> and travel back to ancient Greece circa 500 B.C.E. to recover an enchanted chest containing mystical artifacts. Surviving an ancient siege between Greeks and Persians, the team returns to the 20th century, storms Castle Doom in Latveria, overpowers Doom's Doombot legion, and liberates Sue from the iron dictator's clutches.</p>",
+              "paragraphs": [
+                      "Latverian monarch <strong class=\"victor-von-doom\">Doctor Victor Von Doom</strong> infiltrates the Baxter Building, taking <strong class=\"sue-storm\">Susan Storm</strong> captive and holding her hostage at Castle Doom. Doom coerces <strong class=\"reed-richards\">Reed</strong>, <strong class=\"ben-grimm\">The Thing</strong>, and <strong class=\"johnny-storm\">Human Torch</strong> to enter his experimental <strong>Time Platform</strong> and travel back to ancient Greece circa 500 B.C.E. to recover an enchanted chest containing mystical artifacts. Surviving an ancient siege between Greeks and Persians, the team returns to the 20th century, storms Castle Doom in Latveria, overpowers Doom's Doombot legion, and liberates Sue from the iron dictator's clutches."
+              ],
+              "characters": [
+                      "victor-von-doom",
+                      "reed-richards",
+                      "sue-storm",
+                      "ben-grimm",
+                      "johnny-storm"
+              ],
+              "stones": [],
+              "deaths": [],
+              "mcuHighlights": [
+                      "Doom's Time Platform Temporal Displacement",
+                      "Expedition to Ancient Greece (500 B.C.E.)",
+                      "Siege of Castle Doom in Latveria"
+              ],
+              "locations": [
+                      {
+                              "name": "Castle Doom & Haasenstadt Citadel",
+                              "cityOrRegion": "Haasenstadt",
+                              "countryOrRealm": "Latveria",
+                              "planet": "Earth-92131",
+                              "celestialSystem": "solar-system"
+                      },
+                      {
+                              "name": "Ancient Aegean Battlegrounds (Time Platform)",
+                              "cityOrRegion": "Ancient Greece",
+                              "countryOrRealm": "Ancient Hellas",
+                              "planet": "Earth-92131",
+                              "celestialSystem": "solar-system"
+                      }
+              ]
+      },
+      {
+              "id": "event-1994-tas-ff-negative-zone-moleman",
+              "eraId": "era-_1994_",
+              "eraTitle": "1994",
+              "mediaKey": "fantastic-four-tas-1",
+              "mediaTitle": "Fantastic Four: The Animated Series (Season 1)",
+              "mediaType": "series",
+              "mediaPhase": "Marvel Television",
+              "isAlternativeTimeline": true,
+              "timelineType": "multiverse-alternate",
+              "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+              "rawClasses": [
+                      "fantastic-four-tas-1"
+              ],
+              "rawHtml": "<p>Massive sinkholes consume entire blocks of Manhattan as <strong class=\"mole-man\">Mole Man</strong> and his subterranean Moloid horde attack the surface world. After plunging into Subterranea to contain the subterranean beasts, Reed Richards breaches the dimensional fabric by opening the portal to the antimatter realm known as the <strong>Negative Zone</strong>. There, the team battles the voracious insectoid warlord <strong class=\"annihilus\">Annihilus</strong>, sealing the portal before an antimatter breach can annihilate Earth.</p>",
+              "paragraphs": [
+                      "Massive sinkholes consume entire blocks of Manhattan as <strong class=\"mole-man\">Mole Man</strong> and his subterranean Moloid horde attack the surface world. After plunging into Subterranea to contain the subterranean beasts, Reed Richards breaches the dimensional fabric by opening the portal to the antimatter realm known as the <strong>Negative Zone</strong>. There, the team battles the voracious insectoid warlord <strong class=\"annihilus\">Annihilus</strong>, sealing the portal before an antimatter breach can annihilate Earth."
+              ],
+              "characters": [
+                      "reed-richards",
+                      "sue-storm",
+                      "ben-grimm",
+                      "johnny-storm",
+                      "mole-man",
+                      "annihilus"
+              ],
+              "stones": [],
+              "deaths": [],
+              "mcuHighlights": [
+                      "Subterranea Incursion beneath Manhattan",
+                      "First Exploration of the Antimatter Negative Zone",
+                      "Defeat of Annihilus and Cosmic Control Rod Containment"
+              ],
+              "locations": [
+                      {
+                              "name": "Subterranean Cavern Kingdom",
+                              "cityOrRegion": "Subterranea",
+                              "countryOrRealm": "Earth's Mantle",
+                              "planet": "Earth-92131",
+                              "celestialSystem": "solar-system"
+                      },
+                      {
+                              "name": "The Negative Zone (Antimatter Dimension)",
+                              "cityOrRegion": "Distortion Area",
+                              "countryOrRealm": "Negative Zone",
+                              "planet": "Arthros",
+                              "celestialSystem": "multiverse"
+                      }
+              ]
+      },
+      {
+              "id": "event-1994-tas-ironman-climax-origin",
+              "eraId": "era-_1994_",
+              "eraTitle": "1994",
+              "mediaKey": "iron-man-tas-1",
+              "mediaTitle": "Iron Man: The Animated Series (Season 1)",
+              "mediaType": "series",
+              "mediaPhase": "Marvel Television",
+              "isAlternativeTimeline": true,
+              "timelineType": "multiverse-alternate",
+              "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+              "rawClasses": [
+                      "iron-man-tas-1"
+              ],
+              "rawHtml": "<p>While battling <strong class=\"mandarin\">The Mandarin</strong> in the Arctic Circle, an avalanche buries <strong class=\"tony-stark-iron-man\">Tony Stark</strong> and his bitter foe in an icy subterranean cavern. Facing hypothermia, Tony's armor telemetry logs recall his genesis in Southeast Asia: captured by warlords with shrapnel near his heart, Tony and fellow captive <strong class=\"ho-yinsen\">Professor Ho Yinsen</strong> forged the original iron Mark I suit, with Yinsen sacrificing his life so Stark could escape. Rescued by <strong class=\"james-rhodes-war-machine\">War Machine</strong> and <strong class=\"clint-barton-hawkeye\">Hawkeye</strong>, Tony stages a fraudulent high-society wedding to <strong class=\"julia-carpenter-spider-woman\">Julia Carpenter (Spider-Woman)</strong> to definitively mislead Mandarin into believing Tony Stark and Iron Man are separate individuals.</p>",
+              "paragraphs": [
+                      "While battling <strong class=\"mandarin\">The Mandarin</strong> in the Arctic Circle, an avalanche buries <strong class=\"tony-stark-iron-man\">Tony Stark</strong> and his bitter foe in an icy subterranean cavern. Facing hypothermia, Tony's armor telemetry logs recall his genesis in Southeast Asia: captured by warlords with shrapnel near his heart, Tony and fellow captive <strong class=\"ho-yinsen\">Professor Ho Yinsen</strong> forged the original iron Mark I suit, with Yinsen sacrificing his life so Stark could escape. Rescued by <strong class=\"james-rhodes-war-machine\">War Machine</strong> and <strong class=\"clint-barton-hawkeye\">Hawkeye</strong>, Tony stages a fraudulent high-society wedding to <strong class=\"julia-carpenter-spider-woman\">Julia Carpenter (Spider-Woman)</strong> to definitively mislead Mandarin into believing Tony Stark and Iron Man are separate individuals."
+              ],
+              "characters": [
+                      "tony-stark-iron-man",
+                      "james-rhodes-war-machine",
+                      "mandarin",
+                      "julia-carpenter-spider-woman",
+                      "clint-barton-hawkeye",
+                      "ho-yinsen"
+              ],
+              "stones": [],
+              "deaths": [
+                      "ho-yinsen"
+              ],
+              "mcuHighlights": [
+                      "Tony Stark's Vietnam POW Camp Genesis with Yinsen",
+                      "Mark I Armor Fabrication",
+                      "The Fake Wedding Deception with Julia Carpenter"
+              ],
+              "locations": [
+                      {
+                              "name": "Arctic Glacial Chasm",
+                              "cityOrRegion": "Arctic Circle",
+                              "countryOrRealm": "International Waters",
+                              "planet": "Earth-92131",
+                              "celestialSystem": "solar-system"
+                      },
+                      {
+                              "name": "Stark Enterprise Force Works Compound",
+                              "cityOrRegion": "Point Dume, Malibu",
+                              "countryOrRealm": "United States",
+                              "planet": "Earth-92131",
+                              "celestialSystem": "solar-system"
+                      }
+              ]
+      },
+      {
+              "id": "event-1994-tas-spiderman-origins-lizard",
+              "eraId": "era-_1994_",
+              "eraTitle": "1994",
+              "mediaKey": "spider-man-tas-1",
+              "mediaTitle": "Spider-Man: The Animated Series (Season 1)",
+              "mediaType": "series",
+              "mediaPhase": "Marvel Television",
+              "isAlternativeTimeline": true,
+              "timelineType": "multiverse-alternate",
+              "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+              "rawClasses": [
+                      "spider-man-tas-1"
+              ],
+              "rawHtml": "<p>In Queens, <strong class=\"peter-parker-spider-man\">Peter Parker</strong> continues his vigilante career while studying biophysics at Empire State University and selling freelance photos to <strong class=\"j-jonah-jameson\">J. Jonah Jameson</strong> at The Daily Bugle. Peter faces a escalating rogues gallery: his mentor Dr. Curt Connors mutates into the savage <strong class=\"curt-connors-lizard\">Lizard</strong> in the sewer system, Spencer Smythe deploys robotic Spider-Slayers financed by <strong class=\"norman-osborn\">Norman Osborn</strong>, titanium-tentacled genius <strong class=\"doctor-octopus\">Doctor Octopus</strong> abducts <strong class=\"felicia-hardy\">Felicia Hardy</strong>, special-effects master <strong class=\"mysterio-quentin-beck\">Mysterio</strong> frames Spider-Man for grand larceny, Jameson's funded Neogenic experiment transforms Mac Gargan into the psychotic <strong class=\"scorpion-mac-gargan\">Scorpion</strong>, and big-game hunter <strong class=\"kraven-the-hunter\">Kraven the Hunter</strong> stalks him across Central Park.</p>",
+              "paragraphs": [
+                      "In Queens, <strong class=\"peter-parker-spider-man\">Peter Parker</strong> continues his vigilante career while studying biophysics at Empire State University and selling freelance photos to <strong class=\"j-jonah-jameson\">J. Jonah Jameson</strong> at The Daily Bugle. Peter faces a escalating rogues gallery: his mentor Dr. Curt Connors mutates into the savage <strong class=\"curt-connors-lizard\">Lizard</strong> in the sewer system, Spencer Smythe deploys robotic Spider-Slayers financed by <strong class=\"norman-osborn\">Norman Osborn</strong>, titanium-tentacled genius <strong class=\"doctor-octopus\">Doctor Octopus</strong> abducts <strong class=\"felicia-hardy\">Felicia Hardy</strong>, special-effects master <strong class=\"mysterio-quentin-beck\">Mysterio</strong> frames Spider-Man for grand larceny, Jameson's funded Neogenic experiment transforms Mac Gargan into the psychotic <strong class=\"scorpion-mac-gargan\">Scorpion</strong>, and big-game hunter <strong class=\"kraven-the-hunter\">Kraven the Hunter</strong> stalks him across Central Park."
+              ],
+              "characters": [
+                      "peter-parker-spider-man",
+                      "curt-connors-lizard",
+                      "doctor-octopus",
+                      "mysterio-quentin-beck",
+                      "scorpion-mac-gargan",
+                      "kraven-the-hunter",
+                      "j-jonah-jameson",
+                      "felicia-hardy",
+                      "norman-osborn"
+              ],
+              "stones": [],
+              "deaths": [],
+              "mcuHighlights": [
+                      "Peter Parker's Double Life at ESU and Daily Bugle",
+                      "Connors' Neogenic Lizard Transformation",
+                      "Debut of Doc Ock, Mysterio, Scorpion, and Kraven"
+              ],
+              "locations": [
+                      {
+                              "name": "Empire State University & Daily Bugle",
+                              "cityOrRegion": "Manhattan, New York",
+                              "countryOrRealm": "United States",
+                              "planet": "Earth-92131",
+                              "celestialSystem": "solar-system"
+                      }
+              ]
+      },
+      {
+              "id": "event-1994-tas-spiderman-alien-costume-venom",
+              "eraId": "era-_1994_",
+              "eraTitle": "1994",
+              "mediaKey": "spider-man-tas-1",
+              "mediaTitle": "Spider-Man: The Animated Series (Season 1)",
+              "mediaType": "series",
+              "mediaPhase": "Marvel Television",
+              "isAlternativeTimeline": true,
+              "timelineType": "multiverse-alternate",
+              "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+              "rawClasses": [
+                      "spider-man-tas-1"
+              ],
+              "rawHtml": "<p>Astronaut John Jameson's Prometheus X shuttle crash-lands on the Manhattan Bridge, bringing back an extraterrestrial Prometheum X mineral and an amorphous black alien symbiote. The parasite bonds to <strong class=\"peter-parker-spider-man\">Spider-Man</strong>, transforming his costume into a sleek black suit that amplifies his strength and produces organic webbing, but feeds on his aggression. Recognizing its parasitic malice after nearly murdering the Shocker, Peter climbs the bell tower of Our Lady of Saints Church, using the bronze bell vibrations to tear the symbiote from his body. The creature drops into the shadows and bonds with disgraced reporter <strong class=\"eddie-brock-venom\">Eddie Brock</strong>, creating <strong class=\"eddie-brock-venom\">Venom</strong>. After defeating Venom by launching him into space on a rocket probe, Spider-Man battles the glider-riding <strong class=\"hobgoblin\">Hobgoblin</strong> and unmasks international spy <strong class=\"chameleon\">Chameleon</strong>.</p>",
+              "paragraphs": [
+                      "Astronaut John Jameson's Prometheus X shuttle crash-lands on the Manhattan Bridge, bringing back an extraterrestrial Prometheum X mineral and an amorphous black alien symbiote. The parasite bonds to <strong class=\"peter-parker-spider-man\">Spider-Man</strong>, transforming his costume into a sleek black suit that amplifies his strength and produces organic webbing, but feeds on his aggression. Recognizing its parasitic malice after nearly murdering the Shocker, Peter climbs the bell tower of Our Lady of Saints Church, using the bronze bell vibrations to tear the symbiote from his body. The creature drops into the shadows and bonds with disgraced reporter <strong class=\"eddie-brock-venom\">Eddie Brock</strong>, creating <strong class=\"eddie-brock-venom\">Venom</strong>. After defeating Venom by launching him into space on a rocket probe, Spider-Man battles the glider-riding <strong class=\"hobgoblin\">Hobgoblin</strong> and unmasks international spy <strong class=\"chameleon\">Chameleon</strong>."
+              ],
+              "characters": [
+                      "peter-parker-spider-man",
+                      "eddie-brock-venom",
+                      "hobgoblin",
+                      "chameleon"
+              ],
+              "stones": [],
+              "deaths": [],
+              "mcuHighlights": [
+                      "Arrival of the Klyntar Symbiote on Earth",
+                      "The Black Suit & Church Bell Tower Rejection",
+                      "Birth and Exiling of Venom",
+                      "Hobgoblin and Chameleon Incursions"
+              ],
+              "locations": [
+                      {
+                              "name": "Manhattan Bridge & Our Lady of Saints Church Bell Tower",
+                              "cityOrRegion": "Manhattan, New York",
+                              "countryOrRealm": "United States",
+                              "planet": "Earth-92131",
+                              "celestialSystem": "solar-system"
+                      }
+              ]
       }
     ]
   },
@@ -4945,7 +5760,888 @@ export const timelineEras: EraGroup[] = [
         "timelineType": "sacred-616",
         "earthDesignation": "Earth-616 (The Sacred Timeline)"
       }
+    ,
+      {
+              "id": "event-1995-tas-spiderman-mutant-agenda",
+              "eraId": "era-_1995_",
+              "eraTitle": "1995",
+              "mediaKey": "spider-man-tas-2",
+              "mediaTitle": "Spider-Man: The Animated Series (Season 2)",
+              "mediaType": "series",
+              "mediaPhase": "Marvel Television",
+              "isAlternativeTimeline": true,
+              "timelineType": "multiverse-alternate",
+              "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+              "rawClasses": [
+                      "spider-man-tas-2"
+              ],
+              "rawHtml": "<p>Kingpin unifies New York's greatest rogues into the <strong>Insidious Six</strong> (Doc Ock, Mysterio, Shocker, Chameleon, Rhino, Scorpion), who capture Spider-Man while his powers begin mysteriously fluctuating. Seeking an answer to his cellular breakdown, <strong class=\"peter-parker-spider-man\">Spider-Man</strong> travels to Westchester County to seek the genetic expertise of <strong class=\"charles-xavier\">Professor Charles Xavier</strong>. Met with hostility by <strong class=\"logan-wolverine\">Wolverine</strong>, Spider-Man eventually teams up with <strong class=\"hank-mccoy-beast\">Beast</strong> and the X-Men. When mutant-hating scientist Dr. Herbert Landon attempts to exterminate all mutants with a mutagenic weapon, Beast and Spider-Man dismantle his facility, though Landon mutates into an enormous biological behemoth before being subdued.</p>",
+              "paragraphs": [
+                      "Kingpin unifies New York's greatest rogues into the <strong>Insidious Six</strong> (Doc Ock, Mysterio, Shocker, Chameleon, Rhino, Scorpion), who capture Spider-Man while his powers begin mysteriously fluctuating. Seeking an answer to his cellular breakdown, <strong class=\"peter-parker-spider-man\">Spider-Man</strong> travels to Westchester County to seek the genetic expertise of <strong class=\"charles-xavier\">Professor Charles Xavier</strong>. Met with hostility by <strong class=\"logan-wolverine\">Wolverine</strong>, Spider-Man eventually teams up with <strong class=\"hank-mccoy-beast\">Beast</strong> and the X-Men. When mutant-hating scientist Dr. Herbert Landon attempts to exterminate all mutants with a mutagenic weapon, Beast and Spider-Man dismantle his facility, though Landon mutates into an enormous biological behemoth before being subdued."
+              ],
+              "characters": [
+                      "peter-parker-spider-man",
+                      "charles-xavier",
+                      "logan-wolverine",
+                      "hank-mccoy-beast",
+                      "wilson-fisk-kingpin"
+              ],
+              "stones": [],
+              "deaths": [],
+              "mcuHighlights": [
+                      "The Neogenic Nightmare Genesis",
+                      "Formation of the Insidious Six by Kingpin",
+                      "Historic Animated Crossover: Spider-Man at Xavier's School"
+              ],
+              "locations": [
+                      {
+                              "name": "Xavier School for Gifted Youngsters",
+                              "cityOrRegion": "Salem Center, Westchester County, New York",
+                              "countryOrRealm": "United States",
+                              "planet": "Earth-92131",
+                              "celestialSystem": "solar-system"
+                      }
+              ]
+      },
+      {
+              "id": "event-1995-tas-spiderman-vampire-war",
+              "eraId": "era-_1995_",
+              "eraTitle": "1995",
+              "mediaKey": "spider-man-tas-2",
+              "mediaTitle": "Spider-Man: The Animated Series (Season 2)",
+              "mediaType": "series",
+              "mediaPhase": "Marvel Television",
+              "isAlternativeTimeline": true,
+              "timelineType": "multiverse-alternate",
+              "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+              "rawClasses": [
+                      "spider-man-tas-2"
+              ],
+              "rawHtml": "<p>Peter Parker's cellular degradation worsens, mutating him into a six-armed arachnid monstrosity known as the <strong>Man-Spider</strong>. Simultaneously, biology student <strong class=\"michael-morbius\">Michael Morbius</strong> steals the Neogenic Recombinator to cure his rare blood disease, accidentally transforming into a living vampire that preys on Manhattan's plasma. Armed vigilante Frank Castle, <strong>The Punisher</strong>, hunts the rampaging Man-Spider with battle vans and explosives, while daywalking dhampir <strong class=\"blade-eric-brooks\">Blade the Vampire Hunter</strong> arrives in New York with silver swords to eliminate Morbius. Dr. Mariah Crawford formulates an enzyme cure, restoring Peter Parker while Morbius flees into the night.</p>",
+              "paragraphs": [
+                      "Peter Parker's cellular degradation worsens, mutating him into a six-armed arachnid monstrosity known as the <strong>Man-Spider</strong>. Simultaneously, biology student <strong class=\"michael-morbius\">Michael Morbius</strong> steals the Neogenic Recombinator to cure his rare blood disease, accidentally transforming into a living vampire that preys on Manhattan's plasma. Armed vigilante Frank Castle, <strong>The Punisher</strong>, hunts the rampaging Man-Spider with battle vans and explosives, while daywalking dhampir <strong class=\"blade-eric-brooks\">Blade the Vampire Hunter</strong> arrives in New York with silver swords to eliminate Morbius. Dr. Mariah Crawford formulates an enzyme cure, restoring Peter Parker while Morbius flees into the night."
+              ],
+              "characters": [
+                      "peter-parker-spider-man",
+                      "michael-morbius",
+                      "blade-eric-brooks",
+                      "the-punisher"
+              ],
+              "stones": [],
+              "deaths": [],
+              "mcuHighlights": [
+                      "Spider-Man's Horrific Man-Spider Mutation",
+                      "Genesis of Morbius the Living Vampire",
+                      "Punisher & Blade Intersect in New York City"
+              ],
+              "locations": [
+                      {
+                              "name": "Manhattan Rooftops & ESU Bio-Labs",
+                              "cityOrRegion": "New York City",
+                              "countryOrRealm": "United States",
+                              "planet": "Earth-92131",
+                              "celestialSystem": "solar-system"
+                      }
+              ]
+      },
+      {
+              "id": "event-1995-tas-spiderman-tablet-of-time",
+              "eraId": "era-_1995_",
+              "eraTitle": "1995",
+              "mediaKey": "spider-man-tas-2",
+              "mediaTitle": "Spider-Man: The Animated Series (Season 2)",
+              "mediaType": "series",
+              "mediaPhase": "Marvel Television",
+              "isAlternativeTimeline": true,
+              "timelineType": "multiverse-alternate",
+              "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+              "rawClasses": [
+                      "spider-man-tas-2"
+              ],
+              "rawHtml": "<p>Archaeologists unearth the mystical <strong>Tablet of Time</strong> in prehistoric Mayan ruins, said to bestow youth and biological reversal. Dying Maggia crime boss Silvermane and Kingpin wage an all-out turf war across New York to seize the artifact. Aged criminal Adrian Toomes (The Vulture) constructs youth-draining wing gauntlets, siphoning Peter Parker's youthful vigor. When Silvermane activates the tablet, the arcane energies regress him uncontrollably into infancy. Spider-Man reclaims his vitality and defeats the Vulture, delivering the Tablet to the authorities.</p>",
+              "paragraphs": [
+                      "Archaeologists unearth the mystical <strong>Tablet of Time</strong> in prehistoric Mayan ruins, said to bestow youth and biological reversal. Dying Maggia crime boss Silvermane and Kingpin wage an all-out turf war across New York to seize the artifact. Aged criminal Adrian Toomes (The Vulture) constructs youth-draining wing gauntlets, siphoning Peter Parker's youthful vigor. When Silvermane activates the tablet, the arcane energies regress him uncontrollably into infancy. Spider-Man reclaims his vitality and defeats the Vulture, delivering the Tablet to the authorities."
+              ],
+              "characters": [
+                      "peter-parker-spider-man",
+                      "wilson-fisk-kingpin"
+              ],
+              "stones": [],
+              "deaths": [],
+              "mcuHighlights": [
+                      "The Mythic Tablet of Time Power Struggle",
+                      "Silvermane's Reverse-Aging Catastrophe",
+                      "The Vulture's Youth Siphoning Gauntlets"
+              ],
+              "locations": [
+                      {
+                              "name": "Maggia Penthouse & New York Harbor Docks",
+                              "cityOrRegion": "Manhattan, New York",
+                              "countryOrRealm": "United States",
+                              "planet": "Earth-92131",
+                              "celestialSystem": "solar-system"
+                      }
+              ]
+      },
+      {
+              "id": "event-1995-tas-ironman-modular-armor",
+              "eraId": "era-_1995_",
+              "eraTitle": "1995",
+              "mediaKey": "iron-man-tas-2",
+              "mediaTitle": "Iron Man: The Animated Series (Season 2)",
+              "mediaType": "series",
+              "mediaPhase": "Marvel Television",
+              "isAlternativeTimeline": true,
+              "timelineType": "multiverse-alternate",
+              "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+              "rawClasses": [
+                      "iron-man-tas-2"
+              ],
+              "rawHtml": "<p>Tired of team discord and security liabilities, <strong class=\"tony-stark-iron-man\">Tony Stark</strong> disbands <strong>Force Works</strong>. Hawkeye and Scarlet Witch depart angrily, while Tony retreats into solitary engineering at Stark Enterprises. Unveiling his state-of-the-art <strong>Modular Armor (Model 13)</strong> alongside his witty, highly capable artificial intelligence operating system <strong class=\"homer-ai\">H.O.M.E.R.</strong>, Tony operates solo. He confronts corporate rival Justin Hammer, unmasks Maggia heiress <strong class=\"madame-masque-whitney-frost\">Madame Masque (Whitney Frost)</strong>, and foils a corrupt clone scheme targeting the legacy of his late father Howard Stark.</p>",
+              "paragraphs": [
+                      "Tired of team discord and security liabilities, <strong class=\"tony-stark-iron-man\">Tony Stark</strong> disbands <strong>Force Works</strong>. Hawkeye and Scarlet Witch depart angrily, while Tony retreats into solitary engineering at Stark Enterprises. Unveiling his state-of-the-art <strong>Modular Armor (Model 13)</strong> alongside his witty, highly capable artificial intelligence operating system <strong class=\"homer-ai\">H.O.M.E.R.</strong>, Tony operates solo. He confronts corporate rival Justin Hammer, unmasks Maggia heiress <strong class=\"madame-masque-whitney-frost\">Madame Masque (Whitney Frost)</strong>, and foils a corrupt clone scheme targeting the legacy of his late father Howard Stark."
+              ],
+              "characters": [
+                      "tony-stark-iron-man",
+                      "homer-ai",
+                      "madame-masque-whitney-frost",
+                      "james-rhodes-war-machine"
+              ],
+              "stones": [],
+              "deaths": [],
+              "mcuHighlights": [
+                      "Disbandment of Force Works",
+                      "Debut of the Iconic Model 13 Modular Armor",
+                      "Activation of the H.O.M.E.R. Artificial Intelligence"
+              ],
+              "locations": [
+                      {
+                              "name": "Stark Enterprises R&D Towers & Armory",
+                              "cityOrRegion": "Los Angeles, California",
+                              "countryOrRealm": "United States",
+                              "planet": "Earth-92131",
+                              "celestialSystem": "solar-system"
+                      }
+              ]
+      },
+      {
+              "id": "event-1995-tas-ironman-armor-wars",
+              "eraId": "era-_1995_",
+              "eraTitle": "1995",
+              "mediaKey": "iron-man-tas-2",
+              "mediaTitle": "Iron Man: The Animated Series (Season 2)",
+              "mediaType": "series",
+              "mediaPhase": "Marvel Television",
+              "isAlternativeTimeline": true,
+              "timelineType": "multiverse-alternate",
+              "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+              "rawClasses": [
+                      "iron-man-tas-2"
+              ],
+              "rawHtml": "<p>Tony Stark discovers that confidential schematics for his repulsor and armor technology have been stolen by Justin Hammer and sold on the global black market. Driven by guilt that his life's work is being weaponized, Iron Man wages a unilateral crusade known as <strong>The Armor Wars</strong>. Defying military and superhero sanctions, Stark hunts down and disables armored adversaries across the globe using negator packs—neutralizing The Beetle, Controller, Strikebreaker, Crimson Dynamo, and Titanium Man. With War Machine's support, Tony destroys Hammer's orbital fabrication mainframe, reclaiming dominion over his creations.</p>",
+              "paragraphs": [
+                      "Tony Stark discovers that confidential schematics for his repulsor and armor technology have been stolen by Justin Hammer and sold on the global black market. Driven by guilt that his life's work is being weaponized, Iron Man wages a unilateral crusade known as <strong>The Armor Wars</strong>. Defying military and superhero sanctions, Stark hunts down and disables armored adversaries across the globe using negator packs—neutralizing The Beetle, Controller, Strikebreaker, Crimson Dynamo, and Titanium Man. With War Machine's support, Tony destroys Hammer's orbital fabrication mainframe, reclaiming dominion over his creations."
+              ],
+              "characters": [
+                      "tony-stark-iron-man",
+                      "james-rhodes-war-machine",
+                      "homer-ai"
+              ],
+              "stones": [],
+              "deaths": [],
+              "mcuHighlights": [
+                      "The Unilateral Armor Wars Campaign",
+                      "Global Negator Pack Deployment against Tech Thieves",
+                      "Destruction of Justin Hammer's Black Market Network"
+              ],
+              "locations": [
+                      {
+                              "name": "Hammer Industries Orbital Production Facility",
+                              "cityOrRegion": "Low Earth Orbit",
+                              "countryOrRealm": "Space",
+                              "planet": "Earth-92131",
+                              "celestialSystem": "solar-system"
+                      }
+              ]
+      },
+      {
+              "id": "event-1995-tas-ff-inhumans-saga",
+              "eraId": "era-_1995_",
+              "eraTitle": "1995",
+              "mediaKey": "fantastic-four-tas-2",
+              "mediaTitle": "Fantastic Four: The Animated Series (Season 2)",
+              "mediaType": "series",
+              "mediaPhase": "Marvel Television",
+              "isAlternativeTimeline": true,
+              "timelineType": "multiverse-alternate",
+              "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+              "rawClasses": [
+                      "fantastic-four-tas-2"
+              ],
+              "rawHtml": "<p>While tracking the amnesiac Medusa in the Mediterranean, the Fantastic Four uncover the secluded mountain domain of the <strong>Inhumans</strong>: a genetically modified offshoot of humanity hidden in the Himalayas' Great Refuge (Attilan). The team meets the Inhuman Royal Family: silent monarch <strong class=\"black-bolt\">Black Bolt</strong>, <strong class=\"medusa\">Medusa</strong>, martial philosopher <strong class=\"karnak\">Karnak</strong>, hooved powerhouse <strong class=\"gorgon\">Gorgon</strong>, elemental princess <strong class=\"crystal\">Crystal</strong> (with whom Johnny Storm falls in love), and giant teleporting hound <strong class=\"lockjaw\">Lockjaw</strong>. When Black Bolt's treacherous brother Maximus the Mad attempts to annihilate humanity with an Atmo-Gun, Black Bolt unleashes his quasi-sonic whisper, shattering the weapon though sealing Attilan beneath a negative energy barrier.</p>",
+              "paragraphs": [
+                      "While tracking the amnesiac Medusa in the Mediterranean, the Fantastic Four uncover the secluded mountain domain of the <strong>Inhumans</strong>: a genetically modified offshoot of humanity hidden in the Himalayas' Great Refuge (Attilan). The team meets the Inhuman Royal Family: silent monarch <strong class=\"black-bolt\">Black Bolt</strong>, <strong class=\"medusa\">Medusa</strong>, martial philosopher <strong class=\"karnak\">Karnak</strong>, hooved powerhouse <strong class=\"gorgon\">Gorgon</strong>, elemental princess <strong class=\"crystal\">Crystal</strong> (with whom Johnny Storm falls in love), and giant teleporting hound <strong class=\"lockjaw\">Lockjaw</strong>. When Black Bolt's treacherous brother Maximus the Mad attempts to annihilate humanity with an Atmo-Gun, Black Bolt unleashes his quasi-sonic whisper, shattering the weapon though sealing Attilan beneath a negative energy barrier."
+              ],
+              "characters": [
+                      "reed-richards",
+                      "sue-storm",
+                      "johnny-storm",
+                      "ben-grimm"
+              ],
+              "stones": [],
+              "deaths": [],
+              "mcuHighlights": [
+                      "Discovery of Attilan and the Great Refuge in the Himalayas",
+                      "Introduction of the Inhuman Royal Family",
+                      "Johnny Storm and Crystal's Romance",
+                      "Black Bolt's Quasi-Sonic Voice"
+              ],
+              "locations": [
+                      {
+                              "name": "Attilan (The Great Refuge)",
+                              "cityOrRegion": "Himalayan Mountain Range",
+                              "countryOrRealm": "Tibet / Great Refuge",
+                              "planet": "Earth-92131",
+                              "celestialSystem": "solar-system"
+                      }
+              ]
+      },
+      {
+              "id": "event-1995-tas-ff-blind-man-ego-wakanda",
+              "eraId": "era-_1995_",
+              "eraTitle": "1995",
+              "mediaKey": "fantastic-four-tas-2",
+              "mediaTitle": "Fantastic Four: The Animated Series (Season 2)",
+              "mediaType": "series",
+              "mediaPhase": "Marvel Television",
+              "isAlternativeTimeline": true,
+              "timelineType": "multiverse-alternate",
+              "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+              "rawClasses": [
+                      "fantastic-four-tas-2"
+              ],
+              "rawHtml": "<p>When Doctor Doom takes over the Baxter Building through corrupt legal seizures, blind attorney <strong class=\"matt-murdock-daredevil\">Matt Murdock (Daredevil)</strong> arrives to defend the team's civil rights, donning his red horns to help the Fantastic Four retake their skyscraper floor-by-floor. Expanding their cosmic frontier, Reed Richards navigates the deep galaxy to confront <strong class=\"ego-living-planet\">Ego the Living Planet</strong>, saving Thor and the universe from planetary collision. Shortly after, the team travels to the secluded African kingdom of Wakanda, joining forces with <strong class=\"black-panther-t-challa\">King T'Challa (Black Panther)</strong> to defend the sacred Great Mound of Vibranium against Ulysses Klaw.</p>",
+              "paragraphs": [
+                      "When Doctor Doom takes over the Baxter Building through corrupt legal seizures, blind attorney <strong class=\"matt-murdock-daredevil\">Matt Murdock (Daredevil)</strong> arrives to defend the team's civil rights, donning his red horns to help the Fantastic Four retake their skyscraper floor-by-floor. Expanding their cosmic frontier, Reed Richards navigates the deep galaxy to confront <strong class=\"ego-living-planet\">Ego the Living Planet</strong>, saving Thor and the universe from planetary collision. Shortly after, the team travels to the secluded African kingdom of Wakanda, joining forces with <strong class=\"black-panther-t-challa\">King T'Challa (Black Panther)</strong> to defend the sacred Great Mound of Vibranium against Ulysses Klaw."
+              ],
+              "characters": [
+                      "reed-richards",
+                      "sue-storm",
+                      "ben-grimm",
+                      "johnny-storm",
+                      "matt-murdock-daredevil",
+                      "black-panther-t-challa",
+                      "victor-von-doom"
+              ],
+              "stones": [],
+              "deaths": [],
+              "mcuHighlights": [
+                      "Daredevil and Fantastic Four Baxter Building Defense",
+                      "Cosmic Encounter with Ego the Living Planet",
+                      "First Expedition to Wakanda and Vibranium Mound Defense"
+              ],
+              "locations": [
+                      {
+                              "name": "The Great Mound & Birnin Zana",
+                              "cityOrRegion": "Kingdom of Wakanda",
+                              "countryOrRealm": "Wakanda",
+                              "planet": "Earth-92131",
+                              "celestialSystem": "solar-system"
+                      },
+                      {
+                              "name": "Ego the Living Planet Orbit",
+                              "cityOrRegion": "Deep Space Black Galaxy",
+                              "countryOrRealm": "Cosmos",
+                              "planet": "Ego",
+                              "celestialSystem": "deep-space"
+                      }
+              ]
+      },
+      {
+              "id": "event-1995-tas-xmen-altered-timelines",
+              "eraId": "era-_1995_",
+              "eraTitle": "1995",
+              "mediaKey": "x-men-tas-4",
+              "mediaTitle": "X-Men: The Animated Series (Season 4)",
+              "mediaType": "series",
+              "mediaPhase": "Marvel Television",
+              "isAlternativeTimeline": true,
+              "timelineType": "multiverse-alternate",
+              "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+              "rawClasses": [
+                      "x-men-tas-4"
+              ],
+              "rawHtml": "<p>Cyborg assassin Trevor Fitzroy travels back in time to 1959 to assassinate young Charles Xavier, causing the prime timeline to fracture into an apocalyptic dystopia where Magneto commands the human-mutant resistance against an army of master Sentinels led by Nimrod. Time-traveler <strong class=\"bishop-lucas\">Bishop</strong> and his sister Shard restore the timeline by guarding young Xavier in Egypt. Back in Scotland, Moira MacTaggert's reality-warping mutant son <strong class=\"proteus-kevin-mactaggert\">Kevin MacTaggert (Proteus)</strong> escapes Muir Island, bending buildings and laws of physics across Edinburgh before Wolverine and Beast compel him to recognize the devastation he leaves in his wake.</p>",
+              "paragraphs": [
+                      "Cyborg assassin Trevor Fitzroy travels back in time to 1959 to assassinate young Charles Xavier, causing the prime timeline to fracture into an apocalyptic dystopia where Magneto commands the human-mutant resistance against an army of master Sentinels led by Nimrod. Time-traveler <strong class=\"bishop-lucas\">Bishop</strong> and his sister Shard restore the timeline by guarding young Xavier in Egypt. Back in Scotland, Moira MacTaggert's reality-warping mutant son <strong class=\"proteus-kevin-mactaggert\">Kevin MacTaggert (Proteus)</strong> escapes Muir Island, bending buildings and laws of physics across Edinburgh before Wolverine and Beast compel him to recognize the devastation he leaves in his wake."
+              ],
+              "characters": [
+                      "bishop-lucas",
+                      "charles-xavier",
+                      "logan-wolverine",
+                      "erik-lehnsherr-magneto",
+                      "proteus-kevin-mactaggert"
+              ],
+              "stones": [],
+              "deaths": [
+                      "proteus-kevin-mactaggert"
+              ],
+              "mcuHighlights": [
+                      "One Man's Worth Timeline Paradox and Nimrod War",
+                      "Bishop & Shard Temporal Restoration",
+                      "Proteus Reality-Warping Rampage in Scotland"
+              ],
+              "locations": [
+                      {
+                              "name": "Muir Island Research Complex & Edinburgh",
+                              "cityOrRegion": "Highlands",
+                              "countryOrRealm": "Scotland",
+                              "planet": "Earth-92131",
+                              "celestialSystem": "solar-system"
+                      }
+              ]
+      },
+      {
+              "id": "event-1995-tas-xmen-beyond-good-and-evil",
+              "eraId": "era-_1995_",
+              "eraTitle": "1995",
+              "mediaKey": "x-men-tas-4",
+              "mediaTitle": "X-Men: The Animated Series (Season 4)",
+              "mediaType": "series",
+              "mediaPhase": "Marvel Television",
+              "isAlternativeTimeline": true,
+              "timelineType": "multiverse-alternate",
+              "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+              "rawClasses": [
+                      "x-men-tas-4"
+              ],
+              "rawHtml": "<p>Ancient immortal mutant <strong class=\"apocalypse-en-sabah-nur\">Apocalypse</strong> unites with Mister Sinister and Magneto to enact his grand design: abducting the world's greatest psychic mutants (Charles Xavier, Jean Grey, Psylocke, Moondragon, Oracle, Emma Frost) and imprisoning them in the Lazarus Chambers located inside the <strong>Axis of Time</strong>—the nexus of all timelines. Cable, Bishop, and the X-Men mount a cross-temporal offensive across ancient Egypt, futuristic 3999 CE, and the extra-dimensional temporal core. Wolverine, Cyclops, and Cable shatter the Lazarus Chamber conduits, freeing the psychics whose combined telepathic cascade expels Apocalypse into a dimensional vacuum and resets the timeline.</p>",
+              "paragraphs": [
+                      "Ancient immortal mutant <strong class=\"apocalypse-en-sabah-nur\">Apocalypse</strong> unites with Mister Sinister and Magneto to enact his grand design: abducting the world's greatest psychic mutants (Charles Xavier, Jean Grey, Psylocke, Moondragon, Oracle, Emma Frost) and imprisoning them in the Lazarus Chambers located inside the <strong>Axis of Time</strong>—the nexus of all timelines. Cable, Bishop, and the X-Men mount a cross-temporal offensive across ancient Egypt, futuristic 3999 CE, and the extra-dimensional temporal core. Wolverine, Cyclops, and Cable shatter the Lazarus Chamber conduits, freeing the psychics whose combined telepathic cascade expels Apocalypse into a dimensional vacuum and resets the timeline."
+              ],
+              "characters": [
+                      "apocalypse-en-sabah-nur",
+                      "nathan-summers-cable",
+                      "bishop-lucas",
+                      "charles-xavier",
+                      "jean-grey",
+                      "scott-summers-cyclops",
+                      "logan-wolverine",
+                      "erik-lehnsherr-magneto",
+                      "nathaniel-essex-mister-sinister"
+              ],
+              "stones": [],
+              "deaths": [],
+              "mcuHighlights": [
+                      "The Epic Four-Part Beyond Good and Evil Arc",
+                      "Abduction of the World's Most Powerful Telepaths",
+                      "Cable & Bishop Convergence in the Axis of Time",
+                      "Exile of Apocalypse from the Temporal Stream"
+              ],
+              "locations": [
+                      {
+                              "name": "The Axis of Time (Temporal Nexus)",
+                              "cityOrRegion": "Extradimensional Nexus",
+                              "countryOrRealm": "Axis of Time",
+                              "planet": "Omniversal Nexus",
+                              "celestialSystem": "multiverse"
+                      }
+              ]
+      }
     ]
+  },
+      {
+      "id": "era-_1996_",
+      "title": "-1996-",
+      "cleanTitle": "1996",
+      "category": "golden-age",
+      "events": [
+          {
+              "id": "event-1996-tas-spiderman-strange-goblin",
+              "eraId": "era-_1996_",
+              "eraTitle": "1996",
+              "mediaKey": "spider-man-tas-3",
+              "mediaTitle": "Spider-Man: The Animated Series (Season 3)",
+              "mediaType": "series",
+              "mediaPhase": "Marvel Television",
+              "isAlternativeTimeline": true,
+              "timelineType": "multiverse-alternate",
+              "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+              "rawClasses": [
+                  "spider-man-tas-3"
+              ],
+              "rawHtml": "<p>When Mary Jane Watson is hypnotized by an arcane cult led by Baron Mordo seeking to liberate dark entity Dormammu, <strong class=\"peter-parker-spider-man\">Spider-Man</strong> joins forces with Master of the Mystic Arts <strong class=\"doctor-strange-stephen-strange\">Doctor Stephen Strange</strong> and Wong at the Sanctum Sanctorum, banishing Dormammu back into the Dark Dimension. Meanwhile, Norman Osborn's chemical inhalation in Oscorp's lab fractures his mind, awakening the malevolent persona of the <strong>Green Goblin</strong>. Flying on his glider with an arsenal of pumpkin bombs, Osborn terrorizes Oscorp shareholders before targeting Spider-Man's personal life.</p>",
+              "paragraphs": [
+                  "When Mary Jane Watson is hypnotized by an arcane cult led by Baron Mordo seeking to liberate dark entity Dormammu, <strong class=\"peter-parker-spider-man\">Spider-Man</strong> joins forces with Master of the Mystic Arts <strong class=\"doctor-strange-stephen-strange\">Doctor Stephen Strange</strong> and Wong at the Sanctum Sanctorum, banishing Dormammu back into the Dark Dimension. Meanwhile, Norman Osborn's chemical inhalation in Oscorp's lab fractures his mind, awakening the malevolent persona of the <strong>Green Goblin</strong>. Flying on his glider with an arsenal of pumpkin bombs, Osborn terrorizes Oscorp shareholders before targeting Spider-Man's personal life."
+              ],
+              "characters": [
+                  "peter-parker-spider-man",
+                  "norman-osborn"
+              ],
+              "stones": [],
+              "deaths": [],
+              "mcuHighlights": [
+                  "Doctor Strange & Sanctum Sanctorum Mystic Incursion",
+                  "Dormammu Banishment to Dark Dimension",
+                  "Genesis and Emergence of the Green Goblin"
+              ],
+              "locations": [
+                  {
+                      "name": "Sanctum Sanctorum & Oscorp Labs",
+                      "cityOrRegion": "Greenwich Village, Manhattan",
+                      "countryOrRealm": "United States",
+                      "planet": "Earth-92131",
+                      "celestialSystem": "solar-system"
+                  }
+              ]
+          },
+          {
+              "id": "event-1996-tas-spiderman-daredevil-framed",
+              "eraId": "era-_1996_",
+              "eraTitle": "1996",
+              "mediaKey": "spider-man-tas-3",
+              "mediaTitle": "Spider-Man: The Animated Series (Season 3)",
+              "mediaType": "series",
+              "mediaPhase": "Marvel Television",
+              "isAlternativeTimeline": true,
+              "timelineType": "multiverse-alternate",
+              "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+              "rawClasses": [
+                  "spider-man-tas-3"
+              ],
+              "rawHtml": "<p>Framed for high treason and industrial espionage by Richard Fisk, Peter Parker is arrested and placed on federal trial in Manhattan. Blind defense attorney <strong class=\"matt-murdock-daredevil\">Matt Murdock</strong> takes Peter's case, sensing his innocence through his heightened auditory heartbeat radar. By night, Murdock dons his horned mask as <strong>Daredevil</strong>, teaming up with Spider-Man to raid Fisk's heavily fortified high-tech warehouse. Together, the Man Without Fear and the Wall-Crawler expose Wilson Fisk, the <strong>Kingpin</strong>, clearing Peter's name in court.</p>",
+              "paragraphs": [
+                  "Framed for high treason and industrial espionage by Richard Fisk, Peter Parker is arrested and placed on federal trial in Manhattan. Blind defense attorney <strong class=\"matt-murdock-daredevil\">Matt Murdock</strong> takes Peter's case, sensing his innocence through his heightened auditory heartbeat radar. By night, Murdock dons his horned mask as <strong>Daredevil</strong>, teaming up with Spider-Man to raid Fisk's heavily fortified high-tech warehouse. Together, the Man Without Fear and the Wall-Crawler expose Wilson Fisk, the <strong>Kingpin</strong>, clearing Peter's name in court."
+              ],
+              "characters": [
+                  "peter-parker-spider-man",
+                  "matt-murdock-daredevil",
+                  "wilson-fisk-kingpin"
+              ],
+              "stones": [],
+              "deaths": [],
+              "mcuHighlights": [
+                  "Peter Parker's High-Stakes Federal Trial",
+                  "Matt Murdock Serves as Defense Counsel",
+                  "Daredevil & Spider-Man Infiltrate Kingpin's Stronghold"
+              ],
+              "locations": [
+                  {
+                      "name": "New York Supreme Court & Fisk Tower",
+                      "cityOrRegion": "Manhattan, New York",
+                      "countryOrRealm": "United States",
+                      "planet": "Earth-92131",
+                      "celestialSystem": "solar-system"
+                  }
+              ]
+          },
+          {
+              "id": "event-1996-tas-spiderman-symbiote-carnage",
+              "eraId": "era-_1996_",
+              "eraTitle": "1996",
+              "mediaKey": "spider-man-tas-3",
+              "mediaTitle": "Spider-Man: The Animated Series (Season 3)",
+              "mediaType": "series",
+              "mediaPhase": "Marvel Television",
+              "isAlternativeTimeline": true,
+              "timelineType": "multiverse-alternate",
+              "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+              "rawClasses": [
+                  "spider-man-tas-3"
+              ],
+              "rawHtml": "<p>Baron Mordo and Dormammu orchestrate the return of the Venom symbiote, which reproduces an unstable crimson offspring that bonds with psychotic felon <strong class=\"cletus-kasady-carnage\">Cletus Kasady</strong>, spawning <strong>Carnage</strong>. In response, <strong class=\"tony-stark-iron-man\">Iron Man</strong> in his Modular Armor and <strong class=\"james-rhodes-war-machine\">War Machine</strong> arrive in Manhattan to assist Spider-Man. Eddie Brock, horrified by Carnage's bloodlust, turns against Kasady. Iron Man, War Machine, and Spider-Man deploy high-energy sonic disruptors, while Brock tackles Carnage into an extradimensional portal, sacrificing himself to seal the symbiotes away. Shortly after, the Green Goblin discovers Spider-Man's identity, causing Mary Jane Watson to plummet into a dimensional abyss during a battle on the George Washington Bridge.</p>",
+              "paragraphs": [
+                  "Baron Mordo and Dormammu orchestrate the return of the Venom symbiote, which reproduces an unstable crimson offspring that bonds with psychotic felon <strong class=\"cletus-kasady-carnage\">Cletus Kasady</strong>, spawning <strong>Carnage</strong>. In response, <strong class=\"tony-stark-iron-man\">Iron Man</strong> in his Modular Armor and <strong class=\"james-rhodes-war-machine\">War Machine</strong> arrive in Manhattan to assist Spider-Man. Eddie Brock, horrified by Carnage's bloodlust, turns against Kasady. Iron Man, War Machine, and Spider-Man deploy high-energy sonic disruptors, while Brock tackles Carnage into an extradimensional portal, sacrificing himself to seal the symbiotes away. Shortly after, the Green Goblin discovers Spider-Man's identity, causing Mary Jane Watson to plummet into a dimensional abyss during a battle on the George Washington Bridge."
+              ],
+              "characters": [
+                  "peter-parker-spider-man",
+                  "eddie-brock-venom",
+                  "cletus-kasady-carnage",
+                  "tony-stark-iron-man",
+                  "james-rhodes-war-machine",
+                  "norman-osborn"
+              ],
+              "stones": [],
+              "deaths": [],
+              "mcuHighlights": [
+                  "Birth of Carnage and the Symbiote War in Manhattan",
+                  "Iron Man & War Machine Join Spider-Man and Venom",
+                  "The Tragic Fall of Mary Jane Watson on the George Washington Bridge"
+              ],
+              "locations": [
+                  {
+                      "name": "Stark Enterprise NYC Labs & George Washington Bridge",
+                      "cityOrRegion": "Manhattan, New York",
+                      "countryOrRealm": "United States",
+                      "planet": "Earth-92131",
+                      "celestialSystem": "solar-system"
+                  }
+              ]
+          },
+          {
+              "id": "event-1996-tas-hulk-return-of-the-beast",
+              "eraId": "era-_1996_",
+              "eraTitle": "1996",
+              "mediaKey": "incredible-hulk-tas-1",
+              "mediaTitle": "The Incredible Hulk: The Animated Series (Season 1)",
+              "mediaType": "series",
+              "mediaPhase": "Marvel Television",
+              "isAlternativeTimeline": true,
+              "timelineType": "multiverse-alternate",
+              "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+              "rawClasses": [
+                  "incredible-hulk-tas-1"
+              ],
+              "rawHtml": "<p>Fleeing the military manhunt commanded by General 'Thunderbolt' Ross and Major Glenn Talbot, fugitive nuclear physicist <strong class=\"bruce-banner-hulk\">Dr. Bruce Banner</strong> wanders the American Southwest searching for a biological cure to suppress his gamma monster: <strong>The Incredible Hulk</strong>. Banner is ambushed in desert badlands by gamma-irradiated mastermind <strong class=\"the-leader-samuel-sterns\">The Leader</strong> and gargantuan brute <strong class=\"emil-blonsky-abomination\">The Abomination</strong>. When Betty Ross and Rick Jones are endangered, Banner's pulse skyrockets, unleashing the Jade Giant to shatter the Leader's fortified mountain fortress and defend those he loves.</p>",
+              "paragraphs": [
+                  "Fleeing the military manhunt commanded by General 'Thunderbolt' Ross and Major Glenn Talbot, fugitive nuclear physicist <strong class=\"bruce-banner-hulk\">Dr. Bruce Banner</strong> wanders the American Southwest searching for a biological cure to suppress his gamma monster: <strong>The Incredible Hulk</strong>. Banner is ambushed in desert badlands by gamma-irradiated mastermind <strong class=\"the-leader-samuel-sterns\">The Leader</strong> and gargantuan brute <strong class=\"emil-blonsky-abomination\">The Abomination</strong>. When Betty Ross and Rick Jones are endangered, Banner's pulse skyrockets, unleashing the Jade Giant to shatter the Leader's fortified mountain fortress and defend those he loves."
+              ],
+              "characters": [
+                  "bruce-banner-hulk",
+                  "the-leader-samuel-sterns",
+                  "emil-blonsky-abomination"
+              ],
+              "stones": [],
+              "deaths": [],
+              "mcuHighlights": [
+                  "Bruce Banner's Lonely Fugitive Odyssey across America",
+                  "The Leader & Abomination's Mountain Citadel Clash",
+                  "The Tragic Curse of the Incredible Hulk"
+              ],
+              "locations": [
+                  {
+                      "name": "Gamma Base & Desert Badlands",
+                      "cityOrRegion": "New Mexico",
+                      "countryOrRealm": "United States",
+                      "planet": "Earth-92131",
+                      "celestialSystem": "solar-system"
+                  }
+              ]
+          },
+          {
+              "id": "event-1996-tas-hulk-ironman-ff-crossovers",
+              "eraId": "era-_1996_",
+              "eraTitle": "1996",
+              "mediaKey": "incredible-hulk-tas-1",
+              "mediaTitle": "The Incredible Hulk: The Animated Series (Season 1)",
+              "mediaType": "series",
+              "mediaPhase": "Marvel Television",
+              "isAlternativeTimeline": true,
+              "timelineType": "multiverse-alternate",
+              "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+              "rawClasses": [
+                  "incredible-hulk-tas-1"
+              ],
+              "rawHtml": "<p>Seeking a heavy-water radiation dampener in Utah, Bruce Banner reaches out to fellow scientist <strong class=\"tony-stark-iron-man\">Tony Stark</strong>. When the Leader's agent The Ghost hijacks Stark Enterprises' systems, <strong class=\"tony-stark-iron-man\">Iron Man</strong> and <strong class=\"james-rhodes-war-machine\">War Machine</strong> deploy alongside the Hulk to demolish the cybernetic saboteur. Weeks later, Banner travels to the Baxter Building in Manhattan seeking Reed Richards, only to find <strong class=\"ben-grimm\">The Thing</strong> holding down the fortress. When Leader's robotic gamma androids breach the perimeter, Hulk and Thing join forces in an earth-shattering brawl through New York's sub-levels, forging a mutual respect between the two titans.</p>",
+              "paragraphs": [
+                  "Seeking a heavy-water radiation dampener in Utah, Bruce Banner reaches out to fellow scientist <strong class=\"tony-stark-iron-man\">Tony Stark</strong>. When the Leader's agent The Ghost hijacks Stark Enterprises' systems, <strong class=\"tony-stark-iron-man\">Iron Man</strong> and <strong class=\"james-rhodes-war-machine\">War Machine</strong> deploy alongside the Hulk to demolish the cybernetic saboteur. Weeks later, Banner travels to the Baxter Building in Manhattan seeking Reed Richards, only to find <strong class=\"ben-grimm\">The Thing</strong> holding down the fortress. When Leader's robotic gamma androids breach the perimeter, Hulk and Thing join forces in an earth-shattering brawl through New York's sub-levels, forging a mutual respect between the two titans."
+              ],
+              "characters": [
+                  "bruce-banner-hulk",
+                  "tony-stark-iron-man",
+                  "james-rhodes-war-machine",
+                  "ben-grimm"
+              ],
+              "stones": [],
+              "deaths": [],
+              "mcuHighlights": [
+                  "Historic Animated Crossover: Hulk, Iron Man, and War Machine in Utah",
+                  "Hulk and The Thing Team-Up at the Baxter Building",
+                  "Defense of Stark Tech and Baxter Labs"
+              ],
+              "locations": [
+                  {
+                      "name": "Stark Enterprises Salt Lake Testing Facility",
+                      "cityOrRegion": "Salt Lake City, Utah",
+                      "countryOrRealm": "United States",
+                      "planet": "Earth-92131",
+                      "celestialSystem": "solar-system"
+                  },
+                  {
+                      "name": "Baxter Building Lower Labs",
+                      "cityOrRegion": "Manhattan, New York",
+                      "countryOrRealm": "United States",
+                      "planet": "Earth-92131",
+                      "celestialSystem": "solar-system"
+                  }
+              ]
+          },
+          {
+              "id": "event-1996-tas-xmen-phalanx-wwii",
+              "eraId": "era-_1996_",
+              "eraTitle": "1996",
+              "mediaKey": "x-men-tas-5",
+              "mediaTitle": "X-Men: The Animated Series (Season 5)",
+              "mediaType": "series",
+              "mediaPhase": "Marvel Television",
+              "isAlternativeTimeline": true,
+              "timelineType": "multiverse-alternate",
+              "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+              "rawClasses": [
+                  "x-men-tas-5"
+              ],
+              "rawHtml": "<p>A techno-organic cybernetic alien collective known as the <strong>Phalanx</strong> invades Earth, assimilating human and mutant DNA to build a planetary hive mind. With the core X-Men captured, <strong class=\"hank-mccoy-beast\">Beast</strong> recruits unlikely allies: mutant sovereign <strong class=\"erik-lehnsherr-magneto\">Magneto</strong>, mutant inventor Forge, and extraterrestrial warrior Warlock. Together, they deploy a computer virus into the hive spire, eradicating the Phalanx's biological assimilation. In a parallel historic retrospective, Logan recalls his 1944 wartime operation in occupied France alongside <strong class=\"captain-america\">Captain America</strong>, liberating a Nazi laboratory from Red Skull.</p>",
+              "paragraphs": [
+                  "A techno-organic cybernetic alien collective known as the <strong>Phalanx</strong> invades Earth, assimilating human and mutant DNA to build a planetary hive mind. With the core X-Men captured, <strong class=\"hank-mccoy-beast\">Beast</strong> recruits unlikely allies: mutant sovereign <strong class=\"erik-lehnsherr-magneto\">Magneto</strong>, mutant inventor Forge, and extraterrestrial warrior Warlock. Together, they deploy a computer virus into the hive spire, eradicating the Phalanx's biological assimilation. In a parallel historic retrospective, Logan recalls his 1944 wartime operation in occupied France alongside <strong class=\"captain-america\">Captain America</strong>, liberating a Nazi laboratory from Red Skull."
+              ],
+              "characters": [
+                  "hank-mccoy-beast",
+                  "erik-lehnsherr-magneto",
+                  "logan-wolverine",
+                  "charles-xavier"
+              ],
+              "stones": [],
+              "deaths": [],
+              "mcuHighlights": [
+                  "Global Techno-Organic Phalanx Covenant Incursion",
+                  "Beast and Magneto's Unlikely Alliance",
+                  "Wolverine and Captain America's 1944 Wartime Flashback"
+              ],
+              "locations": [
+                  {
+                      "name": "Phalanx Assimilation Spire & Muir Island",
+                      "cityOrRegion": "Highlands",
+                      "countryOrRealm": "Scotland",
+                      "planet": "Earth-92131",
+                      "celestialSystem": "solar-system"
+                  }
+              ]
+          }
+      ]
+  },
+    {
+      "id": "era-_1997_",
+      "title": "-1997-",
+      "cleanTitle": "1997",
+      "category": "golden-age",
+      "events": [
+          {
+              "id": "event-1997-tas-spiderman-wedding-warriors",
+              "eraId": "era-_1997_",
+              "eraTitle": "1997",
+              "mediaKey": "spider-man-tas-5",
+              "mediaTitle": "Spider-Man: The Animated Series (Season 5)",
+              "mediaType": "series",
+              "mediaPhase": "Marvel Television",
+              "isAlternativeTimeline": true,
+              "timelineType": "multiverse-alternate",
+              "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+              "rawClasses": [
+                  "spider-man-tas-5"
+              ],
+              "rawHtml": "<p>In Manhattan, <strong class=\"peter-parker-spider-man\">Peter Parker</strong> and Mary Jane Watson are wed in a joyous ceremony, shortly before discovering clues regarding a Cold War super-weapon. Spider-Man unravels a secret WWII operation: five American champions known as the <strong>Six Forgotten Warriors</strong> (Whizzer, Miss America, Thin Man, Destroyer, Black Marvel) who guarded a Doomsday vortex device. In Chernobyl and Moscow, Kingpin and Russian agents unseal the vortex, releasing <strong class=\"captain-america\">Captain America</strong> and Nazi overlord Red Skull from fifty years of dimensional limbo. Captain America and Spider-Man destroy the Doomsday machine, with Steve Rogers bravely tackling Red Skull back into the vortex to safeguard humanity.</p>",
+              "paragraphs": [
+                  "In Manhattan, <strong class=\"peter-parker-spider-man\">Peter Parker</strong> and Mary Jane Watson are wed in a joyous ceremony, shortly before discovering clues regarding a Cold War super-weapon. Spider-Man unravels a secret WWII operation: five American champions known as the <strong>Six Forgotten Warriors</strong> (Whizzer, Miss America, Thin Man, Destroyer, Black Marvel) who guarded a Doomsday vortex device. In Chernobyl and Moscow, Kingpin and Russian agents unseal the vortex, releasing <strong class=\"captain-america\">Captain America</strong> and Nazi overlord Red Skull from fifty years of dimensional limbo. Captain America and Spider-Man destroy the Doomsday machine, with Steve Rogers bravely tackling Red Skull back into the vortex to safeguard humanity."
+              ],
+              "characters": [
+                  "peter-parker-spider-man",
+                  "wilson-fisk-kingpin",
+                  "chameleon"
+              ],
+              "stones": [],
+              "deaths": [],
+              "mcuHighlights": [
+                  "The Wedding of Peter Parker and Mary Jane Watson",
+                  "The Six Forgotten Warriors Saga across Russia",
+                  "Captain America's Emergence and Self-Sacrifice"
+              ],
+              "locations": [
+                  {
+                      "name": "Manhattan Chapel & Chernobyl Nuclear Complex",
+                      "cityOrRegion": "New York / Chernobyl",
+                      "countryOrRealm": "United States / Ukraine",
+                      "planet": "Earth-92131",
+                      "celestialSystem": "solar-system"
+                  }
+              ]
+          },
+          {
+              "id": "event-1997-tas-hulk-shehulk-gray",
+              "eraId": "era-_1997_",
+              "eraTitle": "1997",
+              "mediaKey": "incredible-hulk-tas-2",
+              "mediaTitle": "The Incredible Hulk: The Animated Series (Season 2)",
+              "mediaType": "series",
+              "mediaPhase": "Marvel Television",
+              "isAlternativeTimeline": true,
+              "timelineType": "multiverse-alternate",
+              "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+              "rawClasses": [
+                  "incredible-hulk-tas-2"
+              ],
+              "rawHtml": "<p>Following a fatal shooting by crime syndicate hitmen, Bruce Banner performs an emergency blood transfusion on his lawyer cousin <strong class=\"jennifer-walters-she-hulk\">Jennifer Walters</strong>, saving her life and transforming her into the charismatic, emerald powerhouse <strong>She-Hulk</strong>. Together on the open road, the gamma cousins clash with the savage Wendigo in Canada, infiltrate Latveria to thwart Doctor Doom's mind-control device, and navigate Bruce's volatile psychological fracturing that gives rise to the cunning, cynical persona of the <strong>Gray Hulk</strong> (Joe Fixit).</p>",
+              "paragraphs": [
+                  "Following a fatal shooting by crime syndicate hitmen, Bruce Banner performs an emergency blood transfusion on his lawyer cousin <strong class=\"jennifer-walters-she-hulk\">Jennifer Walters</strong>, saving her life and transforming her into the charismatic, emerald powerhouse <strong>She-Hulk</strong>. Together on the open road, the gamma cousins clash with the savage Wendigo in Canada, infiltrate Latveria to thwart Doctor Doom's mind-control device, and navigate Bruce's volatile psychological fracturing that gives rise to the cunning, cynical persona of the <strong>Gray Hulk</strong> (Joe Fixit)."
+              ],
+              "characters": [
+                  "bruce-banner-hulk",
+                  "jennifer-walters-she-hulk",
+                  "victor-von-doom"
+              ],
+              "stones": [],
+              "deaths": [],
+              "mcuHighlights": [
+                  "Genesis of Jennifer Walters as She-Hulk",
+                  "Hulk and She-Hulk Mission to Latveria against Doctor Doom",
+                  "Emergence of the Cynical Gray Hulk Persona"
+              ],
+              "locations": [
+                  {
+                      "name": "Castle Doom Sub-Levels",
+                      "cityOrRegion": "Haasenstadt",
+                      "countryOrRealm": "Latveria",
+                      "planet": "Earth-92131",
+                      "celestialSystem": "solar-system"
+                  }
+              ]
+          },
+          {
+              "id": "event-1997-tas-xmen-graduation-day",
+              "eraId": "era-_1997_",
+              "eraTitle": "1997",
+              "mediaKey": "x-men-tas-5",
+              "mediaTitle": "X-Men: The Animated Series (Season 5)",
+              "mediaType": "series",
+              "mediaPhase": "Marvel Television",
+              "isAlternativeTimeline": true,
+              "timelineType": "multiverse-alternate",
+              "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+              "rawClasses": [
+                  "x-men-tas-5"
+              ],
+              "rawHtml": "<p>During a live international human-mutant relations summit in Washington D.C., anti-mutant fanatic Henry Peter Gyrich shoots <strong class=\"charles-xavier\">Professor Charles Xavier</strong> with an experimental sonic disruptor, exposing his mutant brainwaves on television and leaving him on the brink of death. Worldwide mutant panic erupts, with Magneto preparing a retaliatory war army on the island of Genosha. Wolverine, Cyclops, and Jean Grey travel to Genosha, appealing to Magneto's deep friendship with Charles. Magneto yields, halting his war. Using a Shi'ar telepathic beacon, the X-Men contact <strong class=\"lilandra-neramani\">Empress Lilandra</strong>, who arrives in an imperial starship to transport Xavier to the Shi'ar Empire for alien medical treatment. Surrounding their dying mentor's bed at the mansion, the X-Men bid a tearful farewell as Charles leaves Earth in their capable hands.</p>",
+              "paragraphs": [
+                  "During a live international human-mutant relations summit in Washington D.C., anti-mutant fanatic Henry Peter Gyrich shoots <strong class=\"charles-xavier\">Professor Charles Xavier</strong> with an experimental sonic disruptor, exposing his mutant brainwaves on television and leaving him on the brink of death. Worldwide mutant panic erupts, with Magneto preparing a retaliatory war army on the island of Genosha. Wolverine, Cyclops, and Jean Grey travel to Genosha, appealing to Magneto's deep friendship with Charles. Magneto yields, halting his war. Using a Shi'ar telepathic beacon, the X-Men contact <strong class=\"lilandra-neramani\">Empress Lilandra</strong>, who arrives in an imperial starship to transport Xavier to the Shi'ar Empire for alien medical treatment. Surrounding their dying mentor's bed at the mansion, the X-Men bid a tearful farewell as Charles leaves Earth in their capable hands."
+              ],
+              "characters": [
+                  "charles-xavier",
+                  "erik-lehnsherr-magneto",
+                  "scott-summers-cyclops",
+                  "jean-grey",
+                  "logan-wolverine",
+                  "ororo-munroe-storm",
+                  "hank-mccoy-beast",
+                  "rogue-anna-marie",
+                  "gambit-remy-lebeau",
+                  "jubilation-lee-jubilee",
+                  "lilandra-neramani"
+              ],
+              "stones": [],
+              "deaths": [],
+              "mcuHighlights": [
+                  "The Historic Series Finale: Graduation Day",
+                  "Gyrich's Assassination Attempt on Professor X",
+                  "Magneto Abandons War for His Friend Charles",
+                  "Professor Xavier's Departure with Lilandra for the Shi'ar Empire"
+              ],
+              "locations": [
+                  {
+                      "name": "Xavier Mansion & Genosha Capital",
+                      "cityOrRegion": "Salem Center / Genosha",
+                      "countryOrRealm": "United States / Genosha",
+                      "planet": "Earth-92131",
+                      "celestialSystem": "solar-system"
+                  }
+              ]
+          }
+      ]
+  },
+    {
+      "id": "era-_1998_",
+      "title": "-1998-",
+      "cleanTitle": "1998",
+      "category": "golden-age",
+      "events": [
+          {
+              "id": "event-1998-tas-spiderman-secret-wars",
+              "eraId": "era-_1998_",
+              "eraTitle": "1998",
+              "mediaKey": "spider-man-tas-5",
+              "mediaTitle": "Spider-Man: The Animated Series (Season 5)",
+              "mediaType": "series",
+              "mediaPhase": "Marvel Television",
+              "isAlternativeTimeline": true,
+              "timelineType": "multiverse-alternate",
+              "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+              "rawClasses": [
+                  "spider-man-tas-5"
+              ],
+              "rawHtml": "<p>Cosmic entity <strong class=\"the-beyonder\">The Beyonder</strong> and clairvoyant seer <strong class=\"madame-web\">Madame Web</strong> abduct <strong class=\"peter-parker-spider-man\">Spider-Man</strong> to an artificial proving ground known as <strong>Battleworld</strong> to test whether Good or Evil is supreme in the multiverse. Appointed as supreme battlefield commander, Spider-Man summons his ultimate coalition of champions: <strong class=\"reed-richards\">Mister Fantastic</strong>, <strong class=\"johnny-storm\">Human Torch</strong>, <strong class=\"ben-grimm\">The Thing</strong>, <strong class=\"tony-stark-iron-man\">Iron Man</strong>, and <strong class=\"ororo-munroe-storm\">Storm</strong>. They wage tactical war against Doctor Doom, Red Skull, Doctor Octopus, Alistair Smythe, and the Lizard. Reed Richards and Spider-Man dismantle Doom's psychic siphon, liberating Battleworld and proving the indomitable power of human empathy.</p>",
+              "paragraphs": [
+                  "Cosmic entity <strong class=\"the-beyonder\">The Beyonder</strong> and clairvoyant seer <strong class=\"madame-web\">Madame Web</strong> abduct <strong class=\"peter-parker-spider-man\">Spider-Man</strong> to an artificial proving ground known as <strong>Battleworld</strong> to test whether Good or Evil is supreme in the multiverse. Appointed as supreme battlefield commander, Spider-Man summons his ultimate coalition of champions: <strong class=\"reed-richards\">Mister Fantastic</strong>, <strong class=\"johnny-storm\">Human Torch</strong>, <strong class=\"ben-grimm\">The Thing</strong>, <strong class=\"tony-stark-iron-man\">Iron Man</strong>, and <strong class=\"ororo-munroe-storm\">Storm</strong>. They wage tactical war against Doctor Doom, Red Skull, Doctor Octopus, Alistair Smythe, and the Lizard. Reed Richards and Spider-Man dismantle Doom's psychic siphon, liberating Battleworld and proving the indomitable power of human empathy."
+              ],
+              "characters": [
+                  "peter-parker-spider-man",
+                  "the-beyonder",
+                  "madame-web",
+                  "reed-richards",
+                  "johnny-storm",
+                  "ben-grimm",
+                  "tony-stark-iron-man",
+                  "ororo-munroe-storm",
+                  "victor-von-doom",
+                  "doctor-octopus"
+              ],
+              "stones": [],
+              "deaths": [],
+              "mcuHighlights": [
+                  "The Beyonder's Multiversal Secret Wars on Battleworld",
+                  "Spider-Man Appointed Commander of Earth's Mightiest Heroes",
+                  "Unification of Fantastic Four, Iron Man, Storm, and Spider-Man",
+                  "Defeat of Doctor Doom's Beyonder Power Siphon"
+              ],
+              "locations": [
+                  {
+                      "name": "Battleworld Proving Ground",
+                      "cityOrRegion": "Beyond Cosmic Sector",
+                      "countryOrRealm": "Battleworld",
+                      "planet": "Battleworld",
+                      "celestialSystem": "multiverse"
+                  }
+              ]
+          },
+          {
+              "id": "event-1998-tas-spiderman-spider-wars",
+              "eraId": "era-_1998_",
+              "eraTitle": "1998",
+              "mediaKey": "spider-man-tas-5",
+              "mediaTitle": "Spider-Man: The Animated Series (Season 5)",
+              "mediaType": "series",
+              "mediaPhase": "Marvel Television",
+              "isAlternativeTimeline": true,
+              "timelineType": "multiverse-alternate",
+              "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+              "rawClasses": [
+                  "spider-man-tas-5"
+              ],
+              "rawHtml": "<p>In the multiversal finale, Madame Web mobilizes Spider-Man to lead an alliance of alternate Spider-Men (Scarlet Spider, Armored Spider, Six-Armed Spider, Octo-Spider, Actor Spider) against <strong>Spider-Carnage</strong>—a nihilistic alternate Peter Parker bonded to the Carnage symbiote intending to annihilate the entire multiverse with a Matter Disintegrator bomb. Peter appeals to Spider-Carnage's lingering humanity by introducing him to an alternate reality's living Uncle Ben, causing Spider-Carnage to sacrifice himself to destroy the bomb. In gratitude, Madame Web transports Peter to <strong>Earth-Real (Earth-1218)</strong>, where Peter meets his comic-book creator <strong class=\"stan-lee-creator\">Stan Lee</strong> atop a Manhattan skyscraper, thanking him for his life and heroism, before departing through the dimensional portal with Madame Web to finally reunite with his beloved Mary Jane Watson.</p>",
+              "paragraphs": [
+                  "In the multiversal finale, Madame Web mobilizes Spider-Man to lead an alliance of alternate Spider-Men (Scarlet Spider, Armored Spider, Six-Armed Spider, Octo-Spider, Actor Spider) against <strong>Spider-Carnage</strong>—a nihilistic alternate Peter Parker bonded to the Carnage symbiote intending to annihilate the entire multiverse with a Matter Disintegrator bomb. Peter appeals to Spider-Carnage's lingering humanity by introducing him to an alternate reality's living Uncle Ben, causing Spider-Carnage to sacrifice himself to destroy the bomb. In gratitude, Madame Web transports Peter to <strong>Earth-Real (Earth-1218)</strong>, where Peter meets his comic-book creator <strong class=\"stan-lee-creator\">Stan Lee</strong> atop a Manhattan skyscraper, thanking him for his life and heroism, before departing through the dimensional portal with Madame Web to finally reunite with his beloved Mary Jane Watson."
+              ],
+              "characters": [
+                  "peter-parker-spider-man",
+                  "madame-web",
+                  "stan-lee-creator"
+              ],
+              "stones": [],
+              "deaths": [],
+              "mcuHighlights": [
+                  "The Multiversal Spider Wars against Spider-Carnage",
+                  "Uncle Ben's Legacy Saves the Multiverse",
+                  "Historic Fourth-Wall Climax: Spider-Man Meets Stan Lee on Earth-Real",
+                  "Peter Parker & Madame Web Depart to Find the Real Mary Jane"
+              ],
+              "locations": [
+                  {
+                      "name": "Earth-Real Skyscraper Rooftop",
+                      "cityOrRegion": "Manhattan, New York",
+                      "countryOrRealm": "United States",
+                      "planet": "Earth-1218 (Real World)",
+                      "celestialSystem": "solar-system"
+                  }
+              ]
+          }
+      ]
   },
   {
     "id": "era-_1999_",

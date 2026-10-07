@@ -2634,7 +2634,1061 @@ export const charactersData: Record<string, Character> = {
     "originLocation": "New Orleans, Louisiana (Earth-92131)",
     "status": "alive",
     "bio": "Lethal plasma-wielding leader of the Assassins Guild and Gambit's former fiancée who coordinates the decennial tithe to the immortal alien X-Ternal Candra."
-  }
+  },
+  "lady-deathstrike-yuriko-oyama": {
+    "id": "lady-deathstrike-yuriko-oyama",
+    "name": "Yuriko Oyama / Lady Deathstrike",
+    "alias": "Lady Deathstrike",
+    "cssClass": "lady-deathstrike-yuriko-oyama",
+    "color": "#ec4899",
+    "bgBadge": "bg-pink-950/80 hover:bg-pink-900/90",
+    "textBadge": "text-pink-300",
+    "borderBadge": "border-pink-600",
+    "role": "villain",
+    "affiliation": "Reavers",
+    "groups": [
+      "Reavers",
+      "Cyborgs"
+    ],
+    "originLocation": "Osaka, Japan (Earth-92131)",
+    "status": "alive",
+    "bio": "Cybernetically enhanced assassin with extendable Adamantium talons seeking vengeance against Wolverine for desecrating her father Lord Dark Wind's metallurgical breakthroughs."
+  },
+  "lilandra-neramani": {
+    "id": "lilandra-neramani",
+    "name": "Lilandra Neramani",
+    "alias": "Empress Lilandra",
+    "cssClass": "lilandra-neramani",
+    "color": "#38bdf8",
+    "bgBadge": "bg-sky-950/80 hover:bg-sky-900/90",
+    "textBadge": "text-sky-300",
+    "borderBadge": "border-sky-600",
+    "role": "hero",
+    "affiliation": "Shi'ar Empire",
+    "groups": [
+      "Shi'ar Imperium",
+      "Cosmic Royalty"
+    ],
+    "originLocation": "Chandilar, Shi'ar Empire (Earth-92131)",
+    "status": "alive",
+    "bio": "Rightful Majestrix of the intergalactic Shi'ar Empire who fled her mad brother D'Ken to protect the cosmos and bonded telepathically and romantically with Charles Xavier."
+  },
+  "d-ken-neramani": {
+    "id": "d-ken-neramani",
+    "name": "D'Ken Neramani",
+    "alias": "Emperor D'Ken",
+    "cssClass": "d-ken-neramani",
+    "color": "#a855f7",
+    "bgBadge": "bg-purple-950/80 hover:bg-purple-900/90",
+    "textBadge": "text-purple-300",
+    "borderBadge": "border-purple-600",
+    "role": "villain",
+    "affiliation": "Shi'ar Empire",
+    "groups": [
+      "Shi'ar Imperium"
+    ],
+    "originLocation": "Chandilar, Shi'ar Empire (Earth-92131)",
+    "status": "alive",
+    "bio": "Depraved ruler of the Shi'ar Empire whose catastrophic hunger for omnipotence drove him to breach the M'Kraan Crystal, threatening to collapse universal space-time."
+  },
+  "corsair-christopher-summers": {
+    "id": "corsair-christopher-summers",
+    "name": "Christopher Summers / Corsair",
+    "alias": "Corsair",
+    "cssClass": "corsair-christopher-summers",
+    "color": "#f97316",
+    "bgBadge": "bg-orange-950/80 hover:bg-orange-900/90",
+    "textBadge": "text-orange-300",
+    "borderBadge": "border-orange-600",
+    "role": "hero",
+    "affiliation": "Starjammers",
+    "groups": [
+      "Starjammers",
+      "Humanity"
+    ],
+    "originLocation": "United States (Earth-92131)",
+    "status": "alive",
+    "bio": "Earth-born test pilot abducted into interstellar space by the Shi'ar who escaped slavery to captain the rogue Starjammers, eventually reuniting with his long-lost son Scott Summers."
+  },
+  "gladiator-kallark": {
+    "id": "gladiator-kallark",
+    "name": "Kallark / Gladiator",
+    "alias": "Gladiator",
+    "cssClass": "gladiator-kallark",
+    "color": "#dc2626",
+    "bgBadge": "bg-red-950/80 hover:bg-red-900/90",
+    "textBadge": "text-red-300",
+    "borderBadge": "border-red-600",
+    "role": "anti-hero",
+    "affiliation": "Shi'ar Imperial Guard",
+    "groups": [
+      "Imperial Guard",
+      "Strontians"
+    ],
+    "originLocation": "Strontia, Shi'ar Imperium (Earth-92131)",
+    "status": "alive",
+    "bio": "Praetor of the Shi'ar Imperial Guard, a nearly invincible Strontian champion whose godlike strength, invulnerability, and heat beams scale in direct proportion to his confidence."
+  },
+  "black-tom-cassidy": {
+    "id": "black-tom-cassidy",
+    "name": "Thomas Cassidy / Black Tom",
+    "alias": "Black Tom",
+    "cssClass": "black-tom-cassidy",
+    "color": "#16a34a",
+    "bgBadge": "bg-green-950/80 hover:bg-green-900/90",
+    "textBadge": "text-green-300",
+    "borderBadge": "border-green-600",
+    "role": "villain",
+    "affiliation": "Cassidy Clan / Brotherhood",
+    "groups": [
+      "Mutants",
+      "Cassidy Clan"
+    ],
+    "originLocation": "County Mayo, Ireland (Earth-92131)",
+    "status": "alive",
+    "bio": "Treacherous Irish mutant who channels concussive thermal energy through wood, working alongside his partner Juggernaut to seize ancestral Cassidy Keep and capture Lilandra."
+  },
+  "cain-marko-juggernaut": {
+    "id": "cain-marko-juggernaut",
+    "name": "Cain Marko / Juggernaut",
+    "alias": "Juggernaut",
+    "cssClass": "cain-marko-juggernaut",
+    "color": "#b45309",
+    "bgBadge": "bg-amber-950/80 hover:bg-amber-900/90",
+    "textBadge": "text-amber-300",
+    "borderBadge": "border-amber-600",
+    "role": "villain",
+    "affiliation": "Independent / Cyttorak",
+    "groups": [
+      "Humanity",
+      "Exemplars"
+    ],
+    "originLocation": "Berkeley, California (Earth-92131)",
+    "status": "alive",
+    "bio": "Stepbrother of Charles Xavier endowed with unstoppable kinetic momentum and near-invulnerability through the mystical Crimson Gem of Cyttorak."
+  },
+  "zebediah-killgrave": {
+    "id": "zebediah-killgrave",
+    "name": "Zebediah Killgrave / Purple Man",
+    "alias": "Purple Man",
+    "cssClass": "zebediah-killgrave",
+    "color": "#a855f7",
+    "bgBadge": "bg-purple-950/80 hover:bg-purple-900/90",
+    "textBadge": "text-purple-300",
+    "borderBadge": "border-purple-600",
+    "role": "villain",
+    "affiliation": "Independent",
+    "groups": [
+      "Mutants"
+    ],
+    "originLocation": "Omaha, Nebraska (Earth-92131)",
+    "status": "alive",
+    "bio": "Psychic pheromonal manipulator who posed as a wealthy benefactor in Nebraska to brainwash mutant orphans and deploy them as a personal sleeper army for political dominance."
+  },
+  "rusty-collins-firefist": {
+    "id": "rusty-collins-firefist",
+    "name": "Rusty Collins / Firefist",
+    "alias": "Firefist",
+    "cssClass": "rusty-collins-firefist",
+    "color": "#f59e0b",
+    "bgBadge": "bg-amber-950/80 hover:bg-amber-900/90",
+    "textBadge": "text-amber-300",
+    "borderBadge": "border-amber-600",
+    "role": "hero",
+    "affiliation": "State Home for Foundlings",
+    "groups": [
+      "Mutants"
+    ],
+    "originLocation": "Omaha, Nebraska (Earth-92131)",
+    "status": "alive",
+    "bio": "Young pyrokinetic mutant orphan whose desperate escape and resilience inspired a grieving Scott Summers to dismantle Killgrave's mind-control conspiracy."
+  },
+  "garokk-petrified-man": {
+    "id": "garokk-petrified-man",
+    "name": "Garokk the Petrified Man",
+    "alias": "Garokk",
+    "cssClass": "garokk-petrified-man",
+    "color": "#eab308",
+    "bgBadge": "bg-yellow-950/80 hover:bg-yellow-900/90",
+    "textBadge": "text-yellow-300",
+    "borderBadge": "border-yellow-600",
+    "role": "villain",
+    "affiliation": "Savage Land Sun Cult",
+    "groups": [
+      "Immortals"
+    ],
+    "originLocation": "The Savage Land, Antarctica (Earth-92131)",
+    "status": "alive",
+    "bio": "Ancient being transformed into living stone worshiped as a sun god in the Savage Land who merged with volcanic planetary ley lines before being subdued by Storm."
+  },
+  "mandarin": {
+    "id": "mandarin",
+    "name": "The Mandarin",
+    "alias": "The Mandarin",
+    "cssClass": "mandarin",
+    "color": "#059669",
+    "bgBadge": "bg-emerald-950/80 hover:bg-emerald-900/90",
+    "textBadge": "text-emerald-300",
+    "borderBadge": "border-emerald-600",
+    "role": "villain",
+    "affiliation": "Legion of Doom / Makluan Syndicate",
+    "groups": [
+      "Humanity",
+      "Makluan Ring Bearers"
+    ],
+    "originLocation": "Valley of Spirits, China (Earth-92131)",
+    "status": "alive",
+    "bio": "Centuries-old warlord wielding the ten Makluan alien power rings who commands an army of supervillains and seeks total mastery over world technology and the destruction of Tony Stark."
+  },
+  "modok-george-tarleton": {
+    "id": "modok-george-tarleton",
+    "name": "George Tarleton / M.O.D.O.K.",
+    "alias": "M.O.D.O.K.",
+    "cssClass": "modok-george-tarleton",
+    "color": "#d97706",
+    "bgBadge": "bg-amber-950/80 hover:bg-amber-900/90",
+    "textBadge": "text-amber-300",
+    "borderBadge": "border-amber-600",
+    "role": "villain",
+    "affiliation": "A.I.M. / Mandarin's Minions",
+    "groups": [
+      "A.I.M.",
+      "Cyborgs"
+    ],
+    "originLocation": "United States (Earth-92131)",
+    "status": "alive",
+    "bio": "Mental Organism Designed Only for Killing, a genetically mutated hyper-cerebral strategist serving as the Mandarin's chief cyber-warfare and weapons technician."
+  },
+  "justin-hammer": {
+    "id": "justin-hammer",
+    "name": "Justin Hammer",
+    "alias": "Justin Hammer",
+    "cssClass": "justin-hammer",
+    "color": "#64748b",
+    "bgBadge": "bg-slate-950/80 hover:bg-slate-900/90",
+    "textBadge": "text-slate-300",
+    "borderBadge": "border-slate-600",
+    "role": "villain",
+    "affiliation": "Hammer Industries",
+    "groups": [
+      "Humanity",
+      "Hammer Industries"
+    ],
+    "originLocation": "United Kingdom / United States (Earth-92131)",
+    "status": "alive",
+    "bio": "Ruthless corporate rival of Tony Stark who secretly finances super-criminal incursions and high-tech sabotage to devalue and takeover Stark Enterprises."
+  },
+  "ultimo": {
+    "id": "ultimo",
+    "name": "Ultimo",
+    "alias": "Ultimo",
+    "cssClass": "ultimo",
+    "color": "#e11d48",
+    "bgBadge": "bg-rose-950/80 hover:bg-rose-900/90",
+    "textBadge": "text-rose-300",
+    "borderBadge": "border-rose-600",
+    "role": "villain",
+    "affiliation": "Extraterrestrial Construct",
+    "groups": [
+      "Automata"
+    ],
+    "originLocation": "Deep Space / Volcanic Caldera (Earth-92131)",
+    "status": "presumably-dead",
+    "bio": "Colossal extraterrestrial robotic doomsday juggernaut discovered dormant in a volcano and revived by the Mandarin to eradicate Iron Man and Force Works."
+  },
+  "century": {
+    "id": "century",
+    "name": "Century",
+    "alias": "Century",
+    "cssClass": "century",
+    "color": "#06b6d4",
+    "bgBadge": "bg-cyan-950/80 hover:bg-cyan-900/90",
+    "textBadge": "text-cyan-300",
+    "borderBadge": "border-cyan-600",
+    "role": "hero",
+    "affiliation": "Force Works",
+    "groups": [
+      "Force Works",
+      "Extraterrestrials"
+    ],
+    "originLocation": "Extradimensional Nexus (Earth-92131)",
+    "status": "alive",
+    "bio": "Mysterious composite alien warrior endowed with psychic resonance, dimensional tracking, and an enchanted battle staff who fights alongside Iron Man in Force Works."
+  },
+  "julia-carpenter-spider-woman": {
+    "id": "julia-carpenter-spider-woman",
+    "name": "Julia Carpenter / Spider-Woman",
+    "alias": "Spider-Woman",
+    "cssClass": "julia-carpenter-spider-woman",
+    "color": "#f43f5e",
+    "bgBadge": "bg-rose-950/80 hover:bg-rose-900/90",
+    "textBadge": "text-rose-300",
+    "borderBadge": "border-rose-600",
+    "role": "hero",
+    "affiliation": "Force Works",
+    "groups": [
+      "Force Works",
+      "Avengers",
+      "Mutates"
+    ],
+    "originLocation": "Los Angeles, California (Earth-92131)",
+    "status": "alive",
+    "bio": "Single mother and formidable Force Works tactical operative wielding psionic webbing and sensory telepathy who stands as Tony Stark's steadfast second-in-command."
+  },
+  "reed-richards": {
+    "id": "reed-richards",
+    "name": "Reed Richards / Mister Fantastic",
+    "alias": "Mister Fantastic",
+    "cssClass": "reed-richards",
+    "color": "#3b82f6",
+    "bgBadge": "bg-blue-950/80 hover:bg-blue-900/90",
+    "textBadge": "text-blue-300",
+    "borderBadge": "border-blue-600",
+    "role": "hero",
+    "affiliation": "Fantastic Four",
+    "groups": [
+      "Fantastic Four",
+      "Council of Reeds"
+    ],
+    "originLocation": "Central City, California (Earth-92131)",
+    "status": "alive",
+    "bio": "Genius polymath and leader of the Fantastic Four whose body possesses extraordinary malleable plasticity and elongation after cosmic radiation exposure."
+  },
+  "sue-storm": {
+    "id": "sue-storm",
+    "name": "Susan Storm / Invisible Woman",
+    "alias": "Invisible Woman",
+    "cssClass": "sue-storm",
+    "color": "#60a5fa",
+    "bgBadge": "bg-blue-950/80 hover:bg-blue-900/90",
+    "textBadge": "text-blue-200",
+    "borderBadge": "border-blue-500",
+    "role": "hero",
+    "affiliation": "Fantastic Four",
+    "groups": [
+      "Fantastic Four"
+    ],
+    "originLocation": "Long Island, New York (Earth-92131)",
+    "status": "alive",
+    "bio": "Co-leader of the Fantastic Four capable of complete psionic light bending (invisibility) and generating near-indestructible kinetic force fields."
+  },
+  "johnny-storm": {
+    "id": "johnny-storm",
+    "name": "Johnny Storm / Human Torch",
+    "alias": "Human Torch",
+    "cssClass": "johnny-storm",
+    "color": "#f97316",
+    "bgBadge": "bg-amber-950/80 hover:bg-amber-900/90",
+    "textBadge": "text-amber-300",
+    "borderBadge": "border-amber-600",
+    "role": "hero",
+    "affiliation": "Fantastic Four",
+    "groups": [
+      "Fantastic Four"
+    ],
+    "originLocation": "Glenville, Long Island, New York (Earth-92131)",
+    "status": "alive",
+    "bio": "Hot-headed younger brother of Sue Storm who ignites his cellular plasma to achieve supersonic flight and thermonuclear flame manipulation ('Flame on!')."
+  },
+  "ben-grimm": {
+    "id": "ben-grimm",
+    "name": "Ben Grimm / The Thing",
+    "alias": "The Thing",
+    "cssClass": "ben-grimm",
+    "color": "#ea580c",
+    "bgBadge": "bg-orange-950/80 hover:bg-orange-900/90",
+    "textBadge": "text-orange-300",
+    "borderBadge": "border-orange-600",
+    "role": "hero",
+    "affiliation": "Fantastic Four",
+    "groups": [
+      "Fantastic Four",
+      "Yancy Street Gang"
+    ],
+    "originLocation": "Lower East Side, Manhattan, New York (Earth-92131)",
+    "status": "alive",
+    "bio": "Former ace military test pilot transformed into an orange, rocky behemoth of colossal strength, invulnerability, and boundless heart ('It's Clobberin' Time!')."
+  },
+  "victor-von-doom": {
+    "id": "victor-von-doom",
+    "name": "Victor Von Doom / Doctor Doom",
+    "alias": "Doctor Doom",
+    "cssClass": "victor-von-doom",
+    "color": "#15803d",
+    "bgBadge": "bg-emerald-950/80 hover:bg-emerald-900/90",
+    "textBadge": "text-emerald-300",
+    "borderBadge": "border-emerald-600",
+    "role": "villain",
+    "affiliation": "Kingdom of Latveria",
+    "groups": [
+      "Latverian Monarchy",
+      "Cabal"
+    ],
+    "originLocation": "Haasenstadt, Latveria (Earth-92131)",
+    "status": "alive",
+    "bio": "Monarch of Latveria and master of both bleeding-edge science and arcane sorcery, driven by an unyielding hatred for Reed Richards and supreme geopolitical ambition."
+  },
+  "namor-the-sub-mariner": {
+    "id": "namor-the-sub-mariner",
+    "name": "Prince Namor / The Sub-Mariner",
+    "alias": "The Sub-Mariner",
+    "cssClass": "namor-the-sub-mariner",
+    "color": "#0d9488",
+    "bgBadge": "bg-teal-950/80 hover:bg-teal-900/90",
+    "textBadge": "text-teal-300",
+    "borderBadge": "border-teal-600",
+    "role": "anti-hero",
+    "affiliation": "Kingdom of Atlantis",
+    "groups": [
+      "Atlantean Royalty",
+      "Invaders"
+    ],
+    "originLocation": "Atlantis (Atlantic Abyssal Trench, Earth-92131)",
+    "status": "alive",
+    "bio": "Proud mutant-hybrid sovereign of the undersea realm of Atlantis who fiercely protects the oceans against surface civilization's incursions."
+  },
+  "silver-surfer": {
+    "id": "silver-surfer",
+    "name": "Norrin Radd / The Silver Surfer",
+    "alias": "Silver Surfer",
+    "cssClass": "silver-surfer",
+    "color": "#e2e8f0",
+    "bgBadge": "bg-slate-900/90 hover:bg-slate-800/90",
+    "textBadge": "text-slate-200",
+    "borderBadge": "border-slate-400",
+    "role": "hero",
+    "affiliation": "Heralds of Galactus (Formerly)",
+    "groups": [
+      "Heralds of Galactus",
+      "Cosmic Protectors"
+    ],
+    "originLocation": "Zenn-La (Deneb System, Earth-92131)",
+    "status": "alive",
+    "bio": "Noble philosopher of Zenn-La imbued with the Power Cosmic by Galactus, roaming the universe on a faster-than-light silver surfboard seeking redemption."
+  },
+  "galactus": {
+    "id": "galactus",
+    "name": "Galan / Galactus the Devourer of Worlds",
+    "alias": "Galactus",
+    "cssClass": "galactus",
+    "color": "#9333ea",
+    "bgBadge": "bg-purple-950/80 hover:bg-purple-900/90",
+    "textBadge": "text-purple-300",
+    "borderBadge": "border-purple-600",
+    "role": "cosmic",
+    "affiliation": "Cosmic Entities",
+    "groups": [
+      "Cosmic Abstract Entities"
+    ],
+    "originLocation": "Taa (Pre-Big Bang Universe)",
+    "status": "alive",
+    "bio": "Ancient cosmic entity that predates the Big Bang, consuming planetary biosphere energies to maintain the cosmic equilibrium of the multiverse."
+  },
+  "uatu-the-watcher": {
+    "id": "uatu-the-watcher",
+    "name": "Uatu the Watcher",
+    "alias": "The Watcher",
+    "cssClass": "uatu-the-watcher",
+    "color": "#38bdf8",
+    "bgBadge": "bg-sky-950/80 hover:bg-sky-900/90",
+    "textBadge": "text-sky-300",
+    "borderBadge": "border-sky-500",
+    "role": "cosmic",
+    "affiliation": "The Watchers",
+    "groups": [
+      "Watchers"
+    ],
+    "originLocation": "Blue Area of the Moon (Earth-92131)",
+    "status": "alive",
+    "bio": "Cosmic observer stationed in the Moon's Blue Area sworn to a solemn vow of non-interference, which he repeatedly breaks to safeguard Earth's champions."
+  },
+  "super-skrull": {
+    "id": "super-skrull",
+    "name": "Kl'rt / Super-Skrull",
+    "alias": "Super-Skrull",
+    "cssClass": "super-skrull",
+    "color": "#16a34a",
+    "bgBadge": "bg-emerald-950/80 hover:bg-emerald-900/90",
+    "textBadge": "text-emerald-300",
+    "borderBadge": "border-emerald-600",
+    "role": "villain",
+    "affiliation": "Skrull Empire",
+    "groups": [
+      "Skrull Imperial Military"
+    ],
+    "originLocation": "Tarnax IV (Skrull Empire)",
+    "status": "alive",
+    "bio": "Genetically engineered Skrull champion endowed with the simulated powers of all four Fantastic Four members plus natural shapeshifting and hypnosis."
+  },
+  "mole-man": {
+    "id": "mole-man",
+    "name": "Harvey Rupert Elder / Mole Man",
+    "alias": "Mole Man",
+    "cssClass": "mole-man",
+    "color": "#ca8a04",
+    "bgBadge": "bg-yellow-950/80 hover:bg-yellow-900/90",
+    "textBadge": "text-yellow-300",
+    "borderBadge": "border-yellow-600",
+    "role": "villain",
+    "affiliation": "Subterranea",
+    "groups": [
+      "Subterraneans",
+      "Moloids"
+    ],
+    "originLocation": "Monster Isle / Subterranea",
+    "status": "alive",
+    "bio": "Outcast scientist who discovered the subterranean cavern kingdom beneath Earth's mantle, ruling over the blind Moloid hordes and gigantic subterranean monsters."
+  },
+  "annihilus": {
+    "id": "annihilus",
+    "name": "Annihilus",
+    "alias": "Lord of the Negative Zone",
+    "cssClass": "annihilus",
+    "color": "#84cc16",
+    "bgBadge": "bg-lime-950/80 hover:bg-lime-900/90",
+    "textBadge": "text-lime-300",
+    "borderBadge": "border-lime-600",
+    "role": "villain",
+    "affiliation": "Negative Zone Arthrosian Swarm",
+    "groups": [
+      "Negative Zone Conquerors"
+    ],
+    "originLocation": "Arthros (Negative Zone)",
+    "status": "alive",
+    "bio": "Insectoid tyrant and ruthless warlord of the antimatter universe wielding the Cosmic Control Rod, obsessed with exterminating all life that threatens his survival."
+  },
+  "peter-parker-spider-man": {
+    "id": "peter-parker-spider-man",
+    "name": "Peter Parker / Spider-Man",
+    "alias": "Spider-Man",
+    "cssClass": "peter-parker-spider-man",
+    "color": "#ef4444",
+    "bgBadge": "bg-red-950/80 hover:bg-red-900/90",
+    "textBadge": "text-red-300",
+    "borderBadge": "border-red-600",
+    "role": "hero",
+    "affiliation": "Empire State University / Daily Bugle",
+    "groups": [
+      "Daily Bugle",
+      "New York Heroes"
+    ],
+    "originLocation": "Forest Hills, Queens, New York (Earth-92131)",
+    "status": "alive",
+    "bio": "ESU science student who lives by Uncle Ben's creed that with great power comes great responsibility, swinging through NYC with agility, web-shooters, and spider-sense."
+  },
+  "eddie-brock-venom": {
+    "id": "eddie-brock-venom",
+    "name": "Eddie Brock / Venom",
+    "alias": "Venom",
+    "cssClass": "eddie-brock-venom",
+    "color": "#18181b",
+    "bgBadge": "bg-zinc-950/90 hover:bg-zinc-900/90",
+    "textBadge": "text-zinc-200",
+    "borderBadge": "border-zinc-500",
+    "role": "villain",
+    "affiliation": "Symbiotes",
+    "groups": [
+      "Daily Globe",
+      "Symbiotes"
+    ],
+    "originLocation": "Manhattan, New York (Earth-92131)",
+    "status": "alive",
+    "bio": "Discredited investigative reporter who bonded with the vengeful alien Klyntar symbiote discarded by Spider-Man, creating the towering, razor-toothed lethal protector Venom."
+  },
+  "doctor-octopus": {
+    "id": "doctor-octopus",
+    "name": "Dr. Otto Octavius / Doctor Octopus",
+    "alias": "Doc Ock",
+    "cssClass": "doctor-octopus",
+    "color": "#10b981",
+    "bgBadge": "bg-emerald-950/80 hover:bg-emerald-900/90",
+    "textBadge": "text-emerald-300",
+    "borderBadge": "border-emerald-600",
+    "role": "villain",
+    "affiliation": "Insidious Six",
+    "groups": [
+      "Insidious Six",
+      "Hardy Foundation"
+    ],
+    "originLocation": "Schenectady, New York (Earth-92131)",
+    "status": "alive",
+    "bio": "Brilliant nuclear physicist whose telepathically controlled mechanical harness of four titanium-steel tentacles fused to his spine, driving his ruthless scientific megalomania."
+  },
+  "curt-connors-lizard": {
+    "id": "curt-connors-lizard",
+    "name": "Dr. Curt Connors / The Lizard",
+    "alias": "The Lizard",
+    "cssClass": "curt-connors-lizard",
+    "color": "#22c55e",
+    "bgBadge": "bg-green-950/80 hover:bg-green-900/90",
+    "textBadge": "text-green-300",
+    "borderBadge": "border-green-600",
+    "role": "anti-hero",
+    "affiliation": "Empire State University",
+    "groups": [
+      "ESU Science Faculty"
+    ],
+    "originLocation": "Coral Gables, Florida (Earth-92131)",
+    "status": "alive",
+    "bio": "Revered ESU biochemistry professor whose reptilian limb-regeneration neogenic serum cyclically mutates him into the savage, cold-blooded Lizard."
+  },
+  "mysterio-quentin-beck": {
+    "id": "mysterio-quentin-beck",
+    "name": "Quentin Beck / Mysterio",
+    "alias": "Mysterio",
+    "cssClass": "mysterio-quentin-beck",
+    "color": "#a855f7",
+    "bgBadge": "bg-purple-950/80 hover:bg-purple-900/90",
+    "textBadge": "text-purple-300",
+    "borderBadge": "border-purple-600",
+    "role": "villain",
+    "affiliation": "Insidious Six",
+    "groups": [
+      "Insidious Six",
+      "Hollywood Special Effects"
+    ],
+    "originLocation": "Riverside, California (Earth-92131)",
+    "status": "alive",
+    "bio": "Disgraced cinematic special-effects wizard and illusionist who employs holographic projections, hallucinogenic gasses, and robotic tricks to stage dazzling crimes."
+  },
+  "scorpion-mac-gargan": {
+    "id": "scorpion-mac-gargan",
+    "name": "Mac Gargan / The Scorpion",
+    "alias": "The Scorpion",
+    "cssClass": "scorpion-mac-gargan",
+    "color": "#65a30d",
+    "bgBadge": "bg-lime-950/80 hover:bg-lime-900/90",
+    "textBadge": "text-lime-300",
+    "borderBadge": "border-lime-600",
+    "role": "villain",
+    "affiliation": "Insidious Six",
+    "groups": [
+      "Insidious Six"
+    ],
+    "originLocation": "Yonkers, New York (Earth-92131)",
+    "status": "alive",
+    "bio": "Private investigator mutated by Dr. Stillwell through J. Jonah Jameson's funding into an armored predator with a devastating cybernetic sting tail, driving him mad."
+  },
+  "kraven-the-hunter": {
+    "id": "kraven-the-hunter",
+    "name": "Sergei Kravinoff / Kraven the Hunter",
+    "alias": "Kraven",
+    "cssClass": "kraven-the-hunter",
+    "color": "#d97706",
+    "bgBadge": "bg-amber-950/80 hover:bg-amber-900/90",
+    "textBadge": "text-amber-300",
+    "borderBadge": "border-amber-600",
+    "role": "anti-hero",
+    "affiliation": "Independent Hunter",
+    "groups": [
+      "Russian Aristocracy"
+    ],
+    "originLocation": "Volgograd, Russia (Earth-92131)",
+    "status": "alive",
+    "bio": "Peerless big-game hunter sustained by rare jungle elixirs granting him feral superhuman senses and strength, seeking Spider-Man as the ultimate quarry."
+  },
+  "norman-osborn": {
+    "id": "norman-osborn",
+    "name": "Norman Osborn / Green Goblin",
+    "alias": "Green Goblin",
+    "cssClass": "norman-osborn",
+    "color": "#15803d",
+    "bgBadge": "bg-green-950/80 hover:bg-green-900/90",
+    "textBadge": "text-green-300",
+    "borderBadge": "border-green-600",
+    "role": "villain",
+    "affiliation": "Oscorp Industries",
+    "groups": [
+      "Oscorp Board",
+      "Sinister Cabal"
+    ],
+    "originLocation": "Manhattan, New York (Earth-92131)",
+    "status": "alive",
+    "bio": "Ruthless CEO of Oscorp Industries driven to psychotic schizophrenia by his experimental gas, flying on a bat-winged glider hurling pumpkin bombs as the Green Goblin."
+  },
+  "felicia-hardy": {
+    "id": "felicia-hardy",
+    "name": "Felicia Hardy / Black Cat",
+    "alias": "Black Cat",
+    "cssClass": "felicia-hardy",
+    "color": "#38bdf8",
+    "bgBadge": "bg-sky-950/80 hover:bg-sky-900/90",
+    "textBadge": "text-sky-300",
+    "borderBadge": "border-sky-500",
+    "role": "hero",
+    "affiliation": "Hardy Foundation / S.H.I.E.L.D.",
+    "groups": [
+      "Hardy Foundation",
+      "Vigilantes"
+    ],
+    "originLocation": "Manhattan, New York (Earth-92131)",
+    "status": "alive",
+    "bio": "Glamorous New York heiress and martial artist transformed through the recreated Super Soldier serum into the agile, probability-manipulating cat burglar and hero Black Cat."
+  },
+  "j-jonah-jameson": {
+    "id": "j-jonah-jameson",
+    "name": "J. Jonah Jameson",
+    "alias": "JJJ",
+    "cssClass": "j-jonah-jameson",
+    "color": "#71717a",
+    "bgBadge": "bg-zinc-950/80 hover:bg-zinc-900/90",
+    "textBadge": "text-zinc-300",
+    "borderBadge": "border-zinc-600",
+    "role": "civilian",
+    "affiliation": "The Daily Bugle",
+    "groups": [
+      "Daily Bugle Editorial Staff"
+    ],
+    "originLocation": "Manhattan, New York (Earth-92131)",
+    "status": "alive",
+    "bio": "Cigar-chomping, explosive Editor-in-Chief and Publisher of The Daily Bugle with an uncompromising journalistic code and an eternal vendetta against masked vigilantes."
+  },
+  "hobgoblin": {
+    "id": "hobgoblin",
+    "name": "Jason Philip Macendale / Hobgoblin",
+    "alias": "Hobgoblin",
+    "cssClass": "hobgoblin",
+    "color": "#f59e0b",
+    "bgBadge": "bg-amber-950/80 hover:bg-amber-900/90",
+    "textBadge": "text-amber-300",
+    "borderBadge": "border-amber-600",
+    "role": "villain",
+    "affiliation": "Independent Mercenary",
+    "groups": [
+      "Kingpin Syndicate"
+    ],
+    "originLocation": "Boston, Massachusetts (Earth-92131)",
+    "status": "alive",
+    "bio": "Mercenary who stole Norman Osborn's prototype glider and sonic arsenal, donning an orange hooded cowl and terrorizing New York's underworld."
+  },
+  "chameleon": {
+    "id": "chameleon",
+    "name": "Dmitri Smerdyakov / The Chameleon",
+    "alias": "The Chameleon",
+    "cssClass": "chameleon",
+    "color": "#94a3b8",
+    "bgBadge": "bg-slate-950/80 hover:bg-slate-900/90",
+    "textBadge": "text-slate-300",
+    "borderBadge": "border-slate-600",
+    "role": "villain",
+    "affiliation": "KGB / Kingpin Syndicate",
+    "groups": [
+      "International Espionage"
+    ],
+    "originLocation": "Moscow, Russia (Earth-92131)",
+    "status": "alive",
+    "bio": "Master of disguise and international espionage operative utilizing holographic face-belt tech and mimicry to infiltrate any government or military installation."
+  },
+  "ho-yinsen": {
+    "id": "ho-yinsen",
+    "name": "Professor Ho Yinsen",
+    "alias": "Ho Yinsen",
+    "cssClass": "ho-yinsen",
+    "color": "#fbbf24",
+    "bgBadge": "bg-amber-950/80 hover:bg-amber-900/90",
+    "textBadge": "text-amber-300",
+    "borderBadge": "border-amber-500",
+    "role": "hero",
+    "affiliation": "Stark Industries (Collaborator)",
+    "groups": [
+      "Scientists"
+    ],
+    "originLocation": "Timbetpal, Asia (Earth-92131)",
+    "status": "deceased",
+    "bio": "Nobel-prize winning physicist who saved Tony Stark's life in the Vietnam/Sin-Cong POW camp, co-designed the Mark I armor, and sacrificed himself so Tony could escape."
+  },
+  "michael-morbius": {
+    "id": "michael-morbius",
+    "name": "Dr. Michael Morbius / The Living Vampire",
+    "alias": "Morbius",
+    "cssClass": "michael-morbius",
+    "color": "#e11d48",
+    "bgBadge": "bg-rose-950/80 hover:bg-rose-900/90",
+    "textBadge": "text-rose-300",
+    "borderBadge": "border-rose-600",
+    "role": "anti-hero",
+    "affiliation": "ESU Biochemistry",
+    "groups": [
+      "Vampiric Mutates"
+    ],
+    "originLocation": "Nafplio, Greece (Earth-92131)",
+    "status": "alive",
+    "bio": "Brilliant Nobel-winning biologist whose treatment for a rare blood condition involving vampire bat DNA and the Neogenic Recombinator turned him into a living pseudo-vampire."
+  },
+  "blade-eric-brooks": {
+    "id": "blade-eric-brooks",
+    "name": "Eric Brooks / Blade the Vampire Hunter",
+    "alias": "Blade",
+    "cssClass": "blade-eric-brooks",
+    "color": "#b91c1c",
+    "bgBadge": "bg-red-950/80 hover:bg-red-900/90",
+    "textBadge": "text-red-300",
+    "borderBadge": "border-red-600",
+    "role": "anti-hero",
+    "affiliation": "Nightstalkers",
+    "groups": [
+      "Vampire Hunters"
+    ],
+    "originLocation": "London, England (Earth-92131)",
+    "status": "alive",
+    "bio": "Daywalking half-vampire warrior armed with silver swords, garlic projectiles, and a laser rifle, waging a relentless crusade across New York against the undead."
+  },
+  "madame-masque-whitney-frost": {
+    "id": "madame-masque-whitney-frost",
+    "name": "Whitney Frost / Madame Masque",
+    "alias": "Madame Masque",
+    "cssClass": "madame-masque-whitney-frost",
+    "color": "#d97706",
+    "bgBadge": "bg-amber-950/80 hover:bg-amber-900/90",
+    "textBadge": "text-amber-300",
+    "borderBadge": "border-amber-600",
+    "role": "villain",
+    "affiliation": "Maggia Syndicate",
+    "groups": [
+      "Maggia Crime Syndicate"
+    ],
+    "originLocation": "Milan, Italy (Earth-92131)",
+    "status": "alive",
+    "bio": "Maggia crime syndicate heiress wearing a golden mask to conceal her scarred face, commanding high-tech mercenaries and clashing with Tony Stark."
+  },
+  "homer-ai": {
+    "id": "homer-ai",
+    "name": "H.O.M.E.R. (Heuristically Operative Matrix Emulation Rostrum)",
+    "alias": "HOMER",
+    "cssClass": "homer-ai",
+    "color": "#38bdf8",
+    "bgBadge": "bg-sky-950/80 hover:bg-sky-900/90",
+    "textBadge": "text-sky-300",
+    "borderBadge": "border-sky-500",
+    "role": "hero",
+    "affiliation": "Stark Enterprises",
+    "groups": [
+      "Stark AI Systems"
+    ],
+    "originLocation": "Stark Enterprises Mainframe, California (Earth-92131)",
+    "status": "alive",
+    "bio": "Tony Stark's dry-witted artificial intelligence system managing Stark Enterprises security, armory fabrication, and tactical heads-up telemetry for the Modular Armor."
+  },
+  "black-panther-t-challa": {
+    "id": "black-panther-t-challa",
+    "name": "King T'Challa / Black Panther",
+    "alias": "Black Panther",
+    "cssClass": "black-panther-t-challa",
+    "color": "#a855f7",
+    "bgBadge": "bg-purple-950/80 hover:bg-purple-900/90",
+    "textBadge": "text-purple-300",
+    "borderBadge": "border-purple-600",
+    "role": "hero",
+    "affiliation": "Kingdom of Wakanda",
+    "groups": [
+      "Wakandan Royal Family",
+      "Panther Cult"
+    ],
+    "originLocation": "Birnin Zana, Wakanda (Earth-92131)",
+    "status": "alive",
+    "bio": "King and protector of the technologically advanced African nation of Wakanda, drawing speed, agility, and instincts from the sacred Heart-Shaped Herb."
+  },
+  "proteus-kevin-mactaggert": {
+    "id": "proteus-kevin-mactaggert",
+    "name": "Kevin MacTaggert / Proteus",
+    "alias": "Proteus",
+    "cssClass": "proteus-kevin-mactaggert",
+    "color": "#f43f5e",
+    "bgBadge": "bg-rose-950/80 hover:bg-rose-900/90",
+    "textBadge": "text-rose-300",
+    "borderBadge": "border-rose-600",
+    "role": "villain",
+    "affiliation": "Muir Island Research Facility",
+    "groups": [
+      "Omega Mutants"
+    ],
+    "originLocation": "Muir Island, Scotland (Earth-92131)",
+    "status": "deceased",
+    "bio": "Omega-level reality-warping mutant son of Moira MacTaggert whose psionic energy burns out physical bodies, warping matter and physics across Edinburgh."
+  },
+  "bruce-banner-hulk": {
+    "id": "bruce-banner-hulk",
+    "name": "Dr. Bruce Banner / The Incredible Hulk",
+    "alias": "The Hulk",
+    "cssClass": "bruce-banner-hulk",
+    "color": "#22c55e",
+    "bgBadge": "bg-green-950/80 hover:bg-green-900/90",
+    "textBadge": "text-green-300",
+    "borderBadge": "border-green-600",
+    "role": "anti-hero",
+    "affiliation": "Fugitives / Avengers",
+    "groups": [
+      "Gamma Mutates"
+    ],
+    "originLocation": "Dayton, Ohio (Earth-92131)",
+    "status": "alive",
+    "bio": "Genius nuclear physicist caught in the blast of his own Gamma Bomb who transforms into the green, rage-fueled Incredible Hulk whenever provoked."
+  },
+  "the-leader-samuel-sterns": {
+    "id": "the-leader-samuel-sterns",
+    "name": "Samuel Sterns / The Leader",
+    "alias": "The Leader",
+    "cssClass": "the-leader-samuel-sterns",
+    "color": "#84cc16",
+    "bgBadge": "bg-lime-950/80 hover:bg-lime-900/90",
+    "textBadge": "text-lime-300",
+    "borderBadge": "border-lime-600",
+    "role": "villain",
+    "affiliation": "Gamma Base Mutants",
+    "groups": [
+      "Gamma Mutates"
+    ],
+    "originLocation": "Boise, Idaho (Earth-92131)",
+    "status": "alive",
+    "bio": "Chemical plant worker irradiated by gamma waste whose cranium expanded into a massive green brain, granting him vast telepathic intellect and control over gamma mutates."
+  },
+  "emil-blonsky-abomination": {
+    "id": "emil-blonsky-abomination",
+    "name": "Emil Blonsky / The Abomination",
+    "alias": "The Abomination",
+    "cssClass": "emil-blonsky-abomination",
+    "color": "#15803d",
+    "bgBadge": "bg-emerald-950/80 hover:bg-emerald-900/90",
+    "textBadge": "text-emerald-300",
+    "borderBadge": "border-emerald-600",
+    "role": "villain",
+    "affiliation": "The Leader's Syndicate",
+    "groups": [
+      "Gamma Mutates"
+    ],
+    "originLocation": "Zagreb, Croatia (Earth-92131)",
+    "status": "alive",
+    "bio": "Former spy bombarded with higher doses of gamma radiation than Banner, transforming permanently into a reptilian humanoid monster even stronger than a calm Hulk."
+  },
+  "matt-murdock-daredevil": {
+    "id": "matt-murdock-daredevil",
+    "name": "Matt Murdock / Daredevil",
+    "alias": "Daredevil",
+    "cssClass": "matt-murdock-daredevil",
+    "color": "#dc2626",
+    "bgBadge": "bg-red-950/80 hover:bg-red-900/90",
+    "textBadge": "text-red-300",
+    "borderBadge": "border-red-600",
+    "role": "hero",
+    "affiliation": "Nelson & Murdock Attorneys",
+    "groups": [
+      "New York Vigilantes",
+      "Defenders"
+    ],
+    "originLocation": "Hell's Kitchen, Manhattan, New York (Earth-92131)",
+    "status": "alive",
+    "bio": "Blind defense attorney whose radioactive chemical accident heightened his remaining senses to superhuman radar levels, fighting crime as the Man Without Fear."
+  },
+  "wilson-fisk-kingpin": {
+    "id": "wilson-fisk-kingpin",
+    "name": "Wilson Fisk / The Kingpin of Crime",
+    "alias": "Kingpin",
+    "cssClass": "wilson-fisk-kingpin",
+    "color": "#f8fafc",
+    "bgBadge": "bg-slate-900/90 hover:bg-slate-800/90",
+    "textBadge": "text-slate-100",
+    "borderBadge": "border-slate-500",
+    "role": "villain",
+    "affiliation": "New York Crime Syndicate",
+    "groups": [
+      "Fisk Enterprises",
+      "Insidious Six Patron"
+    ],
+    "originLocation": "Hell's Kitchen, Manhattan, New York (Earth-92131)",
+    "status": "alive",
+    "bio": "Shadow ruler of the East Coast criminal empire masquerading as a legitimate philanthropist, possessing 400 pounds of solid muscle and ruthless calculating cunning."
+  },
+  "cletus-kasady-carnage": {
+    "id": "cletus-kasady-carnage",
+    "name": "Cletus Kasady / Carnage",
+    "alias": "Carnage",
+    "cssClass": "cletus-kasady-carnage",
+    "color": "#dc2626",
+    "bgBadge": "bg-red-950/90 hover:bg-red-900/90",
+    "textBadge": "text-red-400",
+    "borderBadge": "border-red-600",
+    "role": "villain",
+    "affiliation": "Symbiotes / Baron Mordo",
+    "groups": [
+      "Symbiotes"
+    ],
+    "originLocation": "Brooklyn, New York (Earth-92131)",
+    "status": "alive",
+    "bio": "Unhinged psychotic serial killer bonded to the crimson offspring of the Venom symbiote, morphing his limbs into lethal tendrils, axes, and bladed projectiles."
+  },
+  "jennifer-walters-she-hulk": {
+    "id": "jennifer-walters-she-hulk",
+    "name": "Jennifer Walters / She-Hulk",
+    "alias": "She-Hulk",
+    "cssClass": "jennifer-walters-she-hulk",
+    "color": "#16a34a",
+    "bgBadge": "bg-emerald-950/80 hover:bg-emerald-900/90",
+    "textBadge": "text-emerald-300",
+    "borderBadge": "border-emerald-500",
+    "role": "hero",
+    "affiliation": "Walters Legal Defense / Avengers",
+    "groups": [
+      "Gamma Mutates",
+      "Avengers"
+    ],
+    "originLocation": "Los Angeles, California (Earth-92131)",
+    "status": "alive",
+    "bio": "Bruce Banner's lawyer cousin who received an emergency blood transfusion from him, gaining gamma-fueled strength and jade invulnerability while retaining full intellect and wit."
+  },
+  "the-beyonder": {
+    "id": "the-beyonder",
+    "name": "The Beyonder",
+    "alias": "The Beyonder",
+    "cssClass": "the-beyonder",
+    "color": "#ec4899",
+    "bgBadge": "bg-pink-950/80 hover:bg-pink-900/90",
+    "textBadge": "text-pink-300",
+    "borderBadge": "border-pink-600",
+    "role": "cosmic",
+    "affiliation": "Beyond Realm",
+    "groups": [
+      "Omnipotent Entities"
+    ],
+    "originLocation": "The Beyond Realm",
+    "status": "alive",
+    "bio": "Inscrutable near-omnipotent cosmic entity from beyond the multiverse who conjures Battleworld to pit Good against Evil in the legendary Secret Wars."
+  },
+  "madame-web": {
+    "id": "madame-web",
+    "name": "Cassandra Webb / Madame Web",
+    "alias": "Madame Web",
+    "cssClass": "madame-web",
+    "color": "#a855f7",
+    "bgBadge": "bg-purple-950/80 hover:bg-purple-900/90",
+    "textBadge": "text-purple-300",
+    "borderBadge": "border-purple-500",
+    "role": "cosmic",
+    "affiliation": "Web of Life and Destiny",
+    "groups": [
+      "Great Weaver Guardians"
+    ],
+    "originLocation": "Salem, Oregon (Earth-92131)",
+    "status": "alive",
+    "bio": "Clairvoyant and astral seer connected to the cosmic Web of Reality who tests Spider-Man to prepare him as the champion of the multiverse against Carnage."
+  },
+  "stan-lee-creator": {
+    "id": "stan-lee-creator",
+    "name": "Stan Lee",
+    "alias": "The Creator",
+    "cssClass": "stan-lee-creator",
+    "color": "#f59e0b",
+    "bgBadge": "bg-amber-950/80 hover:bg-amber-900/90",
+    "textBadge": "text-amber-200",
+    "borderBadge": "border-amber-400",
+    "role": "hero",
+    "affiliation": "Earth-Real",
+    "groups": [
+      "True Creators"
+    ],
+    "originLocation": "Manhattan, New York (Earth-1218)",
+    "status": "alive",
+    "bio": "The legendary comic creator met by Spider-Man on top of a skyscraper in our real world in the emotional climax of Spider Wars ('Thanks for making me!')."
+  },
 };
 
 export const allCharacters: Character[] = Object.values(charactersData);

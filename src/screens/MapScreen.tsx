@@ -909,6 +909,25 @@ export const COSMIC_REALMS: CosmicRealm[] = [
       { title: 'Jean Grey Destroys Vuk & Cosmic Phoenix Ascension', era: '1992', media: 'X-Men: Dark Phoenix', eventId: 'event-1992-dark-phoenix-3' }
     ]
   },
+  {
+    id: 'leo-starcore-shuttle',
+    name: 'Starcore Space Shuttle (Solar Flare Orbit)',
+    type: 'orbital',
+    category: 'orbital',
+    systemGroup: 'Terrestrial Orbit',
+    altitudeOrDistance: '420 km (Low Earth Orbit)',
+    description: "Dr. Peter Corbeau's Starcore scientific space shuttle disabled by a lethal solar radiation flare, telepathically steered by Jean Grey before crashing into Jamaica Bay.",
+    color: '#eab308',
+    x: 68,
+    y: 34,
+    radius: 25,
+    icon: '🚀',
+    universeFilterKey: '92131',
+    eventsCount: 1,
+    featuredEvents: [
+      { title: 'Starcore Shuttle Cosmic Solar Flare & Phoenix Rebirth', era: '1994', media: 'X-Men: The Animated Series (Season 3)', eventId: 'event-1994-tas-3-phoenix-earth' }
+    ]
+  },
 
   // 3. ORBITAL LAYER 2: Geostationary Orbit (GEO - 35,786 km)
   {
@@ -1166,6 +1185,63 @@ export const COSMIC_REALMS: CosmicRealm[] = [
     eventsCount: 1,
     featuredEvents: [
       { title: "The Mojoverse Broadcast Arena & Longshot's Holographic Rebellion", era: '1994', media: 'X-Men: The Animated Series (Season 2)', eventId: 'event-1994-tas-2-mojovision' }
+    ]
+  },
+  {
+    id: 'shiar-empire',
+    name: "Shi'ar Empire & M'Kraan Crystal Nexus",
+    type: 'cosmic',
+    category: 'deep-space',
+    systemGroup: "Shi'ar Imperium (M'Kraan Stargate)",
+    altitudeOrDistance: "Shi'ar Galaxy Stargate",
+    description: "Heart of the alien Shi'ar Imperium housing the celestial Stargate and the ancient M'Kraan Crystal—the nexus of all realities—where Jean Grey bonded with the Phoenix Force to heal universal space-time.",
+    color: '#38bdf8',
+    x: 84,
+    y: 32,
+    radius: 30,
+    icon: '💎',
+    universeFilterKey: '92131',
+    eventsCount: 1,
+    featuredEvents: [
+      { title: "The Phoenix Saga: Shi'ar Galaxy & M'Kraan Cosmic Restoration", era: '1994', media: 'X-Men: The Animated Series (Season 3)', eventId: 'event-1994-tas-3-phoenix-shiar' }
+    ]
+  },
+  {
+    id: 'negative-zone',
+    name: "The Negative Zone (Antimatter Universe)",
+    type: 'dimension',
+    category: 'dimensions',
+    systemGroup: 'Antimatter Continuum',
+    altitudeOrDistance: 'Antimatter Sub-Space Portal',
+    description: "An exotic parallel universe composed of negative matter breached by Reed Richards' particle accelerator, ruled by the insectoid tyrant Annihilus and Blastaar.",
+    color: '#84cc16',
+    x: 34,
+    y: 20,
+    radius: 28,
+    icon: '🌀',
+    universeFilterKey: '92131',
+    eventsCount: 1,
+    featuredEvents: [
+      { title: "Subterranea Incursion & Negative Zone Breach", era: '1994', media: 'Fantastic Four: The Animated Series (Season 1)', eventId: 'event-1994-tas-ff-negative-zone-moleman' }
+    ]
+  },
+  {
+    id: 'battleworld-beyonder',
+    name: "Battleworld (The Beyond Realm)",
+    type: 'multiverse',
+    category: 'multiverse',
+    systemGroup: 'Beyond Realm Proving Grounds',
+    altitudeOrDistance: 'Beyond Multiversal Horizon',
+    description: "Amalgamated celestial proving ground created by The Beyonder to test good versus evil, where Spider-Man led the Fantastic Four, Iron Man, Storm, and Captain America in the legendary Secret Wars.",
+    color: '#ec4899',
+    x: 88,
+    y: 72,
+    radius: 30,
+    icon: '🪐',
+    universeFilterKey: '92131',
+    eventsCount: 1,
+    featuredEvents: [
+      { title: "The Beyonder's Secret Wars on Battleworld", era: '1998', media: 'Spider-Man: The Animated Series (Season 5)', eventId: 'event-1998-tas-spiderman-secret-wars' }
     ]
   }
 ];
