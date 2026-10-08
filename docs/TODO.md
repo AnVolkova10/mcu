@@ -136,7 +136,30 @@ Integrar y auditar la totalidad de las 5 series nucleares del Universo Animado d
 
 ---
 
-## 📌 7. Backlog de Ideas & Tareas Pendientes
+## 🎖️ 7. Auditoría Exhaustiva de Producciones Pre-TAS: Desglose In-Universe de Flashbacks, Infancias y Saltos Temporales
+- [x] **Resultado Observable**: Auditoría y regularización meticulosa de las 10 producciones pre-TAS del catálogo (*Eyes of Wakanda*, *Spider-Noir*, *Captain America: The First Avenger*, *Agent Carter*, *X-Men: First Class*, *X-Men Origins: Wolverine*, *X-Men: Days of Future Past*, *X-Men: Apocalypse*, *X-Men: Dark Phoenix*, *Captain Marvel*). Se calcularon y desglosaron en sus años diegéticos exactos todos los recuerdos de infancia, callejones de reclutamiento, orígenes de la Habitación Roja y campañas bélicas anuales completas omitidas.
+- [x] **Criterios de Aceptación**:
+  - [x] **Capitán América (`captain-america-1`)**:
+    - [x] `era-_c__1925_`: Steve Rogers a los 7 años atacado por matones en el patio de la escuela PS 13 de Brooklyn; Bucky Barnes (8 años) interviene para defenderlo, sellando su hermandad centenaria.
+    - [x] `era-_1941_`: Callejón de Brooklyn tras Pearl Harbor. Steve reiteradamente rechazado 4-F defiende el noticiero bélico, levanta una tapa de basurero como escudo y pronuncia *"I can do this all day"*. Bucky en uniforme de la 107th lo rescata.
+    - [x] `era-_1942_`: Separada la *1942 Stark World Exposition of Tomorrow* en Flushing Meadows, Queens (auto volador de Howard Stark y entrevista de reclutamiento del Dr. Abraham Erskine: *"No me gustan los matones"*).
+    - [x] `era-_1943_`: Refactorizado para comenzar en el Campamento Lehigh (granada activa), transformación con suero y rayos Vita, muerte de Erskine, tour de bonos, rescate en solitario de Azzano (Austria), escudo de Vibranium y forja de los Howling Commandos.
+    - [x] `era-_1944_`: Agregada la campaña militar europea anual completa de los Howling Commandos (Capitán América, Bucky, Dum Dum Dugan, Gabe Jones, Jim Morita, Jacques Dernier, Montgomery Falsworth) desmantelando fábricas de HYDRA por Francia, Bélgica y Alemania.
+  - [x] **Agent Carter (`agent-carter-i` & `agent-carter-ii`)**:
+    - [x] `era-_1937_`: Flashback a la URSS de 1937 en la *Red Room Academy*; niñas de 10 años encadenadas a las camas viendo *Blancanieves* y adiestradas en estrangulamiento letal (origen de Dottie Underwood y del programa Black Widow).
+    - [x] `era-_1940_`: Flashback en Hampstead, Inglaterra; Peggy comprometida para matrimonio tradicional; su hermano el teniente Michael Carter la motiva a aceptar la invitación del SOE; muerte en combate de Michael en Francia que impulsa a Peggy a convertirse en agente de campo de inteligencia.
+  - [x] **Captain Marvel (`captain-marvel-1`)**:
+    - [x] `era-_c__1971_`: Flashback de infancia; Carol Danvers a los 6 años en Boston vuelca su karting casero; desafiando los gritos de su padre de que las carreras no son para niñas, se pone de pie con la rodilla sangrando, germen de su indomable voluntad heroica.
+  - [x] **Dossiers y Estilos de Personajes**:
+    - [x] Incorporados a `src/data/charactersData.ts`: `gabe-jones`, `jim-morita`, `jacques-dernier`, `james-montgomery-falsworth` y `michael-carter` con bios, grupos, orígenes y roles completos.
+    - [x] Creadas las clases CSS de neón en `src/styles/global.css`: `.gabe-jones`, `.jim-morita`, `.jacques-dernier`, `.james-montgomery-falsworth` y `.michael-carter`.
+  - [x] Compilación obligatoria exitosa `npm run build` con 0 errores de TypeScript y bundling.
+
+---
+
+## 📌 8. Backlog de Ideas & Tareas Pendientes
+- [ ] Auditoría de películas de la Fase 2 y 3 no auditadas previamente (*Ant-Man and the Wasp*, *Thor: The Dark World* 2988 B.C.E., *Infinity War* Zen-Whoberi 1996, *Civil War* 1991).
 - [ ] Fase 2 Multiverso: Evaluación de *X-Men '97* (Disney+) y *Spider-Man Unlimited* como continuaciones posteriores.
 - [ ] Auditoría de películas live-action complementarias de los 90s (*Blade (1998)*) fuera de la burbuja animada de Earth-92131.
+
 

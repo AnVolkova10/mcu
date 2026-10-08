@@ -1100,6 +1100,104 @@ export const charactersData: Record<string, Character> = {
     "status": "deceased",
     "bio": "Iconic bowler-hat-wearing marksman and second-in-command of Captain America's Howling Commandos."
   },
+  "gabe-jones": {
+    "id": "gabe-jones",
+    "name": "Gabriel 'Gabe' Jones",
+    "alias": "Gabe Jones",
+    "cssClass": "gabe-jones",
+    "color": "#60a5fa",
+    "bgBadge": "bg-blue-950/80 hover:bg-blue-900/90",
+    "textBadge": "text-blue-300",
+    "borderBadge": "border-blue-600",
+    "role": "hero",
+    "affiliation": "Howling Commandos / SSR / S.H.I.E.L.D.",
+    "groups": [
+      "Howling Commandos",
+      "SSR",
+      "S.H.I.E.L.D."
+    ],
+    "originLocation": "New York City, New York (Earth)",
+    "status": "deceased",
+    "bio": "Expert heavy weapons specialist, jazz trumpeter, and decorated founding member of the Howling Commandos and S.H.I.E.L.D."
+  },
+  "jim-morita": {
+    "id": "jim-morita",
+    "name": "Jim Morita",
+    "alias": "Jim Morita",
+    "cssClass": "jim-morita",
+    "color": "#38bdf8",
+    "bgBadge": "bg-sky-950/80 hover:bg-sky-900/90",
+    "textBadge": "text-sky-300",
+    "borderBadge": "border-sky-600",
+    "role": "hero",
+    "affiliation": "Howling Commandos / SSR / US Army",
+    "groups": [
+      "Howling Commandos",
+      "SSR",
+      "US Army"
+    ],
+    "originLocation": "Fresno, California (Earth)",
+    "status": "deceased",
+    "bio": "Japanese-American communications expert and fearless combat ranger in the Howling Commandos (grandfather of Principal Morita)."
+  },
+  "jacques-dernier": {
+    "id": "jacques-dernier",
+    "name": "Jacques Dernier",
+    "alias": "Frenchie",
+    "cssClass": "jacques-dernier",
+    "color": "#a78bfa",
+    "bgBadge": "bg-violet-950/80 hover:bg-violet-900/90",
+    "textBadge": "text-violet-300",
+    "borderBadge": "border-violet-600",
+    "role": "hero",
+    "affiliation": "French Resistance / Howling Commandos / SSR",
+    "groups": [
+      "French Resistance",
+      "Howling Commandos",
+      "SSR"
+    ],
+    "originLocation": "Paris (France)",
+    "status": "deceased",
+    "bio": "Daring French Resistance guerrilla fighter and demolitions expert recruited into Captain America's Howling Commandos."
+  },
+  "james-montgomery-falsworth": {
+    "id": "james-montgomery-falsworth",
+    "name": "James Montgomery Falsworth",
+    "alias": "Montgomery Falsworth",
+    "cssClass": "james-montgomery-falsworth",
+    "color": "#fbbf24",
+    "bgBadge": "bg-amber-950/80 hover:bg-amber-900/90",
+    "textBadge": "text-amber-300",
+    "borderBadge": "border-amber-600",
+    "role": "hero",
+    "affiliation": "British Army / Howling Commandos / SSR",
+    "groups": [
+      "British Armed Forces",
+      "Howling Commandos",
+      "SSR"
+    ],
+    "originLocation": "England (United Kingdom)",
+    "status": "deceased",
+    "bio": "Distinguished British Army commando and tactical infiltrator serving alongside Captain America across occupied Europe."
+  },
+  "michael-carter": {
+    "id": "michael-carter",
+    "name": "Michael Carter",
+    "alias": "Lieutenant Carter",
+    "cssClass": "michael-carter",
+    "color": "#f472b6",
+    "bgBadge": "bg-pink-950/80 hover:bg-pink-900/90",
+    "textBadge": "text-pink-300",
+    "borderBadge": "border-pink-600",
+    "role": "hero",
+    "affiliation": "British Army",
+    "groups": [
+      "British Armed Forces"
+    ],
+    "originLocation": "Hampstead, England (United Kingdom)",
+    "status": "deceased",
+    "bio": "Devoted British Army officer whose encouragement and heroic sacrifice in 1940 inspired his sister Peggy to join the war as an intelligence agent."
+  },
   "maria-hill": {
     "id": "maria-hill",
     "name": "Maria Hill",

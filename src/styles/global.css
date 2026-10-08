@@ -634,3 +634,39 @@
   text-shadow: 0 0 8px rgba(251, 146, 60, 0.6);
 }
 
+.mcu-html-content .gabe-jones,
+.gabe-jones {
+  color: #60a5fa;
+  font-weight: 700;
+  text-shadow: 0 0 8px rgba(96, 165, 250, 0.5);
+}
+
+.mcu-html-content .jim-morita,
+.jim-morita {
+  color: #38bdf8;
+  font-weight: 700;
+  text-shadow: 0 0 8px rgba(56, 189, 248, 0.5);
+}
+
+.mcu-html-content .jacques-dernier,
+.jacques-dernier {
+  color: #a78bfa;
+  font-weight: 700;
+  text-shadow: 0 0 8px rgba(167, 139, 250, 0.5);
+}
+
+.mcu-html-content .james-montgomery-falsworth,
+.james-montgomery-falsworth {
+  color: #fbbf24;
+  font-weight: 700;
+  text-shadow: 0 0 8px rgba(251, 191, 36, 0.5);
+}
+
+.mcu-html-content .michael-carter,
+.michael-carter {
+  color: #f472b6;
+  font-weight: 700;
+  text-shadow: 0 0 8px rgba(244, 114, 182, 0.5);
+}
+
+

@@ -944,6 +944,60 @@ export const timelineEras: EraGroup[] = [
     ]
   },
   {
+    "id": "era-_c__1925_",
+    "title": "-c. 1925-",
+    "cleanTitle": "c. 1925",
+    "category": "early-century",
+    "events": [
+      {
+        "id": "event-1925-cap-origin-1",
+        "eraId": "era-_c__1925_",
+        "eraTitle": "c. 1925",
+        "mediaKey": "captain-america-1",
+        "mediaTitle": "Captain America: The First Avenger (2011)",
+        "mediaType": "movie",
+        "mediaPhase": "Phase 1",
+        "isAlternativeTimeline": false,
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)",
+        "rawClasses": [
+          "captain-america-1"
+        ],
+        "rawHtml": "<p>In the working-class tenements and schoolyards of Brooklyn, New York circa 1925, seven-year-old <strong class=\"captain-america\">Steve Rogers</strong>—frail, asthmatic, and frequently bedridden—is cornered and beaten by a gang of older neighborhood bullies. Eight-year-old <strong class=\"winter-soldier\">James Buchanan \"Bucky\" Barnes</strong> leaps into the fray, scattering the attackers with his fists and helping Steve back to his feet. Recognizing in Rogers a stubborn, unshakeable courage that far exceeds his fragile physical frame, Bucky swears a protective pact that cements their unbreakable brotherhood for the next century.</p>",
+        "paragraphs": [
+          "In the working-class tenements and schoolyards of Brooklyn, New York circa 1925, seven-year-old <strong class=\"captain-america\">Steve Rogers</strong>—frail, asthmatic, and frequently bedridden—is cornered and beaten by a gang of older neighborhood bullies. Eight-year-old <strong class=\"winter-soldier\">James Buchanan \"Bucky\" Barnes</strong> leaps into the fray, scattering the attackers with his fists and helping Steve back to his feet. Recognizing in Rogers a stubborn, unshakeable courage that far exceeds his fragile physical frame, Bucky swears a protective pact that cements their unbreakable brotherhood for the next century."
+        ],
+        "characters": [
+          "steve-rogers",
+          "bucky-barnes"
+        ],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "First Meeting of Steve Rogers and Bucky Barnes",
+          "Childhood Brotherhood Forged in Brooklyn",
+          "Steve's Lifelong Defiance Against Bullies"
+        ],
+        "locations": [
+          {
+            "name": "PS 13 Schoolyard & Brooklyn Tenement Yard",
+            "cityOrRegion": "Brooklyn, New York",
+            "countryOrRealm": "United States",
+            "planet": "Earth",
+            "coordinates": [
+              40.6928,
+              -73.9903
+            ],
+            "characters": [
+              "steve-rogers",
+              "bucky-barnes"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "era-_c__1928___1930_",
     "title": "-c. 1928 - 1930-",
     "cleanTitle": "c. 1928 - 1930",
@@ -1151,6 +1205,169 @@ export const timelineEras: EraGroup[] = [
     ]
   },
   {
+    "id": "era-_1937_",
+    "title": "-1937-",
+    "cleanTitle": "1937",
+    "category": "early-century",
+    "events": [
+      {
+        "id": "event-1937-red-room-origin-1",
+        "eraId": "era-_1937_",
+        "eraTitle": "1937",
+        "mediaKey": "agent-carter-i",
+        "mediaTitle": "Marvel's Agent Carter (Season 1)",
+        "mediaType": "series",
+        "mediaPhase": "Marvel Television",
+        "isAlternativeTimeline": false,
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)",
+        "rawClasses": [
+          "agent-carter-i"
+        ],
+        "rawHtml": "<p>In Soviet Russia in 1937, the clandestine <strong class=\"enemy\">Red Room Academy</strong> subjects young orphan girls to brutal psychological conditioning and lethal martial indoctrination. Handcuffed to their iron bunk frames at night while forced to watch classic American animated films like <em>Snow White and the Seven Dwarfs</em> to assimilate western mannerisms, the young girls—including the exceptionally ruthless <strong class=\"dottie-underwood\">Dorothy \"Dottie\" Underwood</strong>—are pitted against one another in fatal hand-to-hand combat drills, forging the earliest generation of elite Soviet sleeper assassins for Leviathan.</p>",
+        "paragraphs": [
+          "In Soviet Russia in 1937, the clandestine <strong class=\"enemy\">Red Room Academy</strong> subjects young orphan girls to brutal psychological conditioning and lethal martial indoctrination. Handcuffed to their iron bunk frames at night while forced to watch classic American animated films like <em>Snow White and the Seven Dwarfs</em> to assimilate western mannerisms, the young girls—including the exceptionally ruthless <strong class=\"dottie-underwood\">Dorothy \"Dottie\" Underwood</strong>—are pitted against one another in fatal hand-to-hand combat drills, forging the earliest generation of elite Soviet sleeper assassins for Leviathan."
+        ],
+        "characters": [
+          "dottie-underwood"
+        ],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "Origins of the Soviet Red Room Program",
+          "Childhood Indoctrination of Dottie Underwood",
+          "Leviathan Sleeper Assassin Protocol"
+        ],
+        "locations": [
+          {
+            "name": "Red Room Academy Training Facility",
+            "cityOrRegion": "Minsk / Western USSR",
+            "countryOrRealm": "Soviet Union",
+            "planet": "Earth",
+            "coordinates": [
+              53.9045,
+              27.5615
+            ],
+            "characters": [
+              "dottie-underwood"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "era-_1940_",
+    "title": "-1940-",
+    "cleanTitle": "1940",
+    "category": "early-century",
+    "events": [
+      {
+        "id": "event-1940-peggy-carter-origin-1",
+        "eraId": "era-_1940_",
+        "eraTitle": "1940",
+        "mediaKey": "agent-carter-ii",
+        "mediaTitle": "Marvel's Agent Carter (Season 2)",
+        "mediaType": "series",
+        "mediaPhase": "Marvel Television",
+        "isAlternativeTimeline": false,
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)",
+        "rawClasses": [
+          "agent-carter-ii"
+        ],
+        "rawHtml": "<p>In Hampstead, England in 1940, <strong class=\"peggy-carter\">Peggy Carter</strong> prepares for an unfulfilling, conventional domestic marriage to interior ministry official Fred Wells, suppressing her passion for tactical intelligence and field work. Her devoted brother, British Army Lieutenant <strong class=\"michael-carter\">Michael Carter</strong>, visits on the eve of her wedding and passionately urges her to accept a classified invitation from the British <em>Special Operations Executive (SOE)</em>, knowing her true strength lies on the front lines. Shortly before the ceremony, devastating news arrives: Michael has been killed in action during the Battle of France. Shattered by grief yet illuminated by Michael's belief in her destiny, Peggy calls off the wedding, enlists in the SOE, and embarks on her legendary wartime career as an elite intelligence operative.</p>",
+        "paragraphs": [
+          "In Hampstead, England in 1940, <strong class=\"peggy-carter\">Peggy Carter</strong> prepares for an unfulfilling, conventional domestic marriage to interior ministry official Fred Wells, suppressing her passion for tactical intelligence and field work. Her devoted brother, British Army Lieutenant <strong class=\"michael-carter\">Michael Carter</strong>, visits on the eve of her wedding and passionately urges her to accept a classified invitation from the British <em>Special Operations Executive (SOE)</em>, knowing her true strength lies on the front lines. Shortly before the ceremony, devastating news arrives: Michael has been killed in action during the Battle of France. Shattered by grief yet illuminated by Michael's belief in her destiny, Peggy calls off the wedding, enlists in the SOE, and embarks on her legendary wartime career as an elite intelligence operative."
+        ],
+        "characters": [
+          "peggy-carter",
+          "michael-carter"
+        ],
+        "stones": [],
+        "deaths": [
+          "Lieutenant Michael Carter (KIA in France)"
+        ],
+        "mcuHighlights": [
+          "Peggy Carter Abandons Society Marriage",
+          "Martyrdom of Lieutenant Michael Carter",
+          "Peggy Enlists in the Special Operations Executive (SOE)"
+        ],
+        "locations": [
+          {
+            "name": "Carter Family Estate & Church of St. Jude",
+            "cityOrRegion": "Hampstead, London",
+            "countryOrRealm": "United Kingdom",
+            "planet": "Earth",
+            "coordinates": [
+              51.5559,
+              -0.1774
+            ],
+            "characters": [
+              "peggy-carter",
+              "michael-carter"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "era-_1941_",
+    "title": "-1941-",
+    "cleanTitle": "1941",
+    "category": "early-century",
+    "events": [
+      {
+        "id": "event-1941-cap-alley-1",
+        "eraId": "era-_1941_",
+        "eraTitle": "1941",
+        "mediaKey": "captain-america-1",
+        "mediaTitle": "Captain America: The First Avenger (2011)",
+        "mediaType": "movie",
+        "mediaPhase": "Phase 1",
+        "isAlternativeTimeline": false,
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)",
+        "rawClasses": [
+          "captain-america-1"
+        ],
+        "rawHtml": "<p>Following the attack on Pearl Harbor in December 1941 and the United States' entry into World War II, frail 90-pound Brooklynite <strong class=\"captain-america\">Steve Rogers</strong> attempts to enlist in the US Armed Forces across multiple boroughs, but is repeatedly turned down with Class 4-F status due to chronic asthma, heart palpitations, and scarlet fever. Attending a neighborhood cinema, Steve bravely confronts an obnoxious patron who disrespects an Allied war newsreel. Cornered in the rain-slicked alley behind the theater, Steve is battered mercilessly by the larger bully; refusing to stay down, Rogers raises a rusted garbage can lid like a shield and declares his defining battle cry: <em>\"I can do this all day.\"</em> Sgt. <strong class=\"winter-soldier\">Bucky Barnes</strong>, dressed in freshly pressed Army dress blues, arrives just in time to knock the bully flat, rescue Steve, and break the news that the 107th Infantry Regiment has received orders to ship out to the European theater the next morning.</p>",
+        "paragraphs": [
+          "Following the attack on Pearl Harbor in December 1941 and the United States' entry into World War II, frail 90-pound Brooklynite <strong class=\"captain-america\">Steve Rogers</strong> attempts to enlist in the US Armed Forces across multiple boroughs, but is repeatedly turned down with Class 4-F status due to chronic asthma, heart palpitations, and scarlet fever. Attending a neighborhood cinema, Steve bravely confronts an obnoxious patron who disrespects an Allied war newsreel. Cornered in the rain-slicked alley behind the theater, Steve is battered mercilessly by the larger bully; refusing to stay down, Rogers raises a rusted garbage can lid like a shield and declares his defining battle cry: <em>\"I can do this all day.\"</em> Sgt. <strong class=\"winter-soldier\">Bucky Barnes</strong>, dressed in freshly pressed Army dress blues, arrives just in time to knock the bully flat, rescue Steve, and break the news that the 107th Infantry Regiment has received orders to ship out to the European theater the next morning."
+        ],
+        "characters": [
+          "steve-rogers",
+          "bucky-barnes"
+        ],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "Steve Rogers' 4-F Rejections Post-Pearl Harbor",
+          "The Brooklyn Cinema Alley Fight",
+          "Birth of the Creed: 'I Can Do This All Day'",
+          "Bucky Barnes Ships Out with the 107th"
+        ],
+        "locations": [
+          {
+            "name": "Brooklyn Cinema Alleyway",
+            "cityOrRegion": "Brooklyn, New York",
+            "countryOrRealm": "United States",
+            "planet": "Earth",
+            "coordinates": [
+              40.6928,
+              -73.9903
+            ],
+            "characters": [
+              "steve-rogers",
+              "bucky-barnes"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "era-_1942_",
     "title": "-1942-",
     "cleanTitle": "1942",
@@ -1216,6 +1433,56 @@ export const timelineEras: EraGroup[] = [
             ]
           }
         ]
+      },
+      {
+        "id": "event-1942-cap-expo-1",
+        "eraId": "era-_1942_",
+        "eraTitle": "1942",
+        "mediaKey": "captain-america-1",
+        "mediaTitle": "Captain America: The First Avenger (2011)",
+        "mediaType": "movie",
+        "mediaPhase": "Phase 1",
+        "isAlternativeTimeline": false,
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)",
+        "rawClasses": [
+          "captain-america-1"
+        ],
+        "rawHtml": "<p>In Flushing Meadows, Queens, <strong class=\"winter-soldier\">Bucky Barnes</strong> takes <strong class=\"captain-america\">Steve Rogers</strong> on a double date to the vibrant <strong>1942 Stark World Exposition of Tomorrow</strong>. Visionary industrialist <strong class=\"howard-stark\">Howard Stark</strong> takes the main stage to demonstrate an experimental hover-car powered by prototype magnetic repulsor tech. Sneaking away from the festivities into the expo's military recruitment pavilion to falsify his home address and try enlisting a fifth time, Steve argues with Bucky about duty and sacrifice. German-defector scientist Dr. <strong class=\"abraham-erskine\">Abraham Erskine</strong> of the <em>Strategic Scientific Reserve (SSR)</em> overhears Steve's pure conviction. In the examination booth, Erskine questions why Rogers wants to fight: <em>\"Do you want to kill Nazis?\"</em> Steve answers truthfully: <em>\"I don't want to kill anyone. I don't like bullies; I don't care where they're from.\"</em> Profoundly moved by Steve's moral character over brute strength, Erskine approves him 1-A for Project Rebirth at Camp Lehigh.</p>",
+        "paragraphs": [
+          "In Flushing Meadows, Queens, <strong class=\"winter-soldier\">Bucky Barnes</strong> takes <strong class=\"captain-america\">Steve Rogers</strong> on a double date to the vibrant <strong>1942 Stark World Exposition of Tomorrow</strong>. Visionary industrialist <strong class=\"howard-stark\">Howard Stark</strong> takes the main stage to demonstrate an experimental hover-car powered by prototype magnetic repulsor tech. Sneaking away from the festivities into the expo's military recruitment pavilion to falsify his home address and try enlisting a fifth time, Steve argues with Bucky about duty and sacrifice. German-defector scientist Dr. <strong class=\"abraham-erskine\">Abraham Erskine</strong> of the <em>Strategic Scientific Reserve (SSR)</em> overhears Steve's pure conviction. In the examination booth, Erskine questions why Rogers wants to fight: <em>\"Do you want to kill Nazis?\"</em> Steve answers truthfully: <em>\"I don't want to kill anyone. I don't like bullies; I don't care where they're from.\"</em> Profoundly moved by Steve's moral character over brute strength, Erskine approves him 1-A for Project Rebirth at Camp Lehigh."
+        ],
+        "characters": [
+          "steve-rogers",
+          "bucky-barnes",
+          "howard-stark",
+          "abraham-erskine"
+        ],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "1942 Stark World Exposition of Tomorrow",
+          "Howard Stark Demonstrates Prototype Hover-Car",
+          "Dr. Abraham Erskine Recruits Steve Rogers for Project Rebirth"
+        ],
+        "locations": [
+          {
+            "name": "Stark World Exposition of Tomorrow",
+            "cityOrRegion": "Flushing Meadows, Queens",
+            "countryOrRealm": "United States",
+            "planet": "Earth",
+            "coordinates": [
+              40.7498,
+              -73.8407
+            ],
+            "characters": [
+              "steve-rogers",
+              "bucky-barnes",
+              "howard-stark",
+              "abraham-erskine"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -1237,11 +1504,11 @@ export const timelineEras: EraGroup[] = [
         "rawClasses": [
           "captain-america-1"
         ],
-        "rawHtml": "<p>In Brooklyn, New York, sickly and asthmatic 90-pound <strong class=\"captain-america\">Steve Rogers</strong> is repeatedly rejected for military service. While attending the <em>Stark World Exposition of Tomorrow</em> with his lifelong friend, Sgt. <strong class=\"winter-soldier\">James \"Bucky\" Barnes</strong> (shipping out to Europe with the 107th Infantry), German-defector scientist Dr. <strong class=\"abraham-erskine\">Abraham Erskine</strong> overhears Steve's pure-hearted desire to fight bullies and enlists him into the <em>Strategic Scientific Reserve (SSR)</em>. At Camp Lehigh, Colonel <strong class=\"chester-phillips\">Chester Phillips</strong> and British intelligence agent <strong class=\"peggy-carter\">Peggy Carter</strong> put recruits through rigorous trials, where Steve demonstrates unmatched selflessness by jumping on a dummy grenade. In a secret Brooklyn laboratory powered by engineer <strong class=\"howard-stark\">Howard Stark</strong>, Erskine administers the experimental <strong>Super-Soldier Serum</strong> and bombards Steve with <strong>Vita-Rays</strong>, transforming him into a peak-human super-soldier. Tragically, undercover HYDRA operative <strong class=\"enemy\">Heinz Kruger</strong> shoots and kills <strong class=\"abraham-erskine dead\">Erskine</strong> and destroys the remaining serum vials before Rogers pursues and captures him, with <strong class=\"enemy dead\">Kruger</strong> committing suicide by cyanide.</p>\n<p>With the serum formula lost, the US government relegates Steve to a theatrical costumed mascot dubbed <strong>\"Captain America\"</strong> to sell war bonds on tour. In November 1943, while touring near the Italian front lines, Steve learns that Bucky's unit—the 107th Infantry—was captured at Azzano by HYDRA. Refusing orders to stand down, Rogers goes rogue and mounts a daring solo infiltration into HYDRA's heavily fortified Austrian weapons facility, flown behind enemy lines by <strong class=\"peggy-carter\">Peggy Carter</strong> and <strong class=\"howard-stark\">Howard Stark</strong>. Steve liberates Barnes and over 400 Allied prisoners of war, destroying the weapons plant. During the escape, Steve confronts <strong class=\"red-skull\">Johann Schmidt</strong>, who removes his synthetic human face mask to reveal his horrifying crimson visage: <strong class=\"red-skull\">The Red Skull</strong>—the consequence of an imperfect, premature dose of Erskine's serum.</p>\n<p>Officially promoted to Captain by Colonel Phillips, Steve forms an elite strike unit called the <strong>Howling Commandos</strong>, recruiting <strong class=\"winter-soldier\">Bucky Barnes</strong>, <strong class=\"dum-dum-dugan\">Timothy \"Dum Dum\" Dugan</strong>, <strong class=\"secundary\">Gabe Jones</strong>, <strong class=\"secundary\">Jim Morita</strong>, <strong class=\"secundary\">James Montgomery Falsworth</strong>, and <strong class=\"secundary\">Jacques Dernier</strong>. In London's underground SSR bunker, <strong class=\"howard-stark\">Howard Stark</strong> equips Steve with tailored tactical combat armor and presents him with a prototype circular shield forged from pure <strong>Vibranium</strong>—a rare Wakandan metal possessing total kinetic shock absorption. Rogers adopts the shield and paints it with his signature stars and stripes. Over the following months, Captain America and the Howling Commandos systematically raid and obliterate HYDRA's manufacturing facilities across Europe.</p>",
+        "rawHtml": "<p>At Camp Lehigh in 1943, Colonel <strong class=\"chester-phillips\">Chester Phillips</strong> and British intelligence agent <strong class=\"peggy-carter\">Peggy Carter</strong> put recruits through rigorous trials for the <em>Strategic Scientific Reserve (SSR)</em>, where <strong class=\"captain-america\">Steve Rogers</strong> demonstrates unmatched selflessness by throwing himself onto an active dummy grenade. In a secret subterranean Brooklyn laboratory powered by engineer <strong class=\"howard-stark\">Howard Stark</strong>, Dr. <strong class=\"abraham-erskine\">Abraham Erskine</strong> administers the experimental <strong>Super-Soldier Serum</strong> and bombards Steve with <strong>Vita-Rays</strong>, transforming him into a peak-human super-soldier. Tragically, undercover HYDRA operative <strong class=\"enemy\">Heinz Kruger</strong> shoots and kills <strong class=\"abraham-erskine dead\">Erskine</strong> and destroys the remaining serum vials before Rogers pursues and captures him, with <strong class=\"enemy dead\">Kruger</strong> committing suicide by cyanide.</p>\n<p>With the serum formula lost, the US government relegates Steve to a theatrical costumed mascot dubbed <strong>\"Captain America\"</strong> to sell war bonds on tour. In November 1943, while touring near the Italian front lines, Steve learns that Bucky's unit—the 107th Infantry—was captured at Azzano by HYDRA. Refusing orders to stand down, Rogers goes rogue and mounts a daring solo infiltration into HYDRA's heavily fortified Austrian weapons facility, flown behind enemy lines by <strong class=\"peggy-carter\">Peggy Carter</strong> and <strong class=\"howard-stark\">Howard Stark</strong>. Steve liberates Barnes and over 400 Allied prisoners of war, destroying the weapons plant. During the escape, Steve confronts <strong class=\"red-skull\">Johann Schmidt</strong>, who removes his synthetic human face mask to reveal his horrifying crimson visage: <strong class=\"red-skull\">The Red Skull</strong>—the consequence of an imperfect, premature dose of Erskine's serum.</p>\n<p>Officially promoted to Captain by Colonel Phillips, Steve forms an elite strike unit called the <strong>Howling Commandos</strong>, recruiting <strong class=\"winter-soldier\">Bucky Barnes</strong>, <strong class=\"dum-dum-dugan\">Timothy \"Dum Dum\" Dugan</strong>, <strong class=\"gabe-jones\">Gabe Jones</strong>, <strong class=\"jim-morita\">Jim Morita</strong>, <strong class=\"james-montgomery-falsworth\">James Montgomery Falsworth</strong>, and <strong class=\"jacques-dernier\">Jacques Dernier</strong>. In London's underground SSR bunker, <strong class=\"howard-stark\">Howard Stark</strong> equips Steve with tailored tactical combat armor and presents him with a prototype circular shield forged from pure <strong>Vibranium</strong>—a rare Wakandan metal possessing total kinetic shock absorption. Rogers adopts the shield and paints it with his signature stars and stripes, preparing the unit for frontline warfare.</p>",
         "paragraphs": [
-          "In Brooklyn, New York, sickly and asthmatic 90-pound <strong class=\"captain-america\">Steve Rogers</strong> is repeatedly rejected for military service. While attending the <em>Stark World Exposition of Tomorrow</em> with his lifelong friend, Sgt. <strong class=\"winter-soldier\">James \"Bucky\" Barnes</strong> (shipping out to Europe with the 107th Infantry), German-defector scientist Dr. <strong class=\"abraham-erskine\">Abraham Erskine</strong> overhears Steve's pure-hearted desire to fight bullies and enlists him into the <em>Strategic Scientific Reserve (SSR)</em>. At Camp Lehigh, Colonel <strong class=\"chester-phillips\">Chester Phillips</strong> and British intelligence agent <strong class=\"peggy-carter\">Peggy Carter</strong> put recruits through rigorous trials, where Steve demonstrates unmatched selflessness by jumping on a dummy grenade. In a secret Brooklyn laboratory powered by engineer <strong class=\"howard-stark\">Howard Stark</strong>, Erskine administers the experimental <strong>Super-Soldier Serum</strong> and bombards Steve with <strong>Vita-Rays</strong>, transforming him into a peak-human super-soldier. Tragically, undercover HYDRA operative <strong class=\"enemy\">Heinz Kruger</strong> shoots and kills <strong class=\"abraham-erskine dead\">Erskine</strong> and destroys the remaining serum vials before Rogers pursues and captures him, with <strong class=\"enemy dead\">Kruger</strong> committing suicide by cyanide.",
+          "At Camp Lehigh in 1943, Colonel <strong class=\"chester-phillips\">Chester Phillips</strong> and British intelligence agent <strong class=\"peggy-carter\">Peggy Carter</strong> put recruits through rigorous trials for the <em>Strategic Scientific Reserve (SSR)</em>, where <strong class=\"captain-america\">Steve Rogers</strong> demonstrates unmatched selflessness by throwing himself onto an active dummy grenade. In a secret subterranean Brooklyn laboratory powered by engineer <strong class=\"howard-stark\">Howard Stark</strong>, Dr. <strong class=\"abraham-erskine\">Abraham Erskine</strong> administers the experimental <strong>Super-Soldier Serum</strong> and bombards Steve with <strong>Vita-Rays</strong>, transforming him into a peak-human super-soldier. Tragically, undercover HYDRA operative <strong class=\"enemy\">Heinz Kruger</strong> shoots and kills <strong class=\"abraham-erskine dead\">Erskine</strong> and destroys the remaining serum vials before Rogers pursues and captures him, with <strong class=\"enemy dead\">Kruger</strong> committing suicide by cyanide.",
           "With the serum formula lost, the US government relegates Steve to a theatrical costumed mascot dubbed <strong>\"Captain America\"</strong> to sell war bonds on tour. In November 1943, while touring near the Italian front lines, Steve learns that Bucky's unit—the 107th Infantry—was captured at Azzano by HYDRA. Refusing orders to stand down, Rogers goes rogue and mounts a daring solo infiltration into HYDRA's heavily fortified Austrian weapons facility, flown behind enemy lines by <strong class=\"peggy-carter\">Peggy Carter</strong> and <strong class=\"howard-stark\">Howard Stark</strong>. Steve liberates Barnes and over 400 Allied prisoners of war, destroying the weapons plant. During the escape, Steve confronts <strong class=\"red-skull\">Johann Schmidt</strong>, who removes his synthetic human face mask to reveal his horrifying crimson visage: <strong class=\"red-skull\">The Red Skull</strong>—the consequence of an imperfect, premature dose of Erskine's serum.",
-          "Officially promoted to Captain by Colonel Phillips, Steve forms an elite strike unit called the <strong>Howling Commandos</strong>, recruiting <strong class=\"winter-soldier\">Bucky Barnes</strong>, <strong class=\"dum-dum-dugan\">Timothy \"Dum Dum\" Dugan</strong>, <strong class=\"secundary\">Gabe Jones</strong>, <strong class=\"secundary\">Jim Morita</strong>, <strong class=\"secundary\">James Montgomery Falsworth</strong>, and <strong class=\"secundary\">Jacques Dernier</strong>. In London's underground SSR bunker, <strong class=\"howard-stark\">Howard Stark</strong> equips Steve with tailored tactical combat armor and presents him with a prototype circular shield forged from pure <strong>Vibranium</strong>—a rare Wakandan metal possessing total kinetic shock absorption. Rogers adopts the shield and paints it with his signature stars and stripes. Over the following months, Captain America and the Howling Commandos systematically raid and obliterate HYDRA's manufacturing facilities across Europe."
+          "Officially promoted to Captain by Colonel Phillips, Steve forms an elite strike unit called the <strong>Howling Commandos</strong>, recruiting <strong class=\"winter-soldier\">Bucky Barnes</strong>, <strong class=\"dum-dum-dugan\">Timothy \"Dum Dum\" Dugan</strong>, <strong class=\"gabe-jones\">Gabe Jones</strong>, <strong class=\"jim-morita\">Jim Morita</strong>, <strong class=\"james-montgomery-falsworth\">James Montgomery Falsworth</strong>, and <strong class=\"jacques-dernier\">Jacques Dernier</strong>. In London's underground SSR bunker, <strong class=\"howard-stark\">Howard Stark</strong> equips Steve with tailored tactical combat armor and presents him with a prototype circular shield forged from pure <strong>Vibranium</strong>—a rare Wakandan metal possessing total kinetic shock absorption. Rogers adopts the shield and paints it with his signature stars and stripes, preparing the unit for frontline warfare."
         ],
         "characters": [
           "steve-rogers",
@@ -1252,7 +1519,11 @@ export const timelineEras: EraGroup[] = [
           "howard-stark",
           "red-skull",
           "arnim-zola",
-          "dum-dum-dugan"
+          "dum-dum-dugan",
+          "gabe-jones",
+          "jim-morita",
+          "jacques-dernier",
+          "james-montgomery-falsworth"
         ],
         "stones": [
           "space"
@@ -1491,6 +1762,82 @@ export const timelineEras: EraGroup[] = [
               "logan-wolverine",
               "steve-rogers",
               "red-skull"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "event-1944-howling-commandos-1",
+        "eraId": "era-_1944_",
+        "eraTitle": "1944",
+        "mediaKey": "captain-america-1",
+        "mediaTitle": "Captain America: The First Avenger (2011)",
+        "mediaType": "movie",
+        "mediaPhase": "Phase 1",
+        "isAlternativeTimeline": false,
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)",
+        "rawClasses": [
+          "captain-america-1"
+        ],
+        "rawHtml": "<p>Throughout 1944, <strong class=\"captain-america\">Captain America (Steve Rogers)</strong>, Sgt. <strong class=\"winter-soldier\">Bucky Barnes</strong>, and their elite multinational strike unit, the <strong>Howling Commandos</strong>—<strong class=\"dum-dum-dugan\">Dum Dum Dugan</strong>, <strong class=\"gabe-jones\">Gabe Jones</strong>, <strong class=\"jim-morita\">Jim Morita</strong>, <strong class=\"jacques-dernier\">Jacques Dernier</strong>, and <strong class=\"james-montgomery-falsworth\">James Montgomery Falsworth</strong>—wage a relentless, year-long liberation campaign across Nazi-occupied Europe. Coordinated from London by Agent <strong class=\"peggy-carter\">Peggy Carter</strong> and Colonel <strong class=\"chester-phillips\">Chester Phillips</strong>, and armed with Howard Stark's kinetic-absorbent Vibranium shield and specialized tactical munitions, the Commandos systematically raid and obliterate HYDRA's fortified manufacturing facilities, weapons depots, and research compounds across France, Belgium, and Germany.</p>\n<p>During a grueling winter offensive in the dense Ardennes forest, Rogers and his team ambush an armored HYDRA convoy transporting Tesseract-infused energy munitions, capturing invaluable telemetry and facility blueprints that pinpoint Johann Schmidt's inner fortress network. The Howling Commandos' string of decisive victories shatters HYDRA's industrial war machine, forcing a paranoid and desperate Red Skull to retreat to his central alpine redoubt at Kraussberg.</p>",
+        "paragraphs": [
+          "Throughout 1944, <strong class=\"captain-america\">Captain America (Steve Rogers)</strong>, Sgt. <strong class=\"winter-soldier\">Bucky Barnes</strong>, and their elite multinational strike unit, the <strong>Howling Commandos</strong>—<strong class=\"dum-dum-dugan\">Dum Dum Dugan</strong>, <strong class=\"gabe-jones\">Gabe Jones</strong>, <strong class=\"jim-morita\">Jim Morita</strong>, <strong class=\"jacques-dernier\">Jacques Dernier</strong>, and <strong class=\"james-montgomery-falsworth\">James Montgomery Falsworth</strong>—wage a relentless, year-long liberation campaign across Nazi-occupied Europe. Coordinated from London by Agent <strong class=\"peggy-carter\">Peggy Carter</strong> and Colonel <strong class=\"chester-phillips\">Chester Phillips</strong>, and armed with Howard Stark's kinetic-absorbent Vibranium shield and specialized tactical munitions, the Commandos systematically raid and obliterate HYDRA's fortified manufacturing facilities, weapons depots, and research compounds across France, Belgium, and Germany.",
+          "During a grueling winter offensive in the dense Ardennes forest, Rogers and his team ambush an armored HYDRA convoy transporting Tesseract-infused energy munitions, capturing invaluable telemetry and facility blueprints that pinpoint Johann Schmidt's inner fortress network. The Howling Commandos' string of decisive victories shatters HYDRA's industrial war machine, forcing a paranoid and desperate Red Skull to retreat to his central alpine redoubt at Kraussberg."
+        ],
+        "characters": [
+          "steve-rogers",
+          "bucky-barnes",
+          "dum-dum-dugan",
+          "gabe-jones",
+          "jim-morita",
+          "jacques-dernier",
+          "james-montgomery-falsworth",
+          "peggy-carter",
+          "chester-phillips"
+        ],
+        "stones": [
+          "space"
+        ],
+        "deaths": [],
+        "mcuHighlights": [
+          "The Howling Commandos Year-Long European Offensive",
+          "Systematic Destruction of HYDRA Manufacturing Network",
+          "Winter Ambush in the Ardennes Forest",
+          "Capture of Tesseract Energy Munitions"
+        ],
+        "locations": [
+          {
+            "name": "Occupied Ardennes Forest & HYDRA Research Depot",
+            "cityOrRegion": "Wallonia",
+            "countryOrRealm": "Belgium",
+            "planet": "Earth",
+            "coordinates": [
+              50.25,
+              5.5
+            ],
+            "characters": [
+              "steve-rogers",
+              "bucky-barnes",
+              "dum-dum-dugan",
+              "gabe-jones",
+              "jim-morita",
+              "jacques-dernier",
+              "james-montgomery-falsworth"
+            ]
+          },
+          {
+            "name": "London SSR Underground Strategic Bunker",
+            "cityOrRegion": "London",
+            "countryOrRealm": "United Kingdom",
+            "planet": "Earth",
+            "coordinates": [
+              51.5074,
+              -0.1278
+            ],
+            "characters": [
+              "peggy-carter",
+              "chester-phillips"
             ]
           }
         ]
@@ -2228,6 +2575,58 @@ export const timelineEras: EraGroup[] = [
               "hank-mccoy",
               "alex-summers",
               "sean-cassidy"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "era-_c__1971_",
+    "title": "-c. 1971-",
+    "cleanTitle": "c. 1971",
+    "category": "golden-age",
+    "events": [
+      {
+        "id": "event-1971-carol-danvers-origin-1",
+        "eraId": "era-_c__1971_",
+        "eraTitle": "c. 1971",
+        "mediaKey": "captain-marvel-1",
+        "mediaTitle": "Captain Marvel (2019)",
+        "mediaType": "movie",
+        "mediaPhase": "Phase 3",
+        "isAlternativeTimeline": false,
+        "timelineType": "sacred-616",
+        "earthDesignation": "Earth-616 (The Sacred Timeline)",
+        "rawClasses": [
+          "captain-marvel-1"
+        ],
+        "rawHtml": "<p>In suburban Boston, Massachusetts circa 1971, six-year-old <strong class=\"carol-danvers\">Carol Danvers</strong> modifies and enters a homemade motorized go-kart in a neighborhood speed trial. Taking a high-speed turn with reckless bravado, the kart flips over and crashes violently into a wooden barrier. Bloodied, scraped, and coughing from the dust, young Carol is immediately berated by her stern, domineering father, who shouts that racing is no place for a girl and orders her to quit. Refusing to yield to fear or discouragement, Carol fiercely wipes away her tears, stands straight back up on her own feet, and brushes off the gravel—establishing the stubborn, unstoppable resilience that would define her journey as Captain Marvel.</p>",
+        "paragraphs": [
+          "In suburban Boston, Massachusetts circa 1971, six-year-old <strong class=\"carol-danvers\">Carol Danvers</strong> modifies and enters a homemade motorized go-kart in a neighborhood speed trial. Taking a high-speed turn with reckless bravado, the kart flips over and crashes violently into a wooden barrier. Bloodied, scraped, and coughing from the dust, young Carol is immediately berated by her stern, domineering father, who shouts that racing is no place for a girl and orders her to quit. Refusing to yield to fear or discouragement, Carol fiercely wipes away her tears, stands straight back up on her own feet, and brushes off the gravel—establishing the stubborn, unstoppable resilience that would define her journey as Captain Marvel."
+        ],
+        "characters": [
+          "carol-danvers"
+        ],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "Six-Year-Old Carol Danvers' Go-Kart Crash",
+          "Defiance Against Paternal Discouragement",
+          "Formative Genesis of Captain Marvel's Unyielding Will"
+        ],
+        "locations": [
+          {
+            "name": "Danvers Family Residence & Neighborhood Speedway",
+            "cityOrRegion": "Boston, Massachusetts",
+            "countryOrRealm": "United States",
+            "planet": "Earth",
+            "coordinates": [
+              42.3601,
+              -71.0589
+            ],
+            "characters": [
+              "carol-danvers"
             ]
           }
         ]
