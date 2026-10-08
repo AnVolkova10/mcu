@@ -96,7 +96,26 @@ Integrar y auditar la totalidad de las 5 series nucleares del Universo Animado d
 
 ---
 
-## 📌 5. Backlog de Ideas & Tareas Pendientes
+## 🪐 5. Overhaul Integral: Orrery Cósmico, Cartografía Off-World y Prevención de Colisiones
+- [x] **Resultado Observable**: Mapa cósmico (`MapScreen.tsx`) completamente rediseñado y funcional, con 34 reinos celestiales exhaustivos, sin colisión de nombres y sincronizado con las locaciones off-world del timeline.
+- [x] **Criterios de Aceptación**:
+  - [x] **Catálogo Completo de Reinos Cósmicos (`COSMIC_REALMS`)**:
+    - [x] 34 nodos celestiales distribuidos radialmente en 360° sin agrupamientos problemáticos.
+    - [x] Incluye todos los mundos MCU, TAS 90s y X-Men: Planet Torfa, Planet Hala, Mar-Vell Orbital Lab, Starcore Shuttle, Endeavour, Asteroid M, S.A.B.E.R., The Moon/Attilan, Asgard, Nidavellir, Muspelheim, Svartalfheim, Jotunheim, Shi'ar Empire (M'Kraan Crystal Nexus), Knowhere, Sakaar, Xandar, Titan, Vormir, Sovereign, Ego the Living Planet, Maveth, Contraxia, Morag, Negative Zone, TVA Null-Time, Mojoverse, Quantum Realm, Axis of Time, Battleworld, Ta Lo, K'un-Lun, etc.
+  - [x] **Corrección de Solapamiento y Colisión de Etiquetas ("Se tapan las palabras")**:
+    - [x] Implementado algoritmo `getCosmicBadgePlacement` con colocación radial inteligente por cuadrantes y zonas perimetrales.
+    - [x] Las etiquetas exteriores apuntan hacia adentro o arriba/abajo según cercanía al borde, con `pointer-events-none` y `z-index` adaptativo para el nodo activo (`z-40`).
+    - [x] Elevación interactiva de cursor (`hover:z-50`, `isHovered`): al pasar el cursor sobre cualquier planeta o nodo celestial, éste adquiere inmediatamente `z-50 scale-120` con badge resaltado sobre cualquier otro nodo adyacente o seleccionado, y viceversa al cambiar de nodo.
+  - [x] **Corrección de Banners de Órbitas Giratorios**:
+    - [x] Retirado `animate-spin` de los contenedores que alojan los textos tácticos (`YGGDRASIL • THE NINE REALMS AXIS`, `DEEP SPACE & GALACTIC EMPIRES`). Las leyendas orbitales se mantienen estáticas y perfectamente legibles.
+  - [x] **Mapeo Automático de Locaciones Off-World**:
+    - [x] Matcheador de 35 keywords prioritarias en `useEffect` de `selectedMapLocationPin`. Al clickear cualquier locación espacial o dimensional desde los eventos (como Torfa, Hala, Eje del Tiempo, Battleworld, etc.), abre directamente su nodo y dossier correspondiente.
+    - [x] Corregido bug de eventos multi-locación (ej: Capitana Marvel 1995 con Hala, Torfa y Lab de Mar-Vell): el nombre específico de la locación tiene prioridad 1 sobre el `eventId`, y la categoría cósmica se mantiene en `'all'` para que ningún nodo del mapa desaparezca o se oculte.
+  - [x] Compilación exitosa `npm run build` con 0 errores.
+
+---
+
+## 📌 6. Backlog de Ideas & Tareas Pendientes
 - [ ] Fase 2 Multiverso: Evaluación de *X-Men '97* (Disney+) y *Spider-Man Unlimited* como continuaciones posteriores.
 - [ ] Auditoría de películas live-action complementarias de los 90s (*Blade (1998)*) fuera de la burbuja animada de Earth-92131.
 

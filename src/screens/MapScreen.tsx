@@ -880,9 +880,9 @@ export const DragScrollRow: React.FC<{
   );
 };
 
-// Cosmic & Multiverse Orrery Realms Constant Data
+// Cosmic & Multiverse Orrery Realms Constant Data (34 Exhaustively Cataloged Celestial Realms)
 export const COSMIC_REALMS: CosmicRealm[] = [
-  // 1. Central Terrestrial Earth
+  // 1. Central Terrestrial Earth Anchor
   {
     id: 'midgard',
     name: 'Earth-616 (Sacred Timeline / Midgard)',
@@ -905,7 +905,7 @@ export const COSMIC_REALMS: CosmicRealm[] = [
     ]
   },
 
-  // 2. ORBITAL LAYER 1: Low Earth Orbit (LEO - 100 to 400 km)
+  // 2. ORBITAL LAYER 1: Low Earth Orbit (LEO - 100 to 400 km) - Radially distributed 360° around Earth
   {
     id: 'leo-endeavour',
     name: 'Low Earth Orbit (NASA Endeavour Rescue)',
@@ -915,33 +915,14 @@ export const COSMIC_REALMS: CosmicRealm[] = [
     altitudeOrDistance: '350 km (Low Earth Orbit)',
     description: 'The supersonic X-Jet launches into orbit to rescue NASA astronauts trapped aboard the crippled space shuttle Endeavour.',
     color: '#f97316',
-    x: 29,
-    y: 38,
+    x: 37,
+    y: 50,
     radius: 24,
     icon: '🚀',
     universeFilterKey: '10005',
     eventsCount: 1,
     featuredEvents: [
       { title: 'Space Shuttle Endeavour Rescue & Phoenix Force Absorption', era: '1992', media: 'X-Men: Dark Phoenix', eventId: 'event-1992-dark-phoenix-1' }
-    ]
-  },
-  {
-    id: 'leo-phoenix-ascension',
-    name: 'Exosphere Stratosphere (Phoenix Ascension)',
-    type: 'orbital',
-    category: 'orbital',
-    systemGroup: 'Terrestrial Orbit',
-    altitudeOrDistance: '120 km (Upper Atmosphere)',
-    description: 'Jean Grey ascends to the boundary of space to incinerate Vuk and transmutes into the celestial Phoenix firebird.',
-    color: '#ef4444',
-    x: 63,
-    y: 44,
-    radius: 24,
-    icon: '🔥',
-    universeFilterKey: '10005',
-    eventsCount: 1,
-    featuredEvents: [
-      { title: 'Jean Grey Destroys Vuk & Cosmic Phoenix Ascension', era: '1992', media: 'X-Men: Dark Phoenix', eventId: 'event-1992-dark-phoenix-3' }
     ]
   },
   {
@@ -953,14 +934,71 @@ export const COSMIC_REALMS: CosmicRealm[] = [
     altitudeOrDistance: '420 km (Low Earth Orbit)',
     description: "Dr. Peter Corbeau's Starcore scientific space shuttle disabled by a lethal solar radiation flare, telepathically steered by Jean Grey before crashing into Jamaica Bay.",
     color: '#eab308',
-    x: 68,
-    y: 34,
+    x: 42,
+    y: 41,
     radius: 25,
-    icon: '🚀',
+    icon: '🛰️',
     universeFilterKey: '92131',
     eventsCount: 1,
     featuredEvents: [
       { title: 'Starcore Shuttle Cosmic Solar Flare & Phoenix Rebirth', era: '1994', media: 'X-Men: The Animated Series (Season 3)', eventId: 'event-1994-tas-3-phoenix-earth' }
+    ]
+  },
+  {
+    id: 'leo-phoenix-ascension',
+    name: 'Exosphere Stratosphere (Phoenix Ascension)',
+    type: 'orbital',
+    category: 'orbital',
+    systemGroup: 'Terrestrial Orbit',
+    altitudeOrDistance: '120 km (Upper Atmosphere)',
+    description: 'Jean Grey ascends to the boundary of space to incinerate Vuk and transmutes into the celestial Phoenix firebird.',
+    color: '#ef4444',
+    x: 58,
+    y: 41,
+    radius: 24,
+    icon: '🔥',
+    universeFilterKey: '10005',
+    eventsCount: 1,
+    featuredEvents: [
+      { title: 'Jean Grey Destroys Vuk & Cosmic Phoenix Ascension', era: '1992', media: 'X-Men: Dark Phoenix', eventId: 'event-1992-dark-phoenix-3' }
+    ]
+  },
+  {
+    id: 'mar-vell-orbital-lab',
+    name: "Mar-Vell's Cloaked Orbital Laboratory",
+    type: 'orbital',
+    category: 'orbital',
+    systemGroup: 'Terrestrial Orbit',
+    altitudeOrDistance: 'Low Earth Orbit (Camouflaged Apex)',
+    description: "Renegade Kree scientist Wendy Lawson's cloaked space station shielding Skrull refugee families and housing the Tesseract until 1995.",
+    color: '#06b6d4',
+    x: 63,
+    y: 50,
+    radius: 26,
+    icon: '🛰️',
+    universeFilterKey: '616',
+    eventsCount: 1,
+    featuredEvents: [
+      { title: "Discovery of Skrull Refugees & Flerken Swallows Tesseract", era: '1995', media: 'Captain Marvel (2019)', eventId: 'event-_1995_-1' }
+    ]
+  },
+  {
+    id: 'asteroid-m',
+    name: "Asteroid M (Magneto's Orbital Haven)",
+    type: 'orbital',
+    category: 'orbital',
+    systemGroup: 'Terrestrial Orbit',
+    altitudeOrDistance: '500 km (Orbital Sanctuary)',
+    description: "Magneto's colossal orbital refuge constructed from metallic space salvage to establish an independent sovereign mutant homeland above Earth.",
+    color: '#a855f7',
+    x: 58,
+    y: 59,
+    radius: 26,
+    icon: '🪨',
+    universeFilterKey: '92131',
+    eventsCount: 1,
+    featuredEvents: [
+      { title: 'Sanctuary: Mutants Ascend to Asteroid M', era: '1995', media: 'X-Men: The Animated Series (Season 4)' }
     ]
   },
 
@@ -974,33 +1012,14 @@ export const COSMIC_REALMS: CosmicRealm[] = [
     altitudeOrDistance: '35,786 km (Geostationary Orbit)',
     description: "Nick Fury and S.W.O.R.D.'s intergalactic planetary defense station safeguarding Earth from alien armadas and jump point breaches.",
     color: '#0284c7',
-    x: 32,
-    y: 58,
+    x: 50,
+    y: 70,
     radius: 28,
     icon: '🛰️',
     universeFilterKey: '616',
     eventsCount: 1,
     featuredEvents: [
       { title: 'S.A.B.E.R. Space Station Operations & Flerken Evacuation', era: '2026', media: 'The Marvels' }
-    ]
-  },
-  {
-    id: 'mar-vell-orbital-lab',
-    name: "Mar-Vell's Cloaked Orbital Laboratory",
-    type: 'orbital',
-    category: 'orbital',
-    systemGroup: 'Terrestrial Orbit',
-    altitudeOrDistance: 'Low Earth Orbit (Camouflaged Apex)',
-    description: "Renegade Kree scientist Wendy Lawson's cloaked space station shielding Skrull refugee families and housing the Tesseract until 1995.",
-    color: '#06b6d4',
-    x: 65,
-    y: 36,
-    radius: 26,
-    icon: '🛰️',
-    universeFilterKey: '616',
-    eventsCount: 1,
-    featuredEvents: [
-      { title: "Discovery of Skrull Refugees & Flerken Swallows Tesseract", era: '1995', media: 'Captain Marvel (2019)', eventId: 'event-_1995_-1' }
     ]
   },
 
@@ -1012,20 +1031,21 @@ export const COSMIC_REALMS: CosmicRealm[] = [
     category: 'orbital',
     systemGroup: 'Lunar System',
     altitudeOrDistance: '384,400 km (Earth Satellite)',
-    description: 'The ancient refuge and hidden citadel of Attilan, home to the Inhuman Royal Family and watcher sanctuaries.',
+    description: 'The ancient refuge and hidden citadel of Attilan, home to the Inhuman Royal Family, Uatu the Watcher observatories, and lunar sanctuaries.',
     color: '#cbd5e1',
-    x: 80,
-    y: 62,
+    x: 78,
+    y: 64,
     radius: 28,
     icon: '🌕',
     universeFilterKey: '616',
     eventsCount: 2,
     featuredEvents: [
-      { title: 'Ancient Terrigenesis Sanctuaries & Royal Court', era: '5000 years ago', media: 'Inhumans', eventId: 'event-_5000_years_ago_-2' }
+      { title: 'Ancient Terrigenesis Sanctuaries & Royal Court', era: '5000 years ago', media: 'Inhumans', eventId: 'event-_5000_years_ago_-2' },
+      { title: "Blue Area of the Moon & Watcher's Citadel", era: '1994', media: 'Fantastic Four: The Animated Series (Season 1)', eventId: 'event-1994-tas-ff-skrulls-galactus' }
     ]
   },
 
-  // 5. THE NINE REALMS (Yggdrasil Dimension)
+  // 5. THE NINE REALMS (Yggdrasil Dimension - Northern Cosmic Arc)
   {
     id: 'asgard',
     name: 'Asgard (Realm of the Gods)',
@@ -1043,7 +1063,46 @@ export const COSMIC_REALMS: CosmicRealm[] = [
     eventsCount: 4,
     featuredEvents: [
       { title: 'Battle of Tønsberg & Frost Giants Defeat', era: '965 AD', media: 'Thor', eventId: 'event-_965_AD_-1' },
-      { title: 'Ancient War with Dark Elves & The Aether', era: '5000 years ago', media: 'Thor: The Dark World', eventId: 'event-_5000_years_ago_-1' }
+      { title: 'Ancient War with Dark Elves & The Aether', era: '5000 years ago', media: 'Thor: The Dark World', eventId: 'event-_5000_years_ago_-1' },
+      { title: 'Coronation of Thor & Frost Giant Incursion', era: '2010', media: 'Thor (2011)', eventId: 'event-_2010_-4' }
+    ]
+  },
+  {
+    id: 'nidavellir',
+    name: 'Nidavellir (Dwarven Star Forge)',
+    type: 'realm',
+    category: 'nine-realms',
+    systemGroup: 'The Nine Realms (Yggdrasil)',
+    altitudeOrDistance: 'Neutron Star Mega-Ring Forge',
+    description: 'Dwarven realm of giant blacksmiths led by King Eitri, harnessing the power of a neutron star to forge Mjolnir, the Infinity Gauntlet, and Stormbreaker.',
+    color: '#f59e0b',
+    x: 38,
+    y: 10,
+    radius: 28,
+    icon: '🔨',
+    universeFilterKey: '616',
+    eventsCount: 1,
+    featuredEvents: [
+      { title: 'Thor & Rocket Re-ignite the Forge of Stormbreaker', era: '2018', media: 'Avengers: Infinity War' }
+    ]
+  },
+  {
+    id: 'muspelheim',
+    name: 'Muspelheim (Realm of Fire & Surtur)',
+    type: 'realm',
+    category: 'nine-realms',
+    systemGroup: 'The Nine Realms (Yggdrasil)',
+    altitudeOrDistance: 'Primordial Fire Realm',
+    description: 'Chthonic, sulfurous realm of perpetual magma ruled by fire demon Surtur, prophesied to bring about Ragnarök and the destruction of Asgard.',
+    color: '#ef4444',
+    x: 62,
+    y: 10,
+    radius: 28,
+    icon: '🔥',
+    universeFilterKey: '616',
+    eventsCount: 1,
+    featuredEvents: [
+      { title: "Thor Defeats Surtur & Steals the Crown of Fire", era: '2017', media: 'Thor: Ragnarok', eventId: 'event-_2017_-11' }
     ]
   },
   {
@@ -1055,8 +1114,8 @@ export const COSMIC_REALMS: CosmicRealm[] = [
     altitudeOrDistance: 'Dark Matter Realm',
     description: 'Desolate, perpetual night world of Malekith and the Dark Elves, where King Bor of Asgard buried the fluid Aether.',
     color: '#a855f7',
-    x: 16,
-    y: 15,
+    x: 26,
+    y: 14,
     radius: 28,
     icon: '🌑',
     universeFilterKey: '616',
@@ -1074,8 +1133,8 @@ export const COSMIC_REALMS: CosmicRealm[] = [
     altitudeOrDistance: 'Glacial Realm',
     description: 'Frozen realm of jagged blue ice, home to King Laufey and the Frost Giants who waged war on Midgard with the Casket of Ancient Winters.',
     color: '#06b6d4',
-    x: 84,
-    y: 15,
+    x: 74,
+    y: 14,
     radius: 28,
     icon: '❄️',
     universeFilterKey: '616',
@@ -1085,43 +1144,62 @@ export const COSMIC_REALMS: CosmicRealm[] = [
     ]
   },
 
-  // 6. DEEP SPACE & GALACTIC SECTORS (Guardians / Cosmic Marvel)
+  // 6. DEEP SPACE & GALACTIC EMPIRES (Outer Galactic Sectors)
   {
-    id: 'maveth',
-    name: "Maveth (Hive's Alien World)",
+    id: 'kree-imperium-hala',
+    name: 'Planet Hala (Kree Empire Capital)',
     type: 'cosmic',
     category: 'deep-space',
-    systemGroup: 'Outer Galactic Sector',
-    altitudeOrDistance: 'Deep Space Desolate Planet',
-    description: 'Barren planet where ancient Kree-modified parasitic mutant Hive was exiled through the Monolith portal by early human HYDRA worshipers.',
-    color: '#64748b',
-    x: 7,
-    y: 88,
-    radius: 28,
+    systemGroup: 'Large Magellanic Cloud / Kree Imperium',
+    altitudeOrDistance: 'Pama Galactic Sector',
+    description: 'Technologically supreme capital world of the militaristic Kree Empire, governed by the organic supercomputer Supreme Intelligence.',
+    color: '#0284c7',
+    x: 86,
+    y: 20,
+    radius: 30,
     icon: '🪐',
     universeFilterKey: '616',
     eventsCount: 1,
     featuredEvents: [
-      { title: 'Hive Exiled to Maveth via Monolith', era: '5000 years ago', media: 'Agents of S.H.I.E.L.D.', eventId: 'event-_5000_years_ago_-1' }
+      { title: 'Vers Trains Under Starforce & Supreme Intelligence', era: '1995', media: 'Captain Marvel (2019)', eventId: 'event-_1995_-1' }
     ]
   },
   {
-    id: 'xandar',
-    name: 'Planet Xandar (Nova Corps Citadel)',
+    id: 'kree-torfa',
+    name: 'Planet Torfa (Border World Outpost)',
     type: 'cosmic',
     category: 'deep-space',
-    systemGroup: 'Andromeda Galaxy',
-    altitudeOrDistance: 'Trinary Star System',
-    description: 'Lush capital world of the Nova Empire and Nova Prime Irani Rael, protected by the Nova Corps and target of Ronan the Accuser.',
-    color: '#3b82f6',
-    x: 93,
-    y: 88,
-    radius: 30,
-    icon: '🌟',
+    systemGroup: 'Torfa System / Kree-Skrull Border',
+    altitudeOrDistance: 'Sub-Nebular Border Outpost',
+    description: 'Fog-shrouded border world inhabited by the peaceful Torfan populace where Talos and Skrull infiltrators ambushed the Kree Starforce.',
+    color: '#10b981',
+    x: 92,
+    y: 27,
+    radius: 26,
+    icon: '🪐',
     universeFilterKey: '616',
-    eventsCount: 2,
+    eventsCount: 1,
     featuredEvents: [
-      { title: 'Guardians of the Galaxy Battle of Xandar', era: '2014', media: 'Guardians of the Galaxy' }
+      { title: 'Starforce Ambush & Skrull Abduction of Vers', era: '1995', media: 'Captain Marvel (2019)', eventId: 'event-_1995_-1' }
+    ]
+  },
+  {
+    id: 'shiar-empire',
+    name: "Shi'ar Empire & M'Kraan Crystal Nexus",
+    type: 'cosmic',
+    category: 'deep-space',
+    systemGroup: "Shi'ar Imperium (M'Kraan Stargate)",
+    altitudeOrDistance: "Shi'ar Galaxy Stargate",
+    description: "Heart of the alien Shi'ar Imperium housing the celestial Stargate and the ancient M'Kraan Crystal—the nexus of all realities—where Jean Grey bonded with the Phoenix Force to heal universal space-time.",
+    color: '#38bdf8',
+    x: 93,
+    y: 38,
+    radius: 30,
+    icon: '💎',
+    universeFilterKey: '92131',
+    eventsCount: 1,
+    featuredEvents: [
+      { title: "The Phoenix Saga: Shi'ar Galaxy & M'Kraan Cosmic Restoration", era: '1994', media: 'X-Men: The Animated Series (Season 3)', eventId: 'event-1994-tas-3-phoenix-shiar' }
     ]
   },
   {
@@ -1133,8 +1211,8 @@ export const COSMIC_REALMS: CosmicRealm[] = [
     altitudeOrDistance: 'Decapitated Celestial Brain Cavity',
     description: 'The ancient decapitated head of a Celestial converted into a lawless mining colony and home to Taneleer Tivan (The Collector).',
     color: '#e11d48',
-    x: 95,
-    y: 48,
+    x: 93,
+    y: 50,
     radius: 30,
     icon: '💀',
     universeFilterKey: '616',
@@ -1144,22 +1222,60 @@ export const COSMIC_REALMS: CosmicRealm[] = [
     ]
   },
   {
-    id: 'morag',
-    name: 'Planet Morag (Submerged Ocean Ruins)',
+    id: 'sakaar',
+    name: 'Planet Sakaar (Contest of Champions)',
     type: 'cosmic',
     category: 'deep-space',
-    systemGroup: 'M-340W Galactic System',
-    altitudeOrDistance: 'Boiling Ocean Temple Vault',
-    description: 'Submerged desolate world where oceans recede every 300 years, exposing the ancient temple holding the Power Stone Orb.',
-    color: '#0ea5e9',
-    x: 5,
-    y: 48,
+    systemGroup: 'Tayyo Star System / Wormhole Junkyard',
+    altitudeOrDistance: 'Surrounded by Cosmic Wormholes',
+    description: 'Artificial garbage planet ruled by the eccentric Grandmaster, where scavengers and gladiators duel in the Grand Arena for survival.',
+    color: '#f97316',
+    x: 88,
+    y: 62,
     radius: 28,
-    icon: '🌊',
+    icon: '⚔️',
+    universeFilterKey: '616',
+    eventsCount: 1,
+    featuredEvents: [
+      { title: 'Thor vs Hulk Gladiator Duel in the Grand Arena', era: '2017', media: 'Thor: Ragnarok', eventId: 'event-_2017_-11' }
+    ]
+  },
+  {
+    id: 'xandar',
+    name: 'Planet Xandar (Nova Corps Citadel)',
+    type: 'cosmic',
+    category: 'deep-space',
+    systemGroup: 'Andromeda Galaxy',
+    altitudeOrDistance: 'Trinary Star System',
+    description: 'Lush capital world of the Nova Empire and Nova Prime Irani Rael, protected by the Nova Corps and target of Ronan the Accuser.',
+    color: '#3b82f6',
+    x: 91,
+    y: 76,
+    radius: 30,
+    icon: '🌟',
     universeFilterKey: '616',
     eventsCount: 2,
     featuredEvents: [
-      { title: 'Star-Lord Steals the Orb from Morag', era: '2014', media: 'Guardians of the Galaxy' }
+      { title: 'Guardians of the Galaxy Battle of Xandar', era: '2014', media: 'Guardians of the Galaxy' }
+    ]
+  },
+  {
+    id: 'titan',
+    name: 'Planet Titan (Ruined Homeworld of Thanos)',
+    type: 'cosmic',
+    category: 'deep-space',
+    systemGroup: 'Saturnian Orbit / Outer Rim Ruins',
+    altitudeOrDistance: 'Cataclysmic Gravity Anomaly',
+    description: 'Extinct alien world of monumental skewed structures where Thanos watched his civilization collapse before battling Iron Man, Strange, and Spider-Man.',
+    color: '#8b5cf6',
+    x: 80,
+    y: 88,
+    radius: 28,
+    icon: '🪐',
+    universeFilterKey: '616',
+    eventsCount: 1,
+    featuredEvents: [
+      { title: 'The Battle of Titan & Doctor Strange 14 Million Futures', era: '2018', media: 'Avengers: Infinity War' }
     ]
   },
   {
@@ -1182,63 +1298,139 @@ export const COSMIC_REALMS: CosmicRealm[] = [
     ]
   },
   {
-    id: 'kree-imperium-hala',
-    name: 'Planet Hala (Kree Empire Capital)',
+    id: 'sovereign',
+    name: 'Sovereign Planet & Hub (Golden Fleet)',
     type: 'cosmic',
     category: 'deep-space',
-    systemGroup: 'Large Magellanic Cloud / Kree Imperium',
-    altitudeOrDistance: 'Pama Galactic Sector',
-    description: 'Technologically supreme capital world of the militaristic Kree Empire, governed by the organic supercomputer Supreme Intelligence.',
-    color: '#0284c7',
-    x: 84,
-    y: 20,
+    systemGroup: 'Sovereign Empire',
+    altitudeOrDistance: 'Genetically Engineered Golden World',
+    description: 'Hyper-arrogant golden planet of genetically modified beings ruled by High Priestess Ayesha, protected by remote drone battlecraft.',
+    color: '#eab308',
+    x: 36,
+    y: 92,
+    radius: 28,
+    icon: '👑',
+    universeFilterKey: '616',
+    eventsCount: 1,
+    featuredEvents: [
+      { title: 'Rocket Raccoon Steals the Anulax Batteries', era: '2014', media: 'Guardians of the Galaxy Vol. 2' }
+    ]
+  },
+  {
+    id: 'ego-living-planet',
+    name: 'Ego the Living Planet (Sentient Celestial)',
+    type: 'cosmic',
+    category: 'deep-space',
+    systemGroup: 'Cosmic Core / Deep Space Black Galaxy',
+    altitudeOrDistance: 'Living Biological Planetary Core',
+    description: 'Ancient primordial Celestial manifesting as an entire paradise planet, biological father of Peter Quill who sought the universal Expansion.',
+    color: '#06b6d4',
+    x: 22,
+    y: 88,
     radius: 30,
+    icon: '🧠',
+    universeFilterKey: '616',
+    eventsCount: 2,
+    featuredEvents: [
+      { title: 'Guardians Battle Ego in the Planetary Core', era: '2014', media: 'Guardians of the Galaxy Vol. 2' },
+      { title: 'Ego the Living Planet Cosmic Incursion', era: '1995', media: 'Fantastic Four: The Animated Series (Season 2)', eventId: 'event-1995-tas-ff-blind-man-ego-wakanda' }
+    ]
+  },
+  {
+    id: 'maveth',
+    name: "Maveth (Hive's Alien World)",
+    type: 'cosmic',
+    category: 'deep-space',
+    systemGroup: 'Outer Galactic Sector',
+    altitudeOrDistance: 'Deep Space Desolate Planet',
+    description: 'Barren planet where ancient Kree-modified parasitic mutant Hive was exiled through the Monolith portal by early human HYDRA worshipers.',
+    color: '#64748b',
+    x: 10,
+    y: 80,
+    radius: 28,
     icon: '🪐',
     universeFilterKey: '616',
     eventsCount: 1,
     featuredEvents: [
-      { title: 'Vers Trains Under Starforce & Supreme Intelligence', era: '1995', media: 'Captain Marvel (2019)', eventId: 'event-_1995_-1' }
+      { title: 'Hive Exiled to Maveth via Monolith', era: '5000 years ago', media: 'Agents of S.H.I.E.L.D.', eventId: 'event-_5000_years_ago_-1' }
+    ]
+  },
+  {
+    id: 'contraxia',
+    name: 'Planet Contraxia (Ravager Pleasure Port)',
+    type: 'cosmic',
+    category: 'deep-space',
+    systemGroup: 'Sub-Zero Galactic System',
+    altitudeOrDistance: 'Frozen Neon Ice Planet',
+    description: 'Frozen snow planet with pulsing neon lights, notorious as the lawless recreation and drinking hub for Ravager clans led by Yondu and Stakar.',
+    color: '#ec4899',
+    x: 7,
+    y: 66,
+    radius: 26,
+    icon: '❄️',
+    universeFilterKey: '616',
+    eventsCount: 1,
+    featuredEvents: [
+      { title: "Yondu Udonta & Stakar Ogord Ravager Reunion", era: '2014', media: 'Guardians of the Galaxy Vol. 2' }
+    ]
+  },
+  {
+    id: 'morag',
+    name: 'Planet Morag (Submerged Ocean Ruins)',
+    type: 'cosmic',
+    category: 'deep-space',
+    systemGroup: 'M-340W Galactic System',
+    altitudeOrDistance: 'Boiling Ocean Temple Vault',
+    description: 'Submerged desolate world where oceans recede every 300 years, exposing the ancient temple holding the Power Stone Orb.',
+    color: '#0ea5e9',
+    x: 7,
+    y: 52,
+    radius: 28,
+    icon: '🌊',
+    universeFilterKey: '616',
+    eventsCount: 2,
+    featuredEvents: [
+      { title: 'Star-Lord Steals the Orb from Morag', era: '2014', media: 'Guardians of the Galaxy' }
     ]
   },
 
   // 7. POCKET DIMENSIONS & MULTIVERSE BRANCHES
   {
-    id: 'kun-lun',
-    name: "K'un-Lun & Ancient Relics",
+    id: 'negative-zone',
+    name: 'The Negative Zone (Antimatter Universe)',
     type: 'dimension',
     category: 'dimensions',
-    systemGroup: 'Seven Capital Cities of Heaven',
-    altitudeOrDistance: 'Pocket Dimension',
-    description: 'One of the Seven Capital Cities of Heaven, a mystical pocket dimension connecting to Earth, protected by the Immortal Iron Fist.',
-    color: '#10b981',
-    x: 87,
-    y: 74,
+    systemGroup: 'Antimatter Continuum',
+    altitudeOrDistance: 'Antimatter Sub-Space Portal',
+    description: "An exotic parallel universe composed of negative matter breached by Reed Richards' particle accelerator, ruled by the insectoid tyrant Annihilus and Blastaar.",
+    color: '#84cc16',
+    x: 22,
+    y: 28,
     radius: 28,
-    icon: '🐉',
-    universeFilterKey: 'cosmic',
-    eventsCount: 2,
+    icon: '🌀',
+    universeFilterKey: '92131',
+    eventsCount: 1,
     featuredEvents: [
-      { title: 'Dragon Bone Burial Chamber in Kunlun Mountains', era: 'Ancient Times', media: 'The Defenders', eventId: 'event-_Eons_ago_-2' },
-      { title: 'Hatut Zeraze crosses paths with Iron Fist', era: 'c. 1400 C.E.', media: 'Eyes of Wakanda', eventId: 'event-_1400_CE_-1' }
+      { title: 'Subterranea Incursion & Negative Zone Breach', era: '1994', media: 'Fantastic Four: The Animated Series (Season 1)', eventId: 'event-1994-tas-ff-negative-zone-moleman' }
     ]
   },
   {
-    id: 'quantum-realm',
-    name: 'Quantum Realm (Subatomic Microverse)',
+    id: 'tva-null-time',
+    name: 'Time Variance Authority (Null-Time Zone)',
     type: 'dimension',
-    category: 'dimensions',
-    systemGroup: 'Subatomic Realm',
-    altitudeOrDistance: 'Outside Space and Time',
-    description: 'Microverse outside the laws of standard space and time, accessible through Pym Particles or time vortexes.',
-    color: '#ec4899',
-    x: 13,
-    y: 74,
+    category: 'multiverse',
+    systemGroup: 'Outside the Sacred Timeline',
+    altitudeOrDistance: 'Null-Time Citadel',
+    description: 'Vast bureaucratic realm existing outside standard space-time where Infinity Stones are inert paperweights and variants are pruned by Minutemen.',
+    color: '#f97316',
+    x: 32,
+    y: 22,
     radius: 28,
-    icon: '⚛️',
+    icon: '⏳',
     universeFilterKey: '616',
     eventsCount: 1,
     featuredEvents: [
-      { title: 'Janet van Dyne Sub-Atomic Rescue & Time Heists', era: '1987 / 2023', media: 'Avengers: Endgame' }
+      { title: 'Loki Variant Captured by Hunter B-15 & Mobius', era: '2012 / Outside Time', media: 'Loki (Season 1)' }
     ]
   },
   {
@@ -1248,10 +1440,10 @@ export const COSMIC_REALMS: CosmicRealm[] = [
     category: 'dimensions',
     systemGroup: 'Extradimensional Broadcast Dimension',
     altitudeOrDistance: 'Multiverse Pocket Dimension',
-    description: 'Bizarre extradimensional television reality ruled by the cybernetic media tyrant Mojo, where Wolverine and Rogue were abducted to battle in holographic gladiatorial death matches alongside Longshot.',
+    description: 'Bizarre extradimensional television reality ruled by the cybernetic media tyrant Mojo, where Wolverine and Rogue were abducted to battle in holographic gladiatorial death matches.',
     color: '#f59e0b',
-    x: 16,
-    y: 32,
+    x: 12,
+    y: 38,
     radius: 28,
     icon: '📺',
     universeFilterKey: '92131',
@@ -1261,54 +1453,74 @@ export const COSMIC_REALMS: CosmicRealm[] = [
     ]
   },
   {
-    id: 'shiar-empire',
-    name: "Shi'ar Empire & M'Kraan Crystal Nexus",
-    type: 'cosmic',
-    category: 'deep-space',
-    systemGroup: "Shi'ar Imperium (M'Kraan Stargate)",
-    altitudeOrDistance: "Shi'ar Galaxy Stargate",
-    description: "Heart of the alien Shi'ar Imperium housing the celestial Stargate and the ancient M'Kraan Crystal—the nexus of all realities—where Jean Grey bonded with the Phoenix Force to heal universal space-time.",
-    color: '#38bdf8',
-    x: 84,
-    y: 32,
-    radius: 30,
-    icon: '💎',
-    universeFilterKey: '92131',
+    id: 'quantum-realm',
+    name: 'Quantum Realm (Subatomic Microverse)',
+    type: 'dimension',
+    category: 'dimensions',
+    systemGroup: 'Subatomic Realm',
+    altitudeOrDistance: 'Outside Space and Time',
+    description: 'Microverse outside the laws of standard space and time, accessible through Pym Particles or time vortexes, harboring Kang the Conqueror and subatomic worlds.',
+    color: '#ec4899',
+    x: 14,
+    y: 68,
+    radius: 28,
+    icon: '⚛️',
+    universeFilterKey: '616',
     eventsCount: 1,
     featuredEvents: [
-      { title: "The Phoenix Saga: Shi'ar Galaxy & M'Kraan Cosmic Restoration", era: '1994', media: 'X-Men: The Animated Series (Season 3)', eventId: 'event-1994-tas-3-phoenix-shiar' }
+      { title: 'Janet van Dyne Sub-Atomic Rescue & Time Heists', era: '1987 / 2023', media: 'Avengers: Endgame' }
     ]
   },
   {
-    id: 'negative-zone',
-    name: "The Negative Zone (Antimatter Universe)",
-    type: 'dimension',
-    category: 'dimensions',
-    systemGroup: 'Antimatter Continuum',
-    altitudeOrDistance: 'Antimatter Sub-Space Portal',
-    description: "An exotic parallel universe composed of negative matter breached by Reed Richards' particle accelerator, ruled by the insectoid tyrant Annihilus and Blastaar.",
-    color: '#84cc16',
-    x: 34,
-    y: 20,
+    id: 'time-axis',
+    name: 'The Axis of Time (Temporal Nexus)',
+    type: 'multiverse',
+    category: 'multiverse',
+    systemGroup: 'Omniversal Temporal Core',
+    altitudeOrDistance: 'Extradimensional Time Apex',
+    description: 'The metaphysical intersection of all historical timelines where Apocalypse used the Lazarus Chambers to siphon psychic energy from the world’s most powerful telepaths.',
+    color: '#6366f1',
+    x: 68,
+    y: 24,
     radius: 28,
-    icon: '🌀',
+    icon: '⏳',
     universeFilterKey: '92131',
     eventsCount: 1,
     featuredEvents: [
-      { title: "Subterranea Incursion & Negative Zone Breach", era: '1994', media: 'Fantastic Four: The Animated Series (Season 1)', eventId: 'event-1994-tas-ff-negative-zone-moleman' }
+      { title: 'The Epic Four-Part Beyond Good and Evil Arc', era: '1995', media: 'X-Men: The Animated Series (Season 4)', eventId: 'event-1995-tas-xmen-beyond-good-and-evil' }
+    ]
+  },
+  {
+    id: 'dark-dimension',
+    name: 'The Dark Dimension (Domain of Dormammu)',
+    type: 'dimension',
+    category: 'dimensions',
+    systemGroup: 'Amorphous Astral Void',
+    altitudeOrDistance: 'Beyond Mortal Comprehension',
+    description: 'Lawless dimension of fractured crystalline matter and cosmic darkness ruled by Dormammu, hungry to absorb Midgard into its timeless void.',
+    color: '#9333ea',
+    x: 78,
+    y: 32,
+    radius: 28,
+    icon: '🌀',
+    universeFilterKey: '616',
+    eventsCount: 2,
+    featuredEvents: [
+      { title: "Doctor Strange 'I've Come to Bargain' Time Loop", era: '2017', media: 'Doctor Strange (2016)' },
+      { title: "Spider-Man & Doctor Strange Banish Dormammu", era: '1996', media: 'Spider-Man: The Animated Series (Season 3)', eventId: 'event-1996-tas-spiderman-strange-goblin' }
     ]
   },
   {
     id: 'battleworld-beyonder',
-    name: "Battleworld (The Beyond Realm)",
+    name: 'Battleworld (The Beyond Realm)',
     type: 'multiverse',
     category: 'multiverse',
     systemGroup: 'Beyond Realm Proving Grounds',
     altitudeOrDistance: 'Beyond Multiversal Horizon',
-    description: "Amalgamated celestial proving ground created by The Beyonder to test good versus evil, where Spider-Man led the Fantastic Four, Iron Man, Storm, and Captain America in the legendary Secret Wars.",
+    description: 'Amalgamated celestial proving ground created by The Beyonder to test good versus evil, where Spider-Man led the Fantastic Four, Iron Man, Storm, and Captain America in the legendary Secret Wars.',
     color: '#ec4899',
-    x: 88,
-    y: 72,
+    x: 75,
+    y: 44,
     radius: 30,
     icon: '🪐',
     universeFilterKey: '92131',
@@ -1316,8 +1528,137 @@ export const COSMIC_REALMS: CosmicRealm[] = [
     featuredEvents: [
       { title: "The Beyonder's Secret Wars on Battleworld", era: '1998', media: 'Spider-Man: The Animated Series (Season 5)', eventId: 'event-1998-tas-spiderman-secret-wars' }
     ]
+  },
+  {
+    id: 'ta-lo',
+    name: 'Ta Lo (Mystical Dimension of Great Protector)',
+    type: 'dimension',
+    category: 'dimensions',
+    systemGroup: 'Pocket Dimension of Ancient Gods',
+    altitudeOrDistance: 'Guarded by Bamboo Water Maze',
+    description: 'Peaceful celestial dimension of mythical creatures guarded by the dragon Great Protector, threatened by the soul-eating Dweller-in-Darkness.',
+    color: '#059669',
+    x: 68,
+    y: 78,
+    radius: 28,
+    icon: '🐉',
+    universeFilterKey: '616',
+    eventsCount: 1,
+    featuredEvents: [
+      { title: 'The Battle of Ta Lo & Dragon Awakening', era: '2024', media: 'Shang-Chi and the Legend of the Ten Rings' }
+    ]
+  },
+  {
+    id: 'kun-lun',
+    name: "K'un-Lun & Ancient Relics",
+    type: 'dimension',
+    category: 'dimensions',
+    systemGroup: 'Seven Capital Cities of Heaven',
+    altitudeOrDistance: 'Pocket Dimension',
+    description: 'One of the Seven Capital Cities of Heaven, a mystical pocket dimension connecting to Earth, protected by the Immortal Iron Fist.',
+    color: '#10b981',
+    x: 78,
+    y: 78,
+    radius: 28,
+    icon: '🐉',
+    universeFilterKey: 'cosmic',
+    eventsCount: 2,
+    featuredEvents: [
+      { title: 'Dragon Bone Burial Chamber in Kunlun Mountains', era: 'Ancient Times', media: 'The Defenders', eventId: 'event-_Eons_ago_-2' },
+      { title: 'Hatut Zeraze crosses paths with Iron Fist', era: 'c. 1400 C.E.', media: 'Eyes of Wakanda', eventId: 'event-_1400_CE_-1' }
+    ]
   }
 ];
+
+// Smart Anti-Collision Badge Placement Algorithm for Celestial Orrery
+function getCosmicBadgePlacement(realm: CosmicRealm): {
+  containerClass: string;
+  textAlign: string;
+} {
+  // Explicit fine-tuned placements for densely clustered zones
+  switch (realm.id) {
+    // Nine Realms Apex
+    case 'asgard':
+      return { containerClass: 'top-full mt-2 left-1/2 -translate-x-1/2', textAlign: 'text-center' };
+    case 'nidavellir':
+    case 'muspelheim':
+    case 'svartalfheim':
+    case 'jotunheim':
+      return { containerClass: 'bottom-full mb-2.5 left-1/2 -translate-x-1/2', textAlign: 'text-center' };
+
+    // Kree Imperial Sector
+    case 'kree-imperium-hala':
+      return { containerClass: 'bottom-full mb-2.5 left-1/2 -translate-x-1/2', textAlign: 'text-center' };
+    case 'kree-torfa':
+      return { containerClass: 'right-full mr-2.5 top-1/2 -translate-y-1/2', textAlign: 'text-right' };
+
+    // LEO & Orbital Cluster (Radially projected outward from Earth)
+    case 'leo-endeavour':
+      return { containerClass: 'right-full mr-2.5 top-1/2 -translate-y-1/2', textAlign: 'text-right' };
+    case 'mar-vell-orbital-lab':
+      return { containerClass: 'left-full ml-2.5 top-1/2 -translate-y-1/2', textAlign: 'text-left' };
+    case 'leo-starcore-shuttle':
+    case 'leo-phoenix-ascension':
+      return { containerClass: 'bottom-full mb-2.5 left-1/2 -translate-x-1/2', textAlign: 'text-center' };
+    case 'asteroid-m':
+      return { containerClass: 'top-full mt-2.5 left-1/2 -translate-x-1/2', textAlign: 'text-center' };
+    case 'geo-saber':
+      return { containerClass: 'top-full mt-2.5 left-1/2 -translate-x-1/2', textAlign: 'text-center' };
+
+    // Mystical & Multiversal Coordinates
+    case 'ta-lo':
+      return { containerClass: 'bottom-full mb-2.5 left-1/2 -translate-x-1/2', textAlign: 'text-center' };
+    case 'kun-lun':
+      return { containerClass: 'top-full mt-2.5 left-1/2 -translate-x-1/2', textAlign: 'text-center' };
+    case 'battleworld-beyonder':
+      return { containerClass: 'bottom-full mb-2.5 left-1/2 -translate-x-1/2', textAlign: 'text-center' };
+    case 'time-axis':
+      return { containerClass: 'bottom-full mb-2.5 left-1/2 -translate-x-1/2', textAlign: 'text-center' };
+    case 'dark-dimension':
+      return { containerClass: 'bottom-full mb-2.5 left-1/2 -translate-x-1/2', textAlign: 'text-center' };
+    case 'tva-null-time':
+      return { containerClass: 'top-full mt-2.5 left-1/2 -translate-x-1/2', textAlign: 'text-center' };
+    case 'negative-zone':
+      return { containerClass: 'bottom-full mb-2.5 left-1/2 -translate-x-1/2', textAlign: 'text-center' };
+    case 'quantum-realm':
+      return { containerClass: 'bottom-full mb-2.5 left-1/2 -translate-x-1/2', textAlign: 'text-center' };
+  }
+
+  // 1. Extreme right perimeter nodes: label points cleanly to the left
+  if (realm.x > 82) {
+    return {
+      containerClass: 'right-full mr-2.5 top-1/2 -translate-y-1/2',
+      textAlign: 'text-right'
+    };
+  }
+  // 2. Extreme left perimeter nodes: label points cleanly to the right
+  if (realm.x < 18) {
+    return {
+      containerClass: 'left-full ml-2.5 top-1/2 -translate-y-1/2',
+      textAlign: 'text-left'
+    };
+  }
+  // 3. Lower perimeter (y > 72): label points UPWARDS to prevent off-screen bottom clipping
+  if (realm.y > 72) {
+    return {
+      containerClass: 'bottom-full mb-2.5 left-1/2 -translate-x-1/2',
+      textAlign: 'text-center'
+    };
+  }
+  // 4. Upper perimeter (y < 46): label points UPWARDS away from Earth
+  if (realm.y < 46) {
+    return {
+      containerClass: 'bottom-full mb-2.5 left-1/2 -translate-x-1/2',
+      textAlign: 'text-center'
+    };
+  }
+  // 5. Default: label points DOWNWARDS
+  return {
+    containerClass: 'top-full mt-2.5 left-1/2 -translate-x-1/2',
+    textAlign: 'text-center'
+  };
+}
+
 
 export const MapScreen: React.FC = () => {
   const { 
@@ -1335,6 +1676,7 @@ export const MapScreen: React.FC = () => {
   const [selectedPinId, setSelectedPinId] = useState<string | null>(null);
   const [mapViewMode, setMapViewMode] = useState<'earth' | 'cosmic'>('earth');
   const [selectedCosmicRealmId, setSelectedCosmicRealmId] = useState<string | null>(null);
+  const [hoveredCosmicRealmId, setHoveredCosmicRealmId] = useState<string | null>(null);
   const [cosmicCategory, setCosmicCategory] = useState<'all' | 'orbital' | 'nine-realms' | 'deep-space' | 'dimensions' | 'multiverse'>('all');
   const [cosmicScale, setCosmicScale] = useState<number>(1);
   const [cosmicPan, setCosmicPan] = useState<{ x: number; y: number }>({ x: 0, y: 0 });
@@ -1881,62 +2223,130 @@ export const MapScreen: React.FC = () => {
       const locCity = (selectedMapLocationPin.cityOrRegion || '').toLowerCase();
       const locCountry = (selectedMapLocationPin.countryOrRealm || '').toLowerCase();
       const locPlanet = (selectedMapLocationPin.planet || '').toLowerCase();
-      const isOffWorld = !selectedMapLocationPin.coordinates || 
-        selectedMapLocationPin.orbitType || 
-        selectedMapLocationPin.celestialSystem || 
+      const locFull = `${locName} ${locCity} ${locCountry} ${locPlanet}`;
+
+      const hasTerrestrialCoords = Boolean(
+        selectedMapLocationPin.coordinates && 
+        selectedMapLocationPin.coordinates.length === 2 &&
+        (selectedMapLocationPin.coordinates[0] !== 0 || selectedMapLocationPin.coordinates[1] !== 0)
+      );
+
+      const isExplicitOrbital = Boolean(
+        selectedMapLocationPin.orbitType ||
+        locFull.includes('orbit') ||
+        locFull.includes('exosphere') ||
+        locFull.includes('stratosphere') ||
+        locFull.includes('mar-vell') ||
+        locFull.includes('s.a.b.e.r') ||
+        locFull.includes('asteroid m') ||
+        locFull.includes('starcore') ||
+        locFull.includes('endeavour')
+      );
+
+      const isAlienOrDimension = Boolean(
         (locPlanet && !locPlanet.includes('earth')) ||
-        locName.includes('orbit') ||
-        locName.includes('exosphere') ||
-        locName.includes('stratosphere') ||
-        locName.includes('s.a.b.e.r') ||
-        locName.includes('asgard') ||
-        locName.includes('jotunheim') ||
-        locName.includes('svartalfheim') ||
-        locName.includes('maveth') ||
-        locName.includes('kun-lun') ||
-        locName.includes("k'un-lun") ||
-        locName.includes('quantum') ||
-        locName.includes('xandar') ||
-        locName.includes('knowhere') ||
-        locName.includes('morag') ||
-        locName.includes('vormir') ||
-        locName.includes('hala') ||
-        locName.includes('torfa') ||
-        locName.includes('mar-vell');
+        selectedMapLocationPin.celestialSystem === 'deep-space' ||
+        selectedMapLocationPin.celestialSystem === 'terrestrial-orbit' ||
+        locFull.includes('hala') ||
+        locFull.includes('torfa') ||
+        locFull.includes('kree') ||
+        locFull.includes('asgard') ||
+        locFull.includes('jotunheim') ||
+        locFull.includes('svartalfheim') ||
+        locFull.includes('nidavellir') ||
+        locFull.includes('muspelheim') ||
+        locFull.includes('xandar') ||
+        locFull.includes('knowhere') ||
+        locFull.includes('morag') ||
+        locFull.includes('vormir') ||
+        locFull.includes('sakaar') ||
+        locFull.includes('titan') ||
+        locFull.includes('ego') ||
+        locFull.includes('sovereign') ||
+        locFull.includes('contraxia') ||
+        locFull.includes('maveth') ||
+        locFull.includes('shiar') ||
+        locFull.includes("shi'ar") ||
+        locFull.includes("m'kraan") ||
+        locFull.includes('negative zone') ||
+        locFull.includes('tva') ||
+        locFull.includes('dark dimension') ||
+        locFull.includes('battleworld') ||
+        locFull.includes('axis of time') ||
+        locFull.includes('mojoverse') ||
+        locFull.includes('ta lo') ||
+        locFull.includes('kun-lun') ||
+        locFull.includes("k'un-lun") ||
+        locFull.includes('the moon') ||
+        locFull.includes('attilan')
+      );
+
+      const isOffWorld = isExplicitOrbital || isAlienOrDimension || !hasTerrestrialCoords;
 
       if (isOffWorld) {
         setMapViewMode('cosmic');
 
-        // Match against COSMIC_REALMS
-        const match = COSMIC_REALMS.find((realm) => {
-          if (selectedMapLocationPin.eventId && realm.featuredEvents.some(e => e.eventId === selectedMapLocationPin.eventId)) {
-            return true;
-          }
-          const rName = realm.name.toLowerCase();
-          const rSystem = realm.systemGroup.toLowerCase();
-          return rName.includes(locName) || locName.includes(rName.split(' (')[0].toLowerCase()) ||
-                 rSystem.includes(locCountry) || locCountry.includes(realm.id) ||
-                 (selectedMapLocationPin.orbitType === 'LEO' && (realm.id === 'leo-endeavour' || realm.id === 'leo-phoenix-ascension')) ||
-                 (selectedMapLocationPin.orbitType === 'GEO' && realm.id === 'geo-saber') ||
-                 (selectedMapLocationPin.orbitType === 'lunar' && realm.id === 'lunar-moon') ||
-                 (realm.id === 'leo-endeavour' && (locName.includes('orbit') || locName.includes('endeavour'))) ||
-                 (realm.id === 'leo-phoenix-ascension' && (locName.includes('stratosphere') || locName.includes('ascension'))) ||
-                 (realm.id === 'geo-saber' && locName.includes('s.a.b.e.r')) ||
-                 (realm.id === 'mar-vell-orbital-lab' && (locName.includes('mar-vell') || locName.includes('orbital laboratory'))) ||
-                 (realm.id === 'kree-imperium-hala' && (locName.includes('hala') || locCountry.includes('kree') || locName.includes('torfa'))) ||
-                 (realm.id === 'svartalfheim' && (locName.includes('svartalfheim') || locCountry.includes('svartalfheim'))) ||
-                 (realm.id === 'jotunheim' && (locName.includes('jotunheim') || locCountry.includes('jotunheim'))) ||
-                 (realm.id === 'maveth' && (locName.includes('maveth') || locCountry.includes('maveth'))) ||
-                 (realm.id === 'kun-lun' && (locName.includes('kun-lun') || locCountry.includes("k'un-lun") || locName.includes('dragon bone')));
-        });
+        let match: CosmicRealm | undefined;
+
+        // Priority 1: Direct lookup by specific celestial keywords (Location Name / Realm is most specific!)
+        if (locFull.includes('torfa')) match = COSMIC_REALMS.find(r => r.id === 'kree-torfa');
+        else if (locFull.includes('mar-vell') || locFull.includes('cloaked orbital')) match = COSMIC_REALMS.find(r => r.id === 'mar-vell-orbital-lab');
+        else if (locFull.includes('hala') || locFull.includes('kree')) match = COSMIC_REALMS.find(r => r.id === 'kree-imperium-hala');
+        else if (locFull.includes('asgard')) match = COSMIC_REALMS.find(r => r.id === 'asgard');
+        else if (locFull.includes('jotunheim')) match = COSMIC_REALMS.find(r => r.id === 'jotunheim');
+        else if (locFull.includes('svartalfheim')) match = COSMIC_REALMS.find(r => r.id === 'svartalfheim');
+        else if (locFull.includes('nidavellir')) match = COSMIC_REALMS.find(r => r.id === 'nidavellir');
+        else if (locFull.includes('muspelheim') || locFull.includes('surtur')) match = COSMIC_REALMS.find(r => r.id === 'muspelheim');
+        else if (locFull.includes('xandar') || locFull.includes('nova corps')) match = COSMIC_REALMS.find(r => r.id === 'xandar');
+        else if (locFull.includes('knowhere') || locFull.includes('collector')) match = COSMIC_REALMS.find(r => r.id === 'knowhere');
+        else if (locFull.includes('morag')) match = COSMIC_REALMS.find(r => r.id === 'morag');
+        else if (locFull.includes('vormir')) match = COSMIC_REALMS.find(r => r.id === 'vormir');
+        else if (locFull.includes('sakaar') || locFull.includes('contest of champions')) match = COSMIC_REALMS.find(r => r.id === 'sakaar');
+        else if (locFull.includes('titan')) match = COSMIC_REALMS.find(r => r.id === 'titan');
+        else if (locFull.includes('ego')) match = COSMIC_REALMS.find(r => r.id === 'ego-living-planet');
+        else if (locFull.includes('sovereign')) match = COSMIC_REALMS.find(r => r.id === 'sovereign');
+        else if (locFull.includes('contraxia')) match = COSMIC_REALMS.find(r => r.id === 'contraxia');
+        else if (locFull.includes('maveth') || locFull.includes('hive')) match = COSMIC_REALMS.find(r => r.id === 'maveth');
+        else if (locFull.includes('shiar') || locFull.includes("shi'ar") || locFull.includes("m'kraan")) match = COSMIC_REALMS.find(r => r.id === 'shiar-empire');
+        else if (locFull.includes('negative zone')) match = COSMIC_REALMS.find(r => r.id === 'negative-zone');
+        else if (locFull.includes('tva') || locFull.includes('null-time')) match = COSMIC_REALMS.find(r => r.id === 'tva-null-time');
+        else if (locFull.includes('quantum') || locFull.includes('microverse')) match = COSMIC_REALMS.find(r => r.id === 'quantum-realm');
+        else if (locFull.includes('dark dimension') || locFull.includes('dormammu')) match = COSMIC_REALMS.find(r => r.id === 'dark-dimension');
+        else if (locFull.includes('battleworld') || locFull.includes('beyonder')) match = COSMIC_REALMS.find(r => r.id === 'battleworld-beyonder');
+        else if (locFull.includes('axis of time')) match = COSMIC_REALMS.find(r => r.id === 'time-axis');
+        else if (locFull.includes('mojoverse') || locFull.includes('mojo')) match = COSMIC_REALMS.find(r => r.id === 'mojoverse');
+        else if (locFull.includes('ta lo')) match = COSMIC_REALMS.find(r => r.id === 'ta-lo');
+        else if (locFull.includes('kun-lun') || locFull.includes("k'un-lun")) match = COSMIC_REALMS.find(r => r.id === 'kun-lun');
+        else if (locFull.includes('moon') || locFull.includes('attilan') || locFull.includes('luna')) match = COSMIC_REALMS.find(r => r.id === 'lunar-moon');
+        else if (locFull.includes('asteroid m')) match = COSMIC_REALMS.find(r => r.id === 'asteroid-m');
+        else if (locFull.includes('s.a.b.e.r') || locFull.includes('saber')) match = COSMIC_REALMS.find(r => r.id === 'geo-saber');
+        else if (locFull.includes('endeavour')) match = COSMIC_REALMS.find(r => r.id === 'leo-endeavour');
+        else if (locFull.includes('starcore')) match = COSMIC_REALMS.find(r => r.id === 'leo-starcore-shuttle');
+        else if (locFull.includes('phoenix') || locFull.includes('ascension') || locFull.includes('exosphere')) match = COSMIC_REALMS.find(r => r.id === 'leo-phoenix-ascension');
+
+        // Priority 2: Fallback match by realm id/name substrings
+        if (!match) {
+          match = COSMIC_REALMS.find((realm) => {
+            const rName = realm.name.toLowerCase().split(' (')[0];
+            return locFull.includes(rName) || locFull.includes(realm.id);
+          });
+        }
+
+        // Priority 3: Fallback match by featuredEvents eventId (only if location was completely generic)
+        if (!match && selectedMapLocationPin.eventId) {
+          match = COSMIC_REALMS.find((realm) =>
+            realm.featuredEvents.some(e => e.eventId === selectedMapLocationPin.eventId)
+          );
+        }
 
         if (match) {
           setSelectedCosmicRealmId(match.id);
-          setCosmicCategory(match.category);
         } else {
-          setSelectedCosmicRealmId('leo-endeavour');
-          setCosmicCategory('orbital');
+          setSelectedCosmicRealmId('kree-imperium-hala');
         }
+
+        // Keep all cosmic realms visible so no locations vanish from the orrery
+        setCosmicCategory('all');
       } else {
         setMapViewMode('earth');
         setSelectedSnapshotTab('locations');
@@ -3641,36 +4051,36 @@ export const MapScreen: React.FC = () => {
                 {/* Concentric Orbital Rings with Tactical Legend */}
                 
                 {/* 1. Outer Deep Space & Galactic Sector Ring */}
-                <div className="absolute w-[98%] h-[95%] rounded-full border border-purple-500/20 pointer-events-none animate-spin" style={{ animationDuration: '160s' }}>
-                  <span className="absolute top-2 left-1/2 -translate-x-1/2 px-2.5 py-0.5 rounded bg-black/85 border border-purple-900/70 text-[9px] font-mono text-purple-400 tracking-wider">
+                <div className="absolute w-[98%] h-[95%] rounded-full border border-purple-500/20 pointer-events-none">
+                  <span className="absolute top-1.5 left-1/2 -translate-x-1/2 px-2.5 py-0.5 rounded bg-black/90 border border-purple-900/70 text-[9px] font-mono text-purple-400 tracking-wider shadow-md select-none">
                     DEEP SPACE & GALACTIC EMPIRES • OUTER SECTORS
                   </span>
                 </div>
 
                 {/* 2. Nine Realms Cosmic Axis Ring */}
-                <div className="absolute w-[86%] h-[82%] rounded-full border border-amber-500/25 pointer-events-none animate-spin" style={{ animationDuration: '100s', animationDirection: 'reverse' }}>
-                  <span className="absolute top-2 left-1/2 -translate-x-1/2 px-2.5 py-0.5 rounded bg-black/85 border border-amber-900/70 text-[9px] font-mono text-amber-400 tracking-wider">
+                <div className="absolute w-[86%] h-[82%] rounded-full border border-amber-500/25 pointer-events-none">
+                  <span className="absolute bottom-1.5 left-1/2 -translate-x-1/2 px-2.5 py-0.5 rounded bg-black/90 border border-amber-900/70 text-[9px] font-mono text-amber-400 tracking-wider shadow-md select-none">
                     YGGDRASIL • THE NINE REALMS AXIS
                   </span>
                 </div>
 
                 {/* 3. Lunar Orbit & Mystic Pocket Dimensions Ring */}
                 <div className="absolute w-[72%] h-[66%] rounded-full border border-slate-400/30 border-dashed pointer-events-none">
-                  <span className="absolute top-2 left-1/2 -translate-x-1/2 px-2.5 py-0.5 rounded bg-black/85 border border-slate-700 text-[8.5px] font-mono text-slate-300 tracking-wider">
+                  <span className="absolute top-1.5 left-1/2 -translate-x-1/2 px-2.5 py-0.5 rounded bg-black/90 border border-slate-700 text-[8.5px] font-mono text-slate-300 tracking-wider shadow-md select-none">
                     LUNAR ORBIT & MYSTIC SECTORS (384,400 KM)
                   </span>
                 </div>
 
                 {/* 4. Geostationary High Earth Orbit (GEO - 35,786 km) */}
                 <div className="absolute w-[50%] h-[44%] rounded-full border border-sky-400/35 border-dashed pointer-events-none">
-                  <span className="absolute bottom-1.5 left-1/2 -translate-x-1/2 px-2 py-0.5 rounded bg-black/85 border border-sky-900 text-[8px] font-mono text-sky-400 tracking-wider">
+                  <span className="absolute bottom-1.5 left-1/2 -translate-x-1/2 px-2 py-0.5 rounded bg-black/90 border border-sky-900 text-[8px] font-mono text-sky-400 tracking-wider shadow-md select-none">
                     GEO HIGH ORBIT • 35,786 KM (S.A.B.E.R. STATION)
                   </span>
                 </div>
 
                 {/* 5. Low Earth Orbit (LEO - 120-400 km) */}
                 <div className="absolute w-[28%] h-[24%] rounded-full border border-orange-500/40 border-dashed pointer-events-none">
-                  <span className="absolute top-1 left-1/2 -translate-x-1/2 px-1.5 py-0.5 rounded bg-black/85 border border-orange-900 text-[8px] font-mono text-orange-400 tracking-wider">
+                  <span className="absolute top-1 left-1/2 -translate-x-1/2 px-1.5 py-0.5 rounded bg-black/90 border border-orange-900 text-[8px] font-mono text-orange-400 tracking-wider shadow-md select-none">
                     LEO • 120–400 KM
                   </span>
                 </div>
@@ -3681,7 +4091,7 @@ export const MapScreen: React.FC = () => {
                     if (hasDraggedCosmicRef.current) return;
                     navigateToEarthUniverse('all');
                   }}
-                  className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-auto cursor-pointer z-30 group/earth focus:outline-none transition-transform hover:scale-115 active:scale-95"
+                  className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-auto cursor-pointer z-30 group/earth focus:outline-none transition-transform hover:scale-115 active:scale-95 hover:z-50"
                   title="Click or Zoom In to open Terrestrial Earth Tactical Map"
                 >
                   {/* Atmospheric Glow Ring */}
@@ -3700,6 +4110,7 @@ export const MapScreen: React.FC = () => {
                 {/* Celestial Nodes / Multiverse Spheres */}
                 {cosmicRealms.map((realm) => {
                   const isSelected = activeCosmicRealm.id === realm.id;
+                  const isHovered = hoveredCosmicRealmId === realm.id;
                   const isMatchingCategory = cosmicCategory === 'all' || 
                     realm.category === cosmicCategory || 
                     (cosmicCategory === 'dimensions' && realm.category === 'multiverse');
@@ -3709,6 +4120,8 @@ export const MapScreen: React.FC = () => {
                   // Skip drawing center earth as a separate realm node since it is the central interactive hub
                   if (realm.id === 'midgard') return null;
 
+                  const badgePlacement = getCosmicBadgePlacement(realm);
+
                   return (
                     <button
                       key={realm.id}
@@ -3716,30 +4129,44 @@ export const MapScreen: React.FC = () => {
                         if (hasDraggedCosmicRef.current) return;
                         setSelectedCosmicRealmId(realm.id);
                       }}
+                      onMouseEnter={() => setHoveredCosmicRealmId(realm.id)}
+                      onMouseLeave={() => setHoveredCosmicRealmId((prev) => (prev === realm.id ? null : prev))}
                       style={{ left: `${realm.x}%`, top: `${realm.y}%` }}
-                      className="absolute -translate-x-1/2 -translate-y-1/2 pointer-events-auto group/realm cursor-pointer focus:outline-none transition-transform z-20"
+                      className={`absolute -translate-x-1/2 -translate-y-1/2 pointer-events-auto group/realm cursor-pointer focus:outline-none transition-all duration-150 ${
+                        isHovered 
+                          ? 'z-50 scale-120' 
+                          : isSelected 
+                            ? 'z-40 scale-110' 
+                            : 'z-20 hover:z-50 hover:scale-115'
+                      }`}
                     >
                       {/* Pulsing Aura */}
                       <div 
                         className={`absolute -inset-4 rounded-full transition-all ${
-                          isSelected ? 'animate-pulse opacity-85' : 'opacity-25 group-hover/realm:opacity-70'
+                          isHovered 
+                            ? 'opacity-100 scale-140' 
+                            : isSelected 
+                              ? 'animate-pulse opacity-90 scale-125' 
+                              : 'opacity-25 group-hover/realm:opacity-80'
                         }`}
-                        style={{ backgroundColor: realm.color, filter: 'blur(10px)' }}
+                        style={{ backgroundColor: realm.color, filter: isHovered ? 'blur(14px)' : 'blur(10px)' }}
                       />
 
                       {/* Planet / Realm Sphere */}
                       <div 
                         className={`relative rounded-full flex items-center justify-center border-2 transition-all shadow-2xl ${
-                          isSelected 
-                            ? 'scale-125 ring-4 ring-white/80' 
-                            : 'group-hover:scale-110'
+                          isHovered 
+                            ? 'scale-125 ring-4 ring-white shadow-[0_0_24px_rgba(255,255,255,0.7)]' 
+                            : isSelected 
+                              ? 'scale-125 ring-4 ring-white/80' 
+                              : 'group-hover:scale-115'
                         }`}
                         style={{
                           width: `${realm.radius}px`,
                           height: `${realm.radius}px`,
                           backgroundColor: '#050711',
-                          borderColor: realm.color,
-                          boxShadow: `0 0 16px ${realm.color}`,
+                          borderColor: isHovered ? '#ffffff' : realm.color,
+                          boxShadow: `0 0 ${isHovered ? '24px' : '16px'} ${realm.color}`,
                         }}
                       >
                         <span className="text-xs leading-none drop-shadow">
@@ -3749,15 +4176,17 @@ export const MapScreen: React.FC = () => {
 
                       {/* Label Badge */}
                       <div 
-                        className={`absolute left-1/2 -translate-x-1/2 top-full mt-2 px-2 py-0.5 rounded text-[9.5px] font-bold font-title tracking-wider uppercase whitespace-nowrap transition-all shadow-xl ${
-                          isSelected 
-                            ? 'bg-white text-black ring-2 ring-purple-500 scale-105' 
-                            : 'bg-black/90 text-zinc-300 border border-zinc-700 group-hover/realm:border-white'
+                        className={`absolute ${badgePlacement.containerClass} ${badgePlacement.textAlign} px-2.5 py-1 rounded text-[9.5px] font-bold font-title tracking-wider uppercase whitespace-nowrap transition-all shadow-2xl pointer-events-none ${
+                          isHovered
+                            ? 'bg-purple-600 text-white ring-2 ring-white scale-110 z-50 shadow-[0_0_20px_rgba(168,85,247,0.95)]'
+                            : isSelected 
+                              ? 'bg-white text-black ring-2 ring-purple-500 scale-105 z-40' 
+                              : 'bg-black/90 text-zinc-300 border border-zinc-700/80 group-hover/realm:border-white z-10'
                         }`}
                       >
                         <span>{realm.name.split(' (')[0]}</span>
                         {realm.altitudeOrDistance && (
-                          <span className="block text-[8px] font-mono text-zinc-400 tracking-normal font-normal">
+                          <span className={`block text-[8px] font-mono tracking-normal font-normal ${isHovered ? 'text-purple-200' : 'text-zinc-400'}`}>
                             {realm.altitudeOrDistance.split(' (')[0]}
                           </span>
                         )}
