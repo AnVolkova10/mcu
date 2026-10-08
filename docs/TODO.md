@@ -157,7 +157,19 @@ Integrar y auditar la totalidad de las 5 series nucleares del Universo Animado d
 
 ---
 
-## 📌 8. Backlog de Ideas & Tareas Pendientes
+## 🪐 8. Auditoría y Registro de Cameos Canónicos: The Phoenix Saga & Earthside Response (Earth-92131)
+- [x] **Resultado Observable**: Auditoría y enriquecimiento canónico de los cameos y repercusiones en la Tierra de la crisis cósmica del Cristal M'Kraan y Dark Phoenix en *X-Men: TAS* Temporada 3 (1994).
+- [x] **Criterios de Aceptación**:
+  - [x] **Dossier de Personaje**: Creado `captain-britain` (Brian Braddock) en `src/data/charactersData.ts` con origen en Londres, afiliación con Captain Britain Corps / Excalibur / MI-13, y rol de héroe místico.
+  - [x] **Glows CSS en `src/styles/global.css`**: Incorporadas las clases `.captain-britain` y `.peter-parker-spider-man` con sus respectivos colores y text-shadows de neón.
+  - [x] **Eventos en Timeline (`src/data/timelineData.ts`)**:
+    - [x] `event-1994-tas-3-phoenix-shiar`: Actualizado para incorporar la repercusión de la crisis del Cristal M'Kraan en la Tierra con Doctor Strange (Sanctum Sanctorum, Nueva York), Captain Britain (Londres, Inglaterra) y Spider-Man (rescate de civiles en las avenidas de Manhattan). Agregadas las 3 locaciones con coordenadas cartográficas reales de Leaflet y los personajes etiquetados.
+    - [x] `event-1994-tas-3-dark-phoenix`: Agregado el registro de Doctor Strange sintiendo desde el Sanctum Sanctorum la aniquilación cósmica del sistema estelar D'Bari provocada por Dark Phoenix.
+  - [x] Compilación obligatoria exitosa `npm run build` con 0 errores.
+
+---
+
+## 📌 9. Backlog de Ideas & Tareas Pendientes
 - [ ] Auditoría de películas de la Fase 2 y 3 no auditadas previamente (*Ant-Man and the Wasp*, *Thor: The Dark World* 2988 B.C.E., *Infinity War* Zen-Whoberi 1996, *Civil War* 1991).
 - [ ] Fase 2 Multiverso: Evaluación de *X-Men '97* (Disney+) y *Spider-Man Unlimited* como continuaciones posteriores.
 - [ ] Auditoría de películas live-action complementarias de los 90s (*Blade (1998)*) fuera de la burbuja animada de Earth-92131.

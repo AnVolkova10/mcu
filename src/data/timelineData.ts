@@ -5726,9 +5726,11 @@ export const timelineEras: EraGroup[] = [
         "rawClasses": [
           "x-men-tas-3"
         ],
-        "rawHtml": "<p>Traveling through the celestial Stargate into Shi'ar galactic space, the X-Men ally with <strong class=\"corsair-christopher-summers\">Corsair (Christopher Summers)</strong> and his rebel <em>Starjammers</em>. On the forbidden world housing the <strong>M'Kraan Crystal</strong>—the ancient nexus of all realities—the deranged <strong class=\"d-ken-neramani\">Emperor D'Ken</strong> breaches the cosmic lattice to usurp divine omnipotence, triggering universal gravitational shockwaves that threaten to collapse the cosmos into a singularity. Imperial Praetor <strong class=\"gladiator-kallark\">Gladiator</strong> and the Shi'ar Guard clash with the X-Men until D'Ken's cosmic madness is exposed. Channeling the collective life-energy and psionic spirit of the universe, <strong class=\"jean-grey\">Phoenix</strong> enters the fractured heart of the M'Kraan Crystal, repairing the cosmic nexus and neutralizing D'Ken. Bidding an emotional farewell to <strong class=\"cyclops-scott-summers\">Scott Summers</strong>, Jean ascends to the cosmos as an eternal guardian, leaving behind a restored galaxy and crowning <strong class=\"lilandra-neramani\">Lilandra</strong> as Majestrix.</p>",
+        "rawHtml": "<p>Traveling through the celestial Stargate into Shi'ar galactic space, the X-Men ally with <strong class=\"corsair-christopher-summers\">Corsair (Christopher Summers)</strong> and his rebel <em>Starjammers</em>. On the forbidden world housing the <strong>M'Kraan Crystal</strong>—the ancient nexus of all realities—the deranged <strong class=\"d-ken-neramani\">Emperor D'Ken</strong> breaches the cosmic lattice to usurp divine omnipotence, triggering universal gravitational shockwaves that threaten to collapse the cosmos into a singularity.</p><p>As catastrophic reality-warping tremors ripple across Earth, defenders of humanity react across the globe: in Greenwich Village, <strong class=\"doctor-strange\">Doctor Strange</strong> senses the apocalyptic dimensional rupture through the Eye of Agamotto within his Sanctum Sanctorum; in London, <strong class=\"captain-britain\">Captain Britain (Brian Braddock)</strong> stands vigilant beside the Thames watching the night sky blaze with crimson energy auroras; and across the avenues of Manhattan, <strong class=\"peter-parker-spider-man\">Spider-Man</strong> fires web-lines to shield fleeing civilians from falling skyscraper debris caused by seismic shockwaves.</p><p>In deep space, Imperial Praetor <strong class=\"gladiator-kallark\">Gladiator</strong> and the Shi'ar Guard clash with the X-Men until D'Ken's cosmic madness is exposed. Channeling the collective life-energy and psionic spirit of the universe, <strong class=\"jean-grey\">Phoenix</strong> enters the fractured heart of the M'Kraan Crystal, repairing the cosmic nexus and neutralizing D'Ken. Bidding an emotional farewell to <strong class=\"cyclops-scott-summers\">Scott Summers</strong>, Jean ascends to the cosmos as an eternal guardian, leaving behind a restored galaxy and crowning <strong class=\"lilandra-neramani\">Lilandra</strong> as Majestrix.</p>",
         "paragraphs": [
-          "Traveling through the celestial Stargate into Shi'ar galactic space, the X-Men ally with <strong class=\"corsair-christopher-summers\">Corsair (Christopher Summers)</strong> and his rebel <em>Starjammers</em>. On the forbidden world housing the <strong>M'Kraan Crystal</strong>—the ancient nexus of all realities—the deranged <strong class=\"d-ken-neramani\">Emperor D'Ken</strong> breaches the cosmic lattice to usurp divine omnipotence, triggering universal gravitational shockwaves that threaten to collapse the cosmos into a singularity. Imperial Praetor <strong class=\"gladiator-kallark\">Gladiator</strong> and the Shi'ar Guard clash with the X-Men until D'Ken's cosmic madness is exposed. Channeling the collective life-energy and psionic spirit of the universe, <strong class=\"jean-grey\">Phoenix</strong> enters the fractured heart of the M'Kraan Crystal, repairing the cosmic nexus and neutralizing D'Ken. Bidding an emotional farewell to <strong class=\"cyclops-scott-summers\">Scott Summers</strong>, Jean ascends to the cosmos as an eternal guardian, leaving behind a restored galaxy and crowning <strong class=\"lilandra-neramani\">Lilandra</strong> as Majestrix."
+          "Traveling through the celestial Stargate into Shi'ar galactic space, the X-Men ally with <strong class=\"corsair-christopher-summers\">Corsair (Christopher Summers)</strong> and his rebel <em>Starjammers</em>. On the forbidden world housing the <strong>M'Kraan Crystal</strong>—the ancient nexus of all realities—the deranged <strong class=\"d-ken-neramani\">Emperor D'Ken</strong> breaches the cosmic lattice to usurp divine omnipotence, triggering universal gravitational shockwaves that threaten to collapse the cosmos into a singularity.",
+          "As catastrophic reality-warping tremors ripple across Earth, defenders of humanity react across the globe: in Greenwich Village, <strong class=\"doctor-strange\">Doctor Strange</strong> senses the apocalyptic dimensional rupture through the Eye of Agamotto within his Sanctum Sanctorum; in London, <strong class=\"captain-britain\">Captain Britain (Brian Braddock)</strong> stands vigilant beside the Thames watching the night sky blaze with crimson energy auroras; and across the avenues of Manhattan, <strong class=\"peter-parker-spider-man\">Spider-Man</strong> fires web-lines to shield fleeing civilians from falling skyscraper debris caused by seismic shockwaves.",
+          "In deep space, Imperial Praetor <strong class=\"gladiator-kallark\">Gladiator</strong> and the Shi'ar Guard clash with the X-Men until D'Ken's cosmic madness is exposed. Channeling the collective life-energy and psionic spirit of the universe, <strong class=\"jean-grey\">Phoenix</strong> enters the fractured heart of the M'Kraan Crystal, repairing the cosmic nexus and neutralizing D'Ken. Bidding an emotional farewell to <strong class=\"cyclops-scott-summers\">Scott Summers</strong>, Jean ascends to the cosmos as an eternal guardian, leaving behind a restored galaxy and crowning <strong class=\"lilandra-neramani\">Lilandra</strong> as Majestrix."
         ],
         "characters": [
           "jean-grey",
@@ -5740,13 +5742,17 @@ export const timelineEras: EraGroup[] = [
           "charles-xavier",
           "logan-wolverine",
           "storm-ororo-munroe",
-          "rogue-anna-marie"
+          "rogue-anna-marie",
+          "doctor-strange",
+          "captain-britain",
+          "peter-parker-spider-man"
         ],
         "stones": [],
         "deaths": [],
         "mcuHighlights": [
           "Starjammers Alliance & Corsair Summers Reunion",
           "Emperor D'Ken Breaches the M'Kraan Crystal",
+          "Global Reality Tremors: Doctor Strange, Captain Britain & Spider-Man Cameos",
           "Universal Reality Singularity Averted",
           "Phoenix Ascends as Cosmic Guardian of the Crystal"
         ],
@@ -5764,6 +5770,45 @@ export const timelineEras: EraGroup[] = [
               "lilandra-neramani",
               "corsair-christopher-summers",
               "gladiator-kallark"
+            ]
+          },
+          {
+            "name": "Sanctum Sanctorum (M'Kraan Mystic Alert)",
+            "cityOrRegion": "Greenwich Village, New York",
+            "countryOrRealm": "United States",
+            "planet": "Earth-92131",
+            "coordinates": [
+              40.7299,
+              -73.9998
+            ],
+            "characters": [
+              "doctor-strange"
+            ]
+          },
+          {
+            "name": "London Skywatch (M'Kraan Energy Aurora)",
+            "cityOrRegion": "London",
+            "countryOrRealm": "United Kingdom",
+            "planet": "Earth-92131",
+            "coordinates": [
+              51.5007,
+              -0.1246
+            ],
+            "characters": [
+              "captain-britain"
+            ]
+          },
+          {
+            "name": "Manhattan Avenues (Seismic Web Rescue)",
+            "cityOrRegion": "New York City",
+            "countryOrRealm": "United States",
+            "planet": "Earth-92131",
+            "coordinates": [
+              40.758,
+              -73.9855
+            ],
+            "characters": [
+              "peter-parker-spider-man"
             ]
           }
         ]
@@ -5835,9 +5880,9 @@ export const timelineEras: EraGroup[] = [
         "rawClasses": [
           "x-men-tas-3"
         ],
-        "rawHtml": "<p>Mental illusions orchestrated by psionic manipulator Jason Wyngarde (Mastermind) and the Hellfire Club (Sebastian Shaw and Emma Frost) warp Jean Grey's perception, transforming her into the decadent Black Queen. Breaking free from Wyngarde's psychic shackles in fury, the cosmic entity within Jean erupts into an uncontrollable apocalyptic form: <strong class=\"jean-grey\">The Dark Phoenix</strong>. Overpowering the entire X-Men roster, Dark Phoenix blasts through the stratosphere into deep space, consuming the incandescent core of the D'Bari star system and threatening to annihilate galactic reality.</p><p>Interstellar alarms summon Shi'ar Empress <strong class=\"lilandra-neramani\">Lilandra</strong>, who decrees Jean's summary execution to preserve cosmic life. Demanding the right of honor, <strong class=\"charles-xavier\">Professor X</strong> challenges Lilandra to the ancient Shi'ar duel of honor—a trial by combat hosted within the breathable ruins of the Kree Empire's <strong>Blue Area of the Moon</strong>. The X-Men battle desperately against <strong class=\"gladiator-kallark\">Gladiator</strong> and the Shi'ar Imperial Guard. As the blazing cosmic raptor overwhelms Jean's humanity once more, <strong class=\"cyclops-scott-summers\">Cyclops</strong> and Wolverine watch in heartbreak as Jean regains lucid control for one final second, manually triggering an ancient Kree particle beam cannon to disintegrate her physical body, willingly sacrificing herself to extinguish the Dark Phoenix and save the universe.</p>",
+        "rawHtml": "<p>Mental illusions orchestrated by psionic manipulator Jason Wyngarde (Mastermind) and the Hellfire Club (Sebastian Shaw and Emma Frost) warp Jean Grey's perception, transforming her into the decadent Black Queen. Breaking free from Wyngarde's psychic shackles in fury, the cosmic entity within Jean erupts into an uncontrollable apocalyptic form: <strong class=\"jean-grey\">The Dark Phoenix</strong>. Overpowering the entire X-Men roster, Dark Phoenix blasts through the stratosphere into deep space, consuming the incandescent core of the D'Bari star system and threatening to annihilate galactic reality—a cataclysmic extinction wave sensed on Earth by <strong class=\"doctor-strange\">Doctor Strange</strong> within his Sanctum Sanctorum.</p><p>Interstellar alarms summon Shi'ar Empress <strong class=\"lilandra-neramani\">Lilandra</strong>, who decrees Jean's summary execution to preserve cosmic life. Demanding the right of honor, <strong class=\"charles-xavier\">Professor X</strong> challenges Lilandra to the ancient Shi'ar duel of honor—a trial by combat hosted within the breathable ruins of the Kree Empire's <strong>Blue Area of the Moon</strong>. The X-Men battle desperately against <strong class=\"gladiator-kallark\">Gladiator</strong> and the Shi'ar Imperial Guard. As the blazing cosmic raptor overwhelms Jean's humanity once more, <strong class=\"cyclops-scott-summers\">Cyclops</strong> and Wolverine watch in heartbreak as Jean regains lucid control for one final second, manually triggering an ancient Kree particle beam cannon to disintegrate her physical body, willingly sacrificing herself to extinguish the Dark Phoenix and save the universe.</p>",
         "paragraphs": [
-          "Mental illusions orchestrated by psionic manipulator Jason Wyngarde (Mastermind) and the Hellfire Club (Sebastian Shaw and Emma Frost) warp Jean Grey's perception, transforming her into the decadent Black Queen. Breaking free from Wyngarde's psychic shackles in fury, the cosmic entity within Jean erupts into an uncontrollable apocalyptic form: <strong class=\"jean-grey\">The Dark Phoenix</strong>. Overpowering the entire X-Men roster, Dark Phoenix blasts through the stratosphere into deep space, consuming the incandescent core of the D'Bari star system and threatening to annihilate galactic reality.",
+          "Mental illusions orchestrated by psionic manipulator Jason Wyngarde (Mastermind) and the Hellfire Club (Sebastian Shaw and Emma Frost) warp Jean Grey's perception, transforming her into the decadent Black Queen. Breaking free from Wyngarde's psychic shackles in fury, the cosmic entity within Jean erupts into an uncontrollable apocalyptic form: <strong class=\"jean-grey\">The Dark Phoenix</strong>. Overpowering the entire X-Men roster, Dark Phoenix blasts through the stratosphere into deep space, consuming the incandescent core of the D'Bari star system and threatening to annihilate galactic reality—a cataclysmic extinction wave sensed on Earth by <strong class=\"doctor-strange\">Doctor Strange</strong> within his Sanctum Sanctorum.",
           "Interstellar alarms summon Shi'ar Empress <strong class=\"lilandra-neramani\">Lilandra</strong>, who decrees Jean's summary execution to preserve cosmic life. Demanding the right of honor, <strong class=\"charles-xavier\">Professor X</strong> challenges Lilandra to the ancient Shi'ar duel of honor—a trial by combat hosted within the breathable ruins of the Kree Empire's Blue Area of the Moon. The X-Men battle desperately against <strong class=\"gladiator-kallark\">Gladiator</strong> and the Shi'ar Imperial Guard. As the blazing cosmic raptor overwhelms Jean's humanity once more, <strong class=\"cyclops-scott-summers\">Cyclops</strong> and Wolverine watch in heartbreak as Jean regains lucid control for one final second, manually triggering an ancient Kree particle beam cannon to disintegrate her physical body, willingly sacrificing herself to extinguish the Dark Phoenix and save the universe."
         ],
         "characters": [
@@ -5846,7 +5891,8 @@ export const timelineEras: EraGroup[] = [
           "charles-xavier",
           "logan-wolverine",
           "lilandra-neramani",
-          "gladiator-kallark"
+          "gladiator-kallark",
+          "doctor-strange"
         ],
         "stones": [],
         "deaths": [
@@ -5855,6 +5901,7 @@ export const timelineEras: EraGroup[] = [
         "mcuHighlights": [
           "Hellfire Club Manipulation & The Genesis of Dark Phoenix",
           "Consumption of the D'Bari Star System in Deep Space",
+          "Doctor Strange Senses Cosmic Annihilation from Sanctum Sanctorum",
           "Trial by Combat on the Blue Area of the Moon against Gladiator",
           "Jean Grey's Ultimate Cosmic Sacrifice to Save the Universe"
         ],
@@ -5876,6 +5923,19 @@ export const timelineEras: EraGroup[] = [
               "logan-wolverine",
               "lilandra-neramani",
               "gladiator-kallark"
+            ]
+          },
+          {
+            "name": "Sanctum Sanctorum (Cosmic Extinction Awareness)",
+            "cityOrRegion": "Greenwich Village, New York",
+            "countryOrRealm": "United States",
+            "planet": "Earth-92131",
+            "coordinates": [
+              40.7299,
+              -73.9998
+            ],
+            "characters": [
+              "doctor-strange"
             ]
           }
         ]

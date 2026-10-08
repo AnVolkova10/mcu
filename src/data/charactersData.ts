@@ -4050,6 +4050,26 @@ export const charactersData: Record<string, Character> = {
     "originLocation": "Brooklyn, New York (Earth-92131)",
     "status": "alive",
     "bio": "Supernatural motorcyclist possessed by the Spirit of Vengeance wielding hellfire chains and the devastating Penance Stare, who confronted Galactus and defended Bruce Banner."
+  },
+  "captain-britain": {
+    "id": "captain-britain",
+    "name": "Brian Braddock / Captain Britain",
+    "alias": "Captain Britain",
+    "cssClass": "captain-britain",
+    "color": "#38bdf8",
+    "bgBadge": "bg-sky-950/80 hover:bg-sky-900/90",
+    "textBadge": "text-sky-300",
+    "borderBadge": "border-sky-600",
+    "role": "hero",
+    "affiliation": "Captain Britain Corps / Excalibur / MI-13",
+    "groups": [
+      "Captain Britain Corps",
+      "Excalibur",
+      "MI-13"
+    ],
+    "originLocation": "Maldon, Essex / London (Earth-92131)",
+    "status": "alive",
+    "bio": "Mystical champion chosen by Merlyn and Roma, empowered by the Amulet of Right and interdimensional energies to protect the British Isles and monitor omniversal anomalies."
   }
 };
 
