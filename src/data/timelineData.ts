@@ -388,6 +388,60 @@ export const timelineEras: EraGroup[] = [
             ]
           }
         ]
+      },
+      {
+        "id": "event-1200bce-tas-ff-mask-of-doom",
+        "eraId": "era-_c__1200_B_C_E__",
+        "eraTitle": "c. 1200 B.C.E.",
+        "mediaKey": "fantastic-four-tas-1",
+        "mediaTitle": "Fantastic Four: The Animated Series (Season 1)",
+        "mediaType": "series",
+        "mediaPhase": "Marvel Television",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+        "branchDetails": "Doctor Doom's Time Platform Expedition to Ancient Greece",
+        "rawClasses": [
+          "fantastic-four-tas-1"
+        ],
+        "rawHtml": "<p>Taking the Baxter Building hostage with automated forcefields, armored tyrant <strong class=\"victor-von-doom\">Doctor Doom</strong> coerces the Fantastic Four into stepping onto his newly calibrated <strong>Time Platform</strong>. Displaced over three millennia into the past to Mycenaean Ancient Greece (c. 1200 B.C.E.), <strong class=\"reed-richards\">Reed Richards</strong>, <strong class=\"sue-storm\">Sue Storm</strong>, <strong class=\"johnny-storm\">Johnny Storm</strong>, and <strong class=\"ben-grimm\">Ben Grimm</strong> must retrieve the mythical enchanted chest of the Sirens before their temporal anchor dissolves.</p><p>Disguised as legendary Hellenic warriors, the team navigates the treacherous Aegean waters, battles mythical sea serpents and Greek hoplites, and secures the ancient talisman containing mystical jewels. Returning through the temporal displacement vortex to the present day, Reed outsmarts Doom by swapping the treasure with an inert replica, causing Doom's temporal containment rig to implode.</p>",
+        "paragraphs": [
+          "Taking the Baxter Building hostage with automated forcefields, armored tyrant <strong class=\"victor-von-doom\">Doctor Doom</strong> coerces the Fantastic Four into stepping onto his newly calibrated Time Platform. Displaced over three millennia into the past to Mycenaean Ancient Greece (c. 1200 B.C.E.), <strong class=\"reed-richards\">Reed Richards</strong>, <strong class=\"sue-storm\">Sue Storm</strong>, <strong class=\"johnny-storm\">Johnny Storm</strong>, and <strong class=\"ben-grimm\">Ben Grimm</strong> must retrieve the mythical enchanted chest of the Sirens before their temporal anchor dissolves.",
+          "Disguised as legendary Hellenic warriors, the team navigates the treacherous Aegean waters, battles mythical sea serpents and Greek hoplites, and secures the ancient talisman containing mystical jewels. Returning through the temporal displacement vortex to the present day, Reed outsmarts Doom by swapping the treasure with an inert replica, causing Doom's temporal containment rig to implode."
+        ],
+        "characters": [
+          "reed-richards",
+          "sue-storm",
+          "johnny-storm",
+          "ben-grimm",
+          "victor-von-doom"
+        ],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "Doctor Doom's Time Platform Temporal Displacement",
+          "Fantastic Four Mythological Expedition in Mycenaean Greece",
+          "Recovery of the Enchanted Chest of the Sirens"
+        ],
+        "locations": [
+          {
+            "name": "Mycenaean Citadel & Aegean Coastal Ruins",
+            "cityOrRegion": "Mycenae / Aegean Sea",
+            "countryOrRealm": "Ancient Greece",
+            "planet": "Earth-92131",
+            "celestialSystem": "solar-system",
+            "coordinates": [
+              37.7308,
+              22.7561
+            ],
+            "characters": [
+              "reed-richards",
+              "sue-storm",
+              "johnny-storm",
+              "ben-grimm"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -659,6 +713,64 @@ export const timelineEras: EraGroup[] = [
             "characters": [
               "logan-wolverine",
               "victor-creed"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "era-_1888_",
+    "title": "-1888-",
+    "cleanTitle": "1888",
+    "category": "early-century",
+    "events": [
+      {
+        "id": "event-1888-tas-xmen-descent-sinister",
+        "eraId": "era-_1888_",
+        "eraTitle": "1888",
+        "mediaKey": "x-men-tas-5",
+        "mediaTitle": "X-Men: The Animated Series (Season 5)",
+        "mediaType": "series",
+        "mediaPhase": "Marvel Television",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+        "branchDetails": "Victorian London Origins of Nathaniel Essex",
+        "rawClasses": [
+          "x-men-tas-5"
+        ],
+        "rawHtml": "<p>In Victorian London in 1888, visionary scientist <strong class=\"mister-sinister-nathaniel-essex\">Dr. Nathaniel Essex</strong> becomes obsessed with the theory of evolution, convinced that humanity is poised to undergo a sudden genetic leap into a super-powered mutant race (<em>Homo Superior</em>). Condemned as a madman by the Royal Society and passionately opposed by his scientific peers <strong class=\"secundary\">Dr. James Xavier</strong> (ancestor of Charles Xavier) and <strong class=\"secundary\">Dr. John Grey</strong> (ancestor of Jean Grey), Essex employs ruthless street criminals to abduct indigents and beggars from the Whitechapel and East End London slums for subterranean biological experiments.</p><p>Horrified by his monstrous transformation and mourning the tragic death of their infant child, Essex's wife Rebecca dies rejecting him as 'sinister'. Consumed by megalomania and grief, Essex synthesizes an experimental mutagenic compound derived from human mutants and injects himself with the catalyst. His cellular structure alters radically, granting him cellular immortality, devastating telekinesis, superhuman strength, alabaster skin, and a crystalline red diamond in his brow. Renouncing his humanity, he christens himself <strong class=\"mister-sinister-nathaniel-essex\">Mister Sinister</strong>, embarking on a century-long quest to harvest the Summers and Grey genetic lines—a sinister obsession that connects directly into the events of <em>X-Men '97</em>.</p>",
+        "paragraphs": [
+          "In Victorian London in 1888, visionary scientist <strong class=\"mister-sinister-nathaniel-essex\">Dr. Nathaniel Essex</strong> becomes obsessed with the theory of evolution, convinced that humanity is poised to undergo a sudden genetic leap into a super-powered mutant race (Homo Superior). Condemned as a madman by the Royal Society and passionately opposed by his scientific peers Dr. James Xavier (ancestor of Charles Xavier) and Dr. John Grey (ancestor of Jean Grey), Essex employs ruthless street criminals to abduct indigents and beggars from the Whitechapel and East End London slums for subterranean biological experiments.",
+          "Horrified by his monstrous transformation and mourning the tragic death of their infant child, Essex's wife Rebecca dies rejecting him as 'sinister'. Consumed by megalomania and grief, Essex synthesizes an experimental mutagenic compound derived from human mutants and injects himself with the catalyst. His cellular structure alters radically, granting him cellular immortality, devastating telekinesis, superhuman strength, alabaster skin, and a crystalline red diamond in his brow. Renouncing his humanity, he christens himself <strong class=\"mister-sinister-nathaniel-essex\">Mister Sinister</strong>, embarking on a century-long quest to harvest the Summers and Grey genetic lines—a sinister obsession that connects directly into the events of X-Men '97."
+        ],
+        "characters": [
+          "mister-sinister-nathaniel-essex"
+        ],
+        "stones": [],
+        "deaths": [
+          "Rebecca Essex"
+        ],
+        "mcuHighlights": [
+          "The Victorian Genesis of Mister Sinister in 1888",
+          "Ethical Clashes with Ancestors Dr. James Xavier & Dr. John Grey",
+          "Nathaniel Essex's Mutagenic Evolution & Immortal Vow",
+          "Historical Genetic Obsession Echoing into X-Men '97"
+        ],
+        "locations": [
+          {
+            "name": "Essex Manor Laboratory & East End London Slums",
+            "cityOrRegion": "London",
+            "countryOrRealm": "Great Britain",
+            "planet": "Earth-92131",
+            "celestialSystem": "solar-system",
+            "coordinates": [
+              51.5074,
+              -0.1278
+            ],
+            "characters": [
+              "mister-sinister-nathaniel-essex"
             ]
           }
         ]
@@ -1331,6 +1443,57 @@ export const timelineEras: EraGroup[] = [
             ]
           }
         ]
+      },
+      {
+        "id": "event-1944-tas-xmen-old-soldiers",
+        "eraId": "era-_1944_",
+        "eraTitle": "1944",
+        "mediaKey": "x-men-tas-5",
+        "mediaTitle": "X-Men: The Animated Series (Season 5)",
+        "mediaType": "series",
+        "mediaPhase": "Marvel Television",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+        "branchDetails": "World War II Allied Operation in Occupied France",
+        "rawClasses": [
+          "x-men-tas-5"
+        ],
+        "rawHtml": "<p>During World War II in 1944 in Nazi-occupied France, Canadian commando <strong class=\"logan-wolverine\">Logan</strong> (decades prior to his adamantium bonding) is deployed on a covert sabotage mission behind enemy lines. There he crosses paths with America's legendary super-soldier <strong class=\"captain-america\">Captain America (Steve Rogers)</strong> and his young partner Bucky. Teaming up against the Third Reich, Logan unleashes his raw bone claws and feral combat instincts alongside Captain America's vibranium shield to infiltrate a subterranean Gestapo mountain laboratory.</p><p>Fighting through heavily armed SS shock troops, the duo uncovers a Nazi biological super-weapon project overseen by <strong class=\"red-skull\">Red Skull</strong> and geneticist Dr. Klaus Schmidt. In a desperate duel beneath collapsing fortifications, Captain America and Logan extract the captured Allied scientist Dr. André Cocteau and detonate the experimental laboratory. Before parting ways into the fog of war, Steve Rogers and Logan forge a bond of mutual brotherhood and timeless warrior respect that endures across generations in Earth-92131.</p>",
+        "paragraphs": [
+          "During World War II in 1944 in Nazi-occupied France, Canadian commando <strong class=\"logan-wolverine\">Logan</strong> (decades prior to his adamantium bonding) is deployed on a covert sabotage mission behind enemy lines. There he crosses paths with America's legendary super-soldier <strong class=\"captain-america\">Captain America (Steve Rogers)</strong> and his young partner Bucky. Teaming up against the Third Reich, Logan unleashes his raw bone claws and feral combat instincts alongside Captain America's vibranium shield to infiltrate a subterranean Gestapo mountain laboratory.",
+          "Fighting through heavily armed SS shock troops, the duo uncovers a Nazi biological super-weapon project overseen by <strong class=\"red-skull\">Red Skull</strong> and geneticist Dr. Klaus Schmidt. In a desperate duel beneath collapsing fortifications, Captain America and Logan extract the captured Allied scientist Dr. André Cocteau and detonate the experimental laboratory. Before parting ways into the fog of war, Steve Rogers and Logan forge a bond of mutual brotherhood and timeless warrior respect that endures across generations in Earth-92131."
+        ],
+        "characters": [
+          "logan-wolverine",
+          "steve-rogers",
+          "red-skull"
+        ],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "World War II Frontline Alliance: Logan & Captain America",
+          "Infiltration of Red Skull's Secret Gestapo Laboratory",
+          "Timeless Warrior Bond between Wolverine and Steve Rogers"
+        ],
+        "locations": [
+          {
+            "name": "Nazi Gestapo Fortress & Subterranean Lab",
+            "cityOrRegion": "Sainte-Mère-Église / Normandy",
+            "countryOrRealm": "France",
+            "planet": "Earth-92131",
+            "celestialSystem": "solar-system",
+            "coordinates": [
+              49.4087,
+              -1.3174
+            ],
+            "characters": [
+              "logan-wolverine",
+              "steve-rogers",
+              "red-skull"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -1470,6 +1633,60 @@ export const timelineEras: EraGroup[] = [
             "coordinates": [
               47.516,
               14.55
+            ]
+          }
+        ]
+      },
+      {
+        "id": "event-1945-tas-spiderman-six-forgotten-warriors-climax",
+        "eraId": "era-_1945_",
+        "eraTitle": "1945",
+        "mediaKey": "spider-man-tas-5",
+        "mediaTitle": "Spider-Man: The Animated Series (Season 5)",
+        "mediaType": "series",
+        "mediaPhase": "Marvel Television",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+        "branchDetails": "World War II Climax: The Doomsday Vortex & Sacrifice of Captain America",
+        "rawClasses": [
+          "spider-man-tas-5"
+        ],
+        "rawHtml": "<p>In the climactic final days of World War II in 1945, Nazi commander <strong class=\"red-skull\">Red Skull</strong> completes construction of a catastrophic Doomsday Device—a dimensional matter-transmitter capable of unleashing uncontainable destructive vortexes across the globe. To avert global annihilation, <strong class=\"captain-america\">Captain America (Steve Rogers)</strong> and his Allied strike team of enhanced champions, the <strong>Six Forgotten Warriors</strong> (including <strong class=\"whizzer-robert-frank\">The Whizzer (Robert Frank)</strong>, Miss America, The Destroyer, The Thunderer, The Thin Man, and courier Omar Mosley), spearhead a daring frontal assault against Red Skull's heavily fortified subterranean bunker in Eastern Europe.</p><p>As Red Skull powers up the central reactor and the unstable dimensional vortex begins tearing through reality, Captain America realizes conventional weapons cannot deactivate the overloaded conduit in time. In a defining act of selfless heroism, Rogers physically tackles Red Skull, plunging both of them directly into the heart of the vortex. The surviving Five Champions immediately engage the security fail-safe protocol, separating the device's six activation keys and sealing the portal shut—saving civilization while leaving Captain America and the Red Skull suspended in trans-dimensional limbo for over fifty years until their return in 1997.</p>",
+        "paragraphs": [
+          "In the climactic final days of World War II in 1945, Nazi commander <strong class=\"red-skull\">Red Skull</strong> completes construction of a catastrophic Doomsday Device—a dimensional matter-transmitter capable of unleashing uncontainable destructive vortexes across the globe. To avert global annihilation, <strong class=\"captain-america\">Captain America (Steve Rogers)</strong> and his Allied strike team of enhanced champions, the Six Forgotten Warriors (including <strong class=\"whizzer-robert-frank\">The Whizzer (Robert Frank)</strong>, Miss America, The Destroyer, The Thunderer, The Thin Man, and courier Omar Mosley), spearhead a daring frontal assault against Red Skull's heavily fortified subterranean bunker in Eastern Europe.",
+          "As Red Skull powers up the central reactor and the unstable dimensional vortex begins tearing through reality, Captain America realizes conventional weapons cannot deactivate the overloaded conduit in time. In a defining act of selfless heroism, Rogers physically tackles Red Skull, plunging both of them directly into the heart of the vortex. The surviving Five Champions immediately engage the security fail-safe protocol, separating the device's six activation keys and sealing the portal shut—saving civilization while leaving Captain America and the Red Skull suspended in trans-dimensional limbo for over fifty years until their return in 1997."
+        ],
+        "characters": [
+          "steve-rogers",
+          "red-skull",
+          "whizzer-robert-frank"
+        ],
+        "stones": [],
+        "deaths": [
+          "Captain America (Trapped in Dimensional Vortex)",
+          "Red Skull (Trapped in Dimensional Vortex)"
+        ],
+        "mcuHighlights": [
+          "Final Assault of the Six Forgotten Warriors in World War II",
+          "Captain America's Ultimate Sacrifice: Plunge into the Doomsday Vortex",
+          "The Sealing of the Six Keys & 50-Year Trans-Dimensional Limbo"
+        ],
+        "locations": [
+          {
+            "name": "Red Skull's Doomsday Device Subterranean Bunker",
+            "cityOrRegion": "Chernobyl / Pripyat Border Region",
+            "countryOrRealm": "Soviet Union / Eastern Front (WWII)",
+            "planet": "Earth-92131",
+            "celestialSystem": "solar-system",
+            "coordinates": [
+              51.2763,
+              30.2219
+            ],
+            "characters": [
+              "steve-rogers",
+              "red-skull",
+              "whizzer-robert-frank"
             ]
           }
         ]
@@ -1798,6 +2015,69 @@ export const timelineEras: EraGroup[] = [
         "timelineType": "branched-616",
         "earthDesignation": "Earth-616 Branched Reality",
         "branchDetails": "Alternate Timeline Branch"
+      }
+    ]
+  },
+  {
+    "id": "era-_1959_",
+    "title": "-1959-",
+    "cleanTitle": "1959",
+    "category": "early-century",
+    "events": [
+      {
+        "id": "event-1959-tas-xmen-one-mans-worth",
+        "eraId": "era-_1959_",
+        "eraTitle": "1959",
+        "mediaKey": "x-men-tas-4",
+        "mediaTitle": "X-Men: The Animated Series (Season 4)",
+        "mediaType": "series",
+        "mediaPhase": "Marvel Television",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+        "branchDetails": "Temporal Assassination Attempt on Young Charles Xavier",
+        "rawClasses": [
+          "x-men-tas-4"
+        ],
+        "rawHtml": "<p>Manipulated by the genocidal Master Mold in a devastated future, temporal renegades <strong class=\"trevor-fitzroy\">Trevor Fitzroy</strong> and Bantam travel backward through time to Oxford, England in 1959. Their catastrophic mission: assassinate a twenty-year-old <strong class=\"charles-xavier\">Charles Xavier</strong> before he can conceptualize his dream of human-mutant peaceful coexistence or found the X-Men. In the original timeline, Fitzroy successfully vaporizes the young telepath in a roadside ambush, triggering a localized temporal shockwave that completely rewrites history into a dystopian alternate 1995 where Magneto leads a desperate mutant resistance against Nimrod and Sentinels.</p><p>Refusing to let reality crumble, alternate versions of <strong class=\"logan-wolverine\">Wolverine</strong> and <strong class=\"storm-ororo-munroe\">Storm</strong> ally with time-traveling siblings <strong class=\"bishop-lucas-bishop\">Bishop</strong> and Shard. Entering the temporal conduit, they arrive in 1959 moments before the fatal blast, intercepting Fitzroy's plasma strike and shielding young Xavier. Banishing Fitzroy back into the time stream, they restore Xavier's survival, repairing the Sacred Timeline of Earth-92131.</p>",
+        "paragraphs": [
+          "Manipulated by the genocidal Master Mold in a devastated future, temporal renegades <strong class=\"trevor-fitzroy\">Trevor Fitzroy</strong> and Bantam travel backward through time to Oxford, England in 1959. Their catastrophic mission: assassinate a twenty-year-old <strong class=\"charles-xavier\">Charles Xavier</strong> before he can conceptualize his dream of human-mutant peaceful coexistence or found the X-Men. In the original timeline, Fitzroy successfully vaporizes the young telepath in a roadside ambush, triggering a localized temporal shockwave that completely rewrites history into a dystopian alternate 1995 where Magneto leads a desperate mutant resistance against Nimrod and Sentinels.",
+          "Refusing to let reality crumble, alternate versions of <strong class=\"logan-wolverine\">Wolverine</strong> and <strong class=\"storm-ororo-munroe\">Storm</strong> ally with time-traveling siblings <strong class=\"bishop-lucas-bishop\">Bishop</strong> and Shard. Entering the temporal conduit, they arrive in 1959 moments before the fatal blast, intercepting Fitzroy's plasma strike and shielding young Xavier. Banishing Fitzroy back into the time stream, they restore Xavier's survival, repairing the Sacred Timeline of Earth-92131."
+        ],
+        "characters": [
+          "charles-xavier",
+          "logan-wolverine",
+          "storm-ororo-munroe",
+          "bishop-lucas-bishop",
+          "trevor-fitzroy"
+        ],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "Trevor Fitzroy's 1959 Temporal Assassination Attempt",
+          "Defense of 20-Year-Old Charles Xavier in Oxford",
+          "Preservation of Xavier's Dream and the X-Men Timeline"
+        ],
+        "locations": [
+          {
+            "name": "Oxford University Campus & Country Road",
+            "cityOrRegion": "Oxford",
+            "countryOrRealm": "Great Britain",
+            "planet": "Earth-92131",
+            "celestialSystem": "solar-system",
+            "coordinates": [
+              51.752,
+              -1.2577
+            ],
+            "characters": [
+              "charles-xavier",
+              "logan-wolverine",
+              "storm-ororo-munroe",
+              "bishop-lucas-bishop",
+              "trevor-fitzroy"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -5142,6 +5422,66 @@ export const timelineEras: EraGroup[] = [
         ]
       },
       {
+        "id": "event-1994-tas-3-dark-phoenix",
+        "eraId": "era-_1994_",
+        "eraTitle": "1994",
+        "mediaKey": "x-men-tas-3",
+        "mediaTitle": "X-Men: The Animated Series (Season 3)",
+        "mediaType": "series",
+        "mediaPhase": "Marvel Television",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+        "branchDetails": "The Dark Phoenix Saga: Hellfire Manipulation, Cosmic Devourer & Lunar Trial",
+        "rawClasses": [
+          "x-men-tas-3"
+        ],
+        "rawHtml": "<p>Mental illusions orchestrated by psionic manipulator Jason Wyngarde (Mastermind) and the Hellfire Club (Sebastian Shaw and Emma Frost) warp Jean Grey's perception, transforming her into the decadent Black Queen. Breaking free from Wyngarde's psychic shackles in fury, the cosmic entity within Jean erupts into an uncontrollable apocalyptic form: <strong class=\"jean-grey\">The Dark Phoenix</strong>. Overpowering the entire X-Men roster, Dark Phoenix blasts through the stratosphere into deep space, consuming the incandescent core of the D'Bari star system and threatening to annihilate galactic reality.</p><p>Interstellar alarms summon Shi'ar Empress <strong class=\"lilandra-neramani\">Lilandra</strong>, who decrees Jean's summary execution to preserve cosmic life. Demanding the right of honor, <strong class=\"charles-xavier\">Professor X</strong> challenges Lilandra to the ancient Shi'ar duel of honor—a trial by combat hosted within the breathable ruins of the Kree Empire's <strong>Blue Area of the Moon</strong>. The X-Men battle desperately against <strong class=\"gladiator-kallark\">Gladiator</strong> and the Shi'ar Imperial Guard. As the blazing cosmic raptor overwhelms Jean's humanity once more, <strong class=\"cyclops-scott-summers\">Cyclops</strong> and Wolverine watch in heartbreak as Jean regains lucid control for one final second, manually triggering an ancient Kree particle beam cannon to disintegrate her physical body, willingly sacrificing herself to extinguish the Dark Phoenix and save the universe.</p>",
+        "paragraphs": [
+          "Mental illusions orchestrated by psionic manipulator Jason Wyngarde (Mastermind) and the Hellfire Club (Sebastian Shaw and Emma Frost) warp Jean Grey's perception, transforming her into the decadent Black Queen. Breaking free from Wyngarde's psychic shackles in fury, the cosmic entity within Jean erupts into an uncontrollable apocalyptic form: <strong class=\"jean-grey\">The Dark Phoenix</strong>. Overpowering the entire X-Men roster, Dark Phoenix blasts through the stratosphere into deep space, consuming the incandescent core of the D'Bari star system and threatening to annihilate galactic reality.",
+          "Interstellar alarms summon Shi'ar Empress <strong class=\"lilandra-neramani\">Lilandra</strong>, who decrees Jean's summary execution to preserve cosmic life. Demanding the right of honor, <strong class=\"charles-xavier\">Professor X</strong> challenges Lilandra to the ancient Shi'ar duel of honor—a trial by combat hosted within the breathable ruins of the Kree Empire's Blue Area of the Moon. The X-Men battle desperately against <strong class=\"gladiator-kallark\">Gladiator</strong> and the Shi'ar Imperial Guard. As the blazing cosmic raptor overwhelms Jean's humanity once more, <strong class=\"cyclops-scott-summers\">Cyclops</strong> and Wolverine watch in heartbreak as Jean regains lucid control for one final second, manually triggering an ancient Kree particle beam cannon to disintegrate her physical body, willingly sacrificing herself to extinguish the Dark Phoenix and save the universe."
+        ],
+        "characters": [
+          "jean-grey",
+          "cyclops-scott-summers",
+          "charles-xavier",
+          "logan-wolverine",
+          "lilandra-neramani",
+          "gladiator-kallark"
+        ],
+        "stones": [],
+        "deaths": [
+          "Jean Grey (Physical Vessel Dissolved; Spirit Preserved by the Phoenix)"
+        ],
+        "mcuHighlights": [
+          "Hellfire Club Manipulation & The Genesis of Dark Phoenix",
+          "Consumption of the D'Bari Star System in Deep Space",
+          "Trial by Combat on the Blue Area of the Moon against Gladiator",
+          "Jean Grey's Ultimate Cosmic Sacrifice to Save the Universe"
+        ],
+        "locations": [
+          {
+            "name": "Blue Area of the Moon (Kree Ancient Ruins)",
+            "cityOrRegion": "Mare Tranquillitatis / Lunar Ruins",
+            "countryOrRealm": "The Moon",
+            "planet": "The Moon",
+            "celestialSystem": "solar-system",
+            "coordinates": [
+              0.674,
+              23.472
+            ],
+            "characters": [
+              "jean-grey",
+              "cyclops-scott-summers",
+              "charles-xavier",
+              "logan-wolverine",
+              "lilandra-neramani",
+              "gladiator-kallark"
+            ]
+          }
+        ]
+      },
+      {
         "id": "event-1994-tas-ironman-force-works",
         "eraId": "era-_1994_",
         "eraTitle": "1994",
@@ -6050,6 +6390,58 @@ export const timelineEras: EraGroup[] = [
               ]
       },
       {
+              "id": "event-1995-tas-ironman-hands-of-the-mandarin",
+              "eraId": "era-_1995_",
+              "eraTitle": "1995",
+              "mediaKey": "iron-man-tas-2",
+              "mediaTitle": "Iron Man: The Animated Series (Season 2)",
+              "mediaType": "series",
+              "mediaPhase": "Marvel Television",
+              "isAlternativeTimeline": true,
+              "timelineType": "multiverse-alternate",
+              "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+              "branchDetails": "Hands of the Mandarin: The Heart of Darkness Global Blackout & Asian Citadel Climax",
+              "rawClasses": [
+                      "iron-man-tas-2"
+              ],
+              "rawHtml": "<p>In the catastrophic finale of his world-conquering crusade, warlord <strong class=\"mandarin\">The Mandarin</strong> unleashes the primordial Makluan alien relic known as the <strong>Heart of Darkness</strong>. The entity generates a planetary anti-technological dampening pulse, instantly neutralizing all electrical grids, communications, combustion engines, and computerized weaponry across Earth, plunging human civilization into medieval darkness. Stripped of his high-tech armor functions, industrialist <strong class=\"tony-stark-iron-man\">Tony Stark</strong> rallies <strong class=\"james-rhodes-war-machine\">James Rhodes (War Machine)</strong> and Force Works.</p><p>Equipping an archaic, non-electronic kinetic exoskeleton, Tony and his allies storm the Mandarin's mountain fortress in China. In a brutal hand-to-hand duel, Stark engages the Mandarin directly beneath the coils of alien dragon Fin Fang Foom and his Makluan brood. Overloading the Heart of Darkness with concentrated kinetic strikes, Stark shatters the anti-technology matrix, causing the energy vortex to sever the Mandarin's Ten Rings and scatter them across the planet, restoring global power and saving civilization.</p>",
+              "paragraphs": [
+                      "In the catastrophic finale of his world-conquering crusade, warlord <strong class=\"mandarin\">The Mandarin</strong> unleashes the primordial Makluan alien relic known as the Heart of Darkness. The entity generates a planetary anti-technological dampening pulse, instantly neutralizing all electrical grids, communications, combustion engines, and computerized weaponry across Earth, plunging human civilization into medieval darkness. Stripped of his high-tech armor functions, industrialist <strong class=\"tony-stark-iron-man\">Tony Stark</strong> rallies <strong class=\"james-rhodes-war-machine\">James Rhodes (War Machine)</strong> and Force Works.",
+                      "Equipping an archaic, non-electronic kinetic exoskeleton, Tony and his allies storm the Mandarin's mountain fortress in China. In a brutal hand-to-hand duel, Stark engages the Mandarin directly beneath the coils of alien dragon Fin Fang Foom and his Makluan brood. Overloading the Heart of Darkness with concentrated kinetic strikes, Stark shatters the anti-technology matrix, causing the energy vortex to sever the Mandarin's Ten Rings and scatter them across the planet, restoring global power and saving civilization."
+              ],
+              "characters": [
+                      "tony-stark-iron-man",
+                      "james-rhodes-war-machine",
+                      "mandarin"
+              ],
+              "stones": [],
+              "deaths": [],
+              "mcuHighlights": [
+                      "Heart of Darkness Activates Planetary Anti-Tech Blackout",
+                      "Force Works Infiltration of the Mandarin's Chinese Mountain Citadel",
+                      "Tony Stark's Hand-to-Hand Duel against the Mandarin",
+                      "Destruction of the Makluan Matrix & Dispersal of the Ten Rings"
+              ],
+              "locations": [
+                      {
+                              "name": "The Mandarin's Mountain Citadel & Dragon Chamber",
+                              "cityOrRegion": "Valley of Spirits / Yunnan Province",
+                              "countryOrRealm": "China",
+                              "planet": "Earth-92131",
+                              "celestialSystem": "solar-system",
+                              "coordinates": [
+                                      25.0453,
+                                      102.7097
+                              ],
+                              "characters": [
+                                      "tony-stark-iron-man",
+                                      "james-rhodes-war-machine",
+                                      "mandarin"
+                              ]
+                      }
+              ]
+      },
+      {
               "id": "event-1995-tas-ff-inhumans-saga",
               "eraId": "era-_1995_",
               "eraTitle": "1995",
@@ -6143,48 +6535,216 @@ export const timelineEras: EraGroup[] = [
               ]
       },
       {
-              "id": "event-1995-tas-xmen-altered-timelines",
+              "id": "event-1995-tas-ff-doomsday-galactus",
               "eraId": "era-_1995_",
               "eraTitle": "1995",
-              "mediaKey": "x-men-tas-4",
-              "mediaTitle": "X-Men: The Animated Series (Season 4)",
+              "mediaKey": "fantastic-four-tas-2",
+              "mediaTitle": "Fantastic Four: The Animated Series (Season 2)",
               "mediaType": "series",
               "mediaPhase": "Marvel Television",
               "isAlternativeTimeline": true,
               "timelineType": "multiverse-alternate",
               "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+              "branchDetails": "Doomsday Cosmic Glider Siege & Ghost Rider's Penance Stare on Galactus",
               "rawClasses": [
-                      "x-men-tas-4"
+                      "fantastic-four-tas-2"
               ],
-              "rawHtml": "<p>Cyborg assassin Trevor Fitzroy travels back in time to 1959 to assassinate young Charles Xavier, causing the prime timeline to fracture into an apocalyptic dystopia where Magneto commands the human-mutant resistance against an army of master Sentinels led by Nimrod. Time-traveler <strong class=\"bishop-lucas\">Bishop</strong> and his sister Shard restore the timeline by guarding young Xavier in Egypt. Back in Scotland, Moira MacTaggert's reality-warping mutant son <strong class=\"proteus-kevin-mactaggert\">Kevin MacTaggert (Proteus)</strong> escapes Muir Island, bending buildings and laws of physics across Edinburgh before Wolverine and Beast compel him to recognize the devastation he leaves in his wake.</p>",
+              "rawHtml": "<p>Luring the noble <strong class=\"silver-surfer\">Silver Surfer</strong> into an electromagnetic dampening chamber beneath Castle Doom, monarch <strong class=\"victor-von-doom\">Doctor Doom</strong> siphons the alien herald's <strong>Power Cosmic</strong> into a biomechanical harness. Wielding godlike omnipotence and a silvery energy glider, Doom descends upon Manhattan, neutralizing the Fantastic Four's defenses and attempting to reshape the world. Recognizing Doom's hubris, Reed Richards rigs a global acoustic reflector array that forces Doom beyond the planet's atmospheric thermal barrier, where the cosmic siphon overloads and returns the Power Cosmic to the Surfer.</p><p>Shortly thereafter, cosmic horror strikes when a famished <strong class=\"galactus\">Galactus</strong> returns to Earth's orbit. As human defenses fail, brimstone vigilante <strong class=\"ghost-rider-danny-ketch\">Ghost Rider</strong> materializes, unleashing his devastating <strong>Penance Stare</strong> into the eyes of Galactus. Overwhelmed by the collective agony of every innocent soul consumed across billions of lightyears, the titan collapses in excruciating agony and retreats into the cosmos, while fiery volunteer Frankie Raye is transformed into the cosmic herald Nova to safeguard Earth.</p>",
               "paragraphs": [
-                      "Cyborg assassin Trevor Fitzroy travels back in time to 1959 to assassinate young Charles Xavier, causing the prime timeline to fracture into an apocalyptic dystopia where Magneto commands the human-mutant resistance against an army of master Sentinels led by Nimrod. Time-traveler <strong class=\"bishop-lucas\">Bishop</strong> and his sister Shard restore the timeline by guarding young Xavier in Egypt. Back in Scotland, Moira MacTaggert's reality-warping mutant son <strong class=\"proteus-kevin-mactaggert\">Kevin MacTaggert (Proteus)</strong> escapes Muir Island, bending buildings and laws of physics across Edinburgh before Wolverine and Beast compel him to recognize the devastation he leaves in his wake."
+                      "Luring the noble <strong class=\"silver-surfer\">Silver Surfer</strong> into an electromagnetic dampening chamber beneath Castle Doom, monarch <strong class=\"victor-von-doom\">Doctor Doom</strong> siphons the alien herald's Power Cosmic into a biomechanical harness. Wielding godlike omnipotence and a silvery energy glider, Doom descends upon Manhattan, neutralizing the Fantastic Four's defenses and attempting to reshape the world. Recognizing Doom's hubris, Reed Richards rigs a global acoustic reflector array that forces Doom beyond the planet's atmospheric thermal barrier, where the cosmic siphon overloads and returns the Power Cosmic to the Surfer.",
+                      "Shortly thereafter, cosmic horror strikes when a famished <strong class=\"galactus\">Galactus</strong> returns to Earth's orbit. As human defenses fail, brimstone vigilante <strong class=\"ghost-rider-danny-ketch\">Ghost Rider</strong> materializes, unleashing his devastating Penance Stare into the eyes of Galactus. Overwhelmed by the collective agony of every innocent soul consumed across billions of lightyears, the titan collapses in excruciating agony and retreats into the cosmos, while fiery volunteer Frankie Raye is transformed into the cosmic herald Nova to safeguard Earth."
               ],
               "characters": [
-                      "bishop-lucas",
-                      "charles-xavier",
-                      "logan-wolverine",
-                      "erik-lehnsherr-magneto",
-                      "proteus-kevin-mactaggert"
+                      "victor-von-doom",
+                      "silver-surfer",
+                      "galactus",
+                      "ghost-rider-danny-ketch",
+                      "reed-richards",
+                      "sue-storm"
               ],
               "stones": [],
-              "deaths": [
-                      "proteus-kevin-mactaggert"
-              ],
+              "deaths": [],
               "mcuHighlights": [
-                      "One Man's Worth Timeline Paradox and Nimrod War",
-                      "Bishop & Shard Temporal Restoration",
-                      "Proteus Reality-Warping Rampage in Scotland"
+                      "Doctor Doom Siphons the Power Cosmic & The Silver Surfer Siege",
+                      "Reed Richards' Stratospheric Thermal Barrier Counter-Measure",
+                      "Ghost Rider's Legendary Penance Stare Defeats Galactus",
+                      "Frankie Raye Becomes Nova to Safeguard Earth's Biosphere"
               ],
               "locations": [
                       {
-                              "name": "Muir Island Research Complex & Edinburgh",
-                              "cityOrRegion": "Highlands",
-                              "countryOrRealm": "Scotland",
+                              "name": "Castle Doom & Manhattan Upper Atmosphere",
+                              "cityOrRegion": "Latveria & Manhattan, New York",
+                              "countryOrRealm": "Latveria / United States",
                               "planet": "Earth-92131",
-                              "celestialSystem": "solar-system"
+                              "celestialSystem": "solar-system",
+                              "coordinates": [
+                                      40.7128,
+                                      -74.006
+                              ],
+                              "characters": [
+                                      "victor-von-doom",
+                                      "silver-surfer",
+                                      "galactus",
+                                      "ghost-rider-danny-ketch",
+                                      "reed-richards",
+                                      "sue-storm"
+                              ]
                       }
               ]
+      },
+      {
+        "id": "event-1995-tas-xmen-altered-timelines",
+        "eraId": "era-_1995_",
+        "eraTitle": "1995",
+        "mediaKey": "x-men-tas-4",
+        "mediaTitle": "X-Men: The Animated Series (Season 4)",
+        "mediaType": "series",
+        "mediaPhase": "Marvel Television",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+        "rawClasses": [
+          "x-men-tas-4"
+        ],
+        "rawHtml": "<p>Following the temporal assassination attempt in 1959, the prime timeline briefly fractures into an alternate 1995 apocalyptic dystopia where a heroic <strong class=\"erik-lehnsherr\">Magneto</strong> leads the surviving mutant resistance alongside battle-hardened variants of Wolverine and Storm against legionnaires of Nimrod and Master Mold Sentinels, until temporal travelers Bishop and Shard rectify the past. Concurrently in Scotland, Moira MacTaggert's reality-warping mutant son <strong class=\"proteus-kevin-mactaggert\">Kevin MacTaggert (Proteus)</strong> escapes containment on Muir Island, distorting structures and physics across Edinburgh before Wolverine and Beast compel him to confront his grief and dissolve his rampage.</p>",
+        "paragraphs": [
+          "Following the temporal assassination attempt in 1959, the prime timeline briefly fractures into an alternate 1995 apocalyptic dystopia where a heroic <strong class=\"erik-lehnsherr\">Magneto</strong> leads the surviving mutant resistance alongside battle-hardened variants of Wolverine and Storm against legionnaires of Nimrod and Master Mold Sentinels, until temporal travelers Bishop and Shard rectify the past. Concurrently in Scotland, Moira MacTaggert's reality-warping mutant son <strong class=\"proteus-kevin-mactaggert\">Kevin MacTaggert (Proteus)</strong> escapes containment on Muir Island, distorting structures and physics across Edinburgh before Wolverine and Beast compel him to confront his grief and dissolve his rampage."
+        ],
+        "characters": [
+          "bishop-lucas-bishop",
+          "charles-xavier",
+          "logan-wolverine",
+          "erik-lehnsherr",
+          "proteus-kevin-mactaggert"
+        ],
+        "stones": [],
+        "deaths": [
+          "proteus-kevin-mactaggert"
+        ],
+        "mcuHighlights": [
+          "One Man's Worth Alternate 1995 Timeline Resistance",
+          "Bishop & Shard Timeline Safeguard",
+          "Proteus Reality-Warping Rampage Across Edinburgh"
+        ],
+        "locations": [
+          {
+            "name": "Muir Island Research Complex & Edinburgh",
+            "cityOrRegion": "Highlands",
+            "countryOrRealm": "Scotland",
+            "planet": "Earth-92131",
+            "celestialSystem": "solar-system"
+          }
+        ]
+      },
+      {
+        "id": "event-1995-tas-4-sanctuary-asteroid-m",
+        "eraId": "era-_1995_",
+        "eraTitle": "1995",
+        "mediaKey": "x-men-tas-4",
+        "mediaTitle": "X-Men: The Animated Series (Season 4)",
+        "mediaType": "series",
+        "mediaPhase": "Marvel Television",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+        "branchDetails": "Sanctuary: Magneto's Orbital Haven on Asteroid M & The Acolyte Betrayal",
+        "rawClasses": [
+          "x-men-tas-4"
+        ],
+        "rawHtml": "<p>Determined to offer mutants permanent emancipation from human persecution, <strong class=\"erik-lehnsherr\">Magneto</strong> marshals his resources in orbit, constructing the sovereign celestial haven known as <strong>Asteroid M</strong>. Welcoming mutant refugees from across the globe, Magneto's vision of peaceful orbital sanctuary is subverted from within by his duplicitous lieutenant <strong class=\"fabian-cortez\">Fabian Cortez</strong>. Craving total war against humanity, Cortez secretly fires nuclear warheads at human metropolises while framing humanity for a torpedo strike against Asteroid M, leaving Magneto trapped beneath collapsing structural bulkheads.</p><p>The X-Men deploy to Asteroid M aboard the Blackbird to disarm the warheads and uncover Cortez's deception. Rescued from the wreckage by <strong class=\"charles-xavier\">Charles Xavier</strong> and <strong class=\"beast-hank-mccoy\">Beast</strong>, Magneto discovers Cortez's betrayal and uses his magnetic mastery to alter the trajectories of the nuclear warheads, sacrificing himself to pilot the doomed orbital citadel into the deep exosphere away from Earth. While Cortez flees, Magneto's noble sacrifice inspires reverence across the mutant diaspora.</p>",
+        "paragraphs": [
+          "Determined to offer mutants permanent emancipation from human persecution, <strong class=\"erik-lehnsherr\">Magneto</strong> marshals his resources in orbit, constructing the sovereign celestial haven known as Asteroid M. Welcoming mutant refugees from across the globe, Magneto's vision of peaceful orbital sanctuary is subverted from within by his duplicitous lieutenant <strong class=\"fabian-cortez\">Fabian Cortez</strong>. Craving total war against humanity, Cortez secretly fires nuclear warheads at human metropolises while framing humanity for a torpedo strike against Asteroid M, leaving Magneto trapped beneath collapsing structural bulkheads.",
+          "The X-Men deploy to Asteroid M aboard the Blackbird to disarm the warheads and uncover Cortez's deception. Rescued from the wreckage by <strong class=\"charles-xavier\">Charles Xavier</strong> and <strong class=\"beast-hank-mccoy\">Beast</strong>, Magneto discovers Cortez's betrayal and uses his magnetic mastery to alter the trajectories of the nuclear warheads, sacrificing himself to pilot the doomed orbital citadel into the deep exosphere away from Earth. While Cortez flees, Magneto's noble sacrifice inspires reverence across the mutant diaspora."
+        ],
+        "characters": [
+          "erik-lehnsherr",
+          "fabian-cortez",
+          "charles-xavier",
+          "logan-wolverine",
+          "beast-hank-mccoy"
+        ],
+        "stones": [],
+        "deaths": [
+          "Magneto (Presumed Lost in Orbital Descent)"
+        ],
+        "mcuHighlights": [
+          "Establishment of Asteroid M as Sovereign Mutant Orbital Haven",
+          "Fabian Cortez's Treason & Nuclear Sabotage",
+          "Magneto's Cosmic Sacrifice to Protect Earth & Humanity"
+        ],
+        "locations": [
+          {
+            "name": "Asteroid M (Mutant Orbital Haven)",
+            "cityOrRegion": "Low Earth Orbit",
+            "countryOrRealm": "Space",
+            "planet": "Earth-92131 Orbit",
+            "celestialSystem": "solar-system",
+            "coordinates": [
+              28.5721,
+              -80.648
+            ],
+            "characters": [
+              "erik-lehnsherr",
+              "fabian-cortez",
+              "charles-xavier",
+              "logan-wolverine",
+              "beast-hank-mccoy"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "event-1995-tas-4-family-ties",
+        "eraId": "era-_1995_",
+        "eraTitle": "1995",
+        "mediaKey": "x-men-tas-4",
+        "mediaTitle": "X-Men: The Animated Series (Season 4)",
+        "mediaType": "series",
+        "mediaPhase": "Marvel Television",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+        "branchDetails": "Family Ties: Magneto, Quicksilver and Scarlet Witch at Mount Wundagore",
+        "rawClasses": [
+          "x-men-tas-4"
+        ],
+        "rawHtml": "<p>Driven by urgent distress calls from Transia, speedster <strong class=\"pietro\">Pietro Maximoff (Quicksilver)</strong> and reality-manipulator <strong class=\"scarlet-witch\">Wanda Maximoff (Scarlet Witch)</strong> journey to the mystical slopes of <strong>Mount Wundagore</strong> to unravel the hidden mystery of their parentage. Captured by the genetic zealot <strong>High Evolutionary</strong> and his anthropomorphic New Men, the twins are subjected to biological analysis at the Wundagore Citadel. Alerted to the anomaly, <strong class=\"erik-lehnsherr\">Magneto</strong> and <strong class=\"logan-wolverine\">Wolverine</strong> penetrate the mountain fortress.</p><p>During a fierce confrontation against the Evolutionary's bio-beasts, bovine midwife Bova reveals an earth-shattering secret: Wanda and Pietro are the biological children of Magneto and his late wife Magda, hidden at Wundagore after her tragic death. Overwhelmed by grief and paternal love, Magneto unites with his long-lost children to overthrow the High Evolutionary's experiments, forever altering the emotional landscape of the Master of Magnetism.</p>",
+        "paragraphs": [
+          "Driven by urgent distress calls from Transia, speedster <strong class=\"pietro\">Pietro Maximoff (Quicksilver)</strong> and reality-manipulator <strong class=\"scarlet-witch\">Wanda Maximoff (Scarlet Witch)</strong> journey to the mystical slopes of Mount Wundagore to unravel the hidden mystery of their parentage. Captured by the genetic zealot High Evolutionary and his anthropomorphic New Men, the twins are subjected to biological analysis at the Wundagore Citadel. Alerted to the anomaly, <strong class=\"erik-lehnsherr\">Magneto</strong> and <strong class=\"logan-wolverine\">Wolverine</strong> penetrate the mountain fortress.",
+          "During a fierce confrontation against the Evolutionary's bio-beasts, bovine midwife Bova reveals an earth-shattering secret: Wanda and Pietro are the biological children of Magneto and his late wife Magda, hidden at Wundagore after her tragic death. Overwhelmed by grief and paternal love, Magneto unites with his long-lost children to overthrow the High Evolutionary's experiments, forever altering the emotional landscape of the Master of Magnetism."
+        ],
+        "characters": [
+          "erik-lehnsherr",
+          "pietro",
+          "scarlet-witch",
+          "logan-wolverine"
+        ],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "Revelation of Quicksilver & Scarlet Witch as Magneto's Twin Children",
+          "High Evolutionary & New Men Genetic Citadel at Mount Wundagore",
+          "Paternal Awakening of the Master of Magnetism"
+        ],
+        "locations": [
+          {
+            "name": "Mount Wundagore Genetic Citadel & Bova's Cottage",
+            "cityOrRegion": "Transia",
+            "countryOrRealm": "Eastern Europe",
+            "planet": "Earth-92131",
+            "celestialSystem": "solar-system",
+            "coordinates": [
+              45.45,
+              25.35
+            ],
+            "characters": [
+              "erik-lehnsherr",
+              "pietro",
+              "scarlet-witch",
+              "logan-wolverine"
+            ]
+          }
+        ]
       },
       {
               "id": "event-1995-tas-xmen-beyond-good-and-evil",
@@ -6452,7 +7012,62 @@ export const timelineEras: EraGroup[] = [
               ]
           },
           {
-              "id": "event-1996-tas-xmen-phalanx-wwii",
+              "id": "event-1996-tas-spiderman-turning-point",
+              "eraId": "era-_1996_",
+              "eraTitle": "1996",
+              "mediaKey": "spider-man-tas-3",
+              "mediaTitle": "Spider-Man: The Animated Series (Season 3)",
+              "mediaType": "series",
+              "mediaPhase": "Marvel Television",
+              "isAlternativeTimeline": true,
+              "timelineType": "multiverse-alternate",
+              "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+              "branchDetails": "Turning Point: Green Goblin, The Time Dilator & The Fall of Mary Jane Watson",
+              "rawClasses": [
+                  "spider-man-tas-3"
+              ],
+              "rawHtml": "<p>Armed with knowledge of Spider-Man's secret identity, an unhinged <strong class=\"norman-osborn\">Norman Osborn (Green Goblin)</strong> terrorizes Peter Parker's loved ones, abducting <strong class=\"mary-jane-watson\">Mary Jane Watson</strong> to the summit of the George Washington Bridge. Brandishing the experimental Stark/Neogenic <strong>Time Dilator</strong> portal device, the Goblin engages <strong class=\"peter-parker-spider-man\">Spider-Man</strong> in a desperate aerial duel above the East River.</p><p>During the crossfire, the Time Dilator triggers an uncontrollable interdimensional singularity. Mary Jane loses her footing and plunges over the bridge suspension cables into the swirling vortex, vanishing into trans-dimensional limbo before Peter's webbing can reach her. Enraged and brokenhearted, Spider-Man damages the Goblin's glider engine, causing Osborn to be suctioned through the unstable rift himself before the singularity collapses. Haunted by the catastrophic loss of his soulmate, Peter vows to scour all dimensions of reality to bring Mary Jane back.</p>",
+              "paragraphs": [
+                  "Armed with knowledge of Spider-Man's secret identity, an unhinged <strong class=\"norman-osborn\">Norman Osborn (Green Goblin)</strong> terrorizes Peter Parker's loved ones, abducting <strong class=\"mary-jane-watson\">Mary Jane Watson</strong> to the summit of the George Washington Bridge. Brandishing the experimental Stark/Neogenic Time Dilator portal device, the Goblin engages <strong class=\"peter-parker-spider-man\">Spider-Man</strong> in a desperate aerial duel above the East River.",
+                  "During the crossfire, the Time Dilator triggers an uncontrollable interdimensional singularity. Mary Jane loses her footing and plunges over the bridge suspension cables into the swirling vortex, vanishing into trans-dimensional limbo before Peter's webbing can reach her. Enraged and brokenhearted, Spider-Man damages the Goblin's glider engine, causing Osborn to be suctioned through the unstable rift himself before the singularity collapses. Haunted by the catastrophic loss of his soulmate, Peter vows to scour all dimensions of reality to bring Mary Jane back."
+              ],
+              "characters": [
+                  "peter-parker-spider-man",
+                  "norman-osborn",
+                  "mary-jane-watson"
+              ],
+              "stones": [],
+              "deaths": [
+                  "Mary Jane Watson (Lost in Interdimensional Vortex)",
+                  "Norman Osborn (Banished to Dimensional Limbo)"
+              ],
+              "mcuHighlights": [
+                  "Green Goblin Discovers Peter Parker's Secret Identity",
+                  "Tragic Duel on the George Washington Bridge",
+                  "Mary Jane Watson Banished through the Time Dilator Vortex",
+                  "The Definitive Turning Point of the Earth-92131 Spider-Verse"
+              ],
+              "locations": [
+                  {
+                      "name": "George Washington Bridge & Manhattan Skyline",
+                      "cityOrRegion": "Manhattan, New York",
+                      "countryOrRealm": "United States",
+                      "planet": "Earth-92131",
+                      "celestialSystem": "solar-system",
+                      "coordinates": [
+                          40.8517,
+                          -73.9527
+                      ],
+                      "characters": [
+                          "peter-parker-spider-man",
+                          "norman-osborn",
+                          "mary-jane-watson"
+                      ]
+                  }
+              ]
+          },
+          {
+              "id": "event-1996-tas-xmen-phalanx-covenant",
               "eraId": "era-_1996_",
               "eraTitle": "1996",
               "mediaKey": "x-men-tas-5",
@@ -6465,13 +7080,13 @@ export const timelineEras: EraGroup[] = [
               "rawClasses": [
                   "x-men-tas-5"
               ],
-              "rawHtml": "<p>A techno-organic cybernetic alien collective known as the <strong>Phalanx</strong> invades Earth, assimilating human and mutant DNA to build a planetary hive mind. With the core X-Men captured, <strong class=\"hank-mccoy-beast\">Beast</strong> recruits unlikely allies: mutant sovereign <strong class=\"erik-lehnsherr-magneto\">Magneto</strong>, mutant inventor Forge, and extraterrestrial warrior Warlock. Together, they deploy a computer virus into the hive spire, eradicating the Phalanx's biological assimilation. In a parallel historic retrospective, Logan recalls his 1944 wartime operation in occupied France alongside <strong class=\"captain-america\">Captain America</strong>, liberating a Nazi laboratory from Red Skull.</p>",
+              "rawHtml": "<p>A techno-organic cybernetic alien collective known as the <strong>Phalanx</strong> invades Earth, assimilating human and mutant DNA to build a planetary hive mind. With the core X-Men captured and infected, <strong class=\"beast-hank-mccoy\">Beast</strong> recruits unlikely allies: mutant sovereign <strong class=\"erik-lehnsherr\">Magneto</strong>, mutant inventor Forge, and the compassionate techno-organic runaway Warlock. Infiltrating the central spire on Muir Island, the strike team synthesizes a biological counter-virus that purges the cybernetic pathogen worldwide, liberating the X-Men and severing the Phalanx's extraterrestrial link.</p>",
               "paragraphs": [
-                  "A techno-organic cybernetic alien collective known as the <strong>Phalanx</strong> invades Earth, assimilating human and mutant DNA to build a planetary hive mind. With the core X-Men captured, <strong class=\"hank-mccoy-beast\">Beast</strong> recruits unlikely allies: mutant sovereign <strong class=\"erik-lehnsherr-magneto\">Magneto</strong>, mutant inventor Forge, and extraterrestrial warrior Warlock. Together, they deploy a computer virus into the hive spire, eradicating the Phalanx's biological assimilation. In a parallel historic retrospective, Logan recalls his 1944 wartime operation in occupied France alongside <strong class=\"captain-america\">Captain America</strong>, liberating a Nazi laboratory from Red Skull."
+                  "A techno-organic cybernetic alien collective known as the <strong>Phalanx</strong> invades Earth, assimilating human and mutant DNA to build a planetary hive mind. With the core X-Men captured and infected, <strong class=\"beast-hank-mccoy\">Beast</strong> recruits unlikely allies: mutant sovereign <strong class=\"erik-lehnsherr\">Magneto</strong>, mutant inventor Forge, and the compassionate techno-organic runaway Warlock. Infiltrating the central spire on Muir Island, the strike team synthesizes a biological counter-virus that purges the cybernetic pathogen worldwide, liberating the X-Men and severing the Phalanx's extraterrestrial link."
               ],
               "characters": [
-                  "hank-mccoy-beast",
-                  "erik-lehnsherr-magneto",
+                  "beast-hank-mccoy",
+                  "erik-lehnsherr",
                   "logan-wolverine",
                   "charles-xavier"
               ],
@@ -6480,7 +7095,7 @@ export const timelineEras: EraGroup[] = [
               "mcuHighlights": [
                   "Global Techno-Organic Phalanx Covenant Incursion",
                   "Beast and Magneto's Unlikely Alliance",
-                  "Wolverine and Captain America's 1944 Wartime Flashback"
+                  "Liberation of the X-Men & Infiltration of the Assimilation Spire"
               ],
               "locations": [
                   {
@@ -6489,6 +7104,62 @@ export const timelineEras: EraGroup[] = [
                       "countryOrRealm": "Scotland",
                       "planet": "Earth-92131",
                       "celestialSystem": "solar-system"
+                  }
+              ]
+          },
+          {
+              "id": "event-1996-tas-xmen-bloodlines",
+              "eraId": "era-_1996_",
+              "eraTitle": "1996",
+              "mediaKey": "x-men-tas-5",
+              "mediaTitle": "X-Men: The Animated Series (Season 5)",
+              "mediaType": "series",
+              "mediaPhase": "Marvel Television",
+              "isAlternativeTimeline": true,
+              "timelineType": "multiverse-alternate",
+              "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+              "branchDetails": "Bloodlines: The Truth of Graydon Creed, Mystique & Nightcrawler's Brotherhood",
+              "rawClasses": [
+                  "x-men-tas-5"
+              ],
+              "rawHtml": "<p>Political anti-mutant fanatic <strong class=\"graydon-creed\">Graydon Creed</strong> launches a genocidal national campaign to outlaw mutants, staging paramilitary raids with the <em>Friends of Humanity</em>. Investigating Creed's biological history, teleporter <strong class=\"nightcrawler-kurt-wagner\">Kurt Wagner (Nightcrawler)</strong> and foster sister <strong class=\"rogue-anna-marie\">Rogue</strong> infiltrate Creed's compound, uncovering hidden birth certificates that link back to rogue shapeshifter <strong class=\"raven-darkholme\">Mystique (Raven Darkhölme)</strong>.</p><p>In a dramatic confrontation above a waterfall, Mystique confesses the agonizing truth: Nightcrawler is her biological son, abandoned as an infant when a terrified Bavarian mob drove her off a cliff. Furthermore, Graydon Creed is her own human son, fathered decades earlier by feral mutant <strong class=\"victor-creed\">Sabretooth (Victor Creed)</strong>. Broadcasting genetic proof on live television, Nightcrawler exposes Creed's absolute hypocrisy, obliterating his political campaign. Rather than seeking vengeance, Kurt forgives his mother and embraces his Christian faith, forging a sacred spiritual bond with Rogue.</p>",
+              "paragraphs": [
+                  "Political anti-mutant fanatic <strong class=\"graydon-creed\">Graydon Creed</strong> launches a genocidal national campaign to outlaw mutants, staging paramilitary raids with the Friends of Humanity. Investigating Creed's biological history, teleporter <strong class=\"nightcrawler-kurt-wagner\">Kurt Wagner (Nightcrawler)</strong> and foster sister <strong class=\"rogue-anna-marie\">Rogue</strong> infiltrate Creed's compound, uncovering hidden birth certificates that link back to rogue shapeshifter <strong class=\"raven-darkholme\">Mystique (Raven Darkhölme)</strong>.",
+                  "In a dramatic confrontation above a waterfall, Mystique confesses the agonizing truth: Nightcrawler is her biological son, abandoned as an infant when a terrified Bavarian mob drove her off a cliff. Furthermore, Graydon Creed is her own human son, fathered decades earlier by feral mutant <strong class=\"victor-creed\">Sabretooth (Victor Creed)</strong>. Broadcasting genetic proof on live television, Nightcrawler exposes Creed's absolute hypocrisy, obliterating his political campaign. Rather than seeking vengeance, Kurt forgives his mother and embraces his Christian faith, forging a sacred spiritual bond with Rogue."
+              ],
+              "characters": [
+                  "nightcrawler-kurt-wagner",
+                  "rogue-anna-marie",
+                  "raven-darkholme",
+                  "graydon-creed",
+                  "victor-creed"
+              ],
+              "stones": [],
+              "deaths": [],
+              "mcuHighlights": [
+                  "Revelation of Nightcrawler as Mystique's Abandoned Biological Son",
+                  "Graydon Creed Exposed as the Biological Son of Sabretooth and Mystique",
+                  "Collapse of the Friends of Humanity Supremacist Campaign",
+                  "Kurt Wagner's Spiritual Forgiveness and Brotherhood with Rogue"
+              ],
+              "locations": [
+                  {
+                      "name": "Friends of Humanity Compound & Bavarian Waterfall Ridge",
+                      "cityOrRegion": "Adirondacks, New York & Bavaria",
+                      "countryOrRealm": "United States / Germany",
+                      "planet": "Earth-92131",
+                      "celestialSystem": "solar-system",
+                      "coordinates": [
+                          43.9,
+                          -74.4
+                      ],
+                      "characters": [
+                          "nightcrawler-kurt-wagner",
+                          "rogue-anna-marie",
+                          "raven-darkholme",
+                          "graydon-creed",
+                          "victor-creed"
+                      ]
                   }
               ]
           }
@@ -6500,6 +7171,66 @@ export const timelineEras: EraGroup[] = [
       "cleanTitle": "1997",
       "category": "golden-age",
       "events": [
+          {
+              "id": "event-1997-tas-spiderman-season-4-black-cat",
+              "eraId": "era-_1997_",
+              "eraTitle": "1997",
+              "mediaKey": "spider-man-tas-4",
+              "mediaTitle": "Spider-Man: The Animated Series (Season 4)",
+              "mediaType": "series",
+              "mediaPhase": "Marvel Television",
+              "isAlternativeTimeline": true,
+              "timelineType": "multiverse-alternate",
+              "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+              "branchDetails": "Partners in Danger: The Genesis of Black Cat, The Vampire War & The Prowler",
+              "rawClasses": [
+                  "spider-man-tas-4"
+              ],
+              "rawHtml": "<p>Desperate to recreate Captain America's Super-Soldier formula, <strong class=\"wilson-fisk-kingpin\">Kingpin</strong> and Dr. Herbert Landon extract the secrets of Project Rebirth from the mind of cat burglar John Hardesky. Targeting his daughter <strong class=\"felicia-hardy\">Felicia Hardy</strong>, Fisk subjects her to genetic enhancement, inadvertently birthing the formidable acrobatic champion <strong>The Black Cat</strong>. Partnering with <strong class=\"peter-parker-spider-man\">Spider-Man</strong>, Black Cat embraces heroics to dismantle Kingpin's black-market operations across Manhattan.</p><p>The criminal underworld descends into chaos as the vampiric pathogen spreads: <strong class=\"michael-morbius\">Morbius the Living Vampire</strong> re-emerges alongside daywalker <strong class=\"blade-eric-brooks\">Blade</strong> and Whistler to destroy the Vampire Queen. Simultaneously, an emotionally shattered Harry Osborn is coerced by psionic hallucinations of his father into terrorizing the city as the second Green Goblin before being contained with the aid of The Punisher. When marginalized inventor <strong class=\"prowler-hobie-brown\">Hobie Brown (The Prowler)</strong> is weaponized by Fisk, Spider-Man helps him reclaim his dignity and turn against Kingpin. The season concludes on a cliffhanger when a disoriented <strong class=\"mary-jane-watson\">Mary Jane Watson</strong> mysteriously re-emerges from the waters near Manhattan with no recollection of her interdimensional disappearance.</p>",
+              "paragraphs": [
+                  "Desperate to recreate Captain America's Super-Soldier formula, <strong class=\"wilson-fisk-kingpin\">Kingpin</strong> and Dr. Herbert Landon extract the secrets of Project Rebirth from the mind of cat burglar John Hardesky. Targeting his daughter <strong class=\"felicia-hardy\">Felicia Hardy</strong>, Fisk subjects her to genetic enhancement, inadvertently birthing the formidable acrobatic champion The Black Cat. Partnering with <strong class=\"peter-parker-spider-man\">Spider-Man</strong>, Black Cat embraces heroics to dismantle Kingpin's black-market operations across Manhattan.",
+                  "The criminal underworld descends into chaos as the vampiric pathogen spreads: <strong class=\"michael-morbius\">Morbius the Living Vampire</strong> re-emerges alongside daywalker <strong class=\"blade-eric-brooks\">Blade</strong> and Whistler to destroy the Vampire Queen. Simultaneously, an emotionally shattered Harry Osborn is coerced by psionic hallucinations of his father into terrorizing the city as the second Green Goblin before being contained with the aid of The Punisher. When marginalized inventor <strong class=\"prowler-hobie-brown\">Hobie Brown (The Prowler)</strong> is weaponized by Fisk, Spider-Man helps him reclaim his dignity and turn against Kingpin. The season concludes on a cliffhanger when a disoriented <strong class=\"mary-jane-watson\">Mary Jane Watson</strong> mysteriously re-emerges from the waters near Manhattan with no recollection of her interdimensional disappearance."
+              ],
+              "characters": [
+                  "peter-parker-spider-man",
+                  "felicia-hardy",
+                  "blade-eric-brooks",
+                  "michael-morbius",
+                  "wilson-fisk-kingpin",
+                  "prowler-hobie-brown",
+                  "mary-jane-watson"
+              ],
+              "stones": [],
+              "deaths": [],
+              "mcuHighlights": [
+                  "Super-Soldier Genesis of The Black Cat (Felicia Hardy)",
+                  "The Nocturnal Vampire War with Blade, Whistler & Morbius",
+                  "The Redemption of Hobie Brown (The Prowler)",
+                  "The Mysterious Return of Mary Jane Watson from the Waters"
+              ],
+              "locations": [
+                  {
+                      "name": "Kingpin's Fisk Tower & Manhattan Docks",
+                      "cityOrRegion": "Manhattan, New York",
+                      "countryOrRealm": "United States",
+                      "planet": "Earth-92131",
+                      "celestialSystem": "solar-system",
+                      "coordinates": [
+                          40.7589,
+                          -73.9851
+                      ],
+                      "characters": [
+                          "peter-parker-spider-man",
+                          "felicia-hardy",
+                          "blade-eric-brooks",
+                          "michael-morbius",
+                          "wilson-fisk-kingpin",
+                          "prowler-hobie-brown",
+                          "mary-jane-watson"
+                      ]
+                  }
+              ]
+          },
           {
               "id": "event-1997-tas-spiderman-wedding-warriors",
               "eraId": "era-_1997_",
@@ -6514,14 +7245,16 @@ export const timelineEras: EraGroup[] = [
               "rawClasses": [
                   "spider-man-tas-5"
               ],
-              "rawHtml": "<p>In Manhattan, <strong class=\"peter-parker-spider-man\">Peter Parker</strong> and Mary Jane Watson are wed in a joyous ceremony, shortly before discovering clues regarding a Cold War super-weapon. Spider-Man unravels a secret WWII operation: five American champions known as the <strong>Six Forgotten Warriors</strong> (Whizzer, Miss America, Thin Man, Destroyer, Black Marvel) who guarded a Doomsday vortex device. In Chernobyl and Moscow, Kingpin and Russian agents unseal the vortex, releasing <strong class=\"captain-america\">Captain America</strong> and Nazi overlord Red Skull from fifty years of dimensional limbo. Captain America and Spider-Man destroy the Doomsday machine, with Steve Rogers bravely tackling Red Skull back into the vortex to safeguard humanity.</p>",
+              "rawHtml": "<p>In Manhattan, <strong class=\"peter-parker-spider-man\">Peter Parker</strong> and <strong class=\"mary-jane-watson\">Mary Jane Watson</strong> are wed in a joyous ceremony, shortly before discovering clues regarding a Cold War super-weapon. Spider-Man unravels a secret WWII operation: five American champions known as the <strong>Six Forgotten Warriors</strong> (Whizzer, Miss America, Thin Man, Destroyer, Black Marvel) who guarded a Doomsday vortex device. In Chernobyl and Moscow, Kingpin and Russian agents unseal the vortex, releasing <strong class=\"captain-america\">Captain America</strong> and Nazi overlord Red Skull from fifty years of dimensional limbo. Captain America and Spider-Man destroy the Doomsday machine, with Steve Rogers bravely tackling Red Skull back into the vortex to safeguard humanity.</p>",
               "paragraphs": [
-                  "In Manhattan, <strong class=\"peter-parker-spider-man\">Peter Parker</strong> and Mary Jane Watson are wed in a joyous ceremony, shortly before discovering clues regarding a Cold War super-weapon. Spider-Man unravels a secret WWII operation: five American champions known as the <strong>Six Forgotten Warriors</strong> (Whizzer, Miss America, Thin Man, Destroyer, Black Marvel) who guarded a Doomsday vortex device. In Chernobyl and Moscow, Kingpin and Russian agents unseal the vortex, releasing <strong class=\"captain-america\">Captain America</strong> and Nazi overlord Red Skull from fifty years of dimensional limbo. Captain America and Spider-Man destroy the Doomsday machine, with Steve Rogers bravely tackling Red Skull back into the vortex to safeguard humanity."
+                  "In Manhattan, <strong class=\"peter-parker-spider-man\">Peter Parker</strong> and <strong class=\"mary-jane-watson\">Mary Jane Watson</strong> are wed in a joyous ceremony, shortly before discovering clues regarding a Cold War super-weapon. Spider-Man unravels a secret WWII operation: five American champions known as the Six Forgotten Warriors (Whizzer, Miss America, Thin Man, Destroyer, Black Marvel) who guarded a Doomsday vortex device. In Chernobyl and Moscow, Kingpin and Russian agents unseal the vortex, releasing <strong class=\"captain-america\">Captain America</strong> and Nazi overlord Red Skull from fifty years of dimensional limbo. Captain America and Spider-Man destroy the Doomsday machine, with Steve Rogers bravely tackling Red Skull back into the vortex to safeguard humanity."
               ],
               "characters": [
                   "peter-parker-spider-man",
+                  "mary-jane-watson",
                   "wilson-fisk-kingpin",
-                  "chameleon"
+                  "steve-rogers",
+                  "red-skull"
               ],
               "stones": [],
               "deaths": [],
@@ -6537,6 +7270,59 @@ export const timelineEras: EraGroup[] = [
                       "countryOrRealm": "United States / Ukraine",
                       "planet": "Earth-92131",
                       "celestialSystem": "solar-system"
+                  }
+              ]
+          },
+          {
+              "id": "event-1997-tas-spiderman-clone-revelation",
+              "eraId": "era-_1997_",
+              "eraTitle": "1997",
+              "mediaKey": "spider-man-tas-5",
+              "mediaTitle": "Spider-Man: The Animated Series (Season 5)",
+              "mediaType": "series",
+              "mediaPhase": "Marvel Television",
+              "isAlternativeTimeline": true,
+              "timelineType": "multiverse-alternate",
+              "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+              "branchDetails": "The Return of Hydro-Man & The Clone Revelation of Mary Jane Watson",
+              "rawClasses": [
+                  "spider-man-tas-5"
+              ],
+              "rawHtml": "<p>Shortly after Peter Parker and Mary Jane's Manhattan nuptials, hydrokinetic rogue <strong>Hydro-Man (Morris Bench)</strong> resurfaces, fixated with reclaiming Mary Jane. In a shocking escalation, Mary Jane manifests identical hydro-molecular powers, generating water blasts in self-defense. Tracking Hydro-Man to an offshore aquatic bio-dome, <strong class=\"peter-parker-spider-man\">Spider-Man</strong> confronts geneticist Dr. Miles Warren (The Jackal), who confesses a horrifying scientific truth: both Morris Bench and this Mary Jane are unstable cellular clones grown from synthetic water-based clone matrices.</p><p>As their cellular structures rapidly break down from clone degeneration, Hydro-Man evaporates completely into vapor, while Mary Jane professes her eternal love for Peter in tears before her physical body melts away into water. Shattered by the revelation that the woman he married was a tragic clone, Peter Parker learns from Madame Web that the real Mary Jane Watson is still alive, suspended somewhere within the uncharted depths of the multiverse—igniting Peter's resolve for the impending Secret Wars and Spider Wars.</p>",
+              "paragraphs": [
+                  "Shortly after Peter Parker and Mary Jane's Manhattan nuptials, hydrokinetic rogue Hydro-Man (Morris Bench) resurfaces, fixated with reclaiming Mary Jane. In a shocking escalation, Mary Jane manifests identical hydro-molecular powers, generating water blasts in self-defense. Tracking Hydro-Man to an offshore aquatic bio-dome, <strong class=\"peter-parker-spider-man\">Spider-Man</strong> confronts geneticist Dr. Miles Warren (The Jackal), who confesses a horrifying scientific truth: both Morris Bench and this Mary Jane are unstable cellular clones grown from synthetic water-based clone matrices.",
+                  "As their cellular structures rapidly break down from clone degeneration, Hydro-Man evaporates completely into vapor, while Mary Jane professes her eternal love for Peter in tears before her physical body melts away into water. Shattered by the revelation that the woman he married was a tragic clone, Peter Parker learns from Madame Web that the real Mary Jane Watson is still alive, suspended somewhere within the uncharted depths of the multiverse—igniting Peter's resolve for the impending Secret Wars and Spider Wars."
+              ],
+              "characters": [
+                  "peter-parker-spider-man",
+                  "mary-jane-watson"
+              ],
+              "stones": [],
+              "deaths": [
+                  "Hydro-Man (Cellular Clone Degeneration)",
+                  "Mary Jane Watson Clone (Cellular Degeneration)"
+              ],
+              "mcuHighlights": [
+                  "Hydro-Man's Obsessive Resurgence & Aquatic Mutation",
+                  "Dr. Miles Warren's Synthetic Clone Revelation",
+                  "The Tragic Evaporation of the Mary Jane Clone",
+                  "Peter Parker's Multiversal Vow to Find the Real Mary Jane"
+              ],
+              "locations": [
+                  {
+                      "name": "Dr. Miles Warren's Offshore Aquatic Bio-Dome",
+                      "cityOrRegion": "Long Island Sound / Atlantic Coast",
+                      "countryOrRealm": "United States",
+                      "planet": "Earth-92131",
+                      "celestialSystem": "solar-system",
+                      "coordinates": [
+                          40.9,
+                          -73.3
+                      ],
+                      "characters": [
+                          "peter-parker-spider-man",
+                          "mary-jane-watson"
+                      ]
                   }
               ]
           },

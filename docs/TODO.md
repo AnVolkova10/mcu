@@ -34,25 +34,26 @@ Integrar y auditar la totalidad de las 5 series nucleares del Universo Animado d
 ---
 
 ### Hito 1: Cierre Completo del Bloque 1994 (Earth-92131)
-- [x] **Resultado Observable**: 1994 consolidado con Fantastic Four T1, Iron Man T1 completa y el despertar de Peter Parker en Spider-Man T1.
+- [x] **Resultado Observable**: 1994 consolidado con Fantastic Four T1, Iron Man T1 completa, despertar de Peter Parker en Spider-Man T1 y la culminación cósmica de X-Men T3.
 - [x] **Criterios de Aceptación**:
-  - [x] Medios registrados: `fantastic-four-tas-1`, `spider-man-tas-1`.
-  - [x] Eventos de Fantastic Four T1: Origen en el espacio/teletón, Namor & Sub-Mariner, Invasión Skrull & Galactus/Silver Surfer, Mask of Doom (Grecia Antigua & Latveria), Mole Man y Negative Zone.
+  - [x] Medios registrados: `fantastic-four-tas-1`, `spider-man-tas-1`, `iron-man-tas-1`, `x-men-tas-3`.
+  - [x] Eventos de Fantastic Four T1: Origen en el espacio/teletón, Namor & Sub-Mariner, Invasión Skrull & Galactus/Silver Surfer, Mask of Doom (Castillo de Doom en Latveria & rescate de Sue), Mole Man y Negative Zone.
   - [x] Eventos de Iron Man T1: Clímax de Force Works, El Origen de Iron Man en el Ártico/Vietnam, Boda fingida con Julia Carpenter.
   - [x] Eventos de Spider-Man T1: Picadura, Noche del Lagarto, Spider-Slayers de Smythe, Alien Costume / Saga de Venom y Hobgoblin.
+  - [x] Eventos de X-Men T3: *The Phoenix Saga* (Fénix en órbita y en el Imperio Shi'ar), *No Mutant Is an Island*, y *The Dark Phoenix Saga* (Manipulación del Club Hellfire, devoración del sistema D'Bari y juicio en el Área Azul de la Luna con el sacrificio de Jean).
   - [x] Personajes con dossiers y glows en `global.css`.
   - [x] Compilación exitosa `npm run build`.
 
 ---
 
 ### Hito 2: Bloque 1995 (Crossovers Canónicos y Maduración Heroica)
-- [x] **Resultado Observable**: `era-_1995_` enriquecida con los hitos de 1995 manteniendo la cohesión multiversal.
+- [x] **Resultado Observable**: `era-_1995_` enriquecida con los hitos de 1995 manteniendo la cohesión multiversal diegética.
 - [x] **Criterios de Aceptación**:
   - [x] Medios registrados: `spider-man-tas-2`, `iron-man-tas-2`, `fantastic-four-tas-2`, `x-men-tas-4`.
   - [x] Eventos de Spider-Man T2: *Neogenic Nightmare*, Mutación y Crossover histórico con X-Men (*The Mutant Agenda*), Morbius, Punisher y Blade.
   - [x] Eventos de Iron Man T2: Disolución de Force Works, estreno de la *Modular Armor*, Madame Masque y *Armor Wars*.
   - [x] Eventos de Fantastic Four T2: *Inhumans Saga*, Daredevil en el Edificio Baxter (*And a Blind Man Shall Lead Them*), Ego the Living Planet y Pantera Negra en Wakanda.
-  - [x] Eventos de X-Men T4: *One Man's Worth* (línea temporal alternativa de Nimrod/Trevor Fitzroy), Proteus en Escocia, Asteroid M (*Sanctuary*), y *Beyond Good and Evil* (Apocalipsis y el Eje del Tiempo).
+  - [x] Eventos de X-Men T4: *One Man's Worth* (resistencia del 1995 distópico alternativo contra Nimrod), Proteus en Escocia, *Sanctuary* (Asteroide M como refugio orbital mutante de Magneto y traición nuclear de Fabian Cortez), *Family Ties* (Magneto, Quicksilver y Scarlet Witch en el Monte Wundagore descubren su filiación) y *Beyond Good and Evil* (Apocalipsis y el Eje del Tiempo).
   - [x] Compilación exitosa `npm run build`.
 
 ---
@@ -61,18 +62,19 @@ Integrar y auditar la totalidad de las 5 series nucleares del Universo Animado d
 - [x] **Resultado Observable**: `era-_1996_` creada e integrada con Spider-Man T3, Incredible Hulk T1 y X-Men T4/T5.
 - [x] **Criterios de Aceptación**:
   - [x] Medios registrados: `spider-man-tas-3`, `incredible-hulk-tas-1`, `x-men-tas-5`.
-  - [x] Eventos de Spider-Man T3: *Sins of the Fathers*, Doctor Strange, El Duende Verde, Crossover con Daredevil en el juicio de Peter (*Framed*), *The Spot*, y Crossover de Iron Man & War Machine contra Venom & Carnage (*Venom Returns*).
+  - [x] Eventos de Spider-Man T3: *Sins of the Fathers*, Doctor Strange, El Duende Verde, Crossover con Daredevil en el juicio de Peter (*Framed*), *The Spot*, Crossover de Iron Man & War Machine contra Venom & Carnage (*Venom Returns*), y *Turning Point* (El Duende Verde lanza a Mary Jane Watson a través del vórtice dimensional del Time Dilator en el puente George Washington).
   - [x] Eventos de The Incredible Hulk T1: Bruce Banner a la fuga, The Leader, Crossover de Iron Man & War Machine (*Helping Hand, Iron Fist*), Crossover de Thing y Fantastic Four (*Fantastic Fortitude*).
-  - [x] Eventos de X-Men T4/T5: Lobezno y Capitán América en la Segunda Guerra Mundial (*Old Soldiers*), *The Phalanx Covenant*.
+  - [x] Eventos de X-Men T5: *The Phalanx Covenant* (purga biotecnológica con Bestia, Magneto, Forja y Warlock, limpiado de duplicados de la Segunda Guerra Mundial).
   - [x] Compilación exitosa `npm run build`.
 
 ---
 
 ### Hito 4: Bloque 1997–1998 (Secret Wars, Spider Wars y Graduation Day)
-- [x] **Resultado Observable**: `era-_1997_` y `era-_1998_` creadas, culminando el ciclo animado clásico de los 90s.
+- [x] **Resultado Observable**: `era-_1997_` y `era-_1998_` consolidadas e integradas al 100%, culminando el ciclo animado clásico de los 90s.
 - [x] **Criterios de Aceptación**:
-  - [x] Medios registrados: `spider-man-tas-4`, `spider-man-tas-5`, `incredible-hulk-tas-2`.
-  - [x] Eventos de Spider-Man T4 & T5: Boda de Peter y Mary Jane, *Six Forgotten Warriors* (Capitán América y Red Skull), *Secret Wars* (reunión cumbre de Spider-Man, Storm, Iron Man, Fantastic Four, Capitán América) y *Spider Wars* (Multiverso de clones, Madame Web y Stan Lee).
+  - [x] Medios registrados: `spider-man-tas-4`, `spider-man-tas-5`, `incredible-hulk-tas-2`, `x-men-tas-5`.
+  - [x] Eventos de Spider-Man T4: *Partners in Danger* (Génesis de Black Cat / Felicia Hardy con el suero del Súper Soldado, Guerra Nocturna de Vampiros con Blade, Morbius y Whistler, Harry Osborn como segundo Duende Verde, Hobie Brown / The Prowler, y el misterioso reaparecer acuático de Mary Jane).
+  - [x] Eventos de Spider-Man T5: Boda de Peter y Mary Jane, *Six Forgotten Warriors* (Capitán América y Red Skull saliendo del limbo), *The Return of Hydro-Man & Clone Revelation* (Disolución del clon de Mary Jane y juramento multiversal de Peter), *Secret Wars* (reunión cumbre de Spider-Man, Storm, Iron Man, Fantastic Four, Capitán América) y *Spider Wars* (Multiverso de clones, Madame Web y Stan Lee).
   - [x] Eventos de The Incredible Hulk T2: She-Hulk, Gray Hulk.
   - [x] Evento de X-Men T5: *Graduation Day* (Despedida final del Profesor X hacia el Imperio Shi'ar).
   - [x] Compilación final `npm run build` y validación general.
@@ -115,7 +117,26 @@ Integrar y auditar la totalidad de las 5 series nucleares del Universo Animado d
 
 ---
 
-## 📌 6. Backlog de Ideas & Tareas Pendientes
+## 🏛️ 6. Principio Inviolable de Cronología In-Universe Pura (PNC) & Super Prompt `.agents/`
+- [x] **Resultado Observable**: Creación del marco de directivas permanentes del proyecto en `.agents/` y migración/clasificación exhaustiva de todos los episodios históricos out-of-time a sus eras in-universe exactas (prohibición total de agrupar por fecha de emisión en televisión).
+- [x] **Criterios de Aceptación**:
+  - [x] **Infraestructura de Super Prompt Permanente (`.agents/`)**:
+    - [x] Creado `.agents/AGENTS.md` con las 4 Leyes Supremas del proyecto: (1) Principio de Cronología In-Universe Pura (PNC), (2) Cartografía Terrestre vs. Orrery Cósmico Off-World, (3) Integridad de Personajes y Dossiers, (4) Protocolo de Validación y Límites de Git.
+    - [x] Creado `.agents/rules/chronology_and_lore_rules.md` para el sistema de reglas continuas del agente.
+  - [x] **Auditoría e Incorporación de Eras Históricas Out-of-Time (`src/data/timelineData.ts`)**:
+    - [x] `era-_c__1200_B_C_E__`: *Fantastic Four TAS* (T1 E9-10 *"The Mask of Doom"*), expedición en la Plataforma Temporal del Doctor Doom a la Grecia Micénica en busca del Cofre de las Sirenas. Coordenadas de Micenas `[37.7308, 22.7561]`.
+    - [x] `era-_1888_`: *X-Men TAS* (T5 E9 *"Descent"*), génesis victoriana de Dr. Nathaniel Essex / Mister Sinister en Londres, con Dr. James Xavier y Dr. John Grey. Su obsesión centenaria con los linajes Summers y Grey conecta directamente con *X-Men '97* (Madelyne Pryor y Cable). Coordenadas de Londres `[51.5074, -0.1278]`.
+    - [x] `era-_1944_`: *X-Men TAS* (T5 E11 *"Old Soldiers"*), Logan con garras de hueso y Capitán América infiltran fortaleza nazi en Francia para rescatar al Dr. Cocteau de Red Skull. Coordenadas de Normandía `[49.4087, -1.3174]`.
+    - [x] `era-_1945_`: *Spider-Man TAS* (T5 E2-6 *"Six Forgotten Warriors"*), clímax de la Segunda Guerra Mundial donde el Capitán América y los campeones combaten el dispositivo del Juicio Final, culminando con Steve Rogers tackleando a Red Skull dentro del vórtice dimensional donde quedan atrapados por 50 años. Coordenadas de Pripyat `[51.2763, 30.2219]`.
+    - [x] `era-_1959_`: *X-Men TAS* (T4 E1 *"One Man's Worth"*), atentado temporal de Trevor Fitzroy contra el joven Charles Xavier de 20 años en Oxford, defendido por Wolverine, Storm y Bishop. Coordenadas de Oxford `[51.752, -1.2577]`.
+  - [x] **Dossiers y Glows de Personajes**:
+    - [x] `trevor-fitzroy` y `whizzer-robert-frank` agregados a `src/data/charactersData.ts` con bios completas, afiliaciones y roles.
+    - [x] Clases CSS `.trevor-fitzroy` y `.whizzer-robert-frank` añadidas a `src/styles/global.css`.
+  - [x] Compilación exitosa `npm run build` con 0 errores.
+
+---
+
+## 📌 7. Backlog de Ideas & Tareas Pendientes
 - [ ] Fase 2 Multiverso: Evaluación de *X-Men '97* (Disney+) y *Spider-Man Unlimited* como continuaciones posteriores.
 - [ ] Auditoría de películas live-action complementarias de los 90s (*Blade (1998)*) fuera de la burbuja animada de Earth-92131.
 

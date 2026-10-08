@@ -3840,6 +3840,118 @@ export const charactersData: Record<string, Character> = {
     "originLocation": "Hala (Kree Empire)",
     "status": "deceased",
     "bio": "Radical Kree military warlord and judicial Accuser who commanded ballistic orbital bombardments against Skrulls in 1995 before rebelling against the Nova Empire peace accord in 2014."
+  },
+  "trevor-fitzroy": {
+    "id": "trevor-fitzroy",
+    "name": "Trevor Fitzroy",
+    "alias": "Fitzroy",
+    "cssClass": "trevor-fitzroy",
+    "color": "#c084fc",
+    "bgBadge": "bg-purple-950/80 hover:bg-purple-900/90",
+    "textBadge": "text-purple-300",
+    "borderBadge": "border-purple-600",
+    "role": "villain",
+    "affiliation": "Upstarts / Future Sentinel Hierarchy",
+    "groups": [
+      "Upstarts",
+      "Time Travelers"
+    ],
+    "originLocation": "North America (2055, Earth-92131)",
+    "status": "alive",
+    "bio": "Time-traveling criminal mutant capable of converting absorbed life energy into chronological portals, sent by Master Mold to assassinate Charles Xavier in Oxford in 1959."
+  },
+  "whizzer-robert-frank": {
+    "id": "whizzer-robert-frank",
+    "name": "Robert Frank / The Whizzer",
+    "alias": "The Whizzer",
+    "cssClass": "whizzer-robert-frank",
+    "color": "#facc15",
+    "bgBadge": "bg-amber-950/80 hover:bg-amber-900/90",
+    "textBadge": "text-amber-300",
+    "borderBadge": "border-amber-600",
+    "role": "hero",
+    "affiliation": "Six Forgotten Warriors / Allies (WWII)",
+    "groups": [
+      "Six Forgotten Warriors",
+      "Invaders"
+    ],
+    "originLocation": "United States (Earth-92131)",
+    "status": "alive",
+    "bio": "Super-speed champion empowered by an imperfect variant of Project Rebirth's super-soldier serum, one of the Six Forgotten Warriors who defeated Red Skull in 1945."
+  },
+  "mary-jane-watson": {
+    "id": "mary-jane-watson",
+    "name": "Mary Jane Watson",
+    "alias": "MJ",
+    "cssClass": "mary-jane-watson",
+    "color": "#f97316",
+    "bgBadge": "bg-orange-950/80 hover:bg-orange-900/90",
+    "textBadge": "text-orange-300",
+    "borderBadge": "border-orange-600",
+    "role": "civilian",
+    "affiliation": "Daily Bugle / Midtown High",
+    "groups": [
+      "Spider-Man Allies"
+    ],
+    "originLocation": "New York City (Earth-92131)",
+    "status": "alive",
+    "bio": "Red-haired aspiring actress and true love of Peter Parker whose life was fractured when Green Goblin hurled her into a dimensional portal, triggering a multiversal clone conspiracy."
+  },
+  "fabian-cortez": {
+    "id": "fabian-cortez",
+    "name": "Fabian Cortez",
+    "alias": "Cortez",
+    "cssClass": "fabian-cortez",
+    "color": "#ef4444",
+    "bgBadge": "bg-red-950/80 hover:bg-red-900/90",
+    "textBadge": "text-red-300",
+    "borderBadge": "border-red-600",
+    "role": "villain",
+    "affiliation": "Acolytes / Followers of Apocalypse",
+    "groups": [
+      "Acolytes",
+      "Mutant Supremacists"
+    ],
+    "originLocation": "Spain (Earth-92131)",
+    "status": "alive",
+    "bio": "Ambitious Spanish mutant capable of amplifying or overloading the powers of other mutants, who usurped Magneto's Asteroid M sanctuary and later worshipped Apocalypse."
+  },
+  "prowler-hobie-brown": {
+    "id": "prowler-hobie-brown",
+    "name": "Hobie Brown / The Prowler",
+    "alias": "The Prowler",
+    "cssClass": "prowler-hobie-brown",
+    "color": "#a855f7",
+    "bgBadge": "bg-purple-950/80 hover:bg-purple-900/90",
+    "textBadge": "text-purple-300",
+    "borderBadge": "border-purple-600",
+    "role": "hero",
+    "affiliation": "Spider-Man Allies",
+    "groups": [
+      "Street Level Vigilantes"
+    ],
+    "originLocation": "The Bronx, New York (Earth-92131)",
+    "status": "alive",
+    "bio": "Ingenious inventor equipped with clawed gloves, pneumatics, and sleeping gas who was deceived by Kingpin before turning to fight alongside Spider-Man."
+  },
+  "ghost-rider-danny-ketch": {
+    "id": "ghost-rider-danny-ketch",
+    "name": "Danny Ketch / Ghost Rider",
+    "alias": "Ghost Rider",
+    "cssClass": "ghost-rider-danny-ketch",
+    "color": "#f97316",
+    "bgBadge": "bg-orange-950/80 hover:bg-orange-900/90",
+    "textBadge": "text-orange-300",
+    "borderBadge": "border-orange-600",
+    "role": "anti-hero",
+    "affiliation": "Spirits of Vengeance / Midnight Sons",
+    "groups": [
+      "Spirits of Vengeance",
+      "Midnight Sons"
+    ],
+    "originLocation": "Brooklyn, New York (Earth-92131)",
+    "status": "alive",
+    "bio": "Supernatural motorcyclist possessed by the Spirit of Vengeance wielding hellfire chains and the devastating Penance Stare, who confronted Galactus and defended Bruce Banner."
   }
 };
 
