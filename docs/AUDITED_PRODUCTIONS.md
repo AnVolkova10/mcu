@@ -54,7 +54,6 @@ A continuación se listan las producciones que pasaron por la auditoría diegét
 - ⏳ **Películas de Fase 2 y Fase 3 de Marvel Studios** aún no auditadas individualmente.
 - ⏳ **X-Men '97** (Disney+ continuación de Earth-92131).
 - ⏳ **Spider-Man Unlimited** (Earth-751263 / Counter-Earth).
-- ⏳ **Blade (1998)** (Live-action complementario de los 90s).
 
 ---
 

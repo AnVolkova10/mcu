@@ -47,10 +47,10 @@ export const Navbar: React.FC = () => {
   ];
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-[#0d0d0d]/95 backdrop-blur-md border-b border-[#222222] shadow-2xl">
+    <header className="sticky top-0 z-50 w-full bg-[#000000]/95 backdrop-blur-md border-b border-[#1f1f1f] shadow-2xl">
       
       {/* Upper Main Header (Marvel.com Style) */}
-      <div className="border-b border-[#1c1c1c] py-2.5 px-4 sm:px-8">
+      <div className="border-b border-[#1f1f1f] py-2.5 px-4 sm:px-8 bg-[#000000]/60">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           
           {/* Left Brand Badge */}
@@ -86,12 +86,12 @@ export const Navbar: React.FC = () => {
             {/* Global Search Button */}
             <button
               onClick={() => setIsSearchOpen(true)}
-              className="flex items-center gap-2 px-3 py-1.5 rounded-md bg-[#161616] hover:bg-[#202020] text-zinc-300 hover:text-white border border-[#2e2e2e] hover:border-[#e62429] text-xs font-bold transition-all group font-din shadow-inner cursor-pointer"
+              className="flex items-center gap-2 px-3 py-1.5 rounded-md bg-[#0d0d0d] hover:bg-[#1a1a1a] text-zinc-300 hover:text-white border border-[#262626] hover:border-[#e62429] text-xs font-bold transition-all group font-din shadow-inner cursor-pointer"
               title="Search Archive (Ctrl + K)"
             >
               <Search className="w-3.5 h-3.5 text-zinc-400 group-hover:text-[#e62429] transition-colors" />
               <span className="hidden sm:inline uppercase text-[11px] tracking-wider font-bold">SEARCH</span>
-              <kbd className="hidden lg:inline-block px-1.5 py-0.5 text-[9px] bg-[#0a0a0a] border border-[#333333] rounded text-zinc-400 font-mono">
+              <kbd className="hidden lg:inline-block px-1.5 py-0.5 text-[9px] bg-[#000000] border border-[#2f2f2f] rounded text-zinc-400 font-mono">
                 ⌘K
               </kbd>
             </button>
@@ -99,7 +99,7 @@ export const Navbar: React.FC = () => {
             {/* Read Progress Badge */}
             <button 
               onClick={() => setActiveScreen('stats')}
-              className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-md bg-[#161616] hover:bg-[#202020] border border-[#2e2e2e] hover:border-[#e62429] text-[11px] text-zinc-300 transition-colors font-bold font-din cursor-pointer"
+              className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-md bg-[#0d0d0d] hover:bg-[#1a1a1a] border border-[#262626] hover:border-[#e62429] text-[11px] text-zinc-300 transition-colors font-bold font-din cursor-pointer"
               title="View S.H.I.E.L.D. archive reading progress"
             >
               <ShieldCheck className="w-3.5 h-3.5 text-[#e62429]" />

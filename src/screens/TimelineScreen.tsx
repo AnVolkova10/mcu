@@ -10,6 +10,7 @@ import {
   Layers, 
   Calendar, 
   ArrowUp, 
+  ArrowDown,
   Shield, 
   Search, 
   FilterX 
@@ -173,6 +174,10 @@ export const TimelineScreen: React.FC = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  const scrollToBottom = () => {
+    window.scrollTo({ top: document.documentElement.scrollHeight, behavior: 'smooth' });
+  };
+
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       
@@ -240,14 +245,25 @@ export const TimelineScreen: React.FC = () => {
         </div>
       )}
 
-      {/* Floating Scroll to Top */}
-      <button
-        onClick={scrollToTop}
-        className="fixed bottom-6 right-6 p-3 rounded-lg bg-[#e62429] hover:bg-[#c5191e] text-white shadow-2xl border border-red-400/40 transition-transform hover:scale-110 z-30 cursor-pointer"
-        title="Scroll to top"
-      >
-        <ArrowUp className="w-5 h-5" />
-      </button>
+      {/* Floating Scroll Controls (Top & Bottom) */}
+      <div className="fixed bottom-16 right-5 sm:right-6 flex flex-col gap-2 z-30">
+        <button
+          onClick={scrollToTop}
+          className="p-2.5 rounded-lg bg-[#e62429] hover:bg-[#c5191e] text-white shadow-2xl border border-red-400/40 transition-transform hover:scale-110 cursor-pointer flex items-center justify-center"
+          title="Scroll to beginning of time"
+          aria-label="Scroll to top"
+        >
+          <ArrowUp className="w-4 h-4" />
+        </button>
+        <button
+          onClick={scrollToBottom}
+          className="p-2.5 rounded-lg bg-[#141414]/90 hover:bg-[#222222] text-zinc-300 hover:text-white shadow-2xl border border-zinc-700/60 hover:border-[#e62429] transition-transform hover:scale-110 cursor-pointer flex items-center justify-center backdrop-blur-sm"
+          title="Scroll to modern era"
+          aria-label="Scroll to bottom"
+        >
+          <ArrowDown className="w-4 h-4" />
+        </button>
+      </div>
 
     </div>
   );

@@ -60,7 +60,7 @@ export const App: React.FC = () => {
       <Navbar />
 
       {/* Main Content Area */}
-      <main className="flex-1 pb-16">
+      <main className={`flex-1 flex flex-col ${activeScreen === 'stones' ? 'lg:h-[calc(100dvh-5.5rem)] pb-11 overflow-y-auto lg:overflow-hidden' : 'pb-20'}`}>
         <Suspense fallback={<ScreenLoadingFallback />}>
           {renderActiveScreen()}
         </Suspense>
@@ -72,59 +72,49 @@ export const App: React.FC = () => {
       <MediaDetailModal />
       <SearchModal />
 
-      {/* Footer */}
-      <footer className="border-t border-[#1f1f1f] bg-[#000000] py-8 px-4 text-xs text-zinc-500 font-din">
-        <div className="max-w-6xl mx-auto flex flex-col gap-6">
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-            <div className="flex items-center gap-3">
-              <img src={marvelLogo} alt="MARVEL" className="h-6 w-auto object-contain" />
-              <span className="text-zinc-300 font-bold font-title tracking-wider">MCU TIMELINE ARCHIVE</span>
-            </div>
-
-            <p className="text-zinc-400 text-[11px] text-center sm:text-left">
-              Official interactive timeline and cinematic multiverse database.
-            </p>
-
-            <div className="flex items-center gap-4 text-zinc-400 text-xs font-title tracking-wider">
-              <button 
-                onClick={() => setActiveScreen('timeline')}
-                className="hover:text-[#e62429] transition-colors uppercase cursor-pointer"
-              >
-                TIMELINE
-              </button>
-              <button 
-                onClick={() => setActiveScreen('stones')}
-                className="hover:text-amber-400 transition-colors uppercase cursor-pointer"
-              >
-                STONES
-              </button>
-              <button 
-                onClick={() => setActiveScreen('stats')}
-                className="hover:text-[#e62429] transition-colors uppercase cursor-pointer"
-              >
-                S.H.I.E.L.D.
-              </button>
-            </div>
+      {/* Slim Always-Present Tactical Footer (2/3 smaller, fixed bottom) */}
+      <footer className="fixed bottom-0 left-0 right-0 z-30 border-t border-[#1f1f1f] bg-[#000000]/95 backdrop-blur-md py-2 px-4 text-xs text-zinc-400 font-din shadow-2xl">
+        <div className="max-w-7xl mx-auto flex items-center justify-between gap-3">
+          <div className="flex items-center gap-2.5 shrink-0">
+            <img src={marvelLogo} alt="MARVEL" className="h-4.5 w-auto object-contain" />
+            <span className="text-zinc-300 font-bold font-title tracking-wider text-[11px] hidden sm:inline">
+              MCU ARCHIVE
+            </span>
           </div>
 
-          {/* Subtle Credits & Signature */}
-          <div className="pt-4 border-t border-[#141414] flex flex-col sm:flex-row items-center justify-between text-[11px] text-zinc-500 font-din gap-2">
-            <p className="text-center sm:text-left">
-              Based on the original timeline compilation by{' '}
-              <a
-                href="https://aaronperris.com/mcu/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-zinc-300 font-medium hover:text-[#e62429] underline decoration-zinc-700 hover:decoration-[#e62429] transition-all underline-offset-2"
-              >
-                Aaron Perris
-              </a>{' '}
-              · Expanded, mapped & engineered by{' '}
-              <span className="text-zinc-200 font-semibold">Ángela Curzi</span> (2026)
-            </p>
-            <span className="text-zinc-600 text-[10px] tracking-wider uppercase font-title">
-              MCU & Multiverse Archive © 2026
-            </span>
+          <p className="text-[11px] text-zinc-400 text-center truncate px-2">
+            Compilation by{' '}
+            <a
+              href="https://aaronperris.com/mcu/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-zinc-300 font-medium hover:text-[#e62429] underline decoration-zinc-700 hover:decoration-[#e62429] transition-all"
+            >
+              Aaron Perris
+            </a>{' '}
+            · Expanded & engineered by{' '}
+            <span className="text-zinc-200 font-semibold">Ángela Curzi</span> (2026)
+          </p>
+
+          <div className="flex items-center gap-3 text-zinc-400 text-[11px] font-title tracking-wider shrink-0">
+            <button 
+              onClick={() => setActiveScreen('timeline')}
+              className="hover:text-[#e62429] transition-colors uppercase cursor-pointer"
+            >
+              TIMELINE
+            </button>
+            <button 
+              onClick={() => setActiveScreen('stones')}
+              className="hover:text-amber-400 transition-colors uppercase cursor-pointer"
+            >
+              STONES
+            </button>
+            <button 
+              onClick={() => setActiveScreen('stats')}
+              className="hover:text-[#e62429] transition-colors uppercase cursor-pointer"
+            >
+              S.H.I.E.L.D.
+            </button>
           </div>
         </div>
       </footer>

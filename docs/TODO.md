@@ -194,8 +194,7 @@ Integrar y auditar la totalidad de las 5 series nucleares del Universo Animado d
 
 ## 📌 10. Backlog de Ideas & Tareas Pendientes
 - [ ] Auditoría de películas de la Fase 2 y 3 no auditadas previamente (*Ant-Man and the Wasp*, *Thor: The Dark World* 2988 B.C.E., *Infinity War* Zen-Whoberi 1996, *Civil War* 1991).
-- [ ] Fase 2 Multiverso: Evaluación de *X-Men '97* (Disney+) y *Spider-Man Unlimited* como continuaciones posteriores.
-- [ ] Auditoría de películas live-action complementarias de los 90s (*Blade (1998)*) fuera de la burbuja animada de Earth-92131.
+- [ ] Fase 2 Multiverso: Auditoría canónica de *X-Men '97* (Temporada 1 completa, 10 episodios, incluyendo viajes temporales a c. 3000 a.C. y 3960 d.C.) y evaluación de *Spider-Man Unlimited*.
 
 
 
