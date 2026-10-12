@@ -1,18 +1,34 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { useStore } from '@/store/useStore';
 import { Navbar } from '@/components/Navbar';
-import { TimelineScreen } from '@/screens/TimelineScreen';
-import { MediaScreen } from '@/screens/MediaScreen';
-import { CharactersScreen } from '@/screens/CharactersScreen';
-import { StonesScreen } from '@/screens/StonesScreen';
-import { BookmarksScreen } from '@/screens/BookmarksScreen';
-import { StatsScreen } from '@/screens/StatsScreen';
-import { MapScreen } from '@/screens/MapScreen';
 import { CharacterDrawer } from '@/components/CharacterDrawer';
 import { StoneDrawer } from '@/components/StoneDrawer';
 import { MediaDetailModal } from '@/components/MediaDetailModal';
 import { SearchModal } from '@/components/SearchModal';
 import marvelLogo from '@/assets/marvel-logo.svg';
+
+// Code-split screens to optimize initial bundle and isolate Leaflet
+const TimelineScreen = React.lazy(() => import('@/screens/TimelineScreen').then((m) => ({ default: m.TimelineScreen })));
+const MediaScreen = React.lazy(() => import('@/screens/MediaScreen').then((m) => ({ default: m.MediaScreen })));
+const CharactersScreen = React.lazy(() => import('@/screens/CharactersScreen').then((m) => ({ default: m.CharactersScreen })));
+const StonesScreen = React.lazy(() => import('@/screens/StonesScreen').then((m) => ({ default: m.StonesScreen })));
+const MapScreen = React.lazy(() => import('@/screens/MapScreen').then((m) => ({ default: m.MapScreen })));
+const BookmarksScreen = React.lazy(() => import('@/screens/BookmarksScreen').then((m) => ({ default: m.BookmarksScreen })));
+const StatsScreen = React.lazy(() => import('@/screens/StatsScreen').then((m) => ({ default: m.StatsScreen })));
+
+const ScreenLoadingFallback: React.FC = () => (
+  <div className="flex flex-col items-center justify-center min-h-[50vh] gap-4 py-20 font-din">
+    <div className="relative">
+      <div className="w-10 h-10 border-2 border-[#e62429]/20 border-t-[#e62429] rounded-full animate-spin" />
+      <div className="absolute inset-0 flex items-center justify-center">
+        <div className="w-2 h-2 bg-[#e62429] rounded-full animate-ping" />
+      </div>
+    </div>
+    <span className="text-xs font-mono text-zinc-400 uppercase tracking-widest animate-pulse">
+      Loading Multiverse Archive...
+    </span>
+  </div>
+);
 
 export const App: React.FC = () => {
   const { activeScreen, setActiveScreen } = useStore();
@@ -45,7 +61,9 @@ export const App: React.FC = () => {
 
       {/* Main Content Area */}
       <main className="flex-1 pb-16">
-        {renderActiveScreen()}
+        <Suspense fallback={<ScreenLoadingFallback />}>
+          {renderActiveScreen()}
+        </Suspense>
       </main>
 
       {/* Global Modals & Drawers */}

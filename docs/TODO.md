@@ -169,9 +169,25 @@ Integrar y auditar la totalidad de las 5 series nucleares del Universo Animado d
 
 ---
 
-## 📌 9. Backlog de Ideas & Tareas Pendientes
+## ⚡ 9. Optimización de Arquitectura, Performance y Linting (Fase 1 y Fase 2)
+- [x] **Resultado Observable**: Reducción del ~95% del bundle principal de entrada (de 1,516 kB a 78 kB) mediante code-splitting y resolución 100% de consistencia de personajes y linting.
+- [x] **Criterios de Aceptación**:
+  - [x] **Fase 1 (Correcciones Inmediatas & Linters)**:
+    - [x] Creado `eslint.config.js` compatible con ESLint v10 y TypeScript; `npm run lint` pasa con 0 errores y 0 advertencias.
+    - [x] Unificación de alias en `src/data/charactersData.ts` con `characterAliases` y helper seguro `getCharacterById`. Se mapearon y resolvieron 100% las 16 discrepancias de IDs del timeline (`tony-stark-iron-man`, `clint-barton`, `james-rhodes`, `hank-mccoy-beast`, etc.) sin duplicar cards en `allCharacters`.
+    - [x] `normalizeCharacterId` en `src/screens/MapScreen.tsx` actualizado para consumir directamente el mapa de alias unificado.
+  - [x] **Fase 2 (Code-Splitting y Optimización de Carga)**:
+    - [x] Configuración de `manualChunks` en `vite.config.ts` segregando `vendor-leaflet`, `vendor-react`, `vendor-icons`, `timeline-data` y `characters-data`.
+    - [x] Code-splitting en `src/app/App.tsx` con `React.lazy()` y `<Suspense>` para todas las pantallas (`TimelineScreen`, `MapScreen`, `MediaScreen`, `CharactersScreen`, `StonesScreen`, `BookmarksScreen`, `StatsScreen`), aislando Leaflet al mapa.
+    - [x] Fallback de carga con temática Marvel integrado en `App.tsx`.
+    - [x] Compilación y bundling `npm run build` en ~745ms sin warnings de chunk size (`dist/assets/index-*.js` en 78 kB).
+
+---
+
+## 📌 10. Backlog de Ideas & Tareas Pendientes
 - [ ] Auditoría de películas de la Fase 2 y 3 no auditadas previamente (*Ant-Man and the Wasp*, *Thor: The Dark World* 2988 B.C.E., *Infinity War* Zen-Whoberi 1996, *Civil War* 1991).
 - [ ] Fase 2 Multiverso: Evaluación de *X-Men '97* (Disney+) y *Spider-Man Unlimited* como continuaciones posteriores.
 - [ ] Auditoría de películas live-action complementarias de los 90s (*Blade (1998)*) fuera de la burbuja animada de Earth-92131.
+
 
 

@@ -42,7 +42,7 @@ import {
   Minus
 } from 'lucide-react';
 import { mediaData } from '@/data/mediaData';
-import { allCharacters, charactersData } from '@/data/charactersData';
+import { allCharacters, charactersData, characterAliases } from '@/data/charactersData';
 
 // Helper to extract a numeric year representation from cleanTitle
 export function parseYearRange(title: string): [number, number] {
@@ -1761,14 +1761,7 @@ export const MapScreen: React.FC = () => {
   // Helper to normalize character ID (aliases -> canonical character keys)
   const normalizeCharacterId = (id: string | null) => {
     if (!id) return null;
-    if (id === 'spider-noir') return 'ben-reilly-noir';
-    if (id === 'captain-america') return 'steve-rogers';
-    if (id === 'agent-carter') return 'peggy-carter';
-    if (id === 'magneto') return 'erik-lehnsherr';
-    if (id === 'professor-x') return 'charles-xavier';
-    if (id === 'winter-soldier') return 'bucky-barnes';
-    if (id === 'wolverine') return 'logan-wolverine';
-    return id;
+    return characterAliases[id] || id;
   };
 
   // Temporal Range Controls State

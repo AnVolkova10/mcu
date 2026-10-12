@@ -4075,5 +4075,46 @@ export const charactersData: Record<string, Character> = {
 
 export const allCharacters: Character[] = Object.values(charactersData);
 
+// Character ID aliases mapping (resolves alternate or composite keys to canonical entries)
+export const characterAliases: Record<string, string> = {
+  'spider-noir': 'ben-reilly-noir',
+  'captain-america': 'steve-rogers',
+  'agent-carter': 'peggy-carter',
+  'magneto': 'erik-lehnsherr',
+  'erik-lehnsherr-magneto': 'erik-lehnsherr',
+  'professor-x': 'charles-xavier',
+  'winter-soldier': 'bucky-barnes',
+  'wolverine': 'logan-wolverine',
+  'tony-stark-iron-man': 'tony-stark',
+  'clint-barton': 'hawkeye',
+  'clint-barton-hawkeye': 'hawkeye',
+  'james-rhodes': 'war-machine',
+  'james-rhodes-war-machine': 'war-machine',
+  'wanda-maximoff': 'scarlet-witch',
+  'hank-mccoy-beast': 'hank-mccoy',
+  'beast-hank-mccoy': 'hank-mccoy',
+  'scott-summers-cyclops': 'cyclops-scott-summers',
+  'ororo-munroe-storm': 'storm-ororo-munroe',
+  'nathaniel-essex-mister-sinister': 'mister-sinister-nathaniel-essex',
+  'nathan-summers-cable': 'cable-nathan-summers',
+  'bishop-lucas': 'bishop-lucas-bishop',
+  'apocalypse-en-sabah-nur': 'en-sabah-nur-apocalypse',
+  'jubilation-lee-jubilee': 'jubilee-jubilation-lee',
+};
+
+// Safe lookup helper that resolves aliases transparently
+export const getCharacterById = (id: string | null | undefined): Character | undefined => {
+  if (!id) return undefined;
+  const canonicalId = characterAliases[id] || id;
+  return charactersData[canonicalId] || charactersData[id];
+};
+
+// Populate alias references in charactersData without altering allCharacters array
+Object.entries(characterAliases).forEach(([alias, canonicalId]) => {
+  if (charactersData[canonicalId] && !charactersData[alias]) {
+    charactersData[alias] = charactersData[canonicalId];
+  }
+});
+
 
 
