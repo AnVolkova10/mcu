@@ -31,6 +31,9 @@ Este documento establece la directiva operativa permanente, inmutable e irrevoca
 3. **CONEXIÓN NARRATIVA CON OBRAS MODERNAS**:
    - Cada evento histórico debe resaltar sus ecos en el futuro. Por ejemplo, el origen de Sinister en 1888 debe documentar su fijación centenaria con los genes Summers y Grey que detona directamente en *X-Men '97* (Madelyne Pryor y Cable).
 
+4. **REGISTRO MAESTRO DE AUDITORÍA OBLIGATORIO**:
+   - Todo modelo o agente DEBE consultar `docs/AUDITED_PRODUCTIONS.md` antes de asumir que una serie o película está auditada. Las producciones en backlog o no auditadas NO deben considerarse canónicas definitivas ni usarse como verdad absoluta para evitar propagar anacronismos heredados.
+
 ---
 
 ## 🗺️ LEY SUPREMA N° 2: CARTOGRAFÍA Y MAPAS (TIERRA VS. COSMOS)

@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { useStore } from '@/store/useStore';
-import { allCharacters } from '@/data/charactersData';
+import { allCharacters, characterAliases } from '@/data/charactersData';
 import { timelineEras } from '@/data/timelineData';
 import { 
   Users, 
@@ -23,15 +23,19 @@ export const CharactersScreen: React.FC = () => {
   const [selectedGroup, setSelectedGroup] = useState<string>('all');
   const [selectedLocation, setSelectedLocation] = useState<string>('all');
 
-  // Count appearances across the timeline
-  const appearanceCounts: Record<string, number> = {};
-  timelineEras.forEach((era) => {
-    era.events.forEach((evt) => {
-      evt.characters.forEach((cId) => {
-        appearanceCounts[cId] = (appearanceCounts[cId] || 0) + 1;
+  // Count appearances across the timeline (memoized once for static dataset)
+  const appearanceCounts = useMemo(() => {
+    const counts: Record<string, number> = {};
+    timelineEras.forEach((era) => {
+      era.events.forEach((evt) => {
+        evt.characters.forEach((rawCId) => {
+          const canonicalId = characterAliases[rawCId] || rawCId;
+          counts[canonicalId] = (counts[canonicalId] || 0) + 1;
+        });
       });
     });
-  });
+    return counts;
+  }, []);
 
   // Extract all unique groups
   const allGroups = useMemo(() => {
@@ -56,29 +60,31 @@ export const CharactersScreen: React.FC = () => {
 
   const roles = ['all', 'hero', 'villain', 'anti-hero', 'cosmic', 'secondary'];
 
-  const filteredCharacters = allCharacters.filter((c) => {
+  const filteredCharacters = useMemo(() => {
     const q = search.toLowerCase().trim();
-    if (q) {
-      const matchName = c.name.toLowerCase().includes(q);
-      const matchAlias = c.alias?.toLowerCase().includes(q);
-      const matchAffiliation = c.affiliation.toLowerCase().includes(q);
-      const matchLocation = c.originLocation?.toLowerCase().includes(q);
-      const matchGroups = c.groups?.some((g) => g.toLowerCase().includes(q));
-      if (!matchName && !matchAlias && !matchAffiliation && !matchLocation && !matchGroups) {
-        return false;
+    return allCharacters.filter((c) => {
+      if (q) {
+        const matchName = c.name.toLowerCase().includes(q);
+        const matchAlias = c.alias?.toLowerCase().includes(q);
+        const matchAffiliation = c.affiliation.toLowerCase().includes(q);
+        const matchLocation = c.originLocation?.toLowerCase().includes(q);
+        const matchGroups = c.groups?.some((g) => g.toLowerCase().includes(q));
+        if (!matchName && !matchAlias && !matchAffiliation && !matchLocation && !matchGroups) {
+          return false;
+        }
       }
-    }
 
-    if (roleFilter !== 'all' && c.role !== roleFilter) return false;
-    if (selectedGroup !== 'all' && (!c.groups || !c.groups.includes(selectedGroup))) return false;
-    if (selectedLocation !== 'all') {
-      if (!c.originLocation || !c.originLocation.toLowerCase().includes(selectedLocation.toLowerCase())) {
-        return false;
+      if (roleFilter !== 'all' && c.role !== roleFilter) return false;
+      if (selectedGroup !== 'all' && (!c.groups || !c.groups.includes(selectedGroup))) return false;
+      if (selectedLocation !== 'all') {
+        if (!c.originLocation || !c.originLocation.toLowerCase().includes(selectedLocation.toLowerCase())) {
+          return false;
+        }
       }
-    }
 
-    return true;
-  });
+      return true;
+    });
+  }, [search, roleFilter, selectedGroup, selectedLocation]);
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">

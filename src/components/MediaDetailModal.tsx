@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { useStore } from '@/store/useStore';
 import { mediaData } from '@/data/mediaData';
 import { timelineEras } from '@/data/timelineData';
@@ -18,26 +18,28 @@ import {
 export const MediaDetailModal: React.FC = () => {
   const { selectedMediaId, setSelectedMediaId, setActiveScreen } = useStore();
 
-  if (!selectedMediaId) return null;
+  const media = selectedMediaId ? mediaData[selectedMediaId] : null;
 
-  const media = mediaData[selectedMediaId];
-  if (!media) return null;
-
-  // Find all timeline events associated with this media
-  const events: { eraTitle: string; eventId: string; paragraphs: string[]; isAlt: boolean }[] = [];
-
-  timelineEras.forEach((era) => {
-    era.events.forEach((evt) => {
-      if (evt.mediaKey === media.id || evt.rawClasses.includes(media.id)) {
-        events.push({
-          eraTitle: era.cleanTitle,
-          eventId: evt.id,
-          paragraphs: evt.paragraphs,
-          isAlt: evt.isAlternativeTimeline,
-        });
-      }
+  // Memoize timeline events associated with this media
+  const events = useMemo(() => {
+    if (!media) return [];
+    const results: { eraTitle: string; eventId: string; paragraphs: string[]; isAlt: boolean }[] = [];
+    timelineEras.forEach((era) => {
+      era.events.forEach((evt) => {
+        if (evt.mediaKey === media.id || evt.rawClasses.includes(media.id)) {
+          results.push({
+            eraTitle: era.cleanTitle,
+            eventId: evt.id,
+            paragraphs: evt.paragraphs,
+            isAlt: evt.isAlternativeTimeline,
+          });
+        }
+      });
     });
-  });
+    return results;
+  }, [media]);
+
+  if (!selectedMediaId || !media) return null;
 
   const jumpToEvent = (eventId: string) => {
     setSelectedMediaId(null);

@@ -2345,24 +2345,59 @@ export const MapScreen: React.FC = () => {
         setSelectedSnapshotTab('locations');
         setSnapshotLayerMode('locations');
 
-        // Find matching pin in allPins (first check by specific eventId, then name/coordinates)
-        let match = allPins.find((p) => 
-          selectedMapLocationPin.eventId && p.events.some((e) => e.event.id === selectedMapLocationPin.eventId)
-        );
+        // Match pin in allPins with strict location identity precedence (coordinates & name over eventId)
+        // Priority 1: Exact or very close coordinates (distance < 0.05 deg)
+        let match = allPins.find((p) => {
+          if (selectedMapLocationPin.coordinates && p.coordinates) {
+            const latDiff = Math.abs(p.coordinates[0] - selectedMapLocationPin.coordinates[0]);
+            const lngDiff = Math.abs(p.coordinates[1] - selectedMapLocationPin.coordinates[1]);
+            return latDiff < 0.05 && lngDiff < 0.05;
+          }
+          return false;
+        });
 
+        // Priority 2: Direct Location Name & Region match
         if (!match) {
+          const targetName = (selectedMapLocationPin.name || '').toLowerCase().trim();
+          const targetCity = (selectedMapLocationPin.cityOrRegion || '').toLowerCase().trim();
+          const targetCountry = (selectedMapLocationPin.countryOrRealm || '').toLowerCase().trim();
+
           match = allPins.find((p) => {
-            const nameMatch = p.name.toLowerCase() === selectedMapLocationPin.name.toLowerCase() ||
-                              p.name.toLowerCase().includes(selectedMapLocationPin.name.toLowerCase()) ||
-                              selectedMapLocationPin.name.toLowerCase().includes(p.name.toLowerCase());
-            if (nameMatch) return true;
-            if (selectedMapLocationPin.coordinates && p.coordinates) {
-              const latDiff = Math.abs(p.coordinates[0] - selectedMapLocationPin.coordinates[0]);
-              const lngDiff = Math.abs(p.coordinates[1] - selectedMapLocationPin.coordinates[1]);
-              if (latDiff < 0.001 && lngDiff < 0.001) return true;
+            const pName = p.name.toLowerCase().trim();
+            const pCity = (p.cityOrRegion || '').toLowerCase().trim();
+            const pCountry = (p.countryOrRealm || '').toLowerCase().trim();
+
+            if (targetName && (pName === targetName || pName.includes(targetName) || targetName.includes(pName))) {
+              return true;
+            }
+            if (targetCity && (pCity === targetCity || pName.includes(targetCity) || pCity.includes(targetCity))) {
+              if (!targetCountry || pCountry === targetCountry || pCountry.includes(targetCountry)) {
+                return true;
+              }
             }
             return false;
           });
+        }
+
+        // Priority 3: Pin belonging to the same event that matches the location name or region
+        if (!match && selectedMapLocationPin.eventId) {
+          const targetName = (selectedMapLocationPin.name || '').toLowerCase().trim();
+          const targetCity = (selectedMapLocationPin.cityOrRegion || '').toLowerCase().trim();
+
+          match = allPins.find((p) => {
+            const hasEvent = p.events.some((e) => e.event.id === selectedMapLocationPin.eventId);
+            if (!hasEvent) return false;
+            const pName = p.name.toLowerCase().trim();
+            const pCity = (p.cityOrRegion || '').toLowerCase().trim();
+            return (targetName && pName.includes(targetName)) || (targetCity && (pCity.includes(targetCity) || pName.includes(targetCity)));
+          });
+        }
+
+        // Priority 4: Fallback to any pin of that event (only if location was completely unspecified)
+        if (!match && selectedMapLocationPin.eventId) {
+          match = allPins.find((p) => 
+            p.events.some((e) => e.event.id === selectedMapLocationPin.eventId)
+          );
         }
 
         if (match) {

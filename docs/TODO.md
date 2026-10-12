@@ -169,8 +169,8 @@ Integrar y auditar la totalidad de las 5 series nucleares del Universo Animado d
 
 ---
 
-## ⚡ 9. Optimización de Arquitectura, Performance y Linting (Fase 1 y Fase 2)
-- [x] **Resultado Observable**: Reducción del ~95% del bundle principal de entrada (de 1,516 kB a 78 kB) mediante code-splitting y resolución 100% de consistencia de personajes y linting.
+## ⚡ 9. Optimización de Arquitectura, Performance, Linting & Registro Canónico (Fases 1, 2 y 3)
+- [x] **Resultado Observable**: Reducción del ~95% del bundle principal de entrada (de 1,516 kB a 78 kB) mediante code-splitting, memorización reactiva O(1) de búsquedas en runtime y creación del Registro Maestro de Producciones Auditadas (`docs/AUDITED_PRODUCTIONS.md`).
 - [x] **Criterios de Aceptación**:
   - [x] **Fase 1 (Correcciones Inmediatas & Linters)**:
     - [x] Creado `eslint.config.js` compatible con ESLint v10 y TypeScript; `npm run lint` pasa con 0 errores y 0 advertencias.
@@ -181,6 +181,14 @@ Integrar y auditar la totalidad de las 5 series nucleares del Universo Animado d
     - [x] Code-splitting en `src/app/App.tsx` con `React.lazy()` y `<Suspense>` para todas las pantallas (`TimelineScreen`, `MapScreen`, `MediaScreen`, `CharactersScreen`, `StonesScreen`, `BookmarksScreen`, `StatsScreen`), aislando Leaflet al mapa.
     - [x] Fallback de carga con temática Marvel integrado en `App.tsx`.
     - [x] Compilación y bundling `npm run build` en ~745ms sin warnings de chunk size (`dist/assets/index-*.js` en 78 kB).
+  - [x] **Fase 3 (Rendimiento en Runtime, Memoización O(1) & Registro Canónico)**:
+    - [x] Creado `docs/AUDITED_PRODUCTIONS.md` como fuente de verdad canónica e integrado en `.agents/AGENTS.md` para delimitar producciones auditadas vs. backlog pendiente.
+    - [x] `src/screens/CharactersScreen.tsx`: `appearanceCounts` y `filteredCharacters` memoizados con `useMemo`.
+    - [x] `src/components/CharacterDrawer.tsx` y `src/components/MediaDetailModal.tsx`: Búsqueda de apariciones y eventos memoizada con `useMemo`.
+    - [x] `src/screens/BookmarksScreen.tsx`: Búsqueda de eventos guardados optimizada con `useMemo` y `Set<string>` O(1).
+    - [x] `src/components/EventCard.tsx`: Integrado `React.memo`, selectores específicos de Zustand y lookup O(1) vía `cssClassToCharacterId` eliminando re-renders masivos.
+    - [x] `src/screens/TimelineScreen.tsx`: Encabezados de era extraídos al componente memoizado `EraHeader`, eliminando cómputo inline en JSX.
+    - [x] Compilación obligatoria exitosa `npm run build` y `npm run lint` con 0 errores y 0 warnings.
 
 ---
 

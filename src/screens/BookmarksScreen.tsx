@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { useStore } from '@/store/useStore';
 import { timelineEras } from '@/data/timelineData';
 import { EventCard } from '@/components/EventCard';
@@ -8,19 +8,24 @@ import { TimelineEvent } from '@/types';
 export const BookmarksScreen: React.FC = () => {
   const { bookmarkedEventIds, setActiveScreen } = useStore();
 
-  // Find all bookmarked events
-  const bookmarkedEvents: { event: TimelineEvent; eraTitle: string }[] = [];
+  // Memoize bookmarked events with O(1) Set lookup
+  const bookmarkedEvents = useMemo(() => {
+    if (!bookmarkedEventIds.length) return [];
+    const bookmarkedSet = new Set(bookmarkedEventIds);
+    const results: { event: TimelineEvent; eraTitle: string }[] = [];
 
-  timelineEras.forEach((era) => {
-    era.events.forEach((evt) => {
-      if (bookmarkedEventIds.includes(evt.id)) {
-        bookmarkedEvents.push({
-          event: evt,
-          eraTitle: era.cleanTitle,
-        });
-      }
+    timelineEras.forEach((era) => {
+      era.events.forEach((evt) => {
+        if (bookmarkedSet.has(evt.id)) {
+          results.push({
+            event: evt,
+            eraTitle: era.cleanTitle,
+          });
+        }
+      });
     });
-  });
+    return results;
+  }, [bookmarkedEventIds]);
 
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">

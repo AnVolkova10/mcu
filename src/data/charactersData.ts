@@ -4116,5 +4116,13 @@ Object.entries(characterAliases).forEach(([alias, canonicalId]) => {
   }
 });
 
+// Fast O(1) lookup dictionary from CSS class name to character ID
+export const cssClassToCharacterId: Record<string, string> = {};
+allCharacters.forEach((c) => {
+  if (c.cssClass) {
+    cssClassToCharacterId[c.cssClass] = c.id;
+  }
+});
+
 
 

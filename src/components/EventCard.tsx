@@ -14,7 +14,7 @@ import {
   ExternalLink,
   MapPin 
 } from 'lucide-react';
-import { charactersData, allCharacters } from '@/data/charactersData';
+import { charactersData, cssClassToCharacterId } from '@/data/charactersData';
 import { infinityStonesData } from '@/data/infinityStonesData';
 import { mediaData } from '@/data/mediaData';
 
@@ -22,21 +22,17 @@ interface EventCardProps {
   event: TimelineEvent;
 }
 
-export const EventCard: React.FC<EventCardProps> = ({ event }) => {
-  const {
-    isBookmarked,
-    toggleBookmark,
-    isRead,
-    toggleReadEvent,
-    setSelectedCharacterId,
-    setSelectedStoneId,
-    setSelectedMediaId,
-    setSelectedMapLocationPin,
-    setActiveScreen,
-  } = useStore();
+export const EventCard: React.FC<EventCardProps> = React.memo(({ event }) => {
+  const bookmarked = useStore((s) => s.bookmarkedEventIds.includes(event.id));
+  const read = useStore((s) => s.readEventIds.includes(event.id));
+  const toggleBookmark = useStore((s) => s.toggleBookmark);
+  const toggleReadEvent = useStore((s) => s.toggleReadEvent);
+  const setSelectedCharacterId = useStore((s) => s.setSelectedCharacterId);
+  const setSelectedStoneId = useStore((s) => s.setSelectedStoneId);
+  const setSelectedMediaId = useStore((s) => s.setSelectedMediaId);
+  const setSelectedMapLocationPin = useStore((s) => s.setSelectedMapLocationPin);
+  const setActiveScreen = useStore((s) => s.setActiveScreen);
 
-  const bookmarked = isBookmarked(event.id);
-  const read = isRead(event.id);
   const media = mediaData[event.mediaKey];
 
   const renderMediaIcon = () => {
@@ -80,15 +76,48 @@ export const EventCard: React.FC<EventCardProps> = ({ event }) => {
       return;
     }
 
-    // Check Characters by matching character ID or CSS class name
+    // Check Characters by matching character ID or CSS class name (O(1) direct lookup)
     for (const className of Array.from(el.classList)) {
       if (charactersData[className]) {
         setSelectedCharacterId(className);
         return;
       }
-      const charByCss = allCharacters.find((c) => c.cssClass === className);
-      if (charByCss) {
-        setSelectedCharacterId(charByCss.id);
+      const charIdByCss = cssClassToCharacterId[className];
+      if (charIdByCss) {
+        setSelectedCharacterId(charIdByCss);
+        return;
+      }
+    }
+
+    // Check Locations mentioned in this event (e.g. <strong class="mcu">Wakanda</strong>)
+    const textContent = el.textContent?.trim().toLowerCase();
+    if (textContent && event.locations && event.locations.length > 0) {
+      const matchedLoc = event.locations.find((l) => {
+        const lName = l.name.toLowerCase();
+        const lCity = (l.cityOrRegion || '').toLowerCase();
+        const lCountry = (l.countryOrRealm || '').toLowerCase();
+        return (
+          lName === textContent ||
+          lName.includes(textContent) ||
+          textContent.includes(lName) ||
+          (lCity && (lCity === textContent || textContent.includes(lCity))) ||
+          (lCountry && (lCountry === textContent || textContent.includes(lCountry)))
+        );
+      });
+
+      if (matchedLoc) {
+        setSelectedMapLocationPin({
+          name: matchedLoc.name,
+          cityOrRegion: matchedLoc.cityOrRegion,
+          countryOrRealm: matchedLoc.countryOrRealm,
+          planet: matchedLoc.planet,
+          coordinates: matchedLoc.coordinates,
+          orbitType: matchedLoc.orbitType,
+          altitudeKm: matchedLoc.altitudeKm,
+          celestialSystem: matchedLoc.celestialSystem,
+          eventId: event.id,
+        });
+        setActiveScreen('map');
         return;
       }
     }
@@ -247,7 +276,13 @@ export const EventCard: React.FC<EventCardProps> = ({ event }) => {
               title={`View ${loc.name} on Global Tactical Map`}
             >
               <MapPin className="w-3 h-3 text-sky-400 group-hover/loc:scale-110 transition-transform" />
-              <span>{loc.cityOrRegion ? `${loc.cityOrRegion}, ${loc.countryOrRealm}` : `${loc.name}, ${loc.countryOrRealm}`}</span>
+              <span>
+                {loc.cityOrRegion && loc.countryOrRealm && loc.cityOrRegion.toLowerCase() !== loc.countryOrRealm.toLowerCase()
+                  ? `${loc.cityOrRegion}, ${loc.countryOrRealm}`
+                  : (loc.name && loc.countryOrRealm && !loc.name.toLowerCase().includes(loc.countryOrRealm.toLowerCase())
+                      ? `${loc.name}, ${loc.countryOrRealm}`
+                      : loc.name || loc.countryOrRealm)}
+              </span>
               {loc.planet && loc.planet !== 'Earth' && (
                 <span className="text-[10px] text-sky-400/80 font-normal">({loc.planet})</span>
               )}
@@ -307,4 +342,4 @@ export const EventCard: React.FC<EventCardProps> = ({ event }) => {
       )}
     </article>
   );
-};
+});

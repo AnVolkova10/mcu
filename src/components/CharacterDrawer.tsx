@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { useStore } from '@/store/useStore';
-import { charactersData } from '@/data/charactersData';
+import { charactersData, getCharacterById, characterAliases } from '@/data/charactersData';
 import { timelineEras } from '@/data/timelineData';
 import { 
   X, 
@@ -23,31 +23,40 @@ export const CharacterDrawer: React.FC = () => {
     setSelectedMapCharacterId 
   } = useStore();
 
-  if (!selectedCharacterId) return null;
+  const character = selectedCharacterId ? (getCharacterById(selectedCharacterId) || charactersData[selectedCharacterId]) : null;
 
-  const character = charactersData[selectedCharacterId];
-  if (!character) return null;
+  // Memoize character appearances lookup across timelineEras
+  const appearances = useMemo(() => {
+    if (!character) return [];
+    const results: {
+      eventId: string;
+      eraTitle: string;
+      mediaTitle: string;
+      snippet: string;
+    }[] = [];
 
-  // Find all timeline events where this character appears
-  const appearances: {
-    eventId: string;
-    eraTitle: string;
-    mediaTitle: string;
-    snippet: string;
-  }[] = [];
+    const charId = character.id;
+    const cssClass = character.cssClass;
 
-  timelineEras.forEach((era) => {
-    era.events.forEach((evt) => {
-      if (evt.characters.includes(character.id) || evt.rawHtml.includes(`class="${character.cssClass}`)) {
-        appearances.push({
-          eventId: evt.id,
-          eraTitle: era.cleanTitle,
-          mediaTitle: evt.mediaTitle,
-          snippet: evt.paragraphs[0]?.replace(/<[^>]*>?/gm, '').slice(0, 140) + '...' || '',
-        });
-      }
+    timelineEras.forEach((era) => {
+      era.events.forEach((evt) => {
+        const matchesId = evt.characters.some((c) => c === charId || characterAliases[c] === charId);
+        const matchesClass = cssClass ? evt.rawHtml.includes(`class="${cssClass}`) : false;
+        if (matchesId || matchesClass) {
+          results.push({
+            eventId: evt.id,
+            eraTitle: era.cleanTitle,
+            mediaTitle: evt.mediaTitle,
+            snippet: evt.paragraphs[0]?.replace(/<[^>]*>?/gm, '').slice(0, 140) + '...' || '',
+          });
+        }
+      });
     });
-  });
+
+    return results;
+  }, [character]);
+
+  if (!selectedCharacterId || !character) return null;
 
   const scrollToEvent = (eventId: string) => {
     setSelectedCharacterId(null);
