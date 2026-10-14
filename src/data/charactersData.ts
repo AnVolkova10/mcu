@@ -4070,6 +4070,121 @@ export const charactersData: Record<string, Character> = {
     "originLocation": "Maldon, Essex / London (Earth-92131)",
     "status": "alive",
     "bio": "Mystical champion chosen by Merlyn and Roma, empowered by the Amulet of Right and interdimensional energies to protect the British Isles and monitor omniversal anomalies."
+  },
+  "madelyne-pryor-goblin-queen": {
+    "id": "madelyne-pryor-goblin-queen",
+    "name": "Madelyne Pryor / Goblin Queen",
+    "alias": "Goblin Queen",
+    "cssClass": "madelyne-pryor-goblin-queen",
+    "color": "#dc2626",
+    "bgBadge": "bg-red-950/80 hover:bg-red-900/90",
+    "textBadge": "text-red-300",
+    "borderBadge": "border-red-700",
+    "role": "anti-hero",
+    "affiliation": "X-Men / Limbo / Genosha Council",
+    "groups": [
+      "X-Men",
+      "Limbo",
+      "Genosha Council"
+    ],
+    "originLocation": "Sinister's Bio-Vault (Earth-92131)",
+    "status": "deceased",
+    "bio": "Genetic clone of Jean Grey created by Mister Sinister and biological mother of Nathan Summers. Embracing the dark psionic sorcery of the Goblin Queen, she later redeemed herself to protect her child before falling tragically in the Genosha massacre."
+  },
+  "bastion-sebastion-gilberti": {
+    "id": "bastion-sebastion-gilberti",
+    "name": "Bastion / Sebastion Gilberti",
+    "alias": "Bastion",
+    "cssClass": "bastion-sebastion-gilberti",
+    "color": "#a855f7",
+    "bgBadge": "bg-purple-950/80 hover:bg-purple-900/90",
+    "textBadge": "text-purple-300",
+    "borderBadge": "border-purple-700",
+    "role": "villain",
+    "affiliation": "Operation: Zero Tolerance / Prime Sentinels",
+    "groups": [
+      "Operation: Zero Tolerance",
+      "Sentinels",
+      "Friends of Humanity"
+    ],
+    "originLocation": "New Mexico, United States (Earth-92131)",
+    "status": "deceased",
+    "bio": "Supreme human-Sentinel bio-hybrid born from the techno-organic mystical fusion of Master Mold and Nimrod, architect of Operation: Zero Tolerance and creator of the sleeper cybernetic Prime Sentinels."
+  },
+  "forge": {
+    "id": "forge",
+    "name": "Forge / Daniel Lone Eagle",
+    "alias": "Forge",
+    "cssClass": "forge",
+    "color": "#f59e0b",
+    "bgBadge": "bg-amber-950/80 hover:bg-amber-900/90",
+    "textBadge": "text-amber-300",
+    "borderBadge": "border-amber-700",
+    "role": "hero",
+    "affiliation": "X-Men / X-Factor / US Defense Department",
+    "groups": [
+      "X-Men",
+      "X-Factor"
+    ],
+    "originLocation": "Eagle Plaza, Dallas, Texas (Earth-92131)",
+    "status": "alive",
+    "bio": "Cheyenne mutant intuitive genius capable of engineering any technological concept, creator of the mutant power neutralizer collar and the device that restored Storm's elemental gifts."
+  },
+  "mother-askani-rachel-summers": {
+    "id": "mother-askani-rachel-summers",
+    "name": "Mother Askani / Rachel Summers",
+    "alias": "Mother Askani",
+    "cssClass": "mother-askani-rachel-summers",
+    "color": "#f97316",
+    "bgBadge": "bg-orange-950/80 hover:bg-orange-900/90",
+    "textBadge": "text-orange-300",
+    "borderBadge": "border-orange-700",
+    "role": "hero",
+    "affiliation": "Clan Askani",
+    "groups": [
+      "Clan Askani",
+      "X-Men"
+    ],
+    "originLocation": "Earth-811 / Earth-92131 40th Century",
+    "status": "alive",
+    "bio": "Matriarch and founder of the Clan Askani in the desolate 3960 C.E. future, temporal daughter of Cyclops and Phoenix who raised and sheltered the infant Nathan Summers to fulfill his destiny as Cable."
+  },
+  "valerie-cooper": {
+    "id": "valerie-cooper",
+    "name": "Dr. Valerie Cooper",
+    "alias": "Val Cooper",
+    "cssClass": "valerie-cooper",
+    "color": "#64748b",
+    "bgBadge": "bg-slate-900/80 hover:bg-slate-850/90",
+    "textBadge": "text-slate-300",
+    "borderBadge": "border-slate-700",
+    "role": "secondary",
+    "affiliation": "United States National Security / UN Commission on Superhuman Activities",
+    "groups": [
+      "Commission on Superhuman Activities",
+      "United Nations"
+    ],
+    "originLocation": "Washington D.C., United States (Earth-92131)",
+    "status": "alive",
+    "bio": "United States national security advisor and United Nations liaison on mutant affairs who, horrified by the inhumanity of Bastion's OZT campaign, personally liberated Magneto stating 'Magneto was right'."
+  },
+  "young-nathan-summers": {
+    "id": "young-nathan-summers",
+    "name": "Nathan Summers (Infant / Child)",
+    "alias": "Baby Nathan",
+    "cssClass": "young-nathan-summers",
+    "color": "#38bdf8",
+    "bgBadge": "bg-sky-950/80 hover:bg-sky-900/90",
+    "textBadge": "text-sky-300",
+    "borderBadge": "border-sky-700",
+    "role": "hero",
+    "affiliation": "X-Men / Clan Askani",
+    "groups": [
+      "Clan Askani"
+    ],
+    "originLocation": "Westchester, New York (Earth-92131)",
+    "status": "alive",
+    "bio": "Son of Cyclops and Madelyne Pryor, inoculated at birth with Sinister's techno-organic virus and exiled to the 40th century by Bishop to save his life, where he is raised by Clan Askani."
   }
 };
 
@@ -4094,12 +4209,33 @@ export const characterAliases: Record<string, string> = {
   'hank-mccoy-beast': 'hank-mccoy',
   'beast-hank-mccoy': 'hank-mccoy',
   'scott-summers-cyclops': 'cyclops-scott-summers',
+  'cyclops': 'cyclops-scott-summers',
   'ororo-munroe-storm': 'storm-ororo-munroe',
+  'storm': 'storm-ororo-munroe',
   'nathaniel-essex-mister-sinister': 'mister-sinister-nathaniel-essex',
+  'mister-sinister': 'mister-sinister-nathaniel-essex',
+  'sinister': 'mister-sinister-nathaniel-essex',
   'nathan-summers-cable': 'cable-nathan-summers',
+  'cable': 'cable-nathan-summers',
   'bishop-lucas': 'bishop-lucas-bishop',
+  'bishop': 'bishop-lucas-bishop',
   'apocalypse-en-sabah-nur': 'en-sabah-nur-apocalypse',
+  'apocalypse': 'en-sabah-nur-apocalypse',
+  'en-sabah-nur': 'en-sabah-nur-apocalypse',
   'jubilation-lee-jubilee': 'jubilee-jubilation-lee',
+  'jubilee': 'jubilee-jubilation-lee',
+  'sunspot': 'sunspot-roberto-da-costa',
+  'roberto-da-costa': 'sunspot-roberto-da-costa',
+  'nightcrawler': 'nightcrawler-kurt-wagner',
+  'morph': 'morph-kevin-sydney',
+  'madelyne-pryor': 'madelyne-pryor-goblin-queen',
+  'goblin-queen': 'madelyne-pryor-goblin-queen',
+  'bastion': 'bastion-sebastion-gilberti',
+  'val-cooper': 'valerie-cooper',
+  'baby-nathan': 'young-nathan-summers',
+  'nathan-summers-child': 'young-nathan-summers',
+  'rachel-summers': 'mother-askani-rachel-summers',
+  'mother-askani': 'mother-askani-rachel-summers',
 };
 
 // Safe lookup helper that resolves aliases transparently

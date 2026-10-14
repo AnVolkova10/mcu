@@ -274,6 +274,68 @@ export const timelineEras: EraGroup[] = [
     ]
   },
   {
+    "id": "era-_c__3000_B_C_E__",
+    "title": "-c. 3000 B.C.E.-",
+    "cleanTitle": "c. 3000 B.C.E.",
+    "category": "ancient",
+    "events": [
+      {
+        "id": "event-3000bce-xmen97-ancient-egypt-en-sabah-nur",
+        "eraId": "era-_c__3000_B_C_E__",
+        "eraTitle": "c. 3000 B.C.E.",
+        "mediaKey": "x-men-97-1",
+        "mediaTitle": "X-Men '97 (Season 1)",
+        "mediaType": "series",
+        "mediaPhase": "Marvel Television",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+        "rawClasses": [
+          "x-men-97-1"
+        ],
+        "rawHtml": "<p>Following the catastrophic dimensional displacement of Asteroid M from 1997, <strong class=\"charles-xavier\">Professor Charles Xavier</strong>, <strong class=\"erik-lehnsherr\">Erik Lehnsherr (Magneto)</strong>, <strong class=\"rogue-anna-marie\">Rogue</strong>, <strong class=\"hank-mccoy\">Beast</strong>, and <strong class=\"nightcrawler-kurt-wagner\">Nightcrawler</strong> awaken amidst the arid desert sands of Ancient Egypt circa 3000 B.C.E. Ambushed by hostile pharaonic legions, the time-lost mutants are unexpectedly rescued by a young, mortal desert nomad named <strong class=\"en-sabah-nur-apocalypse\">En Sabah Nur</strong>—the primordial warrior destined millennia later to become the immortal conqueror Apocalypse.</p>",
+        "paragraphs": [
+          "Following the catastrophic dimensional displacement of Asteroid M from 1997, <strong class=\"charles-xavier\">Professor Charles Xavier</strong>, <strong class=\"erik-lehnsherr\">Erik Lehnsherr (Magneto)</strong>, <strong class=\"rogue-anna-marie\">Rogue</strong>, <strong class=\"hank-mccoy\">Beast</strong>, and <strong class=\"nightcrawler-kurt-wagner\">Nightcrawler</strong> awaken amidst the arid desert sands of Ancient Egypt circa 3000 B.C.E. Ambushed by hostile pharaonic legions, the time-lost mutants are unexpectedly rescued by a young, mortal desert nomad named <strong class=\"en-sabah-nur-apocalypse\">En Sabah Nur</strong>—the primordial warrior destined millennia later to become the immortal conqueror Apocalypse."
+        ],
+        "characters": [
+          "charles-xavier",
+          "erik-lehnsherr",
+          "rogue-anna-marie",
+          "hank-mccoy",
+          "nightcrawler-kurt-wagner",
+          "en-sabah-nur-apocalypse"
+        ],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "Temporal Jump of Asteroid M to Ancient Egypt (c. 3000 B.C.E.)",
+          "Resurrection of Xavier, Magneto, Rogue, Beast, and Nightcrawler in the Bronze Age",
+          "First Meeting with the Young Mortal Nomad En Sabah Nur"
+        ],
+        "locations": [
+          {
+            "name": "Nile Valley & Giza Dunes",
+            "cityOrRegion": "Giza / Nile Valley",
+            "countryOrRealm": "Ancient Egypt",
+            "planet": "Earth-92131",
+            "coordinates": [
+              29.9792,
+              31.1342
+            ],
+            "characters": [
+              "charles-xavier",
+              "erik-lehnsherr",
+              "rogue-anna-marie",
+              "hank-mccoy",
+              "nightcrawler-kurt-wagner",
+              "en-sabah-nur-apocalypse"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "era-_1260_B_C_E__",
     "title": "-1260 B.C.E.-",
     "cleanTitle": "1260 B.C.E.",
@@ -7873,6 +7935,414 @@ export const timelineEras: EraGroup[] = [
                       "celestialSystem": "solar-system"
                   }
               ]
+          },
+          {
+            "id": "event-1997-xmen97-new-order-un-trial-storm-fall",
+            "eraId": "era-_1997_",
+            "eraTitle": "1997",
+            "mediaKey": "x-men-97-1",
+            "mediaTitle": "X-Men '97 (Season 1)",
+            "mediaType": "series",
+            "mediaPhase": "Marvel Television",
+            "isAlternativeTimeline": true,
+            "timelineType": "multiverse-alternate",
+            "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+            "rawClasses": [
+              "x-men-97-1"
+            ],
+            "rawHtml": "<p>Months after the departure of Charles Xavier, <strong class=\"cyclops-scott-summers\">Cyclops</strong> leads the X-Men to rescue young mutant <strong class=\"sunspot-roberto-da-costa\">Roberto da Costa</strong> and destroy reactivated Master Mold sentinels in the Sahara. Inheriting the institute under Xavier's last will, <strong class=\"erik-lehnsherr\">Magneto</strong> surrenders peacefully to stand trial before the United Nations in Manhattan. Anti-mutant extremists assault the tribunal with a radiation-neutralizing cannon; <strong class=\"storm-ororo-munroe\">Storm</strong> intercepts the blast to shield Magneto, tragically losing her elemental godhood. Magneto disarms the tribunal but spares his captors in an impassioned plea for human-mutant coexistence. In the mansion infirmary, Madelyne gives birth to infant <strong class=\"young-nathan-summers\">Nathan Summers</strong>, moments before a battered, identical woman collapses at the gate: the genuine <strong class=\"jean-grey\">Jean Grey</strong>.</p>",
+            "paragraphs": [
+              "Months after the departure of Charles Xavier, <strong class=\"cyclops-scott-summers\">Cyclops</strong> leads the X-Men to rescue young mutant <strong class=\"sunspot-roberto-da-costa\">Roberto da Costa</strong> and destroy reactivated Master Mold sentinels in the Sahara. Inheriting the institute under Xavier's last will, <strong class=\"erik-lehnsherr\">Magneto</strong> surrenders peacefully to stand trial before the United Nations in Manhattan. Anti-mutant extremists assault the tribunal with a radiation-neutralizing cannon; <strong class=\"storm-ororo-munroe\">Storm</strong> intercepts the blast to shield Magneto, tragically losing her elemental godhood. Magneto disarms the tribunal but spares his captors in an impassioned plea for human-mutant coexistence. In the mansion infirmary, Madelyne gives birth to infant <strong class=\"young-nathan-summers\">Nathan Summers</strong>, moments before a battered, identical woman collapses at the gate: the genuine <strong class=\"jean-grey\">Jean Grey</strong>."
+            ],
+            "characters": [
+              "erik-lehnsherr",
+              "storm-ororo-munroe",
+              "cyclops-scott-summers",
+              "jean-grey",
+              "madelyne-pryor-goblin-queen",
+              "sunspot-roberto-da-costa",
+              "valerie-cooper",
+              "young-nathan-summers",
+              "logan-wolverine",
+              "master-mold"
+            ],
+            "stones": [],
+            "deaths": [],
+            "mcuHighlights": [
+              "Magneto Appointed Headmaster of Xavier's Institute",
+              "United Nations Trial of Magneto in Manhattan",
+              "Storm Sacrifices Her Elemental Powers",
+              "Birth of Nathan Summers & Emergence of the Dual Jeans"
+            ],
+            "locations": [
+              {
+                "name": "United Nations Headquarters",
+                "cityOrRegion": "Manhattan, New York",
+                "countryOrRealm": "United States",
+                "planet": "Earth-92131",
+                "coordinates": [
+                  40.7499,
+                  -73.9674
+                ],
+                "characters": [
+                  "erik-lehnsherr",
+                  "storm-ororo-munroe",
+                  "valerie-cooper"
+                ]
+              },
+              {
+                "name": "Xavier's School for Gifted Youngsters",
+                "cityOrRegion": "Salem Center, Westchester County, New York",
+                "countryOrRealm": "United States",
+                "planet": "Earth-92131",
+                "coordinates": [
+                  41.122,
+                  -73.794
+                ],
+                "characters": [
+                  "cyclops-scott-summers",
+                  "jean-grey",
+                  "madelyne-pryor-goblin-queen",
+                  "young-nathan-summers"
+                ]
+              },
+              {
+                "name": "Sahara Sentinel Sub-Facility",
+                "cityOrRegion": "Sahara Desert",
+                "countryOrRealm": "Niger",
+                "planet": "Earth-92131",
+                "coordinates": [
+                  23.4162,
+                  25.6628
+                ],
+                "characters": [
+                  "cyclops-scott-summers",
+                  "sunspot-roberto-da-costa",
+                  "master-mold"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "event-1997-xmen97-fire-made-flesh-goblin-queen-nathan-exile",
+            "eraId": "era-_1997_",
+            "eraTitle": "1997",
+            "mediaKey": "x-men-97-1",
+            "mediaTitle": "X-Men '97 (Season 1)",
+            "mediaType": "series",
+            "mediaPhase": "Marvel Television",
+            "isAlternativeTimeline": true,
+            "timelineType": "multiverse-alternate",
+            "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+            "rawClasses": [
+              "x-men-97-1"
+            ],
+            "rawHtml": "<p>Discovering she is a cellular clone manufactured by <strong class=\"mister-sinister-nathaniel-essex\">Mister Sinister</strong>, Madelyne succumbs to demonic grief and transforms into the psionic sorceress <strong class=\"madelyne-pryor-goblin-queen\">Goblin Queen</strong>, plunging the Xavier Mansion into a surreal Limbo inferno. Sinister inoculates infant Nathan with a lethal techno-organic pathogen to harvest the ultimate genetic catalyst. Reached by the compassionate telepathic embrace of the true <strong class=\"jean-grey\">Jean Grey</strong>, Madelyne reclaims her agency, banishes Sinister, and rescues her child. With the techno-organic virus incurable by 20th-century medicine, <strong class=\"bishop-lucas-bishop\">Lucas Bishop</strong> volunteers to escort infant <strong class=\"young-nathan-summers\">Nathan Summers</strong> through a temporal rift to the 40th Century where advanced healing technology can arrest the spread. Madelyne adopts her independent identity and departs for Genosha.</p>",
+            "paragraphs": [
+              "Discovering she is a cellular clone manufactured by <strong class=\"mister-sinister-nathaniel-essex\">Mister Sinister</strong>, Madelyne succumbs to demonic grief and transforms into the psionic sorceress <strong class=\"madelyne-pryor-goblin-queen\">Goblin Queen</strong>, plunging the Xavier Mansion into a surreal Limbo inferno. Sinister inoculates infant Nathan with a lethal techno-organic pathogen to harvest the ultimate genetic catalyst. Reached by the compassionate telepathic embrace of the true <strong class=\"jean-grey\">Jean Grey</strong>, Madelyne reclaims her agency, banishes Sinister, and rescues her child. With the techno-organic virus incurable by 20th-century medicine, <strong class=\"bishop-lucas-bishop\">Lucas Bishop</strong> volunteers to escort infant <strong class=\"young-nathan-summers\">Nathan Summers</strong> through a temporal rift to the 40th Century where advanced healing technology can arrest the spread. Madelyne adopts her independent identity and departs for Genosha."
+            ],
+            "characters": [
+              "madelyne-pryor-goblin-queen",
+              "jean-grey",
+              "cyclops-scott-summers",
+              "mister-sinister-nathaniel-essex",
+              "bishop-lucas-bishop",
+              "young-nathan-summers",
+              "logan-wolverine"
+            ],
+            "stones": [],
+            "deaths": [],
+            "mcuHighlights": [
+              "Emergence of the Goblin Queen & Limbo Incursion",
+              "Mister Sinister's Techno-Organic Infection of Nathan Summers",
+              "Bishop's Time-Rift Exodus to the 40th Century",
+              "Madelyne Pryor's Emancipation and Departure for Genosha"
+            ],
+            "locations": [
+              {
+                "name": "Xavier's School for Gifted Youngsters",
+                "cityOrRegion": "Salem Center, Westchester County, New York",
+                "countryOrRealm": "United States",
+                "planet": "Earth-92131",
+                "coordinates": [
+                  41.122,
+                  -73.794
+                ],
+                "characters": [
+                  "madelyne-pryor-goblin-queen",
+                  "jean-grey",
+                  "cyclops-scott-summers",
+                  "bishop-lucas-bishop",
+                  "young-nathan-summers"
+                ]
+              },
+              {
+                "name": "Mister Sinister's Secret Genetic Lab",
+                "cityOrRegion": "Nebraska Subterranean Vault",
+                "countryOrRealm": "United States",
+                "planet": "Earth-92131",
+                "coordinates": [
+                  41.4925,
+                  -99.9018
+                ],
+                "characters": [
+                  "mister-sinister-nathaniel-essex",
+                  "young-nathan-summers"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "event-1997-xmen97-motendo-lifedeath-storm-rebirth",
+            "eraId": "era-_1997_",
+            "eraTitle": "1997",
+            "mediaKey": "x-men-97-1",
+            "mediaTitle": "X-Men '97 (Season 1)",
+            "mediaType": "series",
+            "mediaPhase": "Marvel Television",
+            "isAlternativeTimeline": true,
+            "timelineType": "multiverse-alternate",
+            "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+            "rawClasses": [
+              "x-men-97-1"
+            ],
+            "rawHtml": "<p>On her 18th birthday, <strong class=\"jubilee-jubilation-lee\">Jubilee</strong> and <strong class=\"sunspot-roberto-da-costa\">Roberto da Costa</strong> are sucked through a 16-bit console into the digital television dimension of <strong class=\"mojo\">Mojo</strong>, fighting through broadcast simulations of past battles before destroying Mojo's transmitter and escaping to Earth. Meanwhile at Eagle Plaza in Dallas, Texas, <strong class=\"storm-ororo-munroe\">Storm</strong> and mutant inventor <strong class=\"forge\">Forge</strong> are besieged by the ancient shadow demon The Adversary; overcoming her claustrophobic trauma and reconciling with nature, Storm defeats the demon and fully restores her cosmic elemental powers. Across the galaxy on Chandilar, <strong class=\"charles-xavier\">Charles Xavier</strong> undergoes spiritual rehabilitation alongside <strong class=\"lilandra-neramani\">Empress Lilandra</strong>, but upon receiving a cosmic psionic vision of impending agony on Earth, abdicates the Shi'ar imperial crown to return home.</p>",
+            "paragraphs": [
+              "On her 18th birthday, <strong class=\"jubilee-jubilation-lee\">Jubilee</strong> and <strong class=\"sunspot-roberto-da-costa\">Roberto da Costa</strong> are sucked through a 16-bit console into the digital television dimension of <strong class=\"mojo\">Mojo</strong>, fighting through broadcast simulations of past battles before destroying Mojo's transmitter and escaping to Earth. Meanwhile at Eagle Plaza in Dallas, Texas, <strong class=\"storm-ororo-munroe\">Storm</strong> and mutant inventor <strong class=\"forge\">Forge</strong> are besieged by the ancient shadow demon The Adversary; overcoming her claustrophobic trauma and reconciling with nature, Storm defeats the demon and fully restores her cosmic elemental powers. Across the galaxy on Chandilar, <strong class=\"charles-xavier\">Charles Xavier</strong> undergoes spiritual rehabilitation alongside <strong class=\"lilandra-neramani\">Empress Lilandra</strong>, but upon receiving a cosmic psionic vision of impending agony on Earth, abdicates the Shi'ar imperial crown to return home."
+            ],
+            "characters": [
+              "mojo",
+              "jubilee-jubilation-lee",
+              "sunspot-roberto-da-costa",
+              "storm-ororo-munroe",
+              "forge",
+              "charles-xavier",
+              "lilandra-neramani"
+            ],
+            "stones": [],
+            "deaths": [],
+            "mcuHighlights": [
+              "Mojo's 16-Bit Motendo Broadcast Simulation",
+              "Storm & Forge Defeat The Adversary in Texas",
+              "Storm Fully Restores Her Omega-Level Climate Powers",
+              "Xavier's Renunciation of the Shi'ar Imperial Crown"
+            ],
+            "locations": [
+              {
+                "name": "Eagle Plaza Ranch & Sacred Caverns",
+                "cityOrRegion": "Dallas, Texas",
+                "countryOrRealm": "United States",
+                "planet": "Earth-92131",
+                "coordinates": [
+                  32.7767,
+                  -96.797
+                ],
+                "characters": [
+                  "storm-ororo-munroe",
+                  "forge"
+                ]
+              },
+              {
+                "name": "Mojoverse Digital Dimension",
+                "cityOrRegion": "Mojoverse Void",
+                "countryOrRealm": "Mojoverse",
+                "planet": "Mojoverse",
+                "celestialSystem": "multiverse",
+                "characters": [
+                  "mojo",
+                  "jubilee-jubilation-lee",
+                  "sunspot-roberto-da-costa"
+                ]
+              },
+              {
+                "name": "Shi'ar Imperial Crown World Chandilar",
+                "cityOrRegion": "Chandilar Throne Room",
+                "countryOrRealm": "Shi'ar Empire",
+                "planet": "Chandilar",
+                "celestialSystem": "deep-space",
+                "characters": [
+                  "charles-xavier",
+                  "lilandra-neramani"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "event-1997-xmen97-genosha-holocaust-gambit-sacrifice",
+            "eraId": "era-_1997_",
+            "eraTitle": "1997",
+            "mediaKey": "x-men-97-1",
+            "mediaTitle": "X-Men '97 (Season 1)",
+            "mediaType": "series",
+            "mediaPhase": "Marvel Television",
+            "isAlternativeTimeline": true,
+            "timelineType": "multiverse-alternate",
+            "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+            "rawClasses": [
+              "x-men-97-1"
+            ],
+            "rawHtml": "<p>During Genosha's formal gala celebrating UN statehood recognition under chancellor <strong class=\"erik-lehnsherr\">Magneto</strong>, <strong class=\"cable-nathan-summers\">Cable</strong> abruptly manifests through the timestream, frantically warning his biological mother <strong class=\"madelyne-pryor-goblin-queen\">Madelyne Pryor</strong> of imminent annihilation before being snapped back through time. Moments later, a catastrophic three-headed Tri-Sentinel breaches the atmosphere, unleashing plasma holocaust fire across the island nation and slaughtering millions of mutants, claiming the lives of Madelyne, Banshee, Callisto, and Sebastian Shaw. Magneto falls shielding morlock children. Impaled through the chest by the mechanoid's spear, <strong class=\"gambit-remy-lebeau\">Gambit</strong> channels the full kinetic potential of his dying body into the colossus, detonating in an apocalyptic blast that obliterates the monster: <em>\"The name is Gambit, mon ami... Remember it.\"</em></p>",
+            "paragraphs": [
+              "During Genosha's formal gala celebrating UN statehood recognition under chancellor <strong class=\"erik-lehnsherr\">Magneto</strong>, <strong class=\"cable-nathan-summers\">Cable</strong> abruptly manifests through the timestream, frantically warning his biological mother <strong class=\"madelyne-pryor-goblin-queen\">Madelyne Pryor</strong> of imminent annihilation before being snapped back through time. Moments later, a catastrophic three-headed Tri-Sentinel breaches the atmosphere, unleashing plasma holocaust fire across the island nation and slaughtering millions of mutants, claiming the lives of Madelyne, Banshee, Callisto, and Sebastian Shaw. Magneto falls shielding morlock children. Impaled through the chest by the mechanoid's spear, <strong class=\"gambit-remy-lebeau\">Gambit</strong> channels the full kinetic potential of his dying body into the colossus, detonating in an apocalyptic blast that obliterates the monster: \"The name is Gambit, mon ami... Remember it.\""
+            ],
+            "characters": [
+              "gambit-remy-lebeau",
+              "rogue-anna-marie",
+              "erik-lehnsherr",
+              "madelyne-pryor-goblin-queen",
+              "cable-nathan-summers",
+              "nightcrawler-kurt-wagner"
+            ],
+            "stones": [],
+            "deaths": [
+              "gambit-remy-lebeau",
+              "madelyne-pryor-goblin-queen"
+            ],
+            "mcuHighlights": [
+              "United Nations Statehood Gala of Genosha",
+              "Cable's Desperate Temporal Warning to Madelyne Pryor",
+              "Tri-Sentinel Holocaust of Genosha",
+              "Gambit's Immortal Kinetic Sacrifice: 'Remember It'"
+            ],
+            "locations": [
+              {
+                "name": "Genosha Capital & Council Plaza",
+                "cityOrRegion": "Genosha City",
+                "countryOrRealm": "Genosha",
+                "planet": "Earth-92131",
+                "coordinates": [
+                  -4.6796,
+                  55.492
+                ],
+                "characters": [
+                  "gambit-remy-lebeau",
+                  "rogue-anna-marie",
+                  "erik-lehnsherr",
+                  "madelyne-pryor-goblin-queen",
+                  "cable-nathan-summers"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "event-1997-xmen97-tolerance-extinction-emp-asteroid-m",
+            "eraId": "era-_1997_",
+            "eraTitle": "1997",
+            "mediaKey": "x-men-97-1",
+            "mediaTitle": "X-Men '97 (Season 1)",
+            "mediaType": "series",
+            "mediaPhase": "Marvel Television",
+            "isAlternativeTimeline": true,
+            "timelineType": "multiverse-alternate",
+            "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+            "rawClasses": [
+              "x-men-97-1"
+            ],
+            "rawHtml": "<p>Cybernetic mastermind <strong class=\"bastion-sebastion-gilberti\">Bastion</strong> triggers <em>Operation: Zero Tolerance</em>, converting sleeper humans into Prime Sentinels and destroying the Xavier Mansion. Liberated by <strong class=\"valerie-cooper\">Val Cooper</strong>, <strong class=\"erik-lehnsherr\">Magneto</strong> reaches the North Magnetic Pole and unleashes a planetary Electromagnetic Pulse (EMP) that disables every Prime Sentinel while plunging Earth into total technological blackout, witnessed across New York by <strong class=\"peter-parker-spider-man\">Spider-Man</strong> and the Avengers. As Xavier returns to rally the team, Rogue and Sunspot defect to Magneto's rebuilt <strong>Asteroid M</strong>. The X-Men assault Bastion's Galapagos citadel—where Jean strips Sinister of his stolen mutant genetics—and board Asteroid M. Following Wolverine stabbing Magneto, the Master of Magnetism violently flays every ounce of adamantium from Logan's skeleton. When US nuclear missiles destabilize Asteroid M into terminal atmospheric descent, Magneto and Xavier combine their powers to divert the meteor into space, where a catastrophic temporal overcharge causes Asteroid M to implode and vanish from spacetime. On Earth, <strong class=\"bishop-lucas-bishop\">Lucas Bishop</strong> warns <strong class=\"forge\">Forge</strong> that the X-Men are lost in time, while in Genosha, <strong class=\"en-sabah-nur-apocalypse\">Apocalypse</strong> retrieves Gambit's charred playing card.</p>",
+            "paragraphs": [
+              "Cybernetic mastermind <strong class=\"bastion-sebastion-gilberti\">Bastion</strong> triggers Operation: Zero Tolerance, converting sleeper humans into Prime Sentinels and destroying the Xavier Mansion. Liberated by <strong class=\"valerie-cooper\">Val Cooper</strong>, <strong class=\"erik-lehnsherr\">Magneto</strong> reaches the North Magnetic Pole and unleashes a planetary Electromagnetic Pulse (EMP) that disables every Prime Sentinel while plunging Earth into total technological blackout, witnessed across New York by <strong class=\"peter-parker-spider-man\">Spider-Man</strong> and the Avengers. As Xavier returns to rally the team, Rogue and Sunspot defect to Magneto's rebuilt Asteroid M. The X-Men assault Bastion's Galapagos citadel—where Jean strips Sinister of his stolen mutant genetics—and board Asteroid M. Following Wolverine stabbing Magneto, the Master of Magnetism violently flays every ounce of adamantium from Logan's skeleton. When US nuclear missiles destabilize Asteroid M into terminal atmospheric descent, Magneto and Xavier combine their powers to divert the meteor into space, where a catastrophic temporal overcharge causes Asteroid M to implode and vanish from spacetime. On Earth, <strong class=\"bishop-lucas-bishop\">Lucas Bishop</strong> warns <strong class=\"forge\">Forge</strong> that the X-Men are lost in time, while in Genosha, <strong class=\"en-sabah-nur-apocalypse\">Apocalypse</strong> retrieves Gambit's charred playing card."
+            ],
+            "characters": [
+              "bastion-sebastion-gilberti",
+              "cable-nathan-summers",
+              "erik-lehnsherr",
+              "charles-xavier",
+              "logan-wolverine",
+              "cyclops-scott-summers",
+              "jean-grey",
+              "rogue-anna-marie",
+              "valerie-cooper",
+              "peter-parker-spider-man",
+              "forge",
+              "bishop-lucas-bishop",
+              "en-sabah-nur-apocalypse",
+              "mister-sinister-nathaniel-essex"
+            ],
+            "stones": [],
+            "deaths": [
+              "bastion-sebastion-gilberti"
+            ],
+            "mcuHighlights": [
+              "Bastion's Operation: Zero Tolerance & Global Prime Sentinel Awakening",
+              "Magneto's North Pole Global EMP Cataclysm",
+              "Earth-92131 Blackout Cameos: Spider-Man, Mary Jane & The Avengers",
+              "Wolverine's Traumatic Adamantium Extraction on Asteroid M",
+              "Fall & Dimensional Implosion of Asteroid M Over Earth",
+              "Lucas Bishop & Forge Mobilize / Apocalypse Claims Gambit's Card"
+            ],
+            "locations": [
+              {
+                "name": "North Magnetic Pole Ground Zero",
+                "cityOrRegion": "Arctic Magnetic Pole",
+                "countryOrRealm": "Arctic Ocean",
+                "planet": "Earth-92131",
+                "coordinates": [
+                  86.0,
+                  -160.0
+                ],
+                "characters": [
+                  "erik-lehnsherr"
+                ]
+              },
+              {
+                "name": "Asteroid M Orbital Citadel",
+                "cityOrRegion": "Earth Orbital Apex",
+                "countryOrRealm": "Asteroid M",
+                "planet": "Earth Orbit",
+                "celestialSystem": "terrestrial-orbit",
+                "characters": [
+                  "erik-lehnsherr",
+                  "charles-xavier",
+                  "logan-wolverine",
+                  "cyclops-scott-summers",
+                  "jean-grey",
+                  "rogue-anna-marie",
+                  "bastion-sebastion-gilberti"
+                ]
+              },
+              {
+                "name": "Galápagos OZT Bastion Citadel",
+                "cityOrRegion": "Galápagos Archipelago",
+                "countryOrRealm": "Ecuador",
+                "planet": "Earth-92131",
+                "coordinates": [
+                  -0.9538,
+                  -90.9656
+                ],
+                "characters": [
+                  "bastion-sebastion-gilberti",
+                  "jean-grey",
+                  "mister-sinister-nathaniel-essex"
+                ]
+              },
+              {
+                "name": "Genosha Memorial Ruins",
+                "cityOrRegion": "Genosha City",
+                "countryOrRealm": "Genosha",
+                "planet": "Earth-92131",
+                "coordinates": [
+                  -4.6796,
+                  55.492
+                ],
+                "characters": [
+                  "en-sabah-nur-apocalypse"
+                ]
+              },
+              {
+                "name": "Eagle Plaza Tactical Workshop",
+                "cityOrRegion": "Dallas, Texas",
+                "countryOrRealm": "United States",
+                "planet": "Earth-92131",
+                "coordinates": [
+                  32.7767,
+                  -96.797
+                ],
+                "characters": [
+                  "forge",
+                  "bishop-lucas-bishop"
+                ]
+              }
+            ]
           }
       ]
   },
@@ -10726,6 +11196,65 @@ export const timelineEras: EraGroup[] = [
             "orbitType": "GEO",
             "altitudeKm": 35786,
             "celestialSystem": "terrestrial-orbit"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "era-_3960_C_E__",
+    "title": "-3960 C.E.-",
+    "cleanTitle": "3960 C.E.",
+    "category": "future",
+    "events": [
+      {
+        "id": "event-3960-xmen97-far-future-clan-askani",
+        "eraId": "era-_3960_C_E__",
+        "eraTitle": "3960 C.E.",
+        "mediaKey": "x-men-97-1",
+        "mediaTitle": "X-Men '97 (Season 1)",
+        "mediaType": "series",
+        "mediaPhase": "Marvel Television",
+        "isAlternativeTimeline": true,
+        "timelineType": "multiverse-alternate",
+        "earthDesignation": "Earth-92131 (Marvel Animated Universe)",
+        "rawClasses": [
+          "x-men-97-1"
+        ],
+        "rawHtml": "<p>Flung nearly two millennia into the desolate future of 3960 C.E. by Asteroid M's temporal collapse, <strong class=\"cyclops-scott-summers\">Scott Summers (Cyclops)</strong> and <strong class=\"jean-grey\">Jean Grey</strong> materialize in a scorched wasteland dominated by the tyrannical reign of <strong class=\"en-sabah-nur-apocalypse\">Apocalypse</strong>. They are intercepted by cloaked rebel guerillas led by <strong class=\"mother-askani-rachel-summers\">Mother Askani</strong> (Rachel Summers) and introduced to a young boy being trained to defeat Apocalypse: the child <strong class=\"young-nathan-summers\">Nathan Summers</strong>, the very son Scott and Madelyne were forced to send to the future to cure his techno-organic infection.</p>",
+        "paragraphs": [
+          "Flung nearly two millennia into the desolate future of 3960 C.E. by Asteroid M's temporal collapse, <strong class=\"cyclops-scott-summers\">Scott Summers (Cyclops)</strong> and <strong class=\"jean-grey\">Jean Grey</strong> materialize in a scorched wasteland dominated by the tyrannical reign of <strong class=\"en-sabah-nur-apocalypse\">Apocalypse</strong>. They are intercepted by cloaked rebel guerillas led by <strong class=\"mother-askani-rachel-summers\">Mother Askani</strong> (Rachel Summers) and introduced to a young boy being trained to defeat Apocalypse: the child <strong class=\"young-nathan-summers\">Nathan Summers</strong>, the very son Scott and Madelyne were forced to send to the future to cure his techno-organic infection."
+        ],
+        "characters": [
+          "cyclops-scott-summers",
+          "jean-grey",
+          "mother-askani-rachel-summers",
+          "young-nathan-summers",
+          "en-sabah-nur-apocalypse"
+        ],
+        "stones": [],
+        "deaths": [],
+        "mcuHighlights": [
+          "Temporal Jump of Cyclops and Jean Grey to 3960 C.E.",
+          "First Appearance of Mother Askani (Rachel Summers) & Clan Askani Resistance",
+          "Emotional Reunion with Young Nathan Summers (Child Cable)"
+        ],
+        "locations": [
+          {
+            "name": "Clan Askani Sanctuary Citadel",
+            "cityOrRegion": "New Canaan Wastelands",
+            "countryOrRealm": "Earth-92131 (Year 3960)",
+            "planet": "Earth-92131",
+            "coordinates": [
+              41.8781,
+              -87.6298
+            ],
+            "characters": [
+              "cyclops-scott-summers",
+              "jean-grey",
+              "mother-askani-rachel-summers",
+              "young-nathan-summers"
+            ]
           }
         ]
       }

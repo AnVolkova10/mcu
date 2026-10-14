@@ -39,6 +39,7 @@ A continuación se listan las producciones que pasaron por la auditoría diegét
 | `fantastic-four-tas-1`, `fantastic-four-tas-2` | **Fantastic Four: The Animated Series** | Temporadas 1 y 2 completas | • **c. 1200 a.C.**: *The Mask of Doom* (T1 E9-10), viaje en el tiempo a la Grecia Micénica en busca del Cofre de las Sirenas.<br>• **1994–1995**: Origen cósmico, Namor, Galactus, Silver Surfer, Inhumanos, Ego y Wakanda. |
 | `iron-man-tas-1`, `iron-man-tas-2` | **Iron Man: The Animated Series** | Temporadas 1 y 2 completas | • **1994–1995**: Force Works, origen en el Ártico/Vietnam, Modular Armor, Armor Wars. |
 | `incredible-hulk-tas-1`, `incredible-hulk-tas-2` | **The Incredible Hulk: The Animated Series** | Temporadas 1 y 2 completas | • **1996–1997**: Bruce Banner prófugo, The Leader, crossovers con Iron Man/War Machine y Thing, She-Hulk y Gray Hulk. |
+| `x-men-97-1` | **X-Men '97** | Temporada 1 completa | • **c. 3000 B.C.E.**: Salto temporal del grupo de Xavier, Magneto, Rogue, Beast y Nightcrawler al Antiguo Egipto tras la implosión de Asteroid M; encuentro con el joven mortal En Sabah Nur.<br>• **1997**: Continuación directa tras *Graduation Day*; juicio de Magneto en la ONU; pérdida de poderes de Storm; revelación de Madelyne Pryor / Goblin Queen y exilio temporal del bebé Nathan; simulación de Mojoverse / Motendo y renacimiento de Storm con Forge; masacre del Tri-Sentinel en Genosha con el sacrificio cinético de Gambit; Operación Zero Tolerance de Bastion, apagón electromagnético planetario de Magneto, extracción de adamantium de Wolverine, caída de Asteroid M y despertar de los Centinelas Prime.<br>• **3960 C.E.**: Salto temporal de Cyclops y Jean Grey casi dos milenios al futuro gobernado por Apocalipsis; unión al Clan Askani liderado por Mother Askani (Rachel Summers) y rescate del joven Nathan Summers. |
 
 ---
 
@@ -52,7 +53,6 @@ A continuación se listan las producciones que pasaron por la auditoría diegét
 - ⏳ **Avengers: Infinity War** (Flashback de Zen-Whoberi 1996 con Gamora y Thanos).
 - ⏳ **Captain America: Civil War** (Flashback de 1991 con Bucky / Winter Soldier).
 - ⏳ **Películas de Fase 2 y Fase 3 de Marvel Studios** aún no auditadas individualmente.
-- ⏳ **X-Men '97** (Disney+ continuación de Earth-92131).
 - ⏳ **Spider-Man Unlimited** (Earth-751263 / Counter-Earth).
 
 ---

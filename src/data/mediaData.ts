@@ -1105,6 +1105,22 @@ export const mediaData: Record<string, MediaItem> = {
     "primaryUniverse": "Earth-92131 (Marvel Animated Universe)",
     "studio": "Fox",
     "description": "Retitled The Incredible Hulk and She-Hulk: Jennifer Walters joins Bruce Banner on the road, battling Doctor Doom, Wendigo, and the emergence of Gray Hulk."
+  },
+  "x-men-97-1": {
+    "id": "x-men-97-1",
+    "cssClass": "x-men-97-1",
+    "title": "X-Men '97 (Season 1)",
+    "shortTitle": "X-Men '97 (Season 1)",
+    "releaseYear": "2024",
+    "type": "series",
+    "phase": "Marvel Television",
+    "posterColor": "#eab308",
+    "timelineOrder": 80,
+    "isAnimated": true,
+    "timelineType": "multiverse-alternate",
+    "primaryUniverse": "Earth-92131 (Marvel Animated Universe)",
+    "studio": "Disney+",
+    "description": "Direct canonical continuation of the 1992-1997 animated series: Magneto inherits Xavier's institute, Madelyne Pryor falls to the Goblin Queen, the tragedy of Genosha claims Gambit, and Bastion's Operation: Zero Tolerance culminates in Asteroid M's temporal displacement across history."
   }
 };
 

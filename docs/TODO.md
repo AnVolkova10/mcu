@@ -192,9 +192,32 @@ Integrar y auditar la totalidad de las 5 series nucleares del Universo Animado d
 
 ---
 
-## 📌 10. Backlog de Ideas & Tareas Pendientes
+## 📌 10. Auditoría e Integración Canónica de X-Men '97 (Temporada 1)
+- [x] **Auditoría Diegética Completa (PNC - Ley Suprema N° 1)**:
+  - [x] Desglose y reclasificación de los 10 episodios en 7 hitos cronológicos mayores diegéticos a través de 3 eras distintas:
+    - **c. 3000 B.C.E.** (`era-_c__3000_B_C_E__`): Desplazamiento temporal de Asteroid M al Antiguo Egipto; Xavier, Magneto, Rogue, Beast y Nightcrawler rescatados por el joven mortal En Sabah Nur (`event-3000bce-xmen97-ancient-egypt-en-sabah-nur`).
+    - **1997** (`era-_1997_`): Continuación inmediata de *Graduation Day* (X-Men TAS S5E10):
+      1. Nuevo Orden & Juicio en la ONU; ataque de Friends of Humanity y pérdida de poderes de Storm (`event-1997-xmen97-new-order-un-trial-storm-fall`).
+      2. Revelación del clon de Jean, Madelyne Pryor (Goblin Queen), pacto con Sinister y exilio temporal del infante Nathan Summers al futuro (`event-1997-xmen97-fire-made-flesh-goblin-queen-nathan-exile`).
+      3. Simulación de Mojoverse / Motendo (Jubilee & Roberto) y renacimiento de poderes de Storm junto a Forge en Eagle Plaza; retorno de Xavier desde Chandilar (`event-1997-xmen97-motendo-lifedeath-storm-rebirth`).
+      4. Genocidio mutante en Genosha por el Tri-Sentinel de Bastion; muerte de Magneto aparente y sacrificio cinético inmortal de Gambit (`event-1997-xmen97-genosha-holocaust-gambit-sacrifice`).
+      5. Operación Zero Tolerance, Centinelas Prime, EMP global de Magneto desde el Polo Norte, extracción de adamantium de Wolverine en Asteroid M, caída e implosión temporal de Asteroid M y alianza táctica Bishop/Forge (`event-1997-xmen97-tolerance-extinction-emp-asteroid-m`).
+    - **3960 C.E.** (`era-_3960_C_E__`): Desplazamiento temporal de Cyclops y Jean Grey dos milenios al futuro apocalíptico de En Sabah Nur; unión al Clan Askani liderado por Mother Askani (Rachel Summers) y rescate del joven Nathan Summers (`event-3960-xmen97-far-future-clan-askani`).
+  - [x] **Dossiers de Personajes & Glows Visuales**:
+    - Registrados 6 nuevos personajes con bios y estilos neón: `madelyne-pryor-goblin-queen`, `bastion-sebastion-gilberti`, `forge`, `mother-askani-rachel-summers`, `valerie-cooper`, `young-nathan-summers`.
+    - Agregados alias unificados en `characterAliases` para detección y conteo instantáneo en drawers (`madelyne-pryor`, `goblin-queen`, `bastion`, `val-cooper`, `baby-nathan`, `rachel-summers`, `mother-askani`, etc.).
+  - [x] **Cartografía y Coordenadas Reales**:
+    - Locaciones terrestres vinculadas con coordenadas GPS reales (Nilo/Giza en Egipto, Genosha City, Dallas Eagle Plaza, Galápagos, Polo Norte Magnético).
+    - Locaciones extraterrestres/orbitales (`Asteroid M Orbital Citadel`) catalogadas diegéticamente.
+  - [x] **Catálogo de Medios & Registro Canónico**:
+    - `x-men-97-1` agregado a `src/data/mediaData.ts` (Order 80, Marvel Television, releaseYear 2024, Earth-92131).
+    - Actualizado `docs/AUDITED_PRODUCTIONS.md`, promoviendo *X-Men '97* de backlog a producción auditada oficial.
+
+---
+
+## 📌 11. Backlog de Ideas & Tareas Pendientes
 - [ ] Auditoría de películas de la Fase 2 y 3 no auditadas previamente (*Ant-Man and the Wasp*, *Thor: The Dark World* 2988 B.C.E., *Infinity War* Zen-Whoberi 1996, *Civil War* 1991).
-- [ ] Fase 2 Multiverso: Auditoría canónica de *X-Men '97* (Temporada 1 completa, 10 episodios, incluyendo viajes temporales a c. 3000 a.C. y 3960 d.C.) y evaluación de *Spider-Man Unlimited*.
+- [ ] Evaluación y auditoría de *Spider-Man Unlimited* (Earth-751263 / Counter-Earth).
 
 
 
