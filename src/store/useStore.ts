@@ -1,6 +1,7 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 import { ActiveScreen, TimelineCategory, TimelineFilterState } from '@/types';
+import { getInitialActiveScreen, getInitialMapLocationPin } from '@/utils/routeUtils';
 
 interface AppState {
   // Navigation
@@ -92,7 +93,7 @@ const initialFilters: TimelineFilterState = {
 export const useStore = create<AppState>()(
   persist(
     (set, get) => ({
-      activeScreen: 'timeline',
+      activeScreen: getInitialActiveScreen(),
       setActiveScreen: (activeScreen) => set({ activeScreen }),
 
       selectedCharacterId: null,
@@ -110,7 +111,7 @@ export const useStore = create<AppState>()(
       selectedMapCharacterId: null,
       setSelectedMapCharacterId: (selectedMapCharacterId) => set({ selectedMapCharacterId }),
 
-      selectedMapLocationPin: null,
+      selectedMapLocationPin: getInitialMapLocationPin(),
       setSelectedMapLocationPin: (selectedMapLocationPin) => set({ selectedMapLocationPin }),
 
       isSearchOpen: false,

@@ -713,4 +713,25 @@
   text-shadow: 0 0 8px rgba(56, 189, 248, 0.6);
 }
 
+.mcu-html-content .callisto,
+.callisto {
+  color: #a1a1aa;
+  font-weight: 700;
+  text-shadow: 0 0 8px rgba(161, 161, 170, 0.5);
+}
+
+.mcu-html-content .banshee,
+.banshee {
+  color: #10b981;
+  font-weight: 700;
+  text-shadow: 0 0 8px rgba(16, 185, 129, 0.5);
+}
+
+.mcu-html-content .shaw,
+.shaw {
+  color: #dc2626;
+  font-weight: 700;
+  text-shadow: 0 0 8px rgba(220, 38, 38, 0.5);
+}
+
 

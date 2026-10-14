@@ -4667,10 +4667,10 @@ export const timelineEras: EraGroup[] = [
         "rawClasses": [
           "x-men-tas-1"
         ],
-        "rawHtml": "<p>While on a romantic evening in Manhattan, <strong class=\"cyclops-scott-summers\">Scott Summers</strong> and <strong class=\"jean-grey\">Jean Grey</strong> are ambushed and dragged into the underground sewer labyrinths by the <strong>Morlocks</strong>—a subterranean society of physically deformed and outcast mutants. The Morlock leader, <strong>Callisto</strong>, intends to keep Scott as her consort while using Jean's genetic gifts to bolster their community.</p>\n<p>Infiltrating the darkened tunnels, <strong class=\"storm-ororo-munroe\">Storm</strong>, <strong class=\"logan-wolverine\">Wolverine</strong>, and <strong class=\"rogue-anna-marie\">Rogue</strong> track down their captured teammates. To settle the dispute without slaughter, Storm exercises ancient Morlock law and challenges Callisto to a mortal combat duel with daggers. Overcoming her severe claustrophobia, Storm disarms and defeats Callisto, earning the ceremonial title of Leader of the Morlocks and securing safe passage for her team.</p>",
+        "rawHtml": "<p>While on a romantic evening in Manhattan, <strong class=\"cyclops-scott-summers\">Scott Summers</strong> and <strong class=\"jean-grey\">Jean Grey</strong> are ambushed and dragged into the underground sewer labyrinths by the <strong>Morlocks</strong>—a subterranean society of physically deformed and outcast mutants. The Morlock leader, <strong class=\"callisto\">Callisto</strong>, intends to keep Scott as her consort while using Jean's genetic gifts to bolster their community.</p>\n<p>Infiltrating the darkened tunnels, <strong class=\"storm-ororo-munroe\">Storm</strong>, <strong class=\"logan-wolverine\">Wolverine</strong>, and <strong class=\"rogue-anna-marie\">Rogue</strong> track down their captured teammates. To settle the dispute without slaughter, Storm exercises ancient Morlock law and challenges <strong class=\"callisto\">Callisto</strong> to a mortal combat duel with daggers. Overcoming her severe claustrophobia, Storm disarms and defeats <strong class=\"callisto\">Callisto</strong>, earning the ceremonial title of Leader of the Morlocks and securing safe passage for her team.</p>",
         "paragraphs": [
-          "While on a romantic evening in Manhattan, <strong class=\"cyclops-scott-summers\">Scott Summers</strong> and <strong class=\"jean-grey\">Jean Grey</strong> are ambushed and dragged into the underground sewer labyrinths by the <strong>Morlocks</strong>—a subterranean society of physically deformed and outcast mutants. The Morlock leader, <strong>Callisto</strong>, intends to keep Scott as her consort while using Jean's genetic gifts to bolster their community.",
-          "Infiltrating the darkened tunnels, <strong class=\"storm-ororo-munroe\">Storm</strong>, <strong class=\"logan-wolverine\">Wolverine</strong>, and <strong class=\"rogue-anna-marie\">Rogue</strong> track down their captured teammates. To settle the dispute without slaughter, Storm exercises ancient Morlock law and challenges Callisto to a mortal combat duel with daggers. Overcoming her severe claustrophobia, Storm disarms and defeats Callisto, earning the ceremonial title of Leader of the Morlocks and securing safe passage for her team."
+          "While on a romantic evening in Manhattan, <strong class=\"cyclops-scott-summers\">Scott Summers</strong> and <strong class=\"jean-grey\">Jean Grey</strong> are ambushed and dragged into the underground sewer labyrinths by the <strong>Morlocks</strong>—a subterranean society of physically deformed and outcast mutants. The Morlock leader, <strong class=\"callisto\">Callisto</strong>, intends to keep Scott as her consort while using Jean's genetic gifts to bolster their community.",
+          "Infiltrating the darkened tunnels, <strong class=\"storm-ororo-munroe\">Storm</strong>, <strong class=\"logan-wolverine\">Wolverine</strong>, and <strong class=\"rogue-anna-marie\">Rogue</strong> track down their captured teammates. To settle the dispute without slaughter, Storm exercises ancient Morlock law and challenges <strong class=\"callisto\">Callisto</strong> to a mortal combat duel with daggers. Overcoming her severe claustrophobia, Storm disarms and defeats <strong class=\"callisto\">Callisto</strong>, earning the ceremonial title of Leader of the Morlocks and securing safe passage for her team."
         ],
         "characters": [
           "storm-ororo-munroe",
@@ -4678,7 +4678,8 @@ export const timelineEras: EraGroup[] = [
           "jean-grey",
           "logan-wolverine",
           "rogue-anna-marie",
-          "gambit-remy-lebeau"
+          "gambit-remy-lebeau",
+          "callisto"
         ],
         "stones": [],
         "deaths": [],
@@ -4702,7 +4703,8 @@ export const timelineEras: EraGroup[] = [
               "cyclops-scott-summers",
               "jean-grey",
               "logan-wolverine",
-              "rogue-anna-marie"
+              "rogue-anna-marie",
+              "callisto"
             ]
           }
         ]
@@ -4722,10 +4724,10 @@ export const timelineEras: EraGroup[] = [
         "rawClasses": [
           "x-men-tas-1"
         ],
-        "rawHtml": "<p>While Wolverine journeys to an Arctic Inuit settlement in northern Canada to find spiritual solitude away from Sabretooth, <strong class=\"gambit-remy-lebeau\">Gambit</strong>, <strong class=\"storm-ororo-munroe\">Storm</strong>, and <strong class=\"jubilee-jubilation-lee\">Jubilee</strong> travel on holiday to the tropical island nation of <strong>Genosha</strong>, marketed globally as a peaceful haven for mutants.</p>\n<p>Upon arrival, they are ambushed by the Genoshan Magistrates, locked into power-inhibiting shock collars, and forced into grueling slave labor alongside hundreds of captive mutants constructing a massive hydroelectric dam for <strong class=\"bolivar-trask\">Trask</strong> and the sentient Sentinel processor <strong>Master Mold</strong>. Using his sleight-of-hand thieving skills, Gambit picks his shock collar's lock and stages a full-scale slave uprising alongside the cybernetic time-traveling mercenary <strong class=\"cable-nathan-summers\">Cable</strong>, blowing up the dam's power grid and liberating the mutant population.</p>",
+        "rawHtml": "<p>While Wolverine journeys to an Arctic Inuit settlement in northern Canada to find spiritual solitude away from Sabretooth, <strong class=\"gambit-remy-lebeau\">Gambit</strong>, <strong class=\"storm-ororo-munroe\">Storm</strong>, and <strong class=\"jubilee-jubilation-lee\">Jubilee</strong> travel on holiday to the tropical island nation of <strong>Genosha</strong>, marketed globally as a peaceful haven for mutants.</p>\n<p>Upon arrival, they are ambushed by the Genoshan Magistrates, locked into power-inhibiting shock collars, and forced into grueling slave labor alongside hundreds of captive mutants constructing a massive hydroelectric dam for <strong class=\"bolivar-trask\">Trask</strong> and the sentient Sentinel processor <strong class=\"master-mold\">Master Mold</strong>. Using his sleight-of-hand thieving skills, Gambit picks his shock collar's lock and stages a full-scale slave uprising alongside the cybernetic time-traveling mercenary <strong class=\"cable-nathan-summers\">Cable</strong>, blowing up the dam's power grid and liberating the mutant population.</p>",
         "paragraphs": [
           "While Wolverine journeys to an Arctic Inuit settlement in northern Canada to find spiritual solitude away from Sabretooth, <strong class=\"gambit-remy-lebeau\">Gambit</strong>, <strong class=\"storm-ororo-munroe\">Storm</strong>, and <strong class=\"jubilee-jubilation-lee\">Jubilee</strong> travel on holiday to the tropical island nation of <strong>Genosha</strong>, marketed globally as a peaceful haven for mutants.",
-          "Upon arrival, they are ambushed by the Genoshan Magistrates, locked into power-inhibiting shock collars, and forced into grueling slave labor alongside hundreds of captive mutants constructing a massive hydroelectric dam for <strong class=\"bolivar-trask\">Trask</strong> and the sentient Sentinel processor <strong>Master Mold</strong>. Using his sleight-of-hand thieving skills, Gambit picks his shock collar's lock and stages a full-scale slave uprising alongside the cybernetic time-traveling mercenary <strong class=\"cable-nathan-summers\">Cable</strong>, blowing up the dam's power grid and liberating the mutant population."
+          "Upon arrival, they are ambushed by the Genoshan Magistrates, locked into power-inhibiting shock collars, and forced into grueling slave labor alongside hundreds of captive mutants constructing a massive hydroelectric dam for <strong class=\"bolivar-trask\">Trask</strong> and the sentient Sentinel processor <strong class=\"master-mold\">Master Mold</strong>. Using his sleight-of-hand thieving skills, Gambit picks his shock collar's lock and stages a full-scale slave uprising alongside the cybernetic time-traveling mercenary <strong class=\"cable-nathan-summers\">Cable</strong>, blowing up the dam's power grid and liberating the mutant population."
         ],
         "characters": [
           "gambit-remy-lebeau",
@@ -4733,7 +4735,8 @@ export const timelineEras: EraGroup[] = [
           "jubilee-jubilation-lee",
           "cable-nathan-summers",
           "bolivar-trask",
-          "logan-wolverine"
+          "logan-wolverine",
+          "master-mold"
         ],
         "stones": [],
         "deaths": [],
@@ -4757,7 +4760,8 @@ export const timelineEras: EraGroup[] = [
               "storm-ororo-munroe",
               "jubilee-jubilation-lee",
               "cable-nathan-summers",
-              "bolivar-trask"
+              "bolivar-trask",
+              "master-mold"
             ]
           },
           {
@@ -5647,9 +5651,9 @@ export const timelineEras: EraGroup[] = [
         "rawClasses": [
           "x-men-tas-3"
         ],
-        "rawHtml": "<p>Seeking vengeance for her father Lord Dark Wind's stolen Adamantium secrets, <strong class=\"lady-deathstrike-yuriko-oyama\">Lady Deathstrike (Yuriko Oyama)</strong> and the cybernetic Reavers raid the subterranean Morlock tunnels beneath Manhattan. Unearthing a long-buried alien spaceship, Deathstrike lures <strong class=\"logan-wolverine\">Wolverine</strong> into the catacombs and uses his unbreakable claws to unseal the craft's bulkhead. The breach inadvertently unleashes the <strong>Spirit Drinker</strong>, a parasitic extraterrestrial entity that immediately drains the life-essences of the Reavers, Morlocks, and <strong class=\"jubilee-jubilation-lee\">Jubilee</strong>. Facing total extinction in the shadows of New York, Wolverine and Deathstrike forge a desperate truce; Logan exposes his own soul as bait, allowing the X-Men to reverse the alien containment matrix, purge the entity, and restore all drained lifeforces before Deathstrike flees into the night.</p>",
+        "rawHtml": "<p>Seeking vengeance for her father Lord Dark Wind's stolen Adamantium secrets, <strong class=\"lady-deathstrike-yuriko-oyama\">Lady Deathstrike (Yuriko Oyama)</strong> and the cybernetic Reavers raid the subterranean Morlock tunnels beneath Manhattan. Unearthing a long-buried alien spaceship, Deathstrike lures <strong class=\"logan-wolverine\">Wolverine</strong> into the catacombs and uses his unbreakable claws to unseal the craft's bulkhead. The breach inadvertently unleashes the <strong>Spirit Drinker</strong>, a parasitic extraterrestrial entity that immediately drains the life-essences of the Reavers, Morlock leader <strong class=\"callisto\">Callisto</strong>, and <strong class=\"jubilee-jubilation-lee\">Jubilee</strong>. Facing total extinction in the shadows of New York, Wolverine and Deathstrike forge a desperate truce; Logan exposes his own soul as bait, allowing the X-Men to reverse the alien containment matrix, purge the entity, and restore all drained lifeforces before Deathstrike flees into the night.</p>",
         "paragraphs": [
-          "Seeking vengeance for her father Lord Dark Wind's stolen Adamantium secrets, <strong class=\"lady-deathstrike-yuriko-oyama\">Lady Deathstrike (Yuriko Oyama)</strong> and the cybernetic Reavers raid the subterranean Morlock tunnels beneath Manhattan. Unearthing a long-buried alien spaceship, Deathstrike lures <strong class=\"logan-wolverine\">Wolverine</strong> into the catacombs and uses his unbreakable claws to unseal the craft's bulkhead. The breach inadvertently unleashes the <strong>Spirit Drinker</strong>, a parasitic extraterrestrial entity that immediately drains the life-essences of the Reavers, Morlocks, and <strong class=\"jubilee-jubilation-lee\">Jubilee</strong>. Facing total extinction in the shadows of New York, Wolverine and Deathstrike forge a desperate truce; Logan exposes his own soul as bait, allowing the X-Men to reverse the alien containment matrix, purge the entity, and restore all drained lifeforces before Deathstrike flees into the night."
+          "Seeking vengeance for her father Lord Dark Wind's stolen Adamantium secrets, <strong class=\"lady-deathstrike-yuriko-oyama\">Lady Deathstrike (Yuriko Oyama)</strong> and the cybernetic Reavers raid the subterranean Morlock tunnels beneath Manhattan. Unearthing a long-buried alien spaceship, Deathstrike lures <strong class=\"logan-wolverine\">Wolverine</strong> into the catacombs and uses his unbreakable claws to unseal the craft's bulkhead. The breach inadvertently unleashes the <strong>Spirit Drinker</strong>, a parasitic extraterrestrial entity that immediately drains the life-essences of the Reavers, Morlock leader <strong class=\"callisto\">Callisto</strong>, and <strong class=\"jubilee-jubilation-lee\">Jubilee</strong>. Facing total extinction in the shadows of New York, Wolverine and Deathstrike forge a desperate truce; Logan exposes his own soul as bait, allowing the X-Men to reverse the alien containment matrix, purge the entity, and restore all drained lifeforces before Deathstrike flees into the night."
         ],
         "characters": [
           "lady-deathstrike-yuriko-oyama",
@@ -5659,7 +5663,8 @@ export const timelineEras: EraGroup[] = [
           "cyclops-scott-summers",
           "storm-ororo-munroe",
           "charles-xavier",
-          "hank-mccoy"
+          "hank-mccoy",
+          "callisto"
         ],
         "stones": [],
         "deaths": [],
@@ -5682,7 +5687,8 @@ export const timelineEras: EraGroup[] = [
             "characters": [
               "lady-deathstrike-yuriko-oyama",
               "logan-wolverine",
-              "jubilee-jubilation-lee"
+              "jubilee-jubilation-lee",
+              "callisto"
             ]
           }
         ]
@@ -5942,9 +5948,9 @@ export const timelineEras: EraGroup[] = [
         "rawClasses": [
           "x-men-tas-3"
         ],
-        "rawHtml": "<p>Mental illusions orchestrated by psionic manipulator Jason Wyngarde (Mastermind) and the Hellfire Club (Sebastian Shaw and Emma Frost) warp Jean Grey's perception, transforming her into the decadent Black Queen. Breaking free from Wyngarde's psychic shackles in fury, the cosmic entity within Jean erupts into an uncontrollable apocalyptic form: <strong class=\"jean-grey\">The Dark Phoenix</strong>. Overpowering the entire X-Men roster, Dark Phoenix blasts through the stratosphere into deep space, consuming the incandescent core of the D'Bari star system and threatening to annihilate galactic reality—a cataclysmic extinction wave sensed on Earth by <strong class=\"doctor-strange\">Doctor Strange</strong> within his Sanctum Sanctorum.</p><p>Interstellar alarms summon Shi'ar Empress <strong class=\"lilandra-neramani\">Lilandra</strong>, who decrees Jean's summary execution to preserve cosmic life. Demanding the right of honor, <strong class=\"charles-xavier\">Professor X</strong> challenges Lilandra to the ancient Shi'ar duel of honor—a trial by combat hosted within the breathable ruins of the Kree Empire's <strong>Blue Area of the Moon</strong>. The X-Men battle desperately against <strong class=\"gladiator-kallark\">Gladiator</strong> and the Shi'ar Imperial Guard. As the blazing cosmic raptor overwhelms Jean's humanity once more, <strong class=\"cyclops-scott-summers\">Cyclops</strong> and Wolverine watch in heartbreak as Jean regains lucid control for one final second, manually triggering an ancient Kree particle beam cannon to disintegrate her physical body, willingly sacrificing herself to extinguish the Dark Phoenix and save the universe.</p>",
+        "rawHtml": "<p>Mental illusions orchestrated by psionic manipulator Jason Wyngarde (Mastermind) and the Hellfire Club (<strong class=\"sebastian-shaw\">Sebastian Shaw</strong> and <strong class=\"emma-frost\">Emma Frost</strong>) warp Jean Grey's perception, transforming her into the decadent Black Queen. Breaking free from Wyngarde's psychic shackles in fury, the cosmic entity within Jean erupts into an uncontrollable apocalyptic form: <strong class=\"jean-grey\">The Dark Phoenix</strong>. Overpowering the entire X-Men roster, Dark Phoenix blasts through the stratosphere into deep space, consuming the incandescent core of the D'Bari star system and threatening to annihilate galactic reality—a cataclysmic extinction wave sensed on Earth by <strong class=\"doctor-strange\">Doctor Strange</strong> within his Sanctum Sanctorum.</p><p>Interstellar alarms summon Shi'ar Empress <strong class=\"lilandra-neramani\">Lilandra</strong>, who decrees Jean's summary execution to preserve cosmic life. Demanding the right of honor, <strong class=\"charles-xavier\">Professor X</strong> challenges Lilandra to the ancient Shi'ar duel of honor—a trial by combat hosted within the breathable ruins of the Kree Empire's <strong>Blue Area of the Moon</strong>. The X-Men battle desperately against <strong class=\"gladiator-kallark\">Gladiator</strong> and the Shi'ar Imperial Guard. As the blazing cosmic raptor overwhelms Jean's humanity once more, <strong class=\"cyclops-scott-summers\">Cyclops</strong> and Wolverine watch in heartbreak as Jean regains lucid control for one final second, manually triggering an ancient Kree particle beam cannon to disintegrate her physical body, willingly sacrificing herself to extinguish the Dark Phoenix and save the universe.</p>",
         "paragraphs": [
-          "Mental illusions orchestrated by psionic manipulator Jason Wyngarde (Mastermind) and the Hellfire Club (Sebastian Shaw and Emma Frost) warp Jean Grey's perception, transforming her into the decadent Black Queen. Breaking free from Wyngarde's psychic shackles in fury, the cosmic entity within Jean erupts into an uncontrollable apocalyptic form: <strong class=\"jean-grey\">The Dark Phoenix</strong>. Overpowering the entire X-Men roster, Dark Phoenix blasts through the stratosphere into deep space, consuming the incandescent core of the D'Bari star system and threatening to annihilate galactic reality—a cataclysmic extinction wave sensed on Earth by <strong class=\"doctor-strange\">Doctor Strange</strong> within his Sanctum Sanctorum.",
+          "Mental illusions orchestrated by psionic manipulator Jason Wyngarde (Mastermind) and the Hellfire Club (<strong class=\"sebastian-shaw\">Sebastian Shaw</strong> and <strong class=\"emma-frost\">Emma Frost</strong>) warp Jean Grey's perception, transforming her into the decadent Black Queen. Breaking free from Wyngarde's psychic shackles in fury, the cosmic entity within Jean erupts into an uncontrollable apocalyptic form: <strong class=\"jean-grey\">The Dark Phoenix</strong>. Overpowering the entire X-Men roster, Dark Phoenix blasts through the stratosphere into deep space, consuming the incandescent core of the D'Bari star system and threatening to annihilate galactic reality—a cataclysmic extinction wave sensed on Earth by <strong class=\"doctor-strange\">Doctor Strange</strong> within his Sanctum Sanctorum.",
           "Interstellar alarms summon Shi'ar Empress <strong class=\"lilandra-neramani\">Lilandra</strong>, who decrees Jean's summary execution to preserve cosmic life. Demanding the right of honor, <strong class=\"charles-xavier\">Professor X</strong> challenges Lilandra to the ancient Shi'ar duel of honor—a trial by combat hosted within the breathable ruins of the Kree Empire's Blue Area of the Moon. The X-Men battle desperately against <strong class=\"gladiator-kallark\">Gladiator</strong> and the Shi'ar Imperial Guard. As the blazing cosmic raptor overwhelms Jean's humanity once more, <strong class=\"cyclops-scott-summers\">Cyclops</strong> and Wolverine watch in heartbreak as Jean regains lucid control for one final second, manually triggering an ancient Kree particle beam cannon to disintegrate her physical body, willingly sacrificing herself to extinguish the Dark Phoenix and save the universe."
         ],
         "characters": [
@@ -5954,7 +5960,9 @@ export const timelineEras: EraGroup[] = [
           "logan-wolverine",
           "lilandra-neramani",
           "gladiator-kallark",
-          "doctor-strange"
+          "doctor-strange",
+          "sebastian-shaw",
+          "emma-frost"
         ],
         "stones": [],
         "deaths": [
@@ -5998,6 +6006,21 @@ export const timelineEras: EraGroup[] = [
             ],
             "characters": [
               "doctor-strange"
+            ]
+          },
+          {
+            "name": "Hellfire Club Inner Circle Mansion",
+            "cityOrRegion": "Upper East Side, Manhattan",
+            "countryOrRealm": "United States",
+            "planet": "Earth-92131",
+            "coordinates": [
+              40.7736,
+              -73.9632
+            ],
+            "characters": [
+              "sebastian-shaw",
+              "emma-frost",
+              "jean-grey"
             ]
           }
         ]
@@ -7127,16 +7150,19 @@ export const timelineEras: EraGroup[] = [
         "rawClasses": [
           "x-men-tas-4"
         ],
-        "rawHtml": "<p>Following the temporal assassination attempt in 1959, the prime timeline briefly fractures into an alternate 1995 apocalyptic dystopia where a heroic <strong class=\"erik-lehnsherr\">Magneto</strong> leads the surviving mutant resistance alongside battle-hardened variants of Wolverine and Storm against legionnaires of Nimrod and Master Mold Sentinels, until temporal travelers Bishop and Shard rectify the past. Concurrently in Scotland, Moira MacTaggert's reality-warping mutant son <strong class=\"proteus-kevin-mactaggert\">Kevin MacTaggert (Proteus)</strong> escapes containment on Muir Island, distorting structures and physics across Edinburgh before Wolverine and Beast compel him to confront his grief and dissolve his rampage.</p>",
+        "rawHtml": "<p>Following the temporal assassination attempt in 1959, the prime timeline briefly fractures into an alternate 1995 apocalyptic dystopia where a heroic <strong class=\"erik-lehnsherr\">Magneto</strong> leads the surviving mutant resistance alongside battle-hardened variants of <strong class=\"logan-wolverine\">Wolverine</strong> and <strong class=\"storm-ororo-munroe\">Storm</strong> against legionnaires of Nimrod and <strong class=\"master-mold\">Master Mold</strong> Sentinels, until temporal travelers <strong class=\"bishop-lucas-bishop\">Bishop</strong> and Shard rectify the past. Concurrently in Scotland, Moira MacTaggert's reality-warping mutant son <strong class=\"proteus-kevin-mactaggert\">Kevin MacTaggert (Proteus)</strong> escapes containment on Muir Island, distorting structures and physics across Edinburgh before <strong class=\"logan-wolverine\">Wolverine</strong> and <strong class=\"hank-mccoy\">Beast</strong> compel him to confront his grief and dissolve his rampage.</p>",
         "paragraphs": [
-          "Following the temporal assassination attempt in 1959, the prime timeline briefly fractures into an alternate 1995 apocalyptic dystopia where a heroic <strong class=\"erik-lehnsherr\">Magneto</strong> leads the surviving mutant resistance alongside battle-hardened variants of Wolverine and Storm against legionnaires of Nimrod and Master Mold Sentinels, until temporal travelers Bishop and Shard rectify the past. Concurrently in Scotland, Moira MacTaggert's reality-warping mutant son <strong class=\"proteus-kevin-mactaggert\">Kevin MacTaggert (Proteus)</strong> escapes containment on Muir Island, distorting structures and physics across Edinburgh before Wolverine and Beast compel him to confront his grief and dissolve his rampage."
+          "Following the temporal assassination attempt in 1959, the prime timeline briefly fractures into an alternate 1995 apocalyptic dystopia where a heroic <strong class=\"erik-lehnsherr\">Magneto</strong> leads the surviving mutant resistance alongside battle-hardened variants of <strong class=\"logan-wolverine\">Wolverine</strong> and <strong class=\"storm-ororo-munroe\">Storm</strong> against legionnaires of Nimrod and <strong class=\"master-mold\">Master Mold</strong> Sentinels, until temporal travelers <strong class=\"bishop-lucas-bishop\">Bishop</strong> and Shard rectify the past. Concurrently in Scotland, Moira MacTaggert's reality-warping mutant son <strong class=\"proteus-kevin-mactaggert\">Kevin MacTaggert (Proteus)</strong> escapes containment on Muir Island, distorting structures and physics across Edinburgh before <strong class=\"logan-wolverine\">Wolverine</strong> and <strong class=\"hank-mccoy\">Beast</strong> compel him to confront his grief and dissolve his rampage."
         ],
         "characters": [
           "bishop-lucas-bishop",
           "charles-xavier",
           "logan-wolverine",
           "erik-lehnsherr",
-          "proteus-kevin-mactaggert"
+          "proteus-kevin-mactaggert",
+          "master-mold",
+          "storm-ororo-munroe",
+          "hank-mccoy"
         ],
         "stones": [],
         "deaths": [
@@ -7281,9 +7307,9 @@ export const timelineEras: EraGroup[] = [
               "rawClasses": [
                       "x-men-tas-4"
               ],
-              "rawHtml": "<p>Ancient immortal mutant <strong class=\"apocalypse-en-sabah-nur\">Apocalypse</strong> unites with Mister Sinister and Magneto to enact his grand design: abducting the world's greatest psychic mutants (Charles Xavier, Jean Grey, Psylocke, Moondragon, Oracle, Emma Frost) and imprisoning them in the Lazarus Chambers located inside the <strong>Axis of Time</strong>—the nexus of all timelines. Cable, Bishop, and the X-Men mount a cross-temporal offensive across ancient Egypt, futuristic 3999 CE, and the extra-dimensional temporal core. Wolverine, Cyclops, and Cable shatter the Lazarus Chamber conduits, freeing the psychics whose combined telepathic cascade expels Apocalypse into a dimensional vacuum and resets the timeline.</p>",
+              "rawHtml": "<p>Ancient immortal mutant <strong class=\"apocalypse-en-sabah-nur\">Apocalypse</strong> unites with <strong class=\"nathaniel-essex-mister-sinister\">Mister Sinister</strong> and <strong class=\"erik-lehnsherr\">Magneto</strong> to enact his grand design: abducting the world's greatest psychic mutants (<strong class=\"charles-xavier\">Charles Xavier</strong>, <strong class=\"jean-grey\">Jean Grey</strong>, <strong class=\"psylocke-betsy-braddock\">Psylocke</strong>, Moondragon, Oracle, <strong class=\"emma-frost\">Emma Frost</strong>) and imprisoning them in the Lazarus Chambers located inside the <strong>Axis of Time</strong>—the nexus of all timelines. <strong class=\"cable-nathan-summers\">Cable</strong>, <strong class=\"bishop-lucas-bishop\">Bishop</strong>, and the X-Men mount a cross-temporal offensive across ancient Egypt, futuristic 3999 CE, and the extra-dimensional temporal core. <strong class=\"logan-wolverine\">Wolverine</strong>, <strong class=\"cyclops-scott-summers\">Cyclops</strong>, and <strong class=\"cable-nathan-summers\">Cable</strong> shatter the Lazarus Chamber conduits, freeing the psychics whose combined telepathic cascade expels Apocalypse into a dimensional vacuum and resets the timeline.</p>",
               "paragraphs": [
-                      "Ancient immortal mutant <strong class=\"apocalypse-en-sabah-nur\">Apocalypse</strong> unites with Mister Sinister and Magneto to enact his grand design: abducting the world's greatest psychic mutants (Charles Xavier, Jean Grey, Psylocke, Moondragon, Oracle, Emma Frost) and imprisoning them in the Lazarus Chambers located inside the <strong>Axis of Time</strong>—the nexus of all timelines. Cable, Bishop, and the X-Men mount a cross-temporal offensive across ancient Egypt, futuristic 3999 CE, and the extra-dimensional temporal core. Wolverine, Cyclops, and Cable shatter the Lazarus Chamber conduits, freeing the psychics whose combined telepathic cascade expels Apocalypse into a dimensional vacuum and resets the timeline."
+                      "Ancient immortal mutant <strong class=\"apocalypse-en-sabah-nur\">Apocalypse</strong> unites with <strong class=\"nathaniel-essex-mister-sinister\">Mister Sinister</strong> and <strong class=\"erik-lehnsherr\">Magneto</strong> to enact his grand design: abducting the world's greatest psychic mutants (<strong class=\"charles-xavier\">Charles Xavier</strong>, <strong class=\"jean-grey\">Jean Grey</strong>, <strong class=\"psylocke-betsy-braddock\">Psylocke</strong>, Moondragon, Oracle, <strong class=\"emma-frost\">Emma Frost</strong>) and imprisoning them in the Lazarus Chambers located inside the <strong>Axis of Time</strong>—the nexus of all timelines. <strong class=\"cable-nathan-summers\">Cable</strong>, <strong class=\"bishop-lucas-bishop\">Bishop</strong>, and the X-Men mount a cross-temporal offensive across ancient Egypt, futuristic 3999 CE, and the extra-dimensional temporal core. <strong class=\"logan-wolverine\">Wolverine</strong>, <strong class=\"cyclops-scott-summers\">Cyclops</strong>, and <strong class=\"cable-nathan-summers\">Cable</strong> shatter the Lazarus Chamber conduits, freeing the psychics whose combined telepathic cascade expels Apocalypse into a dimensional vacuum and resets the timeline."
               ],
               "characters": [
                       "apocalypse-en-sabah-nur",
@@ -7294,7 +7320,9 @@ export const timelineEras: EraGroup[] = [
                       "scott-summers-cyclops",
                       "logan-wolverine",
                       "erik-lehnsherr-magneto",
-                      "nathaniel-essex-mister-sinister"
+                      "nathaniel-essex-mister-sinister",
+                      "emma-frost",
+                      "psylocke-betsy-braddock"
               ],
               "stones": [],
               "deaths": [],
@@ -7601,15 +7629,16 @@ export const timelineEras: EraGroup[] = [
               "rawClasses": [
                   "x-men-tas-5"
               ],
-              "rawHtml": "<p>A techno-organic cybernetic alien collective known as the <strong>Phalanx</strong> invades Earth, assimilating human and mutant DNA to build a planetary hive mind. With the core X-Men captured and infected, <strong class=\"beast-hank-mccoy\">Beast</strong> recruits unlikely allies: mutant sovereign <strong class=\"erik-lehnsherr\">Magneto</strong>, mutant inventor Forge, and the compassionate techno-organic runaway Warlock. Infiltrating the central spire on Muir Island, the strike team synthesizes a biological counter-virus that purges the cybernetic pathogen worldwide, liberating the X-Men and severing the Phalanx's extraterrestrial link.</p>",
+              "rawHtml": "<p>A techno-organic cybernetic alien collective known as the <strong>Phalanx</strong> invades Earth, assimilating human and mutant DNA to build a planetary hive mind. With the core X-Men captured and infected, <strong class=\"beast-hank-mccoy\">Beast</strong> recruits unlikely allies: mutant sovereign <strong class=\"erik-lehnsherr\">Magneto</strong>, mutant inventor <strong class=\"forge\">Forge</strong>, and the compassionate techno-organic runaway Warlock. Infiltrating the central spire on Muir Island, the strike team synthesizes a biological counter-virus that purges the cybernetic pathogen worldwide, liberating the X-Men and severing the Phalanx's extraterrestrial link.</p>",
               "paragraphs": [
-                  "A techno-organic cybernetic alien collective known as the <strong>Phalanx</strong> invades Earth, assimilating human and mutant DNA to build a planetary hive mind. With the core X-Men captured and infected, <strong class=\"beast-hank-mccoy\">Beast</strong> recruits unlikely allies: mutant sovereign <strong class=\"erik-lehnsherr\">Magneto</strong>, mutant inventor Forge, and the compassionate techno-organic runaway Warlock. Infiltrating the central spire on Muir Island, the strike team synthesizes a biological counter-virus that purges the cybernetic pathogen worldwide, liberating the X-Men and severing the Phalanx's extraterrestrial link."
+                  "A techno-organic cybernetic alien collective known as the <strong>Phalanx</strong> invades Earth, assimilating human and mutant DNA to build a planetary hive mind. With the core X-Men captured and infected, <strong class=\"beast-hank-mccoy\">Beast</strong> recruits unlikely allies: mutant sovereign <strong class=\"erik-lehnsherr\">Magneto</strong>, mutant inventor <strong class=\"forge\">Forge</strong>, and the compassionate techno-organic runaway Warlock. Infiltrating the central spire on Muir Island, the strike team synthesizes a biological counter-virus that purges the cybernetic pathogen worldwide, liberating the X-Men and severing the Phalanx's extraterrestrial link."
               ],
               "characters": [
                   "beast-hank-mccoy",
                   "erik-lehnsherr",
                   "logan-wolverine",
-                  "charles-xavier"
+                  "charles-xavier",
+                  "forge"
               ],
               "stones": [],
               "deaths": [],
@@ -7624,7 +7653,12 @@ export const timelineEras: EraGroup[] = [
                       "cityOrRegion": "Highlands",
                       "countryOrRealm": "Scotland",
                       "planet": "Earth-92131",
-                      "celestialSystem": "solar-system"
+                      "celestialSystem": "solar-system",
+                      "characters": [
+                          "beast-hank-mccoy",
+                          "erik-lehnsherr",
+                          "forge"
+                      ]
                   }
               ]
           },
@@ -7950,11 +7984,12 @@ export const timelineEras: EraGroup[] = [
             "rawClasses": [
               "x-men-97-1"
             ],
-            "rawHtml": "<p>Months after the departure of Charles Xavier, <strong class=\"cyclops-scott-summers\">Cyclops</strong> leads the X-Men to rescue young mutant <strong class=\"sunspot-roberto-da-costa\">Roberto da Costa</strong> and destroy reactivated Master Mold sentinels in the Sahara. Inheriting the institute under Xavier's last will, <strong class=\"erik-lehnsherr\">Magneto</strong> surrenders peacefully to stand trial before the United Nations in Manhattan. Anti-mutant extremists assault the tribunal with a radiation-neutralizing cannon; <strong class=\"storm-ororo-munroe\">Storm</strong> intercepts the blast to shield Magneto, tragically losing her elemental godhood. Magneto disarms the tribunal but spares his captors in an impassioned plea for human-mutant coexistence. In the mansion infirmary, Madelyne gives birth to infant <strong class=\"young-nathan-summers\">Nathan Summers</strong>, moments before a battered, identical woman collapses at the gate: the genuine <strong class=\"jean-grey\">Jean Grey</strong>.</p>",
+            "rawHtml": "<p>Months after the departure of <strong class=\"charles-xavier\">Charles Xavier</strong>, <strong class=\"cyclops-scott-summers\">Cyclops</strong> leads the X-Men to rescue young mutant <strong class=\"sunspot-roberto-da-costa\">Roberto da Costa (Sunspot)</strong> and destroy reactivated <strong class=\"master-mold\">Master Mold</strong> sentinels in the Sahara. Inheriting the institute under Xavier's last will, <strong class=\"erik-lehnsherr\">Magneto</strong> surrenders peacefully to stand trial before the United Nations in Manhattan under UN liaison <strong class=\"valerie-cooper\">Dr. Valerie Cooper</strong>. Anti-mutant extremists assault the tribunal with a radiation-neutralizing cannon; <strong class=\"storm-ororo-munroe\">Storm</strong> intercepts the blast to shield Magneto, tragically losing her elemental godhood. Magneto disarms the tribunal but spares his captors in an impassioned plea for human-mutant coexistence. In the mansion infirmary, <strong class=\"madelyne-pryor-goblin-queen\">Madelyne</strong> gives birth to infant <strong class=\"young-nathan-summers\">Nathan Summers</strong>, moments before a battered, identical woman collapses at the gate: the genuine <strong class=\"jean-grey\">Jean Grey</strong>.</p>",
             "paragraphs": [
-              "Months after the departure of Charles Xavier, <strong class=\"cyclops-scott-summers\">Cyclops</strong> leads the X-Men to rescue young mutant <strong class=\"sunspot-roberto-da-costa\">Roberto da Costa</strong> and destroy reactivated Master Mold sentinels in the Sahara. Inheriting the institute under Xavier's last will, <strong class=\"erik-lehnsherr\">Magneto</strong> surrenders peacefully to stand trial before the United Nations in Manhattan. Anti-mutant extremists assault the tribunal with a radiation-neutralizing cannon; <strong class=\"storm-ororo-munroe\">Storm</strong> intercepts the blast to shield Magneto, tragically losing her elemental godhood. Magneto disarms the tribunal but spares his captors in an impassioned plea for human-mutant coexistence. In the mansion infirmary, Madelyne gives birth to infant <strong class=\"young-nathan-summers\">Nathan Summers</strong>, moments before a battered, identical woman collapses at the gate: the genuine <strong class=\"jean-grey\">Jean Grey</strong>."
+              "Months after the departure of <strong class=\"charles-xavier\">Charles Xavier</strong>, <strong class=\"cyclops-scott-summers\">Cyclops</strong> leads the X-Men to rescue young mutant <strong class=\"sunspot-roberto-da-costa\">Roberto da Costa (Sunspot)</strong> and destroy reactivated <strong class=\"master-mold\">Master Mold</strong> sentinels in the Sahara. Inheriting the institute under Xavier's last will, <strong class=\"erik-lehnsherr\">Magneto</strong> surrenders peacefully to stand trial before the United Nations in Manhattan under UN liaison <strong class=\"valerie-cooper\">Dr. Valerie Cooper</strong>. Anti-mutant extremists assault the tribunal with a radiation-neutralizing cannon; <strong class=\"storm-ororo-munroe\">Storm</strong> intercepts the blast to shield Magneto, tragically losing her elemental godhood. Magneto disarms the tribunal but spares his captors in an impassioned plea for human-mutant coexistence. In the mansion infirmary, <strong class=\"madelyne-pryor-goblin-queen\">Madelyne</strong> gives birth to infant <strong class=\"young-nathan-summers\">Nathan Summers</strong>, moments before a battered, identical woman collapses at the gate: the genuine <strong class=\"jean-grey\">Jean Grey</strong>."
             ],
             "characters": [
+              "charles-xavier",
               "erik-lehnsherr",
               "storm-ororo-munroe",
               "cyclops-scott-summers",
@@ -8037,9 +8072,9 @@ export const timelineEras: EraGroup[] = [
             "rawClasses": [
               "x-men-97-1"
             ],
-            "rawHtml": "<p>Discovering she is a cellular clone manufactured by <strong class=\"mister-sinister-nathaniel-essex\">Mister Sinister</strong>, Madelyne succumbs to demonic grief and transforms into the psionic sorceress <strong class=\"madelyne-pryor-goblin-queen\">Goblin Queen</strong>, plunging the Xavier Mansion into a surreal Limbo inferno. Sinister inoculates infant Nathan with a lethal techno-organic pathogen to harvest the ultimate genetic catalyst. Reached by the compassionate telepathic embrace of the true <strong class=\"jean-grey\">Jean Grey</strong>, Madelyne reclaims her agency, banishes Sinister, and rescues her child. With the techno-organic virus incurable by 20th-century medicine, <strong class=\"bishop-lucas-bishop\">Lucas Bishop</strong> volunteers to escort infant <strong class=\"young-nathan-summers\">Nathan Summers</strong> through a temporal rift to the 40th Century where advanced healing technology can arrest the spread. Madelyne adopts her independent identity and departs for Genosha.</p>",
+            "rawHtml": "<p>Discovering she is a cellular clone manufactured by <strong class=\"mister-sinister-nathaniel-essex\">Mister Sinister</strong>, <strong class=\"madelyne-pryor-goblin-queen\">Madelyne</strong> succumbs to demonic grief and transforms into the psionic sorceress <strong class=\"madelyne-pryor-goblin-queen\">Goblin Queen</strong>, plunging the Xavier Mansion into a surreal Limbo inferno. <strong class=\"mister-sinister-nathaniel-essex\">Sinister</strong> inoculates infant <strong class=\"young-nathan-summers\">Nathan</strong> with a lethal techno-organic pathogen to harvest the ultimate genetic catalyst. Reached by the compassionate telepathic embrace of the true <strong class=\"jean-grey\">Jean Grey</strong>, <strong class=\"madelyne-pryor-goblin-queen\">Madelyne</strong> reclaims her agency, banishes Sinister, and rescues her child. With the techno-organic virus incurable by 20th-century medicine, <strong class=\"bishop-lucas-bishop\">Lucas Bishop</strong> volunteers to escort infant <strong class=\"young-nathan-summers\">Nathan Summers</strong> through a temporal rift to the 40th Century where advanced healing technology can arrest the spread. Madelyne adopts her independent identity and departs for Genosha.</p>",
             "paragraphs": [
-              "Discovering she is a cellular clone manufactured by <strong class=\"mister-sinister-nathaniel-essex\">Mister Sinister</strong>, Madelyne succumbs to demonic grief and transforms into the psionic sorceress <strong class=\"madelyne-pryor-goblin-queen\">Goblin Queen</strong>, plunging the Xavier Mansion into a surreal Limbo inferno. Sinister inoculates infant Nathan with a lethal techno-organic pathogen to harvest the ultimate genetic catalyst. Reached by the compassionate telepathic embrace of the true <strong class=\"jean-grey\">Jean Grey</strong>, Madelyne reclaims her agency, banishes Sinister, and rescues her child. With the techno-organic virus incurable by 20th-century medicine, <strong class=\"bishop-lucas-bishop\">Lucas Bishop</strong> volunteers to escort infant <strong class=\"young-nathan-summers\">Nathan Summers</strong> through a temporal rift to the 40th Century where advanced healing technology can arrest the spread. Madelyne adopts her independent identity and departs for Genosha."
+              "Discovering she is a cellular clone manufactured by <strong class=\"mister-sinister-nathaniel-essex\">Mister Sinister</strong>, <strong class=\"madelyne-pryor-goblin-queen\">Madelyne</strong> succumbs to demonic grief and transforms into the psionic sorceress <strong class=\"madelyne-pryor-goblin-queen\">Goblin Queen</strong>, plunging the Xavier Mansion into a surreal Limbo inferno. <strong class=\"mister-sinister-nathaniel-essex\">Sinister</strong> inoculates infant <strong class=\"young-nathan-summers\">Nathan</strong> with a lethal techno-organic pathogen to harvest the ultimate genetic catalyst. Reached by the compassionate telepathic embrace of the true <strong class=\"jean-grey\">Jean Grey</strong>, <strong class=\"madelyne-pryor-goblin-queen\">Madelyne</strong> reclaims her agency, banishes Sinister, and rescues her child. With the techno-organic virus incurable by 20th-century medicine, <strong class=\"bishop-lucas-bishop\">Lucas Bishop</strong> volunteers to escort infant <strong class=\"young-nathan-summers\">Nathan Summers</strong> through a temporal rift to the 40th Century where advanced healing technology can arrest the spread. Madelyne adopts her independent identity and departs for Genosha."
             ],
             "characters": [
               "madelyne-pryor-goblin-queen",
@@ -8181,9 +8216,9 @@ export const timelineEras: EraGroup[] = [
             "rawClasses": [
               "x-men-97-1"
             ],
-            "rawHtml": "<p>During Genosha's formal gala celebrating UN statehood recognition under chancellor <strong class=\"erik-lehnsherr\">Magneto</strong>, <strong class=\"cable-nathan-summers\">Cable</strong> abruptly manifests through the timestream, frantically warning his biological mother <strong class=\"madelyne-pryor-goblin-queen\">Madelyne Pryor</strong> of imminent annihilation before being snapped back through time. Moments later, a catastrophic three-headed Tri-Sentinel breaches the atmosphere, unleashing plasma holocaust fire across the island nation and slaughtering millions of mutants, claiming the lives of Madelyne, Banshee, Callisto, and Sebastian Shaw. Magneto falls shielding morlock children. Impaled through the chest by the mechanoid's spear, <strong class=\"gambit-remy-lebeau\">Gambit</strong> channels the full kinetic potential of his dying body into the colossus, detonating in an apocalyptic blast that obliterates the monster: <em>\"The name is Gambit, mon ami... Remember it.\"</em></p>",
+            "rawHtml": "<p>During Genosha's formal gala celebrating UN statehood recognition under chancellor <strong class=\"erik-lehnsherr\">Magneto</strong>, <strong class=\"cable-nathan-summers\">Cable</strong> abruptly manifests through the timestream, frantically warning his biological mother <strong class=\"madelyne-pryor-goblin-queen\">Madelyne Pryor</strong> of imminent annihilation before being snapped back through time. Moments later, a catastrophic three-headed Tri-Sentinel breaches the atmosphere, unleashing plasma holocaust fire across the island nation and slaughtering millions of mutants, claiming the lives of <strong class=\"madelyne-pryor-goblin-queen\">Madelyne Pryor</strong>, <strong class=\"sean-cassidy\">Banshee (Sean Cassidy)</strong>, <strong class=\"callisto\">Callisto</strong>, and <strong class=\"sebastian-shaw\">Sebastian Shaw</strong>. Magneto falls shielding morlock children. Impaled through the chest by the mechanoid's spear, <strong class=\"gambit-remy-lebeau\">Gambit</strong> channels the full kinetic potential of his dying body into the colossus, detonating in an apocalyptic blast that obliterates the monster: <em>\"The name is Gambit, mon ami... Remember it.\"</em></p>",
             "paragraphs": [
-              "During Genosha's formal gala celebrating UN statehood recognition under chancellor <strong class=\"erik-lehnsherr\">Magneto</strong>, <strong class=\"cable-nathan-summers\">Cable</strong> abruptly manifests through the timestream, frantically warning his biological mother <strong class=\"madelyne-pryor-goblin-queen\">Madelyne Pryor</strong> of imminent annihilation before being snapped back through time. Moments later, a catastrophic three-headed Tri-Sentinel breaches the atmosphere, unleashing plasma holocaust fire across the island nation and slaughtering millions of mutants, claiming the lives of Madelyne, Banshee, Callisto, and Sebastian Shaw. Magneto falls shielding morlock children. Impaled through the chest by the mechanoid's spear, <strong class=\"gambit-remy-lebeau\">Gambit</strong> channels the full kinetic potential of his dying body into the colossus, detonating in an apocalyptic blast that obliterates the monster: \"The name is Gambit, mon ami... Remember it.\""
+              "During Genosha's formal gala celebrating UN statehood recognition under chancellor <strong class=\"erik-lehnsherr\">Magneto</strong>, <strong class=\"cable-nathan-summers\">Cable</strong> abruptly manifests through the timestream, frantically warning his biological mother <strong class=\"madelyne-pryor-goblin-queen\">Madelyne Pryor</strong> of imminent annihilation before being snapped back through time. Moments later, a catastrophic three-headed Tri-Sentinel breaches the atmosphere, unleashing plasma holocaust fire across the island nation and slaughtering millions of mutants, claiming the lives of <strong class=\"madelyne-pryor-goblin-queen\">Madelyne Pryor</strong>, <strong class=\"sean-cassidy\">Banshee (Sean Cassidy)</strong>, <strong class=\"callisto\">Callisto</strong>, and <strong class=\"sebastian-shaw\">Sebastian Shaw</strong>. Magneto falls shielding morlock children. Impaled through the chest by the mechanoid's spear, <strong class=\"gambit-remy-lebeau\">Gambit</strong> channels the full kinetic potential of his dying body into the colossus, detonating in an apocalyptic blast that obliterates the monster: \"The name is Gambit, mon ami... Remember it.\""
             ],
             "characters": [
               "gambit-remy-lebeau",
@@ -8191,12 +8226,18 @@ export const timelineEras: EraGroup[] = [
               "erik-lehnsherr",
               "madelyne-pryor-goblin-queen",
               "cable-nathan-summers",
-              "nightcrawler-kurt-wagner"
+              "nightcrawler-kurt-wagner",
+              "sean-cassidy",
+              "callisto",
+              "sebastian-shaw"
             ],
             "stones": [],
             "deaths": [
               "gambit-remy-lebeau",
-              "madelyne-pryor-goblin-queen"
+              "madelyne-pryor-goblin-queen",
+              "sean-cassidy",
+              "callisto",
+              "sebastian-shaw"
             ],
             "mcuHighlights": [
               "United Nations Statehood Gala of Genosha",
@@ -8238,9 +8279,9 @@ export const timelineEras: EraGroup[] = [
             "rawClasses": [
               "x-men-97-1"
             ],
-            "rawHtml": "<p>Cybernetic mastermind <strong class=\"bastion-sebastion-gilberti\">Bastion</strong> triggers <em>Operation: Zero Tolerance</em>, converting sleeper humans into Prime Sentinels and destroying the Xavier Mansion. Liberated by <strong class=\"valerie-cooper\">Val Cooper</strong>, <strong class=\"erik-lehnsherr\">Magneto</strong> reaches the North Magnetic Pole and unleashes a planetary Electromagnetic Pulse (EMP) that disables every Prime Sentinel while plunging Earth into total technological blackout, witnessed across New York by <strong class=\"peter-parker-spider-man\">Spider-Man</strong> and the Avengers. As Xavier returns to rally the team, Rogue and Sunspot defect to Magneto's rebuilt <strong>Asteroid M</strong>. The X-Men assault Bastion's Galapagos citadel—where Jean strips Sinister of his stolen mutant genetics—and board Asteroid M. Following Wolverine stabbing Magneto, the Master of Magnetism violently flays every ounce of adamantium from Logan's skeleton. When US nuclear missiles destabilize Asteroid M into terminal atmospheric descent, Magneto and Xavier combine their powers to divert the meteor into space, where a catastrophic temporal overcharge causes Asteroid M to implode and vanish from spacetime. On Earth, <strong class=\"bishop-lucas-bishop\">Lucas Bishop</strong> warns <strong class=\"forge\">Forge</strong> that the X-Men are lost in time, while in Genosha, <strong class=\"en-sabah-nur-apocalypse\">Apocalypse</strong> retrieves Gambit's charred playing card.</p>",
+            "rawHtml": "<p>Cybernetic mastermind <strong class=\"bastion-sebastion-gilberti\">Bastion</strong> triggers <em>Operation: Zero Tolerance</em>, converting sleeper humans into Prime Sentinels and destroying the Xavier Mansion. Liberated by <strong class=\"valerie-cooper\">Val Cooper</strong>, <strong class=\"erik-lehnsherr\">Magneto</strong> reaches the North Magnetic Pole and unleashes a planetary Electromagnetic Pulse (EMP) that disables every Prime Sentinel while plunging Earth into total technological blackout, witnessed across New York by <strong class=\"peter-parker-spider-man\">Spider-Man</strong> and the Avengers. As <strong class=\"charles-xavier\">Xavier</strong> returns to rally the team, <strong class=\"rogue-anna-marie\">Rogue</strong> and <strong class=\"sunspot-roberto-da-costa\">Sunspot</strong> defect to Magneto's rebuilt <strong>Asteroid M</strong>. The X-Men assault Bastion's Galapagos citadel—where Jean strips Sinister of his stolen mutant genetics—and board Asteroid M. Following Wolverine stabbing Magneto, the Master of Magnetism violently flays every ounce of adamantium from Logan's skeleton. When US nuclear missiles destabilize Asteroid M into terminal atmospheric descent, Magneto and Xavier combine their powers to divert the meteor into space, where a catastrophic temporal overcharge causes Asteroid M to implode and vanish from spacetime. On Earth, <strong class=\"bishop-lucas-bishop\">Lucas Bishop</strong> warns <strong class=\"forge\">Forge</strong> that the X-Men are lost in time, while in Genosha, <strong class=\"en-sabah-nur-apocalypse\">Apocalypse</strong> retrieves Gambit's charred playing card.</p>",
             "paragraphs": [
-              "Cybernetic mastermind <strong class=\"bastion-sebastion-gilberti\">Bastion</strong> triggers Operation: Zero Tolerance, converting sleeper humans into Prime Sentinels and destroying the Xavier Mansion. Liberated by <strong class=\"valerie-cooper\">Val Cooper</strong>, <strong class=\"erik-lehnsherr\">Magneto</strong> reaches the North Magnetic Pole and unleashes a planetary Electromagnetic Pulse (EMP) that disables every Prime Sentinel while plunging Earth into total technological blackout, witnessed across New York by <strong class=\"peter-parker-spider-man\">Spider-Man</strong> and the Avengers. As Xavier returns to rally the team, Rogue and Sunspot defect to Magneto's rebuilt Asteroid M. The X-Men assault Bastion's Galapagos citadel—where Jean strips Sinister of his stolen mutant genetics—and board Asteroid M. Following Wolverine stabbing Magneto, the Master of Magnetism violently flays every ounce of adamantium from Logan's skeleton. When US nuclear missiles destabilize Asteroid M into terminal atmospheric descent, Magneto and Xavier combine their powers to divert the meteor into space, where a catastrophic temporal overcharge causes Asteroid M to implode and vanish from spacetime. On Earth, <strong class=\"bishop-lucas-bishop\">Lucas Bishop</strong> warns <strong class=\"forge\">Forge</strong> that the X-Men are lost in time, while in Genosha, <strong class=\"en-sabah-nur-apocalypse\">Apocalypse</strong> retrieves Gambit's charred playing card."
+              "Cybernetic mastermind <strong class=\"bastion-sebastion-gilberti\">Bastion</strong> triggers Operation: Zero Tolerance, converting sleeper humans into Prime Sentinels and destroying the Xavier Mansion. Liberated by <strong class=\"valerie-cooper\">Val Cooper</strong>, <strong class=\"erik-lehnsherr\">Magneto</strong> reaches the North Magnetic Pole and unleashes a planetary Electromagnetic Pulse (EMP) that disables every Prime Sentinel while plunging Earth into total technological blackout, witnessed across New York by <strong class=\"peter-parker-spider-man\">Spider-Man</strong> and the Avengers. As <strong class=\"charles-xavier\">Xavier</strong> returns to rally the team, <strong class=\"rogue-anna-marie\">Rogue</strong> and <strong class=\"sunspot-roberto-da-costa\">Sunspot</strong> defect to Magneto's rebuilt Asteroid M. The X-Men assault Bastion's Galapagos citadel—where Jean strips Sinister of his stolen mutant genetics—and board Asteroid M. Following Wolverine stabbing Magneto, the Master of Magnetism violently flays every ounce of adamantium from Logan's skeleton. When US nuclear missiles destabilize Asteroid M into terminal atmospheric descent, Magneto and Xavier combine their powers to divert the meteor into space, where a catastrophic temporal overcharge causes Asteroid M to implode and vanish from spacetime. On Earth, <strong class=\"bishop-lucas-bishop\">Lucas Bishop</strong> warns <strong class=\"forge\">Forge</strong> that the X-Men are lost in time, while in Genosha, <strong class=\"en-sabah-nur-apocalypse\">Apocalypse</strong> retrieves Gambit's charred playing card."
             ],
             "characters": [
               "bastion-sebastion-gilberti",
@@ -8251,6 +8292,7 @@ export const timelineEras: EraGroup[] = [
               "cyclops-scott-summers",
               "jean-grey",
               "rogue-anna-marie",
+              "sunspot-roberto-da-costa",
               "valerie-cooper",
               "peter-parker-spider-man",
               "forge",
@@ -10878,10 +10920,10 @@ export const timelineEras: EraGroup[] = [
         "rawClasses": [
           "x-men-days-of-future-past"
         ],
-        "rawHtml": "<p>Rendezvousing at a remote mountain monastery high in the Himalayas, the resistance unites with veteran X-Men leaders <strong class=\"charles-xavier\">Professor Charles Xavier</strong>, <strong class=\"erik-lehnsherr\">Magneto</strong>, <strong class=\"storm-ororo-munroe\">Storm</strong>, and <strong class=\"logan-wolverine\">Logan (Wolverine)</strong>. Xavier and Magneto formulate a final, suicidal gambit: sending someone back fifty years to 1973 to prevent Mystique from assassinating Bolivar Trask. Because a fifty-year jump would tear any mortal mind to shreds, only Wolverine's indestructible brain and cellular regeneration can survive the temporal trauma.</p>\n<p>As Kitty locks into Logan's temples to initiate the transfer, a massive armada of Sentinel warships descends upon the mountain. In a heart-wrenching final stand, Storm, Bishop, Blink, Sunspot, Colossus, Iceman, and Magneto fight to their absolute deaths against endless hordes of adaptive machines to buy every crucial second. As Sentinels breach the inner sanctum and aim their incinerator beams at Kitty and Logan, the 1973 timeline rewrite takes effect—instantly wiping the apocalyptic Sentinels out of existence.</p>",
+        "rawHtml": "<p>Rendezvousing at a remote mountain monastery high in the Himalayas, the resistance unites with veteran X-Men leaders <strong class=\"charles-xavier\">Professor Charles Xavier</strong>, <strong class=\"erik-lehnsherr\">Magneto</strong>, <strong class=\"storm-ororo-munroe\">Storm</strong>, and <strong class=\"logan-wolverine\">Logan (Wolverine)</strong>. Xavier and Magneto formulate a final, suicidal gambit: sending someone back fifty years to 1973 to prevent Mystique from assassinating Bolivar Trask. Because a fifty-year jump would tear any mortal mind to shreds, only Wolverine's indestructible brain and cellular regeneration can survive the temporal trauma.</p>\n<p>As <strong class=\"kitty-pryde\">Kitty</strong> locks into <strong class=\"logan-wolverine\">Logan</strong>'s temples to initiate the transfer, a massive armada of Sentinel warships descends upon the mountain. In a heart-wrenching final stand, <strong class=\"storm-ororo-munroe\">Storm</strong>, <strong class=\"bishop-lucas-bishop\">Bishop</strong>, <strong class=\"blink-clarice-ferguson\">Blink</strong>, <strong class=\"sunspot-roberto-da-costa\">Sunspot</strong>, <strong class=\"colossus-piotr-rasputin\">Colossus</strong>, <strong class=\"iceman-bobby-drake\">Iceman</strong>, and <strong class=\"erik-lehnsherr\">Magneto</strong> fight to their absolute deaths against endless hordes of adaptive machines to buy every crucial second. As Sentinels breach the inner sanctum and aim their incinerator beams at <strong class=\"kitty-pryde\">Kitty</strong> and <strong class=\"logan-wolverine\">Logan</strong>, the 1973 timeline rewrite takes effect—instantly wiping the apocalyptic Sentinels out of existence.</p>",
         "paragraphs": [
           "Rendezvousing at a remote mountain monastery high in the Himalayas, the resistance unites with veteran X-Men leaders <strong class=\"charles-xavier\">Professor Charles Xavier</strong>, <strong class=\"erik-lehnsherr\">Magneto</strong>, <strong class=\"storm-ororo-munroe\">Storm</strong>, and <strong class=\"logan-wolverine\">Logan (Wolverine)</strong>. Xavier and Magneto formulate a final, suicidal gambit: sending someone back fifty years to 1973 to prevent Mystique from assassinating Bolivar Trask. Because a fifty-year jump would tear any mortal mind to shreds, only Wolverine's indestructible brain and cellular regeneration can survive the temporal trauma.",
-          "As Kitty locks into Logan's temples to initiate the transfer, a massive armada of Sentinel warships descends upon the mountain. In a heart-wrenching final stand, Storm, Bishop, Blink, Sunspot, Colossus, Iceman, and Magneto fight to their absolute deaths against endless hordes of adaptive machines to buy every crucial second. As Sentinels breach the inner sanctum and aim their incinerator beams at Kitty and Logan, the 1973 timeline rewrite takes effect—instantly wiping the apocalyptic Sentinels out of existence."
+          "As <strong class=\"kitty-pryde\">Kitty</strong> locks into <strong class=\"logan-wolverine\">Logan</strong>'s temples to initiate the transfer, a massive armada of Sentinel warships descends upon the mountain. In a heart-wrenching final stand, <strong class=\"storm-ororo-munroe\">Storm</strong>, <strong class=\"bishop-lucas-bishop\">Bishop</strong>, <strong class=\"blink-clarice-ferguson\">Blink</strong>, <strong class=\"sunspot-roberto-da-costa\">Sunspot</strong>, <strong class=\"colossus-piotr-rasputin\">Colossus</strong>, <strong class=\"iceman-bobby-drake\">Iceman</strong>, and <strong class=\"erik-lehnsherr\">Magneto</strong> fight to their absolute deaths against endless hordes of adaptive machines to buy every crucial second. As Sentinels breach the inner sanctum and aim their incinerator beams at <strong class=\"kitty-pryde\">Kitty</strong> and <strong class=\"logan-wolverine\">Logan</strong>, the 1973 timeline rewrite takes effect—instantly wiping the apocalyptic Sentinels out of existence."
         ],
         "characters": [
           "logan-wolverine",
@@ -11015,14 +11057,15 @@ export const timelineEras: EraGroup[] = [
         "rawClasses": [
           "x-men-tas-1"
         ],
-        "rawHtml": "<p>In a dystopian, ruined New York City in the year 2055, colossal robotic <strong>Sentinels</strong> enforce ruthless global martial law, having exterminated most mutants and herded surviving humans into internment camps with power-inhibiting collars.</p>\n<p>Guerrilla resistance fighter <strong class=\"bishop-lucas-bishop\">Lucas Bishop</strong> and an aged, battle-hardened <strong class=\"logan-wolverine\">Logan</strong> join cybernetic engineer Forge at a clandestine subway rebel sanctuary. As hunting Sentinels breach the bunker with thermal lasers, Forge activates an experimental temporal displacement wrist-pad, sending Bishop hurtling sixty-two years back in time to 1993 to stop the assassination of Senator Kelly and overwrite the dark timeline.</p>",
+        "rawHtml": "<p>In a dystopian, ruined New York City in the year 2055, colossal robotic <strong>Sentinels</strong> enforce ruthless global martial law, having exterminated most mutants and herded surviving humans into internment camps with power-inhibiting collars.</p>\n<p>Guerrilla resistance fighter <strong class=\"bishop-lucas-bishop\">Lucas Bishop</strong> and an aged, battle-hardened <strong class=\"logan-wolverine\">Logan</strong> join cybernetic engineer <strong class=\"forge\">Forge</strong> at a clandestine subway rebel sanctuary. As hunting Sentinels breach the bunker with thermal lasers, <strong class=\"forge\">Forge</strong> activates an experimental temporal displacement wrist-pad, sending Bishop hurtling sixty-two years back in time to 1993 to stop the assassination of Senator Kelly and overwrite the dark timeline.</p>",
         "paragraphs": [
           "In a dystopian, ruined New York City in the year 2055, colossal robotic <strong>Sentinels</strong> enforce ruthless global martial law, having exterminated most mutants and herded surviving humans into internment camps with power-inhibiting collars.",
-          "Guerrilla resistance fighter <strong class=\"bishop-lucas-bishop\">Lucas Bishop</strong> and an aged, battle-hardened <strong class=\"logan-wolverine\">Logan</strong> join cybernetic engineer Forge at a clandestine subway rebel sanctuary. As hunting Sentinels breach the bunker with thermal lasers, Forge activates an experimental temporal displacement wrist-pad, sending Bishop hurtling sixty-two years back in time to 1993 to stop the assassination of Senator Kelly and overwrite the dark timeline."
+          "Guerrilla resistance fighter <strong class=\"bishop-lucas-bishop\">Lucas Bishop</strong> and an aged, battle-hardened <strong class=\"logan-wolverine\">Logan</strong> join cybernetic engineer <strong class=\"forge\">Forge</strong> at a clandestine subway rebel sanctuary. As hunting Sentinels breach the bunker with thermal lasers, <strong class=\"forge\">Forge</strong> activates an experimental temporal displacement wrist-pad, sending Bishop hurtling sixty-two years back in time to 1993 to stop the assassination of Senator Kelly and overwrite the dark timeline."
         ],
         "characters": [
           "bishop-lucas-bishop",
-          "logan-wolverine"
+          "logan-wolverine",
+          "forge"
         ],
         "stones": [],
         "deaths": [],
@@ -11043,7 +11086,8 @@ export const timelineEras: EraGroup[] = [
             ],
             "characters": [
               "bishop-lucas-bishop",
-              "logan-wolverine"
+              "logan-wolverine",
+              "forge"
             ]
           }
         ]
@@ -11062,13 +11106,14 @@ export const timelineEras: EraGroup[] = [
         "rawClasses": [
           "x-men-tas-2"
         ],
-        "rawHtml": "<p>In the dystopian future of 2055, <strong class=\"bishop-lucas-bishop\">Bishop</strong> witnesses a catastrophic chronal paradox wave wash over Manhattan: the Sentinel occupation suddenly ceases because the mutant race was completely wiped out by a biological super-plague released in 1993 by the Friends of Humanity and <strong class=\"en-sabah-nur-apocalypse\">Apocalypse</strong>. Realizing that stopping Kelly's assassination created an alternate branch where mutantkind went extinct, Bishop activates Forge's temporal displacement gauntlet and leaps backward through time to 1993 to stop the release of the plague.</p>",
+        "rawHtml": "<p>In the dystopian future of 2055, <strong class=\"bishop-lucas-bishop\">Bishop</strong> witnesses a catastrophic chronal paradox wave wash over Manhattan: the Sentinel occupation suddenly ceases because the mutant race was completely wiped out by a biological super-plague released in 1993 by the Friends of Humanity and <strong class=\"en-sabah-nur-apocalypse\">Apocalypse</strong>. Realizing that stopping Kelly's assassination created an alternate branch where mutantkind went extinct, Bishop activates <strong class=\"forge\">Forge</strong>'s temporal displacement gauntlet and leaps backward through time to 1993 to stop the release of the plague.</p>",
         "paragraphs": [
-          "In the dystopian future of 2055, <strong class=\"bishop-lucas-bishop\">Bishop</strong> witnesses a catastrophic chronal paradox wave wash over Manhattan: the Sentinel occupation suddenly ceases because the mutant race was completely wiped out by a biological super-plague released in 1993 by the Friends of Humanity and <strong class=\"en-sabah-nur-apocalypse\">Apocalypse</strong>. Realizing that stopping Kelly's assassination created an alternate branch where mutantkind went extinct, Bishop activates Forge's temporal displacement gauntlet and leaps backward through time to 1993 to stop the release of the plague."
+          "In the dystopian future of 2055, <strong class=\"bishop-lucas-bishop\">Bishop</strong> witnesses a catastrophic chronal paradox wave wash over Manhattan: the Sentinel occupation suddenly ceases because the mutant race was completely wiped out by a biological super-plague released in 1993 by the Friends of Humanity and <strong class=\"en-sabah-nur-apocalypse\">Apocalypse</strong>. Realizing that stopping Kelly's assassination created an alternate branch where mutantkind went extinct, Bishop activates <strong class=\"forge\">Forge</strong>'s temporal displacement gauntlet and leaps backward through time to 1993 to stop the release of the plague."
         ],
         "characters": [
           "bishop-lucas-bishop",
-          "en-sabah-nur-apocalypse"
+          "en-sabah-nur-apocalypse",
+          "forge"
         ],
         "stones": [],
         "deaths": [],
@@ -11088,7 +11133,8 @@ export const timelineEras: EraGroup[] = [
               -74.006
             ],
             "characters": [
-              "bishop-lucas-bishop"
+              "bishop-lucas-bishop",
+              "forge"
             ]
           }
         ]

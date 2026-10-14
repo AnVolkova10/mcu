@@ -212,10 +212,37 @@ Integrar y auditar la totalidad de las 5 series nucleares del Universo Animado d
   - [x] **Catálogo de Medios & Registro Canónico**:
     - `x-men-97-1` agregado a `src/data/mediaData.ts` (Order 80, Marvel Television, releaseYear 2024, Earth-92131).
     - Actualizado `docs/AUDITED_PRODUCTIONS.md`, promoviendo *X-Men '97* de backlog a producción auditada oficial.
+  - [x] **Propagación Retroactiva de Personajes en Producciones Auditadas**:
+    - **Callisto**: Etiquetada con `<strong class="callisto">` e integrada en los arreglos de `characters` y `locations` en *X-Men: TAS* 1992 (*Captive Hearts*, duelo con Storm en las cloacas de Manhattan) y 1996 (*Out of the Past*, túneles Morlock atacados por Lady Deathstrike).
+    - **Forge**: Etiquetado con `<strong class="forge">` e integrado en 2055 (*Days of Future Past* y *Time Fugitives*, activación de la muñequera temporal para Bishop) y 1996 (*The Phalanx Covenant*, alianza con Bestia y Magneto en Muir Island).
+    - **Sebastian Shaw & Emma Frost**: Etiquetados con sus clases correspondientes e integrados en 1994 (*The Dark Phoenix Saga*, manipulación del Club Hellfire en Manhattan, añadiendo la locación en Upper East Side).
+    - **Master Mold**: Etiquetado con `<strong class="master-mold">` e integrado en 1992 (*Slave Island* en Genosha con Trask) y 1995 (*One Man's Worth*).
+    - **Dr. Valerie Cooper**: Mencionada y etiquetada en el juicio de la ONU de 1997 (*New Order*).
+    - **Sunspot, Blink, Colossus, Iceman, Bishop, Kitty Pryde**: Etiquetados exhaustivamente en la batalla final del monasterio de Wulin en 2023 (*Days of Future Past*).
+    - **Telepatas & Villanos en Beyond Good and Evil (1995)**: Etiquetados Mister Sinister, Magneto, Charles Xavier, Jean Grey, Psylocke y Emma Frost.
 
 ---
 
-## 📌 11. Backlog de Ideas & Tareas Pendientes
+## 📌 11. Hash Routing, Navegación Nativa y Apertura en Nueva Pestaña (UX / Historial)
+- [x] **Enrutamiento Reactivo por Hash y Sincronización de URLs**:
+  - [x] Creado `src/utils/routeUtils.ts` con funciones puras para parsing determinista de hash, generación de URLs y recuperación de estado inicial (`getInitialActiveScreen`, `getInitialMapLocationPin`).
+  - [x] Creado `src/hooks/useHashRouter.ts` para sincronizar `window.location.hash` con el store de Zustand de forma reactiva, bidireccional y sin dependencias externas pesadas.
+  - [x] Compatibilidad 100% con GitHub Pages y Vite (`#/timeline`, `#/media`, `#/characters`, `#/stones`, `#/map`, `#/bookmarks`, `#/stats`).
+  - [x] Soporte de deep-linking para locaciones en el mapa (`#/map?loc=...&lat=...&lng=...&event=...`).
+- [x] **Apertura Nativa en Nueva Pestaña (Middle-Click / Ruedita del Mouse & Ctrl+Click)**:
+  - [x] Corregido el bug donde abrir pestañas en segundo plano reescribía la URL a `#/timeline`: ahora el store de Zustand inicializa `activeScreen` y `selectedMapLocationPin` de forma sincrónica e instantánea desde el hash actual en el primer frame, y `useHashRouter` protege el hash inicial con `isInitialMountRef` y `isSyncingFromHashRef`.
+  - [x] Todos los manejadores `onClick` de las etiquetas `<a>` (Navbar tabs, pastillas de locación en `EventCard.tsx`, logo de Marvel y footer) validan `e.ctrlKey || e.metaKey || e.shiftKey || e.altKey || e.button !== 0`, permitiendo al navegador abrir la pestaña nativa sin interceptar el click.
+  - [x] Middle-click (o Ctrl+Click / botón derecho "Abrir en nueva pestaña") abre la nueva pestaña directamente en la vista correspondiente (ej. `#/media` abre Movies & Series; una pastilla de locación abre el Mapa centrado en las coordenadas correspondientes).
+- [x] **Navegación con Botón "Atrás" del Mouse & Historial del Navegador**:
+  - [x] Registro de historial nativo (`window.history` / `popstate` / `hashchange`).
+  - [x] Preservación y restauración instantánea de la posición de scroll (`window.scrollY`) al regresar al Timeline con el botón "Atrás" del mouse o del navegador.
+- [x] **Validación**:
+  - [x] `npm run lint` y `npm run build` con 0 errores.
+  - [x] Verificado con subagente de navegador en tiempo real sobre la app corriendo.
+
+---
+
+## 📌 12. Backlog de Ideas & Tareas Pendientes
 - [ ] Auditoría de películas de la Fase 2 y 3 no auditadas previamente (*Ant-Man and the Wasp*, *Thor: The Dark World* 2988 B.C.E., *Infinity War* Zen-Whoberi 1996, *Civil War* 1991).
 - [ ] Evaluación y auditoría de *Spider-Man Unlimited* (Earth-751263 / Counter-Earth).
 

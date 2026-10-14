@@ -1,6 +1,7 @@
 import React from 'react';
 import { useStore } from '@/store/useStore';
 import { ActiveScreen } from '@/types';
+import { buildScreenHash } from '@/hooks/useHashRouter';
 import { 
   Clock, 
   Film, 
@@ -8,9 +9,9 @@ import {
   Sparkles, 
   Bookmark, 
   BarChart2, 
-  Search,
-  ShieldCheck,
-  Globe2
+  Search, 
+  ShieldCheck, 
+  Globe2 
 } from 'lucide-react';
 import marvelLogo from '@/assets/marvel-logo.svg';
 
@@ -23,15 +24,16 @@ export const Navbar: React.FC = () => {
     readEventIds
   } = useStore();
 
-  const navItems: { id: ActiveScreen; label: string; icon: React.ReactNode }[] = [
-    { id: 'timeline', label: 'TIMELINE', icon: <Clock className="w-3.5 h-3.5" /> },
-    { id: 'media', label: 'MOVIES & SERIES', icon: <Film className="w-3.5 h-3.5" /> },
-    { id: 'characters', label: 'CHARACTERS', icon: <Users className="w-3.5 h-3.5" /> },
-    { id: 'stones', label: 'INFINITY STONES', icon: <Sparkles className="w-3.5 h-3.5" /> },
-    { id: 'map', label: 'MAP', icon: <Globe2 className="w-3.5 h-3.5" /> },
+  const navItems: { id: ActiveScreen; label: string; icon: React.ReactNode; href: string }[] = [
+    { id: 'timeline', label: 'TIMELINE', icon: <Clock className="w-3.5 h-3.5" />, href: buildScreenHash('timeline') },
+    { id: 'media', label: 'MOVIES & SERIES', icon: <Film className="w-3.5 h-3.5" />, href: buildScreenHash('media') },
+    { id: 'characters', label: 'CHARACTERS', icon: <Users className="w-3.5 h-3.5" />, href: buildScreenHash('characters') },
+    { id: 'stones', label: 'INFINITY STONES', icon: <Sparkles className="w-3.5 h-3.5" />, href: buildScreenHash('stones') },
+    { id: 'map', label: 'MAP', icon: <Globe2 className="w-3.5 h-3.5" />, href: buildScreenHash('map') },
     { 
       id: 'bookmarks', 
       label: 'SAVED', 
+      href: buildScreenHash('bookmarks'),
       icon: (
         <div className="relative">
           <Bookmark className="w-3.5 h-3.5" />
@@ -43,7 +45,7 @@ export const Navbar: React.FC = () => {
         </div>
       ) 
     },
-    { id: 'stats', label: 'S.H.I.E.L.D.', icon: <BarChart2 className="w-3.5 h-3.5" /> }
+    { id: 'stats', label: 'S.H.I.E.L.D.', icon: <BarChart2 className="w-3.5 h-3.5" />, href: buildScreenHash('stats') }
   ];
 
   return (
@@ -54,9 +56,16 @@ export const Navbar: React.FC = () => {
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           
           {/* Left Brand Badge */}
-          <div 
-            onClick={() => setActiveScreen('timeline')}
+          <a 
+            href="#/timeline"
+            onClick={(e) => {
+              if (e.ctrlKey || e.metaKey || e.shiftKey || e.altKey || e.button !== 0) return;
+              e.preventDefault();
+              window.location.hash = '#/timeline';
+              setActiveScreen('timeline');
+            }}
             className="flex items-center gap-3 cursor-pointer select-none group"
+            title="Go to Master Timeline (Middle-click to open in new tab)"
           >
             <div className="flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-[#e62429] shadow-sm shadow-[#e62429]" />
@@ -67,19 +76,26 @@ export const Navbar: React.FC = () => {
             <span className="hidden md:inline text-[10px] uppercase tracking-widest text-zinc-500 font-bold border-l border-zinc-800 pl-3">
               Sacred Timeline
             </span>
-          </div>
+          </a>
 
           {/* Center Official Marvel Logo */}
-          <div 
-            onClick={() => setActiveScreen('timeline')}
-            className="cursor-pointer transition-transform duration-200 hover:scale-105 select-none"
+          <a 
+            href="#/timeline"
+            onClick={(e) => {
+              if (e.ctrlKey || e.metaKey || e.shiftKey || e.altKey || e.button !== 0) return;
+              e.preventDefault();
+              window.location.hash = '#/timeline';
+              setActiveScreen('timeline');
+            }}
+            className="cursor-pointer transition-transform duration-200 hover:scale-105 select-none block"
+            title="Marvel Cinematic Universe Archive"
           >
             <img 
               src={marvelLogo} 
               alt="MARVEL" 
               className="h-9 sm:h-11 w-auto object-contain block shadow-lg shadow-black/50" 
             />
-          </div>
+          </a>
 
           {/* Right Action Tools */}
           <div className="flex items-center gap-2 sm:gap-3">
@@ -97,15 +113,21 @@ export const Navbar: React.FC = () => {
             </button>
 
             {/* Read Progress Badge */}
-            <button 
-              onClick={() => setActiveScreen('stats')}
+            <a 
+              href="#/stats"
+              onClick={(e) => {
+                if (e.ctrlKey || e.metaKey || e.shiftKey || e.altKey || e.button !== 0) return;
+                e.preventDefault();
+                window.location.hash = '#/stats';
+                setActiveScreen('stats');
+              }}
               className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-md bg-[#0d0d0d] hover:bg-[#1a1a1a] border border-[#262626] hover:border-[#e62429] text-[11px] text-zinc-300 transition-colors font-bold font-din cursor-pointer"
-              title="View S.H.I.E.L.D. archive reading progress"
+              title="View S.H.I.E.L.D. archive reading progress (Middle-click to open in new tab)"
             >
               <ShieldCheck className="w-3.5 h-3.5 text-[#e62429]" />
               <span className="hidden sm:inline">{readEventIds.length}</span>
               <span className="hidden md:inline uppercase text-[10px] text-zinc-400">READ</span>
-            </button>
+            </a>
           </div>
 
         </div>
@@ -117,18 +139,25 @@ export const Navbar: React.FC = () => {
           {navItems.map((item) => {
             const isActive = activeScreen === item.id;
             return (
-              <button
+              <a
                 key={item.id}
-                onClick={() => setActiveScreen(item.id)}
+                href={item.href}
+                onClick={(e) => {
+                  if (e.ctrlKey || e.metaKey || e.shiftKey || e.altKey || e.button !== 0) return;
+                  e.preventDefault();
+                  window.location.hash = item.href;
+                  setActiveScreen(item.id);
+                }}
                 className={`relative flex items-center gap-2 px-3 py-2.5 text-xs font-bold tracking-widest uppercase transition-all duration-150 whitespace-nowrap font-din select-none shrink-0 cursor-pointer ${
                   isActive
                     ? 'text-white border-b-2 border-[#e62429] font-black'
                     : 'text-zinc-400 hover:text-white hover:border-b-2 hover:border-zinc-500'
                 }`}
+                title={`Open ${item.label} (Middle-click to open in new tab)`}
               >
                 {item.icon}
                 <span>{item.label}</span>
-              </button>
+              </a>
             );
           })}
         </nav>

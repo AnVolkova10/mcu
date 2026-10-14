@@ -5,6 +5,7 @@ import { CharacterDrawer } from '@/components/CharacterDrawer';
 import { StoneDrawer } from '@/components/StoneDrawer';
 import { MediaDetailModal } from '@/components/MediaDetailModal';
 import { SearchModal } from '@/components/SearchModal';
+import { useHashRouter } from '@/hooks/useHashRouter';
 import marvelLogo from '@/assets/marvel-logo.svg';
 
 // Code-split screens to optimize initial bundle and isolate Leaflet
@@ -31,6 +32,7 @@ const ScreenLoadingFallback: React.FC = () => (
 );
 
 export const App: React.FC = () => {
+  useHashRouter();
   const { activeScreen, setActiveScreen } = useStore();
 
   const renderActiveScreen = () => {
@@ -97,24 +99,45 @@ export const App: React.FC = () => {
           </p>
 
           <div className="flex items-center gap-3 text-zinc-400 text-[11px] font-title tracking-wider shrink-0">
-            <button 
-              onClick={() => setActiveScreen('timeline')}
+            <a 
+              href="#/timeline"
+              onClick={(e) => {
+                if (e.ctrlKey || e.metaKey || e.shiftKey || e.altKey || e.button !== 0) return;
+                e.preventDefault();
+                window.location.hash = '#/timeline';
+                setActiveScreen('timeline');
+              }}
               className="hover:text-[#e62429] transition-colors uppercase cursor-pointer"
+              title="Master Timeline (Middle-click to open in new tab)"
             >
               TIMELINE
-            </button>
-            <button 
-              onClick={() => setActiveScreen('stones')}
+            </a>
+            <a 
+              href="#/stones"
+              onClick={(e) => {
+                if (e.ctrlKey || e.metaKey || e.shiftKey || e.altKey || e.button !== 0) return;
+                e.preventDefault();
+                window.location.hash = '#/stones';
+                setActiveScreen('stones');
+              }}
               className="hover:text-amber-400 transition-colors uppercase cursor-pointer"
+              title="Infinity Stones (Middle-click to open in new tab)"
             >
               STONES
-            </button>
-            <button 
-              onClick={() => setActiveScreen('stats')}
+            </a>
+            <a 
+              href="#/stats"
+              onClick={(e) => {
+                if (e.ctrlKey || e.metaKey || e.shiftKey || e.altKey || e.button !== 0) return;
+                e.preventDefault();
+                window.location.hash = '#/stats';
+                setActiveScreen('stats');
+              }}
               className="hover:text-[#e62429] transition-colors uppercase cursor-pointer"
+              title="S.H.I.E.L.D. Stats (Middle-click to open in new tab)"
             >
               S.H.I.E.L.D.
-            </button>
+            </a>
           </div>
         </div>
       </footer>

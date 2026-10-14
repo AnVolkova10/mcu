@@ -4185,6 +4185,25 @@ export const charactersData: Record<string, Character> = {
     "originLocation": "Westchester, New York (Earth-92131)",
     "status": "alive",
     "bio": "Son of Cyclops and Madelyne Pryor, inoculated at birth with Sinister's techno-organic virus and exiled to the 40th century by Bishop to save his life, where he is raised by Clan Askani."
+  },
+  "callisto": {
+    "id": "callisto",
+    "name": "Callisto",
+    "alias": "Callisto",
+    "cssClass": "callisto",
+    "color": "#a1a1aa",
+    "bgBadge": "bg-zinc-900/80 hover:bg-zinc-850/90",
+    "textBadge": "text-zinc-300",
+    "borderBadge": "border-zinc-700",
+    "role": "secondary",
+    "affiliation": "Morlocks / Genoshan Ruling Council",
+    "groups": [
+      "Morlocks",
+      "Mutants"
+    ],
+    "originLocation": "The Alley, Manhattan / Genosha (Earth-92131)",
+    "status": "deceased",
+    "bio": "Fierce leader of the subterranean Morlocks endowed with heightened senses and tactical instincts, who represented mutant refugees on the Genoshan ruling council before perishing in the Tri-Sentinel massacre."
   }
 };
 
@@ -4236,6 +4255,17 @@ export const characterAliases: Record<string, string> = {
   'nathan-summers-child': 'young-nathan-summers',
   'rachel-summers': 'mother-askani-rachel-summers',
   'mother-askani': 'mother-askani-rachel-summers',
+  'callisto': 'callisto',
+  'banshee': 'sean-cassidy',
+  'banshee-sean-cassidy': 'sean-cassidy',
+  'sean-cassidy': 'sean-cassidy',
+  'sebastian-shaw': 'sebastian-shaw',
+  'shaw': 'sebastian-shaw',
+  'master-mold': 'master-mold',
+  'forge': 'forge',
+  'emma-frost': 'emma-frost',
+  'psylocke': 'psylocke-betsy-braddock',
+  'betsy-braddock': 'psylocke-betsy-braddock',
 };
 
 // Safe lookup helper that resolves aliases transparently

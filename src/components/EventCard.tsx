@@ -14,9 +14,10 @@ import {
   ExternalLink,
   MapPin 
 } from 'lucide-react';
-import { charactersData, cssClassToCharacterId } from '@/data/charactersData';
+import { charactersData, characterAliases, cssClassToCharacterId } from '@/data/charactersData';
 import { infinityStonesData } from '@/data/infinityStonesData';
 import { mediaData } from '@/data/mediaData';
+import { buildLocationHash } from '@/hooks/useHashRouter';
 
 interface EventCardProps {
   event: TimelineEvent;
@@ -107,6 +108,17 @@ export const EventCard: React.FC<EventCardProps> = React.memo(({ event }) => {
 
       if (matchedLoc) {
         setSelectedMapLocationPin({
+          name: matchedLoc.name,
+          cityOrRegion: matchedLoc.cityOrRegion,
+          countryOrRealm: matchedLoc.countryOrRealm,
+          planet: matchedLoc.planet,
+          coordinates: matchedLoc.coordinates,
+          orbitType: matchedLoc.orbitType,
+          altitudeKm: matchedLoc.altitudeKm,
+          celestialSystem: matchedLoc.celestialSystem,
+          eventId: event.id,
+        });
+        window.location.hash = buildLocationHash({
           name: matchedLoc.name,
           cityOrRegion: matchedLoc.cityOrRegion,
           countryOrRealm: matchedLoc.countryOrRealm,
@@ -254,40 +266,60 @@ export const EventCard: React.FC<EventCardProps> = React.memo(({ event }) => {
       {((event.locations && event.locations.length > 0) || event.characters.length > 0 || event.stones.length > 0 || event.deaths.length > 0) && (
         <div className="pt-3 border-t border-[#222222] flex flex-wrap gap-2 items-center">
           
-          {/* Location Pills */}
-          {event.locations && event.locations.map((loc, lIdx) => (
-            <button
-              key={`loc-${lIdx}`}
-              onClick={() => {
-                setSelectedMapLocationPin({
-                  name: loc.name,
-                  cityOrRegion: loc.cityOrRegion,
-                  countryOrRealm: loc.countryOrRealm,
-                  planet: loc.planet,
-                  coordinates: loc.coordinates,
-                  orbitType: loc.orbitType,
-                  altitudeKm: loc.altitudeKm,
-                  celestialSystem: loc.celestialSystem,
-                  eventId: event.id,
-                });
-                setActiveScreen('map');
-              }}
-              className="flex items-center gap-1.5 px-2.5 py-1 rounded text-xs font-semibold bg-[#0a192f]/80 hover:bg-[#0f284c] border border-sky-800/60 hover:border-sky-500 text-sky-300 hover:text-white transition-all font-din cursor-pointer shadow-sm group/loc"
-              title={`View ${loc.name} on Global Tactical Map`}
-            >
-              <MapPin className="w-3 h-3 text-sky-400 group-hover/loc:scale-110 transition-transform" />
-              <span>
-                {loc.cityOrRegion && loc.countryOrRealm && loc.cityOrRegion.toLowerCase() !== loc.countryOrRealm.toLowerCase()
-                  ? `${loc.cityOrRegion}, ${loc.countryOrRealm}`
-                  : (loc.name && loc.countryOrRealm && !loc.name.toLowerCase().includes(loc.countryOrRealm.toLowerCase())
-                      ? `${loc.name}, ${loc.countryOrRealm}`
-                      : loc.name || loc.countryOrRealm)}
-              </span>
-              {loc.planet && loc.planet !== 'Earth' && (
-                <span className="text-[10px] text-sky-400/80 font-normal">({loc.planet})</span>
-              )}
-            </button>
-          ))}
+          {/* Location Pills as Native Links (Middle-Click opens new tab, Left-Click navigates with History) */}
+          {event.locations && event.locations.map((loc, lIdx) => {
+            const locUrl = buildLocationHash({
+              name: loc.name,
+              cityOrRegion: loc.cityOrRegion,
+              countryOrRealm: loc.countryOrRealm,
+              planet: loc.planet,
+              coordinates: loc.coordinates,
+              orbitType: loc.orbitType,
+              altitudeKm: loc.altitudeKm,
+              celestialSystem: loc.celestialSystem,
+              eventId: event.id,
+            });
+
+            return (
+              <a
+                key={`loc-${lIdx}`}
+                href={locUrl}
+                onClick={(e) => {
+                  if (e.ctrlKey || e.metaKey || e.shiftKey || e.altKey || e.button !== 0) {
+                    return; // Let browser natively open new tab
+                  }
+                  e.preventDefault();
+                  setSelectedMapLocationPin({
+                    name: loc.name,
+                    cityOrRegion: loc.cityOrRegion,
+                    countryOrRealm: loc.countryOrRealm,
+                    planet: loc.planet,
+                    coordinates: loc.coordinates,
+                    orbitType: loc.orbitType,
+                    altitudeKm: loc.altitudeKm,
+                    celestialSystem: loc.celestialSystem,
+                    eventId: event.id,
+                  });
+                  window.location.hash = locUrl;
+                  setActiveScreen('map');
+                }}
+                className="flex items-center gap-1.5 px-2.5 py-1 rounded text-xs font-semibold bg-[#0a192f]/80 hover:bg-[#0f284c] border border-sky-800/60 hover:border-sky-500 text-sky-300 hover:text-white transition-all font-din cursor-pointer shadow-sm group/loc"
+                title={`View ${loc.name} on Global Tactical Map (Middle-click to open in new tab)`}
+              >
+                <MapPin className="w-3 h-3 text-sky-400 group-hover/loc:scale-110 transition-transform" />
+                <span>
+                  {loc.cityOrRegion && loc.countryOrRealm && loc.cityOrRegion.toLowerCase() !== loc.countryOrRealm.toLowerCase()
+                    ? `${loc.cityOrRegion}, ${loc.countryOrRealm}`
+                    : (loc.name && loc.countryOrRealm && !loc.name.toLowerCase().includes(loc.countryOrRealm.toLowerCase())
+                        ? `${loc.name}, ${loc.countryOrRealm}`
+                        : loc.name || loc.countryOrRealm)}
+                </span>
+                {loc.planet && loc.planet !== 'Earth' && (
+                  <span className="text-[10px] text-sky-400/80 font-normal">({loc.planet})</span>
+                )}
+              </a>
+            );
+          })}
 
           {/* Infinity Stones Tag Pills */}
           {event.stones.map((sId) => {
@@ -313,7 +345,8 @@ export const EventCard: React.FC<EventCardProps> = React.memo(({ event }) => {
 
           {/* Character Tag Pills */}
           {event.characters.map((cId) => {
-            const char = charactersData[cId];
+            const canonicalId = characterAliases[cId] || cId;
+            const char = charactersData[canonicalId] || charactersData[cId];
             if (!char) return null;
             return (
               <button
@@ -331,11 +364,20 @@ export const EventCard: React.FC<EventCardProps> = React.memo(({ event }) => {
             );
           })}
 
-          {/* Fallen / Deaths Highlight */}
+          {/* Fallen / Deaths Highlight with Resolved Names */}
           {event.deaths.length > 0 && (
-            <div className="flex items-center gap-1 px-2.5 py-1 rounded text-xs font-bold bg-[#330c0e] border border-[#e62429]/60 text-red-300 font-din select-none">
-              <Skull className="w-3.5 h-3.5 text-[#e62429]" />
-              <span>Casualties: {event.deaths.join(', ')}</span>
+            <div className="flex items-center gap-1.5 px-2.5 py-1 rounded text-xs font-bold bg-[#330c0e] border border-[#e62429]/60 text-red-300 font-din select-none flex-wrap">
+              <Skull className="w-3.5 h-3.5 text-[#e62429] shrink-0" />
+              <span>
+                Casualties:{' '}
+                {event.deaths
+                  .map((d) => {
+                    const canonicalId = characterAliases[d] || d;
+                    const char = charactersData[canonicalId] || charactersData[d];
+                    return char ? (char.alias || char.name) : d;
+                  })
+                  .join(', ')}
+              </span>
             </div>
           )}
         </div>
