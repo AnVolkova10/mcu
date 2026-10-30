@@ -1,0 +1,21 @@
+// Content of the MCU Archive. See docs/CONTENT_GUIDE.md before editing.
+import { defineEvents } from '@/domain/define';
+
+export default defineEvents('captain-america-civil-war', [
+  {
+    id: 'sokovia-accords-stark-rogers',
+    date: { year: 2016, order: 50 },
+    title: 'The Sokovia Accords pit Stark against Rogers',
+    text: [
+      '[Steve Rogers](steve-rogers), [Natasha Romanoff](black-widow), [Sam Wilson](falcon), and [Wanda Maximoff](scarlet-witch) stop **Brock Rumlow** from stealing a biological weapon from a lab in Lagos. **Rumlow** blows himself up, attempting to kill Rogers. Maximoff telekinetically diverts the explosion, accidentally destroying a nearby building and killing several Wakandan humanitarian workers in the process.',
+      "**Thaddeus Ross, the U.S. Secretary of State** , informs the Avengers that the United Nations (UN) is preparing to pass the **Sokovia Accords**, which will establish a **UN panel to oversee and control the team.** The Avengers are divided: [Tony Stark](tony-stark) supports oversight because of his role in Ultron's creation and Sokovia's devastation, while Rogers has more faith in his own judgment than that of politicians. Meanwhile, **Helmut Zemo** tracks down and kills Barnes' old Hydra handler, stealing a ==book containing the trigger words that activate Barnes' brainwashing==. At a conference in Vienna where the Accords are to be ratified, a bomb kills **King T'Chaka** of *Wakanda*. Security footage indicates the bomber is Barnes, whom T'Chaka's son, [T'Challa](black-panther), vows to kill. Informed by **Sharon Carter** of Barnes' whereabouts and the authorities' intentions to kill him, Rogers decides to try to bring in Barnes himself. Rogers and Wilson track Barnes to Bucharest and attempt to protect him from T'Challa and the authorities, but all four, including T'Challa, are apprehended by the Bucharest police and [James Rhodes](war-machine).",
+      `Rogers stops Barnes and sneaks him away. When Barnes regains his senses, he explains that Zemo is the real Vienna bomber and wanted the location of the Siberian Hydra base, where other brainwashed "Winter Soldiers" are kept in cryogenic stasis. Rogers and Wilson go rogue, and recruit Maximoff, [Clint Barton](hawkeye), and [Scott Lang](ant-man) to their cause. With Ross's permission, Stark assembles a team composed of Romanoff, T'Challa, Rhodes, [Vision](vision), and [Peter Parker](spider-man) to capture the renegades. Stark's team intercepts Rogers' group at Leipzig/Halle Airport, where they fight until Romanoff allows Rogers and Barnes to escape. As Rogers and Barnes are escaping, Rhodes is inadvertently shot down by Vision (who was ~falling in love~ with Wanda), and becomes partially paralyzed. The rest of Rogers' team is captured and detained at the Raft prison, and Romanoff goes into exile.`,
+      "Stark discovers evidence that Barnes was framed by Zemo and convinces Wilson to give him Rogers' destination. Without informing Ross and **Everett K. Ross**, Stark goes to the Siberian Hydra facility and strikes a truce with Rogers and Barnes, unaware that they were secretly followed by T'Challa. They find that the other super-soldiers have been killed by Zemo, who then shows them footage that reveals that the automobile Barnes had intercepted in 1991 contained Stark's parents, whom Barnes subsequently killed. Enraged that Rogers kept this from him, Stark turns on them both, leading to an intense fight, in which Stark destroys Barnes' robotic arm, and Rogers disables Stark's armor. Rogers departs with Barnes, **leaving his shield behind**. Satisfied that he has avenged his family's deaths in Sokovia from the Avengers' actions by successfully fracturing them, Zemo attempts suicide, but he is stopped by T'Challa and taken to the authorities.",
+      'In the aftermath, Stark provides Rhodes with exoskeletal leg braces that allow him to walk again, while Rogers breaks his allies out of the Raft. Barnes, granted asylum in Wakanda, **chooses to return to cryogenic sleep until a cure for his brainwashing is found.** Parker explores the features of the web shooters built for him by Stark.',
+    ],
+    deaths: [
+      { name: 'Rumlow', presumed: false },
+      { name: "King T'Chaka", presumed: false },
+    ],
+  },
+]);

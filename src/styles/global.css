@@ -1,737 +1,101 @@
-@import "./fonts.css";
-@import "tailwindcss";
-@import "leaflet/dist/leaflet.css";
+@import './fonts.css';
+@import 'tailwindcss';
+
+/* ── Design tokens ────────────────────────────────────────────────────────────
+   One accent (Marvel red), a neutral ink scale and dark surfaces.
+   Universe, character and stone colors come from the content, never from here. */
+@theme {
+  --color-bg: #0b0b0e;
+  --color-surface: #121216;
+  --color-surface-2: #18181d;
+  --color-surface-3: #212128;
+  --color-line: #26262e;
+  --color-line-strong: #383842;
+  --color-ink: #ececf0;
+  --color-ink-muted: #a2a2ad;
+  --color-ink-faint: #6c6c78;
+  --color-accent: #e62429;
+  --color-accent-strong: #ff3d42;
+  --color-legacy: #8b8b96;
+
+  --font-sans: 'URW DIN', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-display: 'Marvel Display', 'URW DIN', ui-sans-serif, sans-serif;
+  --font-mark: 'Marvel Mark', 'Marvel Display', ui-sans-serif, sans-serif;
+
+  --animate-fade-in: fade-in 180ms ease-out;
+  --animate-panel-in: panel-in 260ms cubic-bezier(0.22, 1, 0.36, 1);
+  --animate-rise-in: rise-in 220ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+}
+@keyframes panel-in {
+  from { transform: translateX(32px); opacity: 0; }
+}
+@keyframes rise-in {
+  from { transform: translateY(8px) scale(0.98); opacity: 0; }
+}
 
 @layer base {
-  :root {
-    --font-sans: 'URW DIN', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    --font-marvel: 'Marvel', 'Impact', sans-serif;
-    --font-marvel2: 'Marvel2', 'Impact', sans-serif;
+  html {
+    color-scheme: dark;
+    scroll-padding-top: 8.5rem;
   }
-
   body {
-    background-color: #0d0d0d;
-    color: #f4f4f5;
-    font-family: var(--font-sans);
-    overflow-x: hidden;
-    min-height: 100vh;
-    letter-spacing: 0.01em;
+    @apply bg-bg text-ink font-sans antialiased;
+    min-height: 100dvh;
   }
-
-  /* Universal Clickable Pointer Cursor & Transitions */
-  button, 
-  select, 
-  [role="button"], 
-  a, 
-  input[type="checkbox"], 
-  input[type="radio"],
-  summary,
-  .cursor-pointer {
-    cursor: pointer !important;
+  /* Film grain over everything, barely visible: gives the dark surfaces some texture. */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 100;
+    opacity: 0.035;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   }
-
-  h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-sans);
-    font-weight: 900;
-    letter-spacing: 0.02em;
+  ::selection {
+    background: var(--color-accent);
+    color: white;
   }
-
-  .font-title {
-    font-family: var(--font-sans);
-    font-weight: 900;
-    letter-spacing: 0.03em;
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
   }
-
-  .font-marvel {
-    font-family: var(--font-marvel);
-    letter-spacing: 0.12em;
+  button, a, [role='button'] {
+    cursor: pointer;
   }
-
-  .font-marvel2 {
-    font-family: var(--font-marvel2);
-    letter-spacing: 0.08em;
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-line-strong) transparent;
   }
-
-  .font-din {
-    font-family: var(--font-sans);
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 1ms !important;
+      transition-duration: 1ms !important;
+      scroll-behavior: auto !important;
+    }
   }
 }
 
-/* Custom Scrollbars in Marvel Black & Red */
-::-webkit-scrollbar {
-  width: 7px;
-  height: 7px;
-}
-
-::-webkit-scrollbar-track {
-  background: #0d0d0d;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #27272a;
-  border-radius: 2px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #e62429;
-}
-
-/* Marvel Glow Animations */
-@keyframes glow-pulse {
-  0%, 100% {
-    opacity: 0.85;
-    filter: drop-shadow(0 0 12px currentColor);
+@layer components {
+  /* Comic halftone dots, for hero areas and big year openers. */
+  .halftone {
+    background-image: radial-gradient(circle, rgb(255 255 255 / 0.07) 1px, transparent 1.4px);
+    background-size: 7px 7px;
   }
-  50% {
-    opacity: 1;
-    filter: drop-shadow(0 0 22px currentColor);
+  /* Lets the browser skip rendering off-screen date sections. */
+  .lazy-section {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 900px;
   }
 }
 
-.animate-glow {
-  animation: glow-pulse 3s infinite ease-in-out;
+@utility no-scrollbar {
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
-
-/* Marvel Original Timeline Tag Stylings & Interactive Click Cursors */
-.mcu-html-content strong {
-  font-weight: 700;
-  color: #ffffff;
-}
-
-.mcu-html-content em {
-  font-style: italic;
-}
-
-.mcu-html-content .presumably-dead {
-  text-decoration: line-through;
-  opacity: 0.8;
-}
-
-.mcu-html-content .dead {
-  text-decoration: line-through underline;
-  color: #f87171 !important;
-}
-
-.mcu-html-content .mcu {
-  text-decoration: underline;
-  text-decoration-color: #e62429;
-  text-decoration-thickness: 2px;
-  color: #ffffff;
-  font-weight: 700;
-}
-
-/* Clickable Tag Spans inside event text */
-.mcu-html-content span {
-  cursor: pointer;
-  display: inline-block;
-  transition: all 0.15s ease-in-out;
-  border-radius: 3px;
-  padding: 0 2px;
-}
-
-.mcu-html-content span:hover {
-  filter: brightness(1.35);
-  transform: translateY(-1px);
-  text-shadow: 0 0 8px currentColor;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
-}
-
-/* Stone Tags */
-.mcu-html-content .tesseract {
-  background-color: rgba(59, 130, 246, 0.15);
-  color: #93c5fd;
-  padding: 1px 6px;
-  border-radius: 4px;
-  border: 1px solid rgba(59, 130, 246, 0.4);
-}
-
-.mcu-html-content .aether {
-  background-color: rgba(239, 68, 68, 0.15);
-  color: #fca5a5;
-  padding: 1px 6px;
-  border-radius: 4px;
-  border: 1px solid rgba(239, 68, 68, 0.4);
-}
-
-.mcu-html-content .power-stone {
-  background-color: rgba(168, 85, 247, 0.15);
-  color: #d8b4fe;
-  padding: 1px 6px;
-  border-radius: 4px;
-  border: 1px solid rgba(168, 85, 247, 0.4);
-}
-
-.mcu-html-content .mind-stone {
-  background-color: rgba(234, 179, 8, 0.15);
-  color: #fde047;
-  padding: 1px 6px;
-  border-radius: 4px;
-  border: 1px solid rgba(234, 179, 8, 0.4);
-}
-
-.mcu-html-content .eye-of-agamotto {
-  background-color: rgba(34, 197, 94, 0.15);
-  color: #86efac;
-  padding: 1px 6px;
-  border-radius: 4px;
-  border: 1px solid rgba(34, 197, 94, 0.4);
-}
-
-.mcu-html-content .soul-stone {
-  background-color: rgba(249, 115, 22, 0.15);
-  color: #fdba74;
-  padding: 1px 6px;
-  border-radius: 4px;
-  border: 1px solid rgba(249, 115, 22, 0.4);
-}
-
-/* Character Color Tags */
-.mcu-html-content .captain-america { color: #93c5fd; }
-.mcu-html-content .winter-soldier { color: #7dd3fc; }
-.mcu-html-content .peggy-carter { color: #6ee7b7; }
-.mcu-html-content .howard-stark { color: #fca5a5; }
-.mcu-html-content .iron-man { color: #ef4444; }
-.mcu-html-content .thor { color: #fcd34d; }
-.mcu-html-content .loki { color: #86efac; }
-.mcu-html-content .hulk { color: #4ade80; }
-.mcu-html-content .black-widow { color: #d8b4fe; }
-.mcu-html-content .hawkeye { color: #c084fc; }
-.mcu-html-content .star-lord { color: #fb7185; }
-.mcu-html-content .gamora { color: #bef264; }
-.mcu-html-content .rocket { color: #fdba74; }
-.mcu-html-content .groot { color: #a3e635; }
-.mcu-html-content .drax { color: #fda4af; }
-.mcu-html-content .doctor-strange { color: #38bdf8; }
-.mcu-html-content .spider-man { color: #f87171; }
-.mcu-html-content .black-panther { color: #ffffff; font-weight: 700; text-decoration: underline; text-decoration-color: #52525b; }
-.mcu-html-content .scarlet-witch { color: #f43f5e; }
-.mcu-html-content .vision { color: #93c5fd; }
-.mcu-html-content .ant-man { color: #f87171; }
-.mcu-html-content .wasp { color: #fde047; }
-.mcu-html-content .daredevil { color: #ef4444; }
-.mcu-html-content .jessica-jones { color: #c084fc; }
-.mcu-html-content .luke-cage { color: #fcd34d; }
-.mcu-html-content .iron-fist { color: #facc15; font-weight: 700; text-shadow: 0 0 8px rgba(250, 204, 21, 0.5); }
-.mcu-html-content .the-punisher { color: #ffffff; font-weight: 700; }
-.mcu-html-content .coulson { color: #93c5fd; }
-.mcu-html-content .fury { color: #a5b4fc; }
-.mcu-html-content .may { color: #e4e4e7; }
-.mcu-html-content .skye { color: #fdba74; }
-.mcu-html-content .enemy { color: #a1a1aa; font-weight: 600; }
-.mcu-html-content .secundary { color: #a7f3d0; }
-.mcu-html-content .boss { color: #f4f4f5; font-weight: 700; }
-.mcu-html-content .noni { color: #a78bfa; font-weight: 600; }
-.mcu-html-content .the-lion { color: #f59e0b; font-weight: 600; }
-.mcu-html-content .memnon { color: #60a5fa; font-weight: 600; }
-.mcu-html-content .jorani { color: #facc15; font-weight: 700; text-shadow: 0 0 8px rgba(250, 204, 21, 0.5); }
-.mcu-html-content .kuda { color: #c084fc; font-weight: 600; }
-.mcu-html-content .prince-tafari { color: #fbbf24; font-weight: 700; }
-.mcu-html-content .last-black-panther { color: #e879f9; font-weight: 700; text-decoration: underline; text-decoration-color: #9333ea; }
-.mcu-html-content .ben-reilly-noir { color: #cbd5e1; font-weight: 700; text-shadow: 0 0 6px rgba(148, 163, 184, 0.4); }
-.mcu-html-content .megawatt-noir { color: #facc15; font-weight: 700; text-shadow: 0 0 10px rgba(250, 204, 21, 0.7); }
-.mcu-html-content .robbie-robertson-noir { color: #38bdf8; font-weight: 600; }
-.mcu-html-content .silvermane-noir { color: #94a3b8; font-weight: 700; }
-.mcu-html-content .cat-hardy-noir { color: #c084fc; font-weight: 600; }
-.mcu-html-content .sandman-noir { color: #fbbf24; font-weight: 600; }
-.mcu-html-content .tombstone-noir { color: #e2e8f0; font-weight: 700; }
-.mcu-html-content .ruby-williams-noir { color: #f43f5e; font-weight: 600; }
-.mcu-html-content .janet-ruiz-noir { color: #34d399; font-weight: 600; }
-.mcu-html-content .red-skull { color: #f87171; font-weight: 700; text-shadow: 0 0 6px rgba(239, 68, 68, 0.4); }
-.mcu-html-content .arnim-zola { color: #a3e635; font-weight: 600; }
-.mcu-html-content .abraham-erskine { color: #60a5fa; font-weight: 600; }
-.mcu-html-content .chester-phillips { color: #cbd5e1; font-weight: 600; }
-.mcu-html-content .dum-dum-dugan { color: #f59e0b; font-weight: 600; }
-.mcu-html-content .edwin-jarvis { color: #38bdf8; font-weight: 600; }
-.mcu-html-content .daniel-sousa { color: #10b981; font-weight: 600; }
-.mcu-html-content .dottie-underwood { color: #f43f5e; font-weight: 700; }
-.mcu-html-content .johann-fennhoff { color: #c084fc; font-weight: 700; }
-.mcu-html-content .whitney-frost { color: #818cf8; font-weight: 700; text-shadow: 0 0 8px rgba(99, 102, 241, 0.5); }
-.mcu-html-content .jason-wilkes { color: #2dd4bf; font-weight: 600; }
-.mcu-html-content .charles-xavier { color: #38bdf8; font-weight: 700; }
-.mcu-html-content .erik-lehnsherr { color: #ef4444; font-weight: 700; }
-.mcu-html-content .raven-darkholme { color: #60a5fa; font-weight: 700; }
-.mcu-html-content .hank-mccoy { color: #3b82f6; font-weight: 700; }
-.mcu-html-content .sebastian-shaw { color: #dc2626; font-weight: 700; }
-.mcu-html-content .emma-frost { color: #e2e8f0; font-weight: 700; text-shadow: 0 0 8px rgba(255, 255, 255, 0.7); }
-.mcu-html-content .moira-mactaggert { color: #94a3b8; font-weight: 600; }
-.mcu-html-content .alex-summers { color: #f59e0b; font-weight: 700; }
-.mcu-html-content .sean-cassidy { color: #10b981; font-weight: 700; }
-.mcu-html-content .logan-wolverine { color: #fbbf24; font-weight: 700; }
-.mcu-html-content .victor-creed { color: #f97316; font-weight: 700; }
-.mcu-html-content .william-stryker { color: #cbd5e1; font-weight: 700; }
-.mcu-html-content .kayla-silverfox { color: #c084fc; font-weight: 700; }
-.mcu-html-content .remy-lebeau-gambit { color: #f472b6; font-weight: 700; }
-.mcu-html-content .wade-wilson { color: #ef4444; font-weight: 700; }
-.mcu-html-content .john-wraith { color: #22d3ee; font-weight: 700; }
-.mcu-html-content .fred-dukes { color: #eab308; font-weight: 700; }
-.mcu-html-content .agent-zero { color: #94a3b8; font-weight: 700; }
-.mcu-html-content .cyclops-scott-summers { color: #60a5fa; font-weight: 700; }
-.mcu-html-content .quicksilver-peter-maximoff { color: #93c5fd; font-weight: 700; text-shadow: 0 0 6px rgba(147, 197, 253, 0.4); }
-.mcu-html-content .bolivar-trask { color: #d97706; font-weight: 700; }
-.mcu-html-content .kitty-pryde { color: #a78bfa; font-weight: 700; }
-.mcu-html-content .storm-ororo-munroe { color: #38bdf8; font-weight: 700; text-shadow: 0 0 8px rgba(56, 189, 248, 0.5); }
-.mcu-html-content .iceman-bobby-drake { color: #67e8f9; font-weight: 700; text-shadow: 0 0 8px rgba(103, 232, 249, 0.5); }
-.mcu-html-content .colossus-piotr-rasputin { color: #e2e8f0; font-weight: 700; }
-.mcu-html-content .bishop-lucas-bishop { color: #f87171; font-weight: 700; }
-.mcu-html-content .blink-clarice-ferguson { color: #c084fc; font-weight: 700; text-shadow: 0 0 8px rgba(192, 132, 252, 0.5); }
-.mcu-html-content .sunspot-roberto-da-costa { color: #fb923c; font-weight: 700; text-shadow: 0 0 8px rgba(251, 146, 60, 0.5); }
-.mcu-html-content .warpath-james-proudstar { color: #a8a29e; font-weight: 700; }
-.mcu-html-content .en-sabah-nur-apocalypse { color: #818cf8; font-weight: 700; text-shadow: 0 0 10px rgba(129, 140, 248, 0.6); }
-.mcu-html-content .jean-grey { color: #f97316; font-weight: 700; text-shadow: 0 0 8px rgba(249, 115, 22, 0.5); }
-.mcu-html-content .nightcrawler-kurt-wagner { color: #818cf8; font-weight: 700; text-shadow: 0 0 8px rgba(129, 140, 248, 0.5); }
-.mcu-html-content .psylocke-betsy-braddock { color: #e879f9; font-weight: 700; text-shadow: 0 0 8px rgba(232, 121, 249, 0.5); }
-.mcu-html-content .archangel-warren-worthington { color: #cbd5e1; font-weight: 700; text-shadow: 0 0 6px rgba(203, 213, 225, 0.4); }
-.mcu-html-content .vuk-dbari { color: #c7d2fe; font-weight: 700; text-shadow: 0 0 8px rgba(199, 210, 254, 0.6); }
-
-/* X-Men: The Animated Series & Additional Mutants */
-.mcu-html-content .jubilee-jubilation-lee { color: #facc15; font-weight: 700; text-shadow: 0 0 8px rgba(250, 204, 21, 0.5); }
-.mcu-html-content .gambit-remy-lebeau { color: #f472b6; font-weight: 700; text-shadow: 0 0 8px rgba(244, 114, 182, 0.5); }
-.mcu-html-content .rogue-anna-marie { color: #34d399; font-weight: 700; text-shadow: 0 0 8px rgba(52, 211, 153, 0.5); }
-.mcu-html-content .cable-nathan-summers { color: #38bdf8; font-weight: 700; text-shadow: 0 0 8px rgba(56, 189, 248, 0.5); }
-.mcu-html-content .morph-kevin-sydney { color: #a78bfa; font-weight: 700; text-shadow: 0 0 6px rgba(167, 139, 250, 0.4); }
-.mcu-html-content .juggernaut-cain-marko { color: #ef4444; font-weight: 700; text-shadow: 0 0 8px rgba(239, 68, 68, 0.5); }
-.mcu-html-content .master-mold { color: #a855f7; font-weight: 700; text-shadow: 0 0 8px rgba(168, 85, 247, 0.6); }
-.mcu-html-content .senator-robert-kelly { color: #94a3b8; font-weight: 600; }
-.mcu-html-content .azazel { color: #dc2626; font-weight: 700; text-shadow: 0 0 6px rgba(220, 38, 38, 0.4); }
-
-/* X-Men: The Animated Series Season 2 Additions */
-.mcu-html-content .mister-sinister-nathaniel-essex { color: #f43f5e; font-weight: 700; text-shadow: 0 0 8px rgba(244, 63, 94, 0.5); }
-.mcu-html-content .omega-red-arkady-rossovich { color: #ef4444; font-weight: 700; text-shadow: 0 0 8px rgba(239, 68, 68, 0.5); }
-.mcu-html-content .shadow-king-amahl-farouk { color: #a855f7; font-weight: 700; text-shadow: 0 0 10px rgba(168, 85, 247, 0.6); }
-.mcu-html-content .graydon-creed { color: #94a3b8; font-weight: 700; }
-.mcu-html-content .carol-danvers-ms-marvel { color: #38bdf8; font-weight: 700; text-shadow: 0 0 8px rgba(56, 189, 248, 0.5); }
-.mcu-html-content .mojo { color: #eab308; font-weight: 700; text-shadow: 0 0 8px rgba(234, 179, 8, 0.5); }
-.mcu-html-content .longshot { color: #38bdf8; font-weight: 700; text-shadow: 0 0 8px rgba(56, 189, 248, 0.5); }
-.mcu-html-content .ka-zar-kevin-plunder { color: #f59e0b; font-weight: 700; }
-.mcu-html-content .sauron-karl-lykos { color: #84cc16; font-weight: 700; text-shadow: 0 0 8px rgba(132, 204, 22, 0.5); }
-.mcu-html-content .james-hudson-guardian { color: #ef4444; font-weight: 700; text-shadow: 0 0 8px rgba(239, 68, 68, 0.4); }
-.mcu-html-content .bella-donna-boudreaux { color: #ec4899; font-weight: 700; text-shadow: 0 0 8px rgba(236, 72, 153, 0.5); }
-
-/* X-Men TAS S3 & Iron Man TAS S1 Additions */
-.mcu-html-content .lady-deathstrike-yuriko-oyama { color: #ec4899; font-weight: 700; text-shadow: 0 0 8px rgba(236, 72, 153, 0.5); }
-.mcu-html-content .lilandra-neramani { color: #38bdf8; font-weight: 700; text-shadow: 0 0 8px rgba(56, 189, 248, 0.5); }
-.mcu-html-content .d-ken-neramani { color: #a855f7; font-weight: 700; text-shadow: 0 0 8px rgba(168, 85, 247, 0.5); }
-.mcu-html-content .corsair-christopher-summers { color: #f97316; font-weight: 700; text-shadow: 0 0 8px rgba(249, 115, 22, 0.5); }
-.mcu-html-content .gladiator-kallark { color: #dc2626; font-weight: 700; text-shadow: 0 0 8px rgba(220, 38, 38, 0.5); }
-.mcu-html-content .black-tom-cassidy { color: #16a34a; font-weight: 700; text-shadow: 0 0 8px rgba(22, 163, 74, 0.5); }
-.mcu-html-content .cain-marko-juggernaut { color: #b45309; font-weight: 700; text-shadow: 0 0 8px rgba(180, 83, 9, 0.5); }
-.mcu-html-content .zebediah-killgrave { color: #a855f7; font-weight: 700; text-shadow: 0 0 8px rgba(168, 85, 247, 0.5); }
-.mcu-html-content .rusty-collins-firefist { color: #f59e0b; font-weight: 700; text-shadow: 0 0 8px rgba(245, 158, 11, 0.5); }
-.mcu-html-content .garokk-petrified-man { color: #eab308; font-weight: 700; text-shadow: 0 0 8px rgba(234, 179, 8, 0.5); }
-.mcu-html-content .mandarin { color: #059669; font-weight: 700; text-shadow: 0 0 8px rgba(5, 150, 105, 0.5); }
-.mcu-html-content .modok-george-tarleton { color: #d97706; font-weight: 700; text-shadow: 0 0 8px rgba(217, 119, 6, 0.5); }
-.mcu-html-content .justin-hammer { color: #94a3b8; font-weight: 700; }
-.mcu-html-content .ultimo { color: #e11d48; font-weight: 700; text-shadow: 0 0 8px rgba(225, 29, 72, 0.5); }
-.mcu-html-content .century { color: #06b6d4; font-weight: 700; text-shadow: 0 0 8px rgba(6, 182, 212, 0.5); }
-.mcu-html-content .julia-carpenter-spider-woman { color: #f43f5e; font-weight: 700; text-shadow: 0 0 8px rgba(244, 63, 94, 0.5); }
-.mcu-html-content .captain-britain { color: #38bdf8; font-weight: 700; text-shadow: 0 0 8px rgba(56, 189, 248, 0.6); }
-.mcu-html-content .peter-parker-spider-man { color: #ef4444; font-weight: 700; text-shadow: 0 0 8px rgba(239, 68, 68, 0.5); }
-
-/* Eyes of Wakanda & Spider-Noir Operatives */
-.mcu-html-content .basha { color: #10b981; font-weight: 600; }
-.mcu-html-content .valkyrie-norn { color: #38bdf8; font-weight: 700; text-shadow: 0 0 6px rgba(56, 189, 248, 0.4); }
-.mcu-html-content .edward-addison { color: #94a3b8; font-weight: 600; }
-.mcu-html-content .flint-marko-noir { color: #fbbf24; font-weight: 700; text-shadow: 0 0 6px rgba(251, 191, 36, 0.4); }
-
-/* Additional MCU Canon Entities */
-.mcu-html-content .falcon { color: #f87171; font-weight: 600; }
-.mcu-html-content .war-machine { color: #94a3b8; font-weight: 600; }
-.mcu-html-content .thanos { color: #a855f7; font-weight: 700; text-shadow: 0 0 8px rgba(168, 85, 247, 0.5); }
-.mcu-html-content .odin { color: #f59e0b; font-weight: 700; text-shadow: 0 0 8px rgba(245, 158, 11, 0.5); }
-.mcu-html-content .maria-hill { color: #94a3b8; font-weight: 600; }
-.mcu-html-content .shuri { color: #a855f7; font-weight: 700; }
-.mcu-html-content .okoye { color: #f59e0b; font-weight: 700; }
-.mcu-html-content .nakia { color: #34d399; font-weight: 600; }
-.mcu-html-content .nebula { color: #38bdf8; font-weight: 700; }
-.mcu-html-content .mantis { color: #a3e635; font-weight: 600; }
-.mcu-html-content .valkyrie { color: #38bdf8; font-weight: 700; }
-.mcu-html-content .colleen-wing { color: #facc15; font-weight: 600; }
-.mcu-html-content .pietro { color: #93c5fd; font-weight: 700; }
-.mcu-html-content .captain-marvel { color: #fbbf24; font-weight: 700; text-shadow: 0 0 8px rgba(251, 191, 36, 0.6); }
-.mcu-html-content .talos { color: #84cc16; font-weight: 600; }
-.mcu-html-content .goose { color: #f97316; font-weight: 600; }
-.mcu-html-content .elektra { color: #ef4444; font-weight: 700; }
-.mcu-html-content .cloak { color: #6366f1; font-weight: 700; text-shadow: 0 0 8px rgba(99, 102, 241, 0.6); }
-.mcu-html-content .dagger { color: #e0f2fe; font-weight: 700; text-shadow: 0 0 8px rgba(224, 242, 254, 0.8); }
-
-/* Leaflet Marvel Tactical Dark Mode */
-.leaflet-container {
-  background-color: #030712 !important;
-  font-family: var(--font-sans);
-}
-
-.leaflet-tile {
-  filter: brightness(0.88) contrast(1.25) sepia(60%) hue-rotate(175deg) saturate(320%);
-}
-
-.leaflet-control-zoom a {
-  background-color: #141414 !important;
-  color: #38bdf8 !important;
-  border-color: #334155 !important;
-}
-
-.leaflet-control-zoom a:hover {
-  background-color: #e62429 !important;
-  color: #ffffff !important;
-}
-
-.leaflet-control-attribution {
-  background-color: rgba(0, 0, 0, 0.85) !important;
-  color: #64748b !important;
-  font-size: 10px !important;
-}
-
-.leaflet-control-attribution a {
-  color: #38bdf8 !important;
-}
-
-/* Hide native scrollbars cleanly */
-.no-scrollbar::-webkit-scrollbar {
-  display: none !important;
-}
-.no-scrollbar {
-  -ms-overflow-style: none !important;
-  scrollbar-width: none !important;
-}
-
-/* TAS Character Glows */
-.reed-richards {
-  color: #3b82f6;
-  text-shadow: 0 0 8px #3b82f688;
-}
-.sue-storm {
-  color: #60a5fa;
-  text-shadow: 0 0 8px #60a5fa88;
-}
-.johnny-storm {
-  color: #f97316;
-  text-shadow: 0 0 8px #f9731688;
-}
-.ben-grimm {
-  color: #ea580c;
-  text-shadow: 0 0 8px #ea580c88;
-}
-.victor-von-doom {
-  color: #15803d;
-  text-shadow: 0 0 8px #15803d88;
-}
-.namor-the-sub-mariner {
-  color: #0d9488;
-  text-shadow: 0 0 8px #0d948888;
-}
-.silver-surfer {
-  color: #e2e8f0;
-  text-shadow: 0 0 8px #e2e8f088;
-}
-.galactus {
-  color: #9333ea;
-  text-shadow: 0 0 8px #9333ea88;
-}
-.uatu-the-watcher {
-  color: #38bdf8;
-  text-shadow: 0 0 8px #38bdf888;
-}
-.super-skrull {
-  color: #16a34a;
-  text-shadow: 0 0 8px #16a34a88;
-}
-.mole-man {
-  color: #ca8a04;
-  text-shadow: 0 0 8px #ca8a0488;
-}
-.annihilus {
-  color: #84cc16;
-  text-shadow: 0 0 8px #84cc1688;
-}
-.peter-parker-spider-man {
-  color: #ef4444;
-  text-shadow: 0 0 8px #ef444488;
-}
-.eddie-brock-venom {
-  color: #18181b;
-  text-shadow: 0 0 8px #18181b88;
-}
-.doctor-octopus {
-  color: #10b981;
-  text-shadow: 0 0 8px #10b98188;
-}
-.curt-connors-lizard {
-  color: #22c55e;
-  text-shadow: 0 0 8px #22c55e88;
-}
-.mysterio-quentin-beck {
-  color: #a855f7;
-  text-shadow: 0 0 8px #a855f788;
-}
-.scorpion-mac-gargan {
-  color: #65a30d;
-  text-shadow: 0 0 8px #65a30d88;
-}
-.kraven-the-hunter {
-  color: #d97706;
-  text-shadow: 0 0 8px #d9770688;
-}
-.norman-osborn {
-  color: #15803d;
-  text-shadow: 0 0 8px #15803d88;
-}
-.felicia-hardy {
-  color: #38bdf8;
-  text-shadow: 0 0 8px #38bdf888;
-}
-.j-jonah-jameson {
-  color: #71717a;
-  text-shadow: 0 0 8px #71717a88;
-}
-.hobgoblin {
-  color: #f59e0b;
-  text-shadow: 0 0 8px #f59e0b88;
-}
-.chameleon {
-  color: #94a3b8;
-  text-shadow: 0 0 8px #94a3b888;
-}
-.ho-yinsen {
-  color: #fbbf24;
-  text-shadow: 0 0 8px #fbbf2488;
-}
-.michael-morbius {
-  color: #e11d48;
-  text-shadow: 0 0 8px #e11d4888;
-}
-.blade-eric-brooks {
-  color: #b91c1c;
-  text-shadow: 0 0 8px #b91c1c88;
-}
-.madame-masque-whitney-frost {
-  color: #d97706;
-  text-shadow: 0 0 8px #d9770688;
-}
-.homer-ai {
-  color: #38bdf8;
-  text-shadow: 0 0 8px #38bdf888;
-}
-.black-panther-t-challa {
-  color: #a855f7;
-  text-shadow: 0 0 8px #a855f788;
-}
-.proteus-kevin-mactaggert {
-  color: #f43f5e;
-  text-shadow: 0 0 8px #f43f5e88;
-}
-.bruce-banner-hulk {
-  color: #22c55e;
-  text-shadow: 0 0 8px #22c55e88;
-}
-.the-leader-samuel-sterns {
-  color: #84cc16;
-  text-shadow: 0 0 8px #84cc1688;
-}
-.emil-blonsky-abomination {
-  color: #15803d;
-  text-shadow: 0 0 8px #15803d88;
-}
-.matt-murdock-daredevil {
-  color: #dc2626;
-  text-shadow: 0 0 8px #dc262688;
-}
-.wilson-fisk-kingpin {
-  color: #f8fafc;
-  text-shadow: 0 0 8px #f8fafc88;
-}
-.cletus-kasady-carnage {
-  color: #dc2626;
-  text-shadow: 0 0 8px #dc262688;
-}
-.jennifer-walters-she-hulk {
-  color: #16a34a;
-  text-shadow: 0 0 8px #16a34a88;
-}
-.the-beyonder {
-  color: #ec4899;
-  text-shadow: 0 0 8px #ec489988;
-}
-.madame-web {
-  color: #a855f7;
-  text-shadow: 0 0 8px #a855f788;
-}
-.stan-lee-creator {
-  color: #f59e0b;
-  text-shadow: 0 0 8px #f59e0b88;
-}
-
-/* Captain Marvel Character Glows */
-.yon-rogg {
-  color: #0284c7;
-  text-shadow: 0 0 8px #0284c788;
-}
-.mar-vell-wendy-lawson {
-  color: #38bdf8;
-  text-shadow: 0 0 8px #38bdf888;
-}
-.maria-rambeau {
-  color: #eab308;
-  text-shadow: 0 0 8px #eab30888;
-}
-.monica-rambeau {
-  color: #f97316;
-  text-shadow: 0 0 8px #f9731688;
-}
-.supreme-intelligence {
-  color: #22c55e;
-  text-shadow: 0 0 8px #22c55e88;
-}
-.minn-erva {
-  color: #06b6d4;
-  text-shadow: 0 0 8px #06b6d488;
-}
-.korath {
-  color: #64748b;
-  text-shadow: 0 0 8px #64748b88;
-}
-.ronan {
-  color: #0284c7;
-  text-shadow: 0 0 8px #0284c788;
-}
-
-.mcu-html-content .trevor-fitzroy,
-.trevor-fitzroy {
-  color: #c084fc;
-  font-weight: 700;
-  text-shadow: 0 0 8px rgba(192, 132, 252, 0.5);
-}
-
-.mcu-html-content .whizzer-robert-frank,
-.whizzer-robert-frank {
-  color: #facc15;
-  font-weight: 700;
-  text-shadow: 0 0 8px rgba(250, 204, 21, 0.5);
-}
-
-.mcu-html-content .mary-jane-watson,
-.mary-jane-watson {
-  color: #fb923c;
-  font-weight: 700;
-  text-shadow: 0 0 8px rgba(251, 146, 60, 0.5);
-}
-
-.mcu-html-content .fabian-cortez,
-.fabian-cortez {
-  color: #ef4444;
-  font-weight: 700;
-  text-shadow: 0 0 8px rgba(239, 68, 68, 0.5);
-}
-
-.mcu-html-content .prowler-hobie-brown,
-.prowler-hobie-brown {
-  color: #c084fc;
-  font-weight: 700;
-  text-shadow: 0 0 8px rgba(192, 132, 252, 0.5);
-}
-
-.mcu-html-content .ghost-rider-danny-ketch,
-.ghost-rider-danny-ketch {
-  color: #fb923c;
-  font-weight: 700;
-  text-shadow: 0 0 8px rgba(251, 146, 60, 0.6);
-}
-
-.mcu-html-content .gabe-jones,
-.gabe-jones {
-  color: #60a5fa;
-  font-weight: 700;
-  text-shadow: 0 0 8px rgba(96, 165, 250, 0.5);
-}
-
-.mcu-html-content .jim-morita,
-.jim-morita {
-  color: #38bdf8;
-  font-weight: 700;
-  text-shadow: 0 0 8px rgba(56, 189, 248, 0.5);
-}
-
-.mcu-html-content .jacques-dernier,
-.jacques-dernier {
-  color: #a78bfa;
-  font-weight: 700;
-  text-shadow: 0 0 8px rgba(167, 139, 250, 0.5);
-}
-
-.mcu-html-content .james-montgomery-falsworth,
-.james-montgomery-falsworth {
-  color: #fbbf24;
-  font-weight: 700;
-  text-shadow: 0 0 8px rgba(251, 191, 36, 0.5);
-}
-
-.mcu-html-content .michael-carter,
-.michael-carter {
-  color: #f472b6;
-  font-weight: 700;
-  text-shadow: 0 0 8px rgba(244, 114, 182, 0.5);
-}
-
-.mcu-html-content .madelyne-pryor-goblin-queen,
-.madelyne-pryor-goblin-queen {
-  color: #ef4444;
-  font-weight: 700;
-  text-shadow: 0 0 8px rgba(239, 68, 68, 0.65);
-}
-
-.mcu-html-content .bastion-sebastion-gilberti,
-.bastion-sebastion-gilberti {
-  color: #c084fc;
-  font-weight: 700;
-  text-shadow: 0 0 8px rgba(192, 132, 252, 0.65);
-}
-
-.mcu-html-content .forge,
-.forge {
-  color: #fbbf24;
-  font-weight: 700;
-  text-shadow: 0 0 8px rgba(251, 191, 36, 0.6);
-}
-
-.mcu-html-content .mother-askani-rachel-summers,
-.mother-askani-rachel-summers {
-  color: #fb923c;
-  font-weight: 700;
-  text-shadow: 0 0 8px rgba(251, 146, 60, 0.6);
-}
-
-.mcu-html-content .valerie-cooper,
-.valerie-cooper {
-  color: #94a3b8;
-  font-weight: 700;
-  text-shadow: 0 0 8px rgba(148, 163, 184, 0.5);
-}
-
-.mcu-html-content .young-nathan-summers,
-.young-nathan-summers {
-  color: #38bdf8;
-  font-weight: 700;
-  text-shadow: 0 0 8px rgba(56, 189, 248, 0.6);
-}
-
-.mcu-html-content .callisto,
-.callisto {
-  color: #a1a1aa;
-  font-weight: 700;
-  text-shadow: 0 0 8px rgba(161, 161, 170, 0.5);
-}
-
-.mcu-html-content .banshee,
-.banshee {
-  color: #10b981;
-  font-weight: 700;
-  text-shadow: 0 0 8px rgba(16, 185, 129, 0.5);
-}
-
-.mcu-html-content .shaw,
-.shaw {
-  color: #dc2626;
-  font-weight: 700;
-  text-shadow: 0 0 8px rgba(220, 38, 38, 0.5);
-}
-
-
