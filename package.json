@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "lint": "eslint .",
     "validate": "tsx --tsconfig tsconfig.app.json scripts/content.ts validate",
-    "content": "tsx --tsconfig tsconfig.app.json scripts/content.ts"
+    "content": "tsx --tsconfig tsconfig.app.json scripts/content.ts",
+    "posters:sync": "tsx --tsconfig tsconfig.app.json scripts/posters.ts"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.3.1",

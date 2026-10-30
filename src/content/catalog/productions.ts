@@ -12,6 +12,8 @@ export const productions = {
     universe: 'earth-616',
     status: 'legacy',
     color: '#ffbf10',
+    tmdbId: 10195,
+    poster: '/prSfAi1xGrhLQNxVSUFh61xQ4Qy.jpg',
   },
   'thor-the-dark-world': {
     kind: 'movie',
@@ -22,6 +24,8 @@ export const productions = {
     universe: 'earth-616',
     status: 'legacy',
     color: '#921c1c',
+    tmdbId: 76338,
+    poster: '/wp6OxE4poJ4G7c0U2ZIXasTSMR7.jpg',
   },
   'thor-ragnarok': {
     kind: 'movie',
@@ -32,6 +36,8 @@ export const productions = {
     universe: 'earth-616',
     status: 'legacy',
     color: '#00d2be',
+    tmdbId: 284053,
+    poster: '/rzRwTcFvttcN1ZpX2xv4j3tSdJu.jpg',
   },
   'black-panther': {
     kind: 'movie',
@@ -42,6 +48,8 @@ export const productions = {
     universe: 'earth-616',
     status: 'legacy',
     color: '#9b5de5',
+    tmdbId: 284054,
+    poster: '/uxzzxijgPIY7slzFvMotPv8wjKA.jpg',
   },
   'agents-of-shield-s1': {
     kind: 'season',
@@ -53,6 +61,7 @@ export const productions = {
     universe: 'earth-616',
     status: 'legacy',
     color: '#4a5568',
+    poster: '/1CaKyPcZvzzMSwbNFJObxNsxTkK.jpg',
   },
   'agents-of-shield-s2': {
     kind: 'season',
@@ -64,6 +73,7 @@ export const productions = {
     universe: 'earth-616',
     status: 'legacy',
     color: '#4a5568',
+    poster: '/p8Qy60OIf0OaJ29KPw6ld51MSP7.jpg',
   },
   'agents-of-shield-s3': {
     kind: 'season',
@@ -75,6 +85,7 @@ export const productions = {
     universe: 'earth-616',
     status: 'legacy',
     color: '#4a5568',
+    poster: '/y0cxxcvCk9lEG4DEorTz5GxC9sj.jpg',
   },
   'agents-of-shield-s4': {
     kind: 'season',
@@ -86,6 +97,7 @@ export const productions = {
     universe: 'earth-616',
     status: 'legacy',
     color: '#4a5568',
+    poster: '/mgyMzTTIFVdKoejD0gKIyaCgWOP.jpg',
   },
   'agents-of-shield-s5': {
     kind: 'season',
@@ -97,6 +109,7 @@ export const productions = {
     universe: 'earth-616',
     status: 'legacy',
     color: '#4a5568',
+    poster: '/pwZedE4CB3E73lvH9A5yRaszll0.jpg',
   },
   'agents-of-shield-s6': {
     kind: 'season',
@@ -108,6 +121,7 @@ export const productions = {
     universe: 'earth-616',
     status: 'legacy',
     color: '#4a5568',
+    poster: '/QU0NjcvDonZLKhjRuxRv6AVo5l.jpg',
   },
   'agents-of-shield-s7': {
     kind: 'season',
@@ -119,6 +133,7 @@ export const productions = {
     universe: 'earth-616',
     status: 'legacy',
     color: '#4a5568',
+    poster: '/qM95u55G8xVyfgoSZ2qTlY3MDl6.jpg',
   },
   'agents-of-shield-slingshot': {
     kind: 'short',
@@ -128,6 +143,8 @@ export const productions = {
     universe: 'earth-616',
     status: 'legacy',
     color: '#319795',
+    tmdbId: 69088,
+    poster: '/bwJej7WdmGRMCMyuDlotwAqVX7S.jpg',
   },
   'inhumans-s1': {
     kind: 'season',
@@ -139,6 +156,7 @@ export const productions = {
     universe: 'earth-616',
     status: 'legacy',
     color: '#2b6cb0',
+    poster: '/doCIoaV9ffAJbK3TW2AsGp4ytOQ.jpg',
   },
   'the-defenders-s1': {
     kind: 'season',
@@ -150,6 +168,7 @@ export const productions = {
     universe: 'earth-616',
     status: 'legacy',
     color: '#c53030',
+    poster: '/4COAMPA6LPkPBd1xdm9paN4LCD8.jpg',
   },
   'captain-america-the-first-avenger': {
     kind: 'movie',
@@ -160,6 +179,8 @@ export const productions = {
     universe: 'earth-616',
     status: 'audited',
     color: '#2b6cb0',
+    tmdbId: 1771,
+    poster: '/vSNxAJTlD0r02V9sPYpOjqDZXUK.jpg',
   },
   'captain-america-the-winter-soldier': {
     kind: 'movie',
@@ -170,6 +191,8 @@ export const productions = {
     universe: 'earth-616',
     status: 'legacy',
     color: '#2c5282',
+    tmdbId: 100402,
+    poster: '/tVFRpFw3xTedgPGqxW0AOI8Qhh0.jpg',
   },
   'captain-america-civil-war': {
     kind: 'movie',
@@ -180,6 +203,8 @@ export const productions = {
     universe: 'earth-616',
     status: 'legacy',
     color: '#9b2c2c',
+    tmdbId: 271110,
+    poster: '/rAGiXaUfPzY7CDEyNKUofk3Kw2e.jpg',
   },
   'agent-carter-s1': {
     kind: 'season',
@@ -191,6 +216,7 @@ export const productions = {
     universe: 'earth-616',
     status: 'audited',
     color: '#2f855a',
+    poster: '/gqyjmfFOrKY8iouNTXWj9KW7cC5.jpg',
   },
   'agent-carter-s2': {
     kind: 'season',
@@ -202,6 +228,7 @@ export const productions = {
     universe: 'earth-616',
     status: 'audited',
     color: '#276749',
+    poster: '/h3yPRRiWZk6HrFD2oo3xqpLt6bc.jpg',
   },
   'one-shot-agent-carter': {
     kind: 'short',
@@ -212,6 +239,8 @@ export const productions = {
     universe: 'earth-616',
     status: 'legacy',
     color: '#38a169',
+    tmdbId: 211387,
+    poster: '/4vFKKWPvCVDJTOWiwReBfpAMScP.jpg',
   },
   'one-shot-a-funny-thing-happened': {
     kind: 'short',
@@ -222,6 +251,8 @@ export const productions = {
     universe: 'earth-616',
     status: 'legacy',
     color: '#d69e2e',
+    tmdbId: 76535,
+    poster: '/njrOqsmFH4pxBrhcoslqLfw2OGk.jpg',
   },
   'one-shot-the-consultant': {
     kind: 'short',
@@ -232,6 +263,8 @@ export const productions = {
     universe: 'earth-616',
     status: 'legacy',
     color: '#805ad5',
+    tmdbId: 76122,
+    poster: '/xqNLXUUvBnfVk6m3QFGGU0Grgs7.jpg',
   },
   'one-shot-item-47': {
     kind: 'short',
@@ -242,6 +275,8 @@ export const productions = {
     universe: 'earth-616',
     status: 'legacy',
     color: '#4a5568',
+    tmdbId: 119569,
+    poster: '/hnSxG8clwLuAXEkp9emc8HCUcHD.jpg',
   },
   'one-shot-all-hail-the-king': {
     kind: 'short',
@@ -252,6 +287,8 @@ export const productions = {
     universe: 'earth-616',
     status: 'legacy',
     color: '#e53e3e',
+    tmdbId: 253980,
+    poster: '/y0QYZPWgeGKOvyrzi6Oz3aJPxJa.jpg',
   },
   'team-thor': {
     kind: 'short',
@@ -262,6 +299,8 @@ export const productions = {
     universe: 'earth-616',
     status: 'legacy',
     color: '#ecc94b',
+    tmdbId: 413279,
+    poster: '/hpHvGuMc46pppwpcW0Xk7eys3L4.jpg',
   },
   'iron-man': {
     kind: 'movie',
@@ -272,6 +311,8 @@ export const productions = {
     universe: 'earth-616',
     status: 'legacy',
     color: '#e53e3e',
+    tmdbId: 1726,
+    poster: '/78lPtwv72eTNqFW9COBYI0dWDJa.jpg',
   },
   'stark-expo-1974': {
     kind: 'special',
@@ -293,6 +334,8 @@ export const productions = {
     universe: 'earth-616',
     status: 'legacy',
     color: '#dd6b20',
+    tmdbId: 10138,
+    poster: '/6WBeq4fCfn7AN0o21W9qNcRF2l9.jpg',
   },
   'iron-man-3': {
     kind: 'movie',
@@ -303,6 +346,8 @@ export const productions = {
     universe: 'earth-616',
     status: 'legacy',
     color: '#c53030',
+    tmdbId: 68721,
+    poster: '/qhPtAc1TKbMPqNvcdXSOn9Bn7hZ.jpg',
   },
   'the-incredible-hulk': {
     kind: 'movie',
@@ -313,6 +358,8 @@ export const productions = {
     universe: 'earth-616',
     status: 'legacy',
     color: '#38a169',
+    tmdbId: 1724,
+    poster: '/gKzYx79y0AQTL4UAk1cBQJ3nvrm.jpg',
   },
   'guardians-of-the-galaxy': {
     kind: 'movie',
@@ -323,6 +370,8 @@ export const productions = {
     universe: 'earth-616',
     status: 'legacy',
     color: '#805ad5',
+    tmdbId: 118340,
+    poster: '/r7vmZjiyZw9rpJMQJdXpjgiCOk9.jpg',
   },
   'guardians-of-the-galaxy-vol-2': {
     kind: 'movie',
@@ -333,6 +382,8 @@ export const productions = {
     universe: 'earth-616',
     status: 'legacy',
     color: '#d53f8c',
+    tmdbId: 283995,
+    poster: '/y4MBh0EjBlMuOzv9axM4qJlmhzz.jpg',
   },
   'captain-marvel': {
     kind: 'movie',
@@ -343,6 +394,8 @@ export const productions = {
     universe: 'earth-616',
     status: 'audited',
     color: '#e53e3e',
+    tmdbId: 299537,
+    poster: '/AtsgWhDnHTq68L0lLsUrCnM7TjG.jpg',
   },
   'ant-man': {
     kind: 'movie',
@@ -353,6 +406,8 @@ export const productions = {
     universe: 'earth-616',
     status: 'legacy',
     color: '#9b2c2c',
+    tmdbId: 102899,
+    poster: '/rQRnQfUl3kfp78nCWq8Ks04vnq1.jpg',
   },
   'ant-man-and-the-wasp': {
     kind: 'movie',
@@ -363,6 +418,8 @@ export const productions = {
     universe: 'earth-616',
     status: 'legacy',
     color: '#d69e2e',
+    tmdbId: 363088,
+    poster: '/cFQEO687n1K6umXbInzocxcnAQz.jpg',
   },
   'daredevil-s1': {
     kind: 'season',
@@ -374,6 +431,7 @@ export const productions = {
     universe: 'earth-616',
     status: 'legacy',
     color: '#9b2c2c',
+    poster: '/zFmJQzl6bFrdpHhDkxXmboyykqD.jpg',
   },
   'daredevil-s2': {
     kind: 'season',
@@ -385,6 +443,7 @@ export const productions = {
     universe: 'earth-616',
     status: 'legacy',
     color: '#742a2a',
+    poster: '/opHoslNCxkgoCaGhfO66fvCSH83.jpg',
   },
   'daredevil-s3': {
     kind: 'season',
@@ -396,6 +455,7 @@ export const productions = {
     universe: 'earth-616',
     status: 'legacy',
     color: '#521b1b',
+    poster: '/zH6sgePlr1XX0jSZypbfQmr70Lf.jpg',
   },
   'iron-fist-s1': {
     kind: 'season',
@@ -407,6 +467,7 @@ export const productions = {
     universe: 'earth-616',
     status: 'legacy',
     color: '#d69e2e',
+    poster: '/usGfoL4RfX15f1sQcX3Sgw4YRf4.jpg',
   },
   'iron-fist-s2': {
     kind: 'season',
@@ -418,6 +479,7 @@ export const productions = {
     universe: 'earth-616',
     status: 'legacy',
     color: '#b7791f',
+    poster: '/vXYvfCWvz5W0rErCpNIq09urhzW.jpg',
   },
   'jessica-jones-s1': {
     kind: 'season',
@@ -429,6 +491,7 @@ export const productions = {
     universe: 'earth-616',
     status: 'legacy',
     color: '#553c9a',
+    poster: '/9wwfowgVJDouHQdUsIcNhgbIUlG.jpg',
   },
   'jessica-jones-s2': {
     kind: 'season',
@@ -440,6 +503,7 @@ export const productions = {
     universe: 'earth-616',
     status: 'legacy',
     color: '#44337a',
+    poster: '/tKirVNmDmwYjqehjPpyjr1n3U2F.jpg',
   },
   'jessica-jones-s3': {
     kind: 'season',
@@ -451,6 +515,7 @@ export const productions = {
     universe: 'earth-616',
     status: 'legacy',
     color: '#322659',
+    poster: '/dOPx3bj3x6eXYXQJUUIHXvWRSSB.jpg',
   },
   'luke-cage-s1': {
     kind: 'season',
@@ -462,6 +527,7 @@ export const productions = {
     universe: 'earth-616',
     status: 'legacy',
     color: '#dd6b20',
+    poster: '/8Z875pkCNeufkTQrHjdPcaHi7NP.jpg',
   },
   'luke-cage-s2': {
     kind: 'season',
@@ -473,6 +539,7 @@ export const productions = {
     universe: 'earth-616',
     status: 'legacy',
     color: '#c05621',
+    poster: '/quTfV803fGaSADzTeEqCbIZnt9d.jpg',
   },
   'the-punisher-s1': {
     kind: 'season',
@@ -484,6 +551,7 @@ export const productions = {
     universe: 'earth-616',
     status: 'legacy',
     color: '#1a202c',
+    poster: '/dOkJ6TJKQjsz2XwXyp2VYpkeE5g.jpg',
   },
   'the-punisher-s2': {
     kind: 'season',
@@ -495,6 +563,7 @@ export const productions = {
     universe: 'earth-616',
     status: 'legacy',
     color: '#2d3748',
+    poster: '/agNYq5XZnGfmYetUMyyM2RdPY70.jpg',
   },
   'black-widow': {
     kind: 'movie',
@@ -505,6 +574,8 @@ export const productions = {
     universe: 'earth-616',
     status: 'legacy',
     color: '#742a2a',
+    tmdbId: 497698,
+    poster: '/qAZ0pzat24kLdO3o8ejmbLxyOac.jpg',
   },
   'the-avengers': {
     kind: 'movie',
@@ -515,6 +586,8 @@ export const productions = {
     universe: 'earth-616',
     status: 'legacy',
     color: '#3182ce',
+    tmdbId: 24428,
+    poster: '/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg',
   },
   'avengers-age-of-ultron': {
     kind: 'movie',
@@ -525,6 +598,8 @@ export const productions = {
     universe: 'earth-616',
     status: 'legacy',
     color: '#319795',
+    tmdbId: 99861,
+    poster: '/4ssDuvEDkSArWEdyBl2X5EHvYKU.jpg',
   },
   'avengers-infinity-war': {
     kind: 'movie',
@@ -535,6 +610,8 @@ export const productions = {
     universe: 'earth-616',
     status: 'legacy',
     color: '#6b46c1',
+    tmdbId: 299536,
+    poster: '/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg',
   },
   'spider-man-homecoming': {
     kind: 'movie',
@@ -545,6 +622,8 @@ export const productions = {
     universe: 'earth-616',
     status: 'legacy',
     color: '#c53030',
+    tmdbId: 315635,
+    poster: '/c24sv2weTHPsmDa7jEMN0m2P3RT.jpg',
   },
   'doctor-strange': {
     kind: 'movie',
@@ -555,6 +634,8 @@ export const productions = {
     universe: 'earth-616',
     status: 'legacy',
     color: '#2b6cb0',
+    tmdbId: 284052,
+    poster: '/uGBVj3bEbCoZbDjjl9wTxcygko1.jpg',
   },
   'cloak-and-dagger-s1': {
     kind: 'season',
@@ -566,6 +647,7 @@ export const productions = {
     universe: 'earth-616',
     status: 'legacy',
     color: '#2b6cb0',
+    poster: '/nluzawv8wEo0AeECpnLo3wO2YLZ.jpg',
   },
   'cloak-and-dagger-s2': {
     kind: 'season',
@@ -577,6 +659,7 @@ export const productions = {
     universe: 'earth-616',
     status: 'legacy',
     color: '#2c5282',
+    poster: '/pYnRJuBPEqZO1o4fcxBTgmKNHfy.jpg',
   },
   'eyes-of-wakanda-s1': {
     kind: 'season',
@@ -591,6 +674,7 @@ export const productions = {
     animated: true,
     color: '#9333ea',
     description: 'Marvel Animation anthology following the Hatut Zeraze retrieving lost Vibranium artifacts throughout human history.',
+    poster: '/64RsvJMVUfhs5CDV7xXRjiLK4w6.jpg',
   },
   'spider-noir-s1': {
     kind: 'season',
@@ -603,6 +687,7 @@ export const productions = {
     status: 'audited',
     color: '#334155',
     description: 'Live-action superhero noir following veteran private investigator Ben Reilly in 1930s Great Depression New York as he confronts his past as The Spider.',
+    poster: '/oD8WSVqz84ZRfelkr7JPeJwR9Iv.jpg',
   },
   'peggy-carter-1953-interview': {
     kind: 'special',
@@ -624,6 +709,8 @@ export const productions = {
     status: 'audited',
     color: '#1e3a8a',
     description: "In the 1960s during the height of the Cold War, mutant scholars Charles Xavier and Erik Lehnsherr unite gifted individuals into Division X to prevent a nuclear apocalypse orchestrated by Sebastian Shaw's Hellfire Club.",
+    tmdbId: 49538,
+    poster: '/hNEokmUke0dazoBhttFN0o3L7Xv.jpg',
   },
   'x-men-origins-wolverine': {
     kind: 'movie',
@@ -634,6 +721,8 @@ export const productions = {
     status: 'audited',
     color: '#d97706',
     description: 'The epic origin of Wolverine, spanning over a century of wars, Team X, and the agonizing Weapon X Adamantium bonding program.',
+    tmdbId: 2080,
+    poster: '/yj8LbTju1p7CUJg7US2unSBk33s.jpg',
   },
   'x-men-days-of-future-past': {
     kind: 'movie',
@@ -644,6 +733,8 @@ export const productions = {
     status: 'audited',
     color: '#581c87',
     description: "To prevent the total annihilation of mutantkind and humanity by adaptive Sentinels in a dystopian 2023, Wolverine's consciousness is projected into 1973 to unite the broken younger Charles Xavier and Magneto and stop Mystique from assassinating Bolivar Trask.",
+    tmdbId: 127585,
+    poster: '/tYfijzolzgoMOtegh1Y7j2Enorg.jpg',
   },
   'x-men-apocalypse': {
     kind: 'movie',
@@ -654,6 +745,8 @@ export const productions = {
     status: 'audited',
     color: '#4338ca',
     description: "The ancient mutant god En Sabah Nur awakes in 1983, recruiting Magneto, Storm, Psylocke, and Archangel as his Four Horsemen to cleanse humanity, forcing Raven and Charles Xavier's new young X-Men to unleash their full power.",
+    tmdbId: 246655,
+    poster: '/ikA8UhYdTGpqbatFa93nIf6noSr.jpg',
   },
   'come-to-wakanda-before': {
     kind: 'special',
@@ -675,6 +768,8 @@ export const productions = {
     status: 'audited',
     color: '#b91c1c',
     description: 'In 1992, during a daring space rescue mission, Jean Grey is hit by a mysterious cosmic force that unlocks immense, destructive psionic power and buried childhood trauma, tearing the X-Men apart as an alien empire seeks to weaponize the Phoenix.',
+    tmdbId: 320288,
+    poster: '/cCTJPelKGLhALq3r51A9uMonxKj.jpg',
   },
   'x-men-tas-s1': {
     kind: 'season',
@@ -688,6 +783,7 @@ export const productions = {
     animated: true,
     color: '#eab308',
     description: "In 1992, the X-Men combat Bolivar Trask's anti-mutant Sentinels, Magneto's ideological rebellion, and the emergence of Apocalypse and Master Mold, while time-traveler Bishop attempts to avert a bleak dystopian future.",
+    poster: '/qVwe6nEnJpJbjisnDka0yoeDaT2.jpg',
   },
   'x-men-tas-s2': {
     kind: 'season',
@@ -701,6 +797,7 @@ export const productions = {
     animated: true,
     color: '#eab308',
     description: "In 1993-1994, the X-Men face the genetic machinations of Mister Sinister, the trauma of Morph's resurrection, the psychic awakening of the Shadow King, Omega Red in Russia, the time paradoxes of Cable and Bishop, and an all-out war in the Savage Land.",
+    poster: '/eEy7kDNgxsn2IYZad0FCk9uRhpn.jpg',
   },
   'x-men-tas-s3': {
     kind: 'season',
@@ -714,6 +811,7 @@ export const productions = {
     animated: true,
     color: '#eab308',
     description: "In 1994-1995, the X-Men confront Lady Deathstrike, witness Jean Grey's cosmic ascension in the Phoenix Saga, travel to the Shi'ar Empire, battle the mind-controlling Killgrave, and save the Savage Land from Garokk.",
+    poster: '/dmQWZoWr8lAR0aFhBjsieVddlLf.jpg',
   },
   'x-men-tas-s4': {
     kind: 'season',
@@ -727,6 +825,7 @@ export const productions = {
     animated: true,
     color: '#84cc16',
     description: "The X-Men travel through altered timelines in One Man's Worth, face Proteus in Scotland, witness Magneto's Asteroid M sanctuary, and stop Apocalypse's temporal conquest across the Axis of Time in Beyond Good and Evil.",
+    poster: '/rKqwgDcLiM08KEP2a3ac4shf5tt.jpg',
   },
   'x-men-tas-s5': {
     kind: 'season',
@@ -740,6 +839,7 @@ export const productions = {
     animated: true,
     color: '#ca8a04',
     description: "The concluding chapter of the original series: Wolverine and Captain America fight in WWII, the alien Phalanx threatens Earth, and in Graduation Day, a mortally wounded Xavier departs Earth for the Shi'ar Empire.",
+    poster: '/nREygs8ZRcqyqBT9mSzPhlkmLtS.jpg',
   },
   'iron-man-tas-s1': {
     kind: 'season',
@@ -753,6 +853,7 @@ export const productions = {
     animated: true,
     color: '#ef4444',
     description: 'In 1994, Tony Stark and his tactical team Force Works defend the West Coast against the Mandarin, MODOK, Justin Hammer, and the ancient alien juggernaut Ultimo.',
+    poster: '/gsGYxzA0NywHZvPTyV6xJ1XdSgy.jpg',
   },
   'iron-man-tas-s2': {
     kind: 'season',
@@ -766,6 +867,7 @@ export const productions = {
     animated: true,
     color: '#f59e0b',
     description: "Force Works disbands as Tony Stark adopts the sleek Modular Armor and AI H.O.M.E.R., facing Madame Masque, Justin Hammer, the Mandarin's return, and waging the legendary Armor Wars.",
+    poster: '/9jAP0UPnfGeQn5gtEkzZoC7z4TB.jpg',
   },
   'fantastic-four-tas-s1': {
     kind: 'season',
@@ -779,6 +881,7 @@ export const productions = {
     animated: true,
     color: '#3b82f6',
     description: "In 1994, Reed Richards, Sue Storm, Johnny Storm, and Ben Grimm become Marvel's first family after cosmic ray exposure, battling Doctor Doom, Namor, the Skrulls, and Galactus.",
+    poster: '/gHMRD0dcG2mKiOrurxnNev4vh2d.jpg',
   },
   'fantastic-four-tas-s2': {
     kind: 'season',
@@ -792,6 +895,7 @@ export const productions = {
     animated: true,
     color: '#2563eb',
     description: 'The Fantastic Four encounter the Inhumans in the Himalayas, join forces with Daredevil in NYC, explore Ego the Living Planet, meet Black Panther in Wakanda, and confront Galactus.',
+    poster: '/ccjFJsaeAJDMQqfqHaj7mHmhrq9.jpg',
   },
   'spider-man-tas-s1': {
     kind: 'season',
@@ -805,6 +909,7 @@ export const productions = {
     animated: true,
     color: '#dc2626',
     description: 'In 1994-1995, Peter Parker balances university life at ESU with heroics, fighting the Lizard, Spider-Slayers, Doctor Octopus, Mysterio, Kraven, and surviving the Symbiote / Venom saga.',
+    poster: '/f1Dy2F8of9uZiSz6Z3kTlzpWz6L.jpg',
   },
   'spider-man-tas-s2': {
     kind: 'season',
@@ -818,6 +923,7 @@ export const productions = {
     animated: true,
     color: '#ef4444',
     description: 'The Neogenic Nightmare: Spider-Man battles cellular degradation, teams up with the X-Men at the Xavier Mansion, mutates into the Man-Spider, and fights alongside Punisher and Blade against Morbius.',
+    poster: '/qIDlAgHTlVxc0Htyi5TPUSuePNJ.jpg',
   },
   'spider-man-tas-s3': {
     kind: 'season',
@@ -831,6 +937,7 @@ export const productions = {
     animated: true,
     color: '#0ea5e9',
     description: "Sins of the Fathers: Doctor Strange, the Green Goblin's descent into madness, Daredevil clearing Peter's name in court, The Spot, and a mega-crossover with Iron Man and War Machine battling Venom and Carnage.",
+    poster: '/hCUkmIr50UnOuU9MasUZ7s0y3vf.jpg',
   },
   'spider-man-tas-s4': {
     kind: 'season',
@@ -844,6 +951,7 @@ export const productions = {
     animated: true,
     color: '#f97316',
     description: 'Felicia Hardy becomes the Black Cat, Kraven returns, the Green Goblin returns to torment Mary Jane, and Spider-Man battles the Lizard King and the Prowler across New York.',
+    poster: '/lQFu9auCwZLUTJigBZsSL2Kwp80.jpg',
   },
   'spider-man-tas-s5': {
     kind: 'season',
@@ -857,6 +965,7 @@ export const productions = {
     animated: true,
     color: '#a855f7',
     description: "The epic culmination: The Wedding of Peter and Mary Jane, the Six Forgotten Warriors saga with Captain America, Beyonder's Secret Wars with Iron Man and the Fantastic Four, and the multiversal Spider Wars.",
+    poster: '/naOSAwubTLs2PSrJIAyNPNz7cVh.jpg',
   },
   'incredible-hulk-tas-s1': {
     kind: 'season',
@@ -870,6 +979,7 @@ export const productions = {
     animated: true,
     color: '#16a34a',
     description: 'Bruce Banner flees General Ross across America while battling The Leader, Gargoyle, and Abomination, crossing paths with Iron Man in Utah and The Thing at the Baxter Building.',
+    poster: '/AauXTKQBejmD0jcEIxlve0hRIme.jpg',
   },
   'incredible-hulk-tas-s2': {
     kind: 'season',
@@ -883,6 +993,7 @@ export const productions = {
     animated: true,
     color: '#15803d',
     description: 'Retitled The Incredible Hulk and She-Hulk: Jennifer Walters joins Bruce Banner on the road, battling Doctor Doom, Wendigo, and the emergence of Gray Hulk.',
+    poster: '/alMxSGCtD65X8afcIcj23mu9KoJ.jpg',
   },
   'x-men-97-s1': {
     kind: 'season',
@@ -896,6 +1007,7 @@ export const productions = {
     animated: true,
     color: '#eab308',
     description: "Direct canonical continuation of the 1992-1997 animated series: Magneto inherits Xavier's institute, Madelyne Pryor falls to the Goblin Queen, the tragedy of Genosha claims Gambit, and Bastion's Operation: Zero Tolerance culminates in Asteroid M's temporal displacement across history.",
+    poster: '/383PV0WolYYQvTriH0NfvMUA28R.jpg',
   },
 } as const satisfies Record<string, ProductionInput>;
 

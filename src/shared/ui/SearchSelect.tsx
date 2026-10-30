@@ -16,10 +16,12 @@ interface SearchSelectProps {
   items: readonly SelectItem[];
   value?: string;
   onChange: (id: string | undefined) => void;
+  /** Keeps the label for screen readers only, for compact toolbars. */
+  hideLabel?: boolean;
 }
 
 /** Dropdown with a filter box, for long lists (characters, factions, productions). */
-export function SearchSelect({ label, placeholder, items, value, onChange }: SearchSelectProps) {
+export function SearchSelect({ label, placeholder, items, value, onChange, hideLabel }: SearchSelectProps) {
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState('');
   const listId = useId();
@@ -38,12 +40,13 @@ export function SearchSelect({ label, placeholder, items, value, onChange }: Sea
 
   return (
     <div className="relative">
-      <span className="mb-1.5 block text-[11px] font-bold uppercase tracking-[0.16em] text-ink-faint">{label}</span>
+      <span className={cn('mb-1.5 block text-[11px] font-bold uppercase tracking-[0.16em] text-ink-faint', hideLabel && 'sr-only')}>{label}</span>
       <div className="flex items-center rounded-xl border border-line bg-surface-2 focus-within:border-line-strong">
         {selected?.color && <span className="ml-3 size-2.5 shrink-0 rounded-full" style={{ backgroundColor: selected.color }} />}
         <input
           role="combobox"
           aria-expanded={open}
+          aria-label={label}
           aria-controls={listId}
           value={open ? query : (selected?.label ?? '')}
           placeholder={placeholder}

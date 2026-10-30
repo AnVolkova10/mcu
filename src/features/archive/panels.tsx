@@ -9,6 +9,7 @@ import {
 import { alpha, readableOn } from '@/domain/colors';
 import { formatDate } from '@/domain/dates';
 import { Sheet } from '@/shared/ui/Sheet';
+import { Poster } from '@/features/productions/Poster';
 import { Avatar } from '@/shared/ui/Avatar';
 import { Chip } from '@/shared/ui/Chip';
 import { EventList } from './EventList';
@@ -57,7 +58,7 @@ function PanelHeader({ kicker, title, subtitle, color, visual }: { kicker: strin
         {visual}
         <div className="min-w-0">
           <p className="text-[11px] font-bold uppercase tracking-[0.2em]" style={{ color: color ? readableOn(color) : undefined }}>{kicker}</p>
-          <h2 className="font-display text-5xl leading-[0.9]">{title}</h2>
+          <h2 className={`font-display leading-[0.9] ${title.length > 24 ? 'text-4xl' : 'text-5xl'}`}>{title}</h2>
           {subtitle && <p className="mt-1 text-sm text-ink-muted">{subtitle}</p>}
         </div>
       </div>
@@ -149,7 +150,17 @@ function ProductionPanel({ production: p }: { production: Production }) {
   const universe = getUniverse(p.universe)!;
   return (
     <>
-      <PanelHeader kicker={p.kind === 'season' ? 'TV season' : p.kind} title={p.title} subtitle={p.description} color={p.color} />
+      <PanelHeader
+        kicker={p.kind === 'season' ? 'TV season' : p.kind}
+        title={p.title}
+        color={p.color}
+        visual={<div className="w-28 shrink-0 sm:w-32"><Poster production={p} size="w500" className="shadow-xl shadow-black/50 ring-1 ring-line" /></div>}
+      />
+      {p.description && (
+        <Section title="About">
+          <p className="text-[15px] leading-7 text-ink-muted">{p.description}</p>
+        </Section>
+      )}
       <Facts items={[
         ['Released', p.released],
         ['Network', p.network],

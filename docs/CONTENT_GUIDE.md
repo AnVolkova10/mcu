@@ -55,7 +55,7 @@ Si la producción es una realidad que todavía no está (Legion, por ejemplo, no
     name: 'Earth-XXXXX',          // designación oficial (Marvel Database); si no tiene, preguntá
     label: 'Nombre corto',        // lo que se ve en los botones, ej. 'Fox X-Men'
     short: 'XXXXX',               // texto mínimo de la insignia
-    color: '#14b8a6',             // un color que no use otro universo
+    color: '#14b8a6',             // bien distinto de los demás universos
     description: 'Una oración que explique qué realidad es.',
   },
 ```
@@ -222,7 +222,23 @@ Para contar algo particular de ese lugar en este evento: `locations: [{ id: 'san
     branch: 'fox-original',               // solo si pasa en una rama (ver branches en universes.ts)
 ```
 
-### Paso 11 · Validar y mirar
+### Paso 11 · El póster
+
+```bash
+npm run posters:sync
+```
+
+Busca en TMDB las producciones que todavía no tienen póster y guarda su ruta en `productions.ts`. Necesita `.env.local` con el token (`TMDB_READ_TOKEN=...`); si ese archivo no está, saltéate este paso y avisale a la usuaria.
+
+Al final el comando lista lo que no encontró. Si encontró otra película con el mismo nombre o no encontró nada:
+
+1. Buscá la obra en themoviedb.org y copiá el número de su URL (ej. `themoviedb.org/tv/67195` → `67195`).
+2. Escribilo como `tmdbId: 67195,` en la serie (`series.ts`) o en la película (`productions.ts`).
+3. Corré `npm run posters:sync -- --force`.
+
+Las producciones sin póster usan un diseño de reemplazo automático: no se rompe nada.
+
+### Paso 12 · Validar y mirar
 
 ```bash
 npm run validate     # contenido
@@ -236,6 +252,7 @@ npm run dev          # abrir http://localhost:5173/mcu/ y revisar el año del ev
 - [ ] El título está en inglés, en presente, sin punto final.
 - [ ] Todos los personajes importantes están enlazados.
 - [ ] Cada evento tiene al menos un lugar (obligatorio en producciones auditadas).
+- [ ] La producción tiene póster, o la usuaria sabe que quedó sin él.
 - [ ] `npm run validate` y `npm run build` terminan sin errores.
 
 ---

@@ -14,7 +14,7 @@ interface DateSectionProps {
 export const DateSection = memo(function DateSection({ group, events }: DateSectionProps) {
   const size = group.label.length <= 4 ? 'text-6xl md:text-7xl' : group.label.length <= 11 ? 'text-4xl md:text-5xl' : 'text-3xl md:text-4xl';
   return (
-    <section id={sectionId(group.key)} data-group={group.key} className="lazy-section grid grid-cols-[minmax(0,1fr)] gap-4 lg:grid-cols-[10rem_minmax(0,1fr)] lg:gap-10">
+    <section id={sectionId(group.key)} data-group={group.key} className="grid grid-cols-[minmax(0,1fr)] gap-4 lg:grid-cols-[10rem_minmax(0,1fr)] lg:gap-10">
       <div className="lg:sticky lg:top-44 lg:self-start">
         <h2 className={cn('font-display leading-[0.85] tracking-wide text-ink', size)}>{group.label}</h2>
         <p className="mt-2 text-[11px] font-bold uppercase tracking-[0.18em] text-ink-faint">

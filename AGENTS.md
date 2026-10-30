@@ -23,6 +23,7 @@ Si una fecha o un dato de canon es dudoso, **preguntá a la usuaria; no inventes
 | `npm run content -- find "storm"` | Busca IDs de personajes, lugares, producciones y facciones |
 | `npm run content -- year 1994` | Lista los eventos de un año con su `order` |
 | `npm run content -- status` | Producciones auditadas y legacy, con su cantidad de eventos |
+| `npm run posters:sync` | Busca en TMDB los pósters que falten y guarda sus rutas en los catálogos |
 | `npm run lint` | ESLint (incluye las reglas de hooks de React) |
 
 ## Dónde está cada cosa
@@ -47,6 +48,9 @@ docs/ROADMAP.md         lo que falta
 - **Nunca cambies el `id` de un evento, personaje, lugar o producción que ya existe.** Romperías los guardados de la usuaria y los links compartidos.
 - No edites `src/features/library/legacyEventIds.ts`: es el mapa de migración de los guardados de v2.
 - Los colores de personajes, universos y gemas vienen de los datos; la legibilidad del texto se calcula sola (`src/domain/colors.ts`). No agregues CSS por personaje.
+- Los colores de universo están elegidos para que se distingan con daltonismo. Un color nunca identifica algo solo: va siempre con su nombre o etiqueta.
+- Los pósters se muestran solo en la sección Movies & Series y en la ficha de cada producción. **Nunca en el timeline.**
+- `.env.local` guarda el token de TMDB. Nunca lo imprimas, lo copies ni lo subas; la app publicada no lo necesita.
 - Estilos: tokens en `src/styles/global.css` (`bg`, `surface`, `ink`, `accent`…). Reutilizá `src/shared/ui` antes de crear componentes nuevos.
 - **Tests:** no agregues suites de tests. La red de seguridad es TypeScript estricto (los IDs están tipados) más el validador de contenido. Es un proyecto personal y los agentes cobran por correrlos.
 - Antes de dar algo por terminado: `npm run build` y `npm run lint` sin errores.

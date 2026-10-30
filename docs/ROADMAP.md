@@ -3,7 +3,7 @@
 ## v3 (rama `v3`)
 
 - [x] **Bloque 1 · Cimientos y timeline.** Modelo de datos nuevo (todo por ID), migración de los 220 eventos, títulos, auditoría de colores y personajes, validador, router por URL, sistema de diseño, timeline nuevo, paneles, buscador ⌘K, guardados y documentación.
-- [ ] **Bloque 2 · El resto de la app.** Películas y series (con pósters de TMDB, solo en esa sección y en la ficha), personajes, gemas y archivo (progreso y estado de auditoría).
+- [x] **Bloque 2 · El resto de la app.** Películas y series con pósters de TMDB (solo en esa sección y en la ficha), personajes, gemas con su recorrido en el tiempo y archivo (progreso y cobertura de auditoría).
 - [ ] **Bloque 3 · Mapa v3.** Tierra (globo con MapLibre GL), Cosmos (escena 3D de reinos y dimensiones) y Multiverso (realidades y ramas, estilo TVA).
 
 ## Contenido

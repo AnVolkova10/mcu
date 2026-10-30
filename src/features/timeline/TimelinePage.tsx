@@ -97,8 +97,8 @@ function Stat({ value, label }: { value: number; label: string }) {
   return (
     <div>
       <dt className="sr-only">{label}</dt>
-      <dd className="font-display text-4xl leading-none">
-        {value} <span className="font-sans text-xs font-bold uppercase tracking-[0.16em] text-ink-faint">{label}</span>
+      <dd className="text-3xl font-bold leading-none">
+        {value} <span className="text-xs font-bold uppercase tracking-[0.16em] text-ink-faint">{label}</span>
       </dd>
     </div>
   );
@@ -122,10 +122,7 @@ function useFocusEvent(eventId: string | null, isVisible: boolean) {
       el.classList.add('ring-2', 'ring-accent');
       setTimeout(() => el.classList.remove('ring-2', 'ring-accent'), 2200);
     };
-    // Sections far away render lazily; re-centre once their real height is known.
     requestAnimationFrame(focus);
-    const t = setTimeout(() => document.getElementById(eventId)?.scrollIntoView({ block: 'center' }), 350);
-    return () => clearTimeout(t);
   }, [eventId, isVisible]);
   // Allow focusing the same event again after the URL changes.
   useEffect(() => {

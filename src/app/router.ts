@@ -22,6 +22,8 @@ export type Panel = { kind: 'character' | 'production' | 'stone' | 'location'; i
 
 const NAVIGATE_EVENT = 'archive:navigate';
 
+let forwardPageChange = false;
+
 function parse(hash: string): Route {
   const [path, search = ''] = hash.replace(/^#\/?/, '').split('?');
   const [first, ...rest] = path.split('/').filter(Boolean);
@@ -70,11 +72,29 @@ interface NavigateOptions {
 
 export function navigate(to: string, { replace = false, overlay = false }: NavigateOptions = {}) {
   if (to === window.location.hash) return;
+  markForward(to);
   const state = overlay ? { overlay: true } : null;
   if (replace) window.history.replaceState(state, '', to);
   else window.history.pushState(state, '', to);
   window.dispatchEvent(new Event(NAVIGATE_EVENT));
 }
+
+function markForward(to: string) {
+  if (parse(to).page !== snapshot().page) forwardPageChange = true;
+}
+
+/** True once after a page change started by a link or `navigate`; false for back/forward, where the browser restores the scroll. */
+export function consumeForwardPageChange(): boolean {
+  const value = forwardPageChange;
+  forwardPageChange = false;
+  return value;
+}
+
+window.addEventListener('click', (e) => {
+  if (e.defaultPrevented || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+  const link = (e.target as Element | null)?.closest?.('a[href^="#/"]');
+  if (link) markForward(link.getAttribute('href')!);
+});
 
 /** Same page and path, query params merged (undefined removes a param). */
 export function withQuery(route: Route, changes: Record<string, string | undefined>): string {
