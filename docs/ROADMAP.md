@@ -4,7 +4,7 @@
 
 - [x] **Bloque 1 · Cimientos y timeline.** Modelo de datos nuevo (todo por ID), migración de los 220 eventos, títulos, auditoría de colores y personajes, validador, router por URL, sistema de diseño, timeline nuevo, paneles, buscador ⌘K, guardados y documentación.
 - [x] **Bloque 2 · El resto de la app.** Películas y series con pósters de TMDB (solo en esa sección y en la ficha), personajes, gemas con su recorrido en el tiempo y archivo (progreso y cobertura de auditoría).
-- [ ] **Bloque 3 · Mapa v3.** Tierra (globo con MapLibre GL), Cosmos (escena 3D de reinos y dimensiones) y Multiverso (realidades y ramas, estilo TVA).
+- [x] **Bloque 3 · Mapa v3.** Tierra (globo con MapLibre GL), Cosmos (escena 3D de reinos, galaxia y dimensiones) y Multiverso (realidades y ramas, estilo TVA). Los recorridos de gemas y personajes se ven en el globo y en el Cosmos.
 
 ## Contenido
 
@@ -22,4 +22,3 @@ Estado actual: `npm run content -- status` (28 producciones auditadas, 53 legacy
 ## Ideas
 
 - **Artefactos legendarios.** Repetir la mecánica de las Gemas para reliquias del multiverso: el Cristal M'Kraan, los Diez Anillos, el Darkhold, el Libro de los Vishanti.
-- **Recorrido de un personaje en el mapa.** Ver su viaje en el globo y en el Cosmos, como las gemas.

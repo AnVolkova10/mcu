@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import { ArrowRight, Globe2, MapPin } from 'lucide-react';
+import { ArrowRight, MapPin } from 'lucide-react';
 import { archive } from '@/content';
 import { closePanel, href, readPanel, useRoute, type Panel } from '@/app/router';
 import {
@@ -138,6 +138,9 @@ function CharacterPanel({ character: c }: { character: Character }) {
         </Section>
       )}
       <TimelineButton to={href('timeline', { character: c.id })} label={`Show ${c.label} in the timeline`} />
+      {events.some((e) => e.locations.length) && (
+        <div className="mt-2"><TimelineButton to={href('map', { trace: `character:${c.id}` }, ['earth'])} label="Trace this journey on the map" /></div>
+      )}
       <Section title="Chronological journey">
         <EventList events={events} />
       </Section>
@@ -215,7 +218,8 @@ function StonePanel({ stone: s }: { stone: Stone }) {
           })}
         </ol>
       </Section>
-      <TimelineButton to={href('timeline', { stone: s.id })} label={`Show every event with the ${s.name}`} />
+      <TimelineButton to={href('map', { trace: `stone:${s.id}` }, ['earth'])} label="Trace this journey on the map" />
+      <div className="mt-2"><TimelineButton to={href('timeline', { stone: s.id })} label={`Show every event with the ${s.name}`} /></div>
       <Section title={`Timeline events (${events.length})`}>
         <EventList events={events} />
       </Section>
@@ -233,12 +237,10 @@ function LocationPanel({ location: l }: { location: Location }) {
         ['Where', l.kind === 'earth' ? 'Earth' : l.kind === 'orbit' ? 'Earth orbit' : l.kind === 'dimension' ? 'Another dimension' : 'Deep space'],
         ['Coordinates', l.coords ? `${l.coords[0].toFixed(2)}°, ${l.coords[1].toFixed(2)}°` : '—'],
       ]} />
-      <div className="px-6">
-        <a href={href('map')} className="flex items-center justify-between rounded-xl border border-line bg-surface-2 px-4 py-3 text-sm font-semibold text-ink-muted">
-          <span className="inline-flex items-center gap-2"><Globe2 className="size-4" /> {l.kind === 'earth' ? 'Open on the globe' : 'Open in the Cosmos map'}</span>
-          <span className="text-xs font-bold uppercase tracking-wider text-ink-faint">Block 3</span>
-        </a>
-      </div>
+      <TimelineButton
+        to={l.kind === 'earth' ? href('map', { place: l.id }, ['earth']) : href('map', { node: l.node }, ['cosmos'])}
+        label={l.kind === 'earth' ? 'Open on the globe' : 'Open in the Cosmos'}
+      />
       <Section title={`Events here (${events.length})`}>
         <EventList events={events} />
       </Section>

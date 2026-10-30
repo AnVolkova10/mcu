@@ -8,10 +8,10 @@ App personal: React 19 + TypeScript + Vite + Tailwind 4, publicada en GitHub Pag
 
 1. **Fecha in-universe siempre.** Si un episodio de 1997 transcurre en 1888, el evento va en 1888. Si una película de 2014 tiene un prólogo en 3600 a. C., ese prólogo es un evento aparte en 3600 a. C.
 2. **Auditado vs. legacy.** Cada producción tiene `status`:
-   - `audited`: revisada por la dueña del proyecto. Tiene que estar 100 % bien; el validador es estricto con ella.
+   - `audited`: revisada por quien mantiene el proyecto. Tiene que estar 100 % bien; el validador es estricto con ella.
    - `legacy`: heredada de la v1 (HTML de 2021). Puede tener datos imperfectos, pero nunca puede romper la app.
 
-Si una fecha o un dato de canon es dudoso, **preguntá a la usuaria; no inventes**.
+Si una fecha o un dato de canon es dudoso, **preguntá a quien mantiene el proyecto; no inventes**.
 
 ## Comandos
 
@@ -33,7 +33,10 @@ src/content/            ← DATOS (lo único que se edita para agregar contenido
   catalog/              universos, series, producciones, personajes, facciones, lugares, cosmos, gemas
   events/<produccion>.ts  un archivo por película o temporada
 src/domain/             lógica pura sin React: esquema, fechas, sintaxis del texto, índices, filtros, búsqueda
-src/features/           pantallas y paneles (timeline, archive, library, search…)
+src/features/           pantallas y paneles (timeline, archive, library, search, map…)
+  map/earth/            globo con MapLibre GL
+  map/cosmos/           escena 3D (React Three Fiber): la posición de cada mundo sale de `layout.ts`
+  map/multiverse/       realidades y ramas en SVG
 src/shared/ui/          componentes reutilizables (Sheet, Chip, Avatar, SearchSelect…)
 src/app/                App, encabezado y router (la URL guarda página, filtros y panel abierto)
 scripts/content.ts      herramienta de contenido (validate / find / year / status), solo lectura
@@ -45,13 +48,14 @@ docs/ROADMAP.md         lo que falta
 
 - **Para agregar o modificar contenido, seguí `docs/CONTENT_GUIDE.md` paso a paso.**
 - No leas archivos de datos enteros: buscá con `npm run content -- find` o con la búsqueda del editor.
-- **Nunca cambies el `id` de un evento, personaje, lugar o producción que ya existe.** Romperías los guardados de la usuaria y los links compartidos.
+- **Nunca cambies el `id` de un evento, personaje, lugar o producción que ya existe.** Romperías los guardados y los links compartidos.
 - No edites `src/features/library/legacyEventIds.ts`: es el mapa de migración de los guardados de v2.
 - Los colores de personajes, universos y gemas vienen de los datos; la legibilidad del texto se calcula sola (`src/domain/colors.ts`). No agregues CSS por personaje.
-- Los colores de universo están elegidos para que se distingan con daltonismo. Un color nunca identifica algo solo: va siempre con su nombre o etiqueta.
 - Los pósters se muestran solo en la sección Movies & Series y en la ficha de cada producción. **Nunca en el timeline.**
+- El estado del mapa vive en la URL (`src/features/map/useMapState.ts`), igual que el del resto de la app.
+- `three` está fijo en `0.186.1` porque `postprocessing` exige `<0.187`. No lo actualices sin revisar eso.
 - `.env.local` guarda el token de TMDB. Nunca lo imprimas, lo copies ni lo subas; la app publicada no lo necesita.
 - Estilos: tokens en `src/styles/global.css` (`bg`, `surface`, `ink`, `accent`…). Reutilizá `src/shared/ui` antes de crear componentes nuevos.
 - **Tests:** no agregues suites de tests. La red de seguridad es TypeScript estricto (los IDs están tipados) más el validador de contenido. Es un proyecto personal y los agentes cobran por correrlos.
 - Antes de dar algo por terminado: `npm run build` y `npm run lint` sin errores.
-- **Git:** nunca hagas commit ni push sin que la usuaria lo pida. Mensajes en inglés con Conventional Commits (`feat:`, `fix:`, `content:`…).
+- **Git:** nunca hagas commit ni push sin que te lo pidan. Mensajes en inglés con Conventional Commits (`feat:`, `fix:`, `content:`…).

@@ -2,8 +2,8 @@ import { lazy, Suspense, useEffect, useState } from 'react';
 import { TimelinePage } from '@/features/timeline/TimelinePage';
 import { PanelHost } from '@/features/archive/panels';
 import { CommandPalette } from '@/features/search/CommandPalette';
+import { ErrorBoundary } from '@/shared/ui/ErrorBoundary';
 import { Header } from './Header';
-import { ComingSoon } from './ComingSoon';
 import { consumeForwardPageChange, useRoute, type PageId } from './router';
 
 const ProductionsPage = lazy(() => import('@/features/productions/ProductionsPage').then((m) => ({ default: m.ProductionsPage })));
@@ -11,6 +11,7 @@ const CharactersPage = lazy(() => import('@/features/characters/CharactersPage')
 const StonesPage = lazy(() => import('@/features/stones/StonesPage').then((m) => ({ default: m.StonesPage })));
 const SavedPage = lazy(() => import('@/features/library/SavedPage').then((m) => ({ default: m.SavedPage })));
 const ArchivePage = lazy(() => import('@/features/archive/ArchivePage').then((m) => ({ default: m.ArchivePage })));
+const MapPage = lazy(() => import('@/features/map/MapPage').then((m) => ({ default: m.MapPage })));
 
 function Page({ page }: { page: PageId }) {
   switch (page) {
@@ -27,7 +28,7 @@ function Page({ page }: { page: PageId }) {
     case 'archive':
       return <ArchivePage />;
     case 'map':
-      return <ComingSoon title="The Map" block={3} description="Three linked views: a 3D globe of Earth, a navigable Cosmos of realms and dimensions, and the Multiverse of realities and branches." />;
+      return <MapPage />;
   }
 }
 
@@ -47,16 +48,20 @@ export function App() {
   return (
     <div className="flex min-h-dvh flex-col">
       <Header page={page} onSearch={() => setSearchOpen(true)} />
-      <main className="flex-1 pb-24">
-        <Suspense fallback={<div className="py-32 text-center text-sm text-ink-faint">Loading…</div>}>
-          <Page page={page} />
-        </Suspense>
+      <main className={page === 'map' ? 'flex-1' : 'flex-1 pb-24'}>
+        <ErrorBoundary key={page}>
+          <Suspense fallback={<div className="py-32 text-center text-sm text-ink-faint">Loading…</div>}>
+            <Page page={page} />
+          </Suspense>
+        </ErrorBoundary>
       </main>
-      <footer className="border-t border-line px-6 py-8 text-center text-xs leading-6 text-ink-faint">
-        Original timeline compiled by{' '}
-        <a href="https://aaronperris.com/mcu/" target="_blank" rel="noopener noreferrer" className="text-ink-muted underline decoration-line-strong hover:text-ink">Aaron Perris</a>
-        {' '}· Expanded and maintained by Ángela Curzi · Posters from TMDB · A fan project, not affiliated with Marvel or Disney.
-      </footer>
+      {page !== 'map' && (
+        <footer className="border-t border-line px-6 py-8 text-center text-xs leading-6 text-ink-faint">
+          Original timeline compiled by{' '}
+          <a href="https://aaronperris.com/mcu/" target="_blank" rel="noopener noreferrer" className="text-ink-muted underline decoration-line-strong hover:text-ink">Aaron Perris</a>
+          {' '}· Expanded and maintained by Ángela Curzi · Posters from TMDB · A fan project, not affiliated with Marvel or Disney.
+        </footer>
+      )}
       <PanelHost />
       <CommandPalette open={searchOpen} onOpenChange={setSearchOpen} />
     </div>

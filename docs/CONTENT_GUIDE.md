@@ -7,7 +7,7 @@ Está escrita para que cualquier agente la siga sin conocer el proyecto. Seguí 
 
 ## 0. Reglas de oro
 
-1. **La fecha es la de adentro de la historia**, nunca la de estreno. Un flashback de 1945 en una película de 2011 va en 1945. Si la obra no lo dice claro, preguntá a la usuaria.
+1. **La fecha es la de adentro de la historia**, nunca la de estreno. Un flashback de 1945 en una película de 2011 va en 1945. Si la obra no lo dice claro, preguntá a quien mantiene el proyecto.
 2. **Todo se conecta por ID.** Personajes, lugares, producciones y gemas tienen un `id` (texto en minúsculas con guiones, ej. `steve-rogers`). Antes de crear algo, buscá si ya existe:
    ```bash
    npm run content -- find "steve"
@@ -48,7 +48,7 @@ Ejemplo: la temporada 1 de **Legion** (FX, 2017).
 
 Abrí `src/content/catalog/universes.ts` y elegí el universo donde pasa la historia (`earth-616`, `earth-10005`, `earth-92131`, `earth-90214`).
 
-Si la producción es una realidad que todavía no está (Legion, por ejemplo, no es claramente ninguna de las cuatro), **preguntá a la usuaria qué universo usar.** Si hay que crear uno, agregalo así:
+Si la producción es una realidad que todavía no está (Legion, por ejemplo, no es claramente ninguna de las cuatro), **preguntá a quien mantiene el proyecto qué universo usar.** Si hay que crear uno, agregalo así:
 
 ```ts
   'earth-xxxxx': {
@@ -59,6 +59,8 @@ Si la producción es una realidad que todavía no está (Legion, por ejemplo, no
     description: 'Una oración que explique qué realidad es.',
   },
 ```
+
+El universo nuevo aparece solo en el mapa Multiverso, pero en un carril por defecto que se pisa con Noir. Para ordenarlo, sumale una altura en `LANES`, en `src/features/map/multiverse/strands.ts`. Con las ramas pasa lo mismo: aparecen solas, y `BRANCH_LANES` solo ajusta su altura.
 
 ### Paso 3 · La serie (solo si es una serie nueva)
 
@@ -205,6 +207,18 @@ Lugar fuera de la Tierra: sin coordenadas, con el `node` del mapa Cosmos (IDs en
   },
 ```
 
+Mundo nuevo en `cosmos.ts`. No lleva posición: la escena la calcula sola según la `zone`.
+
+```ts
+  'astral-plane': {
+    name: 'Astral Plane',
+    zone: 'dimensions',        // 'orbit' | 'realms' | 'deep-space' | 'dimensions'
+    look: 'portal',            // 'planet' | 'moon' | 'station' | 'realm' | 'portal' | 'nexus'
+    color: '#a78bfa',
+    description: 'Una oración que explique qué es este lugar.',
+  },
+```
+
 Para contar algo particular de ese lugar en este evento: `locations: [{ id: 'sanctum-sanctorum', note: "M'Kraan mystic alert" }]`.
 
 ### Paso 10 · Muertes, gemas y extras (opcional)
@@ -228,7 +242,7 @@ Para contar algo particular de ese lugar en este evento: `locations: [{ id: 'san
 npm run posters:sync
 ```
 
-Busca en TMDB las producciones que todavía no tienen póster y guarda su ruta en `productions.ts`. Necesita `.env.local` con el token (`TMDB_READ_TOKEN=...`); si ese archivo no está, saltéate este paso y avisale a la usuaria.
+Busca en TMDB las producciones que todavía no tienen póster y guarda su ruta en `productions.ts`. Necesita `.env.local` con el token (`TMDB_READ_TOKEN=...`); si ese archivo no está, saltéate este paso y avisá a quien mantiene el proyecto.
 
 Al final el comando lista lo que no encontró. Si encontró otra película con el mismo nombre o no encontró nada:
 
@@ -252,7 +266,7 @@ npm run dev          # abrir http://localhost:5173/mcu/ y revisar el año del ev
 - [ ] El título está en inglés, en presente, sin punto final.
 - [ ] Todos los personajes importantes están enlazados.
 - [ ] Cada evento tiene al menos un lugar (obligatorio en producciones auditadas).
-- [ ] La producción tiene póster, o la usuaria sabe que quedó sin él.
+- [ ] La producción tiene póster, o quien mantiene el proyecto sabe que quedó sin él.
 - [ ] `npm run validate` y `npm run build` terminan sin errores.
 
 ---

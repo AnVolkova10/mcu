@@ -36,6 +36,17 @@
 @keyframes rise-in {
   from { transform: translateY(8px) scale(0.98); opacity: 0; }
 }
+@keyframes pulse-ring {
+  from { transform: scale(0.6); opacity: 0.9; }
+  to { transform: scale(2.4); opacity: 0; }
+}
+@keyframes strand-flow {
+  to { stroke-dashoffset: -240; }
+}
+@keyframes strand-draw {
+  from { stroke-dashoffset: 1; }
+  to { stroke-dashoffset: 0; }
+}
 
 @layer base {
   html {
@@ -86,6 +97,44 @@
     background-image: radial-gradient(circle, rgb(255 255 255 / 0.07) 1px, transparent 1.4px);
     background-size: 7px 7px;
   }
+}
+
+/* Map chrome */
+.atlas-popup .maplibregl-popup-content {
+  background: var(--color-surface);
+  color: var(--color-ink);
+  border: 1px solid var(--color-line-strong);
+  border-radius: 0.6rem;
+  padding: 0.35rem 0.6rem;
+  font: 600 12px var(--font-sans);
+  box-shadow: 0 10px 30px rgb(0 0 0 / 0.5);
+}
+.atlas-popup .maplibregl-popup-tip {
+  display: none;
+}
+.atlas-pulse {
+  position: relative;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 9999px;
+  background: var(--pulse);
+  box-shadow: 0 0 0 2px #fff, 0 0 18px var(--pulse);
+}
+.atlas-pulse::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  border: 2px solid var(--pulse);
+  animation: pulse-ring 1.6s ease-out infinite;
+}
+.maplibregl-ctrl-attrib {
+  font-size: 10px;
+}
+/* Keeps the map credits above the time bar. MapLibre's stylesheet loads later, so this needs the extra class. */
+.maplibregl-map .maplibregl-ctrl-bottom-right {
+  bottom: 6.5rem;
 }
 
 @utility no-scrollbar {
