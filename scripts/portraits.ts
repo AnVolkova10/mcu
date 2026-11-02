@@ -14,34 +14,31 @@ import { join } from 'node:path';
 import { portraits } from '../src/content/catalog/portraits';
 import { characterList, type Character } from '../src/domain/catalog';
 import type { CharacterPortraits } from '../src/domain/schema';
+import { askWiki, WIKIS } from './fandom';
 import { loadArchive } from './load-archive';
 
 const ROOT = join(import.meta.dirname, '..');
 const FORCE = process.argv.includes('--force');
-const USER_AGENT = 'mcu-archive/3.0 (personal fan project; github.com/AnVolkova10/mcu)';
 const BATCH = 45;
-const PAUSE_MS = 1500;
-
-const WIKIS: Record<string, string> = {
-  'earth-616': 'https://marvelcinematicuniverse.fandom.com',
-  'earth-10005': 'https://xmenmovies.fandom.com',
-  'earth-92131': 'https://marvelanimated.fandom.com',
-};
 
 /** Characters with no events yet, so nothing says which wiki to ask. */
 const HOME: Record<string, string> = {
   azazel: 'earth-10005',
-  basha: 'earth-616',
 };
 
 /** The page of a character whose name does not find it, or finds whoever holds that title now, per universe. */
 const PAGES: Record<string, Record<string, string>> = {
+  achilles: { 'earth-616': 'Achilles' },
+  akeya: { 'earth-616': 'Akeya' },
   basha: { 'earth-616': 'Basha (War Dog)' },
   'black-panther': { 'earth-616': "T'Challa" },
   'black-tom-cassidy': { 'earth-92131': 'Black Tom Cassidy' },
   'black-widow': { 'earth-616': 'Natasha Romanoff' },
   'd-ken-neramani': { 'earth-92131': "D'Ken" },
+  ebo: { 'earth-616': 'Ebo' },
+  'erik-killmonger': { 'earth-616': 'Erik Killmonger' },
   'graydon-creed': { 'earth-92131': 'Graydon Creed, Jr.' },
+  helen: { 'earth-616': 'Helen of Troy' },
   hulk: { 'earth-92131': 'Hulk' },
   'jean-grey': { 'earth-92131': 'Jean Grey' },
   jorani: { 'earth-616': 'Jorani' },
@@ -49,6 +46,9 @@ const PAGES: Record<string, Record<string, string>> = {
   'last-black-panther': { 'earth-616': 'Black Panther (Future)' },
   'lilandra-neramani': { 'earth-92131': 'Lilandra' },
   'maria-rambeau': { 'earth-616': 'Maria Rambeau' },
+  odysseus: { 'earth-616': 'Odysseus' },
+  paris: { 'earth-616': 'Paris of Troy' },
+  rakim: { 'earth-616': 'Rakim (War Dogs)' },
   'steve-rogers': { 'earth-616': 'Steve Rogers' },
   'the-punisher': { 'earth-616': 'Punisher' },
 };
@@ -83,8 +83,6 @@ const FILES: Record<string, Record<string, FilePick>> = {
   'young-nathan-summers': { 'earth-92131': "Nathan Summers (Earth-92131) from X-Men '97 Season 1 5 001.webp" },
 };
 
-const wait = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
-
 interface ApiPage {
   title: string;
   missing?: string;
@@ -100,15 +98,7 @@ interface ApiAnswer {
   };
 }
 
-async function ask(wiki: string, params: Record<string, string>): Promise<ApiAnswer> {
-  const url = `${wiki}/api.php?${new URLSearchParams({ action: 'query', format: 'json', redirects: '1', ...params })}`;
-  for (let attempt = 0; attempt < 3; attempt++) {
-    const res = await fetch(url, { headers: { 'User-Agent': USER_AGENT } });
-    if (res.ok) return (await res.json()) as ApiAnswer;
-    await wait(PAUSE_MS * 4 * (attempt + 1));
-  }
-  throw new Error(`${wiki} keeps refusing the request. Stopping here: do not retry in a loop.`);
-}
+const ask = (wiki: string, params: Record<string, string>) => askWiki<ApiAnswer>(wiki, { action: 'query', ...params });
 
 /** Lead image of each title, following redirects. */
 async function leadImages(wiki: string, titles: readonly string[]) {
@@ -124,7 +114,6 @@ async function leadImages(wiki: string, titles: readonly string[]) {
       const source = pages.get(end)?.thumbnail?.source;
       if (source) images.set(title, source);
     }
-    await wait(PAUSE_MS);
   }
   return images;
 }
@@ -132,7 +121,6 @@ async function leadImages(wiki: string, titles: readonly string[]) {
 async function fileImage(wiki: string, pick: FilePick) {
   const [file, left, top, side] = typeof pick === 'string' ? [pick] : pick;
   const { query } = await ask(wiki, { titles: `File:${file}`, prop: 'imageinfo', iiprop: 'url|size', iiurlwidth: '300' });
-  await wait(PAUSE_MS);
   const info = Object.values(query?.pages ?? {})[0]?.imageinfo?.[0];
   if (!info || side === undefined) return info?.thumburl;
   // Fandom's image server does the cropping, so the app still only links to the file.

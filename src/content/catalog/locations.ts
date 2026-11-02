@@ -11,7 +11,7 @@ export const locations = {
     coords: [51.2538, -115.5708],
   },
   'adwa-mountain-pass': {
-    name: 'Adwa Mountain Pass',
+    name: 'Adwa',
     place: 'Tigray',
     country: 'Ethiopia',
     kind: 'earth',
@@ -152,9 +152,10 @@ export const locations = {
   },
   'birnin-zana-citadel': {
     name: 'Birnin Zana Citadel',
-    place: 'Wakanda',
+    place: 'Birnin Zana',
+    country: 'Wakanda',
     kind: 'earth',
-    coords: [-3.382, 36.682],
+    coords: [5.2, 35.6],
   },
   'blockbuster-video-crash-site-and-metro-transit': {
     name: 'Blockbuster Video Crash Site & Metro Transit',
@@ -372,13 +373,6 @@ export const locations = {
     country: 'United States',
     kind: 'earth',
     coords: [32.7767, -96.797],
-  },
-  'earth-orbital-exosphere': {
-    name: 'Earth Orbital Exosphere',
-    place: 'High Earth Orbit',
-    country: 'Exosphere',
-    kind: 'orbit',
-    node: 'saber-station',
   },
   'earth-real-skyscraper-rooftop': {
     name: 'Earth-Real Skyscraper Rooftop',
@@ -611,11 +605,12 @@ export const locations = {
     coords: [40.7589, -73.9851],
   },
   'knossos-palace-and-mediterranean-outpost': {
-    name: 'Knossos Palace & Mediterranean Outpost',
-    place: 'Crete',
+    name: 'Crete',
+    place: 'Mediterranean Sea',
     country: 'Greece',
     kind: 'earth',
-    coords: [35.298, 25.163],
+    coords: [35.21, 24.91],
+    approximate: true,
   },
   'kraussberg-hydra-central-fortress': {
     name: 'Kraussberg HYDRA Central Fortress',
@@ -631,10 +626,17 @@ export const locations = {
     kind: 'earth',
     coords: [30, 31],
   },
+  'kun-lun-gate': {
+    name: "Gate to K'un-Lun",
+    place: 'Himalayas',
+    country: 'China',
+    kind: 'earth',
+    coords: [29, 85],
+    approximate: true,
+  },
   'kun-lun-heavenly-gate': {
-    name: "K'un-Lun Heavenly Gate",
-    place: 'Mystical Dimension',
-    country: "K'un-Lun",
+    name: "K'un-Lun",
+    place: 'Another dimension',
     kind: 'dimension',
     node: 'kun-lun',
   },
@@ -651,6 +653,13 @@ export const locations = {
     country: 'United States',
     kind: 'earth',
     coords: [36.1699, -115.1398],
+  },
+  'lions-kingdom': {
+    name: "Lion's Kingdom",
+    place: 'Indian Ocean',
+    kind: 'earth',
+    coords: [-20, 80],
+    approximate: true,
   },
   'london-skywatch': {
     name: 'London Skywatch',
@@ -869,6 +878,13 @@ export const locations = {
     kind: 'earth',
     coords: [57.55, -7.4],
   },
+  'museum-of-great-britain': {
+    name: 'Museum of Great Britain',
+    place: 'London',
+    country: 'England',
+    kind: 'earth',
+    coords: [51.5194, -0.1269],
+  },
   'mutant-control-agency-mainframe-vaults': {
     name: 'Mutant Control Agency Mainframe Vaults',
     place: 'Washington D.C.',
@@ -1060,13 +1076,6 @@ export const locations = {
     kind: 'earth',
     coords: [37.5407, -77.436],
   },
-  'royal-palace': {
-    name: 'Royal Palace',
-    place: 'Birnin Zana',
-    country: 'Wakanda',
-    kind: 'earth',
-    coords: [-3.382, 36.682],
-  },
   'ruined-underground-metro-catacombs': {
     name: 'Ruined Underground Metro Catacombs',
     place: 'Moscow',
@@ -1080,13 +1089,6 @@ export const locations = {
     country: 'United States',
     kind: 'earth',
     coords: [40.7128, -74.006],
-  },
-  'ruins-of-the-great-mound': {
-    name: 'Ruins of the Great Mound',
-    place: 'Wakanda (Future Post-Apocalypse)',
-    country: 'Wakanda',
-    kind: 'earth',
-    coords: [-3.382, 36.682],
   },
   'sahara-sentinel-sub-facility': {
     name: 'Sahara Sentinel Sub-Facility',
@@ -1122,13 +1124,6 @@ export const locations = {
     country: 'United States',
     kind: 'earth',
     coords: [39.2904, -76.6122],
-  },
-  'shaanxi-mountain-valley': {
-    name: 'Shaanxi Mountain Valley',
-    place: 'Central China',
-    country: 'China',
-    kind: 'earth',
-    coords: [34.341, 108.939],
   },
   'shiar-imperial-crown-world-chandilar': {
     name: "Shi'ar Imperial Crown World Chandilar",
@@ -1345,7 +1340,7 @@ export const locations = {
     place: 'Kingdom of Wakanda',
     country: 'Wakanda',
     kind: 'earth',
-    coords: [-3.382, 36.682],
+    coords: [5.35, 35.45],
   },
   'the-mandarins-mountain-citadel-and-dragon-chamber': {
     name: "The Mandarin's Mountain Citadel & Dragon Chamber",
@@ -1398,9 +1393,9 @@ export const locations = {
     node: 'torfa',
   },
   'trojan-battlefield-and-aegean-shore': {
-    name: 'Trojan Battlefield & Aegean Shore',
-    place: 'Troy / Anatolia',
-    country: 'Troas (Ancient Asia Minor)',
+    name: 'Troy',
+    place: 'Phrygia',
+    country: 'Turkey',
     kind: 'earth',
     coords: [39.957, 26.238],
   },
@@ -1465,7 +1460,7 @@ export const locations = {
     place: 'Great Mound',
     country: 'Wakanda',
     kind: 'earth',
-    coords: [-3.382, 36.682],
+    coords: [5.38, 35.4],
   },
   'villa-gesell-nazi-hideout': {
     name: 'Villa Gesell Nazi Hideout',
@@ -1480,13 +1475,20 @@ export const locations = {
     place: 'Birnin Zana',
     country: 'Wakanda',
     kind: 'earth',
-    coords: [-3.382, 36.682],
+    coords: [4.95, 35.85],
   },
   'wakandan-borderlands-and-outer-pastoral-villages': {
     name: 'Wakandan Borderlands & Outer Pastoral Villages',
     place: 'Wakanda',
     kind: 'earth',
-    coords: [-3.382, 36.682],
+    coords: [5.75, 35.2],
+  },
+  'war-dogs-headquarters': {
+    name: 'War Dogs Headquarters',
+    place: 'Birnin Zana',
+    country: 'Wakanda',
+    kind: 'earth',
+    coords: [5.225, 35.57],
   },
   'waverley-station': {
     name: 'Waverley Station',

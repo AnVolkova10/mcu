@@ -51,7 +51,7 @@ export const factions = {
   'guardians-of-the-galaxy': { name: 'Guardians of the Galaxy' },
   'hammer-industries': { name: 'Hammer Industries' },
   'hardy-foundation': { name: 'Hardy Foundation' },
-  'hatut-zeraze': { name: 'Hatut Zeraze' },
+  'hatut-zeraze': { name: 'War Dogs' },
   'hellfire-club': { name: 'Hellfire Club' },
   'heralds-of-galactus': { name: 'Heralds of Galactus' },
   'heroes-for-hire': { name: 'Heroes for Hire' },

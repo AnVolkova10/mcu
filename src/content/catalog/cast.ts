@@ -5,8 +5,14 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
   'abraham-erskine': [
     { actor: 'Stanley Tucci', universe: 'earth-616', productions: ['captain-america-the-first-avenger'], photo: '/q4TanMDI5Rgsvw4SfyNbPBh4URr.jpg' },
   ],
+  'achilles': [
+    { actor: 'Adam Michael Gold', universe: 'earth-616', productions: ['eyes-of-wakanda-s1'], voice: true, photo: '/8MNqU2IeoSojqrgVHPqLPf6LSxS.jpg' },
+  ],
   'agent-zero': [
     { actor: 'Daniel Henney', universe: 'earth-10005', productions: ['x-men-origins-wolverine'], photo: '/elAolohpUG5nS99EZxHZjd44DsS.jpg' },
+  ],
+  'akeya': [
+    { actor: 'Patricia Belcher', universe: 'earth-616', productions: ['eyes-of-wakanda-s1'], voice: true, photo: '/q7n5henTgVmioJSQOXMyC4fN0rV.jpg' },
   ],
   'alex-summers': [
     { actor: 'Lucas Till', universe: 'earth-10005', productions: ['x-men-first-class', 'x-men-apocalypse'], photo: '/5m8xgsOgT3FgCBo2AsMn7dewe57.jpg' },
@@ -23,6 +29,9 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
   ],
   'arnim-zola': [
     { actor: 'Toby Jones', universe: 'earth-616', productions: ['captain-america-the-first-avenger', 'agent-carter-s1'], photo: '/1qNisdp4f1KstdfvAgYXMdrhwfk.jpg' },
+  ],
+  'basha': [
+    { actor: 'Jacques Colimon', universe: 'earth-616', productions: ['eyes-of-wakanda-s1'], voice: true, photo: '/uZchGUV6IcM7HI0sYmTbJMqbLnx.jpg' },
   ],
   'bastion-sebastion-gilberti': [
     { actor: 'Theo James', universe: 'earth-92131', productions: ['x-men-97-s1'], voice: true, photo: '/g4yeW1EgIpyht0fy1stv7EXUmPC.jpg' },
@@ -140,6 +149,9 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
   'dum-dum-dugan': [
     { actor: 'Neal McDonough', universe: 'earth-616', productions: ['captain-america-the-first-avenger', 'agents-of-shield-s2'], photo: '/3mI3i1CpjATSCta1Tb2qsyl1KCh.jpg' },
   ],
+  'ebo': [
+    { actor: 'Isaac Robinson-Smith', universe: 'earth-616', productions: ['eyes-of-wakanda-s1'], voice: true, photo: '/ceNxqevAX7c9uAzl8IthjG3slqy.jpg' },
+  ],
   'eddie-brock-venom': [
     { actor: 'Hank Azaria', universe: 'earth-92131', productions: ['spider-man-tas-s1', 'spider-man-tas-s3'], voice: true, photo: '/yFDw4b0jucuFWNnGcBPfpYUtn16.jpg' },
   ],
@@ -160,6 +172,9 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
     { actor: 'John Colicos', universe: 'earth-92131', productions: ['x-men-tas-s1', 'x-men-tas-s2', 'x-men-tas-s4'], voice: true, photo: '/ln0FRANagWyBK6Itx727hCwR8hM.jpg' },
     { actor: "Adetokumboh M'Cormack", universe: 'earth-92131', productions: ['x-men-97-s1'], voice: true, photo: '/p8yvhgwB1L9JlKf2mhRjgwIQsei.jpg' },
     { actor: 'Ross Marquand', universe: 'earth-92131', productions: ['x-men-97-s1'], voice: true, photo: '/2CxkVPimin0c2v7fUK3MGjgEnLt.jpg' },
+  ],
+  'erik-killmonger': [
+    { actor: 'Michael B. Jordan', universe: 'earth-616', productions: ['black-panther'], photo: '/sMBpav8cK7t7Nk0yf4tuNOqNUyW.jpg' },
   ],
   'erik-lehnsherr': [
     { actor: 'Michael Fassbender', universe: 'earth-10005', productions: ['x-men-first-class', 'x-men-days-of-future-past', 'x-men-apocalypse', 'x-men-dark-phoenix'], photo: '/xvbnUiB2ZBR3QIt595OzNy657Vw.jpg' },
@@ -225,6 +240,9 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
     { actor: 'Jeremy Renner', universe: 'earth-616', productions: ['thor', 'the-avengers', 'avengers-age-of-ultron', 'captain-america-civil-war'], photo: '/yB84D1neTYXfWBaV0QOE9RF2VCu.jpg' },
     { actor: 'John Reilly', universe: 'earth-92131', productions: ['iron-man-tas-s1'], voice: true, photo: '/xjA5k7Hh5zMCzwxAnN539HwSPUn.jpg' },
   ],
+  'helen': [
+    { actor: 'Joanna Kalafatis', universe: 'earth-616', productions: ['eyes-of-wakanda-s1'], voice: true, photo: '/vv1VsMlQWmXC53MRMKtEalBzTdz.jpg' },
+  ],
   'hobgoblin': [
     { actor: 'Mark Hamill', universe: 'earth-92131', productions: ['spider-man-tas-s1'], voice: true, photo: '/zMQ93JTLW8KxusKhOlHFZhih3YQ.jpg' },
   ],
@@ -247,7 +265,6 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
   ],
   'iron-fist': [
     { actor: 'Finn Jones', universe: 'earth-616', productions: ['the-defenders-s1', 'iron-fist-s1', 'luke-cage-s2', 'iron-fist-s2'], photo: '/rKzzQ7oc80xDYDmZykBjmXWt0VZ.jpg' },
-    { actor: 'Jona Xiao', universe: 'earth-616', productions: ['eyes-of-wakanda-s1'], voice: true, photo: '/bEd5FvgkrZloJ0Vb9A3ijEwEV5f.jpg' },
   ],
   'j-jonah-jameson': [
     { actor: 'Ed Asner', universe: 'earth-92131', productions: ['spider-man-tas-s1'], voice: true, photo: '/AeVizz1AfAB2TbsfyzgBvqeSR3G.jpg' },
@@ -433,6 +450,7 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
     { actor: 'Adrian Hough', universe: 'earth-92131', productions: ['x-men-97-s1', 'x-men-tas-s5'], voice: true, photo: '/58REQAaSAbiAnCptqrhx6bDhTQc.jpg' },
   ],
   'noni': [
+    { actor: 'Lynn Whitfield', universe: 'earth-616', productions: ['eyes-of-wakanda-s1'], voice: true, photo: '/eZEXQw3N6bNYx5vJRUayhkTibjj.jpg' },
     { actor: 'Winnie Harlow', universe: 'earth-616', productions: ['eyes-of-wakanda-s1'], voice: true, photo: '/gW2RPaNOPcOl3PksCjE8twDsiDd.jpg' },
   ],
   'norman-osborn': [
@@ -441,11 +459,17 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
   'odin': [
     { actor: 'Anthony Hopkins', universe: 'earth-616', productions: ['thor', 'thor-the-dark-world', 'thor-ragnarok'], photo: '/iaf7SHSkGDpnyrDh1Jolilwk2TD.jpg' },
   ],
+  'odysseus': [
+    { actor: 'Kiff VandenHeuvel', universe: 'earth-616', productions: ['eyes-of-wakanda-s1'], voice: true, photo: '/5vf1cIWjqH3xgbHWPhyIIEKDgdN.jpg' },
+  ],
   'okoye': [
     { actor: 'Danai Gurira', universe: 'earth-616', productions: ['black-panther', 'avengers-infinity-war'], photo: '/z7H7QeQvr24vskGlANQhG43vozQ.jpg' },
   ],
   'omega-red-arkady-rossovich': [
     { actor: 'Len Doncheff', universe: 'earth-92131', productions: ['x-men-tas-s2'], voice: true, photo: '/fyH1UScj9Jw04qlu7WwptiA7He0.jpg' },
+  ],
+  'paris': [
+    { actor: 'Yerman Gur', universe: 'earth-616', productions: ['eyes-of-wakanda-s1'], voice: true, photo: '/bw6RWOCTVnkXVTBd09qyrn9Akrz.jpg' },
   ],
   'peggy-carter': [
     { actor: 'Hayley Atwell', universe: 'earth-616', productions: ['agent-carter-s2', 'captain-america-the-first-avenger', 'agents-of-shield-s2', 'agent-carter-s1', 'one-shot-agent-carter', 'captain-america-the-winter-soldier'], photo: '/x57wXHexIjD2ywly9cRA4rov7cu.jpg' },
@@ -468,6 +492,9 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
   ],
   'quicksilver-peter-maximoff': [
     { actor: 'Evan Peters', universe: 'earth-10005', productions: ['x-men-days-of-future-past', 'x-men-apocalypse', 'x-men-dark-phoenix'], photo: '/m9okq20ca2Md38i2ekJeKs3vTwa.jpg' },
+  ],
+  'rakim': [
+    { actor: 'Gary Anthony Williams', universe: 'earth-616', productions: ['eyes-of-wakanda-s1'], voice: true, photo: '/96BbiV8rQOeGyoDxgrepRd6lUjm.jpg' },
   ],
   'raven-darkholme': [
     { actor: 'Jennifer Lawrence', universe: 'earth-10005', productions: ['x-men-first-class', 'x-men-days-of-future-past', 'x-men-apocalypse', 'x-men-dark-phoenix'], photo: '/6WTY6HjXMGxnHilJRVC3eLnu43F.jpg' },

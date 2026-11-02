@@ -5,8 +5,14 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'abraham-erskine': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/3/37/Abraham_Erskine.png/revision/latest/scale-to-width-down/250?cb=20210504031452',
   },
+  'achilles': {
+    'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/f/f4/Achilles_Infobox.png/revision/latest/scale-to-width-down/192?cb=20250801080703',
+  },
   'agent-zero': {
     'earth-10005': 'https://static.wikia.nocookie.net/xmenmovies/images/b/be/AgentZero1-XMOWsf.png/revision/latest/scale-to-width-down/231?cb=20140609141742',
+  },
+  'akeya': {
+    'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/c/c6/Akeya_Infobox.png/revision/latest/scale-to-width-down/201?cb=20250804004240',
   },
   'alex-summers': {
     'earth-10005': 'https://static.wikia.nocookie.net/xmenmovies/images/5/59/Havok_XMFC_Textless.jpg/revision/latest/scale-to-width-down/231?cb=20240115033232',
@@ -150,6 +156,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'dum-dum-dugan': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/26/Dum_Dum_Dugan.png/revision/latest/scale-to-width-down/193?cb=20150823213713',
   },
+  'ebo': {
+    'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/1/11/Ebo_Infobox.png/revision/latest/scale-to-width-down/204?cb=20250808222413',
+  },
   'eddie-brock-venom': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/f/fa/Venom.jpg/revision/latest/scale-to-width-down/300?cb=20080513040650',
   },
@@ -172,6 +181,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'en-sabah-nur-apocalypse': {
     'earth-10005': 'https://static.wikia.nocookie.net/xmenmovies/images/a/ab/ApocalypseFP.jpg/revision/latest/scale-to-width-down/223?cb=20160422202430',
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/1/13/Apocalypse.jpg/revision/latest/scale-to-width-down/300?cb=20150321042527',
+  },
+  'erik-killmonger': {
+    'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/9/9d/Black_Panther_Textless_Character_Poster_03.jpg/revision/latest/scale-to-width-down/286?cb=20231024003905',
   },
   'erik-lehnsherr': {
     'earth-10005': 'https://static.wikia.nocookie.net/xmenmovies/images/0/05/Magneto_XMFC_Textless.jpg/revision/latest/scale-to-width-down/231?cb=20240115013755',
@@ -233,6 +245,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'hawkeye': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/5/5b/Hawkeye_Infobox.jpg/revision/latest/scale-to-width-down/256?cb=20240222145717',
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/a/ad/Hawkeye.jpg/revision/latest/scale-to-width-down/300?cb=20080802214946',
+  },
+  'helen': {
+    'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/a/ab/Helen_of_Troy_Infobox.png/revision/latest/scale-to-width-down/206?cb=20250807175258',
   },
   'ho-yinsen': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/2/2b/Yinsen.jpg/revision/latest?cb=20141008032010',
@@ -451,11 +466,17 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'odin': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/0/02/Odin_Infobox.png/revision/latest/scale-to-width-down/237?cb=20250203212940',
   },
+  'odysseus': {
+    'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/2c/Odysseus_Infobox.png/revision/latest/scale-to-width-down/194?cb=20250801080654',
+  },
   'okoye': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/25/Black_Panther_Wakanda_Forever_poster_024_Textless.jpg/revision/latest/scale-to-width-down/260?cb=20240802144734',
   },
   'omega-red-arkady-rossovich': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/2/2d/Omega_Red.jpg/revision/latest/scale-to-width-down/300?cb=20100815190635',
+  },
+  'paris': {
+    'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/1/11/Paris_of_Troy_Infobox.png/revision/latest/scale-to-width-down/240?cb=20260725132939',
   },
   'peggy-carter': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/6/6b/Peggy_Carter_Infobox.png/revision/latest/scale-to-width-down/262?cb=20250209154948',
@@ -482,6 +503,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   },
   'quicksilver-peter-maximoff': {
     'earth-10005': 'https://static.wikia.nocookie.net/xmenmovies/images/9/91/Xmen014.png/revision/latest/scale-to-width-down/261?cb=20140223071429',
+  },
+  'rakim': {
+    'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/4/48/Rakim_%28War_Dogs%29_Infobox.png/revision/latest/scale-to-width-down/204?cb=20250808223540',
   },
   'raven-darkholme': {
     'earth-10005': 'https://static.wikia.nocookie.net/xmenmovies/images/7/7e/Raven_promo.jpg/revision/latest/scale-to-width-down/207?cb=20120405100857',
@@ -601,6 +625,7 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   },
   'uatu-the-watcher': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/d/de/Watchers.jpg/revision/latest/scale-to-width-down/300?cb=20180114044614',
+    'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/e/e5/Uatu_the_Watcher.png/revision/latest/scale-to-width-down/208?cb=20241230223134',
   },
   'ultimo': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/6/63/Ultimo.jpg/revision/latest/scale-to-width-down/300?cb=20170119003536',
