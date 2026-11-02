@@ -117,12 +117,19 @@ export interface CharacterInput {
   variants?: Partial<Record<UniverseId, string>>;
 }
 
-/** Written by `npm run photos:sync`. TMDB has people, not characters, so this is who plays them. */
-export interface CharacterPhoto {
+/** Written by `npm run cast:sync`: someone who plays the character in one universe. */
+export interface CharacterCredit {
   actor: string;
+  universe: UniverseId;
+  productions: readonly ProductionId[];
+  /** An animated or digital role: the actor's face is not the character's. */
+  voice?: boolean;
   /** Path on image.tmdb.org, e.g. "/abc123.jpg". */
-  path: string;
+  photo?: string;
 }
+
+/** Written by `npm run portraits:sync`: address of an image of the character, per universe. */
+export type CharacterPortraits = Partial<Record<UniverseId, string>>;
 
 // ─── Places ───────────────────────────────────────────────────────────────────
 

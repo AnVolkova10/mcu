@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react';
+import { useState, type ReactNode } from 'react';
 import { ArrowRight, MapPin } from 'lucide-react';
 import { archive } from '@/content';
 import { closePanel, href, readPanel, useRoute, type Panel } from '@/app/router';
@@ -8,7 +8,11 @@ import {
 } from '@/domain/catalog';
 import { alpha, readableOn } from '@/domain/colors';
 import { formatDate } from '@/domain/dates';
+import type { CharacterCredit } from '@/domain/schema';
+import { cn } from '@/shared/lib/cn';
+import { tmdbImage } from '@/shared/lib/tmdb';
 import { Sheet } from '@/shared/ui/Sheet';
+import { portraitSources } from '@/features/characters/portraits';
 import { Poster } from '@/features/productions/Poster';
 import { StoneGem } from '@/features/stones/StoneGem';
 import { Avatar } from '@/shared/ui/Avatar';
@@ -32,7 +36,7 @@ function resolve(panel: Panel): { title: string; color?: string; body: ReactNode
   switch (panel.kind) {
     case 'character': {
       const c = getCharacter(panel.id);
-      return c ? { title: c.label, color: c.color, body: <CharacterPanel character={c} /> } : null;
+      return c ? { title: c.label, color: c.color, body: <CharacterPanel key={c.id} character={c} /> } : null;
     }
     case 'production': {
       const p = getProduction(panel.id);
@@ -102,18 +106,63 @@ function TimelineButton({ to, label }: { to: string; label: string }) {
 
 // ── Panels ────────────────────────────────────────────────────────────────────
 
+const plural = (count: number, noun: string) => `${count} ${noun}${count === 1 ? '' : 's'}`;
+
+function PlayedBy({ credit, color }: { credit: CharacterCredit; color: string }) {
+  const titles = credit.productions.flatMap((id) => getProduction(id)?.shortTitle ?? []).join(', ');
+  return (
+    <li className="flex min-w-0 items-center gap-3" title={titles}>
+      <Avatar label={credit.actor} color={color} sources={credit.photo ? [tmdbImage('w185', credit.photo)] : []} />
+      <span className="min-w-0">
+        <span className="block truncate text-sm font-semibold text-ink">{credit.actor}</span>
+        <span className="block truncate text-xs text-ink-faint">{credit.voice ? 'Voice · ' : ''}{plural(credit.productions.length, 'production')}</span>
+      </span>
+    </li>
+  );
+}
+
 function CharacterPanel({ character: c }: { character: Character }) {
+  const { query } = useRoute();
   const events = archive.byCharacter.get(c.id) ?? [];
-  const perUniverse = [...new Set(events.map((e) => e.universe.id))].map((id) => ({ universe: getUniverse(id)!, count: events.filter((e) => e.universe.id === id).length }));
+  const perUniverse = [...new Set(events.map((e) => e.universe.id))]
+    .map((id) => ({ universe: getUniverse(id)!, count: events.filter((e) => e.universe.id === id).length }))
+    .sort((a, b) => b.count - a.count);
+  const filtered = query.get('u')?.split(',') ?? [];
+  const [version, setVersion] = useState<string | undefined>(perUniverse.find((p) => filtered.includes(p.universe.id))?.universe.id ?? perUniverse[0]?.universe.id);
+  const credits = c.credits.filter((credit) => credit.universe === version);
   return (
     <>
-      <PanelHeader kicker={c.role} title={c.label} subtitle={c.alias ? c.name : c.origin} color={c.color} visual={<Avatar label={c.label} color={c.color} photo={c.photo?.path} size="xl" />} />
+      <PanelHeader kicker={c.role} title={c.label} subtitle={c.alias ? c.name : c.origin} color={c.color} visual={<Avatar key={version} label={c.label} color={c.color} sources={portraitSources(c, version)} size="xl" />} />
+      {perUniverse.length > 1 && (
+        <Section title="Versions">
+          <div className="flex flex-wrap gap-5">
+            {perUniverse.map(({ universe, count }) => (
+              <button
+                key={universe.id}
+                type="button"
+                onClick={() => setVersion(universe.id)}
+                aria-pressed={version === universe.id}
+                className={cn('flex w-24 flex-col items-center gap-2 text-center transition', version === universe.id ? 'opacity-100' : 'opacity-60 hover:opacity-100')}
+              >
+                <Avatar label={c.label} color={c.color} sources={portraitSources(c, universe.id)} size="lg" />
+                <span className="text-xs font-semibold leading-tight text-ink">{universe.label}<span className="block font-normal text-ink-faint">{plural(count, 'event')}</span></span>
+              </button>
+            ))}
+          </div>
+        </Section>
+      )}
       <Facts items={[
         ['Status', c.status.replace('-', ' ')],
-        ['Appearances', `${events.length} ${events.length === 1 ? 'event' : 'events'}`],
+        ['Appearances', plural(events.length, 'event')],
         ...(c.origin && c.alias ? [['Origin', c.origin] as [string, ReactNode]] : []),
-        ...(c.photo ? [['Portrait', c.photo.actor] as [string, ReactNode]] : []),
       ]} />
+      {credits.length > 0 && (
+        <Section title="Played by">
+          <ul className="grid gap-3 sm:grid-cols-2">
+            {credits.map((credit) => <PlayedBy key={credit.actor} credit={credit} color={c.color} />)}
+          </ul>
+        </Section>
+      )}
       <Section title="Dossier">
         <p className="text-[15px] leading-7 text-ink-muted">{c.bio}</p>
         {c.variants && Object.entries(c.variants).map(([u, note]) => (

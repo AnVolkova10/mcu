@@ -4,12 +4,13 @@ import { series as seriesData } from '@/content/catalog/series';
 import { productions as productionData } from '@/content/catalog/productions';
 import { factions as factionData } from '@/content/catalog/factions';
 import { characters as characterData } from '@/content/catalog/characters';
-import { photos } from '@/content/catalog/photos';
+import { cast } from '@/content/catalog/cast';
+import { portraits } from '@/content/catalog/portraits';
 import { locations as locationData } from '@/content/catalog/locations';
 import { cosmosNodes as cosmosData } from '@/content/catalog/cosmos';
 import { stones as stoneData } from '@/content/catalog/stones';
 import type {
-  BranchId, BranchInput, CharacterId, CharacterInput, CharacterPhoto, CosmosNodeId, CosmosNodeInput, FactionId, FactionInput,
+  BranchId, BranchInput, CharacterCredit, CharacterId, CharacterInput, CharacterPortraits, CosmosNodeId, CosmosNodeInput, FactionId, FactionInput,
   LocationId, LocationInput, ProductionId, ProductionInput, SeriesId, SeriesInput, StoneId, StoneInput, UniverseId, UniverseInput,
 } from './schema';
 
@@ -20,7 +21,11 @@ export type Branch = WithId<BranchId, BranchInput>;
 export type Series = WithId<SeriesId, SeriesInput>;
 export type Production = WithId<ProductionId, ProductionInput> & { readonly shortTitle: string };
 export type Faction = WithId<FactionId, FactionInput>;
-export type Character = WithId<CharacterId, CharacterInput> & { readonly label: string; readonly photo?: CharacterPhoto };
+export type Character = WithId<CharacterId, CharacterInput> & {
+  readonly label: string;
+  readonly portraits: CharacterPortraits;
+  readonly credits: readonly CharacterCredit[];
+};
 export type Location = WithId<LocationId, LocationInput>;
 export type CosmosNode = WithId<CosmosNodeId, CosmosNodeInput>;
 export type Stone = WithId<StoneId, StoneInput>;
@@ -45,7 +50,7 @@ export const productions = Object.fromEntries(
 ) as Record<ProductionId, Production>;
 
 export const characters = Object.fromEntries(
-  Object.entries(withIds<CharacterId, CharacterInput>(characterData)).map(([id, c]) => [id, { ...c, label: c.alias ?? c.name, photo: photos[c.id] }]),
+  Object.entries(withIds<CharacterId, CharacterInput>(characterData)).map(([id, c]) => [id, { ...c, label: c.alias ?? c.name, portraits: portraits[c.id] ?? {}, credits: cast[c.id] ?? [] }]),
 ) as Record<CharacterId, Character>;
 
 const lookup = <T>(table: Record<string, T>) => (id: string | undefined | null): T | undefined =>

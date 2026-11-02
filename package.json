@@ -12,7 +12,8 @@
     "validate": "tsx --tsconfig tsconfig.app.json scripts/content.ts validate",
     "content": "tsx --tsconfig tsconfig.app.json scripts/content.ts",
     "posters:sync": "tsx --tsconfig tsconfig.app.json scripts/posters.ts",
-    "photos:sync": "tsx --tsconfig tsconfig.app.json scripts/photos.ts"
+    "cast:sync": "tsx --tsconfig tsconfig.app.json scripts/cast.ts",
+    "portraits:sync": "tsx --tsconfig tsconfig.app.json scripts/portraits.ts"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.3.1",

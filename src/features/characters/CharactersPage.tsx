@@ -12,6 +12,7 @@ import { PageHeader } from '@/shared/ui/PageHeader';
 import { SearchBox } from '@/shared/ui/SearchBox';
 import { SearchSelect, type SelectItem } from '@/shared/ui/SearchSelect';
 import { UniverseToggles } from '@/shared/ui/UniverseToggles';
+import { portraitSources } from './portraits';
 
 const ROLES: { id: string; label: string; roles: CharacterRole[] }[] = [
   { id: 'heroes', label: 'Heroes', roles: ['hero'] },
@@ -29,10 +30,11 @@ interface Row {
 
 const rows: Row[] = characterList.map((character) => {
   const events = archive.byCharacter.get(character.id) ?? [];
+  const inUniverse = (id: string) => events.filter((e) => e.universe.id === id).length;
   return {
     character,
     appearances: events.length,
-    universes: [...new Set(events.map((e) => e.universe.id))],
+    universes: [...new Set<string>(events.map((e) => e.universe.id))].sort((a, b) => inUniverse(b) - inUniverse(a)),
     search: normalize(`${character.name} ${character.alias ?? ''} ${character.factions.map((f) => getFaction(f)?.name).join(' ')}`),
   };
 });
@@ -104,14 +106,15 @@ export function CharactersPage() {
         </div>
       ) : (
         <ul className="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          {visible.map((row) => <CharacterCard key={row.character.id} row={row} />)}
+          {visible.map((row) => <CharacterCard key={row.character.id} row={row} universe={row.universes.find((u) => universes.includes(u)) ?? row.universes[0]} />)}
         </ul>
       )}
     </div>
   );
 }
 
-function CharacterCard({ row: { character: c, appearances, universes } }: { row: Row }) {
+/** `universe` picks which version of the character the card shows. */
+function CharacterCard({ row: { character: c, appearances, universes }, universe }: { row: Row; universe?: string }) {
   const teams = c.factions.slice(0, 2).map((f) => getFaction(f)?.name).filter(Boolean).join(' · ');
   return (
     <li>
@@ -120,7 +123,7 @@ function CharacterCard({ row: { character: c, appearances, universes } }: { row:
         className="group flex h-full items-center gap-3 rounded-2xl border border-line bg-surface/70 p-3.5 transition hover:border-line-strong hover:bg-surface-2"
         title={c.name}
       >
-        <Avatar label={c.label} color={c.color} photo={c.photo?.path} size="lg" />
+        <Avatar key={universe} label={c.label} color={c.color} sources={portraitSources(c, universe)} size="lg" />
         <span className="min-w-0 flex-1">
           <span className="block truncate text-sm font-bold text-ink">{c.label}</span>
           <span className="block truncate text-xs text-ink-muted">{c.alias ? c.name : teams || c.role}</span>

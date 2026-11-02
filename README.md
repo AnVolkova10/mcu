@@ -15,4 +15,4 @@ npm run build      # validates the content, type-checks and builds
 - Adding or auditing a movie or series, step by step: [docs/CONTENT_GUIDE.md](docs/CONTENT_GUIDE.md)
 - What is next: [docs/ROADMAP.md](docs/ROADMAP.md)
 
-Original timeline compiled by [Aaron Perris](https://aaronperris.com/mcu/). Posters and actor photos come from [TMDB](https://www.themoviedb.org/); this product uses the TMDB API but is not endorsed or certified by TMDB. A fan project, not affiliated with Marvel or Disney.
+Original timeline compiled by [Aaron Perris](https://aaronperris.com/mcu/). Posters and actor photos come from [TMDB](https://www.themoviedb.org/); this product uses the TMDB API but is not endorsed or certified by TMDB. Character images are linked from the fan wikis on Fandom. A fan project, not affiliated with Marvel or Disney.

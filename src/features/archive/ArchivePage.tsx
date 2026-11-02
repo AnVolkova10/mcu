@@ -130,6 +130,12 @@ export function ArchivePage() {
           <a href="https://www.themoviedb.org/" target="_blank" rel="noopener noreferrer" className="text-ink underline decoration-line-strong underline-offset-4 hover:decoration-accent">The Movie Database</a>.
           This product uses the TMDB API but is not endorsed or certified by TMDB.
         </p>
+        <p>
+          Character images come from the fan wikis on Fandom:{' '}
+          <a href="https://marvelcinematicuniverse.fandom.com/" target="_blank" rel="noopener noreferrer" className="text-ink underline decoration-line-strong underline-offset-4 hover:decoration-accent">Marvel Cinematic Universe</a>,{' '}
+          <a href="https://xmenmovies.fandom.com/" target="_blank" rel="noopener noreferrer" className="text-ink underline decoration-line-strong underline-offset-4 hover:decoration-accent">X-Men Movies</a> and{' '}
+          <a href="https://marvelanimated.fandom.com/" target="_blank" rel="noopener noreferrer" className="text-ink underline decoration-line-strong underline-offset-4 hover:decoration-accent">Marvel Animated Universe</a>.
+        </p>
         <p>A fan project, not affiliated with Marvel or Disney.</p>
         <img src={tmdbLogo} alt="The Movie Database" className="mt-4 h-3 w-auto" />
       </section>

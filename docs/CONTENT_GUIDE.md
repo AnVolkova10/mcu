@@ -24,7 +24,7 @@ Está escrita para que cualquier agente la siga sin conocer el proyecto. Seguí 
 | Películas, temporadas, especiales | `src/content/catalog/productions.ts` |
 | Series (agrupan temporadas) | `src/content/catalog/series.ts` |
 | Personajes | `src/content/catalog/characters.ts` (orden alfabético por id) |
-| Fotos de personajes | `src/content/catalog/photos.ts` (lo genera `npm run photos:sync`, no se edita a mano) |
+| Imágenes y elenco de personajes | `src/content/catalog/portraits.ts` y `cast.ts` (los generan los scripts del paso 12, no se editan a mano) |
 | Facciones y equipos | `src/content/catalog/factions.ts` |
 | Lugares | `src/content/catalog/locations.ts` (orden alfabético por id) |
 | Universos y ramas | `src/content/catalog/universes.ts` |
@@ -260,18 +260,27 @@ Al final el comando lista lo que no encontró. Si encontró otra película con e
 
 Las producciones sin póster usan un diseño de reemplazo automático: no se rompe nada.
 
-### Paso 12 · Las fotos de los personajes nuevos
+### Paso 12 · El elenco y las imágenes de los personajes nuevos
 
 ```bash
-npm run photos:sync
+npm run cast:sync
+npm run portraits:sync
 ```
 
-Busca en los créditos de TMDB al actor de cada personaje que todavía no tiene foto y la guarda en `photos.ts`. Usa el mismo token que los pósters. Los personajes que solo aparecen en animación se quedan con sus iniciales, igual que cualquiera sin foto: no se rompe nada.
+- `cast:sync` busca en los créditos de TMDB quién interpreta a cada personaje en cada universo, actores y voces. Es la lista "Played by" de la ficha. Usa el mismo token que los pósters.
+- `portraits:sync` busca la imagen del personaje en la wiki de cada universo y guarda su dirección. La imagen sigue en Fandom: **nunca la copies al repo**.
 
-Al final lista los personajes con más de un actor (elige al que está en más producciones) y los que no encontró. Si la cara está mal, abrí `scripts/photos.ts`:
+Un personaje en dos universos tiene dos imágenes. Noir no tiene wiki de la serie, así que muestra la foto del actor; si tampoco hay foto, se ven las iniciales. No se rompe nada.
 
-- **Otro actor:** agregá `'id-del-personaje': 'Nombre del actor',` en `ACTORS` y corré el comando de nuevo.
-- **Sin foto** (personajes digitales o animales, donde la persona acreditada no es quien se ve): agregá el id a `NO_FACE`.
+**Mirá siempre el resultado en la ficha.** Las wikis reciclan páginas: la de "Black Widow" hoy es Yelena y la de "Captain America" es Sam Wilson. Para corregir, abrí el script y corré el comando de nuevo:
+
+| Problema | Dónde | Qué agregar |
+|---|---|---|
+| Imagen de otro personaje, o no la encuentra | `PAGES`, en `scripts/portraits.ts` | `'id-del-personaje': { 'earth-616': 'Título de la página' },` |
+| Personaje correcto, mala imagen | `FILES`, en `scripts/portraits.ts` | `'id-del-personaje': { 'earth-616': 'Nombre del archivo.jpg' },` |
+| Personaje chiquito en un póster | `FILES`, en `scripts/portraits.ts` | `['Archivo.jpg', izquierda, arriba, lado]`: el cuadrado a conservar, en fracciones de 0 a 1 |
+| Falta un actor (acreditado con otro nombre) | `CREDITED_AS`, en `scripts/cast.ts` | `'id-del-personaje': ['Nombre del crédito'],` |
+| Sobra un actor (doble, versión de chico) | `NOT_THEM`, en `scripts/cast.ts` | `'id-del-personaje': ['Nombre del actor'],` |
 
 ### Paso 13 · Validar y mirar
 
@@ -288,7 +297,7 @@ npm run dev          # abrir http://localhost:5173/mcu/ y revisar el año del ev
 - [ ] Todos los personajes importantes están enlazados.
 - [ ] Cada evento tiene al menos un lugar (obligatorio en producciones auditadas).
 - [ ] La producción tiene póster, o quien mantiene el proyecto sabe que quedó sin él.
-- [ ] Corriste `npm run photos:sync` y revisaste las caras de los personajes nuevos.
+- [ ] Corriste `cast:sync` y `portraits:sync`, y miraste la ficha de los personajes nuevos.
 - [ ] `npm run validate` y `npm run build` terminan sin errores.
 
 ---
