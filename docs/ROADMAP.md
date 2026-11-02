@@ -10,9 +10,40 @@
 
 ## Contenido
 
-Estado actual: `npm run content -- status` (28 producciones auditadas, 53 legacy de la v1).
+Estado actual: `npm run content -- status` (28 producciones auditadas, 1 verificada, 53 legacy de la v1).
 
-**Lo que sigue.** Con la v3 publicada, revisar una por una las 28 producciones auditadas en la v2 junto a quien mantiene el proyecto, y recién después seguir con lo demás.
+**Lo que sigue.** Revisar una por una las 28 producciones auditadas en la v2 junto a quien mantiene el proyecto, con `docs/AUDIT_GUIDE.md`, y recién después seguir con lo demás. Van en el orden de la cronología de Aaron Perris (https://aaronperris.com/mcu/):
+
+- [x] *Eyes of Wakanda* T1
+- [ ] *Spider-Noir* T1
+- [ ] *Captain America: The First Avenger*
+- [ ] *Agent Carter* T1
+- [ ] *Agent Carter* T2
+- [ ] *X-Men: First Class*
+- [ ] *X-Men Origins: Wolverine*
+- [ ] *X-Men: Days of Future Past*
+- [ ] *X-Men: Apocalypse*
+- [ ] *Dark Phoenix*
+- [ ] *X-Men: The Animated Series* T1
+- [ ] *X-Men: The Animated Series* T2
+- [ ] *X-Men: The Animated Series* T3
+- [ ] *Iron Man: The Animated Series* T1
+- [ ] *Fantastic Four: The Animated Series* T1
+- [ ] *Spider-Man: The Animated Series* T1
+- [ ] *Spider-Man: The Animated Series* T2
+- [ ] *X-Men: The Animated Series* T4
+- [ ] *Iron Man: The Animated Series* T2
+- [ ] *Captain Marvel*
+- [ ] *Spider-Man: The Animated Series* T3
+- [ ] *X-Men: The Animated Series* T5
+- [ ] *Fantastic Four: The Animated Series* T2
+- [ ] *The Incredible Hulk* T1
+- [ ] *Spider-Man: The Animated Series* T4
+- [ ] *X-Men '97* T1
+- [ ] *Spider-Man: The Animated Series* T5
+- [ ] *The Incredible Hulk* T2
+
+**Puntos compartidos del mapa.** 30 puntos exactos siguen repartidos entre 75 lugares. Se separan a medida que se audita cada producción: el validador lo exige en las verificadas y lo muestra como aviso en las demás.
 
 **Fechas pendientes de auditoría.** `2,000 years ago` (la Mano, *The Defenders*) sigue en texto libre hasta que se audite esa producción. Las dos `Ancient times` del catálogo de gemas (Morag y Agamotto) son recorridos sin fecha en el canon.
 
@@ -36,7 +67,7 @@ Hoy es un proyecto personal, y estas decisiones lo asumen. Antes de difundirla, 
 
 - **El repo y la página ya son accesibles.** `AnVolkova10/mcu` figura como público y GitHub Pages publica `master`. Nadie los conoce, pero cualquiera con el link entra. Hacer privado el repo en una cuenta gratuita apaga la página.
 - **Imágenes de personajes.** Son de Marvel y Disney, sin licencia de reutilización. Se enlazan desde Fandom y no se copian, pero eso no da derechos sobre ellas. No guardarlas en el repo: quedarían redistribuidas desde acá.
-- **Términos de Fandom.** Según fuentes secundarias prohíben el acceso automatizado sin permiso, y `portraits:sync` usa su API pública. No pude leer el texto oficial: leerlo en https://www.fandom.com/terms-of-use, y pedir permiso o cambiar de fuente. No correr ese script en tareas automáticas.
+- **Términos de Fandom.** Según fuentes secundarias prohíben el acceso automatizado sin permiso, y `portraits:sync` y `research` usan su API pública. No pude leer el texto oficial: leerlo en https://www.fandom.com/terms-of-use, y pedir permiso o cambiar de fuente. No correr esos scripts en tareas automáticas.
 - **Enlaces directos.** Dependen de Fandom y solo responden con referer. Con tráfico real se pueden bloquear. Si caen, se ven la foto del actor o las iniciales, pero se perdería casi todo el catálogo.
 - **TMDB.** Es gratis para uso no comercial, con el logo y el aviso que ya están en Créditos. Publicidad, donaciones o cualquier ingreso piden licencia comercial.
 - **Marca Marvel.** El logo del encabezado es una marca registrada, y el aviso de proyecto de fans no da permiso para usarlo. Conviene reemplazarlo por un nombre propio.

@@ -11,6 +11,8 @@ App personal: React 19 + TypeScript + Vite + Tailwind 4, publicada en GitHub Pag
    - `audited`: revisada por quien mantiene el proyecto. Tiene que estar 100 % bien; el validador es estricto con ella.
    - `legacy`: heredada de la v1 (HTML de 2021). Puede tener datos imperfectos, pero nunca puede romper la app.
 
+Una producción `audited` puede tener además `verified: true`: pasó la auditoría de `docs/AUDIT_GUIDE.md`. Las `audited` sin verificar vienen de la v2, hecha con Gemini, y pueden tener contenido inventado.
+
 Si una fecha o un dato de canon es dudoso, **preguntá a quien mantiene el proyecto; no inventes**.
 
 ## Comandos
@@ -23,7 +25,9 @@ Si una fecha o un dato de canon es dudoso, **preguntá a quien mantiene el proye
 | `npm run validate` | Solo valida el contenido (menos de 1 segundo) |
 | `npm run content -- find "storm"` | Busca IDs de personajes, lugares, producciones y facciones |
 | `npm run content -- year 1994` | Lista los eventos de un año con su `order` |
-| `npm run content -- status` | Producciones auditadas y legacy, con su cantidad de eventos |
+| `npm run content -- status` | Producciones auditadas y legacy, con su cantidad de eventos y si están verificadas |
+| `npm run content -- unused` | Personajes y lugares que nada usa |
+| `npm run research -- spider-noir-s1` | Junta en `.research/` lo que dicen el archivo, TMDB y las wikis sobre una producción |
 | `npm run posters:sync` | Busca en TMDB los pósters que falten y guarda sus rutas en los catálogos |
 | `npm run cast:sync` | Busca en los créditos de TMDB quién interpreta a cada personaje en cada universo y lo guarda en `catalog/cast.ts` |
 | `npm run portraits:sync` | Busca en las wikis de cada universo la imagen de cada personaje y guarda su dirección en `catalog/portraits.ts` |
@@ -42,26 +46,30 @@ src/features/           pantallas y paneles (timeline, archive, library, search,
   map/multiverse/       realidades y ramas en SVG
 src/shared/ui/          componentes reutilizables (Sheet, Chip, Avatar, SearchSelect…)
 src/app/                App, encabezado y router (la URL guarda página, filtros y panel abierto)
-scripts/content.ts      herramienta de contenido (validate / find / year / status), solo lectura
+scripts/content.ts      herramienta de contenido (validate / find / year / status / unused), solo lectura
 scripts/posters.ts      pósters desde TMDB
 scripts/cast.ts         elenco desde TMDB; las correcciones van en `CREDITED_AS` y `NOT_THEM`
 scripts/portraits.ts    imágenes desde las wikis; las correcciones van en `PAGES` y `FILES`
-docs/CONTENT_GUIDE.md   receta paso a paso para agregar o auditar contenido
+scripts/research.ts     investigación de una producción, en `.research/` (git la ignora)
+scripts/fandom.ts       cliente de las wikis: identificado y lento a propósito
+docs/CONTENT_GUIDE.md   receta paso a paso para agregar o corregir contenido
+docs/AUDIT_GUIDE.md     cómo auditar una producción con quien mantiene el proyecto
 docs/ROADMAP.md         lo que falta
 ```
 
 ## Reglas de trabajo
 
-- **Para agregar o modificar contenido, seguí `docs/CONTENT_GUIDE.md` paso a paso.**
+- **Para agregar o modificar contenido, seguí `docs/CONTENT_GUIDE.md` paso a paso.** Para auditar una producción, `docs/AUDIT_GUIDE.md`.
 - No leas archivos de datos enteros: buscá con `npm run content -- find` o con la búsqueda del editor.
 - **Nunca cambies el `id` de un evento, personaje, lugar o producción que ya existe.** Romperías los guardados y los links compartidos.
 - No edites `src/features/library/legacyEventIds.ts`: es el mapa de migración de los guardados de v2.
 - Los colores de personajes, universos y gemas vienen de los datos; la legibilidad del texto se calcula sola (`src/domain/colors.ts`). No agregues CSS por personaje.
 - Los pósters se muestran solo en la sección Movies & Series y en la ficha de cada producción. **Nunca en el timeline.**
 - Las imágenes de personajes se muestran solo en Characters y en la ficha del personaje. **Nunca en el timeline.** Se muestra al personaje, no al actor: hay una imagen por universo, y quien lo interpreta va en la lista "Played by". Si falta la imagen, se ve la foto del actor; si falta eso, las iniciales.
-- `catalog/portraits.ts` y `catalog/cast.ts` se generan: no los edites a mano. Las imágenes son enlaces a Fandom y **nunca se copian al repo**. Tampoco corras `portraits:sync` en tareas automáticas: leé "Si la página se hace pública" en `docs/ROADMAP.md`.
+- `catalog/portraits.ts` y `catalog/cast.ts` se generan: no los edites a mano. Las imágenes son enlaces a Fandom y **nunca se copian al repo**. Tampoco corras `portraits:sync` ni `research` en tareas automáticas: leé "Si la página se hace pública" en `docs/ROADMAP.md`.
 - **No uses marvel.com como fuente.** Bloquea a los programas y los términos de Disney prohíben extraer contenido con scripts.
 - El estado del mapa vive en la URL (`src/features/map/useMapState.ts`), igual que el del resto de la app.
+- **Cada lugar tiene su propio punto en el mapa.** Si la obra solo nombra una zona, el lugar lleva `approximate: true` y se dibuja como anillo. No inventes lugares exactos.
 - **El mapa marca hitos, no todo lo que existe.** Al elegir un universo solo quedan los mundos y las ramas donde pasó algo en ese universo (`hasMilestone` en `src/domain/atlas.ts`). Sin universo elegido se ven todos. La barra de fechas atenúa en vez de ocultar, porque casi ninguna fecha tiene eventos fuera de la Tierra.
 - `three` está fijo en `0.186.1` porque `postprocessing` exige `<0.187`. No lo actualices sin revisar eso.
 - `.env.local` guarda el token de TMDB. Nunca lo imprimas, lo copies ni lo subas; la app publicada no lo necesita.

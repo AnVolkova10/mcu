@@ -1,6 +1,6 @@
 # Guía de contenido
 
-Receta paso a paso para **agregar una película o serie nueva** y para **auditar o corregir una de la v1**.
+Receta paso a paso para **agregar una película o serie nueva** y para **corregir una de la v1**. Para auditar una producción con quien mantiene el proyecto, seguí `docs/AUDIT_GUIDE.md`, que usa estas recetas.
 Está escrita para que cualquier agente la siga sin conocer el proyecto. Seguí los pasos en orden y no te saltees el último (validar).
 
 ---
@@ -121,7 +121,7 @@ Reglas del evento:
 - `id`: corto, en minúsculas con guiones, único **dentro de este archivo**. El ID completo será `legion-s1.david-escapes-clockworks`.
 - `title`: en inglés, de 3 a 9 palabras, en presente, sin punto final. Contá lo más importante que pasa. Ejemplo: `Bor defeats Malekith and hides the Aether`.
 - `text`: uno o más párrafos en inglés, con la sintaxis del paso 7.
-- Un evento = un momento o un arco con fecha propia. Si una temporada salta entre años, hacé un evento por cada año.
+- Un evento = sucesos unidos por tiempo, lugar o relato. **El tiempo manda:** seis semanas no lo cortan, seis meses sí. Si una temporada salta entre años, hacé un evento por cada año. Un viaje en el tiempo son eventos separados.
 
 ### Paso 6 · La fecha (`date`)
 
@@ -188,7 +188,7 @@ Para cada personaje importante del evento:
 ### Paso 9 · Lugares
 
 1. Buscalo: `npm run content -- find "clockworks"`.
-2. Si existe, usá su ID en `locations: ['clockworks-psychiatric-hospital']`.
+2. Si existe, usá su ID en `locations: ['clockworks-psychiatric-hospital']`. Si el evento pasa por varios, ponelos **en el orden del relato**: así los recorre *Trace this journey*.
 3. Si no existe, agregalo a `src/content/catalog/locations.ts` **en orden alfabético por id**.
 
 Lugar en la Tierra, con coordenadas `[latitud, longitud]`. Para sacarlas: en Google Maps, clic derecho sobre el lugar → copiar los números.
@@ -200,6 +200,20 @@ Lugar en la Tierra, con coordenadas `[latitud, longitud]`. Para sacarlas: en Goo
     country: 'United States',
     kind: 'earth',
     coords: [40.7128, -74.006],
+  },
+```
+
+**Cada lugar tiene su propio punto.** Dos lugares distintos nunca llevan la misma coordenada, aunque estén en la misma ciudad. Marcá solo lo que la obra nombra: si dice *Creta*, no pongas el palacio de Cnosos.
+
+Si la obra solo nombra una zona, poné el punto en su centro y agregá `approximate: true`. El mapa dibuja un anillo y avisa que no se conoce el lugar exacto. Mirá antes qué hay alrededor, para no pegarlo a un lugar que no tiene nada que ver:
+
+```ts
+  'lions-kingdom': {
+    name: "Lion's Kingdom",
+    place: 'Indian Ocean',
+    kind: 'earth',
+    coords: [-20, 80],
+    approximate: true,
   },
 ```
 
@@ -302,9 +316,9 @@ npm run dev          # abrir http://localhost:5173/mcu/ y revisar el año del ev
 
 ---
 
-## 3. Receta B — Auditar o corregir una producción de la v1
+## 3. Receta B — Corregir una producción de la v1
 
-Las producciones `legacy` vienen del HTML original. Para auditar una:
+Las producciones `legacy` vienen del HTML original. Para ponerla al día sin la auditoría completa de `docs/AUDIT_GUIDE.md`:
 
 1. Mirá su estado y cuántos eventos tiene: `npm run content -- status`.
 2. Abrí su archivo en `src/content/events/`.
@@ -337,5 +351,7 @@ Las producciones `legacy` vienen del HTML original. Para auditar una:
 | `paragraph N has broken markup` | Hay un `**`, `==` o `[...]( ` sin cerrar en ese párrafo |
 | `earth places need coords` | Falta `coords: [lat, lng]` en el lugar |
 | `off-world places need a valid cosmos "node"` | Falta `node`, o el nodo no existe en `cosmos.ts` |
+| `verified productions say which episode or part each event covers` | Agregá `segment` al evento (solo producciones `verified`) |
+| `place "x" shares its exact point with y` | Dale a cada lugar su propia coordenada (solo producciones `verified`) |
 
 Si TypeScript marca en rojo un ID mientras escribís, es porque no existe: es el mismo aviso, antes de validar.
