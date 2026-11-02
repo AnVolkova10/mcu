@@ -7,7 +7,7 @@ import type { UniverseId } from '@/domain/schema';
 import { navigate, useRoute, withQuery } from '@/app/router';
 import { PanelLink } from '@/features/archive/PanelLink';
 import { useFitRows } from '@/shared/lib/useFitRows';
-import { Chip } from '@/shared/ui/Chip';
+import { FilterButton } from '@/shared/ui/FilterButton';
 import { PageHeader } from '@/shared/ui/PageHeader';
 import { SearchBox } from '@/shared/ui/SearchBox';
 import { UniverseToggles } from '@/shared/ui/UniverseToggles';
@@ -96,15 +96,15 @@ export function ProductionsPage() {
         </div>
         <div className="no-scrollbar flex items-center gap-1.5 overflow-x-auto">
           {KINDS.map((k) => (
-            <Chip key={k.id} active={kind === k.id} onClick={() => update({ kind: kind === k.id ? undefined : k.id })}>{k.label}</Chip>
+            <FilterButton key={k.id} active={kind === k.id} onClick={() => update({ kind: kind === k.id ? undefined : k.id })}>{k.label}</FilterButton>
           ))}
           <span aria-hidden className="mx-1 h-4 w-px shrink-0 bg-line" />
           {STATUSES.map((s) => (
-            <Chip key={s.id} active={status === s.id} onClick={() => update({ status: status === s.id ? undefined : s.id })}>{s.label}</Chip>
+            <FilterButton key={s.id} active={status === s.id} onClick={() => update({ status: status === s.id ? undefined : s.id })}>{s.label}</FilterButton>
           ))}
           <span aria-hidden className="mx-1 h-4 w-px shrink-0 bg-line" />
           {SORTS.map((s) => (
-            <Chip key={s.id} active={sort === s.id} onClick={() => update({ sort: s.id === 'story' ? undefined : s.id })}>{s.label}</Chip>
+            <FilterButton key={s.id} active={sort === s.id} onClick={() => update({ sort: s.id === 'story' ? undefined : s.id })}>{s.label}</FilterButton>
           ))}
         </div>
       </div>

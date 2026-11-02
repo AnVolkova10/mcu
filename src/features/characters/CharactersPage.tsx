@@ -8,7 +8,7 @@ import { navigate, useRoute, withQuery } from '@/app/router';
 import { PanelLink } from '@/features/archive/PanelLink';
 import { useFitRows } from '@/shared/lib/useFitRows';
 import { Avatar } from '@/shared/ui/Avatar';
-import { Chip } from '@/shared/ui/Chip';
+import { FilterButton } from '@/shared/ui/FilterButton';
 import { PageHeader } from '@/shared/ui/PageHeader';
 import { SearchBox } from '@/shared/ui/SearchBox';
 import { SearchSelect, type SelectItem } from '@/shared/ui/SearchSelect';
@@ -90,11 +90,11 @@ export function CharactersPage() {
         <div className="flex flex-wrap items-center gap-3">
           <div className="no-scrollbar flex items-center gap-1.5 overflow-x-auto">
             {ROLES.map((r) => (
-              <Chip key={r.id} active={role === r.id} onClick={() => update({ role: role === r.id ? undefined : r.id })}>{r.label}</Chip>
+              <FilterButton key={r.id} active={role === r.id} onClick={() => update({ role: role === r.id ? undefined : r.id })}>{r.label}</FilterButton>
             ))}
             <span aria-hidden className="mx-1 h-4 w-px shrink-0 bg-line" />
-            <Chip active={sort === 'appearances'} onClick={() => update({ sort: undefined })}>Most appearances</Chip>
-            <Chip active={sort === 'name'} onClick={() => update({ sort: 'name' })}>A–Z</Chip>
+            <FilterButton active={sort === 'appearances'} onClick={() => update({ sort: undefined })}>Most appearances</FilterButton>
+            <FilterButton active={sort === 'name'} onClick={() => update({ sort: 'name' })}>A–Z</FilterButton>
           </div>
           <div className="ml-auto w-full sm:w-64">
             <SearchSelect label="Faction" hideLabel placeholder="Any faction" items={factionItems} value={faction} onChange={(id) => update({ faction: id })} />
