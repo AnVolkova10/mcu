@@ -4,7 +4,7 @@ import { defineEvents } from '@/domain/define';
 export default defineEvents('agents-of-shield-s3', [
   {
     id: 'kree-creates-hive',
-    date: { year: -2984, label: '5,000 years ago', order: 10 },
+    date: { year: -3000, approx: true, order: 10 },
     title: 'A rogue Kree faction creates Hive and the Inhumans',
     text: [
       "A rogue faction of *Kree* came to Earth seeking to create an army of super soldiers to aid in their empire's many wars. They conducted their first experiment on a human creating **Hive**, implanting latent genes that, once activated through a mutagenic process known as Terrigenesis gave the new Inhumans access to unique superhuman abilities.",

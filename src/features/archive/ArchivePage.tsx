@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react';
+import tmdbLogo from '@/assets/tmdb-logo.svg';
 import { archive } from '@/content';
 import { characterList, locationList, productionList, universeList } from '@/domain/catalog';
 import { periods } from '@/domain/dates';
@@ -70,14 +71,14 @@ export function ArchivePage() {
           </ol>
         </Card>
 
-        <Card title="Events by period">
+        <Card title="Events by era">
           <ol className="flex h-52 items-end gap-1 border-b border-line">
             {byPeriod.map(({ period, count }) => (
               <li key={period.id} className="h-full flex-1">
                 <a
                   href={href('timeline', { period: period.id })}
                   className="group flex h-full flex-col items-center justify-end gap-1 rounded-t-lg transition hover:bg-surface-2"
-                  title={`${period.label}: ${count} events`}
+                  title={`${period.label}, ${period.range}: ${count} events`}
                 >
                   <span className="text-xs font-semibold tabular-nums text-ink-muted">{count}</span>
                   <span
@@ -90,7 +91,10 @@ export function ArchivePage() {
           </ol>
           <ol aria-hidden className="mt-1.5 flex gap-1">
             {byPeriod.map(({ period }) => (
-              <li key={period.id} className="flex-1 text-center text-[11px] leading-tight text-ink-faint">{period.label}</li>
+              <li key={period.id} className="flex-1 text-center text-[11px] leading-tight text-ink-faint">
+                <span className="block font-semibold text-ink-muted">{period.label}</span>
+                {period.range}
+              </li>
             ))}
           </ol>
         </Card>
@@ -122,11 +126,12 @@ export function ArchivePage() {
           Expanded, audited and maintained by Ángela Curzi.
         </p>
         <p>
-          Posters come from{' '}
+          Posters and actor photos come from{' '}
           <a href="https://www.themoviedb.org/" target="_blank" rel="noopener noreferrer" className="text-ink underline decoration-line-strong underline-offset-4 hover:decoration-accent">The Movie Database</a>.
           This product uses the TMDB API but is not endorsed or certified by TMDB.
         </p>
         <p>A fan project, not affiliated with Marvel or Disney.</p>
+        <img src={tmdbLogo} alt="The Movie Database" className="mt-4 h-3 w-auto" />
       </section>
     </div>
   );

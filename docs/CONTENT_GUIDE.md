@@ -24,6 +24,7 @@ Está escrita para que cualquier agente la siga sin conocer el proyecto. Seguí 
 | Películas, temporadas, especiales | `src/content/catalog/productions.ts` |
 | Series (agrupan temporadas) | `src/content/catalog/series.ts` |
 | Personajes | `src/content/catalog/characters.ts` (orden alfabético por id) |
+| Fotos de personajes | `src/content/catalog/photos.ts` (lo genera `npm run photos:sync`, no se edita a mano) |
 | Facciones y equipos | `src/content/catalog/factions.ts` |
 | Lugares | `src/content/catalog/locations.ts` (orden alfabético por id) |
 | Universos y ramas | `src/content/catalog/universes.ts` |
@@ -130,7 +131,12 @@ Reglas del evento:
 | Aproximado | `{ year: 1925, approx: true }` | c. 1925 |
 | Rango | `{ year: 1861, end: 1865 }` | 1861–1865 |
 | Antes de Cristo | `{ year: -3600, approx: true }` | c. 3600 BCE |
-| Relativo, como lo dice la obra | `{ year: -2984, label: '5,000 years ago' }` | 5,000 years ago |
+| Más de 10.000 años atrás, como lo dice la obra | `{ year: -998000, label: '1,000,000 years ago' }` | 1,000,000 years ago |
+| Mítico, sin fecha | `{ year: -1000000000, label: 'Eons ago' }` | Eons ago |
+
+**`label` es solo para fechas de más de 10.000 años.** Todo lo más reciente se escribe con el año, aunque la obra lo diga en relativo: "hace 5.000 años" es `{ year: -3000, approx: true }`. Así una misma época nunca tiene dos nombres. En las producciones auditadas, el validador lo exige.
+
+Las eras (Ancient Era, World Wars, Cold War, Mutant Age, Heroic Age, Multiverse) salen solas del año. Están en `periods`, en `src/domain/dates.ts`.
 
 **Varios eventos en el mismo año:** el orden dentro del año lo da `order` (más chico, más arriba). Mirá los que ya existen y elegí un número intermedio:
 
@@ -219,6 +225,8 @@ Mundo nuevo en `cosmos.ts`. No lleva posición: la escena la calcula sola según
   },
 ```
 
+El mapa marca hitos: al elegir un universo, un mundo solo aparece si tiene eventos de ese universo. Para que un mundo aparezca, cargá el lugar en `locations` del evento; no hay que declarar nada en `cosmos.ts`.
+
 Para contar algo particular de ese lugar en este evento: `locations: [{ id: 'sanctum-sanctorum', note: "M'Kraan mystic alert" }]`.
 
 ### Paso 10 · Muertes, gemas y extras (opcional)
@@ -252,7 +260,20 @@ Al final el comando lista lo que no encontró. Si encontró otra película con e
 
 Las producciones sin póster usan un diseño de reemplazo automático: no se rompe nada.
 
-### Paso 12 · Validar y mirar
+### Paso 12 · Las fotos de los personajes nuevos
+
+```bash
+npm run photos:sync
+```
+
+Busca en los créditos de TMDB al actor de cada personaje que todavía no tiene foto y la guarda en `photos.ts`. Usa el mismo token que los pósters. Los personajes que solo aparecen en animación se quedan con sus iniciales, igual que cualquiera sin foto: no se rompe nada.
+
+Al final lista los personajes con más de un actor (elige al que está en más producciones) y los que no encontró. Si la cara está mal, abrí `scripts/photos.ts`:
+
+- **Otro actor:** agregá `'id-del-personaje': 'Nombre del actor',` en `ACTORS` y corré el comando de nuevo.
+- **Sin foto** (personajes digitales o animales, donde la persona acreditada no es quien se ve): agregá el id a `NO_FACE`.
+
+### Paso 13 · Validar y mirar
 
 ```bash
 npm run validate     # contenido
@@ -267,6 +288,7 @@ npm run dev          # abrir http://localhost:5173/mcu/ y revisar el año del ev
 - [ ] Todos los personajes importantes están enlazados.
 - [ ] Cada evento tiene al menos un lugar (obligatorio en producciones auditadas).
 - [ ] La producción tiene póster, o quien mantiene el proyecto sabe que quedó sin él.
+- [ ] Corriste `npm run photos:sync` y revisaste las caras de los personajes nuevos.
 - [ ] `npm run validate` y `npm run build` terminan sin errores.
 
 ---
@@ -302,6 +324,7 @@ Las producciones `legacy` vienen del HTML original. Para auditar una:
 | `audited events need at least one location` | Agregá `locations` al evento |
 | `audited events need at least one character` | Enlazá un personaje en el texto o agregá `cast` |
 | `death "X" has a dossier, use the character id` | Cambiá `{ name: 'X' }` por el ID del personaje |
+| `"X" is a free-text date` | Sacá `label` y escribí el año, con `approx: true` si es aproximado (paso 6) |
 | `paragraph N has broken markup` | Hay un `**`, `==` o `[...]( ` sin cerrar en ese párrafo |
 | `earth places need coords` | Falta `coords: [lat, lng]` en el lugar |
 | `off-world places need a valid cosmos "node"` | Falta `node`, o el nodo no existe en `cosmos.ts` |

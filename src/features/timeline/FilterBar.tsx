@@ -82,11 +82,11 @@ export function FilterBar({ filters, onChange, onClear, resultCount }: FilterBar
         <div className="space-y-6 p-6 pt-14">
           <h2 className="font-display text-4xl leading-none">Filters</h2>
           <fieldset>
-            <legend className="mb-2 text-[11px] font-bold uppercase tracking-[0.16em] text-ink-faint">Period</legend>
+            <legend className="mb-2 text-[11px] font-bold uppercase tracking-[0.16em] text-ink-faint">Era</legend>
             <div className="flex flex-wrap gap-1.5">
               {periods.map((p) => (
                 <Chip key={p.id} active={filters.period === p.id} onClick={() => onChange({ period: filters.period === p.id ? undefined : p.id })}>
-                  {p.label}
+                  {p.label} <span className="ml-0.5 opacity-60">{p.range}</span>
                 </Chip>
               ))}
             </div>

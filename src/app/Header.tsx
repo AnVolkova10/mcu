@@ -25,7 +25,7 @@ export function Header({ page, onSearch }: { page: PageId; onSearch: () => void 
       <div className="mx-auto flex h-16 max-w-7xl items-center gap-5 px-4 sm:px-6">
         <a href={href('timeline')} className="flex shrink-0 items-center gap-3" aria-label="MCU Archive home">
           <img src={marvelLogo} alt="" className="h-7 w-auto" />
-          <span className="font-mark text-xl tracking-[0.2em] text-ink">Archive</span>
+          <span className="font-display text-2xl tracking-[0.18em] text-ink">Archive</span>
         </a>
         <nav aria-label="Main" className="no-scrollbar hidden flex-1 items-center gap-1 overflow-x-auto lg:flex">
           {nav.map((item) => (

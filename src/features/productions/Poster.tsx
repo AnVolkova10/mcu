@@ -2,8 +2,7 @@ import { useState } from 'react';
 import type { Production } from '@/domain/catalog';
 import { alpha } from '@/domain/colors';
 import { cn } from '@/shared/lib/cn';
-
-const IMAGE_BASE = 'https://image.tmdb.org/t/p';
+import { tmdbImage } from '@/shared/lib/tmdb';
 
 interface PosterProps {
   production: Production;
@@ -21,7 +20,7 @@ export function Poster({ production, size = 'w342', className }: PosterProps) {
     return (
       <div className={frame}>
         <img
-          src={`${IMAGE_BASE}/${size}${production.poster}`}
+          src={tmdbImage(size, production.poster)}
           alt={`${production.title} poster`}
           loading="lazy"
           decoding="async"

@@ -117,6 +117,13 @@ export interface CharacterInput {
   variants?: Partial<Record<UniverseId, string>>;
 }
 
+/** Written by `npm run photos:sync`. TMDB has people, not characters, so this is who plays them. */
+export interface CharacterPhoto {
+  actor: string;
+  /** Path on image.tmdb.org, e.g. "/abc123.jpg". */
+  path: string;
+}
+
 // ─── Places ───────────────────────────────────────────────────────────────────
 
 export type LocationKind = 'earth' | 'orbit' | 'space' | 'dimension';
@@ -173,7 +180,7 @@ export interface StoneInput {
  * In-universe date. The year (negative = BCE) is what orders the whole timeline.
  * - `end`: last year of a range (e.g. 1861–1865).
  * - `approx`: shows "c." before the year.
- * - `label`: replaces the printed date when the source uses a relative one ("5,000 years ago").
+ * - `label`: replaces the printed date, only past 10,000 years ago ("1,000,000 years ago", "Eons ago").
  * - `order`: position among events of the same year (lower first). Leave gaps: 10, 20, 30…
  */
 export interface EventDateInput {

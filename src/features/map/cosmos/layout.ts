@@ -70,7 +70,7 @@ export const bodies: Body[] = allNodes.map((node) => {
 
 export const bodyById = new Map(bodies.map((b) => [b.node.id as string, b]));
 
-export const orbitRadii = bodies.filter((b) => b.node.zone === 'orbit').map((b) => Math.hypot(b.position[0], b.position[2]));
+export const orbitRadius = ({ position: [x, , z] }: Body) => Math.hypot(x, z);
 
 /** Earth locations all share the Earth at the center of the scene. */
 export const positionOf = (location: Location): Vec3 => (location.node && bodyById.get(location.node)?.position) || [0, 0, 0];
@@ -83,7 +83,7 @@ export interface Zone {
 }
 
 export const ZONES = [
-  { id: 'overview', label: 'Everything', position: [0, 78, 142], target: [0, 12, 0] },
+  { id: 'overview', label: 'Everything', position: [0, 84, 153], target: [0, 13, 0] },
   { id: 'orbit', label: 'Earth orbit', position: [0, 6, 19], target: [0, 0, 0] },
   { id: 'realms', label: 'The Nine Realms', position: [0, 4, 64], target: [0, 1, 0] },
   { id: 'deep-space', label: 'Deep space', position: [0, 88, 100], target: [0, -12, 0] },

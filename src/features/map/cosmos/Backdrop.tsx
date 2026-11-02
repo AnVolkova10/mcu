@@ -3,7 +3,7 @@ import { useTexture } from '@react-three/drei';
 import { useFrame, useThree, type ThreeEvent } from '@react-three/fiber';
 import * as THREE from 'three';
 import landMask from './land-mask.webp';
-import { EARTH_RADIUS, bodyById, orbitRadii, type Vec3 } from './layout';
+import { EARTH_RADIUS, bodyById, type Vec3 } from './layout';
 import { earthFragment, starFragment, starVertex, surfaceVertex } from './shaders';
 
 const TAU = Math.PI * 2;
@@ -136,11 +136,13 @@ export function Galaxy() {
 }
 
 interface EarthCoreProps {
+  /** Radius of each orbit drawn around the planet. */
+  orbits: readonly number[];
   onClick: (e: ThreeEvent<MouseEvent>) => void;
   onHover: (hover: boolean) => void;
 }
 
-export function EarthCore({ onClick, onHover }: EarthCoreProps) {
+export function EarthCore({ orbits, onClick, onHover }: EarthCoreProps) {
   const globe = useRef<THREE.Mesh>(null);
   const land = useTexture(landMask);
   const shader = useMemo(() => ({ uniforms: { uLand: { value: land } }, vertexShader: surfaceVertex, fragmentShader: earthFragment }), [land]);
@@ -160,7 +162,7 @@ export function EarthCore({ onClick, onHover }: EarthCoreProps) {
         <sphereGeometry args={[EARTH_RADIUS, 64, 64]} />
         <shaderMaterial args={[shader]} />
       </mesh>
-      {orbitRadii.map((r) => (
+      {orbits.map((r) => (
         <mesh key={r} rotation={[Math.PI / 2, 0, 0]}>
           <ringGeometry args={[r, r + 0.012, 160]} />
           <meshBasicMaterial color="#7dd3fc" transparent opacity={0.3} side={THREE.DoubleSide} />
@@ -184,22 +186,26 @@ function Branch({ points, radius }: { points: Vec3[]; radius: number }) {
   );
 }
 
-const pos = (id: string): Vec3 => bodyById.get(id)?.position ?? [0, 0, 0];
+const MIDGARD: Vec3 = [0, 0, 0];
+const pos = (id: string): Vec3 => bodyById.get(id)?.position ?? MIDGARD;
 
-/** The world tree: a luminous trunk through Midgard, with a branch to every realm. */
-export function Yggdrasil() {
-  const branches = useMemo<{ points: Vec3[]; radius: number }[]>(() => [
-    { radius: 0.1, points: [pos('niflheim'), [0.9, -9, 1], [-0.4, -3.4, 0], [0, 0, 0], [0.4, 3.4, 0], [-0.9, 10, -0.6], pos('asgard')] },
-    { radius: 0.05, points: [[-0.5, 7, -0.3], [-3.5, 10.5, 1.2], pos('vanaheim')] },
-    { radius: 0.05, points: [[-0.5, 7, -0.3], [3.5, 10.5, -1.2], pos('alfheim')] },
-    { radius: 0.05, points: [[0.2, 2.6, 0], [-6, 5, -1.5], pos('jotunheim')] },
-    { radius: 0.05, points: [[0.2, 2.6, 0], [6, 5, 1.5], pos('nidavellir')] },
-    { radius: 0.05, points: [[0.2, -3, 0.2], [-4, -4.5, 1.5], pos('svartalfheim')] },
-    { radius: 0.05, points: [[0.2, -3, 0.2], [4, -5.5, -1.5], pos('muspelheim')] },
-  ], []);
+/** Each branch grows out of Earth, so it can leave with its realm without cutting off any other. */
+const BRANCHES: { realm: string; points: Vec3[]; radius: number }[] = [
+  { realm: 'asgard', radius: 0.1, points: [MIDGARD, [0.4, 3.4, 0], [-0.9, 10, -0.6], pos('asgard')] },
+  { realm: 'niflheim', radius: 0.1, points: [MIDGARD, [-0.4, -3.4, 0], [0.9, -9, 1], pos('niflheim')] },
+  { realm: 'vanaheim', radius: 0.05, points: [MIDGARD, [0.4, 3.4, 0], [-0.5, 7, -0.3], [-3.5, 10.5, 1.2], pos('vanaheim')] },
+  { realm: 'alfheim', radius: 0.05, points: [MIDGARD, [0.4, 3.4, 0], [-0.5, 7, -0.3], [3.5, 10.5, -1.2], pos('alfheim')] },
+  { realm: 'jotunheim', radius: 0.05, points: [MIDGARD, [0.2, 2.6, 0], [-6, 5, -1.5], pos('jotunheim')] },
+  { realm: 'nidavellir', radius: 0.05, points: [MIDGARD, [0.2, 2.6, 0], [6, 5, 1.5], pos('nidavellir')] },
+  { realm: 'svartalfheim', radius: 0.05, points: [MIDGARD, [0.2, -3, 0.2], [-4, -4.5, 1.5], pos('svartalfheim')] },
+  { realm: 'muspelheim', radius: 0.05, points: [MIDGARD, [0.2, -3, 0.2], [4, -5.5, -1.5], pos('muspelheim')] },
+];
+
+/** The world tree: a luminous trunk through Midgard, with a branch to every realm on the map. */
+export function Yggdrasil({ realms }: { realms: ReadonlySet<string> }) {
   return (
     <group>
-      {branches.map((branch, i) => <Branch key={i} {...branch} />)}
+      {BRANCHES.filter((branch) => realms.has(branch.realm)).map((branch) => <Branch key={branch.realm} points={branch.points} radius={branch.radius} />)}
     </group>
   );
 }

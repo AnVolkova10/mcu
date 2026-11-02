@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { ArrowUp, FilterX } from 'lucide-react';
 import { archive } from '@/content';
 import { matchesFilters } from '@/domain/filters';
@@ -50,16 +50,34 @@ export function TimelinePage() {
         <YearRail groups={railGroups} />
       </div>
 
-      <button
-        type="button"
-        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-        className="fixed bottom-6 right-6 z-30 rounded-full border border-line bg-surface/90 p-3 text-ink-muted shadow-2xl backdrop-blur transition hover:border-line-strong hover:text-ink"
-        aria-label="Back to the beginning of time"
-        title="Back to the beginning of time"
-      >
-        <ArrowUp className="size-5" />
-      </button>
+      <BackToStart />
     </div>
+  );
+}
+
+const AWAY_FROM_START = 600;
+
+/** Only once the reader has left the top: up there it would just cover the filters. */
+function BackToStart() {
+  const [away, setAway] = useState(() => window.scrollY > AWAY_FROM_START);
+
+  useEffect(() => {
+    const onScroll = () => setAway(window.scrollY > AWAY_FROM_START);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
+  if (!away) return null;
+  return (
+    <button
+      type="button"
+      onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+      className="fixed bottom-[calc(var(--spacing-footer)+1rem)] right-6 z-30 rounded-full border border-line bg-surface/90 p-3 text-ink-muted shadow-2xl backdrop-blur transition hover:border-line-strong hover:text-ink"
+      aria-label="Back to the beginning of time"
+      title="Back to the beginning of time"
+    >
+      <ArrowUp className="size-5" />
+    </button>
   );
 }
 
@@ -69,7 +87,7 @@ function Hero() {
       <div aria-hidden className="halftone absolute inset-0 [mask-image:linear-gradient(to_left,black,transparent_70%)]" />
       <div aria-hidden className="absolute -right-24 -top-24 size-96 rounded-full bg-accent/20 blur-3xl" />
       <div className="relative max-w-3xl">
-        <p className="font-mark text-lg tracking-[0.35em] text-accent-strong">Marvel multiverse</p>
+        <p className="font-display text-xl tracking-[0.3em] text-accent-strong">Marvel multiverse</p>
         <h1 className="mt-2 font-display text-6xl leading-[0.85] sm:text-8xl">The Chronology</h1>
         <p className="mt-5 max-w-2xl text-base leading-7 text-ink-muted">
           Every event in the year it happens inside the story — not when it was released. From the birth of the

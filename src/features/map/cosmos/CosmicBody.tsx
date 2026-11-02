@@ -10,7 +10,7 @@ export const CLICK_TOLERANCE = 4;
 
 interface CosmicBodyProps {
   body: Body;
-  /** Number of visible events here; 0 fades the body when a filter is on. */
+  /** Number of visible events here; 0 fades the body when a date is selected. */
   activity: number;
   filtering: boolean;
   selected: boolean;

@@ -25,13 +25,14 @@ Si una fecha o un dato de canon es dudoso, **preguntá a quien mantiene el proye
 | `npm run content -- year 1994` | Lista los eventos de un año con su `order` |
 | `npm run content -- status` | Producciones auditadas y legacy, con su cantidad de eventos |
 | `npm run posters:sync` | Busca en TMDB los pósters que falten y guarda sus rutas en los catálogos |
+| `npm run photos:sync` | Busca en los créditos de TMDB al actor de cada personaje y guarda su foto en `catalog/photos.ts` |
 | `npm run lint` | ESLint (incluye las reglas de hooks de React) |
 
 ## Dónde está cada cosa
 
 ```
 src/content/            ← DATOS (lo único que se edita para agregar contenido)
-  catalog/              universos, series, producciones, personajes, facciones, lugares, cosmos, gemas
+  catalog/              universos, series, producciones, personajes, fotos (generado), facciones, lugares, cosmos, gemas
   events/<produccion>.ts  un archivo por película o temporada
 src/domain/             lógica pura sin React: esquema, fechas, sintaxis del texto, índices, filtros, búsqueda
 src/features/           pantallas y paneles (timeline, archive, library, search, map…)
@@ -41,6 +42,8 @@ src/features/           pantallas y paneles (timeline, archive, library, search,
 src/shared/ui/          componentes reutilizables (Sheet, Chip, Avatar, SearchSelect…)
 src/app/                App, encabezado y router (la URL guarda página, filtros y panel abierto)
 scripts/content.ts      herramienta de contenido (validate / find / year / status), solo lectura
+scripts/posters.ts      pósters desde TMDB
+scripts/photos.ts       fotos desde TMDB; las correcciones a mano van en `ACTORS` y `NO_FACE`
 docs/CONTENT_GUIDE.md   receta paso a paso para agregar o auditar contenido
 docs/ROADMAP.md         lo que falta
 ```
@@ -53,10 +56,14 @@ docs/ROADMAP.md         lo que falta
 - No edites `src/features/library/legacyEventIds.ts`: es el mapa de migración de los guardados de v2.
 - Los colores de personajes, universos y gemas vienen de los datos; la legibilidad del texto se calcula sola (`src/domain/colors.ts`). No agregues CSS por personaje.
 - Los pósters se muestran solo en la sección Movies & Series y en la ficha de cada producción. **Nunca en el timeline.**
+- Las fotos de personajes se muestran solo en Characters y en la ficha del personaje, teñidas con su color. **Nunca en el timeline.** `catalog/photos.ts` se genera: no lo edites a mano.
 - El estado del mapa vive en la URL (`src/features/map/useMapState.ts`), igual que el del resto de la app.
+- **El mapa marca hitos, no todo lo que existe.** Al elegir un universo solo quedan los mundos y las ramas donde pasó algo en ese universo (`hasMilestone` en `src/domain/atlas.ts`). Sin universo elegido se ven todos. La barra de fechas atenúa en vez de ocultar, porque casi ninguna fecha tiene eventos fuera de la Tierra.
 - `three` está fijo en `0.186.1` porque `postprocessing` exige `<0.187`. No lo actualices sin revisar eso.
 - `.env.local` guarda el token de TMDB. Nunca lo imprimas, lo copies ni lo subas; la app publicada no lo necesita.
 - Estilos: tokens en `src/styles/global.css` (`bg`, `surface`, `ink`, `accent`…). Reutilizá `src/shared/ui` antes de crear componentes nuevos.
+- Títulos: `font-display` es Bebas Neue, que solo tiene mayúsculas y una variante; no le pongas `font-bold`.
+- El footer es fijo y su alto es `--spacing-footer`. Todo lo que se fije abajo de la pantalla tiene que dejarle ese lugar.
 - **Tests:** no agregues suites de tests. La red de seguridad es TypeScript estricto (los IDs están tipados) más el validador de contenido. Es un proyecto personal y los agentes cobran por correrlos.
 - Antes de dar algo por terminado: `npm run build` y `npm run lint` sin errores.
 - **Git:** nunca hagas commit ni push sin que te lo pidan. Mensajes en inglés con Conventional Commits (`feat:`, `fix:`, `content:`…).

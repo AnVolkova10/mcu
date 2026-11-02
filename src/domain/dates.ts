@@ -8,7 +8,7 @@ const formatYear = (year: number): string => {
   return String(year);
 };
 
-/** Printed date of an event: "1944", "c. 3600 BCE", "1861–1865", "5,000 years ago". */
+/** Printed date of an event: "1944", "c. 3600 BCE", "1861–1865", "1,000,000 years ago". */
 export function formatDate(date: EventDateInput): string {
   if (date.label) return date.label;
   const range = date.end ? `${formatYear(date.year)}–${formatYear(date.end)}` : formatYear(date.year);
@@ -23,18 +23,20 @@ export function sortKey(date: EventDateInput): number {
 export interface Period {
   id: string;
   label: string;
+  /** The same span in years, shown next to the name wherever there is room. */
+  range: string;
   from: number;
   to: number;
 }
 
-/** Broad periods used to filter and to jump around the timeline. */
+/** The eras: used to filter and to jump around the timeline. The ids live in shared links, so they stay as they are. */
 export const periods: readonly Period[] = [
-  { id: 'ancient', label: 'Before 1900', from: -Infinity, to: 1899 },
-  { id: 'world-wars', label: '1900–1945', from: 1900, to: 1945 },
-  { id: 'cold-war', label: '1946–1991', from: 1946, to: 1991 },
-  { id: 'nineties', label: '1992–2007', from: 1992, to: 2007 },
-  { id: 'heroic-age', label: '2008–2018', from: 2008, to: 2018 },
-  { id: 'beyond', label: '2019 & beyond', from: 2019, to: Infinity },
+  { id: 'ancient', label: 'Ancient Era', range: 'Before 1900', from: -Infinity, to: 1899 },
+  { id: 'world-wars', label: 'World Wars', range: '1900–1945', from: 1900, to: 1945 },
+  { id: 'cold-war', label: 'Cold War', range: '1946–1991', from: 1946, to: 1991 },
+  { id: 'nineties', label: 'Mutant Age', range: '1992–2007', from: 1992, to: 2007 },
+  { id: 'heroic-age', label: 'Heroic Age', range: '2008–2018', from: 2008, to: 2018 },
+  { id: 'beyond', label: 'Multiverse', range: '2019 & beyond', from: 2019, to: Infinity },
 ];
 
 export const periodOf = (year: number): Period => periods.find((p) => year >= p.from && year <= p.to) ?? periods[0];

@@ -42,6 +42,10 @@ export function nodeEvents(archive: Archive, node: CosmosNode['id']): ArchiveEve
   return [...seen].sort((a, b) => a.date.year - b.date.year || a.sortKey - b.sortKey);
 }
 
+/** The map marks milestones, not everything that exists: a reality only shows the worlds where something happened in it. */
+export const hasMilestone = (archive: Archive, node: CosmosNode['id'], universes: readonly string[]) =>
+  !universes.length || nodeEvents(archive, node).some((e) => universes.includes(e.universe.id));
+
 // ── Journeys ──────────────────────────────────────────────────────────────────
 
 export interface TraceStop {

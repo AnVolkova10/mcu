@@ -1,14 +1,18 @@
+import { useState } from 'react';
 import { alpha } from '@/domain/colors';
 import { cn } from '@/shared/lib/cn';
+import { tmdbImage } from '@/shared/lib/tmdb';
 
 interface AvatarProps {
   label: string;
   color: string;
-  size?: 'sm' | 'md' | 'lg';
+  /** Path on TMDB. Without one, or if it fails to load, the monogram takes its place. */
+  photo?: string;
+  size?: 'sm' | 'md' | 'lg' | 'xl';
   className?: string;
 }
 
-const sizes = { sm: 'size-7 text-[10px]', md: 'size-10 text-sm', lg: 'size-16 text-xl' };
+const sizes = { sm: 'size-7 text-[10px]', md: 'size-10 text-sm', lg: 'size-14 text-lg', xl: 'size-24 text-3xl' };
 
 const initials = (label: string) =>
   label
@@ -19,8 +23,19 @@ const initials = (label: string) =>
     .map((w) => w[0]!.toUpperCase())
     .join('');
 
-/** Monogram in the character's color. */
-export function Avatar({ label, color, size = 'md', className }: AvatarProps) {
+/** Photo tinted in the character's color, so every portrait reads as part of one set; a monogram otherwise. */
+export function Avatar({ label, color, photo, size = 'md', className }: AvatarProps) {
+  const [failed, setFailed] = useState<string>();
+
+  if (photo && photo !== failed) {
+    return (
+      <span aria-hidden className={cn('relative isolate inline-flex shrink-0 select-none overflow-hidden rounded-full', sizes[size], className)} style={{ boxShadow: `0 0 0 2px ${color}` }}>
+        <img src={tmdbImage('w185', photo)} alt="" loading="lazy" decoding="async" onError={() => setFailed(photo)} className="size-full object-cover object-[50%_18%] contrast-115 grayscale" />
+        <span className="absolute inset-0 opacity-90 mix-blend-color" style={{ backgroundColor: color }} />
+      </span>
+    );
+  }
+
   return (
     <span
       className={cn('inline-flex shrink-0 select-none items-center justify-center rounded-full font-bold tracking-wide ring-1', sizes[size], className)}

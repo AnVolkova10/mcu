@@ -10,6 +10,7 @@ import { alpha, readableOn } from '@/domain/colors';
 import { formatDate } from '@/domain/dates';
 import { Sheet } from '@/shared/ui/Sheet';
 import { Poster } from '@/features/productions/Poster';
+import { StoneGem } from '@/features/stones/StoneGem';
 import { Avatar } from '@/shared/ui/Avatar';
 import { Chip } from '@/shared/ui/Chip';
 import { EventList } from './EventList';
@@ -106,11 +107,12 @@ function CharacterPanel({ character: c }: { character: Character }) {
   const perUniverse = [...new Set(events.map((e) => e.universe.id))].map((id) => ({ universe: getUniverse(id)!, count: events.filter((e) => e.universe.id === id).length }));
   return (
     <>
-      <PanelHeader kicker={c.role} title={c.label} subtitle={c.alias ? c.name : c.origin} color={c.color} visual={<Avatar label={c.label} color={c.color} size="lg" />} />
+      <PanelHeader kicker={c.role} title={c.label} subtitle={c.alias ? c.name : c.origin} color={c.color} visual={<Avatar label={c.label} color={c.color} photo={c.photo?.path} size="xl" />} />
       <Facts items={[
         ['Status', c.status.replace('-', ' ')],
         ['Appearances', `${events.length} ${events.length === 1 ? 'event' : 'events'}`],
         ...(c.origin && c.alias ? [['Origin', c.origin] as [string, ReactNode]] : []),
+        ...(c.photo ? [['Portrait', c.photo.actor] as [string, ReactNode]] : []),
       ]} />
       <Section title="Dossier">
         <p className="text-[15px] leading-7 text-ink-muted">{c.bio}</p>
@@ -189,7 +191,7 @@ function StonePanel({ stone: s }: { stone: Stone }) {
         title={s.name}
         subtitle={s.vessel}
         color={s.color}
-        visual={<span className="size-14 shrink-0 rotate-45 rounded-xl" style={{ background: `linear-gradient(135deg, ${readableOn(s.color)}, ${s.color})`, boxShadow: `0 0 40px ${alpha(s.color, 0.6)}` }} />}
+        visual={<StoneGem stone={s} className="mx-2 mb-2" />}
       />
       <Section title="Power">
         <p className="text-[15px] leading-7 text-ink-muted">{s.power}</p>

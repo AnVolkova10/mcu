@@ -5,24 +5,13 @@
  *   npm run content -- find "storm"  look up ids of characters, places, productions and factions
  *   npm run content -- status        audited vs legacy productions
  */
-import { readdirSync } from 'node:fs';
-import { basename, join } from 'node:path';
-import { pathToFileURL } from 'node:url';
-import { buildArchive, normalize, type Archive } from '../src/domain/archive';
+import { normalize } from '../src/domain/archive';
 import { characterList, characters, factionList, locationList, productionList, productions, stoneList, getCosmosNode, getLocation } from '../src/domain/catalog';
-import type { EventFile } from '../src/domain/define';
 import { toPlainText } from '../src/domain/markup';
+import { loadArchive } from './load-archive';
 
-const EVENTS_DIR = join(import.meta.dirname, '..', 'src', 'content', 'events');
-
-async function loadArchive(): Promise<{ archive: Archive; files: { name: string; file: EventFile }[] }> {
-  const files = [];
-  for (const name of readdirSync(EVENTS_DIR).filter((f) => f.endsWith('.ts'))) {
-    const mod = await import(pathToFileURL(join(EVENTS_DIR, name)).href);
-    files.push({ name: basename(name, '.ts'), file: mod.default as EventFile });
-  }
-  return { archive: buildArchive(files.map((f) => f.file)), files };
-}
+/** Newer dates are always printed from their year, so the same age never gets two names. */
+const LAST_LABELLED_YEAR = -8000;
 
 // ── validate ──────────────────────────────────────────────────────────────────
 async function validate() {
@@ -60,6 +49,7 @@ async function validate() {
     const id = event.id;
     if (!event.locations.length) err(`${id}: audited events need at least one location`);
     if (!event.characters.length) err(`${id}: audited events need at least one character (link one in the text or add "cast")`);
+    if (event.date.label && event.date.year > LAST_LABELLED_YEAR) err(`${id}: "${event.date.label}" is a free-text date; use the year with approx, labels are only for dates over 10,000 years old`);
     if (event.title.length > 70) err(`${id}: title longer than 70 characters`);
     if (/\.$/.test(event.title)) err(`${id}: title must not end with a period`);
     for (const d of event.deaths) {

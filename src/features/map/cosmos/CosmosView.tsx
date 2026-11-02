@@ -4,13 +4,13 @@ import { CameraControls, QuadraticBezierLine, Stars } from '@react-three/drei';
 import { Bloom, EffectComposer, Vignette } from '@react-three/postprocessing';
 import * as THREE from 'three';
 import { archive } from '@/content';
-import { inView, nodeEvents, type MapFilters, type Trace } from '@/domain/atlas';
+import { hasMilestone, inView, nodeEvents, type MapFilters, type Trace } from '@/domain/atlas';
 import { readableOn } from '@/domain/colors';
 import { href, navigate } from '@/app/router';
 import { cn } from '@/shared/lib/cn';
 import { EarthCore, Galaxy, Yggdrasil } from './Backdrop';
 import { CLICK_TOLERANCE, CosmicBody, WorldLabel } from './CosmicBody';
-import { bodies, bodyById, EARTH_RADIUS, positionOf, ZONES, type Vec3, type Zone, type ZoneId } from './layout';
+import { bodies, bodyById, EARTH_RADIUS, orbitRadius, positionOf, ZONES, type Vec3, type Zone, type ZoneId } from './layout';
 
 interface CosmosViewProps {
   filters: MapFilters;
@@ -77,6 +77,16 @@ export function CosmosView({ filters, selected, onSelect, trace, stopIndex }: Co
     [filters],
   );
 
+  // A journey crosses realities, so its stops stay on the map whatever reality is selected.
+  const traceNodes = useMemo(() => new Set(trace?.stops.flatMap((s) => (s.location.node ? [s.location.node as string] : []))), [trace]);
+  const worlds = useMemo(
+    () => bodies.filter((b) => traceNodes.has(b.node.id) || hasMilestone(archive, b.node.id, filters.universes)),
+    [filters.universes, traceNodes],
+  );
+  const shown = useMemo(() => new Set<string>(worlds.map((b) => b.node.id)), [worlds]);
+  const orbits = useMemo(() => worlds.filter((b) => b.node.zone === 'orbit').map(orbitRadius), [worlds]);
+  const zones = useMemo(() => ZONES.filter((z) => z.id === 'overview' || z.id === 'orbit' || worlds.some((b) => b.node.zone === z.id)), [worlds]);
+
   useEffect(() => {
     document.body.style.cursor = hovered || earthHovered ? 'pointer' : '';
     return () => { document.body.style.cursor = ''; };
@@ -99,12 +109,12 @@ export function CosmosView({ filters, selected, onSelect, trace, stopIndex }: Co
     fly([x + direction.x * distance, y + direction.y * distance + 1, z + direction.z * distance], body.position, true);
   }, [fly]);
 
-  const goToZone = (id: ZoneId) => {
+  const goToZone = useCallback((id: ZoneId) => {
     setZone(id);
     if (selected) onSelect(null);
     const preset = ZONES.find((z) => z.id === id)!;
     fly(framed(preset), preset.target);
-  };
+  }, [selected, onSelect, fly]);
 
   // The galaxy comes in from afar.
   useEffect(() => {
@@ -112,6 +122,20 @@ export function CosmosView({ filters, selected, onSelect, trace, stopIndex }: Co
     void controls.setLookAt(...framed(ZONES[0], 1.8), ...ZONES[0].target, false);
     fly(framed(ZONES[0]), ZONES[0].target);
   }, [controls, fly]);
+
+  // A world that leaves with its reality takes its card with it.
+  useEffect(() => {
+    if (selected && !shown.has(selected)) onSelect(null);
+  }, [selected, shown, onSelect]);
+
+  // When a reality empties the view, the camera goes where there is still something to see.
+  const emptied = !zones.some((z) => z.id === zone);
+  const earthOnly = worlds.every((b) => b.node.zone === 'orbit');
+  useEffect(() => {
+    if (!controls || selected) return;
+    if (earthOnly) goToZone('orbit');
+    else if (emptied) goToZone('overview');
+  }, [controls, selected, earthOnly, emptied, goToZone]);
 
   useEffect(() => {
     if (selected) focusBody(selected);
@@ -133,7 +157,6 @@ export function CosmosView({ filters, selected, onSelect, trace, stopIndex }: Co
     navigate(href('map', { at: filters.group?.label, u: filters.universes.length ? filters.universes.join(',') : undefined }, ['earth']));
   };
 
-  const traceNodes = useMemo(() => new Set(trace?.stops.flatMap((s) => (s.location.node ? [s.location.node as string] : []))), [trace]);
   const labelled = (id: string, nodeZone: string) => hovered === id || activeZone === nodeZone || traceNodes.has(id) || (filtering && (activity.get(id) ?? 0) > 0);
 
   return (
@@ -143,10 +166,10 @@ export function CosmosView({ filters, selected, onSelect, trace, stopIndex }: Co
         <Suspense fallback={null}>
           <Stars radius={320} depth={120} count={6000} factor={6} saturation={0.3} fade speed={0} />
           <Galaxy />
-          <EarthCore onClick={openEarth} onHover={setEarthHovered} />
-          {earthHovered && <group position={[0, EARTH_RADIUS, 0]}><WorldLabel y={0}>Earth · open the globe</WorldLabel></group>}
-          <Yggdrasil />
-          {bodies.map((body) => (
+          <EarthCore orbits={orbits} onClick={openEarth} onHover={setEarthHovered} />
+          {(earthHovered || !worlds.length) && <group position={[0, EARTH_RADIUS, 0]}><WorldLabel y={0}>Earth · open the globe</WorldLabel></group>}
+          <Yggdrasil realms={shown} />
+          {worlds.map((body) => (
             <CosmicBody
               key={body.node.id}
               body={body}
@@ -170,7 +193,7 @@ export function CosmosView({ filters, selected, onSelect, trace, stopIndex }: Co
       </Canvas>
 
       <nav aria-label="Zones of the Cosmos" className="no-scrollbar absolute inset-x-3 top-[7.1rem] z-10 flex gap-0.5 overflow-x-auto rounded-2xl border border-line bg-bg/75 p-1 backdrop-blur-xl md:inset-x-auto md:left-3 md:top-16 md:flex-col md:overflow-visible">
-        {ZONES.map((z) => (
+        {zones.map((z) => (
           <button
             key={z.id}
             type="button"

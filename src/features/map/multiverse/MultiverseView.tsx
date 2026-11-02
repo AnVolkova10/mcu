@@ -24,7 +24,8 @@ export function MultiverseView({ group, universes, onPickDate }: MultiverseViewP
   const [hovered, setHovered] = useState<Picked | null>(null);
   const [picked, setPicked] = useState<Picked | null>(null);
   const playhead = group ? xOf(archive.groups.indexOf(group)) : null;
-  const dimmed = (s: Strand) => universes.length > 0 && !universes.includes(s.universe.id);
+  const visible = universes.length ? strands.filter((s) => universes.includes(s.universe.id)) : strands;
+  const card = picked && visible.includes(picked.strand) ? picked : null;
 
   return (
     <div className="absolute inset-0 overflow-x-auto overflow-y-hidden bg-[radial-gradient(ellipse_at_40%_45%,#10131f_0%,#030407_75%)]">
@@ -46,12 +47,12 @@ export function MultiverseView({ group, universes, onPickDate }: MultiverseViewP
             </g>
           ))}
 
-          {strands.map((strand) => {
+          {visible.map((strand) => {
             const main = !strand.branch;
             const strong = strand.universe.id === 'earth-616' && main;
             const color = strand.universe.color;
             return (
-              <g key={strand.id} className="transition-opacity duration-300" opacity={dimmed(strand) ? 0.12 : 1}>
+              <g key={strand.id}>
                 <path d={strand.path} fill="none" stroke={color} strokeWidth={strong ? 15 : 10} strokeOpacity={0.4} filter="url(#strand-glow)" />
                 <path d={strand.path} fill="none" stroke={color} strokeWidth={strong ? 3.4 : main ? 2.4 : 1.8} strokeLinecap="round" pathLength={1} className="[animation:strand-draw_1.8s_ease-out_both] [stroke-dasharray:1]" />
                 <path d={strand.path} fill="none" stroke="#ffffff" strokeOpacity={0.75} strokeWidth={1.3} strokeLinecap="round" strokeDasharray="2 58" className="[animation:strand-flow_7s_linear_infinite]" />
@@ -74,8 +75,8 @@ export function MultiverseView({ group, universes, onPickDate }: MultiverseViewP
             </g>
           )}
 
-          {strands.map((strand) => (
-            <g key={strand.id} opacity={dimmed(strand) ? 0.12 : 1}>
+          {visible.map((strand) => (
+            <g key={strand.id}>
               {strand.beads.map((bead) => {
                 const active = group ? bead.group === group : true;
                 const r = beadRadius(bead.events.length);
@@ -112,15 +113,15 @@ export function MultiverseView({ group, universes, onPickDate }: MultiverseViewP
         )}
       </div>
 
-      {picked && (
-        <div className={cn('pointer-events-none fixed bottom-28 right-3 top-[8.8rem] z-20 flex w-[calc(100%-1.5rem)] max-w-sm flex-col lg:top-[6.2rem]')}>
+      {card && (
+        <div className={cn('pointer-events-none fixed bottom-28 right-3 top-[8.8rem] z-20 flex w-[calc(100%-1.5rem)] max-w-sm flex-col sm:bottom-[calc(7rem+var(--spacing-footer))] lg:top-[6.2rem]')}>
           <PlaceCard
-            kicker={picked.strand.branch ? `Branch of ${picked.strand.universe.name}` : picked.strand.universe.name}
-            title={picked.bead.group.label}
-            subtitle={picked.strand.branch?.name ?? picked.strand.universe.label}
-            description={picked.strand.branch?.description}
-            color={picked.strand.universe.color}
-            events={picked.bead.events}
+            kicker={card.strand.branch ? `Branch of ${card.strand.universe.name}` : card.strand.universe.name}
+            title={card.bead.group.label}
+            subtitle={card.strand.branch?.name ?? card.strand.universe.label}
+            description={card.strand.branch?.description}
+            color={card.strand.universe.color}
+            events={card.bead.events}
             onClose={() => setPicked(null)}
           />
         </div>

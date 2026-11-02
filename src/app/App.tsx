@@ -3,6 +3,7 @@ import { TimelinePage } from '@/features/timeline/TimelinePage';
 import { PanelHost } from '@/features/archive/panels';
 import { CommandPalette } from '@/features/search/CommandPalette';
 import { ErrorBoundary } from '@/shared/ui/ErrorBoundary';
+import { Footer } from './Footer';
 import { Header } from './Header';
 import { consumeForwardPageChange, useRoute, type PageId } from './router';
 
@@ -55,13 +56,7 @@ export function App() {
           </Suspense>
         </ErrorBoundary>
       </main>
-      {page !== 'map' && (
-        <footer className="border-t border-line px-6 py-8 text-center text-xs leading-6 text-ink-faint">
-          Original timeline compiled by{' '}
-          <a href="https://aaronperris.com/mcu/" target="_blank" rel="noopener noreferrer" className="text-ink-muted underline decoration-line-strong hover:text-ink">Aaron Perris</a>
-          {' '}· Expanded and maintained by Ángela Curzi · Posters from TMDB · A fan project, not affiliated with Marvel or Disney.
-        </footer>
-      )}
+      <Footer page={page} />
       <PanelHost />
       <CommandPalette open={searchOpen} onOpenChange={setSearchOpen} />
     </div>

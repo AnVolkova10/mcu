@@ -36,7 +36,7 @@ export function YearRail({ groups }: YearRailProps) {
   const jump = (key: string) => document.getElementById(sectionId(key))?.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
   return (
-    <nav aria-label="Jump to a date" className="sticky top-44 hidden max-h-[calc(100dvh-12rem)] overflow-y-auto pr-2 xl:block">
+    <nav aria-label="Jump to a date" className="sticky top-44 hidden max-h-[calc(100dvh-12rem-var(--spacing-footer))] overflow-y-auto pr-2 xl:block">
       <ol className="space-y-1 border-l border-line">
         {byPeriod.map(({ period, items }) => {
           const open = period.id === activePeriod;
@@ -45,6 +45,7 @@ export function YearRail({ groups }: YearRailProps) {
               <button
                 type="button"
                 onClick={() => jump(items[0].group.key)}
+                title={period.range}
                 className={cn('-ml-px block border-l-2 py-1 pl-3 text-left text-xs font-bold uppercase tracking-[0.14em] transition', open ? 'border-accent text-ink' : 'border-transparent text-ink-faint hover:text-ink')}
               >
                 {period.label}

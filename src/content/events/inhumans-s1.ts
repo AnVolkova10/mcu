@@ -4,7 +4,7 @@ import { defineEvents } from '@/domain/define';
 export default defineEvents('inhumans-s1', [
   {
     id: 'inhuman-refugees-attilan',
-    date: { year: -2984, label: '5,000 years ago', order: 20 },
+    date: { year: -3000, approx: true, order: 20 },
     title: 'Inhuman refugees establish Attilan on the Moon',
     text: [
       'Fleeing persecution, a group of Inhumans founded a secret settlement on the Moon, which later became known as the city of Attilan.',

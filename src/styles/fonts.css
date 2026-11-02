@@ -33,15 +33,10 @@
   font-style: normal;
   font-display: swap;
 }
-/* Condensed display face with digits: years and big headlines. */
+/* Condensed caps-only display face: years and headlines. It sets small, so it is scaled up here once for every use. */
 @font-face {
-  font-family: 'Marvel Display';
-  src: url('../assets/fonts/marvel-display.otf') format('opentype');
+  font-family: 'Bebas Neue';
+  src: url('../assets/fonts/BebasNeue-Regular.woff2') format('woff2');
   font-display: swap;
-}
-/* Caps-only logotype face: short uppercase labels only (it has no digits). */
-@font-face {
-  font-family: 'Marvel Mark';
-  src: url('../assets/fonts/marvel-mark.ttf') format('truetype');
-  font-display: swap;
+  size-adjust: 108%;
 }

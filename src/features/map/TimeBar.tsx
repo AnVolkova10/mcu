@@ -103,6 +103,7 @@ export function TimeBar({ group, universes, onChange }: TimeBarProps) {
                 key={p.id}
                 type="button"
                 onClick={() => { setPlaying(false); onChange(groups[p.first]); }}
+                title={p.range}
                 className="absolute truncate text-[10px] font-semibold text-ink-faint transition hover:text-ink"
                 style={{ left: `${(p.first / (groups.length - 1)) * 100}%` }}
               >

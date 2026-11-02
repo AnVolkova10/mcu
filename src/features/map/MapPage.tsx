@@ -96,7 +96,7 @@ export function MapPage() {
   ) : null;
 
   return (
-    <div className="relative h-[calc(100dvh-105px)] overflow-hidden bg-[#030407] lg:h-[calc(100dvh-65px)]">
+    <div className="relative h-[calc(100dvh-105px)] overflow-hidden bg-[#030407] sm:h-[calc(100dvh-105px-var(--spacing-footer))] lg:h-[calc(100dvh-65px-var(--spacing-footer))]">
       <ErrorBoundary key={view}>
         <Suspense fallback={<div className="grid h-full place-items-center text-sm text-ink-faint">Loading the map…</div>}>
           {view === 'earth' && <EarthView places={places} selected={place} onSelect={selectPlace} trace={trace} stopIndex={stopIndex} />}

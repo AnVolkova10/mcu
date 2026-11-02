@@ -19,8 +19,10 @@
   --color-legacy: #8b8b96;
 
   --font-sans: 'URW DIN', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
-  --font-display: 'Marvel Display', 'URW DIN', ui-sans-serif, sans-serif;
-  --font-mark: 'Marvel Mark', 'Marvel Display', ui-sans-serif, sans-serif;
+  --font-display: 'Bebas Neue', 'URW DIN', ui-sans-serif, sans-serif;
+
+  /* Height of the fixed footer. */
+  --spacing-footer: 2rem;
 
   --animate-fade-in: fade-in 180ms ease-out;
   --animate-panel-in: panel-in 260ms cubic-bezier(0.22, 1, 0.36, 1);
