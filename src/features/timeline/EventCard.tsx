@@ -1,5 +1,5 @@
 import { memo, useMemo, useState } from 'react';
-import { Bookmark, Check, ChevronDown, Link2, MapPin, Skull } from 'lucide-react';
+import { Bookmark, Check, Link2, MapPin, Skull } from 'lucide-react';
 import type { ArchiveEvent } from '@/domain/archive';
 import { alpha, readableOn } from '@/domain/colors';
 import { eventHref } from '@/app/router';
@@ -10,7 +10,6 @@ import { UniverseBadge } from '@/shared/ui/UniverseBadge';
 import { cn } from '@/shared/lib/cn';
 
 const VISIBLE_CHARACTERS = 6;
-const LONG_PARAGRAPH = 420;
 
 interface EventCardProps {
   event: ArchiveEvent;
@@ -19,7 +18,6 @@ interface EventCardProps {
 }
 
 export const EventCard = memo(function EventCard({ event, showDate }: EventCardProps) {
-  const [expanded, setExpanded] = useState(false);
   const [showAllCast, setShowAllCast] = useState(false);
   const saved = useLibrary((s) => s.saved.includes(event.id));
   const read = useLibrary((s) => s.read.includes(event.id));
@@ -31,8 +29,6 @@ export const EventCard = memo(function EventCard({ event, showDate }: EventCardP
     () => new Map(event.deaths.flatMap((d) => (d.character ? [[d.character.id, { presumed: d.presumed }] as const] : []))),
     [event.deaths],
   );
-  const canExpand = event.text.length > 1 || event.text[0].length > LONG_PARAGRAPH;
-  const paragraphs = expanded ? event.text : event.text.slice(0, 1);
   const cast = showAllCast ? event.characters : event.characters.slice(0, VISIBLE_CHARACTERS);
   const legacy = event.status === 'legacy';
   const freeDeaths = event.deaths.filter((d) => !d.character);
@@ -88,23 +84,12 @@ export const EventCard = memo(function EventCard({ event, showDate }: EventCardP
       <h3 className="mt-3 text-lg font-bold leading-snug text-ink sm:text-xl">{event.title}</h3>
 
       <div className="mt-2.5 space-y-3 text-[15px] leading-7 text-ink-muted">
-        {paragraphs.map((p, i) => (
-          <p key={i} className={cn(!expanded && canExpand && 'line-clamp-4')}>
+        {event.text.map((p, i) => (
+          <p key={i}>
             <Markup text={p} deaths={deaths} />
           </p>
         ))}
       </div>
-      {canExpand && (
-        <button
-          type="button"
-          onClick={() => setExpanded((v) => !v)}
-          className="mt-2 inline-flex items-center gap-1 text-sm font-semibold text-ink hover:text-accent-strong"
-          aria-expanded={expanded}
-        >
-          {expanded ? 'Show less' : `Read more${event.text.length > 1 ? ` · ${event.text.length} parts` : ''}`}
-          <ChevronDown className={cn('size-4 transition', expanded && 'rotate-180')} />
-        </button>
-      )}
 
       {(event.characters.length > 0 || event.locations.length > 0 || event.stones.length > 0 || event.deaths.length > 0) && (
         <footer className="mt-5 flex flex-col gap-3 border-t border-line pt-4">
