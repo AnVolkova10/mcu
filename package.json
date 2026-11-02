@@ -13,7 +13,8 @@
     "content": "tsx --tsconfig tsconfig.app.json scripts/content.ts",
     "posters:sync": "tsx --tsconfig tsconfig.app.json scripts/posters.ts",
     "cast:sync": "tsx --tsconfig tsconfig.app.json scripts/cast.ts",
-    "portraits:sync": "tsx --tsconfig tsconfig.app.json scripts/portraits.ts"
+    "portraits:sync": "tsx --tsconfig tsconfig.app.json scripts/portraits.ts",
+    "research": "tsx --tsconfig tsconfig.app.json scripts/research.ts"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.3.1",

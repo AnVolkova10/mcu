@@ -4,6 +4,7 @@
  *   npm run content -- year 1994     list the events of a year with their `order`
  *   npm run content -- find "storm"  look up ids of characters, places, productions and factions
  *   npm run content -- status        audited vs legacy productions
+ *   npm run content -- unused        characters and places nothing points to
  */
 import { normalize } from '../src/domain/archive';
 import { characterList, characters, factionList, locationList, productionList, productions, stoneList, getCosmosNode, getLocation } from '../src/domain/catalog';
@@ -86,8 +87,23 @@ async function validate() {
     }
   }
 
+  const pointOf = (coords: readonly [number, number]) => coords.join();
+  const atPoint = new Map<string, string[]>();
+  for (const loc of locationList) if (loc.coords) atPoint.set(pointOf(loc.coords), [...(atPoint.get(pointOf(loc.coords)) ?? []), loc.id]);
+  for (const event of archive.events) {
+    if (!event.production.verified) continue;
+    if (!event.segment) err(`${event.id}: verified productions say which episode or part each event covers ("segment")`);
+    for (const { location } of event.locations) {
+      const others = location.coords ? atPoint.get(pointOf(location.coords))!.filter((id) => id !== location.id) : [];
+      if (others.length) err(`${event.id}: place "${location.id}" shares its exact point with ${others.join(', ')}; give each place its own`);
+    }
+  }
+  const shared = [...atPoint.values()].filter((ids) => ids.length > 1);
+  if (shared.length) hints.push(`${shared.length} map points are shared by ${shared.flat().length} places; they get fixed as each production is audited`);
+
   const audited = productionList.filter((p) => p.status === 'audited');
-  console.log(`Content: ${archive.events.length} events · ${productionList.length} productions (${audited.length} audited) · ${characterList.length} characters · ${locationList.length} places`);
+  const verified = productionList.filter((p) => p.verified);
+  console.log(`Content: ${archive.events.length} events · ${productionList.length} productions (${audited.length} audited, ${verified.length} verified) · ${characterList.length} characters · ${locationList.length} places`);
   if (hints.length) console.log(`Hints (${hints.length}, not errors):\n  ` + hints.slice(0, 15).join('\n  ') + (hints.length > 15 ? `\n  …and ${hints.length - 15} more` : ''));
   if (errors.length) {
     console.error(`\n✖ ${errors.length} error(s):\n  ` + errors.slice(0, 60).join('\n  ') + (errors.length > 60 ? `\n  …and ${errors.length - 60} more` : ''));
@@ -121,8 +137,17 @@ async function status() {
   for (const s of ['audited', 'legacy'] as const) {
     const list = productionList.filter((p) => p.status === s);
     console.log(`\n${s.toUpperCase()} (${list.length})`);
-    list.forEach((p) => console.log(`  ${p.id.padEnd(40)} ${String(archive.byProduction.get(p.id)?.length ?? 0).padStart(3)} events`));
+    list.forEach((p) => console.log(`  ${p.id.padEnd(40)} ${String(archive.byProduction.get(p.id)?.length ?? 0).padStart(3)} events${p.verified ? '  verified' : ''}`));
   }
+}
+
+// ── unused ────────────────────────────────────────────────────────────────────
+async function unused() {
+  const { archive } = await loadArchive();
+  const onJourneys = new Set<string>(stoneList.flatMap((stone) => stone.journey.map((stop) => stop.location)));
+  const show = (label: string, ids: string[]) => console.log(`${label} (${ids.length}):\n  ${ids.join('\n  ') || 'none'}`);
+  show('Characters in no event', characterList.filter((c) => !archive.byCharacter.has(c.id)).map((c) => c.id));
+  show('Places in no event or stone journey', locationList.filter((l) => !archive.byLocation.has(l.id) && !onJourneys.has(l.id)).map((l) => l.id));
 }
 
 const [command = 'validate', ...args] = process.argv.slice(2);
@@ -131,9 +156,10 @@ const commands: Record<string, () => unknown> = {
   year: () => year(args[0]),
   find: () => find(args.join(' ')),
   status,
+  unused,
 };
 if (!commands[command]) {
-  console.error(`Unknown command "${command}". Use: validate | year <year> | find <text> | status`);
+  console.error(`Unknown command "${command}". Use: validate | year <year> | find <text> | status | unused`);
   process.exit(1);
 }
 void (characters && productions);
