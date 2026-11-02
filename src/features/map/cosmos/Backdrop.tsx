@@ -103,9 +103,11 @@ function hazeTexture() {
   return texture;
 }
 
-/** Spiral galaxy around Earth: the disc that holds the deep-space worlds. */
+/**
+ * Spiral galaxy around Earth: the disc that holds the deep-space worlds.
+ * It stays still on purpose: turning this slowly is invisible, and only makes thousands of tiny stars shimmer as they cross pixels.
+ */
 export function Galaxy() {
-  const group = useRef<THREE.Group>(null);
   const hazeMaterial = useRef<THREE.MeshBasicMaterial>(null);
   const height = useThree((state) => state.size.height * state.viewport.dpr);
   const geometry = useMemo(starGeometry, []);
@@ -115,13 +117,12 @@ export function Galaxy() {
     [height],
   );
 
-  useFrame(({ camera }, delta) => {
-    if (group.current) group.current.rotation.y += delta * 0.006;
+  useFrame(({ camera }) => {
     if (hazeMaterial.current) hazeMaterial.current.opacity = THREE.MathUtils.smoothstep(camera.position.length(), HAZE_FADE[0], HAZE_FADE[1]);
   });
 
   return (
-    <group ref={group}>
+    <>
       {/* Drawn first and behind everything: as a real disc it would slice through every world on its plane. */}
       <mesh rotation={[-Math.PI / 2, 0, 0]} renderOrder={-1}>
         <circleGeometry args={[HAZE_RADIUS, 96]} />
@@ -130,7 +131,7 @@ export function Galaxy() {
       <points geometry={geometry}>
         <shaderMaterial args={[shader]} />
       </points>
-    </group>
+    </>
   );
 }
 

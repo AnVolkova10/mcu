@@ -38,6 +38,16 @@ const noise = /* glsl */ `
   }
 `;
 
+/**
+ * How much a surface faces away from the camera, 0 to 1. Rounding can push the dot product just past 1, and pow() of a
+ * negative base is NaN on real GPUs: one such pixel spreads through the bloom blur and blacks out the whole frame.
+ */
+const rim = /* glsl */ `
+  float rimOf(vec3 normal, vec3 view) {
+    return clamp(1.0 - dot(normal, view), 0.0, 1.0);
+  }
+`;
+
 /** Rocky or banded world, lit from one side, with a glowing rim. */
 export const planetFragment = /* glsl */ `
   uniform vec3 uColor;
@@ -48,6 +58,7 @@ export const planetFragment = /* glsl */ `
   varying vec3 vPos;
   varying vec3 vView;
   ${noise}
+  ${rim}
   void main() {
     vec3 p = normalize(vPos) * 2.4 + uSeed;
     float clouds = fbm(p + vec3(0.0, uTime * 0.015, 0.0));
@@ -56,7 +67,7 @@ export const planetFragment = /* glsl */ `
     vec3 surface = mix(uColor * 0.12, uColor * 0.85, smoothstep(0.32, 0.72, t));
     float light = clamp(dot(vNormal, normalize(vec3(-0.45, 0.5, 0.74))), 0.0, 1.0);
     surface *= 0.3 + 1.05 * light;
-    float rim = pow(1.0 - max(dot(vNormal, vView), 0.0), 3.0);
+    float rim = pow(rimOf(vNormal, vView), 3.0);
     gl_FragColor = vec4((surface + uColor * rim * 1.5) * uDim, 1.0);
   }
 `;
@@ -67,6 +78,7 @@ export const earthFragment = /* glsl */ `
   varying vec3 vNormal;
   varying vec3 vView;
   varying vec2 vUv;
+  ${rim}
   float gridLine(float value, float width) {
     return 1.0 - smoothstep(0.0, width, 0.5 - abs(fract(value) - 0.5));
   }
@@ -78,7 +90,7 @@ export const earthFragment = /* glsl */ `
     color += vec3(1.0, 0.16, 0.19) * coast * 1.2;
     float grid = max(gridLine(vUv.y * 12.0, 0.03), gridLine(vUv.x * 24.0, 0.03));
     color += vec3(0.25, 0.6, 1.0) * grid * 0.2;
-    float rim = pow(1.0 - max(dot(vNormal, vView), 0.0), 2.6);
+    float rim = pow(rimOf(vNormal, vView), 2.6);
     color += vec3(0.25, 0.6, 1.0) * rim * 1.8;
     gl_FragColor = vec4(color, 1.0);
   }
@@ -101,7 +113,7 @@ export const portalFragment = /* glsl */ `
   void main() {
     vec2 p = vUv * 2.0 - 1.0;
     float r = length(p);
-    float a = atan(p.y, p.x);
+    float a = r > 0.001 ? atan(p.y, p.x) : 0.0; // atan(0, 0) is undefined: same NaN risk as rimOf.
     float swirl = sin(a * 5.0 + r * 15.0 - uTime * 1.8) * 0.5 + 0.5;
     float inner = 1.0 - smoothstep(0.0, 0.92, r);
     vec3 color = mix(uColor * 0.5, vec3(1.0), pow(inner, 3.0)) + uColor * swirl * 0.55;

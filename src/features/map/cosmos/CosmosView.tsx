@@ -141,7 +141,7 @@ export function CosmosView({ filters, selected, onSelect, trace, stopIndex }: Co
       <Canvas dpr={[1, small() ? 1.25 : 1.75]} camera={{ position: ZONES[0].position, fov: 42, near: 0.1, far: 900 }} gl={{ antialias: true, powerPreference: 'high-performance' }} onPointerMissed={() => { if (selected) onSelect(null); }}>
         <color attach="background" args={['#02030a']} />
         <Suspense fallback={null}>
-          <Stars radius={320} depth={120} count={6000} factor={5} saturation={0.3} fade speed={0.35} />
+          <Stars radius={320} depth={120} count={6000} factor={6} saturation={0.3} fade speed={0} />
           <Galaxy />
           <EarthCore onClick={openEarth} onHover={setEarthHovered} />
           {earthHovered && <group position={[0, EARTH_RADIUS, 0]}><WorldLabel y={0}>Earth · open the globe</WorldLabel></group>}

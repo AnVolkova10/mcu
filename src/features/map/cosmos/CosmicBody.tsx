@@ -127,7 +127,7 @@ export const CosmicBody = memo(function CosmicBody({ body, activity, filtering, 
     if (!pulse.current) return;
     const t = (clock.elapsedTime % 2) / 2;
     pulse.current.scale.setScalar(1 + t * 0.9);
-    (pulse.current.material as THREE.MeshBasicMaterial).opacity = (1 - t) * 0.8;
+    (pulse.current.material as THREE.MeshBasicMaterial).opacity = Math.sin(t * Math.PI) * 0.8;
   });
 
   const highlight = selected || (filtering && activity > 0);
