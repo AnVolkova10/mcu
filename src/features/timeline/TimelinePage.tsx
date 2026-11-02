@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { ArrowUp, FilterX } from 'lucide-react';
 import { archive } from '@/content';
-import { matchesFilters } from '@/domain/filters';
+import { isFiltering, matchesFilters } from '@/domain/filters';
 import { productionList, universeList } from '@/domain/catalog';
 import { href, navigate, useRoute } from '@/app/router';
 import { foldLine, isWideScreen, useFitOnResize } from '@/shared/lib/useFitRows';
@@ -67,7 +67,7 @@ export function TimelinePage() {
             sections.map(({ group, events }) => <DateSection key={group.key} group={group} events={events} />)
           )}
         </div>
-        <YearRail groups={railGroups} />
+        <YearRail groups={railGroups} showAll={isFiltering(filters)} />
       </div>
 
       <BackToStart />
