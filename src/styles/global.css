@@ -23,11 +23,16 @@
 
   /* Height of the fixed footer. */
   --spacing-footer: 2rem;
+  /* Text under a poster, on the shelf of Movies & Series. */
+  --spacing-caption: 5.5rem;
 
   --animate-fade-in: fade-in 180ms ease-out;
   --animate-panel-in: panel-in 260ms cubic-bezier(0.22, 1, 0.36, 1);
   --animate-rise-in: rise-in 220ms cubic-bezier(0.22, 1, 0.36, 1);
 }
+
+/* Windows with height to spare. */
+@custom-variant tall (@media (min-height: 890px));
 
 @keyframes fade-in {
   from { opacity: 0; }

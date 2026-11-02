@@ -5,7 +5,7 @@ import type { PageId } from './router';
 /** One line, always in view. The full credits and the TMDB notice live on the Archive page. */
 export function Footer({ page }: { page: PageId }) {
   return (
-    <footer className={cn('fixed inset-x-0 bottom-0 z-30 h-footer border-t border-line bg-bg/90 text-[11px] text-ink-faint backdrop-blur-xl', page === 'map' && 'max-sm:hidden')}>
+    <footer id="site-footer" className={cn('fixed inset-x-0 bottom-0 z-30 h-footer border-t border-line bg-bg/90 text-[11px] text-ink-faint backdrop-blur-xl', page === 'map' && 'max-sm:hidden')}>
       <div className="mx-auto flex h-full max-w-7xl items-center justify-between gap-4 px-4 sm:px-6">
         <p className="min-w-0 truncate">
           <span className="max-sm:hidden">Original timeline by </span>

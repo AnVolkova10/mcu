@@ -4,12 +4,31 @@ import { archive } from '@/content';
 import { matchesFilters } from '@/domain/filters';
 import { productionList, universeList } from '@/domain/catalog';
 import { href, navigate, useRoute } from '@/app/router';
+import { foldLine, isWideScreen, useFitOnResize } from '@/shared/lib/useFitRows';
 import { DateSection } from './DateSection';
 import { FilterBar } from './FilterBar';
 import { YearRail } from './YearRail';
 import { useTimelineFilters } from './useTimelineFilters';
 
 const auditedCount = productionList.filter((p) => p.status === 'audited').length;
+
+/** More events than any screen fits above the fold. */
+const FIRST_EVENTS = 12;
+
+/** Space between events: leaving it under the last whole event puts the next one right behind the footer. */
+const EVENT_GAP = 16;
+
+/** Grows the opening just enough for the first screen to end on a whole event. */
+const fitHero = () => {
+  const hero = document.getElementById('hero');
+  if (!hero) return;
+  hero.style.minHeight = '';
+  if (!isWideScreen()) return;
+  const fold = foldLine() - EVENT_GAP;
+  const events = [...document.querySelectorAll('main article')].slice(0, FIRST_EVENTS);
+  const lastWhole = events.map((e) => e.getBoundingClientRect().bottom + window.scrollY).filter((bottom) => bottom <= fold).pop();
+  if (lastWhole) hero.style.minHeight = `${hero.offsetHeight + fold - lastWhole}px`;
+};
 
 export function TimelinePage() {
   const route = useRoute();
@@ -26,6 +45,7 @@ export function TimelinePage() {
   const railGroups = useMemo(() => sections.map((s) => ({ group: s.group, count: s.events.length })), [sections]);
 
   useFocusEvent(route.query.get('event'), sections.some((s) => s.events.some((e) => e.id === route.query.get('event'))));
+  useFitOnResize(fitHero);
 
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6">
@@ -83,28 +103,32 @@ function BackToStart() {
 
 function Hero() {
   return (
-    <section className="relative mt-6 overflow-hidden rounded-3xl border border-line bg-surface px-6 py-10 sm:px-10 sm:py-14">
+    <section id="hero" className="relative mt-4 flex items-center overflow-hidden rounded-3xl border border-line bg-surface px-6 py-8 sm:px-10">
       <div aria-hidden className="halftone absolute inset-0 [mask-image:linear-gradient(to_left,black,transparent_70%)]" />
       <div aria-hidden className="absolute -right-24 -top-24 size-96 rounded-full bg-accent/20 blur-3xl" />
-      <div className="relative max-w-3xl">
-        <p className="font-display text-xl tracking-[0.3em] text-accent-strong">Marvel multiverse</p>
-        <h1 className="mt-2 font-display text-6xl leading-[0.85] sm:text-8xl">The Chronology</h1>
-        <p className="mt-5 max-w-2xl text-base leading-7 text-ink-muted">
-          Every event in the year it happens inside the story — not when it was released. From the birth of the
-          Infinity Stones to the 40th century, across {universeList.length} realities.
-        </p>
-        <dl className="mt-8 flex flex-wrap gap-x-8 gap-y-3">
-          <Stat value={archive.events.length} label="events" />
-          <Stat value={productionList.length} label="movies & series" />
-          <Stat value={auditedCount} label="audited" />
-        </dl>
-        <div className="mt-6 flex flex-wrap gap-2">
-          {universeList.map((u) => (
-            <a key={u.id} href={href('timeline', { u: u.id })} className="inline-flex items-center gap-2 rounded-full border border-line px-3 py-1.5 text-xs font-semibold text-ink-muted transition hover:border-line-strong hover:text-ink">
-              <span className="size-2 rounded-full" style={{ backgroundColor: u.color }} />
-              {u.name} · {u.label}
-            </a>
-          ))}
+      <div className="relative flex w-full flex-col gap-6 lg:flex-row lg:items-end lg:justify-between lg:gap-12">
+        <div className="max-w-2xl">
+          <p className="font-display text-xl tracking-[0.3em] text-accent-strong">Marvel multiverse</p>
+          <h1 className="mt-2 font-display text-6xl leading-[0.85] sm:text-8xl">The Chronology</h1>
+          <p className="mt-4 text-base leading-7 text-ink-muted">
+            Every event in the year it happens inside the story — not when it was released. From the birth of the
+            Infinity Stones to the 40th century, across {universeList.length} realities.
+          </p>
+        </div>
+        <div className="shrink-0 lg:max-w-md">
+          <dl className="flex flex-wrap gap-x-8 gap-y-3 lg:justify-end">
+            <Stat value={archive.events.length} label="events" />
+            <Stat value={productionList.length} label="movies & series" />
+            <Stat value={auditedCount} label="audited" />
+          </dl>
+          <div className="mt-5 flex flex-wrap gap-2 lg:justify-end">
+            {universeList.map((u) => (
+              <a key={u.id} href={href('timeline', { u: u.id })} className="inline-flex items-center gap-2 rounded-full border border-line px-3 py-1.5 text-xs font-semibold text-ink-muted transition hover:border-line-strong hover:text-ink">
+                <span className="size-2 rounded-full" style={{ backgroundColor: u.color }} />
+                {u.name} · {u.label}
+              </a>
+            ))}
+          </div>
         </div>
       </div>
     </section>

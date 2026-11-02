@@ -5,6 +5,7 @@ import { characterList, locationList, productionList, universeList } from '@/dom
 import { periods } from '@/domain/dates';
 import { href } from '@/app/router';
 import { useLibrary } from '@/features/library/store';
+import { useFitRows } from '@/shared/lib/useFitRows';
 import { PageHeader } from '@/shared/ui/PageHeader';
 import { PanelLink } from './PanelLink';
 
@@ -26,6 +27,7 @@ const topCharacters = characterList
 export function ArchivePage() {
   const read = useLibrary((s) => s.read.length);
   const saved = useLibrary((s) => s.saved.length);
+  const firstScreen = useFitRows<HTMLDivElement>(0, 16, 1);
 
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6">
@@ -33,84 +35,71 @@ export function ArchivePage() {
         Your reading progress, how much of the chronology has been audited and where it all happens.
       </PageHeader>
 
-      <dl className="mt-8 grid grid-cols-2 gap-3 md:grid-cols-5">
-        <StatTile label="Events" value={totalEvents} />
-        <StatTile label="Movies & series" value={productionList.length} />
-        <StatTile label="Characters" value={characterList.length} />
-        <StatTile label="Places" value={locationList.length} />
-        <StatTile label="Realities" value={universeList.length} />
-      </dl>
+      <div ref={firstScreen} className="mt-5 flex flex-col gap-3 lg:min-h-[var(--row)]">
+        <dl className="grid grid-cols-2 gap-3 md:grid-cols-5">
+          <StatTile label="Events" value={totalEvents} />
+          <StatTile label="Movies & series" value={productionList.length} />
+          <StatTile label="Characters" value={characterList.length} />
+          <StatTile label="Places" value={locationList.length} />
+          <StatTile label="Realities" value={universeList.length} />
+        </dl>
 
-      <div className="mt-4 grid gap-4 lg:grid-cols-2">
-        <Card title="Your progress">
-          <Meter label="Events read" value={read} max={totalEvents} />
-          <p className="mt-4 text-sm text-ink-muted">
-            <a href={href('saved')} className="font-semibold text-ink underline decoration-line-strong underline-offset-4 hover:decoration-accent">
-              {saved} saved {saved === 1 ? 'event' : 'events'}
-            </a>{' '}
-            in this browser.
-          </p>
-        </Card>
-        <Card title="Audit coverage">
-          <Meter label="Movies & series audited" value={auditedProductions} max={productionList.length} />
-          <div className="mt-4">
-            <Meter label="Events audited" value={auditedEvents} max={totalEvents} />
-          </div>
-        </Card>
+        <div className="grid gap-3 lg:grid-cols-2">
+          <Card title="Your progress">
+            <Meter label="Events read" value={read} max={totalEvents} />
+            <p className="mt-3 text-sm text-ink-muted">
+              <a href={href('saved')} className="font-semibold text-ink underline decoration-line-strong underline-offset-4 hover:decoration-accent">
+                {saved} saved {saved === 1 ? 'event' : 'events'}
+              </a>{' '}
+              in this browser.
+            </p>
+          </Card>
+          <Card title="Audit coverage">
+            <Meter label="Movies & series audited" value={auditedProductions} max={productionList.length} />
+            <div className="mt-3">
+              <Meter label="Events audited" value={auditedEvents} max={totalEvents} />
+            </div>
+          </Card>
+        </div>
 
-        <Card title="Events by reality">
-          <ol className="space-y-3">
-            {byUniverse.map(({ universe, count }) => (
-              <li key={universe.id}>
-                <a href={href('timeline', { u: universe.id })} className="group block">
-                  <span className="text-sm font-medium text-ink-muted group-hover:text-ink">{universe.name} · {universe.label}</span>
-                  <Bar value={count} max={byUniverse[0].count} color={universe.color} />
-                </a>
-              </li>
-            ))}
-          </ol>
-        </Card>
+        <div className="grid flex-1 gap-3 lg:grid-cols-2">
+          <Card title="Events by reality">
+            <ol className="flex flex-1 flex-col justify-around gap-2">
+              {byUniverse.map(({ universe, count }) => (
+                <li key={universe.id}>
+                  <a href={href('timeline', { u: universe.id })} className="group block">
+                    <span className="text-sm font-medium text-ink-muted group-hover:text-ink">{universe.name} · {universe.label}</span>
+                    <Bar value={count} max={byUniverse[0].count} color={universe.color} />
+                  </a>
+                </li>
+              ))}
+            </ol>
+          </Card>
 
-        <Card title="Events by era">
-          <ol className="flex h-52 items-end gap-1 border-b border-line">
-            {byPeriod.map(({ period, count }) => (
-              <li key={period.id} className="h-full flex-1">
-                <a
-                  href={href('timeline', { period: period.id })}
-                  className="group flex h-full flex-col items-center justify-end gap-1 rounded-t-lg transition hover:bg-surface-2"
-                  title={`${period.label}, ${period.range}: ${count} events`}
-                >
-                  <span className="text-xs font-semibold tabular-nums text-ink-muted">{count}</span>
-                  <span
-                    className="w-6 rounded-t bg-accent transition group-hover:bg-accent-strong"
-                    style={{ height: `${(count / Math.max(...byPeriod.map((p) => p.count))) * 80}%` }}
-                  />
-                </a>
-              </li>
-            ))}
-          </ol>
-          <ol aria-hidden className="mt-1.5 flex gap-1">
-            {byPeriod.map(({ period }) => (
-              <li key={period.id} className="flex-1 text-center text-[11px] leading-tight text-ink-faint">
-                <span className="block font-semibold text-ink-muted">{period.label}</span>
-                {period.range}
-              </li>
-            ))}
-          </ol>
-        </Card>
-
-        <div className="lg:col-span-2">
-          <Card title="Most present characters">
-            <ol className="grid gap-x-10 gap-y-3 md:grid-cols-2">
-              {topCharacters.map(({ character, count }) => (
-                <li key={character.id}>
-                  <PanelLink panel={{ kind: 'character', id: character.id }} className="group block">
-                    <span className="flex items-center gap-2 text-sm font-medium text-ink-muted group-hover:text-ink">
-                      <span className="size-2 rounded-full" style={{ backgroundColor: character.color }} />
-                      {character.label}
-                    </span>
-                    <Bar value={count} max={topCharacters[0].count} color="var(--color-line-strong)" />
-                  </PanelLink>
+          <Card title="Events by era">
+            <ol className="flex min-h-40 flex-1 gap-1 border-b border-line">
+              {byPeriod.map(({ period, count }) => {
+                const share = count / Math.max(...byPeriod.map((p) => p.count));
+                return (
+                  <li key={period.id} className="flex flex-1">
+                    <a
+                      href={href('timeline', { period: period.id })}
+                      className="group flex flex-1 flex-col items-center gap-1 rounded-t-lg transition hover:bg-surface-2"
+                      title={`${period.label}, ${period.range}: ${count} events`}
+                    >
+                      <span aria-hidden style={{ flexGrow: 1 - share }} />
+                      <span className="text-xs font-semibold tabular-nums text-ink-muted">{count}</span>
+                      <span className="w-6 rounded-t bg-accent transition group-hover:bg-accent-strong" style={{ flexGrow: share }} />
+                    </a>
+                  </li>
+                );
+              })}
+            </ol>
+            <ol aria-hidden className="mt-1.5 flex gap-1">
+              {byPeriod.map(({ period }) => (
+                <li key={period.id} className="flex-1 text-center text-[11px] leading-tight text-ink-faint">
+                  <span className="block font-semibold text-ink-muted">{period.label}</span>
+                  {period.range}
                 </li>
               ))}
             </ol>
@@ -118,7 +107,25 @@ export function ArchivePage() {
         </div>
       </div>
 
-      <section className="mt-4 rounded-3xl border border-line bg-surface p-5 text-sm leading-7 text-ink-muted sm:p-7">
+      <div className="mt-4">
+        <Card title="Most present characters">
+          <ol className="grid gap-x-10 gap-y-3 md:grid-cols-2">
+            {topCharacters.map(({ character, count }) => (
+              <li key={character.id}>
+                <PanelLink panel={{ kind: 'character', id: character.id }} className="group block">
+                  <span className="flex items-center gap-2 text-sm font-medium text-ink-muted group-hover:text-ink">
+                    <span className="size-2 rounded-full" style={{ backgroundColor: character.color }} />
+                    {character.label}
+                  </span>
+                  <Bar value={count} max={topCharacters[0].count} color="var(--color-line-strong)" />
+                </PanelLink>
+              </li>
+            ))}
+          </ol>
+        </Card>
+      </div>
+
+      <section className="mt-3 rounded-3xl border border-line bg-surface p-5 text-sm leading-7 text-ink-muted sm:p-7">
         <h2 className="text-xl font-bold text-ink">Credits</h2>
         <p className="mt-2">
           Original timeline compiled by{' '}
@@ -145,8 +152,8 @@ export function ArchivePage() {
 
 function Card({ title, children }: { title: string; children: ReactNode }) {
   return (
-    <section className="h-full rounded-3xl border border-line bg-surface p-5 sm:p-7">
-      <h2 className="mb-5 text-xl font-bold text-ink">{title}</h2>
+    <section className="flex h-full flex-col rounded-3xl border border-line bg-surface p-5">
+      <h2 className="mb-3 text-lg font-bold text-ink">{title}</h2>
       {children}
     </section>
   );
@@ -154,9 +161,9 @@ function Card({ title, children }: { title: string; children: ReactNode }) {
 
 function StatTile({ label, value }: { label: string; value: number }) {
   return (
-    <div className="rounded-2xl border border-line bg-surface p-4">
+    <div className="rounded-2xl border border-line bg-surface px-4 py-3">
       <dt className="text-sm text-ink-muted">{label}</dt>
-      <dd className="mt-1 text-3xl font-bold text-ink">{value.toLocaleString('en-US')}</dd>
+      <dd className="text-2xl font-bold text-ink">{value.toLocaleString('en-US')}</dd>
     </div>
   );
 }

@@ -6,6 +6,7 @@ import { characterList, factionList, getFaction, getUniverse, type Character } f
 import type { CharacterRole, UniverseId } from '@/domain/schema';
 import { navigate, useRoute, withQuery } from '@/app/router';
 import { PanelLink } from '@/features/archive/PanelLink';
+import { useFitRows } from '@/shared/lib/useFitRows';
 import { Avatar } from '@/shared/ui/Avatar';
 import { Chip } from '@/shared/ui/Chip';
 import { PageHeader } from '@/shared/ui/PageHeader';
@@ -41,8 +42,12 @@ const rows: Row[] = characterList.map((character) => {
 
 const factionItems: SelectItem[] = factionList.map((f) => ({ id: f.id, label: f.name }));
 
+const CARD_HEIGHT = 87;
+const CARD_GAP = 12;
+
 export function CharactersPage() {
   const route = useRoute();
+  const roster = useFitRows<HTMLDivElement>(CARD_HEIGHT, CARD_GAP);
   const q = route.query.get('q') ?? '';
   const universes = useMemo(() => route.query.get('u')?.split(',').filter(Boolean) ?? [], [route.query]);
   const role = route.query.get('role');
@@ -77,7 +82,7 @@ export function CharactersPage() {
         One dossier per character, followed across every reality they appear in.
       </PageHeader>
 
-      <div className="sticky top-[104px] z-30 -mx-4 mt-6 space-y-2 border-b border-line/70 bg-bg/85 px-4 py-3 backdrop-blur-xl sm:-mx-6 sm:px-6 lg:top-16">
+      <div className="sticky top-[104px] z-30 -mx-4 mt-4 space-y-2 border-b border-line/70 bg-bg/85 px-4 py-3 backdrop-blur-xl sm:-mx-6 sm:px-6 lg:top-16">
         <div className="flex flex-wrap items-center gap-2">
           <SearchBox value={q} onChange={onSearch} placeholder="Search by name, alias or team…" label="Search characters" />
           <UniverseToggles selected={universes} onToggle={toggleUniverse} className="order-last w-full lg:order-none lg:w-auto" />
@@ -97,18 +102,20 @@ export function CharactersPage() {
         </div>
       </div>
 
-      <p className="mt-5 text-xs text-ink-faint">{visible.length} {visible.length === 1 ? 'character' : 'characters'}</p>
+      <p className="mt-3 text-xs text-ink-faint">{visible.length} {visible.length === 1 ? 'character' : 'characters'}</p>
 
-      {visible.length === 0 ? (
-        <div className="mt-4 rounded-3xl border border-dashed border-line p-12 text-center">
-          <Users className="mx-auto size-10 text-ink-faint" />
-          <p className="mt-4 text-ink-muted">No characters match these filters.</p>
-        </div>
-      ) : (
-        <ul className="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          {visible.map((row) => <CharacterCard key={row.character.id} row={row} universe={row.universes.find((u) => universes.includes(u)) ?? row.universes[0]} />)}
-        </ul>
-      )}
+      <div ref={roster} className="mt-2">
+        {visible.length === 0 ? (
+          <div className="rounded-3xl border border-dashed border-line p-12 text-center">
+            <Users className="mx-auto size-10 text-ink-faint" />
+            <p className="mt-4 text-ink-muted">No characters match these filters.</p>
+          </div>
+        ) : (
+          <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:auto-rows-[var(--row)] lg:grid-cols-3 xl:grid-cols-4">
+            {visible.map((row) => <CharacterCard key={row.character.id} row={row} universe={row.universes.find((u) => universes.includes(u)) ?? row.universes[0]} />)}
+          </ul>
+        )}
+      </div>
     </div>
   );
 }
