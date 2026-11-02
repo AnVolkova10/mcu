@@ -2,8 +2,8 @@
 import type { EventFile } from './define';
 import type { AuditStatus, DeathRef, EventDateInput, EventInput } from './schema';
 import {
-  getBranch, getCharacter, getLocation, getProduction, getStone, getUniverse,
-  type Branch, type Character, type Location, type Production, type Stone, type Universe,
+  getBranch, getCharacter, getLocation, getObject, getProduction, getStone, getUniverse,
+  type ArchiveObject, type Branch, type Character, type Location, type Production, type Stone, type Universe,
 } from './catalog';
 import { extractLinks, toPlainText } from './markup';
 import { formatDate, periodOf, sortKey, type Period } from './dates';
@@ -33,6 +33,9 @@ export interface ArchiveEvent {
   locations: { location: Location; note?: string }[];
   deaths: Death[];
   stones: Stone[];
+  objects: ArchiveObject[];
+  /** Where an object is in this event, when the event says so. */
+  objectPlaces: Map<string, Location[]>;
   status: AuditStatus;
   searchText: string;
 }
@@ -53,6 +56,7 @@ export interface Archive {
   byProduction: Map<string, ArchiveEvent[]>;
   byLocation: Map<string, ArchiveEvent[]>;
   byStone: Map<string, ArchiveEvent[]>;
+  byObject: Map<string, ArchiveEvent[]>;
   /** Broken references found while building. The validator turns them into errors; the app just skips them. */
   problems: string[];
 }
@@ -89,11 +93,16 @@ function resolveEvent(file: EventFile, input: EventInput, problems: string[]): A
 
   const characters = new Map<string, Character>();
   const stones = new Map<string, Stone>();
+  const objects = new Map<string, ArchiveObject>();
   for (const link of input.text.flatMap(extractLinks)) {
     if (link.kind === 'stone') {
       const stone = getStone(link.id);
       if (stone) stones.set(stone.id, stone);
       else problem(`unknown stone link "${link.id}"`);
+    } else if (link.kind === 'object') {
+      const object = getObject(link.id);
+      if (object) objects.set(object.id, object);
+      else problem(`unknown object link "${link.id}"`);
     } else {
       const character = getCharacter(link.id);
       if (character) characters.set(character.id, character);
@@ -118,6 +127,23 @@ function resolveEvent(file: EventFile, input: EventInput, problems: string[]): A
     return location ? [{ location, note }] : [];
   });
 
+  const objectPlaces = new Map<string, Location[]>();
+  for (const ref of input.objects ?? []) {
+    const [objectId, at] = typeof ref === 'string' ? [ref, undefined] : [ref.id, ref.at];
+    const object = getObject(objectId);
+    if (!object) {
+      problem(`unknown object "${objectId}"`);
+      continue;
+    }
+    objects.set(object.id, object);
+    if (!at) continue;
+    objectPlaces.set(object.id, at.flatMap((placeId) => {
+      const place = locations.find((l) => l.location.id === placeId);
+      if (!place) problem(`object "${objectId}" is at "${placeId}", which is not a place of this event`);
+      return place ? [place.location] : [];
+    }));
+  }
+
   const deaths = (input.deaths ?? []).flatMap((ref) => {
     const death = resolveDeath(ref);
     if (!death) problem(`unknown death reference ${JSON.stringify(ref)}`);
@@ -135,8 +161,9 @@ function resolveEvent(file: EventFile, input: EventInput, problems: string[]): A
 
   const plain = input.text.map(toPlainText).join(' ');
   const characterList = [...characters.values()];
+  const objectList = [...objects.values()];
   const searchText = normalize(
-    [input.title, plain, production.title, ...characterList.flatMap((c) => [c.name, c.alias ?? '']), ...locations.map((l) => `${l.location.name} ${l.location.place ?? ''} ${l.location.country ?? ''}`)].join(' '),
+    [input.title, plain, production.title, ...characterList.flatMap((c) => [c.name, c.alias ?? '']), ...objectList.map((o) => o.name), ...locations.map((l) => `${l.location.name} ${l.location.place ?? ''} ${l.location.country ?? ''}`)].join(' '),
   );
 
   return {
@@ -157,6 +184,8 @@ function resolveEvent(file: EventFile, input: EventInput, problems: string[]): A
     locations,
     deaths,
     stones: [...stones.values()],
+    objects: objectList,
+    objectPlaces,
     status: production.status,
     searchText,
   };
@@ -179,6 +208,7 @@ export function buildArchive(files: readonly EventFile[]): Archive {
   const byProduction = new Map<string, ArchiveEvent[]>();
   const byLocation = new Map<string, ArchiveEvent[]>();
   const byStone = new Map<string, ArchiveEvent[]>();
+  const byObject = new Map<string, ArchiveEvent[]>();
   const groups: DateGroup[] = [];
 
   for (const event of events) {
@@ -188,6 +218,7 @@ export function buildArchive(files: readonly EventFile[]): Archive {
     [event.production, ...event.alsoIn].forEach((p) => push(byProduction, p.id, event));
     event.locations.forEach((l) => push(byLocation, l.location.id, event));
     event.stones.forEach((s) => push(byStone, s.id, event));
+    event.objects.forEach((o) => push(byObject, o.id, event));
 
     const key = `${event.dateLabel}|${event.date.year}`;
     const last = groups[groups.length - 1];
@@ -195,5 +226,5 @@ export function buildArchive(files: readonly EventFile[]): Archive {
     else groups.push({ key, label: event.dateLabel, year: event.date.year, period: event.period, events: [event] });
   }
 
-  return { events, groups, eventById, byCharacter, byProduction, byLocation, byStone, problems };
+  return { events, groups, eventById, byCharacter, byProduction, byLocation, byStone, byObject, problems };
 }

@@ -2,12 +2,12 @@
  * Content toolbox. Read-only: it never writes files.
  *   npm run validate                 check every rule (also runs before each build)
  *   npm run content -- year 1994     list the events of a year with their `order`
- *   npm run content -- find "storm"  look up ids of characters, places, productions and factions
+ *   npm run content -- find "storm"  look up ids of characters, objects, places, productions and factions
  *   npm run content -- status        audited vs legacy productions
- *   npm run content -- unused        characters and places nothing points to
+ *   npm run content -- unused        characters, objects and places nothing points to
  */
 import { normalize } from '../src/domain/archive';
-import { characterList, characters, factionList, locationList, productionList, productions, stoneList, getCosmosNode, getLocation } from '../src/domain/catalog';
+import { characterList, characters, factionList, locationList, objectList, productionList, productions, stoneList, getCosmosNode, getLocation } from '../src/domain/catalog';
 import { toPlainText } from '../src/domain/markup';
 import { loadArchive } from './load-archive';
 
@@ -93,6 +93,10 @@ async function validate() {
   for (const event of archive.events) {
     if (!event.production.verified) continue;
     if (!event.segment) err(`${event.id}: verified productions say which episode or part each event covers ("segment")`);
+    if (event.text.some((p) => /==[^=]+==/.test(p))) err(`${event.id}: verified productions link objects as [Label](object:id) instead of ==marks==`);
+    for (const o of event.objects) {
+      if (o.kind !== 'material' && !event.objectPlaces.has(o.id)) err(`${event.id}: say where "${o.id}" is in this event, with objects: [{ id, at: [...] }]`);
+    }
     for (const { location } of event.locations) {
       const others = location.coords ? atPoint.get(pointOf(location.coords))!.filter((id) => id !== location.id) : [];
       if (others.length) err(`${event.id}: place "${location.id}" shares its exact point with ${others.join(', ')}; give each place its own`);
@@ -126,6 +130,7 @@ function find(term: string) {
   const q = normalize(term);
   const show = (label: string, rows: string[]) => rows.length && console.log(`${label}:\n  ${rows.slice(0, 12).join('\n  ')}`);
   show('Characters', characterList.filter((c) => normalize(`${c.id} ${c.name} ${c.alias ?? ''}`).includes(q)).map((c) => `${c.id}  (${c.name}${c.alias ? ' / ' + c.alias : ''})`));
+  show('Objects', objectList.filter((o) => normalize(`${o.id} ${o.name}`).includes(q)).map((o) => `${o.id}  (${o.name}, ${o.kindLabel})`));
   show('Places', locationList.filter((l) => normalize(`${l.id} ${l.name} ${l.place ?? ''} ${l.country ?? ''}`).includes(q)).map((l) => `${l.id}  (${[l.name, l.place, l.country].filter(Boolean).join(', ')})`));
   show('Productions', productionList.filter((p) => normalize(`${p.id} ${p.title}`).includes(q)).map((p) => `${p.id}  (${p.title}, ${p.status})`));
   show('Factions', factionList.filter((f) => normalize(`${f.id} ${f.name}`).includes(q)).map((f) => `${f.id}  (${f.name})`));
@@ -147,6 +152,7 @@ async function unused() {
   const onJourneys = new Set<string>(stoneList.flatMap((stone) => stone.journey.map((stop) => stop.location)));
   const show = (label: string, ids: string[]) => console.log(`${label} (${ids.length}):\n  ${ids.join('\n  ') || 'none'}`);
   show('Characters in no event', characterList.filter((c) => !archive.byCharacter.has(c.id)).map((c) => c.id));
+  show('Objects in no event', objectList.filter((o) => !archive.byObject.has(o.id)).map((o) => o.id));
   show('Places in no event or stone journey', locationList.filter((l) => !archive.byLocation.has(l.id) && !onJourneys.has(l.id)).map((l) => l.id));
 }
 

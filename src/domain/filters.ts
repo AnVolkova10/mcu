@@ -1,7 +1,7 @@
 import type { ArchiveEvent } from './archive';
 import { normalize } from './archive';
 import { characters } from './catalog';
-import type { CharacterId, FactionId, ProductionId, StoneId, UniverseId } from './schema';
+import type { CharacterId, FactionId, ObjectId, ProductionId, StoneId, UniverseId } from './schema';
 
 export interface TimelineFilters {
   q: string;
@@ -10,6 +10,7 @@ export interface TimelineFilters {
   faction?: FactionId;
   production?: ProductionId;
   stone?: StoneId;
+  object?: ObjectId;
   period?: string;
   deathsOnly: boolean;
   auditedOnly: boolean;
@@ -18,7 +19,7 @@ export interface TimelineFilters {
 export const emptyFilters: TimelineFilters = { q: '', universes: [], deathsOnly: false, auditedOnly: false };
 
 export const isFiltering = (f: TimelineFilters) =>
-  Boolean(f.q.trim() || f.universes.length || f.character || f.faction || f.production || f.stone || f.period || f.deathsOnly || f.auditedOnly);
+  Boolean(f.q.trim() || f.universes.length || f.character || f.faction || f.production || f.stone || f.object || f.period || f.deathsOnly || f.auditedOnly);
 
 /** Pure predicate: every filter compares ids, never free text inside markup. */
 export function matchesFilters(event: ArchiveEvent, f: TimelineFilters): boolean {
@@ -30,6 +31,7 @@ export function matchesFilters(event: ArchiveEvent, f: TimelineFilters): boolean
   }
   if (f.production && event.production.id !== f.production && !event.alsoIn.some((p) => p.id === f.production)) return false;
   if (f.stone && !event.stones.some((s) => s.id === f.stone)) return false;
+  if (f.object && !event.objects.some((o) => o.id === f.object)) return false;
   if (f.period && event.period.id !== f.period) return false;
   if (f.deathsOnly && !event.deaths.length) return false;
   if (f.auditedOnly && event.status !== 'audited') return false;
@@ -48,6 +50,7 @@ export function filtersFromQuery(query: URLSearchParams): TimelineFilters {
     faction: (query.get('faction') as FactionId | null) ?? undefined,
     production: (query.get('production') as ProductionId | null) ?? undefined,
     stone: (query.get('stone') as StoneId | null) ?? undefined,
+    object: (query.get('object') as ObjectId | null) ?? undefined,
     period: query.get('period') ?? undefined,
     deathsOnly: query.get('deaths') === '1',
     auditedOnly: query.get('audited') === '1',
@@ -62,6 +65,7 @@ export function filtersToQuery(f: TimelineFilters): Record<string, string | unde
     faction: f.faction,
     production: f.production,
     stone: f.stone,
+    object: f.object,
     period: f.period,
     deaths: f.deathsOnly ? '1' : undefined,
     audited: f.auditedOnly ? '1' : undefined,

@@ -3,11 +3,12 @@ import { SlidersHorizontal, X } from 'lucide-react';
 import type { TimelineFilters } from '@/domain/filters';
 import { isFiltering } from '@/domain/filters';
 import { periods } from '@/domain/dates';
-import { characterList, factionList, getCharacter, getFaction, getProduction, getStone, productionList, stoneList } from '@/domain/catalog';
+import { characterList, factionList, getCharacter, getFaction, getObject, getProduction, getStone, objectList, productionList, stoneList } from '@/domain/catalog';
 import type { UniverseId } from '@/domain/schema';
 import { Sheet } from '@/shared/ui/Sheet';
 import { SearchSelect, type SelectItem } from '@/shared/ui/SearchSelect';
 import { Chip } from '@/shared/ui/Chip';
+import { FilterButton } from '@/shared/ui/FilterButton';
 import { SearchBox } from '@/shared/ui/SearchBox';
 import { UniverseToggles } from '@/shared/ui/UniverseToggles';
 
@@ -21,6 +22,7 @@ interface FilterBarProps {
 const characterItems: SelectItem[] = characterList.map((c) => ({ id: c.id, label: c.label, hint: c.alias ? c.name : undefined, color: c.color }));
 const factionItems: SelectItem[] = factionList.map((f) => ({ id: f.id, label: f.name }));
 const productionItems: SelectItem[] = productionList.map((p) => ({ id: p.id, label: p.title, hint: p.released, color: p.color }));
+const objectItems: SelectItem[] = objectList.map((o) => ({ id: o.id, label: o.name, hint: o.kindLabel, color: o.color }));
 
 export function FilterBar({ filters, onChange, onClear, resultCount }: FilterBarProps) {
   const [panelOpen, setPanelOpen] = useState(false);
@@ -29,7 +31,7 @@ export function FilterBar({ filters, onChange, onClear, resultCount }: FilterBar
   const toggleUniverse = (id: UniverseId) =>
     onChange({ universes: filters.universes.includes(id) ? filters.universes.filter((u) => u !== id) : [...filters.universes, id] });
 
-  const extraCount = [filters.character, filters.faction, filters.production, filters.stone, filters.period].filter(Boolean).length + Number(filters.deathsOnly) + Number(filters.auditedOnly);
+  const extraCount = [filters.character, filters.faction, filters.production, filters.stone, filters.object, filters.period].filter(Boolean).length + Number(filters.deathsOnly) + Number(filters.auditedOnly);
 
   const active = useMemo(() => {
     const list: { key: string; label: string; color?: string; clear: Partial<TimelineFilters> }[] = [];
@@ -41,6 +43,8 @@ export function FilterBar({ filters, onChange, onClear, resultCount }: FilterBar
     if (production) list.push({ key: 'production', label: production.shortTitle, color: production.color, clear: { production: undefined } });
     const stone = getStone(filters.stone);
     if (stone) list.push({ key: 'stone', label: stone.name, color: stone.color, clear: { stone: undefined } });
+    const object = getObject(filters.object);
+    if (object) list.push({ key: 'object', label: object.name, color: object.color, clear: { object: undefined } });
     const period = periods.find((p) => p.id === filters.period);
     if (period) list.push({ key: 'period', label: period.label, clear: { period: undefined } });
     if (filters.deathsOnly) list.push({ key: 'deaths', label: 'With deaths', clear: { deathsOnly: false } });
@@ -53,15 +57,11 @@ export function FilterBar({ filters, onChange, onClear, resultCount }: FilterBar
       <div className="flex flex-wrap items-center gap-2">
         <SearchBox value={filters.q} onChange={onSearch} placeholder="Search events, characters, places…" label="Search the timeline" />
         <UniverseToggles selected={filters.universes} onToggle={toggleUniverse} className="order-last w-full lg:order-none lg:w-auto" />
-        <button
-          type="button"
-          onClick={() => setPanelOpen(true)}
-          className="inline-flex items-center gap-2 rounded-xl border border-line px-3 py-2 text-xs font-bold text-ink-muted transition hover:border-line-strong hover:text-ink"
-        >
+        <FilterButton onClick={() => setPanelOpen(true)}>
           <SlidersHorizontal className="size-4" />
           Filters
           {extraCount > 0 && <span className="rounded-full bg-accent px-1.5 text-[10px] text-white">{extraCount}</span>}
-        </button>
+        </FilterButton>
       </div>
 
       {(active.length > 0 || isFiltering(filters)) && (
@@ -85,9 +85,9 @@ export function FilterBar({ filters, onChange, onClear, resultCount }: FilterBar
             <legend className="mb-2 text-[11px] font-bold uppercase tracking-[0.16em] text-ink-faint">Era</legend>
             <div className="flex flex-wrap gap-1.5">
               {periods.map((p) => (
-                <Chip key={p.id} active={filters.period === p.id} onClick={() => onChange({ period: filters.period === p.id ? undefined : p.id })}>
-                  {p.label} <span className="ml-0.5 opacity-60">{p.range}</span>
-                </Chip>
+                <FilterButton key={p.id} active={filters.period === p.id} onClick={() => onChange({ period: filters.period === p.id ? undefined : p.id })}>
+                  {p.label} <span className="font-medium opacity-60">{p.range}</span>
+                </FilterButton>
               ))}
             </div>
           </fieldset>
@@ -98,12 +98,13 @@ export function FilterBar({ filters, onChange, onClear, resultCount }: FilterBar
             <legend className="mb-2 text-[11px] font-bold uppercase tracking-[0.16em] text-ink-faint">Infinity Stone</legend>
             <div className="flex flex-wrap gap-1.5">
               {stoneList.map((s) => (
-                <Chip key={s.id} color={s.color} active={filters.stone === s.id} onClick={() => onChange({ stone: filters.stone === s.id ? undefined : s.id })}>
+                <FilterButton key={s.id} color={s.color} active={filters.stone === s.id} onClick={() => onChange({ stone: filters.stone === s.id ? undefined : s.id })}>
                   {s.name.replace(' Stone', '')}
-                </Chip>
+                </FilterButton>
               ))}
             </div>
           </fieldset>
+          <SearchSelect label="Object" placeholder="Any object" items={objectItems} value={filters.object} onChange={(object) => onChange({ object: object as TimelineFilters['object'] })} />
           <div className="space-y-2">
             <Toggle checked={filters.deathsOnly} onChange={(deathsOnly) => onChange({ deathsOnly })} label="Only events with deaths" />
             <Toggle checked={filters.auditedOnly} onChange={(auditedOnly) => onChange({ auditedOnly })} label="Only audited productions" hint="Hide v1 content that has not been reviewed yet" />

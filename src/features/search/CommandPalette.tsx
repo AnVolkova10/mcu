@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import * as Dialog from '@radix-ui/react-dialog';
 import { Command } from 'cmdk';
-import { Clapperboard, Clock, Gem, MapPin, Search, UserRound } from 'lucide-react';
+import { Box, Clapperboard, Clock, Gem, MapPin, Search, UserRound } from 'lucide-react';
 import { archive } from '@/content';
 import { searchArchive, type SearchHit } from '@/domain/search';
 import { currentRoute, eventHref, navigate, openPanel } from '@/app/router';
@@ -11,6 +11,7 @@ const groups: { kind: SearchHit['kind']; label: string; icon: React.ReactNode }[
   { kind: 'event', label: 'Events', icon: <Clock className="size-4" /> },
   { kind: 'production', label: 'Movies & series', icon: <Clapperboard className="size-4" /> },
   { kind: 'stone', label: 'Infinity Stones', icon: <Gem className="size-4" /> },
+  { kind: 'object', label: 'Objects', icon: <Box className="size-4" /> },
   { kind: 'location', label: 'Places', icon: <MapPin className="size-4" /> },
 ];
 

@@ -1,6 +1,6 @@
 import { Fragment, type ReactNode } from 'react';
 import { parseMarkup, type Token } from '@/domain/markup';
-import { getCharacter, getStone } from '@/domain/catalog';
+import { getCharacter, getObject, getStone } from '@/domain/catalog';
 import { alpha, readableOn } from '@/domain/colors';
 import { cn } from '@/shared/lib/cn';
 import { PanelLink } from './PanelLink';
@@ -39,6 +39,21 @@ export function Markup({ text, deaths }: MarkupProps) {
                 className="rounded-md px-1.5 py-0.5 font-semibold transition hover:brightness-125"
                 style={{ color: readableOn(stone.color), backgroundColor: alpha(stone.color, 0.14), boxShadow: `inset 0 0 0 1px ${alpha(stone.color, 0.35)}` }}
                 title={`${stone.name} · ${stone.vessel}`}
+              >
+                {t.label}
+              </PanelLink>
+            );
+          }
+          if (t.target.kind === 'object') {
+            const object = getObject(t.target.id);
+            if (!object) return <Fragment key={i}>{t.label}</Fragment>;
+            return (
+              <PanelLink
+                key={i}
+                panel={{ kind: 'object', id: object.id }}
+                className="text-ink underline decoration-2 underline-offset-[5px] transition hover:decoration-[3px]"
+                style={{ textDecorationColor: object.color }}
+                title={`${object.name} · ${object.kindLabel}`}
               >
                 {t.label}
               </PanelLink>

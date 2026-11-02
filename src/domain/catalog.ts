@@ -9,9 +9,11 @@ import { portraits } from '@/content/catalog/portraits';
 import { locations as locationData } from '@/content/catalog/locations';
 import { cosmosNodes as cosmosData } from '@/content/catalog/cosmos';
 import { stones as stoneData } from '@/content/catalog/stones';
+import { objectKinds as objectKindData, objects as objectData } from '@/content/catalog/objects';
 import type {
   BranchId, BranchInput, CharacterCredit, CharacterId, CharacterInput, CharacterPortraits, CosmosNodeId, CosmosNodeInput, FactionId, FactionInput,
-  LocationId, LocationInput, ProductionId, ProductionInput, SeriesId, SeriesInput, StoneId, StoneInput, UniverseId, UniverseInput,
+  LocationId, LocationInput, ObjectId, ObjectInput, ObjectKindId, ObjectKindInput, ProductionId, ProductionInput, SeriesId, SeriesInput, StoneId, StoneInput,
+  UniverseId, UniverseInput,
 } from './schema';
 
 type WithId<I, T> = T & { readonly id: I };
@@ -29,6 +31,8 @@ export type Character = WithId<CharacterId, CharacterInput> & {
 export type Location = WithId<LocationId, LocationInput>;
 export type CosmosNode = WithId<CosmosNodeId, CosmosNodeInput>;
 export type Stone = WithId<StoneId, StoneInput>;
+export type ObjectKind = WithId<ObjectKindId, ObjectKindInput>;
+export type ArchiveObject = WithId<ObjectId, ObjectInput> & { readonly color: string; readonly kindLabel: string };
 
 function withIds<I extends string, T>(data: Record<I, T>): Record<I, WithId<I, T>> {
   return Object.fromEntries(Object.entries(data).map(([id, v]) => [id, { ...(v as T), id }])) as Record<I, WithId<I, T>>;
@@ -41,6 +45,7 @@ export const factions = withIds<FactionId, FactionInput>(factionData);
 export const locations = withIds<LocationId, LocationInput>(locationData);
 export const cosmosNodes = withIds<CosmosNodeId, CosmosNodeInput>(cosmosData);
 export const stones = withIds<StoneId, StoneInput>(stoneData);
+export const objectKinds = withIds<ObjectKindId, ObjectKindInput>(objectKindData);
 
 export const productions = Object.fromEntries(
   Object.entries(withIds<ProductionId, ProductionInput>(productionData)).map(([id, p]) => {
@@ -53,6 +58,10 @@ export const characters = Object.fromEntries(
   Object.entries(withIds<CharacterId, CharacterInput>(characterData)).map(([id, c]) => [id, { ...c, label: c.alias ?? c.name, portraits: portraits[c.id] ?? {}, credits: cast[c.id] ?? [] }]),
 ) as Record<CharacterId, Character>;
 
+export const objects = Object.fromEntries(
+  Object.entries(withIds<ObjectId, ObjectInput>(objectData)).map(([id, o]) => [id, { ...o, color: objectKinds[o.kind].color, kindLabel: objectKinds[o.kind].label }]),
+) as Record<ObjectId, ArchiveObject>;
+
 const lookup = <T>(table: Record<string, T>) => (id: string | undefined | null): T | undefined =>
   id && Object.prototype.hasOwnProperty.call(table, id) ? table[id] : undefined;
 
@@ -64,10 +73,13 @@ export const getCharacter = lookup<Character>(characters);
 export const getLocation = lookup<Location>(locations);
 export const getCosmosNode = lookup<CosmosNode>(cosmosNodes);
 export const getStone = lookup<Stone>(stones);
+export const getObject = lookup<ArchiveObject>(objects);
 
 export const universeList = Object.values(universes) as Universe[];
 export const productionList = Object.values(productions) as Production[];
 export const characterList = (Object.values(characters) as Character[]).sort((a, b) => a.label.localeCompare(b.label));
 export const factionList = (Object.values(factions) as Faction[]).sort((a, b) => a.name.localeCompare(b.name));
 export const stoneList = Object.values(stones) as Stone[];
+export const objectKindList = Object.values(objectKinds) as ObjectKind[];
+export const objectList = (Object.values(objects) as ArchiveObject[]).sort((a, b) => a.name.localeCompare(b.name));
 export const locationList = Object.values(locations) as Location[];

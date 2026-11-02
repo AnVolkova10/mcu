@@ -1,6 +1,6 @@
 /** Data for the three map views: which places are active for a date and reality, and traced journeys. */
 import type { Archive, ArchiveEvent, DateGroup } from './archive';
-import { getCharacter, getLocation, getStone, locationList, type CosmosNode, type Location, type Universe } from './catalog';
+import { getCharacter, getLocation, getObject, getStone, locationList, type CosmosNode, type Location, type Universe } from './catalog';
 import { formatDate } from './dates';
 
 export interface MapFilters {
@@ -59,7 +59,7 @@ export interface TraceStop {
 
 export interface Trace {
   ref: string;
-  kind: 'stone' | 'character';
+  kind: 'stone' | 'character' | 'object';
   name: string;
   color: string;
   stops: TraceStop[];
@@ -75,27 +75,38 @@ function stoneTrace(id: string): Trace | null {
   return { ref: `stone:${id}`, kind: 'stone', name: stone.name, color: stone.color, stops };
 }
 
+const eventStops = (event: ArchiveEvent, places: readonly Location[]) =>
+  places.map((location, i): TraceStop => ({
+    key: `${event.id}:${i}`,
+    date: event.dateLabel,
+    title: event.title,
+    detail: event.production.shortTitle,
+    location,
+    eventId: event.id,
+  }));
+
 function characterTrace(archive: Archive, id: string): Trace | null {
   const character = getCharacter(id);
   if (!character) return null;
-  const stops = (archive.byCharacter.get(id) ?? []).flatMap((event) =>
-    event.locations.map(({ location }, i): TraceStop => ({
-      key: `${event.id}:${i}`,
-      date: event.dateLabel,
-      title: event.title,
-      detail: event.production.shortTitle,
-      location,
-      eventId: event.id,
-    })),
-  );
+  const stops = (archive.byCharacter.get(id) ?? []).flatMap((event) => eventStops(event, event.locations.map((l) => l.location)));
   return { ref: `character:${id}`, kind: 'character', name: character.label, color: character.color, stops };
 }
 
-/** `ref` looks like "stone:space" or "character:thor". */
+function objectTrace(archive: Archive, id: string): Trace | null {
+  const object = getObject(id);
+  if (!object) return null;
+  // A material is everywhere at once, so it has no journey.
+  const events = object.kind === 'material' ? [] : archive.byObject.get(id) ?? [];
+  const stops = events.flatMap((event) => eventStops(event, event.objectPlaces.get(id) ?? event.locations.map((l) => l.location)));
+  return { ref: `object:${id}`, kind: 'object', name: object.name, color: object.color, stops };
+}
+
+/** `ref` looks like "stone:space", "character:thor" or "object:vibranium-ax". */
 export function buildTrace(archive: Archive, ref: string | null): Trace | null {
   if (!ref) return null;
   const [kind, id] = ref.split(':');
   if (kind === 'stone') return stoneTrace(id);
   if (kind === 'character') return characterTrace(archive, id);
+  if (kind === 'object') return objectTrace(archive, id);
   return null;
 }

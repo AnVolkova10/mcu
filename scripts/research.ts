@@ -7,10 +7,11 @@
  *   npm run research -- spider-noir-s1
  *   npm run research -- spider-noir-s1 "Ben Reilly" "Silvermane"     also read these pages
  *
- * Read-only for the content. Uses the token in .env.local (TMDB_READ_TOKEN). Run it once per production, by hand:
- * it goes slowly on purpose and it is not meant for automated tasks (see "Si la página se hace pública" in docs/ROADMAP.md).
+ * Read-only for the content. Uses the token in .env.local (TMDB_READ_TOKEN). A page already in the folder is not asked
+ * for again, so adding pages is cheap; delete the folder to read everything anew.
+ * It goes slowly on purpose and it is not meant for automated tasks (see "Si la página se hace pública" in docs/ROADMAP.md).
  */
-import { mkdirSync, rmSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { locationList, productionList, series, type Production } from '../src/domain/catalog';
 import { toPlainText } from '../src/domain/markup';
@@ -68,6 +69,7 @@ async function archiveReport(p: Production) {
   for (const event of archive.byProduction.get(p.id) ?? []) {
     lines.push('', `## ${event.dateLabel} · ${event.id}${event.segment ? ` · ${event.segment}` : ''}`, event.title, '', ...event.text.map(toPlainText), '');
     lines.push(`Characters: ${event.characters.map((c) => `${c.label} (${c.id})`).join(', ') || 'none'}`);
+    if (event.objects.length) lines.push(`Objects: ${event.objects.map((o) => `${o.name} (${o.id})`).join(', ')}`);
     for (const { location, note } of event.locations) {
       const others = location.coords ? atPoint.get(location.coords.join())!.filter((other) => other !== location.id) : [];
       lines.push(`Place: ${location.name} (${location.id})${note ? `, ${note}` : ''}${location.coords ? ` at ${location.coords.join(', ')}` : ''}${others.length ? `, same point as ${others.join(', ')}` : ''}`);
@@ -100,14 +102,15 @@ async function tmdbReport(p: Production) {
 }
 
 async function readPage(wiki: string, folder: string, page: string) {
+  const file = join(OUT, folder, `${page.replace(/[^\w'-]+/g, '_')}.txt`);
+  if (existsSync(file)) return true;
   const { parse } = await askWiki<Parsed>(wiki, { action: 'parse', page, prop: 'wikitext' });
   if (!parse) return false;
   mkdirSync(join(OUT, folder), { recursive: true });
-  writeFileSync(join(OUT, folder, `${page.replace(/[^\w'-]+/g, '_')}.txt`), `# ${parse.title}\n\n${parse.wikitext['*']}`);
+  writeFileSync(file, `# ${parse.title}\n\n${parse.wikitext['*']}`);
   return true;
 }
 
-rmSync(OUT, { recursive: true, force: true });
 mkdirSync(OUT, { recursive: true });
 
 writeFileSync(join(OUT, 'archive.md'), (await archiveReport(production)).join('\n'));

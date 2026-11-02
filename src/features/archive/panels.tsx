@@ -3,9 +3,10 @@ import { ArrowRight, MapPin } from 'lucide-react';
 import { archive } from '@/content';
 import { closePanel, href, readPanel, useRoute, type Panel } from '@/app/router';
 import {
-  getCharacter, getCosmosNode, getFaction, getLocation, getProduction, getStone, getUniverse, series,
-  type Character, type Location, type Production, type Stone,
+  getCharacter, getCosmosNode, getFaction, getLocation, getObject, getProduction, getStone, getUniverse, series,
+  type ArchiveObject, type Character, type Location, type Production, type Stone,
 } from '@/domain/catalog';
+import { buildTrace } from '@/domain/atlas';
 import { alpha, readableOn } from '@/domain/colors';
 import { formatDate } from '@/domain/dates';
 import type { CharacterCredit } from '@/domain/schema';
@@ -46,6 +47,10 @@ function resolve(panel: Panel): { title: string; color?: string; body: ReactNode
       const s = getStone(panel.id);
       return s ? { title: s.name, color: s.color, body: <StonePanel stone={s} /> } : null;
     }
+    case 'object': {
+      const o = getObject(panel.id);
+      return o ? { title: o.name, color: o.color, body: <ObjectPanel object={o} /> } : null;
+    }
     case 'location': {
       const l = getLocation(panel.id);
       return l ? { title: l.name, body: <LocationPanel location={l} /> } : null;
@@ -55,10 +60,10 @@ function resolve(panel: Panel): { title: string; color?: string; body: ReactNode
 
 // ── Building blocks ───────────────────────────────────────────────────────────
 
-function PanelHeader({ kicker, title, subtitle, color, visual }: { kicker: string; title: string; subtitle?: string; color?: string; visual?: ReactNode }) {
+function PanelHeader({ kicker, title, subtitle, color, visual, plain }: { kicker: string; title: string; subtitle?: string; color?: string; visual?: ReactNode; plain?: boolean }) {
   return (
     <div className="relative overflow-hidden border-b border-line px-6 pb-6 pt-12">
-      {color && <div aria-hidden className="absolute -right-16 -top-20 size-64 rounded-full blur-3xl" style={{ backgroundColor: alpha(color, 0.25) }} />}
+      {color && !plain && <div aria-hidden className="absolute -right-16 -top-20 size-64 rounded-full blur-3xl" style={{ backgroundColor: alpha(color, 0.25) }} />}
       <div className="relative flex items-end gap-4">
         {visual}
         <div className="min-w-0">
@@ -272,6 +277,31 @@ function StonePanel({ stone: s }: { stone: Stone }) {
       <TimelineButton to={href('map', { trace: `stone:${s.id}` }, ['earth'])} label="Trace this journey on the map" />
       <div className="mt-2"><TimelineButton to={href('timeline', { stone: s.id })} label={`Show every event with the ${s.name}`} /></div>
       <Section title={`Timeline events (${events.length})`}>
+        <EventList events={events} />
+      </Section>
+    </>
+  );
+}
+
+function ObjectPanel({ object: o }: { object: ArchiveObject }) {
+  const events = archive.byObject.get(o.id) ?? [];
+  const productions = new Set(events.flatMap((e) => [e.production.id, ...e.alsoIn.map((p) => p.id)]));
+  const stops = buildTrace(archive, `object:${o.id}`)?.stops.length ?? 0;
+  return (
+    <>
+      <PanelHeader kicker={o.kindLabel} title={o.name} color={o.color} plain />
+      <Section title="Dossier">
+        <p className="text-[15px] leading-7 text-ink-muted">{o.description}</p>
+      </Section>
+      <Facts items={[
+        ['Appearances', plural(events.length, 'event')],
+        ['Productions', productions.size],
+      ]} />
+      <TimelineButton to={href('timeline', { object: o.id })} label={`Show ${o.name} in the timeline`} />
+      {stops > 1 && (
+        <div className="mt-2"><TimelineButton to={href('map', { trace: `object:${o.id}` }, ['earth'])} label="Trace this journey on the map" /></div>
+      )}
+      <Section title="Chronological journey">
         <EventList events={events} />
       </Section>
     </>

@@ -2,11 +2,12 @@
  * Archive markup, used in event paragraphs:
  *   [Label](character-id)   link to a character dossier
  *   [Label](stone:space)    link to an Infinity Stone
+ *   [Label](object:vibranium-ax)  link to an object
  *   **bold**   *italic*   ==key item==
  *   \[ \] \* \= escape a literal character
  */
 
-export type LinkTarget = { kind: 'character' | 'stone'; id: string };
+export type LinkTarget = { kind: 'character' | 'stone' | 'object'; id: string };
 
 export type Token =
   | { type: 'text'; value: string }
@@ -17,7 +18,7 @@ type Delimiter = '**' | '*' | '==';
 
 const parseTarget = (raw: string): LinkTarget => {
   const [prefix, rest] = raw.includes(':') ? raw.split(':', 2) : ['', raw];
-  return prefix === 'stone' ? { kind: 'stone', id: rest } : { kind: 'character', id: raw.trim() };
+  return prefix === 'stone' || prefix === 'object' ? { kind: prefix, id: rest } : { kind: 'character', id: raw.trim() };
 };
 
 function parseSequence(src: string, start: number, close: Delimiter | null): { tokens: Token[]; end: number; closed: boolean } {

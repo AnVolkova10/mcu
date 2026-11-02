@@ -1,12 +1,13 @@
 import type { Archive } from './archive';
 import { normalize } from './archive';
-import { characterList, locationList, productionList, stoneList } from './catalog';
+import { characterList, locationList, objectList, productionList, stoneList } from './catalog';
 
 export type SearchHit =
   | { kind: 'event'; id: string; title: string; subtitle: string }
   | { kind: 'character'; id: string; title: string; subtitle: string; color: string }
   | { kind: 'production'; id: string; title: string; subtitle: string; color: string }
   | { kind: 'stone'; id: string; title: string; subtitle: string; color: string }
+  | { kind: 'object'; id: string; title: string; subtitle: string; color: string }
   | { kind: 'location'; id: string; title: string; subtitle: string };
 
 /** 3 = starts with the query, 2 = a word starts with it, 1 = contains it. */
@@ -37,6 +38,9 @@ export function searchArchive(archive: Archive, rawQuery: string): SearchHit[] {
     })),
     ...best(stoneList, (s) => `${s.name} ${s.vessel}`, q, 3).map((s): SearchHit => ({
       kind: 'stone', id: s.id, title: s.name, subtitle: s.vessel, color: s.color,
+    })),
+    ...best(objectList, (o) => o.name, q, 4).map((o): SearchHit => ({
+      kind: 'object', id: o.id, title: o.name, subtitle: o.kindLabel, color: o.color,
     })),
     ...best(locationList, (l) => `${l.name} ${l.place ?? ''} ${l.country ?? ''}`, q, 5).map((l): SearchHit => ({
       kind: 'location', id: l.id, title: l.name, subtitle: [l.place, l.country].filter(Boolean).join(', '),

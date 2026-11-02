@@ -10,8 +10,9 @@ import type { CharacterId } from '@/content/catalog/characters';
 import type { LocationId } from '@/content/catalog/locations';
 import type { CosmosNodeId } from '@/content/catalog/cosmos';
 import type { StoneId } from '@/content/catalog/stones';
+import type { ObjectId, ObjectKindId } from '@/content/catalog/objects';
 
-export type { UniverseId, BranchId, SeriesId, ProductionId, FactionId, CharacterId, LocationId, CosmosNodeId, StoneId };
+export type { UniverseId, BranchId, SeriesId, ProductionId, FactionId, CharacterId, LocationId, CosmosNodeId, StoneId, ObjectId, ObjectKindId };
 
 // ─── Universes ────────────────────────────────────────────────────────────────
 
@@ -185,6 +186,21 @@ export interface StoneInput {
   journey: readonly StoneStopInput[];
 }
 
+// ─── Objects ──────────────────────────────────────────────────────────────────
+
+export interface ObjectKindInput {
+  label: string;
+  /** Color of the underline in the text. Text contrast is computed automatically. */
+  color: string;
+}
+
+export interface ObjectInput {
+  name: string;
+  kind: ObjectKindId;
+  /** One or two sentences: what it is and where it ends up. */
+  description: string;
+}
+
 // ─── Events ───────────────────────────────────────────────────────────────────
 
 /**
@@ -204,6 +220,9 @@ export interface EventDateInput {
 
 export type LocationRef = LocationId | { id: LocationId; note?: string };
 
+/** `at`: the places of the event where the object is, in story order. Empty if it is only seen or mentioned. */
+export type ObjectRef = ObjectId | { id: ObjectId; at: readonly LocationId[] };
+
 export type DeathRef =
   | CharacterId
   | { character: CharacterId; presumed?: boolean; note?: string }
@@ -218,6 +237,7 @@ export interface EventInput {
    * Paragraphs written in the archive markup:
    *   [Label](character-id)   link to a character
    *   [Label](stone:space)    link to an Infinity Stone
+   *   [Label](object:vibranium-ax)  link to an object
    *   **bold**  *italic*  ==key item==
    */
   text: readonly string[];
@@ -231,6 +251,8 @@ export interface EventInput {
   locations?: readonly LocationRef[];
   deaths?: readonly DeathRef[];
   stones?: readonly StoneId[];
+  /** Objects not linked in the text, and where any object is in this event. */
+  objects?: readonly ObjectRef[];
   /** Other productions that also show this event. */
   alsoIn?: readonly ProductionId[];
 }

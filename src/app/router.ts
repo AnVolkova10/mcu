@@ -7,9 +7,9 @@
  */
 import { useSyncExternalStore } from 'react';
 
-export type PageId = 'timeline' | 'productions' | 'characters' | 'stones' | 'map' | 'saved' | 'archive';
+export type PageId = 'timeline' | 'productions' | 'characters' | 'stones' | 'objects' | 'map' | 'saved' | 'archive';
 
-export const pages: readonly PageId[] = ['timeline', 'productions', 'characters', 'stones', 'map', 'saved', 'archive'];
+export const pages: readonly PageId[] = ['timeline', 'productions', 'characters', 'stones', 'objects', 'map', 'saved', 'archive'];
 
 export interface Route {
   page: PageId;
@@ -18,7 +18,7 @@ export interface Route {
   query: URLSearchParams;
 }
 
-export type Panel = { kind: 'character' | 'production' | 'stone' | 'location'; id: string };
+export type Panel = { kind: 'character' | 'production' | 'stone' | 'object' | 'location'; id: string };
 
 const NAVIGATE_EVENT = 'archive:navigate';
 
@@ -108,7 +108,7 @@ export function readPanel(route: Route): Panel | null {
   const raw = route.query.get('open');
   if (!raw) return null;
   const [kind, id] = raw.split(':');
-  return ['character', 'production', 'stone', 'location'].includes(kind) && id ? { kind: kind as Panel['kind'], id } : null;
+  return ['character', 'production', 'stone', 'object', 'location'].includes(kind) && id ? { kind: kind as Panel['kind'], id } : null;
 }
 
 export const panelHref = (route: Route, panel: Panel) => withQuery(route, { open: `${panel.kind}:${panel.id}` });

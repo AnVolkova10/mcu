@@ -55,6 +55,8 @@ export function PlaceCard({ kicker, title, subtitle, color, description, events,
   );
 }
 
+const JOURNEY: Record<Trace['kind'], string> = { stone: 'Infinity Stone journey', character: 'Character journey', object: 'Object journey' };
+
 interface TraceCardProps {
   trace: Trace;
   stopIndex: number;
@@ -70,7 +72,7 @@ export function TraceCard({ trace, stopIndex, playing, onStop, onTogglePlay, onC
   const current = trace.stops[stopIndex];
   return (
     <CardShell
-      kicker={trace.kind === 'stone' ? 'Infinity Stone journey' : 'Character journey'}
+      kicker={JOURNEY[trace.kind]}
       title={trace.name}
       subtitle={`Stop ${stopIndex + 1} of ${trace.stops.length}`}
       color={trace.color}

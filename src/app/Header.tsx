@@ -10,6 +10,7 @@ const nav: { page: PageId; label: string }[] = [
   { page: 'productions', label: 'Movies & Series' },
   { page: 'characters', label: 'Characters' },
   { page: 'stones', label: 'Stones' },
+  { page: 'objects', label: 'Objects' },
   { page: 'map', label: 'Map' },
   { page: 'saved', label: 'Saved' },
   { page: 'archive', label: 'Archive' },
@@ -27,7 +28,7 @@ export function Header({ page, onSearch }: { page: PageId; onSearch: () => void 
           <img src={marvelLogo} alt="" className="h-7 w-auto" />
           <span className="font-display text-2xl tracking-[0.18em] text-ink">Archive</span>
         </a>
-        <nav aria-label="Main" className="no-scrollbar hidden flex-1 items-center gap-1 overflow-x-auto lg:flex">
+        <nav aria-label="Main" className="no-scrollbar hidden flex-1 items-center overflow-x-auto lg:flex xl:gap-1">
           {nav.map((item) => (
             <NavLink key={item.page} item={item} active={page === item.page} badge={item.page === 'saved' ? savedCount : 0} />
           ))}
@@ -40,7 +41,7 @@ export function Header({ page, onSearch }: { page: PageId; onSearch: () => void 
           >
             <Search className="size-4" />
             <span className="hidden sm:inline">Search</span>
-            <kbd className="hidden rounded border border-line px-1.5 text-[10px] text-ink-faint md:inline">Ctrl K</kbd>
+            <kbd className="hidden rounded border border-line px-1.5 text-[10px] text-ink-faint xl:inline">Ctrl K</kbd>
           </button>
           <a
             href={href('archive')}
@@ -69,7 +70,7 @@ function NavLink({ item, active, badge }: { item: { page: PageId; label: string 
       href={href(item.page)}
       aria-current={active ? 'page' : undefined}
       className={cn(
-        'relative shrink-0 rounded-full px-3 py-1.5 text-sm font-semibold transition',
+        'relative shrink-0 rounded-full px-3 py-1.5 text-sm font-semibold transition lg:px-2 xl:px-3',
         active ? 'bg-ink text-bg' : 'text-ink-muted hover:bg-surface-2 hover:text-ink',
       )}
     >

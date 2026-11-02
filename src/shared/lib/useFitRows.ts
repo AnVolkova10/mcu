@@ -21,15 +21,18 @@ export function useFitOnResize(fit: () => void) {
  * equal share of the room, so the next row starts right behind the footer.
  * Fits as many rows of at least `minRow` pixels as it can and writes their height to `--row`, for the grid's CSS to use.
  * Put the ref on something that is always mounted: the grid itself may leave when nothing matches.
+ * `heading`: what sits at the top of the element, above its first row, in pixels.
  */
-export function useFitRows<T extends HTMLElement>(minRow: number, gap: number, maxRows = Infinity) {
+export function useFitRows<T extends HTMLElement>(minRow: number, gap: number, maxRows = Infinity, heading = 0) {
   const ref = useRef<T>(null);
   const fit = useRef(() => {
     const element = ref.current;
     if (!element || !isWideScreen()) return;
-    const room = foldLine() - (element.getBoundingClientRect().top + window.scrollY);
+    const room = foldLine() - (element.getBoundingClientRect().top + window.scrollY) - heading;
     const rows = Math.min(maxRows, Math.max(1, Math.floor(room / (minRow + gap))));
-    element.style.setProperty('--row', `${Math.ceil(room / rows - gap)}px`);
+    // Rounding up hides the next row in the gap; without a gap it would push the last row under the footer.
+    const row = room / rows - gap;
+    element.style.setProperty('--row', `${gap ? Math.ceil(row) : row}px`);
   });
   useFitOnResize(fit.current);
   return ref;

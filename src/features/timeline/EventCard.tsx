@@ -6,6 +6,7 @@ import { eventHref } from '@/app/router';
 import { useLibrary } from '@/features/library/store';
 import { Markup } from '@/features/archive/Markup';
 import { PanelLink } from '@/features/archive/PanelLink';
+import { ObjectIcon } from '@/features/objects/ObjectIcon';
 import { UniverseBadge } from '@/shared/ui/UniverseBadge';
 import { cn } from '@/shared/lib/cn';
 
@@ -91,7 +92,7 @@ export const EventCard = memo(function EventCard({ event, showDate }: EventCardP
         ))}
       </div>
 
-      {(event.characters.length > 0 || event.locations.length > 0 || event.stones.length > 0 || event.deaths.length > 0) && (
+      {(event.characters.length > 0 || event.locations.length > 0 || event.stones.length > 0 || event.objects.length > 0 || event.deaths.length > 0) && (
         <footer className="mt-5 flex flex-col gap-3 border-t border-line pt-4">
           {event.characters.length > 0 && (
             <div className="flex flex-wrap items-center gap-1.5">
@@ -143,6 +144,21 @@ export const EventCard = memo(function EventCard({ event, showDate }: EventCardP
               </span>
             )}
           </div>
+          {event.objects.length > 0 && (
+            <div className="flex flex-wrap items-center gap-1.5">
+              {event.objects.map((o) => (
+                <PanelLink
+                  key={o.id}
+                  panel={{ kind: 'object', id: o.id }}
+                  className="inline-flex items-center gap-1.5 rounded-full px-2 py-1 text-xs font-semibold transition hover:brightness-125"
+                  style={{ color: readableOn(o.color), backgroundColor: alpha(o.color, 0.12) }}
+                >
+                  <ObjectIcon kind={o.kind} className="size-3.5" />
+                  {o.name}
+                </PanelLink>
+              ))}
+            </div>
+          )}
         </footer>
       )}
     </article>

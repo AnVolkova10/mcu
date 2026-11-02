@@ -10,6 +10,7 @@ import { consumeForwardPageChange, useRoute, type PageId } from './router';
 const ProductionsPage = lazy(() => import('@/features/productions/ProductionsPage').then((m) => ({ default: m.ProductionsPage })));
 const CharactersPage = lazy(() => import('@/features/characters/CharactersPage').then((m) => ({ default: m.CharactersPage })));
 const StonesPage = lazy(() => import('@/features/stones/StonesPage').then((m) => ({ default: m.StonesPage })));
+const ObjectsPage = lazy(() => import('@/features/objects/ObjectsPage').then((m) => ({ default: m.ObjectsPage })));
 const SavedPage = lazy(() => import('@/features/library/SavedPage').then((m) => ({ default: m.SavedPage })));
 const ArchivePage = lazy(() => import('@/features/archive/ArchivePage').then((m) => ({ default: m.ArchivePage })));
 const MapPage = lazy(() => import('@/features/map/MapPage').then((m) => ({ default: m.MapPage })));
@@ -26,6 +27,8 @@ function Page({ page }: { page: PageId }) {
       return <CharactersPage />;
     case 'stones':
       return <StonesPage />;
+    case 'objects':
+      return <ObjectsPage />;
     case 'archive':
       return <ArchivePage />;
     case 'map':
