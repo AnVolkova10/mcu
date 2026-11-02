@@ -23,10 +23,10 @@ Si una fecha o un dato de canon es dudoso, **preguntá a quien mantiene el proye
 | `npm run dev:phone` | Igual, pero visible desde el celu en la misma red: abrí la URL `Network` que imprime la terminal |
 | `npm run build` | Valida el contenido, chequea tipos y compila. Correlo antes de terminar cualquier tarea |
 | `npm run validate` | Solo valida el contenido (menos de 1 segundo) |
-| `npm run content -- find "storm"` | Busca IDs de personajes, lugares, producciones y facciones |
+| `npm run content -- find "storm"` | Busca IDs de personajes, objetos, lugares, producciones y facciones |
 | `npm run content -- year 1994` | Lista los eventos de un año con su `order` |
 | `npm run content -- status` | Producciones auditadas y legacy, con su cantidad de eventos y si están verificadas |
-| `npm run content -- unused` | Personajes y lugares que nada usa |
+| `npm run content -- unused` | Personajes, objetos y lugares que nada usa |
 | `npm run research -- spider-noir-s1` | Junta en `.research/` lo que dicen el archivo, TMDB y las wikis sobre una producción |
 | `npm run posters:sync` | Busca en TMDB los pósters que falten y guarda sus rutas en los catálogos |
 | `npm run cast:sync` | Busca en los créditos de TMDB quién interpreta a cada personaje en cada universo y lo guarda en `catalog/cast.ts` |
@@ -37,14 +37,14 @@ Si una fecha o un dato de canon es dudoso, **preguntá a quien mantiene el proye
 
 ```
 src/content/            ← DATOS (lo único que se edita para agregar contenido)
-  catalog/              universos, series, producciones, personajes, elenco e imágenes (generados), facciones, lugares, cosmos, gemas
+  catalog/              universos, series, producciones, personajes, elenco e imágenes (generados), facciones, lugares, cosmos, gemas, objetos
   events/<produccion>.ts  un archivo por película o temporada
 src/domain/             lógica pura sin React: esquema, fechas, sintaxis del texto, índices, filtros, búsqueda
-src/features/           pantallas y paneles (timeline, archive, library, search, map…)
+src/features/           pantallas y paneles (timeline, archive, library, search, objects, map…)
   map/earth/            globo con MapLibre GL
   map/cosmos/           escena 3D (React Three Fiber): la posición de cada mundo sale de `layout.ts`
   map/multiverse/       realidades y ramas en SVG
-src/shared/ui/          componentes reutilizables (Sheet, Chip, Avatar, SearchSelect…)
+src/shared/ui/          componentes reutilizables (Sheet, Chip, FilterButton, Avatar, SearchSelect…)
 src/app/                App, encabezado y router (la URL guarda página, filtros y panel abierto)
 scripts/content.ts      herramienta de contenido (validate / find / year / status / unused), solo lectura
 scripts/posters.ts      pósters desde TMDB
@@ -66,6 +66,7 @@ docs/ROADMAP.md         lo que falta
 - Los colores de personajes, universos y gemas vienen de los datos; la legibilidad del texto se calcula sola (`src/domain/colors.ts`). No agregues CSS por personaje.
 - Los pósters se muestran solo en la sección Movies & Series y en la ficha de cada producción. **Nunca en el timeline.**
 - Las imágenes de personajes se muestran solo en Characters y en la ficha del personaje. **Nunca en el timeline.** Se muestra al personaje, no al actor: hay una imagen por universo, y quien lo interpreta va en la lista "Played by". Si falta la imagen, se ve la foto del actor; si falta eso, las iniciales.
+- **Objetos:** lleva ficha lo que tiene nombre y cambia la trama o pasa de mano. En el texto, las personas van en color de letra y los objetos en color de subrayado, con un color por tipo (`objectKinds`, en `catalog/objects.ts`). Por ahora no llevan imagen. Cada evento dice dónde está cada objeto (`at`), para que su recorrido solo pase por lugares donde estuvo. En las producciones `verified` no se usa `==`.
 - `catalog/portraits.ts` y `catalog/cast.ts` se generan: no los edites a mano. Las imágenes son enlaces a Fandom y **nunca se copian al repo**. Tampoco corras `portraits:sync` ni `research` en tareas automáticas: leé "Si la página se hace pública" en `docs/ROADMAP.md`.
 - **No uses marvel.com como fuente.** Bloquea a los programas y los términos de Disney prohíben extraer contenido con scripts.
 - El estado del mapa vive en la URL (`src/features/map/useMapState.ts`), igual que el del resto de la app.
@@ -74,6 +75,7 @@ docs/ROADMAP.md         lo que falta
 - `three` está fijo en `0.186.1` porque `postprocessing` exige `<0.187`. No lo actualices sin revisar eso.
 - `.env.local` guarda el token de TMDB. Nunca lo imprimas, lo copies ni lo subas; la app publicada no lo necesita.
 - Estilos: tokens en `src/styles/global.css` (`bg`, `surface`, `ink`, `accent`…). Reutilizá `src/shared/ui` antes de crear componentes nuevos.
+- Todo lo que filtra u ordena es `FilterButton`, en todas las páginas: misma altura, radio y letra. `Chip` es una etiqueta, no un control.
 - Títulos: `font-display` es Bebas Neue, que solo tiene mayúsculas y una variante; no le pongas `font-bold`.
 - El footer es fijo y su alto es `--spacing-footer`. Todo lo que se fije abajo de la pantalla tiene que dejarle ese lugar.
 - En pantallas anchas la primera pantalla termina en una fila entera, a cualquier alto de ventana: las grillas usan `useFitRows` (`src/shared/lib/useFitRows.ts`) y el timeline ajusta su encabezado. Para probar un cambio de layout, mirá varios altos de ventana, no solo el tuyo.

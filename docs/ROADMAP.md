@@ -7,6 +7,7 @@
 - [x] **Bloque 3 · Mapa v3.** Tierra (globo con MapLibre GL), Cosmos (escena 3D de reinos, galaxia y dimensiones) y Multiverso (realidades y ramas, estilo TVA). Los recorridos de gemas y personajes se ven en el globo y en el Cosmos.
 - [x] **Pulido antes de publicar.** Footer fijo, Bebas Neue en los títulos, eras con nombre, fechas unificadas, dibujos en las gemas y mapa que muestra solo los hitos del universo elegido.
 - [x] **Imágenes de personajes.** Una imagen por universo, enlazada desde las wikis de Fandom, y lista "Played by" con actores y voces desde TMDB.
+- [x] **Objetos.** Ficha propia, subrayado por tipo en el texto, sección Objects, filtro en el timeline y recorrido en el mapa. Se llena con las auditorías.
 
 ## Contenido
 
@@ -58,7 +59,8 @@ Estado actual: `npm run content -- status` (28 producciones auditadas, 1 verific
 
 ## Ideas
 
-- **Artefactos legendarios.** Repetir la mecánica de las Gemas para reliquias del multiverso: el Cristal M'Kraan, los Diez Anillos, el Darkhold, el Libro de los Vishanti.
+- **Más objetos.** Llegan con cada auditoría. Faltan los grandes del multiverso: el Cristal M'Kraan, los Diez Anillos, el Darkhold, el Libro de los Vishanti.
+- **Imágenes de objetos.** Hoy no llevan. Las wikis tienen páginas de objetos con imagen, y valdrían los mismos límites que para los personajes.
 - **Versión de cómic en la ficha.** Sumar la imagen del cómic como una versión más del personaje, con Comic Vine: necesita una clave gratuita, es solo para uso no comercial y pide un link de vuelta. Sin medir: conviene contar cuántos personajes cubre antes de decidir.
 
 ## Si la página se hace pública

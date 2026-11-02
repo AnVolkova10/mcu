@@ -24,12 +24,13 @@ Está escrita para que cualquier agente la siga sin conocer el proyecto. Seguí 
 | Películas, temporadas, especiales | `src/content/catalog/productions.ts` |
 | Series (agrupan temporadas) | `src/content/catalog/series.ts` |
 | Personajes | `src/content/catalog/characters.ts` (orden alfabético por id) |
-| Imágenes y elenco de personajes | `src/content/catalog/portraits.ts` y `cast.ts` (los generan los scripts del paso 12, no se editan a mano) |
+| Imágenes y elenco de personajes | `src/content/catalog/portraits.ts` y `cast.ts` (los generan los scripts del paso 13, no se editan a mano) |
 | Facciones y equipos | `src/content/catalog/factions.ts` |
 | Lugares | `src/content/catalog/locations.ts` (orden alfabético por id) |
 | Universos y ramas | `src/content/catalog/universes.ts` |
 | Mundos del mapa Cosmos | `src/content/catalog/cosmos.ts` |
 | Gemas del Infinito y su recorrido | `src/content/catalog/stones.ts` |
+| Objetos y sus tipos | `src/content/catalog/objects.ts` (orden alfabético por id) |
 
 Los archivos de `events/` se cargan solos: **no hay que registrarlos en ningún índice.**
 
@@ -152,9 +153,10 @@ Si hay eventos con `order: 10` y `order: 20`, el tuyo va entre ellos con `order:
 |---|---|
 | `[Charles Xavier](charles-xavier)` | Enlace al personaje, en su color. **El texto entre corchetes puede ser cualquier nombre** (ej. `[el profesor](charles-xavier)`) |
 | `[el Teseracto](stone:space)` | Enlace a la gema (`space`, `reality`, `power`, `mind`, `time`, `soul`) |
+| `[el hacha](object:vibranium-ax)` | Enlace al objeto, subrayado del color de su tipo (paso 10) |
 | `**Team X**` | Negrita, para nombres sin ficha |
 | `*Chitauri*` | Cursiva |
-| `==el arma secreta==` | Subrayado rojo, para el objeto o dato clave del evento |
+| `==el arma secreta==` | Subrayado rojo heredado de la v1. No lo uses en contenido nuevo: si es un objeto, enlazalo (paso 10) |
 | `\*` `\[` `\]` | Escribe el carácter literal |
 
 Cada personaje enlazado en el texto queda asociado al evento solo; no hace falta listarlo aparte.
@@ -243,7 +245,33 @@ El mapa marca hitos: al elegir un universo, un mundo solo aparece si tiene event
 
 Para contar algo particular de ese lugar en este evento: `locations: [{ id: 'sanctum-sanctorum', note: "M'Kraan mystic alert" }]`.
 
-### Paso 10 · Muertes, gemas y extras (opcional)
+### Paso 10 · Objetos
+
+Un objeto lleva ficha si tiene nombre y **cambia la trama o pasa de mano**. Un arma de fondo, no. Buscalo con `npm run content -- find "ax"`. Si no existe, agregalo a `src/content/catalog/objects.ts` **en orden alfabético por id**:
+
+```ts
+  'vibranium-ax': {
+    name: 'Vibranium Ax',
+    kind: 'weapon',            // 'weapon' | 'relic' | 'technology' | 'material' | 'record'
+    description: 'Una o dos oraciones en inglés: qué es y dónde termina.',
+  },
+```
+
+En el texto se enlaza con `[Vibranium ax](object:vibranium-ax)`. Los colores de cada tipo están en `objectKinds`, en ese mismo archivo. Por ahora los objetos no llevan imagen.
+
+Cada evento dice **dónde está cada objeto**, para que su recorrido solo pase por lugares donde estuvo. Los lugares de `at` tienen que estar en `locations` y van en el orden del relato:
+
+```ts
+    locations: ['adwa-mountain-pass', 'birnin-zana-citadel'],
+    objects: [
+      { id: 'vibranium-ax', at: ['adwa-mountain-pass'] },   // estuvo solo en Adwa
+      { id: 'quantum-scanner', at: [] },                    // se lo nombra o se lo ve, pero no está ahí
+    ],
+```
+
+Un objeto que está en la escena y el texto no nombra también va en `objects`, y aparece al pie del evento. Un `material`, como el Vibranium, no tiene recorrido: se enlaza y listo.
+
+### Paso 11 · Muertes, gemas y extras (opcional)
 
 ```ts
     deaths: [
@@ -258,7 +286,7 @@ Para contar algo particular de ese lugar en este evento: `locations: [{ id: 'san
     branch: 'fox-original',               // solo si pasa en una rama (ver branches en universes.ts)
 ```
 
-### Paso 11 · El póster
+### Paso 12 · El póster
 
 ```bash
 npm run posters:sync
@@ -274,7 +302,7 @@ Al final el comando lista lo que no encontró. Si encontró otra película con e
 
 Las producciones sin póster usan un diseño de reemplazo automático: no se rompe nada.
 
-### Paso 12 · El elenco y las imágenes de los personajes nuevos
+### Paso 13 · El elenco y las imágenes de los personajes nuevos
 
 ```bash
 npm run cast:sync
@@ -296,7 +324,7 @@ Un personaje en dos universos tiene dos imágenes. Noir no tiene wiki de la seri
 | Falta un actor (acreditado con otro nombre) | `CREDITED_AS`, en `scripts/cast.ts` | `'id-del-personaje': ['Nombre del crédito'],` |
 | Sobra un actor (doble, versión de chico) | `NOT_THEM`, en `scripts/cast.ts` | `'id-del-personaje': ['Nombre del actor'],` |
 
-### Paso 13 · Validar y mirar
+### Paso 14 · Validar y mirar
 
 ```bash
 npm run validate     # contenido
@@ -353,5 +381,9 @@ Las producciones `legacy` vienen del HTML original. Para ponerla al día sin la 
 | `off-world places need a valid cosmos "node"` | Falta `node`, o el nodo no existe en `cosmos.ts` |
 | `verified productions say which episode or part each event covers` | Agregá `segment` al evento (solo producciones `verified`) |
 | `place "x" shares its exact point with y` | Dale a cada lugar su propia coordenada (solo producciones `verified`) |
+| `unknown object link "x"` | El ID no existe en `objects.ts`. Buscalo con `find` o crealo (paso 10) |
+| `verified productions link objects as [Label](object:id)` | Cambiá `==texto==` por un enlace al objeto, o sacá las marcas |
+| `say where "x" is in this event` | Agregá el objeto a `objects` con su `at` (paso 10) |
+| `object "x" is at "y", which is not a place of this event` | Sumá ese lugar a `locations` o corregí `at` |
 
 Si TypeScript marca en rojo un ID mientras escribís, es porque no existe: es el mismo aviso, antes de validar.

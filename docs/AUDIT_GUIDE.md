@@ -9,7 +9,7 @@ Para cargar contenido nuevo o corregir un dato suelto, la receta es `docs/CONTEN
 |---|---|---|
 | `legacy` | Viene del HTML de 2021. Puede tener datos imperfectos | Solo que no rompa nada |
 | `audited` | Cargada o revisada en la v2, con Gemini. **No está garantizada**: hay texto inventado | Estricto con fechas, lugares y personajes |
-| `verified: true` | Pasó esta auditoría, con la aprobación de quien mantiene el proyecto | Además, cada evento dice su `segment` y ningún lugar comparte su punto exacto del mapa |
+| `verified: true` | Pasó esta auditoría, con la aprobación de quien mantiene el proyecto | Además, cada evento dice su `segment`, ningún lugar comparte su punto exacto del mapa, los objetos van enlazados y dicen dónde están |
 
 Nunca pongas `verified: true` sin esa aprobación. El orden de trabajo está en `docs/ROADMAP.md`.
 
@@ -22,11 +22,13 @@ npm run research -- spider-noir-s1
 npm run research -- spider-noir-s1 "Ben Reilly" "Silvermane"    # suma páginas de personajes o lugares
 ```
 
-Deja todo en `.research/<produccion>/`, que git ignora: lo que dice hoy el archivo (`archive.md`), TMDB (`tmdb.md`) y las wikis (`wiki/`). Corrélo una vez por producción y a mano: va lento a propósito.
+Deja todo en `.research/<produccion>/`, que git ignora: lo que dice hoy el archivo (`archive.md`), TMDB (`tmdb.md`) y las wikis (`wiki/`). Corrélo a mano: va lento a propósito, y si lo repetís solo pide las páginas que faltan.
+
+Las páginas de episodios tienen una sección `Items`. Pedí también la página de cada objeto: ahí aparecen conexiones entre episodios. En *Eyes of Wakanda*, el colgante que Nkati pierde en el E1 es el que B'Kai busca en el E2.
 
 **2. Compará cada dato contra las fuentes** (sección 2). Partí de que el texto de la v2 puede estar inventado, aunque suene convincente. En *Eyes of Wakanda* no existían la lanza de Memnon, el laberinto de Cnosos ni la Valquiria de las Nornas.
 
-**3. Presentá una ficha y esperá la aprobación.** No toques el repo antes. La ficha va en el chat y tiene, por evento: fecha y de dónde sale, lugares en orden, personajes, muertes, qué cambia respecto de la v2 y qué es nuevo. Al final, las dudas numeradas, con tu recomendación en cada una. Si quien mantiene el proyecto no recuerda un dato, decidí con las fuentes, decí qué elegiste y anotá las dudas que queden sin resolver.
+**3. Presentá una ficha y esperá la aprobación.** No toques el repo antes. La ficha va en el chat y tiene, por evento: fecha y de dónde sale, lugares en orden, personajes, objetos y dónde está cada uno, muertes, qué cambia respecto de la v2 y qué es nuevo. Al final, las dudas numeradas, con tu recomendación en cada una. Si quien mantiene el proyecto no recuerda un dato, decidí con las fuentes, decí qué elegiste y anotá las dudas que queden sin resolver.
 
 **4. Aplicá** lo aprobado, con las recetas de `docs/CONTENT_GUIDE.md`, y agregá `verified: true` en `productions.ts`.
 
@@ -49,6 +51,7 @@ Abrí la app y mirá: la producción filtrada en el timeline, las fichas de cada
 1. **Lo que dice la pantalla:** carteles de fecha y lugar, y diálogos. Los transcripts de las wikis son la mejor forma de leerlos.
 2. **Wikipedia y fuentes oficiales**, incluidas entrevistas a quienes hicieron la obra. **marvel.com no se usa.**
 3. **Wikis de fans.** Marvel Database y la wiki de cada universo se equivocan y se contradicen: citan el episodio cuando pueden, y esa cita es lo que vale.
+4. **Recaps escena por escena,** como los de Laughing Place. Cuando no hay transcript son la mejor segunda fuente: cuentan lo que se ve, aunque no siempre identifican los objetos. Una reseña suelta no alcanza: una ponía el Reino del León en el mar Egeo, y las dos wikis dicen océano Índico.
 
 Un dato que no aparece en dos fuentes es una duda y va a la ficha. Si la memoria de quien mantiene el proyecto choca con una fuente, gana esa memoria. **Nunca completes un dato con lo que suena probable.**
 
@@ -85,6 +88,14 @@ Un dato que no aparece en dos fuentes es una duda y va a la ficha. Si la memoria
 - Un mismo nombre puede ser dos personas: Jorani es Iron Fist, pero no la ficha `iron-fist`, que es Danny Rand. Enlazar la ficha equivocada también le suma un crédito falso.
 - Revisá `status` contra la obra. En la v2 había muertes que nadie vio en pantalla.
 
+### Objetos
+
+- **Ficha para todo objeto con nombre que cambia la trama o pasa de mano.** Lo demás se queda en el texto, sin marca.
+- Tipos: `weapon`, `relic`, `technology`, `material` y `record`. Si ninguno encaja, elegí el más cercano y decilo en la ficha: el Caballo de Troya es un vehículo y quedó como `weapon`.
+- **El recorrido sale de `at`: solo los lugares donde estuvo.** Si solo se lo ve o se lo nombra, va con `at: []`. En 2396 el hacha aparece en el escáner, pero no está en Birnin Zana.
+- **Seguí cada objeto hasta su última escena.** Si alguien se lo lleva, el recorrido sigue: el collar de Tetis no se queda en Troya, B'Kai lo tiene en la mano al final del episodio, en Wakanda.
+- Los `==subrayados==` de la v2 se reemplazan: si es un objeto, se enlaza; si no, se saca la marca.
+
 ### Texto
 
 - De 2 a 4 oraciones sobrias en inglés. Solo lo que pasa, sin adjetivos épicos ni interpretación.
@@ -99,7 +110,7 @@ Un dato que no aparece en dos fuentes es una duda y va a la ficha. Si la memoria
 ## 4. Checklist final
 
 - [ ] Cada dato de la ficha salió de una fuente, y lo aprobó quien mantiene el proyecto.
-- [ ] Cada evento tiene `segment`, fecha, lugares en orden y sus personajes.
+- [ ] Cada evento tiene `segment`, fecha, lugares en orden, sus personajes y sus objetos con `at`.
 - [ ] Ningún `id` existente cambió.
 - [ ] Lo inventado se borró, y `npm run content -- unused` no muestra nada nuevo.
 - [ ] Miraste en la app el timeline, las fichas, las imágenes, el mapa y un recorrido, en PC y en celu.
