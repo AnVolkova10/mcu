@@ -7,6 +7,7 @@ Live at **https://anvolkova10.github.io/mcu/**.
 ```bash
 npm install
 npm run dev        # http://localhost:5173/mcu/
+npm run dev:phone  # same, reachable from a phone on the same network
 npm run build      # validates the content, type-checks and builds
 ```
 

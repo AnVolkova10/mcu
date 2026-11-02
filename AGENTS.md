@@ -18,6 +18,7 @@ Si una fecha o un dato de canon es dudoso, **preguntá a quien mantiene el proye
 | Comando | Para qué |
 |---|---|
 | `npm run dev` | App local en http://localhost:5173/mcu/ |
+| `npm run dev:phone` | Igual, pero visible desde el celu en la misma red: abrí la URL `Network` que imprime la terminal |
 | `npm run build` | Valida el contenido, chequea tipos y compila. Correlo antes de terminar cualquier tarea |
 | `npm run validate` | Solo valida el contenido (menos de 1 segundo) |
 | `npm run content -- find "storm"` | Busca IDs de personajes, lugares, producciones y facciones |
