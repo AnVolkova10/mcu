@@ -81,6 +81,7 @@ export function MapPage() {
       kicker="Place on Earth"
       title={selectedPlace.name}
       subtitle={[selectedPlace.place, selectedPlace.country].filter(Boolean).join(', ')}
+      description={selectedPlace.approximate ? 'The story only names this area, so the exact spot is unknown.' : undefined}
       events={eventsHere(selectedPlace.id)}
       onClose={() => selectPlace(null)}
     />

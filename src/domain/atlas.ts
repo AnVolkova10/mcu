@@ -79,8 +79,8 @@ function characterTrace(archive: Archive, id: string): Trace | null {
   const character = getCharacter(id);
   if (!character) return null;
   const stops = (archive.byCharacter.get(id) ?? []).flatMap((event) =>
-    event.locations.slice(0, 1).map(({ location }): TraceStop => ({
-      key: event.id,
+    event.locations.map(({ location }, i): TraceStop => ({
+      key: `${event.id}:${i}`,
       date: event.dateLabel,
       title: event.title,
       detail: event.production.shortTitle,

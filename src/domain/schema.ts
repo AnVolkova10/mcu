@@ -91,6 +91,8 @@ export interface ProductionInput {
   tmdbId?: number;
   /** Filled by `npm run posters:sync`. Path on image.tmdb.org, e.g. "/abc123.jpg". */
   poster?: string;
+  /** Passed the audit of docs/AUDIT_GUIDE.md, and the validator holds it to its rules. */
+  verified?: boolean;
 }
 
 // ─── Characters & factions ────────────────────────────────────────────────────
@@ -144,6 +146,8 @@ export interface LocationInput {
   kind: LocationKind;
   /** [latitude, longitude]. Required for kind "earth". */
   coords?: readonly [number, number];
+  /** The story only names an area: the pin marks a zone, not an exact spot. */
+  approximate?: boolean;
   /** Node of the Cosmos map. Required for every kind except "earth". */
   node?: CosmosNodeId;
 }

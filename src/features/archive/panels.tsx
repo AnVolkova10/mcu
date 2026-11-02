@@ -286,7 +286,7 @@ function LocationPanel({ location: l }: { location: Location }) {
       <PanelHeader kicker={l.kind === 'earth' ? 'Place on Earth' : node ? node.name : 'Off-world'} title={l.name} subtitle={[l.place, l.country].filter(Boolean).join(', ')} color={node?.color} />
       <Facts items={[
         ['Where', l.kind === 'earth' ? 'Earth' : l.kind === 'orbit' ? 'Earth orbit' : l.kind === 'dimension' ? 'Another dimension' : 'Deep space'],
-        ['Coordinates', l.coords ? `${l.coords[0].toFixed(2)}°, ${l.coords[1].toFixed(2)}°` : '—'],
+        ['Coordinates', l.approximate ? 'Area only, exact spot unknown' : l.coords ? `${l.coords[0].toFixed(2)}°, ${l.coords[1].toFixed(2)}°` : '—'],
       ]} />
       <TimelineButton
         to={l.kind === 'earth' ? href('map', { place: l.id }, ['earth']) : href('map', { node: l.node }, ['cosmos'])}

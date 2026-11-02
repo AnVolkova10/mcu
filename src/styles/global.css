@@ -128,6 +128,12 @@
   background: var(--pulse);
   box-shadow: 0 0 0 2px #fff, 0 0 18px var(--pulse);
 }
+.atlas-pulse-zone {
+  width: 24px;
+  height: 24px;
+  background: color-mix(in srgb, var(--pulse) 22%, transparent);
+  box-shadow: 0 0 0 1.5px var(--pulse), 0 0 18px var(--pulse);
+}
 .atlas-pulse::after {
   content: '';
   position: absolute;

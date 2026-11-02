@@ -20,6 +20,8 @@ setWorkerUrl(mapWorkerUrl);
 
 const TRANSPARENT = 'rgba(0,0,0,0)';
 const REVEAL_MS = 1100;
+/** Places known only as an area: a hollow ring instead of a solid dot. */
+const IS_ZONE: ExpressionSpecification = ['==', ['get', 'zone'], 1];
 const toLngLat = ([lat, lng]: readonly [number, number]): LngLat => [lng, lat];
 
 /** On phones the card is a bottom sheet: the subject of the camera rises into the free space above it. */
@@ -30,7 +32,7 @@ const placeFeatures = (places: Place[]): GeoJSON.FeatureCollection => ({
   features: places.map(({ location, events, universe }) => ({
     type: 'Feature',
     geometry: { type: 'Point', coordinates: toLngLat(location.coords!) },
-    properties: { id: location.id, name: location.name, count: events.length, color: universe.color },
+    properties: { id: location.id, name: location.name, count: events.length, color: universe.color, zone: location.approximate ? 1 : 0 },
   })),
 });
 
@@ -105,8 +107,9 @@ export function EarthView({ places, selected, onSelect, trace, stopIndex }: Eart
         source: 'places',
         paint: {
           'circle-color': ['coalesce', ['get', 'color'], '#101014'],
-          'circle-radius': ['case', ['has', 'point_count'], ['interpolate', ['linear'], ['get', 'point_count'], 2, 11, 40, 20], 5],
-          'circle-stroke-color': ['case', ['has', 'point_count'], '#ffffff', '#0b0b0e'],
+          'circle-radius': ['case', ['has', 'point_count'], ['interpolate', ['linear'], ['get', 'point_count'], 2, 11, 40, 20], IS_ZONE, 11, 5],
+          'circle-opacity': ['case', IS_ZONE, 0.18, 1],
+          'circle-stroke-color': ['case', ['has', 'point_count'], '#ffffff', IS_ZONE, ['get', 'color'], '#0b0b0e'],
           'circle-stroke-width': ['case', ['has', 'point_count'], 1, 1.5],
           'circle-stroke-opacity': 0.9,
         },
@@ -150,10 +153,10 @@ export function EarthView({ places, selected, onSelect, trace, stopIndex }: Eart
       map.getCanvas().style.cursor = 'pointer';
       const feature = e.features?.[0];
       if (!feature) return;
-      const { point_count: cluster, name, count } = feature.properties;
+      const { point_count: cluster, name, count, zone } = feature.properties;
       popup
         .setLngLat((feature.geometry as GeoJSON.Point).coordinates as LngLat)
-        .setText(cluster ? `${cluster} places` : `${name} · ${count} ${count === 1 ? 'event' : 'events'}`)
+        .setText(cluster ? `${cluster} places` : `${name}${zone ? ' (area)' : ''} · ${count} ${count === 1 ? 'event' : 'events'}`)
         .addTo(map);
     });
     map.on('mouseleave', 'pin-core', () => {
@@ -193,6 +196,7 @@ export function EarthView({ places, selected, onSelect, trace, stopIndex }: Eart
     const center = toLngLat(place.location.coords!);
     const element = document.createElement('span');
     element.className = 'atlas-pulse';
+    element.classList.toggle('atlas-pulse-zone', Boolean(place.location.approximate));
     element.style.setProperty('--pulse', place.universe.color);
     const marker = new Marker({ element }).setLngLat(center).addTo(map);
     map.flyTo({ center, zoom: Math.max(map.getZoom(), 4.6), offset: sheetOffset(), duration: 1800, essential: true });
