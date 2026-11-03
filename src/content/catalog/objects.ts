@@ -27,12 +27,17 @@ export const objects = {
   cerebro: {
     name: 'Cerebro',
     kind: 'technology',
-    description: "Machine built by Hank McCoy that amplifies Charles Xavier's telepathy to locate mutants. The first one, at Division X, is destroyed in Sebastian Shaw's attack. In the animated series, Xavier uses it to show Bishop's memories of 2055, and Jean Grey wears one of its helmets to break into the Juggernaut's mind. With Xavier gone, Jean uses it to find a tear in the astral plane, to search for him and to calm Rogue's mind, and a portable projector shows Graydon Creed a hologram of his father.",
+    description: "Machine built by Hank McCoy that amplifies Charles Xavier's telepathy to locate mutants. The first one, at Division X, is destroyed in Sebastian Shaw's attack. In the animated series, Xavier uses it to show Bishop's memories of 2055, and Jean Grey wears one of its helmets to break into the Juggernaut's mind. With Xavier gone, Jean uses it to find a tear in the astral plane, to search for him and to calm Rogue's mind, and a portable projector shows Graydon Creed a hologram of his father. Later it picks up the signal of a Shi'ar prison ship buried under Manhattan.",
   },
   'magneto-helmet': {
     name: "Magneto's Helmet",
     kind: 'technology',
     description: 'Helmet made by the Soviets for Sebastian Shaw that blocks telepathy. Erik Lehnsherr takes it from him in Cuba and keeps it.',
+  },
+  'mkraan-crystal': {
+    name: "M'Kraan Crystal",
+    kind: 'relic',
+    description: "Shi'ar crystal with a whole galaxy inside. Lilandra steals it to keep it from her brother D'Ken, the Starjammers take it from her ship, D'Ken breaches it, and the Phoenix carries it into the heart of the Sun, where no one can reach it again.",
   },
   'quantum-scanner': {
     name: 'Quantum Scanner',

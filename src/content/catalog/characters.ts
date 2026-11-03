@@ -56,6 +56,9 @@ export const characters = {
     status: 'alive',
     factions: ['x-men', 'division-x', 'mutants'],
     bio: 'Mutant who fires destructive energy rings from his chest and cannot control them, so he prefers solitary confinement until Hank McCoy builds him a unit to aim them.',
+    variants: {
+      'earth-92131': "Havok, a member of X-Factor, the government's team of mutants, and Lorna Dane's partner.",
+    },
   },
   'alfred-morris-noir': {
     name: 'Alfred Morris',
@@ -119,6 +122,9 @@ export const characters = {
     status: 'deceased',
     factions: ['mutants'],
     bio: 'Mutant aerial combatant originally gifted with feathered wings, bio-mechanically enhanced by Apocalypse with impenetrable metallic razor wings that fire lethal razor-sharp steel flechettes.',
+    variants: {
+      'earth-92131': "Turned into Death by Apocalypse, he spends his fortune hunting him, wrecks the X-Men's trap in his rage and refuses to rejoin them.",
+    },
   },
   'armando-munoz': {
     name: 'Armando Muñoz',
@@ -245,7 +251,7 @@ export const characters = {
     status: 'alive',
     factions: ['mutants', 'cassidy-clan'],
     origin: 'County Mayo, Ireland',
-    bio: 'Treacherous Irish mutant who channels concussive thermal energy through wood, working alongside his partner Juggernaut to seize ancestral Cassidy Keep and capture Lilandra.',
+    bio: 'Irish mutant who channels energy through wood. With the Juggernaut he kidnaps Lilandra on Muir Island and hands her over to Erik the Red at Cassidy Keep.',
   },
   'black-widow': {
     name: 'Natasha Romanoff',
@@ -331,7 +337,7 @@ export const characters = {
     status: 'alive',
     factions: ['captain-britain-corps', 'excalibur', 'mi-13'],
     origin: 'Maldon, Essex / London',
-    bio: 'Mystical champion chosen by Merlyn and Roma, empowered by the Amulet of Right and interdimensional energies to protect the British Isles and monitor omniversal anomalies.',
+    bio: 'Hero of Britain who, in London, feels the shockwave of the Phoenix leaving Earth.',
   },
   'carol-danvers': {
     name: 'Carol Danvers',
@@ -440,7 +446,7 @@ export const characters = {
     status: 'alive',
     factions: ['starjammers'],
     origin: 'United States',
-    bio: "Earth-born test pilot abducted into interstellar space by the Shi'ar who escaped slavery to captain the rogue Starjammers, eventually reuniting with his long-lost son Scott Summers.",
+    bio: "Captain of the Starjammers, a band of space pirates, and father of Scott Summers, who believed him dead. The Shi'ar killed his wife. Hunted on Earth by a Shi'ar officer, he finds his son and makes peace with him.",
   },
   coulson: {
     name: 'Phil Coulson',
@@ -488,7 +494,7 @@ export const characters = {
     status: 'alive',
     factions: ['shiar-imperium'],
     origin: "Chandilar, Shi'ar Empire",
-    bio: "Depraved ruler of the Shi'ar Empire whose catastrophic hunger for omnipotence drove him to breach the M'Kraan Crystal, threatening to collapse universal space-time.",
+    bio: "Emperor of the Shi'ar and Lilandra's brother. He breaches the M'Kraan Crystal to take its power and nearly pulls the galaxy into it, until the Phoenix stops him inside the crystal.",
   },
   dagger: {
     name: 'Tandy Bowen',
@@ -541,6 +547,9 @@ export const characters = {
     factions: ['masters-of-the-mystic-arts', 'avengers', 'midnight-sons'],
     origin: 'New York / Kamar-Taj',
     bio: "Master of the Mystic Arts and guardian of Earth's magical realms.",
+    variants: {
+      'earth-92131': 'In the animated series he feels the Phoenix leave Earth from his Sanctum Sanctorum, and appears again during the rampage of the Dark Phoenix.',
+    },
   },
   'dottie-underwood': {
     name: 'Dottie Underwood',
@@ -647,6 +656,9 @@ export const characters = {
     status: 'alive',
     factions: ['hellfire-club', 'brotherhood-of-mutants', 'mutants'],
     bio: "Formidable telepath who can transform her body into organic, bulletproof diamond at will, Shaw's chief lieutenant.",
+    variants: {
+      'earth-92131': "White Queen of the Inner Circle of the Circle Club in New York. She learns the Phoenix's secret from Xavier's computer and fights him for Jean Grey's mind.",
+    },
   },
   'en-sabah-nur-apocalypse': {
     name: 'En Sabah Nur',
@@ -677,6 +689,14 @@ export const characters = {
     factions: ['brotherhood-of-mutants', 'division-x', 'mutants'],
     origin: 'Poland / Germany',
     bio: 'Holocaust survivor and Master of Magnetism who believes mutantkind must defend itself by any means necessary against human prejudice.',
+  },
+  'erik-the-red': {
+    name: 'Erik the Red',
+    color: '#e11d48',
+    role: 'villain',
+    status: 'alive',
+    factions: ['shiar-imperium'],
+    bio: "Shi'ar agent of D'Ken who takes over the Eagle One space station to stop Lilandra's ship, then buys her from Black Tom and the Juggernaut. Lilandra calls him Shakari.",
   },
   'fabian-cortez': {
     name: 'Fabian Cortez',
@@ -742,6 +762,9 @@ export const characters = {
     factions: ['shield', 'saber', 'avengers'],
     origin: 'Earth / S.A.B.E.R. Station',
     bio: 'Former Director of S.H.I.E.L.D. and founder of the Avengers.',
+    variants: {
+      'earth-92131': 'In the 1993 that Cable erases in the animated series, he watches the Senate hearing on the plague at S.H.I.E.L.D.',
+    },
   },
   'gabe-jones': {
     name: "Gabriel 'Gabe' Jones",
@@ -783,14 +806,13 @@ export const characters = {
     bio: 'Adopted daughter of Thanos who rebelled to become a Guardian of the Galaxy.',
   },
   'garokk-petrified-man': {
-    name: 'Garokk the Petrified Man',
-    alias: 'Garokk',
+    name: 'Garokk',
     color: '#eab308',
     role: 'villain',
     status: 'alive',
     factions: ['immortals'],
     origin: 'The Savage Land, Antarctica',
-    bio: 'Ancient being transformed into living stone worshiped as a sun god in the Savage Land who merged with volcanic planetary ley lines before being subdued by Storm.',
+    bio: "Sun god of the Savage Land, left a statue for centuries. Storm's tempest wakes him, he tries to bond with the land's volcano, and he falls back into stone when Sauron drains his power.",
   },
   'ghost-rider-danny-ketch': {
     name: 'Danny Ketch',
@@ -810,7 +832,7 @@ export const characters = {
     status: 'alive',
     factions: ['imperial-guard', 'strontians'],
     origin: "Strontia, Shi'ar Imperium",
-    bio: "Praetor of the Shi'ar Imperial Guard, a nearly invincible Strontian champion whose godlike strength, invulnerability, and heat beams scale in direct proportion to his confidence.",
+    bio: "Leader and strongest member of the Shi'ar Imperial Guard. He seizes Lilandra for D'Ken, and on the Moon he leads the Guard against the X-Men for the fate of the Dark Phoenix.",
   },
   goose: {
     name: 'Goose',
@@ -965,6 +987,9 @@ export const characters = {
     factions: ['x-men', 'mutants'],
     origin: 'United States',
     bio: 'Mutant capable of lowering his thermal body temperature to absolute zero, transforming his physical form into solid organic ice and generating massive cryokinetic ice slides and frost blasts.',
+    variants: {
+      'earth-92131': 'One of the first X-Men, who left the team. He breaks into a government complex looking for Lorna Dane, and when she stays with X-Factor he goes back to his civilian life as Bobby Drake.',
+    },
   },
   'iron-fist': {
     name: 'Danny Rand',
@@ -1265,8 +1290,8 @@ export const characters = {
     role: 'villain',
     status: 'alive',
     factions: ['reavers', 'cyborgs'],
-    origin: 'Osaka, Japan',
-    bio: "Cybernetically enhanced assassin with extendable Adamantium talons seeking vengeance against Wolverine for desecrating her father Lord Dark Wind's metallurgical breakthroughs.",
+    origin: 'Japan',
+    bio: "Wolverine's former lover, who leads the cybernetic Reavers and blames him for her father's death. In the Morlock tunnels she makes him open a Shi'ar prison ship, freeing the Spirit Drinker, and in the end calls their fight a draw.",
   },
   'last-black-panther': {
     name: 'The Last Black Panther',
@@ -1285,7 +1310,7 @@ export const characters = {
     status: 'alive',
     factions: ['shiar-imperium', 'cosmic-entities'],
     origin: "Chandilar, Shi'ar Empire",
-    bio: "Rightful Majestrix of the intergalactic Shi'ar Empire who fled her mad brother D'Ken to protect the cosmos and bonded telepathically and romantically with Charles Xavier.",
+    bio: "Shi'ar princess who steals the M'Kraan Crystal to keep its power from her brother D'Ken and calls on Charles Xavier for help. As Majestrix she sentences the Dark Phoenix to death. She and Xavier love each other, but their duties keep them apart.",
   },
   lockjaw: {
     name: 'Lockjaw',
@@ -1429,6 +1454,15 @@ export const characters = {
     origin: 'Genosha',
     bio: 'Giant Sentinel that Bolivar Trask builds to produce Sentinels on its own. It decides that mutants are human, so the Sentinels must rule humans too, and plans to replace the brains of world leaders with computers.',
   },
+  'mastermind-jason-wyngarde': {
+    name: 'Jason Wyngarde',
+    alias: 'Mastermind',
+    color: '#10b981',
+    role: 'villain',
+    status: 'alive',
+    factions: ['hellfire-club'],
+    bio: "Illusionist of the Inner Circle of the Circle Club who plants a false life in Jean Grey's mind to win the Phoenix for the club, until the Phoenix breaks free when he orders her to kill Cyclops.",
+  },
   may: {
     name: 'Melinda May',
     color: '#64748b',
@@ -1524,6 +1558,9 @@ export const characters = {
     factions: ['cia', 'division-x'],
     origin: 'United States',
     bio: 'CIA agent who finds the Hellfire Club in Las Vegas and brings Charles Xavier to the agency. He erases her memory of the X-Men after the Cuban Missile Crisis.',
+    variants: {
+      'earth-92131': 'Scientist who runs the Mutant Research Center on Muir Island, where Xavier finds Lilandra and Jean spends months in therapy.',
+    },
   },
   mojo: {
     name: 'Mojo',
@@ -1620,6 +1657,9 @@ export const characters = {
     factions: ['x-men', 'mutants'],
     origin: 'Bavaria, Germany',
     bio: 'Gentle, deeply spiritual mutant possessing indigo fur, acrobatic agility, a prehensile tail, and the ability to instantly teleport across space in a cloud of sulfurous blue smoke (BAMF).',
+    variants: {
+      'earth-92131': 'In the animated series, Jean Grey first finds him through Cerebro while she searches for the missing Xavier.',
+    },
   },
   noni: {
     name: 'Noni',
@@ -1723,6 +1763,9 @@ export const characters = {
     factions: ['avengers', 'hydra'],
     origin: 'Sokovia',
     bio: 'Sokovian speedster enhanced by the Mind Stone who sacrificed his life to save Hawkeye and a child in the Battle of Sokovia.',
+    variants: {
+      'earth-92131': 'In the animated series, Jean Grey first finds him through Cerebro while she searches for the missing Xavier.',
+    },
   },
   'prince-tafari': {
     name: 'Prince Tafari',
@@ -1762,6 +1805,9 @@ export const characters = {
     status: 'alive',
     factions: ['mutants'],
     bio: 'Deadly martial artist and mutant tracker capable of telepathic sensory tracking and manifesting lethal solid psionic energy blades, whips, and katanas from her hands.',
+    variants: {
+      'earth-92131': 'In the animated series, Jean Grey first finds her through Cerebro while she searches for the missing Xavier.',
+    },
   },
   'puppet-master': {
     name: 'Phillip Masters',
@@ -1933,6 +1979,9 @@ export const characters = {
     factions: ['avengers', 'hydra', 'coven-of-chaos'],
     origin: 'Sokovia',
     bio: 'Mythological wielder of Chaos Magic and the prophesied Scarlet Witch.',
+    variants: {
+      'earth-92131': 'In the animated series, Jean Grey first finds her through Cerebro while she searches for the missing Xavier.',
+    },
   },
   'scorpion-mac-gargan': {
     name: 'Mac Gargan',
@@ -1953,6 +2002,9 @@ export const characters = {
     factions: ['x-men', 'division-x', 'mutants'],
     origin: 'Ireland',
     bio: 'Young mutant gifted with powerful vocal cords capable of producing high-frequency acoustic shockwaves, sonic flight, and sonar echolocation.',
+    variants: {
+      'earth-92131': "Banshee, who lives on Muir Island with Moira MacTaggert. He catches Xavier when the Juggernaut throws him out of a window and leads the X-Men to Cassidy Keep, his family's castle.",
+    },
   },
   'sebastian-shaw': {
     name: 'Sebastian Shaw',
@@ -1962,6 +2014,9 @@ export const characters = {
     factions: ['hellfire-club', 'third-reich', 'mutants'],
     origin: 'Germany / United States',
     bio: 'Mutant who absorbs energy and stays young. As Dr. Klaus Schmidt he serves the Nazis at Auschwitz; as leader of the Hellfire Club he tries to start a nuclear war, until Erik Lehnsherr kills him with a Nazi coin.',
+    variants: {
+      'earth-92131': 'Black King of the Inner Circle of the Circle Club, who wants the power of the Phoenix for the club.',
+    },
   },
   'senator-robert-kelly': {
     name: 'Senator Robert Kelly',
@@ -2179,6 +2234,9 @@ export const characters = {
     factions: ['avengers', 'asgard', 'revengers', 'guardians-of-the-galaxy'],
     origin: 'Asgard (Nine Realms)',
     bio: 'Asgardian God of Thunder, wielder of Mjolnir and Stormbreaker.',
+    variants: {
+      'earth-92131': 'In the animated series he appears for a moment during the rampage of the Dark Phoenix.',
+    },
   },
   'tombstone-noir': {
     name: 'Lonnie Lincoln',
@@ -2218,6 +2276,9 @@ export const characters = {
     factions: ['watchers'],
     origin: 'Blue Area of the Moon',
     bio: "Cosmic observer stationed in the Moon's Blue Area sworn to a solemn vow of non-interference, which he repeatedly breaks to safeguard Earth's champions.",
+    variants: {
+      'earth-92131': 'In the animated series he appears for a moment during the rampage of the Dark Phoenix.',
+    },
   },
   ultimo: {
     name: 'Ultimo',
@@ -2323,6 +2384,9 @@ export const characters = {
     factions: ['avengers', 'us-military'],
     origin: 'Philadelphia',
     bio: 'Colonel James Rhodes, heavily armored Avenger.',
+    variants: {
+      'earth-92131': 'In the 1993 that Cable erases in the animated series, he watches the Senate hearing on the plague at S.H.I.E.L.D.',
+    },
   },
   'warpath-james-proudstar': {
     name: 'James Proudstar',
@@ -2425,8 +2489,7 @@ export const characters = {
     role: 'villain',
     status: 'alive',
     factions: ['mutants'],
-    origin: 'Omaha, Nebraska',
-    bio: 'Psychic pheromonal manipulator who posed as a wealthy benefactor in Nebraska to brainwash mutant orphans and deploy them as a personal sleeper army for political dominance.',
+    bio: 'Wealthy benefactor of an orphanage in Omaha who uses his power over minds to turn its mutant children into soldiers and overthrow the governor of Nebraska, until a news crew films him burning the orphanage and he is arrested.',
   },
 } as const satisfies Record<string, CharacterInput>;
 

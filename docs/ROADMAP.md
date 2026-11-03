@@ -11,7 +11,7 @@
 
 ## Contenido
 
-Estado actual: `npm run content -- status` (32 producciones auditadas, 16 verificadas, 49 legacy de la v1).
+Estado actual: `npm run content -- status` (32 producciones auditadas, 17 verificadas, 49 legacy de la v1).
 
 **Lo que sigue.** Revisar una por una las 28 producciones auditadas en la v2 junto a quien mantiene el proyecto, con `docs/AUDIT_GUIDE.md`, y recién después seguir con lo demás. Van en el orden de la cronología de Aaron Perris (https://aaronperris.com/mcu/), que intercala piezas legacy de la v1, como *Stark Expo 1974*: se auditan en ese mismo orden.
 
@@ -31,7 +31,7 @@ Estado actual: `npm run content -- status` (32 producciones auditadas, 16 verifi
 - [x] *Dark Phoenix*
 - [x] *X-Men: The Animated Series* T1
 - [x] *X-Men: The Animated Series* T2
-- [ ] *X-Men: The Animated Series* T3
+- [x] *X-Men: The Animated Series* T3
 - [ ] *Iron Man: The Animated Series* T1
 - [ ] *Fantastic Four: The Animated Series* T1
 - [ ] *Spider-Man: The Animated Series* T1
@@ -48,7 +48,7 @@ Estado actual: `npm run content -- status` (32 producciones auditadas, 16 verifi
 - [ ] *Spider-Man: The Animated Series* T5
 - [ ] *The Incredible Hulk* T2
 
-**Puntos compartidos del mapa.** 12 puntos exactos siguen repartidos entre 25 lugares. Se separan a medida que se audita cada producción: el validador lo exige en las verificadas y lo muestra como aviso en las demás.
+**Puntos compartidos del mapa.** 11 puntos exactos siguen repartidos entre 23 lugares. Se separan a medida que se audita cada producción: el validador lo exige en las verificadas y lo muestra como aviso en las demás.
 
 **Fechas pendientes de auditoría.** `2,000 years ago` (la Mano, *The Defenders*) sigue en texto libre hasta que se audite esa producción. Las dos `Ancient times` del catálogo de gemas (Morag y Agamotto) son recorridos sin fecha en el canon.
 
@@ -74,7 +74,7 @@ Hoy es un proyecto personal, y estas decisiones lo asumen. Antes de difundirla, 
 - **El repo y la página ya son accesibles.** `AnVolkova10/mcu` figura como público y GitHub Pages publica `master`. Nadie los conoce, pero cualquiera con el link entra. Hacer privado el repo en una cuenta gratuita apaga la página.
 - **Imágenes de personajes.** Son de Marvel y Disney, sin licencia de reutilización. Se enlazan desde Fandom y no se copian, pero eso no da derechos sobre ellas. No guardarlas en el repo: quedarían redistribuidas desde acá.
 - **Términos de Fandom.** Según fuentes secundarias prohíben el acceso automatizado sin permiso, y `portraits:sync` y `research` usan su API pública. No pude leer el texto oficial: leerlo en https://www.fandom.com/terms-of-use, y pedir permiso o cambiar de fuente. No correr esos scripts en tareas automáticas.
-- **Enlaces directos.** Dependen de Fandom y solo responden con referer. Con tráfico real se pueden bloquear. Si caen, se ven la foto del actor o las iniciales, pero se perdería casi todo el catálogo.
+- **Enlaces directos.** Dependen de Fandom y solo responden con referer. Con tráfico real se pueden bloquear. Si caen, se ven la foto del actor o una silueta, pero se perdería casi todo el catálogo.
 - **TMDB.** Es gratis para uso no comercial, con el logo y el aviso que ya están en Créditos. Publicidad, donaciones o cualquier ingreso piden licencia comercial.
 - **Marca Marvel.** El logo del encabezado es una marca registrada, y el aviso de proyecto de fans no da permiso para usarlo. Conviene reemplazarlo por un nombre propio.
 - **Fuente URW DIN.** Es una tipografía comercial y está en el repo. Confirmar la licencia o cambiarla por una libre. Bebas Neue no tiene ese problema (OFL).

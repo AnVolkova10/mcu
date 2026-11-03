@@ -55,6 +55,8 @@ Abrí la app y mirá: la producción filtrada en el timeline, las fichas de cada
 
 **Solo lo que se ve.** Cuentan la obra y sus flashbacks. Los cómics no entran, aunque sean oficiales: son otro multiverso. Si una wiki cita un cómic o un libro, ese dato no vale, y una escena que solo existe ahí no es un evento.
 
+**El orden de los episodios es el de Disney+,** que es el de producción. Marvel Database y uncannyxmen numeran por fecha de emisión, así que mapeá cada episodio por su título antes de usarlos: en *X-Men: The Animated Series* T3 entran tres episodios que se emitieron dos años tarde, y otros tres pasan a la T4.
+
 Un dato que no aparece en dos fuentes es una duda y va a la ficha. Si la memoria de quien mantiene el proyecto choca con una fuente, gana esa memoria. **Nunca completes un dato con lo que suena probable.**
 
 ## 3. Reglas
@@ -90,7 +92,8 @@ Un dato que no aparece en dos fuentes es una duda y va a la ficha. Si la memoria
 
 ### Personajes
 
-- **Ficha para todo personaje con nombre que influye en la trama.** Un cameo se asocia con `cast` y no lleva ficha nueva.
+- **Ficha para todo personaje con nombre que influye en la trama.**
+- **Un cameo también cuenta.** Si el personaje ya tiene ficha, se nombra en el texto con su enlace y su ficha suma una nota para esa versión, como Doctor Strange en *X-Men: The Animated Series* T3. Si no tiene ficha, se nombra sin enlace y no lleva ficha nueva. Lo que solo se ve en una pantalla de otra época no es un cameo de ese momento: las imágenes del pasado cambiado en la computadora de Cable, en 3999, no ponen a Colossus en 3999.
 - Personajes sin nombre o que no cambian nada: `**negrita**` o nada.
 - **Un evento puede no tener personajes.** Si nadie con nombre aparece, no se enlaza a nadie para llenar: el aviso de turismo de *Come to Wakanda* no tiene personajes, y en la escena de Essex de *Apocalypse* no está Logan, solo su sangre.
 - Un mismo nombre puede ser dos personas: Jorani es Iron Fist, pero no la ficha `iron-fist`, que es Danny Rand. Enlazar la ficha equivocada también le suma un crédito falso.

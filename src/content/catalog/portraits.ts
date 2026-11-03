@@ -216,6 +216,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
     'earth-10005': 'https://static.wikia.nocookie.net/xmenmovies/images/0/05/Magneto_XMFC_Textless.jpg/revision/latest/scale-to-width-down/231?cb=20240115013755',
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/d/d9/Magneto.jpg/revision/latest/scale-to-width-down/300?cb=20161016220921',
   },
+  'erik-the-red': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/d/d2/Eric_the_Red.jpg/revision/latest?cb=20131021132236',
+  },
   'fabian-cortez': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/c/ce/Fabian_Cortez.jpg/revision/latest/scale-to-width-down/300?cb=20131020175628',
   },
@@ -237,6 +240,7 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   },
   'fury': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/a/a3/Nick_Fury_Infobox.png/revision/latest/scale-to-width-down/236?cb=20240802141551',
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/0/0b/Nick.jpg/revision/latest/scale-to-width-down/300?cb=20110214123505',
   },
   'gabe-jones': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/7/78/Gabriel_Jones.jpg/revision/latest/scale-to-width-down/193?cb=20121006170332',
@@ -307,6 +311,7 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   },
   'iceman-bobby-drake': {
     'earth-10005': 'https://static.wikia.nocookie.net/xmenmovies/images/e/e6/740full-iceman-%28shawn-ashmore%29.jpg/revision/latest/window-crop/width/300/x-offset/222/y-offset/47/window-width/296/window-height/296?cb=20200516071931',
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/0/02/Iceman.webp/revision/latest/scale-to-width-down/242?cb=20241211040844',
   },
   'iron-fist': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/5/5f/DRand-AskingForFruitRollUps.png/revision/latest/scale-to-width-down/300?cb=20181125034238',
@@ -457,6 +462,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   },
   'master-mold': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/0/0e/Master_Mold.jpg/revision/latest/scale-to-width-down/300?cb=20170713004615',
+  },
+  'mastermind-jason-wyngarde': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/c/c0/Jason_Wyngarde.jpg/revision/latest/scale-to-width-down/241?cb=20131018180242',
   },
   'may': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/c/ca/Melinda_May_-_MAOSS6.jpg/revision/latest/scale-to-width-down/225?cb=20190412001641',
@@ -700,6 +708,7 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   },
   'thor': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/2b/Thor_Infobox.jpg/revision/latest/scale-to-width-down/195?cb=20231021012616',
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/2/23/Thor.jpg/revision/latest/scale-to-width-down/300?cb=20110501065658',
   },
   'tombstone-noir': {
     'earth-62533': 'https://static.wikia.nocookie.net/spidermannoir/images/c/cb/Tombstone_Infobox.jpg/revision/latest/scale-to-width-down/274?cb=20260427181248',

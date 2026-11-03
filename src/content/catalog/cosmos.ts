@@ -38,6 +38,13 @@ export const cosmosNodes = {
     color: '#fb923c',
     description: 'Shuttle missions, cosmic storms and orbital factories just above the atmosphere.',
   },
+  sun: {
+    name: 'The Sun',
+    zone: 'orbit',
+    look: 'star',
+    color: '#ff7a1a',
+    description: "Earth's star. The Phoenix carries the M'Kraan Crystal into its heart, where no one can reach it again.",
+  },
   asgard: {
     name: 'Asgard',
     zone: 'realms',
@@ -114,6 +121,13 @@ export const cosmosNodes = {
     look: 'nexus',
     color: '#f472b6',
     description: "Imperial space of the Shi'ar: the throne world Chandilar and the M'Kraan Crystal, nexus of all realities.",
+  },
+  'd-bari': {
+    name: "D'Bari system",
+    zone: 'deep-space',
+    look: 'planet',
+    color: '#f97316',
+    description: "Star system of the D'Bari, destroyed by the Dark Phoenix.",
   },
   knowhere: {
     name: 'Knowhere',

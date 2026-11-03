@@ -3,6 +3,13 @@ import type { LocationInput } from '@/domain/schema';
 
 /** Places on Earth (with coordinates) and off-world places (linked to a Cosmos node). Sorted by id. */
 export const locations = {
+  'acropolis-of-athens': {
+    name: 'Acropolis',
+    place: 'Athens',
+    country: 'Greece',
+    kind: 'earth',
+    coords: [37.9715, 23.7257],
+  },
   'adwa-mountain-pass': {
     name: 'Adwa',
     place: 'Tigray',
@@ -22,6 +29,13 @@ export const locations = {
     country: 'United States',
     kind: 'earth',
     coords: [37.431, -78.656],
+  },
+  'american-museum-of-natural-history': {
+    name: 'American Museum of Natural History',
+    place: 'Manhattan, New York City',
+    country: 'United States',
+    kind: 'earth',
+    coords: [40.7813, -73.974],
   },
   'ancient-aegean-battlegrounds': {
     name: 'Ancient Aegean Battlegrounds',
@@ -252,6 +266,13 @@ export const locations = {
     kind: 'earth',
     coords: [51.7, -116.1],
   },
+  'cape-canaveral': {
+    name: 'Cape Canaveral',
+    place: 'Florida',
+    country: 'United States',
+    kind: 'earth',
+    coords: [28.6083, -80.6041],
+  },
   'cape-citadel-military-missile-installation': {
     name: 'Drake Missile Base',
     place: 'Florida',
@@ -303,12 +324,26 @@ export const locations = {
     coords: [40.8512, -74.229],
     approximate: true,
   },
+  'central-american-jungle': {
+    name: 'Central American Jungle',
+    place: 'Petén',
+    country: 'Guatemala',
+    kind: 'earth',
+    coords: [17.05, -89.75],
+  },
   'central-broadcast-arena-and-studio-city': {
     name: "Mojo's Studio",
     place: 'Mojoworld',
     country: 'Mojoverse',
     kind: 'dimension',
     node: 'mojoverse',
+  },
+  'central-park': {
+    name: 'Central Park',
+    place: 'Manhattan, New York City',
+    country: 'United States',
+    kind: 'earth',
+    coords: [40.7663, -73.9742],
   },
   'childhood-home-of-jean-grey': {
     name: 'Childhood Home of Jean Grey',
@@ -353,6 +388,20 @@ export const locations = {
     coords: [49.3, 5.05],
     approximate: true,
   },
+  'club-m': {
+    name: 'Club M',
+    place: 'Manhattan, New York City',
+    country: 'United States',
+    kind: 'earth',
+    coords: [40.7454, -74.006],
+  },
+  'colony-crash-site': {
+    name: 'Colony Crash Site',
+    place: 'Sonoran Desert, Arizona',
+    country: 'United States',
+    kind: 'earth',
+    coords: [32.95, -112.65],
+  },
   'convergence-nexus-and-svartalfheim-wastes': {
     name: 'Convergence Nexus & Svartalfheim Wastes',
     place: 'Dark Realm',
@@ -388,6 +437,12 @@ export const locations = {
     kind: 'earth',
     coords: [42.3601, -71.0589],
   },
+  'dbari-star-system': {
+    name: "D'Bari Star System",
+    country: 'Deep space',
+    kind: 'space',
+    node: 'd-bari',
+  },
   'department-h-subterranean-defense-complex': {
     name: 'Department H Base',
     place: 'Alberta',
@@ -401,6 +456,12 @@ export const locations = {
     country: 'United States',
     kind: 'earth',
     coords: [42.3778, -83.0273],
+  },
+  'dken-imperial-cruiser': {
+    name: "D'Ken's Imperial Cruiser",
+    country: 'Lunar orbit',
+    kind: 'orbit',
+    node: 'moon',
   },
   'dr-miles-warrens-offshore-aquatic-bio-dome': {
     name: "Dr. Miles Warren's Offshore Aquatic Bio-Dome",
@@ -609,8 +670,8 @@ export const locations = {
     approximate: true,
   },
   'hellfire-club-inner-circle-mansion': {
-    name: 'Hellfire Club Inner Circle Mansion',
-    place: 'Upper East Side, Manhattan',
+    name: 'Circle Club',
+    place: 'Manhattan, New York City',
     country: 'United States',
     kind: 'earth',
     coords: [40.7736, -73.9632],
@@ -745,11 +806,11 @@ export const locations = {
     approximate: true,
   },
   'jamaica-bay': {
-    name: 'Jamaica Bay',
-    place: 'Queens, New York',
+    name: 'New York Harbor',
+    place: 'Upper New York Bay',
     country: 'United States',
     kind: 'earth',
-    coords: [40.6186, -73.8164],
+    coords: [40.674, -74.0335],
   },
   'jotunheim-glacial-fortress': {
     name: 'Jotunheim Glacial Fortress',
@@ -778,6 +839,13 @@ export const locations = {
     country: 'United States',
     kind: 'earth',
     coords: [40.7589, -73.9851],
+  },
+  'kirby-glen': {
+    name: 'Kirby Glen',
+    place: 'Washington, D.C.',
+    country: 'United States',
+    kind: 'earth',
+    coords: [38.843, -77.016],
   },
   'knossos-palace-and-mediterranean-outpost': {
     name: 'Crete',
@@ -830,6 +898,12 @@ export const locations = {
     kind: 'earth',
     coords: [36.1699, -115.1398],
   },
+  'lilandra-starcruiser': {
+    name: "Lilandra's Starcruiser",
+    country: 'Lunar orbit',
+    kind: 'orbit',
+    node: 'moon',
+  },
   'lincoln-memorial': {
     name: 'Lincoln Memorial',
     place: 'Washington, D.C.',
@@ -845,7 +919,7 @@ export const locations = {
     approximate: true,
   },
   'london-skywatch': {
-    name: 'London Skywatch',
+    name: 'Big Ben',
     place: 'London',
     country: 'United Kingdom',
     kind: 'earth',
@@ -899,13 +973,6 @@ export const locations = {
     kind: 'earth',
     coords: [40.734, -74.002],
     approximate: true,
-  },
-  'manhattan-avenues': {
-    name: 'Manhattan Avenues',
-    place: 'New York City',
-    country: 'United States',
-    kind: 'earth',
-    coords: [40.758, -73.9855],
   },
   'manhattan-bridge-and-our-lady-of-saints-church-bell-tower': {
     name: 'Manhattan Bridge & Our Lady of Saints Church Bell Tower',
@@ -1032,9 +1099,9 @@ export const locations = {
     coords: [24.53, -76.79],
   },
   'mkraan-crystal-nexus-world': {
-    name: "M'Kraan Crystal Nexus World",
-    place: "Shi'ar Imperium",
-    country: "Shi'ar Galaxy",
+    name: "Inside the M'Kraan Crystal",
+    place: "The M'Kraan Crystal",
+    country: "Shi'ar Imperium",
     kind: 'space',
     node: 'shiar-empire',
   },
@@ -1052,19 +1119,19 @@ export const locations = {
     kind: 'earth',
     coords: [40.7377, -73.9887],
   },
-  'morlock-tunnels-and-subterranean-manhattan': {
-    name: 'Morlock Tunnels & Subterranean Manhattan',
-    place: 'New York City, New York',
-    country: 'United States',
-    kind: 'earth',
-    coords: [40.7306, -73.9352],
-  },
   'moscow-soviet-high-command': {
     name: 'Soviet High Command',
     place: 'Moscow',
     country: 'Soviet Union',
     kind: 'earth',
     coords: [55.7503, 37.6015],
+  },
+  'mount-fuji': {
+    name: 'Mount Fuji',
+    place: 'Shizuoka',
+    country: 'Japan',
+    kind: 'earth',
+    coords: [35.3606, 138.7274],
   },
   'mount-kilimanjaro-and-serengeti-foothills': {
     name: 'Mount Kilimanjaro',
@@ -1128,6 +1195,13 @@ export const locations = {
     country: 'France',
     kind: 'earth',
     coords: [49.4087, -1.3174],
+  },
+  'nebraska-state-capitol': {
+    name: 'Nebraska State Capitol',
+    place: 'Lincoln, Nebraska',
+    country: 'United States',
+    kind: 'earth',
+    coords: [40.8081, -96.6997],
   },
   'new-avengers-facility-central-lab': {
     name: 'New Avengers Facility Central Lab',
@@ -1494,11 +1568,17 @@ export const locations = {
     coords: [40.7585, -73.9615],
   },
   'starcore-space-shuttle': {
-    name: 'Starcore Space Shuttle',
-    place: 'Low Earth Orbit (Exosphere)',
+    name: 'Eagle One Space Station',
+    place: 'Earth orbit',
     country: 'Outer Space',
     kind: 'orbit',
     node: 'shuttle-orbit',
+  },
+  starjammer: {
+    name: 'The Starjammer',
+    country: 'Lunar orbit',
+    kind: 'orbit',
+    node: 'moon',
   },
   'stark-country-estate': {
     name: 'Stark Mansion',
@@ -1580,7 +1660,7 @@ export const locations = {
     coords: [40.7464, -73.8448],
   },
   'state-home-for-foundlings-and-killgrave-estate': {
-    name: 'State Home for Foundlings & Killgrave Estate',
+    name: 'McNiel Orphanage',
     place: 'Omaha, Nebraska',
     country: 'United States',
     kind: 'earth',
@@ -1713,6 +1793,12 @@ export const locations = {
     coords: [-75, 139],
   },
   'the-statesman': { name: 'The Statesman', country: 'Deep space', kind: 'space', node: 'statesman' },
+  'the-sun': {
+    name: 'The Sun',
+    country: 'Solar System',
+    kind: 'space',
+    node: 'sun',
+  },
   'the-white-house-lawn-and-rfk-stadium': {
     name: 'White House',
     place: 'Washington, D.C.',

@@ -29,7 +29,11 @@ const ORBITS: Record<string, [angle: number, radius: number]> = {
   'asteroid-m': [4.1, 4.9],
   'saber-station': [5.6, 5.6],
   moon: [3.3, 8],
+  sun: [5.13, 22],
 };
+
+/** Bodies of the orbit zone bigger than a station or the Moon. The Sun outgrows every world of deep space (2.8 at most). */
+const ORBIT_SIZES: Record<string, number> = { sun: 3.2 };
 
 const GOLDEN_ANGLE = 2.39996;
 
@@ -42,7 +46,7 @@ function place(node: CosmosNode, index: number, count: number): Body {
   switch (node.zone) {
     case 'orbit': {
       const [angle, r] = ORBITS[node.id] ?? [index * 1.3, 6.5 + index * 0.3];
-      return { node, position: [Math.cos(angle) * r, 0, Math.sin(angle) * r], radius: node.look === 'moon' ? 0.75 : 0.32 };
+      return { node, position: [Math.cos(angle) * r, 0, Math.sin(angle) * r], radius: ORBIT_SIZES[node.id] ?? (node.look === 'moon' ? 0.75 : 0.32) };
     }
     case 'realms':
       return { node, position: REALMS[node.id] ?? [0, 20 + index, 0], radius: node.id === 'asgard' ? 2 : 1.25 };

@@ -40,7 +40,7 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
   ],
   'archangel-warren-worthington': [
     { actor: 'Ben Hardy', universe: 'earth-10005', productions: ['x-men-apocalypse'], photo: '/qCV3G1OHTJgPHX9kbWEBbS9RwVJ.jpg' },
-    { actor: 'Stephen Ouimette', universe: 'earth-92131', productions: ['x-men-tas-s1'], voice: true, photo: '/kk7rbjYnNNgLN1f853vRepd3GcA.jpg' },
+    { actor: 'Stephen Ouimette', universe: 'earth-92131', productions: ['x-men-tas-s1', 'x-men-tas-s3'], voice: true, photo: '/kk7rbjYnNNgLN1f853vRepd3GcA.jpg' },
   ],
   'armando-munoz': [
     { actor: 'Edi Gathegi', universe: 'earth-10005', productions: ['x-men-first-class'], photo: '/dt8yMyycDlzxkjhmuuJJ4tXDbp4.jpg' },
@@ -196,7 +196,7 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
   ],
   'en-sabah-nur-apocalypse': [
     { actor: 'Oscar Isaac', universe: 'earth-10005', productions: ['x-men-apocalypse'], photo: '/dW5U5yrIIPmMjRThR9KT2xH6nTz.jpg' },
-    { actor: 'John Colicos', universe: 'earth-92131', productions: ['x-men-tas-s1', 'x-men-tas-s2', 'x-men-tas-s4'], voice: true, photo: '/ln0FRANagWyBK6Itx727hCwR8hM.jpg' },
+    { actor: 'John Colicos', universe: 'earth-92131', productions: ['x-men-tas-s1', 'x-men-tas-s2', 'x-men-tas-s3', 'x-men-tas-s4'], voice: true, photo: '/ln0FRANagWyBK6Itx727hCwR8hM.jpg' },
     { actor: "Adetokumboh M'Cormack", universe: 'earth-92131', productions: ['x-men-97-s1'], voice: true, photo: '/p8yvhgwB1L9JlKf2mhRjgwIQsei.jpg' },
     { actor: 'Ross Marquand', universe: 'earth-92131', productions: ['x-men-97-s1'], voice: true, photo: '/2CxkVPimin0c2v7fUK3MGjgEnLt.jpg' },
   ],
@@ -208,6 +208,9 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
     { actor: 'Ian McKellen', universe: 'earth-10005', productions: ['x-men-days-of-future-past'], photo: '/5cnnnpnJG6TiYUSS7qgJheUZgnv.jpg' },
     { actor: 'David Hemblen', universe: 'earth-92131', productions: ['x-men-tas-s1', 'x-men-tas-s4', 'x-men-tas-s5'], voice: true, photo: '/J4P6glhqi6wAVODKkuhiZm2dzM.jpg' },
     { actor: 'Matthew Waterson', universe: 'earth-92131', productions: ['x-men-97-s1'], voice: true, photo: '/eqL4KlMVQrL5yZrF1YDXKz5gHIj.jpg' },
+  ],
+  'erik-the-red': [
+    { actor: 'Lawrence Bayne', universe: 'earth-92131', productions: ['x-men-tas-s3'], voice: true, photo: '/mfb2WumVLTAHFE0FVvKWvEjgmV5.jpg' },
   ],
   'fabian-cortez': [
     { actor: 'Jeffrey Max Nicholls', universe: 'earth-92131', productions: ['x-men-tas-s4'], voice: true },
@@ -473,6 +476,7 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
   ],
   'moira-mactaggert': [
     { actor: 'Rose Byrne', universe: 'earth-10005', productions: ['x-men-first-class', 'x-men-apocalypse'], photo: '/wR8YZlrewVW2FixRBrJcxaXU3R1.jpg' },
+    { actor: 'Lally Cadeau', universe: 'earth-92131', productions: ['x-men-tas-s3'], voice: true, photo: '/2cgpn9rpbWMjbvScFzlRguRTYiS.jpg' },
   ],
   'mojo': [
     { actor: 'David Errigo Jr.', universe: 'earth-92131', productions: ['x-men-97-s1'], voice: true, photo: '/oTQuPPun1oDqd0PIRpl6QUZysuU.jpg' },
