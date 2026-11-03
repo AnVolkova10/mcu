@@ -29,6 +29,19 @@ export function greatCircle(from: LngLat, to: LngLat, steps = 48): LngLat[] {
   return points;
 }
 
+/** Where a point falls on MapLibre's flat world, from 0 to 1 on each axis. */
+function mapPosition([lng, lat]: LngLat): LngLat {
+  const sin = Math.sin(rad(lat));
+  const y = 0.5 - Math.log((1 + sin) / (1 - sin)) / (4 * Math.PI);
+  return [lng / 360 + 0.5, Math.min(1, Math.max(0, y))];
+}
+
+/** Length of a line as `line-progress` counts it: on the flat map, where lines near the poles are much longer than their degrees. */
+export function lineLength(points: readonly LngLat[]) {
+  const flat = points.map(mapPosition);
+  return flat.slice(1).reduce((sum, [x, y], i) => sum + Math.hypot(x - flat[i][0], y - flat[i][1]), 0);
+}
+
 /** Meridians and parallels: the holographic grid over the globe. */
 export function graticule(step = 15): GeoJSON.FeatureCollection {
   const line = (coordinates: LngLat[]): GeoJSON.Feature => ({ type: 'Feature', properties: {}, geometry: { type: 'LineString', coordinates } });

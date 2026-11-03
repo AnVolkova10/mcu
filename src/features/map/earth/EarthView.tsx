@@ -5,7 +5,7 @@ import mapWorkerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url';
 import type { Place, Trace } from '@/domain/atlas';
 import { readableOn } from '@/domain/colors';
 import { earthStyle } from './earthStyle';
-import { greatCircle, type LngLat } from './geo';
+import { greatCircle, lineLength, type LngLat } from './geo';
 
 interface EarthViewProps {
   places: Place[];
@@ -44,8 +44,7 @@ function buildPath(trace: Trace) {
   stops.slice(1).forEach((stop, i) => {
     const arc = greatCircle(stops[i].point, stop.point);
     line.push(...(i === 0 ? arc : arc.slice(1)));
-    const span = arc.slice(1).reduce((sum, p, k) => sum + Math.hypot(p[0] - arc[k][0], p[1] - arc[k][1]), 0);
-    lengths.push(lengths[lengths.length - 1] + span);
+    lengths.push(lengths[lengths.length - 1] + lineLength(arc));
   });
   const total = lengths[lengths.length - 1] || 1;
   return { stops, line, progressAt: lengths.map((l) => l / total) };
