@@ -44,7 +44,7 @@ npm run lint
 
 Abrí la app y mirá: la producción filtrada en el timeline, las fichas de cada personaje nuevo, los lugares en el mapa, un recorrido (*Trace this journey*). Revisá las imágenes una por una: las wikis reciclan páginas.
 
-**6. Commit sin publicar.** En una rama propia, con `content:`. Un push a `master` publica la página: esperá a que te lo pidan.
+**6. Commit sin publicar.** Directo en `master`, sin ramas, con `content:`. El push publica la página: esperá a que te lo pidan.
 
 ## 2. Fuentes, en este orden
 
@@ -118,4 +118,4 @@ Un dato que no aparece en dos fuentes es una duda y va a la ficha. Si la memoria
 - [ ] Miraste en la app el timeline, las fichas, las imágenes, el mapa y un recorrido, en PC y en celu.
 - [ ] `npm run build` y `npm run lint` terminan sin errores.
 - [ ] `docs/ROADMAP.md` marca la producción como hecha.
-- [ ] Commit en una rama, sin push.
+- [ ] Commit en `master`, sin push.

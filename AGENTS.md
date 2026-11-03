@@ -81,4 +81,4 @@ docs/ROADMAP.md         lo que falta
 - En pantallas anchas la primera pantalla termina en una fila entera, a cualquier alto de ventana: las grillas usan `useFitRows` (`src/shared/lib/useFitRows.ts`) y el timeline ajusta su encabezado. Para probar un cambio de layout, mirá varios altos de ventana, no solo el tuyo.
 - **Tests:** no agregues suites de tests. La red de seguridad es TypeScript estricto (los IDs están tipados) más el validador de contenido. Es un proyecto personal y los agentes cobran por correrlos.
 - Antes de dar algo por terminado: `npm run build` y `npm run lint` sin errores.
-- **Git:** nunca hagas commit ni push sin que te lo pidan. Mensajes en inglés con Conventional Commits (`feat:`, `fix:`, `content:`…).
+- **Git:** se trabaja directo en `master`, sin ramas. Nunca hagas commit ni push sin que te lo pidan. Mensajes en inglés con Conventional Commits (`feat:`, `fix:`, `content:`…).
