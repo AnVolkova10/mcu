@@ -45,6 +45,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'arnim-zola': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/6/67/Arnim_Zola.png/revision/latest/scale-to-width-down/300?cb=20141127015752',
   },
+  'avalanche': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/3/31/Avalanche.jpg/revision/latest/scale-to-width-down/300?cb=20131017233454',
+  },
   'azazel': {
     'earth-10005': 'https://static.wikia.nocookie.net/xmenmovies/images/1/1a/Azazel_XMFC_Textless.jpg/revision/latest/scale-to-width-down/231?cb=20240115013643',
   },
@@ -230,6 +233,7 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   },
   'fred-dukes': {
     'earth-10005': 'https://static.wikia.nocookie.net/xmenmovies/images/8/80/469px-Frederick_Dukes_%28Earth-10005%29-1-.jpg/revision/latest/window-crop/width/300/x-offset/66/y-offset/0/window-width/211/window-height/211?cb=20110612090835',
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/6/6c/Blob.jpg/revision/latest/scale-to-width-down/300?cb=20131017213013',
   },
   'fury': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/a/a3/Nick_Fury_Infobox.png/revision/latest/scale-to-width-down/236?cb=20240802141551',
@@ -278,6 +282,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   },
   'helen': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/a/ab/Helen_of_Troy_Infobox.png/revision/latest/scale-to-width-down/206?cb=20250807175258',
+  },
+  'henry-gyrich': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/9/9b/Henry_Peter_Gyrich.jpg/revision/latest/scale-to-width-down/300?cb=20160429040638',
   },
   'ho-yinsen': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/2/2b/Yinsen.jpg/revision/latest?cb=20141008032010',
@@ -480,6 +487,7 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   },
   'moira-mactaggert': {
     'earth-10005': 'https://static.wikia.nocookie.net/xmenmovies/images/b/bd/Moira_MacTaggert_XMFC_Textless.jpg/revision/latest/scale-to-width-down/231?cb=20240115013401',
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/8/86/Moira_MacTaggert_29_from_X-Men_%2797_Season_1_5_001.webp/revision/latest/scale-to-width-down/275?cb=20241216003553',
   },
   'mojo': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/4/48/Mojo.png/revision/latest/scale-to-width-down/300?cb=20130915014305',
@@ -558,6 +566,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   },
   'puppet-master': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/7/7c/Puppet_Master.jpg/revision/latest/scale-to-width-down/300?cb=20160505034506',
+  },
+  'pyro': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/4/49/Pyro.jpg/revision/latest/scale-to-width-down/209?cb=20131017233052',
   },
   'quicksilver-peter-maximoff': {
     'earth-10005': 'https://static.wikia.nocookie.net/xmenmovies/images/9/91/Xmen014.png/revision/latest/scale-to-width-down/261?cb=20140223071429',

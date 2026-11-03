@@ -239,8 +239,8 @@ export const locations = {
     coords: [51.7, -116.1],
   },
   'cape-citadel-military-missile-installation': {
-    name: 'Cape Citadel Military Missile Installation',
-    place: 'Brevard County, Florida',
+    name: 'Drake Missile Base',
+    place: 'Florida',
     country: 'United States',
     kind: 'earth',
     coords: [28.488, -80.577],
@@ -381,6 +381,13 @@ export const locations = {
     kind: 'earth',
     coords: [51.1784, -115.5708],
   },
+  'detroit-sentinel-factory': {
+    name: 'Sentinel Factory',
+    place: 'Detroit, Michigan',
+    country: 'United States',
+    kind: 'earth',
+    coords: [42.3778, -83.0273],
+  },
   'dr-miles-warrens-offshore-aquatic-bio-dome': {
     name: "Dr. Miles Warren's Offshore Aquatic Bio-Dome",
     place: 'Long Island Sound / Atlantic Coast',
@@ -445,6 +452,13 @@ export const locations = {
     coords: [40.8448, -73.8648],
     approximate: true,
   },
+  'first-national-bank': {
+    name: 'First National Bank',
+    place: 'Manhattan, New York City',
+    country: 'United States',
+    kind: 'earth',
+    coords: [40.7059, -74.0093],
+  },
   'forest-cottage-and-steel-foundry': {
     name: 'Pruszków',
     country: 'Poland',
@@ -480,11 +494,11 @@ export const locations = {
     coords: [-0.9538, -90.9656],
   },
   'galleria-shopping-mall': {
-    name: 'Galleria Shopping Mall',
-    place: 'Beverly Hills / Los Angeles',
+    name: 'Salem Center Mall',
+    place: 'Salem Center, New York',
     country: 'United States',
     kind: 'earth',
-    coords: [34.0736, -118.4004],
+    coords: [41.3335, -73.6125],
   },
   'gamma-base-and-desert-badlands': {
     name: 'Gamma Base & Desert Badlands',
@@ -492,6 +506,13 @@ export const locations = {
     country: 'United States',
     kind: 'earth',
     coords: [33.38, -106.48],
+  },
+  'genosha-beach-inn': {
+    name: 'Genosha Beach Inn',
+    place: 'Hammer Bay',
+    country: 'Genosha',
+    kind: 'earth',
+    coords: [-4.6115, 55.4315],
   },
   'genosha-capital-and-council-plaza': {
     name: 'Genosha Capital & Council Plaza',
@@ -709,6 +730,13 @@ export const locations = {
     kind: 'space',
     node: 'jotunheim',
   },
+  'jubilee-foster-home': {
+    name: "Jubilee's Foster Home",
+    place: 'Salem Center, New York',
+    country: 'United States',
+    kind: 'earth',
+    coords: [41.3205, -73.5805],
+  },
   'kamar-taj': {
     name: 'Kamar-Taj',
     place: 'Kathmandu',
@@ -773,6 +801,13 @@ export const locations = {
     country: 'United States',
     kind: 'earth',
     coords: [36.1699, -115.1398],
+  },
+  'lincoln-memorial': {
+    name: 'Lincoln Memorial',
+    place: 'Washington, D.C.',
+    country: 'United States',
+    kind: 'earth',
+    coords: [38.8893, -77.0502],
   },
   'lions-kingdom': {
     name: "Lion's Kingdom",
@@ -858,6 +893,13 @@ export const locations = {
     kind: 'earth',
     coords: [51.389, 30.099],
   },
+  'manhattan-city-jail': {
+    name: 'City Jail',
+    place: 'Manhattan, New York City',
+    country: 'United States',
+    kind: 'earth',
+    coords: [40.7165, -74.0005],
+  },
   'manhattan-eye-infirmary-and-queens-foh-compound': {
     name: 'Manhattan Eye Infirmary & Queens FOH Compound',
     place: 'New York City, New York',
@@ -887,11 +929,11 @@ export const locations = {
     node: 'mar-vell-lab',
   },
   'master-mold-subterranean-sentinel-foundry': {
-    name: 'Master Mold Subterranean Sentinel Foundry',
-    place: 'Appalachian Mountains, Georgia',
+    name: "Master Mold's Coal Mine",
+    place: 'West Virginia',
     country: 'United States',
     kind: 'earth',
-    coords: [34.746, -84.482],
+    coords: [37.75, -81.35],
   },
   'maveth-wasteland-and-hive-exile-outpost': {
     name: 'Maveth Wasteland & Hive Exile Outpost',
@@ -928,11 +970,11 @@ export const locations = {
     coords: [25.77, -80.08],
   },
   'midtown-manhattan-construction-site': {
-    name: 'Midtown Manhattan Construction Site',
-    place: 'New York City',
+    name: 'Construction Site',
+    place: 'Manhattan, New York City',
     country: 'United States',
     kind: 'earth',
-    coords: [40.758, -73.9855],
+    coords: [40.769, -73.989],
   },
   'military-stockade-and-da-nang-outpost': {
     name: 'Military Stockade',
@@ -969,11 +1011,11 @@ export const locations = {
     node: 'mojoverse',
   },
   'morlock-subterranean-tunnels-and-nyc-sewers': {
-    name: 'Morlock Subterranean Tunnels & NYC Sewers',
-    place: 'Manhattan, New York',
+    name: 'Morlock Tunnels',
+    place: 'Under Manhattan, New York City',
     country: 'United States',
     kind: 'earth',
-    coords: [40.7128, -74.006],
+    coords: [40.7377, -73.9887],
   },
   'morlock-tunnels-and-subterranean-manhattan': {
     name: 'Morlock Tunnels & Subterranean Manhattan',
@@ -1004,11 +1046,11 @@ export const locations = {
     coords: [45.45, 25.35],
   },
   'muir-island-mutant-research-facility': {
-    name: 'Muir Island Mutant Research Facility',
-    place: 'Highlands',
+    name: 'Muir Island',
+    place: 'Off the coast',
     country: 'Scotland',
     kind: 'earth',
-    coords: [57.753, -5.714],
+    coords: [57.78, -5.9],
   },
   'muir-island-research-complex-and-edinburgh': {
     name: 'Muir Island Research Complex & Edinburgh',
@@ -1025,11 +1067,18 @@ export const locations = {
     coords: [51.5194, -0.1269],
   },
   'mutant-control-agency-mainframe-vaults': {
-    name: 'Mutant Control Agency Mainframe Vaults',
-    place: 'Washington D.C.',
+    name: 'Mutant Control Agency',
+    place: 'Washington, D.C.',
     country: 'United States',
     kind: 'earth',
-    coords: [38.8899, -77.009],
+    coords: [38.8874, -77.0169],
+  },
+  'mutant-termination-center': {
+    name: 'Mutant Termination Center',
+    place: 'Manhattan, New York City',
+    country: 'United States',
+    kind: 'earth',
+    coords: [40.729, -74.0105],
   },
   'mycenaean-citadel-and-aegean-coastal-ruins': {
     name: 'Mycenaean Citadel & Aegean Coastal Ruins',
@@ -1242,11 +1291,11 @@ export const locations = {
     coords: [38.8898, -76.9719],
   },
   'richmond-chemical-refining-plant': {
-    name: 'Richmond Chemical Refining Plant',
-    place: 'Richmond, Virginia',
+    name: 'Metro Chemical',
+    place: 'New York City',
     country: 'United States',
     kind: 'earth',
-    coords: [37.5407, -77.436],
+    coords: [40.718, -73.9268],
   },
   'roxxon-refinery': {
     name: 'Roxxon Refinery',
@@ -1307,8 +1356,8 @@ export const locations = {
     coords: [40.7291, -73.998],
   },
   'sentinel-mutant-internment-camp-and-subway-bunker': {
-    name: 'Sentinel Mutant Internment Camp & Subway Bunker',
-    place: 'Ruined New York City',
+    name: 'Rebel Hideout',
+    place: 'Manhattan, New York City',
     country: 'United States',
     kind: 'earth',
     coords: [40.7831, -73.9712],
@@ -1502,6 +1551,13 @@ export const locations = {
     kind: 'earth',
     coords: [41.2565, -95.9345],
   },
+  stonehenge: {
+    name: 'Stonehenge',
+    place: 'Wiltshire',
+    country: 'England',
+    kind: 'earth',
+    coords: [51.1788, -1.8262],
+  },
   'subterranean-cavern-kingdom': {
     name: 'Subterranean Cavern Kingdom',
     place: 'Subterranea',
@@ -1517,6 +1573,13 @@ export const locations = {
     node: 'kun-lun',
   },
   'temple-vault-of-morag': { name: 'Temple vault of Morag', country: 'Morag', kind: 'space', node: 'morag' },
+  'sunken-freighter': {
+    name: 'Sunken Freighter',
+    place: 'Atlantic Ocean',
+    country: 'International Waters',
+    kind: 'earth',
+    coords: [35.15, -75.2],
+  },
   'swiss-bank-geneva': {
     name: 'Swiss Bank',
     place: 'Geneva',
@@ -1553,11 +1616,10 @@ export const locations = {
     node: 'knowhere',
   },
   'the-great-hydroelectric-dam-and-slave-complex': {
-    name: 'The Great Hydroelectric Dam & Slave Complex',
-    place: 'Island of Genosha',
+    name: 'Genoshan Dam',
     country: 'Genosha',
     kind: 'earth',
-    coords: [-20.25, 57.55],
+    coords: [-4.5901, 55.4423],
   },
   'the-great-mound-and-birnin-zana': {
     name: 'The Great Mound & Birnin Zana',
@@ -1647,11 +1709,11 @@ export const locations = {
     coords: [39.957, 26.238],
   },
   'tuktoyaktuk-arctic-outpost': {
-    name: 'Tuktoyaktuk Arctic Outpost',
-    place: 'Northwest Territories',
+    name: 'Inuit Fishing Camp',
+    place: 'Baffin Island',
     country: 'Canada',
     kind: 'earth',
-    coords: [69.445, -133.034],
+    coords: [63.55, -67.9],
   },
   'underground-mutant-fight-club': {
     name: 'Underground Fight Club',
@@ -1675,11 +1737,11 @@ export const locations = {
     coords: [38.8899, -77.009],
   },
   'united-states-capitol-building': {
-    name: 'United States Capitol Building',
-    place: 'Washington D.C.',
+    name: 'United States Capitol',
+    place: 'Washington, D.C.',
     country: 'United States',
     kind: 'earth',
-    coords: [38.8899, -77.009],
+    coords: [38.8906, -77.0094],
   },
   'upstate-rural-highway-and-county-hospital': {
     name: 'Crash Site',
@@ -1739,6 +1801,20 @@ export const locations = {
     kind: 'earth',
     coords: [5.225, 35.57],
   },
+  'washington-detention-center': {
+    name: 'Detention Center',
+    place: 'Washington, D.C.',
+    country: 'United States',
+    kind: 'earth',
+    coords: [38.8834, -76.9761],
+  },
+  'washington-federal-courthouse': {
+    name: 'Federal Courthouse',
+    place: 'Washington, D.C.',
+    country: 'United States',
+    kind: 'earth',
+    coords: [38.8927, -77.0163],
+  },
   'waverley-station': {
     name: 'Waverley Station',
     place: 'Edinburgh',
@@ -1761,11 +1837,18 @@ export const locations = {
     approximate: true,
   },
   'world-peace-summit-at-arc-de-triomphe': {
-    name: 'World Peace Summit at Arc de Triomphe',
+    name: 'World Peace Conference',
     place: 'Paris',
     country: 'France',
     kind: 'earth',
-    coords: [48.8738, 2.295],
+    coords: [48.8629, 2.289],
+  },
+  'worthington-chalet': {
+    name: "Warren Worthington's Chalet",
+    place: 'Bavarian Alps',
+    country: 'Germany',
+    kind: 'earth',
+    coords: [47.52, 11.2],
   },
   'wulin-mountain-sanctuary-and-monastery': {
     name: 'Chinese Monastery',

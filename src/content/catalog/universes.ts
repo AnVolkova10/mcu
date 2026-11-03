@@ -60,6 +60,12 @@ export const branches = {
     divergence: 1973,
     description: 'The timeline erased by Days of Future Past: Weapon X, Three Mile Island and the Sentinel apocalypse of 2023.',
   },
+  'bishop-future': {
+    universe: 'earth-92131',
+    name: "Bishop's future",
+    divergence: 1992,
+    description: 'The 2055 that Bishop comes from: a killing in Washington in the 1990s is blamed on mutants, and the Sentinels round them up and then turn on humans too.',
+  },
 } as const satisfies Record<string, BranchInput>;
 
 export type BranchId = keyof typeof branches;

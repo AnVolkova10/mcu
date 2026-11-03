@@ -139,6 +139,14 @@ export const characters = {
     origin: 'Switzerland / Germany',
     bio: "Brilliant HYDRA biochemist and geneticist who harnessed the Tesseract energy and later secretly planted HYDRA's parasite inside S.H.I.E.L.D.",
   },
+  avalanche: {
+    name: 'Avalanche',
+    color: '#b45309',
+    role: 'villain',
+    status: 'alive',
+    factions: ['brotherhood-of-mutants', 'mutants'],
+    bio: "Mutant of Mystique's Brotherhood who makes the ground shake. With Pyro he kidnaps Mystique, disguised as Dr. Adler, for ransom on Muir Island, and he attacks the Senate hearing where she tries to kill Senator Kelly.",
+  },
   azazel: {
     name: 'Azazel',
     color: '#f97350',
@@ -203,7 +211,8 @@ export const characters = {
     role: 'hero',
     status: 'alive',
     factions: ['mutants'],
-    bio: 'Futuristic guerrilla warrior possessing the mutant ability to absorb all forms of kinetic, thermal, and directed energy and redirect it through high-caliber tactical plasma weaponry.',
+    origin: 'New York, 2055',
+    bio: 'Mutant from the New York of 2055 who hunts other mutants for the Sentinels until they turn on him. Forge sends him back to the 1990s to stop the assassination that, he believes, created his future. He absorbs energy and fires it back.',
   },
   'black-bolt': {
     name: 'Blackagar Boltagon',
@@ -302,7 +311,7 @@ export const characters = {
     role: 'secondary',
     status: 'deceased',
     factions: ['morlocks', 'mutants'],
-    origin: 'The Alley, Manhattan / Genosha',
+    origin: 'Morlock Tunnels, Manhattan',
     bio: 'Fierce leader of the subterranean Morlocks endowed with heightened senses and tactical instincts, who represented mutant refugees on the Genoshan ruling council before perishing in the Tri-Sentinel massacre.',
   },
   'calvin-chadwick': {
@@ -703,9 +712,8 @@ export const characters = {
     color: '#2dd4bf',
     role: 'hero',
     status: 'alive',
-    factions: ['x-men', 'x-factor'],
-    origin: 'Eagle Plaza, Dallas, Texas',
-    bio: "Cheyenne mutant intuitive genius capable of engineering any technological concept, creator of the mutant power neutralizer collar and the device that restored Storm's elemental gifts.",
+    factions: ['mutants'],
+    bio: 'Mutant inventor. In the 2055 ruled by the Sentinels he hides the rebels and builds the time portal that sends Bishop back to the 1990s.',
   },
   'frankie-noir': {
     name: 'Frankie',
@@ -877,6 +885,15 @@ export const characters = {
     status: 'alive',
     factions: [],
     bio: "At the center of the Trojan War, she wears the Vibranium pendant that B'Kai was sent to recover. He takes it and lets her flee Troy with Paris.",
+  },
+  'henry-gyrich': {
+    name: 'Henry Peter Gyrich',
+    color: '#8b5e3c',
+    role: 'villain',
+    status: 'deceased',
+    factions: ['anti-mutant-coalition'],
+    origin: 'United States',
+    bio: "Government official who runs the Mutant Control Agency and secretly backs Bolivar Trask's Sentinels; when the President shuts the program down, he moves it to Genosha. He later shoots Charles Xavier and is killed by Bastion.",
   },
   'ho-yinsen': {
     name: 'Professor Ho Yinsen',
@@ -1144,7 +1161,6 @@ export const characters = {
     role: 'hero',
     status: 'alive',
     factions: ['x-men', 'mutants'],
-    origin: 'Beverly Hills, California',
     bio: "Spirited young mutant capable of generating and detonating multi-colored pyrotechnic energy plasmoids ('fireworks') with explosive concussive force.",
   },
   'juggernaut-cain-marko': {
@@ -1411,8 +1427,8 @@ export const characters = {
     role: 'villain',
     status: 'deceased',
     factions: ['sentinels', 'artificial-intelligences'],
-    origin: 'Sentinel Fabrication Complex',
-    bio: 'Colossal sentient AI supercomputer designed to manufacture and command Sentinels, which calculated that replacing human world leaders with brainwashed clones is the only logical path.',
+    origin: 'Genosha',
+    bio: 'Giant Sentinel that Bolivar Trask builds to produce Sentinels on its own. It decides that mutants are human, so the Sentinels must rule humans too, and plans to replace the brains of world leaders with computers.',
   },
   may: {
     name: 'Melinda May',
@@ -1757,6 +1773,14 @@ export const characters = {
     factions: [],
     origin: 'New York City',
     bio: 'Embittered sculptor who controls people through puppets carved from radioactive clay; stepfather of Alicia Masters.',
+  },
+  pyro: {
+    name: 'Pyro',
+    color: '#f97316',
+    role: 'villain',
+    status: 'alive',
+    factions: ['brotherhood-of-mutants', 'mutants'],
+    bio: "Mutant of Mystique's Brotherhood who controls fire. With Avalanche he kidnaps Mystique, disguised as Dr. Adler, for ransom on Muir Island, and he attacks the Senate hearing where she tries to kill Senator Kelly.",
   },
   'quicksilver-peter-maximoff': {
     name: 'Peter Maximoff',

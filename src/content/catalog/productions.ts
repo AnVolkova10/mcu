@@ -794,9 +794,10 @@ export const productions = {
     network: 'Fox Kids',
     universe: 'earth-92131',
     status: 'audited',
+    verified: true,
     animated: true,
     color: '#eab308',
-    description: "In 1992, the X-Men combat Bolivar Trask's anti-mutant Sentinels, Magneto's ideological rebellion, and the emergence of Apocalypse and Master Mold, while time-traveler Bishop attempts to avert a bleak dystopian future.",
+    description: 'In 1992 the X-Men take in Jubilee and face the Sentinels, Magneto, Apocalypse and Master Mold, while Bishop comes back from 2055 to stop the assassination that he believes ruined his future.',
     poster: '/qVwe6nEnJpJbjisnDka0yoeDaT2.jpg',
   },
   'x-men-tas-s2': {

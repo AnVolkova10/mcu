@@ -27,7 +27,7 @@ export const objects = {
   cerebro: {
     name: 'Cerebro',
     kind: 'technology',
-    description: "Machine built by Hank McCoy that amplifies Charles Xavier's telepathy to locate mutants. The first one, at Division X, is destroyed in Sebastian Shaw's attack.",
+    description: "Machine built by Hank McCoy that amplifies Charles Xavier's telepathy to locate mutants. The first one, at Division X, is destroyed in Sebastian Shaw's attack. In the animated series, Xavier uses it to show Bishop's memories of 2055, and Jean Grey wears one of its helmets to break into the Juggernaut's mind.",
   },
   'magneto-helmet': {
     name: "Magneto's Helmet",
@@ -42,7 +42,7 @@ export const objects = {
   sentinels: {
     name: 'Sentinels',
     kind: 'technology',
-    description: "Robots designed by Bolivar Trask to hunt mutants. Magneto laces the first ones with steel and turns them on the White House in 1973; in the future of 2023, built from Mystique's DNA, they adapt to any mutant power.",
+    description: "Robots designed by Bolivar Trask to hunt mutants. In the Fox films, Magneto laces the first ones with steel and turns them on the White House in 1973; in the future of 2023, built from Mystique's DNA, they adapt to any mutant power. In the animated series, Trask builds them for Henry Gyrich, Master Mold makes them on its own, and by 2055 they rule over mutants and humans.",
   },
   'spider-suit': {
     name: 'Spider Suit',

@@ -21,6 +21,7 @@ const CREDITED_AS: Record<string, readonly string[]> = {
   'alfred-morris-noir': ['Mayor Morris'],
   'archangel-warren-worthington': ['Angel'],
   'fred-dukes': ['Fred Dukes'],
+  'henry-gyrich': ['Henry Gyrich'],
   'howard-walters-noir': ['Walters'],
   'jimmy-addison-noir': ['Addison'],
   'johann-fennhoff': ['Dr. Ivchenko'],

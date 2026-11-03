@@ -48,6 +48,9 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
   'arnim-zola': [
     { actor: 'Toby Jones', universe: 'earth-616', productions: ['captain-america-the-first-avenger', 'agent-carter-s1'], photo: '/1qNisdp4f1KstdfvAgYXMdrhwfk.jpg' },
   ],
+  'avalanche': [
+    { actor: 'Rod Coneybeare', universe: 'earth-92131', productions: ['x-men-tas-s1'], voice: true },
+  ],
   'azazel': [
     { actor: 'Jason Flemyng', universe: 'earth-10005', productions: ['x-men-first-class'], photo: '/nYl0180ACnLzVlGbaAfuPtdGr9K.jpg' },
   ],
@@ -224,6 +227,7 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
   ],
   'fred-dukes': [
     { actor: 'Kevin Durand', universe: 'earth-10005', productions: ['x-men-origins-wolverine'], photo: '/hINvryvce5tpod6kTnUg9ZTH8wg.jpg' },
+    { actor: 'Robert Cait', universe: 'earth-92131', productions: ['x-men-tas-s1'], voice: true, photo: '/jOAF5DUhynQyaYeywSINwjuPPM9.jpg' },
   ],
   'fury': [
     { actor: 'Samuel L. Jackson', universe: 'earth-616', productions: ['captain-marvel', 'iron-man', 'iron-man-2', 'thor', 'captain-america-the-first-avenger', 'the-avengers', 'agents-of-shield-s1', 'captain-america-the-winter-soldier', 'avengers-age-of-ultron', 'avengers-infinity-war'], photo: '/AiAYAqwpM5xmiFrAIeQvUXDCVvo.jpg' },
@@ -272,6 +276,9 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
   ],
   'helen': [
     { actor: 'Joanna Kalafatis', universe: 'earth-616', productions: ['eyes-of-wakanda-s1'], voice: true, photo: '/vv1VsMlQWmXC53MRMKtEalBzTdz.jpg' },
+  ],
+  'henry-gyrich': [
+    { actor: 'Barry Flatman', universe: 'earth-92131', productions: ['x-men-tas-s1'], voice: true, photo: '/jFilSZK7Th9qTQFQ3ZToU53ieAY.jpg' },
   ],
   'hobgoblin': [
     { actor: 'Mark Hamill', universe: 'earth-92131', productions: ['spider-man-tas-s1'], voice: true, photo: '/zMQ93JTLW8KxusKhOlHFZhih3YQ.jpg' },
@@ -545,6 +552,9 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
   ],
   'puppet-master': [
     { actor: 'Neil Ross', universe: 'earth-92131', productions: ['fantastic-four-tas-s1'], voice: true, photo: '/pNgkQKw5k6z9kscDnOAwstcmNnt.jpg' },
+  ],
+  'pyro': [
+    { actor: 'Graham Haley', universe: 'earth-92131', productions: ['x-men-tas-s1'], voice: true },
   ],
   'quicksilver-peter-maximoff': [
     { actor: 'Evan Peters', universe: 'earth-10005', productions: ['x-men-days-of-future-past', 'x-men-apocalypse', 'x-men-dark-phoenix'], photo: '/m9okq20ca2Md38i2ekJeKs3vTwa.jpg' },
