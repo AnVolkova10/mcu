@@ -118,7 +118,6 @@ export const characters = {
     role: 'villain',
     status: 'deceased',
     factions: ['mutants'],
-    origin: 'Earth-10005',
     bio: 'Mutant aerial combatant originally gifted with feathered wings, bio-mechanically enhanced by Apocalypse with impenetrable metallic razor wings that fire lethal razor-sharp steel flechettes.',
   },
   'armando-munoz': {
@@ -645,10 +644,10 @@ export const characters = {
     alias: 'Apocalypse',
     color: '#7c3aed',
     role: 'villain',
-    status: 'alive',
+    status: 'variable',
     factions: ['mutants'],
     origin: 'Ancient Egypt',
-    bio: "The world's first ancient mutant, revered as an omnipotent deity in Ancient Egypt who wields near-limitless telekinesis, molecular manipulation, and physical transmigration.",
+    bio: 'The first mutant, worshipped as a god in ancient Egypt, who lives on by passing into new bodies and makes the mutants he chooses as his Four Horsemen stronger.',
   },
   'erik-killmonger': {
     name: 'Erik Stevens',
@@ -1042,7 +1041,7 @@ export const characters = {
     status: 'alive',
     factions: ['x-men', 'mutants'],
     origin: 'United States',
-    bio: 'Omega-level mutant telepath and telekinetic endowed with limitless psionic potential, capable of rearranging matter at the subatomic level and channeling the primordial Phoenix Force.',
+    bio: 'Mutant telepath and telekinetic endowed with limitless psionic potential, capable of rearranging matter at the subatomic level and channeling the primordial Phoenix Force.',
   },
   'jennifer-walters-she-hulk': {
     name: 'Jennifer Walters',
@@ -1747,7 +1746,6 @@ export const characters = {
     role: 'villain',
     status: 'alive',
     factions: ['mutants'],
-    origin: 'Earth-10005',
     bio: 'Deadly martial artist and mutant tracker capable of telepathic sensory tracking and manifesting lethal solid psionic energy blades, whips, and katanas from her hands.',
   },
   'puppet-master': {

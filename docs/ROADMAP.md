@@ -11,7 +11,7 @@
 
 ## Contenido
 
-Estado actual: `npm run content -- status` (31 producciones auditadas, 11 verificadas, 50 legacy de la v1).
+Estado actual: `npm run content -- status` (31 producciones auditadas, 12 verificadas, 50 legacy de la v1).
 
 **Lo que sigue.** Revisar una por una las 28 producciones auditadas en la v2 junto a quien mantiene el proyecto, con `docs/AUDIT_GUIDE.md`, y recién después seguir con lo demás. Van en el orden de la cronología de Aaron Perris (https://aaronperris.com/mcu/), que intercala piezas legacy de la v1, como *Stark Expo 1974*: se auditan en ese mismo orden.
 
@@ -26,7 +26,7 @@ Estado actual: `npm run content -- status` (31 producciones auditadas, 11 verifi
 - [x] *Stark Expo 1974* y *Howard Stark S.H.I.E.L.D. Classified Files* (legacy de la v1)
 - [x] *X-Men Origins: Wolverine*
 - [x] *X-Men: Days of Future Past*
-- [ ] *X-Men: Apocalypse*
+- [x] *X-Men: Apocalypse*
 - [ ] *Dark Phoenix*
 - [ ] *X-Men: The Animated Series* T1
 - [ ] *X-Men: The Animated Series* T2
@@ -47,7 +47,7 @@ Estado actual: `npm run content -- status` (31 producciones auditadas, 11 verifi
 - [ ] *Spider-Man: The Animated Series* T5
 - [ ] *The Incredible Hulk* T2
 
-**Puntos compartidos del mapa.** 17 puntos exactos siguen repartidos entre 39 lugares. Se separan a medida que se audita cada producción: el validador lo exige en las verificadas y lo muestra como aviso en las demás.
+**Puntos compartidos del mapa.** 16 puntos exactos siguen repartidos entre 37 lugares. Se separan a medida que se audita cada producción: el validador lo exige en las verificadas y lo muestra como aviso en las demás.
 
 **Fechas pendientes de auditoría.** `2,000 years ago` (la Mano, *The Defenders*) sigue en texto libre hasta que se audite esa producción. Las dos `Ancient times` del catálogo de gemas (Morag y Agamotto) son recorridos sin fecha en el canon.
 

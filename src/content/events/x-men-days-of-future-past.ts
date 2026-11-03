@@ -9,7 +9,7 @@ export default defineEvents('x-men-days-of-future-past', [
     text: [
       'In ancient Egypt, a crowd kneels and chants the name of a young [En Sabah Nur](en-sabah-nur-apocalypse) as he lifts blocks of stone with his mind to build the pyramids. His Four Horsemen watch from a distance.',
     ],
-    locations: ['giza-plateau-and-great-pyramids'],
+    locations: ['old-cairo-bazaars-and-underground-tomb'],
   },
   {
     id: 'mystique-frees-mutant-soldiers',

@@ -358,6 +358,7 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
     { actor: 'Ken Marino', universe: 'earth-616', productions: ['agent-carter-s2'], photo: '/wLYkhmy0Cp1MeLmc4l3FZRuWly4.jpg' },
   ],
   'jubilee-jubilation-lee': [
+    { actor: 'Lana Condor', universe: 'earth-10005', productions: ['x-men-apocalypse'], photo: '/vWn27Fk2GLwH7o9fBG9hBWZI6OR.jpg' },
     { actor: 'Alyson Court', universe: 'earth-92131', productions: ['x-men-tas-s1', 'x-men-tas-s3', 'x-men-tas-s5'], voice: true, photo: '/kPeTYEV6vyyAJEsUlomVpiLcd6v.jpg' },
     { actor: 'Holly Chou', universe: 'earth-92131', productions: ['x-men-97-s1'], voice: true, photo: '/8sPU4zmJIwHk2qJ63wxOTnEcrS4.jpg' },
   ],

@@ -52,8 +52,7 @@ export const locations = {
     coords: [59.2692, 10.4077],
   },
   'apocalypses-grand-pyramid-and-metropolitan-cairo-ruins': {
-    name: "Apocalypse's Grand Pyramid & Metropolitan Cairo Ruins",
-    place: 'Cairo',
+    name: 'Cairo',
     country: 'Egypt',
     kind: 'earth',
     coords: [30.0444, 31.2357],
@@ -107,13 +106,6 @@ export const locations = {
     country: 'Tibet / Great Refuge',
     kind: 'earth',
     coords: [31, 88],
-  },
-  'auschwitz-birkenau-camp-memorial': {
-    name: 'Auschwitz-Birkenau Camp Memorial',
-    place: 'Oświęcim',
-    country: 'Poland',
-    kind: 'earth',
-    coords: [50.0274, 19.202],
   },
   'auschwitz-birkenau-concentration-camp': {
     name: 'Auschwitz-Birkenau Concentration Camp',
@@ -461,8 +453,7 @@ export const locations = {
     approximate: true,
   },
   'forest-cottage-and-steel-foundry': {
-    name: 'Forest Cottage & Steel Foundry',
-    place: 'Pruszków',
+    name: 'Pruszków',
     country: 'Poland',
     kind: 'earth',
     coords: [52.167, 20.814],
@@ -543,13 +534,6 @@ export const locations = {
     country: 'United States',
     kind: 'earth',
     coords: [40.8517, -73.9527],
-  },
-  'giza-plateau-and-great-pyramids': {
-    name: 'Great Pyramids',
-    place: 'Giza',
-    country: 'Egypt',
-    kind: 'earth',
-    coords: [29.9792, 31.1342],
   },
   'griffith-hotel': {
     name: 'Griffith Hotel',
@@ -1098,13 +1082,6 @@ export const locations = {
     kind: 'earth',
     coords: [29.987, 31.213],
   },
-  'nile-valley-golden-pyramid-of-en-sabah-nur': {
-    name: 'Nile Valley Golden Pyramid of En Sabah Nur',
-    place: 'Nile Valley / Luxor',
-    country: 'Egypt',
-    kind: 'earth',
-    coords: [25.6872, 32.6396],
-  },
   'normandy-invasion-beachhead': {
     name: 'Normandy Beach',
     country: 'France',
@@ -1129,11 +1106,11 @@ export const locations = {
   },
   'odins-vault': { name: "Odin's vault", country: 'Asgard', kind: 'space', node: 'asgard' },
   'old-cairo-bazaars-and-underground-tomb': {
-    name: 'Old Cairo Bazaars & Underground Tomb',
+    name: "En Sabah Nur's Pyramid",
     place: 'Cairo',
     country: 'Egypt',
     kind: 'earth',
-    coords: [30.0444, 31.2357],
+    coords: [30.006, 31.231],
   },
   'old-royal-naval-college': {
     name: 'Old Royal Naval College',
@@ -1685,7 +1662,7 @@ export const locations = {
     coords: [69.445, -133.034],
   },
   'underground-mutant-fight-club': {
-    name: 'Underground Mutant Fight Club',
+    name: 'Underground Fight Club',
     place: 'East Berlin',
     country: 'East Germany',
     kind: 'earth',

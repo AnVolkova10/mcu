@@ -364,6 +364,7 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   },
   'jubilee-jubilation-lee': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/4/46/Jubilation_Lee.png/revision/latest/scale-to-width-down/300?cb=20120707055530',
+    'earth-10005': 'https://static.wikia.nocookie.net/xmenmovies/images/1/13/Jubilee_.jpg/revision/latest?cb=20150313045251',
   },
   'juggernaut-cain-marko': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/8/8a/Juggernaut.jpg/revision/latest/scale-to-width-down/300?cb=20100815215019',
