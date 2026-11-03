@@ -10,6 +10,7 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   },
   'agent-zero': {
     'earth-10005': 'https://static.wikia.nocookie.net/xmenmovies/images/b/be/AgentZero1-XMOWsf.png/revision/latest/scale-to-width-down/231?cb=20140609141742',
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/a/a1/Maverick.jpg/revision/latest/scale-to-width-down/248?cb=20131016015434',
   },
   'akeya': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/c/c6/Akeya_Infobox.png/revision/latest/scale-to-width-down/201?cb=20250804004240',
@@ -20,8 +21,14 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'alfred-morris-noir': {
     'earth-62533': 'https://static.wikia.nocookie.net/spidermannoir/images/2/25/Alfred_Morris.png/revision/latest/scale-to-width-down/300?cb=20260712044841',
   },
+  'amelia-voght': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/8/8c/Voght.jpg/revision/latest/scale-to-width-down/260?cb=20131115211143',
+  },
   'ana-jarvis': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/f/ff/Agent_Carter_Season_2_Promo_10.jpg/revision/latest/window-crop/width/300/x-offset/720/y-offset/30/window-width/765/window-height/765?cb=20160106184612',
+  },
+  'andre-cocteau': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/b/b0/Andre_Cocteau.jpg/revision/latest/scale-to-width-down/300?cb=20110724032306',
   },
   'angel-salvadore': {
     'earth-10005': 'https://static.wikia.nocookie.net/xmenmovies/images/3/35/Tempest_XMFC_Textless.jpg/revision/latest/scale-to-width-down/231?cb=20240115010426',
@@ -38,6 +45,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'archangel-warren-worthington': {
     'earth-10005': 'https://static.wikia.nocookie.net/xmenmovies/images/f/fb/Archangel-Xmen-Apocalypse.png/revision/latest/scale-to-width-down/199?cb=20240905140900',
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/a/ab/Archangel.jpg/revision/latest/scale-to-width-down/300?cb=20100815215513',
+  },
+  'arkon': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/1/1b/Arkon.PNG/revision/latest/scale-to-width-down/300?cb=20190308152100',
   },
   'armando-munoz': {
     'earth-10005': 'https://static.wikia.nocookie.net/xmenmovies/images/d/d2/Darwin.jpg/revision/latest/scale-to-width-down/248?cb=20110611091742',
@@ -79,12 +89,14 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   },
   'black-widow': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/3/3f/Black_Widow_Infobox.jpg/revision/latest/scale-to-width-down/220?cb=20231025163748',
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/7/7f/BlackWidow-ageofapocalypse.jpg/revision/latest/scale-to-width-down/179?cb=20130111224850',
   },
   'blade-eric-brooks': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/9/94/Blade.jpg/revision/latest/scale-to-width-down/300?cb=20080824191703',
   },
   'blink-clarice-ferguson': {
     'earth-10005': 'https://static.wikia.nocookie.net/xmenmovies/images/d/da/XMDOFP_Blink_Character_Poster.jpg/revision/latest/window-crop/width/300/x-offset/163/y-offset/119/window-width/217/window-height/217?cb=20140624193859',
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/e/eb/Blink.jpg/revision/latest/scale-to-width-down/300?cb=20131016010840',
   },
   'bolivar-trask': {
     'earth-10005': 'https://static.wikia.nocookie.net/xmenmovies/images/c/cf/Bolivar_Trask-1-.png/revision/latest/scale-to-width-down/247?cb=20140220011250',
@@ -96,11 +108,17 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'cable-nathan-summers': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/0/0f/Cable.jpg/revision/latest/scale-to-width-down/300?cb=20150321041237',
   },
+  'caliban': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/c/cd/Caliban_%28X-Men_TAS%29.PNG/revision/latest/scale-to-width-down/300?cb=20161119065633',
+  },
   'callisto': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/f/f1/Callisto_%28Earth-92131%29_from_X-Men_%2797_Concept_Art_001.webp/revision/latest/scale-to-width-down/194?cb=20241217033032',
   },
   'calvin-chadwick': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/c/c9/Calvin_Chadwick.jpg/revision/latest/window-crop/width/300/x-offset/450/y-offset/90/window-width/945/window-height/945?cb=20160213235337',
+  },
+  'cameron-hodge': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/6/60/Cameron_Hodge.jpg/revision/latest/scale-to-width-down/300?cb=20170709023245',
   },
   'captain-britain': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/f/fd/Captain_Britain.jpg/revision/latest/scale-to-width-down/300?cb=20131015232727',
@@ -167,6 +185,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/d/d7/Daredevil_Infobox.jpg/revision/latest/scale-to-width-down/225?cb=20260319203044',
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/7/7f/Daredevil.jpg/revision/latest/scale-to-width-down/300?cb=20091011201831',
   },
+  'deathbird': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/5/55/Cal28Earth-921312797_Concept_Art_001.webp/revision/latest/scale-to-width-down/197?cb=20241217044015',
+  },
   'doctor-octopus': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/3/37/Doctor_Octopus.jpg/revision/latest/scale-to-width-down/300?cb=20170926005257',
   },
@@ -182,6 +203,7 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   },
   'dum-dum-dugan': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/26/Dum_Dum_Dugan.png/revision/latest/scale-to-width-down/193?cb=20150823213713',
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/6/64/Dum_Dum_Dugan_WWII.jpg/revision/latest/scale-to-width-down/182?cb=20110725044609',
   },
   'ebo': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/1/11/Ebo_Infobox.png/revision/latest/scale-to-width-down/204?cb=20250808222413',
@@ -290,6 +312,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'henry-gyrich': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/9/9b/Henry_Peter_Gyrich.jpg/revision/latest/scale-to-width-down/300?cb=20160429040638',
   },
+  'high-evolutionary': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/3/36/High_Evolutionary_XM.jpg/revision/latest?cb=20130915015518',
+  },
   'ho-yinsen': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/2/2b/Yinsen.jpg/revision/latest?cb=20141008032010',
   },
@@ -330,6 +355,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   },
   'james-montgomery-falsworth': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/4/4c/Falsworth.jpeg/revision/latest/scale-to-width-down/250?cb=20250121003142',
+  },
+  'james-xavier': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/d/d9/James_Xavier.PNG/revision/latest/scale-to-width-down/300?cb=20190324040334',
   },
   'janet-ruiz-noir': {
     'earth-62533': 'https://static.wikia.nocookie.net/spidermannoir/images/1/11/Janet_Infobox.jpg/revision/latest/scale-to-width-down/258?cb=20260210165725',
@@ -395,6 +423,7 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   },
   'kayla-silverfox': {
     'earth-10005': 'https://static.wikia.nocookie.net/xmenmovies/images/3/3f/Silverfox.jpg/revision/latest/scale-to-width-down/209?cb=20110611063526',
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/a/a8/Silver_Fox.jpg/revision/latest/scale-to-width-down/220?cb=20131016180850',
   },
   'kitty-pryde': {
     'earth-10005': 'https://static.wikia.nocookie.net/xmenmovies/images/5/5d/XMDOFP_Kitty_Pryde_Character_Poster.jpg/revision/latest/window-crop/width/300/x-offset/163/y-offset/119/window-width/217/window-height/217?cb=20140624193621',
@@ -559,6 +588,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/1/1e/Quicksilver_Infobox.jpg/revision/latest/scale-to-width-down/242?cb=20241211144208',
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/b/ba/Quicksilver.jpg/revision/latest/scale-to-width-down/300?cb=20150426201230',
   },
+  'polaris-lorna-dane': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/e/ec/Lorna.jpg/revision/latest/scale-to-width-down/300?cb=20110211003034',
+  },
   'prince-tafari': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/22/Tafari_Infobox.png/revision/latest/scale-to-width-down/253?cb=20250802000424',
   },
@@ -617,6 +649,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'rusty-collins-firefist': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/a/ad/Rusty_Collins.PNG/revision/latest/scale-to-width-down/300?cb=20160427004406',
   },
+  'sam-guthrie-cannonball': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/0/06/Cannonball.jpg/revision/latest/scale-to-width-down/300?cb=20131015231251',
+  },
   'sandman-noir': {
     'earth-62533': 'https://static.wikia.nocookie.net/spidermannoir/images/5/5b/Sandman_Infobox.jpg/revision/latest/scale-to-width-down/222?cb=20260427195135',
   },
@@ -644,8 +679,14 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'shadow-king-amahl-farouk': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/c/cb/Shadow_King.jpg/revision/latest/scale-to-width-down/300?cb=20100115043247',
   },
+  'shard-bishop': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/6/61/Shard.jpg/revision/latest/scale-to-width-down/268?cb=20130112132134',
+  },
   'shuri': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/e/e2/BP-Shuri_%28In_Contact_With_T%27Challa%29.jpg/revision/latest/scale-to-width-down/300?cb=20180329024900',
+  },
+  'silver-samurai': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/9/9d/Silver_Samurai.jpg/revision/latest/scale-to-width-down/300?cb=20110214122546',
   },
   'silver-surfer': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/9/92/Silver_Surfer.jpg/revision/latest/scale-to-width-down/209?cb=20180303044749',
@@ -710,6 +751,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/2b/Thor_Infobox.jpg/revision/latest/scale-to-width-down/195?cb=20231021012616',
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/2/23/Thor.jpg/revision/latest/scale-to-width-down/300?cb=20110501065658',
   },
+  'toad-mortimer-toynbee': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/1/19/Toad.jpg/revision/latest?cb=20110214172134',
+  },
   'tombstone-noir': {
     'earth-62533': 'https://static.wikia.nocookie.net/spidermannoir/images/c/cb/Tombstone_Infobox.jpg/revision/latest/scale-to-width-down/274?cb=20260427181248',
   },
@@ -755,6 +799,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'war-machine': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/1/1d/War_Machine_Infobox.jpg/revision/latest/scale-to-width-down/209?cb=20231025163822',
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/8/8b/War_Machine.jpg/revision/latest/scale-to-width-down/300?cb=20140812013116',
+  },
+  'warlock-technarch': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/6/6b/Warlock.jpg/revision/latest/scale-to-width-down/300?cb=20131111030654',
   },
   'warpath-james-proudstar': {
     'earth-10005': 'https://static.wikia.nocookie.net/xmenmovies/images/b/b8/XMDOFP_Warpath_Character_Poster.jpg/revision/latest/window-crop/width/300/x-offset/977/y-offset/714/window-width/1303/window-height/1303?cb=20240805054530',

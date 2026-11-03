@@ -97,6 +97,7 @@ Un dato que no aparece en dos fuentes es una duda y va a la ficha. Si la memoria
 - Personajes sin nombre o que no cambian nada: `**negrita**` o nada.
 - **Un evento puede no tener personajes.** Si nadie con nombre aparece, no se enlaza a nadie para llenar: el aviso de turismo de *Come to Wakanda* no tiene personajes, y en la escena de Essex de *Apocalypse* no está Logan, solo su sangre.
 - Un mismo nombre puede ser dos personas: Jorani es Iron Fist, pero no la ficha `iron-fist`, que es Danny Rand. Enlazar la ficha equivocada también le suma un crédito falso.
+- Y una misma persona en otro universo es la misma ficha, con una nota para esa versión: la Silver Fox animada es `kayla-silverfox`, y su Maverick, `agent-zero`.
 - Revisá `status` contra la obra. En la v2 había muertes que nadie vio en pantalla.
 - Si la obra deshace una muerte, no va en `deaths`: a Weapon XI le cortan la cabeza, pero en la escena post-créditos abre los ojos.
 - Un nombre que solo existe en los cómics no va en la ficha, aunque lo usen las wikis: Wraith no se llama *Kestrel* en *X-Men Origins: Wolverine*.
@@ -120,6 +121,7 @@ Un dato que no aparece en dos fuentes es una duda y va a la ficha. Si la memoria
 
 - Si se confirma que no existe y nada lo usa, se borra. `npm run content -- unused` lo muestra.
 - Si existe pero está mal, **el `id` se queda igual y se corrige el resto**. `memnon-vibranium-spear` conserva su `id` aunque no haya lanza, y `hatut-zeraze` se muestra como *War Dogs*.
+- Un evento que quedó en la producción equivocada se mueve solo si quien mantiene el proyecto lo aprueba: su `id` completo cambia, y quien lo tenía guardado lo pierde. *Bloodlines* pasó así de la T5 a la T4 de *X-Men: The Animated Series*.
 
 ## 4. Checklist final
 

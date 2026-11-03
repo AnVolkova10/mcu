@@ -269,6 +269,20 @@ export const cosmosNodes = {
     color: '#ef4444',
     description: "The Beyonder's patchwork planet of the Secret Wars.",
   },
+  'astral-plane': {
+    name: 'The Astral Plane',
+    zone: 'dimensions',
+    look: 'portal',
+    color: '#c7d2fe',
+    description: 'Realm of the mind, where psychics travel and where the Shadow King and Apocalypse are kept prisoner.',
+  },
+  polemachus: {
+    name: 'Polemachus',
+    zone: 'dimensions',
+    look: 'planet',
+    color: '#5eead4',
+    description: "Arkon's storm-torn world, reached through a portal, which raids the nearby planet Belgania for slaves.",
+  },
 } as const satisfies Record<string, CosmosNodeInput>;
 
 export type CosmosNodeId = keyof typeof cosmosNodes;

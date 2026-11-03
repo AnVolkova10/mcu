@@ -65,6 +65,20 @@ export const locations = {
     kind: 'earth',
     coords: [59.2692, 10.4077],
   },
+  'apocalypse-andes-temple': {
+    name: "Apocalypse's Temple",
+    place: 'Andes, Cusco Region',
+    country: 'Peru',
+    kind: 'earth',
+    coords: [-13.35, -71.7],
+  },
+  'apocalypse-pyramid-cairo': {
+    name: "Apocalypse's Pyramid",
+    place: 'Cairo',
+    country: 'Egypt',
+    kind: 'earth',
+    coords: [29.95, 31.08],
+  },
   'apocalypses-grand-pyramid-and-metropolitan-cairo-ruins': {
     name: 'Cairo',
     country: 'Egypt',
@@ -106,6 +120,13 @@ export const locations = {
     country: 'Asteroid M',
     kind: 'orbit',
     node: 'asteroid-m',
+  },
+  'astral-plane': {
+    name: 'The Astral Plane',
+    place: 'Realm of the mind',
+    country: 'Astral Plane',
+    kind: 'dimension',
+    node: 'astral-plane',
   },
   'atlantis-sovereign-throne-and-abyssal-trenches': {
     name: 'Atlantis Sovereign Throne & Abyssal Trenches',
@@ -316,6 +337,20 @@ export const locations = {
     kind: 'earth',
     coords: [46.2, 22.9],
   },
+  'castle-worthington': {
+    name: 'Castle Worthington',
+    place: 'English countryside',
+    country: 'England',
+    kind: 'earth',
+    coords: [51.83, -1.83],
+  },
+  'caucasus-mountains': {
+    name: 'Caucasus Mountains',
+    place: 'Caucasus',
+    country: 'Russia',
+    kind: 'earth',
+    coords: [43.35, 42.45],
+  },
   'cedar-grove-new-jersey': {
     name: 'Cedar Grove',
     place: 'New Jersey',
@@ -513,7 +548,7 @@ export const locations = {
     coords: [40.7295, -73.9965],
   },
   'essex-manor-laboratory-and-east-end-london-slums': {
-    name: 'Essex Manor Laboratory & East End London Slums',
+    name: "Essex's Laboratory",
     place: 'London',
     country: 'Great Britain',
     kind: 'earth',
@@ -555,11 +590,11 @@ export const locations = {
     coords: [29.958, -90.064],
   },
   'friends-of-humanity-compound-and-bavarian-waterfall-ridge': {
-    name: 'Friends of Humanity Compound & Bavarian Waterfall Ridge',
-    place: 'Adirondacks, New York & Bavaria',
-    country: 'United States / Germany',
+    name: 'Friends of Humanity Dam',
+    place: 'Adirondacks, New York',
+    country: 'United States',
     kind: 'earth',
-    coords: [43.9, -74.4],
+    coords: [43.3156, -73.9285],
   },
   'friends-of-humanity-hall': {
     name: 'Friends of Humanity Hall',
@@ -647,6 +682,13 @@ export const locations = {
     coords: [40.738, -73.985],
     approximate: true,
   },
+  'guthrie-farm': {
+    name: 'Guthrie Farm',
+    place: 'Cumberland County, Kentucky',
+    country: 'United States',
+    kind: 'earth',
+    coords: [36.83, -85.3],
+  },
   'hala-imperial-city': {
     name: 'Hala Imperial City',
     place: 'Kree Imperium',
@@ -698,6 +740,13 @@ export const locations = {
     kind: 'earth',
     coords: [34.1016, -118.34],
     approximate: true,
+  },
+  'holyrood-abbey': {
+    name: 'Holyrood Abbey',
+    place: 'Edinburgh',
+    country: 'Scotland',
+    kind: 'earth',
+    coords: [55.9527, -3.172],
   },
   'hong-kong-sanctum': {
     name: 'Hong Kong Sanctum',
@@ -825,6 +874,13 @@ export const locations = {
     country: 'United States',
     kind: 'earth',
     coords: [41.3205, -73.5805],
+  },
+  'jungle-hideout': {
+    name: "Gyrich and Trask's Jungle Hideout",
+    place: 'Amazon rainforest',
+    country: 'Brazil',
+    kind: 'earth',
+    coords: [-2.5, -60.5],
   },
   'kamar-taj': {
     name: 'Kamar-Taj',
@@ -1141,11 +1197,11 @@ export const locations = {
     coords: [-3.0674, 37.3556],
   },
   'mount-wundagore-genetic-citadel-and-bovas-cottage': {
-    name: "Mount Wundagore Genetic Citadel & Bova's Cottage",
-    place: 'Transia',
-    country: 'Eastern Europe',
+    name: 'Mount Wundagore',
+    place: 'Balkan Mountains',
+    country: 'Bulgaria',
     kind: 'earth',
-    coords: [45.45, 25.35],
+    coords: [42.72, 24.92],
   },
   'muir-island-mutant-research-facility': {
     name: 'Muir Island',
@@ -1153,13 +1209,6 @@ export const locations = {
     country: 'Scotland',
     kind: 'earth',
     coords: [57.78, -5.9],
-  },
-  'muir-island-research-complex-and-edinburgh': {
-    name: 'Muir Island Research Complex & Edinburgh',
-    place: 'Highlands',
-    country: 'Scotland',
-    kind: 'earth',
-    coords: [57.55, -7.4],
   },
   'museum-of-great-britain': {
     name: 'Museum of Great Britain',
@@ -1190,11 +1239,11 @@ export const locations = {
     coords: [37.7308, 22.7561],
   },
   'nazi-gestapo-fortress-and-subterranean-lab': {
-    name: 'Nazi Gestapo Fortress & Subterranean Lab',
-    place: 'Sainte-Mère-Église / Normandy',
+    name: 'Nazi Facility',
+    place: 'La Roche-Guyon',
     country: 'France',
     kind: 'earth',
-    coords: [49.4087, -1.3174],
+    coords: [49.083, 1.632],
   },
   'nebraska-state-capitol': {
     name: 'Nebraska State Capitol',
@@ -1202,6 +1251,13 @@ export const locations = {
     country: 'United States',
     kind: 'earth',
     coords: [40.8081, -96.6997],
+  },
+  'neuherzl-monastery': {
+    name: 'Neuherzl Monastery',
+    place: 'Bavarian Alps',
+    country: 'Germany',
+    kind: 'earth',
+    coords: [47.55, 11],
   },
   'new-avengers-facility-central-lab': {
     name: 'New Avengers Facility Central Lab',
@@ -1252,6 +1308,13 @@ export const locations = {
     kind: 'earth',
     coords: [86, -160],
   },
+  'notre-dame-de-paris': {
+    name: 'Notre-Dame de Paris',
+    place: 'Paris',
+    country: 'France',
+    kind: 'earth',
+    coords: [48.853, 2.3499],
+  },
   'nova-corps-citadel': { name: 'Nova Corps Citadel', country: 'Xandar', kind: 'space', node: 'xandar' },
   'nypd-headquarters': {
     name: 'NYPD Headquarters',
@@ -1262,6 +1325,13 @@ export const locations = {
     approximate: true,
   },
   'odins-vault': { name: "Odin's vault", country: 'Asgard', kind: 'space', node: 'asgard' },
+  'okus-temple': {
+    name: "Oku's Temple",
+    place: 'Rural Japan',
+    country: 'Japan',
+    kind: 'earth',
+    coords: [36.25, 136.95],
+  },
   'old-cairo-bazaars-and-underground-tomb': {
     name: "En Sabah Nur's Pyramid",
     place: 'Cairo',
@@ -1277,11 +1347,11 @@ export const locations = {
     coords: [51.4826, -0.0077],
   },
   'oxford-university-campus-and-country-road': {
-    name: 'Oxford University Campus & Country Road',
-    place: 'Oxford',
-    country: 'Great Britain',
+    name: 'Bard College',
+    place: 'Annandale-on-Hudson, New York',
+    country: 'United States',
     kind: 'earth',
-    coords: [51.752, -1.2577],
+    coords: [42.0204, -73.9076],
   },
   'oxford-university-faculty-of-genetics': {
     name: 'Oxford University',
@@ -1304,12 +1374,19 @@ export const locations = {
     kind: 'earth',
     coords: [38.8709, -77.0553],
   },
-  'phalanx-assimilation-spire-and-muir-island': {
-    name: 'Phalanx Assimilation Spire & Muir Island',
-    place: 'Highlands',
-    country: 'Scotland',
+  'pere-lachaise-cemetery': {
+    name: 'Père Lachaise Cemetery',
+    place: 'Paris',
+    country: 'France',
     kind: 'earth',
-    coords: [57.55, -7.4],
+    coords: [48.8614, 2.3933],
+  },
+  'phalanx-assimilation-spire-and-muir-island': {
+    name: 'Empire State Building',
+    place: 'Manhattan, New York',
+    country: 'United States',
+    kind: 'earth',
+    coords: [40.7488, -73.9854],
   },
   'pier-13': {
     name: 'Pier 13',
@@ -1318,6 +1395,13 @@ export const locations = {
     kind: 'earth',
     coords: [40.6965, -74.0005],
     approximate: true,
+  },
+  polemachus: {
+    name: 'Polemachus',
+    place: 'Imperion City',
+    country: 'Polemachus',
+    kind: 'dimension',
+    node: 'polemachus',
   },
   'potomac-river-recovery': {
     name: 'Potomac River',
@@ -1413,6 +1497,20 @@ export const locations = {
     kind: 'earth',
     coords: [40.718, -73.9268],
   },
+  'rip-van-winkle-coffee-house': {
+    name: 'Rip Van Winkle Coffee House',
+    place: 'Red Hook, New York',
+    country: 'United States',
+    kind: 'earth',
+    coords: [41.9951, -73.8752],
+  },
+  'rockefeller-center': {
+    name: 'Rockefeller Center',
+    place: 'Manhattan, New York',
+    country: 'United States',
+    kind: 'earth',
+    coords: [40.7587, -73.9787],
+  },
   'roxxon-refinery': {
     name: 'Roxxon Refinery',
     place: 'Brooklyn, New York',
@@ -1506,6 +1604,13 @@ export const locations = {
     kind: 'earth',
     coords: [52.9, 104.6],
   },
+  'sids-grill': {
+    name: "Sid's Grill",
+    place: 'Milford, Massachusetts',
+    country: 'United States',
+    kind: 'earth',
+    coords: [42.1398, -71.5162],
+  },
   'silvermanes-mansion': {
     name: "Silvermane's Mansion",
     place: 'Upper East Side, Manhattan',
@@ -1513,6 +1618,13 @@ export const locations = {
     kind: 'earth',
     coords: [40.7736, -73.9566],
     approximate: true,
+  },
+  'skull-mesa': {
+    name: 'Skull Mesa',
+    place: 'Nevada',
+    country: 'United States',
+    kind: 'earth',
+    coords: [37.75, -117.1],
   },
   'smithsonian-institution-national-museum': {
     name: 'Smithsonian Institution National Museum',
@@ -1551,6 +1663,13 @@ export const locations = {
     kind: 'earth',
     coords: [34.048, -118.252],
     approximate: true,
+  },
+  'st-johns-newfoundland': {
+    name: "St. John's",
+    place: 'Newfoundland',
+    country: 'Canada',
+    kind: 'earth',
+    coords: [47.5615, -52.7126],
   },
   'standard-oil-depot': {
     name: 'Standard Oil Depot',
@@ -1700,6 +1819,13 @@ export const locations = {
     country: "K'un-Lun",
     kind: 'dimension',
     node: 'kun-lun',
+  },
+  'sunken-soviet-submarine': {
+    name: 'Sunken Soviet Submarine',
+    place: 'Off Pearl Harbor, Hawaii',
+    country: 'Pacific Ocean',
+    kind: 'earth',
+    coords: [21, -157.95],
   },
   'temple-vault-of-morag': { name: 'Temple vault of Morag', country: 'Morag', kind: 'space', node: 'morag' },
   'sunken-freighter': {
@@ -1857,6 +1983,13 @@ export const locations = {
     kind: 'earth',
     coords: [52.52, 13.405],
   },
+  'union-hall-edinburgh': {
+    name: 'Union Hall',
+    place: 'Edinburgh',
+    country: 'Scotland',
+    kind: 'earth',
+    coords: [55.95, -3.188],
+  },
   'united-nations-headquarters': {
     name: 'United Nations Headquarters',
     place: 'Manhattan, New York',
@@ -1950,12 +2083,26 @@ export const locations = {
     kind: 'earth',
     coords: [38.8927, -77.0163],
   },
+  'washington-monument': {
+    name: 'Washington Monument',
+    place: 'Washington, D.C.',
+    country: 'United States',
+    kind: 'earth',
+    coords: [38.8895, -77.0353],
+  },
   'waverley-station': {
     name: 'Waverley Station',
     place: 'Edinburgh',
     country: 'Scotland',
     kind: 'earth',
     coords: [55.952, -3.189],
+  },
+  'weapon-x-facility-alberta': {
+    name: 'Weapon X Facility',
+    place: 'Alberta',
+    country: 'Canada',
+    kind: 'earth',
+    coords: [50.85, -115.05],
   },
   'western-front-allied-trenches': {
     name: 'Western Front Trenches',
@@ -1970,6 +2117,13 @@ export const locations = {
     kind: 'earth',
     coords: [51.5115, -0.1205],
     approximate: true,
+  },
+  whitechapel: {
+    name: 'Whitechapel',
+    place: 'East End, London',
+    country: 'Great Britain',
+    kind: 'earth',
+    coords: [51.5196, -0.059],
   },
   'world-peace-summit-at-arc-de-triomphe': {
     name: 'World Peace Conference',
@@ -1992,11 +2146,11 @@ export const locations = {
     coords: [29.5203, 103.3327],
   },
   'xavier-mansion-and-genosha-capital': {
-    name: 'Xavier Mansion & Genosha Capital',
-    place: 'Salem Center / Genosha',
-    country: 'United States / Genosha',
+    name: "Magneto's Fortress",
+    place: 'Hammer Bay',
+    country: 'Genosha',
     kind: 'earth',
-    coords: [-8.5, 51],
+    coords: [-4.625, 55.455],
   },
   'xaviers-school-for-gifted-youngsters': {
     name: 'Xavier Mansion',

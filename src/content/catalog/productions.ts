@@ -806,7 +806,8 @@ export const productions = {
     universe: 'earth-92131',
     status: 'audited',
     animated: true,
-    description: "The X-Men travel through altered timelines in One Man's Worth, face Proteus in Scotland, witness Magneto's Asteroid M sanctuary, and stop Apocalypse's temporal conquest across the Axis of Time in Beyond Good and Evil.",
+    description: "1995: Magneto's Asteroid M falls, Mystique and the High Evolutionary reveal family secrets, Wolverine learns his memories were lies, and Scott and Jean finally marry, just before Apocalypse tries to remake history from the Axis of Time.",
+    verified: true,
     poster: '/rKqwgDcLiM08KEP2a3ac4shf5tt.jpg',
   },
   'x-men-tas-s5': {
@@ -819,7 +820,8 @@ export const productions = {
     universe: 'earth-92131',
     status: 'audited',
     animated: true,
-    description: "The concluding chapter of the original series: Wolverine and Captain America fight in WWII, the alien Phalanx threatens Earth, and in Graduation Day, a mortally wounded Xavier departs Earth for the Shi'ar Empire.",
+    description: "1996: the Phalanx take the mansion, Storm nearly marries Arkon, Apocalypse returns in Cortez's body and Xavier leaves Earth with Lilandra, with memories of the Second World War and of Victorian London along the way.",
+    verified: true,
     poster: '/nREygs8ZRcqyqBT9mSzPhlkmLtS.jpg',
   },
   'iron-man-tas-s1': {

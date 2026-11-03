@@ -29,6 +29,9 @@ export const characters = {
     factions: ['team-x', 'weapon-x', 'mutants'],
     origin: 'United States',
     bio: "Team X marksman, the fastest gun on William Stryker's team and the one who stays loyal to him. Logan kills him in 1979, after Zero murders the couple who took him in.",
+    variants: {
+      'earth-92131': 'In the animated series he is Maverick, one of the four subjects of Weapon X whose memories the program rewrote; believed dead, he meets Logan again at the ruined facility.',
+    },
   },
   akeya: {
     name: 'Akeya',
@@ -69,6 +72,14 @@ export const characters = {
     origin: 'New York City',
     bio: "Mayor of New York, elected with Silvermane's money, who turns on him by campaigning against Prohibition and tipping off the police. He wins re-election in 1933.",
   },
+  'amelia-voght': {
+    name: 'Amelia Voght',
+    color: '#e879f9',
+    role: 'anti-hero',
+    status: 'alive',
+    factions: ['acolytes'],
+    bio: "Nurse who cared for Charles Xavier after he lost the use of his legs and became his lover, later one of Magneto's Acolytes on Asteroid M. She shows the asteroid's people the security tape of Fabian Cortez's betrayal and leaves the Acolytes; later, as a medic on Muir Island, she helps fight the Phalanx and leads Beast's allies to Magneto.",
+  },
   'ana-jarvis': {
     name: 'Ana Jarvis',
     color: '#f0abfc',
@@ -77,6 +88,14 @@ export const characters = {
     factions: [],
     origin: 'Hungary',
     bio: 'Wife of Edwin Jarvis, who helps Peggy Carter in Los Angeles. Whitney Frost shoots her in 1947, and she survives but cannot have children.',
+  },
+  'andre-cocteau': {
+    name: 'Andre Cocteau',
+    color: '#a8a29e',
+    role: 'secondary',
+    status: 'deceased',
+    factions: [],
+    bio: "Scientist who builds giant robots for the Red Skull in 1944. Logan and Captain America believe he betrayed them, but he was a secret agent for the Allies and later sabotaged the Skull's plan; he is buried in Paris.",
   },
   'angel-salvadore': {
     name: 'Angel Salvadore',
@@ -125,6 +144,14 @@ export const characters = {
     variants: {
       'earth-92131': "Turned into Death by Apocalypse, he spends his fortune hunting him, wrecks the X-Men's trap in his rage and refuses to rejoin them.",
     },
+  },
+  arkon: {
+    name: 'Arkon',
+    color: '#dc2626',
+    role: 'villain',
+    status: 'alive',
+    factions: [],
+    bio: 'Ruler of Polemachus who brings storms down on Washington to get the help of Storm against the storms of his own world, then asks her to marry him, until she learns that he enslaves the people of Belgania.',
   },
   'armando-munoz': {
     name: 'Armando Muñoz',
@@ -262,6 +289,9 @@ export const characters = {
     factions: ['avengers', 'shield', 'red-room'],
     origin: 'Stalingrad, Russia',
     bio: 'Master spy and founding Avenger who sacrificed herself on Vormir for the Soul Stone.',
+    variants: {
+      'earth-92131': "In the animated series she is seen fighting Magneto's rebels in the erased world where Charles Xavier died in 1959.",
+    },
   },
   'blade-eric-brooks': {
     name: 'Eric Brooks',
@@ -281,6 +311,9 @@ export const characters = {
     status: 'alive',
     factions: ['mutants'],
     bio: 'Skilled tactical resistance fighter who creates shimmering spatial teleportation portals by throwing purple crystalline energy daggers across the battlefield.',
+    variants: {
+      'earth-92131': "In the animated series she is seen among Magneto's rebels in the erased world where Charles Xavier died in 1959.",
+    },
   },
   'bolivar-trask': {
     name: 'Dr. Bolivar Trask',
@@ -290,6 +323,17 @@ export const characters = {
     factions: ['trask-industries'],
     origin: 'United States',
     bio: "Visionary military scientist and founder of Trask Industries who designed the robotic Sentinel program, harvesting mutant genetic tissue to construct humanity's ultimate anti-mutant defense systems.",
+    variants: {
+      'earth-92131': 'In the animated series he builds Master Mold, which turns against him. Later Master Mold captures him, and he blows up its base with himself inside.',
+    },
+  },
+  bova: {
+    name: 'Bova',
+    color: '#a16207',
+    role: 'secondary',
+    status: 'alive',
+    factions: [],
+    bio: 'Midwife of Mount Wundagore who took in Magda as she gave birth to the twins Pietro and Wanda, and brought the babies to Django and Marya Maximoff.',
   },
   'bucky-barnes': {
     name: 'Bucky Barnes',
@@ -311,6 +355,14 @@ export const characters = {
     origin: 'Far Future',
     bio: 'Time-traveling cybernetic mutant soldier from the 40th century armed with futuristic plasma weaponry and telekinetic shielding, waging a temporal war against Apocalypse.',
   },
+  caliban: {
+    name: 'Caliban',
+    color: '#d6d3d1',
+    role: 'anti-hero',
+    status: 'alive',
+    factions: ['mutants'],
+    bio: 'One of the Hounds of Fabian Cortez. When Cortez offers Jubilee to Apocalypse as a host, Caliban offers himself instead and escapes with her and Beast.',
+  },
   callisto: {
     name: 'Callisto',
     color: '#a1a1aa',
@@ -328,6 +380,14 @@ export const characters = {
     factions: ['council-of-nine'],
     origin: 'Los Angeles, California',
     bio: 'Owner of Isodyne Energy, husband of Whitney Frost and Senate candidate of the Council of Nine. She kills him in 1947.',
+  },
+  'cameron-hodge': {
+    name: 'Cameron Hodge',
+    color: '#64748b',
+    role: 'villain',
+    status: 'alive',
+    factions: [],
+    bio: 'Man maimed by the mutants of Genosha who joins a government study of alien craft, where the Phalanx take him over and make him their guide on Earth, until their fall turns him back to normal.',
   },
   'captain-britain': {
     name: 'Brian Braddock',
@@ -528,6 +588,22 @@ export const characters = {
       'earth-92131': 'Blind defense attorney whose radioactive chemical accident heightened his remaining senses to superhuman radar levels, fighting crime as the Man Without Fear.',
     },
   },
+  'darrell-tanaka': {
+    name: 'Darrell Tanaka',
+    color: '#14b8a6',
+    role: 'secondary',
+    status: 'alive',
+    factions: [],
+    bio: 'Doctor of Skull Mesa who takes in Cyclops after his crash in the desert and gives him back his power.',
+  },
+  deathbird: {
+    name: 'Deathbird',
+    color: '#6d28d9',
+    role: 'villain',
+    status: 'alive',
+    factions: ['shiar-imperium'],
+    bio: "Lilandra's sister. With Apocalypse she saves Fabian Cortez from the falling Asteroid M, and later, with his help, she attacks Lilandra's empire.",
+  },
   'doctor-octopus': {
     name: 'Dr. Otto Octavius',
     alias: 'Doc Ock',
@@ -548,7 +624,7 @@ export const characters = {
     origin: 'New York / Kamar-Taj',
     bio: "Master of the Mystic Arts and guardian of Earth's magical realms.",
     variants: {
-      'earth-92131': 'In the animated series he feels the Phoenix leave Earth from his Sanctum Sanctorum, and appears again during the rampage of the Dark Phoenix.',
+      'earth-92131': 'In the animated series he feels the Phoenix leave Earth from his Sanctum Sanctorum, appears again during the rampage of the Dark Phoenix, and once more when Wolverine, Rogue and Gambit meet Nightcrawler.',
     },
   },
   'dottie-underwood': {
@@ -579,6 +655,9 @@ export const characters = {
     factions: ['howling-commandos', 'ssr', 'shield'],
     origin: 'Boston, Massachusetts',
     bio: 'Bowler-hatted soldier of the 107th, freed by Steve Rogers at Krausberg, who joins the Howling Commandos.',
+    variants: {
+      'earth-92131': "In the animated series he is one of the Howling Commandos who blow up the Red Skull's facility in France in 1944.",
+    },
   },
   ebo: {
     name: 'Ebo',
@@ -669,6 +748,9 @@ export const characters = {
     factions: ['mutants'],
     origin: 'Ancient Egypt',
     bio: 'The first mutant, worshipped as a god in ancient Egypt, who lives on by passing into new bodies and makes the mutants he chooses as his Four Horsemen stronger.',
+    variants: {
+      'earth-92131': 'In the animated series he gathers psychics at the Axis of Time to destroy all time and remake the universe, until they banish him to the astral plane, from which he comes back in the body of Fabian Cortez.',
+    },
   },
   'erik-killmonger': {
     name: 'Erik Stevens',
@@ -698,14 +780,22 @@ export const characters = {
     factions: ['shiar-imperium'],
     bio: "Shi'ar agent of D'Ken who takes over the Eagle One space station to stop Lilandra's ship, then buys her from Black Tom and the Juggernaut. Lilandra calls him Shakari.",
   },
+  'eugene-turbot-weiderspan': {
+    name: 'Eugene Turbot Weiderspan',
+    color: '#c2410c',
+    role: 'villain',
+    status: 'alive',
+    factions: [],
+    bio: "Man who follows an ancient tablet to the Crimson Gem of Cyttorak and takes the Juggernaut's power for himself, until Cyclops and Wolverine beat him and take the gem.",
+  },
   'fabian-cortez': {
     name: 'Fabian Cortez',
     color: '#ef4444',
     role: 'villain',
-    status: 'alive',
+    status: 'deceased',
     factions: ['acolytes', 'mutant-supremacists'],
     origin: 'Spain',
-    bio: "Ambitious Spanish mutant capable of amplifying or overloading the powers of other mutants, who usurped Magneto's Asteroid M sanctuary and later worshipped Apocalypse.",
+    bio: 'Mutant who boosts or overloads the powers of other mutants. He betrays Magneto on Asteroid M, then serves Apocalypse, who takes his body to come back from the astral plane.',
   },
   falcon: {
     name: 'Sam Wilson',
@@ -763,7 +853,7 @@ export const characters = {
     origin: 'Earth / S.A.B.E.R. Station',
     bio: 'Former Director of S.H.I.E.L.D. and founder of the Avengers.',
     variants: {
-      'earth-92131': 'In the 1993 that Cable erases in the animated series, he watches the Senate hearing on the plague at S.H.I.E.L.D.',
+      'earth-92131': "In the animated series he is one of the Howling Commandos who blow up the Red Skull's facility in France in 1944, and in the 1993 that Cable erases he watches the Senate hearing on the plague at S.H.I.E.L.D.",
     },
   },
   'gabe-jones': {
@@ -917,6 +1007,15 @@ export const characters = {
     origin: 'United States',
     bio: "Government official who runs the Mutant Control Agency and secretly backs Bolivar Trask's Sentinels; when the President shuts the program down, he moves it to Genosha. He later shoots Charles Xavier and is killed by Bastion.",
   },
+  'high-evolutionary': {
+    name: 'Herbert Wyndham',
+    alias: 'High Evolutionary',
+    color: '#9333ea',
+    role: 'villain',
+    status: 'alive',
+    factions: [],
+    bio: 'Master of Mount Wundagore and its knights, men he has made from animals. He captures Magneto, the twins and Wolverine, reveals that Magneto is the father of Quicksilver and the Scarlet Witch, and turns Wolverine into a wolf, then escapes when the X-Men arrive.',
+  },
   'ho-yinsen': {
     name: 'Professor Ho Yinsen',
     alias: 'Ho Yinsen',
@@ -1010,6 +1109,14 @@ export const characters = {
     origin: 'Manhattan, New York',
     bio: 'Cigar-chomping, explosive Editor-in-Chief and Publisher of The Daily Bugle with an uncompromising journalistic code and an eternal vendetta against masked vigilantes.',
   },
+  'jack-the-ripper': {
+    name: 'Jack the Ripper',
+    color: '#7f1d1d',
+    role: 'villain',
+    status: 'alive',
+    factions: [],
+    bio: 'Killer of Whitechapel in 1888, a creature made by Mister Sinister to bring him the organs of mutants for his experiments.',
+  },
   'jack-thompson': {
     name: 'Jack Thompson',
     color: '#7c9cbf',
@@ -1047,6 +1154,14 @@ export const characters = {
     factions: ['british-armed-forces', 'howling-commandos', 'ssr'],
     origin: 'England (United Kingdom)',
     bio: 'British officer freed by Steve Rogers at Krausberg, who joins the Howling Commandos.',
+  },
+  'james-xavier': {
+    name: 'James Xavier',
+    color: '#6366f1',
+    role: 'hero',
+    status: 'alive',
+    factions: [],
+    bio: 'Doctor in Victorian London, once a friend of Nathaniel Essex, whom he chases for thirty years. In 1888 he finds that Essex, now Mister Sinister, is behind the Ripper killings, but Essex has already left for America.',
   },
   'janet-ruiz-noir': {
     name: 'Janet Ruiz',
@@ -1170,6 +1285,15 @@ export const characters = {
     origin: "K'un-Lun",
     bio: "Iron Fist of K'un-Lun in 1400. She stows away when Basha steals the head of the sacred statue of Shou-Lao, breaks into War Dogs headquarters and takes back what belongs to her people.",
   },
+  'joseph-mactaggert': {
+    name: 'Joseph MacTaggert',
+    color: '#475569',
+    role: 'civilian',
+    status: 'alive',
+    factions: [],
+    origin: 'Scotland',
+    bio: "Scottish politician, Moira MacTaggert's former husband and the father of Proteus. When his son storms his campaign speech in Edinburgh, he denies him and runs.",
+  },
   'joseph-manfredi': {
     name: 'Joseph Manfredi',
     color: '#c2410c',
@@ -1197,6 +1321,9 @@ export const characters = {
     factions: [],
     origin: 'United States',
     bio: 'Stepbrother of Charles Xavier endowed with mystical superhuman strength and unstoppable physical kinetic momentum by the ancient Crimson Gem of Cyttorak.',
+    variants: {
+      'earth-92131': 'In the animated series he and Black Tom seize Lilandra on Muir Island. Knocked into the ocean by Gladiator, he walks back across the sea floor, loses his power when another man finds the Crimson Gem, gets it back at the mansion and throws the gem into space.',
+    },
   },
   'julia-carpenter-spider-woman': {
     name: 'Julia Carpenter',
@@ -1216,6 +1343,14 @@ export const characters = {
     factions: ['hammer-industries'],
     origin: 'United Kingdom / United States',
     bio: 'Ruthless corporate rival of Tony Stark who secretly finances super-criminal incursions and high-tech sabotage to devalue and takeover Stark Enterprises.',
+  },
+  'justine-cocteau': {
+    name: 'Justine Cocteau',
+    color: '#be123c',
+    role: 'secondary',
+    status: 'alive',
+    factions: [],
+    bio: "One of Logan's contacts in occupied France in 1944. Decades later, at the grave of Andre Cocteau in Paris, she tells him that Andre was a secret agent for the Allies.",
   },
   'ka-zar-kevin-plunder': {
     name: 'Ka-Zar',
@@ -1243,6 +1378,9 @@ export const characters = {
     status: 'deceased',
     factions: ['mutants'],
     bio: 'Teacher who controls people by touching them. She lives with Logan in the Canadian Rockies while she watches him for William Stryker, who holds her sister, and dies on Three Mile Island after freeing the captive mutants.',
+    variants: {
+      'earth-92131': 'In the animated series, Silver Fox is one of the four subjects of Weapon X whose memories the program rewrote. Believed dead, she sends Logan the photo that leads him back to the ruined facility, and tells him that their love belonged to a different lifetime.',
+    },
   },
   'kitty-pryde': {
     name: 'Kitty Pryde',
@@ -1452,7 +1590,7 @@ export const characters = {
     status: 'deceased',
     factions: ['sentinels', 'artificial-intelligences'],
     origin: 'Genosha',
-    bio: 'Giant Sentinel that Bolivar Trask builds to produce Sentinels on its own. It decides that mutants are human, so the Sentinels must rule humans too, and plans to replace the brains of world leaders with computers.',
+    bio: 'Giant Sentinel that Bolivar Trask builds to produce Sentinels on its own. It decides that mutants are human, so the Sentinels must rule humans too, and plans to replace the brains of world leaders with computers. Reduced to a head, it later wants a new body made of a stolen polymer, until a falling stalactite destroys it.',
   },
   'mastermind-jason-wyngarde': {
     name: 'Jason Wyngarde',
@@ -1658,7 +1796,7 @@ export const characters = {
     origin: 'Bavaria, Germany',
     bio: 'Gentle, deeply spiritual mutant possessing indigo fur, acrobatic agility, a prehensile tail, and the ability to instantly teleport across space in a cloud of sulfurous blue smoke (BAMF).',
     variants: {
-      'earth-92131': 'In the animated series, Jean Grey first finds him through Cerebro while she searches for the missing Xavier.',
+      'earth-92131': 'In the animated series, Jean Grey first finds him through Cerebro while she searches for the missing Xavier. Wolverine, Rogue and Gambit meet him in a monastery in the Bavarian Alps, where he has given his life to God, and on Halloween he learns that Mystique is his mother.',
     },
   },
   noni: {
@@ -1725,6 +1863,9 @@ export const characters = {
     factions: ['mutants'],
     origin: 'Moscow, Russian SFSR',
     bio: 'Lethal Soviet cybernetic mutant equipped with retractable Carbonadium tentacles that siphon the life-force of his victims to sustain his synthetic Death Factor.',
+    variants: {
+      'earth-92131': 'In the animated series, thawed again from the ice of the Caucasus, he hijacks a sunken Soviet submarine off Hawaii and sinks with it, still alive.',
+    },
   },
   paris: {
     name: 'Paris',
@@ -1764,8 +1905,17 @@ export const characters = {
     origin: 'Sokovia',
     bio: 'Sokovian speedster enhanced by the Mind Stone who sacrificed his life to save Hawkeye and a child in the Battle of Sokovia.',
     variants: {
-      'earth-92131': 'In the animated series, Jean Grey first finds him through Cerebro while she searches for the missing Xavier.',
+      'earth-92131': 'In the animated series, Jean Grey first finds him through Cerebro while she searches for the missing Xavier. A member of X-Factor, he learns from the High Evolutionary that Magneto is his father.',
     },
+  },
+  'polaris-lorna-dane': {
+    name: 'Lorna Dane',
+    alias: 'Polaris',
+    color: '#4ade80',
+    role: 'hero',
+    status: 'alive',
+    factions: ['x-factor', 'mutants'],
+    bio: "Mutant with power over magnetism, a member of X-Factor. Iceman looks for her and finds her in X-Factor, and the Phalanx hold her in their Spire until the X-Men's allies bring them down.",
   },
   'prince-tafari': {
     name: 'Prince Tafari',
@@ -1782,10 +1932,10 @@ export const characters = {
     alias: 'Proteus',
     color: '#f43f5e',
     role: 'villain',
-    status: 'deceased',
+    status: 'alive',
     factions: ['omega-mutants'],
     origin: 'Muir Island, Scotland',
-    bio: 'Omega-level reality-warping mutant son of Moira MacTaggert whose psionic energy burns out physical bodies, warping matter and physics across Edinburgh.',
+    bio: 'Reality-warping son of Moira and Joseph MacTaggert, held for fifteen years in a cell on Muir Island. He escapes to find his father in Edinburgh, and when Joseph denies him, Charles Xavier calms him and he goes back with Moira.',
   },
   'prowler-hobie-brown': {
     name: 'Hobie Brown',
@@ -1806,7 +1956,7 @@ export const characters = {
     factions: ['mutants'],
     bio: 'Deadly martial artist and mutant tracker capable of telepathic sensory tracking and manifesting lethal solid psionic energy blades, whips, and katanas from her hands.',
     variants: {
-      'earth-92131': 'In the animated series, Jean Grey first finds her through Cerebro while she searches for the missing Xavier.',
+      'earth-92131': "In the animated series, Jean Grey first finds her through Cerebro while she searches for the missing Xavier. Later Apocalypse's allies take her from Castle Worthington for his collection of psychics.",
     },
   },
   'puppet-master': {
@@ -1854,6 +2004,9 @@ export const characters = {
     status: 'alive',
     factions: ['brotherhood-of-mutants', 'x-men', 'division-x', 'mutants'],
     bio: 'Shapeshifting mutant with natural blue scales and yellow eyes, foster sister to Charles Xavier who chose to embrace her true mutant identity with Magneto.',
+    variants: {
+      'earth-92131': 'In the animated series she adopted Rogue as a child. On a dam held by the Friends of Humanity she tells Nightcrawler that she is his mother, and later she serves Apocalypse at the Axis of Time before turning on him.',
+    },
   },
   'red-skull': {
     name: 'Johann Schmidt',
@@ -1864,6 +2017,9 @@ export const characters = {
     factions: ['hydra', 'third-reich'],
     origin: 'Germany',
     bio: 'Nazi officer and leader of Hydra, disfigured by an imperfect version of the super-soldier formula. He uses the Tesseract to break with Hitler, and in 1945 the cube pulls him through a portal.',
+    variants: {
+      'earth-92131': 'In the animated series, in 1944 he holds the scientist Andre Cocteau in a Nazi facility in France, where Cocteau builds giant robots for him, and escapes with him in a jet as the Howling Commandos blow it up.',
+    },
   },
   'reed-richards': {
     name: 'Reed Richards',
@@ -1950,6 +2106,15 @@ export const characters = {
     origin: 'Omaha, Nebraska',
     bio: "Young pyrokinetic mutant orphan whose desperate escape and resilience inspired a grieving Scott Summers to dismantle Killgrave's mind-control conspiracy.",
   },
+  'sam-guthrie-cannonball': {
+    name: 'Sam Guthrie',
+    alias: 'Cannonball',
+    color: '#f97316',
+    role: 'hero',
+    status: 'alive',
+    factions: ['mutants'],
+    bio: 'Young Kentucky miner whose mutant power saves his father from a cave-in. An Army agent tries to control him with a chip, until Rogue and the X-Men drive the soldiers away; he stays home with his family.',
+  },
   'sandman-noir': {
     name: 'Flint Marko',
     alias: 'Sandman',
@@ -1980,7 +2145,7 @@ export const characters = {
     origin: 'Sokovia',
     bio: 'Mythological wielder of Chaos Magic and the prophesied Scarlet Witch.',
     variants: {
-      'earth-92131': 'In the animated series, Jean Grey first finds her through Cerebro while she searches for the missing Xavier.',
+      'earth-92131': 'In the animated series, Jean Grey first finds her through Cerebro while she searches for the missing Xavier. On Mount Wundagore she learns that Magneto is her father.',
     },
   },
   'scorpion-mac-gargan': {
@@ -2038,6 +2203,15 @@ export const characters = {
     origin: 'The Astral Plane / Cairo, Egypt',
     bio: "Malevolent pure-telepathic entity inhabiting the Astral Plane who feeds on human hatred, possessing Storm's godson Mjnari in Mount Kilimanjaro to ensnare Ororo Munroe.",
   },
+  'shard-bishop': {
+    name: 'Shard Bishop',
+    alias: 'Shard',
+    color: '#fde047',
+    role: 'hero',
+    status: 'alive',
+    factions: [],
+    bio: "Bishop's sister, from the 2055 of Forge's rebels. She goes back with him to stop Trevor Fitzroy from killing the young Charles Xavier, and later travels to the 1990s to find Bishop when he is lost in time.",
+  },
   shuri: {
     name: 'Shuri',
     color: '#c084fc',
@@ -2046,6 +2220,16 @@ export const characters = {
     factions: ['wakanda', 'avengers'],
     origin: 'Birnin Zana, Wakanda',
     bio: 'Princess of Wakanda, genius head of the Wakandan Design Group, and successor Black Panther.',
+  },
+  'silver-samurai': {
+    name: 'Kenuichio Harada',
+    alias: 'Silver Samurai',
+    color: '#cbd5e1',
+    role: 'villain',
+    status: 'alive',
+    factions: [],
+    origin: 'Japan',
+    bio: 'Armored swordsman whose men demand money from a village in rural Japan. A device lets him teleport behind his enemies, until Wolverine sees the move coming and disables it.',
   },
   'silver-surfer': {
     name: 'Norrin Radd',
@@ -2076,6 +2260,15 @@ export const characters = {
     factions: ['shield', 'secret-warriors', 'inhumans'],
     origin: 'Hunan, China',
     bio: 'Inhuman seismic agent, hacker, and director of the Secret Warriors.',
+  },
+  solarr: {
+    name: 'Bill Braddock',
+    alias: 'Solarr',
+    color: '#facc15',
+    role: 'villain',
+    status: 'alive',
+    factions: ['mutants'],
+    bio: "Mutant of the Children of the Shadow who takes over Skull Mesa for its gold mine and works the town's people in it, until a revolt drives him out.",
   },
   'spider-man': {
     name: 'Peter Parker',
@@ -2118,6 +2311,9 @@ export const characters = {
     factions: ['avengers', 'howling-commandos', 'ssr', 'shield'],
     origin: 'Brooklyn, New York',
     bio: 'Super-soldier leader of the Avengers and WWII war hero.',
+    variants: {
+      'earth-92131': "In the animated series he fights beside Logan against the Red Skull in France in 1944, and is seen fighting Magneto's rebels in the erased world where Charles Xavier died in 1959.",
+    },
   },
   'storm-ororo-munroe': {
     name: 'Ororo Munroe',
@@ -2175,6 +2371,14 @@ export const characters = {
     factions: ['skrulls', 'shield'],
     origin: 'Skrullos (Cosmic)',
     bio: 'Skrull general and shapeshifter who allied with Carol Danvers and Nick Fury to protect Skrull refugees.',
+  },
+  'taylor-prescott': {
+    name: 'Taylor Prescott',
+    color: '#0ea5e9',
+    role: 'secondary',
+    status: 'alive',
+    factions: [],
+    bio: 'Doctor who helped the young Scott Summers control his powers. In Skull Mesa, in the Nevada desert, Solarr holds him prisoner until Cyclops and the town free him.',
   },
   thanos: {
     name: 'Thanos',
@@ -2238,6 +2442,15 @@ export const characters = {
       'earth-92131': 'In the animated series he appears for a moment during the rampage of the Dark Phoenix.',
     },
   },
+  'toad-mortimer-toynbee': {
+    name: 'Mortimer Toynbee',
+    alias: 'Toad',
+    color: '#65a30d',
+    role: 'villain',
+    status: 'alive',
+    factions: ['mutants'],
+    bio: 'Mutant of the Children of the Shadow who helps Solarr hold Skull Mesa, until the town drives them out.',
+  },
   'tombstone-noir': {
     name: 'Lonnie Lincoln',
     alias: 'Tombstone',
@@ -2265,7 +2478,7 @@ export const characters = {
     status: 'alive',
     factions: ['upstarts'],
     origin: 'North America (2055, Earth-92131)',
-    bio: 'Time-traveling criminal mutant capable of converting absorbed life energy into chronological portals, sent by Master Mold to assassinate Charles Xavier in Oxford in 1959.',
+    bio: 'Time-traveling mutant who opens his way through time by draining life energy. Master Mold sends him from 2055 to kill the young Charles Xavier at Bard College in 1959, until a message from his future self makes him give up.',
   },
   'uatu-the-watcher': {
     name: 'Uatu the Watcher',
@@ -2387,6 +2600,14 @@ export const characters = {
     variants: {
       'earth-92131': 'In the 1993 that Cable erases in the animated series, he watches the Senate hearing on the plague at S.H.I.E.L.D.',
     },
+  },
+  'warlock-technarch': {
+    name: 'Warlock',
+    color: '#d97706',
+    role: 'hero',
+    status: 'alive',
+    factions: [],
+    bio: 'Techno-organic alien who fled the Phalanx with his life-mate and crashed on Earth. He helps Beast, Forge, Sinister and Magneto against the Phalanx, carries their virus into the core of the Spire, and gets his life-mate back.',
   },
   'warpath-james-proudstar': {
     name: 'James Proudstar',

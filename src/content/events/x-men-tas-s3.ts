@@ -114,7 +114,7 @@ export default defineEvents('x-men-tas-s3', [
     segment: 'E11',
     title: 'Iceman looks for Lorna Dane and finds her in X-Factor',
     text: [
-      "The X-Men catch [Iceman](iceman-bobby-drake), one of the first X-Men, breaking into Kirby Glen, a government complex in Washington, D.C. [Charles Xavier](charles-xavier) tells [Jubilee](jubilee-jubilation-lee) that Bobby left the team and lived with Lorna Dane until she disappeared, and Jubilee, moved, frees him and goes back to the complex with him. There they face X-Factor, the government's team of mutants led by [Forge](forge), and Lorna is one of them, with [Havok](alex-summers) as her partner. She chooses to stay, and Bobby goes back to his civilian life.",
+      "The X-Men catch [Iceman](iceman-bobby-drake), one of the first X-Men, breaking into Kirby Glen, a government complex in Washington, D.C. [Charles Xavier](charles-xavier) tells [Jubilee](jubilee-jubilation-lee) that Bobby left the team and lived with Lorna Dane until she disappeared, and Jubilee, moved, frees him and goes back to the complex with him. There they face X-Factor, the government's team of mutants led by [Forge](forge), and Lorna, [Polaris](polaris-lorna-dane), is one of them, with [Havok](alex-summers) as her partner. She chooses to stay, and Bobby goes back to his civilian life.",
     ],
     cast: ['logan-wolverine', 'hank-mccoy', 'cyclops-scott-summers'],
     locations: ['kirby-glen', 'xaviers-school-for-gifted-youngsters'],

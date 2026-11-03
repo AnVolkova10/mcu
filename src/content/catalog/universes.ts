@@ -65,7 +65,7 @@ export const branches = {
     universe: 'earth-92131',
     name: "Bishop's future",
     divergence: 1992,
-    description: 'The 2055 that Bishop comes from: a killing in Washington in the 1990s is blamed on mutants, and the Sentinels round them up and then turn on humans too. Once Kelly survives, a plague sweeps it instead, until Bishop and Cable stop the virus in 1993.',
+    description: 'The 2055 that Bishop comes from: a killing in Washington in the 1990s is blamed on mutants, and the Sentinels round them up and then turn on humans too. Once Kelly survives, a plague sweeps it instead, until Bishop and Cable stop the virus in 1993. Later Forge sends Bishop and his sister Shard after Trevor Fitzroy, and then Shard alone after Bishop when he is lost in time.',
   },
   'first-1993': {
     universe: 'earth-92131',
@@ -73,6 +73,13 @@ export const branches = {
     divergence: 1993,
     erased: true,
     description: "The 1993 in which Bishop destroys Apocalypse's plague before Wolverine's healing can make the antibodies, and Apocalypse kills the X-Men. Cable erases it by going back to the moment Bishop arrives.",
+  },
+  'xavier-dies-1959': {
+    universe: 'earth-92131',
+    name: 'A world without Xavier',
+    divergence: 1959,
+    erased: true,
+    description: "The timeline in which Trevor Fitzroy's bomb kills the young Charles Xavier in 1959: there are no X-Men, Magneto's rebels fight a war in the ruins of New York, and Master Mold rules 2055. Bishop and the married Wolverine and Storm of this world erase it by going back and saving Xavier.",
   },
 } as const satisfies Record<string, BranchInput>;
 
