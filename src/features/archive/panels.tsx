@@ -19,6 +19,7 @@ import { Poster } from '@/features/productions/Poster';
 import { StoneGem } from '@/features/stones/StoneGem';
 import { Avatar } from '@/shared/ui/Avatar';
 import { Chip } from '@/shared/ui/Chip';
+import { StudioBadge } from '@/shared/ui/StudioBadge';
 import { EventList } from './EventList';
 import { PanelLink } from './PanelLink';
 
@@ -225,7 +226,9 @@ function ProductionPanel({ production: p }: { production: Production }) {
       )}
       <Facts items={[
         ['Released', p.released],
-        ['Network', p.network],
+        ['Studio', <StudioBadge key="s" studio={p.studio} />],
+        // The exact channel, when it says more than the studio (Fox Kids, UPN…).
+        ...(p.network !== p.studio.label ? [['Network', p.network] as [string, ReactNode]] : []),
         ['Reality', <span key="u" style={{ color: universe.color }}>{universe.name} · {universe.label}</span>],
         ['Status', p.status === 'audited' ? 'Audited' : 'v1 · not audited yet'],
         ...(p.phase ? [['MCU phase', p.phase] as [string, ReactNode]] : []),

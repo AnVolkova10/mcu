@@ -7,6 +7,7 @@ import { useLibrary } from '@/features/library/store';
 import { Markup } from '@/features/archive/Markup';
 import { PanelLink } from '@/features/archive/PanelLink';
 import { ObjectIcon } from '@/features/objects/ObjectIcon';
+import { StudioBadge } from '@/shared/ui/StudioBadge';
 import { UniverseBadge } from '@/shared/ui/UniverseBadge';
 import { cn } from '@/shared/lib/cn';
 
@@ -62,6 +63,7 @@ export const EventCard = memo(function EventCard({ event, showDate }: EventCardP
           <span className="truncate">{event.production.shortTitle}</span>
           {event.segment && <span className="font-normal text-ink-faint">{event.segment}</span>}
         </PanelLink>
+        <StudioBadge studio={event.production.studio} />
         <UniverseBadge universe={event.universe} branch={event.branch} />
         {showDate && <span className="text-xs font-semibold text-ink-muted">{event.dateLabel}</span>}
         {legacy && (

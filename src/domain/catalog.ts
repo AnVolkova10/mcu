@@ -1,7 +1,7 @@
 /** Catalog entities with their ids attached, plus id-safe lookups. */
 import { universes as universeData, branches as branchData } from '@/content/catalog/universes';
 import { series as seriesData } from '@/content/catalog/series';
-import { productions as productionData } from '@/content/catalog/productions';
+import { productions as productionData, studioOfNetwork, studios as studioData } from '@/content/catalog/productions';
 import { factions as factionData } from '@/content/catalog/factions';
 import { characters as characterData } from '@/content/catalog/characters';
 import { cast } from '@/content/catalog/cast';
@@ -13,7 +13,7 @@ import { objectKinds as objectKindData, objects as objectData } from '@/content/
 import type {
   BranchId, BranchInput, CharacterCredit, CharacterId, CharacterInput, CharacterPortraits, CosmosNodeId, CosmosNodeInput, FactionId, FactionInput,
   LocationId, LocationInput, ObjectId, ObjectInput, ObjectKindId, ObjectKindInput, ProductionId, ProductionInput, SeriesId, SeriesInput, StoneId, StoneInput,
-  UniverseId, UniverseInput,
+  StudioId, StudioInput, UniverseId, UniverseInput,
 } from './schema';
 
 type WithId<I, T> = T & { readonly id: I };
@@ -21,7 +21,9 @@ type WithId<I, T> = T & { readonly id: I };
 export type Universe = WithId<UniverseId, UniverseInput>;
 export type Branch = WithId<BranchId, BranchInput>;
 export type Series = WithId<SeriesId, SeriesInput>;
-export type Production = WithId<ProductionId, ProductionInput> & { readonly shortTitle: string };
+export type Studio = WithId<StudioId, StudioInput>;
+/** A production with its short title, and the studio whose color it wears. */
+export type Production = WithId<ProductionId, ProductionInput> & { readonly shortTitle: string; readonly studio: Studio; readonly color: string };
 export type Faction = WithId<FactionId, FactionInput>;
 export type Character = WithId<CharacterId, CharacterInput> & {
   readonly label: string;
@@ -46,11 +48,13 @@ export const locations = withIds<LocationId, LocationInput>(locationData);
 export const cosmosNodes = withIds<CosmosNodeId, CosmosNodeInput>(cosmosData);
 export const stones = withIds<StoneId, StoneInput>(stoneData);
 export const objectKinds = withIds<ObjectKindId, ObjectKindInput>(objectKindData);
+export const studios = withIds<StudioId, StudioInput>(studioData);
 
 export const productions = Object.fromEntries(
   Object.entries(withIds<ProductionId, ProductionInput>(productionData)).map(([id, p]) => {
     const s = p.series ? series[p.series] : undefined;
-    return [id, { ...p, shortTitle: s && p.season ? `${s.shortTitle} S${p.season}` : p.title }];
+    const studio = studios[studioOfNetwork[p.network]];
+    return [id, { ...p, shortTitle: s && p.season ? `${s.shortTitle} S${p.season}` : p.title, studio, color: studio.color }];
   }),
 ) as Record<ProductionId, Production>;
 

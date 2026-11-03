@@ -11,6 +11,7 @@ import { useFitRows } from '@/shared/lib/useFitRows';
 import { FilterButton } from '@/shared/ui/FilterButton';
 import { PageHeader } from '@/shared/ui/PageHeader';
 import { SearchBox } from '@/shared/ui/SearchBox';
+import { StudioBadge } from '@/shared/ui/StudioBadge';
 import { UniverseToggles } from '@/shared/ui/UniverseToggles';
 import { Poster } from './Poster';
 
@@ -137,6 +138,10 @@ function ProductionCard({ row: { production: p, events } }: { row: Row }) {
           {p.status === 'legacy' && (
             <span className="absolute left-2 top-2 rounded-full bg-bg/85 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-ink-muted backdrop-blur">v1</span>
           )}
+          {/* On a dark backing, so the badge reads over any poster. */}
+          <span className="absolute bottom-1.5 left-1.5 flex max-w-[calc(100%-0.75rem)] overflow-hidden rounded-full bg-bg/85 backdrop-blur">
+            <StudioBadge studio={p.studio} compact />
+          </span>
         </div>
         <p className="mt-2 line-clamp-2 min-h-10 text-sm font-bold leading-5 text-ink">{p.shortTitle}</p>
         <p className="mt-0.5 flex items-center gap-1.5 text-xs text-ink-faint">

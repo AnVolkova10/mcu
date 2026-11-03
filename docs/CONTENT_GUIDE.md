@@ -86,7 +86,7 @@ En `src/content/catalog/series.ts`:
   legion: { title: 'Legion', shortTitle: 'Legion', network: 'FX' },
 ```
 
-Si la cadena no está en la lista `Network` de `src/domain/schema.ts`, agregala ahí.
+Si la cadena no está en la lista `Network` de `src/domain/schema.ts`, agregala ahí y decí de qué productora es en `studioOfNetwork`, al principio de `src/content/catalog/productions.ts`. Las productoras (`studios`) siguen a la lista de Aaron Perris: las películas de Fox y todos los canales de los dibujos de los 90 son Fox. Cada producción toma el color de su productora, y la etiqueta con su nombre sale en el timeline, en Movies & Series y en la ficha.
 
 ### Paso 4 · La producción
 
@@ -102,7 +102,6 @@ Al final de `src/content/catalog/productions.ts`, antes de `} as const`:
     network: 'FX',
     universe: 'earth-xxxxx',     // el del paso 2
     status: 'audited',           // lo que cargues vos revisado es 'audited'
-    color: '#a855f7',            // color del afiche o de la serie
     description: 'Una o dos oraciones sobre la temporada.',
   },
 ```

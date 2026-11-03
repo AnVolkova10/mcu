@@ -4,7 +4,7 @@
  */
 import type { UniverseId, BranchId } from '@/content/catalog/universes';
 import type { SeriesId } from '@/content/catalog/series';
-import type { ProductionId } from '@/content/catalog/productions';
+import type { ProductionId, StudioId } from '@/content/catalog/productions';
 import type { FactionId } from '@/content/catalog/factions';
 import type { CharacterId } from '@/content/catalog/characters';
 import type { LocationId } from '@/content/catalog/locations';
@@ -12,7 +12,7 @@ import type { CosmosNodeId } from '@/content/catalog/cosmos';
 import type { StoneId } from '@/content/catalog/stones';
 import type { ObjectId, ObjectKindId } from '@/content/catalog/objects';
 
-export type { UniverseId, BranchId, SeriesId, ProductionId, FactionId, CharacterId, LocationId, CosmosNodeId, StoneId, ObjectId, ObjectKindId };
+export type { UniverseId, BranchId, SeriesId, ProductionId, StudioId, FactionId, CharacterId, LocationId, CosmosNodeId, StoneId, ObjectId, ObjectKindId };
 
 // ─── Universes ────────────────────────────────────────────────────────────────
 
@@ -57,6 +57,13 @@ export type Network =
 
 export type Phase = 'Phase 1' | 'Phase 2' | 'Phase 3' | 'Phase 4' | 'Phase 5' | 'Phase 6';
 
+/** Who makes or releases a production, grouped as on Aaron Perris's list. */
+export interface StudioInput {
+  label: string;
+  /** Color of the studio badge, and of every production of the studio. */
+  color: string;
+}
+
 /**
  * audited: reviewed under the in-universe rules; the validator is strict with it.
  * legacy:  inherited from v1 (2021 HTML); shown as-is and only required not to break anything.
@@ -87,8 +94,6 @@ export interface ProductionInput {
   universe: UniverseId;
   status: AuditStatus;
   animated?: boolean;
-  /** Accent color for chips. */
-  color: string;
   description?: string;
   /** TMDB movie id (movies, specials, shorts). Seasons use their series' tmdbId. */
   tmdbId?: number;
