@@ -15,6 +15,7 @@ import { SearchBox } from '@/shared/ui/SearchBox';
 import { SearchSelect, type SelectItem } from '@/shared/ui/SearchSelect';
 import { UniverseToggles } from '@/shared/ui/UniverseToggles';
 import { portraitSources } from './portraits';
+import { pickVersion, useVersions } from './versions';
 
 const ROLES: { id: string; label: string; roles: CharacterRole[] }[] = [
   { id: 'heroes', label: 'Heroes', roles: ['hero'] },
@@ -54,6 +55,7 @@ export function CharactersPage() {
   const role = route.query.get('role');
   const faction = route.query.get('faction') ?? undefined;
   const sort = route.query.get('sort') ?? 'appearances';
+  const chosen = useVersions((s) => s.chosen);
 
   const update = useCallback(
     (changes: Record<string, string | undefined>) => navigate(withQuery(route, changes), { replace: true }),
@@ -113,7 +115,7 @@ export function CharactersPage() {
           </div>
         ) : (
           <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:auto-rows-[var(--row)] lg:grid-cols-3 xl:grid-cols-4">
-            {visible.map((row) => <CharacterCard key={row.character.id} row={row} universe={row.universes.find((u) => universes.includes(u)) ?? row.universes[0]} />)}
+            {visible.map((row) => <CharacterCard key={row.character.id} row={row} universe={pickVersion(row.universes, universes, chosen[row.character.id])} />)}
           </ul>
         )}
       </div>

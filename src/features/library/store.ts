@@ -1,4 +1,4 @@
-/** What the visitor keeps in this browser: saved events and read marks. Nothing else is persisted. */
+/** What the visitor keeps in this browser: saved events and read marks. The version picked for each character lives in features/characters/versions.ts. */
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 import { legacyEventIds } from './legacyEventIds';

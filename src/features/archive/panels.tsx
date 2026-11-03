@@ -14,6 +14,7 @@ import { cn } from '@/shared/lib/cn';
 import { tmdbImage } from '@/shared/lib/tmdb';
 import { Sheet } from '@/shared/ui/Sheet';
 import { portraitSources } from '@/features/characters/portraits';
+import { pickVersion, useVersions } from '@/features/characters/versions';
 import { Poster } from '@/features/productions/Poster';
 import { StoneGem } from '@/features/stones/StoneGem';
 import { Avatar } from '@/shared/ui/Avatar';
@@ -133,7 +134,9 @@ function CharacterPanel({ character: c }: { character: Character }) {
     .map((id) => ({ universe: getUniverse(id)!, count: events.filter((e) => e.universe.id === id).length }))
     .sort((a, b) => b.count - a.count);
   const filtered = query.get('u')?.split(',') ?? [];
-  const [version, setVersion] = useState<string | undefined>(perUniverse.find((p) => filtered.includes(p.universe.id))?.universe.id ?? perUniverse[0]?.universe.id);
+  const chosen = useVersions((s) => s.chosen[c.id]);
+  const choose = useVersions((s) => s.choose);
+  const [version, setVersion] = useState(() => pickVersion(perUniverse.map((p) => p.universe.id), filtered, chosen));
   const credits = c.credits.filter((credit) => credit.universe === version);
   return (
     <>
@@ -145,7 +148,7 @@ function CharacterPanel({ character: c }: { character: Character }) {
               <button
                 key={universe.id}
                 type="button"
-                onClick={() => setVersion(universe.id)}
+                onClick={() => { setVersion(universe.id); choose(c.id, universe.id); }}
                 aria-pressed={version === universe.id}
                 className={cn('flex w-24 flex-col items-center gap-2 text-center transition', version === universe.id ? 'opacity-100' : 'opacity-60 hover:opacity-100')}
               >
