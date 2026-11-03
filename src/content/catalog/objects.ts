@@ -14,6 +14,11 @@ export type ObjectKindId = keyof typeof objectKinds;
 
 /** Named objects that change the plot or pass from hand to hand. Sorted by id. */
 export const objects = {
+  adamantium: {
+    name: 'Adamantium',
+    kind: 'material',
+    description: 'Nearly unbreakable metal that William Stryker makes from a meteorite Team X finds in Nigeria. He bonds it to the skeleton of Logan, arms Weapon XI with it and uses it in the bullets that take Logan\'s memory.',
+  },
   'captain-america-shield': {
     name: "Captain America's Shield",
     kind: 'weapon',

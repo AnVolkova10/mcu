@@ -22,14 +22,13 @@ export const characters = {
     bio: "Greek warrior of the Trojan War and closest friend of B'Kai, who fought at his side undercover for nine years. He attacks B'Kai when he sees him let Helen escape, and dies in the fight.",
   },
   'agent-zero': {
-    name: 'David North',
-    alias: 'Agent Zero',
+    name: 'Agent Zero',
     color: '#14b8a6',
     role: 'villain',
     status: 'deceased',
     factions: ['team-x', 'weapon-x', 'mutants'],
     origin: 'United States',
-    bio: 'Cold-blooded mutant tracker and lethal marksman possessing inhuman projectile reflexes, sniper accuracy, and kinetic impact absorption.',
+    bio: "Team X marksman, the fastest gun on William Stryker's team and the one who stays loyal to him. Logan kills him in 1979, after Zero murders the couple who took him in.",
   },
   akeya: {
     name: 'Akeya',
@@ -56,7 +55,7 @@ export const characters = {
     role: 'hero',
     status: 'alive',
     factions: ['x-men', 'division-x', 'mutants'],
-    bio: "Mutant who fires destructive energy rings from his chest and cannot control them, so he prefers solitary confinement until Hank McCoy builds him a unit to aim them.",
+    bio: 'Mutant who fires destructive energy rings from his chest and cannot control them, so he prefers solitary confinement until Hank McCoy builds him a unit to aim them.',
   },
   'alfred-morris-noir': {
     name: 'Alfred Morris',
@@ -82,7 +81,7 @@ export const characters = {
     role: 'villain',
     status: 'deceased',
     factions: ['division-x', 'hellfire-club', 'brotherhood-of-mutants', 'mutants'],
-    bio: "Dancer with insect wings. Charles Xavier and Erik Lehnsherr recruit her for Division X, but she joins Sebastian Shaw when he attacks the base, and follows Erik after Shaw dies.",
+    bio: 'Dancer with insect wings. Charles Xavier and Erik Lehnsherr recruit her for Division X, but she joins Sebastian Shaw when he attacks the base, and follows Erik after Shaw dies.',
   },
   'angie-martinelli': {
     name: 'Angie Martinelli',
@@ -129,7 +128,7 @@ export const characters = {
     role: 'hero',
     status: 'deceased',
     factions: ['division-x', 'mutants'],
-    bio: "Taxi driver whose body adapts to survive anything. He joins Division X and Sebastian Shaw kills him in the attack on the base, with an energy blast his body cannot adapt to.",
+    bio: 'Taxi driver whose body adapts to survive anything. He joins Division X and Sebastian Shaw kills him in the attack on the base, with an energy blast his body cannot adapt to.',
   },
   'arnim-zola': {
     name: 'Dr. Arnim Zola',
@@ -721,14 +720,14 @@ export const characters = {
     bio: 'Newsboy and pickpocket who runs errands for Ben Reilly, stands in for him at his window and keeps an eye on Cat Hardy.',
   },
   'fred-dukes': {
-    name: 'Fred J. Dukes',
+    name: 'Fred Dukes',
     alias: 'The Blob',
     color: '#ca8a04',
     role: 'anti-hero',
     status: 'alive',
     factions: ['team-x', 'mutants'],
     origin: 'United States',
-    bio: 'Former Team X powerhouse possessing superhuman kinetic mass, elastic skin, and an impenetrable gravitational center.',
+    bio: "Super-strong, nearly unbreakable Team X member. After the team breaks up he gains a great deal of weight, and at a boxing gym in Las Vegas he tells Logan about Stryker's island.",
   },
   fury: {
     name: 'Nick Fury',
@@ -1026,7 +1025,7 @@ export const characters = {
     role: 'villain',
     status: 'alive',
     factions: ['hellfire-club', 'brotherhood-of-mutants', 'mutants'],
-    bio: "Silent mutant who spins the air into tornadoes. He serves Sebastian Shaw in the Hellfire Club and leaves with Erik Lehnsherr when Shaw dies.",
+    bio: 'Silent mutant who spins the air into tornadoes. He serves Sebastian Shaw in the Hellfire Club and leaves with Erik Lehnsherr when Shaw dies.',
   },
   'jason-wilkes': {
     name: 'Dr. Jason Wilkes',
@@ -1105,13 +1104,12 @@ export const characters = {
   },
   'john-wraith': {
     name: 'John Wraith',
-    alias: 'Kestrel',
     color: '#06b6d4',
     role: 'hero',
     status: 'deceased',
     factions: ['team-x', 'mutants'],
     origin: 'United States',
-    bio: 'Loyal mutant veteran of Team X capable of instantaneous line-of-sight spatial teleportation; ally to Logan murdered by Victor Creed.',
+    bio: 'Team X teleporter who runs a boxing gym in Las Vegas after the team breaks up. He helps Logan look for Gambit, and Victor Creed kills him in New Orleans.',
   },
   'johnny-storm': {
     name: 'Johnny Storm',
@@ -1203,13 +1201,11 @@ export const characters = {
   },
   'kayla-silverfox': {
     name: 'Kayla Silverfox',
-    alias: 'Silver Fox',
     color: '#a855f7',
     role: 'hero',
     status: 'deceased',
     factions: ['mutants'],
-    origin: 'Canadian Rockies, Canada',
-    bio: "Gentle mutant endowed with tactile hypnotic persuasion; Logan's beloved partner in the Canadian Rockies who sacrifices her life to ensure the freedom of captive mutant children.",
+    bio: 'Teacher who controls people by touching them. She lives with Logan in the Canadian Rockies while she watches him for William Stryker, who holds her sister, and dies on Three Mile Island after freeing the captive mutants.',
   },
   'kitty-pryde': {
     name: 'Kitty Pryde',
@@ -1515,7 +1511,7 @@ export const characters = {
     status: 'alive',
     factions: ['cia', 'division-x'],
     origin: 'United States',
-    bio: "CIA agent who finds the Hellfire Club in Las Vegas and brings Charles Xavier to the agency. He erases her memory of the X-Men after the Cuban Missile Crisis.",
+    bio: 'CIA agent who finds the Hellfire Club in Las Vegas and brings Charles Xavier to the agency. He erases her memory of the X-Men after the Cuban Missile Crisis.',
   },
   mojo: {
     name: 'Mojo',
@@ -1829,7 +1825,7 @@ export const characters = {
     role: 'secondary',
     status: 'deceased',
     factions: ['us-military'],
-    bio: "U.S. Army colonel paid by the Hellfire Club. Sebastian Shaw frightens him into backing the Jupiter missiles in Turkey and kills him when he comes for his money.",
+    bio: 'U.S. Army colonel paid by the Hellfire Club. Sebastian Shaw frightens him into backing the Jupiter missiles in Turkey and kills him when he comes for his money.',
   },
   rocket: {
     name: 'Rocket Raccoon',
@@ -1946,7 +1942,7 @@ export const characters = {
     status: 'deceased',
     factions: ['hellfire-club', 'third-reich', 'mutants'],
     origin: 'Germany / United States',
-    bio: "Mutant who absorbs energy and stays young. As Dr. Klaus Schmidt he serves the Nazis at Auschwitz; as leader of the Hellfire Club he tries to start a nuclear war, until Erik Lehnsherr kills him with a Nazi coin.",
+    bio: 'Mutant who absorbs energy and stays young. As Dr. Klaus Schmidt he serves the Nazis at Auschwitz; as leader of the Hellfire Club he tries to start a nuclear war, until Erik Lehnsherr kills him with a Nazi coin.',
   },
   'senator-robert-kelly': {
     name: 'Senator Robert Kelly',
@@ -2365,7 +2361,7 @@ export const characters = {
     role: 'secondary',
     status: 'alive',
     factions: ['cia', 'anti-mutant-coalition'],
-    bio: "CIA officer and father of William Stryker. He sees mutants as too dangerous for the law to protect and pushes the American and Soviet fleets to fire on them in Cuba.",
+    bio: 'CIA officer and father of William Stryker. He sees mutants as too dangerous for the law to protect and pushes the American and Soviet fleets to fire on them in Cuba.',
   },
   'wilson-fisk-kingpin': {
     name: 'Wilson Fisk',

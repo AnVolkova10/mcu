@@ -71,6 +71,7 @@ const FILES: Record<string, Record<string, FilePick>> = {
   coulson: { 'earth-616': ['Phil Coulson Infobox.jpg', 0.2, 0.02, 0.6] },
   'daniel-sousa': { 'earth-616': ['Daniel Sousa.jpg', 0.25, 0.04, 0.5] },
   falcon: { 'earth-616': 'Falcon-DontThankMe.jpg' },
+  'fred-dukes': { 'earth-10005': ['469px-Frederick Dukes (Earth-10005)-1-.jpg', 0.14, 0, 0.45] },
   'iceman-bobby-drake': { 'earth-10005': ['740full-iceman-(shawn-ashmore).jpg', 0.3, 0.05, 0.4] },
   'iron-fist': { 'earth-616': 'DRand-AskingForFruitRollUps.png' },
   'jack-thompson': { 'earth-616': ['Jack Thompson.jpg', 0.27, 0, 0.4] },

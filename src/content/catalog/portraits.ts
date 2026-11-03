@@ -229,7 +229,7 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
     'earth-62533': 'https://static.wikia.nocookie.net/spidermannoir/images/d/d0/Frankie.png/revision/latest/scale-to-width-down/218?cb=20260530183437',
   },
   'fred-dukes': {
-    'earth-10005': 'https://static.wikia.nocookie.net/xmenmovies/images/8/80/469px-Frederick_Dukes_%28Earth-10005%29-1-.jpg/revision/latest/scale-to-width-down/235?cb=20110612090835',
+    'earth-10005': 'https://static.wikia.nocookie.net/xmenmovies/images/8/80/469px-Frederick_Dukes_%28Earth-10005%29-1-.jpg/revision/latest/window-crop/width/300/x-offset/66/y-offset/0/window-width/211/window-height/211?cb=20110612090835',
   },
   'fury': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/a/a3/Nick_Fury_Infobox.png/revision/latest/scale-to-width-down/236?cb=20240802141551',

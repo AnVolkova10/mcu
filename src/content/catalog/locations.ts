@@ -3,13 +3,6 @@ import type { LocationInput } from '@/domain/schema';
 
 /** Places on Earth (with coordinates) and off-world places (linked to a Cosmos node). Sorted by id. */
 export const locations = {
-  'abandoned-alkali-lake-facility': {
-    name: 'Abandoned Alkali Lake Facility',
-    place: 'Alberta / British Columbia',
-    country: 'Canada',
-    kind: 'earth',
-    coords: [51.2538, -115.5708],
-  },
   'adwa-mountain-pass': {
     name: 'Adwa',
     place: 'Tigray',
@@ -17,23 +10,15 @@ export const locations = {
     kind: 'earth',
     coords: [14.164, 38.896],
   },
-  'alkali-lake-subterranean-weapon-x-facility': {
-    name: 'Alkali Lake Subterranean Weapon X Facility',
-    place: 'Alberta / British Columbia',
-    country: 'Canada',
-    kind: 'earth',
-    coords: [51.2538, -115.5708],
-  },
   'alkali-lake-weapon-x-facility': {
-    name: 'Alkali Lake Weapon X Facility',
-    place: 'Alberta / British Columbia',
+    name: 'Alkali Lake Facility',
+    place: 'Alberta',
     country: 'Canada',
     kind: 'earth',
     coords: [51.253, -115.57],
   },
   'american-civil-war-battlefield': {
-    name: 'American Civil War Battlefield',
-    place: 'Virginia / Maryland',
+    name: 'Civil War Battlefield',
     country: 'United States',
     kind: 'earth',
     coords: [37.431, -78.656],
@@ -255,11 +240,11 @@ export const locations = {
     approximate: true,
   },
   'canadian-rockies-homestead': {
-    name: 'Canadian Rockies Homestead',
+    name: "Logan and Kayla's Cabin",
     place: 'Canadian Rockies',
     country: 'Canada',
     kind: 'earth',
-    coords: [51.178, -115.57],
+    coords: [51.7, -116.1],
   },
   'cape-citadel-military-missile-installation': {
     name: 'Cape Citadel Military Missile Installation',
@@ -490,7 +475,7 @@ export const locations = {
     coords: [29.9511, -90.0715],
   },
   'french-quarter-underground-poker-club': {
-    name: 'French Quarter Underground Poker Club',
+    name: 'Poker Club',
     place: 'New Orleans, Louisiana',
     country: 'United States',
     kind: 'earth',
@@ -657,11 +642,18 @@ export const locations = {
     approximate: true,
   },
   'howlett-estate-and-northwest-wilderness': {
-    name: 'Howlett Estate & Northwest Wilderness',
+    name: 'Howlett Estate',
     place: 'Northwest Territories',
     country: 'Canada',
     kind: 'earth',
     coords: [62.454, -114.371],
+  },
+  'hudson-farm': {
+    name: 'Hudson Farm',
+    place: 'Alberta',
+    country: 'Canada',
+    kind: 'earth',
+    coords: [51.24, -115.18],
   },
   'hydra-107th-prison-facility': {
     name: 'Hydra Factory',
@@ -791,14 +783,14 @@ export const locations = {
     node: 'kun-lun',
   },
   'lagos-warlord-compound-and-adamantium-extraction-site': {
-    name: 'Lagos Warlord Compound & Adamantium Extraction Site',
+    name: 'Diamond Trafficking Office',
     place: 'Lagos',
     country: 'Nigeria',
     kind: 'earth',
     coords: [6.524, 3.379],
   },
   'las-vegas-underground-boxing-gym': {
-    name: 'Las Vegas Underground Boxing Gym',
+    name: 'Boxing Gym',
     place: 'Las Vegas, Nevada',
     country: 'United States',
     kind: 'earth',
@@ -946,6 +938,12 @@ export const locations = {
     kind: 'earth',
     coords: [41.5, -74],
   },
+  'meteorite-village': {
+    name: 'Meteorite Village',
+    country: 'Nigeria',
+    kind: 'earth',
+    coords: [7.85, 3.93],
+  },
   'miami-coastline-and-shaw-yacht': {
     name: 'Caspartina',
     place: 'Off the coast of Miami, Florida',
@@ -961,8 +959,7 @@ export const locations = {
     coords: [40.758, -73.9855],
   },
   'military-stockade-and-da-nang-outpost': {
-    name: 'Military Stockade & Da Nang Outpost',
-    place: 'Da Nang',
+    name: 'Military Stockade',
     country: 'Vietnam',
     kind: 'earth',
     coords: [16.054, 108.202],
@@ -1109,8 +1106,7 @@ export const locations = {
     coords: [25.6872, 32.6396],
   },
   'normandy-invasion-beachhead': {
-    name: 'Normandy Invasion Beachhead',
-    place: 'Normandy',
+    name: 'Normandy Beach',
     country: 'France',
     kind: 'earth',
     coords: [49.37, -0.88],
@@ -1384,6 +1380,13 @@ export const locations = {
     kind: 'earth',
     coords: [38.8887, -77.026],
   },
+  'springfield-ohio-carnival': {
+    name: 'Carnival',
+    place: 'Springfield, Ohio',
+    country: 'United States',
+    kind: 'earth',
+    coords: [39.9242, -83.8088],
+  },
   'ssr-new-york-field-headquarters': {
     name: 'SSR New York Office',
     place: 'Manhattan, New York',
@@ -1632,11 +1635,11 @@ export const locations = {
     approximate: true,
   },
   'three-mile-island-nuclear-facility-and-weapon-xi-laboratory': {
-    name: 'Three Mile Island Nuclear Facility & Weapon XI Laboratory',
-    place: 'Dauphin County, Pennsylvania',
+    name: 'Three Mile Island',
+    place: 'Middletown, Pennsylvania',
     country: 'United States',
     kind: 'earth',
-    coords: [40.154, -76.724],
+    coords: [40.1534, -76.7247],
   },
   titan: { name: 'Titan', kind: 'space', node: 'titan' },
   'times-square': {
@@ -1761,8 +1764,7 @@ export const locations = {
     coords: [55.952, -3.189],
   },
   'western-front-allied-trenches': {
-    name: 'Western Front Allied Trenches',
-    place: 'Grand Est / Normandy',
+    name: 'Western Front Trenches',
     country: 'France',
     kind: 'earth',
     coords: [49.258, 4.031],

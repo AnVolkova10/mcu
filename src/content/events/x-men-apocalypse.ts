@@ -55,7 +55,7 @@ export default defineEvents('x-men-apocalypse', [
     ],
     cast: ['william-stryker'],
     locations: [
-      'alkali-lake-subterranean-weapon-x-facility',
+      'alkali-lake-weapon-x-facility',
     ],
   },
   {
@@ -86,6 +86,6 @@ export default defineEvents('x-men-apocalypse', [
       `In the aftermath of Wolverine's bloody escape from the Alkali Lake facility, a cleanup crew in dark business suits representing **Essex Corp** inspects the bullet-riddled, bloodstained containment laboratory. Bypassing dead bodies, an operative retrieves a glass vial of Wolverine's mutant blood labeled *"Weapon X"* and places it into an Essex Corp briefcase—laying the groundwork for future human cloning and the genetic creation of Laura Kinney (X-23).`,
     ],
     cast: ['william-stryker'],
-    locations: ['abandoned-alkali-lake-facility'],
+    locations: ['alkali-lake-weapon-x-facility'],
   },
 ]);

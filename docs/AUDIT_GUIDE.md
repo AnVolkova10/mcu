@@ -92,6 +92,8 @@ Un dato que no aparece en dos fuentes es una duda y va a la ficha. Si la memoria
 - Personajes sin nombre o que no cambian nada: `**negrita**` o nada.
 - Un mismo nombre puede ser dos personas: Jorani es Iron Fist, pero no la ficha `iron-fist`, que es Danny Rand. Enlazar la ficha equivocada también le suma un crédito falso.
 - Revisá `status` contra la obra. En la v2 había muertes que nadie vio en pantalla.
+- Si la obra deshace una muerte, no va en `deaths`: a Weapon XI le cortan la cabeza, pero en la escena post-créditos abre los ojos.
+- Un nombre que solo existe en los cómics no va en la ficha, aunque lo usen las wikis: Wraith no se llama *Kestrel* en *X-Men Origins: Wolverine*.
 
 ### Objetos
 
