@@ -4,13 +4,11 @@ import { defineEvents } from '@/domain/define';
 export default defineEvents('come-to-wakanda-before', [
   {
     id: 'wakanda-tourist-film',
-    date: { year: 1984, approx: true },
-    title: 'Wakanda hides its Golden City behind a tourist film',
+    date: { year: 1988 },
+    title: 'A tourism ad shows Wakanda as the world believes it to be',
     text: [
-      "During the mid-1980s, the ==Wakandan Ministry of Tourism== broadcasts a retro promotional tourist film across international television networks, portraying ==Wakanda== as an idyllic, simple third-world African nation of subsistence farmers, shepherds, and hand-woven textile artisans. This carefully curated public facade serves as a global deception to conceal Wakanda's subterranean Vibranium deposits, holographic border cloaks, and hyper-futuristic Golden City from international intelligence agencies.",
+      'A Wakandan tourism ad from 1988 invites visitors to the country the rest of the world believes in: a small, poor and rural nation, which hides the advanced kingdom Wakanda really is.',
     ],
-    locations: [
-      'wakandan-borderlands-and-outer-pastoral-villages',
-    ],
+    locations: ['wakandan-borderlands-and-outer-pastoral-villages'],
   },
 ]);

@@ -217,11 +217,11 @@ export const locations = {
     approximate: true,
   },
   'cafe-de-la-paix': {
-    name: 'Café de la Paix',
+    name: 'Café on Rue de la Paix',
     place: 'Paris',
     country: 'France',
     kind: 'earth',
-    coords: [48.8708, 2.3318],
+    coords: [48.8693, 2.3313],
   },
   'camp-lehigh-military-training-base': {
     name: 'Camp Lehigh',
@@ -437,13 +437,6 @@ export const locations = {
     kind: 'earth',
     coords: [51.5074, -0.1278],
   },
-  'exosphere-stratosphere': {
-    name: 'Exosphere Stratosphere',
-    place: 'Upper Atmosphere',
-    country: 'Exosphere',
-    kind: 'orbit',
-    node: 'shuttle-orbit',
-  },
   'faber-laboratory': {
     name: "Dr. Faber's Laboratory",
     place: 'The Bronx, New York',
@@ -508,10 +501,11 @@ export const locations = {
     coords: [-4.6796, 55.492],
   },
   'genosha-island-mutant-sanctuary': {
-    name: 'Genosha Island Mutant Sanctuary',
-    place: 'Genosha',
+    name: 'Genosha',
+    place: 'Off the East Coast',
+    country: 'United States',
     kind: 'earth',
-    coords: [-20, 57.5],
+    coords: [40.55, -72.7],
   },
   'genosha-memorial-ruins': {
     name: 'Genosha Memorial Ruins',
@@ -802,9 +796,7 @@ export const locations = {
     coords: [51.5022, -0.1283],
   },
   'low-earth-orbit-and-exosphere-space': {
-    name: 'Low Earth Orbit & Exosphere Space',
-    place: 'Low Earth Orbit',
-    country: 'Exosphere',
+    name: 'Earth Orbit',
     kind: 'orbit',
     node: 'shuttle-orbit',
   },
@@ -853,11 +845,11 @@ export const locations = {
     coords: [40.7075, -73.9908],
   },
   'manhattan-brownstone-district': {
-    name: 'Manhattan Brownstone District',
+    name: 'Manhattan Street',
     place: 'New York City',
     country: 'United States',
     kind: 'earth',
-    coords: [40.7831, -73.9712],
+    coords: [40.7712, -73.9585],
   },
   'manhattan-chapel-and-chernobyl-nuclear-complex': {
     name: 'Manhattan Chapel & Chernobyl Nuclear Complex',
@@ -916,8 +908,8 @@ export const locations = {
     coords: [38.8816, -77.105],
   },
   'mcu-armored-prisoner-train-route': {
-    name: 'MCU Armored Prisoner Train Route',
-    place: 'Upstate New York',
+    name: 'Prisoner Train',
+    place: 'New York',
     country: 'United States',
     kind: 'earth',
     coords: [41.5, -74],
@@ -1690,11 +1682,11 @@ export const locations = {
     coords: [38.8899, -77.009],
   },
   'upstate-rural-highway-and-county-hospital': {
-    name: 'Upstate Rural Highway & County Hospital',
-    place: 'Upstate New York',
+    name: 'Crash Site',
+    place: 'New York',
     country: 'United States',
     kind: 'earth',
-    coords: [42.5, -75.5],
+    coords: [41.97, -73.8],
   },
   'valkyrie-crash-site': {
     name: 'Tesseract Recovery Site',

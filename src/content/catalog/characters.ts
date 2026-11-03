@@ -2273,14 +2273,13 @@ export const characters = {
     bio: 'Synthezoid born of vibranium and the Mind Stone.',
   },
   'vuk-dbari': {
-    name: "Vuk (D'Bari Leader)",
-    alias: 'Vuk',
+    name: 'Vuk',
     color: '#a3e635',
     role: 'villain',
     status: 'deceased',
     factions: ['dbari-empire'],
-    origin: "D'Bari Homeworld (Extraterrestrial)",
-    bio: "Ruthless shapeshifting extraterrestrial leader of the D'Bari race whose planet was consumed by the cosmic Phoenix entity, who infiltrates Earth to manipulate Jean Grey and siphon the entity's limitless primordial power.",
+    origin: "D'Bari homeworld",
+    bio: "Leader of the shape-shifting D'Bari, whose world was destroyed by the cosmic force that Jean Grey absorbs. She tries to take that force from Jean to use it on Earth.",
   },
   'wade-wilson': {
     name: 'Wade Wilson',
