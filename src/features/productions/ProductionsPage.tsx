@@ -3,6 +3,7 @@ import { Film } from 'lucide-react';
 import { archive } from '@/content';
 import { normalize, type ArchiveEvent } from '@/domain/archive';
 import { getUniverse, productionList, type Production } from '@/domain/catalog';
+import { universesFromQuery } from '@/domain/filters';
 import type { UniverseId } from '@/domain/schema';
 import { navigate, useRoute, withQuery } from '@/app/router';
 import { PanelLink } from '@/features/archive/PanelLink';
@@ -55,7 +56,7 @@ export function ProductionsPage() {
   const route = useRoute();
   const shelf = useFitRows<HTMLDivElement>(MIN_ROW, ROW_GAP);
   const q = route.query.get('q') ?? '';
-  const universes = useMemo(() => route.query.get('u')?.split(',').filter(Boolean) ?? [], [route.query]);
+  const universes = useMemo<string[]>(() => universesFromQuery(route.query), [route.query]);
   const kind = route.query.get('kind');
   const status = route.query.get('status');
   const sort = route.query.get('sort') ?? 'story';

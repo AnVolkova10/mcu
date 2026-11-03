@@ -3,6 +3,7 @@ import { Users } from 'lucide-react';
 import { archive } from '@/content';
 import { normalize } from '@/domain/archive';
 import { characterList, factionList, getFaction, getUniverse, type Character } from '@/domain/catalog';
+import { universesFromQuery } from '@/domain/filters';
 import type { CharacterRole, UniverseId } from '@/domain/schema';
 import { navigate, useRoute, withQuery } from '@/app/router';
 import { PanelLink } from '@/features/archive/PanelLink';
@@ -49,7 +50,7 @@ export function CharactersPage() {
   const route = useRoute();
   const roster = useFitRows<HTMLDivElement>(CARD_HEIGHT, CARD_GAP);
   const q = route.query.get('q') ?? '';
-  const universes = useMemo(() => route.query.get('u')?.split(',').filter(Boolean) ?? [], [route.query]);
+  const universes = useMemo<string[]>(() => universesFromQuery(route.query), [route.query]);
   const role = route.query.get('role');
   const faction = route.query.get('faction') ?? undefined;
   const sort = route.query.get('sort') ?? 'appearances';

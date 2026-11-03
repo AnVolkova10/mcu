@@ -1,6 +1,7 @@
 import { useCallback, useMemo } from 'react';
 import { archive } from '@/content';
 import { buildTrace, type MapFilters } from '@/domain/atlas';
+import { universesFromQuery } from '@/domain/filters';
 import { href, navigate, useRoute } from '@/app/router';
 
 export type MapView = 'earth' | 'cosmos' | 'multiverse';
@@ -23,7 +24,7 @@ export function useMapState() {
   const node = query.get('node');
   const traceRef = query.get('trace');
 
-  const universes = useMemo(() => query.get('u')?.split(',').filter(Boolean) ?? [], [query]);
+  const universes = useMemo<string[]>(() => universesFromQuery(query), [query]);
   const group = useMemo(() => archive.groups.find((g) => g.label === at) ?? null, [at]);
   const filters = useMemo<MapFilters>(() => ({ group, universes }), [group, universes]);
   const trace = useMemo(() => buildTrace(archive, traceRef), [traceRef]);
