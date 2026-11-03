@@ -11,9 +11,9 @@
 
 ## Contenido
 
-Estado actual: `npm run content -- status` (30 producciones auditadas, 8 verificadas, 51 legacy de la v1).
+Estado actual: `npm run content -- status` (31 producciones auditadas, 9 verificadas, 50 legacy de la v1).
 
-**Lo que sigue.** Revisar una por una las 28 producciones auditadas en la v2 junto a quien mantiene el proyecto, con `docs/AUDIT_GUIDE.md`, y recién después seguir con lo demás. Van en el orden de la cronología de Aaron Perris (https://aaronperris.com/mcu/):
+**Lo que sigue.** Revisar una por una las 28 producciones auditadas en la v2 junto a quien mantiene el proyecto, con `docs/AUDIT_GUIDE.md`, y recién después seguir con lo demás. Van en el orden de la cronología de Aaron Perris (https://aaronperris.com/mcu/), que intercala piezas legacy de la v1, como *Stark Expo 1974*: se auditan en ese mismo orden.
 
 - [x] *Eyes of Wakanda* T1
 - [x] *Spider-Noir* T1
@@ -23,6 +23,7 @@ Estado actual: `npm run content -- status` (30 producciones auditadas, 8 verific
 - [x] *Agent Carter* T2
 - [x] *Peggy Carter's 1953 Smithsonian Interview*
 - [x] *X-Men: First Class*
+- [x] *Stark Expo 1974* y *Howard Stark S.H.I.E.L.D. Classified Files* (legacy de la v1)
 - [ ] *X-Men Origins: Wolverine*
 - [ ] *X-Men: Days of Future Past*
 - [ ] *X-Men: Apocalypse*

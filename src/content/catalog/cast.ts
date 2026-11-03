@@ -678,7 +678,7 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
     { actor: 'Abraham Popoola', universe: 'earth-62533', productions: ['spider-noir-s1'], photo: '/r5mojn6TjWgHefdMCJNiohvY82f.jpg' },
   ],
   'tony-stark': [
-    { actor: 'Robert Downey Jr.', universe: 'earth-616', productions: ['iron-man-3', 'iron-man', 'iron-man-2', 'one-shot-the-consultant', 'the-avengers', 'spider-man-homecoming', 'avengers-age-of-ultron', 'captain-america-civil-war', 'avengers-infinity-war'], photo: '/5qHNjhtjMD4YWH3UP0rm4tKwxCL.jpg' },
+    { actor: 'Robert Downey Jr.', universe: 'earth-616', productions: ['iron-man-2', 'iron-man-3', 'iron-man', 'one-shot-the-consultant', 'the-avengers', 'spider-man-homecoming', 'avengers-age-of-ultron', 'captain-america-civil-war', 'avengers-infinity-war'], photo: '/5qHNjhtjMD4YWH3UP0rm4tKwxCL.jpg' },
     { actor: 'Robert Hays', universe: 'earth-92131', productions: ['iron-man-tas-s1', 'iron-man-tas-s2', 'spider-man-tas-s3', 'spider-man-tas-s5'], voice: true, photo: '/pqu0hSAdHGItjP0iqkbTg4Ocv9w.jpg' },
   ],
   'uatu-the-watcher': [

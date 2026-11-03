@@ -325,9 +325,10 @@ export const productions = {
     network: 'Marvel Studios',
     phase: 'Phase 1',
     universe: 'earth-616',
-    status: 'legacy',
+    status: 'audited',
+    verified: true,
     color: '#dd6b20',
-    description: 'Official Marvel Studios in-universe canon short film & archival video prologue for Iron Man 2 (2010)',
+    description: "Two short Iron Man 2 pieces from 2010: Howard Stark's promotional film for the 1974 Stark Expo, and the original tape of that filming, which Tony finds in his father's S.H.I.E.L.D. box.",
   },
   'iron-man-2': {
     kind: 'movie',

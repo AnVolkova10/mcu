@@ -5,15 +5,12 @@ export default defineEvents('stark-expo-1974', [
   {
     id: 'howard-encodes-element',
     date: { year: 1974 },
-    title: 'Howard Stark encodes a new element for Tony',
+    title: 'Howard Stark films the Stark Expo intro and a message for Tony',
     text: [
-      "At the **Stark Expo 1974** in Flushing Meadows, Queens, [Howard Stark](howard-stark) unveils the monumental architectural diorama for the *City of the Future*. Limited by the technology of his era, Howard secretly encodes the atomic lattice structure of a revolutionary synthetic element directly into the park's physical layout as a hidden scientific blueprint for his son, **Tony Stark**.",
-      'In a classified archival film reel preserved in the ==S.H.I.E.L.D. Archives== (*Howard Stark S.H.I.E.L.D. Classified Files*), Howard halts filming the public Expo broadcast to record a profound, emotional message across time to Tony: *"What is and always will be my greatest creation... is you."* Howard securely locks away the film reel alongside classified Arc Reactor blueprints and S.H.I.E.L.D. historical dossiers for future discovery.',
+      '[Howard Stark](howard-stark) presents the 1974 Stark Expo in a promotional film: everything is achievable through technology, better living, robust health and, for the first time in human history, the possibility of world peace.',
+      "On the original tape, later kept by S.H.I.E.L.D. in a box of his things, the filming stops when a young [Tony Stark](tony-stark) walks onto the set and Howard calls Maria to take him away. Then Howard records a message for his son beside the model of the Expo, where he has hidden the structure of a new element: it is the key to the future, he is limited by the technology of his time, and one day Tony will figure it out and change the world. \"What is and always will be my greatest creation… is you.\"",
     ],
-    locations: [
-      { id: 'flushing-meadows-corona-park', note: 'Stark Expo Pavilion' },
-      'stark-industries-research-and-shield-archive',
-    ],
+    locations: ['stark-world-exposition-of-tomorrow', 'stark-industries-headquarters'],
     alsoIn: ['iron-man-2'],
   },
 ]);

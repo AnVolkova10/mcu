@@ -475,13 +475,6 @@ export const locations = {
     coords: [40.8448, -73.8648],
     approximate: true,
   },
-  'flushing-meadows-corona-park': {
-    name: 'Flushing Meadows–Corona Park',
-    place: 'Queens, New York',
-    country: 'United States',
-    kind: 'earth',
-    coords: [40.7498, -73.8407],
-  },
   'forest-cottage-and-steel-foundry': {
     name: 'Forest Cottage & Steel Foundry',
     place: 'Pruszków',
@@ -1480,12 +1473,12 @@ export const locations = {
     kind: 'earth',
     coords: [40.7608, -111.891],
   },
-  'stark-industries-research-and-shield-archive': {
-    name: 'Stark Industries Research & S.H.I.E.L.D. Archive',
-    place: 'Long Island, New York',
+  'stark-industries-headquarters': {
+    name: 'Stark Industries Headquarters',
+    place: 'Long Beach, California',
     country: 'United States',
     kind: 'earth',
-    coords: [40.7891, -73.135],
+    coords: [33.8206, -118.153],
   },
   'stark-pacific-cyber-defense-center': {
     name: 'Stark Pacific Cyber-Defense Center',
