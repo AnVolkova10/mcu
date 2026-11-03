@@ -193,15 +193,22 @@ function resolveEvent(file: EventFile, input: EventInput, problems: string[]): A
 
 export function buildArchive(files: readonly EventFile[]): Archive {
   const problems: string[] = [];
-  const events = files
+  const resolved = files
     .flatMap((file) => file.events.map((input) => resolveEvent(file, input, problems)))
-    .filter((e): e is ArchiveEvent => Boolean(e))
-    .sort((a, b) =>
-      a.date.year - b.date.year ||
-      // Same year but a different printed date ("1925" vs "c. 1925") stays in its own group.
-      a.dateLabel.localeCompare(b.dateLabel) ||
-      a.sortKey - b.sortKey ||
-      a.production.released.localeCompare(b.production.released));
+    .filter((e): e is ArchiveEvent => Boolean(e));
+
+  // Same year but a different printed date ("1925" vs "c. 1925") stays in its own group,
+  // placed where its earliest event goes, so `order` also sorts the groups of a year.
+  const groupKey = (e: ArchiveEvent) => `${e.dateLabel}|${e.date.year}`;
+  const groupStart = new Map<string, number>();
+  for (const e of resolved) groupStart.set(groupKey(e), Math.min(groupStart.get(groupKey(e)) ?? Infinity, e.sortKey));
+
+  const events = resolved.sort((a, b) =>
+    a.date.year - b.date.year ||
+    groupStart.get(groupKey(a))! - groupStart.get(groupKey(b))! ||
+    a.dateLabel.localeCompare(b.dateLabel) ||
+    a.sortKey - b.sortKey ||
+    a.production.released.localeCompare(b.production.released));
 
   const eventById = new Map<string, ArchiveEvent>();
   const byCharacter = new Map<string, ArchiveEvent[]>();
