@@ -14,6 +14,11 @@ export type ObjectKindId = keyof typeof objectKinds;
 
 /** Named objects that change the plot or pass from hand to hand. Sorted by id. */
 export const objects = {
+  'captain-america-shield': {
+    name: "Captain America's Shield",
+    kind: 'weapon',
+    description: 'Round Vibranium shield that Howard Stark gives Steve Rogers in London in 1943. It goes down with him in the Valkyrie and is found in the ice in 2011.',
+  },
   'quantum-scanner': {
     name: 'Quantum Scanner',
     kind: 'technology',
@@ -23,6 +28,11 @@ export const objects = {
     name: 'Spider Suit',
     kind: 'weapon',
     description: "Masked black suit that Ben Reilly wears as The Spider. He walls it up in his apartment when Ruby dies in 1928, takes it back five years later, and Robbie Robertson wears it once to pass for him.",
+  },
+  'super-soldier-serum': {
+    name: 'Super Soldier Serum',
+    kind: 'material',
+    description: 'Formula created by Dr. Abraham Erskine. An imperfect version turns Johann Schmidt into the Red Skull, the finished one makes Steve Rogers a super-soldier, and the last vial is lost the day Erskine is killed.',
   },
   vibranium: {
     name: 'Vibranium',

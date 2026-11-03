@@ -258,6 +258,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/5/5b/Hawkeye_Infobox.jpg/revision/latest/scale-to-width-down/256?cb=20240222145717',
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/a/ad/Hawkeye.jpg/revision/latest/scale-to-width-down/300?cb=20080802214946',
   },
+  'heinz-kruger': {
+    'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/a/ae/Fred_Clemson.jpg/revision/latest/scale-to-width-down/241?cb=20230730020156',
+  },
   'helen': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/a/ab/Helen_of_Troy_Infobox.png/revision/latest/scale-to-width-down/206?cb=20250807175258',
   },

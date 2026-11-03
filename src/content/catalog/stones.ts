@@ -21,7 +21,7 @@ export const stones = {
       },
       {
         date: { year: 1942 },
-        location: 'castle-kaufmann',
+        location: 'kraussberg-hydra-central-fortress',
         holder: 'Johann Schmidt (Red Skull)',
         vessel: 'HYDRA power core',
         note: 'Red Skull takes the cube from Tønsberg and Arnim Zola harnesses it for HYDRA weapons.',

@@ -3,95 +3,100 @@ import { defineEvents } from '@/domain/define';
 
 export default defineEvents('captain-america-the-first-avenger', [
   {
-    id: 'bucky-defends-young-steve',
-    date: { year: 1925, approx: true },
-    title: 'Bucky Barnes defends young Steve Rogers from bullies',
-    text: [
-      'In the working-class tenements and schoolyards of Brooklyn, New York circa 1925, seven-year-old [Steve Rogers](steve-rogers)—frail, asthmatic, and frequently bedridden—is cornered and beaten by a gang of older neighborhood bullies. Eight-year-old [James Buchanan "Bucky" Barnes](bucky-barnes) leaps into the fray, scattering the attackers with his fists and helping Steve back to his feet. Recognizing in Rogers a stubborn, unshakeable courage that far exceeds his fragile physical frame, Bucky swears a protective pact that cements their unbreakable brotherhood for the next century.',
-    ],
-    locations: [
-      'ps-13-schoolyard-and-brooklyn-tenement-yard',
-    ],
-  },
-  {
-    id: 'steve-alley-bully',
-    date: { year: 1941 },
-    title: 'Steve Rogers stands up to an alley bully',
-    text: [
-      `Following the attack on Pearl Harbor in December 1941 and the United States' entry into World War II, frail 90-pound Brooklynite [Steve Rogers](steve-rogers) attempts to enlist in the US Armed Forces across multiple boroughs, but is repeatedly turned down with Class 4-F status due to chronic asthma, heart palpitations, and scarlet fever. Attending a neighborhood cinema, Steve bravely confronts an obnoxious patron who disrespects an Allied war newsreel. Cornered in the rain-slicked alley behind the theater, Steve is battered mercilessly by the larger bully; refusing to stay down, Rogers raises a rusted garbage can lid like a shield and declares his defining battle cry: *"I can do this all day."* Sgt. [Bucky Barnes](bucky-barnes), dressed in freshly pressed Army dress blues, arrives just in time to knock the bully flat, rescue Steve, and break the news that the 107th Infantry Regiment has received orders to ship out to the European theater the next morning.`,
-    ],
-    locations: ['brooklyn-cinema-alleyway'],
-  },
-  {
     id: 'schmidt-steals-tesseract',
     date: { year: 1942, order: 10 },
     title: 'Johann Schmidt steals the Tesseract in Tønsberg',
     text: [
-      "In Tønsberg, a German-occupied town in Norway, Nazi SS officer and head of HYDRA [Johann Schmidt](red-skull) storms an ancient Norse crypt and steals a legendary cosmic relic known as [the Tesseract (Space Stone)](stone:space), hidden behind an intricate Yggdrasil relief. Schmidt tasks his chief biochemist, Dr. [Arnim Zola](arnim-zola), with harnessing its infinite cosmic blue energy to power a destructive arsenal of advanced weaponry, planning to break away from Adolf Hitler's Third Reich and establish **HYDRA** as the supreme global power.",
+      "In March 1942 [Johann Schmidt](red-skull) and his Hydra soldiers raid the church of Tønsberg, in occupied Norway, and find the [Tesseract](stone:space) hidden behind a carving of Yggdrasil. He has the keeper and the villagers killed, and takes the cube to Hydra's headquarters for [Arnim Zola](arnim-zola) to study.",
     ],
-    locations: ['ancient-norse-crypt', 'castle-kaufmann-hydra-weapons-division'],
+    locations: ['ancient-norse-crypt', 'kraussberg-hydra-central-fortress'],
+    deaths: [{ name: 'Church Keeper' }],
     stones: ['space'],
   },
   {
+    id: 'steve-alley-bully',
+    date: { year: 1943, order: 10 },
+    title: 'Steve Rogers stands up to an alley bully',
+    text: [
+      "[Steve Rogers](steve-rogers), from Brooklyn, is rejected by the Army yet again for his small frame and poor health. At the movies he tells a loud patron to show some respect, takes a beating in the alley behind the theater and keeps getting up, until [Bucky Barnes](bucky-barnes), in uniform and about to ship out, drives the bully off.",
+    ],
+    locations: ['brooklyn-cinema-alleyway'],
+  },
+  {
     id: 'erskine-selects-steve',
-    date: { year: 1942, order: 20 },
+    date: { year: 1943, order: 20 },
     title: 'Abraham Erskine selects Steve Rogers for Project Rebirth',
     text: [
-      `In Flushing Meadows, Queens, [Bucky Barnes](bucky-barnes) takes [Steve Rogers](steve-rogers) on a double date to the vibrant **1942 Stark World Exposition of Tomorrow**. Visionary industrialist [Howard Stark](howard-stark) takes the main stage to demonstrate an experimental hover-car powered by prototype magnetic repulsor tech. Sneaking away from the festivities into the expo's military recruitment pavilion to falsify his home address and try enlisting a fifth time, Steve argues with Bucky about duty and sacrifice. German-defector scientist Dr. [Abraham Erskine](abraham-erskine) of the *Strategic Scientific Reserve (SSR)* overhears Steve's pure conviction. In the examination booth, Erskine questions why Rogers wants to fight: *"Do you want to kill Nazis?"* Steve answers truthfully: *"I don't want to kill anyone. I don't like bullies; I don't care where they're from."* Profoundly moved by Steve's moral character over brute strength, Erskine approves him 1-A for Project Rebirth at Camp Lehigh.`,
+      "On his last night home, [Bucky Barnes](bucky-barnes) takes [Steve Rogers](steve-rogers) to the Stark Expo, where [Howard Stark](howard-stark) shows off a flying car that drops back to the stage. Steve slips away to try enlisting again, and [Dr. Abraham Erskine](abraham-erskine) overhears him telling Bucky why he wants to serve. Asked if he wants to kill Nazis, Steve answers that he doesn't like bullies, and Erskine accepts him for Project Rebirth.",
     ],
     locations: ['stark-world-exposition-of-tomorrow'],
   },
   {
     id: 'steve-becomes-super-soldier',
-    date: { year: 1943 },
-    title: 'Steve Rogers becomes a super-soldier and frees Bucky',
+    date: { year: 1943, order: 30 },
+    title: 'Steve Rogers becomes a super-soldier and Erskine is murdered',
     text: [
-      'At Camp Lehigh in 1943, Colonel [Chester Phillips](chester-phillips) and British intelligence agent [Peggy Carter](peggy-carter) put recruits through rigorous trials for the *Strategic Scientific Reserve (SSR)*, where [Steve Rogers](steve-rogers) demonstrates unmatched selflessness by throwing himself onto an active dummy grenade. In a secret subterranean Brooklyn laboratory powered by engineer [Howard Stark](howard-stark), Dr. [Abraham Erskine](abraham-erskine) administers the experimental **Super-Soldier Serum** and bombards Steve with **Vita-Rays**, transforming him into a peak-human super-soldier. Tragically, undercover HYDRA operative **Heinz Kruger** shoots and kills [Erskine](abraham-erskine) and destroys the remaining serum vials before Rogers pursues and captures him, with **Kruger** committing suicide by cyanide.',
-      `With the serum formula lost, the US government relegates Steve to a theatrical costumed mascot dubbed **"Captain America"** to sell war bonds on tour. In November 1943, while touring near the Italian front lines, Steve learns that Bucky's unit—the 107th Infantry—was captured at Azzano by HYDRA. Refusing orders to stand down, Rogers goes rogue and mounts a daring solo infiltration into HYDRA's heavily fortified Austrian weapons facility, flown behind enemy lines by [Peggy Carter](peggy-carter) and [Howard Stark](howard-stark). Steve liberates Barnes and over 400 Allied prisoners of war, destroying the weapons plant. During the escape, Steve confronts [Johann Schmidt](red-skull), who removes his synthetic human face mask to reveal his horrifying crimson visage: [The Red Skull](red-skull)—the consequence of an imperfect, premature dose of Erskine's serum.`,
-      `Officially promoted to Captain by Colonel Phillips, Steve forms an elite strike unit called the **Howling Commandos**, recruiting [Bucky Barnes](bucky-barnes), [Timothy "Dum Dum" Dugan](dum-dum-dugan), [Gabe Jones](gabe-jones), [Jim Morita](jim-morita), [James Montgomery Falsworth](james-montgomery-falsworth), and [Jacques Dernier](jacques-dernier). In London's underground SSR bunker, [Howard Stark](howard-stark) equips Steve with tailored tactical combat armor and presents him with a prototype circular shield forged from pure **Vibranium**—a rare Wakandan metal possessing total kinetic shock absorption. Rogers adopts the shield and paints it with his signature stars and stripes, preparing the unit for frontline warfare.`,
+      "At Camp Lehigh, [Colonel Phillips](chester-phillips) doubts [Steve Rogers](steve-rogers) until he throws himself on a dummy grenade to protect the other recruits. In a lab hidden behind a Brooklyn antique shop, [Dr. Abraham Erskine](abraham-erskine) injects him with the [Super Soldier Serum](object:super-soldier-serum) and [Howard Stark](howard-stark) floods him with Vita-Rays, while [Peggy Carter](peggy-carter) looks on. [Heinz Kruger](heinz-kruger), a Hydra assassin among the witnesses, kills Erskine and flees with the last vial, which breaks in the chase. Steve drags him out of his submarine at Pier 13, and Kruger takes a cyanide pill.",
     ],
-    cast: ['arnim-zola'],
-    locations: [
-      'ssr-secret-laboratory-and-vita-ray-chamber',
-      'camp-lehigh-military-training-base',
-      'hydra-107th-prison-facility',
+    locations: ['camp-lehigh-military-training-base', 'ssr-secret-laboratory-and-vita-ray-chamber', 'pier-13'],
+    deaths: ['abraham-erskine', 'heinz-kruger'],
+  },
+  {
+    id: 'captain-america-on-tour',
+    date: { year: 1943, order: 40 },
+    title: 'Steve tours as Captain America while Schmidt breaks with Hitler',
+    text: [
+      "With Erskine dead and the formula lost, Colonel Phillips leaves [Steve Rogers](steve-rogers) behind, and Senator **Brandt** sends him across the country in costume as Captain America to sell war bonds. At Hydra's headquarters, [Arnim Zola](arnim-zola) harnesses the [Tesseract](stone:space), and [Johann Schmidt](red-skull) turns its weapons on three SS officers sent to inspect him, breaking with the Reich.",
     ],
-    deaths: [
-      'abraham-erskine',
-      { name: 'Kruger', presumed: false },
-    ],
+    locations: ['radio-city-music-hall', 'kraussberg-hydra-central-fortress'],
+    deaths: [{ name: 'Hutter' }, { name: 'Roeder' }, { name: 'Schneider' }],
     stones: ['space'],
   },
   {
+    id: 'steve-frees-the-107th',
+    date: { year: 1943, order: 50 },
+    title: 'Steve crosses enemy lines to free the 107th',
+    text: [
+      "On tour in Italy in November 1943, [Steve Rogers](steve-rogers) learns that Hydra has destroyed the unit of [Bucky Barnes](bucky-barnes) at Azzano. [Peggy Carter](peggy-carter) and [Howard Stark](howard-stark) fly him behind enemy lines to the Hydra factory at Krausberg, in Austria, where he frees the prisoners and finds Bucky on [Arnim Zola](arnim-zola)'s table. [Johann Schmidt](red-skull) sets the plant to blow, pulls off his mask to show the face of the Red Skull and escapes, and Steve marches the men back to camp.",
+    ],
+    locations: ['azzano', 'hydra-107th-prison-facility'],
+    cast: ['chester-phillips', 'dum-dum-dugan', 'gabe-jones', 'jim-morita', 'james-montgomery-falsworth', 'jacques-dernier'],
+  },
+  {
     id: 'howling-commandos-dismantle-hydra',
-    date: { year: 1944, order: 40 },
+    date: { year: 1943, end: 1945, order: 60 },
     title: 'The Howling Commandos dismantle HYDRA across Europe',
     text: [
-      "Throughout 1944, [Captain America (Steve Rogers)](steve-rogers), Sgt. [Bucky Barnes](bucky-barnes), and their elite multinational strike unit, the **Howling Commandos**—[Dum Dum Dugan](dum-dum-dugan), [Gabe Jones](gabe-jones), [Jim Morita](jim-morita), [Jacques Dernier](jacques-dernier), and [James Montgomery Falsworth](james-montgomery-falsworth)—wage a relentless, year-long liberation campaign across Nazi-occupied Europe. Coordinated from London by Agent [Peggy Carter](peggy-carter) and Colonel [Chester Phillips](chester-phillips), and armed with Howard Stark's kinetic-absorbent Vibranium shield and specialized tactical munitions, the Commandos systematically raid and obliterate HYDRA's fortified manufacturing facilities, weapons depots, and research compounds across France, Belgium, and Germany.",
-      "During a grueling winter offensive in the dense Ardennes forest, Rogers and his team ambush an armored HYDRA convoy transporting Tesseract-infused energy munitions, capturing invaluable telemetry and facility blueprints that pinpoint Johann Schmidt's inner fortress network. The Howling Commandos' string of decisive victories shatters HYDRA's industrial war machine, forcing a paranoid and desperate Red Skull to retreat to his central alpine redoubt at Kraussberg.",
+      "[Steve Rogers](steve-rogers) recruits [Bucky Barnes](bucky-barnes), [Dum Dum Dugan](dum-dum-dugan), [Gabe Jones](gabe-jones), [Jim Morita](jim-morita), [James Montgomery Falsworth](james-montgomery-falsworth) and [Jacques Dernier](jacques-dernier) at a London pub, and [Howard Stark](howard-stark) gives him a [shield](object:captain-america-shield) of [Vibranium](object:vibranium). From the SSR's headquarters, with the map of bases Steve memorized at Krausberg, the Howling Commandos spend more than a year destroying Hydra's facilities across Europe, while he and [Peggy Carter](peggy-carter) fall in love.",
     ],
-    locations: [
-      'occupied-ardennes-forest-and-hydra-research-depot',
-      'london-ssr-underground-strategic-bunker',
+    locations: ['whip-and-fiddle', 'london-ssr-underground-strategic-bunker', 'hydra-base-france', 'hydra-base-poland'],
+    objects: [{ id: 'captain-america-shield', at: ['london-ssr-underground-strategic-bunker', 'hydra-base-france', 'hydra-base-poland'] }],
+    cast: ['chester-phillips'],
+  },
+  {
+    id: 'bucky-falls-from-the-train',
+    date: { year: 1945, order: 5 },
+    title: 'Zola is captured and Bucky falls from the train',
+    text: [
+      "In February 1945 the Commandos board a Hydra train in the Alps to seize [Arnim Zola](arnim-zola). [Bucky Barnes](bucky-barnes) falls to his apparent death fighting beside [Steve Rogers](steve-rogers), and [Gabe Jones](gabe-jones) captures Zola, whose interrogation in London points to Hydra's last base. Steve mourns in the ruins of the pub, and [Peggy Carter](peggy-carter) pushes him to finish the fight.",
     ],
-    stones: ['space'],
+    locations: ['hydra-mountain-train-railway', 'london-ssr-underground-strategic-bunker', 'whip-and-fiddle'],
+    objects: [{ id: 'captain-america-shield', at: ['hydra-mountain-train-railway'] }],
+    cast: ['chester-phillips'],
+    deaths: [{ character: 'bucky-barnes', presumed: true }],
   },
   {
     id: 'valkyrie-arctic-plunge',
     date: { year: 1945, order: 10 },
     title: 'Steve Rogers plunges the Valkyrie into the Arctic ice',
     text: [
-      "During a high-speed SSR raid on an armored HYDRA mountain train in the Swiss Alps, Captain America's team captures chief scientist Dr. [Arnim Zola](arnim-zola). However, a hull breach sends [Bucky Barnes](bucky-barnes) plunging over the rail into a bottomless icy chasm to his apparent death. Broken by grief, [Steve Rogers](steve-rogers) leads the SSR and Howling Commandos in a massive final assault on the Red Skull's central mountain fortress. Red Skull launches his colossal flying-wing super-bomber, **The Valkyrie**, armed with Tesseract-charged atomic ordnance targeting New York, Washington, and American metropolitan centers.",
-      "Rogers boards the Valkyrie and battles Schmidt in the cockpit. During the firefight, the Tesseract's energy containment matrix is damaged. When [Johann Schmidt](red-skull) grabs the glowing [Tesseract](stone:space) directly with his bare hands, the cosmic relic activates a blinding wormhole, dissolving and teleporting the Red Skull across deep space to Vormir. The Tesseract melts through the aircraft hull and sinks into the Atlantic Ocean. Realizing the autopilot is locked on New York, Rogers makes the ultimate sacrifice: he radios [Peggy Carter](peggy-carter) to say goodbye, promising her a raincheck dance, before manually plunging the *Valkyrie* into the Arctic ice sheet to save millions. In the aftermath, [Howard Stark](howard-stark) leads a naval recovery expedition, retrieving the glowing [Tesseract](stone:space) from the seabed while Steve remains lost in the frozen north.",
+      "In March 1945 [Steve Rogers](steve-rogers) rides into Hydra's headquarters in the Alps and [Colonel Phillips](chester-phillips) storms the base behind him. [Johann Schmidt](red-skull) takes off in the *Valkyrie*, a bomber carrying weapons for New York and other American cities, with Steve aboard.",
+      "In their fight the [Tesseract](stone:space) comes loose, and when Schmidt grabs it a portal pulls him into space, while the cube burns through the hull and falls into the ocean. Unable to land without setting off the bombs, Steve says goodbye to [Peggy Carter](peggy-carter) over the radio, promising her a dance, and crashes in the Arctic. [Howard Stark](howard-stark) recovers the Tesseract from the ocean floor, but never finds Steve.",
     ],
-    cast: ['dum-dum-dugan'],
-    locations: [
-      'hydra-mountain-train-railway',
-      'kraussberg-hydra-central-fortress',
-      'valkyrie-crash-site-and-cryogenic-trench',
-    ],
+    locations: ['kraussberg-hydra-central-fortress', 'valkyrie-crash-site-and-cryogenic-trench'],
+    objects: [{ id: 'captain-america-shield', at: ['kraussberg-hydra-central-fortress', 'valkyrie-crash-site-and-cryogenic-trench'] }],
+    cast: ['jim-morita'],
     deaths: [
-      { character: 'bucky-barnes', presumed: true },
       { character: 'red-skull', presumed: true },
       { character: 'steve-rogers', presumed: true, note: 'Presumed Lost' },
     ],
@@ -102,8 +107,9 @@ export default defineEvents('captain-america-the-first-avenger', [
     date: { year: 2011 },
     title: 'Steve Rogers wakes up nearly seventy years later',
     text: [
-      'Deep in the Arctic ice sheet, a S.H.I.E.L.D. recovery team discovers the frozen wreckage of the *Valkyrie* containing [Steve Rogers](steve-rogers) preserved in cryogenic suspended animation. Steve awakens inside a retro 1940s hospital room simulation in New York City. Recognizing a radio broadcast of a 1941 Brooklyn Dodgers game he attended in person, Steve realizes the deception, breaks out of the facility, and runs into the bustling, neon-lit modern world of Times Square. S.H.I.E.L.D. Director [Nick Fury](fury) arrives with tactical agents to de-escalate the situation, gently informing him that he has been asleep for nearly seventy years. Grieving the life he lost, Rogers somberly replies: *"I had a date."*',
+      "A team in the Arctic finds the *Valkyrie* buried in the ice, with the [shield](object:captain-america-shield) inside and [Steve Rogers](steve-rogers) frozen but alive. He wakes in a fake 1940s hospital room, recognizes the ballgame on the radio as one he saw in person in 1941, and breaks out into Times Square. [Nick Fury](fury) tells him he has been asleep for almost 70 years, and Steve answers that he had a date.",
     ],
-    locations: ['shield-arctic-recovery-base', 'shield-times-square-bunker'],
+    locations: ['valkyrie-crash-site-and-cryogenic-trench', 'shield-times-square-bunker'],
+    objects: [{ id: 'captain-america-shield', at: ['valkyrie-crash-site-and-cryogenic-trench'] }],
   },
 ]);

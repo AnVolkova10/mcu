@@ -59,7 +59,7 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
     { actor: 'Keith David', universe: 'earth-92131', productions: ['fantastic-four-tas-s2'], voice: true, photo: '/1x0QXavmIy3QmhyrOsV7gMnJaEx.jpg' },
   ],
   'black-widow': [
-    { actor: 'Scarlett Johansson', universe: 'earth-616', productions: ['black-widow', 'iron-man-2', 'the-avengers', 'captain-america-the-winter-soldier', 'avengers-age-of-ultron', 'captain-america-civil-war', 'avengers-infinity-war', 'captain-marvel'], photo: '/tgxYh3jMs5bY2Ub4d2dcp9iaz1R.jpg' },
+    { actor: 'Scarlett Johansson', universe: 'earth-616', productions: ['black-widow', 'iron-man-2', 'the-avengers', 'captain-america-the-winter-soldier', 'avengers-age-of-ultron', 'captain-america-civil-war', 'avengers-infinity-war', 'captain-marvel'], photo: '/mjReG6rR7NPMEIWb1T4YWtV11ty.jpg' },
   ],
   'blade-eric-brooks': [
     { actor: 'J.D. Hall', universe: 'earth-92131', productions: ['spider-man-tas-s2', 'spider-man-tas-s4'], voice: true, photo: '/jLGstYeedFAdQpVJGcbcDv5vUe5.jpg' },
@@ -248,6 +248,9 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
   'hawkeye': [
     { actor: 'Jeremy Renner', universe: 'earth-616', productions: ['thor', 'the-avengers', 'avengers-age-of-ultron', 'captain-america-civil-war'], photo: '/yB84D1neTYXfWBaV0QOE9RF2VCu.jpg' },
     { actor: 'John Reilly', universe: 'earth-92131', productions: ['iron-man-tas-s1'], voice: true, photo: '/xjA5k7Hh5zMCzwxAnN539HwSPUn.jpg' },
+  ],
+  'heinz-kruger': [
+    { actor: 'Richard Armitage', universe: 'earth-616', productions: ['captain-america-the-first-avenger'], photo: '/oNoKjTOUNUiJ01UNQSCQDkt5EHi.jpg' },
   ],
   'helen': [
     { actor: 'Joanna Kalafatis', universe: 'earth-616', productions: ['eyes-of-wakanda-s1'], voice: true, photo: '/vv1VsMlQWmXC53MRMKtEalBzTdz.jpg' },

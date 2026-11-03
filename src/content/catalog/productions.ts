@@ -178,6 +178,7 @@ export const productions = {
     phase: 'Phase 1',
     universe: 'earth-616',
     status: 'audited',
+    verified: true,
     color: '#2b6cb0',
     tmdbId: 1771,
     poster: '/vSNxAJTlD0r02V9sPYpOjqDZXUK.jpg',

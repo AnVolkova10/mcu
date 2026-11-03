@@ -522,7 +522,7 @@ export const characters = {
     status: 'deceased',
     factions: ['howling-commandos', 'ssr', 'shield'],
     origin: 'Boston, Massachusetts',
-    bio: "Iconic bowler-hat-wearing marksman and second-in-command of Captain America's Howling Commandos.",
+    bio: 'Bowler-hatted soldier of the 107th, freed by Steve Rogers at Krausberg, who joins the Howling Commandos.',
   },
   ebo: {
     name: 'Ebo',
@@ -705,8 +705,8 @@ export const characters = {
     role: 'hero',
     status: 'deceased',
     factions: ['howling-commandos', 'ssr', 'shield'],
-    origin: 'New York City, New York',
-    bio: 'Expert heavy weapons specialist, jazz trumpeter, and decorated founding member of the Howling Commandos and S.H.I.E.L.D.',
+    origin: 'Macon, Georgia',
+    bio: 'Soldier who speaks German and French, freed by Steve Rogers at Krausberg. As a Howling Commando he captures Arnim Zola in 1945.',
   },
   galactus: {
     name: 'Galan',
@@ -824,6 +824,15 @@ export const characters = {
     origin: 'Waverly, Iowa',
     bio: 'Master marksman, master archer, and founding Avenger.',
   },
+  'heinz-kruger': {
+    name: 'Heinz Kruger',
+    color: '#9ca3af',
+    role: 'villain',
+    status: 'deceased',
+    factions: ['hydra'],
+    origin: 'Germany',
+    bio: 'Hydra assassin who infiltrates Project Rebirth, kills Dr. Erskine and flees with the last vial of the serum. Caught by Steve Rogers, he takes a cyanide pill.',
+  },
   helen: {
     name: 'Helen',
     color: '#f9a8d4',
@@ -929,7 +938,7 @@ export const characters = {
     status: 'deceased',
     factions: ['french-resistance', 'howling-commandos', 'ssr'],
     origin: 'Paris (France)',
-    bio: "Daring French Resistance guerrilla fighter and demolitions expert recruited into Captain America's Howling Commandos.",
+    bio: 'French explosives expert, freed by Steve Rogers at Krausberg, who joins the Howling Commandos.',
   },
   'james-hudson-guardian': {
     name: 'James MacDonald Hudson',
@@ -949,7 +958,7 @@ export const characters = {
     status: 'deceased',
     factions: ['british-armed-forces', 'howling-commandos', 'ssr'],
     origin: 'England (United Kingdom)',
-    bio: 'Distinguished British Army commando and tactical infiltrator serving alongside Captain America across occupied Europe.',
+    bio: 'British officer freed by Steve Rogers at Krausberg, who joins the Howling Commandos.',
   },
   'janet-ruiz-noir': {
     name: 'Janet Ruiz',
@@ -1005,7 +1014,7 @@ export const characters = {
     status: 'deceased',
     factions: ['howling-commandos', 'ssr', 'us-military'],
     origin: 'Fresno, California',
-    bio: 'Japanese-American communications expert and fearless combat ranger in the Howling Commandos (grandfather of Principal Morita).',
+    bio: 'Japanese-American soldier from Fresno, freed by Steve Rogers at Krausberg, who joins the Howling Commandos. Grandfather of Principal Morita.',
   },
   'jimmy-addison-noir': {
     name: 'Jimmy Addison',
@@ -1717,7 +1726,7 @@ export const characters = {
     status: 'presumably-dead',
     factions: ['hydra', 'third-reich'],
     origin: 'Germany',
-    bio: 'Ruthless founder of HYDRA who took an early imperfect super-soldier serum and wielded the Tesseract to achieve global conquest.',
+    bio: 'Nazi officer and leader of Hydra, disfigured by an imperfect version of the super-soldier formula. He uses the Tesseract to break with Hitler, and in 1945 the cube pulls him through a portal.',
   },
   'reed-richards': {
     name: 'Reed Richards',
