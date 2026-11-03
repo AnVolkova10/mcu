@@ -379,7 +379,7 @@ Las producciones `legacy` vienen del HTML original. Para ponerla al día sin la 
 | `paragraph N has broken markup` | Hay un `**`, `==` o `[...]( ` sin cerrar en ese párrafo |
 | `earth places need coords` | Falta `coords: [lat, lng]` en el lugar |
 | `off-world places need a valid cosmos "node"` | Falta `node`, o el nodo no existe en `cosmos.ts` |
-| `verified productions say which episode or part each event covers` | Agregá `segment` al evento (solo producciones `verified`) |
+| `verified productions say which episode or part each event covers` | Agregá `segment` al evento (solo series `verified`) |
 | `place "x" shares its exact point with y` | Dale a cada lugar su propia coordenada (solo producciones `verified`) |
 | `unknown object link "x"` | El ID no existe en `objects.ts`. Buscalo con `find` o crealo (paso 10) |
 | `verified productions link objects as [Label](object:id)` | Cambiá `==texto==` por un enlace al objeto, o sacá las marcas |

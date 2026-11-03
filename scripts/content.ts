@@ -92,7 +92,7 @@ async function validate() {
   for (const loc of locationList) if (loc.coords) atPoint.set(pointOf(loc.coords), [...(atPoint.get(pointOf(loc.coords)) ?? []), loc.id]);
   for (const event of archive.events) {
     if (!event.production.verified) continue;
-    if (!event.segment) err(`${event.id}: verified productions say which episode or part each event covers ("segment")`);
+    if (event.production.kind === 'season' && !event.segment) err(`${event.id}: verified productions say which episode or part each event covers ("segment")`);
     if (event.text.some((p) => /==[^=]+==/.test(p))) err(`${event.id}: verified productions link objects as [Label](object:id) instead of ==marks==`);
     for (const o of event.objects) {
       if (o.kind !== 'material' && !event.objectPlaces.has(o.id)) err(`${event.id}: say where "${o.id}" is in this event, with objects: [{ id, at: [...] }]`);

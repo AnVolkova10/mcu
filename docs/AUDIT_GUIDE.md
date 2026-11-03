@@ -9,7 +9,7 @@ Para cargar contenido nuevo o corregir un dato suelto, la receta es `docs/CONTEN
 |---|---|---|
 | `legacy` | Viene del HTML de 2021. Puede tener datos imperfectos | Solo que no rompa nada |
 | `audited` | Cargada o revisada en la v2, con Gemini. **No está garantizada**: hay texto inventado | Estricto con fechas, lugares y personajes |
-| `verified: true` | Pasó esta auditoría, con la aprobación de quien mantiene el proyecto | Además, cada evento dice su `segment`, ningún lugar comparte su punto exacto del mapa, los objetos van enlazados y dicen dónde están |
+| `verified: true` | Pasó esta auditoría, con la aprobación de quien mantiene el proyecto | Además, en las series cada evento dice su `segment`, ningún lugar comparte su punto exacto del mapa, los objetos van enlazados y dicen dónde están |
 
 Nunca pongas `verified: true` sin esa aprobación. El orden de trabajo está en `docs/ROADMAP.md`.
 
@@ -52,6 +52,8 @@ Abrí la app y mirá: la producción filtrada en el timeline, las fichas de cada
 2. **Wikipedia y fuentes oficiales**, incluidas entrevistas a quienes hicieron la obra. **marvel.com no se usa.**
 3. **Wikis de fans.** Marvel Database y la wiki de cada universo se equivocan y se contradicen: citan el episodio cuando pueden, y esa cita es lo que vale.
 4. **Recaps escena por escena,** como los de Laughing Place. Cuando no hay transcript son la mejor segunda fuente: cuentan lo que se ve, aunque no siempre identifican los objetos. Una reseña suelta no alcanza: una ponía el Reino del León en el mar Egeo, y las dos wikis dicen océano Índico.
+
+**Solo lo que se ve.** Cuentan la obra y sus flashbacks. Los cómics no entran, aunque sean oficiales: son otro multiverso. Si una wiki cita un cómic o un libro, ese dato no vale, y una escena que solo existe ahí no es un evento.
 
 Un dato que no aparece en dos fuentes es una duda y va a la ficha. Si la memoria de quien mantiene el proyecto choca con una fuente, gana esa memoria. **Nunca completes un dato con lo que suena probable.**
 
@@ -112,7 +114,7 @@ Un dato que no aparece en dos fuentes es una duda y va a la ficha. Si la memoria
 ## 4. Checklist final
 
 - [ ] Cada dato de la ficha salió de una fuente, y lo aprobó quien mantiene el proyecto.
-- [ ] Cada evento tiene `segment`, fecha, lugares en orden, sus personajes y sus objetos con `at`.
+- [ ] Cada evento tiene fecha, lugares en orden, sus personajes y sus objetos con `at`, y `segment` si es una serie.
 - [ ] Ningún `id` existente cambió.
 - [ ] Lo inventado se borró, y `npm run content -- unused` no muestra nada nuevo.
 - [ ] Miraste en la app el timeline, las fichas, las imágenes, el mapa y un recorrido, en PC y en celu.
