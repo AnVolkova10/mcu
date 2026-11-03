@@ -119,7 +119,7 @@ function PlayedBy({ credit, color }: { credit: CharacterCredit; color: string })
   const titles = credit.productions.flatMap((id) => getProduction(id)?.shortTitle ?? []).join(', ');
   return (
     <li className="flex min-w-0 items-center gap-3" title={titles}>
-      <Avatar label={credit.actor} color={color} sources={credit.photo ? [tmdbImage('w185', credit.photo)] : []} />
+      <Avatar color={color} sources={credit.photo ? [tmdbImage('w185', credit.photo)] : []} />
       <span className="min-w-0">
         <span className="block truncate text-sm font-semibold text-ink">{credit.actor}</span>
         <span className="block truncate text-xs text-ink-faint">{credit.voice ? 'Voice · ' : ''}{plural(credit.productions.length, 'production')}</span>
@@ -141,7 +141,7 @@ function CharacterPanel({ character: c }: { character: Character }) {
   const credits = c.credits.filter((credit) => credit.universe === version);
   return (
     <>
-      <PanelHeader kicker={c.role} title={c.label} subtitle={c.alias ? c.name : c.origin} color={c.color} visual={<Avatar key={version} label={c.label} color={c.color} sources={portraitSources(c, version)} size="xl" />} />
+      <PanelHeader kicker={c.role} title={c.label} subtitle={c.alias ? c.name : c.origin} color={c.color} visual={<Avatar key={version} color={c.color} sources={portraitSources(c, version)} size="xl" />} />
       {perUniverse.length > 1 && (
         <Section title="Versions">
           <div className="flex flex-wrap gap-5">
@@ -153,7 +153,7 @@ function CharacterPanel({ character: c }: { character: Character }) {
                 aria-pressed={version === universe.id}
                 className={cn('flex w-24 flex-col items-center gap-2 text-center transition', version === universe.id ? 'opacity-100' : 'opacity-60 hover:opacity-100')}
               >
-                <Avatar label={c.label} color={c.color} sources={portraitSources(c, universe.id)} size="lg" />
+                <Avatar color={c.color} sources={portraitSources(c, universe.id)} size="lg" />
                 <span className="text-xs font-semibold leading-tight text-ink">{universe.label}<span className="block font-normal text-ink-faint">{plural(count, 'event')}</span></span>
               </button>
             ))}

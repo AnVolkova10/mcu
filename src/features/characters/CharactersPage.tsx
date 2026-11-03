@@ -133,7 +133,7 @@ function CharacterCard({ row: { character: c, appearances, universes }, universe
         className="group flex h-full items-center gap-3 rounded-2xl border border-line bg-surface/70 p-3.5 transition hover:border-line-strong hover:bg-surface-2"
         title={c.name}
       >
-        <Avatar key={universe} label={c.label} color={c.color} sources={portraitSources(c, universe)} size="lg" />
+        <Avatar key={universe} color={c.color} sources={portraitSources(c, universe)} size="lg" />
         <span className="min-w-0 flex-1">
           <span className="block truncate text-sm font-bold text-ink">{c.label}</span>
           <span className="block truncate text-xs text-ink-muted">{c.alias ? c.name : teams || c.role}</span>

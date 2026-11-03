@@ -315,7 +315,7 @@ npm run portraits:sync
 - `cast:sync` busca en los créditos de TMDB quién interpreta a cada personaje en cada universo, actores y voces. Es la lista "Played by" de la ficha. Usa el mismo token que los pósters.
 - `portraits:sync` busca la imagen del personaje en la wiki de cada universo y guarda su dirección. La imagen sigue en Fandom: **nunca la copies al repo**.
 
-Un personaje en dos universos tiene dos imágenes. Noir no tiene wiki de la serie, así que muestra la foto del actor; si tampoco hay foto, se ven las iniciales. No se rompe nada.
+Un personaje en dos universos tiene dos imágenes. Noir no tiene wiki de la serie, así que muestra la foto del actor; si tampoco hay foto, se ve una silueta. No se rompe nada.
 
 **Mirá siempre el resultado en la ficha.** Las wikis reciclan páginas: la de "Black Widow" hoy es Yelena y la de "Captain America" es Sam Wilson. Para corregir, abrí el script y corré el comando de nuevo:
 
