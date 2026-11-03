@@ -31,7 +31,8 @@ export interface Period {
 
 /** The eras: used to filter and to jump around the timeline. The ids live in shared links, so they stay as they are. */
 export const periods: readonly Period[] = [
-  { id: 'ancient', label: 'Ancient Era', range: 'Before 1900', from: -Infinity, to: 1899 },
+  { id: 'ancient', label: 'Ancient Era', range: 'BC', from: -Infinity, to: 0 },
+  { id: 'empires', label: 'Age of Empires', range: '1 AD–1899', from: 1, to: 1899 },
   { id: 'world-wars', label: 'World Wars', range: '1900–1945', from: 1900, to: 1945 },
   { id: 'cold-war', label: 'Cold War', range: '1946–1991', from: 1946, to: 1991 },
   { id: 'nineties', label: 'Mutant Age', range: '1992–2007', from: 1992, to: 2007 },

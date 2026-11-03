@@ -98,14 +98,18 @@ export function TimeBar({ group, universes, onChange }: TimeBarProps) {
             className="block h-3 w-full cursor-pointer accent-[var(--color-accent)]"
           />
           <div className="relative mt-0.5 hidden h-4 sm:block">
-            {periodStarts.map((p) => (
+            {periodStarts.map((p, i) => (
               <button
                 key={p.id}
                 type="button"
                 onClick={() => { setPlaying(false); onChange(groups[p.first]); }}
                 title={p.range}
                 className="absolute truncate text-[10px] font-semibold text-ink-faint transition hover:text-ink"
-                style={{ left: `${(p.first / (groups.length - 1)) * 100}%` }}
+                // An era's name stops where the next one starts, so close eras shorten instead of overlapping.
+                style={{
+                  left: `${(p.first / (groups.length - 1)) * 100}%`,
+                  maxWidth: periodStarts[i + 1] ? `${((periodStarts[i + 1].first - p.first) / (groups.length - 1)) * 100}%` : undefined,
+                }}
               >
                 {p.label}
               </button>

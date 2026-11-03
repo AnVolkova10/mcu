@@ -137,7 +137,7 @@ Reglas del evento:
 
 **`label` es solo para fechas de más de 10.000 años.** Todo lo más reciente se escribe con el año, aunque la obra lo diga en relativo: "hace 5.000 años" es `{ year: -3000, approx: true }`. Así una misma época nunca tiene dos nombres. En las producciones auditadas, el validador lo exige.
 
-Las eras (Ancient Era, World Wars, Cold War, Mutant Age, Heroic Age, Multiverse) salen solas del año. Están en `periods`, en `src/domain/dates.ts`.
+Las eras (Ancient Era, Age of Empires, World Wars, Cold War, Mutant Age, Heroic Age, Multiverse) salen solas del año. Están en `periods`, en `src/domain/dates.ts`.
 
 **Varios eventos en el mismo año:** el orden dentro del año lo da `order` (más chico, más arriba). Mirá los que ya existen y elegí un número intermedio:
 
