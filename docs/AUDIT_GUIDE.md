@@ -28,7 +28,7 @@ Las páginas de episodios tienen una sección `Items`. Pedí también la página
 
 **2. Compará cada dato contra las fuentes** (sección 2). Partí de que el texto de la v2 puede estar inventado, aunque suene convincente. En *Eyes of Wakanda* no existían la lanza de Memnon, el laberinto de Cnosos ni la Valquiria de las Nornas.
 
-**3. Presentá una ficha y esperá la aprobación.** No toques el repo antes. La ficha va en el chat y tiene, por evento: fecha y de dónde sale, lugares en orden, personajes, objetos y dónde está cada uno, muertes, qué cambia respecto de la v2 y qué es nuevo. Al final, las dudas numeradas, con tu recomendación en cada una. Si quien mantiene el proyecto no recuerda un dato, decidí con las fuentes, decí qué elegiste y anotá las dudas que queden sin resolver.
+**3. Presentá una ficha y esperá la aprobación.** No toques el repo antes. La ficha va en el chat y tiene, por evento: fecha y de dónde sale, lugares en orden, personajes, objetos y dónde está cada uno, muertes, qué cambia respecto de la v2 y qué es nuevo. Al final, las dudas numeradas, con tu recomendación en cada una. Si quien mantiene el proyecto no recuerda un dato, decidí con las fuentes, decí qué elegiste y anotá las dudas que queden sin resolver. Si aparece una perlita, como que la película pinta Villa Gesell con montañas nevadas, contala: a quien mantiene el proyecto le gusta.
 
 **4. Aplicá** lo aprobado, con las recetas de `docs/CONTENT_GUIDE.md`, y agregá `verified: true` en `productions.ts`.
 
@@ -48,7 +48,7 @@ Abrí la app y mirá: la producción filtrada en el timeline, las fichas de cada
 
 ## 2. Fuentes, en este orden
 
-1. **Lo que dice la pantalla:** carteles de fecha y lugar, y diálogos. Los transcripts de las wikis son la mejor forma de leerlos. Scraps from the Loft tiene los de series recientes: se leen con la herramienta web, porque el sitio no deja entrar scripts.
+1. **Lo que dice la pantalla:** carteles de fecha y lugar, y diálogos. Los transcripts de las wikis son la mejor forma de leerlos. Scraps from the Loft tiene los de series recientes: se leen con la herramienta web, porque el sitio no deja entrar scripts. Para películas, Springfield! Springfield! (`movie_script.php?movie=<slug>`) deja bajar el texto con un cliente identificado. Bajalo y buscá las frases: el resumen de la herramienta web inventó el orden de las escenas de *First Class*. No trae los carteles de pantalla, que siguen saliendo de las wikis.
 2. **Wikipedia y fuentes oficiales**, incluidas entrevistas a quienes hicieron la obra. **marvel.com no se usa.**
 3. **Wikis de fans.** Marvel Database y la wiki de cada universo se equivocan y se contradicen: citan el episodio cuando pueden, y esa cita es lo que vale.
 4. **Recaps escena por escena,** como los de Laughing Place. Cuando no hay transcript son la mejor segunda fuente: cuentan lo que se ve, aunque no siempre identifican los objetos. Una reseña suelta no alcanza: una ponía el Reino del León en el mar Egeo, y las dos wikis dicen océano Índico.
@@ -79,9 +79,10 @@ Un dato que no aparece en dos fuentes es una duda y va a la ficha. Si la memoria
 - **Todos los lugares del evento, en el orden del relato.** Así pasa por ellos *Trace this journey*.
 - **Solo lo que la obra nombra.** Si dice *Creta*, el lugar es Creta, no el palacio de Cnosos.
 - **Dos lugares nunca comparten un punto exacto.** Un pin compartido hace parecer que todo pasó en el mismo sitio. Si son lugares distintos, cada uno lleva su coordenada, aunque la ciudad sea la misma.
-- **Si la obra solo nombra una zona,** agregá `approximate: true`: el mapa dibuja un anillo y avisa que no se conoce el lugar exacto. Poné el punto en el centro de esa zona.
+- **Un punto gana a un anillo.** Si la obra solo nombra una zona, elegí un punto puntual verosímil, aunque no se sepa tan exacto. Si una fuente dice el lugar, va ese lugar: la playa de *First Class* es Bahía de Cochinos porque lo dicen las wikis. `approximate: true` dibuja un anillo y queda solo en los lugares que ya lo tienen.
+- **Una casa es un solo lugar.** Lo que cambia con los años va en el texto del evento: la mansión Xavier es una sola entrada, aunque en 1944 todavía no sea escuela.
 - **Mirá en el mapa qué queda alrededor de cada pin nuevo.** Las Seychelles parecían un buen lugar para el Reino del León, en el océano Índico, pero ahí está Genosha. El validador solo detecta puntos idénticos: dos lugares casi iguales se ven como uno.
-- **Un lugar que la obra no sitúa se deduce.** Elegí un punto verosímil, con `approximate: true`, y contalo en la ficha. Lo que no se sabe no puede terminar todo en el mismo punto.
+- **Un lugar que la obra no sitúa se deduce.** Elegí un punto verosímil y contalo en la ficha. Lo que no se sabe no puede terminar todo en el mismo punto.
 - **Wakanda** está al norte del lago Turkana, según el *Marvel Atlas*.
 - Un lugar fuera de la Tierra usa `node`. Si tiene una puerta conocida en la Tierra, esa puerta es otro lugar: *K'un-Lun* tiene `kun-lun-gate`, en el Himalaya, y `kun-lun-heavenly-gate` en el Cosmos.
 

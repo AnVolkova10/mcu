@@ -207,17 +207,7 @@ Lugar en la Tierra, con coordenadas `[latitud, longitud]`. Para sacarlas: en Goo
 
 **Cada lugar tiene su propio punto.** Dos lugares distintos nunca llevan la misma coordenada, aunque estén en la misma ciudad. Marcá solo lo que la obra nombra: si dice *Creta*, no pongas el palacio de Cnosos.
 
-Si la obra solo nombra una zona, poné el punto en su centro y agregá `approximate: true`. El mapa dibuja un anillo y avisa que no se conoce el lugar exacto. Mirá antes qué hay alrededor, para no pegarlo a un lugar que no tiene nada que ver:
-
-```ts
-  'lions-kingdom': {
-    name: "Lion's Kingdom",
-    place: 'Indian Ocean',
-    kind: 'earth',
-    coords: [-20, 80],
-    approximate: true,
-  },
-```
+Si la obra solo nombra una zona, o no dice dónde pasó, elegí igual un punto puntual verosímil: un punto gana a un anillo, aunque no se sepa tan exacto. Mirá antes qué hay alrededor, para no pegarlo a un lugar que no tiene nada que ver. `approximate: true` dibuja un anillo y queda solo en los lugares que ya lo tienen.
 
 Lugar fuera de la Tierra: sin coordenadas, con el `node` del mapa Cosmos (IDs en `src/content/catalog/cosmos.ts`):
 

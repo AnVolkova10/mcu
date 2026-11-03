@@ -72,7 +72,8 @@ docs/ROADMAP.md         lo que falta
 - `catalog/portraits.ts` y `catalog/cast.ts` se generan: no los edites a mano. Las imágenes son enlaces a Fandom y **nunca se copian al repo**. Tampoco corras `portraits:sync` ni `research` en tareas automáticas: leé "Si la página se hace pública" en `docs/ROADMAP.md`.
 - **No uses marvel.com como fuente.** Bloquea a los programas y los términos de Disney prohíben extraer contenido con scripts.
 - El estado del mapa vive en la URL (`src/features/map/useMapState.ts`), igual que el del resto de la app.
-- **Cada lugar tiene su propio punto en el mapa.** Si la obra solo nombra una zona, el lugar lleva `approximate: true` y se dibuja como anillo. No inventes lugares exactos.
+- **Cada lugar tiene su propio punto en el mapa, y un punto gana a un anillo.** Si la obra solo nombra una zona, o no dice dónde pasó, se elige un punto puntual verosímil y se cuenta en la ficha. `approximate: true` dibuja un anillo y queda solo en los lugares que ya lo tienen.
+- **Una casa es un solo lugar.** Lo que cambia con los años va en el texto del evento: la mansión Xavier es una sola entrada, aunque en 1944 todavía no sea escuela.
 - **El mapa marca hitos, no todo lo que existe.** Al elegir un universo solo quedan los mundos y las ramas donde pasó algo en ese universo (`hasMilestone` en `src/domain/atlas.ts`). Sin universo elegido se ven todos. La barra de fechas atenúa en vez de ocultar, porque casi ninguna fecha tiene eventos fuera de la Tierra.
 - `three` está fijo en `0.186.1` porque `postprocessing` exige `<0.187`. No lo actualices sin revisar eso.
 - `.env.local` guarda el token de TMDB. Nunca lo imprimas, lo copies ni lo subas; la app publicada no lo necesita.
