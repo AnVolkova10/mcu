@@ -545,7 +545,7 @@ export const locations = {
     coords: [40.8517, -73.9527],
   },
   'giza-plateau-and-great-pyramids': {
-    name: 'Giza Plateau & Great Pyramids',
+    name: 'Great Pyramids',
     place: 'Giza',
     country: 'Egypt',
     kind: 'earth',
@@ -627,11 +627,11 @@ export const locations = {
     approximate: true,
   },
   'hotel-royal-monceau': {
-    name: 'Hotel Royal Monceau',
+    name: 'Paris Peace Summit',
     place: 'Paris',
     country: 'France',
     kind: 'earth',
-    coords: [48.8756, 2.3012],
+    coords: [48.8708, 2.2933],
   },
   'howard-stark-hangar': {
     name: "Howard Stark's Hangar",
@@ -925,11 +925,11 @@ export const locations = {
     node: 'maveth',
   },
   'maximoff-family-residence': {
-    name: 'Maximoff Family Residence',
-    place: 'Washington D.C. Suburbs, Virginia',
+    name: 'Maximoff House',
+    place: 'Outside Washington, D.C.',
     country: 'United States',
     kind: 'earth',
-    coords: [38.889, -77.05],
+    coords: [38.8816, -77.105],
   },
   'mcu-armored-prisoner-train-route': {
     name: 'MCU Armored Prisoner Train Route',
@@ -1096,7 +1096,7 @@ export const locations = {
     place: 'Giza / Nile Valley',
     country: 'Ancient Egypt',
     kind: 'earth',
-    coords: [29.9792, 31.1342],
+    coords: [29.987, 31.213],
   },
   'nile-valley-golden-pyramid-of-en-sabah-nur': {
     name: 'Nile Valley Golden Pyramid of En Sabah Nur',
@@ -1186,8 +1186,8 @@ export const locations = {
     approximate: true,
   },
   'potomac-river-recovery': {
-    name: 'Potomac River Recovery',
-    place: 'Washington D.C.',
+    name: 'Potomac River',
+    place: 'Washington, D.C.',
     country: 'United States',
     kind: 'earth',
     coords: [38.885, -77.055],
@@ -1265,6 +1265,13 @@ export const locations = {
     coords: [40.7622, -73.9908],
     approximate: true,
   },
+  'rfk-stadium': {
+    name: 'RFK Stadium',
+    place: 'Washington, D.C.',
+    country: 'United States',
+    kind: 'earth',
+    coords: [38.8898, -76.9719],
+  },
   'richmond-chemical-refining-plant': {
     name: 'Richmond Chemical Refining Plant',
     place: 'Richmond, Virginia',
@@ -1289,11 +1296,11 @@ export const locations = {
     approximate: true,
   },
   'ruined-underground-metro-catacombs': {
-    name: 'Ruined Underground Metro Catacombs',
+    name: 'Underground Hideout',
     place: 'Moscow',
     country: 'Russia',
     kind: 'earth',
-    coords: [55.7558, 37.6173],
+    coords: [55.74, 37.66],
   },
   'ruins-of-manhattan-and-temporal-resistance-bunker': {
     name: 'Ruins of Manhattan & Temporal Resistance Bunker',
@@ -1308,6 +1315,13 @@ export const locations = {
     country: 'Niger',
     kind: 'earth',
     coords: [23.4162, 25.6628],
+  },
+  'saigon-air-base': {
+    name: 'Air Base',
+    place: 'Saigon',
+    country: 'Vietnam',
+    kind: 'earth',
+    coords: [10.8188, 106.6519],
   },
   'sanctum-sanctorum': {
     name: 'Sanctum Sanctorum',
@@ -1331,8 +1345,8 @@ export const locations = {
     coords: [40.7831, -73.9712],
   },
   'sentinel-prototype-rail-transit-yard': {
-    name: 'Sentinel Prototype Rail Transit Yard',
-    place: 'Maryland / Pennsylvania',
+    name: 'Railway Line',
+    place: 'Maryland',
     country: 'United States',
     kind: 'earth',
     coords: [39.2904, -76.6122],
@@ -1598,7 +1612,7 @@ export const locations = {
     node: 'negative-zone',
   },
   'the-pentagon-subterranean-incarceration-facility': {
-    name: 'The Pentagon Subterranean Incarceration Facility',
+    name: 'Pentagon Prison',
     place: 'Arlington, Virginia',
     country: 'United States',
     kind: 'earth',
@@ -1620,8 +1634,8 @@ export const locations = {
   },
   'the-statesman': { name: 'The Statesman', country: 'Deep space', kind: 'space', node: 'statesman' },
   'the-white-house-lawn-and-rfk-stadium': {
-    name: 'The White House Lawn & RFK Stadium',
-    place: 'Washington D.C.',
+    name: 'White House',
+    place: 'Washington, D.C.',
     country: 'United States',
     kind: 'earth',
     coords: [38.8977, -77.0365],
@@ -1777,13 +1791,6 @@ export const locations = {
     coords: [51.5115, -0.1205],
     approximate: true,
   },
-  'white-house-and-senate-hearing-chambers': {
-    name: 'White House & Senate Hearing Chambers',
-    place: 'Washington D.C.',
-    country: 'United States',
-    kind: 'earth',
-    coords: [38.8977, -77.0365],
-  },
   'world-peace-summit-at-arc-de-triomphe': {
     name: 'World Peace Summit at Arc de Triomphe',
     place: 'Paris',
@@ -1792,11 +1799,10 @@ export const locations = {
     coords: [48.8738, 2.295],
   },
   'wulin-mountain-sanctuary-and-monastery': {
-    name: 'Wulin Mountain Sanctuary & Monastery',
-    place: 'Himalayas',
-    country: 'China / Tibet',
+    name: 'Chinese Monastery',
+    country: 'China',
     kind: 'earth',
-    coords: [28, 86.852],
+    coords: [29.5203, 103.3327],
   },
   'xavier-mansion-and-genosha-capital': {
     name: 'Xavier Mansion & Genosha Capital',

@@ -18,7 +18,7 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
     { actor: 'Amy Aquino', universe: 'earth-62533', productions: ['spider-noir-s1'], photo: '/59E061EJyEl2CLcBd12p9Vi7q0B.jpg' },
   ],
   'alex-summers': [
-    { actor: 'Lucas Till', universe: 'earth-10005', productions: ['x-men-first-class', 'x-men-apocalypse'], photo: '/5m8xgsOgT3FgCBo2AsMn7dewe57.jpg' },
+    { actor: 'Lucas Till', universe: 'earth-10005', productions: ['x-men-first-class', 'x-men-days-of-future-past', 'x-men-apocalypse'], photo: '/5m8xgsOgT3FgCBo2AsMn7dewe57.jpg' },
   ],
   'alfred-morris-noir': [
     { actor: 'Michael Kostroff', universe: 'earth-62533', productions: ['spider-noir-s1'], photo: '/w5kfGOzgGfVGTGB2CB0X8eIplES.jpg' },
@@ -577,6 +577,7 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
     { actor: 'Shea Whigham', universe: 'earth-616', productions: ['agent-carter-s1'], photo: '/d3caK3l4UfbnzOxv95wLoFLZzMO.jpg' },
   ],
   'rogue-anna-marie': [
+    { actor: 'Anna Paquin', universe: 'earth-10005', productions: ['x-men-days-of-future-past'], photo: '/5FjBCsn3kujldP8LizoCrc3hsHp.jpg' },
     { actor: 'Lenore Zann', universe: 'earth-92131', productions: ['x-men-97-s1', 'x-men-tas-s1', 'x-men-tas-s2', 'x-men-tas-s3', 'x-men-tas-s5'], voice: true, photo: '/qOuxxt2zybggVDl1NiQloVIVFNU.jpg' },
   ],
   'ronan': [

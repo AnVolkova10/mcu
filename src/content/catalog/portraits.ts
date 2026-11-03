@@ -589,6 +589,7 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   },
   'rogue-anna-marie': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/f/f6/Rogue.jpg/revision/latest/scale-to-width-down/288?cb=20231209153516',
+    'earth-10005': 'https://static.wikia.nocookie.net/xmenmovies/images/5/5b/AnnaPaquinRogue.jpg/revision/latest/scale-to-width-down/202?cb=20200401083318',
   },
   'ronan': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/0/0f/Ronan_the_Accuser_Infobox.jpg/revision/latest/scale-to-width-down/265?cb=20241127020215',

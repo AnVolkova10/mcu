@@ -204,7 +204,6 @@ export const characters = {
     role: 'hero',
     status: 'alive',
     factions: ['mutants'],
-    origin: 'Earth-10005',
     bio: 'Futuristic guerrilla warrior possessing the mutant ability to absorb all forms of kinetic, thermal, and directed energy and redirect it through high-caliber tactical plasma weaponry.',
   },
   'black-bolt': {
@@ -267,7 +266,6 @@ export const characters = {
     role: 'hero',
     status: 'alive',
     factions: ['mutants'],
-    origin: 'Earth-10005',
     bio: 'Skilled tactical resistance fighter who creates shimmering spatial teleportation portals by throwing purple crystalline energy daggers across the battlefield.',
   },
   'bolivar-trask': {
@@ -950,7 +948,7 @@ export const characters = {
     status: 'alive',
     factions: ['x-men', 'mutants'],
     origin: 'United States',
-    bio: 'Omega-level mutant capable of lowering his thermal body temperature to absolute zero, transforming his physical form into solid organic ice and generating massive cryokinetic ice slides and frost blasts.',
+    bio: 'Mutant capable of lowering his thermal body temperature to absolute zero, transforming his physical form into solid organic ice and generating massive cryokinetic ice slides and frost blasts.',
   },
   'iron-fist': {
     name: 'Danny Rand',
@@ -1769,7 +1767,7 @@ export const characters = {
     role: 'hero',
     status: 'alive',
     factions: ['x-men', 'mutants'],
-    origin: 'Virginia, United States',
+    origin: 'Outside Washington, D.C.',
     bio: 'Playful and hyper-accelerated mutant capable of moving and reacting at extreme hypersonic speeds, making bullets and physical environments appear virtually frozen in time.',
   },
   rakim: {
@@ -2052,7 +2050,6 @@ export const characters = {
     role: 'hero',
     status: 'alive',
     factions: ['x-men', 'mutants'],
-    origin: 'Earth-10005',
     bio: 'Veteran X-Men leader with atmospheric godlike control over weather patterns, summoning torrential blizzards, lightning strikes, hurricane gale-force winds, and tornado shields.',
   },
   'sue-storm': {
@@ -2315,7 +2312,7 @@ export const characters = {
     status: 'alive',
     factions: ['mutants'],
     origin: 'United States',
-    bio: 'Apache warrior mutant with hyper-heightened superhuman senses, superhuman agility, physical invulnerability, and deadly dual vibranium bowie combat knives.',
+    bio: 'Mutant with hyper-heightened superhuman senses, superhuman agility, physical invulnerability, and deadly two bowie combat knives.',
   },
   wasp: {
     name: 'Hope van Dyne',

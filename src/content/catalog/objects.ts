@@ -39,6 +39,11 @@ export const objects = {
     kind: 'technology',
     description: 'Device of a future Wakanda that looks across history and other realities. The last Black Panther uses it to find the moment that could save her world.',
   },
+  sentinels: {
+    name: 'Sentinels',
+    kind: 'technology',
+    description: "Robots designed by Bolivar Trask to hunt mutants. Magneto laces the first ones with steel and turns them on the White House in 1973; in the future of 2023, built from Mystique's DNA, they adapt to any mutant power.",
+  },
   'spider-suit': {
     name: 'Spider Suit',
     kind: 'weapon',

@@ -5,39 +5,43 @@ export default defineEvents('x-men-days-of-future-past', [
   {
     id: 'en-sabah-nur-pyramids',
     date: { year: -3600, approx: true, order: 10 },
-    title: 'En Sabah Nur assembles the Great Pyramids',
+    title: 'En Sabah Nur raises the pyramids',
     text: [
-      'In Ancient Egypt circa 3600 B.C.E., a cloaked grey-skinned adolescent mutant named [En Sabah Nur (Apocalypse)](en-sabah-nur-apocalypse) uses immense godlike telekinesis to assemble the Great Pyramids from floating sandstone blocks across the desert. Thousands of ancient Egyptian worshippers prostrate themselves on the sand, chanting *"En Sabah Nur"* in reverent worship, as his Four Horsemen look on from horseback atop the dunes.',
+      'In ancient Egypt, a crowd kneels and chants the name of a young [En Sabah Nur](en-sabah-nur-apocalypse) as he lifts blocks of stone with his mind to build the pyramids. His Four Horsemen watch from a distance.',
     ],
     locations: ['giza-plateau-and-great-pyramids'],
+  },
+  {
+    id: 'mystique-frees-mutant-soldiers',
+    date: { year: 1973, order: 35 },
+    title: 'Mystique frees mutant soldiers from Stryker in Saigon',
+    text: [
+      'As the last American troops leave Vietnam, the government turns down the Sentinel program of [Bolivar Trask](bolivar-trask). In Saigon, [Mystique](raven-darkholme), disguised as an American colonel, stops Major [William Stryker](william-stryker) from shipping a group of mutant soldiers to Trask Industries for tests, among them [Alex Summers](alex-summers), Toad and Ink. She learns that Trask has been experimenting on mutants.',
+    ],
+    locations: ['saigon-air-base'],
   },
   {
     id: 'quicksilver-springs-magneto',
     date: { year: 1973, order: 40 },
     title: 'Quicksilver springs Magneto from the Pentagon',
     text: [
-      'Awakening in his younger 1973 body in New York with bone claws, [Logan](logan-wolverine) travels to Westchester to find the X-Mansion deserted. A broken, reclusive [Charles Xavier](charles-xavier)—reliant on a genetic serum brewed by [Hank McCoy (Beast)](hank-mccoy) that restores his ability to walk at the cost of suppressing his telepathy—initially refuses to help. Logan convinces them that only they can prevent Mystique from assassinating weapons industrialist Bolivar Trask and causing a mutant genocide.',
-      'To infiltrate the Pentagon and liberate the imprisoned [Erik Lehnsherr (Magneto)](erik-lehnsherr)—held in a maximum-security subterranean plastic chamber 100 feet beneath the Pentagon for the alleged assassination of JFK—the team enlists hypersonic teenager [Peter Maximoff (Quicksilver)](quicksilver-peter-maximoff). Moving at superhuman velocity during a security ambush in the kitchen, Quicksilver effortlessly neutralizes the guards, redirecting bullets and tasting soup mid-stride to successfully extract Magneto.',
+      '[Logan](logan-wolverine) wakes up in his body of 1973, in the bed of Gwen, the daughter of the mobster he guards, and drives to the Xavier mansion. The school has been closed for years. [Hank McCoy](hank-mccoy) looks after a drunk [Charles Xavier](charles-xavier), who takes a serum that lets him walk but shuts off his telepathy. They agree to help Logan, hoping to get Raven back.',
+      'To free [Erik Lehnsherr](erik-lehnsherr), held a hundred floors under the Pentagon for the death of Kennedy, they recruit [Peter Maximoff](quicksilver-peter-maximoff), a teenager from outside Washington who moves faster than anyone can see. Peter gets them in and out of the prison. Erik says he was trying to save Kennedy, who was one of them.',
     ],
-    locations: [
-      'xaviers-school-for-gifted-youngsters',
-      'maximoff-family-residence',
-      'the-pentagon-subterranean-incarceration-facility',
-    ],
+    locations: ['xaviers-school-for-gifted-youngsters', 'maximoff-family-residence', 'the-pentagon-subterranean-incarceration-facility'],
   },
   {
     id: 'paris-clash-trask',
     date: { year: 1973, order: 50 },
     title: 'A Paris clash over Trask exposes mutantkind',
     text: [
-      'In Paris during the Vietnam War Peace Summit, [Raven Darkhölme (Mystique)](raven-darkholme) disguises herself as a South Vietnamese General to infiltrate the secret meeting where weapons mogul [Dr. Bolivar Trask](bolivar-trask) pitches his mutant-hunting Sentinel program to international diplomats. Just as Raven corners and prepares to shoot Trask, [Charles](charles-xavier), [Logan](logan-wolverine), [Hank](hank-mccoy), and [Erik](erik-lehnsherr) burst into the room to intervene.',
-      "Believing Raven's death is the only absolute guarantee to stop Trask Industries from harvesting her genetic material for adaptive Sentinels, Magneto ruthlessly turns a gun on her and fires, wounding her leg as she leaps out the second-story window. A furious Beast transforms and tackles Magneto into a fountain, sparking a chaotic public brawl captured by international news cameras that exposes the existence of mutantkind to the entire globe. Slipping away through the crowd, Raven's shed blood is covertly collected by Trask's military scientists.",
-      "En route to Washington, Magneto intercepts the freight train transporting prototype Mark I Sentinels, utilizing his magnetism to weave steel railway tracks into the polymer chassis of each robot—secretly converting Trask's automated army into his personal metallic puppets.",
+      'At the Paris peace talks that end the Vietnam War, [Mystique](raven-darkholme) poses as a Vietnamese general to reach [Bolivar Trask](bolivar-trask), but his mutant detector gives her away and [William Stryker](william-stryker) brings her down. [Charles Xavier](charles-xavier), [Logan](logan-wolverine), [Hank McCoy](hank-mccoy) and [Erik Lehnsherr](erik-lehnsherr) burst in. The sight of Stryker floods Logan with memories, and Erik shoots at Raven to stop her for good; she escapes through a window, wounded in the leg.',
+      "Hank, now Beast, fights Erik in the street in front of the cameras, and the world sees mutants for the first time. Trask's men take Raven's blood, and President Nixon approves the Sentinel program. Erik takes back his [helmet](object:magneto-helmet) and, with the rails of a railway line, laces the [Sentinels](object:sentinels) bound for Washington with steel.",
     ],
-    cast: ['william-stryker'],
-    locations: [
-      { id: 'hotel-royal-monceau', note: 'Paris Peace Accords' },
-      'sentinel-prototype-rail-transit-yard',
+    locations: ['hotel-royal-monceau', 'sentinel-prototype-rail-transit-yard'],
+    objects: [
+      { id: 'magneto-helmet', at: [] },
+      { id: 'sentinels', at: ['sentinel-prototype-rail-transit-yard'] },
     ],
   },
   {
@@ -45,12 +49,16 @@ export default defineEvents('x-men-days-of-future-past', [
     date: { year: 1973, order: 60 },
     title: 'Mystique spares Trask and rewrites the future',
     text: [
-      'On the White House South Lawn, President Richard Nixon hosts a national press conference unveiling the Mark I Sentinels. [Magneto](erik-lehnsherr) launches a full-scale aerial assault, ripping the massive 50,000-seat **RFK Memorial Stadium** out of its concrete foundations and slamming it down around the White House to encircle the executive grounds. Taking control of the steel-laced Sentinels, Magneto turns the war machines against the Secret Service, impales [Logan](logan-wolverine) with heavy iron rebar, and hurls him deep into the bottom of the Potomac River.',
-      `Magneto extracts the President's fortified steel bunker from the White House, broadcasting an ultimatum across global airwaves declaring mutant supremacy. Disguised as a Secret Service agent, [Raven](raven-darkholme) shoots Erik in the neck with a plastic pistol, disabling his powers. Aiming her gun at a terrified [Bolivar Trask](bolivar-trask), Raven is telepathically contacted by [Charles Xavier](charles-xavier), who chooses not to control her mind and instead appeals to her conscience: *"You can show them who we really are."*`,
-      "In a historic turning point, Raven lowers and drops her weapon, sparing Trask's life and demonstrating to humanity that mutants are protectors rather than monsters. This single act of mercy convinces the US government to shut down the Sentinel initiative, arresting Trask for selling military secrets and creating a brand-new, peaceful future. In the Potomac River, military officer [William Stryker](william-stryker)—secretly Mystique with glowing yellow eyes—retrieves Logan's waterlogged body.",
+      'At the mansion, [Charles Xavier](charles-xavier) stops taking the serum and, through the mind of [Logan](logan-wolverine), talks with his future self, who asks him to hope again. With [Cerebro](object:cerebro) he reaches [Mystique](raven-darkholme) and asks her to come home. In the Rogue Cut she does: [Hank McCoy](hank-mccoy) treats her wound, and at night she wrecks Cerebro and leaves. Either way they head for Washington, where the Sentinels will be unveiled.',
+      'On the White House lawn, President Nixon presents the [Sentinels](object:sentinels). [Erik Lehnsherr](erik-lehnsherr), wearing his [helmet](object:magneto-helmet), lifts RFK Stadium and drops it around the White House, takes control of the Sentinels, runs Logan through with steel bars and throws him into the Potomac. Then he tears the presidential bunker out of the building.',
+      "Mystique, disguised as Nixon, shoots Erik in the neck with a plastic gun. She aims it at [Bolivar Trask](bolivar-trask), but Charles talks her out of it, and the world sees a mutant save the President. The Sentinel program is shut down and Trask is arrested for selling military secrets; in the Rogue Cut he ends up in Erik's old cell under the Pentagon. In the Potomac, Mystique, disguised as Stryker, pulls Logan out of the water.",
     ],
-    cast: ['hank-mccoy'],
-    locations: ['the-white-house-lawn-and-rfk-stadium', 'potomac-river-recovery'],
+    locations: ['xaviers-school-for-gifted-youngsters', 'rfk-stadium', 'the-white-house-lawn-and-rfk-stadium', 'potomac-river-recovery', 'the-pentagon-subterranean-incarceration-facility'],
+    objects: [
+      { id: 'cerebro', at: ['xaviers-school-for-gifted-youngsters'] },
+      { id: 'magneto-helmet', at: ['the-white-house-lawn-and-rfk-stadium'] },
+      { id: 'sentinels', at: ['the-white-house-lawn-and-rfk-stadium'] },
+    ],
   },
   {
     id: 'kitty-rewinds-moscow-ambush',
@@ -58,10 +66,10 @@ export default defineEvents('x-men-days-of-future-past', [
     title: 'Kitty Pryde rewinds a Sentinel ambush in Moscow',
     branch: 'fox-original',
     text: [
-      'In a dark, dystopian 2023, the world lies in smoking ruins. Advanced, biomechanically adaptive **Sentinels**—capable of mimicking any mutant power and weaponized with DNA harvested from Mystique in 1973—have exterminated millions of mutants and humans alike. In the devastated subways of Moscow, a ragtag mutant resistance strike team comprising [Kitty Pryde (Shadowcat)](kitty-pryde), [Lucas Bishop](bishop-lucas-bishop), [Bobby Drake (Iceman)](iceman-bobby-drake), [Piotr Rasputin (Colossus)](colossus-piotr-rasputin), [Clarice Ferguson (Blink)](blink-clarice-ferguson), [Roberto da Costa (Sunspot)](sunspot-roberto-da-costa), and [James Proudstar (Warpath)](warpath-james-proudstar) mounts a desperate stand.',
-      "As adaptive Sentinels breach the bunker with thermal drills, the squad fights heroically to the death while Kitty uses her chronal phase-shifting ability to project Bishop's consciousness four days into the past—warning their past selves, averting the massacre, and narrowly slipping away into the global shadows.",
+      'In 2023, [Sentinels](object:sentinels) that adapt to any mutant power have killed most mutants and the humans who help them. In an underground hideout in Moscow they find [Kitty Pryde](kitty-pryde), [Bishop](bishop-lucas-bishop), [Iceman](iceman-bobby-drake), [Colossus](colossus-piotr-rasputin), [Blink](blink-clarice-ferguson), [Sunspot](sunspot-roberto-da-costa) and [Warpath](warpath-james-proudstar). The others die holding them off while Kitty sends the mind of Bishop a few days back to warn them, and the attack never happens.',
     ],
     locations: ['ruined-underground-metro-catacombs'],
+    objects: [{ id: 'sentinels', at: ['ruined-underground-metro-catacombs'] }],
   },
   {
     id: 'logan-fifty-years-back',
@@ -69,29 +77,21 @@ export default defineEvents('x-men-days-of-future-past', [
     title: "Xavier and Magneto's gambit sends Logan back fifty years",
     branch: 'fox-original',
     text: [
-      "Rendezvousing at a remote mountain monastery high in the Himalayas, the resistance unites with veteran X-Men leaders [Professor Charles Xavier](charles-xavier), [Magneto](erik-lehnsherr), [Storm](storm-ororo-munroe), and [Logan (Wolverine)](logan-wolverine). Xavier and Magneto formulate a final, suicidal gambit: sending someone back fifty years to 1973 to prevent Mystique from assassinating Bolivar Trask. Because a fifty-year jump would tear any mortal mind to shreds, only Wolverine's indestructible brain and cellular regeneration can survive the temporal trauma.",
-      "As [Kitty](kitty-pryde) locks into [Logan](logan-wolverine)'s temples to initiate the transfer, a massive armada of Sentinel warships descends upon the mountain. In a heart-wrenching final stand, [Storm](storm-ororo-munroe), [Bishop](bishop-lucas-bishop), [Blink](blink-clarice-ferguson), [Sunspot](sunspot-roberto-da-costa), [Colossus](colossus-piotr-rasputin), [Iceman](iceman-bobby-drake), and [Magneto](erik-lehnsherr) fight to their absolute deaths against endless hordes of adaptive machines to buy every crucial second. As Sentinels breach the inner sanctum and aim their incinerator beams at [Kitty](kitty-pryde) and [Logan](logan-wolverine), the 1973 timeline rewrite takes effect—instantly wiping the apocalyptic Sentinels out of existence.",
+      'In a remote monastery in China, the survivors meet [Charles Xavier](charles-xavier), [Erik Lehnsherr](erik-lehnsherr), [Storm](storm-ororo-munroe) and [Logan](logan-wolverine). Charles explains that the Sentinels were born in 1973, when Mystique killed Bolivar Trask and was captured, and her DNA let them adapt to any power. Only Logan can survive a jump of fifty years, so [Kitty Pryde](kitty-pryde) sends his mind back. When he sees Stryker in Paris, his body lashes out and wounds Kitty.',
+      'In the Rogue Cut, Charles, Erik and [Iceman](iceman-bobby-drake) fly to the Xavier mansion, where the Sentinels keep [Rogue](rogue-anna-marie) inside Cerebro, and free her. Iceman dies covering their escape, and Rogue takes over from Kitty.',
+      'The [Sentinels](object:sentinels) storm the monastery. Storm, [Bishop](bishop-lucas-bishop), [Warpath](warpath-james-proudstar), [Sunspot](sunspot-roberto-da-costa), [Colossus](colossus-piotr-rasputin) and [Blink](blink-clarice-ferguson) are killed, and so is Iceman in the theatrical cut, while Erik is badly hurt. When Mystique spares Trask in 1973, this future is gone.',
     ],
-    cast: ['warpath-james-proudstar'],
-    locations: ['wulin-mountain-sanctuary-and-monastery'],
-    deaths: [
-      { character: 'storm-ororo-munroe', presumed: false, note: 'Sentinel Harpoon' },
-      { character: 'bishop-lucas-bishop', presumed: false, note: 'Overload Detonation' },
-      { character: 'blink-clarice-ferguson', presumed: false, note: 'Sentinel Impalement' },
-      { character: 'sunspot-roberto-da-costa', presumed: false, note: 'Cryo-Decapitation' },
-      { character: 'colossus-piotr-rasputin', presumed: false, note: 'Bisection' },
-      { character: 'iceman-bobby-drake', presumed: false, note: 'Decapitation' },
-    ],
+    locations: ['wulin-mountain-sanctuary-and-monastery', 'xaviers-school-for-gifted-youngsters'],
+    objects: [{ id: 'sentinels', at: ['xaviers-school-for-gifted-youngsters', 'wulin-mountain-sanctuary-and-monastery'] }],
+    deaths: ['storm-ororo-munroe', 'bishop-lucas-bishop', 'warpath-james-proudstar', 'sunspot-roberto-da-costa', 'colossus-piotr-rasputin', 'blink-clarice-ferguson', 'iceman-bobby-drake'],
   },
   {
     id: 'logan-finds-jean-cyclops-alive',
     date: { year: 2023, order: 30 },
-    title: 'Logan awakens to find Jean Grey and Cyclops alive',
+    title: 'Logan wakes to find Jean Grey and Scott Summers alive',
     text: [
-      "Logan awakens in a comfortable bed at the sunlit, magnificent **Xavier's School for Gifted Youngsters** in Westchester County, New York. Wandering through the peaceful hallways, he is stunned to discover that the dark future has been completely rewritten: mutant students attend classes in peace, [Hank McCoy (Beast)](hank-mccoy) greets him, and his fallen comrades [Storm](storm-ororo-munroe), [Scott Summers (Cyclops)](cyclops-scott-summers), and [Jean Grey (Phoenix)](jean-grey) are alive and flourishing.",
-      "Entering the headmaster's office, Logan meets an elderly [Charles Xavier](charles-xavier). Having lived through fifty years of a timeline he only partially remembers, Logan asks Charles for a history lesson on everything that transpired since 1973—with Charles smiling warmly and welcoming him home.",
+      '[Logan](logan-wolverine) wakes up at the Xavier mansion in a new 2023, with the school full of students. An older [Hank McCoy](hank-mccoy) greets him, [Rogue](rogue-anna-marie) is there, and so are [Jean Grey](jean-grey) and [Scott Summers](cyclops-scott-summers), who were dead in the future he left. He finds [Charles Xavier](charles-xavier) and asks him to fill him in on the last fifty years.',
     ],
-    cast: ['logan-wolverine'],
     locations: ['xaviers-school-for-gifted-youngsters'],
   },
 ]);

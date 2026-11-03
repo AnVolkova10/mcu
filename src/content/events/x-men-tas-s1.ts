@@ -121,7 +121,7 @@ export default defineEvents('x-men-tas-s1', [
     cast: ['cyclops-scott-summers', 'jean-grey', 'logan-wolverine', 'storm-ororo-munroe'],
     locations: [
       'master-mold-subterranean-sentinel-foundry',
-      'white-house-and-senate-hearing-chambers',
+      'the-white-house-lawn-and-rfk-stadium',
     ],
     deaths: [
       { character: 'master-mold', presumed: false, note: 'Obliterated' },
