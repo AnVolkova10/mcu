@@ -48,7 +48,7 @@ Ejemplo: la temporada 1 de **Legion** (FX, 2017).
 
 ### Paso 2 · El universo
 
-Abrí `src/content/catalog/universes.ts` y elegí el universo donde pasa la historia (`earth-616`, `earth-10005`, `earth-92131`, `earth-90214`).
+Abrí `src/content/catalog/universes.ts` y elegí el universo donde pasa la historia (`earth-616`, `earth-10005`, `earth-92131`, `earth-62533`).
 
 Si la producción es una realidad que todavía no está (Legion, por ejemplo, no es claramente ninguna de las cuatro), **preguntá a quien mantiene el proyecto qué universo usar.** Si hay que crear uno, agregalo así:
 
@@ -131,7 +131,7 @@ Reglas del evento:
 | Año exacto | `{ year: 1944 }` | 1944 |
 | Aproximado | `{ year: 1925, approx: true }` | c. 1925 |
 | Rango | `{ year: 1861, end: 1865 }` | 1861–1865 |
-| Antes de Cristo | `{ year: -3600, approx: true }` | c. 3600 BCE |
+| Antes de Cristo | `{ year: -3600, approx: true }` | c. 3600 BC |
 | Más de 10.000 años atrás, como lo dice la obra | `{ year: -998000, label: '1,000,000 years ago' }` | 1,000,000 years ago |
 | Mítico, sin fecha | `{ year: -1000000000, label: 'Eons ago' }` | Eons ago |
 
@@ -247,7 +247,7 @@ Para contar algo particular de ese lugar en este evento: `locations: [{ id: 'san
 
 ### Paso 10 · Objetos
 
-Un objeto lleva ficha si tiene nombre y **cambia la trama o pasa de mano**. Un arma de fondo, no. Buscalo con `npm run content -- find "ax"`. Si no existe, agregalo a `src/content/catalog/objects.ts` **en orden alfabético por id**:
+Un objeto lleva ficha si tiene nombre, **cambia la trama o pasa de mano** y **le importa al multiverso**. Un arma de fondo o una pista que solo pesa en su serie, no. Buscalo con `npm run content -- find "ax"`. Si no existe, agregalo a `src/content/catalog/objects.ts` **en orden alfabético por id**:
 
 ```ts
   'vibranium-ax': {

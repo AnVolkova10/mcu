@@ -48,7 +48,7 @@ Abrí la app y mirá: la producción filtrada en el timeline, las fichas de cada
 
 ## 2. Fuentes, en este orden
 
-1. **Lo que dice la pantalla:** carteles de fecha y lugar, y diálogos. Los transcripts de las wikis son la mejor forma de leerlos.
+1. **Lo que dice la pantalla:** carteles de fecha y lugar, y diálogos. Los transcripts de las wikis son la mejor forma de leerlos. Scraps from the Loft tiene los de series recientes: se leen con la herramienta web, porque el sitio no deja entrar scripts.
 2. **Wikipedia y fuentes oficiales**, incluidas entrevistas a quienes hicieron la obra. **marvel.com no se usa.**
 3. **Wikis de fans.** Marvel Database y la wiki de cada universo se equivocan y se contradicen: citan el episodio cuando pueden, y esa cita es lo que vale.
 4. **Recaps escena por escena,** como los de Laughing Place. Cuando no hay transcript son la mejor segunda fuente: cuentan lo que se ve, aunque no siempre identifican los objetos. Una reseña suelta no alcanza: una ponía el Reino del León en el mar Egeo, y las dos wikis dicen océano Índico.
@@ -64,9 +64,11 @@ Un dato que no aparece en dos fuentes es una duda y va a la ficha. Si la memoria
 - **Un viaje en el tiempo son eventos separados:** uno en cada época.
 - **Los flashbacks se deciden caso por caso.** Si solo recuerdan algo que ya está contado, no suman. Si muestran algo que no está en otro lado, proponé un evento en la ficha.
 - Un epílogo que cae en otro año es otro evento. Si otra producción lo muestra, usá `alsoIn`.
+- **Una producción menor se condensa, sin perder información.** Si pasa todo en pocas semanas, juntá episodios en un mismo evento, con un párrafo por episodio. *Spider-Noir* tiene cuatro eventos en 1933 para sus ocho episodios, y conserva lugares, personajes y muertes.
 
 ### Fechas
 
+- **Siempre exacta si se puede.** Si las fuentes sostienen un año, va sin `approx`, aunque no aparezca en un cartel: la muerte de Ruby es 1928 por su tumba y por "hace cinco años".
 - Año dicho en pantalla: exacto, sin `approx`.
 - Fecha relativa (*500 años después*): se calcula desde una fecha firme y lleva `approx: true`. Se escribe el año calculado, no un número redondo: *Eyes of Wakanda* tiene 1896 + 500 = `{ year: 2396, approx: true }`.
 
@@ -77,7 +79,7 @@ Un dato que no aparece en dos fuentes es una duda y va a la ficha. Si la memoria
 - **Dos lugares nunca comparten un punto exacto.** Un pin compartido hace parecer que todo pasó en el mismo sitio. Si son lugares distintos, cada uno lleva su coordenada, aunque la ciudad sea la misma.
 - **Si la obra solo nombra una zona,** agregá `approximate: true`: el mapa dibuja un anillo y avisa que no se conoce el lugar exacto. Poné el punto en el centro de esa zona.
 - **Mirá en el mapa qué queda alrededor de cada pin nuevo.** Las Seychelles parecían un buen lugar para el Reino del León, en el océano Índico, pero ahí está Genosha. El validador solo detecta puntos idénticos: dos lugares casi iguales se ven como uno.
-- Un lugar que la obra no sitúa en ningún lado no se ubica por intuición: va a la ficha como duda.
+- **Un lugar que la obra no sitúa se deduce.** Elegí un punto verosímil, con `approximate: true`, y contalo en la ficha. Lo que no se sabe no puede terminar todo en el mismo punto.
 - **Wakanda** está al norte del lago Turkana, según el *Marvel Atlas*.
 - Un lugar fuera de la Tierra usa `node`. Si tiene una puerta conocida en la Tierra, esa puerta es otro lugar: *K'un-Lun* tiene `kun-lun-gate`, en el Himalaya, y `kun-lun-heavenly-gate` en el Cosmos.
 
@@ -90,17 +92,17 @@ Un dato que no aparece en dos fuentes es una duda y va a la ficha. Si la memoria
 
 ### Objetos
 
-- **Ficha para todo objeto con nombre que cambia la trama o pasa de mano.** Lo demás se queda en el texto, sin marca.
-- Tipos: `weapon`, `relic`, `technology`, `material` y `record`. Si ninguno encaja, elegí el más cercano y decilo en la ficha: el Caballo de Troya es un vehículo y quedó como `weapon`.
+- **Ficha solo para objetos con nombre que cambian la trama o pasan de mano, y que importan al multiverso.** Lo que solo pesa en su serie se queda en el texto, sin marca, aunque decida un capítulo. En *Spider-Noir* entra el traje, y no el antídoto ni los billetes marcados. Ante la duda, sin ficha.
+- Tipos: `weapon`, `relic`, `technology`, `material` y `record`. Si ninguno encaja, elegí el más cercano y decilo en la ficha: el traje de la Spider es ropa y quedó como `weapon`.
 - **El recorrido sale de `at`: solo los lugares donde estuvo.** Si solo se lo ve o se lo nombra, va con `at: []`. En 2396 el hacha aparece en el escáner, pero no está en Birnin Zana.
-- **Seguí cada objeto hasta su última escena.** Si alguien se lo lleva, el recorrido sigue: el collar de Tetis no se queda en Troya, B'Kai lo tiene en la mano al final del episodio, en Wakanda.
+- **Seguí cada objeto hasta su última escena.** Si alguien se lo lleva, el recorrido sigue: el hacha de Adwa vuelve a su lugar en 1896 y reaparece en el Museo de Gran Bretaña en 2016.
 - Los `==subrayados==` de la v2 se reemplazan: si es un objeto, se enlaza; si no, se saca la marca.
 
 ### Texto
 
-- De 2 a 4 oraciones sobrias en inglés. Solo lo que pasa, sin adjetivos épicos ni interpretación.
+- De 2 a 4 oraciones sobrias en inglés, por episodio si el evento junta varios. Solo lo que pasa, sin adjetivos épicos ni interpretación.
 - Títulos en presente, hasta 70 caracteres, sin punto final.
-- En las bios, las fechas antes de Cristo van como `BCE`, igual que en la app.
+- En las bios, las fechas antes de Cristo van como `BC`, igual que en la app.
 
 ### Contenido inventado
 

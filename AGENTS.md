@@ -1,6 +1,6 @@
 # MCU Archive — guía para agentes
 
-Cronología **in-universe** del multiverso Marvel: cada evento va en el año en que ocurre dentro de la historia, no en el año de estreno. Abarca el MCU (Earth-616), las películas X-Men de Fox (Earth-10005), el universo animado de los 90 y X-Men '97 (Earth-92131) y Spider-Noir (Earth-90214).
+Cronología **in-universe** del multiverso Marvel: cada evento va en el año en que ocurre dentro de la historia, no en el año de estreno. Abarca el MCU (Earth-616), las películas X-Men de Fox (Earth-10005), el universo animado de los 90 y X-Men '97 (Earth-92131) y Spider-Noir (Earth-62533).
 
 App personal: React 19 + TypeScript + Vite + Tailwind 4, publicada en GitHub Pages (`/mcu/`) con cada push a `master`.
 
@@ -66,7 +66,7 @@ docs/ROADMAP.md         lo que falta
 - Los colores de personajes, universos y gemas vienen de los datos; la legibilidad del texto se calcula sola (`src/domain/colors.ts`). No agregues CSS por personaje.
 - Los pósters se muestran solo en la sección Movies & Series y en la ficha de cada producción. **Nunca en el timeline.**
 - Las imágenes de personajes se muestran solo en Characters y en la ficha del personaje. **Nunca en el timeline.** Se muestra al personaje, no al actor: hay una imagen por universo, y quien lo interpreta va en la lista "Played by". Si falta la imagen, se ve la foto del actor; si falta eso, las iniciales.
-- **Objetos:** lleva ficha lo que tiene nombre y cambia la trama o pasa de mano. En el texto, las personas van en color de letra y los objetos en color de subrayado, con un color por tipo (`objectKinds`, en `catalog/objects.ts`). Por ahora no llevan imagen. Cada evento dice dónde está cada objeto (`at`), para que su recorrido solo pase por lugares donde estuvo. En las producciones `verified` no se usa `==`.
+- **Objetos:** lleva ficha lo que tiene nombre, cambia la trama o pasa de mano y le importa al multiverso; lo que solo pesa en su serie queda como texto. En el texto, las personas van en color de letra y los objetos en color de subrayado, con un color por tipo (`objectKinds`, en `catalog/objects.ts`). Por ahora no llevan imagen. Cada evento dice dónde está cada objeto (`at`), para que su recorrido solo pase por lugares donde estuvo. En las producciones `verified` no se usa `==`.
 - `catalog/portraits.ts` y `catalog/cast.ts` se generan: no los edites a mano. Las imágenes son enlaces a Fandom y **nunca se copian al repo**. Tampoco corras `portraits:sync` ni `research` en tareas automáticas: leé "Si la página se hace pública" en `docs/ROADMAP.md`.
 - **No uses marvel.com como fuente.** Bloquea a los programas y los términos de Disney prohíben extraer contenido con scripts.
 - El estado del mapa vive en la URL (`src/features/map/useMapState.ts`), igual que el del resto de la app.

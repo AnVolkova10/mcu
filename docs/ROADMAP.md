@@ -11,12 +11,12 @@
 
 ## Contenido
 
-Estado actual: `npm run content -- status` (28 producciones auditadas, 1 verificada, 53 legacy de la v1).
+Estado actual: `npm run content -- status` (28 producciones auditadas, 2 verificadas, 53 legacy de la v1).
 
 **Lo que sigue.** Revisar una por una las 28 producciones auditadas en la v2 junto a quien mantiene el proyecto, con `docs/AUDIT_GUIDE.md`, y recién después seguir con lo demás. Van en el orden de la cronología de Aaron Perris (https://aaronperris.com/mcu/):
 
 - [x] *Eyes of Wakanda* T1
-- [ ] *Spider-Noir* T1
+- [x] *Spider-Noir* T1
 - [ ] *Captain America: The First Avenger*
 - [ ] *Agent Carter* T1
 - [ ] *Agent Carter* T2
@@ -44,7 +44,7 @@ Estado actual: `npm run content -- status` (28 producciones auditadas, 1 verific
 - [ ] *Spider-Man: The Animated Series* T5
 - [ ] *The Incredible Hulk* T2
 
-**Puntos compartidos del mapa.** 30 puntos exactos siguen repartidos entre 75 lugares. Se separan a medida que se audita cada producción: el validador lo exige en las verificadas y lo muestra como aviso en las demás.
+**Puntos compartidos del mapa.** 29 puntos exactos siguen repartidos entre 71 lugares. Se separan a medida que se audita cada producción: el validador lo exige en las verificadas y lo muestra como aviso en las demás.
 
 **Fechas pendientes de auditoría.** `2,000 years ago` (la Mano, *The Defenders*) sigue en texto libre hasta que se audite esa producción. Las dos `Ancient times` del catálogo de gemas (Morag y Agamotto) son recorridos sin fecha en el canon.
 
