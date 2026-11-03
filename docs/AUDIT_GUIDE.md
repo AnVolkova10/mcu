@@ -64,7 +64,8 @@ Un dato que no aparece en dos fuentes es una duda y va a la ficha. Si la memoria
 - Un evento es un conjunto de sucesos unidos por tiempo, lugar o relato. Tiene que poder intercalarse con los eventos de otras producciones.
 - **El tiempo manda.** Seis semanas no cortan un evento; seis meses sí. Una película que abarca años tiene muchos eventos.
 - **Un viaje en el tiempo son eventos separados:** uno en cada época.
-- **Los flashbacks se deciden caso por caso.** Si solo recuerdan algo que ya está contado, no suman. Si muestran algo que no está en otro lado, proponé un evento en la ficha.
+- **Si la obra muestra dos versiones del mismo momento, la que se borra es una rama con `erased: true`,** aunque dure un solo año, y sus muertes van en ella. En *X-Men: The Animated Series* T2, el primer 1993, el que Cable deshace, es la rama `first-1993`. Las reglas son las de cada obra: en el MCU cambiar el pasado no borra nada, abre una rama.
+- **Los flashbacks se deciden caso por caso.** Si solo recuerdan algo que ya está contado, no suman. Si muestran algo que no está en otro lado, proponé un evento en la ficha. Un recuerdo sin fecha no entra, ni siquiera en el texto: en *X-Men: The Animated Series* T1 quedaron afuera Xavier conociendo a Magnus "después de una guerra" y el primer beso de Rogue.
 - **Las versiones oficiales de una película también cuentan.** Lo que solo pasa en una de ellas, como el Rogue Cut de *Days of Future Past*, entra al texto diciendo de qué versión es. Las muertes y los lugares siguen a la versión de cines.
 - Un epílogo que cae en otro año es otro evento. Si otra producción lo muestra, usá `alsoIn`.
 - **Una producción menor se condensa, sin perder información.** Si pasa todo en pocas semanas, juntá episodios en un mismo evento, con un párrafo por episodio. *Spider-Noir* tiene cuatro eventos en 1933 para sus ocho episodios, y conserva lugares, personajes y muertes.

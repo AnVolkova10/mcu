@@ -33,6 +33,8 @@ export interface BranchInput {
   name: string;
   /** In-universe year where this branch splits from its universe. */
   divergence: number;
+  /** The work itself wipes this timeline out, as when someone undoes the change that made it. */
+  erased?: boolean;
   description: string;
 }
 

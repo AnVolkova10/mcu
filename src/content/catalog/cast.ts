@@ -366,7 +366,7 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
   ],
   'jubilee-jubilation-lee': [
     { actor: 'Lana Condor', universe: 'earth-10005', productions: ['x-men-apocalypse'], photo: '/vWn27Fk2GLwH7o9fBG9hBWZI6OR.jpg' },
-    { actor: 'Alyson Court', universe: 'earth-92131', productions: ['x-men-tas-s1', 'x-men-tas-s3', 'x-men-tas-s5'], voice: true, photo: '/kPeTYEV6vyyAJEsUlomVpiLcd6v.jpg' },
+    { actor: 'Alyson Court', universe: 'earth-92131', productions: ['x-men-tas-s1', 'x-men-tas-s2', 'x-men-tas-s3', 'x-men-tas-s5'], voice: true, photo: '/kPeTYEV6vyyAJEsUlomVpiLcd6v.jpg' },
     { actor: 'Holly Chou', universe: 'earth-92131', productions: ['x-men-97-s1'], voice: true, photo: '/8sPU4zmJIwHk2qJ63wxOTnEcrS4.jpg' },
   ],
   'juggernaut-cain-marko': [
@@ -710,7 +710,7 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
   ],
   'victor-creed': [
     { actor: 'Liev Schreiber', universe: 'earth-10005', productions: ['x-men-origins-wolverine'], photo: '/26G7QjSb5ZazgWb9XB2X6SwcILQ.jpg' },
-    { actor: 'Don Francks', universe: 'earth-92131', productions: ['x-men-tas-s1', 'x-men-tas-s2', 'x-men-tas-s5'], voice: true, photo: '/q1bvy838NZCLDxWLpwhJYC5FsDA.jpg' },
+    { actor: 'Don Francks', universe: 'earth-92131', productions: ['x-men-tas-s1', 'x-men-tas-s5'], voice: true, photo: '/q1bvy838NZCLDxWLpwhJYC5FsDA.jpg' },
   ],
   'victor-von-doom': [
     { actor: 'John Vernon', universe: 'earth-92131', productions: ['fantastic-four-tas-s1'], voice: true, photo: '/xlHU7X2FhjnZVxu7fjoguCWlXeC.jpg' },

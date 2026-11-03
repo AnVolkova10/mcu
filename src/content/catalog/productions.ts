@@ -809,9 +809,10 @@ export const productions = {
     network: 'Fox Kids',
     universe: 'earth-92131',
     status: 'audited',
+    verified: true,
     animated: true,
     color: '#eab308',
-    description: "In 1993-1994, the X-Men face the genetic machinations of Mister Sinister, the trauma of Morph's resurrection, the psychic awakening of the Shadow King, Omega Red in Russia, the time paradoxes of Cable and Bishop, and an all-out war in the Savage Land.",
+    description: 'In 1993, while Xavier and Magneto are lost in the Savage Land, a brainwashed Morph helps Mister Sinister against the X-Men, and Bishop and Cable come from two futures to fight over the plague of Apocalypse.',
     poster: '/eEy7kDNgxsn2IYZad0FCk9uRhpn.jpg',
   },
   'x-men-tas-s3': {

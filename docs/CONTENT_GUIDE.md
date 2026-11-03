@@ -62,7 +62,21 @@ Si la producción es una realidad que todavía no está (Legion, por ejemplo, no
   },
 ```
 
-El universo nuevo aparece solo en el mapa Multiverso, pero en un carril por defecto que se pisa con Noir. Para ordenarlo, sumale una altura en `LANES`, en `src/features/map/multiverse/strands.ts`. Con las ramas pasa lo mismo: aparecen solas, y `BRANCH_LANES` solo ajusta su altura.
+El universo nuevo aparece solo en el mapa Multiverso, pero en un carril por defecto que se pisa con Noir. Para ordenarlo, sumale una altura en `LANES`, en `src/features/map/multiverse/strands.ts`. Con las ramas pasa lo mismo: aparecen solas, a la altura libre más cercana a su universo, y `BRANCH_LANES` fija su altura a ojo. Mirá el mapa con todos los universos: una rama no puede pisar a otra en los años que comparten.
+
+Una rama es una realidad que se separa de su universo. Va en `branches`, en el mismo archivo:
+
+```ts
+  'first-1993': {
+    universe: 'earth-92131',
+    name: 'The first 1993',        // lo que se ve en el mapa Multiverso
+    divergence: 1993,              // año en que se separa de su universo
+    erased: true,                  // solo si la obra la borra: alguien deshace el cambio que la creó
+    description: 'Una o dos oraciones: qué cambia y cómo termina.',
+  },
+```
+
+Una rama se ve aunque dure un solo año: sale como un brote corto, con el nombre al costado. Si ya es distinta en el año en que se separa, se abre un poco antes, para que su primera cuenta no tape la de su universo. Una rama con `erased: true` se dibuja punteada, con cuentas huecas y la palabra *erased*.
 
 ### Paso 3 · La serie (solo si es una serie nueva)
 

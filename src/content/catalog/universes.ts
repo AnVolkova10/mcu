@@ -58,13 +58,21 @@ export const branches = {
     universe: 'earth-10005',
     name: 'Original timeline',
     divergence: 1973,
+    erased: true,
     description: 'The timeline erased by Days of Future Past: Weapon X, Three Mile Island and the Sentinel apocalypse of 2023.',
   },
   'bishop-future': {
     universe: 'earth-92131',
     name: "Bishop's future",
     divergence: 1992,
-    description: 'The 2055 that Bishop comes from: a killing in Washington in the 1990s is blamed on mutants, and the Sentinels round them up and then turn on humans too.',
+    description: 'The 2055 that Bishop comes from: a killing in Washington in the 1990s is blamed on mutants, and the Sentinels round them up and then turn on humans too. Once Kelly survives, a plague sweeps it instead, until Bishop and Cable stop the virus in 1993.',
+  },
+  'first-1993': {
+    universe: 'earth-92131',
+    name: 'The first 1993',
+    divergence: 1993,
+    erased: true,
+    description: "The 1993 in which Bishop destroys Apocalypse's plague before Wolverine's healing can make the antibodies, and Apocalypse kills the X-Men. Cable erases it by going back to the moment Bishop arrives.",
   },
 } as const satisfies Record<string, BranchInput>;
 

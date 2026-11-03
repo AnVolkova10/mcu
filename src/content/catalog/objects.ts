@@ -17,7 +17,7 @@ export const objects = {
   adamantium: {
     name: 'Adamantium',
     kind: 'material',
-    description: 'Nearly unbreakable metal that William Stryker makes from a meteorite Team X finds in Nigeria. He bonds it to the skeleton of Logan, arms Weapon XI with it and uses it in the bullets that take Logan\'s memory.',
+    description: 'Nearly unbreakable metal that William Stryker makes from a meteorite Team X finds in Nigeria. He bonds it to the skeleton of Logan, arms Weapon XI with it and uses it in the bullets that take Logan\'s memory. In the animated series, Wolverine\'s skeleton is laced with it too, and Canada\'s Department H wants to learn how, or cut it out of him.',
   },
   'captain-america-shield': {
     name: "Captain America's Shield",
@@ -27,7 +27,7 @@ export const objects = {
   cerebro: {
     name: 'Cerebro',
     kind: 'technology',
-    description: "Machine built by Hank McCoy that amplifies Charles Xavier's telepathy to locate mutants. The first one, at Division X, is destroyed in Sebastian Shaw's attack. In the animated series, Xavier uses it to show Bishop's memories of 2055, and Jean Grey wears one of its helmets to break into the Juggernaut's mind.",
+    description: "Machine built by Hank McCoy that amplifies Charles Xavier's telepathy to locate mutants. The first one, at Division X, is destroyed in Sebastian Shaw's attack. In the animated series, Xavier uses it to show Bishop's memories of 2055, and Jean Grey wears one of its helmets to break into the Juggernaut's mind. With Xavier gone, Jean uses it to find a tear in the astral plane, to search for him and to calm Rogue's mind, and a portable projector shows Graydon Creed a hologram of his father.",
   },
   'magneto-helmet': {
     name: "Magneto's Helmet",

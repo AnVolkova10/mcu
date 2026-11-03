@@ -49,20 +49,38 @@ export function MultiverseView({ group, universes, onPickDate }: MultiverseViewP
 
           {visible.map((strand) => {
             const main = !strand.branch;
+            const erased = Boolean(strand.branch?.erased);
             const strong = strand.universe.id === 'earth-616' && main;
             const color = strand.universe.color;
             return (
               <g key={strand.id}>
-                <path d={strand.path} fill="none" stroke={color} strokeWidth={strong ? 15 : 10} strokeOpacity={0.4} filter="url(#strand-glow)" />
-                <path d={strand.path} fill="none" stroke={color} strokeWidth={strong ? 3.4 : main ? 2.4 : 1.8} strokeLinecap="round" pathLength={1} className="[animation:strand-draw_1.8s_ease-out_both] [stroke-dasharray:1]" />
-                <path d={strand.path} fill="none" stroke="#ffffff" strokeOpacity={0.75} strokeWidth={1.3} strokeLinecap="round" strokeDasharray="2 58" className="[animation:strand-flow_7s_linear_infinite]" />
+                <path d={strand.path} fill="none" stroke={color} strokeWidth={strong ? 15 : 10} strokeOpacity={erased ? 0.15 : 0.4} filter="url(#strand-glow)" />
+                {erased ? (
+                  // A timeline the story wipes out: a broken line with nothing flowing through it.
+                  <path d={strand.path} fill="none" stroke={color} strokeWidth={1.6} strokeLinecap="round" strokeDasharray="5 6" strokeOpacity={0.85} className="[animation:fade-in_1.8s_ease-out_both]" />
+                ) : (
+                  <>
+                    <path d={strand.path} fill="none" stroke={color} strokeWidth={strong ? 3.4 : main ? 2.4 : 1.8} strokeLinecap="round" pathLength={1} className="[animation:strand-draw_1.8s_ease-out_both] [stroke-dasharray:1]" />
+                    <path d={strand.path} fill="none" stroke="#ffffff" strokeOpacity={0.75} strokeWidth={1.3} strokeLinecap="round" strokeDasharray="2 58" className="[animation:strand-flow_7s_linear_infinite]" />
+                  </>
+                )}
                 {main ? (
                   <a href={href('timeline', { u: strand.universe.id })}>
                     <text x={18} y={strand.beads[0].y - 12} fill="#ececf0" fontSize={15} fontWeight={700}>{strand.universe.name}</text>
                     <text x={18} y={strand.beads[0].y + 6} fill={color} fontSize={13} fontWeight={600}>{strand.universe.label}</text>
                   </a>
                 ) : (
-                  <text x={Math.min(strand.end.x, WIDTH - 12)} y={strand.end.y - 12} textAnchor="end" fill={color} fontSize={12} fontWeight={600}>{strand.label}</text>
+                  <text
+                    x={strand.stub ? strand.end.x + 8 : Math.min(strand.end.x, WIDTH - 12)}
+                    y={strand.stub ? strand.end.y + 4 : strand.end.y - 12}
+                    textAnchor={strand.stub ? 'start' : 'end'}
+                    fill={color}
+                    fontSize={12}
+                    fontWeight={600}
+                  >
+                    {strand.label}
+                    {erased && <tspan fill="#8b8b96" fontWeight={500}> · erased</tspan>}
+                  </text>
                 )}
               </g>
             );
@@ -80,6 +98,7 @@ export function MultiverseView({ group, universes, onPickDate }: MultiverseViewP
               {strand.beads.map((bead) => {
                 const active = group ? bead.group === group : true;
                 const r = beadRadius(bead.events.length);
+                const erased = Boolean(strand.branch?.erased);
                 return (
                   <g
                     key={bead.group.key}
@@ -89,8 +108,9 @@ export function MultiverseView({ group, universes, onPickDate }: MultiverseViewP
                     onMouseLeave={() => setHovered(null)}
                     onClick={() => { setPicked({ strand, bead }); onPickDate(bead.group); }}
                   >
-                    <circle cx={bead.x} cy={bead.y} r={r + 3.5} fill={strand.universe.color} opacity={0.65} filter="url(#bead-glow)" />
-                    <circle cx={bead.x} cy={bead.y} r={r} fill={strand.universe.color} stroke="#ffffff" strokeWidth={0.8} />
+                    <circle cx={bead.x} cy={bead.y} r={r + 3.5} fill={strand.universe.color} opacity={erased ? 0.3 : 0.65} filter="url(#bead-glow)" />
+                    {/* The events of an erased timeline still happened there: hollow beads, not missing ones. */}
+                    <circle cx={bead.x} cy={bead.y} r={r} fill={erased ? '#07080d' : strand.universe.color} stroke={erased ? strand.universe.color : '#ffffff'} strokeWidth={erased ? 1.5 : 0.8} />
                     <circle cx={bead.x} cy={bead.y} r={14} fill="transparent" />
                   </g>
                 );
