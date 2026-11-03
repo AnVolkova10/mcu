@@ -102,7 +102,8 @@ export function MultiverseView({ group, universes, onPickDate }: MultiverseViewP
         {hovered && (
           <div
             className="pointer-events-none absolute z-10 w-72 -translate-x-1/2 rounded-xl border border-line-strong bg-surface/95 p-3 shadow-2xl backdrop-blur"
-            style={{ left: `${(hovered.bead.x / WIDTH) * 100}%`, top: '4.6rem' }}
+            // Kept inside the map, so a bead near the edge does not widen the page.
+            style={{ left: `clamp(9.5rem, ${(hovered.bead.x / WIDTH) * 100}%, calc(100% - 9.5rem))`, top: '4.6rem' }}
           >
             <p className="text-xs font-bold text-ink">{hovered.bead.group.label} · {hovered.strand.branch?.name ?? hovered.strand.universe.name}</p>
             <ul className="mt-1 space-y-0.5 text-xs text-ink-muted">
