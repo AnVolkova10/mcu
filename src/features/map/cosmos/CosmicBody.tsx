@@ -3,7 +3,7 @@ import { Billboard, Html } from '@react-three/drei';
 import { useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
 import type { Body } from './layout';
-import { planetFragment, portalFragment, portalVertex, surfaceVertex } from './shaders';
+import { coronaFragment, planetFragment, portalFragment, portalVertex, sunFragment, surfaceVertex } from './shaders';
 
 /** A drag that begins on a world moves the camera; only a still press counts as a click. */
 export const CLICK_TOLERANCE = 4;
@@ -115,7 +115,52 @@ function Station({ body, dim }: { body: Body; dim: number }) {
   );
 }
 
-const LOOKS = { planet: Planet, moon: Planet, realm: Planet, portal: Portal, nexus: Crystal, station: Station } as const;
+/** How far the corona reaches, in radii of the star. */
+const CORONA = 2.6;
+
+function Star({ body, dim }: { body: Body; dim: number }) {
+  const surface = useMemo(
+    () => ({
+      uniforms: { uColor: { value: new THREE.Color(body.node.color) }, uDim: { value: 1 }, uTime: { value: 0 } },
+      vertexShader: surfaceVertex,
+      fragmentShader: sunFragment,
+    }),
+    [body.node.color],
+  );
+  const corona = useMemo(
+    () => ({
+      uniforms: { uColor: { value: new THREE.Color(body.node.color) }, uDim: { value: 1 }, uTime: { value: 0 }, uInner: { value: 1 / CORONA } },
+      vertexShader: portalVertex,
+      fragmentShader: coronaFragment,
+      transparent: true,
+      depthWrite: false,
+      blending: THREE.AdditiveBlending,
+    }),
+    [body.node.color],
+  );
+  useFrame((_, delta) => {
+    surface.uniforms.uTime.value += delta;
+    corona.uniforms.uTime.value += delta;
+  });
+  const size = body.radius * CORONA * 2;
+  return (
+    <group>
+      <mesh>
+        <sphereGeometry args={[body.radius, 64, 64]} />
+        <shaderMaterial args={[surface]} uniforms-uDim-value={dim} />
+      </mesh>
+      <Billboard>
+        {/* Only light: clicks go through it to the worlds behind. */}
+        <mesh raycast={() => null}>
+          <planeGeometry args={[size, size]} />
+          <shaderMaterial args={[corona]} uniforms-uDim-value={dim} />
+        </mesh>
+      </Billboard>
+    </group>
+  );
+}
+
+const LOOKS = { planet: Planet, moon: Planet, realm: Planet, portal: Portal, nexus: Crystal, station: Station, star: Star } as const;
 
 /** One world: its shape, a generous hit area, the selection ring and its label. */
 export const CosmicBody = memo(function CosmicBody({ body, activity, filtering, selected, labelled, onHover, onClick }: CosmicBodyProps) {

@@ -84,7 +84,8 @@ export function CosmosView({ filters, selected, onSelect, trace, stopIndex }: Co
     [filters.universes, traceNodes],
   );
   const shown = useMemo(() => new Set<string>(worlds.map((b) => b.node.id)), [worlds]);
-  const orbits = useMemo(() => worlds.filter((b) => b.node.zone === 'orbit').map(orbitRadius), [worlds]);
+  // The Sun does not circle the Earth: no orbit line for it.
+  const orbits = useMemo(() => worlds.filter((b) => b.node.zone === 'orbit' && b.node.look !== 'star').map(orbitRadius), [worlds]);
   const zones = useMemo(() => ZONES.filter((z) => z.id === 'overview' || z.id === 'orbit' || worlds.some((b) => b.node.zone === z.id)), [worlds]);
 
   useEffect(() => {
@@ -104,7 +105,8 @@ export function CosmosView({ filters, selected, onSelect, trace, stopIndex }: Co
     const body = bodyById.get(id);
     if (!body) return;
     const [x, y, z] = body.position;
-    const direction = new THREE.Vector3(x, y * 0.6 + 2, z + 6).normalize();
+    // From outside, a star would hide the Earth, and the labels of its orbit would sit on it: look at it from the side.
+    const direction = (body.node.look === 'star' ? new THREE.Vector3(-z, 4, x) : new THREE.Vector3(x, y * 0.6 + 2, z + 6)).normalize();
     const distance = body.radius * 6 + 4;
     fly([x + direction.x * distance, y + direction.y * distance + 1, z + direction.z * distance], body.position, true);
   }, [fly]);

@@ -166,7 +166,7 @@ export interface CosmosNodeInput {
   name: string;
   zone: CosmosZone;
   /** Visual archetype for the 3D scene. */
-  look: 'planet' | 'moon' | 'station' | 'realm' | 'portal' | 'nexus';
+  look: 'planet' | 'moon' | 'station' | 'realm' | 'portal' | 'nexus' | 'star';
   color: string;
   description: string;
 }

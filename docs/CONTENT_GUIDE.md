@@ -238,7 +238,7 @@ Mundo nuevo en `cosmos.ts`. No lleva posición: la escena la calcula sola según
   'astral-plane': {
     name: 'Astral Plane',
     zone: 'dimensions',        // 'orbit' | 'realms' | 'deep-space' | 'dimensions'
-    look: 'portal',            // 'planet' | 'moon' | 'station' | 'realm' | 'portal' | 'nexus'
+    look: 'portal',            // 'planet' | 'moon' | 'station' | 'realm' | 'portal' | 'nexus' | 'star'
     color: '#a78bfa',
     description: 'Una oración que explique qué es este lugar.',
   },

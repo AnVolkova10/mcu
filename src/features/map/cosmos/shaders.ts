@@ -96,6 +96,63 @@ export const earthFragment = /* glsl */ `
   }
 `;
 
+/** A star: churning granules, darker and redder toward the edge, as real stars look. */
+export const sunFragment = /* glsl */ `
+  uniform vec3 uColor;
+  uniform float uDim;
+  uniform float uTime;
+  varying vec3 vNormal;
+  varying vec3 vPos;
+  varying vec3 vView;
+  ${noise}
+  ${rim}
+  void main() {
+    vec3 p = normalize(vPos) * 2.6;
+    vec3 drift = vec3(uTime * 0.04, uTime * 0.025, -uTime * 0.03);
+    float flow = fbm(p * 1.3 + drift);
+    float heat = fbm(p * 2.2 + flow * 1.8 - drift * 1.5);
+    float spots = smoothstep(0.58, 0.78, fbm(p * 5.0 + flow * 2.5 + drift * 2.0));
+    vec3 lane = vec3(0.3, 0.025, 0.0);
+    vec3 hot = vec3(1.0, 0.72, 0.28);
+    vec3 surface = mix(lane, uColor, smoothstep(0.3, 0.52, heat));
+    surface = mix(surface, hot, clamp(smoothstep(0.52, 0.72, heat) * 0.85 + spots * 0.35, 0.0, 1.0));
+    float limb = rimOf(vNormal, vView);
+    surface *= 1.0 - 0.5 * limb * limb;
+    surface = mix(surface, lane * 2.2, smoothstep(0.45, 1.0, limb) * 0.55);
+    gl_FragColor = vec4(surface * 1.45 * uDim, 1.0);
+  }
+`;
+
+/**
+ * Corona of a star, on a plane that always faces the camera; the star's sphere hides the middle. A few long streamers
+ * and many fine rays drift slowly, as in photos of an eclipse. The angle comes from the direction, not from atan(),
+ * which is undefined at the center. Drawn with additive blending: the light goes in the color, not in the alpha.
+ */
+export const coronaFragment = /* glsl */ `
+  uniform vec3 uColor;
+  uniform float uDim;
+  uniform float uTime;
+  uniform float uInner;
+  varying vec2 vUv;
+  ${noise}
+  void main() {
+    vec2 p = vUv * 2.0 - 1.0;
+    float r = length(p);
+    if (r > 1.0) discard;
+    vec2 dir = r > 0.0001 ? p / r : vec2(1.0, 0.0);
+    float away = clamp((r - uInner) / (1.0 - uInner), 0.0, 1.0);
+    float lobes = smoothstep(0.3, 0.8, noise(vec3(dir * 1.6, uTime * 0.05)));
+    float fine = noise(vec3(dir * 8.0, uTime * 0.12 + 3.0));
+    float filaments = noise(vec3(dir * 26.0, uTime * 0.2 + 7.0));
+    float rays = lobes * (0.35 + 0.65 * fine * fine) + filaments * filaments * filaments * fine * 0.8;
+    float glow = exp(-away * 8.0);
+    float light = glow * 0.75 + rays * exp(-away * mix(4.0, 1.3, lobes)) * 1.4 + exp(-away * 3.0) * 0.06;
+    light *= 1.0 - smoothstep(0.75, 1.0, r);
+    vec3 color = mix(uColor, vec3(1.0, 0.78, 0.42), glow * 0.7);
+    gl_FragColor = vec4(color * light * uDim, 1.0);
+  }
+`;
+
 export const portalVertex = /* glsl */ `
   varying vec2 vUv;
   void main() {
