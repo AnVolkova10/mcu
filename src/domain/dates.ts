@@ -3,12 +3,12 @@ import type { EventDateInput } from './schema';
 const formatYear = (year: number): string => {
   const abs = Math.abs(year);
   const digits = abs >= 10_000 ? abs.toLocaleString('en-US') : String(abs);
-  if (year < 0) return `${digits} BCE`;
-  if (year < 1000) return `${year} CE`;
+  if (year < 0) return `${digits} BC`;
+  if (year < 1000) return `${year} AD`;
   return String(year);
 };
 
-/** Printed date of an event: "1944", "c. 3600 BCE", "1861–1865", "1,000,000 years ago". */
+/** Printed date of an event: "1944", "c. 3600 BC", "1861–1865", "1,000,000 years ago". */
 export function formatDate(date: EventDateInput): string {
   if (date.label) return date.label;
   const range = date.end ? `${formatYear(date.year)}–${formatYear(date.end)}` : formatYear(date.year);

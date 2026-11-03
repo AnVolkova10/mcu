@@ -204,7 +204,7 @@ export interface ObjectInput {
 // ─── Events ───────────────────────────────────────────────────────────────────
 
 /**
- * In-universe date. The year (negative = BCE) is what orders the whole timeline.
+ * In-universe date. The year (negative = BC) is what orders the whole timeline.
  * - `end`: last year of a range (e.g. 1861–1865).
  * - `approx`: shows "c." before the year.
  * - `label`: replaces the printed date, only past 10,000 years ago ("1,000,000 years ago", "Eons ago").
