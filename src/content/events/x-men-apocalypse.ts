@@ -71,7 +71,7 @@ export default defineEvents('x-men-apocalypse', [
     cast: ['hank-mccoy', 'psylocke-betsy-braddock', 'archangel-warren-worthington'],
     locations: [
       'apocalypses-grand-pyramid-and-metropolitan-cairo-ruins',
-      'rebuilt-xavier-manor-and-danger-room',
+      'xaviers-school-for-gifted-youngsters',
     ],
     deaths: [
       { character: 'en-sabah-nur-apocalypse', presumed: false, note: 'Apocalypse' },

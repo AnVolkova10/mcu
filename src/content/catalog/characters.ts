@@ -56,8 +56,7 @@ export const characters = {
     role: 'hero',
     status: 'alive',
     factions: ['x-men', 'division-x', 'mutants'],
-    origin: 'Omaha, Nebraska',
-    bio: 'Mutant capable of absorbing cosmic radiation and discharging destructive, concentric plasma energy rings from his chest.',
+    bio: "Mutant who fires destructive energy rings from his chest and cannot control them, so he prefers solitary confinement until Hank McCoy builds him a unit to aim them.",
   },
   'alfred-morris-noir': {
     name: 'Alfred Morris',
@@ -76,6 +75,14 @@ export const characters = {
     factions: [],
     origin: 'Hungary',
     bio: 'Wife of Edwin Jarvis, who helps Peggy Carter in Los Angeles. Whitney Frost shoots her in 1947, and she survives but cannot have children.',
+  },
+  'angel-salvadore': {
+    name: 'Angel Salvadore',
+    color: '#d946ef',
+    role: 'villain',
+    status: 'deceased',
+    factions: ['division-x', 'hellfire-club', 'brotherhood-of-mutants', 'mutants'],
+    bio: "Dancer with insect wings. Charles Xavier and Erik Lehnsherr recruit her for Division X, but she joins Sebastian Shaw when he attacks the base, and follows Erik after Shaw dies.",
   },
   'angie-martinelli': {
     name: 'Angie Martinelli',
@@ -115,6 +122,15 @@ export const characters = {
     origin: 'Earth-10005',
     bio: 'Mutant aerial combatant originally gifted with feathered wings, bio-mechanically enhanced by Apocalypse with impenetrable metallic razor wings that fire lethal razor-sharp steel flechettes.',
   },
+  'armando-munoz': {
+    name: 'Armando Muñoz',
+    alias: 'Darwin',
+    color: '#84cc16',
+    role: 'hero',
+    status: 'deceased',
+    factions: ['division-x', 'mutants'],
+    bio: "Taxi driver whose body adapts to survive anything. He joins Division X and Sebastian Shaw kills him in the attack on the base, with an energy blast his body cannot adapt to.",
+  },
   'arnim-zola': {
     name: 'Dr. Arnim Zola',
     alias: 'Arnim Zola',
@@ -127,12 +143,11 @@ export const characters = {
   },
   azazel: {
     name: 'Azazel',
-    color: '#dc2626',
+    color: '#f97350',
     role: 'villain',
     status: 'deceased',
-    factions: ['hellfire-club', 'mutants'],
-    origin: 'Earth-10005',
-    bio: "Demonic red-skinned mutant possessing instant interdimensional teleportation via brimstone smoke portals, serving as Sebastian Shaw's chief enforcer during the Cuban Missile Crisis.",
+    factions: ['hellfire-club', 'brotherhood-of-mutants', 'mutants'],
+    bio: "Red-skinned mutant who teleports in a burst of smoke. He is Sebastian Shaw's enforcer during the Cuban Missile Crisis and leaves with Erik Lehnsherr when Shaw dies.",
   },
   basha: {
     name: 'Basha',
@@ -626,7 +641,6 @@ export const characters = {
     role: 'villain',
     status: 'alive',
     factions: ['hellfire-club', 'brotherhood-of-mutants', 'mutants'],
-    origin: 'Boston, Massachusetts',
     bio: "Formidable telepath who can transform her body into organic, bulletproof diamond at will, Shaw's chief lieutenant.",
   },
   'en-sabah-nur-apocalypse': {
@@ -1004,6 +1018,15 @@ export const characters = {
     factions: [],
     origin: 'New York City',
     bio: "Ben Reilly's secretary, who goes months without pay and stays anyway. After Silvermane falls she becomes his full partner in Reilly & Ruiz Investigations.",
+  },
+  'janos-quested': {
+    name: 'Janos Quested',
+    alias: 'Riptide',
+    color: '#2dd4bf',
+    role: 'villain',
+    status: 'alive',
+    factions: ['hellfire-club', 'brotherhood-of-mutants', 'mutants'],
+    bio: "Silent mutant who spins the air into tornadoes. He serves Sebastian Shaw in the Hellfire Club and leaves with Erik Lehnsherr when Shaw dies.",
   },
   'jason-wilkes': {
     name: 'Dr. Jason Wilkes',
@@ -1492,7 +1515,7 @@ export const characters = {
     status: 'alive',
     factions: ['cia', 'division-x'],
     origin: 'United States',
-    bio: 'Fearless CIA operative who discovered the mutant threat posed by the Hellfire Club and partnered with Charles Xavier to establish Division X.',
+    bio: "CIA agent who finds the Hellfire Club in Las Vegas and brings Charles Xavier to the agency. He erases her memory of the X-Men after the Cuban Missile Crisis.",
   },
   mojo: {
     name: 'Mojo',
@@ -1769,7 +1792,6 @@ export const characters = {
     role: 'anti-hero',
     status: 'alive',
     factions: ['brotherhood-of-mutants', 'x-men', 'division-x', 'mutants'],
-    origin: 'Westchester, New York',
     bio: 'Shapeshifting mutant with natural blue scales and yellow eyes, foster sister to Charles Xavier who chose to embrace her true mutant identity with Magneto.',
   },
   'red-skull': {
@@ -1800,6 +1822,14 @@ export const characters = {
     factions: ['daily-bugle'],
     origin: 'New York City',
     bio: 'Daily Bugle reporter and the friend who knows Ben Reilly is The Spider. He cures Lonnie Lincoln with a dose in the eye, wears the suit to save Ben, and leaves the Bugle to run the Harlem Herald.',
+  },
+  'robert-hendry': {
+    name: 'Colonel Robert Hendry',
+    color: '#a8a29e',
+    role: 'secondary',
+    status: 'deceased',
+    factions: ['us-military'],
+    bio: "U.S. Army colonel paid by the Hellfire Club. Sebastian Shaw frightens him into backing the Jupiter missiles in Turkey and kills him when he comes for his money.",
   },
   rocket: {
     name: 'Rocket Raccoon',
@@ -1916,7 +1946,7 @@ export const characters = {
     status: 'deceased',
     factions: ['hellfire-club', 'third-reich', 'mutants'],
     origin: 'Germany / United States',
-    bio: 'Ruthless leader of the Hellfire Club capable of absorbing kinetic and thermal energy to amplify his physical strength, murdered by Magneto with a Nazi coin.',
+    bio: "Mutant who absorbs energy and stays young. As Dr. Klaus Schmidt he serves the Nazis at Auschwitz; as leader of the Hellfire Club he tries to start a nuclear war, until Erik Lehnsherr kills him with a Nazi coin.",
   },
   'senator-robert-kelly': {
     name: 'Senator Robert Kelly',
@@ -2328,6 +2358,14 @@ export const characters = {
     factions: ['weapon-x', 'us-military', 'anti-mutant-coalition'],
     origin: 'United States',
     bio: 'Ruthless military intelligence colonel obsessed with harvesting mutant biology, commander of Team X and the architect of the Weapon X Adamantium procedure and Weapon XI.',
+  },
+  'william-stryker-sr': {
+    name: 'William Stryker Sr.',
+    color: '#a1a1aa',
+    role: 'secondary',
+    status: 'alive',
+    factions: ['cia', 'anti-mutant-coalition'],
+    bio: "CIA officer and father of William Stryker. He sees mutants as too dangerous for the law to protect and pushes the American and Soviet fleets to fire on them in Cuba.",
   },
   'wilson-fisk-kingpin': {
     name: 'Wilson Fisk',

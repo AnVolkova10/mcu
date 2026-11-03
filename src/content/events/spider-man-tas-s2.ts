@@ -10,7 +10,7 @@ export default defineEvents('spider-man-tas-s2', [
       "Kingpin unifies New York's greatest rogues into the **Insidious Six** (Doc Ock, Mysterio, Shocker, Chameleon, Rhino, Scorpion), who capture Spider-Man while his powers begin mysteriously fluctuating. Seeking an answer to his cellular breakdown, [Spider-Man](spider-man) travels to Westchester County to seek the genetic expertise of [Professor Charles Xavier](charles-xavier). Met with hostility by [Wolverine](logan-wolverine), Spider-Man eventually teams up with [Beast](hank-mccoy) and the X-Men. When mutant-hating scientist Dr. Herbert Landon attempts to exterminate all mutants with a mutagenic weapon, Beast and Spider-Man dismantle his facility, though Landon mutates into an enormous biological behemoth before being subdued.",
     ],
     cast: ['wilson-fisk-kingpin'],
-    locations: ['xavier-school-for-gifted-youngsters'],
+    locations: ['xaviers-school-for-gifted-youngsters'],
   },
   {
     id: 'man-spider-mutation',

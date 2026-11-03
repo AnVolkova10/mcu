@@ -19,6 +19,16 @@ export const objects = {
     kind: 'weapon',
     description: 'Round Vibranium shield that Howard Stark gives Steve Rogers in London in 1943. It goes down with him in the Valkyrie and is found in the ice in 2011.',
   },
+  cerebro: {
+    name: 'Cerebro',
+    kind: 'technology',
+    description: "Machine built by Hank McCoy that amplifies Charles Xavier's telepathy to locate mutants. The first one, at Division X, is destroyed in Sebastian Shaw's attack.",
+  },
+  'magneto-helmet': {
+    name: "Magneto's Helmet",
+    kind: 'technology',
+    description: 'Helmet made by the Soviets for Sebastian Shaw that blocks telepathy. Erik Lehnsherr takes it from him in Cuba and keeps it.',
+  },
   'quantum-scanner': {
     name: 'Quantum Scanner',
     kind: 'technology',

@@ -88,6 +88,13 @@ export const locations = {
     coords: [34.062, -118.308],
     approximate: true,
   },
+  'armivolkoff-military-retreat': {
+    name: "General Armivolkoff's Retreat",
+    place: 'Outskirts of Moscow',
+    country: 'Soviet Union',
+    kind: 'earth',
+    coords: [55.7393, 37.2714],
+  },
   'asteroid-m': {
     name: 'Asteroid M',
     place: 'Low Earth Orbit',
@@ -165,6 +172,13 @@ export const locations = {
     country: 'United States',
     kind: 'earth',
     coords: [40.7614, -73.9776],
+  },
+  'bay-of-pigs-beach': {
+    name: 'Bay of Pigs Beach',
+    place: 'Matanzas Province',
+    country: 'Cuba',
+    kind: 'earth',
+    coords: [22.064, -81.031],
   },
   'birnin-zana-citadel': {
     name: 'Birnin Zana Citadel',
@@ -313,11 +327,18 @@ export const locations = {
     coords: [42, -73.875],
   },
   'cia-division-x-secret-facility': {
-    name: 'CIA Division X Secret Facility',
+    name: 'Division X Facility',
+    place: 'Richmond, Virginia',
+    country: 'United States',
+    kind: 'earth',
+    coords: [37.62, -77.55],
+  },
+  'cia-headquarters': {
+    name: 'CIA Headquarters',
     place: 'Langley, Virginia',
     country: 'United States',
     kind: 'earth',
-    coords: [38.9468, -77.1589],
+    coords: [38.9517, -77.1467],
   },
   'clan-askani-sanctuary-citadel': {
     name: 'Clan Askani Sanctuary Citadel',
@@ -356,11 +377,11 @@ export const locations = {
     node: 'shuttle-orbit',
   },
   'cuban-missile-crisis-naval-quarantine-line': {
-    name: 'Cuban Missile Crisis Naval Quarantine Line',
-    place: 'Caribbean Sea',
-    country: 'Cuba / International Waters',
+    name: 'Embargo Line',
+    place: 'Off the coast of Cuba',
+    country: 'International Waters',
     kind: 'earth',
-    coords: [21.5218, -77.7812],
+    coords: [21.85, -81.05],
   },
   'daily-bugle-headquarters': {
     name: 'Daily Bugle Building',
@@ -588,6 +609,13 @@ export const locations = {
     country: 'United States',
     kind: 'earth',
     coords: [40.7736, -73.9632],
+  },
+  'hellfire-club-las-vegas': {
+    name: 'Hellfire Club',
+    place: 'Las Vegas, Nevada',
+    country: 'United States',
+    kind: 'earth',
+    coords: [36.1147, -115.1728],
   },
   'hillhurst-hotel': {
     name: 'Hillhurst Hotel',
@@ -926,11 +954,11 @@ export const locations = {
     coords: [41.5, -74],
   },
   'miami-coastline-and-shaw-yacht': {
-    name: 'Miami Coastline & Shaw Yacht',
-    place: 'Miami, Florida',
+    name: 'Caspartina',
+    place: 'Off the coast of Miami, Florida',
     country: 'United States',
     kind: 'earth',
-    coords: [25.7617, -80.1918],
+    coords: [25.77, -80.08],
   },
   'midtown-manhattan-construction-site': {
     name: 'Midtown Manhattan Construction Site',
@@ -987,6 +1015,13 @@ export const locations = {
     country: 'United States',
     kind: 'earth',
     coords: [40.7306, -73.9352],
+  },
+  'moscow-soviet-high-command': {
+    name: 'Soviet High Command',
+    place: 'Moscow',
+    country: 'Soviet Union',
+    kind: 'earth',
+    coords: [55.7503, 37.6015],
   },
   'mount-kilimanjaro-and-serengeti-foothills': {
     name: 'Mount Kilimanjaro & Serengeti Foothills',
@@ -1126,7 +1161,7 @@ export const locations = {
     coords: [51.752, -1.2577],
   },
   'oxford-university-faculty-of-genetics': {
-    name: 'Oxford University Faculty of Genetics',
+    name: 'Oxford University',
     place: 'Oxford',
     country: 'England',
     kind: 'earth',
@@ -1138,6 +1173,13 @@ export const locations = {
     country: 'United States',
     kind: 'earth',
     coords: [40.7506, -73.9935],
+  },
+  'pentagon-war-room': {
+    name: 'Pentagon War Room',
+    place: 'Arlington, Virginia',
+    country: 'United States',
+    kind: 'earth',
+    coords: [38.8709, -77.0553],
   },
   'phalanx-assimilation-spire-and-muir-island': {
     name: 'Phalanx Assimilation Spire & Muir Island',
@@ -1203,13 +1245,6 @@ export const locations = {
     country: 'United States',
     kind: 'earth',
     coords: [29.9511, -90.0715],
-  },
-  'rebuilt-xavier-manor-and-danger-room': {
-    name: 'Rebuilt Xavier Manor & Danger Room',
-    place: 'Westchester County, New York',
-    country: 'United States',
-    kind: 'earth',
-    coords: [41.122, -73.7949],
   },
   'red-room-academy-training-facility': {
     name: 'Red Room Academy',
@@ -1503,6 +1538,13 @@ export const locations = {
     node: 'kun-lun',
   },
   'temple-vault-of-morag': { name: 'Temple vault of Morag', country: 'Morag', kind: 'space', node: 'morag' },
+  'swiss-bank-geneva': {
+    name: 'Swiss Bank',
+    place: 'Geneva',
+    country: 'Switzerland',
+    kind: 'earth',
+    coords: [46.2029, 6.1437],
+  },
   'the-axis-of-time': {
     name: 'The Axis of Time',
     place: 'Extradimensional Nexus',
@@ -1691,7 +1733,7 @@ export const locations = {
     coords: [5.38, 35.4],
   },
   'villa-gesell-nazi-hideout': {
-    name: 'Villa Gesell Nazi Hideout',
+    name: 'Tavern in Villa Gesell',
     place: 'Buenos Aires Province',
     country: 'Argentina',
     kind: 'earth',
@@ -1761,13 +1803,6 @@ export const locations = {
     kind: 'earth',
     coords: [28, 86.852],
   },
-  'xavier-family-manor': {
-    name: 'Xavier Family Manor',
-    place: 'Westchester County, New York',
-    country: 'United States',
-    kind: 'earth',
-    coords: [41.122, -73.7949],
-  },
   'xavier-mansion-and-genosha-capital': {
     name: 'Xavier Mansion & Genosha Capital',
     place: 'Salem Center / Genosha',
@@ -1775,29 +1810,8 @@ export const locations = {
     kind: 'earth',
     coords: [-8.5, 51],
   },
-  'xavier-school-for-gifted-youngsters': {
-    name: 'Xavier School for Gifted Youngsters',
-    place: 'Salem Center, Westchester County, New York',
-    country: 'United States',
-    kind: 'earth',
-    coords: [41.122, -73.7949],
-  },
   'xaviers-school-for-gifted-youngsters': {
-    name: "Xavier's School for Gifted Youngsters",
-    place: 'Westchester County, New York',
-    country: 'United States',
-    kind: 'earth',
-    coords: [41.122, -73.7949],
-  },
-  'xaviers-school-for-gifted-youngsters-ruins': {
-    name: "Xavier's School for Gifted Youngsters Ruins",
-    place: 'Westchester County, New York',
-    country: 'United States',
-    kind: 'earth',
-    coords: [41.122, -73.7949],
-  },
-  'xaviers-school-for-gifted-youngsters-salem-center-westchester-county-new-york': {
-    name: "Xavier's School for Gifted Youngsters",
+    name: 'Xavier Mansion',
     place: 'Salem Center, Westchester County, New York',
     country: 'United States',
     kind: 'earth',

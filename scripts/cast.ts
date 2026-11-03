@@ -33,12 +33,14 @@ const CREDITED_AS: Record<string, readonly string[]> = {
   'patrick-donegal-noir': ['Donegal'],
   rakim: ['High Councilman Rakim'],
   'robbie-robertson-noir': ['Joe Robertson'],
+  'robert-hendry': ['Colonel Hendry'],
   ronan: ['Ronan'],
   'ruby-williams-noir': ['Ruby'],
   'silvermane-noir': ['Finn Byrne'],
   'vera-addison-noir': ['Vera'],
   'war-machine': ['Rhodey'],
   'william-stryker': ['Stryker', 'Bill Stryker'],
+  'william-stryker-sr': ['William Stryker'],
 };
 
 /** Credits that name the character but are not them: child versions, doubles, other people under the same title. */

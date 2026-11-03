@@ -78,7 +78,7 @@ export default defineEvents('x-men-tas-s1', [
     ],
     cast: ['logan-wolverine', 'cyclops-scott-summers', 'rogue-anna-marie', 'jean-grey', 'charles-xavier'],
     locations: [
-      'xaviers-school-for-gifted-youngsters-ruins',
+      'xaviers-school-for-gifted-youngsters',
       'midtown-manhattan-construction-site',
     ],
   },

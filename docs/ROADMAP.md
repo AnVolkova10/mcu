@@ -11,7 +11,7 @@
 
 ## Contenido
 
-Estado actual: `npm run content -- status` (30 producciones auditadas, 7 verificadas, 51 legacy de la v1).
+Estado actual: `npm run content -- status` (30 producciones auditadas, 8 verificadas, 51 legacy de la v1).
 
 **Lo que sigue.** Revisar una por una las 28 producciones auditadas en la v2 junto a quien mantiene el proyecto, con `docs/AUDIT_GUIDE.md`, y recién después seguir con lo demás. Van en el orden de la cronología de Aaron Perris (https://aaronperris.com/mcu/):
 
@@ -22,7 +22,7 @@ Estado actual: `npm run content -- status` (30 producciones auditadas, 7 verific
 - [x] *Agent Carter* T1
 - [x] *Agent Carter* T2
 - [x] *Peggy Carter's 1953 Smithsonian Interview*
-- [ ] *X-Men: First Class*
+- [x] *X-Men: First Class*
 - [ ] *X-Men Origins: Wolverine*
 - [ ] *X-Men: Days of Future Past*
 - [ ] *X-Men: Apocalypse*
@@ -46,7 +46,7 @@ Estado actual: `npm run content -- status` (30 producciones auditadas, 7 verific
 - [ ] *Spider-Man: The Animated Series* T5
 - [ ] *The Incredible Hulk* T2
 
-**Puntos compartidos del mapa.** 22 puntos exactos siguen repartidos entre 52 lugares. Se separan a medida que se audita cada producción: el validador lo exige en las verificadas y lo muestra como aviso en las demás.
+**Puntos compartidos del mapa.** 21 puntos exactos siguen repartidos entre 47 lugares. Se separan a medida que se audita cada producción: el validador lo exige en las verificadas y lo muestra como aviso en las demás.
 
 **Fechas pendientes de auditoría.** `2,000 years ago` (la Mano, *The Defenders*) sigue en texto libre hasta que se audite esa producción. Las dos `Ancient times` del catálogo de gemas (Morag y Agamotto) son recorridos sin fecha en el canon.
 

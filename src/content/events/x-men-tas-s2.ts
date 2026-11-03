@@ -11,7 +11,7 @@ export default defineEvents('x-men-tas-s2', [
     ],
     cast: ['charles-xavier', 'gambit-remy-lebeau', 'rogue-anna-marie'],
     locations: [
-      'xaviers-school-for-gifted-youngsters-salem-center-westchester-county-new-york',
+      'xaviers-school-for-gifted-youngsters',
       'mister-sinisters-subterranean-genetic-lab',
       'the-savage-land',
     ],

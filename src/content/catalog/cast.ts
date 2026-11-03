@@ -26,6 +26,9 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
   'ana-jarvis': [
     { actor: 'Lotte Verbeek', universe: 'earth-616', productions: ['agent-carter-s2'], photo: '/aLZXflxdMqBO7jejTuYnqGmA4yW.jpg' },
   ],
+  'angel-salvadore': [
+    { actor: 'Zoë Kravitz', universe: 'earth-10005', productions: ['x-men-first-class'], photo: '/n0mhAgmY6eJQmA7kaugsTZEJgHo.jpg' },
+  ],
   'angie-martinelli': [
     { actor: 'Lyndsy Fonseca', universe: 'earth-616', productions: ['agent-carter-s1'], photo: '/xPbbiLpUpmaHIVnyR3BAfG1tm5S.jpg' },
   ],
@@ -39,8 +42,14 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
     { actor: 'Ben Hardy', universe: 'earth-10005', productions: ['x-men-apocalypse'], photo: '/qCV3G1OHTJgPHX9kbWEBbS9RwVJ.jpg' },
     { actor: 'Stephen Ouimette', universe: 'earth-92131', productions: ['x-men-tas-s1'], voice: true, photo: '/kk7rbjYnNNgLN1f853vRepd3GcA.jpg' },
   ],
+  'armando-munoz': [
+    { actor: 'Edi Gathegi', universe: 'earth-10005', productions: ['x-men-first-class'], photo: '/dt8yMyycDlzxkjhmuuJJ4tXDbp4.jpg' },
+  ],
   'arnim-zola': [
     { actor: 'Toby Jones', universe: 'earth-616', productions: ['captain-america-the-first-avenger', 'agent-carter-s1'], photo: '/1qNisdp4f1KstdfvAgYXMdrhwfk.jpg' },
+  ],
+  'azazel': [
+    { actor: 'Jason Flemyng', universe: 'earth-10005', productions: ['x-men-first-class'], photo: '/nYl0180ACnLzVlGbaAfuPtdGr9K.jpg' },
   ],
   'basha': [
     { actor: 'Jacques Colimon', universe: 'earth-616', productions: ['eyes-of-wakanda-s1'], voice: true, photo: '/uZchGUV6IcM7HI0sYmTbJMqbLnx.jpg' },
@@ -305,6 +314,9 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
   'janet-ruiz-noir': [
     { actor: 'Karen Rodriguez', universe: 'earth-62533', productions: ['spider-noir-s1'], photo: '/3CxunqumXE9ZYofJ0rhF7nSSMqX.jpg' },
   ],
+  'janos-quested': [
+    { actor: 'Álex González', universe: 'earth-10005', productions: ['x-men-first-class'], photo: '/wSshBfOlhrRbHG7SRJp8nDeOtnD.jpg' },
+  ],
   'jason-wilkes': [
     { actor: 'Reggie Austin', universe: 'earth-616', productions: ['agent-carter-s2'], photo: '/xTPTJVFA0z3NCR5PDzE9yPhBFGL.jpg' },
   ],
@@ -555,6 +567,9 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
   'robbie-robertson-noir': [
     { actor: 'Lamorne Morris', universe: 'earth-62533', productions: ['spider-noir-s1'], photo: '/9qPDnMsF7JbYSSn1K9yryFBmmXl.jpg' },
   ],
+  'robert-hendry': [
+    { actor: 'Glenn Morshower', universe: 'earth-10005', productions: ['x-men-first-class'], photo: '/SjgNUSLoBAVossDI4QkNtDxYDZ.jpg' },
+  ],
   'rocket': [
     { actor: 'Bradley Cooper', universe: 'earth-616', productions: ['guardians-of-the-galaxy', 'guardians-of-the-galaxy-vol-2', 'avengers-infinity-war'], voice: true, photo: '/5Dhy50qOMOHfR1NZifKIfffjV9X.jpg' },
   ],
@@ -721,6 +736,9 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
   'william-stryker': [
     { actor: 'Josh Helman', universe: 'earth-10005', productions: ['x-men-days-of-future-past', 'x-men-apocalypse'], photo: '/1thwLjrgvFv7ifjyVtTKQh23OCh.jpg' },
     { actor: 'Danny Huston', universe: 'earth-10005', productions: ['x-men-origins-wolverine'], photo: '/mNz9t7MNANopavbLgcsZMMQBJ0u.jpg' },
+  ],
+  'william-stryker-sr': [
+    { actor: 'Don Creech', universe: 'earth-10005', productions: ['x-men-first-class'], photo: '/tNUnAKPneKllW5cdYVoesrhi0qf.jpg' },
   ],
   'wilson-fisk-kingpin': [
     { actor: 'Roscoe Lee Browne', universe: 'earth-92131', productions: ['spider-man-tas-s2', 'spider-man-tas-s3', 'spider-man-tas-s4', 'spider-man-tas-s5'], voice: true, photo: '/zNOJbPMeQd5thNTA1dvb1ZT61mI.jpg' },

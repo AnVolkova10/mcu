@@ -23,6 +23,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'ana-jarvis': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/f/ff/Agent_Carter_Season_2_Promo_10.jpg/revision/latest/window-crop/width/300/x-offset/720/y-offset/30/window-width/765/window-height/765?cb=20160106184612',
   },
+  'angel-salvadore': {
+    'earth-10005': 'https://static.wikia.nocookie.net/xmenmovies/images/3/35/Tempest_XMFC_Textless.jpg/revision/latest/scale-to-width-down/231?cb=20240115010426',
+  },
   'angie-martinelli': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/0/06/Angie_Martinelli.jpg/revision/latest/window-crop/width/300/x-offset/1013/y-offset/0/window-width/765/window-height/765?cb=20150111051908',
   },
@@ -35,6 +38,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'archangel-warren-worthington': {
     'earth-10005': 'https://static.wikia.nocookie.net/xmenmovies/images/f/fb/Archangel-Xmen-Apocalypse.png/revision/latest/scale-to-width-down/199?cb=20240905140900',
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/a/ab/Archangel.jpg/revision/latest/scale-to-width-down/300?cb=20100815215513',
+  },
+  'armando-munoz': {
+    'earth-10005': 'https://static.wikia.nocookie.net/xmenmovies/images/d/d2/Darwin.jpg/revision/latest/scale-to-width-down/248?cb=20110611091742',
   },
   'arnim-zola': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/6/67/Arnim_Zola.png/revision/latest/scale-to-width-down/300?cb=20141127015752',
@@ -316,6 +322,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'janet-ruiz-noir': {
     'earth-62533': 'https://static.wikia.nocookie.net/spidermannoir/images/1/11/Janet_Infobox.jpg/revision/latest/scale-to-width-down/258?cb=20260210165725',
   },
+  'janos-quested': {
+    'earth-10005': 'https://static.wikia.nocookie.net/xmenmovies/images/f/ff/Riptide_XMFC_Textless.jpg/revision/latest/scale-to-width-down/231?cb=20240115013821',
+  },
   'jason-wilkes': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/8/8c/Jason_Wilkes.jpg/revision/latest/scale-to-width-down/225?cb=20160225173447',
   },
@@ -569,6 +578,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'robbie-robertson-noir': {
     'earth-62533': 'https://static.wikia.nocookie.net/spidermannoir/images/9/99/Robbie_Robertson_Infobox.jpg/revision/latest/scale-to-width-down/252?cb=20260210165557',
   },
+  'robert-hendry': {
+    'earth-10005': 'https://static.wikia.nocookie.net/xmenmovies/images/1/1b/Xmen-first-class-movie-2207.jpg/revision/latest/scale-to-width-down/251?cb=20140617192537',
+  },
   'rocket': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/3/30/Rocket_Vol._3.jpg/revision/latest/scale-to-width-down/247?cb=20231114031203',
   },
@@ -736,6 +748,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   },
   'william-stryker': {
     'earth-10005': 'https://static.wikia.nocookie.net/xmenmovies/images/7/78/William_Stryker_%28Origins_-_Promotional%29.png/revision/latest/scale-to-width-down/300?cb=20170313151440',
+  },
+  'william-stryker-sr': {
+    'earth-10005': 'https://static.wikia.nocookie.net/xmenmovies/images/2/2a/William_Stryker_Snr.png/revision/latest/scale-to-width-down/300?cb=20120121231642',
   },
   'wilson-fisk-kingpin': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/b/bd/Kingpin.jpg/revision/latest/scale-to-width-down/300?cb=20120206024828',
