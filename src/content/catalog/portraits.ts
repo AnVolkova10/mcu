@@ -148,7 +148,7 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/2/29/Lizard.jpg/revision/latest/scale-to-width-down/300?cb=20160614070002',
   },
   'cyclops-scott-summers': {
-    'earth-10005': 'https://static.wikia.nocookie.net/xmenmovies/images/1/11/Scott_Summers_%28XMOW_-_Infobox%29.png/revision/latest/scale-to-width-down/195?cb=20170312163718',
+    'earth-10005': 'https://static.wikia.nocookie.net/xmenmovies/images/1/1d/Cyclops_XMA_Poster.jpg/revision/latest/scale-to-width-down/229?cb=20240803100854',
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/4/44/Cyclops.jpg/revision/latest/scale-to-width-down/276?cb=20160425004844',
   },
   'd-ken-neramani': {
@@ -329,7 +329,7 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/8/8c/Jason_Wilkes.jpg/revision/latest/scale-to-width-down/225?cb=20160225173447',
   },
   'jean-grey': {
-    'earth-10005': 'https://static.wikia.nocookie.net/xmenmovies/images/f/f0/Phoenix_18.jpg/revision/latest/scale-to-width-down/224?cb=20110703223117',
+    'earth-10005': 'https://static.wikia.nocookie.net/xmenmovies/images/e/e8/JeanGreyFP.jpg/revision/latest/scale-to-width-down/223?cb=20160422202431',
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/2/2b/Jean_Grey.jpg/revision/latest/scale-to-width-down/300?cb=20170610201805',
   },
   'jennifer-walters-she-hulk': {
@@ -652,7 +652,7 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/8/87/Captain_America.jpg/revision/latest/scale-to-width-down/291?cb=20110724032205',
   },
   'storm-ororo-munroe': {
-    'earth-10005': 'https://static.wikia.nocookie.net/xmenmovies/images/8/8b/XMDOFP_Storm_Character_Poster.jpg/revision/latest/window-crop/width/300/x-offset/221/y-offset/162/window-width/295/window-height/295?cb=20190529090906',
+    'earth-10005': 'https://static.wikia.nocookie.net/xmenmovies/images/7/74/Storm_XMOW.png/revision/latest/window-crop/width/300/x-offset/122/y-offset/14/window-width/212/window-height/212?cb=20240905162554',
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/2/24/Storm.jpg/revision/latest/scale-to-width-down/300?cb=20150914022504',
   },
   'sue-storm': {
@@ -749,7 +749,7 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/f/f1/Robert_Frank_%28Earth-92131%29.jpg/revision/latest/scale-to-width-down/215?cb=20151017025243',
   },
   'william-stryker': {
-    'earth-10005': 'https://static.wikia.nocookie.net/xmenmovies/images/7/78/William_Stryker_%28Origins_-_Promotional%29.png/revision/latest/scale-to-width-down/300?cb=20170313151440',
+    'earth-10005': 'https://static.wikia.nocookie.net/xmenmovies/images/1/1a/Major_William_Stryker_%28Days_of_Future_Past%29.jpg/revision/latest/window-crop/width/300/x-offset/246/y-offset/144/window-width/224/window-height/224?cb=20160613120714',
   },
   'william-stryker-sr': {
     'earth-10005': 'https://static.wikia.nocookie.net/xmenmovies/images/2/2a/William_Stryker_Snr.png/revision/latest/scale-to-width-down/300?cb=20120121231642',

@@ -25,7 +25,10 @@ const HOME: Record<string, string> = {
   azazel: 'earth-10005',
 };
 
-/** The page of a character whose name does not find it, or finds whoever holds that title now, per universe. */
+/**
+ * The page of a character whose name does not find it, or finds whoever holds that title now, per universe.
+ * When several actors play a character in one universe, the image is of the latest one: on the Fox wiki, the "/Revised Timeline" pages.
+ */
 const PAGES: Record<string, Record<string, string>> = {
   achilles: { 'earth-616': 'Achilles' },
   akeya: { 'earth-616': 'Akeya' },
@@ -33,13 +36,14 @@ const PAGES: Record<string, Record<string, string>> = {
   'black-panther': { 'earth-616': "T'Challa" },
   'black-tom-cassidy': { 'earth-92131': 'Black Tom Cassidy' },
   'black-widow': { 'earth-616': 'Natasha Romanoff' },
+  'cyclops-scott-summers': { 'earth-10005': 'Cyclops/Revised Timeline' },
   'd-ken-neramani': { 'earth-92131': "D'Ken" },
   ebo: { 'earth-616': 'Ebo' },
   'erik-killmonger': { 'earth-616': 'Erik Killmonger' },
   'graydon-creed': { 'earth-92131': 'Graydon Creed, Jr.' },
   helen: { 'earth-616': 'Helen of Troy' },
   hulk: { 'earth-92131': 'Hulk' },
-  'jean-grey': { 'earth-92131': 'Jean Grey' },
+  'jean-grey': { 'earth-10005': 'Jean Grey/Revised Timeline', 'earth-92131': 'Jean Grey' },
   jorani: { 'earth-616': 'Jorani' },
   'kraven-the-hunter': { 'earth-92131': 'Kraven the Hunter' },
   'last-black-panther': { 'earth-616': 'Black Panther (Future)' },
@@ -84,10 +88,10 @@ const FILES: Record<string, Record<string, FilePick>> = {
   'roger-dooley': { 'earth-616': ['Roger Dooley.jpg', 0.2, 0, 0.45] },
   shuri: { 'earth-616': "BP-Shuri (In Contact With T'Challa).jpg" },
   skye: { 'earth-616': ['Quake.jpg', 0.3, 0.05, 0.4] },
-  'storm-ororo-munroe': { 'earth-10005': poster('Storm') },
+  'storm-ororo-munroe': { 'earth-10005': ['Storm XMOW.png', 0.26, 0.02, 0.45] },
   'sunspot-roberto-da-costa': { 'earth-10005': ['XMDOFP Sunspot Character Poster.jpg', 0.3, 0.27, 0.4] },
   'warpath-james-proudstar': { 'earth-10005': poster('Warpath') },
-  'william-stryker': { 'earth-10005': 'William Stryker (Origins - Promotional).png' },
+  'william-stryker': { 'earth-10005': ['Major William Stryker (Days of Future Past).jpg', 0.33, 0.15, 0.3] },
   'young-nathan-summers': { 'earth-92131': "Nathan Summers (Earth-92131) from X-Men '97 Season 1 5 001.webp" },
 };
 
