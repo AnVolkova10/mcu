@@ -6,11 +6,12 @@ const PAUSE_MS = 1500;
 
 export const MARVEL_DATABASE = 'https://marvel.fandom.com';
 
-/** The wiki that documents each universe. Noir has none for the series. */
+/** The wiki that documents each universe. */
 export const WIKIS: Record<string, string> = {
   'earth-616': 'https://marvelcinematicuniverse.fandom.com',
   'earth-10005': 'https://xmenmovies.fandom.com',
   'earth-92131': 'https://marvelanimated.fandom.com',
+  'earth-62533': 'https://spidernoir.fandom.com',
 };
 
 export const pause = () => new Promise((resolve) => setTimeout(resolve, PAUSE_MS));

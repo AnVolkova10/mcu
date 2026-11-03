@@ -14,8 +14,14 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
   'akeya': [
     { actor: 'Patricia Belcher', universe: 'earth-616', productions: ['eyes-of-wakanda-s1'], voice: true, photo: '/q7n5henTgVmioJSQOXMyC4fN0rV.jpg' },
   ],
+  'alethea-faber-noir': [
+    { actor: 'Amy Aquino', universe: 'earth-62533', productions: ['spider-noir-s1'], photo: '/59E061EJyEl2CLcBd12p9Vi7q0B.jpg' },
+  ],
   'alex-summers': [
     { actor: 'Lucas Till', universe: 'earth-10005', productions: ['x-men-first-class', 'x-men-apocalypse'], photo: '/5m8xgsOgT3FgCBo2AsMn7dewe57.jpg' },
+  ],
+  'alfred-morris-noir': [
+    { actor: 'Michael Kostroff', universe: 'earth-62533', productions: ['spider-noir-s1'], photo: '/w5kfGOzgGfVGTGB2CB0X8eIplES.jpg' },
   ],
   'annihilus': [
     { actor: 'Clyde Kusatsu', universe: 'earth-92131', productions: ['fantastic-four-tas-s1'], voice: true, photo: '/5dTSe1F9cnReZGHYzbCbVy7vbcf.jpg' },
@@ -41,7 +47,7 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
     { actor: 'Patrick Pinney', universe: 'earth-92131', productions: ['spider-man-tas-s5'], voice: true, photo: '/RHR9Tp3pZR1R58TCJzmcKtihGC.jpg' },
   ],
   'ben-reilly-noir': [
-    { actor: 'Nicolas Cage', universe: 'earth-90214', productions: ['spider-noir-s1'], photo: '/y1RtezurZYveYkVNRht7CwEgSYY.jpg' },
+    { actor: 'Nicolas Cage', universe: 'earth-62533', productions: ['spider-noir-s1'], photo: '/y1RtezurZYveYkVNRht7CwEgSYY.jpg' },
   ],
   'bishop-lucas-bishop': [
     { actor: 'Omar Sy', universe: 'earth-10005', productions: ['x-men-days-of-future-past'], photo: '/Uuy6WuizieB4fOIGFp0gY90Yq2.jpg' },
@@ -80,7 +86,7 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
     { actor: 'Brie Larson', universe: 'earth-616', productions: ['captain-marvel'], photo: '/xSGvMwNNJcEQvVcjiIUTyxyMfkZ.jpg' },
   ],
   'cat-hardy-noir': [
-    { actor: 'Li Jun Li', universe: 'earth-90214', productions: ['spider-noir-s1'], photo: '/9glGNxymt1vHxyMPesTreJTpD7n.jpg' },
+    { actor: 'Li Jun Li', universe: 'earth-62533', productions: ['spider-noir-s1'], photo: '/9glGNxymt1vHxyMPesTreJTpD7n.jpg' },
   ],
   'century': [
     { actor: 'James Warwick', universe: 'earth-92131', productions: ['iron-man-tas-s1'], voice: true, photo: '/2Dnl52M7SN80CSSkLTbCv6QDV2J.jpg' },
@@ -195,6 +201,9 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
     { actor: 'Marc Strange', universe: 'earth-92131', productions: ['x-men-tas-s5', 'x-men-tas-s1'], voice: true, photo: '/vNAbFOm8f1eQs3235fBnP6BJN2i.jpg' },
     { actor: 'Gil Birmingham', universe: 'earth-92131', productions: ['x-men-97-s1'], voice: true, photo: '/bWYOwtq0zUgpbEhTyiJHo2TmVju.jpg' },
   ],
+  'frankie-noir': [
+    { actor: 'Cary Christopher', universe: 'earth-62533', productions: ['spider-noir-s1'], photo: '/3ATVXSp6iPM9SaKUvQhI9tfGA5M.jpg' },
+  ],
   'fred-dukes': [
     { actor: 'Kevin Durand', universe: 'earth-10005', productions: ['x-men-origins-wolverine'], photo: '/hINvryvce5tpod6kTnUg9ZTH8wg.jpg' },
   ],
@@ -254,6 +263,9 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
     { actor: 'John Slattery', universe: 'earth-616', productions: ['iron-man-2', 'captain-america-civil-war'], photo: '/tm7g84OWD5gQRoyfG4hduBphP1j.jpg' },
     { actor: 'Gerard Sanders', universe: 'earth-616', productions: ['iron-man'], photo: '/njDdG1Jji5CkrPSsSrNZuNmtEn0.jpg' },
   ],
+  'howard-walters-noir': [
+    { actor: 'Richard Robichaux', universe: 'earth-62533', productions: ['spider-noir-s1'], photo: '/njqjUdziijDcTZtkm0Gtfybfs35.jpg' },
+  ],
   'hulk': [
     { actor: 'Mark Ruffalo', universe: 'earth-616', productions: ['the-avengers', 'iron-man-3', 'avengers-age-of-ultron', 'team-thor', 'thor-ragnarok', 'avengers-infinity-war', 'captain-marvel'], photo: '/5GilHMOt5PAQh6rlUKZzGmaKEI7.jpg' },
     { actor: 'Edward Norton', universe: 'earth-616', productions: ['the-incredible-hulk'], photo: '/8nytsqL59SFJTVYVrN72k6qkGgJ.jpg' },
@@ -276,7 +288,7 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
     { actor: 'JJ Feild', universe: 'earth-616', productions: ['captain-america-the-first-avenger'], photo: '/ixelMubtR3MlwmkAkeVsie5dLoT.jpg' },
   ],
   'janet-ruiz-noir': [
-    { actor: 'Karen Rodriguez', universe: 'earth-90214', productions: ['spider-noir-s1'], photo: '/3CxunqumXE9ZYofJ0rhF7nSSMqX.jpg' },
+    { actor: 'Karen Rodriguez', universe: 'earth-62533', productions: ['spider-noir-s1'], photo: '/3CxunqumXE9ZYofJ0rhF7nSSMqX.jpg' },
   ],
   'jason-wilkes': [
     { actor: 'Reggie Austin', universe: 'earth-616', productions: ['agent-carter-s2'], photo: '/xTPTJVFA0z3NCR5PDzE9yPhBFGL.jpg' },
@@ -295,6 +307,9 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
   ],
   'jim-morita': [
     { actor: 'Kenneth Choi', universe: 'earth-616', productions: ['captain-america-the-first-avenger'], photo: '/A2rAUU5PDj1AdMSWQ65SuVoTGS3.jpg' },
+  ],
+  'jimmy-addison-noir': [
+    { actor: 'Jack Mikesell', universe: 'earth-62533', productions: ['spider-noir-s1'], photo: '/9zXmUnMjHIUpJl6Ve1r7ZFNB9F2.jpg' },
   ],
   'johann-fennhoff': [
     { actor: 'Ralph Brown', universe: 'earth-616', productions: ['agent-carter-s1'], photo: '/20VVWsUZHmTmN80xgHyy6LAFDuC.jpg' },
@@ -395,7 +410,7 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
     { actor: 'Iona Morris', universe: 'earth-92131', productions: ['fantastic-four-tas-s2'], voice: true, photo: '/4Ij1bKHykl7w61Vqnygz17djyPp.jpg' },
   ],
   'megawatt-noir': [
-    { actor: 'Andrew Lewis Caldwell', universe: 'earth-90214', productions: ['spider-noir-s1'], photo: '/re79YZi81oxsk1D2yfaa35kfU1T.jpg' },
+    { actor: 'Andrew Lewis Caldwell', universe: 'earth-62533', productions: ['spider-noir-s1'], photo: '/re79YZi81oxsk1D2yfaa35kfU1T.jpg' },
   ],
   'memnon': [
     { actor: 'Larry Herron', universe: 'earth-616', productions: ['eyes-of-wakanda-s1'], voice: true, photo: '/mihVPLvkS7AQynQM81i4hPXiysJ.jpg' },
@@ -462,6 +477,10 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
   'odysseus': [
     { actor: 'Kiff VandenHeuvel', universe: 'earth-616', productions: ['eyes-of-wakanda-s1'], voice: true, photo: '/5vf1cIWjqH3xgbHWPhyIIEKDgdN.jpg' },
   ],
+  'ogden-faber-noir': [
+    { actor: 'Andrew Robinson', universe: 'earth-62533', productions: ['spider-noir-s1'], photo: '/zHlqGUhVgvs4Cx16YALEqX799Oq.jpg' },
+    { actor: 'Kai Caster', universe: 'earth-62533', productions: ['spider-noir-s1'], photo: '/nxsuGKOCMt76OetH6J0txStYGjY.jpg' },
+  ],
   'okoye': [
     { actor: 'Danai Gurira', universe: 'earth-616', productions: ['black-panther', 'avengers-infinity-war'], photo: '/z7H7QeQvr24vskGlANQhG43vozQ.jpg' },
   ],
@@ -470,6 +489,9 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
   ],
   'paris': [
     { actor: 'Yerman Gur', universe: 'earth-616', productions: ['eyes-of-wakanda-s1'], voice: true, photo: '/bw6RWOCTVnkXVTBd09qyrn9Akrz.jpg' },
+  ],
+  'patrick-donegal-noir': [
+    { actor: 'Cameron Britton', universe: 'earth-62533', productions: ['spider-noir-s1'], photo: '/9HFxi8ZnBiby3AQ7tBOPDxXFkCT.jpg' },
   ],
   'peggy-carter': [
     { actor: 'Hayley Atwell', universe: 'earth-616', productions: ['agent-carter-s2', 'captain-america-the-first-avenger', 'agents-of-shield-s2', 'agent-carter-s1', 'one-shot-agent-carter', 'captain-america-the-winter-soldier'], photo: '/x57wXHexIjD2ywly9cRA4rov7cu.jpg' },
@@ -510,7 +532,7 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
     { actor: 'Cam Clarke', universe: 'earth-92131', productions: ['spider-man-tas-s5'], voice: true, photo: '/hScRMNVHAFge06mOfFEauKcthtO.jpg' },
   ],
   'robbie-robertson-noir': [
-    { actor: 'Lamorne Morris', universe: 'earth-90214', productions: ['spider-noir-s1'], photo: '/9qPDnMsF7JbYSSn1K9yryFBmmXl.jpg' },
+    { actor: 'Lamorne Morris', universe: 'earth-62533', productions: ['spider-noir-s1'], photo: '/9qPDnMsF7JbYSSn1K9yryFBmmXl.jpg' },
   ],
   'rocket': [
     { actor: 'Bradley Cooper', universe: 'earth-616', productions: ['guardians-of-the-galaxy', 'guardians-of-the-galaxy-vol-2', 'avengers-infinity-war'], voice: true, photo: '/5Dhy50qOMOHfR1NZifKIfffjV9X.jpg' },
@@ -522,10 +544,10 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
     { actor: 'Lee Pace', universe: 'earth-616', productions: ['captain-marvel'], photo: '/eeTc0d2AX1vFYVxZ6Qw7qZpg4Tz.jpg' },
   ],
   'ruby-williams-noir': [
-    { actor: 'Amanda Schull', universe: 'earth-90214', productions: ['spider-noir-s1'], photo: '/1u0zGqSDaWOQVYmnpUCmEZ50oJP.jpg' },
+    { actor: 'Amanda Schull', universe: 'earth-62533', productions: ['spider-noir-s1'], photo: '/1u0zGqSDaWOQVYmnpUCmEZ50oJP.jpg' },
   ],
   'sandman-noir': [
-    { actor: 'Jack Huston', universe: 'earth-90214', productions: ['spider-noir-s1'], photo: '/qWGoZaUbeuaOLbDvyP5txYr9Hct.jpg' },
+    { actor: 'Jack Huston', universe: 'earth-62533', productions: ['spider-noir-s1'], photo: '/qWGoZaUbeuaOLbDvyP5txYr9Hct.jpg' },
   ],
   'scarlet-witch': [
     { actor: 'Elizabeth Olsen', universe: 'earth-616', productions: ['captain-america-the-winter-soldier', 'avengers-age-of-ultron', 'captain-america-civil-war', 'avengers-infinity-war'], photo: '/vXz0E5lQKZS1RnlmcHSGbdR0CzG.jpg' },
@@ -558,7 +580,7 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
     { actor: 'Edward Albert', universe: 'earth-92131', productions: ['fantastic-four-tas-s2'], voice: true, photo: '/a48LqHHjoqO4ObEeMhFBq7gsEL8.jpg' },
   ],
   'silvermane-noir': [
-    { actor: 'Brendan Gleeson', universe: 'earth-90214', productions: ['spider-noir-s1'], photo: '/ctPPJu5ZYDZr1IPmzoNpezczrm0.jpg' },
+    { actor: 'Brendan Gleeson', universe: 'earth-62533', productions: ['spider-noir-s1'], photo: '/ctPPJu5ZYDZr1IPmzoNpezczrm0.jpg' },
   ],
   'skye': [
     { actor: 'Chloe Bennet', universe: 'earth-616', productions: ['agents-of-shield-s7', 'agents-of-shield-s1', 'agents-of-shield-s2', 'agents-of-shield-s3', 'agents-of-shield-slingshot', 'agents-of-shield-s4', 'agents-of-shield-s5', 'agents-of-shield-s6'], photo: '/xVBralOFNCG3sXTcrd4d0wgaB42.jpg' },
@@ -614,7 +636,7 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
     { actor: 'Chris Hemsworth', universe: 'earth-616', productions: ['thor', 'the-avengers', 'thor-the-dark-world', 'avengers-age-of-ultron', 'team-thor', 'doctor-strange', 'thor-ragnarok', 'avengers-infinity-war'], photo: '/piQGdoIQOF3C1EI5cbYZLAW1gfj.jpg' },
   ],
   'tombstone-noir': [
-    { actor: 'Abraham Popoola', universe: 'earth-90214', productions: ['spider-noir-s1'], photo: '/r5mojn6TjWgHefdMCJNiohvY82f.jpg' },
+    { actor: 'Abraham Popoola', universe: 'earth-62533', productions: ['spider-noir-s1'], photo: '/r5mojn6TjWgHefdMCJNiohvY82f.jpg' },
   ],
   'tony-stark': [
     { actor: 'Robert Downey Jr.', universe: 'earth-616', productions: ['iron-man-3', 'iron-man', 'iron-man-2', 'one-shot-the-consultant', 'the-avengers', 'spider-man-homecoming', 'avengers-age-of-ultron', 'captain-america-civil-war', 'avengers-infinity-war'], photo: '/5qHNjhtjMD4YWH3UP0rm4tKwxCL.jpg' },
@@ -628,6 +650,9 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
   ],
   'valkyrie': [
     { actor: 'Tessa Thompson', universe: 'earth-616', productions: ['thor-ragnarok'], photo: '/19ze60jXlb2j7dXc2UpA3MujXA8.jpg' },
+  ],
+  'vera-addison-noir': [
+    { actor: 'Whitney Rice', universe: 'earth-62533', productions: ['spider-noir-s1'], photo: '/aY9U97KsqK518QKEp08R6cMIPd6.jpg' },
   ],
   'victor-creed': [
     { actor: 'Liev Schreiber', universe: 'earth-10005', productions: ['x-men-origins-wolverine'], photo: '/26G7QjSb5ZazgWb9XB2X6SwcILQ.jpg' },
@@ -672,6 +697,9 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
   ],
   'wilson-fisk-kingpin': [
     { actor: 'Roscoe Lee Browne', universe: 'earth-92131', productions: ['spider-man-tas-s2', 'spider-man-tas-s3', 'spider-man-tas-s4', 'spider-man-tas-s5'], voice: true, photo: '/zNOJbPMeQd5thNTA1dvb1ZT61mI.jpg' },
+  ],
+  'winston-noir': [
+    { actor: 'Lukas Haas', universe: 'earth-62533', productions: ['spider-noir-s1'], photo: '/vabZQXlAhyW2GxQfDM1PhKURA8.jpg' },
   ],
   'yon-rogg': [
     { actor: 'Jude Law', universe: 'earth-616', productions: ['captain-marvel'], photo: '/6UadpSbfC39WMChAcdnNunzwDxv.jpg' },

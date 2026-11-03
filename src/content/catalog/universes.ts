@@ -23,12 +23,12 @@ export const universes = {
     color: '#e879f9',
     description: "The shared reality of the 1990s Marvel animated series and its continuation, X-Men '97.",
   },
-  'earth-90214': {
-    name: 'Earth-90214',
+  'earth-62533': {
+    name: 'Earth-62533',
     label: 'Noir',
-    short: '90214',
+    short: '62533',
     color: '#c7c7cf',
-    description: 'A darker, Depression-era reality where Spider-Noir prowls 1930s New York.',
+    description: 'A darker, Depression-era reality where The Spider prowls 1930s New York.',
   },
 } as const satisfies Record<string, UniverseInput>;
 

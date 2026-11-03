@@ -17,6 +17,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'alex-summers': {
     'earth-10005': 'https://static.wikia.nocookie.net/xmenmovies/images/5/59/Havok_XMFC_Textless.jpg/revision/latest/scale-to-width-down/231?cb=20240115033232',
   },
+  'alfred-morris-noir': {
+    'earth-62533': 'https://static.wikia.nocookie.net/spidermannoir/images/2/25/Alfred_Morris.png/revision/latest/scale-to-width-down/300?cb=20260712044841',
+  },
   'annihilus': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/5/5f/Annihilus.jpg/revision/latest/scale-to-width-down/300?cb=20130915000700',
   },
@@ -41,6 +44,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   },
   'ben-grimm': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/d/d1/Thing_Season_One.jpg/revision/latest/scale-to-width-down/300?cb=20161231032859',
+  },
+  'ben-reilly-noir': {
+    'earth-62533': 'https://static.wikia.nocookie.net/spidermannoir/images/9/9f/The_Spider_Infobox.jpg/revision/latest/scale-to-width-down/204?cb=20260308201758',
   },
   'bishop-lucas-bishop': {
     'earth-10005': 'https://static.wikia.nocookie.net/xmenmovies/images/b/bf/XMDOFP_Bishop_Character_Poster.jpg/revision/latest/window-crop/width/300/x-offset/221/y-offset/162/window-width/295/window-height/295?cb=20190529094137',
@@ -84,6 +90,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'carol-danvers': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/3/3d/Captain_Marvel_Profile.png/revision/latest/scale-to-width-down/252?cb=20240120054800',
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/c/c0/Ms_Marvel.jpg/revision/latest/scale-to-width-down/300?cb=20140223075904',
+  },
+  'cat-hardy-noir': {
+    'earth-62533': 'https://static.wikia.nocookie.net/spidermannoir/images/7/74/Cat_Hardy_Infobox.jpg/revision/latest/scale-to-width-down/214?cb=20260210171530',
   },
   'century': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/6/64/Century.jpg/revision/latest/scale-to-width-down/300?cb=20170121044755',
@@ -201,6 +210,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'forge': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/d/d7/Forge.jpg/revision/latest/scale-to-width-down/300?cb=20100822153656',
   },
+  'frankie-noir': {
+    'earth-62533': 'https://static.wikia.nocookie.net/spidermannoir/images/d/d0/Frankie.png/revision/latest/scale-to-width-down/218?cb=20260530183437',
+  },
   'fred-dukes': {
     'earth-10005': 'https://static.wikia.nocookie.net/xmenmovies/images/8/80/469px-Frederick_Dukes_%28Earth-10005%29-1-.jpg/revision/latest/scale-to-width-down/235?cb=20110612090835',
   },
@@ -261,6 +273,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'howard-stark': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/f/f6/Howard_Stark_Infobox.png/revision/latest/scale-to-width-down/209?cb=20191004205535',
   },
+  'howard-walters-noir': {
+    'earth-62533': 'https://static.wikia.nocookie.net/spidermannoir/images/4/42/Howard_Walters.png/revision/latest/scale-to-width-down/243?cb=20260529171410',
+  },
   'hulk': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/29/Hulk_Infobox.jpg/revision/latest/scale-to-width-down/216?cb=20260925124237',
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/6/6f/Hulk.jpg/revision/latest/scale-to-width-down/300?cb=20140901012924',
@@ -283,6 +298,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'james-montgomery-falsworth': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/4/4c/Falsworth.jpeg/revision/latest/scale-to-width-down/250?cb=20250121003142',
   },
+  'janet-ruiz-noir': {
+    'earth-62533': 'https://static.wikia.nocookie.net/spidermannoir/images/1/11/Janet_Infobox.jpg/revision/latest/scale-to-width-down/258?cb=20260210165725',
+  },
   'jason-wilkes': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/8/8c/Jason_Wilkes.jpg/revision/latest/scale-to-width-down/225?cb=20160225173447',
   },
@@ -298,6 +316,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   },
   'jim-morita': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/a/a9/Morita_AoS.png/revision/latest/scale-to-width-down/185?cb=20200604163611',
+  },
+  'jimmy-addison-noir': {
+    'earth-62533': 'https://static.wikia.nocookie.net/spidermannoir/images/1/13/Molten_Man_Infobox.png/revision/latest/scale-to-width-down/270?cb=20260213094344',
   },
   'johann-fennhoff': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/23/Fennhoff-Controls-Dooley-Snafu.jpg/revision/latest/scale-to-width-down/300?cb=20160109183724',
@@ -405,6 +426,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'medusa': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/e/eb/Medusa.jpg/revision/latest/scale-to-width-down/300?cb=20150321045439',
   },
+  'megawatt-noir': {
+    'earth-62533': 'https://static.wikia.nocookie.net/spidermannoir/images/3/37/Megawatt_Infobox.jpg/revision/latest/scale-to-width-down/241?cb=20260427195604',
+  },
   'memnon': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/3/3c/B%27Kai_Infobox.png/revision/latest/scale-to-width-down/270?cb=20250728193059',
   },
@@ -478,6 +502,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'paris': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/1/11/Paris_of_Troy_Infobox.png/revision/latest/scale-to-width-down/240?cb=20260725132939',
   },
+  'patrick-donegal-noir': {
+    'earth-62533': 'https://static.wikia.nocookie.net/spidermannoir/images/e/e7/Patrick_Donegal.png/revision/latest/scale-to-width-down/291?cb=20260529142643',
+  },
   'peggy-carter': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/6/6b/Peggy_Carter_Infobox.png/revision/latest/scale-to-width-down/262?cb=20250209154948',
   },
@@ -518,6 +545,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'reed-richards': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/f/f9/Mister_Fantastic_Blue_Uniform.jpg/revision/latest/scale-to-width-down/300?cb=20170810023226',
   },
+  'robbie-robertson-noir': {
+    'earth-62533': 'https://static.wikia.nocookie.net/spidermannoir/images/9/99/Robbie_Robertson_Infobox.jpg/revision/latest/scale-to-width-down/252?cb=20260210165557',
+  },
   'rocket': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/3/30/Rocket_Vol._3.jpg/revision/latest/scale-to-width-down/247?cb=20231114031203',
   },
@@ -529,6 +559,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   },
   'rusty-collins-firefist': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/a/ad/Rusty_Collins.PNG/revision/latest/scale-to-width-down/300?cb=20160427004406',
+  },
+  'sandman-noir': {
+    'earth-62533': 'https://static.wikia.nocookie.net/spidermannoir/images/5/5b/Sandman_Infobox.jpg/revision/latest/scale-to-width-down/222?cb=20260427195135',
   },
   'sauron-karl-lykos': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/4/46/Sauron.png/revision/latest/scale-to-width-down/230?cb=20130914235611',
@@ -559,6 +592,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   },
   'silver-surfer': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/9/92/Silver_Surfer.jpg/revision/latest/scale-to-width-down/209?cb=20180303044749',
+  },
+  'silvermane-noir': {
+    'earth-62533': 'https://static.wikia.nocookie.net/spidermannoir/images/7/7b/Silvermane_Infobox.png/revision/latest/scale-to-width-down/269?cb=20260428154309',
   },
   'skye': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/7/79/Quake.jpg/revision/latest/window-crop/width/300/x-offset/675/y-offset/150/window-width/900/window-height/900?cb=20190412001710',
@@ -615,6 +651,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   },
   'thor': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/2b/Thor_Infobox.jpg/revision/latest/scale-to-width-down/195?cb=20231021012616',
+  },
+  'tombstone-noir': {
+    'earth-62533': 'https://static.wikia.nocookie.net/spidermannoir/images/c/cb/Tombstone_Infobox.jpg/revision/latest/scale-to-width-down/274?cb=20260427181248',
   },
   'tony-stark': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/9/9d/Iron_Man_Infobox.jpg/revision/latest/scale-to-width-down/193?cb=20240802142023',
@@ -673,6 +712,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   },
   'wilson-fisk-kingpin': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/b/bd/Kingpin.jpg/revision/latest/scale-to-width-down/300?cb=20120206024828',
+  },
+  'winston-noir': {
+    'earth-62533': 'https://static.wikia.nocookie.net/spidermannoir/images/a/a6/Winston.png/revision/latest/scale-to-width-down/300?cb=20260529144232',
   },
   'yon-rogg': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/23/Yon-Rogg_Textless_Poster.jpg/revision/latest/scale-to-width-down/240?cb=20231025001232',

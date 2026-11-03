@@ -1,7 +1,6 @@
 /**
  * Finds an image of each character in each universe on that universe's fan wiki, through the public MediaWiki API,
  * and stores its address in src/content/catalog/portraits.ts. The images stay on Fandom: the app links to them.
- * Noir has no wiki for the series, so those characters show their actor instead (see `npm run cast:sync`).
  *
  *   npm run portraits:sync             only what is missing
  *   npm run portraits:sync -- --force  look everything up again
@@ -49,6 +48,7 @@ const PAGES: Record<string, Record<string, string>> = {
   odysseus: { 'earth-616': 'Odysseus' },
   paris: { 'earth-616': 'Paris of Troy' },
   rakim: { 'earth-616': 'Rakim (War Dogs)' },
+  'ruby-williams-noir': { 'earth-62533': 'Ruby J. Williams' },
   'steve-rogers': { 'earth-616': 'Steve Rogers' },
   'the-punisher': { 'earth-616': 'Punisher' },
 };

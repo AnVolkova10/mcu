@@ -17,19 +17,26 @@ import { ROOT, tmdb, TV_SPECIALS } from './tmdb';
 
 /** Other names a character is credited under. */
 const CREDITED_AS: Record<string, readonly string[]> = {
+  'alethea-faber-noir': ['Dr. Faber'],
+  'alfred-morris-noir': ['Mayor Morris'],
   'archangel-warren-worthington': ['Angel'],
   'fred-dukes': ['Fred Dukes'],
+  'howard-walters-noir': ['Walters'],
+  'jimmy-addison-noir': ['Addison'],
   'johann-fennhoff': ['Dr. Ivchenko'],
   'last-black-panther': ['The Intruder'],
   'lilandra-neramani': ['Lilandra', 'Empress Lilandra'],
   medusa: ['Madam Medusa'],
   noni: ['Older Noni'],
   odin: ['Odin'],
+  'ogden-faber-noir': ['Ogden', 'Young Ogden'],
+  'patrick-donegal-noir': ['Donegal'],
   rakim: ['High Councilman Rakim'],
   'robbie-robertson-noir': ['Joe Robertson'],
   ronan: ['Ronan'],
   'ruby-williams-noir': ['Ruby'],
   'silvermane-noir': ['Finn Byrne'],
+  'vera-addison-noir': ['Vera'],
   'war-machine': ['Rhodey'],
   'william-stryker': ['Stryker', 'Bill Stryker'],
 };

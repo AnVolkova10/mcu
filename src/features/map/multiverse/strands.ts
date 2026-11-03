@@ -33,7 +33,7 @@ export interface Strand {
 }
 
 /** Vertical place of each main strand; the Sacred Timeline runs through the middle. */
-const LANES: Record<string, number> = { 'earth-10005': 170, 'earth-616': 345, 'earth-92131': 560, 'earth-90214': 650 };
+const LANES: Record<string, number> = { 'earth-10005': 170, 'earth-616': 345, 'earth-92131': 560, 'earth-62533': 650 };
 const BRANCH_LANES: Record<string, number> = { 'fox-original': 92, 'chronicom-war': 262, 'shattered-earth-2091': 428, 'last-panther-future': 482 };
 
 const wave = (x: number, seed: number) => Math.sin(x / 78 + seed) * 6 + Math.sin(x / 31 + seed * 2) * 1.6;

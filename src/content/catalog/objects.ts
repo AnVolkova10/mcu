@@ -17,7 +17,7 @@ export const objects = {
   'helen-of-troy-pendant': {
     name: "Helen of Troy's Pendant",
     kind: 'relic',
-    description: "Wakandan Vibranium jewel. Nkati keeps it beside his throne until it sinks with his ship in 1260 BCE. Sixty years later it hangs from Helen's neck in Troy, and B'Kai brings it back to the War Dogs' vault.",
+    description: "Wakandan Vibranium jewel. Nkati keeps it beside his throne until it sinks with his ship in 1260 BC. Sixty years later it hangs from Helen's neck in Troy, and B'Kai brings it back to the War Dogs' vault.",
   },
   'lion-armor': {
     name: 'Lion Armor',
@@ -38,6 +38,11 @@ export const objects = {
     name: 'Shou-Lao Statue',
     kind: 'relic',
     description: "Sacred statue of the dragon Shou-Lao in the Dragon Shrine of K'un-Lun. Basha breaks off its head to steal the Vibranium inside, and Jorani takes the head back.",
+  },
+  'spider-suit': {
+    name: 'Spider Suit',
+    kind: 'weapon',
+    description: "Masked black suit that Ben Reilly wears as The Spider. He walls it up in his apartment when Ruby dies in 1928, takes it back five years later, and Robbie Robertson wears it once to pass for him.",
   },
   'thetis-necklace': {
     name: "Thetis' Necklace",
