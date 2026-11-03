@@ -44,6 +44,11 @@ export const objects = {
     kind: 'weapon',
     description: 'Ancient Wakandan mining tool. Left in Adwa on purpose in 1896, it passes through Benin and British soldiers to the Museum of Great Britain, where Killmonger finds it in 2016.',
   },
+  'zero-matter': {
+    name: 'Zero Matter',
+    kind: 'material',
+    description: 'Extra-dimensional black substance found by Isodyne Energy. It freezes and consumes what it touches, leaves Jason Wilkes intangible and gives Whitney Frost her powers, until a rift sends it back in 1947.',
+  },
 } as const satisfies Record<string, ObjectInput>;
 
 export type ObjectId = keyof typeof objects;

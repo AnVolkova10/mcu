@@ -103,6 +103,7 @@ Un dato que no aparece en dos fuentes es una duda y va a la ficha. Si la memoria
 ### Texto
 
 - De 2 a 4 oraciones sobrias en inglés, por episodio si el evento junta varios. Solo lo que pasa, sin adjetivos épicos ni interpretación.
+- **Los guiños se quedan.** Los comentarios personales de quien mantiene el proyecto, como *(Dottie I love you)*, se conservan al reescribir un texto, aunque no sean sobrios.
 - Títulos en presente, hasta 70 caracteres, sin punto final.
 - En las bios, las fechas antes de Cristo van como `BC`, igual que en la app.
 

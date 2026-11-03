@@ -61,8 +61,11 @@ const poster = (name: string): FilePick => [`XMDOFP ${name} Character Poster.jpg
 
 /** A better file than the page's lead image, per universe. */
 const FILES: Record<string, Record<string, FilePick>> = {
+  'ana-jarvis': { 'earth-616': ['Agent Carter Season 2 Promo 10.jpg', 0.32, 0.01, 0.34] },
+  'angie-martinelli': { 'earth-616': ['Angie Martinelli.jpg', 0.45, 0, 0.34] },
   'bishop-lucas-bishop': { 'earth-10005': poster('Bishop') },
   'blink-clarice-ferguson': { 'earth-10005': poster('Blink') },
+  'calvin-chadwick': { 'earth-616': ['Calvin Chadwick.jpg', 0.2, 0.03, 0.42] },
   'carol-danvers': { 'earth-92131': 'Ms Marvel.jpg' },
   'colossus-piotr-rasputin': { 'earth-10005': 'Colossus.jpg' },
   coulson: { 'earth-616': ['Phil Coulson Infobox.jpg', 0.2, 0.02, 0.6] },
@@ -70,10 +73,14 @@ const FILES: Record<string, Record<string, FilePick>> = {
   falcon: { 'earth-616': 'Falcon-DontThankMe.jpg' },
   'iceman-bobby-drake': { 'earth-10005': ['740full-iceman-(shawn-ashmore).jpg', 0.3, 0.05, 0.4] },
   'iron-fist': { 'earth-616': 'DRand-AskingForFruitRollUps.png' },
+  'jack-thompson': { 'earth-616': ['Jack Thompson.jpg', 0.27, 0, 0.4] },
   'johann-fennhoff': { 'earth-616': 'Fennhoff-Controls-Dooley-Snafu.jpg' },
+  'john-flynn': { 'earth-616': ['Flynn.jpg', 0.24, 0, 0.55] },
+  'joseph-manfredi': { 'earth-616': ['Joseph Manfredi.jpg', 0.12, 0, 0.8] },
   'kitty-pryde': { 'earth-10005': poster('Kitty Pryde') },
   'logan-wolverine': { 'earth-10005': 'Logan at Alkali Lake (X2 - 2003).png' },
   'psylocke-betsy-braddock': { 'earth-10005': 'Psylocke-XMen-Apocalypse.png' },
+  'roger-dooley': { 'earth-616': ['Roger Dooley.jpg', 0.2, 0, 0.45] },
   shuri: { 'earth-616': "BP-Shuri (In Contact With T'Challa).jpg" },
   skye: { 'earth-616': ['Quake.jpg', 0.3, 0.05, 0.4] },
   'storm-ororo-munroe': { 'earth-10005': poster('Storm') },

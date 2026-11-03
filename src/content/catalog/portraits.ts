@@ -20,6 +20,12 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'alfred-morris-noir': {
     'earth-62533': 'https://static.wikia.nocookie.net/spidermannoir/images/2/25/Alfred_Morris.png/revision/latest/scale-to-width-down/300?cb=20260712044841',
   },
+  'ana-jarvis': {
+    'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/f/ff/Agent_Carter_Season_2_Promo_10.jpg/revision/latest/window-crop/width/300/x-offset/720/y-offset/30/window-width/765/window-height/765?cb=20160106184612',
+  },
+  'angie-martinelli': {
+    'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/0/06/Angie_Martinelli.jpg/revision/latest/window-crop/width/300/x-offset/1013/y-offset/0/window-width/765/window-height/765?cb=20150111051908',
+  },
   'annihilus': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/5/5f/Annihilus.jpg/revision/latest/scale-to-width-down/300?cb=20130915000700',
   },
@@ -83,6 +89,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   },
   'callisto': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/f/f1/Callisto_%28Earth-92131%29_from_X-Men_%2797_Concept_Art_001.webp/revision/latest/scale-to-width-down/194?cb=20241217033032',
+  },
+  'calvin-chadwick': {
+    'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/c/c9/Calvin_Chadwick.jpg/revision/latest/window-crop/width/300/x-offset/450/y-offset/90/window-width/945/window-height/945?cb=20160213235337',
   },
   'captain-britain': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/f/fd/Captain_Britain.jpg/revision/latest/scale-to-width-down/300?cb=20131015232727',
@@ -292,6 +301,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'j-jonah-jameson': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/6/60/J_Jonah_Jameson.jpg/revision/latest/scale-to-width-down/300?cb=20160613055419',
   },
+  'jack-thompson': {
+    'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/6/6c/Jack_Thompson.jpg/revision/latest/window-crop/width/300/x-offset/275/y-offset/0/window-width/407/window-height/407?cb=20200408133141',
+  },
   'jacques-dernier': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/c/c1/JacquesDernierProfilePic.jpg/revision/latest/scale-to-width-down/183?cb=20200604164221',
   },
@@ -326,6 +338,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'johann-fennhoff': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/23/Fennhoff-Controls-Dooley-Snafu.jpg/revision/latest/scale-to-width-down/300?cb=20160109183724',
   },
+  'john-flynn': {
+    'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/c/ce/Flynn.jpg/revision/latest/window-crop/width/300/x-offset/101/y-offset/0/window-width/231/window-height/231?cb=20130720100223',
+  },
   'john-wraith': {
     'earth-10005': 'https://static.wikia.nocookie.net/xmenmovies/images/5/58/Kestrel.jpg/revision/latest/scale-to-width-down/240?cb=20120101153638',
   },
@@ -334,6 +349,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   },
   'jorani': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/7/77/Jorani_Infobox.png/revision/latest/scale-to-width-down/239?cb=20250810015951',
+  },
+  'joseph-manfredi': {
+    'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/1/1e/Joseph_Manfredi.jpg/revision/latest/window-crop/width/300/x-offset/144/y-offset/0/window-width/962/window-height/962?cb=20190625181843',
   },
   'jubilee-jubilation-lee': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/4/46/Jubilation_Lee.png/revision/latest/scale-to-width-down/300?cb=20120707055530',
@@ -554,6 +572,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'rocket': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/3/30/Rocket_Vol._3.jpg/revision/latest/scale-to-width-down/247?cb=20231114031203',
   },
+  'roger-dooley': {
+    'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/1/18/Roger_Dooley.jpg/revision/latest/window-crop/width/300/x-offset/278/y-offset/0/window-width/626/window-height/626?cb=20190925152444',
+  },
   'rogue-anna-marie': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/f/f6/Rogue.jpg/revision/latest/scale-to-width-down/288?cb=20231209153516',
   },
@@ -677,6 +698,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   },
   'valkyrie': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/d/d8/Valkyrie_in_LoveAndThunder_Poster.png/revision/latest/scale-to-width-down/230?cb=20231021012751',
+  },
+  'vernon-masters': {
+    'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/a/ae/Vernon_Masters.jpg/revision/latest/scale-to-width-down/200?cb=20160205201526',
   },
   'victor-creed': {
     'earth-10005': 'https://static.wikia.nocookie.net/xmenmovies/images/7/7e/Sabretooth_02.jpg/revision/latest/scale-to-width-down/227?cb=20110613064951',

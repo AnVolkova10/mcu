@@ -59,6 +59,7 @@ docs/ROADMAP.md         lo que falta
 
 ## Reglas de trabajo
 
+- **Los guiños se quedan:** los comentarios personales de quien mantiene el proyecto, como *(Dottie I love you)*, no se borran al reescribir un texto.
 - **Solo lo que se ve en pantalla:** películas y series, con sus flashbacks. Los cómics son otro multiverso, aunque sean oficiales.
 - **Para agregar o modificar contenido, seguí `docs/CONTENT_GUIDE.md` paso a paso.** Para auditar una producción, `docs/AUDIT_GUIDE.md`.
 - No leas archivos de datos enteros: buscá con `npm run content -- find` o con la búsqueda del editor.

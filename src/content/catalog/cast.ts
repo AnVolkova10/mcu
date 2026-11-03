@@ -23,6 +23,12 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
   'alfred-morris-noir': [
     { actor: 'Michael Kostroff', universe: 'earth-62533', productions: ['spider-noir-s1'], photo: '/w5kfGOzgGfVGTGB2CB0X8eIplES.jpg' },
   ],
+  'ana-jarvis': [
+    { actor: 'Lotte Verbeek', universe: 'earth-616', productions: ['agent-carter-s2'], photo: '/aLZXflxdMqBO7jejTuYnqGmA4yW.jpg' },
+  ],
+  'angie-martinelli': [
+    { actor: 'Lyndsy Fonseca', universe: 'earth-616', productions: ['agent-carter-s1'], photo: '/xPbbiLpUpmaHIVnyR3BAfG1tm5S.jpg' },
+  ],
   'annihilus': [
     { actor: 'Clyde Kusatsu', universe: 'earth-92131', productions: ['fantastic-four-tas-s1'], voice: true, photo: '/5dTSe1F9cnReZGHYzbCbVy7vbcf.jpg' },
   ],
@@ -82,6 +88,9 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
     { actor: 'Courtenay Taylor', universe: 'earth-92131', productions: ['x-men-97-s1'], voice: true, photo: '/f58KNRoimAh5Irddrek2mtPEBam.jpg' },
     { actor: 'Susan Roman', universe: 'earth-92131', productions: ['x-men-tas-s1'], voice: true, photo: '/vyWyOdnKcoNf40ytZSy6qlIIr9p.jpg' },
   ],
+  'calvin-chadwick': [
+    { actor: 'Currie Graham', universe: 'earth-616', productions: ['agent-carter-s2'], photo: '/c0kOOb2HXq4BdUbFatw6B3TOTVk.jpg' },
+  ],
   'carol-danvers': [
     { actor: 'Brie Larson', universe: 'earth-616', productions: ['captain-marvel'], photo: '/xSGvMwNNJcEQvVcjiIUTyxyMfkZ.jpg' },
   ],
@@ -132,7 +141,7 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
     { actor: 'Olivia Holt', universe: 'earth-616', productions: ['cloak-and-dagger-s1', 'cloak-and-dagger-s2'], photo: '/gOYenPpic8MJnfzszGyUWgsYHSC.jpg' },
   ],
   'daniel-sousa': [
-    { actor: 'Enver Gjokaj', universe: 'earth-616', productions: ['agent-carter-s2'], photo: '/gL6ddPdRVTwaNGIGGz1EC6UeHqj.jpg' },
+    { actor: 'Enver Gjokaj', universe: 'earth-616', productions: ['agent-carter-s1', 'agent-carter-s2'], photo: '/gL6ddPdRVTwaNGIGGz1EC6UeHqj.jpg' },
   ],
   'daredevil': [
     { actor: 'Charlie Cox', universe: 'earth-616', productions: ['daredevil-s1', 'daredevil-s2', 'the-defenders-s1', 'daredevil-s3'], photo: '/91fFBazOvuNjwjcES2b199Ukspn.jpg' },
@@ -147,13 +156,13 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
     { actor: 'John Vernon', universe: 'earth-92131', productions: ['spider-man-tas-s3'], voice: true, photo: '/xlHU7X2FhjnZVxu7fjoguCWlXeC.jpg' },
   ],
   'dottie-underwood': [
-    { actor: 'Bridget Regan', universe: 'earth-616', productions: ['agent-carter-s1'], photo: '/ri1kEBkWa9ShTYbV2iJAFa0V4VU.jpg' },
+    { actor: 'Bridget Regan', universe: 'earth-616', productions: ['agent-carter-s1', 'agent-carter-s2'], photo: '/ri1kEBkWa9ShTYbV2iJAFa0V4VU.jpg' },
   ],
   'drax': [
     { actor: 'Dave Bautista', universe: 'earth-616', productions: ['guardians-of-the-galaxy', 'guardians-of-the-galaxy-vol-2', 'avengers-infinity-war'], photo: '/snk6JiXOOoRjPtHU5VMoy6qbd32.jpg' },
   ],
   'dum-dum-dugan': [
-    { actor: 'Neal McDonough', universe: 'earth-616', productions: ['captain-america-the-first-avenger', 'agents-of-shield-s2'], photo: '/3mI3i1CpjATSCta1Tb2qsyl1KCh.jpg' },
+    { actor: 'Neal McDonough', universe: 'earth-616', productions: ['captain-america-the-first-avenger', 'agents-of-shield-s2', 'one-shot-agent-carter', 'agent-carter-s1'], photo: '/3mI3i1CpjATSCta1Tb2qsyl1KCh.jpg' },
   ],
   'ebo': [
     { actor: 'Isaac Robinson-Smith', universe: 'earth-616', productions: ['eyes-of-wakanda-s1'], voice: true, photo: '/ceNxqevAX7c9uAzl8IthjG3slqy.jpg' },
@@ -262,7 +271,7 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
     { actor: 'Tom Kane', universe: 'earth-92131', productions: ['iron-man-tas-s2'], voice: true, photo: '/sq49aVP56G50Nr5kCL7Ove6Z9jE.jpg' },
   ],
   'howard-stark': [
-    { actor: 'Dominic Cooper', universe: 'earth-616', productions: ['captain-america-the-first-avenger', 'agent-carter-s1', 'agent-carter-s2', 'one-shot-agent-carter'], photo: '/wFPdARerxpaAaHucYGTSNqViWpn.jpg' },
+    { actor: 'Dominic Cooper', universe: 'earth-616', productions: ['captain-america-the-first-avenger', 'one-shot-agent-carter', 'agent-carter-s1', 'agent-carter-s2'], photo: '/wFPdARerxpaAaHucYGTSNqViWpn.jpg' },
     { actor: 'John Slattery', universe: 'earth-616', productions: ['iron-man-2', 'captain-america-civil-war'], photo: '/tm7g84OWD5gQRoyfG4hduBphP1j.jpg' },
     { actor: 'Gerard Sanders', universe: 'earth-616', productions: ['iron-man'], photo: '/njDdG1Jji5CkrPSsSrNZuNmtEn0.jpg' },
   ],
@@ -283,6 +292,9 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
   ],
   'j-jonah-jameson': [
     { actor: 'Ed Asner', universe: 'earth-92131', productions: ['spider-man-tas-s1'], voice: true, photo: '/AeVizz1AfAB2TbsfyzgBvqeSR3G.jpg' },
+  ],
+  'jack-thompson': [
+    { actor: 'Chad Michael Murray', universe: 'earth-616', productions: ['agent-carter-s1', 'agent-carter-s2'], photo: '/jIkzUQUVLkgn3HFMFRJBDAD0OLj.jpg' },
   ],
   'jacques-dernier': [
     { actor: 'Bruno Ricci', universe: 'earth-616', productions: ['captain-america-the-first-avenger'], photo: '/5TEcxfaGk0JQ7okScyJt9ujTWM3.jpg' },
@@ -317,6 +329,9 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
   'johann-fennhoff': [
     { actor: 'Ralph Brown', universe: 'earth-616', productions: ['agent-carter-s1'], photo: '/20VVWsUZHmTmN80xgHyy6LAFDuC.jpg' },
   ],
+  'john-flynn': [
+    { actor: 'Bradley Whitford', universe: 'earth-616', productions: ['one-shot-agent-carter'], photo: '/oeDv2qZWTxELLaNtOIoeG72leNY.jpg' },
+  ],
   'john-wraith': [
     { actor: 'will.i.am', universe: 'earth-10005', productions: ['x-men-origins-wolverine'], photo: '/uQgowLkEJyB5oBm34sqSKTPcZwv.jpg' },
   ],
@@ -326,6 +341,9 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
   ],
   'jorani': [
     { actor: 'Jona Xiao', universe: 'earth-616', productions: ['eyes-of-wakanda-s1'], voice: true, photo: '/bEd5FvgkrZloJ0Vb9A3ijEwEV5f.jpg' },
+  ],
+  'joseph-manfredi': [
+    { actor: 'Ken Marino', universe: 'earth-616', productions: ['agent-carter-s2'], photo: '/wLYkhmy0Cp1MeLmc4l3FZRuWly4.jpg' },
   ],
   'jubilee-jubilation-lee': [
     { actor: 'Alyson Court', universe: 'earth-92131', productions: ['x-men-tas-s1', 'x-men-tas-s3', 'x-men-tas-s5'], voice: true, photo: '/kPeTYEV6vyyAJEsUlomVpiLcd6v.jpg' },
@@ -497,7 +515,7 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
     { actor: 'Cameron Britton', universe: 'earth-62533', productions: ['spider-noir-s1'], photo: '/9HFxi8ZnBiby3AQ7tBOPDxXFkCT.jpg' },
   ],
   'peggy-carter': [
-    { actor: 'Hayley Atwell', universe: 'earth-616', productions: ['agent-carter-s2', 'captain-america-the-first-avenger', 'agents-of-shield-s2', 'agent-carter-s1', 'one-shot-agent-carter', 'captain-america-the-winter-soldier'], photo: '/x57wXHexIjD2ywly9cRA4rov7cu.jpg' },
+    { actor: 'Hayley Atwell', universe: 'earth-616', productions: ['agent-carter-s2', 'captain-america-the-first-avenger', 'agents-of-shield-s2', 'one-shot-agent-carter', 'agent-carter-s1', 'captain-america-the-winter-soldier'], photo: '/x57wXHexIjD2ywly9cRA4rov7cu.jpg' },
   ],
   'pietro': [
     { actor: 'Aaron Taylor-Johnson', universe: 'earth-616', productions: ['captain-america-the-winter-soldier', 'avengers-age-of-ultron'], photo: '/pFtHhih2XEaFaD3qOFyQW6q83br.jpg' },
@@ -539,6 +557,9 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
   ],
   'rocket': [
     { actor: 'Bradley Cooper', universe: 'earth-616', productions: ['guardians-of-the-galaxy', 'guardians-of-the-galaxy-vol-2', 'avengers-infinity-war'], voice: true, photo: '/5Dhy50qOMOHfR1NZifKIfffjV9X.jpg' },
+  ],
+  'roger-dooley': [
+    { actor: 'Shea Whigham', universe: 'earth-616', productions: ['agent-carter-s1'], photo: '/d3caK3l4UfbnzOxv95wLoFLZzMO.jpg' },
   ],
   'rogue-anna-marie': [
     { actor: 'Lenore Zann', universe: 'earth-92131', productions: ['x-men-97-s1', 'x-men-tas-s1', 'x-men-tas-s2', 'x-men-tas-s3', 'x-men-tas-s5'], voice: true, photo: '/qOuxxt2zybggVDl1NiQloVIVFNU.jpg' },
@@ -656,6 +677,9 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
   ],
   'vera-addison-noir': [
     { actor: 'Whitney Rice', universe: 'earth-62533', productions: ['spider-noir-s1'], photo: '/aY9U97KsqK518QKEp08R6cMIPd6.jpg' },
+  ],
+  'vernon-masters': [
+    { actor: 'Kurtwood Smith', universe: 'earth-616', productions: ['agent-carter-s2'], photo: '/7dqsk4NYbNZNnmppv2zPuf1hKBn.jpg' },
   ],
   'victor-creed': [
     { actor: 'Liev Schreiber', universe: 'earth-10005', productions: ['x-men-origins-wolverine'], photo: '/26G7QjSb5ZazgWb9XB2X6SwcILQ.jpg' },

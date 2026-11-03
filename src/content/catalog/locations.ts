@@ -80,6 +80,14 @@ export const locations = {
     kind: 'earth',
     coords: [78, -40],
   },
+  'arena-club': {
+    name: 'Arena Club',
+    place: 'Los Angeles, California',
+    country: 'United States',
+    kind: 'earth',
+    coords: [34.062, -118.308],
+    approximate: true,
+  },
   'asteroid-m': {
     name: 'Asteroid M',
     place: 'Low Earth Orbit',
@@ -179,6 +187,13 @@ export const locations = {
     kind: 'orbit',
     node: 'moon',
   },
+  'bowery-savings-bank': {
+    name: 'Bowery Savings Bank',
+    place: 'Manhattan, New York',
+    country: 'United States',
+    kind: 'earth',
+    coords: [40.7183, -73.9962],
+  },
   'brooklyn-bridge': {
     name: 'Brooklyn Bridge',
     place: 'New York City',
@@ -200,6 +215,14 @@ export const locations = {
     country: 'United States',
     kind: 'earth',
     coords: [40.7175, -73.9695],
+    approximate: true,
+  },
+  'broxton-oklahoma': {
+    name: 'Broxton',
+    place: 'Oklahoma',
+    country: 'United States',
+    kind: 'earth',
+    coords: [35.5, -97.5],
     approximate: true,
   },
   'cafe-de-la-paix': {
@@ -232,11 +255,12 @@ export const locations = {
     coords: [28.488, -80.577],
   },
   'carter-family-estate-and-church-of-st-jude': {
-    name: 'Carter Family Estate & Church of St. Jude',
+    name: 'Carter Family Home',
     place: 'Hampstead, London',
     country: 'United Kingdom',
     kind: 'earth',
     coords: [51.5559, -0.1774],
+    approximate: true,
   },
   'cassidy-keep': {
     name: 'Cassidy Keep',
@@ -265,6 +289,14 @@ export const locations = {
     country: 'Latveria',
     kind: 'earth',
     coords: [46.2, 22.9],
+  },
+  'cedar-grove-new-jersey': {
+    name: 'Cedar Grove',
+    place: 'New Jersey',
+    country: 'United States',
+    kind: 'earth',
+    coords: [40.8512, -74.229],
+    approximate: true,
   },
   'central-broadcast-arena-and-studio-city': {
     name: 'Central Broadcast Arena & Studio City',
@@ -378,6 +410,13 @@ export const locations = {
     country: 'United States',
     kind: 'earth',
     coords: [40.7484, -73.9857],
+  },
+  'echo-park': {
+    name: 'Echo Park',
+    place: 'Los Angeles, California',
+    country: 'United States',
+    kind: 'earth',
+    coords: [34.0729, -118.2606],
   },
   'ego-the-living-planet-orbit': {
     name: 'Ego the Living Planet Orbit',
@@ -513,6 +552,14 @@ export const locations = {
     kind: 'earth',
     coords: [29.9792, 31.1342],
   },
+  'griffith-hotel': {
+    name: 'Griffith Hotel',
+    place: 'Manhattan, New York',
+    country: 'United States',
+    kind: 'earth',
+    coords: [40.738, -73.985],
+    approximate: true,
+  },
   'hala-imperial-city': {
     name: 'Hala Imperial City',
     place: 'Kree Imperium',
@@ -550,6 +597,14 @@ export const locations = {
     coords: [40.768, -73.9625],
     approximate: true,
   },
+  'hollywood': {
+    name: 'Hollywood',
+    place: 'Los Angeles, California',
+    country: 'United States',
+    kind: 'earth',
+    coords: [34.1016, -118.34],
+    approximate: true,
+  },
   'hong-kong-sanctum': {
     name: 'Hong Kong Sanctum',
     place: 'Hong Kong',
@@ -571,6 +626,14 @@ export const locations = {
     country: 'France',
     kind: 'earth',
     coords: [48.8756, 2.3012],
+  },
+  'howard-stark-hangar': {
+    name: "Howard Stark's Hangar",
+    place: 'Queens, New York',
+    country: 'United States',
+    kind: 'earth',
+    coords: [40.7769, -73.874],
+    approximate: true,
   },
   'howlett-estate-and-northwest-wilderness': {
     name: 'Howlett Estate & Northwest Wilderness',
@@ -626,11 +689,20 @@ export const locations = {
     coords: [45.815, 15.9819],
   },
   'isodyne-energy-particle-laboratory': {
-    name: 'Isodyne Energy Particle Laboratory',
-    place: 'Pasadena / Los Angeles',
+    name: 'Isodyne Energy',
+    place: 'Pasadena, California',
     country: 'United States',
     kind: 'earth',
     coords: [34.1478, -118.1445],
+    approximate: true,
+  },
+  'isodyne-test-site': {
+    name: 'Isodyne Test Site',
+    place: 'Mojave Desert, California',
+    country: 'United States',
+    kind: 'earth',
+    coords: [34.85, -116.75],
+    approximate: true,
   },
   'jamaica-bay': {
     name: 'Jamaica Bay',
@@ -738,6 +810,14 @@ export const locations = {
     country: 'Exosphere',
     kind: 'orbit',
     node: 'shuttle-orbit',
+  },
+  'macarthur-grand-hotel': {
+    name: 'MacArthur Grand Hotel',
+    place: 'Los Angeles, California',
+    country: 'United States',
+    kind: 'earth',
+    coords: [34.059, -118.278],
+    approximate: true,
   },
   'maggia-penthouse-and-new-york-harbor-docks': {
     name: 'Maggia Penthouse & New York Harbor Docks',
@@ -1132,11 +1212,12 @@ export const locations = {
     coords: [41.122, -73.7949],
   },
   'red-room-academy-training-facility': {
-    name: 'Red Room Academy Training Facility',
-    place: 'Minsk / Western USSR',
-    country: 'Soviet Union',
+    name: 'Red Room Academy',
+    place: 'Ashmyany',
+    country: 'Belarus',
     kind: 'earth',
-    coords: [53.9045, 27.5615],
+    coords: [54.4256, 25.9376],
+    approximate: true,
   },
   'red-skulls-doomsday-device-subterranean-bunker': {
     name: "Red Skull's Doomsday Device Subterranean Bunker",
@@ -1166,6 +1247,22 @@ export const locations = {
     country: 'United States',
     kind: 'earth',
     coords: [37.5407, -77.436],
+  },
+  'roxxon-refinery': {
+    name: 'Roxxon Refinery',
+    place: 'Brooklyn, New York',
+    country: 'United States',
+    kind: 'earth',
+    coords: [40.724, -73.948],
+    approximate: true,
+  },
+  'roxxon-warehouse': {
+    name: 'Roxxon Warehouse',
+    place: 'Los Angeles, California',
+    country: 'United States',
+    kind: 'earth',
+    coords: [34.01, -118.23],
+    approximate: true,
   },
   'ruined-underground-metro-catacombs': {
     name: 'Ruined Underground Metro Catacombs',
@@ -1230,13 +1327,6 @@ export const locations = {
     kind: 'earth',
     coords: [38.8951, -77.0364],
   },
-  'shield-headquarters-site': {
-    name: 'S.H.I.E.L.D. Headquarters Site',
-    place: 'Washington, D.C.',
-    country: 'United States',
-    kind: 'earth',
-    coords: [38.9072, -77.0369],
-  },
   'shield-times-square-bunker': {
     name: 'S.H.I.E.L.D. Facility',
     place: 'Times Square, New York',
@@ -1267,11 +1357,12 @@ export const locations = {
     coords: [38.8887, -77.026],
   },
   'ssr-new-york-field-headquarters': {
-    name: 'SSR New York Field Headquarters',
+    name: 'SSR New York Office',
     place: 'Manhattan, New York',
     country: 'United States',
     kind: 'earth',
-    coords: [40.7128, -74.006],
+    coords: [40.7136, -74.0118],
+    approximate: true,
   },
   'ssr-secret-laboratory-and-vita-ray-chamber': {
     name: 'SSR Brooklyn Facility',
@@ -1282,11 +1373,12 @@ export const locations = {
     approximate: true,
   },
   'ssr-west-coast-branch': {
-    name: 'SSR West Coast Branch',
-    place: 'Los Angeles',
+    name: 'SSR Los Angeles Office',
+    place: 'Los Angeles, California',
     country: 'United States',
     kind: 'earth',
-    coords: [34.0522, -118.2437],
+    coords: [34.048, -118.252],
+    approximate: true,
   },
   'standard-oil-depot': {
     name: 'Standard Oil Depot',
@@ -1311,11 +1403,12 @@ export const locations = {
     node: 'shuttle-orbit',
   },
   'stark-country-estate': {
-    name: 'Stark Country Estate',
+    name: 'Stark Mansion',
     place: 'Long Island, New York',
     country: 'United States',
     kind: 'earth',
-    coords: [40.7891, -73.135],
+    coords: [40.86, -73.52],
+    approximate: true,
   },
   'stark-enterprise-force-works-compound': {
     name: 'Stark Enterprise Force Works Compound',
@@ -1367,11 +1460,12 @@ export const locations = {
     coords: [34.0522, -118.2437],
   },
   'stark-pictures-motion-picture-studio': {
-    name: 'Stark Pictures Motion Picture Studio',
+    name: 'Stark Pictures',
     place: 'Hollywood, California',
     country: 'United States',
     kind: 'earth',
     coords: [34.0928, -118.3287],
+    approximate: true,
   },
   'stark-tower': {
     name: 'Stark Tower',
@@ -1510,6 +1604,13 @@ export const locations = {
     coords: [40.154, -76.724],
   },
   titan: { name: 'Titan', kind: 'space', node: 'titan' },
+  'times-square': {
+    name: 'Times Square',
+    place: 'Manhattan, New York',
+    country: 'United States',
+    kind: 'earth',
+    coords: [40.7587, -73.985],
+  },
   'torfa-border-world-outpost': {
     name: 'Torfa Border World Outpost',
     place: 'Torfa System',
@@ -1703,11 +1804,12 @@ export const locations = {
     coords: [41.3283, -73.5937],
   },
   'zodiac-secret-warehouse': {
-    name: 'Zodiac Secret Warehouse',
-    place: 'New York City',
+    name: 'Zodiac Storage Facility',
+    place: 'Brooklyn, New York',
     country: 'United States',
     kind: 'earth',
-    coords: [40.7128, -74.006],
+    coords: [40.6755, -74.0115],
+    approximate: true,
   },
 } as const satisfies Record<string, LocationInput>;
 
