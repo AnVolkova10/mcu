@@ -91,6 +91,7 @@ Un dato que no aparece en dos fuentes es una duda y va a la ficha. Si la memoria
 
 - **Ficha para todo personaje con nombre que influye en la trama.** Un cameo se asocia con `cast` y no lleva ficha nueva.
 - Personajes sin nombre o que no cambian nada: `**negrita**` o nada.
+- **Un evento puede no tener personajes.** Si nadie con nombre aparece, no se enlaza a nadie para llenar: el aviso de turismo de *Come to Wakanda* no tiene personajes, y en la escena de Essex de *Apocalypse* no está Logan, solo su sangre.
 - Un mismo nombre puede ser dos personas: Jorani es Iron Fist, pero no la ficha `iron-fist`, que es Danny Rand. Enlazar la ficha equivocada también le suma un crédito falso.
 - Revisá `status` contra la obra. En la v2 había muertes que nadie vio en pantalla.
 - Si la obra deshace una muerte, no va en `deaths`: a Weapon XI le cortan la cabeza, pero en la escena post-créditos abre los ojos.
@@ -119,7 +120,7 @@ Un dato que no aparece en dos fuentes es una duda y va a la ficha. Si la memoria
 ## 4. Checklist final
 
 - [ ] Cada dato de la ficha salió de una fuente, y lo aprobó quien mantiene el proyecto.
-- [ ] Cada evento tiene fecha, lugares en orden, sus personajes y sus objetos con `at`, y `segment` si es una serie.
+- [ ] Cada evento tiene fecha, lugares en orden, sus personajes si aparece alguno, sus objetos con `at`, y `segment` si es una serie.
 - [ ] Ningún `id` existente cambió.
 - [ ] Lo inventado se borró, y `npm run content -- unused` no muestra nada nuevo.
 - [ ] Miraste en la app el timeline, las fichas, las imágenes, el mapa y un recorrido, en PC y en celu.

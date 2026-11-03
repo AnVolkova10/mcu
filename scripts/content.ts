@@ -49,7 +49,6 @@ async function validate() {
     if (event.status !== 'audited') continue;
     const id = event.id;
     if (!event.locations.length) err(`${id}: audited events need at least one location`);
-    if (!event.characters.length) err(`${id}: audited events need at least one character (link one in the text or add "cast")`);
     if (event.date.label && event.date.year > LAST_LABELLED_YEAR) err(`${id}: "${event.date.label}" is a free-text date; use the year with approx, labels are only for dates over 10,000 years old`);
     if (event.title.length > 70) err(`${id}: title longer than 70 characters`);
     if (/\.$/.test(event.title)) err(`${id}: title must not end with a period`);

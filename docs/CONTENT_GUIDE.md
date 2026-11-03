@@ -363,7 +363,6 @@ Las producciones `legacy` vienen del HTML original. Para ponerla al día sin la 
 | `id must be kebab-case` | Solo minúsculas, números y guiones |
 | `id repeated in the same file` | Dos eventos con el mismo `id` en el archivo |
 | `audited events need at least one location` | Agregá `locations` al evento |
-| `audited events need at least one character` | Enlazá un personaje en el texto o agregá `cast` |
 | `death "X" has a dossier, use the character id` | Cambiá `{ name: 'X' }` por el ID del personaje |
 | `"X" is a free-text date` | Sacá `label` y escribí el año, con `approx: true` si es aproximado (paso 6) |
 | `paragraph N has broken markup` | Hay un `**`, `==` o `[...]( ` sin cerrar en ese párrafo |

@@ -64,7 +64,7 @@ export default defineEvents('x-men-apocalypse', [
     date: { year: 1983, order: 60 },
     title: "Essex Corp takes the blood of Weapon X from Alkali Lake",
     text: [
-      'At the abandoned base at Alkali Lake, a team in suits gathers the research of Stryker and a vial of the blood of [Weapon X](logan-wolverine), and packs them into a briefcase of the Essex Corporation.',
+      'At the abandoned base at Alkali Lake, a team in suits gathers the research of Stryker and a vial of the blood of Weapon X, and packs them into a briefcase of the Essex Corporation.',
     ],
     locations: ['alkali-lake-weapon-x-facility'],
   },
