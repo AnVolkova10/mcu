@@ -575,6 +575,12 @@ export const locations = {
     kind: 'space',
     node: 'ego',
   },
+  elysian: {
+    name: 'Elysian',
+    country: 'A distant star system',
+    kind: 'space',
+    node: 'elysian',
+  },
   'emerald-cove': {
     name: 'Emerald Cove',
     place: 'Costa Smeralda, Sardinia',
@@ -766,13 +772,6 @@ export const locations = {
     kind: 'earth',
     coords: [34, -118.23],
   },
-  'hammer-industries-orbital-production-facility': {
-    name: 'Hammer Industries Orbital Production Facility',
-    place: 'Low Earth Orbit',
-    country: 'Space',
-    kind: 'orbit',
-    node: 'shuttle-orbit',
-  },
   'hardy-estate': {
     name: 'Hardy Estate',
     place: 'Old Westbury, Long Island',
@@ -823,6 +822,13 @@ export const locations = {
     kind: 'earth',
     coords: [36.1147, -115.1728],
   },
+  'hidden-valley': {
+    name: 'Hidden Valley',
+    place: 'Wuyi Mountains',
+    country: 'China',
+    kind: 'earth',
+    coords: [27.72, 117.68],
+  },
   'hillhurst-hotel': {
     name: 'Hillhurst Hotel',
     place: 'Upper East Side, Manhattan',
@@ -845,6 +851,13 @@ export const locations = {
     country: 'Scotland',
     kind: 'earth',
     coords: [55.9527, -3.172],
+  },
+  'hong-kong': {
+    name: 'Hong Kong',
+    place: 'Central',
+    country: 'China',
+    kind: 'earth',
+    coords: [22.282, 114.158],
   },
   'hong-kong-sanctum': {
     name: 'Hong Kong Sanctum',
@@ -1329,6 +1342,13 @@ export const locations = {
     kind: 'earth',
     coords: [51.5194, -0.1269],
   },
+  'museum-of-modern-art': {
+    name: 'Museum of Modern Art',
+    place: 'Midtown Manhattan',
+    country: 'United States',
+    kind: 'earth',
+    coords: [40.7614, -73.9776],
+  },
   'mutant-control-agency-mainframe-vaults': {
     name: 'Mutant Control Agency',
     place: 'Washington, D.C.',
@@ -1628,6 +1648,13 @@ export const locations = {
     kind: 'earth',
     coords: [55.7558, 37.6173],
   },
+  'refinery-tunnels-egypt': {
+    name: 'Refinery Tunnels',
+    place: 'Near Cairo',
+    country: 'Egypt',
+    kind: 'earth',
+    coords: [30.151, 31.295],
+  },
   'reilly-investigation-office': {
     name: 'B. Reilly Investigations',
     place: "Hell's Kitchen, Manhattan",
@@ -1663,6 +1690,13 @@ export const locations = {
     country: 'United States',
     kind: 'earth',
     coords: [40.7587, -73.9787],
+  },
+  'rockson-refinery': {
+    name: 'Rockson Refinery',
+    place: 'Wilmington, Los Angeles',
+    country: 'United States',
+    kind: 'earth',
+    coords: [33.793, -118.244],
   },
   'roxxon-refinery': {
     name: 'Roxxon Refinery',
@@ -1845,6 +1879,12 @@ export const locations = {
     kind: 'earth',
     coords: [40.7585, -73.9615],
   },
+  'star-well-satellite': {
+    name: 'Star Well Satellite',
+    country: 'Earth orbit',
+    kind: 'orbit',
+    node: 'shuttle-orbit',
+  },
   'starcore-space-shuttle': {
     name: 'Eagle One Space Station',
     place: 'Earth orbit',
@@ -1879,6 +1919,13 @@ export const locations = {
     country: 'United States',
     kind: 'earth',
     coords: [33.9192, -118.4165],
+  },
+  'stark-enterprises-hong-kong': {
+    name: 'Stark Enterprises Hong Kong',
+    place: 'Kwun Tong, Hong Kong',
+    country: 'China',
+    kind: 'earth',
+    coords: [22.311, 114.226],
   },
   'stark-enterprises-salt-lake-testing-facility': {
     name: 'Stark Enterprises Salt Lake Testing Facility',
@@ -1915,6 +1962,13 @@ export const locations = {
     country: 'United States',
     kind: 'earth',
     coords: [40.7536, -73.9767],
+  },
+  'stark-towers-site': {
+    name: 'Stark Towers Site',
+    place: 'Downtown Los Angeles',
+    country: 'United States',
+    kind: 'earth',
+    coords: [34.0505, -118.255],
   },
   'stark-world-exposition-of-tomorrow': {
     name: 'Stark Expo',
@@ -2043,11 +2097,11 @@ export const locations = {
     coords: [5.35, 35.45],
   },
   'the-mandarins-mountain-citadel-and-dragon-chamber': {
-    name: "The Mandarin's Mountain Citadel & Dragon Chamber",
-    place: 'Valley of Spirits / Yunnan Province',
+    name: "The Mandarin's Citadel",
+    place: 'Mountains of Guangdong',
     country: 'China',
     kind: 'earth',
-    coords: [25.0453, 102.7097],
+    coords: [23.27, 114.05],
   },
   'the-negative-zone': {
     name: 'The Negative Zone',
@@ -2082,6 +2136,13 @@ export const locations = {
     country: 'Solar System',
     kind: 'space',
     node: 'sun',
+  },
+  'the-vault': {
+    name: 'The Vault',
+    place: 'San Jacinto, California',
+    country: 'United States',
+    kind: 'earth',
+    coords: [33.8, -116.88],
   },
   'the-white-house-lawn-and-rfk-stadium': {
     name: 'White House',

@@ -587,6 +587,15 @@ export const characters = {
     origin: 'Manitowoc, Wisconsin',
     bio: 'Heart of S.H.I.E.L.D., architect of the Avengers Initiative and director of the underground agency.',
   },
+  'crimson-dynamo': {
+    name: 'Yuri Bezukhov',
+    alias: 'Crimson Dynamo',
+    color: '#dc2626',
+    role: 'villain',
+    status: 'presumably-dead',
+    factions: ['aim'],
+    bio: "Armored agent whose suit A.I.M. builds with knowledge drained from Tony Stark's mind. He later takes over a Russian missile base, and the nuclear blast that follows is blamed on Iron Man.",
+  },
   crystal: {
     name: 'Crystalia Amaquelin',
     alias: 'Crystal',
@@ -656,6 +665,14 @@ export const characters = {
     variants: {
       'earth-92131': 'Blind defense attorney whose radioactive chemical accident heightened his remaining senses to superhuman radar levels, fighting crime as the Man Without Fear.',
     },
+  },
+  'dark-aegis': {
+    name: 'Dark Aegis',
+    color: '#6d28d9',
+    role: 'villain',
+    status: 'alive',
+    factions: [],
+    bio: 'Armored conqueror who wrecks the planet Elysian, destroys two of its moons and offers Iron Man to rule beside him. Iron Man, War Machine and Titanium Man break his force field, and he flees with Titanium Man in pursuit.',
   },
   'darrell-tanaka': {
     name: 'Darrell Tanaka',
@@ -733,7 +750,7 @@ export const characters = {
     origin: 'Boston, Massachusetts',
     bio: 'Bowler-hatted soldier of the 107th, freed by Steve Rogers at Krausberg, who joins the Howling Commandos.',
     variants: {
-      'earth-92131': "In the animated series he is one of the Howling Commandos who blow up the Red Skull's facility in France in 1944.",
+      'earth-92131': "In the animated series he is one of the Howling Commandos who blow up the Red Skull's facility in France in 1944. In 1995 he is a S.H.I.E.L.D. agent who tries to take over Stark's factory after the fire caused by the Star Well.",
     },
   },
   ebo: {
@@ -904,9 +921,18 @@ export const characters = {
     name: 'Fin Fang Foom',
     color: '#16a34a',
     role: 'villain',
+    status: 'deceased',
+    factions: [],
+    bio: 'Giant dragon who answers the call of the Mandarin in exchange for favors. He knocks Iron Man into an ice cave and hunts him with mechanical dragons; later the Mandarin frees his four brothers from human form, and Foom dies in the battle at the portal the dragons open to their home world, Kakaranthara.',
+  },
+  firebrand: {
+    name: 'Gary Gilbert',
+    alias: 'Firebrand',
+    color: '#ea580c',
+    role: 'villain',
     status: 'alive',
     factions: [],
-    bio: 'Giant dragon who answers the call of the Mandarin in exchange for favors. He knocks Iron Man into an ice cave and hunts him with mechanical dragons.',
+    bio: 'Son of Simon Gilbert, a fired Stark employee. He blacks out Los Angeles, sets fire to Stark Enterprises and blows up the city dam, until Iron Man and War Machine stop him.',
   },
   firelord: {
     name: 'Firelord',
@@ -960,7 +986,7 @@ export const characters = {
     origin: 'Earth / S.A.B.E.R. Station',
     bio: 'Former Director of S.H.I.E.L.D. and founder of the Avengers.',
     variants: {
-      'earth-92131': "In the animated series he is one of the Howling Commandos who blow up the Red Skull's facility in France in 1944, and in the 1993 that Cable erases he watches the Senate hearing on the plague at S.H.I.E.L.D. In 1994 the government fakes his death, and from the S.H.I.E.L.D. Helicarrier he and Spider-Man stop the Chameleon.",
+      'earth-92131': "In the animated series he is one of the Howling Commandos who blow up the Red Skull's facility in France in 1944, and in the 1993 that Cable erases he watches the Senate hearing on the plague at S.H.I.E.L.D. In 1994 the government fakes his death, and from the S.H.I.E.L.D. Helicarrier he and Spider-Man stop the Chameleon. In 1995 he works with Tony Stark against A.I.M. and asks him to stop Iron Man in the Armor Wars.",
     },
   },
   'gabe-jones': {
@@ -1017,6 +1043,14 @@ export const characters = {
     status: 'alive',
     factions: ['mutants'],
     bio: "Herbert Landon's aide, who believes that destroying mutants is the only way to end their suffering, until her telekinesis holds up the X-Men's Blackbird and shows that she is a mutant. She leaves with the X-Men to meet Charles Xavier.",
+  },
+  ghost: {
+    name: 'Ghost',
+    color: '#cbd5e1',
+    role: 'villain',
+    status: 'alive',
+    factions: [],
+    bio: "Thief who steals Iron Man's armor designs, which Justin Hammer then sells to Iron Man's enemies.",
   },
   'ghost-rider-danny-ketch': {
     name: 'Danny Ketch',
@@ -1120,7 +1154,7 @@ export const characters = {
     origin: 'Waverly, Iowa',
     bio: 'Master marksman, master archer, and founding Avenger.',
     variants: {
-      'earth-92131': 'In the animated series he is a member of Force Works. Suspected once of spying for the Mandarin, he had been caring for his sick grandfather.',
+      'earth-92131': 'In the animated series he is a member of Force Works. Suspected once of spying for the Mandarin, he had been caring for his sick grandfather. In 1995 he quits when Tony Stark fakes his death, fights Iron Man at the Vault, and comes back to the team against the Mandarin.',
     },
   },
   'heinz-kruger': {
@@ -1193,7 +1227,7 @@ export const characters = {
     status: 'alive',
     factions: ['stark-industries'],
     origin: 'Stark Enterprises Mainframe, California',
-    bio: "Tony Stark's dry-witted artificial intelligence system managing Stark Enterprises security, armory fabrication, and tactical heads-up telemetry for the Modular Armor.",
+    bio: "Artificial intelligence of Stark Enterprises, which runs the building, tracks Tony Stark's enemies and builds his armors. The Hacker takes it over for a while.",
   },
   'howard-stark': {
     name: 'Howard Stark',
@@ -1223,7 +1257,7 @@ export const characters = {
     origin: 'Dayton, Ohio',
     bio: 'Gamma radiation scientist who shares his body with the Incredible Hulk.',
     variants: {
-      'earth-92131': 'Genius nuclear physicist caught in the blast of his own Gamma Bomb who transforms into the green, rage-fueled Incredible Hulk whenever provoked.',
+      'earth-92131': 'Genius nuclear physicist caught in the blast of his own Gamma Bomb who transforms into the green, rage-fueled Incredible Hulk whenever provoked. In 1995 the Leader throws him and Iron Man back to the time of the dinosaurs, and at the gamma bomb test he shields his younger self.',
     },
   },
   'hydro-man': {
@@ -1700,8 +1734,7 @@ export const characters = {
     role: 'villain',
     status: 'alive',
     factions: ['maggia'],
-    origin: 'Milan, Italy',
-    bio: 'Maggia crime syndicate heiress wearing a golden mask to conceal her scarred face, commanding high-tech mercenaries and clashing with Tony Stark.',
+    bio: "Tony Stark's former lover, scarred and masked, who leads Maggia men. She tortures Julia Carpenter to make Iron Man fetch the Eye of Isis from a tomb in Egypt; the tiara heals her face and turns her into the goddess Isis, until Iron Man destroys it.",
   },
   'madame-web': {
     name: 'Cassandra Webb',
@@ -1732,7 +1765,7 @@ export const characters = {
     origin: 'Valley of Spirits, China',
     bio: 'Centuries-old warlord wielding the ten Makluan alien power rings who commands an army of supervillains and seeks total mastery over world technology and the destruction of Tony Stark.',
     variants: {
-      'earth-92131': 'In the animated series he is Arnold Brock, who leads Hypnotia, Dreadknight, Blacklash, Blizzard, Grey Gargoyle and Whirlwind, with MODOK and Justin Hammer, against Force Works. He works out that Tony Stark is Iron Man, until a robot double of Tony fools him.',
+      'earth-92131': "In the animated series he is Arnold Brock, who leads Hypnotia, Dreadknight, Blacklash, Blizzard, Grey Gargoyle and Whirlwind, with MODOK and Justin Hammer, against Force Works. He works out that Tony Stark is Iron Man, until a robot double of Tony fools him. In 1995 he loses his rings destroying the dragons' portal beside Iron Man, hunts them down one by one, covers Manhattan with the mist of the Heart of Darkness and unmasks Tony, until Iron Man destroys the Heart and leaves him to mountain bandits.",
     },
   },
   mantis: {
@@ -2560,6 +2593,14 @@ export const characters = {
     factions: ['x-men', 'mutants'],
     bio: 'Veteran X-Men leader with atmospheric godlike control over weather patterns, summoning torrential blizzards, lightning strikes, hurricane gale-force winds, and tornado shields.',
   },
+  'su-yin': {
+    name: 'Su Yin',
+    color: '#f472b6',
+    role: 'secondary',
+    status: 'alive',
+    factions: [],
+    bio: "Scientist at Stark Enterprises in Hong Kong, whose bio-energy microprocessor lets Iron Man build an armor that the Mandarin's mist cannot stop.",
+  },
   'sue-storm': {
     name: 'Susan Storm',
     alias: 'Invisible Woman',
@@ -2578,6 +2619,15 @@ export const characters = {
     factions: ['mutants'],
     origin: 'Brazil',
     bio: 'Brazilian mutant who absorbs and channels solar radiation to combust into a fiery solar plasma form capable of supersonic flight and devastating thermal energy blasts.',
+  },
+  sunturion: {
+    name: 'Arthur Dearborn',
+    alias: 'Sunturion',
+    color: '#facc15',
+    role: 'anti-hero',
+    status: 'deceased',
+    factions: [],
+    bio: "Lone resident of a hidden space station powered by the Star Well, which he guards as the energy being Sunturion. When A.I.M. jams one of his tests a school in China burns, and he gives his life to stop A.I.M.'s attack on New York.",
   },
   'super-skrull': {
     name: "Kl'rt",
@@ -2650,6 +2700,14 @@ export const characters = {
     origin: 'The Beyond Realm',
     bio: 'Inscrutable near-omnipotent cosmic entity from beyond the multiverse who conjures Battleworld to pit Good against Evil in the legendary Secret Wars.',
   },
+  'the-hacker': {
+    name: 'The Hacker',
+    color: '#22d3ee',
+    role: 'villain',
+    status: 'alive',
+    factions: [],
+    bio: "Young programmer whom Stark's computer science division turned down for being too young. When Ultimo plugs into H.O.M.E.R. he takes over Stark's computers, until H.O.M.E.R. traces him to his house and the police arrest him.",
+  },
   'the-leader-samuel-sterns': {
     name: 'Samuel Sterns',
     alias: 'The Leader',
@@ -2657,8 +2715,7 @@ export const characters = {
     role: 'villain',
     status: 'alive',
     factions: ['gamma-mutates'],
-    origin: 'Boise, Idaho',
-    bio: 'Chemical plant worker irradiated by gamma waste whose cranium expanded into a massive green brain, granting him vast telepathic intellect and control over gamma mutates.',
+    bio: "Bruce Banner's former lab assistant, changed by gamma rays into a genius with a huge green head. With two of the Mandarin's rings he opens a doorway to the past to kill the young Banner before the gamma bomb test, and Rhodes brings everyone back but him.",
   },
   'the-lion': {
     name: 'Nkati',
@@ -2703,7 +2760,7 @@ export const characters = {
     role: 'villain',
     status: 'alive',
     factions: [],
-    bio: 'Armored foe whom Force Works had already beaten once. MODOK calls him back to fight them in London, and Iron Man and War Machine send him into space.',
+    bio: "Armored foe whom Force Works had already beaten once. MODOK calls him back to fight them in London, and Iron Man and War Machine send him into space; later he returns as Dark Aegis's man, then turns on his master and chases him off.",
   },
   'toad-mortimer-toynbee': {
     name: 'Mortimer Toynbee',
@@ -2737,7 +2794,7 @@ export const characters = {
     origin: 'New York / Malibu',
     bio: 'Genius, billionaire, playboy, philanthropist who forged the Iron Man armor and saved the universe.',
     variants: {
-      'earth-92131': 'In the animated series he leads Force Works against the Mandarin from Stark Enterprises in Los Angeles, and keeps his secret when a robot double of him marries Julia Carpenter.',
+      'earth-92131': 'In the animated series he leads Force Works against the Mandarin from Stark Enterprises in Los Angeles, and keeps his secret when a robot double of him marries Julia Carpenter. In 1995 half of Force Works walks out after he fakes his death, he wages the Armor Wars against his own stolen designs, and the Mandarin finally learns who he is.',
     },
   },
   'trevor-fitzroy': {
@@ -2769,7 +2826,7 @@ export const characters = {
     status: 'presumably-dead',
     factions: ['automata'],
     origin: 'Deep Space / Volcanic Caldera',
-    bio: 'Ancient alien robot found sealed inside an extinct volcano in Latin America. It wakes when the men of Justin Hammer try to scrap it, turns on the Mandarin, and Force Works shuts it down before it reaches a Stark test range in Baja California.',
+    bio: 'Ancient alien robot found sealed inside an extinct volcano in Latin America. It wakes when the men of Justin Hammer try to scrap it, turns on the Mandarin, and Force Works shuts it down before it reaches a Stark test range in Baja California; later it comes back, opens H.O.M.E.R. to the Hacker, and Iron Man and Hawkeye beat it.',
   },
   'valerie-cooper': {
     name: 'Dr. Valerie Cooper',
@@ -2874,7 +2931,7 @@ export const characters = {
     origin: 'Philadelphia',
     bio: 'Colonel James Rhodes, heavily armored Avenger.',
     variants: {
-      'earth-92131': "In the animated series he is James Rhodes of Force Works, whose mind MODOK's E.L.F. once takes over. In the 1993 that Cable erases, he watches the Senate hearing on the plague at S.H.I.E.L.D.",
+      'earth-92131': "In the animated series he is James Rhodes of Force Works, whose mind MODOK's E.L.F. once takes over. In the 1993 that Cable erases, he watches the Senate hearing on the plague at S.H.I.E.L.D. In 1995 he gives up the armor after nearly failing Iron Man in a flood, puts it back on to follow him to the planet Elysian, and fights him in the Armor Wars.",
     },
   },
   'warlock-technarch': {

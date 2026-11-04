@@ -848,7 +848,8 @@ export const productions = {
     universe: 'earth-92131',
     status: 'audited',
     animated: true,
-    description: "Force Works disbands as Tony Stark adopts the sleek Modular Armor and AI H.O.M.E.R., facing Madame Masque, Justin Hammer, the Mandarin's return, and waging the legendary Armor Wars.",
+    description: "1995: Force Works breaks up and reunites while Iron Man faces Fin Fang Foom's brothers, A.I.M., the Armor Wars and the Leader, and the Mandarin hunts down his ten rings.",
+    verified: true,
     poster: '/9jAP0UPnfGeQn5gtEkzZoC7z4TB.jpg',
   },
   'fantastic-four-tas-s1': {

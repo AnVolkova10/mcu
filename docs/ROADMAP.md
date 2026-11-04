@@ -11,7 +11,7 @@
 
 ## Contenido
 
-Estado actual: `npm run content -- status` (32 producciones auditadas, 23 verificadas, 49 legacy de la v1).
+Estado actual: `npm run content -- status` (32 producciones auditadas, 24 verificadas, 49 legacy de la v1).
 
 **Lo que sigue.** Revisar una por una las 28 producciones auditadas en la v2 junto a quien mantiene el proyecto, con `docs/AUDIT_GUIDE.md`, y recién después seguir con lo demás. Van en el orden de la cronología de Aaron Perris (https://aaronperris.com/mcu/), que intercala piezas legacy de la v1, como *Stark Expo 1974*: se auditan en ese mismo orden.
 
@@ -37,7 +37,7 @@ Estado actual: `npm run content -- status` (32 producciones auditadas, 23 verifi
 - [x] *Spider-Man: The Animated Series* T1
 - [x] *Spider-Man: The Animated Series* T2
 - [x] *X-Men: The Animated Series* T4
-- [ ] *Iron Man: The Animated Series* T2
+- [x] *Iron Man: The Animated Series* T2
 - [ ] *Captain Marvel*
 - [ ] *Spider-Man: The Animated Series* T3
 - [x] *X-Men: The Animated Series* T5

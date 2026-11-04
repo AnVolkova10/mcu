@@ -283,6 +283,13 @@ export const cosmosNodes = {
     color: '#5eead4',
     description: "Arkon's storm-torn world, reached through a portal, which raids the nearby planet Belgania for slaves.",
   },
+  elysian: {
+    name: 'Elysian',
+    zone: 'deep-space',
+    look: 'planet',
+    color: '#a78bfa',
+    description: 'World of twin suns ruled by Jessik and wrecked by Dark Aegis, which Iron Man and War Machine reach through a space-fold.',
+  },
 } as const satisfies Record<string, CosmosNodeInput>;
 
 export type CosmosNodeId = keyof typeof cosmosNodes;

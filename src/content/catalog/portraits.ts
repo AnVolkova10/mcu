@@ -186,6 +186,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'coulson': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/9/98/Phil_Coulson_Infobox.jpg/revision/latest/window-crop/width/300/x-offset/168/y-offset/24/window-width/505/window-height/505?cb=20250203215516',
   },
+  'crimson-dynamo': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/3/38/Crimson_Dynamo.jpg/revision/latest/scale-to-width-down/300?cb=20100822140057',
+  },
   'crystal': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/8/88/Crystal.PNG/revision/latest/scale-to-width-down/300?cb=20170316222257',
   },
@@ -208,6 +211,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'daredevil': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/d/d7/Daredevil_Infobox.jpg/revision/latest/scale-to-width-down/225?cb=20260319203044',
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/7/7f/Daredevil.jpg/revision/latest/scale-to-width-down/300?cb=20091011201831',
+  },
+  'dark-aegis': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/f/f4/Dark_Aegis.jpg/revision/latest/scale-to-width-down/300?cb=20130915001854',
   },
   'deathbird': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/5/55/Cal28Earth-921312797_Concept_Art_001.webp/revision/latest/scale-to-width-down/197?cb=20241217044015',
@@ -283,6 +289,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'fin-fang-foom': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/c/c0/Fin_Fang_Foom.jpg/revision/latest/scale-to-width-down/300?cb=20160520045544',
   },
+  'firebrand': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/f/f3/Firebrand.jpg/revision/latest/scale-to-width-down/300?cb=20100822135905',
+  },
   'firelord': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/e/e8/Firelord.jpg/revision/latest?cb=20130915002607',
   },
@@ -315,6 +324,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   },
   'gamora': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/7/70/Gamora_Infobox.jpg/revision/latest/scale-to-width-down/218?cb=20231024023800',
+  },
+  'ghost': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/0/02/Ghost.PNG/revision/latest/scale-to-width-down/300?cb=20170812165017',
   },
   'ghost-rider-danny-ketch': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/e/ea/Ghost_Rider.jpg/revision/latest/scale-to-width-down/300?cb=20120219214035',
