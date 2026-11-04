@@ -888,7 +888,8 @@ export const productions = {
     universe: 'earth-92131',
     status: 'audited',
     animated: true,
-    description: 'In 1994-1995, Peter Parker balances university life at ESU with heroics, fighting the Lizard, Spider-Slayers, Doctor Octopus, Mysterio, Kraven, and surviving the Symbiote / Venom saga.',
+    description: '1994: Spider-Man faces the Lizard, the Scorpion, the Spider-Slayers, Doctor Octopus, Mysterio, Kraven, the Hobgoblin and the Chameleon, and the alien suit he sheds turns Eddie Brock into Venom.',
+    verified: true,
     poster: '/f1Dy2F8of9uZiSz6Z3kTlzpWz6L.jpg',
   },
   'spider-man-tas-s2': {

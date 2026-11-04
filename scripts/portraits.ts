@@ -67,6 +67,7 @@ const poster = (name: string): FilePick => [`XMDOFP ${name} Character Poster.jpg
 
 /** A better file than the page's lead image, per universe. */
 const FILES: Record<string, Record<string, FilePick>> = {
+  'alistair-smythe': { 'earth-92131': ['Smythehuman.jpg', 0.38, 0, 0.5] },
   'ana-jarvis': { 'earth-616': ['Agent Carter Season 2 Promo 10.jpg', 0.32, 0.01, 0.34] },
   'angie-martinelli': { 'earth-616': ['Angie Martinelli.jpg', 0.45, 0, 0.34] },
   'bishop-lucas-bishop': { 'earth-10005': poster('Bishop') },

@@ -3,6 +3,13 @@ import type { LocationInput } from '@/domain/schema';
 
 /** Places on Earth (with coordinates) and off-world places (linked to a Cosmos node). Sorted by id. */
 export const locations = {
+  'abandoned-rocket-plant': {
+    name: 'Abandoned Rocket Plant',
+    place: 'Bethpage, Long Island',
+    country: 'United States',
+    kind: 'earth',
+    coords: [40.753, -73.493],
+  },
   'acropolis-of-athens': {
     name: 'Acropolis',
     place: 'Athens',
@@ -141,6 +148,13 @@ export const locations = {
     country: 'Tibet / Great Refuge',
     kind: 'earth',
     coords: [31, 88],
+  },
+  'aunt-mays-house': {
+    name: "Aunt May's House",
+    place: 'Forest Hills, Queens',
+    country: 'United States',
+    kind: 'earth',
+    coords: [40.7154, -73.8505],
   },
   'auschwitz-birkenau-concentration-camp': {
     name: 'Auschwitz-Birkenau Concentration Camp',
@@ -373,12 +387,26 @@ export const locations = {
     kind: 'earth',
     coords: [40.7663, -73.9742],
   },
+  'central-park-zoo': {
+    name: 'Central Park Zoo',
+    place: 'Central Park, Manhattan',
+    country: 'United States',
+    kind: 'earth',
+    coords: [40.7678, -73.9718],
+  },
   'childhood-home-of-jean-grey': {
     name: 'Childhood Home of Jean Grey',
     place: 'Red Hook, New York',
     country: 'United States',
     kind: 'earth',
     coords: [42, -73.875],
+  },
+  'chrysler-building': {
+    name: 'Chrysler Building',
+    place: 'Turtle Bay, Manhattan',
+    country: 'United States',
+    kind: 'earth',
+    coords: [40.7516, -73.9755],
   },
   'cia-division-x-secret-facility': {
     name: 'Division X Facility',
@@ -429,6 +457,13 @@ export const locations = {
     country: 'United States',
     kind: 'earth',
     coords: [32.95, -112.65],
+  },
+  'connors-home': {
+    name: 'Connors Home',
+    place: 'Forest Hills, Queens',
+    country: 'United States',
+    kind: 'earth',
+    coords: [40.7108, -73.8452],
   },
   'convergence-nexus-and-svartalfheim-wastes': {
     name: 'Convergence Nexus & Svartalfheim Wastes',
@@ -534,8 +569,8 @@ export const locations = {
     coords: [41.09, 9.54],
   },
   'empire-state-university-and-daily-bugle': {
-    name: 'Empire State University & Daily Bugle',
-    place: 'Manhattan, New York',
+    name: 'Empire State University',
+    place: 'Greenwich Village, Manhattan',
     country: 'United States',
     kind: 'earth',
     coords: [40.7295, -73.9965],
@@ -567,6 +602,13 @@ export const locations = {
     country: 'Poland',
     kind: 'earth',
     coords: [52.167, 20.814],
+  },
+  'forest-hills-sewers': {
+    name: 'Sewers',
+    place: 'Under Forest Hills, Queens',
+    country: 'United States',
+    kind: 'earth',
+    coords: [40.719, -73.842],
   },
   'french-quarter-and-bayou-lafourche-caverns': {
     name: 'Thieves Guild',
@@ -661,11 +703,11 @@ export const locations = {
     approximate: true,
   },
   'george-washington-bridge-and-manhattan-skyline': {
-    name: 'George Washington Bridge & Manhattan Skyline',
-    place: 'Manhattan, New York',
+    name: 'George Washington Bridge',
+    place: 'Hudson River, between Manhattan and Fort Lee',
     country: 'United States',
     kind: 'earth',
-    coords: [40.8517, -73.9527],
+    coords: [40.8511, -73.9497],
   },
   'griffith-hotel': {
     name: 'Griffith Hotel',
@@ -717,6 +759,13 @@ export const locations = {
     kind: 'orbit',
     node: 'shuttle-orbit',
   },
+  'hardy-estate': {
+    name: 'Hardy Estate',
+    place: 'Old Westbury, Long Island',
+    country: 'United States',
+    kind: 'earth',
+    coords: [40.7905, -73.5975],
+  },
   'harlem-police-warehouse': {
     name: 'Police Warehouse',
     place: 'Harlem, Manhattan',
@@ -724,6 +773,20 @@ export const locations = {
     kind: 'earth',
     coords: [40.82, -73.94],
     approximate: true,
+  },
+  'harry-osborn-apartment': {
+    name: "Harry Osborn's Apartment",
+    place: 'Central Park West, Manhattan',
+    country: 'United States',
+    kind: 'earth',
+    coords: [40.788, -73.9684],
+  },
+  'helicarrier-over-new-york-harbor': {
+    name: 'S.H.I.E.L.D. Helicarrier',
+    place: 'Over New York Harbor',
+    country: 'United States',
+    kind: 'earth',
+    coords: [40.668, -74.045],
   },
   'hellfire-club-inner-circle-mansion': {
     name: 'Circle Club',
@@ -875,6 +938,13 @@ export const locations = {
     kind: 'earth',
     coords: [40.674, -74.0335],
   },
+  'jameson-penthouse': {
+    name: "Jameson's Penthouse",
+    place: 'Murray Hill, Manhattan',
+    country: 'United States',
+    kind: 'earth',
+    coords: [40.7476, -73.9724],
+  },
   'jotunheim-glacial-fortress': {
     name: 'Jotunheim Glacial Fortress',
     place: 'Frost Realm',
@@ -968,6 +1038,13 @@ export const locations = {
     kind: 'earth',
     coords: [36.1699, -115.1398],
   },
+  'launch-site': {
+    name: 'Launch Site',
+    place: 'Near Kennedy Airport, Queens',
+    country: 'United States',
+    kind: 'earth',
+    coords: [40.633, -73.756],
+  },
   'lilandra-starcruiser': {
     name: "Lilandra's Starcruiser",
     country: 'Lunar orbit',
@@ -1045,8 +1122,8 @@ export const locations = {
     approximate: true,
   },
   'manhattan-bridge-and-our-lady-of-saints-church-bell-tower': {
-    name: 'Manhattan Bridge & Our Lady of Saints Church Bell Tower',
-    place: 'Manhattan, New York',
+    name: 'Manhattan Bridge',
+    place: 'East River, between Manhattan and Brooklyn',
     country: 'United States',
     kind: 'earth',
     coords: [40.7075, -73.9908],
@@ -1078,13 +1155,6 @@ export const locations = {
     country: 'United States',
     kind: 'earth',
     coords: [41.1968, -73.7256],
-  },
-  'manhattan-rooftops-and-esu-bio-labs': {
-    name: 'Manhattan Rooftops & ESU Bio-Labs',
-    place: 'New York City',
-    country: 'United States',
-    kind: 'earth',
-    coords: [40.7295, -73.9965],
   },
   'manhattan-stratosphere-and-taa-ii-worldship': {
     name: "Galactus's Ship",
@@ -1133,6 +1203,13 @@ export const locations = {
     country: 'Nigeria',
     kind: 'earth',
     coords: [7.85, 3.93],
+  },
+  'metropolitan-museum': {
+    name: 'Metropolitan Museum',
+    place: 'Upper East Side, Manhattan',
+    country: 'United States',
+    kind: 'earth',
+    coords: [40.7794, -73.9632],
   },
   'miami-coastline-and-shaw-yacht': {
     name: 'Caspartina',
@@ -1367,12 +1444,26 @@ export const locations = {
     kind: 'earth',
     coords: [30.006, 31.231],
   },
+  'old-church': {
+    name: 'Old Church',
+    place: 'Kips Bay, Manhattan',
+    country: 'United States',
+    kind: 'earth',
+    coords: [40.7389, -73.9805],
+  },
   'old-royal-naval-college': {
     name: 'Old Royal Naval College',
     place: 'Greenwich, London',
     country: 'United Kingdom',
     kind: 'earth',
     coords: [51.4826, -0.0077],
+  },
+  'oscorp-industries': {
+    name: 'Oscorp Industries',
+    place: 'Williamsburg waterfront, Brooklyn',
+    country: 'United States',
+    kind: 'earth',
+    coords: [40.7215, -73.9605],
   },
   'oxford-university-campus-and-country-road': {
     name: 'Bard College',
@@ -1465,6 +1556,12 @@ export const locations = {
     country: 'United States',
     kind: 'earth',
     coords: [35.011, -115.473],
+  },
+  'prometheum-x-asteroid': {
+    name: 'Asteroid',
+    country: 'Near the Moon',
+    kind: 'orbit',
+    node: 'moon',
   },
   'prometheus-off-scotland': {
     name: 'Submarine Prometheus',
@@ -2171,6 +2268,13 @@ export const locations = {
     country: 'Great Britain',
     kind: 'earth',
     coords: [51.5196, -0.059],
+  },
+  'wonder-studios': {
+    name: 'Wonder Studios',
+    place: 'Astoria, Queens',
+    country: 'United States',
+    kind: 'earth',
+    coords: [40.7563, -73.9245],
   },
   'world-peace-summit-at-arc-de-triomphe': {
     name: 'World Peace Conference',

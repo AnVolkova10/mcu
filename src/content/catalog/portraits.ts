@@ -24,11 +24,17 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'alicia-masters': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/a/ad/Alicia_Masters.jpg/revision/latest/scale-to-width-down/300?cb=20150324031855',
   },
+  'alistair-smythe': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/f/fd/Smythehuman.jpg/revision/latest/window-crop/width/300/x-offset/139/y-offset/0/window-width/184/window-height/184?cb=20080801203413',
+  },
   'amelia-voght': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/8/8c/Voght.jpg/revision/latest/scale-to-width-down/260?cb=20131115211143',
   },
   'ana-jarvis': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/f/ff/Agent_Carter_Season_2_Promo_10.jpg/revision/latest/window-crop/width/300/x-offset/720/y-offset/30/window-width/765/window-height/765?cb=20160106184612',
+  },
+  'anastasia-hardy': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/c/c8/Anastasia_Hardy.jpg/revision/latest/scale-to-width-down/287?cb=20170929022926',
   },
   'andre-cocteau': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/b/b0/Andre_Cocteau.jpg/revision/latest/scale-to-width-down/300?cb=20110724032306',
@@ -262,6 +268,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'falcon': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/a/ac/Falcon-DontThankMe.jpg/revision/latest/scale-to-width-down/300?cb=20161215113509',
   },
+  'farley-stillwell': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/f/ff/Farley_Stillwell_%28Spider-Man%29.png/revision/latest/scale-to-width-down/300?cb=20170826215701',
+  },
   'felicia-hardy': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/d/d1/Cat.jpg/revision/latest/scale-to-width-down/300?cb=20080817141144',
   },
@@ -270,6 +279,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   },
   'firelord': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/e/e8/Firelord.jpg/revision/latest?cb=20130915002607',
+  },
+  'flash-thompson': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/c/cf/Flash_Thompson.jpg/revision/latest/scale-to-width-down/172?cb=20131015193030',
   },
   'forge': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/d/d7/Forge.jpg/revision/latest/scale-to-width-down/300?cb=20100822153656',
@@ -322,6 +334,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'hank-mccoy': {
     'earth-10005': 'https://static.wikia.nocookie.net/xmenmovies/images/1/19/Beast-profile03-682x1024.jpg/revision/latest/scale-to-width-down/200?cb=20120409162048',
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/6/6b/Beast.jpg/revision/latest/scale-to-width-down/300?cb=20160425013134',
+  },
+  'harry-osborn': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/7/79/GGharry.jpg/revision/latest/scale-to-width-down/300?cb=20080729011743',
   },
   'hawkeye': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/5/5b/Hawkeye_Infobox.jpg/revision/latest/scale-to-width-down/256?cb=20240222145717',
@@ -417,6 +432,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   },
   'john-flynn': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/c/ce/Flynn.jpg/revision/latest/window-crop/width/300/x-offset/101/y-offset/0/window-width/231/window-height/231?cb=20130720100223',
+  },
+  'john-jameson': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/9/96/John_Jameson.jpg/revision/latest/scale-to-width-down/300?cb=20160907064710',
   },
   'john-wraith': {
     'earth-10005': 'https://static.wikia.nocookie.net/xmenmovies/images/5/58/Kestrel.jpg/revision/latest/scale-to-width-down/240?cb=20120101153638',
@@ -523,6 +541,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'maria-rambeau': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/27/Maria_Rambeau_Infobox.jpg/revision/latest/scale-to-width-down/213?cb=20231025002315',
   },
+  'mariah-crawford': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/9/91/Calypso.jpg/revision/latest/scale-to-width-down/300?cb=20131015195017',
+  },
   'mary-jane-watson': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/d/d6/Mary_Jane_Watson.jpg/revision/latest/scale-to-width-down/157?cb=20170317070609',
   },
@@ -534,6 +555,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   },
   'may': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/c/ca/Melinda_May_-_MAOSS6.jpg/revision/latest/scale-to-width-down/225?cb=20190412001641',
+  },
+  'may-parker': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/a/ae/Auntmay.jpg/revision/latest/scale-to-width-down/300?cb=20080720215521',
   },
   'medusa': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/e/eb/Medusa.jpg/revision/latest/scale-to-width-down/300?cb=20150321045439',
@@ -664,8 +688,12 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'reed-richards': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/f/f9/Mister_Fantastic_Blue_Uniform.jpg/revision/latest/scale-to-width-down/300?cb=20170810023226',
   },
+  'rhino': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/7/73/Charge.jpg/revision/latest/scale-to-width-down/300?cb=20080729151836',
+  },
   'robbie-robertson-noir': {
     'earth-62533': 'https://static.wikia.nocookie.net/spidermannoir/images/9/99/Robbie_Robertson_Infobox.jpg/revision/latest/scale-to-width-down/252?cb=20260210165557',
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/a/a2/Joseph_Robertson.jpg/revision/latest/scale-to-width-down/300?cb=20170930002845',
   },
   'robert-hendry': {
     'earth-10005': 'https://static.wikia.nocookie.net/xmenmovies/images/1/1b/Xmen-first-class-movie-2207.jpg/revision/latest/scale-to-width-down/251?cb=20140617192537',
@@ -719,6 +747,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'shard-bishop': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/6/61/Shard.jpg/revision/latest/scale-to-width-down/268?cb=20130112132134',
   },
+  'shocker': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/d/df/Shocker.jpg/revision/latest/scale-to-width-down/300?cb=20080719213614',
+  },
   'shuri': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/e/e2/BP-Shuri_%28In_Contact_With_T%27Challa%29.jpg/revision/latest/scale-to-width-down/300?cb=20180329024900',
   },
@@ -733,6 +764,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   },
   'skye': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/7/79/Quake.jpg/revision/latest/window-crop/width/300/x-offset/675/y-offset/150/window-width/900/window-height/900?cb=20190412001710',
+  },
+  'spencer-smythe': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/a/ad/Spencer_Smythe.jpg/revision/latest/scale-to-width-down/299?cb=20170207030734',
   },
   'spider-man': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/4/41/Spider-Man_Infobox.jpg/revision/latest/scale-to-width-down/225?cb=20261016004855',
@@ -770,6 +804,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   },
   'terrax': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/f/f4/Terrax.jpg/revision/latest/scale-to-width-down/300?cb=20110214170830',
+  },
+  'terri-lee': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/f/fb/Terri_Lee.png/revision/latest/scale-to-width-down/300?cb=20120708013422',
   },
   'thanos': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/27/Thanos_Infobox.png/revision/latest/scale-to-width-down/222?cb=20250119155740',

@@ -88,6 +88,14 @@ export const characters = {
     factions: [],
     bio: 'Sculptor and friend of the Fantastic Four. She takes in the Silver Surfer after the Thing knocks him off the Baxter Building, and persuades him to turn against Galactus.',
   },
+  'alistair-smythe': {
+    name: 'Alistair Smythe',
+    color: '#64748b',
+    role: 'villain',
+    status: 'alive',
+    factions: ['kingpin-syndicate'],
+    bio: "Spencer Smythe's son, who moves in a hoverchair. After his father vanishes in the explosion at Oscorp, he builds Spider-Slayers for the Kingpin to destroy Spider-Man and the people he blames for it.",
+  },
   'amelia-voght': {
     name: 'Amelia Voght',
     color: '#e879f9',
@@ -104,6 +112,14 @@ export const characters = {
     factions: [],
     origin: 'Hungary',
     bio: 'Wife of Edwin Jarvis, who helps Peggy Carter in Los Angeles. Whitney Frost shoots her in 1947, and she survives but cannot have children.',
+  },
+  'anastasia-hardy': {
+    name: 'Anastasia Hardy',
+    color: '#c084fc',
+    role: 'civilian',
+    status: 'alive',
+    factions: ['hardy-foundation'],
+    bio: "Felicia Hardy's mother. Her Hardy Foundation cut off Otto Octavius's grant, so she recognizes his signature on the ransom note when Doctor Octopus kidnaps her daughter.",
   },
   'andre-cocteau': {
     name: 'Andre Cocteau',
@@ -475,9 +491,8 @@ export const characters = {
     color: '#94a3b8',
     role: 'villain',
     status: 'alive',
-    factions: ['international-espionage'],
-    origin: 'Moscow, Russia',
-    bio: 'Master of disguise and international espionage operative utilizing holographic face-belt tech and mimicry to infiltrate any government or military installation.',
+    factions: [],
+    bio: "Master of disguise whose image inducer copies anyone's looks. Hired by terrorists to stop a peace treaty at the United Nations, he poses as Jameson, Robbie, Peter and Nick Fury until Spider-Man breaks the inducer and S.H.I.E.L.D. takes him.",
   },
   'charles-xavier': {
     name: 'Charles Xavier',
@@ -573,8 +588,7 @@ export const characters = {
     role: 'anti-hero',
     status: 'alive',
     factions: ['esu-science-faculty'],
-    origin: 'Coral Gables, Florida',
-    bio: 'Revered ESU biochemistry professor whose reptilian limb-regeneration neogenic serum cyclically mutates him into the savage, cold-blooded Lizard.',
+    bio: "ESU professor and Peter Parker's teacher. He uses his Neogenic Recombinator to regrow his missing arm and turns into the Lizard, until Spider-Man fires the device at him and turns him back.",
   },
   'cyclops-scott-summers': {
     name: 'Scott Summers',
@@ -649,9 +663,8 @@ export const characters = {
     color: '#10b981',
     role: 'villain',
     status: 'alive',
-    factions: ['insidious-six', 'hardy-foundation'],
-    origin: 'Schenectady, New York',
-    bio: 'Brilliant nuclear physicist whose telepathically controlled mechanical harness of four titanium-steel tentacles fused to his spine, driving his ruthless scientific megalomania.',
+    factions: ['insidious-six'],
+    bio: 'Scientist whose mechanical arms an explosion welded to his spine. Angry that the Hardy Foundation cut off his grant, he kidnaps Felicia Hardy and J. Jonah Jameson for ransom, and ends up in prison.',
   },
   'doctor-strange': {
     name: 'Dr. Stephen Strange',
@@ -722,9 +735,8 @@ export const characters = {
     color: '#e5e7eb',
     role: 'villain',
     status: 'alive',
-    factions: ['daily-globe', 'symbiotes'],
-    origin: 'Manhattan, New York',
-    bio: 'Discredited investigative reporter who bonded with the vengeful alien Klyntar symbiote discarded by Spider-Man, creating the towering, razor-toothed lethal protector Venom.',
+    factions: ['daily-bugle', 'symbiotes'],
+    bio: "Daily Bugle reporter and Peter Parker's rival, whom Jameson fires for lying about Spider-Man. The alien symbiote that Spider-Man sheds bonds with him and makes him Venom, who knows that Peter is Spider-Man.",
   },
   'edward-addison': {
     name: 'Edward Addison',
@@ -855,6 +867,14 @@ export const characters = {
     origin: 'Delacroix, Louisiana',
     bio: 'USAF pararescue veteran who took up the mantle and vibranium shield of Captain America.',
   },
+  'farley-stillwell': {
+    name: 'Farley Stillwell',
+    color: '#14b8a6',
+    role: 'secondary',
+    status: 'alive',
+    factions: ['esu-science-faculty'],
+    bio: "ESU scientist who ignored Curt Connors's warnings about Neogenic testing on people. Paid by J. Jonah Jameson, he gives Mac Gargan scorpion DNA inside a battle suit, a change he cannot undo.",
+  },
   'felicia-hardy': {
     name: 'Felicia Hardy',
     alias: 'Black Cat',
@@ -862,8 +882,7 @@ export const characters = {
     role: 'hero',
     status: 'alive',
     factions: ['hardy-foundation', 'street-level-heroes'],
-    origin: 'Manhattan, New York',
-    bio: 'Glamorous New York heiress and martial artist transformed through the recreated Super Soldier serum into the agile, probability-manipulating cat burglar and hero Black Cat.',
+    bio: "Anastasia Hardy's daughter and Peter Parker's college classmate, who takes him as her science tutor. Doctor Octopus kidnaps her from the Hardy Estate for ransom.",
   },
   'fin-fang-foom': {
     name: 'Fin Fang Foom',
@@ -880,6 +899,14 @@ export const characters = {
     status: 'alive',
     factions: ['heralds-of-galactus'],
     bio: 'Herald of Galactus. His master summons him and Terrax against the Fantastic Four when they attack the device Galactus is building to drain the Earth.',
+  },
+  'flash-thompson': {
+    name: 'Flash Thompson',
+    color: '#3b82f6',
+    role: 'civilian',
+    status: 'alive',
+    factions: [],
+    bio: "Peter Parker's college classmate, who dates Felicia Hardy. Dressed as Spider-Man for a frat party, he is carried off by the Spider-Slayer and unmasked on live television.",
   },
   forge: {
     name: 'Forge',
@@ -917,7 +944,7 @@ export const characters = {
     origin: 'Earth / S.A.B.E.R. Station',
     bio: 'Former Director of S.H.I.E.L.D. and founder of the Avengers.',
     variants: {
-      'earth-92131': "In the animated series he is one of the Howling Commandos who blow up the Red Skull's facility in France in 1944, and in the 1993 that Cable erases he watches the Senate hearing on the plague at S.H.I.E.L.D.",
+      'earth-92131': "In the animated series he is one of the Howling Commandos who blow up the Red Skull's facility in France in 1944, and in the 1993 that Cable erases he watches the Senate hearing on the plague at S.H.I.E.L.D. In 1994 the government fakes his death, and from the S.H.I.E.L.D. Helicarrier he and Spider-Man stop the Chameleon.",
     },
   },
   'gabe-jones': {
@@ -1043,6 +1070,14 @@ export const characters = {
     origin: 'United States',
     bio: 'Brilliant geneticist and aerospace engineer whose attempt to cure his prehensile feet resulted in a permanent transformation into a blue-furred powerhouse.',
   },
+  'harry-osborn': {
+    name: 'Harry Osborn',
+    color: '#2dd4bf',
+    role: 'civilian',
+    status: 'alive',
+    factions: [],
+    bio: "Norman Osborn's son and Peter Parker's friend, who offers Peter a room in his apartment. The Hobgoblin kidnaps him to make his father hand over Oscorp.",
+  },
   hawkeye: {
     name: 'Clint Barton',
     alias: 'Hawkeye',
@@ -1108,8 +1143,7 @@ export const characters = {
     role: 'villain',
     status: 'alive',
     factions: ['kingpin-syndicate'],
-    origin: 'Boston, Massachusetts',
-    bio: "Mercenary who stole Norman Osborn's prototype glider and sonic arsenal, donning an orange hooded cowl and terrorizing New York's underworld.",
+    bio: "Mercenary on a glider whom Norman Osborn hires to kill Wilson Fisk. When he learns that Fisk is the Kingpin he changes sides, kidnaps Harry Osborn and tries to take over the Kingpin's empire, until Spider-Man makes him crash into the water.",
   },
   'homer-ai': {
     name: 'H.O.M.E.R. (Heuristically Operative Matrix Emulation Rostrum)',
@@ -1189,8 +1223,7 @@ export const characters = {
     role: 'civilian',
     status: 'alive',
     factions: ['daily-bugle'],
-    origin: 'Manhattan, New York',
-    bio: 'Cigar-chomping, explosive Editor-in-Chief and Publisher of The Daily Bugle with an uncompromising journalistic code and an eternal vendetta against masked vigilantes.',
+    bio: "Publisher of the Daily Bugle, who hates Spider-Man yet buys Peter Parker's photos of him. He pays for the experiment that turns Mac Gargan into the Scorpion, and his son John is an astronaut.",
   },
   'jack-the-ripper': {
     name: 'Jack the Ripper',
@@ -1338,6 +1371,14 @@ export const characters = {
     factions: ['ssr'],
     origin: 'United States',
     bio: 'Superior of Peggy Carter at the SSR in New York in 1946, who keeps her behind a desk until Howard Stark calls.',
+  },
+  'john-jameson': {
+    name: 'John Jameson',
+    color: '#93c5fd',
+    role: 'secondary',
+    status: 'alive',
+    factions: [],
+    bio: "Astronaut and J. Jonah Jameson's son. He brings a rock of Prometheum X back from an asteroid, an alien ooze comes with it, and his shuttle crashes on the George Washington Bridge.",
   },
   'john-wraith': {
     name: 'John Wraith',
@@ -1498,9 +1539,8 @@ export const characters = {
     color: '#d97706',
     role: 'anti-hero',
     status: 'alive',
-    factions: ['russian-aristocracy'],
-    origin: 'Volgograd, Russia',
-    bio: 'Peerless big-game hunter sustained by rare jungle elixirs granting him feral superhuman senses and strength, seeking Spider-Man as the ultimate quarry.',
+    factions: [],
+    bio: 'Hunter who comes to New York for Mariah Crawford and takes Robbie Robertson as bait to catch her. Her antidote cures him, and the two sail for Africa together.',
   },
   kuda: {
     name: 'Kuda',
@@ -1684,6 +1724,14 @@ export const characters = {
     origin: 'New Orleans, Louisiana',
     bio: "Ace U.S. Air Force pilot, single mother, and Carol Danvers' closest confidante who piloted the Quadjet during the 1995 Skrull rescue and went on to establish and direct S.W.O.R.D.",
   },
+  'mariah-crawford': {
+    name: 'Mariah Crawford',
+    color: '#fb7185',
+    role: 'secondary',
+    status: 'alive',
+    factions: [],
+    bio: 'Scientist whom Kraven comes to New York to take home with him. She makes the antidote that cures him, and the two sail for Africa together.',
+  },
   'mary-jane-watson': {
     name: 'Mary Jane Watson',
     color: '#f97316',
@@ -1691,7 +1739,7 @@ export const characters = {
     status: 'alive',
     factions: ['spider-man-allies'],
     origin: 'New York City',
-    bio: 'Red-haired aspiring actress and true love of Peter Parker whose life was fractured when Green Goblin hurled her into a dimensional portal, triggering a multiversal clone conspiracy.',
+    bio: "Anna Watson's niece and an aspiring actress. Aunt May sets her up on a blind date with Peter Parker, and the two start dating.",
   },
   'master-mold': {
     name: 'Master Mold',
@@ -1719,6 +1767,14 @@ export const characters = {
     factions: ['shield'],
     origin: 'Earth',
     bio: 'Legendary S.H.I.E.L.D. combat pilot and martial artist known as The Cavalry.',
+  },
+  'may-parker': {
+    name: 'May Parker',
+    color: '#c4b5fd',
+    role: 'civilian',
+    status: 'alive',
+    factions: [],
+    bio: "Peter Parker's aunt, who lives with him in Forest Hills, Queens, and hides the bills she cannot pay. She sets Peter up on a blind date with Mary Jane Watson, and is hurt when the Hobgoblin kidnaps Harry Osborn.",
   },
   medusa: {
     name: 'Medusalith Amaquelin',
@@ -1863,9 +1919,8 @@ export const characters = {
     color: '#a855f7',
     role: 'villain',
     status: 'alive',
-    factions: ['insidious-six', 'hollywood-special-effects'],
-    origin: 'Riverside, California',
-    bio: 'Disgraced cinematic special-effects wizard and illusionist who employs holographic projections, hallucinogenic gasses, and robotic tricks to stage dazzling crimes.',
+    factions: ['insidious-six'],
+    bio: 'Special-effects man who, as Mysterio, frames Spider-Man for a robbery at the Metropolitan Museum and fakes his own powers with illusions and robots. Spider-Man and Detective Terri Lee find him at Wonder Studios, and he is arrested.',
   },
   nakia: {
     name: 'Nakia',
@@ -1923,9 +1978,8 @@ export const characters = {
     color: '#15803d',
     role: 'villain',
     status: 'alive',
-    factions: ['oscorp-board', 'sinister-cabal'],
-    origin: 'Manhattan, New York',
-    bio: 'Ruthless CEO of Oscorp Industries driven to psychotic schizophrenia by his experimental gas, flying on a bat-winged glider hurling pumpkin bombs as the Green Goblin.',
+    factions: ['oscorp-board'],
+    bio: "Head of Oscorp, in debt to the Kingpin. He pays for Spencer Smythe's Spider-Slayer and hires the Hobgoblin to kill Wilson Fisk, and when the Hobgoblin turns on him he shields his son Harry.",
   },
   odin: {
     name: 'Odin Borson',
@@ -2137,6 +2191,14 @@ export const characters = {
     factions: ['fantastic-four'],
     bio: 'Scientist and leader of the Fantastic Four, who can stretch his body into any shape since cosmic rays struck the four. Victor von Doom was his classmate in college.',
   },
+  rhino: {
+    name: 'Rhino',
+    color: '#6b7280',
+    role: 'villain',
+    status: 'alive',
+    factions: ['kingpin-syndicate'],
+    bio: "The Kingpin's thug in rhino armor. He steals the Prometheum X from John Jameson's crashed shuttle, and later fights Spider-Man beside the Shocker.",
+  },
   'robbie-robertson-noir': {
     name: 'Robbie Robertson',
     color: '#38bdf8',
@@ -2145,6 +2207,9 @@ export const characters = {
     factions: ['daily-bugle'],
     origin: 'New York City',
     bio: 'Daily Bugle reporter and the friend who knows Ben Reilly is The Spider. He cures Lonnie Lincoln with a dose in the eye, wears the suit to save Ben, and leaves the Bugle to run the Harlem Herald.',
+    variants: {
+      'earth-92131': "In the animated series he works at the Daily Bugle and buys Peter Parker's photos of Spider-Man. Kraven takes him as bait to make Spider-Man hand over Mariah Crawford.",
+    },
   },
   'robert-hendry': {
     name: 'Colonel Robert Hendry',
@@ -2261,8 +2326,7 @@ export const characters = {
     role: 'villain',
     status: 'alive',
     factions: ['insidious-six'],
-    origin: 'Yonkers, New York',
-    bio: "Private investigator mutated by Dr. Stillwell through J. Jonah Jameson's funding into an armored predator with a devastating cybernetic sting tail, driving him mad.",
+    bio: 'Private investigator whom J. Jonah Jameson hires to learn how Peter Parker gets his photos of Spider-Man. Jameson then pays Farley Stillwell to turn him into the Scorpion, who keeps mutating, turns on Jameson and goes to jail.',
   },
   'sean-cassidy': {
     name: 'Sean Cassidy',
@@ -2317,6 +2381,14 @@ export const characters = {
     status: 'alive',
     factions: [],
     bio: "Bishop's sister, from the 2055 of Forge's rebels. She goes back with him to stop Trevor Fitzroy from killing the young Charles Xavier, and later travels to the 1990s to find Bishop when he is lost in time.",
+  },
+  shocker: {
+    name: 'Shocker',
+    color: '#eab308',
+    role: 'villain',
+    status: 'alive',
+    factions: ['kingpin-syndicate'],
+    bio: "The Kingpin's agent, armed with vibrating gauntlets. He kidnaps John Jameson from the hospital, and Spider-Man, in the black suit, nearly kills him in a bell tower before saving him.",
   },
   shuri: {
     name: 'Shuri',
@@ -2375,6 +2447,14 @@ export const characters = {
     factions: ['mutants'],
     bio: "Mutant of the Children of the Shadow who takes over Skull Mesa for its gold mine and works the town's people in it, until a revolt drives him out.",
   },
+  'spencer-smythe': {
+    name: 'Spencer Smythe',
+    color: '#78716c',
+    role: 'villain',
+    status: 'presumably-dead',
+    factions: [],
+    bio: 'Robotics expert who builds the Spider Seekers and the Black Widow Spider-Slayer for Norman Osborn, in exchange for a hoverchair for his son Alistair. He stays at the controls when Oscorp explodes, and vanishes.',
+  },
   'spider-man': {
     name: 'Peter Parker',
     alias: 'Spider-Man',
@@ -2385,7 +2465,7 @@ export const characters = {
     origin: 'Queens, New York',
     bio: 'Friendly neighborhood web-slinger empowered by a radioactive spider bite.',
     variants: {
-      'earth-92131': "ESU science student who lives by Uncle Ben's creed that with great power comes great responsibility, swinging through NYC with agility, web-shooters, and spider-sense.",
+      'earth-92131': 'In the animated series he is a college student who sells photos of Spider-Man to the Daily Bugle. In 1994 an alien suit bonds with him for a few days and makes him stronger and angrier, until the bell of an old church tears it off.',
     },
   },
   'stan-lee-creator': {
@@ -2491,6 +2571,14 @@ export const characters = {
     status: 'alive',
     factions: ['heralds-of-galactus'],
     bio: 'Herald of Galactus, called with Firelord to fight the Fantastic Four while Galactus builds the device that will drain the Earth.',
+  },
+  'terri-lee': {
+    name: 'Terri Lee',
+    color: '#2563eb',
+    role: 'secondary',
+    status: 'alive',
+    factions: [],
+    bio: 'New York police detective who comes to believe that Spider-Man was framed for the robbery at the Metropolitan Museum. She helps him find Mysterio, who traps her and Jameson at Wonder Studios until Spider-Man saves them.',
   },
   thanos: {
     name: 'Thanos',
@@ -2804,8 +2892,7 @@ export const characters = {
     role: 'villain',
     status: 'alive',
     factions: ['fisk-enterprises', 'insidious-six'],
-    origin: "Hell's Kitchen, Manhattan, New York",
-    bio: 'Shadow ruler of the East Coast criminal empire masquerading as a legitimate philanthropist, possessing 400 pounds of solid muscle and ruthless calculating cunning.',
+    bio: "In public one of New York's leading philanthropists, in secret the crime lord known as the Kingpin. He hires Alistair Smythe to build Spider-Slayers, and the Hobgoblin briefly takes over his headquarters.",
   },
   'winston-noir': {
     name: 'Winston',

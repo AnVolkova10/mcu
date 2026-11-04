@@ -19,6 +19,7 @@ import { ROOT, tmdb, TV_SPECIALS } from './tmdb';
 const CREDITED_AS: Record<string, readonly string[]> = {
   'alethea-faber-noir': ['Dr. Faber'],
   'alfred-morris-noir': ['Mayor Morris'],
+  'anastasia-hardy': ['Mrs. Hardy'],
   'archangel-warren-worthington': ['Angel'],
   'fred-dukes': ['Fred Dukes'],
   'henry-gyrich': ['Henry Gyrich'],
@@ -27,6 +28,7 @@ const CREDITED_AS: Record<string, readonly string[]> = {
   'johann-fennhoff': ['Dr. Ivchenko'],
   'last-black-panther': ['The Intruder'],
   'lilandra-neramani': ['Lilandra', 'Empress Lilandra'],
+  'may-parker': ['Aunt May Parker'],
   medusa: ['Madam Medusa'],
   noni: ['Older Noni'],
   odin: ['Odin'],
@@ -38,6 +40,7 @@ const CREDITED_AS: Record<string, readonly string[]> = {
   ronan: ['Ronan'],
   'ruby-williams-noir': ['Ruby'],
   'silvermane-noir': ['Finn Byrne'],
+  'terri-lee': ['Detective Terri Lee'],
   'vera-addison-noir': ['Vera'],
   'war-machine': ['Rhodey'],
   'william-stryker': ['Stryker', 'Bill Stryker'],

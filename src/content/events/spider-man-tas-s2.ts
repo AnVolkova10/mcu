@@ -20,7 +20,7 @@ export default defineEvents('spider-man-tas-s2', [
       "Peter Parker's cellular degradation worsens, mutating him into a six-armed arachnid monstrosity known as the **Man-Spider**. Simultaneously, biology student [Michael Morbius](michael-morbius) steals the Neogenic Recombinator to cure his rare blood disease, accidentally transforming into a living vampire that preys on Manhattan's plasma. Armed vigilante Frank Castle, [The Punisher](the-punisher), hunts the rampaging Man-Spider with battle vans and explosives, while daywalking dhampir [Blade the Vampire Hunter](blade-eric-brooks) arrives in New York with silver swords to eliminate Morbius. Dr. Mariah Crawford formulates an enzyme cure, restoring Peter Parker while Morbius flees into the night.",
     ],
     cast: ['spider-man', 'the-punisher'],
-    locations: ['manhattan-rooftops-and-esu-bio-labs'],
+    locations: ['empire-state-university-and-daily-bugle'],
   },
   {
     id: 'tablet-of-time-war',
