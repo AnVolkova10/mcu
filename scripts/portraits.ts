@@ -90,6 +90,7 @@ const FILES: Record<string, Record<string, FilePick>> = {
   'psylocke-betsy-braddock': { 'earth-10005': 'Psylocke-XMen-Apocalypse.png' },
   'roger-dooley': { 'earth-616': ['Roger Dooley.jpg', 0.2, 0, 0.45] },
   shuri: { 'earth-616': "BP-Shuri (In Contact With T'Challa).jpg" },
+  'silver-surfer': { 'earth-92131': ['Surferff.jpg', 0.12, 0, 0.5] },
   skye: { 'earth-616': ['Quake.jpg', 0.3, 0.05, 0.4] },
   'storm-ororo-munroe': { 'earth-10005': ['Storm XMOW.png', 0.26, 0.02, 0.45] },
   'sunspot-roberto-da-costa': { 'earth-10005': ['XMDOFP Sunspot Character Poster.jpg', 0.3, 0.27, 0.4] },
@@ -150,7 +151,9 @@ const titlesOf = (c: Character, universe: string) => [...new Set([PAGES[c.id]?.[
 const { archive } = await loadArchive();
 const universesOf = (c: Character) => [...new Set([...(archive.byCharacter.get(c.id) ?? []).map((e) => e.universe.id as string), ...(HOME[c.id] ? [HOME[c.id]] : [])])];
 
-const out = JSON.parse(JSON.stringify(portraits)) as Record<string, Record<string, string>>;
+// A character removed from the catalog takes its images with it.
+const known = new Set<string>(characterList.map((c) => c.id));
+const out = JSON.parse(JSON.stringify(Object.fromEntries(Object.entries(portraits).filter(([id]) => known.has(id))))) as Record<string, Record<string, string>>;
 const missing: string[] = [];
 
 for (const [universe, wiki] of Object.entries(WIKIS)) {

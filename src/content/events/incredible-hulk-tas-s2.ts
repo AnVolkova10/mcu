@@ -10,6 +10,6 @@ export default defineEvents('incredible-hulk-tas-s2', [
       "Following a fatal shooting by crime syndicate hitmen, Bruce Banner performs an emergency blood transfusion on his lawyer cousin [Jennifer Walters](jennifer-walters-she-hulk), saving her life and transforming her into the charismatic, emerald powerhouse [She-Hulk](jennifer-walters-she-hulk). Together on the open road, the gamma cousins clash with the savage Wendigo in Canada, infiltrate Latveria to thwart Doctor Doom's mind-control device, and navigate Bruce's volatile psychological fracturing that gives rise to the cunning, cynical persona of the **Gray Hulk** (Joe Fixit).",
     ],
     cast: ['hulk', 'victor-von-doom'],
-    locations: ['castle-doom-sub-levels'],
+    locations: ['castle-doom-and-haasenstadt-citadel'],
   },
 ]);

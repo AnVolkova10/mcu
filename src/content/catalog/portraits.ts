@@ -21,6 +21,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'alfred-morris-noir': {
     'earth-62533': 'https://static.wikia.nocookie.net/spidermannoir/images/2/25/Alfred_Morris.png/revision/latest/scale-to-width-down/300?cb=20260712044841',
   },
+  'alicia-masters': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/a/ad/Alicia_Masters.jpg/revision/latest/scale-to-width-down/300?cb=20150324031855',
+  },
   'amelia-voght': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/8/8c/Voght.jpg/revision/latest/scale-to-width-down/260?cb=20131115211143',
   },
@@ -91,12 +94,21 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/3/3f/Black_Widow_Infobox.jpg/revision/latest/scale-to-width-down/220?cb=20231025163748',
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/7/7f/BlackWidow-ageofapocalypse.jpg/revision/latest/scale-to-width-down/179?cb=20130111224850',
   },
+  'blacklash': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/f/f7/Blacklash.jpg/revision/latest/scale-to-width-down/300?cb=20160520012943',
+  },
   'blade-eric-brooks': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/9/94/Blade.jpg/revision/latest/scale-to-width-down/300?cb=20080824191703',
+  },
+  'blastaar': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/0/00/Blastaar.jpg/revision/latest/scale-to-width-down/196?cb=20130915001129',
   },
   'blink-clarice-ferguson': {
     'earth-10005': 'https://static.wikia.nocookie.net/xmenmovies/images/d/da/XMDOFP_Blink_Character_Poster.jpg/revision/latest/window-crop/width/300/x-offset/163/y-offset/119/window-width/217/window-height/217?cb=20140624193859',
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/e/eb/Blink.jpg/revision/latest/scale-to-width-down/300?cb=20131016010840',
+  },
+  'blizzard': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/1/1c/Blizzard.jpg/revision/latest/scale-to-width-down/300?cb=20080823180521',
   },
   'bolivar-trask': {
     'earth-10005': 'https://static.wikia.nocookie.net/xmenmovies/images/c/cf/Bolivar_Trask-1-.png/revision/latest/scale-to-width-down/247?cb=20140220011250',
@@ -201,6 +213,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'drax': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/c/cd/Drax_Vol._3.jpg/revision/latest/scale-to-width-down/183?cb=20231113213618',
   },
+  'dreadknight': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/e/ed/Dreadknight.jpg/revision/latest/scale-to-width-down/300?cb=20160520011136',
+  },
   'dum-dum-dugan': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/26/Dum_Dum_Dugan.png/revision/latest/scale-to-width-down/193?cb=20150823213713',
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/6/64/Dum_Dum_Dugan_WWII.jpg/revision/latest/scale-to-width-down/182?cb=20110725044609',
@@ -250,6 +265,12 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'felicia-hardy': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/d/d1/Cat.jpg/revision/latest/scale-to-width-down/300?cb=20080817141144',
   },
+  'fin-fang-foom': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/c/c0/Fin_Fang_Foom.jpg/revision/latest/scale-to-width-down/300?cb=20160520045544',
+  },
+  'firelord': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/e/e8/Firelord.jpg/revision/latest?cb=20130915002607',
+  },
   'forge': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/d/d7/Forge.jpg/revision/latest/scale-to-width-down/300?cb=20100822153656',
   },
@@ -292,6 +313,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'graydon-creed': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/c/c8/Graydon_Creed.jpg/revision/latest/scale-to-width-down/300?cb=20090606053821',
   },
+  'grey-gargoyle': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/7/7e/Grey_Gargoyle.jpg/revision/latest/scale-to-width-down/300?cb=20160520013118',
+  },
   'groot': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/5/57/Groot_Infobox.png/revision/latest/scale-to-width-down/215?cb=20260126002142',
   },
@@ -317,6 +341,7 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   },
   'ho-yinsen': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/2/2b/Yinsen.jpg/revision/latest?cb=20141008032010',
+    'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/b/bd/Ho_Yinsen_Infobox.jpg/revision/latest/scale-to-width-down/251?cb=20230107201423',
   },
   'hobgoblin': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/2/2b/Hobgoblin.jpg/revision/latest/scale-to-width-down/289?cb=20111106022756',
@@ -333,6 +358,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'hulk': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/29/Hulk_Infobox.jpg/revision/latest/scale-to-width-down/216?cb=20260925124237',
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/6/6f/Hulk.jpg/revision/latest/scale-to-width-down/300?cb=20140901012924',
+  },
+  'hypnotia': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/5/5d/Hypnotia.jpg/revision/latest/scale-to-width-down/300?cb=20080801000331',
   },
   'iceman-bobby-drake': {
     'earth-10005': 'https://static.wikia.nocookie.net/xmenmovies/images/e/e6/740full-iceman-%28shawn-ashmore%29.jpg/revision/latest/window-crop/width/300/x-offset/222/y-offset/47/window-width/296/window-height/296?cb=20200516071931',
@@ -431,6 +459,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'korath': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/7/71/Korath_the_Pursuer_Infobox.jpg/revision/latest/scale-to-width-down/233?cb=20231022161110',
   },
+  'krang': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/8/8a/Krang.jpg/revision/latest/scale-to-width-down/300?cb=20170805205036',
+  },
   'kraven-the-hunter': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/5/5b/Kraven.jpg/revision/latest/scale-to-width-down/300?cb=20080802212847',
   },
@@ -440,11 +471,17 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'lady-deathstrike-yuriko-oyama': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/e/ee/Lady_Deathstrike.jpg/revision/latest/scale-to-width-down/300?cb=20120331175058',
   },
+  'lady-dorma': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/a/af/Lady_Dorma.jpg/revision/latest/scale-to-width-down/226?cb=20170805204000',
+  },
   'last-black-panther': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/a/a5/Black_Panther_%28Future%29_Infobox.png/revision/latest/scale-to-width-down/244?cb=20250802003220',
   },
   'lilandra-neramani': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/d/d5/Lilandra_Neramani_29_from_X-Men_%2797_Concept_Art_001.webp/revision/latest/scale-to-width-down/195?cb=20241217041717',
+  },
+  'living-laser': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/3/35/Living_Laser.jpg/revision/latest?cb=20130915012025',
   },
   'lockjaw': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/6/65/Lockjaw.jpg/revision/latest/scale-to-width-down/300?cb=20140308031941',
@@ -604,14 +641,14 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
     'earth-10005': 'https://static.wikia.nocookie.net/xmenmovies/images/4/41/Psylocke-XMen-Apocalypse.png/revision/latest/scale-to-width-down/300?cb=20240905163056',
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/8/85/Psylocke.jpg/revision/latest/scale-to-width-down/300?cb=20100822144013',
   },
-  'puppet-master': {
-    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/7/7c/Puppet_Master.jpg/revision/latest/scale-to-width-down/300?cb=20160505034506',
-  },
   'pyro': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/4/49/Pyro.jpg/revision/latest/scale-to-width-down/209?cb=20131017233052',
   },
   'quicksilver-peter-maximoff': {
     'earth-10005': 'https://static.wikia.nocookie.net/xmenmovies/images/9/91/Xmen014.png/revision/latest/scale-to-width-down/261?cb=20140223071429',
+  },
+  'rachel-carpenter': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/4/42/Rachel_Carpenter.png/revision/latest/scale-to-width-down/300?cb=20181029061053',
   },
   'rakim': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/4/48/Rakim_%28War_Dogs%29_Infobox.png/revision/latest/scale-to-width-down/204?cb=20250808223540',
@@ -689,7 +726,7 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/9/9d/Silver_Samurai.jpg/revision/latest/scale-to-width-down/300?cb=20110214122546',
   },
   'silver-surfer': {
-    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/9/92/Silver_Surfer.jpg/revision/latest/scale-to-width-down/209?cb=20180303044749',
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/4/47/Surferff.jpg/revision/latest/window-crop/width/300/x-offset/77/y-offset/0/window-width/320/window-height/320?cb=20080722171122',
   },
   'silvermane-noir': {
     'earth-62533': 'https://static.wikia.nocookie.net/spidermannoir/images/7/7b/Silvermane_Infobox.png/revision/latest/scale-to-width-down/269?cb=20260428154309',
@@ -731,6 +768,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'talos': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/a/a1/Talos_Infobox.png/revision/latest/scale-to-width-down/186?cb=20250204001702',
   },
+  'terrax': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/f/f4/Terrax.jpg/revision/latest/scale-to-width-down/300?cb=20110214170830',
+  },
   'thanos': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/27/Thanos_Infobox.png/revision/latest/scale-to-width-down/222?cb=20250119155740',
   },
@@ -750,6 +790,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'thor': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/2b/Thor_Infobox.jpg/revision/latest/scale-to-width-down/195?cb=20231021012616',
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/2/23/Thor.jpg/revision/latest/scale-to-width-down/300?cb=20110501065658',
+  },
+  'titanium-man': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/a/a2/Titanium_Man.jpg/revision/latest/scale-to-width-down/300?cb=20100822140233',
   },
   'toad-mortimer-toynbee': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/1/19/Toad.jpg/revision/latest?cb=20110214172134',
@@ -808,6 +851,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   },
   'wasp': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/22/Wasp_Quantumania.jpg/revision/latest/scale-to-width-down/208?cb=20231124223547',
+  },
+  'whirlwind': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/5/59/Whirlwind.jpg/revision/latest/scale-to-width-down/300?cb=20160519062311',
   },
   'whitney-frost': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/0/03/Whitney_Frost.jpg/revision/latest/scale-to-width-down/225?cb=20160106184613',

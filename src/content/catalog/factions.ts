@@ -17,7 +17,6 @@ export const factions = {
   'black-order': { name: 'Black Order' },
   'british-armed-forces': { name: 'British Armed Forces' },
   'brotherhood-of-mutants': { name: 'Brotherhood of Mutants' },
-  cabal: { name: 'Cabal' },
   'captain-britain-corps': { name: 'Captain Britain Corps' },
   'cassidy-clan': { name: 'Cassidy Clan' },
   chaste: { name: 'Chaste' },
@@ -27,7 +26,6 @@ export const factions = {
   'commission-on-superhuman-activities': { name: 'Commission on Superhuman Activities' },
   'cosmic-entities': { name: 'Cosmic entities' },
   'council-of-nine': { name: 'Council of Nine' },
-  'council-of-reeds': { name: 'Council of Reeds' },
   'coven-of-chaos': { name: 'Coven of Chaos' },
   cyborgs: { name: 'Cyborgs' },
   'daily-bugle': { name: 'Daily Bugle' },
@@ -144,7 +142,6 @@ export const factions = {
   'weapon-x': { name: 'Weapon X' },
   'x-factor': { name: 'X-Factor' },
   'x-men': { name: 'X-Men' },
-  'yancy-street-gang': { name: 'Yancy Street Gang' },
   'zero-matter': { name: 'Zero Matter' },
 } as const satisfies Record<string, FactionInput>;
 

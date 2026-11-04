@@ -11,7 +11,7 @@ export default defineEvents('iron-man-tas-s2', [
     ],
     cast: ['war-machine'],
     locations: [
-      'stark-enterprises-r-and-d-towers-and-armory',
+      'stark-enterprises-and-force-works-compound',
     ],
   },
   {

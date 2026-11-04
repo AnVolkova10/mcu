@@ -834,7 +834,8 @@ export const productions = {
     universe: 'earth-92131',
     status: 'audited',
     animated: true,
-    description: 'In 1994, Tony Stark and his tactical team Force Works defend the West Coast against the Mandarin, MODOK, Justin Hammer, and the ancient alien juggernaut Ultimo.',
+    description: "1994, a year after Hypnotia sinks the Prometheus: Tony Stark's Force Works fights the Mandarin, MODOK and Justin Hammer from London to the Andes, and a robot double of Tony marries Julia Carpenter.",
+    verified: true,
     poster: '/gsGYxzA0NywHZvPTyV6xJ1XdSgy.jpg',
   },
   'iron-man-tas-s2': {
@@ -860,7 +861,8 @@ export const productions = {
     universe: 'earth-92131',
     status: 'audited',
     animated: true,
-    description: "In 1994, Reed Richards, Sue Storm, Johnny Storm, and Ben Grimm become Marvel's first family after cosmic ray exposure, battling Doctor Doom, Namor, the Skrulls, and Galactus.",
+    description: '1994: the Fantastic Four face Namor, the Skrulls, Galactus and Doctor Doom, who sends Reed, Johnny and Ben back to the Battle of Thermopylae in 480 BC.',
+    verified: true,
     poster: '/gHMRD0dcG2mKiOrurxnNev4vh2d.jpg',
   },
   'fantastic-four-tas-s2': {

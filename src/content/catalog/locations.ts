@@ -38,11 +38,11 @@ export const locations = {
     coords: [40.7813, -73.974],
   },
   'ancient-aegean-battlegrounds': {
-    name: 'Ancient Aegean Battlegrounds',
-    place: 'Ancient Greece',
-    country: 'Ancient Hellas',
+    name: 'Thermopylae',
+    place: 'Malian Gulf',
+    country: 'Greece',
     kind: 'earth',
-    coords: [37.73, 22.75],
+    coords: [38.7967, 22.5367],
   },
   'ancient-monolith-incursion-site': {
     name: 'Ancient Monolith Incursion Site',
@@ -86,11 +86,11 @@ export const locations = {
     coords: [30.0444, 31.2357],
   },
   'arctic-glacial-chasm': {
-    name: 'Arctic Glacial Chasm',
-    place: 'Arctic Circle',
-    country: 'International Waters',
+    name: 'Ice Cave',
+    place: 'Mohe, Heilongjiang',
+    country: 'China',
     kind: 'earth',
-    coords: [78, -40],
+    coords: [53.48, 122.37],
   },
   'arena-club': {
     name: 'Arena Club',
@@ -129,7 +129,7 @@ export const locations = {
     node: 'astral-plane',
   },
   'atlantis-sovereign-throne-and-abyssal-trenches': {
-    name: 'Atlantis Sovereign Throne & Abyssal Trenches',
+    name: 'Atlantis',
     place: 'North Atlantic Ocean',
     country: 'Atlantis',
     kind: 'earth',
@@ -164,6 +164,13 @@ export const locations = {
     coords: [45.88, 12.72],
     approximate: true,
   },
+  'barents-sea': {
+    name: 'Barents Sea',
+    place: 'Arctic waters',
+    country: 'Russia',
+    kind: 'earth',
+    coords: [72, 38],
+  },
   'battleworld-proving-ground': {
     name: 'Battleworld Proving Ground',
     place: 'Beyond Cosmic Sector',
@@ -172,18 +179,11 @@ export const locations = {
     node: 'battleworld',
   },
   'baxter-building-and-upper-manhattan': {
-    name: 'Baxter Building & Upper Manhattan',
-    place: 'New York City',
+    name: 'Baxter Building',
+    place: 'Midtown Manhattan, New York',
     country: 'United States',
     kind: 'earth',
-    coords: [40.7614, -73.9776],
-  },
-  'baxter-building-lower-labs': {
-    name: 'Baxter Building Lower Labs',
-    place: 'Manhattan, New York',
-    country: 'United States',
-    kind: 'earth',
-    coords: [40.7614, -73.9776],
+    coords: [40.7527, -73.979],
   },
   'bay-of-pigs-beach': {
     name: 'Bay of Pigs Beach',
@@ -317,8 +317,8 @@ export const locations = {
     coords: [53.8007, -9.5286],
   },
   'castle-doom-and-haasenstadt-citadel': {
-    name: 'Castle Doom & Haasenstadt Citadel',
-    place: 'Haasenstadt',
+    name: 'Castle Doom',
+    place: 'Doomstadt',
     country: 'Latveria',
     kind: 'earth',
     coords: [46.2, 22.9],
@@ -329,13 +329,6 @@ export const locations = {
     country: 'Latveria / United States',
     kind: 'earth',
     coords: [40.7128, -74.006],
-  },
-  'castle-doom-sub-levels': {
-    name: 'Castle Doom Sub-Levels',
-    place: 'Haasenstadt',
-    country: 'Latveria',
-    kind: 'earth',
-    coords: [46.2, 22.9],
   },
   'castle-worthington': {
     name: 'Castle Worthington',
@@ -444,13 +437,6 @@ export const locations = {
     kind: 'space',
     node: 'svartalfheim',
   },
-  'cosmic-radiation-orbital-belt': {
-    name: 'Cosmic Radiation Orbital Belt',
-    place: 'Low Earth Orbit',
-    country: 'Space',
-    kind: 'orbit',
-    node: 'shuttle-orbit',
-  },
   'cuban-missile-crisis-naval-quarantine-line': {
     name: 'Embargo Line',
     place: 'Off the coast of Cuba',
@@ -539,6 +525,13 @@ export const locations = {
     country: 'Cosmos',
     kind: 'space',
     node: 'ego',
+  },
+  'emerald-cove': {
+    name: 'Emerald Cove',
+    place: 'Costa Smeralda, Sardinia',
+    country: 'Italy',
+    kind: 'earth',
+    coords: [41.09, 9.54],
   },
   'empire-state-university-and-daily-bugle': {
     name: 'Empire State University & Daily Bugle',
@@ -695,6 +688,27 @@ export const locations = {
     country: 'Kree Empire',
     kind: 'space',
     node: 'hala',
+  },
+  'hammer-channel-tunnel': {
+    name: 'Hammer Channel Tunnel',
+    place: 'London',
+    country: 'England',
+    kind: 'earth',
+    coords: [51.497, -0.119],
+  },
+  'hammer-hills': {
+    name: 'Hammer Hills',
+    place: 'Los Angeles',
+    country: 'United States',
+    kind: 'earth',
+    coords: [34.12, -118.45],
+  },
+  'hammer-industries': {
+    name: 'Hammer Industries',
+    place: 'Los Angeles',
+    country: 'United States',
+    kind: 'earth',
+    coords: [34, -118.23],
   },
   'hammer-industries-orbital-production-facility': {
     name: 'Hammer Industries Orbital Production Facility',
@@ -1016,11 +1030,11 @@ export const locations = {
     coords: [-75.2, 139.6],
   },
   'mandarins-volcanic-lair': {
-    name: "Mandarin's Volcanic Lair",
-    place: 'Valley of Spirits',
+    name: "The Mandarin's Base",
+    place: 'Southern coast',
     country: 'China',
     kind: 'earth',
-    coords: [31.2304, 104.0668],
+    coords: [25.05, 119.45],
   },
   'manhattan-alleyways-and-williams-residence': {
     name: "Ben and Ruby's Apartment",
@@ -1073,11 +1087,11 @@ export const locations = {
     coords: [40.7295, -73.9965],
   },
   'manhattan-stratosphere-and-taa-ii-worldship': {
-    name: 'Manhattan Stratosphere & Taa II Worldship',
-    place: 'New York City',
+    name: "Galactus's Ship",
+    place: 'Above Manhattan, New York',
     country: 'United States',
     kind: 'earth',
-    coords: [40.758, -73.9855],
+    coords: [40.7826, -73.9656],
   },
   'mar-vells-cloaked-orbital-laboratory': {
     name: "Mar-Vell's Cloaked Orbital Laboratory",
@@ -1139,6 +1153,13 @@ export const locations = {
     country: 'Vietnam',
     kind: 'earth',
     coords: [16.054, 108.202],
+  },
+  'mission-control-houston': {
+    name: 'Mission Control Center',
+    place: 'Houston, Texas',
+    country: 'United States',
+    kind: 'earth',
+    coords: [29.5593, -95.09],
   },
   'mister-sinisters-secret-genetic-lab': {
     name: "Mister Sinister's Secret Genetic Lab",
@@ -1232,11 +1253,11 @@ export const locations = {
     coords: [40.729, -74.0105],
   },
   'mycenaean-citadel-and-aegean-coastal-ruins': {
-    name: 'Mycenaean Citadel & Aegean Coastal Ruins',
-    place: 'Mycenae / Aegean Sea',
-    country: 'Ancient Greece',
+    name: 'Delphi',
+    place: 'Mount Parnassus',
+    country: 'Greece',
     kind: 'earth',
-    coords: [37.7308, 22.7561],
+    coords: [38.4824, 22.501],
   },
   'nazi-gestapo-fortress-and-subterranean-lab': {
     name: 'Nazi Facility',
@@ -1300,6 +1321,13 @@ export const locations = {
     country: 'France',
     kind: 'earth',
     coords: [49.37, -0.88],
+  },
+  'north-atlantic': {
+    name: 'North Atlantic',
+    place: 'Near a NASA tracking station',
+    country: 'International waters',
+    kind: 'earth',
+    coords: [32.6, -64.4],
   },
   'north-magnetic-pole-ground-zero': {
     name: 'North Magnetic Pole Ground Zero',
@@ -1381,6 +1409,13 @@ export const locations = {
     kind: 'earth',
     coords: [48.8614, 2.3933],
   },
+  'peruvian-andes-village': {
+    name: 'Andean Farming Village',
+    place: 'Andes',
+    country: 'Peru',
+    kind: 'earth',
+    coords: [-12.07, -75.2],
+  },
   'phalanx-assimilation-spire-and-muir-island': {
     name: 'Empire State Building',
     place: 'Manhattan, New York',
@@ -1430,6 +1465,13 @@ export const locations = {
     country: 'United States',
     kind: 'earth',
     coords: [35.011, -115.473],
+  },
+  'prometheus-off-scotland': {
+    name: 'Submarine Prometheus',
+    place: 'Off the coast of Scotland',
+    country: 'North Sea',
+    kind: 'earth',
+    coords: [57.3, -1.2],
   },
   'queens-va-hospital': {
     name: 'VA Hospital',
@@ -1619,6 +1661,12 @@ export const locations = {
     coords: [40.7736, -73.9566],
     approximate: true,
   },
+  'skrull-mothership': {
+    name: 'Skrull Mothership',
+    country: 'Behind the Moon',
+    kind: 'orbit',
+    node: 'moon',
+  },
   'skull-mesa': {
     name: 'Skull Mesa',
     place: 'Nevada',
@@ -1707,13 +1755,6 @@ export const locations = {
     coords: [40.86, -73.52],
     approximate: true,
   },
-  'stark-enterprise-force-works-compound': {
-    name: 'Stark Enterprise Force Works Compound',
-    place: 'Point Dume, Malibu',
-    country: 'United States',
-    kind: 'earth',
-    coords: [34.0259, -118.7798],
-  },
   'stark-enterprise-nyc-labs-and-george-washington-bridge': {
     name: 'Stark Enterprise NYC Labs & George Washington Bridge',
     place: 'Manhattan, New York',
@@ -1722,18 +1763,11 @@ export const locations = {
     coords: [40.8517, -73.9527],
   },
   'stark-enterprises-and-force-works-compound': {
-    name: 'Stark Enterprises & Force Works Compound',
-    place: 'Point Dume / Los Angeles, California',
+    name: 'Stark Enterprises',
+    place: 'El Segundo, Los Angeles',
     country: 'United States',
     kind: 'earth',
-    coords: [34.0016, -118.8068],
-  },
-  'stark-enterprises-r-and-d-towers-and-armory': {
-    name: 'Stark Enterprises R&D Towers & Armory',
-    place: 'Los Angeles, California',
-    country: 'United States',
-    kind: 'earth',
-    coords: [34.0259, -118.7798],
+    coords: [33.9192, -118.4165],
   },
   'stark-enterprises-salt-lake-testing-facility': {
     name: 'Stark Enterprises Salt Lake Testing Facility',
@@ -1749,13 +1783,6 @@ export const locations = {
     kind: 'earth',
     coords: [33.8206, -118.153],
   },
-  'stark-pacific-cyber-defense-center': {
-    name: 'Stark Pacific Cyber-Defense Center',
-    place: 'Los Angeles, California',
-    country: 'United States',
-    kind: 'earth',
-    coords: [34.0522, -118.2437],
-  },
   'stark-pictures-motion-picture-studio': {
     name: 'Stark Pictures',
     place: 'Hollywood, California',
@@ -1763,6 +1790,13 @@ export const locations = {
     kind: 'earth',
     coords: [34.0928, -118.3287],
     approximate: true,
+  },
+  'stark-test-range-baja': {
+    name: 'Stark Test Range',
+    place: 'Baja California',
+    country: 'Mexico',
+    kind: 'earth',
+    coords: [28, -113.5],
   },
   'stark-tower': {
     name: 'Stark Tower',
@@ -1807,11 +1841,11 @@ export const locations = {
     coords: [-3.25, 37.45],
   },
   'subterranean-cavern-kingdom': {
-    name: 'Subterranean Cavern Kingdom',
-    place: 'Subterranea',
-    country: "Earth's Mantle",
+    name: "The Mole Man's Kingdom",
+    place: 'Under Rockefeller Center, Manhattan',
+    country: 'United States',
     kind: 'earth',
-    coords: [40.73, -73.99],
+    coords: [40.7605, -73.9802],
   },
   'subterranean-dragon-bone-burial-chamber': {
     name: 'Subterranean Dragon Bone Burial Chamber',
@@ -1826,6 +1860,20 @@ export const locations = {
     country: 'Pacific Ocean',
     kind: 'earth',
     coords: [21, -157.95],
+  },
+  'super-skrull-volcano': {
+    name: "Super-Skrull's Volcano",
+    place: 'Cascade Range',
+    country: 'United States',
+    kind: 'earth',
+    coords: [46.1914, -122.1956],
+  },
+  'telethon-studio': {
+    name: 'Telethon Studio',
+    place: 'Upper West Side, Manhattan',
+    country: 'United States',
+    kind: 'earth',
+    coords: [40.7739, -73.9806],
   },
   'temple-vault-of-morag': { name: 'Temple vault of Morag', country: 'Morag', kind: 'space', node: 'morag' },
   'sunken-freighter': {
@@ -1892,7 +1940,6 @@ export const locations = {
   },
   'the-negative-zone': {
     name: 'The Negative Zone',
-    place: 'Distortion Area',
     country: 'Negative Zone',
     kind: 'dimension',
     node: 'negative-zone',

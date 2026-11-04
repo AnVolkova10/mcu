@@ -21,7 +21,7 @@ export default defineEvents('incredible-hulk-tas-s1', [
     cast: ['hulk'],
     locations: [
       'stark-enterprises-salt-lake-testing-facility',
-      'baxter-building-lower-labs',
+      'baxter-building-and-upper-manhattan',
     ],
   },
 ]);

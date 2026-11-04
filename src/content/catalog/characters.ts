@@ -42,6 +42,14 @@ export const characters = {
     origin: 'Wakanda',
     bio: 'Leader of the Dora Milaje in 1260 BC, who summons the expelled Noni to stop Nkati, the Lion.',
   },
+  'alana-ulanova': {
+    name: 'Alana Ulanova',
+    color: '#f9a8d4',
+    role: 'civilian',
+    status: 'alive',
+    factions: [],
+    bio: "Supermodel and wife of MODOK. The Mandarin's warriors take her captive at Emerald Cove, in Sardinia, until she escapes and Force Works and MODOK drive them off.",
+  },
   'alethea-faber-noir': {
     name: 'Dr. Alethea Faber',
     color: '#5eead4',
@@ -71,6 +79,14 @@ export const characters = {
     factions: [],
     origin: 'New York City',
     bio: "Mayor of New York, elected with Silvermane's money, who turns on him by campaigning against Prohibition and tipping off the police. He wins re-election in 1933.",
+  },
+  'alicia-masters': {
+    name: 'Alicia Masters',
+    color: '#d6a77a',
+    role: 'secondary',
+    status: 'alive',
+    factions: [],
+    bio: 'Sculptor and friend of the Fantastic Four. She takes in the Silver Surfer after the Thing knocks him off the Baxter Building, and persuades him to turn against Galactus.',
   },
   'amelia-voght': {
     name: 'Amelia Voght',
@@ -120,8 +136,8 @@ export const characters = {
     role: 'villain',
     status: 'alive',
     factions: ['negative-zone-conquerors'],
-    origin: 'Arthros (Negative Zone)',
-    bio: 'Insectoid tyrant and ruthless warlord of the antimatter universe wielding the Cosmic Control Rod, obsessed with exterminating all life that threatens his survival.',
+    origin: 'Negative Zone',
+    bio: 'Creature from the Negative Zone and mortal enemy of Blastaar. He comes through the portal Reed opens by accident, and the two declare war on each other over the Earth.',
   },
   'ant-man': {
     name: 'Scott Lang',
@@ -223,9 +239,8 @@ export const characters = {
     color: '#ea580c',
     role: 'hero',
     status: 'alive',
-    factions: ['fantastic-four', 'yancy-street-gang'],
-    origin: 'Lower East Side, Manhattan, New York',
-    bio: "Former ace military test pilot transformed into an orange, rocky behemoth of colossal strength, invulnerability, and boundless heart ('It's Clobberin' Time!').",
+    factions: ['fantastic-four'],
+    bio: "Member of the Fantastic Four whom the cosmic rays turned into the Thing, a hulking man of rock. In ancient Greece he agrees to stay with the grateful Greeks, until Doom's Time Platform pulls him back.",
   },
   'ben-reilly-noir': {
     name: 'Ben Reilly',
@@ -293,6 +308,14 @@ export const characters = {
       'earth-92131': "In the animated series she is seen fighting Magneto's rebels in the erased world where Charles Xavier died in 1959.",
     },
   },
+  blacklash: {
+    name: 'Blacklash',
+    color: '#b91c1c',
+    role: 'villain',
+    status: 'alive',
+    factions: [],
+    bio: 'Whip-wielding henchman of the Mandarin who fights Force Works across the world.',
+  },
   'blade-eric-brooks': {
     name: 'Eric Brooks',
     alias: 'Blade',
@@ -302,6 +325,14 @@ export const characters = {
     factions: ['vampire-hunters'],
     origin: 'London, England',
     bio: 'Daywalking half-vampire warrior armed with silver swords, garlic projectiles, and a laser rifle, waging a relentless crusade across New York against the undead.',
+  },
+  blastaar: {
+    name: 'Blastaar',
+    color: '#be123c',
+    role: 'villain',
+    status: 'alive',
+    factions: [],
+    bio: 'Leader from the Negative Zone and mortal enemy of Annihilus. He follows Annihilus through the portal Reed opens by accident, and the two declare war on each other over the Earth.',
   },
   'blink-clarice-ferguson': {
     name: 'Clarice Ferguson',
@@ -314,6 +345,14 @@ export const characters = {
     variants: {
       'earth-92131': "In the animated series she is seen among Magneto's rebels in the erased world where Charles Xavier died in 1959.",
     },
+  },
+  blizzard: {
+    name: 'Blizzard',
+    color: '#7dd3fc',
+    role: 'villain',
+    status: 'alive',
+    factions: [],
+    bio: 'Henchman of the Mandarin who freezes whatever he touches; the Mandarin scolds him for killing his begonias.',
   },
   'bolivar-trask': {
     name: 'Dr. Bolivar Trask',
@@ -646,6 +685,15 @@ export const characters = {
     origin: 'Kylos (Cosmic)',
     bio: 'Fierce warrior driven by honor and loyalty to his adopted family.',
   },
+  dreadknight: {
+    name: 'Bram Velsing',
+    alias: 'Dreadknight',
+    color: '#475569',
+    role: 'villain',
+    status: 'alive',
+    factions: [],
+    bio: 'Armored knight in the service of the Mandarin. With Whirlwind he steals the microchip that lets Hypnotia command the crew of the Prometheus.',
+  },
   'dum-dum-dugan': {
     name: "Timothy 'Dum Dum' Dugan",
     alias: 'Dum Dum Dugan',
@@ -817,6 +865,22 @@ export const characters = {
     origin: 'Manhattan, New York',
     bio: 'Glamorous New York heiress and martial artist transformed through the recreated Super Soldier serum into the agile, probability-manipulating cat burglar and hero Black Cat.',
   },
+  'fin-fang-foom': {
+    name: 'Fin Fang Foom',
+    color: '#16a34a',
+    role: 'villain',
+    status: 'alive',
+    factions: [],
+    bio: 'Giant dragon who answers the call of the Mandarin in exchange for favors. He knocks Iron Man into an ice cave and hunts him with mechanical dragons.',
+  },
+  firelord: {
+    name: 'Firelord',
+    color: '#fbbf24',
+    role: 'villain',
+    status: 'alive',
+    factions: ['heralds-of-galactus'],
+    bio: 'Herald of Galactus. His master summons him and Terrax against the Fantastic Four when they attack the device Galactus is building to drain the Earth.',
+  },
   forge: {
     name: 'Forge',
     color: '#2dd4bf',
@@ -873,8 +937,7 @@ export const characters = {
     role: 'cosmic',
     status: 'alive',
     factions: ['cosmic-entities'],
-    origin: 'Taa (Pre-Big Bang Universe)',
-    bio: 'Ancient cosmic entity that predates the Big Bang, consuming planetary biosphere energies to maintain the cosmic equilibrium of the multiverse.',
+    bio: 'Cosmic being who drains whole worlds. He comes to consume the Earth when the Silver Surfer signals him from the Baxter Building, and later stops Doctor Doom from taking his powers.',
   },
   'gambit-remy-lebeau': {
     name: 'Remy LeBeau',
@@ -952,6 +1015,15 @@ export const characters = {
     origin: 'New York City',
     bio: 'Fanatical anti-mutant demagogue and founder of the terrorist hate-group Friends of Humanity, secretly the baseline human offspring of Sabretooth and Mystique.',
   },
+  'grey-gargoyle': {
+    name: 'Paul Duval',
+    alias: 'Grey Gargoyle',
+    color: '#9ca3af',
+    role: 'villain',
+    status: 'alive',
+    factions: [],
+    bio: 'Henchman of the Mandarin whose touch turns people and things to stone.',
+  },
   groot: {
     name: 'Groot',
     color: '#65a30d',
@@ -980,6 +1052,9 @@ export const characters = {
     factions: ['avengers', 'shield', 'ronin'],
     origin: 'Waverly, Iowa',
     bio: 'Master marksman, master archer, and founding Avenger.',
+    variants: {
+      'earth-92131': 'In the animated series he is a member of Force Works. Suspected once of spying for the Mandarin, he had been caring for his sick grandfather.',
+    },
   },
   'heinz-kruger': {
     name: 'Heinz Kruger',
@@ -1024,7 +1099,7 @@ export const characters = {
     status: 'deceased',
     factions: [],
     origin: 'Timbetpal, Asia',
-    bio: "Nobel-prize winning physicist who saved Tony Stark's life in the Vietnam/Sin-Cong POW camp, co-designed the Mark I armor, and sacrificed himself so Tony could escape.",
+    bio: 'Physicist held captive with Tony Stark in Afghanistan. He helps Tony build the first Iron Man armor and dies so that Tony can escape.',
   },
   hobgoblin: {
     name: 'Jason Philip Macendale',
@@ -1076,6 +1151,14 @@ export const characters = {
     variants: {
       'earth-92131': 'Genius nuclear physicist caught in the blast of his own Gamma Bomb who transforms into the green, rage-fueled Incredible Hulk whenever provoked.',
     },
+  },
+  hypnotia: {
+    name: 'Hypnotia',
+    color: '#c026d3',
+    role: 'villain',
+    status: 'alive',
+    factions: [],
+    bio: "Hypnotist in the service of the Mandarin. She sinks the Russian submarine Prometheus with its crew under her spell, lures Rachel Carpenter to trap Iron Man and hides a spell in the Mandarin's diary.",
   },
   'iceman-bobby-drake': {
     name: 'Bobby Drake',
@@ -1272,8 +1355,7 @@ export const characters = {
     role: 'hero',
     status: 'alive',
     factions: ['fantastic-four'],
-    origin: 'Glenville, Long Island, New York',
-    bio: "Hot-headed younger brother of Sue Storm who ignites his cellular plasma to achieve supersonic flight and thermonuclear flame manipulation ('Flame on!').",
+    bio: "Member of the Fantastic Four and Sue Storm's brother, who bursts into flame and flies as the Human Torch. He seals the Super-Skrull inside a volcano.",
   },
   jorani: {
     name: 'Jorani',
@@ -1333,7 +1415,7 @@ export const characters = {
     status: 'alive',
     factions: ['force-works', 'avengers', 'gamma-mutates'],
     origin: 'Los Angeles, California',
-    bio: "Single mother and formidable Force Works tactical operative wielding psionic webbing and sensory telepathy who stands as Tony Stark's steadfast second-in-command.",
+    bio: 'Single mother and member of Force Works who can spin psionic webs. She marries Tony Stark, though the groom turns out to be a robot double that fools the Mandarin.',
   },
   'justin-hammer': {
     name: 'Justin Hammer',
@@ -1402,6 +1484,14 @@ export const characters = {
     origin: 'Hala (Kree Empire)',
     bio: 'Cybernetically augmented Starforce combatant and loyal warrior who fought alongside Carol Danvers in 1995 before defecting to Ronan the Accuser in 2014.',
   },
+  krang: {
+    name: 'Krang',
+    color: '#155e75',
+    role: 'villain',
+    status: 'alive',
+    factions: [],
+    bio: "Namor's warlord in Atlantis. He launches an invasion of the surface world against Namor's wishes, and Namor and the Fantastic Four defeat him together.",
+  },
   'kraven-the-hunter': {
     name: 'Sergei Kravinoff',
     alias: 'Kraven',
@@ -1431,6 +1521,14 @@ export const characters = {
     origin: 'Japan',
     bio: "Wolverine's former lover, who leads the cybernetic Reavers and blames him for her father's death. In the Morlock tunnels she makes him open a Shi'ar prison ship, freeing the Spirit Drinker, and in the end calls their fight a draw.",
   },
+  'lady-dorma': {
+    name: 'Lady Dorma',
+    color: '#5eead4',
+    role: 'secondary',
+    status: 'alive',
+    factions: [],
+    bio: 'Atlantean who appears in Atlantis when Namor brings Sue Storm there to make her his queen.',
+  },
   'last-black-panther': {
     name: 'The Last Black Panther',
     alias: 'The Last Black Panther',
@@ -1449,6 +1547,15 @@ export const characters = {
     factions: ['shiar-imperium', 'cosmic-entities'],
     origin: "Chandilar, Shi'ar Empire",
     bio: "Shi'ar princess who steals the M'Kraan Crystal to keep its power from her brother D'Ken and calls on Charles Xavier for help. As Majestrix she sentences the Dark Phoenix to death. She and Xavier love each other, but their duties keep them apart.",
+  },
+  'living-laser': {
+    name: 'Arthur Parks',
+    alias: 'Living Laser',
+    color: '#f43f5e',
+    role: 'villain',
+    status: 'alive',
+    factions: [],
+    bio: 'Being of light who joins the Mandarin and sears the crops of a village in the Peruvian Andes to set the Dark Water Fever.',
   },
   lockjaw: {
     name: 'Lockjaw',
@@ -1535,6 +1642,9 @@ export const characters = {
     factions: ['makluan-ring-bearers'],
     origin: 'Valley of Spirits, China',
     bio: 'Centuries-old warlord wielding the ten Makluan alien power rings who commands an army of supervillains and seeks total mastery over world technology and the destruction of Tony Stark.',
+    variants: {
+      'earth-92131': 'In the animated series he is Arnold Brock, who leads Hypnotia, Dreadknight, Blacklash, Blizzard, Grey Gargoyle and Whirlwind, with MODOK and Justin Hammer, against Force Works. He works out that Tony Stark is Iron Man, until a robot double of Tony fools him.',
+    },
   },
   mantis: {
     name: 'Mantis',
@@ -1716,8 +1826,7 @@ export const characters = {
     role: 'villain',
     status: 'alive',
     factions: ['subterraneans', 'moloids'],
-    origin: 'Monster Isle / Subterranea',
-    bio: "Outcast scientist who discovered the subterranean cavern kingdom beneath Earth's mantle, ruling over the blind Moloid hordes and gigantic subterranean monsters.",
+    bio: 'Ruler of a kingdom at the bottom of the world, served by the Moloids. Fearing that only the Fantastic Four can stop him from taking over the world, he drags Rockefeller Center underground to kill them.',
   },
   'monica-rambeau': {
     name: 'Monica Rambeau',
@@ -1773,9 +1882,9 @@ export const characters = {
     color: '#0d9488',
     role: 'anti-hero',
     status: 'alive',
-    factions: ['atlantean-royalty', 'invaders'],
-    origin: 'Atlantis (Atlantic Abyssal Trench, Earth-92131)',
-    bio: "Proud mutant-hybrid sovereign of the undersea realm of Atlantis who fiercely protects the oceans against surface civilization's incursions.",
+    factions: ['atlantean-royalty'],
+    origin: 'Atlantis',
+    bio: 'Prince of Atlantis. Angry at surface dwellers for polluting his oceans, he kidnaps Sue Storm to make her his queen, then joins the Fantastic Four to stop the invasion that his warlord Krang starts against his wishes.',
   },
   nebula: {
     name: 'Nebula',
@@ -1959,16 +2068,6 @@ export const characters = {
       'earth-92131': "In the animated series, Jean Grey first finds her through Cerebro while she searches for the missing Xavier. Later Apocalypse's allies take her from Castle Worthington for his collection of psychics.",
     },
   },
-  'puppet-master': {
-    name: 'Phillip Masters',
-    alias: 'Puppet Master',
-    color: '#84cc16',
-    role: 'villain',
-    status: 'alive',
-    factions: [],
-    origin: 'New York City',
-    bio: 'Embittered sculptor who controls people through puppets carved from radioactive clay; stepfather of Alicia Masters.',
-  },
   pyro: {
     name: 'Pyro',
     color: '#f97316',
@@ -1986,6 +2085,14 @@ export const characters = {
     factions: ['x-men', 'mutants'],
     origin: 'Outside Washington, D.C.',
     bio: 'Playful and hyper-accelerated mutant capable of moving and reacting at extreme hypersonic speeds, making bullets and physical environments appear virtually frozen in time.',
+  },
+  'rachel-carpenter': {
+    name: 'Rachel Carpenter',
+    color: '#fda4af',
+    role: 'civilian',
+    status: 'alive',
+    factions: [],
+    bio: 'Daughter of Julia Carpenter. Hypnotia lures her to trap Iron Man, and the recording of a Van Cliburn concert that she carries powers his armor.',
   },
   rakim: {
     name: 'Rakim',
@@ -2027,9 +2134,8 @@ export const characters = {
     color: '#3b82f6',
     role: 'hero',
     status: 'alive',
-    factions: ['fantastic-four', 'council-of-reeds'],
-    origin: 'Central City, California',
-    bio: 'Genius polymath and leader of the Fantastic Four whose body possesses extraordinary malleable plasticity and elongation after cosmic radiation exposure.',
+    factions: ['fantastic-four'],
+    bio: 'Scientist and leader of the Fantastic Four, who can stretch his body into any shape since cosmic rays struck the four. Victor von Doom was his classmate in college.',
   },
   'robbie-robertson-noir': {
     name: 'Robbie Robertson',
@@ -2145,7 +2251,7 @@ export const characters = {
     origin: 'Sokovia',
     bio: 'Mythological wielder of Chaos Magic and the prophesied Scarlet Witch.',
     variants: {
-      'earth-92131': 'In the animated series, Jean Grey first finds her through Cerebro while she searches for the missing Xavier. On Mount Wundagore she learns that Magneto is her father.',
+      'earth-92131': 'In the animated series, Jean Grey first finds her through Cerebro while she searches for the missing Xavier. On Mount Wundagore she learns that Magneto is her father. She is also a member of Force Works with Iron Man.',
     },
   },
   'scorpion-mac-gargan': {
@@ -2238,8 +2344,7 @@ export const characters = {
     role: 'hero',
     status: 'alive',
     factions: ['heralds-of-galactus', 'cosmic-entities'],
-    origin: 'Zenn-La (Deneb System, Earth-92131)',
-    bio: 'Noble philosopher of Zenn-La imbued with the Power Cosmic by Galactus, roaming the universe on a faster-than-light silver surfboard seeking redemption.',
+    bio: 'Herald of Galactus, who finds worlds for his master to drain. On Earth, Alicia Masters persuades him to turn against Galactus, and Doctor Doom later steals his Power Cosmic.',
   },
   'silvermane-noir': {
     name: 'Finbar Byrne',
@@ -2331,8 +2436,7 @@ export const characters = {
     role: 'hero',
     status: 'alive',
     factions: ['fantastic-four'],
-    origin: 'Long Island, New York',
-    bio: 'Co-leader of the Fantastic Four capable of complete psionic light bending (invisibility) and generating near-indestructible kinetic force fields.',
+    bio: "Member of the Fantastic Four and Johnny Storm's sister, who can turn invisible since the cosmic rays. Namor kidnaps her to make her his queen, and Doctor Doom holds her hostage in his castle.",
   },
   'sunspot-roberto-da-costa': {
     name: 'Roberto da Costa',
@@ -2351,8 +2455,8 @@ export const characters = {
     role: 'villain',
     status: 'alive',
     factions: ['skrulls'],
-    origin: 'Tarnax IV (Skrull Empire)',
-    bio: 'Genetically engineered Skrull champion endowed with the simulated powers of all four Fantastic Four members plus natural shapeshifting and hypnosis.',
+    origin: 'Tarnax IV, Andromeda Galaxy',
+    bio: 'Skrull warrior sent to Earth for revenge after the failed Skrull invasion. A beam from the Skrull homeworld gives him the powers of all four of the Fantastic Four, until Reed blocks it and the Human Torch seals him inside a volcano.',
   },
   'supreme-intelligence': {
     name: 'The Supreme Intelligence',
@@ -2379,6 +2483,14 @@ export const characters = {
     status: 'alive',
     factions: [],
     bio: 'Doctor who helped the young Scott Summers control his powers. In Skull Mesa, in the Nevada desert, Solarr holds him prisoner until Cyclops and the town free him.',
+  },
+  terrax: {
+    name: 'Terrax',
+    color: '#a16207',
+    role: 'villain',
+    status: 'alive',
+    factions: ['heralds-of-galactus'],
+    bio: 'Herald of Galactus, called with Firelord to fight the Fantastic Four while Galactus builds the device that will drain the Earth.',
   },
   thanos: {
     name: 'Thanos',
@@ -2442,6 +2554,15 @@ export const characters = {
       'earth-92131': 'In the animated series he appears for a moment during the rampage of the Dark Phoenix.',
     },
   },
+  'titanium-man': {
+    name: 'Boris Bullski',
+    alias: 'Titanium Man',
+    color: '#94a3b8',
+    role: 'villain',
+    status: 'alive',
+    factions: [],
+    bio: 'Armored foe whom Force Works had already beaten once. MODOK calls him back to fight them in London, and Iron Man and War Machine send him into space.',
+  },
   'toad-mortimer-toynbee': {
     name: 'Mortimer Toynbee',
     alias: 'Toad',
@@ -2470,6 +2591,9 @@ export const characters = {
     factions: ['avengers', 'stark-industries', 'illuminati'],
     origin: 'New York / Malibu',
     bio: 'Genius, billionaire, playboy, philanthropist who forged the Iron Man armor and saved the universe.',
+    variants: {
+      'earth-92131': 'In the animated series he leads Force Works against the Mandarin from Stark Enterprises in Los Angeles, and keeps his secret when a robot double of him marries Julia Carpenter.',
+    },
   },
   'trevor-fitzroy': {
     name: 'Trevor Fitzroy',
@@ -2490,7 +2614,7 @@ export const characters = {
     origin: 'Blue Area of the Moon',
     bio: "Cosmic observer stationed in the Moon's Blue Area sworn to a solemn vow of non-interference, which he repeatedly breaks to safeguard Earth's champions.",
     variants: {
-      'earth-92131': 'In the animated series he appears for a moment during the rampage of the Dark Phoenix.',
+      'earth-92131': 'In the animated series he appears for a moment during the rampage of the Dark Phoenix. He also tries to hide the Earth from the Silver Surfer, warns the Fantastic Four about Galactus and boosts the Human Torch so he can fetch a weapon from the ship of Galactus.',
     },
   },
   ultimo: {
@@ -2500,7 +2624,7 @@ export const characters = {
     status: 'presumably-dead',
     factions: ['automata'],
     origin: 'Deep Space / Volcanic Caldera',
-    bio: 'Colossal extraterrestrial robotic doomsday juggernaut discovered dormant in a volcano and revived by the Mandarin to eradicate Iron Man and Force Works.',
+    bio: 'Ancient alien robot found sealed inside an extinct volcano in Latin America. It wakes when the men of Justin Hammer try to scrap it, turns on the Mandarin, and Force Works shuts it down before it reaches a Stark test range in Baja California.',
   },
   'valerie-cooper': {
     name: 'Dr. Valerie Cooper',
@@ -2556,9 +2680,8 @@ export const characters = {
     color: '#15803d',
     role: 'villain',
     status: 'alive',
-    factions: ['latverian-monarchy', 'cabal'],
-    origin: 'Haasenstadt, Latveria',
-    bio: 'Monarch of Latveria and master of both bleeding-edge science and arcane sorcery, driven by an unyielding hatred for Reed Richards and supreme geopolitical ambition.',
+    factions: ['latverian-monarchy'],
+    bio: "Masked master of Castle Doom, in Latveria, and Reed Richards's college classmate. He captures the Fantastic Four, holds Sue hostage while the others fetch him a coffin from ancient Greece, and later steals the Silver Surfer's Power Cosmic.",
   },
   vision: {
     name: 'Vision',
@@ -2598,7 +2721,7 @@ export const characters = {
     origin: 'Philadelphia',
     bio: 'Colonel James Rhodes, heavily armored Avenger.',
     variants: {
-      'earth-92131': 'In the 1993 that Cable erases in the animated series, he watches the Senate hearing on the plague at S.H.I.E.L.D.',
+      'earth-92131': "In the animated series he is James Rhodes of Force Works, whose mind MODOK's E.L.F. once takes over. In the 1993 that Cable erases, he watches the Senate hearing on the plague at S.H.I.E.L.D.",
     },
   },
   'warlock-technarch': {
@@ -2628,6 +2751,15 @@ export const characters = {
     factions: ['avengers', 'pym-technologies', 'quantum-explorers'],
     origin: 'San Francisco, California',
     bio: 'Skilled martial artist and winged size-changer.',
+  },
+  whirlwind: {
+    name: 'David Cannon',
+    alias: 'Whirlwind',
+    color: '#22c55e',
+    role: 'villain',
+    status: 'alive',
+    factions: [],
+    bio: 'Henchman of the Mandarin who spins into a whirlwind. With Dreadknight he steals a microchip from Stark Enterprises.',
   },
   'whitney-frost': {
     name: 'Whitney Frost',
