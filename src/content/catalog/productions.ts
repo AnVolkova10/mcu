@@ -902,7 +902,8 @@ export const productions = {
     universe: 'earth-92131',
     status: 'audited',
     animated: true,
-    description: 'The Neogenic Nightmare: Spider-Man battles cellular degradation, teams up with the X-Men at the Xavier Mansion, mutates into the Man-Spider, and fights alongside Punisher and Blade against Morbius.',
+    description: "1995, during X-Men season 4: Spider-Man's mutation grows while he faces the Insidious Six, Hydro-Man, Herbert Landon with the X-Men, Morbius, the Punisher, Blade, the war over the Tablet of Time and the Vulture.",
+    verified: true,
     poster: '/qIDlAgHTlVxc0Htyi5TPUSuePNJ.jpg',
   },
   'spider-man-tas-s3': {

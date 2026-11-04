@@ -8,6 +8,10 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
   'achilles': [
     { actor: 'Adam Michael Gold', universe: 'earth-616', productions: ['eyes-of-wakanda-s1'], voice: true, photo: '/8MNqU2IeoSojqrgVHPqLPf6LSxS.jpg' },
   ],
+  'adrian-toomes': [
+    { actor: 'Alan Johnson', universe: 'earth-92131', productions: ['spider-man-tas-s2'], voice: true, photo: '/6vYWantuDUpIee54iD4qcb0Cues.jpg' },
+    { actor: 'Eddie Albert', universe: 'earth-92131', productions: ['spider-man-tas-s2'], voice: true, photo: '/kYAYnVuU15SHkKf6CWTNzFV27Qx.jpg' },
+  ],
   'agent-zero': [
     { actor: 'Daniel Henney', universe: 'earth-10005', productions: ['x-men-origins-wolverine'], photo: '/elAolohpUG5nS99EZxHZjd44DsS.jpg' },
   ],
@@ -29,8 +33,11 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
   'alicia-masters': [
     { actor: 'Pauline Arthur Lomas', universe: 'earth-92131', productions: ['fantastic-four-tas-s1'], voice: true, photo: '/9sXj9QpxTPYImLRyWXSrbZX9rx4.jpg' },
   ],
+  'alisa-silvermane': [
+    { actor: 'Leigh-Allyn Baker', universe: 'earth-92131', productions: ['spider-man-tas-s2'], voice: true, photo: '/jUpelgk0Lehi6jUtUBuqtyVO5Pv.jpg' },
+  ],
   'alistair-smythe': [
-    { actor: 'Maxwell Caulfield', universe: 'earth-92131', productions: ['spider-man-tas-s1'], voice: true, photo: '/90277SzouzHOAT4ZU3euYh6Sl0x.jpg' },
+    { actor: 'Maxwell Caulfield', universe: 'earth-92131', productions: ['spider-man-tas-s1', 'spider-man-tas-s2'], voice: true, photo: '/90277SzouzHOAT4ZU3euYh6Sl0x.jpg' },
   ],
   'amelia-voght': [
     { actor: 'Susan Roman', universe: 'earth-92131', productions: ['x-men-tas-s4', 'x-men-tas-s5'], voice: true, photo: '/vyWyOdnKcoNf40ytZSy6qlIIr9p.jpg' },
@@ -167,13 +174,13 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
     { actor: 'Kathy Ireland', universe: 'earth-92131', productions: ['fantastic-four-tas-s2'], voice: true, photo: '/iuqJwQMDWGqRF5ZloPwwi3ZcrjW.jpg' },
   ],
   'curt-connors-lizard': [
-    { actor: 'Joseph Campanella', universe: 'earth-92131', productions: ['spider-man-tas-s1'], voice: true, photo: '/o6A0IZkjcDNDVBTFCVLsdySz3w3.jpg' },
+    { actor: 'Joseph Campanella', universe: 'earth-92131', productions: ['spider-man-tas-s1', 'spider-man-tas-s2'], voice: true, photo: '/o6A0IZkjcDNDVBTFCVLsdySz3w3.jpg' },
   ],
   'cyclops-scott-summers': [
     { actor: 'Tye Sheridan', universe: 'earth-10005', productions: ['x-men-apocalypse', 'x-men-dark-phoenix'], photo: '/d5ZS2fjqC98cIGkhEGX0fRYhku4.jpg' },
     { actor: 'Tim Pocock', universe: 'earth-10005', productions: ['x-men-origins-wolverine'], photo: '/eF9yUeopDZ7UWcOGf4w44FZSXRT.jpg' },
     { actor: 'James Marsden', universe: 'earth-10005', productions: ['x-men-days-of-future-past'], photo: '/lf7OnfKZnMgNh9b98764tqSocGK.jpg' },
-    { actor: 'Norm Spencer', universe: 'earth-92131', productions: ['x-men-tas-s4', 'x-men-tas-s1', 'x-men-tas-s2', 'x-men-tas-s3', 'x-men-tas-s5'], voice: true, photo: '/2UgkhRFpZtGhEdbCkkeBfuwujTk.jpg' },
+    { actor: 'Norm Spencer', universe: 'earth-92131', productions: ['x-men-tas-s4', 'x-men-tas-s1', 'x-men-tas-s2', 'x-men-tas-s3', 'spider-man-tas-s2', 'x-men-tas-s5'], voice: true, photo: '/2UgkhRFpZtGhEdbCkkeBfuwujTk.jpg' },
     { actor: 'Ray Chase', universe: 'earth-92131', productions: ['x-men-97-s1'], voice: true, photo: '/xeJKJnvIwItI90roo7mMUduBbbq.jpg' },
   ],
   'dagger': [
@@ -251,10 +258,10 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
     { actor: 'Anthony Mackie', universe: 'earth-616', productions: ['captain-america-the-winter-soldier', 'avengers-age-of-ultron', 'ant-man', 'captain-america-civil-war', 'avengers-infinity-war'], photo: '/vecvTm7SimizluJkyIwBxeLbvRm.jpg' },
   ],
   'farley-stillwell': [
-    { actor: 'Michael Rye', universe: 'earth-92131', productions: ['spider-man-tas-s1'], voice: true, photo: '/wuwOnf53gJcUga04ZZBB1p5QrZz.jpg' },
+    { actor: 'Michael Rye', universe: 'earth-92131', productions: ['spider-man-tas-s1', 'spider-man-tas-s2'], voice: true, photo: '/wuwOnf53gJcUga04ZZBB1p5QrZz.jpg' },
   ],
   'felicia-hardy': [
-    { actor: 'Jennifer Hale', universe: 'earth-92131', productions: ['spider-man-tas-s1', 'spider-man-tas-s4'], voice: true, photo: '/oNQCrdiSm0mABCcE5YaHwuZQK8X.jpg' },
+    { actor: 'Jennifer Hale', universe: 'earth-92131', productions: ['spider-man-tas-s1', 'spider-man-tas-s2', 'spider-man-tas-s4'], voice: true, photo: '/oNQCrdiSm0mABCcE5YaHwuZQK8X.jpg' },
   ],
   'fin-fang-foom': [
     { actor: 'Neil Ross', universe: 'earth-92131', productions: ['iron-man-tas-s1'], voice: true, photo: '/pNgkQKw5k6z9kscDnOAwstcmNnt.jpg' },
@@ -263,7 +270,7 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
     { actor: 'Alan Oppenheimer', universe: 'earth-92131', productions: ['fantastic-four-tas-s1'], voice: true, photo: '/5UAa7wSnoh6JwiAKciCCKB9dnro.jpg' },
   ],
   'flash-thompson': [
-    { actor: 'Patrick Labyorteaux', universe: 'earth-92131', productions: ['spider-man-tas-s1'], voice: true, photo: '/dTuCfBnVH8csjSo8FrOdaOjpegA.jpg' },
+    { actor: 'Patrick Labyorteaux', universe: 'earth-92131', productions: ['spider-man-tas-s1', 'spider-man-tas-s2'], voice: true, photo: '/dTuCfBnVH8csjSo8FrOdaOjpegA.jpg' },
   ],
   'forge': [
     { actor: 'Marc Strange', universe: 'earth-92131', productions: ['x-men-tas-s5', 'x-men-tas-s1'], voice: true, photo: '/vNAbFOm8f1eQs3235fBnP6BJN2i.jpg' },
@@ -288,12 +295,15 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
   ],
   'gambit-remy-lebeau': [
     { actor: 'Taylor Kitsch', universe: 'earth-10005', productions: ['x-men-origins-wolverine'], photo: '/pTFkwvE2URbbftiaofexfolhkH9.jpg' },
-    { actor: 'Chris Potter', universe: 'earth-92131', productions: ['x-men-tas-s4', 'x-men-tas-s1', 'x-men-tas-s2', 'x-men-tas-s3'], voice: true, photo: '/buOqRGFZH26b3E9UnxFBphRg9ON.jpg' },
+    { actor: 'Chris Potter', universe: 'earth-92131', productions: ['x-men-tas-s4', 'x-men-tas-s1', 'x-men-tas-s2', 'x-men-tas-s3', 'spider-man-tas-s2'], voice: true, photo: '/buOqRGFZH26b3E9UnxFBphRg9ON.jpg' },
     { actor: 'Tony Daniels', universe: 'earth-92131', productions: ['x-men-tas-s5'], voice: true, photo: '/4gfMyePGYM1D4AuoMPPd7zbKbhE.jpg' },
     { actor: 'AJ LoCascio', universe: 'earth-92131', productions: ['x-men-97-s1'], voice: true, photo: '/pHycR75zn1mnGzDTEbxwXj1728P.jpg' },
   ],
   'gamora': [
     { actor: 'Zoe Saldaña', universe: 'earth-616', productions: ['guardians-of-the-galaxy', 'guardians-of-the-galaxy-vol-2', 'avengers-infinity-war'], photo: '/vQBwmsSOAd0JDaEcZ5p43J9xzsY.jpg' },
+  ],
+  'genevieve': [
+    { actor: "Laurie O'Brien", universe: 'earth-92131', productions: ['spider-man-tas-s2'], voice: true, photo: '/jP81kDJDwP6TQ17UedkSkYNCJfp.jpg' },
   ],
   'ghost-rider-danny-ketch': [
     { actor: 'Richard Grieco', universe: 'earth-92131', productions: ['fantastic-four-tas-s2'], voice: true },
@@ -310,13 +320,16 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
   'groot': [
     { actor: 'Vin Diesel', universe: 'earth-616', productions: ['guardians-of-the-galaxy', 'avengers-infinity-war'], voice: true, photo: '/nZdVry7lnUkE24PnXakok9okvL4.jpg' },
   ],
+  'hammerhead': [
+    { actor: 'Nicky Blair', universe: 'earth-92131', productions: ['spider-man-tas-s2'], voice: true },
+  ],
   'hank-mccoy': [
     { actor: 'Nicholas Hoult', universe: 'earth-10005', productions: ['x-men-first-class', 'x-men-days-of-future-past', 'x-men-apocalypse', 'x-men-dark-phoenix'], photo: '/pXm8GWTm9eIA8pUGOjvmYjlxamu.jpg' },
     { actor: 'Kelsey Grammer', universe: 'earth-10005', productions: ['x-men-days-of-future-past'], photo: '/qn38jJHEqRBsj50Gqo2uM38fgJx.jpg' },
     { actor: 'George Buza', universe: 'earth-92131', productions: ['x-men-97-s1', 'x-men-tas-s4', 'x-men-tas-s1', 'x-men-tas-s2', 'x-men-tas-s3', 'spider-man-tas-s2', 'x-men-tas-s5'], voice: true, photo: '/dQ3auD3785T0o5kJK67HmocMQR2.jpg' },
   ],
   'harry-osborn': [
-    { actor: 'Gary Imhoff', universe: 'earth-92131', productions: ['spider-man-tas-s1'], voice: true, photo: '/hm3JDtO1CTbC5aHdV94QRmcMI4C.jpg' },
+    { actor: 'Gary Imhoff', universe: 'earth-92131', productions: ['spider-man-tas-s1', 'spider-man-tas-s2'], voice: true, photo: '/hm3JDtO1CTbC5aHdV94QRmcMI4C.jpg' },
   ],
   'hawkeye': [
     { actor: 'Jeremy Renner', universe: 'earth-616', productions: ['thor', 'the-avengers', 'avengers-age-of-ultron', 'captain-america-civil-war'], photo: '/yB84D1neTYXfWBaV0QOE9RF2VCu.jpg' },
@@ -331,8 +344,11 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
   'henry-gyrich': [
     { actor: 'Barry Flatman', universe: 'earth-92131', productions: ['x-men-tas-s1', 'x-men-tas-s5'], voice: true, photo: '/jFilSZK7Th9qTQFQ3ZToU53ieAY.jpg' },
   ],
+  'herbert-landon': [
+    { actor: 'David Warner', universe: 'earth-92131', productions: ['spider-man-tas-s2'], voice: true, photo: '/AlsZcAY2c4chfOxMW69gHQzH1B2.jpg' },
+  ],
   'hobgoblin': [
-    { actor: 'Mark Hamill', universe: 'earth-92131', productions: ['spider-man-tas-s1'], voice: true, photo: '/zMQ93JTLW8KxusKhOlHFZhih3YQ.jpg' },
+    { actor: 'Mark Hamill', universe: 'earth-92131', productions: ['spider-man-tas-s1', 'spider-man-tas-s2'], voice: true, photo: '/zMQ93JTLW8KxusKhOlHFZhih3YQ.jpg' },
   ],
   'homer-ai': [
     { actor: 'Tom Kane', universe: 'earth-92131', productions: ['iron-man-tas-s2'], voice: true, photo: '/sq49aVP56G50Nr5kCL7Ove6Z9jE.jpg' },
@@ -351,6 +367,9 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
     { actor: 'Lou Ferrigno', universe: 'earth-92131', productions: ['incredible-hulk-tas-s1', 'incredible-hulk-tas-s2'], voice: true, photo: '/obTtRrm8EbDzuiKpLjAd9s1i9v5.jpg' },
     { actor: 'Neal McDonough', universe: 'earth-92131', productions: ['incredible-hulk-tas-s1', 'incredible-hulk-tas-s2'], voice: true, photo: '/3mI3i1CpjATSCta1Tb2qsyl1KCh.jpg' },
   ],
+  'hydro-man': [
+    { actor: 'Rob Paulsen', universe: 'earth-92131', productions: ['spider-man-tas-s2'], voice: true, photo: '/q3UOsXqiDL5vQHoFyON99O8xh5q.jpg' },
+  ],
   'hypnotia': [
     { actor: 'Linda Holdahl', universe: 'earth-92131', productions: ['iron-man-tas-s1'], voice: true, photo: '/4rrKFFphe1N0xGVeLeGaIvMZgxW.jpg' },
   ],
@@ -361,7 +380,7 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
     { actor: 'Finn Jones', universe: 'earth-616', productions: ['the-defenders-s1', 'iron-fist-s1', 'luke-cage-s2', 'iron-fist-s2'], photo: '/rKzzQ7oc80xDYDmZykBjmXWt0VZ.jpg' },
   ],
   'j-jonah-jameson': [
-    { actor: 'Ed Asner', universe: 'earth-92131', productions: ['spider-man-tas-s1'], voice: true, photo: '/AeVizz1AfAB2TbsfyzgBvqeSR3G.jpg' },
+    { actor: 'Ed Asner', universe: 'earth-92131', productions: ['spider-man-tas-s1', 'spider-man-tas-s2'], voice: true, photo: '/AeVizz1AfAB2TbsfyzgBvqeSR3G.jpg' },
   ],
   'jack-thompson': [
     { actor: 'Chad Michael Murray', universe: 'earth-616', productions: ['agent-carter-s1', 'agent-carter-s2'], photo: '/jIkzUQUVLkgn3HFMFRJBDAD0OLj.jpg' },
@@ -384,7 +403,7 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
   'jean-grey': [
     { actor: 'Sophie Turner', universe: 'earth-10005', productions: ['x-men-dark-phoenix', 'x-men-apocalypse'], photo: '/8ur4aHFakVCinWk0cvrGO8qAUhv.jpg' },
     { actor: 'Famke Janssen', universe: 'earth-10005', productions: ['x-men-days-of-future-past'], photo: '/uvZGwNsLqe9NyA57Qlt46IkO8Bd.jpg' },
-    { actor: 'Catherine Disher', universe: 'earth-92131', productions: ['x-men-tas-s1', 'x-men-tas-s2', 'x-men-tas-s3', 'x-men-tas-s4', 'x-men-tas-s5'], voice: true, photo: '/4KQR1ke8UdW4y0HMUCARIAG4Dwk.jpg' },
+    { actor: 'Catherine Disher', universe: 'earth-92131', productions: ['x-men-tas-s1', 'x-men-tas-s2', 'x-men-tas-s3', 'spider-man-tas-s2', 'x-men-tas-s4', 'x-men-tas-s5'], voice: true, photo: '/4KQR1ke8UdW4y0HMUCARIAG4Dwk.jpg' },
     { actor: 'Jennifer Hale', universe: 'earth-92131', productions: ['x-men-97-s1'], voice: true, photo: '/oNQCrdiSm0mABCcE5YaHwuZQK8X.jpg' },
   ],
   'jennifer-walters-she-hulk': [
@@ -423,7 +442,7 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
   ],
   'jubilee-jubilation-lee': [
     { actor: 'Lana Condor', universe: 'earth-10005', productions: ['x-men-apocalypse'], photo: '/vWn27Fk2GLwH7o9fBG9hBWZI6OR.jpg' },
-    { actor: 'Alyson Court', universe: 'earth-92131', productions: ['x-men-tas-s1', 'x-men-tas-s2', 'x-men-tas-s3', 'x-men-tas-s4', 'x-men-tas-s5'], voice: true, photo: '/kPeTYEV6vyyAJEsUlomVpiLcd6v.jpg' },
+    { actor: 'Alyson Court', universe: 'earth-92131', productions: ['x-men-tas-s1', 'x-men-tas-s2', 'x-men-tas-s3', 'spider-man-tas-s2', 'x-men-tas-s4', 'x-men-tas-s5'], voice: true, photo: '/kPeTYEV6vyyAJEsUlomVpiLcd6v.jpg' },
     { actor: 'Holly Chou', universe: 'earth-92131', productions: ['x-men-97-s1'], voice: true, photo: '/8sPU4zmJIwHk2qJ63wxOTnEcrS4.jpg' },
   ],
   'juggernaut-cain-marko': [
@@ -451,7 +470,7 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
     { actor: 'Neil Ross', universe: 'earth-92131', productions: ['fantastic-four-tas-s1'], voice: true, photo: '/pNgkQKw5k6z9kscDnOAwstcmNnt.jpg' },
   ],
   'kraven-the-hunter': [
-    { actor: 'Gregg Berger', universe: 'earth-92131', productions: ['spider-man-tas-s1'], voice: true, photo: '/bMlJUmhblX50gQrnA8XWG7UuaLk.jpg' },
+    { actor: 'Gregg Berger', universe: 'earth-92131', productions: ['spider-man-tas-s1', 'spider-man-tas-s2'], voice: true, photo: '/bMlJUmhblX50gQrnA8XWG7UuaLk.jpg' },
   ],
   'kuda': [
     { actor: 'Steve Toussaint', universe: 'earth-616', productions: ['eyes-of-wakanda-s1'], voice: true, photo: '/9rJafPDkQP8YuLy9iY5v19ZfMIW.jpg' },
@@ -502,10 +521,10 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
     { actor: 'Lashana Lynch', universe: 'earth-616', productions: ['captain-marvel'], photo: '/ypNxRag9uJ5nzPAN2um3amQK340.jpg' },
   ],
   'mariah-crawford': [
-    { actor: 'Susan Beaubian', universe: 'earth-92131', productions: ['spider-man-tas-s1'], voice: true, photo: '/q815QuPzyjV5ERLUgQqJOKnonXg.jpg' },
+    { actor: 'Susan Beaubian', universe: 'earth-92131', productions: ['spider-man-tas-s1', 'spider-man-tas-s2'], voice: true, photo: '/q815QuPzyjV5ERLUgQqJOKnonXg.jpg' },
   ],
   'mary-jane-watson': [
-    { actor: 'Sara Ballantine', universe: 'earth-92131', productions: ['spider-man-tas-s1', 'spider-man-tas-s3', 'spider-man-tas-s4', 'spider-man-tas-s5'], voice: true, photo: '/1U5cbBlLEWGvtFY0fCgevwVNWQ4.jpg' },
+    { actor: 'Sara Ballantine', universe: 'earth-92131', productions: ['spider-man-tas-s1', 'spider-man-tas-s2', 'spider-man-tas-s3', 'spider-man-tas-s4', 'spider-man-tas-s5'], voice: true, photo: '/1U5cbBlLEWGvtFY0fCgevwVNWQ4.jpg' },
   ],
   'master-mold': [
     { actor: 'David Fox', universe: 'earth-92131', productions: ['x-men-tas-s1'], voice: true, photo: '/kgdBv3Pk68oolH0DA39rpmUai47.jpg' },
@@ -514,7 +533,7 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
     { actor: 'Ming-Na Wen', universe: 'earth-616', productions: ['agents-of-shield-s7', 'agents-of-shield-s1', 'agents-of-shield-s2', 'agents-of-shield-s3', 'agents-of-shield-slingshot', 'agents-of-shield-s4', 'agents-of-shield-s5', 'agents-of-shield-s6'], photo: '/eqCzFF83It56cUdjpskzvg8jgq.jpg' },
   ],
   'may-parker': [
-    { actor: 'Linda Gary', universe: 'earth-92131', productions: ['spider-man-tas-s1'], voice: true, photo: '/6HVYuYlTJ5KsAV5ivXgjxcEocMp.jpg' },
+    { actor: 'Linda Gary', universe: 'earth-92131', productions: ['spider-man-tas-s1', 'spider-man-tas-s2'], voice: true, photo: '/6HVYuYlTJ5KsAV5ivXgjxcEocMp.jpg' },
   ],
   'medusa': [
     { actor: 'Iona Morris', universe: 'earth-92131', productions: ['fantastic-four-tas-s2'], voice: true, photo: '/4Ij1bKHykl7w61Vqnygz17djyPp.jpg' },
@@ -560,7 +579,7 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
     { actor: 'Gates McFadden', universe: 'earth-92131', productions: ['x-men-97-s1'], voice: true, photo: '/wlI6dlvncTFZMJWmz8hRIYyci3J.jpg' },
   ],
   'mysterio-quentin-beck': [
-    { actor: 'Gregg Berger', universe: 'earth-92131', productions: ['spider-man-tas-s1'], voice: true, photo: '/bMlJUmhblX50gQrnA8XWG7UuaLk.jpg' },
+    { actor: 'Gregg Berger', universe: 'earth-92131', productions: ['spider-man-tas-s1', 'spider-man-tas-s2'], voice: true, photo: '/bMlJUmhblX50gQrnA8XWG7UuaLk.jpg' },
   ],
   'nakia': [
     { actor: "Lupita Nyong'o", universe: 'earth-616', productions: ['black-panther'], photo: '/y40Wu1T742kynOqtwXASc5Qgm49.jpg' },
@@ -580,7 +599,7 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
     { actor: 'Winnie Harlow', universe: 'earth-616', productions: ['eyes-of-wakanda-s1'], voice: true, photo: '/gW2RPaNOPcOl3PksCjE8twDsiDd.jpg' },
   ],
   'norman-osborn': [
-    { actor: 'Neil Ross', universe: 'earth-92131', productions: ['spider-man-tas-s1', 'spider-man-tas-s3'], voice: true, photo: '/pNgkQKw5k6z9kscDnOAwstcmNnt.jpg' },
+    { actor: 'Neil Ross', universe: 'earth-92131', productions: ['spider-man-tas-s1', 'spider-man-tas-s2', 'spider-man-tas-s3'], voice: true, photo: '/pNgkQKw5k6z9kscDnOAwstcmNnt.jpg' },
   ],
   'odin': [
     { actor: 'Anthony Hopkins', universe: 'earth-616', productions: ['thor', 'thor-the-dark-world', 'thor-ragnarok'], photo: '/iaf7SHSkGDpnyrDh1Jolilwk2TD.jpg' },
@@ -643,11 +662,11 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
     { actor: 'Cam Clarke', universe: 'earth-92131', productions: ['spider-man-tas-s5'], voice: true, photo: '/hScRMNVHAFge06mOfFEauKcthtO.jpg' },
   ],
   'rhino': [
-    { actor: 'Don Stark', universe: 'earth-92131', productions: ['spider-man-tas-s1'], voice: true, photo: '/lkPWvElz5RxR4t4v3hM4SRy5E1j.jpg' },
+    { actor: 'Don Stark', universe: 'earth-92131', productions: ['spider-man-tas-s1', 'spider-man-tas-s2'], voice: true, photo: '/lkPWvElz5RxR4t4v3hM4SRy5E1j.jpg' },
   ],
   'robbie-robertson-noir': [
     { actor: 'Lamorne Morris', universe: 'earth-62533', productions: ['spider-noir-s1'], photo: '/9qPDnMsF7JbYSSn1K9yryFBmmXl.jpg' },
-    { actor: 'Rodney Saulsberry', universe: 'earth-92131', productions: ['spider-man-tas-s1'], voice: true, photo: '/oq8ppTU9gFt6pju7Kkxd2CfuciJ.jpg' },
+    { actor: 'Rodney Saulsberry', universe: 'earth-92131', productions: ['spider-man-tas-s1', 'spider-man-tas-s2'], voice: true, photo: '/oq8ppTU9gFt6pju7Kkxd2CfuciJ.jpg' },
   ],
   'robert-hendry': [
     { actor: 'Glenn Morshower', universe: 'earth-10005', productions: ['x-men-first-class'], photo: '/SjgNUSLoBAVossDI4QkNtDxYDZ.jpg' },
@@ -660,7 +679,7 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
   ],
   'rogue-anna-marie': [
     { actor: 'Anna Paquin', universe: 'earth-10005', productions: ['x-men-days-of-future-past'], photo: '/5FjBCsn3kujldP8LizoCrc3hsHp.jpg' },
-    { actor: 'Lenore Zann', universe: 'earth-92131', productions: ['x-men-97-s1', 'x-men-tas-s1', 'x-men-tas-s2', 'x-men-tas-s3', 'x-men-tas-s4', 'x-men-tas-s5'], voice: true, photo: '/qOuxxt2zybggVDl1NiQloVIVFNU.jpg' },
+    { actor: 'Lenore Zann', universe: 'earth-92131', productions: ['x-men-97-s1', 'x-men-tas-s1', 'x-men-tas-s2', 'x-men-tas-s3', 'x-men-tas-s4', 'spider-man-tas-s2', 'x-men-tas-s5'], voice: true, photo: '/qOuxxt2zybggVDl1NiQloVIVFNU.jpg' },
   ],
   'ronan': [
     { actor: 'Lee Pace', universe: 'earth-616', productions: ['captain-marvel'], photo: '/eeTc0d2AX1vFYVxZ6Qw7qZpg4Tz.jpg' },
@@ -677,7 +696,7 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
     { actor: 'Susan Roman', universe: 'earth-92131', productions: ['x-men-tas-s4'], voice: true, photo: '/vyWyOdnKcoNf40ytZSy6qlIIr9p.jpg' },
   ],
   'scorpion-mac-gargan': [
-    { actor: 'Martin Landau', universe: 'earth-92131', productions: ['spider-man-tas-s1'], voice: true, photo: '/dznOAZPpAyXu7PfCz5obbJ2YzsJ.jpg' },
+    { actor: 'Martin Landau', universe: 'earth-92131', productions: ['spider-man-tas-s1', 'spider-man-tas-s2'], voice: true, photo: '/dznOAZPpAyXu7PfCz5obbJ2YzsJ.jpg' },
   ],
   'sean-cassidy': [
     { actor: 'Caleb Landry Jones', universe: 'earth-10005', productions: ['x-men-first-class'], photo: '/8M5lPHrERwAIfWK56RkH30FOjhV.jpg' },
@@ -699,7 +718,7 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
     { actor: 'Kay Tremblay', universe: 'earth-92131', productions: ['x-men-tas-s4'], voice: true },
   ],
   'shocker': [
-    { actor: 'Jim Cummings', universe: 'earth-92131', productions: ['spider-man-tas-s1'], voice: true, photo: '/c0sQPRCM5Ri3F4gVyxPr4AcPmIq.jpg' },
+    { actor: 'Jim Cummings', universe: 'earth-92131', productions: ['spider-man-tas-s1', 'spider-man-tas-s2'], voice: true, photo: '/c0sQPRCM5Ri3F4gVyxPr4AcPmIq.jpg' },
   ],
   'shuri': [
     { actor: 'Letitia Wright', universe: 'earth-616', productions: ['black-panther', 'avengers-infinity-war'], photo: '/f7PevpEeBqwzACPhoZ8K3ktrKvE.jpg' },
@@ -712,6 +731,7 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
   ],
   'silvermane-noir': [
     { actor: 'Brendan Gleeson', universe: 'earth-62533', productions: ['spider-noir-s1'], photo: '/ctPPJu5ZYDZr1IPmzoNpezczrm0.jpg' },
+    { actor: 'Jeff Corey', universe: 'earth-92131', productions: ['spider-man-tas-s2'], voice: true, photo: '/n1BIWS5L0D6HmS0TpVZMHmDJY6g.jpg' },
   ],
   'skye': [
     { actor: 'Chloe Bennet', universe: 'earth-616', productions: ['agents-of-shield-s7', 'agents-of-shield-s1', 'agents-of-shield-s2', 'agents-of-shield-s3', 'agents-of-shield-slingshot', 'agents-of-shield-s4', 'agents-of-shield-s5', 'agents-of-shield-s6'], photo: '/xVBralOFNCG3sXTcrd4d0wgaB42.jpg' },
@@ -735,7 +755,7 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
   'storm-ororo-munroe': [
     { actor: 'Alexandra Shipp', universe: 'earth-10005', productions: ['x-men-apocalypse', 'x-men-dark-phoenix'], photo: '/98AfO5NSqWnlhIxjSg08gGYdxUG.jpg' },
     { actor: 'Halle Berry', universe: 'earth-10005', productions: ['x-men-days-of-future-past'], photo: '/84HRDZodRCuBSpYGSc3ow8WucI4.jpg' },
-    { actor: 'Alison Sealy-Smith', universe: 'earth-92131', productions: ['x-men-tas-s4', 'x-men-tas-s2', 'x-men-tas-s3', 'x-men-tas-s5', 'x-men-97-s1'], voice: true, photo: '/w4TSJBggA4c1YnXenKIOHYwuLla.jpg' },
+    { actor: 'Alison Sealy-Smith', universe: 'earth-92131', productions: ['x-men-tas-s4', 'x-men-tas-s2', 'x-men-tas-s3', 'spider-man-tas-s2', 'x-men-tas-s5', 'x-men-97-s1'], voice: true, photo: '/w4TSJBggA4c1YnXenKIOHYwuLla.jpg' },
     { actor: 'Iona Morris', universe: 'earth-92131', productions: ['x-men-tas-s1', 'spider-man-tas-s5'], voice: true, photo: '/4Ij1bKHykl7w61Vqnygz17djyPp.jpg' },
   ],
   'sue-storm': [
@@ -754,7 +774,7 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
     { actor: 'Tony Jay', universe: 'earth-92131', productions: ['fantastic-four-tas-s1'], voice: true, photo: '/rlL918sjBA5m6qVEjYDCKmxU7QO.jpg' },
   ],
   'terri-lee': [
-    { actor: 'Dawnn Lewis', universe: 'earth-92131', productions: ['spider-man-tas-s1'], voice: true, photo: '/ppxGgmkTczev2VsiOSMfaGUy580.jpg' },
+    { actor: 'Dawnn Lewis', universe: 'earth-92131', productions: ['spider-man-tas-s1', 'spider-man-tas-s2'], voice: true, photo: '/ppxGgmkTczev2VsiOSMfaGUy580.jpg' },
   ],
   'thanos': [
     { actor: 'Josh Brolin', universe: 'earth-616', productions: ['avengers-infinity-war'], photo: '/7QpneI3HoZCCDVPyWx3p3t7yeo7.jpg' },
@@ -777,6 +797,7 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
   ],
   'tombstone-noir': [
     { actor: 'Abraham Popoola', universe: 'earth-62533', productions: ['spider-noir-s1'], photo: '/r5mojn6TjWgHefdMCJNiohvY82f.jpg' },
+    { actor: 'Dorian Harewood', universe: 'earth-92131', productions: ['spider-man-tas-s2'], voice: true, photo: '/2esRIntMQCkmpcwsfvTfiS20Boq.jpg' },
   ],
   'tony-stark': [
     { actor: 'Robert Downey Jr.', universe: 'earth-616', productions: ['iron-man-2', 'iron-man-3', 'iron-man', 'one-shot-the-consultant', 'the-avengers', 'spider-man-homecoming', 'avengers-age-of-ultron', 'captain-america-civil-war', 'avengers-infinity-war'], photo: '/5qHNjhtjMD4YWH3UP0rm4tKwxCL.jpg' },
@@ -790,6 +811,9 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
   ],
   'valkyrie': [
     { actor: 'Tessa Thompson', universe: 'earth-616', productions: ['thor-ragnarok'], photo: '/19ze60jXlb2j7dXc2UpA3MujXA8.jpg' },
+  ],
+  'vanessa-fisk': [
+    { actor: 'Caroline Goodall', universe: 'earth-92131', productions: ['spider-man-tas-s2'], voice: true, photo: '/4cagGtMqACvkuw6Llq8Li8UJ1AR.jpg' },
   ],
   'vera-addison-noir': [
     { actor: 'Whitney Rice', universe: 'earth-62533', productions: ['spider-noir-s1'], photo: '/aY9U97KsqK518QKEp08R6cMIPd6.jpg' },

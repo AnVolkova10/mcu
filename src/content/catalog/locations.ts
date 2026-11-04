@@ -241,6 +241,13 @@ export const locations = {
     kind: 'earth',
     coords: [40.7183, -73.9962],
   },
+  'brand-corporation': {
+    name: 'Brand Corporation',
+    place: 'Midtown Manhattan',
+    country: 'United States',
+    kind: 'earth',
+    coords: [40.7565, -73.9725],
+  },
   'branston-theatre': {
     name: 'Branston Theatre',
     place: 'Branston, Missouri',
@@ -457,6 +464,13 @@ export const locations = {
     country: 'United States',
     kind: 'earth',
     coords: [32.95, -112.65],
+  },
+  'coney-island': {
+    name: 'Coney Island',
+    place: 'Brooklyn, New York',
+    country: 'United States',
+    kind: 'earth',
+    coords: [40.5749, -73.9786],
   },
   'connors-home': {
     name: 'Connors Home',
@@ -765,6 +779,13 @@ export const locations = {
     country: 'United States',
     kind: 'earth',
     coords: [40.7905, -73.5975],
+  },
+  'hardy-foundation-research-center': {
+    name: 'Hardy Foundation Research Center',
+    place: 'Lenox Hill, Manhattan',
+    country: 'United States',
+    kind: 'earth',
+    coords: [40.765, -73.9598],
   },
   'harlem-police-warehouse': {
     name: 'Police Warehouse',
@@ -1091,13 +1112,6 @@ export const locations = {
     kind: 'earth',
     coords: [34.059, -118.278],
     approximate: true,
-  },
-  'maggia-penthouse-and-new-york-harbor-docks': {
-    name: 'Maggia Penthouse & New York Harbor Docks',
-    place: 'Manhattan, New York',
-    country: 'United States',
-    kind: 'earth',
-    coords: [40.7033, -74.017],
   },
   'magnetos-citadel': {
     name: "Magneto's Citadel",
@@ -2099,6 +2113,13 @@ export const locations = {
     kind: 'earth',
     coords: [40.7587, -73.985],
   },
+  'toomes-aerodynamics': {
+    name: 'Toomes Aerodynamics',
+    place: "Hell's Kitchen, Manhattan",
+    country: 'United States',
+    kind: 'earth',
+    coords: [40.7633, -73.9958],
+  },
   'torfa-border-world-outpost': {
     name: 'Torfa Border World Outpost',
     place: 'Torfa System',
@@ -2282,6 +2303,13 @@ export const locations = {
     country: 'France',
     kind: 'earth',
     coords: [48.8629, 2.289],
+  },
+  'world-trade-center': {
+    name: 'World Trade Center',
+    place: 'Lower Manhattan',
+    country: 'United States',
+    kind: 'earth',
+    coords: [40.7118, -74.0131],
   },
   'worthington-chalet': {
     name: "Warren Worthington's Chalet",

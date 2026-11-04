@@ -17,12 +17,15 @@ import { ROOT, tmdb, TV_SPECIALS } from './tmdb';
 
 /** Other names a character is credited under. */
 const CREDITED_AS: Record<string, readonly string[]> = {
+  'adrian-toomes': ['Arthur Avis'],
   'alethea-faber-noir': ['Dr. Faber'],
   'alfred-morris-noir': ['Mayor Morris'],
+  'alisa-silvermane': ['Alisa Silver'],
   'anastasia-hardy': ['Mrs. Hardy'],
   'archangel-warren-worthington': ['Angel'],
   'fred-dukes': ['Fred Dukes'],
   'henry-gyrich': ['Henry Gyrich'],
+  'herbert-landon': ['Landon'],
   'howard-walters-noir': ['Walters'],
   'jimmy-addison-noir': ['Addison'],
   'johann-fennhoff': ['Dr. Ivchenko'],

@@ -43,7 +43,7 @@ export default defineEvents('spider-man-tas-s5', [
       'dr-miles-warrens-offshore-aquatic-bio-dome',
     ],
     deaths: [
-      { name: 'Hydro-Man', presumed: false, note: 'Cellular Clone Degeneration' },
+      { name: 'Hydro-Man Clone', presumed: false, note: 'Cellular Clone Degeneration' },
       { name: 'Mary Jane Watson Clone', presumed: false, note: 'Cellular Degeneration' },
     ],
   },

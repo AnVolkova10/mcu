@@ -21,6 +21,15 @@ export const characters = {
     origin: 'Greece',
     bio: "Greek warrior of the Trojan War and closest friend of B'Kai, who fought at his side undercover for nine years. He attacks B'Kai when he sees him let Helen escape, and dies in the fight.",
   },
+  'adrian-toomes': {
+    name: 'Adrian Toomes',
+    alias: 'Vulture',
+    color: '#84cc16',
+    role: 'villain',
+    status: 'alive',
+    factions: [],
+    bio: "Elderly inventor at the head of Toomes Aerodynamics, who uses the technology of the Tablet of Time to drain the youth of others as the Vulture. He drains Peter Parker's youth and powers, but Curt Connors tricks him into keeping Peter's mutation instead.",
+  },
   'agent-zero': {
     name: 'Agent Zero',
     color: '#14b8a6',
@@ -87,6 +96,14 @@ export const characters = {
     status: 'alive',
     factions: [],
     bio: 'Sculptor and friend of the Fantastic Four. She takes in the Silver Surfer after the Thing knocks him off the Baxter Building, and persuades him to turn against Galactus.',
+  },
+  'alisa-silvermane': {
+    name: 'Alisa Silvermane',
+    color: '#fda4af',
+    role: 'secondary',
+    status: 'alive',
+    factions: [],
+    bio: "Young woman who asks Peter Parker out at ESU. In the fight over the Tablet of Time she stuns Spider-Man, takes him to Silvermane's hideout and blows it up.",
   },
   'alistair-smythe': {
     name: 'Alistair Smythe',
@@ -339,8 +356,7 @@ export const characters = {
     role: 'anti-hero',
     status: 'alive',
     factions: ['vampire-hunters'],
-    origin: 'London, England',
-    bio: 'Daywalking half-vampire warrior armed with silver swords, garlic projectiles, and a laser rifle, waging a relentless crusade across New York against the undead.',
+    bio: 'Vampire hunter, trained by Whistler, who is slowly turning into a vampire himself. He comes to New York to kill Morbius, teams up with Spider-Man and falls for Detective Terri Lee.',
   },
   blastaar: {
     name: 'Blastaar',
@@ -491,7 +507,7 @@ export const characters = {
     color: '#94a3b8',
     role: 'villain',
     status: 'alive',
-    factions: [],
+    factions: ['insidious-six'],
     bio: "Master of disguise whose image inducer copies anyone's looks. Hired by terrorists to stop a peace treaty at the United Nations, he poses as Jameson, Robbie, Peter and Nick Fury until Spider-Man breaks the inducer and S.H.I.E.L.D. takes him.",
   },
   'charles-xavier': {
@@ -873,7 +889,7 @@ export const characters = {
     role: 'secondary',
     status: 'alive',
     factions: ['esu-science-faculty'],
-    bio: "ESU scientist who ignored Curt Connors's warnings about Neogenic testing on people. Paid by J. Jonah Jameson, he gives Mac Gargan scorpion DNA inside a battle suit, a change he cannot undo.",
+    bio: "ESU scientist who ignored Curt Connors's warnings about Neogenic testing on people. Paid by J. Jonah Jameson, he gives Mac Gargan scorpion DNA inside a battle suit, a change he cannot undo; later, taken out of a mental hospital by the Scorpion, he blows up a lab to destroy all neogenic research.",
   },
   'felicia-hardy': {
     name: 'Felicia Hardy',
@@ -994,6 +1010,14 @@ export const characters = {
     origin: 'The Savage Land, Antarctica',
     bio: "Sun god of the Savage Land, left a statue for centuries. Storm's tempest wakes him, he tries to bond with the land's volcano, and he falls back into stone when Sauron drains his power.",
   },
+  genevieve: {
+    name: 'Genevieve',
+    color: '#f0abfc',
+    role: 'secondary',
+    status: 'alive',
+    factions: ['mutants'],
+    bio: "Herbert Landon's aide, who believes that destroying mutants is the only way to end their suffering, until her telekinesis holds up the X-Men's Blackbird and shows that she is a mutant. She leaves with the X-Men to meet Charles Xavier.",
+  },
   'ghost-rider-danny-ketch': {
     name: 'Danny Ketch',
     alias: 'Ghost Rider',
@@ -1060,6 +1084,14 @@ export const characters = {
     origin: 'Planet X (Cosmic)',
     bio: 'Flora colossus and loyal Guardian of the Galaxy.',
   },
+  hammerhead: {
+    name: 'Hammerhead',
+    color: '#a1a1aa',
+    role: 'villain',
+    status: 'alive',
+    factions: [],
+    bio: "Silvermane's enforcer, who fights with his head. After failing to steal the Tablet of Time he goes over to the Kingpin, and in the end he passes the Tablet on to Adrian Toomes.",
+  },
   'hank-mccoy': {
     name: 'Dr. Hank McCoy',
     alias: 'Beast',
@@ -1116,6 +1148,14 @@ export const characters = {
     factions: ['anti-mutant-coalition'],
     origin: 'United States',
     bio: "Government official who runs the Mutant Control Agency and secretly backs Bolivar Trask's Sentinels; when the President shuts the program down, he moves it to Genosha. He later shoots Charles Xavier and is killed by Bastion.",
+  },
+  'herbert-landon': {
+    name: 'Herbert Landon',
+    color: '#4d7c0f',
+    role: 'villain',
+    status: 'alive',
+    factions: [],
+    bio: "Scientist at the Brand Corporation who promises the Kingpin an army of super-mutants while turning Beast's old research into a serum that destroys mutants. He falls into his own serum, mutates into a creature that feeds on electricity, and shrinks back half-changed.",
   },
   'high-evolutionary': {
     name: 'Herbert Wyndham',
@@ -1185,6 +1225,15 @@ export const characters = {
     variants: {
       'earth-92131': 'Genius nuclear physicist caught in the blast of his own Gamma Bomb who transforms into the green, rage-fueled Incredible Hulk whenever provoked.',
     },
+  },
+  'hydro-man': {
+    name: 'Morrie Bench',
+    alias: 'Hydro-Man',
+    color: '#0284c7',
+    role: 'villain',
+    status: 'presumably-dead',
+    factions: [],
+    bio: "Mary Jane Watson's former boyfriend, whose body turns into water. He robs the city while Spider-Man takes the blame and kidnaps Mary Jane, until he splashes apart on a rooftop far from any water and evaporates.",
   },
   hypnotia: {
     name: 'Hypnotia',
@@ -1540,7 +1589,7 @@ export const characters = {
     role: 'anti-hero',
     status: 'alive',
     factions: [],
-    bio: 'Hunter who comes to New York for Mariah Crawford and takes Robbie Robertson as bait to catch her. Her antidote cures him, and the two sail for Africa together.',
+    bio: 'Hunter who comes to New York for Mariah Crawford and takes Robbie Robertson as bait to catch her. Her antidote cures him, and the two sail for Africa together; later he comes back at her call and helps the Punisher bring down the Man-Spider.',
   },
   kuda: {
     name: 'Kuda',
@@ -1730,7 +1779,7 @@ export const characters = {
     role: 'secondary',
     status: 'alive',
     factions: [],
-    bio: 'Scientist whom Kraven comes to New York to take home with him. She makes the antidote that cures him, and the two sail for Africa together.',
+    bio: "Scientist whom Kraven comes to New York to take home with him. She makes the antidote that cures him, and later a serum for Peter Parker's mutation that makes it worse, and the antidote that brings him back from the Man-Spider.",
   },
   'mary-jane-watson': {
     name: 'Mary Jane Watson',
@@ -1821,9 +1870,8 @@ export const characters = {
     color: '#a21caf',
     role: 'anti-hero',
     status: 'alive',
-    factions: ['vampiric-mutates'],
-    origin: 'Nafplio, Greece',
-    bio: 'Brilliant Nobel-winning biologist whose treatment for a rare blood condition involving vampire bat DNA and the Neogenic Recombinator turned him into a living pseudo-vampire.',
+    factions: [],
+    bio: "ESU student and Peter Parker's rival for the post of Curt Connors's assistant. In a lab of his own, a bat bites him at a borrowed Neogenic Recombinator and he becomes a living vampire who drains people of plasma; when he shields Felicia Hardy from the Recombinator's blast, the change becomes permanent.",
   },
   'minn-erva': {
     name: 'Minn-Erva',
@@ -2196,7 +2244,7 @@ export const characters = {
     color: '#6b7280',
     role: 'villain',
     status: 'alive',
-    factions: ['kingpin-syndicate'],
+    factions: ['kingpin-syndicate', 'insidious-six'],
     bio: "The Kingpin's thug in rhino armor. He steals the Prometheum X from John Jameson's crashed shuttle, and later fights Spider-Man beside the Shocker.",
   },
   'robbie-robertson-noir': {
@@ -2387,7 +2435,7 @@ export const characters = {
     color: '#eab308',
     role: 'villain',
     status: 'alive',
-    factions: ['kingpin-syndicate'],
+    factions: ['kingpin-syndicate', 'insidious-six'],
     bio: "The Kingpin's agent, armed with vibrating gauntlets. He kidnaps John Jameson from the hospital, and Spider-Man, in the black suit, nearly kills him in a bell tower before saving him.",
   },
   shuri: {
@@ -2423,10 +2471,13 @@ export const characters = {
     alias: 'Silvermane',
     color: '#cbd5e1',
     role: 'villain',
-    status: 'deceased',
+    status: 'variable',
     factions: ['silvermane-syndicate', 'organized-crime'],
     origin: 'New York City',
     bio: 'Crime boss who has run New York for 30 years, with the police on his payroll and the mayors of his choosing. Cat Hardy, the singer he controlled, shoots him in 1933.',
+    variants: {
+      'earth-92131': 'In the animated series Silvermane is an elderly crime lord, whose real name the show does not give, at war with the Kingpin for New York. The Tablet of Time makes him young again, and then keeps going until he is a baby.',
+    },
   },
   skye: {
     name: 'Daisy Johnson',
@@ -2465,7 +2516,7 @@ export const characters = {
     origin: 'Queens, New York',
     bio: 'Friendly neighborhood web-slinger empowered by a radioactive spider bite.',
     variants: {
-      'earth-92131': 'In the animated series he is a college student who sells photos of Spider-Man to the Daily Bugle. In 1994 an alien suit bonds with him for a few days and makes him stronger and angrier, until the bell of an old church tears it off.',
+      'earth-92131': 'In the animated series he is a college student who sells photos of Spider-Man to the Daily Bugle. In 1994 an alien suit bonds with him for a few days and makes him stronger and angrier, until the bell of an old church tears it off. In 1995 his mutation turns him into the Man-Spider until Mariah Crawford brings him back, and the Vulture steals his youth for a while.',
     },
   },
   'stan-lee-creator': {
@@ -2578,7 +2629,7 @@ export const characters = {
     role: 'secondary',
     status: 'alive',
     factions: [],
-    bio: 'New York police detective who comes to believe that Spider-Man was framed for the robbery at the Metropolitan Museum. She helps him find Mysterio, who traps her and Jameson at Wonder Studios until Spider-Man saves them.',
+    bio: 'New York police detective who comes to believe that Spider-Man was framed for the robbery at the Metropolitan Museum. She helps him find Mysterio, who traps her and Jameson at Wonder Studios until Spider-Man saves them, and later joins him and Blade against Morbius and falls for Blade.',
   },
   thanos: {
     name: 'Thanos',
@@ -2628,6 +2679,9 @@ export const characters = {
     factions: ['us-military', 'street-level-heroes'],
     origin: 'New York',
     bio: 'War veteran waging a one-man war on organized crime.',
+    variants: {
+      'earth-92131': "In the animated series he hunts Spider-Man, whom the news blames for Morbius's attacks, with his partner Microchip, and joins Kraven to bring down the Man-Spider.",
+    },
   },
   thor: {
     name: 'Thor Odinson',
@@ -2669,6 +2723,9 @@ export const characters = {
     factions: ['silvermane-syndicate'],
     origin: 'New York City',
     bio: 'Former POW with unbreakable skin, left with nothing by the Great Depression, who joins Silvermane because he has little time left. Robbie Robertson cures him with a dose in the eye, and he leaves New York with his mother.',
+    variants: {
+      'earth-92131': "In the animated series he is Silvermane's new man, who kidnaps Vanessa Fisk and Curt Connors in the fight over the Tablet of Time.",
+    },
   },
   'tony-stark': {
     name: 'Tony Stark',
@@ -2733,6 +2790,14 @@ export const characters = {
     factions: ['valkyrior', 'asgard', 'revengers'],
     origin: 'Asgard (Cosmic / Asgard)',
     bio: 'Legendary Asgardian warrior who survived the slaughter by Hela and later became King of New Asgard.',
+  },
+  'vanessa-fisk': {
+    name: 'Vanessa Fisk',
+    color: '#fde68a',
+    role: 'civilian',
+    status: 'alive',
+    factions: [],
+    bio: "Wilson Fisk's wife. Tombstone kidnaps her to trade her for the Tablet of Time, and when the fight is over she leaves her husband.",
   },
   'vera-addison-noir': {
     name: 'Vera Addison',
@@ -2892,7 +2957,7 @@ export const characters = {
     role: 'villain',
     status: 'alive',
     factions: ['fisk-enterprises', 'insidious-six'],
-    bio: "In public one of New York's leading philanthropists, in secret the crime lord known as the Kingpin. He hires Alistair Smythe to build Spider-Slayers, and the Hobgoblin briefly takes over his headquarters.",
+    bio: "In public one of New York's leading philanthropists, in secret the crime lord known as the Kingpin. He hires Alistair Smythe to build Spider-Slayers, forms the Insidious Six to destroy Spider-Man, and wars with the crime lord Silvermane.",
   },
   'winston-noir': {
     name: 'Winston',

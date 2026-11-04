@@ -8,6 +8,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'achilles': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/f/f4/Achilles_Infobox.png/revision/latest/scale-to-width-down/192?cb=20250801080703',
   },
+  'adrian-toomes': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/b/b6/Vulture_SM.png/revision/latest/scale-to-width-down/300?cb=20100216123230',
+  },
   'agent-zero': {
     'earth-10005': 'https://static.wikia.nocookie.net/xmenmovies/images/b/be/AgentZero1-XMOWsf.png/revision/latest/scale-to-width-down/231?cb=20140609141742',
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/a/a1/Maverick.jpg/revision/latest/scale-to-width-down/248?cb=20131016015434',
@@ -23,6 +26,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   },
   'alicia-masters': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/a/ad/Alicia_Masters.jpg/revision/latest/scale-to-width-down/300?cb=20150324031855',
+  },
+  'alisa-silvermane': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/0/0e/Alisha_Holds_Baby_Silvermane.jpg/revision/latest/scale-to-width-down/300?cb=20130130232731',
   },
   'alistair-smythe': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/f/fd/Smythehuman.jpg/revision/latest/window-crop/width/300/x-offset/139/y-offset/0/window-width/184/window-height/184?cb=20080801203413',
@@ -331,6 +337,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'groot': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/5/57/Groot_Infobox.png/revision/latest/scale-to-width-down/215?cb=20260126002142',
   },
+  'hammerhead': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/4/41/Hammerhead.jpg/revision/latest/scale-to-width-down/300?cb=20080805223122',
+  },
   'hank-mccoy': {
     'earth-10005': 'https://static.wikia.nocookie.net/xmenmovies/images/1/19/Beast-profile03-682x1024.jpg/revision/latest/scale-to-width-down/200?cb=20120409162048',
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/6/6b/Beast.jpg/revision/latest/scale-to-width-down/300?cb=20160425013134',
@@ -350,6 +359,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   },
   'henry-gyrich': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/9/9b/Henry_Peter_Gyrich.jpg/revision/latest/scale-to-width-down/300?cb=20160429040638',
+  },
+  'herbert-landon': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/c/ce/Landon.jpg/revision/latest/scale-to-width-down/300?cb=20080803225456',
   },
   'high-evolutionary': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/3/36/High_Evolutionary_XM.jpg/revision/latest?cb=20130915015518',
@@ -373,6 +385,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'hulk': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/29/Hulk_Infobox.jpg/revision/latest/scale-to-width-down/216?cb=20260925124237',
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/6/6f/Hulk.jpg/revision/latest/scale-to-width-down/300?cb=20140901012924',
+  },
+  'hydro-man': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/e/e9/Hydro-Man.png/revision/latest/scale-to-width-down/300?cb=20100218213047',
   },
   'hypnotia': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/5/5d/Hypnotia.jpg/revision/latest/scale-to-width-down/300?cb=20080801000331',
@@ -761,6 +776,7 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   },
   'silvermane-noir': {
     'earth-62533': 'https://static.wikia.nocookie.net/spidermannoir/images/7/7b/Silvermane_Infobox.png/revision/latest/scale-to-width-down/269?cb=20260428154309',
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/d/d8/Silvermane.jpg/revision/latest/scale-to-width-down/300?cb=20130915021937',
   },
   'skye': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/7/79/Quake.jpg/revision/latest/window-crop/width/300/x-offset/675/y-offset/150/window-width/900/window-height/900?cb=20190412001710',
@@ -836,6 +852,7 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   },
   'tombstone-noir': {
     'earth-62533': 'https://static.wikia.nocookie.net/spidermannoir/images/c/cb/Tombstone_Infobox.jpg/revision/latest/scale-to-width-down/274?cb=20260427181248',
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/9/90/Stone.jpg/revision/latest/scale-to-width-down/300?cb=20080805225058',
   },
   'tony-stark': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/9/9d/Iron_Man_Infobox.jpg/revision/latest/scale-to-width-down/193?cb=20240802142023',
@@ -856,6 +873,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   },
   'valkyrie': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/d/d8/Valkyrie_in_LoveAndThunder_Poster.png/revision/latest/scale-to-width-down/230?cb=20231021012751',
+  },
+  'vanessa-fisk': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/0/0e/Vanessa_Fisk.jpg/revision/latest/scale-to-width-down/300?cb=20180213003123',
   },
   'vernon-masters': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/a/ae/Vernon_Masters.jpg/revision/latest/scale-to-width-down/200?cb=20160205201526',

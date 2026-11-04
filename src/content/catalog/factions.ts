@@ -131,7 +131,6 @@ export const factions = {
   'us-military': { name: 'U.S. Military' },
   valkyrior: { name: 'Valkyrior' },
   'vampire-hunters': { name: 'Vampire Hunters' },
-  'vampiric-mutates': { name: 'Vampiric Mutates' },
   wakanda: { name: 'Wakanda' },
   watchers: { name: 'Watchers' },
   'weapon-x': { name: 'Weapon X' },
