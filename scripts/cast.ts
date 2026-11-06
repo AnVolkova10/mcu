@@ -44,6 +44,7 @@ const CREDITED_AS: Record<string, readonly string[]> = {
   ronan: ['Ronan'],
   'ruby-williams-noir': ['Ruby'],
   'silvermane-noir': ['Finn Byrne'],
+  taina: ['Maria Taina Elizando'],
   'terri-lee': ['Detective Terri Lee'],
   'thaddeus-ross': ['General Ross'],
   'vera-addison-noir': ['Vera'],

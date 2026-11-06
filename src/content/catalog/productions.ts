@@ -917,7 +917,8 @@ export const productions = {
     universe: 'earth-92131',
     status: 'audited',
     animated: true,
-    description: "Sins of the Fathers: Doctor Strange, the Green Goblin's descent into madness, Daredevil clearing Peter's name in court, The Spot, and a mega-crossover with Iron Man and War Machine battling Venom and Carnage.",
+    description: "1996: Spider-Man trains under Madame Web while facing Baron Mordo and Dormammu, the Green Goblin, Richard Fisk's frame-up with Daredevil, Venom and Carnage with Iron Man, and the Spot, until Mary Jane falls into limbo.",
+    verified: true,
     poster: '/hCUkmIr50UnOuU9MasUZ7s0y3vf.jpg',
   },
   'spider-man-tas-s4': {

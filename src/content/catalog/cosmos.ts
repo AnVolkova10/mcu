@@ -290,6 +290,13 @@ export const cosmosNodes = {
     color: '#a78bfa',
     description: 'World of twin suns ruled by Jessik and wrecked by Dark Aegis, which Iron Man and War Machine reach through a space-fold.',
   },
+  'interdimensional-limbo': {
+    name: 'Limbo',
+    zone: 'dimensions',
+    look: 'portal',
+    color: '#64748b',
+    description: 'The void between dimensions where the Spot, Mary Jane Watson and Norman Osborn are lost.',
+  },
 } as const satisfies Record<string, CosmosNodeInput>;
 
 export type CosmosNodeId = keyof typeof cosmosNodes;

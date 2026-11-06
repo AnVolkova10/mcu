@@ -103,7 +103,7 @@ export const characters = {
     role: 'secondary',
     status: 'alive',
     factions: [],
-    bio: "Young woman who asks Peter Parker out at ESU. In the fight over the Tablet of Time she stuns Spider-Man, takes him to Silvermane's hideout and blows it up.",
+    bio: "Silvermane's daughter, who asks Peter Parker out at ESU and, in the fight over the Tablet of Time, stuns Spider-Man and blows up her father's hideout. Later she runs his organization and hires Tombstone to destroy photos that would expose her.",
   },
   'alistair-smythe': {
     name: 'Alistair Smythe',
@@ -111,7 +111,7 @@ export const characters = {
     role: 'villain',
     status: 'alive',
     factions: ['kingpin-syndicate'],
-    bio: "Spencer Smythe's son, who moves in a hoverchair. After his father vanishes in the explosion at Oscorp, he builds Spider-Slayers for the Kingpin to destroy Spider-Man and the people he blames for it.",
+    bio: "Spencer Smythe's son, who moves in a hoverchair and builds Spider-Slayers for the Kingpin to destroy Spider-Man and the people he blames for his father's loss. The Kingpin has him turned into a cyborg, and he turns on him when he learns his father is alive.",
   },
   'amelia-voght': {
     name: 'Amelia Voght',
@@ -221,6 +221,14 @@ export const characters = {
     origin: 'Switzerland / Germany',
     bio: "Brilliant HYDRA biochemist and geneticist who harnessed the Tesseract energy and later secretly planted HYDRA's parasite inside S.H.I.E.L.D.",
   },
+  'ashley-kafka': {
+    name: 'Ashley Kafka',
+    color: '#a78bfa',
+    role: 'secondary',
+    status: 'alive',
+    factions: [],
+    bio: "Psychiatrist at Ravencroft who treats Eddie Brock and helps separate him from the symbiote. Carnage kidnaps her, and Venom saves her by dragging Carnage into Dormammu's realm.",
+  },
   avalanche: {
     name: 'Avalanche',
     color: '#b45309',
@@ -236,6 +244,14 @@ export const characters = {
     status: 'deceased',
     factions: ['hellfire-club', 'brotherhood-of-mutants', 'mutants'],
     bio: "Red-skinned mutant who teleports in a burst of smoke. He is Sebastian Shaw's enforcer during the Cuban Missile Crisis and leaves with Erik Lehnsherr when Shaw dies.",
+  },
+  'baron-mordo': {
+    name: 'Baron Mordo',
+    color: '#15803d',
+    role: 'villain',
+    status: 'alive',
+    factions: [],
+    bio: "Sorcerer and Doctor Strange's enemy, who runs a cult, the Center for Reunification, to free his master Dormammu. Later, posing as the businessman Ardon Broom, he brings the Venom symbiote back to Earth and puts Venom and Carnage in Dormammu's service.",
   },
   basha: {
     name: 'Basha',
@@ -292,6 +308,15 @@ export const characters = {
     status: 'alive',
     factions: [],
     bio: "Scientist at Gamma Base and General Ross's daughter, who loves Bruce Banner and builds the Nutrient Bath with Doc Samson to cure him. Her father stops their wedding.",
+  },
+  'big-wheel': {
+    name: 'Jackson Weele',
+    alias: 'Big Wheel',
+    color: '#ca8a04',
+    role: 'villain',
+    status: 'alive',
+    factions: [],
+    bio: 'Boss of a jet-pack gang who rolls through the streets in a giant wheel, until Spider-Man and Rocket Racer send it into the water.',
   },
   'bishop-lucas-bishop': {
     name: 'Lucas Bishop',
@@ -545,7 +570,7 @@ export const characters = {
     status: 'alive',
     factions: ['symbiotes'],
     origin: 'Brooklyn, New York',
-    bio: 'Unhinged psychotic serial killer bonded to the crimson offspring of the Venom symbiote, morphing his limbs into lethal tendrils, axes, and bladed projectiles.',
+    bio: "Criminal held at Ravencroft next to Eddie Brock, who bonds with the offspring of the Venom symbiote and becomes Carnage. He drains people's life force for Dormammu, until Venom drags him into Dormammu's realm.",
   },
   cloak: {
     name: 'Tyrone Johnson',
@@ -679,7 +704,7 @@ export const characters = {
     origin: "Hell's Kitchen, New York",
     bio: 'Blind lawyer turned vigilante Man Without Fear.',
     variants: {
-      'earth-92131': 'Blind defense attorney whose radioactive chemical accident heightened his remaining senses to superhuman radar levels, fighting crime as the Man Without Fear.',
+      'earth-92131': 'In the animated series Matt Murdock, blinded as a boy by a truck of radioactive waste, defends Peter Parker when Richard Fisk frames him, tells Spider-Man that Wilson Fisk is the Kingpin, and leaves for Washington on a mission for the Justice Department.',
     },
   },
   'dark-aegis': {
@@ -734,8 +759,16 @@ export const characters = {
     origin: 'New York / Kamar-Taj',
     bio: "Master of the Mystic Arts and guardian of Earth's magical realms.",
     variants: {
-      'earth-92131': 'In the animated series he feels the Phoenix leave Earth from his Sanctum Sanctorum, appears again during the rampage of the Dark Phoenix, and once more when Wolverine, Rogue and Gambit meet Nightcrawler. In 1996 he and She-Hulk enter the mind of Bruce Banner to drive out an alien that has taken his body.',
+      'earth-92131': 'In the animated series he feels the Phoenix leave Earth from his Sanctum Sanctorum, appears again during the rampage of the Dark Phoenix, and once more when Wolverine, Rogue and Gambit meet Nightcrawler. In 1996 he and Spider-Man keep Baron Mordo from freeing Dormammu, and he and She-Hulk enter the mind of Bruce Banner to drive out an alien that has taken his body.',
     },
+  },
+  dormammu: {
+    name: 'Dormammu',
+    color: '#f97316',
+    role: 'villain',
+    status: 'alive',
+    factions: [],
+    bio: 'Ruler of the Dark Dimension, who uses Baron Mordo, Venom and Carnage to break free. His link to Carnage holds his portal open, until Venom drags Carnage through it.',
   },
   'dottie-underwood': {
     name: 'Dottie Underwood',
@@ -794,7 +827,7 @@ export const characters = {
     role: 'villain',
     status: 'alive',
     factions: ['daily-bugle', 'symbiotes'],
-    bio: "Daily Bugle reporter and Peter Parker's rival, whom Jameson fires for lying about Spider-Man. The alien symbiote that Spider-Man sheds bonds with him and makes him Venom, who knows that Peter is Spider-Man.",
+    bio: "Daily Bugle reporter and Peter Parker's rival, whom Jameson fires for lying about Spider-Man. The alien symbiote that Spider-Man sheds makes him Venom, who knows that Peter is Spider-Man; held at Ravencroft, he bonds with it again, then helps Spider-Man against Carnage and is banished with him into Dormammu's realm.",
   },
   'edward-addison': {
     name: 'Edward Addison',
@@ -943,7 +976,7 @@ export const characters = {
     role: 'hero',
     status: 'alive',
     factions: ['hardy-foundation', 'street-level-heroes'],
-    bio: "Anastasia Hardy's daughter and Peter Parker's college classmate, who takes him as her science tutor. Doctor Octopus kidnaps her from the Hardy Estate for ransom.",
+    bio: "Anastasia Hardy's daughter and Peter Parker's college classmate, who takes him as her science tutor. Doctor Octopus kidnaps her for ransom, and later she gets engaged to Jason Phillips, who turns out to be the Hobgoblin.",
   },
   'fin-fang-foom': {
     name: 'Fin Fang Foom',
@@ -1258,13 +1291,13 @@ export const characters = {
     bio: 'Physicist held captive with Tony Stark in Afghanistan. He helps Tony build the first Iron Man armor and dies so that Tony can escape.',
   },
   hobgoblin: {
-    name: 'Jason Philip Macendale',
+    name: 'Jason Phillips',
     alias: 'Hobgoblin',
     color: '#f59e0b',
     role: 'villain',
     status: 'alive',
     factions: ['kingpin-syndicate'],
-    bio: "Mercenary on a glider whom Norman Osborn hires to kill Wilson Fisk. When he learns that Fisk is the Kingpin he changes sides, kidnaps Harry Osborn and tries to take over the Kingpin's empire, until Spider-Man makes him crash into the water.",
+    bio: 'Mercenary on a glider whom Norman Osborn hires to kill Wilson Fisk; when he learns that Fisk is the Kingpin he changes sides and tries to take over his empire. Later, as Jason Phillips, he courts and gets engaged to Felicia Hardy, until she finds his costume and he is arrested.',
   },
   'homer-ai': {
     name: 'H.O.M.E.R. (Heuristically Operative Matrix Emulation Rostrum)',
@@ -1803,14 +1836,13 @@ export const characters = {
     bio: "Tony Stark's former lover, scarred and masked, who leads Maggia men. She tortures Julia Carpenter to make Iron Man fetch the Eye of Isis from a tomb in Egypt; the tiara heals her face and turns her into the goddess Isis, until Iron Man destroys it.",
   },
   'madame-web': {
-    name: 'Cassandra Webb',
-    alias: 'Madame Web',
+    name: 'Madame Web',
     color: '#a855f7',
     role: 'cosmic',
     status: 'alive',
     factions: ['cosmic-entities'],
     origin: 'Salem, Oregon',
-    bio: 'Clairvoyant and astral seer connected to the cosmic Web of Reality who tests Spider-Man to prepare him as the champion of the multiverse against Carnage.',
+    bio: 'Seer who speaks to Spider-Man from beyond and trains him for an ultimate battle with riddles and visions. When Mary Jane falls into limbo she refuses to bring her back, and Spider-Man sends her away.',
   },
   'madelyne-pryor-goblin-queen': {
     name: 'Madelyne Pryor',
@@ -1887,7 +1919,7 @@ export const characters = {
     status: 'alive',
     factions: ['spider-man-allies'],
     origin: 'New York City',
-    bio: "Anna Watson's niece and an aspiring actress. Aunt May sets her up on a blind date with Peter Parker, and the two start dating.",
+    bio: "Anna Watson's niece and an aspiring actress, whom Aunt May sets up on a blind date with Peter Parker. Baron Mordo's cult holds her for a while, and in the Green Goblin's attack on the George Washington Bridge she falls through a portal into limbo.",
   },
   'master-mold': {
     name: 'Master Mold',
@@ -2134,7 +2166,7 @@ export const characters = {
     role: 'villain',
     status: 'alive',
     factions: ['oscorp-board'],
-    bio: "Head of Oscorp, in debt to the Kingpin. He pays for Spencer Smythe's Spider-Slayer and hires the Hobgoblin to kill Wilson Fisk, and when the Hobgoblin turns on him he shields his son Harry.",
+    bio: "Head of Oscorp, in debt to the Kingpin. He pays for Spencer Smythe's Spider-Slayer and hires the Hobgoblin to kill Wilson Fisk. A gas explosion at Oscorp makes him the Green Goblin, a second self who learns that Peter Parker is Spider-Man and falls into limbo with Mary Jane.",
   },
   odin: {
     name: 'Odin Borson',
@@ -2362,6 +2394,14 @@ export const characters = {
     factions: ['kingpin-syndicate', 'insidious-six'],
     bio: "The Kingpin's thug in rhino armor. He steals the Prometheum X from John Jameson's crashed shuttle, and later fights Spider-Man beside the Shocker.",
   },
+  'richard-fisk': {
+    name: 'Richard Fisk',
+    color: '#e5e7eb',
+    role: 'villain',
+    status: 'alive',
+    factions: ['fisk-enterprises'],
+    bio: "Wilson Fisk's son, who hires Peter Parker at Fisk-Tronics and frames him for selling government secrets, until Daredevil and Spider-Man prove it and he is convicted.",
+  },
   'rick-jones': {
     name: 'Rick Jones',
     color: '#f59e0b',
@@ -2399,6 +2439,15 @@ export const characters = {
     factions: ['guardians-of-the-galaxy', 'avengers'],
     origin: 'Counter-Earth / Halfworld (Cosmic)',
     bio: 'Genetically enhanced tactical genius and captain of the Guardians.',
+  },
+  'rocket-racer': {
+    name: 'Robert Farrell',
+    alias: 'Rocket Racer',
+    color: '#fb923c',
+    role: 'anti-hero',
+    status: 'alive',
+    factions: [],
+    bio: 'Young genius who builds a rocket skateboard to rob for his sick mother, then helps Spider-Man stop the Big Wheel.',
   },
   'roger-dooley': {
     name: 'Roger Dooley',
@@ -2625,9 +2674,9 @@ export const characters = {
     name: 'Spencer Smythe',
     color: '#78716c',
     role: 'villain',
-    status: 'presumably-dead',
+    status: 'alive',
     factions: [],
-    bio: 'Robotics expert who builds the Spider Seekers and the Black Widow Spider-Slayer for Norman Osborn, in exchange for a hoverchair for his son Alistair. He stays at the controls when Oscorp explodes, and vanishes.',
+    bio: 'Robotics expert who builds the Spider Seekers and the Black Widow Spider-Slayer for Norman Osborn, in exchange for a hoverchair for his son Alistair. He vanishes when Oscorp explodes: the Kingpin has kept him in cryogenic suspension ever since, until Alistair takes him back.',
   },
   'spider-man': {
     name: 'Peter Parker',
@@ -2738,6 +2787,14 @@ export const characters = {
     origin: 'Hala (Kree Empire)',
     bio: 'Vast organic artificial intelligence composing the greatest minds of the Kree Empire, appearing to individuals as the person they admire most to maintain imperial control.',
   },
+  taina: {
+    name: 'Taina',
+    color: '#fde047',
+    role: 'civilian',
+    status: 'alive',
+    factions: [],
+    bio: "Terminally ill girl who writes to Spider-Man. Her faith helps him shake off Doctor Octopus's brainwashing, and he shows her who he is.",
+  },
   talos: {
     name: 'Talos',
     color: '#4ade80',
@@ -2839,6 +2896,15 @@ export const characters = {
       'earth-92131': "In the animated series he hunts Spider-Man, whom the news blames for Morbius's attacks, with his partner Microchip, and joins Kraven to bring down the Man-Spider.",
     },
   },
+  'the-spot': {
+    name: 'Jonathan Ohnn',
+    alias: 'The Spot',
+    color: '#111827',
+    role: 'anti-hero',
+    status: 'alive',
+    factions: [],
+    bio: 'Scientist whom Tony Stark fires from the interdimensional project and the Kingpin hires. Sucked into his own portal, he comes back covered in black spots that open portals, and he closes the last one from inside limbo with his assistant Sylvia Lopez.',
+  },
   thor: {
     name: 'Thor Odinson',
     alias: 'Thor',
@@ -2880,7 +2946,7 @@ export const characters = {
     origin: 'New York City',
     bio: 'Former POW with unbreakable skin, left with nothing by the Great Depression, who joins Silvermane because he has little time left. Robbie Robertson cures him with a dose in the eye, and he leaves New York with his mother.',
     variants: {
-      'earth-92131': "In the animated series he is Silvermane's new man, who kidnaps Vanessa Fisk and Curt Connors in the fight over the Tablet of Time.",
+      'earth-92131': "In the animated series he is Robbie Robertson's boyhood friend Lonnie and Silvermane's man, who kidnaps Vanessa Fisk and Curt Connors in the fight over the Tablet of Time. In 1996 he works for Alisa Silvermane, tries to drag Robbie's son Randy into crime and is arrested.",
     },
   },
   'tony-stark': {
@@ -2893,7 +2959,7 @@ export const characters = {
     origin: 'New York / Malibu',
     bio: 'Genius, billionaire, playboy, philanthropist who forged the Iron Man armor and saved the universe.',
     variants: {
-      'earth-92131': 'In the animated series he leads Force Works against the Mandarin from Stark Enterprises in Los Angeles, and keeps his secret when a robot double of him marries Julia Carpenter. In 1995 half of Force Works walks out after he fakes his death, he wages the Armor Wars against his own stolen designs, and the Mandarin finally learns who he is.',
+      'earth-92131': 'In the animated series he leads Force Works against the Mandarin from Stark Enterprises in Los Angeles, and keeps his secret when a robot double of him marries Julia Carpenter. In 1995 half of Force Works walks out after he fakes his death, he wages the Armor Wars against his own stolen designs, and the Mandarin finally learns who he is. In 1996 Venom and Carnage attack a Stark Enterprises demonstration in New York, and Iron Man helps Spider-Man stop them.',
     },
   },
   'trevor-fitzroy': {
@@ -3039,7 +3105,7 @@ export const characters = {
     origin: 'Philadelphia',
     bio: 'Colonel James Rhodes, heavily armored Avenger.',
     variants: {
-      'earth-92131': "In the animated series he is James Rhodes of Force Works, whose mind MODOK's E.L.F. once takes over. In the 1993 that Cable erases, he watches the Senate hearing on the plague at S.H.I.E.L.D. In 1995 he gives up the armor after nearly failing Iron Man in a flood, puts it back on to follow him to the planet Elysian, and fights him in the Armor Wars.",
+      'earth-92131': "In the animated series he is James Rhodes of Force Works, whose mind MODOK's E.L.F. once takes over. In the 1993 that Cable erases, he watches the Senate hearing on the plague at S.H.I.E.L.D. In 1995 he gives up the armor after nearly failing Iron Man in a flood, puts it back on to follow him to the planet Elysian, and fights him in the Armor Wars. In 1996 he fights Venom beside Spider-Man in New York.",
     },
   },
   'warlock-technarch': {
@@ -3131,7 +3197,7 @@ export const characters = {
     role: 'villain',
     status: 'alive',
     factions: ['fisk-enterprises', 'insidious-six'],
-    bio: "In public one of New York's leading philanthropists, in secret the crime lord known as the Kingpin. He hires Alistair Smythe to build Spider-Slayers, forms the Insidious Six to destroy Spider-Man, and wars with the crime lord Silvermane.",
+    bio: "In public one of New York's leading philanthropists, in secret the crime lord known as the Kingpin. He hires Alistair Smythe to build Spider-Slayers, forms the Insidious Six to destroy Spider-Man and wars with the crime lord Silvermane; his son Richard frames Peter Parker, and Daredevil reveals to Spider-Man who he is.",
   },
   'winston-noir': {
     name: 'Winston',
@@ -3141,6 +3207,14 @@ export const characters = {
     factions: ['silvermane-syndicate'],
     origin: 'New York City',
     bio: "Silvermane's right-hand man, who hires Ben Reilly to find Jimmy Addison. Ben frames him as the traitor, and Silvermane shoots him in 1933.",
+  },
+  wong: {
+    name: 'Wong',
+    color: '#b45309',
+    role: 'secondary',
+    status: 'alive',
+    factions: ['masters-of-the-mystic-arts'],
+    bio: "Doctor Strange's companion at the Sanctum Sanctorum, beaten by Baron Mordo's followers when they steal the Wand of Watoomb.",
   },
   'yon-rogg': {
     name: 'Yon-Rogg',

@@ -394,6 +394,13 @@ export const locations = {
     coords: [40.8512, -74.229],
     approximate: true,
   },
+  'center-for-reunification': {
+    name: 'Center for Reunification',
+    place: 'Chelsea, Manhattan',
+    country: 'United States',
+    kind: 'earth',
+    coords: [40.742, -73.999],
+  },
   'central-american-jungle': {
     name: 'Central American Jungle',
     place: 'Petén',
@@ -665,6 +672,13 @@ export const locations = {
     country: 'United States',
     kind: 'earth',
     coords: [40.7059, -74.0093],
+  },
+  'fisk-tronics-building': {
+    name: 'Fisk-Tronics Building',
+    place: 'Long Island City, Queens',
+    country: 'United States',
+    kind: 'earth',
+    coords: [40.746, -73.94],
   },
   'forest-cottage-and-steel-foundry': {
     name: 'Pruszków',
@@ -1012,6 +1026,12 @@ export const locations = {
     kind: 'earth',
     coords: [45.815, 15.9819],
   },
+  'interdimensional-limbo': {
+    name: 'Limbo',
+    country: 'Between dimensions',
+    kind: 'dimension',
+    node: 'interdimensional-limbo',
+  },
   'isodyne-energy-particle-laboratory': {
     name: 'Isodyne Energy',
     place: 'Pasadena, California',
@@ -1295,6 +1315,13 @@ export const locations = {
     kind: 'earth',
     coords: [37.75, -81.35],
   },
+  'matt-murdock-apartment': {
+    name: "Matt Murdock's Apartment",
+    place: "Hell's Kitchen, Manhattan",
+    country: 'United States',
+    kind: 'earth',
+    coords: [40.766, -73.987],
+  },
   'maveth-wasteland-and-hive-exile-outpost': {
     name: 'Maveth Wasteland & Hive Exile Outpost',
     place: 'Deep Space',
@@ -1519,8 +1546,8 @@ export const locations = {
     approximate: true,
   },
   'new-york-supreme-court-and-fisk-tower': {
-    name: 'New York Supreme Court & Fisk Tower',
-    place: 'Manhattan, New York',
+    name: 'Manhattan Courthouse',
+    place: 'Foley Square, Lower Manhattan',
     country: 'United States',
     kind: 'earth',
     coords: [40.7146, -74.0019],
@@ -1596,6 +1623,13 @@ export const locations = {
     country: 'United Kingdom',
     kind: 'earth',
     coords: [51.4826, -0.0077],
+  },
+  'osborn-mansion': {
+    name: 'Osborn Mansion',
+    place: 'Riverdale, the Bronx',
+    country: 'United States',
+    kind: 'earth',
+    coords: [40.9, -73.911],
   },
   'oscorp-industries': {
     name: 'Oscorp Industries',
@@ -1738,6 +1772,13 @@ export const locations = {
     kind: 'earth',
     coords: [29.9511, -90.0715],
   },
+  ravencroft: {
+    name: 'Ravencroft',
+    place: 'Westchester County, New York',
+    country: 'United States',
+    kind: 'earth',
+    coords: [41.08, -73.8],
+  },
   'red-room-academy-training-facility': {
     name: 'Red Room Academy',
     place: 'Ashmyany',
@@ -1861,13 +1902,6 @@ export const locations = {
     kind: 'earth',
     coords: [40.7299, -73.9998],
   },
-  'sanctum-sanctorum-and-oscorp-labs': {
-    name: 'Sanctum Sanctorum & Oscorp Labs',
-    place: 'Greenwich Village, Manhattan',
-    country: 'United States',
-    kind: 'earth',
-    coords: [40.7291, -73.998],
-  },
   'sea-base': {
     name: 'Sea Base',
     place: 'Off the coast of California',
@@ -1952,6 +1986,13 @@ export const locations = {
     kind: 'earth',
     coords: [38.8887, -77.026],
   },
+  'spaulding-chemical-plant': {
+    name: 'Spaulding Chemical Plant',
+    place: 'Hunts Point, the Bronx',
+    country: 'United States',
+    kind: 'earth',
+    coords: [40.8085, -73.879],
+  },
   'springfield-ohio-carnival': {
     name: 'Carnival',
     place: 'Springfield, Ohio',
@@ -2033,11 +2074,11 @@ export const locations = {
     approximate: true,
   },
   'stark-enterprise-nyc-labs-and-george-washington-bridge': {
-    name: 'Stark Enterprise NYC Labs & George Washington Bridge',
-    place: 'Manhattan, New York',
+    name: 'Stark Enterprises New York',
+    place: 'Flushing, Queens',
     country: 'United States',
     kind: 'earth',
-    coords: [40.8517, -73.9527],
+    coords: [40.77, -73.833],
   },
   'stark-enterprises-and-force-works-compound': {
     name: 'Stark Enterprises',
@@ -2201,6 +2242,12 @@ export const locations = {
     country: 'Knowhere',
     kind: 'space',
     node: 'knowhere',
+  },
+  'the-dark-dimension': {
+    name: 'The Dark Dimension',
+    country: 'Dark Dimension',
+    kind: 'dimension',
+    node: 'dark-dimension',
   },
   'the-great-hydroelectric-dam-and-slave-complex': {
     name: 'Genoshan Dam',

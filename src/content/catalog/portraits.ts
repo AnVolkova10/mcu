@@ -70,11 +70,17 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'arnim-zola': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/6/67/Arnim_Zola.png/revision/latest/scale-to-width-down/300?cb=20141127015752',
   },
+  'ashley-kafka': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/b/b4/Kafka.jpg/revision/latest?cb=20131015184856',
+  },
   'avalanche': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/3/31/Avalanche.jpg/revision/latest/scale-to-width-down/300?cb=20131017233454',
   },
   'azazel': {
     'earth-10005': 'https://static.wikia.nocookie.net/xmenmovies/images/1/1a/Azazel_XMFC_Textless.jpg/revision/latest/scale-to-width-down/231?cb=20240115013643',
+  },
+  'baron-mordo': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/0/03/Baronmordo.jpg/revision/latest/scale-to-width-down/300?cb=20080729014454',
   },
   'basha': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/5/56/Basha_Infobox.png/revision/latest/scale-to-width-down/276?cb=20250731211637',
@@ -90,6 +96,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   },
   'betty-ross': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/8/86/Betty_Ross.jpg/revision/latest/scale-to-width-down/300?cb=20140901020811',
+  },
+  'big-wheel': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/c/ce/Big_Wheel_Pilot.jpg/revision/latest/scale-to-width-down/300?cb=20150708045113',
   },
   'bishop-lucas-bishop': {
     'earth-10005': 'https://static.wikia.nocookie.net/xmenmovies/images/b/bf/XMDOFP_Bishop_Character_Poster.jpg/revision/latest/window-crop/width/300/x-offset/221/y-offset/162/window-width/295/window-height/295?cb=20190529094137',
@@ -233,6 +242,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'doctor-strange': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/b/b2/Doctor_Strange_MoM_Profile.jpeg/revision/latest/scale-to-width-down/235?cb=20231021153337',
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/3/37/DrStrange.jpg/revision/latest/scale-to-width-down/300?cb=20080618175402',
+  },
+  'dormammu': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/8/85/Dormammu.jpg/revision/latest/scale-to-width-down/300?cb=20080603232442',
   },
   'dottie-underwood': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/7/74/Dottie_Underwood.jpg/revision/latest/scale-to-width-down/225?cb=20160217154905',
@@ -743,6 +755,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'rhino': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/7/73/Charge.jpg/revision/latest/scale-to-width-down/300?cb=20080729151836',
   },
+  'richard-fisk': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/b/b6/Richard_Fisk.png/revision/latest/scale-to-width-down/253?cb=20131014013815',
+  },
   'rick-jones': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/c/c2/Rick_Jones.jpg/revision/latest/scale-to-width-down/300?cb=20160706052641',
   },
@@ -755,6 +770,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   },
   'rocket': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/3/30/Rocket_Vol._3.jpg/revision/latest/scale-to-width-down/247?cb=20231114031203',
+  },
+  'rocket-racer': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/5/55/Rocket_racer.jpg/revision/latest?cb=20120128035701',
   },
   'roger-dooley': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/1/18/Roger_Dooley.jpg/revision/latest/window-crop/width/300/x-offset/278/y-offset/0/window-width/626/window-height/626?cb=20190925152444',
@@ -883,6 +901,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/1/1c/Punisher_Infobox.png/revision/latest/scale-to-width-down/227?cb=20261015122544',
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/0/0c/Punisher.jpg/revision/latest/scale-to-width-down/300?cb=20100813133921',
   },
+  'the-spot': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/b/bb/Spot.jpg/revision/latest/scale-to-width-down/300?cb=20240430032838',
+  },
   'thor': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/2b/Thor_Infobox.jpg/revision/latest/scale-to-width-down/195?cb=20231021012616',
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/2/23/Thor.jpg/revision/latest/scale-to-width-down/300?cb=20110501065658',
@@ -978,6 +999,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   },
   'winston-noir': {
     'earth-62533': 'https://static.wikia.nocookie.net/spidermannoir/images/a/a6/Winston.png/revision/latest/scale-to-width-down/300?cb=20260529144232',
+  },
+  'wong': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/a/a2/Wong.jpg/revision/latest/scale-to-width-down/300?cb=20080621151757',
   },
   'yon-rogg': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/23/Yon-Rogg_Textless_Poster.jpg/revision/latest/scale-to-width-down/240?cb=20231025001232',
