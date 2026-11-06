@@ -95,7 +95,7 @@ export const characters = {
     role: 'secondary',
     status: 'alive',
     factions: [],
-    bio: 'Sculptor and friend of the Fantastic Four. She takes in the Silver Surfer after the Thing knocks him off the Baxter Building, and persuades him to turn against Galactus.',
+    bio: "Sculptor and friend of the Fantastic Four, and Ben Grimm's love. She takes in the Silver Surfer after the Thing knocks him off the Baxter Building, and persuades him to turn against Galactus. Her friend Matt Murdock sends Daredevil to help the powerless team, her words break the Wizard's hold on Ben, and she calms the Hulk.",
   },
   'alisa-silvermane': {
     name: 'Alisa Silvermane',
@@ -289,7 +289,7 @@ export const characters = {
     role: 'hero',
     status: 'alive',
     factions: ['fantastic-four'],
-    bio: "Member of the Fantastic Four whom the cosmic rays turned into the Thing, a hulking man of rock. In ancient Greece he agrees to stay with the grateful Greeks, until Doom's Time Platform pulls him back. On the Beyonder's planet Doctor Doom captures him and gives him a device that turns him human at will.",
+    bio: "Member of the Fantastic Four whom the cosmic rays turned into the Thing, a hulking man of rock, and Alicia Masters's love. In ancient Greece he agrees to stay with the grateful Greeks, until Doom's Time Platform pulls him back. Doom's bomb makes him human for a while, and the Wizard turns him against Reed. On the Beyonder's planet Doctor Doom captures him and gives him a device that turns him human at will.",
   },
   'ben-reilly-noir': {
     name: 'Ben Reilly',
@@ -337,6 +337,9 @@ export const characters = {
     factions: ['inhumans'],
     origin: 'Attilan',
     bio: 'Silent king of the Inhumans, whose voice alone can level mountains. Rules the hidden city of Attilan.',
+    variants: {
+      'earth-92131': "In the animated series he never speaks, since his merest whisper could destroy half a city. Following Medusa to New York, he loses his throne to his brother Maximus and wins it back with the Fantastic Four; when Maximus's barrier leaves Attilan without air, he speaks and frees his people at the cost of the city.",
+    },
   },
   'black-marvel-omar-mosely': {
     name: 'Omar Mosely',
@@ -357,7 +360,7 @@ export const characters = {
     origin: 'Birnin Zana, Wakanda',
     bio: "King of Wakanda and Black Panther who opened his nation's secrets to the world.",
     variants: {
-      'earth-92131': 'King and protector of the technologically advanced African nation of Wakanda, drawing speed, agility, and instincts from the sacred Heart-Shaped Herb.',
+      'earth-92131': "In the animated series he is the hereditary chieftain of Wakanda. As a boy he sees Ulysses Klaw kill his father, T'Chaka, and wounds him with his own weapon; selling small amounts of vibranium pays for his schooling. In 1995 he hunts the Fantastic Four to test himself, then fights Klaw beside them when he returns.",
     },
   },
   'black-tom-cassidy': {
@@ -655,6 +658,9 @@ export const characters = {
     factions: ['inhumans'],
     origin: 'Attilan',
     bio: "Medusa's younger sister, able to command fire, water, earth and air.",
+    variants: {
+      'earth-92131': "In the animated series Johnny Storm falls for her in New York, and Maximus's barrier keeps her in Attilan. When Black Bolt frees the Inhumans she moves into the Four Freedoms Plaza, and her elemental power frees the Thing when Doctor Doom freezes him.",
+    },
   },
   'curt-connors-lizard': {
     name: 'Dr. Curt Connors',
@@ -713,7 +719,7 @@ export const characters = {
     origin: "Hell's Kitchen, New York",
     bio: 'Blind lawyer turned vigilante Man Without Fear.',
     variants: {
-      'earth-92131': 'In the animated series Matt Murdock, blinded as a boy by a truck of radioactive waste, defends Peter Parker when Richard Fisk frames him, tells Spider-Man that Wilson Fisk is the Kingpin, and leaves for Washington on a mission for the Justice Department.',
+      'earth-92131': 'In the animated series Matt Murdock, blinded as a boy by a truck of radioactive waste, is a friend of Alicia Masters. In 1995 Daredevil helps the powerless Fantastic Four against Doctor Doom, and in 1996 Murdock defends Peter Parker when Richard Fisk frames him, tells Spider-Man that Wilson Fisk is the Kingpin, and leaves for Washington on a mission for the Justice Department.',
     },
   },
   'dark-aegis': {
@@ -876,6 +882,9 @@ export const characters = {
     factions: ['cosmic-entities'],
     origin: 'Black Galaxy',
     bio: 'A sentient planet whose endless hunger drives it to consume entire worlds.',
+    variants: {
+      'earth-92131': 'In the animated series the living planet, exiled by Galactus with thrusters, comes at Earth to draw him out. Ben Grimm carries a bomb to his brain, and Galactus, powered by Mjolnir, destroys him.',
+    },
   },
   'electro-rheinholt-kragov': {
     name: 'Rheinholt Kragov',
@@ -1055,6 +1064,23 @@ export const characters = {
     origin: 'New York City',
     bio: 'Newsboy and pickpocket who runs errands for Ben Reilly, stands in for him at his window and keeps an eye on Cat Hardy.',
   },
+  'frankie-raye': {
+    name: 'Frankie Raye',
+    alias: 'Nova',
+    color: '#f59e0b',
+    role: 'hero',
+    status: 'alive',
+    factions: ['heralds-of-galactus'],
+    bio: 'A fan of Johnny Storm who bursts into flame after kissing him: as a child she absorbed the chemicals her stepfather used for an android Human Torch. To save Earth she offers herself to Galactus and becomes his herald, Nova.',
+  },
+  'franklin-storm': {
+    name: 'Franklin Storm',
+    color: '#1d4ed8',
+    role: 'secondary',
+    status: 'deceased',
+    factions: [],
+    bio: "Surgeon and the father of Sue and Johnny Storm. After his wife's death he took to gambling, and a fight with a loan shark ended in an accidental killing, so he ran for years. He comes back to operate on Sue, is arrested, and dies shielding his children from a trap set by the Skrull warlord Morrat.",
+  },
   'fred-dukes': {
     name: 'Fred Dukes',
     alias: 'The Blob',
@@ -1097,7 +1123,7 @@ export const characters = {
     role: 'cosmic',
     status: 'alive',
     factions: ['cosmic-entities'],
-    bio: 'Cosmic being who drains whole worlds. He comes to consume the Earth when the Silver Surfer signals him from the Baxter Building, and later stops Doctor Doom from taking his powers.',
+    bio: 'Cosmic being who drains whole worlds. He comes to consume the Earth when the Silver Surfer signals him from the Baxter Building, and later stops Doctor Doom from taking his powers. Freed of his vow to spare Earth so that he helps destroy Ego, he turns the traitor Terrax into a worm and renews the vow when Frankie Raye becomes his herald.',
   },
   'gambit-remy-lebeau': {
     name: 'Remy LeBeau',
@@ -1159,7 +1185,7 @@ export const characters = {
     status: 'alive',
     factions: ['spirits-of-vengeance', 'midnight-sons'],
     origin: 'Brooklyn, New York',
-    bio: 'Supernatural motorcyclist possessed by the Spirit of Vengeance wielding hellfire chains and the devastating Penance Stare, who confronted Galactus and defended Bruce Banner.',
+    bio: 'Spirit of vengeance on a flaming motorcycle, summoned when innocent blood is shed. He makes Galactus feel the torment of the souls he has devoured, and later, taking the Hulk for the threat at a fire in Chicago, attacks him.',
   },
   'gladiator-kallark': {
     name: 'Kallark',
@@ -1197,6 +1223,9 @@ export const characters = {
     factions: ['inhumans'],
     origin: 'Attilan',
     bio: 'Hoofed Inhuman warrior and captain of the royal guard, whose stomps unleash earth-shaking shockwaves.',
+    variants: {
+      'earth-92131': 'In the animated series his stomp shakes the ground. He tracks Medusa to New York, fights the Thing and takes her home to Attilan.',
+    },
   },
   'graydon-creed': {
     name: 'Graydon Creed',
@@ -1364,7 +1393,7 @@ export const characters = {
     origin: 'Dayton, Ohio',
     bio: 'Gamma radiation scientist who shares his body with the Incredible Hulk.',
     variants: {
-      'earth-92131': 'In the animated series Bruce Banner was caught in the blast of a gamma test in New Mexico, years before 1996, while pushing Rick Jones to safety, and turns into the Hulk when provoked. In 1995 the Leader throws him and Iron Man back to the time of the dinosaurs, and at the gamma bomb test he shields his younger self. In 1996 the Hulkbusters chase him across the country, and after a Nutrient Bath splits him from the Hulk and merges them again, he turns into a grey Hulk.',
+      'earth-92131': 'In the animated series Bruce Banner was caught in the blast of a gamma test in New Mexico, years before 1996, while pushing Rick Jones to safety, and turns into the Hulk when provoked. In 1995 he fights the Thing in New York, where Doctor Doom learns who he is, the Leader throws him and Iron Man back to the time of the dinosaurs, and at the gamma bomb test he shields his younger self. In 1996 the Hulkbusters chase him across the country, and after a Nutrient Bath splits him from the Hulk and merges them again, he turns into a grey Hulk.',
     },
   },
   'hybrid-diana': {
@@ -1382,8 +1411,8 @@ export const characters = {
     color: '#0284c7',
     role: 'villain',
     status: 'presumably-dead',
-    factions: [],
-    bio: "Mary Jane Watson's former boyfriend, whose body turns into water. He robs the city while Spider-Man takes the blame and kidnaps Mary Jane, until he splashes apart on a rooftop far from any water and evaporates. Miles Warren later grows a clone of him from traces left on that rooftop.",
+    factions: ['frightful-four'],
+    bio: "Mary Jane Watson's former boyfriend, whose body turns into water. He joins the Wizard's Frightful Four against the Fantastic Four, then robs the city while Spider-Man takes the blame and kidnaps Mary Jane, until he splashes apart on a rooftop far from any water and evaporates. Miles Warren later grows a clone of him from traces left on that rooftop.",
   },
   hypnotia: {
     name: 'Hypnotia',
@@ -1405,6 +1434,14 @@ export const characters = {
     variants: {
       'earth-92131': 'One of the first X-Men, who left the team. He breaks into a government complex looking for Lorna Dane, and when she stays with X-Factor he goes back to his civilian life as Bobby Drake.',
     },
+  },
+  'impossible-man': {
+    name: 'Impossible Man',
+    color: '#16a34a',
+    role: 'anti-hero',
+    status: 'alive',
+    factions: [],
+    bio: 'Shape-shifter from the planet Poppup who hides from the Super-Skrull at the Four Freedoms Plaza and gets Lockjaw to take Johnny Storm to Attilan.',
   },
   'iron-fist': {
     name: 'Danny Rand',
@@ -1606,7 +1643,7 @@ export const characters = {
     role: 'hero',
     status: 'alive',
     factions: ['fantastic-four'],
-    bio: "Member of the Fantastic Four and Sue Storm's brother, who bursts into flame and flies as the Human Torch. He seals the Super-Skrull inside a volcano. Summoned by Spider-Man to the Beyonder's planet, he and the Thing attack him at first.",
+    bio: "Member of the Fantastic Four and Sue Storm's brother, who bursts into flame and flies as the Human Torch. He seals the Super-Skrull inside a volcano and falls for the Inhuman Crystal, who later joins the team. Summoned by Spider-Man to the Beyonder's planet, he and the Thing attack him at first.",
   },
   jorani: {
     name: 'Jorani',
@@ -1703,6 +1740,9 @@ export const characters = {
     factions: ['inhumans'],
     origin: 'Attilan',
     bio: 'Inhuman martial artist and royal adviser who can perceive the weak point of any object or person.',
+    variants: {
+      'earth-92131': "In the animated series he is Crystal's cousin, who finds the weakest point in any object, though not in Maximus's barrier.",
+    },
   },
   'kayla-silverfox': {
     name: 'Kayla Silverfox',
@@ -1751,6 +1791,14 @@ export const characters = {
     status: 'alive',
     factions: [],
     bio: 'Hunter who comes to New York for Mariah Crawford and takes Robbie Robertson as bait to catch her. Her antidote cures him, and the two sail for Africa together; later he comes back at her call and helps the Punisher bring down the Man-Spider.',
+  },
+  'kree-sentry-459': {
+    name: 'Kree Sentry 459',
+    color: '#475569',
+    role: 'villain',
+    status: 'presumably-dead',
+    factions: ['kree-empire'],
+    bio: "Robot that the Kree left for millennia to guard their space port on Tivu Island, in the South Pacific. It attacks two scientists and the Fantastic Four, and is lost when the island's volcano erupts.",
   },
   kuda: {
     name: 'Kuda',
@@ -1815,6 +1863,9 @@ export const characters = {
     factions: ['inhumans'],
     origin: 'Attilan',
     bio: "The Inhuman royal family's giant, loyal bulldog, able to teleport anyone he carries across vast distances.",
+    variants: {
+      'earth-92131': "In the animated series he escapes Maximus's barrier and takes Johnny Storm to Attilan, and later comes to live at the Four Freedoms Plaza with Crystal.",
+    },
   },
   'logan-wolverine': {
     name: "James 'Logan' Howlett",
@@ -1982,6 +2033,15 @@ export const characters = {
     factions: ['hellfire-club'],
     bio: "Illusionist of the Inner Circle of the Circle Club who plants a false life in Jean Grey's mind to win the Phoenix for the club, until the Phoenix breaks free when he orders her to kill Cyclops.",
   },
+  maximus: {
+    name: 'Maximus',
+    alias: 'Maximus the Mad',
+    color: '#4c1d95',
+    role: 'villain',
+    status: 'alive',
+    factions: ['inhumans'],
+    bio: "Black Bolt's brother, who erases Medusa's memory so that Black Bolt will follow her to the human world and leave him the throne of Attilan. His atmo-gun fails to poison humanity, and his negative barrier traps the Inhumans in their city until Black Bolt's voice breaks it.",
+  },
   may: {
     name: 'Melinda May',
     color: '#64748b',
@@ -2005,9 +2065,12 @@ export const characters = {
     color: '#dc2626',
     role: 'hero',
     status: 'alive',
-    factions: ['inhumans'],
+    factions: ['inhumans', 'frightful-four'],
     origin: 'Attilan',
     bio: 'Queen of the Inhumans, who wields her living hair as a weapon and speaks for Black Bolt.',
+    variants: {
+      'earth-92131': "In the animated series Maximus erases her memory and sends her to the human world, where, as Madam Medusa, she joins the Wizard's Frightful Four against the Fantastic Four. Gorgon finds her in New York and her memory comes back; she loves Black Bolt, and stays with him in Attilan.",
+    },
   },
   'megawatt-noir': {
     name: 'Dirk Leyden',
@@ -2166,6 +2229,14 @@ export const characters = {
     factions: ['x-men', 'mutants'],
     origin: 'United States',
     bio: 'Jovial mutant shapeshifter capable of altering his physical cellular structure and vocal cords to flawlessly duplicate any human or mutant appearance.',
+  },
+  morrat: {
+    name: 'Morrat',
+    color: '#15803d',
+    role: 'villain',
+    status: 'alive',
+    factions: ['skrulls'],
+    bio: 'Skrull warlord who wants to marry Princess Anelle and succeed her father, the Emperor. He has the Super-Skrull pose as Franklin Storm, sets a trap on the real one and brings the Fantastic Four to the Skrull world, until the Emperor strips him of his rank.',
   },
   'mother-askani-rachel-summers': {
     name: 'Mother Askani',
@@ -2381,6 +2452,14 @@ export const characters = {
     factions: ['street-level-heroes'],
     bio: 'Small-time crook who worked for the crime lord Iceberg, saved Richard Fisk in jail, and got a lawyer and a stealth suit from the Kingpin to become the Prowler. Fearing the Kingpin has rigged the suit, he teams up with Spider-Man and gives up crime.',
   },
+  'psycho-man': {
+    name: 'Psycho-Man',
+    color: '#0f766e',
+    role: 'villain',
+    status: 'alive',
+    factions: [],
+    bio: 'Ruler of a city in the Microverse, which he keeps in line with fear. When Reed Richards takes Element F, the fuel of his weapons, he turns Sue into Malice, Mistress of Hate, to get it back, until Reed frees her and leaves him consumed with self-hatred.',
+  },
   'psylocke-betsy-braddock': {
     name: 'Betsy Braddock',
     alias: 'Psylocke',
@@ -2460,7 +2539,7 @@ export const characters = {
     role: 'hero',
     status: 'alive',
     factions: ['fantastic-four'],
-    bio: "Scientist and leader of the Fantastic Four, who can stretch his body into any shape since cosmic rays struck the four. Victor von Doom was his classmate in college. On the Beyonder's planet he fights in Spider-Man's Secret Wars and wakes Curt Connors's mind inside the Lizard.",
+    bio: "Scientist and leader of the Fantastic Four, who can stretch his body into any shape since cosmic rays struck the four. Victor von Doom was his classmate in college. After Doom wrecks the Baxter Building the team moves to the Four Freedoms Plaza, and to stop Ego he frees Galactus from his vow to spare Earth. On the Beyonder's planet he fights in Spider-Man's Secret Wars and wakes Curt Connors's mind inside the Lizard.",
   },
   rhino: {
     name: 'Rhino',
@@ -2484,7 +2563,7 @@ export const characters = {
     role: 'civilian',
     status: 'alive',
     factions: [],
-    bio: "Young drifter whom Bruce Banner pushed to safety at the gamma test that made the Hulk, and the Hulk's most loyal friend. General Ross throws him into the Nutrient Bath and he runs off as a Hulk-like creature, until the Leader drains his gamma power.",
+    bio: "Young drifter whom Bruce Banner pushed to safety at the gamma test that made the Hulk, and the Hulk's most loyal friend. When Doctor Doom tells the Hulk that Rick has betrayed him, Rick sets him straight. General Ross throws him into the Nutrient Bath and he runs off as a Hulk-like creature, until the Leader drains his gamma power.",
   },
   'robbie-robertson-noir': {
     name: 'Robbie Robertson',
@@ -2720,7 +2799,7 @@ export const characters = {
     role: 'hero',
     status: 'alive',
     factions: ['heralds-of-galactus', 'cosmic-entities'],
-    bio: 'Herald of Galactus, who finds worlds for his master to drain. On Earth, Alicia Masters persuades him to turn against Galactus, and Doctor Doom later steals his Power Cosmic.',
+    bio: 'Herald of Galactus, who finds worlds for his master to drain. On Earth, Alicia Masters persuades him to turn against Galactus, who leaves a barrier to keep him on the planet. Doctor Doom twice steals his Power Cosmic; the second time Doom hits the barrier and the power comes back to him.',
   },
   'silvermane-noir': {
     name: 'Finbar Byrne',
@@ -2838,7 +2917,7 @@ export const characters = {
     role: 'hero',
     status: 'alive',
     factions: ['fantastic-four'],
-    bio: "Member of the Fantastic Four and Johnny Storm's sister, who can turn invisible since the cosmic rays. Namor kidnaps her to make her his queen, and Doctor Doom holds her hostage in his castle. On the Beyonder's planet she fights in Spider-Man's Secret Wars and, with Storm, restores the power of the heroes' base.",
+    bio: "Member of the Fantastic Four, Johnny Storm's sister and Reed Richards's wife, who can turn invisible since the cosmic rays. Namor kidnaps her to make her his queen, Doctor Doom holds her hostage in his castle, and Psycho-Man turns her into Malice; her father, Franklin, dies saving her and Johnny. On the Beyonder's planet she fights in Spider-Man's Secret Wars and, with Storm, restores the power of the heroes' base.",
   },
   'sunspot-roberto-da-costa': {
     name: 'Roberto da Costa',
@@ -2867,7 +2946,7 @@ export const characters = {
     status: 'alive',
     factions: ['skrulls'],
     origin: 'Tarnax IV, Andromeda Galaxy',
-    bio: 'Skrull warrior sent to Earth for revenge after the failed Skrull invasion. A beam from the Skrull homeworld gives him the powers of all four of the Fantastic Four, until Reed blocks it and the Human Torch seals him inside a volcano.',
+    bio: 'Skrull warrior sent to Earth for revenge after the failed Skrull invasion. A beam from the Skrull homeworld gives him the powers of all four of the Fantastic Four, until Reed blocks it and the Human Torch seals him inside a volcano. Freed by the warlord Morrat, he poses as Franklin Storm, and later chases the Impossible Man to Attilan.',
   },
   'supreme-intelligence': {
     name: 'The Supreme Intelligence',
@@ -2903,13 +2982,21 @@ export const characters = {
     factions: [],
     bio: 'Doctor who helped the young Scott Summers control his powers. In Skull Mesa, in the Nevada desert, Solarr holds him prisoner until Cyclops and the town free him.',
   },
+  tchaka: {
+    name: "T'Chaka",
+    color: '#78350f',
+    role: 'secondary',
+    status: 'deceased',
+    factions: ['wakanda'],
+    bio: "Chieftain of Wakanda and T'Challa's father. He refuses to give Ulysses Klaw the sacred mound of vibranium and is shot dead, ten years before T'Challa meets the Fantastic Four.",
+  },
   terrax: {
     name: 'Terrax',
     color: '#a16207',
     role: 'villain',
     status: 'alive',
     factions: ['heralds-of-galactus'],
-    bio: 'Herald of Galactus, called with Firelord to fight the Fantastic Four while Galactus builds the device that will drain the Earth.',
+    bio: "The tyrant Tyros, whom Galactus makes his herald after the Silver Surfer's betrayal; he is called with Firelord to fight the Fantastic Four. Later he poisons Galactus with the dying planet Antos and flees to Earth, where he lifts Manhattan into the sky, until Galactus takes back his power and turns him into a worm.",
   },
   'terri-lee': {
     name: 'Terri Lee',
@@ -2986,6 +3073,14 @@ export const characters = {
       'earth-92131': "In the animated series he hunts Spider-Man, whom the news blames for Morbius's attacks, with his partner Microchip, and joins Kraven to bring down the Man-Spider. Later Anna Watson asks him to find Mary Jane, and he suspects Peter Parker.",
     },
   },
+  'the-seeker': {
+    name: 'The Seeker',
+    color: '#64748b',
+    role: 'secondary',
+    status: 'alive',
+    factions: ['inhumans'],
+    bio: 'Inhuman who comes to New York to take the royal family back to Attilan. He saves the Fantastic Four from a gas explosion and tells them how the Kree made the Inhumans, unaware that Reed has put a homing device on his ship.',
+  },
   'the-spot': {
     name: 'Jonathan Ohnn',
     alias: 'The Spot',
@@ -2994,6 +3089,14 @@ export const characters = {
     status: 'alive',
     factions: [],
     bio: 'Scientist whom Tony Stark fires from the interdimensional project and the Kingpin hires. Sucked into his own portal, he comes back covered in black spots that open portals, and he closes the last one from inside limbo with his assistant Sylvia Lopez.',
+  },
+  'the-wizard': {
+    name: 'The Wizard',
+    color: '#7c3aed',
+    role: 'villain',
+    status: 'alive',
+    factions: ['frightful-four'],
+    bio: 'Inventor forgotten once Reed Richards gave away his patents, who gathers other overlooked talents as the Frightful Four. His id machine turns the Thing against his friends, until Alicia Masters breaks its hold and the four flee.',
   },
   thor: {
     name: 'Thor Odinson',
@@ -3005,7 +3108,7 @@ export const characters = {
     origin: 'Asgard (Nine Realms)',
     bio: 'Asgardian God of Thunder, wielder of Mjolnir and Stormbreaker.',
     variants: {
-      'earth-92131': 'In the animated series he appears for a moment during the rampage of the Dark Phoenix. In 1996 Dr. Donald Blake strikes his staff and becomes Thor to fight a gamma plague in Detroit beside the Hulk.',
+      'earth-92131': 'In the animated series he appears for a moment during the rampage of the Dark Phoenix. In 1995 his hammer summons the Fantastic Four against Ego, and he later keeps Galactus alive until Frankie Raye becomes his herald. In 1996 Dr. Donald Blake strikes his staff and becomes Thor to fight a gamma plague in Detroit beside the Hulk.',
     },
   },
   'thunderer-jerry-carstairs': {
@@ -3058,8 +3161,17 @@ export const characters = {
     origin: 'New York / Malibu',
     bio: 'Genius, billionaire, playboy, philanthropist who forged the Iron Man armor and saved the universe.',
     variants: {
-      'earth-92131': "In the animated series he leads Force Works against the Mandarin from Stark Enterprises in Los Angeles, and keeps his secret when a robot double of him marries Julia Carpenter. In 1995 half of Force Works walks out after he fakes his death, he wages the Armor Wars against his own stolen designs, and the Mandarin finally learns who he is. In 1996 Venom and Carnage attack a Stark Enterprises demonstration in New York, and Iron Man helps Spider-Man stop them. In 1997 Spider-Man summons him to the Beyonder's planet for the Secret Wars.",
+      'earth-92131': "In the animated series he leads Force Works against the Mandarin from Stark Enterprises in Los Angeles, and keeps his secret when a robot double of him marries Julia Carpenter. In 1995 he helps the Avengers with the rescues in New York as Ego comes at Earth, his company builds the flying wing that beats Doctor Doom, half of Force Works walks out after he fakes his death, he wages the Armor Wars against his own stolen designs, and the Mandarin finally learns who he is. In 1996 Venom and Carnage attack a Stark Enterprises demonstration in New York, and Iron Man helps Spider-Man stop them. In 1997 Spider-Man summons him to the Beyonder's planet for the Secret Wars.",
     },
+  },
+  'trapster-peter-petruski': {
+    name: 'Peter Petruski',
+    alias: 'The Trapster',
+    color: '#a16207',
+    role: 'villain',
+    status: 'alive',
+    factions: ['frightful-four'],
+    bio: "Research chemist, once called Paste Pot Pete, who invented a multipolymer paste and fights with it as the Trapster, one of the Wizard's Frightful Four.",
   },
   'trevor-fitzroy': {
     name: 'Trevor Fitzroy',
@@ -3069,6 +3181,14 @@ export const characters = {
     factions: ['upstarts'],
     origin: 'North America (2055, Earth-92131)',
     bio: 'Time-traveling mutant who opens his way through time by draining life energy. Master Mold sends him from 2055 to kill the young Charles Xavier at Bard College in 1959, until a message from his future self makes him give up.',
+  },
+  triton: {
+    name: 'Triton',
+    color: '#0d9488',
+    role: 'secondary',
+    status: 'alive',
+    factions: ['inhumans'],
+    bio: 'Inhuman who can only breathe under water and wants to explore the waterways of the human world. The Seeker takes him back to Attilan, where Maximus fits him with circulators so he can breathe air.',
   },
   'uatu-the-watcher': {
     name: 'Uatu the Watcher',
@@ -3091,6 +3211,14 @@ export const characters = {
     factions: ['automata'],
     origin: 'Deep Space / Volcanic Caldera',
     bio: 'Ancient alien robot found sealed inside an extinct volcano in Latin America. It wakes when the men of Justin Hammer try to scrap it, turns on the Mandarin, and Force Works shuts it down before it reaches a Stark test range in Baja California; later it comes back, opens H.O.M.E.R. to the Hacker, and Iron Man and Hawkeye beat it.',
+  },
+  'ulysses-klaw': {
+    name: 'Ulysses Klaw',
+    color: '#b91c1c',
+    role: 'villain',
+    status: 'presumably-dead',
+    factions: [],
+    bio: "Scientist and Master of Sound, who wants Wakanda's vibranium to power his sound transformer. He has T'Chaka killed and loses a hand to the young T'Challa; ten years later he comes back as living sound, until the sacred mound absorbs him.",
   },
   'valerie-cooper': {
     name: 'Dr. Valerie Cooper',
@@ -3155,7 +3283,7 @@ export const characters = {
     role: 'villain',
     status: 'alive',
     factions: ['latverian-monarchy'],
-    bio: "Masked master of Castle Doom, in Latveria, and Reed Richards's college classmate. He captures the Fantastic Four, holds Sue hostage while the others fetch him a coffin from ancient Greece, and later steals the Silver Surfer's Power Cosmic. In 1996 he seals Washington under a dome to make the Hulk his weapon and, deposed from Latveria, threatens the world with asteroids. On the Beyonder's planet he takes Doctor Octopus's domain, makes New Latveria a place of peace and absorbs the Beyonder's power, until Spider-Man's heroes defeat him.",
+    bio: "Masked master of Castle Doom, in Latveria, and Reed Richards's college classmate. He captures the Fantastic Four, holds Sue hostage while the others fetch him a coffin from ancient Greece, and steals the Silver Surfer's Power Cosmic. In 1995 his bomb takes away the Fantastic Four's powers and he wrecks the Baxter Building, he learns who the Hulk is, and he steals the Surfer's power again, until Galactus's barrier takes it back. In 1996 he seals Washington under a dome to make the Hulk his weapon and, deposed from Latveria, threatens the world with asteroids. On the Beyonder's planet he takes Doctor Octopus's domain, makes New Latveria a place of peace and absorbs the Beyonder's power, until Spider-Man's heroes defeat him.",
   },
   vision: {
     name: 'Vision',

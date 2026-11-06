@@ -311,6 +311,20 @@ export const cosmosNodes = {
     color: '#eab308',
     description: 'A reality whose Peter Parker is a billionaire in high-tech armor, known to everyone, engaged to Gwen Stacy, with Mary Jane and Uncle Ben alive. Spider-Carnage dies here.',
   },
+  microverse: {
+    name: 'Microverse',
+    zone: 'dimensions',
+    look: 'realm',
+    color: '#14b8a6',
+    description: 'A world within worlds, reached by shrinking into a subatomic dimension, where Psycho-Man rules his city by fear.',
+  },
+  'skrull-homeworld': {
+    name: 'Skrull Homeworld',
+    zone: 'deep-space',
+    look: 'planet',
+    color: '#16a34a',
+    description: "The Skrull Emperor's world, in the Skrull galaxy, whose air takes away the Fantastic Four's powers.",
+  },
   'actor-world': {
     name: "The Actor's World",
     zone: 'dimensions',

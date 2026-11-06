@@ -42,6 +42,7 @@ export const factions = {
   'force-works': { name: 'Force Works' },
   'french-resistance': { name: 'French Resistance' },
   'friends-of-humanity': { name: 'Friends of Humanity' },
+  'frightful-four': { name: 'Frightful Four' },
   'frost-giants-of-jotunheim': { name: 'Frost Giants of Jotunheim' },
   'gamma-mutates': { name: 'Gamma mutates' },
   'genosha-council': { name: 'Genosha Council' },

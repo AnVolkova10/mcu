@@ -876,7 +876,8 @@ export const productions = {
     universe: 'earth-92131',
     status: 'audited',
     animated: true,
-    description: 'The Fantastic Four encounter the Inhumans in the Himalayas, join forces with Daredevil in NYC, explore Ego the Living Planet, meet Black Panther in Wakanda, and confront Galactus.',
+    description: "1995, from the bomb that costs the Fantastic Four their powers to Doom's theft of the Power Cosmic: the Inhumans and the fall of Attilan, Ego, the Black Panther, Nova, the Hulk and the death of Franklin Storm.",
+    verified: true,
     poster: '/ccjFJsaeAJDMQqfqHaj7mHmhrq9.jpg',
   },
   'spider-man-tas-s1': {

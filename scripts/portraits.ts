@@ -50,6 +50,7 @@ const PAGES: Record<string, Record<string, string>> = {
   'kayla-silverfox': { 'earth-92131': 'Silver Fox' },
   'mary-jane-clone': { 'earth-92131': 'Mary Jane Watson (Clone)' },
   'kraven-the-hunter': { 'earth-92131': 'Kraven the Hunter' },
+  'kree-sentry-459': { 'earth-92131': 'Sentry 459' },
   'last-black-panther': { 'earth-616': 'Black Panther (Future)' },
   'lilandra-neramani': { 'earth-92131': 'Lilandra' },
   'maria-rambeau': { 'earth-616': 'Maria Rambeau' },
@@ -60,6 +61,7 @@ const PAGES: Record<string, Record<string, string>> = {
   'ruby-williams-noir': { 'earth-62533': 'Ruby J. Williams' },
   'steve-rogers': { 'earth-616': 'Steve Rogers' },
   'the-punisher': { 'earth-616': 'Punisher' },
+  'ulysses-klaw': { 'earth-92131': 'Klaw' },
 };
 
 /** A file, plus the square to keep when its figure is small: left, top and side as fractions of its width and height. */

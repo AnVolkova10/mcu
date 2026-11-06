@@ -151,8 +151,8 @@ export const locations = {
   },
   attilan: {
     name: 'Attilan',
-    place: 'Himalayan Mountain Range',
-    country: 'Tibet / Great Refuge',
+    place: 'The Great Refuge, Himalayas',
+    country: 'Tibet',
     kind: 'earth',
     coords: [31, 88],
   },
@@ -363,13 +363,6 @@ export const locations = {
     country: 'Latveria',
     kind: 'earth',
     coords: [46.2, 22.9],
-  },
-  'castle-doom-and-manhattan-upper-atmosphere': {
-    name: 'Castle Doom & Manhattan Upper Atmosphere',
-    place: 'Latveria & Manhattan, New York',
-    country: 'Latveria / United States',
-    kind: 'earth',
-    coords: [40.7128, -74.006],
   },
   'castle-worthington': {
     name: 'Castle Worthington',
@@ -623,9 +616,8 @@ export const locations = {
     coords: [34.0729, -118.2606],
   },
   'ego-the-living-planet-orbit': {
-    name: 'Ego the Living Planet Orbit',
-    place: 'Deep Space Black Galaxy',
-    country: 'Cosmos',
+    name: 'Ego, the Living Planet',
+    country: 'Space',
     kind: 'space',
     node: 'ego',
   },
@@ -1037,6 +1029,13 @@ export const locations = {
     kind: 'dimension',
     node: 'interdimensional-limbo',
   },
+  'island-tr-5': {
+    name: 'Island TR-5',
+    place: 'North Atlantic Ocean',
+    country: 'International waters',
+    kind: 'earth',
+    coords: [37.5, -52],
+  },
   'isodyne-energy-particle-laboratory': {
     name: 'Isodyne Energy',
     place: 'Pasadena, California',
@@ -1180,6 +1179,20 @@ export const locations = {
     country: 'United States',
     kind: 'earth',
     coords: [36.1699, -115.1398],
+  },
+  'latverian-embassy': {
+    name: 'Latverian Embassy',
+    place: 'Sutton Place, Manhattan',
+    country: 'United States',
+    kind: 'earth',
+    coords: [40.7585, -73.9655],
+  },
+  'latverian-royal-forest': {
+    name: 'Royal Forest',
+    place: 'Latveria',
+    country: 'Latveria',
+    kind: 'earth',
+    coords: [46.3, 22.7],
   },
   'launch-site': {
     name: 'Launch Site',
@@ -1367,6 +1380,12 @@ export const locations = {
     country: 'United States',
     kind: 'earth',
     coords: [25.77, -80.08],
+  },
+  microverse: {
+    name: "Psycho-Man's City",
+    country: 'Microverse',
+    kind: 'dimension',
+    node: 'microverse',
   },
   'midtown-manhattan-construction-site': {
     name: 'Construction Site',
@@ -1876,6 +1895,13 @@ export const locations = {
     kind: 'earth',
     coords: [38.8898, -76.9719],
   },
+  'richards-lake-cabin': {
+    name: "Reed and Sue's Lake Cabin",
+    place: 'Adirondack Mountains, New York',
+    country: 'United States',
+    kind: 'earth',
+    coords: [43.9759, -74.2083],
+  },
   'richmond-chemical-refining-plant': {
     name: 'Metro Chemical',
     place: 'New York City',
@@ -2018,6 +2044,12 @@ export const locations = {
     kind: 'earth',
     coords: [40.7736, -73.9566],
     approximate: true,
+  },
+  'skrull-emperor-palace': {
+    name: "Skrull Emperor's Palace",
+    country: 'Skrull Homeworld',
+    kind: 'space',
+    node: 'skrull-homeworld',
   },
   'skrull-mothership': {
     name: 'Skrull Mothership',
@@ -2252,6 +2284,13 @@ export const locations = {
     kind: 'earth',
     coords: [46.1914, -122.1956],
   },
+  'tchalla-village': {
+    name: "T'Challa's Village",
+    place: 'Wakanda',
+    country: 'Wakanda',
+    kind: 'earth',
+    coords: [5.3, 35.52],
+  },
   'telethon-studio': {
     name: 'Telethon Studio',
     place: 'Upper West Side, Manhattan',
@@ -2315,8 +2354,8 @@ export const locations = {
     coords: [-4.5901, 55.4423],
   },
   'the-great-mound-and-birnin-zana': {
-    name: 'The Great Mound & Birnin Zana',
-    place: 'Kingdom of Wakanda',
+    name: 'Sacred Mound',
+    place: 'Wakanda',
     country: 'Wakanda',
     kind: 'earth',
     coords: [5.35, 35.45],
@@ -2398,6 +2437,13 @@ export const locations = {
     country: 'United States',
     kind: 'earth',
     coords: [40.7587, -73.985],
+  },
+  'tivu-island': {
+    name: 'Tivu Island',
+    place: 'South Pacific Ocean',
+    country: 'International waters',
+    kind: 'earth',
+    coords: [-11, -160],
   },
   'toomes-aerodynamics': {
     name: 'Toomes Aerodynamics',

@@ -334,6 +334,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'frankie-noir': {
     'earth-62533': 'https://static.wikia.nocookie.net/spidermannoir/images/d/d0/Frankie.png/revision/latest/scale-to-width-down/218?cb=20260530183437',
   },
+  'frankie-raye': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/c/c3/Nova.jpg/revision/latest/scale-to-width-down/300?cb=20170411034919',
+  },
   'fred-dukes': {
     'earth-10005': 'https://static.wikia.nocookie.net/xmenmovies/images/8/80/469px-Frederick_Dukes_%28Earth-10005%29-1-.jpg/revision/latest/window-crop/width/300/x-offset/66/y-offset/0/window-width/211/window-height/211?cb=20110612090835',
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/6/6c/Blob.jpg/revision/latest/scale-to-width-down/300?cb=20131017213013',
@@ -448,6 +451,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
     'earth-10005': 'https://static.wikia.nocookie.net/xmenmovies/images/e/e6/740full-iceman-%28shawn-ashmore%29.jpg/revision/latest/window-crop/width/300/x-offset/222/y-offset/47/window-width/296/window-height/296?cb=20200516071931',
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/0/02/Iceman.webp/revision/latest/scale-to-width-down/242?cb=20241211040844',
   },
+  'impossible-man': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/b/bd/Impossible_Man.jpg/revision/latest/scale-to-width-down/223?cb=20131021230713',
+  },
   'iron-fist': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/5/5f/DRand-AskingForFruitRollUps.png/revision/latest/scale-to-width-down/300?cb=20181125034238',
   },
@@ -553,6 +559,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'kraven-the-hunter': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/5/5b/Kraven.jpg/revision/latest/scale-to-width-down/300?cb=20080802212847',
   },
+  'kree-sentry-459': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/8/86/Sentry_213.jpg/revision/latest/scale-to-width-down/300?cb=20140322030842',
+  },
   'kuda': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/e/e3/Kuda_Infobox.png/revision/latest/scale-to-width-down/240?cb=20250810015854',
   },
@@ -625,6 +634,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   },
   'mastermind-jason-wyngarde': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/c/c0/Jason_Wyngarde.jpg/revision/latest/scale-to-width-down/241?cb=20131018180242',
+  },
+  'maximus': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/2/24/Maximus.jpg/revision/latest/scale-to-width-down/300?cb=20150321052817',
   },
   'may': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/c/ca/Melinda_May_-_MAOSS6.jpg/revision/latest/scale-to-width-down/225?cb=20190412001641',
@@ -751,6 +763,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   },
   'prowler-hobie-brown': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/1/12/Prowler.jpg/revision/latest/scale-to-width-down/300?cb=20130915020629',
+  },
+  'psycho-man': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/9/96/Psycho-Man.jpg/revision/latest/scale-to-width-down/300?cb=20130915020929',
   },
   'psylocke-betsy-braddock': {
     'earth-10005': 'https://static.wikia.nocookie.net/xmenmovies/images/4/41/Psylocke-XMen-Apocalypse.png/revision/latest/scale-to-width-down/300?cb=20240905163056',
@@ -934,8 +949,14 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/1/1c/Punisher_Infobox.png/revision/latest/scale-to-width-down/227?cb=20261015122544',
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/0/0c/Punisher.jpg/revision/latest/scale-to-width-down/300?cb=20100813133921',
   },
+  'the-seeker': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/4/4b/Seeker.jpg/revision/latest/scale-to-width-down/293?cb=20150321051857',
+  },
   'the-spot': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/b/bb/Spot.jpg/revision/latest/scale-to-width-down/300?cb=20240430032838',
+  },
+  'the-wizard': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/f/fe/Wizard.jpg/revision/latest/scale-to-width-down/300?cb=20150324032144',
   },
   'thor': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/2b/Thor_Infobox.jpg/revision/latest/scale-to-width-down/195?cb=20231021012616',
@@ -958,8 +979,14 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/9/9d/Iron_Man_Infobox.jpg/revision/latest/scale-to-width-down/193?cb=20240802142023',
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/6/67/IronManOnSpiderMan.jpg/revision/latest/scale-to-width-down/252?cb=20100426013304',
   },
+  'trapster-peter-petruski': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/b/b4/Trapster.jpg/revision/latest/scale-to-width-down/300?cb=20150324032613',
+  },
   'trevor-fitzroy': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/9/95/Fitzroy.jpg/revision/latest/scale-to-width-down/271?cb=20131021180530',
+  },
+  'triton': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/b/bd/Triton.jpg/revision/latest/scale-to-width-down/300?cb=20131021232604',
   },
   'uatu-the-watcher': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/d/de/Watchers.jpg/revision/latest/scale-to-width-down/300?cb=20180114044614',
@@ -967,6 +994,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   },
   'ultimo': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/6/63/Ultimo.jpg/revision/latest/scale-to-width-down/300?cb=20170119003536',
+  },
+  'ulysses-klaw': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/4/46/Klaw.jpg/revision/latest/scale-to-width-down/252?cb=20140131083524',
   },
   'valerie-cooper': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/8/89/Valerie_Cooper_29_from_X-Men_%2797_Concept_Art_001.webp/revision/latest/scale-to-width-down/206?cb=20241216001106',
