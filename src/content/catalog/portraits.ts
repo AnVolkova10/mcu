@@ -700,7 +700,7 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/d/dc/Morph.jpg/revision/latest/scale-to-width-down/300?cb=20100816143856',
   },
   'mother-askani-rachel-summers': {
-    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/4/4e/Captive_Psychics_Attack.jpg/revision/latest/scale-to-width-down/300?cb=20120221120542',
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/4/4e/Captive_Psychics_Attack.jpg/revision/latest/window-crop/width/300/x-offset/333/y-offset/32/window-width/84/window-height/84?cb=20120221120542',
   },
   'mysterio-quentin-beck': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/2/2a/Mysterio.jpg/revision/latest/scale-to-width-down/300?cb=20080729002649',
@@ -935,6 +935,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   },
   'thanos': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/27/Thanos_Infobox.png/revision/latest/scale-to-width-down/222?cb=20250119155740',
+  },
+  'the-adversary': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/9/97/Adversary_29_from_X-Men_%2797_Season_1_4_001.webp/revision/latest/scale-to-width-down/300?cb=20241217230103',
   },
   'the-beyonder': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/6/64/Beyonder.jpg/revision/latest/scale-to-width-down/300?cb=20080801201431',

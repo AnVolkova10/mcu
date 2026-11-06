@@ -93,6 +93,7 @@ const FILES: Record<string, Record<string, FilePick>> = {
   'joseph-manfredi': { 'earth-616': ['Joseph Manfredi.jpg', 0.12, 0, 0.8] },
   'kitty-pryde': { 'earth-10005': poster('Kitty Pryde') },
   'logan-wolverine': { 'earth-10005': 'Logan at Alkali Lake (X2 - 2003).png' },
+  'mother-askani-rachel-summers': { 'earth-92131': ['Captive Psychics Attack.jpg', 0.79, 0.1, 0.2] },
   'psylocke-betsy-braddock': { 'earth-10005': 'Psylocke-XMen-Apocalypse.png' },
   'roger-dooley': { 'earth-616': ['Roger Dooley.jpg', 0.2, 0, 0.45] },
   shuri: { 'earth-616': "BP-Shuri (In Contact With T'Challa).jpg" },

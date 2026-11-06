@@ -988,7 +988,8 @@ export const productions = {
     universe: 'earth-92131',
     status: 'audited',
     animated: true,
-    description: "Direct canonical continuation of the 1992-1997 animated series: Magneto inherits Xavier's institute, Madelyne Pryor falls to the Goblin Queen, the tragedy of Genosha claims Gambit, and Bastion's Operation: Zero Tolerance culminates in Asteroid M's temporal displacement across history.",
+    description: "1997, from Magneto inheriting the X-Men to E-Day: Madelyne and Nathan, the destruction of Genosha and Gambit's death, Storm's return, and Bastion's Prime Sentinels. Then the X-Men are lost in time, from ancient Egypt to 3960, while Bishop finds Forge six months later.",
+    verified: true,
     poster: '/383PV0WolYYQvTriH0NfvMUA28R.jpg',
   },
 } as const satisfies Record<string, ProductionInput>;

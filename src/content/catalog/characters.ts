@@ -119,7 +119,7 @@ export const characters = {
     role: 'anti-hero',
     status: 'alive',
     factions: ['acolytes'],
-    bio: "Nurse who cared for Charles Xavier after he lost the use of his legs and became his lover, later one of Magneto's Acolytes on Asteroid M. She shows the asteroid's people the security tape of Fabian Cortez's betrayal and leaves the Acolytes; later, as a medic on Muir Island, she helps fight the Phalanx and leads Beast's allies to Magneto.",
+    bio: "Nurse who cared for Charles Xavier after he lost the use of his legs and became his lover, later one of Magneto's Acolytes on Asteroid M. She shows the asteroid's people the security tape of Fabian Cortez's betrayal and leaves the Acolytes; later, as a medic on Muir Island, she helps fight the Phalanx and leads Beast's allies to Magneto. In 1997 she runs triage in the ruins of Genosha.",
   },
   'ana-jarvis': {
     name: 'Ana Jarvis',
@@ -267,10 +267,10 @@ export const characters = {
     alias: 'Bastion',
     color: '#a855f7',
     role: 'villain',
-    status: 'deceased',
-    factions: ['operation-zero-tolerance', 'sentinels', 'friends-of-humanity'],
+    status: 'presumably-dead',
+    factions: ['operation-zero-tolerance', 'sentinels'],
     origin: 'New Mexico, United States',
-    bio: 'Supreme human-Sentinel bio-hybrid born from the techno-organic mystical fusion of Master Mold and Nimrod, architect of Operation: Zero Tolerance and creator of the sleeper cybernetic Prime Sentinels.',
+    bio: "Sebastion Gilberti, a boy from Harmony, Pennsylvania, who could hear machines, and whose father was infected by Sentinel technology from the future. Grown up, he leads Operation: Zero Tolerance, has Genosha destroyed and turns ordinary people into sleeper Prime Sentinels, until the X-Men cut him off from them; he refuses Rogue's hand as missiles strike Asteroid M.",
   },
   'bella-donna-boudreaux': {
     name: 'Bella Donna Boudreaux',
@@ -440,7 +440,7 @@ export const characters = {
     origin: 'United States',
     bio: "Visionary military scientist and founder of Trask Industries who designed the robotic Sentinel program, harvesting mutant genetic tissue to construct humanity's ultimate anti-mutant defense systems.",
     variants: {
-      'earth-92131': 'In the animated series he builds Master Mold, which turns against him. Later Master Mold captures him, and he blows up its base with himself inside.',
+      'earth-92131': 'In the animated series he builds Master Mold, which turns against him. Later Master Mold captures him, and he blows up its base with himself inside. In 1997 the X-Men find him with a backup Master Mold in the Sahara; Bastion makes him the first Prime Sentinel, and he survives his fall in Madripoor.',
     },
   },
   bova: {
@@ -470,6 +470,9 @@ export const characters = {
     factions: ['mutants'],
     origin: 'Far Future',
     bio: 'Time-traveling cybernetic mutant soldier from the 40th century armed with futuristic plasma weaponry and telekinetic shielding, waging a temporal war against Apocalypse.',
+    variants: {
+      'earth-92131': "In the animated series he is Nathan, the son of Scott Summers and Madelyne Pryor, who grew up in the future and fights Apocalypse in 3999. In 1997 he tries again and again to stop the attack on Genosha, joins the X-Men against Bastion and breaks free of Mister Sinister's control.",
+    },
   },
   caliban: {
     name: 'Caliban',
@@ -483,10 +486,13 @@ export const characters = {
     name: 'Callisto',
     color: '#a1a1aa',
     role: 'secondary',
-    status: 'deceased',
+    status: 'presumably-dead',
     factions: ['morlocks', 'mutants'],
     origin: 'Morlock Tunnels, Manhattan',
-    bio: 'Fierce leader of the subterranean Morlocks endowed with heightened senses and tactical instincts, who represented mutant refugees on the Genoshan ruling council before perishing in the Tri-Sentinel massacre.',
+    bio: 'Leader of the Morlocks, the mutants who hide in the tunnels under the city.',
+    variants: {
+      'earth-92131': 'In the animated series she leads the Morlocks in the tunnels under New York. In 1997 Magneto frees them from the Friends of Humanity and sends them to Genosha.',
+    },
   },
   'calvin-chadwick': {
     name: 'Calvin Chadwick',
@@ -744,7 +750,7 @@ export const characters = {
     role: 'villain',
     status: 'alive',
     factions: ['shiar-imperium'],
-    bio: "Lilandra's sister. With Apocalypse she saves Fabian Cortez from the falling Asteroid M, and later, with his help, she attacks Lilandra's empire.",
+    bio: "Lilandra's sister. With Apocalypse she saves Fabian Cortez from the falling Asteroid M, and later, with his help, she attacks Lilandra's empire. In 1997 she beats the Kree and demands that Xavier purge his memories of Earth before marrying Lilandra.",
   },
   'destroyer-keene-marlowe': {
     name: 'Keene Marlowe',
@@ -926,7 +932,7 @@ export const characters = {
     factions: ['hellfire-club', 'brotherhood-of-mutants', 'mutants'],
     bio: "Formidable telepath who can transform her body into organic, bulletproof diamond at will, Shaw's chief lieutenant.",
     variants: {
-      'earth-92131': "White Queen of the Inner Circle of the Circle Club in New York. She learns the Phoenix's secret from Xavier's computer and fights him for Jean Grey's mind.",
+      'earth-92131': "White Queen of the Inner Circle of the Circle Club in New York. She learns the Phoenix's secret from Xavier's computer and fights him for Jean Grey's mind. In 1997 she sits on Genosha's council and survives its destruction in diamond form.",
     },
   },
   'en-sabah-nur-apocalypse': {
@@ -939,7 +945,7 @@ export const characters = {
     origin: 'Ancient Egypt',
     bio: 'The first mutant, worshipped as a god in ancient Egypt, who lives on by passing into new bodies and makes the mutants he chooses as his Four Horsemen stronger.',
     variants: {
-      'earth-92131': 'In the animated series he gathers psychics at the Axis of Time to destroy all time and remake the universe, until they banish him to the astral plane, from which he comes back in the body of Fabian Cortez.',
+      'earth-92131': "In the animated series he gathers psychics at the Axis of Time to destroy all time and remake the universe, until they banish him to the astral plane, from which he comes back in the body of Fabian Cortez. Around 3000 BC, as the young En Sabah Nur in Egypt, he meets X-Men lost in time, and after they vanish he walks the ruins of Genosha with one of Gambit's cards.",
     },
   },
   'erik-killmonger': {
@@ -1053,7 +1059,7 @@ export const characters = {
     role: 'hero',
     status: 'alive',
     factions: ['mutants'],
-    bio: 'Mutant inventor. In the 2055 ruled by the Sentinels he hides the rebels and builds the time portal that sends Bishop back to the 1990s.',
+    bio: 'Mutant inventor. In the 2055 ruled by the Sentinels he hides the rebels and builds the time portal that sends Bishop back to the 1990s. In 1997 he helps Storm win back her powers, admits that the government built mutant-dampening devices from his early designs, and joins the X-Men against Bastion; six months later Bishop tells him the X-Men are lost in time.',
   },
   'frankie-noir': {
     name: 'Frankie',
@@ -1130,10 +1136,13 @@ export const characters = {
     alias: 'Gambit',
     color: '#ec4899',
     role: 'hero',
-    status: 'alive',
+    status: 'variable',
     factions: ['x-men', 'mutants', 'thieves-guild'],
     origin: 'New Orleans, Louisiana',
-    bio: 'Cajun mutant rogue possessing the ability to charge inanimate objects with potent explosive bio-kinetic energy, favored with his kinetic playing cards and bo staff.',
+    bio: 'Cajun mutant thief who charges objects, often playing cards, with explosive kinetic energy.',
+    variants: {
+      'earth-92131': 'In the animated series he comes from the Thieves Guild of New Orleans and loves Rogue, whose touch he cannot share. In 1997 he dies on Genosha destroying the giant Master Mold, and is buried in New Orleans.',
+    },
   },
   gamora: {
     name: 'Gamora',
@@ -1195,7 +1204,7 @@ export const characters = {
     status: 'alive',
     factions: ['imperial-guard', 'strontians'],
     origin: "Strontia, Shi'ar Imperium",
-    bio: "Leader and strongest member of the Shi'ar Imperial Guard. He seizes Lilandra for D'Ken, and on the Moon he leads the Guard against the X-Men for the fate of the Dark Phoenix.",
+    bio: "Leader and strongest member of the Shi'ar Imperial Guard. He seizes Lilandra for D'Ken, and on the Moon he leads the Guard against the X-Men for the fate of the Dark Phoenix. In 1997 the Guard beats the Kree beside Deathbird.",
   },
   'glenn-talbot': {
     name: 'Glenn Talbot',
@@ -1844,7 +1853,7 @@ export const characters = {
     status: 'alive',
     factions: ['shiar-imperium', 'cosmic-entities'],
     origin: "Chandilar, Shi'ar Empire",
-    bio: "Shi'ar princess who steals the M'Kraan Crystal to keep its power from her brother D'Ken and calls on Charles Xavier for help. As Majestrix she sentences the Dark Phoenix to death. She and Xavier love each other, but their duties keep them apart.",
+    bio: "Shi'ar princess who steals the M'Kraan Crystal to keep its power from her brother D'Ken and calls on Charles Xavier for help. As Majestrix she sentences the Dark Phoenix to death. She and Xavier love each other, but their duties keep them apart; in 1997 she announces their marriage, and he leaves for Earth when he sees Genosha fall.",
   },
   'living-laser': {
     name: 'Arthur Parks',
@@ -1936,9 +1945,9 @@ export const characters = {
     color: '#16a34a',
     role: 'anti-hero',
     status: 'deceased',
-    factions: ['x-men', 'limbo', 'genosha-council'],
+    factions: ['x-men', 'genosha-council'],
     origin: "Sinister's Bio-Vault",
-    bio: 'Genetic clone of Jean Grey created by Mister Sinister and biological mother of Nathan Summers. Embracing the dark psionic sorcery of the Goblin Queen, she later redeemed herself to protect her child before falling tragically in the Genosha massacre.',
+    bio: "Clone of Jean Grey made by Mister Sinister; when he switched them, no one knows. As Scott Summers's wife she has their son, Nathan, then Sinister turns her into the Goblin Queen, until Jean frees her. She takes the name Madelyne Pryor, joins Genosha's council and dies when the island is destroyed.",
   },
   mandarin: {
     name: 'The Mandarin',
@@ -2013,7 +2022,7 @@ export const characters = {
     status: 'alive',
     factions: ['spider-man-allies'],
     origin: 'New York City',
-    bio: "Anna Watson's niece and an aspiring actress, whom Aunt May sets up on a blind date with Peter Parker. Baron Mordo's cult holds her for a while, and in the Green Goblin's attack on the George Washington Bridge she falls through a portal into limbo. A clone takes her place, and after the Spider Wars Madame Web takes Spider-Man to find her.",
+    bio: "Anna Watson's niece and an aspiring actress, whom Aunt May sets up on a blind date with Peter Parker. Baron Mordo's cult holds her for a while, and in the Green Goblin's attack on the George Washington Bridge she falls through a portal into limbo. A clone takes her place, and after the Spider Wars Madame Web takes Spider-Man to find her; by the end of 1997 they are together again in New York.",
   },
   'master-mold': {
     name: 'Master Mold',
@@ -2022,7 +2031,7 @@ export const characters = {
     status: 'deceased',
     factions: ['sentinels', 'artificial-intelligences'],
     origin: 'Genosha',
-    bio: 'Giant Sentinel that Bolivar Trask builds to produce Sentinels on its own. It decides that mutants are human, so the Sentinels must rule humans too, and plans to replace the brains of world leaders with computers. Reduced to a head, it later wants a new body made of a stolen polymer, until a falling stalactite destroys it.',
+    bio: "Giant Sentinel that Bolivar Trask builds to produce Sentinels on its own. It decides that mutants are human, so the Sentinels must rule humans too, and plans to replace the brains of world leaders with computers. Reduced to a head, it later wants a new body made of a stolen polymer, until a falling stalactite destroys it. In 1997 the X-Men destroy a backup of Trask's in the Sahara, and a giant Master Mold destroys Genosha until Gambit blows it up.",
   },
   'mastermind-jason-wyngarde': {
     name: 'Jason Wyngarde',
@@ -2169,7 +2178,7 @@ export const characters = {
     status: 'alive',
     factions: ['mutants'],
     origin: 'London, England',
-    bio: 'Genius Victorian geneticist augmented into an immortal telepathic mutant commander who commands the Nasty Boys and harvests the DNA of Cyclops and Jean Grey to engineer the ultimate mutant weapon.',
+    bio: 'Nathaniel Essex, a scientist of the 1800s who became the immortal Mister Sinister and experiments on mutants. He commands the Nasty Boys, takes the DNA of Scott Summers and Jean Grey, makes a clone of Jean and infects her son Nathan with a techno-organic virus; he helps Bastion build the Prime Sentinels, until Jean burns away the mutant DNA he has stolen.',
   },
   'modok-george-tarleton': {
     name: 'George Tarleton',
@@ -2185,12 +2194,12 @@ export const characters = {
     name: 'Moira MacTaggert',
     color: '#94a3b8',
     role: 'secondary',
-    status: 'alive',
+    status: 'variable',
     factions: ['cia', 'division-x'],
     origin: 'United States',
     bio: 'CIA agent who finds the Hellfire Club in Las Vegas and brings Charles Xavier to the agency. He erases her memory of the X-Men after the Cuban Missile Crisis.',
     variants: {
-      'earth-92131': 'Scientist who runs the Mutant Research Center on Muir Island, where Xavier finds Lilandra and Jean spends months in therapy.',
+      'earth-92131': "Scientist who runs the Mutant Research Center on Muir Island, where Xavier finds Lilandra and Jean spends months in therapy. In 1997 she sits on Genosha's council and dies when the island is destroyed.",
     },
   },
   mojo: {
@@ -2200,7 +2209,7 @@ export const characters = {
     status: 'alive',
     factions: ['cosmic-entities'],
     origin: 'Mojoverse Dimension',
-    bio: 'Grotesque, spineless alien tyrant who rules an extradimensional media empire through mechanical walker chairs, enslaving multiverse warriors for lethal broadcast gladiatorial television ratings.',
+    bio: "Alien producer who rules the Mojoverse through its broadcasts and lives off ratings, putting other people's battles on his shows. On Jubilee's 18th birthday he pulls her and Roberto da Costa into a video game made from her memories.",
   },
   'mole-man': {
     name: 'Harvey Rupert Elder',
@@ -2240,13 +2249,12 @@ export const characters = {
   },
   'mother-askani-rachel-summers': {
     name: 'Mother Askani',
-    alias: 'Rachel Summers',
     color: '#fb7185',
     role: 'hero',
     status: 'alive',
-    factions: ['clan-askani', 'x-men'],
+    factions: ['clan-askani'],
     origin: 'Earth-811 / Earth-92131 40th Century',
-    bio: 'Matriarch and founder of the Clan Askani in the desolate 3960 C.E. future, temporal daughter of Cyclops and Phoenix who raised and sheltered the infant Nathan Summers to fulfill his destiny as Cable.',
+    bio: 'Leader of Clan Askani in 3960, who greets Scott Summers and Jean Grey when they arrive from the past and is raising a boy named Nathan.',
   },
   'mysterio-quentin-beck': {
     name: 'Quentin Beck',
@@ -2295,8 +2303,16 @@ export const characters = {
     origin: 'Bavaria, Germany',
     bio: 'Gentle, deeply spiritual mutant possessing indigo fur, acrobatic agility, a prehensile tail, and the ability to instantly teleport across space in a cloud of sulfurous blue smoke (BAMF).',
     variants: {
-      'earth-92131': 'In the animated series, Jean Grey first finds him through Cerebro while she searches for the missing Xavier. Wolverine, Rogue and Gambit meet him in a monastery in the Bavarian Alps, where he has given his life to God, and on Halloween he learns that Mystique is his mother.',
+      'earth-92131': "In the animated series, Jean Grey first finds him through Cerebro while she searches for the missing Xavier. Wolverine, Rogue and Gambit meet him in a monastery in the Bavarian Alps, where he has given his life to God, and on Halloween he learns that Mystique is his mother. In 1997 he sits on Genosha's council for its communities of faith, survives its destruction and joins the X-Men, and is lost with them in ancient Egypt.",
     },
+  },
+  'nina-da-costa': {
+    name: 'Nina da Costa',
+    color: '#a3a3a3',
+    role: 'civilian',
+    status: 'alive',
+    factions: [],
+    bio: "Roberto da Costa's mother, at the head of the family fortune in Rio de Janeiro. She already knows her son is a mutant and asks him to keep it private, and at her fundraiser for Genosha she tells him to do what Bastion's Prime Sentinels say.",
   },
   noni: {
     name: 'Noni',
@@ -2632,6 +2648,9 @@ export const characters = {
     factions: ['accusers', 'kree-empire'],
     origin: 'Hala (Kree Empire)',
     bio: 'Radical Kree military warlord and judicial Accuser who commanded ballistic orbital bombardments against Skrulls in 1995 before rebelling against the Nova Empire peace accord in 2014.',
+    variants: {
+      'earth-92131': "In the animated series his Kree lose a battle to Deathbird and the Shi'ar Imperial Guard in 1997.",
+    },
   },
   'ruby-williams-noir': {
     name: 'Ruby Williams',
@@ -2713,7 +2732,7 @@ export const characters = {
     origin: 'Ireland',
     bio: 'Young mutant gifted with powerful vocal cords capable of producing high-frequency acoustic shockwaves, sonic flight, and sonar echolocation.',
     variants: {
-      'earth-92131': "Banshee, who lives on Muir Island with Moira MacTaggert. He catches Xavier when the Juggernaut throws him out of a window and leads the X-Men to Cassidy Keep, his family's castle.",
+      'earth-92131': "Banshee, who lives on Muir Island with Moira MacTaggert. He catches Xavier when the Juggernaut throws him out of a window and leads the X-Men to Cassidy Keep, his family's castle. In 1997 he sits on Genosha's council.",
     },
   },
   'sebastian-shaw': {
@@ -2725,7 +2744,7 @@ export const characters = {
     origin: 'Germany / United States',
     bio: 'Mutant who absorbs energy and stays young. As Dr. Klaus Schmidt he serves the Nazis at Auschwitz; as leader of the Hellfire Club he tries to start a nuclear war, until Erik Lehnsherr kills him with a Nazi coin.',
     variants: {
-      'earth-92131': 'Black King of the Inner Circle of the Circle Club, who wants the power of the Phoenix for the club.',
+      'earth-92131': "Black King of the Inner Circle of the Circle Club, who wants the power of the Phoenix for the club. In 1997 he sits on Genosha's council.",
     },
   },
   'senator-robert-kelly': {
@@ -2736,7 +2755,7 @@ export const characters = {
     status: 'alive',
     factions: [],
     origin: 'Washington D.C.',
-    bio: 'Anti-mutant presidential candidate whose life was saved by the X-Men from Master Mold, leading him to advocate for peaceful human-mutant coexistence.',
+    bio: 'Anti-mutant presidential candidate whose life was saved by the X-Men from Master Mold, leading him to advocate for peaceful human-mutant coexistence. As President in 1997 he fires missiles at Asteroid M under the Magneto Protocols.',
   },
   'shadow-king-amahl-farouk': {
     name: 'Amahl Farouk',
@@ -2859,7 +2878,7 @@ export const characters = {
     origin: 'Queens, New York',
     bio: 'Friendly neighborhood web-slinger empowered by a radioactive spider bite.',
     variants: {
-      'earth-92131': 'In the animated series he is a college student who sells photos of Spider-Man to the Daily Bugle. In 1994 an alien suit bonds with him for a few days and makes him stronger and angrier, until the bell of an old church tears it off. In 1995 his mutation turns him into the Man-Spider until Mariah Crawford brings him back, and the Vulture steals his youth for a while. In 1996 he loses Mary Jane in limbo and proposes to the Mary Jane who comes back. In 1997 he marries her, learns that she is a clone, leads the heroes of the Secret Wars and the Spider-Men against Spider-Carnage, and sets off with Madame Web to find the real Mary Jane.',
+      'earth-92131': 'In the animated series he is a college student who sells photos of Spider-Man to the Daily Bugle. In 1994 an alien suit bonds with him for a few days and makes him stronger and angrier, until the bell of an old church tears it off. In 1995 his mutation turns him into the Man-Spider until Mariah Crawford brings him back, and the Vulture steals his youth for a while. In 1996 he loses Mary Jane in limbo and proposes to the Mary Jane who comes back. In 1997 he marries her, learns that she is a clone, leads the heroes of the Secret Wars and the Spider-Men against Spider-Carnage, and sets off with Madame Web to find the real Mary Jane; by the end of the year they are together again in New York.',
     },
   },
   'stan-lee-creator': {
@@ -2890,7 +2909,7 @@ export const characters = {
     origin: 'Brooklyn, New York',
     bio: 'Super-soldier leader of the Avengers and WWII war hero.',
     variants: {
-      'earth-92131': "In the animated series he fights beside Logan against the Red Skull in France in 1944, and is seen fighting Magneto's rebels in the erased world where Charles Xavier died in 1959. Around 1945 he leads the Six Forgotten Warriors and pushes the Red Skull into the vortex of his Doomsday Complex, where both are trapped for fifty years. Freed in 1997, he fights beside Spider-Man, goes back into the vortex with the Skull, and fights in the Beyonder's Secret Wars.",
+      'earth-92131': "In the animated series he fights beside Logan against the Red Skull in France in 1944, and is seen fighting Magneto's rebels in the erased world where Charles Xavier died in 1959. Around 1945 he leads the Six Forgotten Warriors and pushes the Red Skull into the vortex of his Doomsday Complex, where both are trapped for fifty years. Freed in 1997, he fights beside Spider-Man, goes back into the vortex with the Skull, and fights in the Beyonder's Secret Wars; later that year he and General Ross guard Gyrich and Trask at a facility built to hold the Hulk, and try to stop Rogue by the book.",
     },
   },
   'storm-ororo-munroe': {
@@ -2928,6 +2947,9 @@ export const characters = {
     factions: ['mutants'],
     origin: 'Brazil',
     bio: 'Brazilian mutant who absorbs and channels solar radiation to combust into a fiery solar plasma form capable of supersonic flight and devastating thermal energy blasts.',
+    variants: {
+      'earth-92131': "In the animated series Roberto da Costa, heir to the da Costa fortune of Rio de Janeiro, is rescued from the Friends of Humanity by the X-Men in 1997 and stays at the mansion. When his mother hands him to Bastion's Prime Sentinels he flies for the first time, and he follows Magneto to Asteroid M as Sunspot.",
+    },
   },
   sunturion: {
     name: 'Arthur Dearborn',
@@ -2988,7 +3010,7 @@ export const characters = {
     role: 'secondary',
     status: 'deceased',
     factions: ['wakanda'],
-    bio: "Chieftain of Wakanda and T'Challa's father. He refuses to give Ulysses Klaw the sacred mound of vibranium and is shot dead, ten years before T'Challa meets the Fantastic Four.",
+    bio: "Chieftain of Wakanda and T'Challa's father. He refuses to give Ulysses Klaw the sacred mound of vibranium and is shot dead, ten years before T'Challa meets the Fantastic Four. Yet in 1997 a King T'Chaka speaks for Wakanda among the leaders on President Kelly's call, which the two series leave unexplained.",
   },
   terrax: {
     name: 'Terrax',
@@ -3013,7 +3035,7 @@ export const characters = {
     role: 'secondary',
     status: 'alive',
     factions: ['hulkbusters', 'us-military'],
-    bio: "General in command of Gamma Base and Betty Ross's father, who has hunted the Hulk for years and leads the Hulkbusters. He stops his daughter's wedding to Bruce Banner, falls into a coma hunting the Grey Hulk, and wakes up ready to retire and get to know his future son-in-law.",
+    bio: "General in command of Gamma Base and Betty Ross's father, who has hunted the Hulk for years and leads the Hulkbusters. He stops his daughter's wedding to Bruce Banner, falls into a coma hunting the Grey Hulk, and wakes up ready to retire and get to know his future son-in-law. In 1997 he and Captain America guard Gyrich and Trask at the facility built to hold the Hulk, until Rogue breaks in.",
   },
   thanos: {
     name: 'Thanos',
@@ -3024,6 +3046,14 @@ export const characters = {
     factions: ['black-order', 'titan-survivors'],
     origin: 'Titan (Cosmic)',
     bio: 'The Mad Titan who assembled the Infinity Gauntlet and wiped out half of all universal life.',
+  },
+  'the-adversary': {
+    name: 'The Adversary',
+    color: '#7c2d12',
+    role: 'villain',
+    status: 'alive',
+    factions: [],
+    bio: "Demon who follows Storm and Forge as an owl, poisons Forge with his bite and feeds on Storm's fear of her own power. Forge drives him off with his mother's spell, and Storm beats him in a cave by Snowsnake Tower.",
   },
   'the-beyonder': {
     name: 'The Beyonder',
@@ -3182,6 +3212,14 @@ export const characters = {
     origin: 'North America (2055, Earth-92131)',
     bio: 'Time-traveling mutant who opens his way through time by draining life energy. Master Mold sends him from 2055 to kill the young Charles Xavier at Bard College in 1959, until a message from his future self makes him give up.',
   },
+  'trish-tilby': {
+    name: 'Trish Tilby',
+    color: '#f472b6',
+    role: 'civilian',
+    status: 'alive',
+    factions: [],
+    bio: "Reporter who interviews Beast at the mansion and learns that Scott Summers gave up his son. She is one of Bastion's sleeper Prime Sentinels, and wakes as one in the mansion's basement.",
+  },
   triton: {
     name: 'Triton',
     color: '#0d9488',
@@ -3228,7 +3266,7 @@ export const characters = {
     status: 'alive',
     factions: ['commission-on-superhuman-activities', 'united-nations'],
     origin: 'Washington D.C., United States',
-    bio: "United States national security advisor and United Nations liaison on mutant affairs who, horrified by the inhumanity of Bastion's OZT campaign, personally liberated Magneto stating 'Magneto was right'.",
+    bio: 'United Nations liaison on mutant affairs, who arrests Magneto for trial and then works with the X-Men. Missing after Genosha, she is held by Bastion, and in the end she frees Magneto, saying that he was right.',
   },
   valkyrie: {
     name: 'Brunnhilde',
@@ -3283,7 +3321,7 @@ export const characters = {
     role: 'villain',
     status: 'alive',
     factions: ['latverian-monarchy'],
-    bio: "Masked master of Castle Doom, in Latveria, and Reed Richards's college classmate. He captures the Fantastic Four, holds Sue hostage while the others fetch him a coffin from ancient Greece, and steals the Silver Surfer's Power Cosmic. In 1995 his bomb takes away the Fantastic Four's powers and he wrecks the Baxter Building, he learns who the Hulk is, and he steals the Surfer's power again, until Galactus's barrier takes it back. In 1996 he seals Washington under a dome to make the Hulk his weapon and, deposed from Latveria, threatens the world with asteroids. On the Beyonder's planet he takes Doctor Octopus's domain, makes New Latveria a place of peace and absorbs the Beyonder's power, until Spider-Man's heroes defeat him.",
+    bio: "Masked master of Castle Doom, in Latveria, and Reed Richards's college classmate. He captures the Fantastic Four, holds Sue hostage while the others fetch him a coffin from ancient Greece, and steals the Silver Surfer's Power Cosmic. In 1995 his bomb takes away the Fantastic Four's powers and he wrecks the Baxter Building, he learns who the Hulk is, and he steals the Surfer's power again, until Galactus's barrier takes it back. In 1996 he seals Washington under a dome to make the Hulk his weapon and, deposed from Latveria, threatens the world with asteroids. On the Beyonder's planet he takes Doctor Octopus's domain, makes New Latveria a place of peace and absorbs the Beyonder's power, until Spider-Man's heroes defeat him; later he is one of the members of Bastion's Operation: Zero Tolerance.",
   },
   vision: {
     name: 'Vision',
@@ -3443,6 +3481,15 @@ export const characters = {
     factions: ['masters-of-the-mystic-arts'],
     bio: "Doctor Strange's companion at the Sanctum Sanctorum, beaten by Baron Mordo's followers when they steal the Wand of Watoomb.",
   },
+  'x-cutioner-carl-denti': {
+    name: 'Carl Denti',
+    alias: 'X-Cutioner',
+    color: '#78716c',
+    role: 'villain',
+    status: 'alive',
+    factions: ['friends-of-humanity'],
+    bio: "Member of the Friends of Humanity who helps hold Roberto da Costa for sale. As the X-Cutioner he breaks into Magneto's trial at the United Nations, and the beam of his rifle takes away Storm's powers.",
+  },
   'yon-rogg': {
     name: 'Yon-Rogg',
     color: '#0284c7',
@@ -3460,7 +3507,7 @@ export const characters = {
     status: 'alive',
     factions: ['clan-askani'],
     origin: 'Westchester, New York',
-    bio: "Son of Cyclops and Madelyne Pryor, inoculated at birth with Sinister's techno-organic virus and exiled to the 40th century by Bishop to save his life, where he is raised by Clan Askani.",
+    bio: 'Son of Scott Summers and Madelyne Pryor, born at Westchester Memorial in 1997. Mister Sinister infects him with a techno-organic virus, and Bishop takes him into the future to find a cure, but they are separated on the way and he grows up to be Cable; in 3960 he is a boy in the care of Mother Askani.',
   },
   'zebediah-killgrave': {
     name: 'Zebediah Killgrave',

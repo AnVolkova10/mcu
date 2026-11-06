@@ -49,6 +49,7 @@ const CREDITED_AS: Record<string, readonly string[]> = {
   'silvermane-noir': ['Finn Byrne'],
   'spider-carnage': ['Peter Parker'],
   'stan-lee-creator': ['The Man'],
+  'sunspot-roberto-da-costa': ['Roberto'],
   taina: ['Maria Taina Elizando'],
   'terri-lee': ['Detective Terri Lee'],
   'thaddeus-ross': ['General Ross'],

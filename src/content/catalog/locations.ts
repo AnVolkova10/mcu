@@ -128,13 +128,6 @@ export const locations = {
     kind: 'orbit',
     node: 'asteroid-m',
   },
-  'asteroid-m-orbital-citadel': {
-    name: 'Asteroid M Orbital Citadel',
-    place: 'Earth Orbital Apex',
-    country: 'Asteroid M',
-    kind: 'orbit',
-    node: 'asteroid-m',
-  },
   'astral-plane': {
     name: 'The Astral Plane',
     place: 'Realm of the mind',
@@ -464,11 +457,11 @@ export const locations = {
     coords: [38.9517, -77.1467],
   },
   'clan-askani-sanctuary-citadel': {
-    name: 'Clan Askani Sanctuary Citadel',
-    place: 'New Canaan Wastelands',
-    country: 'Earth-92131 (Year 3960)',
+    name: 'Clan Askani',
+    place: 'Central North America',
+    country: 'North America',
     kind: 'earth',
-    coords: [41.8781, -87.6298],
+    coords: [39, -98],
   },
   'clan-chosen-high-citadel-and-temporal-hangar': {
     name: "Cable's Headquarters",
@@ -526,6 +519,13 @@ export const locations = {
     country: 'International Waters',
     kind: 'earth',
     coords: [21.85, -81.05],
+  },
+  'da-costa-home': {
+    name: 'Da Costa Home',
+    place: 'Ipanema, Rio de Janeiro',
+    country: 'Brazil',
+    kind: 'earth',
+    coords: [-22.985, -43.205],
   },
   'daily-bugle-headquarters': {
     name: 'Daily Bugle Building',
@@ -589,18 +589,11 @@ export const locations = {
     coords: [41.005, -73.885],
   },
   'eagle-plaza-ranch-and-sacred-caverns': {
-    name: 'Eagle Plaza Ranch & Sacred Caverns',
-    place: 'Dallas, Texas',
+    name: "Forge's Ranch",
+    place: 'West Texas',
     country: 'United States',
     kind: 'earth',
-    coords: [32.7767, -96.797],
-  },
-  'eagle-plaza-tactical-workshop': {
-    name: 'Eagle Plaza Tactical Workshop',
-    place: 'Dallas, Texas',
-    country: 'United States',
-    kind: 'earth',
-    coords: [32.7767, -96.797],
+    coords: [31, -103.9],
   },
   'earth-real-skyscraper-rooftop': {
     name: 'Marvel Comics Offices',
@@ -726,8 +719,8 @@ export const locations = {
     coords: [38.8, -77.5],
   },
   'galapagos-ozt-bastion-citadel': {
-    name: 'Galápagos OZT Bastion Citadel',
-    place: 'Galápagos Archipelago',
+    name: 'Isla Morada',
+    place: 'Galápagos Islands',
     country: 'Ecuador',
     kind: 'earth',
     coords: [-0.9538, -90.9656],
@@ -754,8 +747,8 @@ export const locations = {
     coords: [-4.6115, 55.4315],
   },
   'genosha-capital-and-council-plaza': {
-    name: 'Genosha Capital & Council Plaza',
-    place: 'Genosha City',
+    name: 'The Citadel',
+    place: 'Hammer Bay',
     country: 'Genosha',
     kind: 'earth',
     coords: [-4.6796, 55.492],
@@ -766,13 +759,6 @@ export const locations = {
     country: 'United States',
     kind: 'earth',
     coords: [40.55, -72.7],
-  },
-  'genosha-memorial-ruins': {
-    name: 'Genosha Memorial Ruins',
-    place: 'Genosha City',
-    country: 'Genosha',
-    kind: 'earth',
-    coords: [-4.6796, 55.492],
   },
   'geoffrey-hotel': {
     name: 'Geoffrey Hotel',
@@ -788,6 +774,13 @@ export const locations = {
     country: 'United States',
     kind: 'earth',
     coords: [40.8511, -73.9497],
+  },
+  'gilberti-house-harmony': {
+    name: 'Gilberti House',
+    place: 'Harmony, Pennsylvania',
+    country: 'United States',
+    kind: 'earth',
+    coords: [40.8017, -80.127],
   },
   'griffith-hotel': {
     name: 'Griffith Hotel',
@@ -1374,6 +1367,13 @@ export const locations = {
     kind: 'earth',
     coords: [40.7794, -73.9632],
   },
+  'mexico-city-ozt-facility': {
+    name: 'OZT Facility',
+    place: 'Mexico City',
+    country: 'Mexico',
+    kind: 'earth',
+    coords: [19.4, -99.18],
+  },
   'miami-coastline-and-shaw-yacht': {
     name: 'Caspartina',
     place: 'Off the coast of Miami, Florida',
@@ -1415,8 +1415,8 @@ export const locations = {
     coords: [29.5593, -95.09],
   },
   'mister-sinisters-secret-genetic-lab': {
-    name: "Mister Sinister's Secret Genetic Lab",
-    place: 'Nebraska Subterranean Vault',
+    name: "Mister Sinister's Lab",
+    place: 'Great Plains',
     country: 'United States',
     kind: 'earth',
     coords: [41.4925, -99.9018],
@@ -1436,8 +1436,7 @@ export const locations = {
     node: 'shiar-empire',
   },
   'mojoverse-digital-dimension': {
-    name: 'Mojoverse Digital Dimension',
-    place: 'Mojoverse Void',
+    name: "Mojo's Broadcast Servers",
     country: 'Mojoverse',
     kind: 'dimension',
     node: 'mojoverse',
@@ -1605,11 +1604,11 @@ export const locations = {
     coords: [43.081, -79.0683],
   },
   'nile-valley-and-giza-dunes': {
-    name: 'Nile Valley & Giza Dunes',
-    place: 'Giza / Nile Valley',
-    country: 'Ancient Egypt',
+    name: 'Ancient Egypt',
+    place: 'Nile Valley, near Memphis',
+    country: 'Egypt',
     kind: 'earth',
-    coords: [29.987, 31.213],
+    coords: [29.844, 31.255],
   },
   'normandy-invasion-beachhead': {
     name: 'Normandy Beach',
@@ -1625,9 +1624,9 @@ export const locations = {
     coords: [32.6, -64.4],
   },
   'north-magnetic-pole-ground-zero': {
-    name: 'North Magnetic Pole Ground Zero',
-    place: 'Arctic Magnetic Pole',
-    country: 'Arctic Ocean',
+    name: 'North Pole',
+    place: 'Arctic Ocean',
+    country: 'International waters',
     kind: 'earth',
     coords: [86, -160],
   },
@@ -1931,7 +1930,7 @@ export const locations = {
     coords: [33.793, -118.244],
   },
   'rookers-island': {
-    name: "Rooker's Island",
+    name: 'Rikers Island',
     place: 'East River, New York',
     country: 'United States',
     kind: 'earth',
@@ -1961,9 +1960,9 @@ export const locations = {
     coords: [55.74, 37.66],
   },
   'sahara-sentinel-sub-facility': {
-    name: 'Sahara Sentinel Sub-Facility',
+    name: 'Sahara Junkyard',
     place: 'Sahara Desert',
-    country: 'Niger',
+    country: 'Egypt',
     kind: 'earth',
     coords: [23.4162, 25.6628],
   },
@@ -2070,6 +2069,13 @@ export const locations = {
     country: 'United States',
     kind: 'earth',
     coords: [38.8887, -77.026],
+  },
+  'snowsnake-tower': {
+    name: 'Snowsnake Tower',
+    place: 'West Texas',
+    country: 'United States',
+    kind: 'earth',
+    coords: [31.05, -103.75],
   },
   'spaulding-chemical-plant': {
     name: 'Spaulding Chemical Plant',
@@ -2313,6 +2319,13 @@ export const locations = {
     kind: 'earth',
     coords: [46.2029, 6.1437],
   },
+  'tequila-mockingbird-bar': {
+    name: 'Tequila Mockingbird Bar',
+    place: 'Dallas, Texas',
+    country: 'United States',
+    kind: 'earth',
+    coords: [32.7843, -96.7837],
+  },
   'the-axis-of-time': {
     name: 'The Axis of Time',
     place: 'Extradimensional Nexus',
@@ -2473,6 +2486,13 @@ export const locations = {
     kind: 'earth',
     coords: [63.55, -67.9],
   },
+  'un-peace-legion-madripoor': {
+    name: 'UN Peace Legion',
+    place: 'Madripoor',
+    country: 'Madripoor',
+    kind: 'earth',
+    coords: [1.2, 103.95],
+  },
   'underground-mutant-fight-club': {
     name: 'Underground Fight Club',
     place: 'East Berlin',
@@ -2607,6 +2627,13 @@ export const locations = {
     country: 'United States',
     kind: 'earth',
     coords: [40.7164, -73.8414],
+  },
+  'westchester-memorial-hospital': {
+    name: 'Westchester Memorial',
+    place: 'White Plains, Westchester County, New York',
+    country: 'United States',
+    kind: 'earth',
+    coords: [41.0339, -73.7629],
   },
   'western-front-allied-trenches': {
     name: 'Western Front Trenches',
