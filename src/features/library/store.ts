@@ -1,6 +1,7 @@
 /** What the visitor keeps in this browser: saved events and read marks. The version picked for each character lives in features/characters/versions.ts. */
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
+import { archive } from '@/content';
 import { legacyEventIds } from './legacyEventIds';
 
 interface LibraryState {
@@ -30,6 +31,12 @@ export const useLibrary = create<LibraryState>()(
         const old = (persisted ?? {}) as { bookmarkedEventIds?: string[]; readEventIds?: string[] };
         const upgrade = (ids: string[] = []) => ids.map((id) => legacyEventIds[id]).filter(Boolean);
         return { saved: upgrade(old.bookmarkedEventIds), read: upgrade(old.readEventIds) } as LibraryState;
+      },
+      // An event joined into another keeps its marks: its old id leads to the event that absorbed it.
+      merge: (persisted, current) => {
+        const state = (persisted ?? {}) as Partial<LibraryState>;
+        const follow = (ids: string[] = []) => [...new Set(ids.map(archive.resolveEventId))];
+        return { ...current, saved: follow(state.saved), read: follow(state.read) };
       },
     },
   ),

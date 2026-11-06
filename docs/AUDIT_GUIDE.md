@@ -71,6 +71,7 @@ Un dato que no aparece en dos fuentes es una duda y va a la ficha. Si la memoria
 - **Las versiones oficiales de una película también cuentan.** Lo que solo pasa en una de ellas, como el Rogue Cut de *Days of Future Past*, entra al texto diciendo de qué versión es. Las muertes y los lugares siguen a la versión de cines.
 - Un epílogo que cae en otro año es otro evento. Si otra producción lo muestra, usá `alsoIn`.
 - **Una producción menor se condensa, sin perder información.** Si pasa todo en pocas semanas, juntá episodios en un mismo evento, con un párrafo por episodio. *Spider-Noir* tiene cuatro eventos en 1933 para sus ocho episodios, y conserva lugares, personajes y muertes.
+- **Las series de episodios sueltos, como las animadas de los 90, van con un evento por historia que cambia algo.** Queda sola la historia que deja algo distinto: una muerte que importa, un secreto de familia, un casamiento, alguien que aparece y vuelve. También la que le importa al multiverso: viajes en el tiempo, otras realidades, amenazas cósmicas. Los episodios de "villano de la semana" de una temporada van todos en un evento, con una oración cada uno. Lo que pasa en otro año o en otra rama sigue aparte. Los personajes, lugares, muertes y objetos no se pierden: los que el texto ya no nombra pasan a `cast` y `objects`. Una serie que cuenta una sola historia, como *X-Men '97*, conserva un evento por arco.
 
 ### Fechas
 
@@ -112,7 +113,7 @@ Un dato que no aparece en dos fuentes es una duda y va a la ficha. Si la memoria
 
 ### Texto
 
-- De 2 a 4 oraciones sobrias en inglés, por episodio si el evento junta varios. Solo lo que pasa, sin adjetivos épicos ni interpretación.
+- De 2 a 4 oraciones sobrias en inglés, por episodio si el evento junta varios; en una serie de episodios sueltos, por historia, y una por episodio de relleno. Solo lo que pasa, sin adjetivos épicos ni interpretación.
 - **Los guiños se quedan.** Los comentarios personales de quien mantiene el proyecto, como *(Dottie I love you)*, se conservan al reescribir un texto, aunque no sean sobrios.
 - Títulos en presente, hasta 70 caracteres, sin punto final.
 - En las bios, las fechas antes de Cristo van como `BC`, igual que en la app.
@@ -122,12 +123,13 @@ Un dato que no aparece en dos fuentes es una duda y va a la ficha. Si la memoria
 - Si se confirma que no existe y nada lo usa, se borra. `npm run content -- unused` lo muestra.
 - Si existe pero está mal, **el `id` se queda igual y se corrige el resto**. `memnon-vibranium-spear` conserva su `id` aunque no haya lanza, y `hatut-zeraze` se muestra como *War Dogs*.
 - Un evento que quedó en la producción equivocada se mueve solo si quien mantiene el proyecto lo aprueba: su `id` completo cambia, y quien lo tenía guardado lo pierde. *Bloodlines* pasó así de la T5 a la T4 de *X-Men: The Animated Series*.
+- Si unís eventos, el que queda conserva su `id`, y el `id` completo de cada uno que desaparece va en `src/content/mergedEvents.ts`: sus guardados, sus marcas de leído y sus links pasan al evento nuevo.
 
 ## 4. Checklist final
 
 - [ ] Cada dato de la ficha salió de una fuente, y lo aprobó quien mantiene el proyecto.
 - [ ] Cada evento tiene fecha, lugares en orden, sus personajes si aparece alguno, sus objetos con `at`, y `segment` si es una serie.
-- [ ] Ningún `id` existente cambió.
+- [ ] Ningún `id` existente cambió, y los de eventos unidos están en `src/content/mergedEvents.ts`.
 - [ ] Lo inventado se borró, y `npm run content -- unused` no muestra nada nuevo.
 - [ ] Miraste en la app el timeline, las fichas, las imágenes, el mapa y un recorrido, en PC y en celu.
 - [ ] `npm run build` y `npm run lint` terminan sin errores.

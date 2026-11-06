@@ -12,7 +12,7 @@ Está escrita para que cualquier agente la siga sin conocer el proyecto. Seguí 
    ```bash
    npm run content -- find "steve"
    ```
-3. **Nunca cambies un `id` que ya existe.** Si un nombre está mal, corregí el `name`, no el `id`.
+3. **Nunca cambies un `id` que ya existe.** Si un nombre está mal, corregí el `name`, no el `id`. Si unís dos eventos, el que queda conserva su `id`, y el del otro va en `src/content/mergedEvents.ts`.
 4. **No inventes datos de canon.** Si dudás de una fecha, un lugar o quién muere, preguntá.
 5. **Al final, siempre:** `npm run validate` y después `npm run build`. Si hay errores, arreglalos (abajo dice cómo).
 

@@ -39,6 +39,7 @@ Si una fecha o un dato de canon es dudoso, **preguntá a quien mantiene el proye
 src/content/            ← DATOS (lo único que se edita para agregar contenido)
   catalog/              universos, series, producciones, personajes, elenco e imágenes (generados), facciones, lugares, cosmos, gemas, objetos
   events/<produccion>.ts  un archivo por película o temporada
+  mergedEvents.ts       ids de eventos unidos a otro: los guardados y los links los siguen
 src/domain/             lógica pura sin React: esquema, fechas, sintaxis del texto, índices, filtros, búsqueda
 src/features/           pantallas y paneles (timeline, archive, library, search, objects, map…)
   map/earth/            globo con MapLibre GL
@@ -63,7 +64,7 @@ docs/ROADMAP.md         lo que falta
 - **Solo lo que se ve en pantalla:** películas y series, con sus flashbacks. Los cómics son otro multiverso, aunque sean oficiales.
 - **Para agregar o modificar contenido, seguí `docs/CONTENT_GUIDE.md` paso a paso.** Para auditar una producción, `docs/AUDIT_GUIDE.md`.
 - No leas archivos de datos enteros: buscá con `npm run content -- find` o con la búsqueda del editor.
-- **Nunca cambies el `id` de un evento, personaje, lugar o producción que ya existe.** Romperías los guardados y los links compartidos.
+- **Nunca cambies el `id` de un evento, personaje, lugar o producción que ya existe.** Romperías los guardados y los links compartidos. Si unís eventos, el que queda conserva su `id`, y el de cada evento que desaparece va en `src/content/mergedEvents.ts`, que lleva sus guardados y sus links al evento nuevo.
 - No edites `src/features/library/legacyEventIds.ts`: es el mapa de migración de los guardados de v2.
 - Los colores de personajes, universos y gemas vienen de los datos; la legibilidad del texto se calcula sola (`src/domain/colors.ts`). No agregues CSS por personaje.
 - Las producciones no tienen color propio: toman el de su productora (`studios`, en `catalog/productions.ts`), agrupadas como en la lista de Aaron Perris.

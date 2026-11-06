@@ -1,4 +1,5 @@
 /** Builds the in-memory archive: resolved events, date groups and reverse indexes. Pure, no React. */
+import { mergedEvents } from '@/content/mergedEvents';
 import type { EventFile } from './define';
 import type { AuditStatus, DeathRef, EventDateInput, EventInput } from './schema';
 import {
@@ -57,6 +58,8 @@ export interface Archive {
   byLocation: Map<string, ArchiveEvent[]>;
   byStone: Map<string, ArchiveEvent[]>;
   byObject: Map<string, ArchiveEvent[]>;
+  /** The id an event has now: an event joined into another leads to it. Unknown ids come back unchanged. */
+  resolveEventId: (id: string) => string;
   /** Broken references found while building. The validator turns them into errors; the app just skips them. */
   problems: string[];
 }
@@ -233,5 +236,16 @@ export function buildArchive(files: readonly EventFile[]): Archive {
     else groups.push({ key, label: event.dateLabel, year: event.date.year, period: event.period, events: [event] });
   }
 
-  return { events, groups, eventById, byCharacter, byProduction, byLocation, byStone, byObject, problems };
+  // Joined events keep their saves and links: their old ids lead to the event that absorbed them.
+  const resolveEventId = (id: string) => {
+    let current = id;
+    for (let hops = 0; hops < 10 && !eventById.has(current) && mergedEvents[current]; hops++) current = mergedEvents[current];
+    return current;
+  };
+  for (const [from, to] of Object.entries(mergedEvents)) {
+    if (eventById.has(from)) problems.push(`mergedEvents: "${from}" is still an event; take it out of src/content/mergedEvents.ts`);
+    else if (!eventById.has(resolveEventId(to))) problems.push(`mergedEvents: "${from}" leads to "${to}", which is not an event`);
+  }
+
+  return { events, groups, eventById, byCharacter, byProduction, byLocation, byStone, byObject, resolveEventId, problems };
 }

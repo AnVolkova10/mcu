@@ -44,7 +44,10 @@ export function TimelinePage() {
   const total = sections.reduce((n, s) => n + s.events.length, 0);
   const railGroups = useMemo(() => sections.map((s) => ({ group: s.group, count: s.events.length })), [sections]);
 
-  useFocusEvent(route.query.get('event'), sections.some((s) => s.events.some((e) => e.id === route.query.get('event'))));
+  // A link to an event that was joined into another opens the one that absorbed it.
+  const requested = route.query.get('event');
+  const focusId = requested && archive.resolveEventId(requested);
+  useFocusEvent(focusId, sections.some((s) => s.events.some((e) => e.id === focusId)));
   useFitOnResize(fitHero);
 
   return (
