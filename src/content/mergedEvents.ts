@@ -91,4 +91,9 @@ export const mergedEvents: Record<string, string> = {
   'x-men-tas-s5.jubilee-cave-in-fairytale': 'x-men-tas-s5.storm-arkon-polemachus',
   'x-men-tas-s5.justine-cocteau-grave-paris': 'x-men-tas-s5.storm-arkon-polemachus',
   'x-men-tas-s5.rogue-shields-cannonball': 'x-men-tas-s5.storm-arkon-polemachus',
+  'x-men-97-s1.xavier-rite-of-mdashaa': 'x-men-97-s1.gambit-sacrifice-genosha',
+  'x-men-97-s1.magneto-global-emp': 'x-men-97-s1.rogue-hunts-bastion',
+  'x-men-97-s1.young-en-sabah-nur-rescue': 'x-men-97-s2.en-sabah-nur-becomes-apocalypse',
+  'x-men-97-s1.cyclops-jean-mother-askani': 'x-men-97-s2.forge-finds-xmen-3960',
+  'x-men-97-s1.bishop-finds-forge': 'x-men-97-s2.cable-founds-x-force',
 };

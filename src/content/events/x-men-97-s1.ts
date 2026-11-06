@@ -3,17 +3,6 @@ import { defineEvents } from '@/domain/define';
 
 export default defineEvents('x-men-97-s1', [
   {
-    id: 'young-en-sabah-nur-rescue',
-    date: { year: -3000, order: 10 },
-    segment: 'E10',
-    title: 'Lost in ancient Egypt, X-Men meet the young En Sabah Nur',
-    text: [
-      "Pulled through time, [Rogue](rogue-anna-marie), [Nightcrawler](nightcrawler-kurt-wagner) and [Beast](hank-mccoy) wake far from home, in ancient Egypt. They ask the young man they have just rescued for his name, and he answers: [En Sabah Nur](en-sabah-nur-apocalypse).",
-    ],
-    cast: ['charles-xavier', 'erik-lehnsherr'],
-    locations: ['nile-valley-and-giza-dunes'],
-  },
-  {
     id: 'magneto-un-trial',
     date: { year: 1997, order: 60 },
     segment: 'E1–E2',
@@ -24,11 +13,7 @@ export default defineEvents('x-men-97-s1', [
     ],
     cast: ['logan-wolverine', 'hank-mccoy', 'jubilee-jubilation-lee', 'gambit-remy-lebeau', 'morph-kevin-sydney', 'bishop-lucas-bishop', 'callisto', 'trish-tilby'],
     locations: ['xaviers-school-for-gifted-youngsters', 'rookers-island', 'sahara-sentinel-sub-facility', 'coney-island', 'morlock-subterranean-tunnels-and-nyc-sewers', 'united-nations-headquarters', 'westchester-memorial-hospital'],
-    objects: [
-      { id: 'cerebro', at: ['xaviers-school-for-gifted-youngsters'] },
-      { id: 'sentinels', at: ['sahara-sentinel-sub-facility'] },
-      { id: 'magneto-helmet', at: ['xaviers-school-for-gifted-youngsters'] },
-    ],
+    objects: [{ id: 'cerebro', at: ['xaviers-school-for-gifted-youngsters'] }, { id: 'sentinels', at: ['sahara-sentinel-sub-facility'] }, { id: 'magneto-helmet', at: ['xaviers-school-for-gifted-youngsters'] }],
   },
   {
     id: 'madelyne-goblin-queen',
@@ -55,32 +40,22 @@ export default defineEvents('x-men-97-s1', [
   {
     id: 'gambit-sacrifice-genosha',
     date: { year: 1997, order: 80 },
-    segment: 'E5',
+    segment: 'E5–E6',
     title: 'A giant Master Mold destroys Genosha, and Gambit dies stopping it',
     text: [
-      "On the day the United Nations admits Genosha, its council, with [Madelyne](madelyne-pryor-goblin-queen), [Emma Frost](emma-frost), [Moira MacTaggert](moira-mactaggert) and [Nightcrawler](nightcrawler-kurt-wagner), names [Magneto](erik-lehnsherr) chancellor; he asks [Rogue](rogue-anna-marie) to govern with him, and she and [Gambit](gambit-remy-lebeau) agree to stay friends. At the mansion, where [Trish Tilby](trish-tilby) learns that [Scott](cyclops-scott-summers) gave up his son, [Jean Grey](jean-grey) kisses [Logan](logan-wolverine), who sends her back to Scott, and finds Scott in a psychic link with Madelyne. At the gala [Cable](cable-nathan-summers) appears from the future to warn them and is pulled back, and a giant [Master Mold](master-mold) and its [Sentinels](object:sentinels) destroy Genosha, killing thousands, Madelyne, Moira and the Morlock boy Leech among them. Gambit charges the giant with his power and dies destroying it.",
+      'On the day the United Nations admits Genosha, its council, with [Madelyne](madelyne-pryor-goblin-queen), [Emma Frost](emma-frost), [Moira MacTaggert](moira-mactaggert) and [Nightcrawler](nightcrawler-kurt-wagner), names [Magneto](erik-lehnsherr) chancellor; he asks [Rogue](rogue-anna-marie) to govern with him, and she and [Gambit](gambit-remy-lebeau) agree to stay friends. At the mansion, where [Trish Tilby](trish-tilby) learns that [Scott](cyclops-scott-summers) gave up his son, [Jean Grey](jean-grey) kisses [Logan](logan-wolverine), who sends her back to Scott, and finds Scott in a psychic link with Madelyne. At the gala [Cable](cable-nathan-summers) appears from the future to warn them and is pulled back, and a giant [Master Mold](master-mold) and its [Sentinels](object:sentinels) destroy Genosha, killing thousands, Madelyne, Moira, the Morlock boy Leech and Illyana, the sister of [Colossus](colossus-piotr-rasputin), among them. Gambit charges the giant with his power and dies destroying it.',
+      "Far away, a year after the Shi'ar healed him, [Charles Xavier](charles-xavier) is to marry [Lilandra](lilandra-neramani), who demands the Rite of M'Dashaa: he must purge every memory of Earth. At the rite he pulls everyone into the astral plane, where he sees Genosha destroyed and Gambit dead, and he decides to return to his X-Men.",
     ],
-    cast: ['hank-mccoy', 'callisto', 'sean-cassidy', 'sebastian-shaw', 'valerie-cooper', 'colossus-piotr-rasputin'],
-    locations: ['xaviers-school-for-gifted-youngsters', 'genosha-capital-and-council-plaza', 'astral-plane'],
+    cast: ['hank-mccoy', 'callisto', 'sean-cassidy', 'sebastian-shaw', 'valerie-cooper', 'deathbird', 'ronan', 'gladiator-kallark'],
+    locations: ['xaviers-school-for-gifted-youngsters', 'genosha-capital-and-council-plaza', 'astral-plane', 'shiar-imperial-crown-world-chandilar'],
     objects: [{ id: 'sentinels', at: ['genosha-capital-and-council-plaza'] }],
     deaths: ['gambit-remy-lebeau', 'madelyne-pryor-goblin-queen', 'moira-mactaggert', { name: 'Leech' }, { name: 'Illyana' }],
-  },
-  {
-    id: 'xavier-rite-of-mdashaa',
-    date: { year: 1997, order: 81 },
-    segment: 'E6',
-    title: "Xavier sees Genosha fall and leaves the Shi'ar for Earth",
-    text: [
-      "A year after the Shi'ar healed him, [Charles Xavier](charles-xavier) is to marry [Lilandra](lilandra-neramani), and as [Deathbird](deathbird) and the Imperial Guard beat the Kree of [Ronan](ronan), she demands the Rite of M'Dashaa: Xavier must purge every memory of Earth. At the rite he pulls everyone into the astral plane, where he sees Genosha destroyed and Gambit dead, and he decides to return to his X-Men.",
-    ],
-    cast: ['gladiator-kallark'],
-    locations: ['shiar-imperial-crown-world-chandilar', 'astral-plane'],
   },
   {
     id: 'storm-reclaims-powers',
     date: { year: 1997, order: 82 },
     segment: 'E3–E6',
-    title: 'Storm wins back her powers from the Adversary with Forge\'s help',
+    title: "Storm wins back her powers from the Adversary with Forge's help",
     text: [
       "In a Dallas bar the powerless [Storm](storm-ororo-munroe) meets [Forge](forge), an old friend of Xavier's, who takes her to his ranch to give her back her powers. His machine fails, and he admits that the Defense Department built devices to neutralize mutants from his early designs; Storm leaves, and an owl that has circled them shows itself as [the Adversary](the-adversary), who poisons Forge.",
       "Forge drives the demon off with his mother's spell, and they ride to Snowsnake Tower for a cactus that grows in its caves, where Storm faces the Adversary and her own fear, takes back her powers and heals Forge. Then they hear that the nations will not take back the mutants displaced from Genosha.",
@@ -90,52 +65,16 @@ export default defineEvents('x-men-97-s1', [
   {
     id: 'rogue-hunts-bastion',
     date: { year: 1997, order: 90 },
-    segment: 'E7',
-    title: 'Rogue hunts the killers of Genosha, and Bastion comes out of hiding',
+    segment: 'E7–E10',
+    title: 'The X-Men bring down Bastion as Magneto blacks out the Earth',
     text: [
-      "After [Gambit](gambit-remy-lebeau)'s funeral in New Orleans, [Rogue](rogue-anna-marie) breaks into the facility built to hold the Hulk, where [General Ross](thaddeus-ross) and [Captain America](steve-rogers) guard Trask, and tracks [Henry Gyrich](henry-gyrich) to Mexico City; while Scott and Jean search the ruins of Genosha and find [Emma Frost](emma-frost) alive, [Bastion](bastion-sebastion-gilberti) kills Gyrich. [Roberto](sunspot-roberto-da-costa) tells his mother, [Nina da Costa](nina-da-costa), that he is a mutant, and she asks him to keep it quiet. [Bolivar Trask](bolivar-trask) leads the X-Men to a lab of Operation: Zero Tolerance at the UN Peace Legion in Madripoor and turns out to be a Prime Sentinel, until [Cable](cable-nathan-summers), Scott's son grown up, stops him. Bastion, with [Mister Sinister](mister-sinister-nathaniel-essex) working for him, holds [Magneto](erik-lehnsherr) prisoner as the Shi'ar announce that Xavier is alive.",
+      "After [Gambit](gambit-remy-lebeau)'s funeral in New Orleans, [Rogue](rogue-anna-marie) hunts the killers of Genosha and tracks [Henry Gyrich](henry-gyrich) to Mexico City, where [Bastion](bastion-sebastion-gilberti) kills him, while Scott and Jean find [Emma Frost](emma-frost) alive in the ruins. [Bolivar Trask](bolivar-trask) turns out to be one of Bastion's Prime Sentinels, until [Cable](cable-nathan-summers), Scott's son grown up, stops him, and Bastion, with [Mister Sinister](mister-sinister-nathaniel-essex) working for him, holds [Magneto](erik-lehnsherr) prisoner as the Shi'ar announce that Xavier is alive.",
+      "Bastion's Operation: Zero Tolerance, which counts [Doctor Doom](victor-von-doom) among its members, used Genosha to win backing for Prime Sentinels made with Sinister's techno-organic virus. The Prime Sentinels wake, [Trish Tilby](trish-tilby) among them, and burn down the mansion, [Nina da Costa](nina-da-costa) hands her son [Roberto](sunspot-roberto-da-costa) to them, and [Val Cooper](valerie-cooper) frees Magneto, who blacks out the Earth and shuts them down as [Charles Xavier](charles-xavier) returns.",
+      "Magneto offers the mutants a new Genosha on Asteroid M and tears the [adamantium](object:adamantium) out of [Wolverine](logan-wolverine) when he stabs him, until Xavier makes him give the Earth its power back. On Isla Morada, where [Storm](storm-ororo-munroe), her powers back, leads a team to Bastion's base, [Jean Grey](jean-grey), calling on the Phoenix, burns away the mutant DNA Sinister stole; Bastion tries to drop Asteroid M on the East Coast, President [Kelly](senator-robert-kelly), with [T'Chaka](tchaka) of Wakanda on his call, fires missiles at it, and Bastion refuses Rogue's hand as they hit. Xavier and Magneto push the asteroid into space, where it explodes, as [Peter Parker](spider-man), [Mary Jane](mary-jane-watson) and [Flash Thompson](flash-thompson) watch from New York.",
     ],
-    cast: ['cyclops-scott-summers', 'jean-grey', 'hank-mccoy', 'nightcrawler-kurt-wagner', 'jubilee-jubilation-lee', 'logan-wolverine', 'amelia-voght', 'trish-tilby', 'senator-robert-kelly'],
-    locations: ['new-orleans-bayou', 'gamma-base-and-desert-badlands', 'genosha-capital-and-council-plaza', 'mexico-city-ozt-facility', 'da-costa-home', 'xaviers-school-for-gifted-youngsters', 'un-peace-legion-madripoor', 'galapagos-ozt-bastion-citadel'],
+    cast: ['thaddeus-ross', 'steve-rogers', 'cyclops-scott-summers', 'hank-mccoy', 'nightcrawler-kurt-wagner', 'jubilee-jubilation-lee', 'amelia-voght', 'forge', 'morph-kevin-sydney'],
+    locations: ['new-orleans-bayou', 'gamma-base-and-desert-badlands', 'genosha-capital-and-council-plaza', 'mexico-city-ozt-facility', 'da-costa-home', 'xaviers-school-for-gifted-youngsters', 'un-peace-legion-madripoor', 'galapagos-ozt-bastion-citadel', 'gilberti-house-harmony', 'north-magnetic-pole-ground-zero', 'muir-island-mutant-research-facility', 'asteroid-m', 'astral-plane'],
+    objects: [{ id: 'adamantium', at: ['asteroid-m'] }, { id: 'cerebro', at: ['xaviers-school-for-gifted-youngsters'] }, { id: 'sentinels', at: ['galapagos-ozt-bastion-citadel'] }, { id: 'magneto-helmet', at: ['asteroid-m'] }],
     deaths: ['henry-gyrich'],
-  },
-  {
-    id: 'magneto-global-emp',
-    date: { year: 1997, order: 100 },
-    segment: 'E8–E10',
-    title: 'Magneto blacks out the Earth, and the X-Men bring down Bastion',
-    text: [
-      "[Cable](cable-nathan-summers) tells the X-Men that [Bastion](bastion-sebastion-gilberti), whose Operation: Zero Tolerance counts [Doctor Doom](victor-von-doom) among its members, used Genosha to win backing for Prime Sentinels made with Sinister's techno-organic virus. In Harmony, Pennsylvania, [Jean Grey](jean-grey) reads Bastion's childhood home: a boy who could hear machines, whose father was infected by Sentinel technology from the future. The Prime Sentinels wake, [Trish Tilby](trish-tilby) among them, and burn down the mansion, [Nina da Costa](nina-da-costa) hands Roberto to them, and [Val Cooper](valerie-cooper) frees [Magneto](erik-lehnsherr), who blacks out the Earth and shuts them down as [Charles Xavier](charles-xavier) returns.",
-      "With the world's power failing, Xavier sends one team after Magneto and another, under [Storm](storm-ororo-munroe), her powers back, to Bastion's base on Isla Morada, with a scrambler that [Forge](forge) and [Beast](hank-mccoy) tune on Muir Island. Magneto offers the mutants a new Genosha on Asteroid M, and [Rogue](rogue-anna-marie) and [Roberto](sunspot-roberto-da-costa) go with him; when [Wolverine](logan-wolverine) stabs him, Magneto tears the [adamantium](object:adamantium) out of his skeleton.",
-      "Xavier makes Magneto give the Earth its power back, and on Isla Morada Jean, calling on the Phoenix, burns away the mutant DNA [Mister Sinister](mister-sinister-nathaniel-essex) stole, while the scrambler cuts Bastion off from the Prime Sentinels. Bastion goes to bring Asteroid M down on the East Coast, President [Kelly](senator-robert-kelly), with [T'Chaka](tchaka) of Wakanda among the leaders on his call, fires missiles at it, and Bastion refuses Rogue's hand as they hit; Xavier and Magneto push the asteroid into space, where it explodes. In New York [Peter Parker](spider-man), [Mary Jane](mary-jane-watson) and [Flash Thompson](flash-thompson) watch it.",
-    ],
-    cast: ['cyclops-scott-summers', 'nightcrawler-kurt-wagner', 'jubilee-jubilation-lee', 'morph-kevin-sydney'],
-    locations: ['xaviers-school-for-gifted-youngsters', 'gilberti-house-harmony', 'da-costa-home', 'north-magnetic-pole-ground-zero', 'muir-island-mutant-research-facility', 'galapagos-ozt-bastion-citadel', 'asteroid-m', 'astral-plane'],
-    objects: [
-      { id: 'cerebro', at: ['xaviers-school-for-gifted-youngsters'] },
-      { id: 'sentinels', at: ['galapagos-ozt-bastion-citadel'] },
-      { id: 'adamantium', at: ['asteroid-m'] },
-      { id: 'magneto-helmet', at: ['asteroid-m'] },
-    ],
-  },
-  {
-    id: 'bishop-finds-forge',
-    date: { year: 1998, order: 10, approx: true },
-    segment: 'E10',
-    title: 'Six months after E-Day, Bishop tells Forge the X-Men are lost in time',
-    text: [
-      "Six months after E-Day, with Graydon Creed gaining on President Kelly in the polls, [Bishop](bishop-lucas-bishop) finds [Forge](forge), who has searched for months for the X-Men believed dead with Asteroid M, and tells him that someone pulled them through time and they must rescue them. In the ruins of Genosha, [Apocalypse](en-sabah-nur-apocalypse) grieves over so much death, holding one of Gambit's cards.",
-    ],
-    locations: ['eagle-plaza-ranch-and-sacred-caverns', 'genosha-capital-and-council-plaza'],
-  },
-  {
-    id: 'cyclops-jean-mother-askani',
-    date: { year: 3960, order: 10 },
-    segment: 'E10',
-    title: 'Cyclops and Jean meet Mother Askani and young Nathan',
-    text: [
-      "Pulled through time, [Scott Summers](cyclops-scott-summers) and [Jean Grey](jean-grey) wake in 3960, a long way from a place called Crestcoast. [Mother Askani](mother-askani-rachel-summers), leader of Clan Askani, greets them and calls over a boy named [Nathan](young-nathan-summers).",
-    ],
-    locations: ['clan-askani-sanctuary-citadel'],
   },
 ]);
