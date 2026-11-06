@@ -18,6 +18,7 @@ import { ROOT, tmdb, TV_SPECIALS } from './tmdb';
 /** Other names a character is credited under. */
 const CREDITED_AS: Record<string, readonly string[]> = {
   'adrian-toomes': ['Arthur Avis'],
+  'agent-zero': ['Maverick'],
   'alethea-faber-noir': ['Dr. Faber'],
   'alfred-morris-noir': ['Mayor Morris'],
   'alisa-silvermane': ['Alisa Silver'],
@@ -57,6 +58,7 @@ const CREDITED_AS: Record<string, readonly string[]> = {
   'war-machine': ['Rhodey'],
   'william-stryker': ['Stryker', 'Bill Stryker'],
   'william-stryker-sr': ['William Stryker'],
+  'young-nathan-summers': ['Nathan'],
 };
 
 /** Credits that name the character but are not them: child versions, doubles, other people under the same title. */

@@ -136,6 +136,7 @@ export const factions = {
   watchers: { name: 'Watchers' },
   'weapon-x': { name: 'Weapon X' },
   'x-factor': { name: 'X-Factor' },
+  'x-force': { name: 'X-Force' },
   'x-men': { name: 'X-Men' },
   'zero-matter': { name: 'Zero Matter' },
 } as const satisfies Record<string, FactionInput>;

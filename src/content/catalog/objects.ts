@@ -49,6 +49,11 @@ export const objects = {
     kind: 'technology',
     description: "Robots designed by Bolivar Trask to hunt mutants. In the Fox films, Magneto laces the first ones with steel and turns them on the White House in 1973; in the future of 2023, built from Mystique's DNA, they adapt to any mutant power. In the animated series, Trask builds them for Henry Gyrich, Master Mold makes them on its own, and by 2055 they rule over mutants and humans.",
   },
+  ship: {
+    name: 'Ship',
+    kind: 'technology',
+    description: 'Living starship of beings from the stars, buried in the Egyptian desert as a lost temple. In the animated series, around 3000 BC, it gives En Sabah Nur the power that makes him Apocalypse. In 3960 it bonds with the young Nathan Summers and sends the X-Men home, and in 1998 Rogue wakes it again to save Gambit.',
+  },
   'spider-suit': {
     name: 'Spider Suit',
     kind: 'weapon',

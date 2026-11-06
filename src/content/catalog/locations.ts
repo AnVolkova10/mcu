@@ -790,6 +790,13 @@ export const locations = {
     coords: [40.738, -73.985],
     approximate: true,
   },
+  gstaad: {
+    name: 'Gstaad',
+    place: 'Bernese Oberland',
+    country: 'Switzerland',
+    kind: 'earth',
+    coords: [46.4751, 7.2862],
+  },
   'guthrie-farm': {
     name: 'Guthrie Farm',
     place: 'Cumberland County, Kentucky',
@@ -1829,6 +1836,13 @@ export const locations = {
     kind: 'earth',
     coords: [40.76, -73.9799],
   },
+  'rama-tut-capital': {
+    name: "Rama-Tut's Capital",
+    place: 'Abydos',
+    country: 'Egypt',
+    kind: 'earth',
+    coords: [26.185, 31.919],
+  },
   'rambeau-residence-and-louisiana-bayou': {
     name: 'Rambeau Residence & Louisiana Bayou',
     place: 'New Orleans, Louisiana',
@@ -1907,6 +1921,13 @@ export const locations = {
     country: 'United States',
     kind: 'earth',
     coords: [40.718, -73.9268],
+  },
+  'rio-de-janeiro': {
+    name: 'Rio de Janeiro',
+    place: 'Centro',
+    country: 'Brazil',
+    kind: 'earth',
+    coords: [-22.9109, -43.1757],
   },
   'rip-van-winkle-coffee-house': {
     name: 'Rip Van Winkle Coffee House',
@@ -2021,6 +2042,13 @@ export const locations = {
     country: 'United States',
     kind: 'earth',
     coords: [40.7566, -73.9862],
+  },
+  'ships-temple': {
+    name: "Ship's Temple",
+    place: 'Western Desert',
+    country: 'Egypt',
+    kind: 'earth',
+    coords: [28.9, 30.3],
   },
   'siberian-cryogenic-bunker-and-icbm-silo': {
     name: 'Kumudski Valley',
@@ -2613,6 +2641,13 @@ export const locations = {
     country: 'Scotland',
     kind: 'earth',
     coords: [55.952, -3.189],
+  },
+  'weapon-x-arctic-lab': {
+    name: 'Weapon X Arctic Lab',
+    place: 'Devon Island, Nunavut',
+    country: 'Canada',
+    kind: 'earth',
+    coords: [75.38, -89.7],
   },
   'weapon-x-facility-alberta': {
     name: 'Weapon X Facility',

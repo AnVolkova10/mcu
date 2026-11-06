@@ -39,7 +39,7 @@ export const characters = {
     origin: 'United States',
     bio: "Team X marksman, the fastest gun on William Stryker's team and the one who stays loyal to him. Logan kills him in 1979, after Zero murders the couple who took him in.",
     variants: {
-      'earth-92131': 'In the animated series he is Maverick, one of the four subjects of Weapon X whose memories the program rewrote; believed dead, he meets Logan again at the ruined facility.',
+      'earth-92131': "In the animated series he is Maverick, one of the four subjects of Weapon X whose memories the program rewrote; believed dead, he meets Logan again at the ruined facility. In 1998 he joins Logan's old Team X to kill Dr. Cornelius at a Weapon X lab in the Arctic, where Logan, infected by the Brood, kills him.",
     },
   },
   akeya: {
@@ -77,7 +77,7 @@ export const characters = {
     factions: ['x-men', 'division-x', 'mutants'],
     bio: 'Mutant who fires destructive energy rings from his chest and cannot control them, so he prefers solitary confinement until Hank McCoy builds him a unit to aim them.',
     variants: {
-      'earth-92131': "Havok, a member of X-Factor, the government's team of mutants, and Lorna Dane's partner.",
+      'earth-92131': "Havok, a member of X-Factor, the government's team of mutants, and Lorna Dane's partner. In 1998 X-Factor, under Val Cooper, hunts runaway young mutants and the fugitives of X-Force.",
     },
   },
   'alfred-morris-noir': {
@@ -187,11 +187,11 @@ export const characters = {
     alias: 'Archangel',
     color: '#64748b',
     role: 'villain',
-    status: 'deceased',
-    factions: ['mutants'],
+    status: 'variable',
+    factions: ['mutants', 'x-force'],
     bio: 'Mutant aerial combatant originally gifted with feathered wings, bio-mechanically enhanced by Apocalypse with impenetrable metallic razor wings that fire lethal razor-sharp steel flechettes.',
     variants: {
-      'earth-92131': "Turned into Death by Apocalypse, he spends his fortune hunting him, wrecks the X-Men's trap in his rage and refuses to rejoin them.",
+      'earth-92131': "Turned into Death by Apocalypse, he spends his fortune hunting him, wrecks the X-Men's trap in his rage and refuses to rejoin them. In 1998 he fights in Cable's X-Force and kills War, one of Apocalypse's Horsemen.",
     },
   },
   arkon: {
@@ -383,7 +383,7 @@ export const characters = {
     origin: 'Stalingrad, Russia',
     bio: 'Master spy and founding Avenger who sacrificed herself on Vormir for the Soul Stone.',
     variants: {
-      'earth-92131': "In the animated series she is seen fighting Magneto's rebels in the erased world where Charles Xavier died in 1959.",
+      'earth-92131': "In the animated series she is seen fighting Magneto's rebels in the erased world where Charles Xavier died in 1959. In 1998 she hands Logan a Weapon X file when he meets Captain America again.",
     },
   },
   blacklash: {
@@ -467,11 +467,11 @@ export const characters = {
     color: '#22d3ee',
     role: 'anti-hero',
     status: 'alive',
-    factions: ['mutants'],
+    factions: ['mutants', 'x-force'],
     origin: 'Far Future',
     bio: 'Time-traveling cybernetic mutant soldier from the 40th century armed with futuristic plasma weaponry and telekinetic shielding, waging a temporal war against Apocalypse.',
     variants: {
-      'earth-92131': "In the animated series he is Nathan, the son of Scott Summers and Madelyne Pryor, who grew up in the future and fights Apocalypse in 3999. In 1997 he tries again and again to stop the attack on Genosha, joins the X-Men against Bastion and breaks free of Mister Sinister's control.",
+      'earth-92131': "In the animated series he is Nathan, the son of Scott Summers and Madelyne Pryor, who grew up in the future and fights Apocalypse in 3999. In 1997 he tries again and again to stop the attack on Genosha, joins the X-Men against Bastion and breaks free of Mister Sinister's control. In 1998 he founds X-Force against Apocalypse's Horsemen, shoots Gambit to kill Apocalypse inside him, and keeps the crystal where Rogue seals Apocalypse's mind.",
     },
   },
   caliban: {
@@ -618,6 +618,9 @@ export const characters = {
     factions: ['x-men', 'mutants'],
     origin: 'Russia',
     bio: 'Heroic Russian mutant who can willingly convert his entire epidermis and muscular tissue into impervious organic steel, granting him godlike brute strength and near-impenetrable durability.',
+    variants: {
+      'earth-92131': "In the animated series he helps the X-Men stop the Juggernaut and Omega Red, and twice turns down a place on the team to stay with his family. His sister Illyana dies when Genosha falls in 1997; in 1998 he presides over the Acolytes' trial of Graydon Creed in the Savage Land and then moves to the X-Men's school.",
+    },
   },
   'corsair-christopher-summers': {
     name: 'Christopher Summers',
@@ -705,6 +708,14 @@ export const characters = {
     factions: ['cloak-and-dagger', 'marvel-knights'],
     origin: 'New Orleans, Louisiana',
     bio: 'Hero capable of generating concentrated hard-light daggers and purging darkness from human souls.',
+  },
+  danger: {
+    name: 'Danger',
+    color: '#fb923c',
+    role: 'villain',
+    status: 'presumably-dead',
+    factions: [],
+    bio: "The Danger Room of the X-Men's school, which has Cerebro technology. In 1998, after Xavier relives Magneto's death in it, it raises its own difficulty, turns on the students and taunts Polaris, and her blast gives it a body; it follows Xavier to the ruins of Genosha, where Polaris overloads it.",
   },
   'daniel-sousa': {
     name: 'Daniel Sousa',
@@ -808,6 +819,14 @@ export const characters = {
     factions: ['red-room', 'leviathan'],
     origin: 'Soviet Union',
     bio: "Deadly, ruthless Soviet Black Widow assassin trained in the Red Room who served as Leviathan's primary enforcer in 1946 New York.",
+  },
+  'dr-cornelius': {
+    name: 'Dr. Cornelius',
+    color: '#64748b',
+    role: 'villain',
+    status: 'deceased',
+    factions: ['weapon-x'],
+    bio: "Scientist of the Weapon X program whose recordings show that he used a captured Brood, an alien hive mind, to wipe his subjects' memories. In 1998 Logan's old Team X comes to his new lab in the Arctic to kill him and finds that he has turned into one of the Brood; he dies when the lab explodes.",
   },
   drax: {
     name: 'Drax the Destroyer',
@@ -932,7 +951,7 @@ export const characters = {
     factions: ['hellfire-club', 'brotherhood-of-mutants', 'mutants'],
     bio: "Formidable telepath who can transform her body into organic, bulletproof diamond at will, Shaw's chief lieutenant.",
     variants: {
-      'earth-92131': "White Queen of the Inner Circle of the Circle Club in New York. She learns the Phoenix's secret from Xavier's computer and fights him for Jean Grey's mind. In 1997 she sits on Genosha's council and survives its destruction in diamond form.",
+      'earth-92131': "White Queen of the Inner Circle of the Circle Club in New York. She learns the Phoenix's secret from Xavier's computer and fights him for Jean Grey's mind. In 1997 she sits on Genosha's council and survives its destruction in diamond form. In 1998 she leads X-Force into an X-Factor trap in Switzerland.",
     },
   },
   'en-sabah-nur-apocalypse': {
@@ -945,7 +964,7 @@ export const characters = {
     origin: 'Ancient Egypt',
     bio: 'The first mutant, worshipped as a god in ancient Egypt, who lives on by passing into new bodies and makes the mutants he chooses as his Four Horsemen stronger.',
     variants: {
-      'earth-92131': "In the animated series he gathers psychics at the Axis of Time to destroy all time and remake the universe, until they banish him to the astral plane, from which he comes back in the body of Fabian Cortez. Around 3000 BC, as the young En Sabah Nur in Egypt, he meets X-Men lost in time, and after they vanish he walks the ruins of Genosha with one of Gambit's cards.",
+      'earth-92131': "In the animated series, around 3000 BC, the young En Sabah Nur leads the Sandstormers against the pharaoh Rama-Tut, meets X-Men lost in time and becomes Apocalypse by taking the power of the living starship Ship. He later gathers psychics at the Axis of Time to remake the universe, until they banish him to the astral plane, from which he comes back in the body of Fabian Cortez. After Genosha falls in 1997 he walks its ruins with one of Gambit's cards; in 1998 he raises Gambit as his Horseman, his own body dies in Athens, and Rogue seals his mind in a crystal that Cable keeps. In 3960 the X-Men take his citadel, and he flees to the 1990s.",
     },
   },
   'erik-killmonger': {
@@ -963,10 +982,13 @@ export const characters = {
     alias: 'Magneto',
     color: '#9f1239',
     role: 'anti-hero',
-    status: 'alive',
+    status: 'variable',
     factions: ['brotherhood-of-mutants', 'division-x', 'mutants'],
     origin: 'Poland / Germany',
     bio: 'Holocaust survivor and Master of Magnetism who believes mutantkind must defend itself by any means necessary against human prejudice.',
+    variants: {
+      'earth-92131': 'In the animated series he offers mutants a home on Asteroid M, learns that Quicksilver and the Scarlet Witch are his children and nearly goes to war from Genosha when Xavier is shot. In 1997 Xavier leaves him the X-Men, and after Genosha falls he blacks out the Earth. Lost in ancient Egypt, he tries to make the young En Sabah Nur the first X-Man, and around 3000 BC Apocalypse kills him.',
+    },
   },
   'erik-the-red': {
     name: 'Erik the Red',
@@ -983,6 +1005,14 @@ export const characters = {
     status: 'alive',
     factions: [],
     bio: "Man who follows an ancient tablet to the Crimson Gem of Cyttorak and takes the Juggernaut's power for himself, until Cyclops and Wolverine beat him and take the gem.",
+  },
+  exodus: {
+    name: 'Exodus',
+    color: '#b91c1c',
+    role: 'villain',
+    status: 'presumably-dead',
+    factions: ['acolytes', 'mutants'],
+    bio: "Leader of the Acolytes, devoted to the late Magneto, who found Colossus in the darkest of places. In 1998 he carries off Graydon Creed to the Acolytes' fortress in the Savage Land and puts him on trial, then attacks him; Nightcrawler beats him in a sword duel, and Creed shoots him.",
   },
   'fabian-cortez': {
     name: 'Fabian Cortez',
@@ -1141,7 +1171,7 @@ export const characters = {
     origin: 'New Orleans, Louisiana',
     bio: 'Cajun mutant thief who charges objects, often playing cards, with explosive kinetic energy.',
     variants: {
-      'earth-92131': 'In the animated series he comes from the Thieves Guild of New Orleans and loves Rogue, whose touch he cannot share. In 1997 he dies on Genosha destroying the giant Master Mold, and is buried in New Orleans.',
+      'earth-92131': 'In the animated series he comes from the Thieves Guild of New Orleans and loves Rogue, whose touch he cannot share. In 1997 he dies on Genosha destroying the giant Master Mold, and is buried in New Orleans. In 1998 Apocalypse brings him back as a Horseman and lives on in his body, until Rogue sets him free.',
     },
   },
   gamora: {
@@ -1169,6 +1199,14 @@ export const characters = {
     factions: ['immortals'],
     origin: 'The Savage Land, Antarctica',
     bio: "Sun god of the Savage Land, left a statue for centuries. Storm's tempest wakes him, he tries to bond with the land's volcano, and he falls back into stone when Sauron drains his power.",
+  },
+  'general-logos': {
+    name: 'General Logos',
+    color: '#a16207',
+    role: 'villain',
+    status: 'deceased',
+    factions: [],
+    bio: 'General of the pharaoh Rama-Tut around 3000 BC and once the slave master of the young En Sabah Nur. Captured by the Sandstormers, he is spared on the word of Magneto, until Nur kills him: "He was not fit to survive."',
   },
   genevieve: {
     name: 'Genevieve',
@@ -1243,7 +1281,7 @@ export const characters = {
     status: 'alive',
     factions: ['friends-of-humanity'],
     origin: 'New York City',
-    bio: 'Fanatical anti-mutant demagogue and founder of the terrorist hate-group Friends of Humanity, secretly the baseline human offspring of Sabretooth and Mystique.',
+    bio: "Fanatical anti-mutant demagogue and founder of the terrorist hate-group Friends of Humanity, secretly the baseline human offspring of Sabretooth and Mystique. In 1998 he runs for president against Kelly, survives the Acolytes' trial in the Savage Land, where his half-brother Nightcrawler defends him, and wins the election.",
   },
   'grey-gargoyle': {
     name: 'Paul Duval',
@@ -1739,6 +1777,15 @@ export const characters = {
     factions: ['savage-land'],
     origin: 'The Savage Land, Antarctica',
     bio: 'Lord of the Savage Land, who roams it with his sabretooth, Zabu. He resents Magneto for meddling with his land, but helps him and Xavier free his people from Mister Sinister.',
+  },
+  kang: {
+    name: 'Kang',
+    alias: 'Rama-Tut',
+    color: '#7e22ce',
+    role: 'villain',
+    status: 'alive',
+    factions: [],
+    bio: 'Time traveler who says he has many names: "Nathaniel, Victor, Kang." Around 3000 BC he rules Egypt as the pharaoh Rama-Tut, with machines and robots from the future, and searches for a lost temple of beings from the stars. When En Sabah Nur takes its power and becomes Apocalypse, he leaves in his time machine for another age: "This time is no longer mine to conquer."',
   },
   karnak: {
     name: 'Karnak Mander-Azur',
@@ -2254,7 +2301,7 @@ export const characters = {
     status: 'alive',
     factions: ['clan-askani'],
     origin: 'Earth-811 / Earth-92131 40th Century',
-    bio: 'Leader of Clan Askani in 3960, who greets Scott Summers and Jean Grey when they arrive from the past and is raising a boy named Nathan.',
+    bio: 'Leader of Clan Askani in 3960, who comes from another, darker timeline. Seeing that the X-Men were fated to die in 1997, she pulls them through time: one team to the future to train the boy Nathan, destined to kill Apocalypse, and another to the past to stop En Sabah Nur from ever becoming him.',
   },
   'mysterio-quentin-beck': {
     name: 'Quentin Beck',
@@ -2298,12 +2345,12 @@ export const characters = {
     alias: 'Nightcrawler',
     color: '#6366f1',
     role: 'hero',
-    status: 'alive',
+    status: 'variable',
     factions: ['x-men', 'mutants'],
     origin: 'Bavaria, Germany',
     bio: 'Gentle, deeply spiritual mutant possessing indigo fur, acrobatic agility, a prehensile tail, and the ability to instantly teleport across space in a cloud of sulfurous blue smoke (BAMF).',
     variants: {
-      'earth-92131': "In the animated series, Jean Grey first finds him through Cerebro while she searches for the missing Xavier. Wolverine, Rogue and Gambit meet him in a monastery in the Bavarian Alps, where he has given his life to God, and on Halloween he learns that Mystique is his mother. In 1997 he sits on Genosha's council for its communities of faith, survives its destruction and joins the X-Men, and is lost with them in ancient Egypt.",
+      'earth-92131': "In the animated series, Jean Grey first finds him through Cerebro while she searches for the missing Xavier. Wolverine, Rogue and Gambit meet him in a monastery in the Bavarian Alps, where he has given his life to God, and on Halloween he learns that Mystique is his mother. In 1997 he sits on Genosha's council for its communities of faith, survives its destruction and joins the X-Men, and is lost with them in ancient Egypt. In 1998 he defends his half-brother, Graydon Creed, at the Acolytes' trial in the Savage Land, and offers his own life to the presence in Ship's shrine so that Rogue may live; what becomes of him is not shown.",
     },
   },
   'nina-da-costa': {
@@ -2386,7 +2433,7 @@ export const characters = {
     origin: 'Moscow, Russian SFSR',
     bio: 'Lethal Soviet cybernetic mutant equipped with retractable Carbonadium tentacles that siphon the life-force of his victims to sustain his synthetic Death Factor.',
     variants: {
-      'earth-92131': 'In the animated series, thawed again from the ice of the Caucasus, he hijacks a sunken Soviet submarine off Hawaii and sinks with it, still alive.',
+      'earth-92131': 'In the animated series, thawed again from the ice of the Caucasus, he hijacks a sunken Soviet submarine off Hawaii and sinks with it, still alive. In 1998 he is held at a Weapon X lab in the Arctic, where Logan beats him.',
     },
   },
   paris: {
@@ -2436,8 +2483,8 @@ export const characters = {
     color: '#4ade80',
     role: 'hero',
     status: 'alive',
-    factions: ['x-factor', 'mutants'],
-    bio: "Mutant with power over magnetism, a member of X-Factor. Iceman looks for her and finds her in X-Factor, and the Phalanx hold her in their Spire until the X-Men's allies bring them down.",
+    factions: ['x-factor', 'x-men', 'mutants'],
+    bio: "Mutant with power over magnetism, Magneto's daughter, raised by Charles Xavier and once an X-Man. As a member of X-Factor, the government's team of mutants, she is found there by Iceman and later held by the Phalanx. In 1998 Val Cooper dismisses her from X-Factor, she destroys Danger, and she fights beside the X-Men again.",
   },
   'prince-tafari': {
     name: 'Prince Tafari',
@@ -2482,10 +2529,10 @@ export const characters = {
     color: '#e879f9',
     role: 'villain',
     status: 'alive',
-    factions: ['mutants'],
+    factions: ['mutants', 'x-force'],
     bio: 'Deadly martial artist and mutant tracker capable of telepathic sensory tracking and manifesting lethal solid psionic energy blades, whips, and katanas from her hands.',
     variants: {
-      'earth-92131': "In the animated series, Jean Grey first finds her through Cerebro while she searches for the missing Xavier. Later Apocalypse's allies take her from Castle Worthington for his collection of psychics.",
+      'earth-92131': "In the animated series, Jean Grey first finds her through Cerebro while she searches for the missing Xavier. Later Apocalypse's allies take her from Castle Worthington for his collection of psychics. In 1998 she fights Apocalypse's Horsemen in Cable's X-Force.",
     },
   },
   pyro: {
@@ -2532,7 +2579,7 @@ export const characters = {
     factions: ['brotherhood-of-mutants', 'x-men', 'division-x', 'mutants'],
     bio: 'Shapeshifting mutant with natural blue scales and yellow eyes, foster sister to Charles Xavier who chose to embrace her true mutant identity with Magneto.',
     variants: {
-      'earth-92131': 'In the animated series she adopted Rogue as a child. On a dam held by the Friends of Humanity she tells Nightcrawler that she is his mother, and later she serves Apocalypse at the Axis of Time before turning on him.',
+      'earth-92131': 'In the animated series she adopted Rogue as a child. On a dam held by the Friends of Humanity she tells Nightcrawler that she is his mother, and later she serves Apocalypse at the Axis of Time before turning on him. In 1998 she shoots Val Cooper and takes her place.',
     },
   },
   'red-skull': {
@@ -2755,7 +2802,7 @@ export const characters = {
     status: 'alive',
     factions: [],
     origin: 'Washington D.C.',
-    bio: 'Anti-mutant presidential candidate whose life was saved by the X-Men from Master Mold, leading him to advocate for peaceful human-mutant coexistence. As President in 1997 he fires missiles at Asteroid M under the Magneto Protocols.',
+    bio: 'Anti-mutant presidential candidate whose life was saved by the X-Men from Master Mold, leading him to advocate for peaceful human-mutant coexistence. As President in 1997 he fires missiles at Asteroid M under the Magneto Protocols. In 1998 he outlaws the X-Men and concedes the presidential election to Graydon Creed.',
   },
   'shadow-king-amahl-farouk': {
     name: 'Amahl Farouk',
@@ -2909,7 +2956,7 @@ export const characters = {
     origin: 'Brooklyn, New York',
     bio: 'Super-soldier leader of the Avengers and WWII war hero.',
     variants: {
-      'earth-92131': "In the animated series he fights beside Logan against the Red Skull in France in 1944, and is seen fighting Magneto's rebels in the erased world where Charles Xavier died in 1959. Around 1945 he leads the Six Forgotten Warriors and pushes the Red Skull into the vortex of his Doomsday Complex, where both are trapped for fifty years. Freed in 1997, he fights beside Spider-Man, goes back into the vortex with the Skull, and fights in the Beyonder's Secret Wars; later that year he and General Ross guard Gyrich and Trask at a facility built to hold the Hulk, and try to stop Rogue by the book.",
+      'earth-92131': "In the animated series he fights beside Logan against the Red Skull in France in 1944, and is seen fighting Magneto's rebels in the erased world where Charles Xavier died in 1959. Around 1945 he leads the Six Forgotten Warriors and pushes the Red Skull into the vortex of his Doomsday Complex, where both are trapped for fifty years. Freed in 1997, he fights beside Spider-Man, goes back into the vortex with the Skull, and fights in the Beyonder's Secret Wars; later that year he and General Ross guard Gyrich and Trask at a facility built to hold the Hulk, and try to stop Rogue by the book. In 1998 he meets Logan again after about fifty years.",
     },
   },
   'storm-ororo-munroe': {
@@ -2948,7 +2995,7 @@ export const characters = {
     origin: 'Brazil',
     bio: 'Brazilian mutant who absorbs and channels solar radiation to combust into a fiery solar plasma form capable of supersonic flight and devastating thermal energy blasts.',
     variants: {
-      'earth-92131': "In the animated series Roberto da Costa, heir to the da Costa fortune of Rio de Janeiro, is rescued from the Friends of Humanity by the X-Men in 1997 and stays at the mansion. When his mother hands him to Bastion's Prime Sentinels he flies for the first time, and he follows Magneto to Asteroid M as Sunspot.",
+      'earth-92131': "In the animated series Roberto da Costa, heir to the da Costa fortune of Rio de Janeiro, is rescued from the Friends of Humanity by the X-Men in 1997 and stays at the mansion. When his mother hands him to Bastion's Prime Sentinels he flies for the first time, and he follows Magneto to Asteroid M as Sunspot. In 1998 he joins Cable's X-Force with Jubilee, and the two go back to the X-Men.",
     },
   },
   sunturion: {
@@ -3263,10 +3310,10 @@ export const characters = {
     alias: 'Val Cooper',
     color: '#64748b',
     role: 'secondary',
-    status: 'alive',
-    factions: ['commission-on-superhuman-activities', 'united-nations'],
+    status: 'deceased',
+    factions: ['commission-on-superhuman-activities', 'united-nations', 'x-factor'],
     origin: 'Washington D.C., United States',
-    bio: 'United Nations liaison on mutant affairs, who arrests Magneto for trial and then works with the X-Men. Missing after Genosha, she is held by Bastion, and in the end she frees Magneto, saying that he was right.',
+    bio: "United Nations liaison on mutant affairs, who arrests Magneto for trial and then works with the X-Men. Missing after Genosha, she is held by Bastion, and in the end she frees Magneto, saying that he was right. In 1998 she runs X-Factor, the government's mutant task force, and brands X-Force fugitives, until Mystique shoots her and takes her place.",
   },
   valkyrie: {
     name: 'Brunnhilde',
@@ -3490,6 +3537,14 @@ export const characters = {
     factions: ['friends-of-humanity'],
     bio: "Member of the Friends of Humanity who helps hold Roberto da Costa for sale. As the X-Cutioner he breaks into Magneto's trial at the United Nations, and the beam of his rifle takes away Storm's powers.",
   },
+  'x-ternal': {
+    name: 'X-Ternal',
+    color: '#d97706',
+    role: 'secondary',
+    status: 'deceased',
+    factions: [],
+    bio: "Mystic woman to whom the Thieves and Assassins Guilds of New Orleans pay a tithe every ten years. By Gambit's account she was a priestess of ancient Egypt who courted Apocalypse, received some of his power and then betrayed him for what he did to her people; around 3000 BC she is at the side of the pharaoh Rama-Tut. In 1993 she takes Bella Donna's powers for a false tithe, and in 1998 Gambit, possessed by Apocalypse, kills her to give her power to Rogue.",
+  },
   'yon-rogg': {
     name: 'Yon-Rogg',
     color: '#0284c7',
@@ -3507,7 +3562,7 @@ export const characters = {
     status: 'alive',
     factions: ['clan-askani'],
     origin: 'Westchester, New York',
-    bio: 'Son of Scott Summers and Madelyne Pryor, born at Westchester Memorial in 1997. Mister Sinister infects him with a techno-organic virus, and Bishop takes him into the future to find a cure, but they are separated on the way and he grows up to be Cable; in 3960 he is a boy in the care of Mother Askani.',
+    bio: 'Son of Scott Summers and Madelyne Pryor, born at Westchester Memorial in 1997. Mister Sinister infects him with a techno-organic virus, and Bishop takes him into the future to find a cure, but they are separated on the way and he grows up to be Cable; in 3960 he is a boy in the care of Mother Askani. There Ship bonds with him, setting him on the path to becoming Cable, and he sends the X-Men back to their own time.',
   },
   'zebediah-killgrave': {
     name: 'Zebediah Killgrave',

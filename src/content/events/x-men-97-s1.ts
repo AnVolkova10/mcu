@@ -4,7 +4,7 @@ import { defineEvents } from '@/domain/define';
 export default defineEvents('x-men-97-s1', [
   {
     id: 'young-en-sabah-nur-rescue',
-    date: { year: -3000, order: 10, approx: true },
+    date: { year: -3000, order: 10 },
     segment: 'E10',
     title: 'Lost in ancient Egypt, X-Men meet the young En Sabah Nur',
     text: [
@@ -60,10 +60,10 @@ export default defineEvents('x-men-97-s1', [
     text: [
       "On the day the United Nations admits Genosha, its council, with [Madelyne](madelyne-pryor-goblin-queen), [Emma Frost](emma-frost), [Moira MacTaggert](moira-mactaggert) and [Nightcrawler](nightcrawler-kurt-wagner), names [Magneto](erik-lehnsherr) chancellor; he asks [Rogue](rogue-anna-marie) to govern with him, and she and [Gambit](gambit-remy-lebeau) agree to stay friends. At the mansion, where [Trish Tilby](trish-tilby) learns that [Scott](cyclops-scott-summers) gave up his son, [Jean Grey](jean-grey) kisses [Logan](logan-wolverine), who sends her back to Scott, and finds Scott in a psychic link with Madelyne. At the gala [Cable](cable-nathan-summers) appears from the future to warn them and is pulled back, and a giant [Master Mold](master-mold) and its [Sentinels](object:sentinels) destroy Genosha, killing thousands, Madelyne, Moira and the Morlock boy Leech among them. Gambit charges the giant with his power and dies destroying it.",
     ],
-    cast: ['hank-mccoy', 'callisto', 'sean-cassidy', 'sebastian-shaw', 'valerie-cooper'],
+    cast: ['hank-mccoy', 'callisto', 'sean-cassidy', 'sebastian-shaw', 'valerie-cooper', 'colossus-piotr-rasputin'],
     locations: ['xaviers-school-for-gifted-youngsters', 'genosha-capital-and-council-plaza', 'astral-plane'],
     objects: [{ id: 'sentinels', at: ['genosha-capital-and-council-plaza'] }],
-    deaths: ['gambit-remy-lebeau', 'madelyne-pryor-goblin-queen', 'moira-mactaggert', { name: 'Leech' }],
+    deaths: ['gambit-remy-lebeau', 'madelyne-pryor-goblin-queen', 'moira-mactaggert', { name: 'Leech' }, { name: 'Illyana' }],
   },
   {
     id: 'xavier-rite-of-mdashaa',

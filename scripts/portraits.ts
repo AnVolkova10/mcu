@@ -153,6 +153,11 @@ async function fileImage(wiki: string, pick: FilePick) {
 }
 
 const bare = (name: string) => name.replace(/\s*\(.*?\)/g, '').replace(/\s['"‘“][^'"’”]+['"’”]/g, '').replace(/^(The|Dr\.|Doctor|Professor|Colonel|Senator)\s+/, '').trim();
+/** No image in these universes: the wiki's page under this name is someone else, and it has none of this one. The app shows the actor or a silhouette. */
+const NONE: Record<string, readonly string[]> = {
+  kang: ['earth-92131'], // marvelanimated's "Kang" is the one of The Avengers: United They Stand, not X-Men '97's Rama-Tut
+};
+
 const titlesOf = (c: Character, universe: string) => [...new Set([PAGES[c.id]?.[universe], c.alias, c.name, c.alias && bare(c.alias), bare(c.name)].filter((t): t is string => Boolean(t)))];
 
 const { archive } = await loadArchive();
@@ -161,10 +166,14 @@ const universesOf = (c: Character) => [...new Set([...(archive.byCharacter.get(c
 // A character removed from the catalog takes its images with it.
 const known = new Set<string>(characterList.map((c) => c.id));
 const out = JSON.parse(JSON.stringify(Object.fromEntries(Object.entries(portraits).filter(([id]) => known.has(id))))) as Record<string, Record<string, string>>;
+for (const [id, universes] of Object.entries(NONE)) {
+  for (const universe of universes) delete out[id]?.[universe];
+  if (out[id] && !Object.keys(out[id]).length) delete out[id];
+}
 const missing: string[] = [];
 
 for (const [universe, wiki] of Object.entries(WIKIS)) {
-  const pending = characterList.filter((c) => universesOf(c).includes(universe) && (FORCE || !out[c.id]?.[universe] || PAGES[c.id]?.[universe]));
+  const pending = characterList.filter((c) => universesOf(c).includes(universe) && !NONE[c.id]?.includes(universe) && (FORCE || !out[c.id]?.[universe] || PAGES[c.id]?.[universe]));
   const images = await leadImages(wiki, [...new Set(pending.flatMap((c) => titlesOf(c, universe)))]);
   for (const c of pending) {
     const image = titlesOf(c, universe).map((title) => images.get(title)).find(Boolean);
