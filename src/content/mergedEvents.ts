@@ -30,4 +30,12 @@ export const mergedEvents: Record<string, string> = {
   'iron-man-tas-s2.dark-aegis-elysian': 'iron-man-tas-s2.firebrand-blacks-out-los-angeles',
   'iron-man-tas-s2.madame-masque-eye-of-isis': 'iron-man-tas-s2.firebrand-blacks-out-los-angeles',
   'iron-man-tas-s2.modok-ring-visions': 'iron-man-tas-s2.firebrand-blacks-out-los-angeles',
+  'fantastic-four-tas-s1.namor-kidnaps-susan-storm': 'fantastic-four-tas-s1.cosmic-rays-mutation',
+  'fantastic-four-tas-s1.skrulls-frame-the-ff': 'fantastic-four-tas-s1.cosmic-rays-mutation',
+  'fantastic-four-tas-s1.super-skrull-sealed-in-volcano': 'fantastic-four-tas-s1.cosmic-rays-mutation',
+  'fantastic-four-tas-s1.mole-man-sinks-rockefeller-center': 'fantastic-four-tas-s1.cosmic-rays-mutation',
+  'fantastic-four-tas-s1.negative-zone-annihilus': 'fantastic-four-tas-s1.cosmic-rays-mutation',
+  'fantastic-four-tas-s2.psycho-man-microverse': 'fantastic-four-tas-s2.daredevil-black-panther-alliance',
+  'fantastic-four-tas-s2.hulk-nightmare-in-green': 'fantastic-four-tas-s2.daredevil-black-panther-alliance',
+  'fantastic-four-tas-s2.penance-stare-galactus': 'fantastic-four-tas-s2.ego-galactus-vow',
 };
