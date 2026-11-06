@@ -44,6 +44,13 @@ export const locations = {
     kind: 'earth',
     coords: [40.7813, -73.974],
   },
+  anavrin: {
+    name: 'Anavrin',
+    place: 'Hidden valley in the Himalayas, Tibet',
+    country: 'China',
+    kind: 'earth',
+    coords: [28.9, 90.7],
+  },
   'ancient-aegean-battlegrounds': {
     name: 'Thermopylae',
     place: 'Malian Gulf',
@@ -329,6 +336,13 @@ export const locations = {
     kind: 'earth',
     coords: [28.488, -80.577],
   },
+  'caraclah-village': {
+    name: 'Caraclah Village',
+    place: 'Tibet',
+    country: 'China',
+    kind: 'earth',
+    coords: [29.3, 90.5],
+  },
   'carter-family-estate-and-church-of-st-jude': {
     name: 'Carter Family Home',
     place: 'Hampstead, London',
@@ -407,6 +421,13 @@ export const locations = {
     country: 'United States',
     kind: 'earth',
     coords: [40.7678, -73.9718],
+  },
+  'chateau-de-shae': {
+    name: 'Le Château de Shae',
+    place: 'Miami Beach, Florida',
+    country: 'United States',
+    kind: 'earth',
+    coords: [25.8005, -80.1265],
   },
   chicago: {
     name: 'Chicago',
@@ -1027,6 +1048,13 @@ export const locations = {
     country: 'United States',
     kind: 'earth',
     coords: [38.91, -77.043],
+  },
+  'jennifer-walters-hometown': {
+    name: "Jennifer Walters's Hometown",
+    place: 'Rosemont, California',
+    country: 'United States',
+    kind: 'earth',
+    coords: [38.551, -121.364],
   },
   'jotunheim-glacial-fortress': {
     name: 'Jotunheim Glacial Fortress',
@@ -1839,6 +1867,13 @@ export const locations = {
     country: 'United States',
     kind: 'earth',
     coords: [40.7291, -73.998],
+  },
+  'sea-base': {
+    name: 'Sea Base',
+    place: 'Off the coast of California',
+    country: 'United States',
+    kind: 'earth',
+    coords: [33.95, -119.4],
   },
   'sentinel-mutant-internment-camp-and-subway-bunker': {
     name: 'Rebel Hideout',

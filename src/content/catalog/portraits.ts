@@ -192,6 +192,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'crimson-dynamo': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/3/38/Crimson_Dynamo.jpg/revision/latest/scale-to-width-down/300?cb=20100822140057',
   },
+  'crusher-creel': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/c/cb/Absorbing_Man.jpg/revision/latest/scale-to-width-down/300?cb=20150321035925',
+  },
   'crystal': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/8/88/Crystal.PNG/revision/latest/scale-to-width-down/300?cb=20170316222257',
   },
@@ -411,6 +414,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/29/Hulk_Infobox.jpg/revision/latest/scale-to-width-down/216?cb=20260925124237',
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/6/6f/Hulk.jpg/revision/latest/scale-to-width-down/300?cb=20140901012924',
   },
+  'hybrid-diana': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/e/ed/Hybrid.png/revision/latest/scale-to-width-down/300?cb=20140314121419',
+  },
   'hydro-man': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/e/e9/Hydro-Man.png/revision/latest/scale-to-width-down/300?cb=20100218213047',
   },
@@ -616,6 +622,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   },
   'minn-erva': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/3/30/Minn-Erva_Textless_Poster.jpg/revision/latest/scale-to-width-down/242?cb=20231025001731',
+  },
+  'miss-allure': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/c/cd/Miss_Allure.jpg/revision/latest/scale-to-width-down/300?cb=20131101171653',
   },
   'mister-sinister-nathaniel-essex': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/3/39/Mr._Sinister_X-men_97.webp/revision/latest/scale-to-width-down/235?cb=20241218174500',

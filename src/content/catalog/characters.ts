@@ -604,6 +604,14 @@ export const characters = {
     factions: ['aim'],
     bio: "Armored agent whose suit A.I.M. builds with knowledge drained from Tony Stark's mind. He later takes over a Russian missile base, and the nuclear blast that follows is blamed on Iron Man.",
   },
+  'crusher-creel': {
+    name: 'Crusher Creel',
+    color: '#57534e',
+    role: 'villain',
+    status: 'alive',
+    factions: [],
+    bio: "Allure's enforcer in Chicago, who takes on the strength of whatever he touches and drains the Grey Hulk's might. When Allure loses her power, he stays with her.",
+  },
   crystal: {
     name: 'Crystalia Amaquelin',
     alias: 'Crystal',
@@ -726,7 +734,7 @@ export const characters = {
     origin: 'New York / Kamar-Taj',
     bio: "Master of the Mystic Arts and guardian of Earth's magical realms.",
     variants: {
-      'earth-92131': 'In the animated series he feels the Phoenix leave Earth from his Sanctum Sanctorum, appears again during the rampage of the Dark Phoenix, and once more when Wolverine, Rogue and Gambit meet Nightcrawler.',
+      'earth-92131': 'In the animated series he feels the Phoenix leave Earth from his Sanctum Sanctorum, appears again during the rampage of the Dark Phoenix, and once more when Wolverine, Rogue and Gambit meet Nightcrawler. In 1996 he and She-Hulk enter the mind of Bruce Banner to drive out an alien that has taken his body.',
     },
   },
   'dottie-underwood': {
@@ -1019,7 +1027,7 @@ export const characters = {
     origin: 'Macon, Georgia',
     bio: 'Soldier who speaks German and French, freed by Steve Rogers at Krausberg. As a Howling Commando he captures Arnim Zola in 1945.',
     variants: {
-      'earth-92131': 'In the animated series Gabriel Jones is a S.H.I.E.L.D. agent whom Nick Fury sends to advise the Hulkbusters in 1996, and who finally takes the Hulk away for disposal.',
+      'earth-92131': 'In the animated series Gabriel Jones is a S.H.I.E.L.D. agent whom Nick Fury sends to advise the Hulkbusters in 1996, who takes the Hulk away for disposal, and who later runs Sea Base off California.',
     },
   },
   galactus: {
@@ -1299,6 +1307,15 @@ export const characters = {
       'earth-92131': 'In the animated series Bruce Banner was caught in the blast of a gamma test in New Mexico, years before 1996, while pushing Rick Jones to safety, and turns into the Hulk when provoked. In 1995 the Leader throws him and Iron Man back to the time of the dinosaurs, and at the gamma bomb test he shields his younger self. In 1996 the Hulkbusters chase him across the country, and after a Nutrient Bath splits him from the Hulk and merges them again, he turns into a grey Hulk.',
     },
   },
+  'hybrid-diana': {
+    name: 'Diana',
+    alias: 'Hybrid',
+    color: '#0d9488',
+    role: 'villain',
+    status: 'alive',
+    factions: [],
+    bio: "Double agent caught by S.H.I.E.L.D.'s deep-sea organisms at Sea Base and buried at sea, who survives as the parasite Hybrid. She rides General Ross, Betty and the Grey Hulk to seize the base, until the Hulk's anger throws her out.",
+  },
   'hydro-man': {
     name: 'Morrie Bench',
     alias: 'Hydro-Man',
@@ -1447,7 +1464,7 @@ export const characters = {
     factions: ['gamma-mutates', 'avengers'],
     bio: "Bruce Banner's lawyer cousin who received an emergency blood transfusion from him, gaining gamma-fueled strength and jade invulnerability while retaining full intellect and wit.",
     variants: {
-      'earth-92131': "In the animated series she is a lawyer in Washington, D.C., wounded by Doctor Doom's robots, who becomes She-Hulk with her cousin's blood.",
+      'earth-92131': "In the animated series she is a lawyer in Washington, D.C., wounded by Doctor Doom's robots, who becomes She-Hulk with her cousin's blood. She defends Bruce in court, travels with him and fights at his side; her father Cliff is a policeman in her hometown.",
     },
   },
   'jessica-jones': {
@@ -1759,6 +1776,14 @@ export const characters = {
     origin: 'Mojoverse Dimension',
     bio: "Star of Mojo's television network in the Mojoverse. He walks out over his contract, and when Mojo's shows try to kill the X-Men on air, he forces Spiral to send them home.",
   },
+  'lord-scimitar': {
+    name: 'Lord Scimitar',
+    color: '#9f1239',
+    role: 'villain',
+    status: 'alive',
+    factions: [],
+    bio: 'Son of Tong-Zing, monarch of the hidden valley of Anavrin, banished long ago for his love of machines. He hunts the medallion that leads home and tries to seize the throne, until the Hulk beats him.',
+  },
   'luke-cage': {
     name: 'Luke Cage',
     color: '#f59e0b',
@@ -1955,6 +1980,14 @@ export const characters = {
     factions: ['starforce', 'kree-empire'],
     origin: 'Hala (Kree Empire)',
     bio: 'Elite sniper and geneticist of the Kree Starforce whose disdain for Carol Danvers turned into deadly aerial combat over the Mojave Desert, where her ship was shot down by Maria Rambeau.',
+  },
+  'miss-allure': {
+    name: 'Allure',
+    color: '#db2777',
+    role: 'villain',
+    status: 'alive',
+    factions: [],
+    bio: 'Chicago crime boss whose gaze makes men obey. She hypnotizes Bruce Banner to boost her power, until his device removes the brain abnormality behind it, and her power with it.',
   },
   'mister-sinister-nathaniel-essex': {
     name: 'Nathaniel Essex',
@@ -2335,7 +2368,7 @@ export const characters = {
     role: 'civilian',
     status: 'alive',
     factions: [],
-    bio: "Young drifter whom Bruce Banner pushed to safety at the gamma test that made the Hulk, and the Hulk's most loyal friend. General Ross throws him into the Nutrient Bath, and he runs off as a Hulk-like creature.",
+    bio: "Young drifter whom Bruce Banner pushed to safety at the gamma test that made the Hulk, and the Hulk's most loyal friend. General Ross throws him into the Nutrient Bath and he runs off as a Hulk-like creature, until the Leader drains his gamma power.",
   },
   'robbie-robertson-noir': {
     name: 'Robbie Robertson',
@@ -2745,7 +2778,7 @@ export const characters = {
     role: 'secondary',
     status: 'alive',
     factions: ['hulkbusters', 'us-military'],
-    bio: "General in command of Gamma Base and Betty Ross's father, who has hunted the Hulk for years and leads the Hulkbusters. He stops his daughter's wedding to Bruce Banner and sabotages the machine that would save him.",
+    bio: "General in command of Gamma Base and Betty Ross's father, who has hunted the Hulk for years and leads the Hulkbusters. He stops his daughter's wedding to Bruce Banner, falls into a coma hunting the Grey Hulk, and wakes up ready to retire and get to know his future son-in-law.",
   },
   thanos: {
     name: 'Thanos',
@@ -2781,7 +2814,7 @@ export const characters = {
     role: 'villain',
     status: 'alive',
     factions: ['gamma-mutates'],
-    bio: "Bruce Banner's former lab assistant, changed by gamma rays into a genius with a huge green head. With two of the Mandarin's rings he opens a doorway to the past to kill the young Banner before the gamma bomb test, and Rhodes brings everyone back but him. By 1996 he schemes again from a desert lab to take the Hulk's power, even moving his mind into the Hulk's body for a day.",
+    bio: "Bruce Banner's former lab assistant, changed by gamma rays into a genius with a huge green head. With two of the Mandarin's rings he opens a doorway to the past to kill the young Banner before the gamma bomb test, and Rhodes brings everyone back but him. By 1996 he schemes again from a desert lab to take the Hulk's power, moves his mind into the Hulk's body for a day, and restores his genius by draining Rick Jones.",
   },
   'the-lion': {
     name: 'Nkati',
@@ -2957,7 +2990,7 @@ export const characters = {
     role: 'villain',
     status: 'alive',
     factions: ['latverian-monarchy'],
-    bio: "Masked master of Castle Doom, in Latveria, and Reed Richards's college classmate. He captures the Fantastic Four, holds Sue hostage while the others fetch him a coffin from ancient Greece, and later steals the Silver Surfer's Power Cosmic. In 1996 he seals Washington under a dome to make the Hulk his weapon.",
+    bio: "Masked master of Castle Doom, in Latveria, and Reed Richards's college classmate. He captures the Fantastic Four, holds Sue hostage while the others fetch him a coffin from ancient Greece, and later steals the Silver Surfer's Power Cosmic. In 1996 he seals Washington under a dome to make the Hulk his weapon and, deposed from Latveria, threatens the world with asteroids.",
   },
   vision: {
     name: 'Vision',

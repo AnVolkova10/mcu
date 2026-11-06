@@ -93,7 +93,7 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
     { actor: 'Nicolas Cage', universe: 'earth-62533', productions: ['spider-noir-s1'], photo: '/y1RtezurZYveYkVNRht7CwEgSYY.jpg' },
   ],
   'betty-ross': [
-    { actor: 'Philece Sampler', universe: 'earth-92131', productions: ['incredible-hulk-tas-s1'], voice: true, photo: '/ixpsNGJUyZqfvvjY4WAf9Ak6CRm.jpg' },
+    { actor: 'Philece Sampler', universe: 'earth-92131', productions: ['incredible-hulk-tas-s1', 'incredible-hulk-tas-s2'], voice: true, photo: '/ixpsNGJUyZqfvvjY4WAf9Ak6CRm.jpg' },
     { actor: 'Genie Francis', universe: 'earth-92131', productions: ['incredible-hulk-tas-s1'], voice: true, photo: '/9x5NEX6GgcmPcucLCo5s693k3Tk.jpg' },
   ],
   'bishop-lucas-bishop': [
@@ -690,7 +690,7 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
     { actor: 'Don Stark', universe: 'earth-92131', productions: ['spider-man-tas-s1', 'spider-man-tas-s2'], voice: true, photo: '/lkPWvElz5RxR4t4v3hM4SRy5E1j.jpg' },
   ],
   'rick-jones': [
-    { actor: 'Luke Perry', universe: 'earth-92131', productions: ['incredible-hulk-tas-s1'], voice: true, photo: '/78TAr0wLoRHyubnYxjyHNCt70V2.jpg' },
+    { actor: 'Luke Perry', universe: 'earth-92131', productions: ['incredible-hulk-tas-s1', 'incredible-hulk-tas-s2'], voice: true, photo: '/78TAr0wLoRHyubnYxjyHNCt70V2.jpg' },
   ],
   'robbie-robertson-noir': [
     { actor: 'Lamorne Morris', universe: 'earth-62533', productions: ['spider-noir-s1'], photo: '/9qPDnMsF7JbYSSn1K9yryFBmmXl.jpg' },
@@ -812,7 +812,7 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
     { actor: 'Dawnn Lewis', universe: 'earth-92131', productions: ['spider-man-tas-s1', 'spider-man-tas-s2'], voice: true, photo: '/ppxGgmkTczev2VsiOSMfaGUy580.jpg' },
   ],
   'thaddeus-ross': [
-    { actor: 'John Vernon', universe: 'earth-92131', productions: ['incredible-hulk-tas-s1'], voice: true, photo: '/xlHU7X2FhjnZVxu7fjoguCWlXeC.jpg' },
+    { actor: 'John Vernon', universe: 'earth-92131', productions: ['incredible-hulk-tas-s1', 'incredible-hulk-tas-s2'], voice: true, photo: '/xlHU7X2FhjnZVxu7fjoguCWlXeC.jpg' },
   ],
   'thanos': [
     { actor: 'Josh Brolin', universe: 'earth-616', productions: ['avengers-infinity-war'], photo: '/7QpneI3HoZCCDVPyWx3p3t7yeo7.jpg' },
@@ -824,7 +824,7 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
     { actor: 'Todd Louiso', universe: 'earth-92131', productions: ['iron-man-tas-s2'], voice: true, photo: '/dkvuAxxXoCqGQrPNYHlELxL75q2.jpg' },
   ],
   'the-leader-samuel-sterns': [
-    { actor: 'Matt Frewer', universe: 'earth-92131', productions: ['iron-man-tas-s2', 'incredible-hulk-tas-s1'], voice: true, photo: '/ouicMpmW9O01nB1c7BzoOBHipKw.jpg' },
+    { actor: 'Matt Frewer', universe: 'earth-92131', productions: ['iron-man-tas-s2', 'incredible-hulk-tas-s1', 'incredible-hulk-tas-s2'], voice: true, photo: '/ouicMpmW9O01nB1c7BzoOBHipKw.jpg' },
   ],
   'the-lion': [
     { actor: 'Cress Williams', universe: 'earth-616', productions: ['eyes-of-wakanda-s1'], voice: true, photo: '/pIOyAg9U0eAUvs8N2Xca7uRKlOe.jpg' },

@@ -970,7 +970,8 @@ export const productions = {
     universe: 'earth-92131',
     status: 'audited',
     animated: true,
-    description: 'Retitled The Incredible Hulk and She-Hulk: Jennifer Walters joins Bruce Banner on the road, battling Doctor Doom, Wendigo, and the emergence of Gray Hulk.',
+    description: "1996, right after season 1: She-Hulk travels with Bruce Banner and the Grey Hulk from Chicago to Miami, Hollywood and Tibet, against the Leader, Doctor Doom and a parasite at S.H.I.E.L.D.'s Sea Base, while General Ross lies in a coma.",
+    verified: true,
     poster: '/alMxSGCtD65X8afcIcj23mu9KoJ.jpg',
   },
   'x-men-97-s1': {
