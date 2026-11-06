@@ -931,7 +931,8 @@ export const productions = {
     universe: 'earth-92131',
     status: 'audited',
     animated: true,
-    description: 'Felicia Hardy becomes the Black Cat, Kraven returns, the Green Goblin returns to torment Mary Jane, and Spider-Man battles the Lizard King and the Prowler across New York.',
+    description: "1996, from Mary Jane's loss to her return: Felicia becomes the Black Cat and Spider-Man's partner, Harry becomes the second Green Goblin, and Peter, back with Mary Jane, unmasks for her and proposes.",
+    verified: true,
     poster: '/lQFu9auCwZLUTJigBZsSL2Kwp80.jpg',
   },
   'spider-man-tas-s5': {

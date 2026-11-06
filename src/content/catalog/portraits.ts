@@ -491,6 +491,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'john-flynn': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/c/ce/Flynn.jpg/revision/latest/window-crop/width/300/x-offset/101/y-offset/0/window-width/231/window-height/231?cb=20130720100223',
   },
+  'john-hardesky': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/5/5e/John_Hardesky_as_the_Cat.jpg/revision/latest/scale-to-width-down/300?cb=20181216154746',
+  },
   'john-jameson': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/9/96/John_Jameson.jpg/revision/latest/scale-to-width-down/300?cb=20160907064710',
   },
@@ -634,6 +637,12 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   },
   'minn-erva': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/3/30/Minn-Erva_Textless_Poster.jpg/revision/latest/scale-to-width-down/242?cb=20231025001731',
+  },
+  'miranda-wilson': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/2/21/Miranda_Wilson.jpg/revision/latest?cb=20111021140844',
+  },
+  'miriam': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/b/b2/Mirium.jpg/revision/latest/scale-to-width-down/300?cb=20080805222136',
   },
   'miss-allure': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/c/cd/Miss_Allure.jpg/revision/latest/scale-to-width-down/300?cb=20131101171653',

@@ -1055,6 +1055,13 @@ export const locations = {
     kind: 'earth',
     coords: [40.674, -74.0335],
   },
+  'jamaica-bay-cave': {
+    name: 'Cave on Jamaica Bay',
+    place: 'Brooklyn, New York',
+    country: 'United States',
+    kind: 'earth',
+    coords: [40.6, -73.87],
+  },
   'jameson-penthouse': {
     name: "Jameson's Penthouse",
     place: 'Murray Hill, Manhattan',
@@ -1103,13 +1110,6 @@ export const locations = {
     country: 'Nepal',
     kind: 'earth',
     coords: [27.7172, 85.324],
-  },
-  'kingpins-fisk-tower-and-manhattan-docks': {
-    name: "Kingpin's Fisk Tower & Manhattan Docks",
-    place: 'Manhattan, New York',
-    country: 'United States',
-    kind: 'earth',
-    coords: [40.7589, -73.9851],
   },
   'kirby-glen': {
     name: 'Kirby Glen',
@@ -1375,6 +1375,13 @@ export const locations = {
     country: 'Vietnam',
     kind: 'earth',
     coords: [16.054, 108.202],
+  },
+  'miriam-castle': {
+    name: "Miriam's Castle",
+    place: 'Carpathian Mountains',
+    country: 'Romania',
+    kind: 'earth',
+    coords: [45.6, 25.1],
   },
   'mission-control-houston': {
     name: 'Mission Control Center',
@@ -1857,6 +1864,13 @@ export const locations = {
     country: 'United States',
     kind: 'earth',
     coords: [33.793, -118.244],
+  },
+  'rookers-island': {
+    name: "Rooker's Island",
+    place: 'East River, New York',
+    country: 'United States',
+    kind: 'earth',
+    coords: [40.7932, -73.886],
   },
   'roxxon-refinery': {
     name: 'Roxxon Refinery',

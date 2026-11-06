@@ -28,7 +28,7 @@ export const characters = {
     role: 'villain',
     status: 'alive',
     factions: [],
-    bio: "Elderly inventor at the head of Toomes Aerodynamics, who uses the technology of the Tablet of Time to drain the youth of others as the Vulture. He drains Peter Parker's youth and powers, but Curt Connors tricks him into keeping Peter's mutation instead.",
+    bio: "Elderly inventor at the head of Toomes Aerodynamics, who uses the technology of the Tablet of Time to drain the youth of others as the Vulture. He drains Peter Parker's youth and powers, but Curt Connors tricks him into keeping Peter's mutation; later he swaps ages with Silvermane and is young again.",
   },
   'agent-zero': {
     name: 'Agent Zero',
@@ -389,7 +389,7 @@ export const characters = {
     role: 'anti-hero',
     status: 'alive',
     factions: ['vampire-hunters'],
-    bio: 'Vampire hunter, trained by Whistler, who is slowly turning into a vampire himself. He comes to New York to kill Morbius, teams up with Spider-Man and falls for Detective Terri Lee.',
+    bio: 'Vampire hunter, trained by Whistler, who is slowly turning into a vampire himself. He comes to New York to kill Morbius, teams up with Spider-Man and falls for Detective Terri Lee; later he learns that the vampire Miriam is his mother and follows her to Europe to cure her.',
   },
   blastaar: {
     name: 'Blastaar',
@@ -654,7 +654,7 @@ export const characters = {
     role: 'anti-hero',
     status: 'alive',
     factions: ['esu-science-faculty'],
-    bio: "ESU professor and Peter Parker's teacher. He uses his Neogenic Recombinator to regrow his missing arm and turns into the Lizard, until Spider-Man fires the device at him and turns him back.",
+    bio: "ESU professor and Peter Parker's teacher. He uses his Neogenic Recombinator to regrow his missing arm and turns into the Lizard, until Spider-Man turns him back; later he turns again and leads a band of lizards from the sewers, until a genetic bomb cures him.",
   },
   'cyclops-scott-summers': {
     name: 'Scott Summers',
@@ -976,7 +976,7 @@ export const characters = {
     role: 'hero',
     status: 'alive',
     factions: ['hardy-foundation', 'street-level-heroes'],
-    bio: "Anastasia Hardy's daughter and Peter Parker's college classmate, who takes him as her science tutor. Doctor Octopus kidnaps her for ransom, and later she gets engaged to Jason Phillips, who turns out to be the Hobgoblin.",
+    bio: "Anastasia Hardy's daughter and Peter Parker's college classmate, kidnapped by Doctor Octopus and later engaged to Jason Phillips, the Hobgoblin. The Kingpin turns her into the Black Cat with a recreated super-soldier serum; she becomes Spider-Man's partner, then follows the vampire Miriam to Europe with Blade and Morbius.",
   },
   'fin-fang-foom': {
     name: 'Fin Fang Foom',
@@ -1047,7 +1047,7 @@ export const characters = {
     origin: 'Earth / S.A.B.E.R. Station',
     bio: 'Former Director of S.H.I.E.L.D. and founder of the Avengers.',
     variants: {
-      'earth-92131': "In the animated series he is one of the Howling Commandos who blow up the Red Skull's facility in France in 1944, and in the 1993 that Cable erases he watches the Senate hearing on the plague at S.H.I.E.L.D. In 1994 the government fakes his death, and from the S.H.I.E.L.D. Helicarrier he and Spider-Man stop the Chameleon. In 1995 he works with Tony Stark against A.I.M. and asks him to stop Iron Man in the Armor Wars.",
+      'earth-92131': "In the animated series he is one of the Howling Commandos who blow up the Red Skull's facility in France in 1944, and in the 1993 that Cable erases he watches the Senate hearing on the plague at S.H.I.E.L.D. In 1994 the government fakes his death, and from the S.H.I.E.L.D. Helicarrier he and Spider-Man stop the Chameleon. In 1995 he works with Tony Stark against A.I.M. and asks him to stop Iron Man in the Armor Wars. In 1996 S.H.I.E.L.D. holds John Hardesky, who carries the super-soldier formula in his memory.",
     },
   },
   'gabe-jones': {
@@ -1222,7 +1222,7 @@ export const characters = {
     role: 'civilian',
     status: 'alive',
     factions: [],
-    bio: "Norman Osborn's son and Peter Parker's friend, who offers Peter a room in his apartment. The Hobgoblin kidnaps him to make his father hand over Oscorp.",
+    bio: "Norman Osborn's son and Peter Parker's friend and flatmate, kidnapped by the Hobgoblin and for a while engaged to Mary Jane. Called by his father from limbo, he becomes the second Green Goblin to avenge him, and ends up at Ravencroft.",
   },
   hawkeye: {
     name: 'Clint Barton',
@@ -1395,7 +1395,7 @@ export const characters = {
     role: 'civilian',
     status: 'alive',
     factions: ['daily-bugle'],
-    bio: "Publisher of the Daily Bugle, who hates Spider-Man yet buys Peter Parker's photos of him. He pays for the experiment that turns Mac Gargan into the Scorpion, and his son John is an astronaut.",
+    bio: "Publisher of the Daily Bugle, who hates Spider-Man yet buys Peter Parker's photos of him. He pays for the experiment that turns Mac Gargan into the Scorpion, his son John is an astronaut, and his old detective skills help clear Robbie Robertson.",
   },
   'jack-the-ripper': {
     name: 'Jack the Ripper',
@@ -1545,6 +1545,15 @@ export const characters = {
     factions: ['ssr'],
     origin: 'United States',
     bio: 'Superior of Peggy Carter at the SSR in New York in 1946, who keeps her behind a desk until Howard Stark calls.',
+  },
+  'john-hardesky': {
+    name: 'John Hardesky',
+    alias: 'The Cat',
+    color: '#334155',
+    role: 'anti-hero',
+    status: 'alive',
+    factions: [],
+    bio: "Felicia Hardy's father, a burglar called the Cat, whom S.H.I.E.L.D. holds because as a boy during World War II he memorized the formula that created Captain America. The Kingpin forces it out of him to make Felicia the Black Cat, and he erases it and goes back to S.H.I.E.L.D.",
   },
   'john-jameson': {
     name: 'John Jameson',
@@ -1910,7 +1919,7 @@ export const characters = {
     role: 'secondary',
     status: 'alive',
     factions: [],
-    bio: "Scientist whom Kraven comes to New York to take home with him. She makes the antidote that cures him, and later a serum for Peter Parker's mutation that makes it worse, and the antidote that brings him back from the Man-Spider.",
+    bio: "Scientist whom Kraven comes to New York to take home with him. She makes the antidote that cures him, a serum for Peter Parker's mutation and the antidote that brings him back from the Man-Spider; later, infected by a virus in Africa and turned feral by Kraven's serum, she is only partly restored and leaves with Kraven.",
   },
   'mary-jane-watson': {
     name: 'Mary Jane Watson',
@@ -2002,7 +2011,7 @@ export const characters = {
     role: 'anti-hero',
     status: 'alive',
     factions: [],
-    bio: "ESU student and Peter Parker's rival for the post of Curt Connors's assistant. In a lab of his own, a bat bites him at a borrowed Neogenic Recombinator and he becomes a living vampire who drains people of plasma; when he shields Felicia Hardy from the Recombinator's blast, the change becomes permanent.",
+    bio: "ESU student and Peter Parker's rival for the post of Curt Connors's assistant. A bat bites him at a borrowed Neogenic Recombinator and he becomes a living vampire who drains people of plasma; found hibernating in a cave, he wakes again in New York and follows the vampire Miriam to Europe with Blade and the Black Cat.",
   },
   'minn-erva': {
     name: 'Minn-Erva',
@@ -2012,6 +2021,23 @@ export const characters = {
     factions: ['starforce', 'kree-empire'],
     origin: 'Hala (Kree Empire)',
     bio: 'Elite sniper and geneticist of the Kree Starforce whose disdain for Carol Danvers turned into deadly aerial combat over the Mojave Desert, where her ship was shot down by Maria Rambeau.',
+  },
+  'miranda-wilson': {
+    name: 'Miranda Wilson',
+    color: '#f472b6',
+    role: 'secondary',
+    status: 'presumably-dead',
+    factions: [],
+    bio: "Film star disfigured in the accident on the Brooklyn Bridge that sent Quentin Beck to prison. She plans to take Mary Jane Watson's body, frees her instead, and stays with Beck as Wonder Studios explodes.",
+  },
+  miriam: {
+    name: 'Miriam',
+    alias: 'The Vampire Queen',
+    color: '#7f1d1d',
+    role: 'villain',
+    status: 'alive',
+    factions: [],
+    bio: "Blade's mother, turned into a vampire, who comes to New York for the Neogenic Recombinator to make more vampires. Spider-Man turns her new vampires back, and Blade follows her to Europe to cure her.",
   },
   'miss-allure': {
     name: 'Allure',
@@ -2105,9 +2131,9 @@ export const characters = {
     alias: 'Mysterio',
     color: '#a855f7',
     role: 'villain',
-    status: 'alive',
+    status: 'presumably-dead',
     factions: ['insidious-six'],
-    bio: 'Special-effects man who, as Mysterio, frames Spider-Man for a robbery at the Metropolitan Museum and fakes his own powers with illusions and robots. Spider-Man and Detective Terri Lee find him at Wonder Studios, and he is arrested.',
+    bio: 'Special-effects man who, as Mysterio, frames Spider-Man for a museum robbery and fakes his powers with illusions and robots. Later he haunts the shoot of a film starring Mary Jane at Wonder Studios, and stays inside with Miranda Wilson, the star disfigured in his old accident, as the studio explodes.',
   },
   nakia: {
     name: 'Nakia',
@@ -2302,8 +2328,7 @@ export const characters = {
     role: 'hero',
     status: 'alive',
     factions: ['street-level-heroes'],
-    origin: 'The Bronx, New York',
-    bio: 'Ingenious inventor equipped with clawed gloves, pneumatics, and sleeping gas who was deceived by Kingpin before turning to fight alongside Spider-Man.',
+    bio: 'Small-time crook who worked for the crime lord Iceberg, saved Richard Fisk in jail, and got a lawyer and a stealth suit from the Kingpin to become the Prowler. Fearing the Kingpin has rigged the suit, he teams up with Spider-Man and gives up crime.',
   },
   'psylocke-betsy-braddock': {
     name: 'Betsy Braddock',
@@ -2419,7 +2444,7 @@ export const characters = {
     origin: 'New York City',
     bio: 'Daily Bugle reporter and the friend who knows Ben Reilly is The Spider. He cures Lonnie Lincoln with a dose in the eye, wears the suit to save Ben, and leaves the Bugle to run the Harlem Herald.',
     variants: {
-      'earth-92131': "In the animated series he works at the Daily Bugle and buys Peter Parker's photos of Spider-Man. Kraven takes him as bait to make Spider-Man hand over Mariah Crawford.",
+      'earth-92131': "In the animated series he works at the Daily Bugle and buys Peter Parker's photos of Spider-Man. Kraven takes him as bait to make Spider-Man hand over Mariah Crawford; later the Kingpin frames him as a crime mastermind, and Jameson clears him.",
     },
   },
   'robert-hendry': {
@@ -2648,7 +2673,7 @@ export const characters = {
     origin: 'New York City',
     bio: 'Crime boss who has run New York for 30 years, with the police on his payroll and the mayors of his choosing. Cat Hardy, the singer he controlled, shoots him in 1933.',
     variants: {
-      'earth-92131': 'In the animated series Silvermane is an elderly crime lord, whose real name the show does not give, at war with the Kingpin for New York. The Tablet of Time makes him young again, and then keeps going until he is a baby.',
+      'earth-92131': 'In the animated series Silvermane is an elderly crime lord, whose real name the show does not give, at war with the Kingpin for New York. The Tablet of Time makes him young again and keeps going until he is a baby, and the Vulture later swaps ages with him and makes him old again.',
     },
   },
   skye: {
@@ -2893,7 +2918,7 @@ export const characters = {
     origin: 'New York',
     bio: 'War veteran waging a one-man war on organized crime.',
     variants: {
-      'earth-92131': "In the animated series he hunts Spider-Man, whom the news blames for Morbius's attacks, with his partner Microchip, and joins Kraven to bring down the Man-Spider.",
+      'earth-92131': "In the animated series he hunts Spider-Man, whom the news blames for Morbius's attacks, with his partner Microchip, and joins Kraven to bring down the Man-Spider. Later Anna Watson asks him to find Mary Jane, and he suspects Peter Parker.",
     },
   },
   'the-spot': {
