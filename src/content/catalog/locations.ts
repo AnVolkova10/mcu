@@ -200,9 +200,8 @@ export const locations = {
     coords: [72, 38],
   },
   'battleworld-proving-ground': {
-    name: 'Battleworld Proving Ground',
-    place: 'Beyond Cosmic Sector',
-    country: 'Battleworld',
+    name: "The Beyonder's Planet",
+    country: 'Another dimension',
     kind: 'dimension',
     node: 'battleworld',
   },
@@ -590,11 +589,11 @@ export const locations = {
     coords: [38.944, -77.055],
   },
   'dr-miles-warrens-offshore-aquatic-bio-dome': {
-    name: "Dr. Miles Warren's Offshore Aquatic Bio-Dome",
-    place: 'Long Island Sound / Atlantic Coast',
+    name: "Miles Warren's Underwater Lab",
+    place: 'Hudson River, New York',
     country: 'United States',
     kind: 'earth',
-    coords: [40.9, -73.3],
+    coords: [41.005, -73.885],
   },
   'eagle-plaza-ranch-and-sacred-caverns': {
     name: 'Eagle Plaza Ranch & Sacred Caverns',
@@ -611,11 +610,10 @@ export const locations = {
     coords: [32.7767, -96.797],
   },
   'earth-real-skyscraper-rooftop': {
-    name: 'Earth-Real Skyscraper Rooftop',
-    place: 'Manhattan, New York',
-    country: 'United States',
-    kind: 'earth',
-    coords: [40.7484, -73.9857],
+    name: 'Marvel Comics Offices',
+    country: "The Actor's World",
+    kind: 'dimension',
+    node: 'actor-world',
   },
   'echo-park': {
     name: 'Echo Park',
@@ -1026,6 +1024,13 @@ export const locations = {
     kind: 'earth',
     coords: [45.815, 15.9819],
   },
+  'illyena-groitzig-apartment': {
+    name: "Illyena Groitzig's Apartment",
+    place: 'Khamovniki, Moscow',
+    country: 'Russia',
+    kind: 'earth',
+    coords: [55.731, 37.583],
+  },
   'interdimensional-limbo': {
     name: 'Limbo',
     country: 'Between dimensions',
@@ -1274,9 +1279,9 @@ export const locations = {
     coords: [40.7712, -73.9585],
   },
   'manhattan-chapel-and-chernobyl-nuclear-complex': {
-    name: 'Manhattan Chapel & Chernobyl Nuclear Complex',
-    place: 'New York / Chernobyl',
-    country: 'United States / Ukraine',
+    name: 'Chernobyl Nuclear Power Plant',
+    place: 'Chernobyl',
+    country: 'Ukraine',
     kind: 'earth',
     coords: [51.389, 30.099],
   },
@@ -1378,7 +1383,7 @@ export const locations = {
   },
   'miriam-castle': {
     name: "Miriam's Castle",
-    place: 'Carpathian Mountains',
+    place: 'Transylvania',
     country: 'Romania',
     kind: 'earth',
     coords: [45.6, 25.1],
@@ -1424,6 +1429,13 @@ export const locations = {
     country: 'United States',
     kind: 'earth',
     coords: [40.7377, -73.9887],
+  },
+  'moscow-police-headquarters': {
+    name: 'Moscow Police Headquarters',
+    place: 'Petrovka Street, Moscow',
+    country: 'Russia',
+    kind: 'earth',
+    coords: [55.7699, 37.6135],
   },
   'moscow-soviet-high-command': {
     name: 'Soviet High Command',
@@ -1502,6 +1514,13 @@ export const locations = {
     kind: 'earth',
     coords: [38.4824, 22.501],
   },
+  'national-bank': {
+    name: 'National Bank',
+    place: 'Union Square, Manhattan',
+    country: 'United States',
+    kind: 'earth',
+    coords: [40.7359, -73.9906],
+  },
   'nazi-gestapo-fortress-and-subterranean-lab': {
     name: 'Nazi Facility',
     place: 'La Roche-Guyon',
@@ -1558,6 +1577,13 @@ export const locations = {
     country: 'United States',
     kind: 'earth',
     coords: [40.7146, -74.0019],
+  },
+  'niagara-falls': {
+    name: 'Niagara Falls',
+    place: 'Niagara Falls, New York',
+    country: 'United States',
+    kind: 'earth',
+    coords: [43.081, -79.0683],
   },
   'nile-valley-and-giza-dunes': {
     name: 'Nile Valley & Giza Dunes',
@@ -1631,6 +1657,13 @@ export const locations = {
     kind: 'earth',
     coords: [51.4826, -0.0077],
   },
+  'omar-mosely-home': {
+    name: "Omar Mosely's Home",
+    place: 'Morningside Heights, Manhattan',
+    country: 'United States',
+    kind: 'earth',
+    coords: [40.8095, -73.966],
+  },
   'osborn-mansion': {
     name: 'Osborn Mansion',
     place: 'Riverdale, the Bronx',
@@ -1693,6 +1726,12 @@ export const locations = {
     country: 'Peru',
     kind: 'earth',
     coords: [-12.07, -75.2],
+  },
+  'peter-parker-science-foundation': {
+    name: 'Peter Parker Science Foundation',
+    country: "The Armored Spider-Man's World",
+    kind: 'dimension',
+    node: 'armored-spider-man-world',
   },
   'phalanx-assimilation-spire-and-muir-island': {
     name: 'Empire State Building',
@@ -1795,11 +1834,11 @@ export const locations = {
     approximate: true,
   },
   'red-skulls-doomsday-device-subterranean-bunker': {
-    name: "Red Skull's Doomsday Device Subterranean Bunker",
-    place: 'Chernobyl / Pripyat Border Region',
-    country: 'Soviet Union / Eastern Front (WWII)',
+    name: 'Project Doomsday Complex',
+    place: 'Port Morris, the Bronx',
+    country: 'United States',
     kind: 'earth',
-    coords: [51.2763, 30.2219],
+    coords: [40.8003, -73.9122],
   },
   'red-square-and-kremlin-military-district': {
     name: 'Red Square',
@@ -2006,6 +2045,12 @@ export const locations = {
     country: 'United States',
     kind: 'earth',
     coords: [40.8085, -73.879],
+  },
+  'spider-carnage-new-york': {
+    name: "Spider-Carnage's New York",
+    country: "Spider-Carnage's World",
+    kind: 'dimension',
+    node: 'spider-carnage-world',
   },
   'springfield-ohio-carnival': {
     name: 'Carnival',
@@ -2509,6 +2554,13 @@ export const locations = {
     country: 'Canada',
     kind: 'earth',
     coords: [50.85, -115.05],
+  },
+  'wedding-church': {
+    name: 'Wedding Church',
+    place: 'Forest Hills, Queens',
+    country: 'United States',
+    kind: 'earth',
+    coords: [40.7164, -73.8414],
   },
   'western-front-allied-trenches': {
     name: 'Western Front Trenches',

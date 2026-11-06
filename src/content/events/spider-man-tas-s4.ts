@@ -8,7 +8,7 @@ export default defineEvents('spider-man-tas-s4', [
     segment: 'E1',
     title: 'The Kingpin frames Robbie Robertson as a crime mastermind',
     text: [
-      "Still grieving for [Mary Jane Watson](mary-jane-watson), [Spider-Man](spider-man) stops a gang whose leader turns out to be [Robbie Robertson](robbie-robertson-noir), framed by [the Kingpin](wilson-fisk-kingpin) at the request of his son [Richard Fisk](richard-fisk), who shares a cell on Rooker's Island with [Tombstone](tombstone-noir). Robbie is sentenced to fifteen years, and [J. Jonah Jameson](j-jonah-jameson), back in his old detective days, finds with Spider-Man the remote control that fired Robbie's blaster. Spider-Man stops a staged escape from the prison, and at a new trial Jameson's evidence clears Robbie.",
+      "Still grieving for Mary Jane, [Spider-Man](spider-man) stops a gang whose leader turns out to be [Robbie Robertson](robbie-robertson-noir), framed by [the Kingpin](wilson-fisk-kingpin) at the request of his son [Richard Fisk](richard-fisk), who shares a cell on Rooker's Island with [Tombstone](tombstone-noir). Robbie is sentenced to fifteen years, and [J. Jonah Jameson](j-jonah-jameson), back in his old detective days, finds with Spider-Man the remote control that fired Robbie's blaster. Spider-Man stops a staged escape from the prison, and at a new trial Jameson's evidence clears Robbie.",
     ],
     cast: ['herbert-landon'],
     locations: ['daily-bugle-headquarters', 'new-york-supreme-court-and-fisk-tower', 'chrysler-building', 'rookers-island'],
@@ -65,7 +65,7 @@ export default defineEvents('spider-man-tas-s4', [
     segment: 'E8',
     title: 'Harry becomes the second Green Goblin, and Mary Jane comes back',
     text: [
-      "About four months after the bridge, [Norman Osborn](norman-osborn) calls to his son from limbo and leads [Harry Osborn](harry-osborn) to the Goblin formula, and Harry becomes the second Green Goblin to avenge his father on [Spider-Man](spider-man). Anna Watson asks [the Punisher](the-punisher) to find her niece, and he suspects Peter; in the fight Norman's projection shows Harry who he is, Harry collapses and is taken to Ravencroft. Then [Mary Jane Watson](mary-jane-watson) mysteriously reappears.",
+      "About four months after the bridge, [Norman Osborn](norman-osborn) calls to his son from limbo and leads [Harry Osborn](harry-osborn) to the Goblin formula, and Harry becomes the second Green Goblin to avenge his father on [Spider-Man](spider-man). Anna Watson asks [the Punisher](the-punisher) to find her niece, and he suspects Peter; in the fight Norman's projection shows Harry who he is, Harry collapses and is taken to Ravencroft. Then [Mary Jane](mary-jane-clone) mysteriously reappears.",
     ],
     cast: ['may-parker'],
     locations: ['harry-osborn-apartment', 'osborn-mansion', 'oscorp-industries', 'interdimensional-limbo'],
@@ -76,7 +76,7 @@ export default defineEvents('spider-man-tas-s4', [
     segment: 'E9',
     title: "Mysterio haunts Mary Jane's film, and Peter unmasks for her",
     text: [
-      "[Mary Jane Watson](mary-jane-watson) gets the lead in the film that [Mysterio](mysterio-quentin-beck) once worked on, replacing [Miranda Wilson](miranda-wilson), disfigured by the accident on the Brooklyn Bridge, and at Wonder Studios she is haunted by images of her father. Escaped from prison, Mysterio offers to give her back if Spider-Man helps him, while Miranda means to take Mary Jane's body with a machine that could never work. Miranda frees Mary Jane instead, the studio explodes with Miranda and Quentin inside, and outside [Spider-Man](spider-man) takes off his mask for Mary Jane.",
+      "[Mary Jane](mary-jane-clone) gets the lead in the film that [Mysterio](mysterio-quentin-beck) once worked on, replacing [Miranda Wilson](miranda-wilson), disfigured by the accident on the Brooklyn Bridge, and at Wonder Studios she is haunted by images of her father. Escaped from prison, Mysterio offers to give her back if Spider-Man helps him, while Miranda means to take Mary Jane's body with a machine that could never work. Miranda frees Mary Jane instead, the studio explodes with Miranda and Quentin inside, and outside [Spider-Man](spider-man) takes off his mask for Mary Jane.",
     ],
     cast: ['j-jonah-jameson', 'robbie-robertson-noir'],
     locations: ['wonder-studios', 'rookers-island'],
@@ -87,7 +87,7 @@ export default defineEvents('spider-man-tas-s4', [
     segment: 'E10',
     title: 'Peter proposes to Mary Jane, and Connors becomes the Lizard King',
     text: [
-      "[Peter Parker](spider-man) asks [Mary Jane Watson](mary-jane-watson) to marry him, and they ask [Curt Connors](curt-connors-lizard) to give her away. Lizards that drank Connors's DNA from his sink take him to the sewers, where he turns into the Lizard and leads them, and Spider-Man is locked up. Mary Jane, Margaret Connors and Debra Whitman turn Connors and the lizards back to normal with a genetic bomb.",
+      "[Peter Parker](spider-man) asks [Mary Jane](mary-jane-clone) to marry him, and they ask [Curt Connors](curt-connors-lizard) to give her away. Lizards that drank Connors's DNA from his sink take him to the sewers, where he turns into the Lizard and leads them, and Spider-Man is locked up. Mary Jane, Margaret Connors and Debra Whitman turn Connors and the lizards back to normal with a genetic bomb.",
     ],
     cast: ['may-parker', 'flash-thompson'],
     locations: ['connors-home', 'forest-hills-sewers'],
@@ -100,7 +100,7 @@ export default defineEvents('spider-man-tas-s4', [
     text: [
       "[Hobie Brown](prowler-hobie-brown) waits for Peter at his new apartment: a small-time crook who stole Mary Jane's purse while she and Peter were apartment hunting, saved [Richard Fisk](richard-fisk) in jail and got from [the Kingpin](wilson-fisk-kingpin) a lawyer and a stealth suit to become the Prowler. Fearing the Kingpin has rigged the suit, he teams up with [Spider-Man](spider-man) to break free, and gives up crime.",
     ],
-    cast: ['mary-jane-watson'],
+    cast: ['mary-jane-clone'],
     locations: ['chrysler-building', 'new-york-supreme-court-and-fisk-tower', 'rookers-island'],
   },
 ]);

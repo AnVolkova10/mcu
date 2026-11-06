@@ -60,7 +60,6 @@ export const factions = {
   'imperial-guard': { name: 'Imperial Guard' },
   inhumans: { name: 'Inhumans' },
   'insidious-six': { name: 'Insidious Six' },
-  invaders: { name: 'Invaders' },
   'kingpin-syndicate': { name: 'Kingpin Syndicate' },
   'kree-empire': { name: 'Kree Empire' },
   'kun-lun': { name: "K'un-Lun" },

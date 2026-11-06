@@ -107,6 +107,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'black-bolt': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/1/18/Black_Bolt.jpg/revision/latest/scale-to-width-down/300?cb=20150321053416',
   },
+  'black-marvel-omar-mosely': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/c/ce/Black_Marvel.jpg/revision/latest/scale-to-width-down/300?cb=20131015192249',
+  },
   'black-panther': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/9/9d/T%27Challa_Infobox.jpg/revision/latest/scale-to-width-down/218?cb=20231024023619',
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/e/e6/Black_Panther.jpg/revision/latest/scale-to-width-down/300?cb=20140131083448',
@@ -233,6 +236,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'deathbird': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/5/55/Cal28Earth-921312797_Concept_Art_001.webp/revision/latest/scale-to-width-down/197?cb=20241217044015',
   },
+  'destroyer-keene-marlowe': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/d/da/Destroyer.jpg/revision/latest/scale-to-width-down/300?cb=20080720223136',
+  },
   'doc-samson': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/4/4d/Doc_Samson.jpg/revision/latest/scale-to-width-down/296?cb=20131021192023',
   },
@@ -270,6 +276,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   },
   'ego': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/3/35/Ego.jpg/revision/latest/scale-to-width-down/300?cb=20131029220411',
+  },
+  'electro-rheinholt-kragov': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/7/72/Electro.jpg/revision/latest/scale-to-width-down/300?cb=20080731000501',
   },
   'elektra': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/e/e3/Elektra_Infobox.png/revision/latest/scale-to-width-down/197?cb=20230629114045',
@@ -605,6 +614,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'mariah-crawford': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/9/91/Calypso.jpg/revision/latest/scale-to-width-down/300?cb=20131015195017',
   },
+  'mary-jane-clone': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/b/bf/Hydro-MJ.jpg/revision/latest/scale-to-width-down/300?cb=20131015195519',
+  },
   'mary-jane-watson': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/d/d6/Mary_Jane_Watson.jpg/revision/latest/scale-to-width-down/157?cb=20170317070609',
   },
@@ -635,6 +647,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'michael-morbius': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/2/26/Morbius.jpg/revision/latest/scale-to-width-down/300?cb=20080805220934',
   },
+  'miles-warren': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/8/88/Miles_Warren.jpg/revision/latest/scale-to-width-down/300?cb=20130915012733',
+  },
   'minn-erva': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/3/30/Minn-Erva_Textless_Poster.jpg/revision/latest/scale-to-width-down/242?cb=20231025001731',
   },
@@ -646,6 +661,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   },
   'miss-allure': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/c/cd/Miss_Allure.jpg/revision/latest/scale-to-width-down/300?cb=20131101171653',
+  },
+  'miss-america-madeline-joyce': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/1/11/Miss_America.jpg/revision/latest?cb=20140308024350',
   },
   'mister-sinister-nathaniel-essex': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/3/39/Mr._Sinister_X-men_97.webp/revision/latest/scale-to-width-down/235?cb=20241218174500',
@@ -835,6 +853,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'shuri': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/e/e2/BP-Shuri_%28In_Contact_With_T%27Challa%29.jpg/revision/latest/scale-to-width-down/300?cb=20180329024900',
   },
+  'silver-sable': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/4/43/Silver_Sable.jpg/revision/latest/scale-to-width-down/300?cb=20131021153128',
+  },
   'silver-samurai': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/9/9d/Silver_Samurai.jpg/revision/latest/scale-to-width-down/300?cb=20110214122546',
   },
@@ -850,6 +871,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   },
   'spencer-smythe': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/a/ad/Spencer_Smythe.jpg/revision/latest/scale-to-width-down/299?cb=20170207030734',
+  },
+  'spider-carnage': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/4/43/Spidercarnage.jpg/revision/latest/scale-to-width-down/300?cb=20100227120401',
   },
   'spider-man': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/4/41/Spider-Man_Infobox.jpg/revision/latest/scale-to-width-down/225?cb=20261016004855',
@@ -916,6 +940,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'thor': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/2b/Thor_Infobox.jpg/revision/latest/scale-to-width-down/195?cb=20231021012616',
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/2/23/Thor.jpg/revision/latest/scale-to-width-down/300?cb=20110501065658',
+  },
+  'thunderer-jerry-carstairs': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/d/d5/Thunderer.jpg/revision/latest/scale-to-width-down/300?cb=20131130195720',
   },
   'titanium-man': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/a/a2/Titanium_Man.jpg/revision/latest/scale-to-width-down/300?cb=20100822140233',

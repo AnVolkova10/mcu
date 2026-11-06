@@ -945,7 +945,8 @@ export const productions = {
     universe: 'earth-92131',
     status: 'audited',
     animated: true,
-    description: "The epic culmination: The Wedding of Peter and Mary Jane, the Six Forgotten Warriors saga with Captain America, Beyonder's Secret Wars with Iron Man and the Fantastic Four, and the multiversal Spider Wars.",
+    description: "1997, from Peter's wedding to the Spider Wars: the Six Forgotten Warriors and Electro, the death of Mary Jane's clone, the Beyonder's Secret Wars, and Spider-Men from other realities against Spider-Carnage, before Madame Web takes Peter to find the real Mary Jane.",
+    verified: true,
     poster: '/naOSAwubTLs2PSrJIAyNPNz7cVh.jpg',
   },
   'incredible-hulk-tas-s1': {

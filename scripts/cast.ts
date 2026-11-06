@@ -32,6 +32,7 @@ const CREDITED_AS: Record<string, readonly string[]> = {
   'johann-fennhoff': ['Dr. Ivchenko'],
   'last-black-panther': ['The Intruder'],
   'lilandra-neramani': ['Lilandra', 'Empress Lilandra'],
+  'mary-jane-clone': ['Mary Jane Watson'],
   'may-parker': ['Aunt May Parker'],
   medusa: ['Madam Medusa'],
   noni: ['Older Noni'],
@@ -44,6 +45,8 @@ const CREDITED_AS: Record<string, readonly string[]> = {
   ronan: ['Ronan'],
   'ruby-williams-noir': ['Ruby'],
   'silvermane-noir': ['Finn Byrne'],
+  'spider-carnage': ['Peter Parker'],
+  'stan-lee-creator': ['The Man'],
   taina: ['Maria Taina Elizando'],
   'terri-lee': ['Detective Terri Lee'],
   'thaddeus-ross': ['General Ross'],
@@ -57,8 +60,10 @@ const CREDITED_AS: Record<string, readonly string[]> = {
 const NOT_THEM: Record<string, readonly string[]> = {
   'charles-xavier': ['Laurence Belcher'],
   'en-sabah-nur-apocalypse': ['Brendan Pedder'],
+  'miss-america-madeline-joyce': ['David Hayter'],
   'monica-rambeau': ['Azari Akbar'],
   'peggy-carter': ['Carole Ruggier'],
+  'steve-rogers': ['Kathy Garver'],
   wasp: ['Hayley Lovitt'],
 };
 

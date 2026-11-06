@@ -263,11 +263,11 @@ export const cosmosNodes = {
     description: 'Temporal nexus from which Apocalypse tried to rewrite all of history.',
   },
   battleworld: {
-    name: 'Battleworld',
+    name: "The Beyonder's Planet",
     zone: 'dimensions',
     look: 'planet',
     color: '#ef4444',
-    description: "The Beyonder's patchwork planet of the Secret Wars.",
+    description: 'A paradise planet in another dimension where the Beyonder sets five villains loose and speeds up time, then sends Spider-Man and his heroes to free it in the Secret Wars.',
   },
   'astral-plane': {
     name: 'The Astral Plane',
@@ -296,6 +296,27 @@ export const cosmosNodes = {
     look: 'portal',
     color: '#64748b',
     description: 'The void between dimensions where the Spot, Mary Jane Watson and Norman Osborn are lost.',
+  },
+  'spider-carnage-world': {
+    name: "Spider-Carnage's World",
+    zone: 'dimensions',
+    look: 'planet',
+    color: '#9f1239',
+    description: 'A reality whose Peter Parker, bonded with a Carnage symbiote, has laid New York in ruins with its Kingpin, Alistair Smythe, Hobgoblin and Green Goblin. The Scarlet Spider comes from here.',
+  },
+  'armored-spider-man-world': {
+    name: "The Armored Spider-Man's World",
+    zone: 'dimensions',
+    look: 'planet',
+    color: '#eab308',
+    description: 'A reality whose Peter Parker is a billionaire in high-tech armor, known to everyone, engaged to Gwen Stacy, with Mary Jane and Uncle Ben alive. Spider-Carnage dies here.',
+  },
+  'actor-world': {
+    name: "The Actor's World",
+    zone: 'dimensions',
+    look: 'planet',
+    color: '#60a5fa',
+    description: 'A reality where Spider-Man is a comic-book character, home of the actor who plays him and of his creator, Stan Lee.',
   },
 } as const satisfies Record<string, CosmosNodeInput>;
 

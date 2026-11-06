@@ -27,8 +27,8 @@ export const characters = {
     color: '#84cc16',
     role: 'villain',
     status: 'alive',
-    factions: [],
-    bio: "Elderly inventor at the head of Toomes Aerodynamics, who uses the technology of the Tablet of Time to drain the youth of others as the Vulture. He drains Peter Parker's youth and powers, but Curt Connors tricks him into keeping Peter's mutation; later he swaps ages with Silvermane and is young again.",
+    factions: ['insidious-six'],
+    bio: "Elderly inventor at the head of Toomes Aerodynamics, who uses the technology of the Tablet of Time to drain the youth of others as the Vulture. He drains Peter Parker's youth and powers, but Curt Connors tricks him into keeping Peter's mutation; later he swaps ages with Silvermane, is young again, and takes Mysterio's place in the Insidious Six.",
   },
   'agent-zero': {
     name: 'Agent Zero',
@@ -111,7 +111,7 @@ export const characters = {
     role: 'villain',
     status: 'alive',
     factions: ['kingpin-syndicate'],
-    bio: "Spencer Smythe's son, who moves in a hoverchair and builds Spider-Slayers for the Kingpin to destroy Spider-Man and the people he blames for his father's loss. The Kingpin has him turned into a cyborg, and he turns on him when he learns his father is alive.",
+    bio: "Spencer Smythe's son, who moves in a hoverchair and builds Spider-Slayers for the Kingpin to destroy Spider-Man and the people he blames for his father's loss. The Kingpin has him turned into a cyborg, and he turns on him when he learns his father is alive. Later he gives Harry Osborn robots to attack Peter's wedding, and is one of the five villains the Beyonder sets loose in the Secret Wars.",
   },
   'amelia-voght': {
     name: 'Amelia Voght',
@@ -289,7 +289,7 @@ export const characters = {
     role: 'hero',
     status: 'alive',
     factions: ['fantastic-four'],
-    bio: "Member of the Fantastic Four whom the cosmic rays turned into the Thing, a hulking man of rock. In ancient Greece he agrees to stay with the grateful Greeks, until Doom's Time Platform pulls him back.",
+    bio: "Member of the Fantastic Four whom the cosmic rays turned into the Thing, a hulking man of rock. In ancient Greece he agrees to stay with the grateful Greeks, until Doom's Time Platform pulls him back. On the Beyonder's planet Doctor Doom captures him and gives him a device that turns him human at will.",
   },
   'ben-reilly-noir': {
     name: 'Ben Reilly',
@@ -337,6 +337,15 @@ export const characters = {
     factions: ['inhumans'],
     origin: 'Attilan',
     bio: 'Silent king of the Inhumans, whose voice alone can level mountains. Rules the hidden city of Attilan.',
+  },
+  'black-marvel-omar-mosely': {
+    name: 'Omar Mosely',
+    alias: 'Black Marvel',
+    color: '#92400e',
+    role: 'hero',
+    status: 'alive',
+    factions: ['six-forgotten-warriors'],
+    bio: "Driver and assistant of Dan Lyons, whose place he takes as the Black Marvel when Lyons's father pulls his son out of the super-soldier program; for decades everyone believes Lyons was under the mask. Later a professor and Robbie Robertson's mentor, he tells Peter the story of the Warriors and reveals who he is when they fight again.",
   },
   'black-panther': {
     name: "T'Challa",
@@ -389,7 +398,7 @@ export const characters = {
     role: 'anti-hero',
     status: 'alive',
     factions: ['vampire-hunters'],
-    bio: 'Vampire hunter, trained by Whistler, who is slowly turning into a vampire himself. He comes to New York to kill Morbius, teams up with Spider-Man and falls for Detective Terri Lee; later he learns that the vampire Miriam is his mother and follows her to Europe to cure her.',
+    bio: 'Vampire hunter, trained by Whistler, who is slowly turning into a vampire himself. He comes to New York to kill Morbius, teams up with Spider-Man and falls for Detective Terri Lee; later he learns that the vampire Miriam is his mother, follows her to Europe to cure her and fights her in Transylvania.',
   },
   blastaar: {
     name: 'Blastaar',
@@ -541,7 +550,7 @@ export const characters = {
     role: 'villain',
     status: 'alive',
     factions: ['insidious-six'],
-    bio: "Master of disguise whose image inducer copies anyone's looks. Hired by terrorists to stop a peace treaty at the United Nations, he poses as Jameson, Robbie, Peter and Nick Fury until Spider-Man breaks the inducer and S.H.I.E.L.D. takes him.",
+    bio: "Master of disguise whose image inducer copies anyone's looks. Hired by terrorists to stop a peace treaty at the United Nations, he poses as Jameson, Robbie, Peter and Nick Fury until Spider-Man breaks the inducer and S.H.I.E.L.D. takes him. The Red Skull's stepson, he later poses as Illyena Groitzig's husband and as Robbie, and betrays the Kingpin to help his brother Rheinholt Kragov free their father.",
   },
   'charles-xavier': {
     name: 'Charles Xavier',
@@ -654,7 +663,7 @@ export const characters = {
     role: 'anti-hero',
     status: 'alive',
     factions: ['esu-science-faculty'],
-    bio: "ESU professor and Peter Parker's teacher. He uses his Neogenic Recombinator to regrow his missing arm and turns into the Lizard, until Spider-Man turns him back; later he turns again and leads a band of lizards from the sewers, until a genetic bomb cures him.",
+    bio: "ESU professor and Peter Parker's teacher. He uses his Neogenic Recombinator to regrow his missing arm and turns into the Lizard, until Spider-Man turns him back; later he turns again and leads a band of lizards from the sewers, until a genetic bomb cures him. He gives the bride away at Peter's wedding, and on the Beyonder's planet, the Lizard once more, he joins the heroes when Mister Fantastic wakes his mind.",
   },
   'cyclops-scott-summers': {
     name: 'Scott Summers',
@@ -731,6 +740,15 @@ export const characters = {
     factions: ['shiar-imperium'],
     bio: "Lilandra's sister. With Apocalypse she saves Fabian Cortez from the falling Asteroid M, and later, with his help, she attacks Lilandra's empire.",
   },
+  'destroyer-keene-marlowe': {
+    name: 'Keene Marlowe',
+    alias: 'The Destroyer',
+    color: '#475569',
+    role: 'hero',
+    status: 'alive',
+    factions: ['six-forgotten-warriors', 'shield'],
+    bio: "One of the five super soldiers made after Captain America in World War II, and Ben Parker's best friend. Still a S.H.I.E.L.D. commander fifty years later, he visits May Parker and leads the Warriors when they reunite against the Kingpin and the Red Skull.",
+  },
   'doc-samson': {
     name: 'Leonard Samson',
     alias: 'Doc Samson',
@@ -747,7 +765,7 @@ export const characters = {
     role: 'villain',
     status: 'alive',
     factions: ['insidious-six'],
-    bio: 'Scientist whose mechanical arms an explosion welded to his spine. Angry that the Hardy Foundation cut off his grant, he kidnaps Felicia Hardy and J. Jonah Jameson for ransom, and ends up in prison.',
+    bio: "Scientist whose mechanical arms an explosion welded to his spine. Angry that the Hardy Foundation cut off his grant, he kidnaps Felicia Hardy and J. Jonah Jameson for ransom, and ends up in prison. Later he hunts the Red Skull's Doomsday Device with the Insidious Six, and on the Beyonder's planet, after Doctor Doom takes his domain, he joins the Red Skull.",
   },
   'doctor-strange': {
     name: 'Dr. Stephen Strange',
@@ -858,6 +876,15 @@ export const characters = {
     factions: ['cosmic-entities'],
     origin: 'Black Galaxy',
     bio: 'A sentient planet whose endless hunger drives it to consume entire worlds.',
+  },
+  'electro-rheinholt-kragov': {
+    name: 'Rheinholt Kragov',
+    alias: 'Electro',
+    color: '#65a30d',
+    role: 'villain',
+    status: 'presumably-dead',
+    factions: [],
+    bio: "Moscow's chief of police and the Red Skull's son, who spends his life searching for his father and poses as him to seize the Doomsday Device. He frees the Skull from the vortex, and the device turns him into Electro, who turns on his father and demands that the United Nations make him ruler of the world, until he is drawn into the vortex.",
   },
   elektra: {
     name: 'Elektra Natchios',
@@ -976,7 +1003,7 @@ export const characters = {
     role: 'hero',
     status: 'alive',
     factions: ['hardy-foundation', 'street-level-heroes'],
-    bio: "Anastasia Hardy's daughter and Peter Parker's college classmate, kidnapped by Doctor Octopus and later engaged to Jason Phillips, the Hobgoblin. The Kingpin turns her into the Black Cat with a recreated super-soldier serum; she becomes Spider-Man's partner, then follows the vampire Miriam to Europe with Blade and Morbius.",
+    bio: "Anastasia Hardy's daughter and Peter Parker's college classmate, kidnapped by Doctor Octopus and later engaged to Jason Phillips, the Hobgoblin. The Kingpin turns her into the Black Cat with a recreated super-soldier serum; she becomes Spider-Man's partner and follows the vampire Miriam to Europe. She comes back for Peter's wedding, and Spider-Man pulls her out of a fight with Miriam in Transylvania into the Secret Wars, where they kiss.",
   },
   'fin-fang-foom': {
     name: 'Fin Fang Foom',
@@ -1047,7 +1074,7 @@ export const characters = {
     origin: 'Earth / S.A.B.E.R. Station',
     bio: 'Former Director of S.H.I.E.L.D. and founder of the Avengers.',
     variants: {
-      'earth-92131': "In the animated series he is one of the Howling Commandos who blow up the Red Skull's facility in France in 1944, and in the 1993 that Cable erases he watches the Senate hearing on the plague at S.H.I.E.L.D. In 1994 the government fakes his death, and from the S.H.I.E.L.D. Helicarrier he and Spider-Man stop the Chameleon. In 1995 he works with Tony Stark against A.I.M. and asks him to stop Iron Man in the Armor Wars. In 1996 S.H.I.E.L.D. holds John Hardesky, who carries the super-soldier formula in his memory.",
+      'earth-92131': "In the animated series he is one of the Howling Commandos who blow up the Red Skull's facility in France in 1944, and in the 1993 that Cable erases he watches the Senate hearing on the plague at S.H.I.E.L.D. In 1994 the government fakes his death, and from the S.H.I.E.L.D. Helicarrier he and Spider-Man stop the Chameleon. In 1995 he works with Tony Stark against A.I.M. and asks him to stop Iron Man in the Armor Wars. In 1996 S.H.I.E.L.D. holds John Hardesky, who carries the super-soldier formula in his memory, and in 1997 it joins Spider-Man and the Six Forgotten Warriors against Electro, who takes over its Helicarrier.",
     },
   },
   'gabe-jones': {
@@ -1222,7 +1249,7 @@ export const characters = {
     role: 'civilian',
     status: 'alive',
     factions: [],
-    bio: "Norman Osborn's son and Peter Parker's friend and flatmate, kidnapped by the Hobgoblin and for a while engaged to Mary Jane. Called by his father from limbo, he becomes the second Green Goblin to avenge him, and ends up at Ravencroft.",
+    bio: "Norman Osborn's son and Peter Parker's friend and flatmate, kidnapped by the Hobgoblin and for a while engaged to Mary Jane. Called by his father from limbo, he becomes the second Green Goblin to avenge him and ends up at Ravencroft; he escapes to attack Peter's wedding, until Liz Allan talks him into giving himself up.",
   },
   hawkeye: {
     name: 'Clint Barton',
@@ -1356,7 +1383,7 @@ export const characters = {
     role: 'villain',
     status: 'presumably-dead',
     factions: [],
-    bio: "Mary Jane Watson's former boyfriend, whose body turns into water. He robs the city while Spider-Man takes the blame and kidnaps Mary Jane, until he splashes apart on a rooftop far from any water and evaporates.",
+    bio: "Mary Jane Watson's former boyfriend, whose body turns into water. He robs the city while Spider-Man takes the blame and kidnaps Mary Jane, until he splashes apart on a rooftop far from any water and evaporates. Miles Warren later grows a clone of him from traces left on that rooftop.",
   },
   hypnotia: {
     name: 'Hypnotia',
@@ -1579,7 +1606,7 @@ export const characters = {
     role: 'hero',
     status: 'alive',
     factions: ['fantastic-four'],
-    bio: "Member of the Fantastic Four and Sue Storm's brother, who bursts into flame and flies as the Human Torch. He seals the Super-Skrull inside a volcano.",
+    bio: "Member of the Fantastic Four and Sue Storm's brother, who bursts into flame and flies as the Human Torch. He seals the Super-Skrull inside a volcano. Summoned by Spider-Man to the Beyonder's planet, he and the Thing attack him at first.",
   },
   jorani: {
     name: 'Jorani',
@@ -1850,8 +1877,7 @@ export const characters = {
     role: 'cosmic',
     status: 'alive',
     factions: ['cosmic-entities'],
-    origin: 'Salem, Oregon',
-    bio: 'Seer who speaks to Spider-Man from beyond and trains him for an ultimate battle with riddles and visions. When Mary Jane falls into limbo she refuses to bring her back, and Spider-Man sends her away.',
+    bio: 'Seer who speaks to Spider-Man from beyond and trains him for an ultimate battle with riddles and visions. When Mary Jane falls into limbo she refuses to bring her back, and Spider-Man sends her away. After the clone of Mary Jane dies she comes back with the Beyonder, sends Spider-Man to the Secret Wars and against Spider-Carnage, and as a reward takes him to find the real Mary Jane.',
   },
   'madelyne-pryor-goblin-queen': {
     name: 'Madelyne Pryor',
@@ -1921,6 +1947,14 @@ export const characters = {
     factions: [],
     bio: "Scientist whom Kraven comes to New York to take home with him. She makes the antidote that cures him, a serum for Peter Parker's mutation and the antidote that brings him back from the Man-Spider; later, infected by a virus in Africa and turned feral by Kraven's serum, she is only partly restored and leaves with Kraven.",
   },
+  'mary-jane-clone': {
+    name: 'Mary Jane Clone',
+    color: '#fdba74',
+    role: 'civilian',
+    status: 'deceased',
+    factions: [],
+    bio: "Clone of Mary Jane Watson that Miles Warren grows from her hair, with Hydro-Man's watery body. She escapes to Peter Parker, who takes her for the Mary Jane lost in limbo, and he proposes to her and marries her. When her water powers show, Warren reveals what she is, and she evaporates, telling Peter that the real Mary Jane loves him more than anything.",
+  },
   'mary-jane-watson': {
     name: 'Mary Jane Watson',
     color: '#f97316',
@@ -1928,7 +1962,7 @@ export const characters = {
     status: 'alive',
     factions: ['spider-man-allies'],
     origin: 'New York City',
-    bio: "Anna Watson's niece and an aspiring actress, whom Aunt May sets up on a blind date with Peter Parker. Baron Mordo's cult holds her for a while, and in the Green Goblin's attack on the George Washington Bridge she falls through a portal into limbo.",
+    bio: "Anna Watson's niece and an aspiring actress, whom Aunt May sets up on a blind date with Peter Parker. Baron Mordo's cult holds her for a while, and in the Green Goblin's attack on the George Washington Bridge she falls through a portal into limbo. A clone takes her place, and after the Spider Wars Madame Web takes Spider-Man to find her.",
   },
   'master-mold': {
     name: 'Master Mold',
@@ -1963,7 +1997,7 @@ export const characters = {
     role: 'civilian',
     status: 'alive',
     factions: [],
-    bio: "Peter Parker's aunt, who lives with him in Forest Hills, Queens, and hides the bills she cannot pay. She sets Peter up on a blind date with Mary Jane Watson, and is hurt when the Hobgoblin kidnaps Harry Osborn.",
+    bio: "Peter Parker's aunt, who lives with him in Forest Hills, Queens, and hides the bills she cannot pay. She sets Peter up on a blind date with Mary Jane Watson, and is hurt when the Hobgoblin kidnaps Harry Osborn. She gives Peter her and Uncle Ben's wedding rings, and tells him that his parents were accused of being Russian spies.",
   },
   medusa: {
     name: 'Medusalith Amaquelin',
@@ -2011,7 +2045,15 @@ export const characters = {
     role: 'anti-hero',
     status: 'alive',
     factions: [],
-    bio: "ESU student and Peter Parker's rival for the post of Curt Connors's assistant. A bat bites him at a borrowed Neogenic Recombinator and he becomes a living vampire who drains people of plasma; found hibernating in a cave, he wakes again in New York and follows the vampire Miriam to Europe with Blade and the Black Cat.",
+    bio: "ESU student and Peter Parker's rival for the post of Curt Connors's assistant. A bat bites him at a borrowed Neogenic Recombinator and he becomes a living vampire who drains people of plasma; found hibernating in a cave, he wakes again in New York and follows the vampire Miriam to Europe with Blade and the Black Cat, and fights her in Transylvania.",
+  },
+  'miles-warren': {
+    name: 'Miles Warren',
+    color: '#64748b',
+    role: 'villain',
+    status: 'alive',
+    factions: [],
+    bio: "Geneticist with no government money for his cloning, whose subjects never survive. From traces of Hydro-Man and a lock of Mary Jane Watson's hair he grows water-based clones of both, for an employer he will not name; when they evaporate he keeps a scrap of Spider-Man's costume and has Alistair Smythe get Silvermane's men to rebuild his lab.",
   },
   'minn-erva': {
     name: 'Minn-Erva',
@@ -2037,7 +2079,7 @@ export const characters = {
     role: 'villain',
     status: 'alive',
     factions: [],
-    bio: "Blade's mother, turned into a vampire, who comes to New York for the Neogenic Recombinator to make more vampires. Spider-Man turns her new vampires back, and Blade follows her to Europe to cure her.",
+    bio: "Blade's mother, turned into a vampire, who comes to New York for the Neogenic Recombinator to make more vampires. Spider-Man turns her new vampires back, and Blade, Morbius and the Black Cat follow her to Europe and fight her in Transylvania.",
   },
   'miss-allure': {
     name: 'Allure',
@@ -2046,6 +2088,15 @@ export const characters = {
     status: 'alive',
     factions: [],
     bio: 'Chicago crime boss whose gaze makes men obey. She hypnotizes Bruce Banner to boost her power, until his device removes the brain abnormality behind it, and her power with it.',
+  },
+  'miss-america-madeline-joyce': {
+    name: 'Madeline Joyce',
+    alias: 'Miss America',
+    color: '#dc2626',
+    role: 'hero',
+    status: 'alive',
+    factions: ['six-forgotten-warriors'],
+    bio: "One of the five super soldiers made after Captain America in World War II, whose powers, like the others', only work with a ring. After Captain America's loss she keeps one of the keys to the Red Skull's Doomsday Complex, and in old age she fights again beside Spider-Man.",
   },
   'mister-sinister-nathaniel-essex': {
     name: 'Nathaniel Essex',
@@ -2192,7 +2243,7 @@ export const characters = {
     role: 'villain',
     status: 'alive',
     factions: ['oscorp-board'],
-    bio: "Head of Oscorp, in debt to the Kingpin. He pays for Spencer Smythe's Spider-Slayer and hires the Hobgoblin to kill Wilson Fisk. A gas explosion at Oscorp makes him the Green Goblin, a second self who learns that Peter Parker is Spider-Man and falls into limbo with Mary Jane.",
+    bio: "Head of Oscorp, in debt to the Kingpin. He pays for Spencer Smythe's Spider-Slayer and hires the Hobgoblin to kill Wilson Fisk. A gas explosion at Oscorp makes him the Green Goblin, a second self who learns that Peter Parker is Spider-Man and falls into limbo with Mary Jane; from there he calls his son Harry to become the Goblin, and watches Peter's wedding in rage.",
   },
   odin: {
     name: 'Odin Borson',
@@ -2399,7 +2450,7 @@ export const characters = {
     origin: 'Germany',
     bio: 'Nazi officer and leader of Hydra, disfigured by an imperfect version of the super-soldier formula. He uses the Tesseract to break with Hitler, and in 1945 the cube pulls him through a portal.',
     variants: {
-      'earth-92131': 'In the animated series, in 1944 he holds the scientist Andre Cocteau in a Nazi facility in France, where Cocteau builds giant robots for him, and escapes with him in a jet as the Howling Commandos blow it up.',
+      'earth-92131': 'In the animated series, in 1944 he holds the scientist Andre Cocteau in a Nazi facility in France, where Cocteau builds giant robots for him, and escapes with him in a jet as the Howling Commandos blow it up. Around 1945 Captain America pushes him into the vortex of his Doomsday Complex in the Bronx; fifty years later his son Rheinholt Kragov and his stepson the Chameleon free him, he turns Kragov into Electro, and he goes back into the vortex with Captain America. The Beyonder then makes him one of the five villains of the Secret Wars.',
     },
   },
   'reed-richards': {
@@ -2409,7 +2460,7 @@ export const characters = {
     role: 'hero',
     status: 'alive',
     factions: ['fantastic-four'],
-    bio: 'Scientist and leader of the Fantastic Four, who can stretch his body into any shape since cosmic rays struck the four. Victor von Doom was his classmate in college.',
+    bio: "Scientist and leader of the Fantastic Four, who can stretch his body into any shape since cosmic rays struck the four. Victor von Doom was his classmate in college. On the Beyonder's planet he fights in Spider-Man's Secret Wars and wakes Curt Connors's mind inside the Lizard.",
   },
   rhino: {
     name: 'Rhino',
@@ -2444,7 +2495,7 @@ export const characters = {
     origin: 'New York City',
     bio: 'Daily Bugle reporter and the friend who knows Ben Reilly is The Spider. He cures Lonnie Lincoln with a dose in the eye, wears the suit to save Ben, and leaves the Bugle to run the Harlem Herald.',
     variants: {
-      'earth-92131': "In the animated series he works at the Daily Bugle and buys Peter Parker's photos of Spider-Man. Kraven takes him as bait to make Spider-Man hand over Mariah Crawford; later the Kingpin frames him as a crime mastermind, and Jameson clears him.",
+      'earth-92131': "In the animated series he works at the Daily Bugle and buys Peter Parker's photos of Spider-Man. Kraven takes him as bait to make Spider-Man hand over Mariah Crawford; later the Kingpin frames him as a crime mastermind, and Jameson clears him. He is best man at Peter's wedding and goes with him to Moscow to clear Peter's parents.",
     },
   },
   'robert-hendry': {
@@ -2571,7 +2622,7 @@ export const characters = {
     role: 'villain',
     status: 'alive',
     factions: ['insidious-six'],
-    bio: 'Private investigator whom J. Jonah Jameson hires to learn how Peter Parker gets his photos of Spider-Man. Jameson then pays Farley Stillwell to turn him into the Scorpion, who keeps mutating, turns on Jameson and goes to jail.',
+    bio: "Private investigator whom J. Jonah Jameson hires to learn how Peter Parker gets his photos of Spider-Man. Jameson then pays Farley Stillwell to turn him into the Scorpion, who keeps mutating, turns on Jameson and goes to jail. Later he steals May Parker's wedding rings for his own wedding and attacks Peter's with the Green Goblin.",
   },
   'sean-cassidy': {
     name: 'Sean Cassidy',
@@ -2644,6 +2695,14 @@ export const characters = {
     origin: 'Birnin Zana, Wakanda',
     bio: 'Princess of Wakanda, genius head of the Wakandan Design Group, and successor Black Panther.',
   },
+  'silver-sable': {
+    name: 'Silver Sable',
+    color: '#cbd5e1',
+    role: 'anti-hero',
+    status: 'alive',
+    factions: [],
+    bio: 'Mercenary at the head of the Wild Pack, hired by Rheinholt Kragov to kidnap Dr. Wolfgang Groitzig in Moscow. She captures Spider-Man, the Kingpin and the Insidious Six for him, is left behind in his collapsing fortress until Spider-Man frees her, and later comes to help Spider-Man and the Warriors against the Red Skull.',
+  },
   'silver-samurai': {
     name: 'Kenuichio Harada',
     alias: 'Silver Samurai',
@@ -2703,6 +2762,14 @@ export const characters = {
     factions: [],
     bio: 'Robotics expert who builds the Spider Seekers and the Black Widow Spider-Slayer for Norman Osborn, in exchange for a hoverchair for his son Alistair. He vanishes when Oscorp explodes: the Kingpin has kept him in cryogenic suspension ever since, until Alistair takes him back.',
   },
+  'spider-carnage': {
+    name: 'Spider-Carnage',
+    color: '#991b1b',
+    role: 'villain',
+    status: 'deceased',
+    factions: ['symbiotes'],
+    bio: "The Peter Parker of another reality, who hates the Scarlet Spider, his brother through cloning, and bonds with a Carnage symbiote. With that world's Kingpin, Alistair Smythe, Hobgoblin and Green Goblin he lays New York in ruins and builds a bomb to destroy every reality; in the armored Spider-Man's world his Uncle Ben reaches him, and he throws himself into an unstable portal that destroys him.",
+  },
   'spider-man': {
     name: 'Peter Parker',
     alias: 'Spider-Man',
@@ -2713,17 +2780,16 @@ export const characters = {
     origin: 'Queens, New York',
     bio: 'Friendly neighborhood web-slinger empowered by a radioactive spider bite.',
     variants: {
-      'earth-92131': 'In the animated series he is a college student who sells photos of Spider-Man to the Daily Bugle. In 1994 an alien suit bonds with him for a few days and makes him stronger and angrier, until the bell of an old church tears it off. In 1995 his mutation turns him into the Man-Spider until Mariah Crawford brings him back, and the Vulture steals his youth for a while.',
+      'earth-92131': 'In the animated series he is a college student who sells photos of Spider-Man to the Daily Bugle. In 1994 an alien suit bonds with him for a few days and makes him stronger and angrier, until the bell of an old church tears it off. In 1995 his mutation turns him into the Man-Spider until Mariah Crawford brings him back, and the Vulture steals his youth for a while. In 1996 he loses Mary Jane in limbo and proposes to the Mary Jane who comes back. In 1997 he marries her, learns that she is a clone, leads the heroes of the Secret Wars and the Spider-Men against Spider-Carnage, and sets off with Madame Web to find the real Mary Jane.',
     },
   },
   'stan-lee-creator': {
     name: 'Stan Lee',
     color: '#f59e0b',
-    role: 'hero',
+    role: 'civilian',
     status: 'alive',
-    factions: ['cosmic-entities'],
-    origin: 'Manhattan, New York',
-    bio: "The legendary comic creator met by Spider-Man on top of a skyscraper in our real world in the emotional climax of Spider Wars ('Thanks for making me!').",
+    factions: [],
+    bio: "Spider-Man's creator, in a reality where Spider-Man is a comic-book character. After Spider-Carnage's defeat Spider-Man visits him there and takes him web-swinging to thank him.",
   },
   'star-lord': {
     name: 'Peter Quill',
@@ -2745,7 +2811,7 @@ export const characters = {
     origin: 'Brooklyn, New York',
     bio: 'Super-soldier leader of the Avengers and WWII war hero.',
     variants: {
-      'earth-92131': "In the animated series he fights beside Logan against the Red Skull in France in 1944, and is seen fighting Magneto's rebels in the erased world where Charles Xavier died in 1959.",
+      'earth-92131': "In the animated series he fights beside Logan against the Red Skull in France in 1944, and is seen fighting Magneto's rebels in the erased world where Charles Xavier died in 1959. Around 1945 he leads the Six Forgotten Warriors and pushes the Red Skull into the vortex of his Doomsday Complex, where both are trapped for fifty years. Freed in 1997, he fights beside Spider-Man, goes back into the vortex with the Skull, and fights in the Beyonder's Secret Wars.",
     },
   },
   'storm-ororo-munroe': {
@@ -2772,7 +2838,7 @@ export const characters = {
     role: 'hero',
     status: 'alive',
     factions: ['fantastic-four'],
-    bio: "Member of the Fantastic Four and Johnny Storm's sister, who can turn invisible since the cosmic rays. Namor kidnaps her to make her his queen, and Doctor Doom holds her hostage in his castle.",
+    bio: "Member of the Fantastic Four and Johnny Storm's sister, who can turn invisible since the cosmic rays. Namor kidnaps her to make her his queen, and Doctor Doom holds her hostage in his castle. On the Beyonder's planet she fights in Spider-Man's Secret Wars and, with Storm, restores the power of the heroes' base.",
   },
   'sunspot-roberto-da-costa': {
     name: 'Roberto da Costa',
@@ -2878,8 +2944,7 @@ export const characters = {
     role: 'cosmic',
     status: 'alive',
     factions: ['cosmic-entities'],
-    origin: 'The Beyond Realm',
-    bio: 'Inscrutable near-omnipotent cosmic entity from beyond the multiverse who conjures Battleworld to pit Good against Evil in the legendary Secret Wars.',
+    bio: 'Entity beyond comprehension who works with Madame Web. To learn whether good is stronger than evil, he sets five villains loose on a paradise planet and has Spider-Man lead a team of heroes to free it, then erases their memories. Later he sends Spider-Man against Spider-Carnage with Spider-Men from other realities.',
   },
   'the-hacker': {
     name: 'The Hacker',
@@ -2943,6 +3008,15 @@ export const characters = {
       'earth-92131': 'In the animated series he appears for a moment during the rampage of the Dark Phoenix. In 1996 Dr. Donald Blake strikes his staff and becomes Thor to fight a gamma plague in Detroit beside the Hulk.',
     },
   },
+  'thunderer-jerry-carstairs': {
+    name: 'Jerry Carstairs',
+    alias: 'The Thunderer',
+    color: '#1e40af',
+    role: 'hero',
+    status: 'alive',
+    factions: ['six-forgotten-warriors'],
+    bio: "One of the five super soldiers made after Captain America in World War II. For fifty years he guards the site of the Red Skull's Doomsday Complex disguised as a homeless man, until the Warriors reunite against the Kingpin and the Skull.",
+  },
   'titanium-man': {
     name: 'Boris Bullski',
     alias: 'Titanium Man',
@@ -2984,7 +3058,7 @@ export const characters = {
     origin: 'New York / Malibu',
     bio: 'Genius, billionaire, playboy, philanthropist who forged the Iron Man armor and saved the universe.',
     variants: {
-      'earth-92131': 'In the animated series he leads Force Works against the Mandarin from Stark Enterprises in Los Angeles, and keeps his secret when a robot double of him marries Julia Carpenter. In 1995 half of Force Works walks out after he fakes his death, he wages the Armor Wars against his own stolen designs, and the Mandarin finally learns who he is. In 1996 Venom and Carnage attack a Stark Enterprises demonstration in New York, and Iron Man helps Spider-Man stop them.',
+      'earth-92131': "In the animated series he leads Force Works against the Mandarin from Stark Enterprises in Los Angeles, and keeps his secret when a robot double of him marries Julia Carpenter. In 1995 half of Force Works walks out after he fakes his death, he wages the Armor Wars against his own stolen designs, and the Mandarin finally learns who he is. In 1996 Venom and Carnage attack a Stark Enterprises demonstration in New York, and Iron Man helps Spider-Man stop them. In 1997 Spider-Man summons him to the Beyonder's planet for the Secret Wars.",
     },
   },
   'trevor-fitzroy': {
@@ -3081,7 +3155,7 @@ export const characters = {
     role: 'villain',
     status: 'alive',
     factions: ['latverian-monarchy'],
-    bio: "Masked master of Castle Doom, in Latveria, and Reed Richards's college classmate. He captures the Fantastic Four, holds Sue hostage while the others fetch him a coffin from ancient Greece, and later steals the Silver Surfer's Power Cosmic. In 1996 he seals Washington under a dome to make the Hulk his weapon and, deposed from Latveria, threatens the world with asteroids.",
+    bio: "Masked master of Castle Doom, in Latveria, and Reed Richards's college classmate. He captures the Fantastic Four, holds Sue hostage while the others fetch him a coffin from ancient Greece, and later steals the Silver Surfer's Power Cosmic. In 1996 he seals Washington under a dome to make the Hulk his weapon and, deposed from Latveria, threatens the world with asteroids. On the Beyonder's planet he takes Doctor Octopus's domain, makes New Latveria a place of peace and absorbs the Beyonder's power, until Spider-Man's heroes defeat him.",
   },
   vision: {
     name: 'Vision',
@@ -3194,9 +3268,9 @@ export const characters = {
     color: '#facc15',
     role: 'hero',
     status: 'alive',
-    factions: ['six-forgotten-warriors', 'invaders'],
+    factions: ['six-forgotten-warriors'],
     origin: 'United States',
-    bio: "Super-speed champion empowered by an imperfect variant of Project Rebirth's super-soldier serum, one of the Six Forgotten Warriors who defeated Red Skull in 1945.",
+    bio: "One of the five super soldiers made after Captain America in World War II, named for the whizzing noise he makes when he runs, with powers that only work with a ring. After Captain America's loss he keeps a key to the Red Skull's Doomsday Complex; fifty years later, teaching children to draw, he loses it to the Rhino and fights again beside Spider-Man.",
   },
   'william-stryker': {
     name: 'Colonel William Stryker',
@@ -3222,7 +3296,7 @@ export const characters = {
     role: 'villain',
     status: 'alive',
     factions: ['fisk-enterprises', 'insidious-six'],
-    bio: "In public one of New York's leading philanthropists, in secret the crime lord known as the Kingpin. He hires Alistair Smythe to build Spider-Slayers, forms the Insidious Six to destroy Spider-Man and wars with the crime lord Silvermane; his son Richard frames Peter Parker, and Daredevil reveals to Spider-Man who he is.",
+    bio: "In public one of New York's leading philanthropists, in secret the crime lord known as the Kingpin. He hires Alistair Smythe to build Spider-Slayers, forms the Insidious Six to destroy Spider-Man and wars with the crime lord Silvermane; his son Richard frames Peter Parker, and Daredevil reveals to Spider-Man who he is. He pays for Peter's wedding, then sends the Six after the Red Skull's Doomsday Device and loses it when the Chameleon betrays him.",
   },
   'winston-noir': {
     name: 'Winston',

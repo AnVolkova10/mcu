@@ -48,6 +48,7 @@ const PAGES: Record<string, Record<string, string>> = {
   'jean-grey': { 'earth-10005': 'Jean Grey/Revised Timeline', 'earth-92131': 'Jean Grey' },
   jorani: { 'earth-616': 'Jorani' },
   'kayla-silverfox': { 'earth-92131': 'Silver Fox' },
+  'mary-jane-clone': { 'earth-92131': 'Mary Jane Watson (Clone)' },
   'kraven-the-hunter': { 'earth-92131': 'Kraven the Hunter' },
   'last-black-panther': { 'earth-616': 'Black Panther (Future)' },
   'lilandra-neramani': { 'earth-92131': 'Lilandra' },
