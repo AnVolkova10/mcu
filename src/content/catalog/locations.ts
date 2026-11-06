@@ -178,6 +178,13 @@ export const locations = {
     coords: [45.88, 12.72],
     approximate: true,
   },
+  'banner-desert-lab': {
+    name: "Banner's Desert Lab",
+    place: 'New Mexico desert',
+    country: 'United States',
+    kind: 'earth',
+    coords: [33.62, -106.3],
+  },
   'barents-sea': {
     name: 'Barents Sea',
     place: 'Arctic waters',
@@ -401,6 +408,13 @@ export const locations = {
     kind: 'earth',
     coords: [40.7678, -73.9718],
   },
+  chicago: {
+    name: 'Chicago',
+    place: 'Illinois',
+    country: 'United States',
+    kind: 'earth',
+    coords: [41.876, -87.619],
+  },
   'childhood-home-of-jean-grey': {
     name: 'Childhood Home of Jean Grey',
     place: 'Red Hook, New York',
@@ -520,6 +534,13 @@ export const locations = {
     kind: 'earth',
     coords: [50.95, -115.15],
   },
+  'detroit-salt-mines': {
+    name: 'Salt Mines under Detroit',
+    place: 'Detroit, Michigan',
+    country: 'United States',
+    kind: 'earth',
+    coords: [42.2923, -83.1478],
+  },
   'detroit-sentinel-factory': {
     name: 'Sentinel Factory',
     place: 'Detroit, Michigan',
@@ -532,6 +553,13 @@ export const locations = {
     country: 'Lunar orbit',
     kind: 'orbit',
     node: 'moon',
+  },
+  'doom-washington-estate': {
+    name: "Doctor Doom's U.S. Estate",
+    place: 'Washington, D.C.',
+    country: 'United States',
+    kind: 'earth',
+    coords: [38.944, -77.055],
   },
   'dr-miles-warrens-offshore-aquatic-bio-dome': {
     name: "Dr. Miles Warren's Offshore Aquatic Bio-Dome",
@@ -630,6 +658,13 @@ export const locations = {
     kind: 'earth',
     coords: [40.719, -73.842],
   },
+  'four-freedoms-plaza': {
+    name: 'Four Freedoms Plaza',
+    place: 'Midtown Manhattan',
+    country: 'United States',
+    kind: 'earth',
+    coords: [40.755, -73.9846],
+  },
   'french-quarter-and-bayou-lafourche-caverns': {
     name: 'Thieves Guild',
     place: 'New Orleans, Louisiana',
@@ -680,8 +715,8 @@ export const locations = {
     coords: [41.3335, -73.6125],
   },
   'gamma-base-and-desert-badlands': {
-    name: 'Gamma Base & Desert Badlands',
-    place: 'New Mexico',
+    name: 'Gamma Base',
+    place: 'New Mexico desert',
     country: 'United States',
     kind: 'earth',
     coords: [33.38, -106.48],
@@ -866,6 +901,13 @@ export const locations = {
     kind: 'earth',
     coords: [22.3193, 114.1694],
   },
+  'hoover-dam': {
+    name: 'Hoover Dam',
+    place: 'Nevada–Arizona border',
+    country: 'United States',
+    kind: 'earth',
+    coords: [36.0161, -114.7377],
+  },
   'hooverville-84th-street': {
     name: 'Hooverville',
     place: '84th Street, Manhattan',
@@ -979,6 +1021,13 @@ export const locations = {
     kind: 'earth',
     coords: [40.7476, -73.9724],
   },
+  'jennifer-walters-apartment': {
+    name: "Jennifer Walters's Apartment",
+    place: 'Washington, D.C.',
+    country: 'United States',
+    kind: 'earth',
+    coords: [38.91, -77.043],
+  },
   'jotunheim-glacial-fortress': {
     name: 'Jotunheim Glacial Fortress',
     place: 'Frost Realm',
@@ -1065,6 +1114,13 @@ export const locations = {
     kind: 'earth',
     coords: [6.524, 3.379],
   },
+  'langkowski-lab': {
+    name: "Walter Langkowski's Lab",
+    place: 'Canadian wilderness',
+    country: 'Canada',
+    kind: 'earth',
+    coords: [56.03, -129.95],
+  },
   'las-vegas-underground-boxing-gym': {
     name: 'Boxing Gym',
     place: 'Las Vegas, Nevada',
@@ -1078,6 +1134,13 @@ export const locations = {
     country: 'United States',
     kind: 'earth',
     coords: [40.633, -73.756],
+  },
+  'leader-desert-lab': {
+    name: "The Leader's Lab",
+    place: 'New Mexico desert',
+    country: 'United States',
+    kind: 'earth',
+    coords: [33.15, -106.62],
   },
   'lilandra-starcruiser': {
     name: "Lilandra's Starcruiser",
@@ -1321,6 +1384,13 @@ export const locations = {
     kind: 'earth',
     coords: [-3.0674, 37.3556],
   },
+  'mount-rushmore': {
+    name: 'Mount Rushmore',
+    place: 'Black Hills, South Dakota',
+    country: 'United States',
+    kind: 'earth',
+    coords: [43.8791, -103.4591],
+  },
   'mount-wundagore-genetic-citadel-and-bovas-cottage': {
     name: 'Mount Wundagore',
     place: 'Balkan Mountains',
@@ -1390,6 +1460,13 @@ export const locations = {
     country: 'Germany',
     kind: 'earth',
     coords: [47.55, 11],
+  },
+  'nevada-nuclear-research-facility': {
+    name: 'Nuclear Research Facility',
+    place: 'Near Las Vegas, Nevada',
+    country: 'United States',
+    kind: 'earth',
+    coords: [36.33, -114.92],
   },
   'new-avengers-facility-central-lab': {
     name: 'New Avengers Facility Central Lab',
@@ -1498,6 +1575,13 @@ export const locations = {
     country: 'United States',
     kind: 'earth',
     coords: [40.7215, -73.9605],
+  },
+  'outcasts-cave': {
+    name: "The Outcasts' Cave",
+    place: 'New Mexico desert',
+    country: 'United States',
+    kind: 'earth',
+    coords: [33.5, -106.7],
   },
   'oxford-university-campus-and-country-road': {
     name: 'Bard College',
@@ -1647,6 +1731,13 @@ export const locations = {
     country: 'Russian Federation',
     kind: 'earth',
     coords: [55.7558, 37.6173],
+  },
+  'redwood-national-forest': {
+    name: 'Redwood National Forest',
+    place: 'Northern California',
+    country: 'United States',
+    kind: 'earth',
+    coords: [41.2132, -124.0046],
   },
   'refinery-tunnels-egypt': {
     name: 'Refinery Tunnels',
@@ -1926,13 +2017,6 @@ export const locations = {
     country: 'China',
     kind: 'earth',
     coords: [22.311, 114.226],
-  },
-  'stark-enterprises-salt-lake-testing-facility': {
-    name: 'Stark Enterprises Salt Lake Testing Facility',
-    place: 'Salt Lake City, Utah',
-    country: 'United States',
-    kind: 'earth',
-    coords: [40.7608, -111.891],
   },
   'stark-industries-headquarters': {
     name: 'Stark Industries Headquarters',

@@ -53,6 +53,7 @@ export const factions = {
   'heralds-of-galactus': { name: 'Heralds of Galactus' },
   'heroes-for-hire': { name: 'Heroes for Hire' },
   'howling-commandos': { name: 'Howling Commandos' },
+  hulkbusters: { name: 'Hulkbusters' },
   hydra: { name: 'HYDRA' },
   illuminati: { name: 'Illuminati' },
   immortals: { name: 'Immortals' },

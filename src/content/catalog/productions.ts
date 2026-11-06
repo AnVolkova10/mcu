@@ -956,7 +956,8 @@ export const productions = {
     universe: 'earth-92131',
     status: 'audited',
     animated: true,
-    description: 'Bruce Banner flees General Ross across America while battling The Leader, Gargoyle, and Abomination, crossing paths with Iron Man in Utah and The Thing at the Baxter Building.',
+    description: "1996: General Ross's Hulkbusters chase Bruce Banner across the country while the Leader plots to take the Hulk's power; Jennifer Walters becomes She-Hulk, and a Nutrient Bath splits Banner from the Hulk.",
+    verified: true,
     poster: '/AauXTKQBejmD0jcEIxlve0hRIme.jpg',
   },
   'incredible-hulk-tas-s2': {

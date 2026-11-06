@@ -88,6 +88,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'ben-reilly-noir': {
     'earth-62533': 'https://static.wikia.nocookie.net/spidermannoir/images/9/9f/The_Spider_Infobox.jpg/revision/latest/scale-to-width-down/204?cb=20260308201758',
   },
+  'betty-ross': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/8/86/Betty_Ross.jpg/revision/latest/scale-to-width-down/300?cb=20140901020811',
+  },
   'bishop-lucas-bishop': {
     'earth-10005': 'https://static.wikia.nocookie.net/xmenmovies/images/b/bf/XMDOFP_Bishop_Character_Poster.jpg/revision/latest/window-crop/width/300/x-offset/221/y-offset/162/window-width/295/window-height/295?cb=20190529094137',
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/b/b7/Bishop_2.jpg/revision/latest/scale-to-width-down/300?cb=20240408054538',
@@ -218,6 +221,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'deathbird': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/5/55/Cal28Earth-921312797_Concept_Art_001.webp/revision/latest/scale-to-width-down/197?cb=20241217044015',
   },
+  'doc-samson': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/4/4d/Doc_Samson.jpg/revision/latest/scale-to-width-down/296?cb=20131021192023',
+  },
   'doctor-octopus': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/3/37/Doctor_Octopus.jpg/revision/latest/scale-to-width-down/300?cb=20170926005257',
   },
@@ -314,6 +320,7 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   },
   'gabe-jones': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/7/78/Gabriel_Jones.jpg/revision/latest/scale-to-width-down/193?cb=20121006170332',
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/7/78/Gabriel_Jones.jpg/revision/latest/scale-to-width-down/300?cb=20170327235806',
   },
   'galactus': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/e/e2/Galactus.jpg/revision/latest/scale-to-width-down/300?cb=20110506042241',
@@ -325,6 +332,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'gamora': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/7/70/Gamora_Infobox.jpg/revision/latest/scale-to-width-down/218?cb=20231024023800',
   },
+  'gargoyle': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/1/1f/Gargoyle.jpg/revision/latest/scale-to-width-down/300?cb=20160619054257',
+  },
   'ghost': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/0/02/Ghost.PNG/revision/latest/scale-to-width-down/300?cb=20170812165017',
   },
@@ -333,6 +343,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   },
   'gladiator-kallark': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/7/7f/Gladiator.PNG/revision/latest/scale-to-width-down/300?cb=20170318214155',
+  },
+  'glenn-talbot': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/b/b4/Glenn_Talbot.jpg/revision/latest/scale-to-width-down/300?cb=20140901021332',
   },
   'goose': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/1/1e/Goose_The_Marvels.png/revision/latest/scale-to-width-down/232?cb=20231110014836',
@@ -657,6 +670,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'odysseus': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/2c/Odysseus_Infobox.png/revision/latest/scale-to-width-down/194?cb=20250801080654',
   },
+  'ogress': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/4/43/Ogress.jpg/revision/latest/scale-to-width-down/300?cb=20131101163618',
+  },
   'okoye': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/25/Black_Panther_Wakanda_Forever_poster_024_Textless.jpg/revision/latest/scale-to-width-down/260?cb=20240802144734',
   },
@@ -717,6 +733,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   },
   'rhino': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/7/73/Charge.jpg/revision/latest/scale-to-width-down/300?cb=20080729151836',
+  },
+  'rick-jones': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/c/c2/Rick_Jones.jpg/revision/latest/scale-to-width-down/300?cb=20160706052641',
   },
   'robbie-robertson-noir': {
     'earth-62533': 'https://static.wikia.nocookie.net/spidermannoir/images/9/99/Robbie_Robertson_Infobox.jpg/revision/latest/scale-to-width-down/252?cb=20260210165557',
@@ -836,6 +855,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'terri-lee': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/f/fb/Terri_Lee.png/revision/latest/scale-to-width-down/300?cb=20120708013422',
   },
+  'thaddeus-ross': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/6/68/General_Ross.jpg/revision/latest/scale-to-width-down/300?cb=20140901021236',
+  },
   'thanos': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/27/Thanos_Infobox.png/revision/latest/scale-to-width-down/222?cb=20250119155740',
   },
@@ -908,6 +930,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   'wade-wilson': {
     'earth-10005': 'https://static.wikia.nocookie.net/xmenmovies/images/9/94/Deadpool_Textless.jpg/revision/latest/scale-to-width-down/220?cb=20200608174908',
   },
+  'walter-langkowski-sasquatch': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/8/8d/Sasquatch.png/revision/latest/scale-to-width-down/300?cb=20131021204614',
+  },
   'war-machine': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/1/1d/War_Machine_Infobox.jpg/revision/latest/scale-to-width-down/209?cb=20231025163822',
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/8/8b/War_Machine.jpg/revision/latest/scale-to-width-down/300?cb=20140812013116',
@@ -920,6 +945,9 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   },
   'wasp': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/22/Wasp_Quantumania.jpg/revision/latest/scale-to-width-down/208?cb=20231124223547',
+  },
+  'wendigo': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/7/73/Wendigo001.png/revision/latest/scale-to-width-down/300?cb=20230618185432',
   },
   'whirlwind': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/5/59/Whirlwind.jpg/revision/latest/scale-to-width-down/300?cb=20160519062311',
@@ -950,5 +978,8 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   },
   'zebediah-killgrave': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/5/52/Purple_Man_%28XMTAS%29.PNG/revision/latest/scale-to-width-down/300?cb=20170223060106',
+  },
+  'zzzax': {
+    'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/9/9b/Zzzax.jpg/revision/latest/scale-to-width-down/300?cb=20170328194742',
   },
 };

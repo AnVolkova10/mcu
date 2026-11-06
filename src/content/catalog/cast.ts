@@ -92,6 +92,10 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
   'ben-reilly-noir': [
     { actor: 'Nicolas Cage', universe: 'earth-62533', productions: ['spider-noir-s1'], photo: '/y1RtezurZYveYkVNRht7CwEgSYY.jpg' },
   ],
+  'betty-ross': [
+    { actor: 'Philece Sampler', universe: 'earth-92131', productions: ['incredible-hulk-tas-s1'], voice: true, photo: '/ixpsNGJUyZqfvvjY4WAf9Ak6CRm.jpg' },
+    { actor: 'Genie Francis', universe: 'earth-92131', productions: ['incredible-hulk-tas-s1'], voice: true, photo: '/9x5NEX6GgcmPcucLCo5s693k3Tk.jpg' },
+  ],
   'bishop-lucas-bishop': [
     { actor: 'Omar Sy', universe: 'earth-10005', productions: ['x-men-days-of-future-past'], photo: '/Uuy6WuizieB4fOIGFp0gY90Yq2.jpg' },
     { actor: 'Philip Akin', universe: 'earth-92131', productions: ['x-men-tas-s4', 'x-men-tas-s1', 'x-men-tas-s2'], voice: true, photo: '/6YLxKUiyCM4bckISIfCcHHSBEGc.jpg' },
@@ -99,7 +103,7 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
   ],
   'black-panther': [
     { actor: 'Chadwick Boseman', universe: 'earth-616', productions: ['captain-america-civil-war', 'black-panther', 'avengers-infinity-war'], photo: '/nL16SKfyP1b7Hk6LsuWiqMfbdb8.jpg' },
-    { actor: 'Keith David', universe: 'earth-92131', productions: ['fantastic-four-tas-s2'], voice: true, photo: '/1x0QXavmIy3QmhyrOsV7gMnJaEx.jpg' },
+    { actor: 'Keith David', universe: 'earth-92131', productions: ['fantastic-four-tas-s2'], voice: true, photo: '/jJLJuR7FNHYL1fB5igjj7IXzOel.jpg' },
   ],
   'black-widow': [
     { actor: 'Scarlett Johansson', universe: 'earth-616', productions: ['black-widow', 'iron-man-2', 'the-avengers', 'captain-america-the-winter-soldier', 'avengers-age-of-ultron', 'captain-america-civil-war', 'avengers-infinity-war', 'captain-marvel'], photo: '/mjReG6rR7NPMEIWb1T4YWtV11ty.jpg' },
@@ -314,6 +318,9 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
   'gamora': [
     { actor: 'Zoe Saldaña', universe: 'earth-616', productions: ['guardians-of-the-galaxy', 'guardians-of-the-galaxy-vol-2', 'avengers-infinity-war'], photo: '/vQBwmsSOAd0JDaEcZ5p43J9xzsY.jpg' },
   ],
+  'gargoyle': [
+    { actor: 'Mark Hamill', universe: 'earth-92131', productions: ['incredible-hulk-tas-s1'], voice: true, photo: '/zMQ93JTLW8KxusKhOlHFZhih3YQ.jpg' },
+  ],
   'genevieve': [
     { actor: "Laurie O'Brien", universe: 'earth-92131', productions: ['spider-man-tas-s2'], voice: true, photo: '/jP81kDJDwP6TQ17UedkSkYNCJfp.jpg' },
   ],
@@ -322,6 +329,9 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
   ],
   'gladiator-kallark': [
     { actor: 'Richard Epcar', universe: 'earth-92131', productions: ['x-men-tas-s3'], voice: true, photo: '/pF0Op20iZhixQguaia25DSiyP6V.jpg' },
+  ],
+  'glenn-talbot': [
+    { actor: 'Kevin Schon', universe: 'earth-92131', productions: ['incredible-hulk-tas-s1'], voice: true, photo: '/cqMh5iClrOHgEOjiJHJJ5PyFPqZ.jpg' },
   ],
   'gorgon': [
     { actor: 'Michael Dorn', universe: 'earth-92131', productions: ['fantastic-four-tas-s2'], voice: true, photo: '/6mVjb0YsidC0gW9P8mXMkQirfcK.jpg' },
@@ -679,6 +689,9 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
   'rhino': [
     { actor: 'Don Stark', universe: 'earth-92131', productions: ['spider-man-tas-s1', 'spider-man-tas-s2'], voice: true, photo: '/lkPWvElz5RxR4t4v3hM4SRy5E1j.jpg' },
   ],
+  'rick-jones': [
+    { actor: 'Luke Perry', universe: 'earth-92131', productions: ['incredible-hulk-tas-s1'], voice: true, photo: '/78TAr0wLoRHyubnYxjyHNCt70V2.jpg' },
+  ],
   'robbie-robertson-noir': [
     { actor: 'Lamorne Morris', universe: 'earth-62533', productions: ['spider-noir-s1'], photo: '/9qPDnMsF7JbYSSn1K9yryFBmmXl.jpg' },
     { actor: 'Rodney Saulsberry', universe: 'earth-92131', productions: ['spider-man-tas-s1', 'spider-man-tas-s2'], voice: true, photo: '/oq8ppTU9gFt6pju7Kkxd2CfuciJ.jpg' },
@@ -756,7 +769,7 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
     { actor: 'Edward Mulhare', universe: 'earth-92131', productions: ['spider-man-tas-s1'], voice: true, photo: '/eu18hWkcfG0R2Hkhqu9cQ89MmNg.jpg' },
   ],
   'spider-man': [
-    { actor: 'Tom Holland', universe: 'earth-616', productions: ['captain-america-civil-war', 'spider-man-homecoming', 'avengers-infinity-war'], photo: '/5OK84Wn1bIEIThFKcVoaN087mLj.jpg' },
+    { actor: 'Tom Holland', universe: 'earth-616', productions: ['captain-america-civil-war', 'spider-man-homecoming', 'avengers-infinity-war'], photo: '/xKBAaPIa1c7tzZD3Y0MhBLv4hPE.jpg' },
     { actor: 'Christopher Daniel Barnes', universe: 'earth-92131', productions: ['spider-man-tas-s1', 'spider-man-tas-s2', 'spider-man-tas-s3', 'spider-man-tas-s4', 'spider-man-tas-s5'], voice: true, photo: '/dE99eEJ9F8RweONabFIzb2p57iK.jpg' },
   ],
   'star-lord': [
@@ -797,6 +810,9 @@ export const cast: Partial<Record<CharacterId, readonly CharacterCredit[]>> = {
   ],
   'terri-lee': [
     { actor: 'Dawnn Lewis', universe: 'earth-92131', productions: ['spider-man-tas-s1', 'spider-man-tas-s2'], voice: true, photo: '/ppxGgmkTczev2VsiOSMfaGUy580.jpg' },
+  ],
+  'thaddeus-ross': [
+    { actor: 'John Vernon', universe: 'earth-92131', productions: ['incredible-hulk-tas-s1'], voice: true, photo: '/xlHU7X2FhjnZVxu7fjoguCWlXeC.jpg' },
   ],
   'thanos': [
     { actor: 'Josh Brolin', universe: 'earth-616', productions: ['avengers-infinity-war'], photo: '/7QpneI3HoZCCDVPyWx3p3t7yeo7.jpg' },

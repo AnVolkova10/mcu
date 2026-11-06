@@ -285,6 +285,14 @@ export const characters = {
     origin: 'New York City',
     bio: 'Army sergeant bitten by a mutated POW in 1918, who changed his name and fought crime in New York as The Spider until his fiancée Ruby died in 1928. Five years later, a broke private investigator, he puts the suit back on and helps bring down Silvermane.',
   },
+  'betty-ross': {
+    name: 'Betty Ross',
+    color: '#f9a8d4',
+    role: 'secondary',
+    status: 'alive',
+    factions: [],
+    bio: "Scientist at Gamma Base and General Ross's daughter, who loves Bruce Banner and builds the Nutrient Bath with Doc Samson to cure him. Her father stops their wedding.",
+  },
   'bishop-lucas-bishop': {
     name: 'Lucas Bishop',
     alias: 'Bishop',
@@ -690,6 +698,15 @@ export const characters = {
     factions: ['shiar-imperium'],
     bio: "Lilandra's sister. With Apocalypse she saves Fabian Cortez from the falling Asteroid M, and later, with his help, she attacks Lilandra's empire.",
   },
+  'doc-samson': {
+    name: 'Leonard Samson',
+    alias: 'Doc Samson',
+    color: '#16a34a',
+    role: 'hero',
+    status: 'alive',
+    factions: ['hulkbusters', 'gamma-mutates'],
+    bio: 'Gamma-powered psychiatrist who joins the Hulkbusters to fund his research and builds the Nutrient Bath with Betty Ross, which splits Bruce Banner from the Hulk.',
+  },
   'doctor-octopus': {
     name: 'Dr. Otto Octavius',
     alias: 'Doc Ock',
@@ -820,6 +837,9 @@ export const characters = {
     factions: ['gamma-mutates'],
     origin: 'Zagreb, Croatia',
     bio: 'Former spy bombarded with higher doses of gamma radiation than Banner, transforming permanently into a reptilian humanoid monster even stronger than a calm Hulk.',
+    variants: {
+      'earth-92131': 'In the animated series the Abomination serves the Leader through a mind-control implant, until it is removed and he starts speaking for himself.',
+    },
   },
   'emma-frost': {
     name: 'Emma Frost',
@@ -998,6 +1018,9 @@ export const characters = {
     factions: ['howling-commandos', 'ssr', 'shield'],
     origin: 'Macon, Georgia',
     bio: 'Soldier who speaks German and French, freed by Steve Rogers at Krausberg. As a Howling Commando he captures Arnim Zola in 1945.',
+    variants: {
+      'earth-92131': 'In the animated series Gabriel Jones is a S.H.I.E.L.D. agent whom Nick Fury sends to advise the Hulkbusters in 1996, and who finally takes the Hulk away for disposal.',
+    },
   },
   galactus: {
     name: 'Galan',
@@ -1026,6 +1049,14 @@ export const characters = {
     factions: ['guardians-of-the-galaxy', 'black-order', 'ravagers'],
     origin: 'Zen-Whoberi (Cosmic)',
     bio: 'Adopted daughter of Thanos who rebelled to become a Guardian of the Galaxy.',
+  },
+  gargoyle: {
+    name: 'The Gargoyle',
+    color: '#78716c',
+    role: 'villain',
+    status: 'alive',
+    factions: [],
+    bio: 'Russian scientist turned into a stone-skinned creature, who serves the Leader for the promise of a cure. Banished, he hides in the salt mines under Detroit, where his gamma waste starts a plague, and gives Bruce Banner the last dose of the cure.',
   },
   'garokk-petrified-man': {
     name: 'Garokk',
@@ -1071,6 +1102,14 @@ export const characters = {
     factions: ['imperial-guard', 'strontians'],
     origin: "Strontia, Shi'ar Imperium",
     bio: "Leader and strongest member of the Shi'ar Imperial Guard. He seizes Lilandra for D'Ken, and on the Moon he leads the Guard against the X-Men for the fate of the Dark Phoenix.",
+  },
+  'glenn-talbot': {
+    name: 'Glenn Talbot',
+    color: '#4b5563',
+    role: 'secondary',
+    status: 'alive',
+    factions: ['hulkbusters', 'us-military'],
+    bio: "Major and field commander of General Ross's Hulkbusters, who in the end refuses to follow Ross when he stops Betty's wedding.",
   },
   goose: {
     name: 'Goose',
@@ -1257,7 +1296,7 @@ export const characters = {
     origin: 'Dayton, Ohio',
     bio: 'Gamma radiation scientist who shares his body with the Incredible Hulk.',
     variants: {
-      'earth-92131': 'Genius nuclear physicist caught in the blast of his own Gamma Bomb who transforms into the green, rage-fueled Incredible Hulk whenever provoked. In 1995 the Leader throws him and Iron Man back to the time of the dinosaurs, and at the gamma bomb test he shields his younger self.',
+      'earth-92131': 'In the animated series Bruce Banner was caught in the blast of a gamma test in New Mexico, years before 1996, while pushing Rick Jones to safety, and turns into the Hulk when provoked. In 1995 the Leader throws him and Iron Man back to the time of the dinosaurs, and at the gamma bomb test he shields his younger self. In 1996 the Hulkbusters chase him across the country, and after a Nutrient Bath splits him from the Hulk and merges them again, he turns into a grey Hulk.',
     },
   },
   'hydro-man': {
@@ -1406,8 +1445,10 @@ export const characters = {
     role: 'hero',
     status: 'alive',
     factions: ['gamma-mutates', 'avengers'],
-    origin: 'Los Angeles, California',
     bio: "Bruce Banner's lawyer cousin who received an emergency blood transfusion from him, gaining gamma-fueled strength and jade invulnerability while retaining full intellect and wit.",
+    variants: {
+      'earth-92131': "In the animated series she is a lawyer in Washington, D.C., wounded by Doctor Doom's robots, who becomes She-Hulk with her cousin's blood.",
+    },
   },
   'jessica-jones': {
     name: 'Jessica Jones',
@@ -2089,6 +2130,14 @@ export const characters = {
     origin: 'New York City',
     bio: "Son of Dr. Faber, who lied about his age to go to war and came back with a mutation that ages him. Cured at last, he lets Ben Reilly escape and dies at Dirk Leyden's hands.",
   },
+  ogress: {
+    name: 'Ogress',
+    color: '#65a30d',
+    role: 'villain',
+    status: 'alive',
+    factions: ['gamma-mutates'],
+    bio: "Leader of the Leader's Gamma Warriors, grown from a hair of the Hulk. She fights She-Hulk at the Central Park Zoo and later captures the Hulk for her master.",
+  },
   okoye: {
     name: 'Okoye',
     color: '#f59e0b',
@@ -2279,6 +2328,14 @@ export const characters = {
     status: 'alive',
     factions: ['kingpin-syndicate', 'insidious-six'],
     bio: "The Kingpin's thug in rhino armor. He steals the Prometheum X from John Jameson's crashed shuttle, and later fights Spider-Man beside the Shocker.",
+  },
+  'rick-jones': {
+    name: 'Rick Jones',
+    color: '#f59e0b',
+    role: 'civilian',
+    status: 'alive',
+    factions: [],
+    bio: "Young drifter whom Bruce Banner pushed to safety at the gamma test that made the Hulk, and the Hulk's most loyal friend. General Ross throws him into the Nutrient Bath, and he runs off as a Hulk-like creature.",
   },
   'robbie-robertson-noir': {
     name: 'Robbie Robertson',
@@ -2681,6 +2738,15 @@ export const characters = {
     factions: [],
     bio: 'New York police detective who comes to believe that Spider-Man was framed for the robbery at the Metropolitan Museum. She helps him find Mysterio, who traps her and Jameson at Wonder Studios until Spider-Man saves them, and later joins him and Blade against Morbius and falls for Blade.',
   },
+  'thaddeus-ross': {
+    name: 'Thaddeus Ross',
+    alias: 'Thunderbolt Ross',
+    color: '#b45309',
+    role: 'secondary',
+    status: 'alive',
+    factions: ['hulkbusters', 'us-military'],
+    bio: "General in command of Gamma Base and Betty Ross's father, who has hunted the Hulk for years and leads the Hulkbusters. He stops his daughter's wedding to Bruce Banner and sabotages the machine that would save him.",
+  },
   thanos: {
     name: 'Thanos',
     alias: 'The Mad Titan',
@@ -2715,7 +2781,7 @@ export const characters = {
     role: 'villain',
     status: 'alive',
     factions: ['gamma-mutates'],
-    bio: "Bruce Banner's former lab assistant, changed by gamma rays into a genius with a huge green head. With two of the Mandarin's rings he opens a doorway to the past to kill the young Banner before the gamma bomb test, and Rhodes brings everyone back but him.",
+    bio: "Bruce Banner's former lab assistant, changed by gamma rays into a genius with a huge green head. With two of the Mandarin's rings he opens a doorway to the past to kill the young Banner before the gamma bomb test, and Rhodes brings everyone back but him. By 1996 he schemes again from a desert lab to take the Hulk's power, even moving his mind into the Hulk's body for a day.",
   },
   'the-lion': {
     name: 'Nkati',
@@ -2750,7 +2816,7 @@ export const characters = {
     origin: 'Asgard (Nine Realms)',
     bio: 'Asgardian God of Thunder, wielder of Mjolnir and Stormbreaker.',
     variants: {
-      'earth-92131': 'In the animated series he appears for a moment during the rampage of the Dark Phoenix.',
+      'earth-92131': 'In the animated series he appears for a moment during the rampage of the Dark Phoenix. In 1996 Dr. Donald Blake strikes his staff and becomes Thor to fight a gamma plague in Detroit beside the Hulk.',
     },
   },
   'titanium-man': {
@@ -2891,7 +2957,7 @@ export const characters = {
     role: 'villain',
     status: 'alive',
     factions: ['latverian-monarchy'],
-    bio: "Masked master of Castle Doom, in Latveria, and Reed Richards's college classmate. He captures the Fantastic Four, holds Sue hostage while the others fetch him a coffin from ancient Greece, and later steals the Silver Surfer's Power Cosmic.",
+    bio: "Masked master of Castle Doom, in Latveria, and Reed Richards's college classmate. He captures the Fantastic Four, holds Sue hostage while the others fetch him a coffin from ancient Greece, and later steals the Silver Surfer's Power Cosmic. In 1996 he seals Washington under a dome to make the Hulk his weapon.",
   },
   vision: {
     name: 'Vision',
@@ -2920,6 +2986,15 @@ export const characters = {
     factions: ['team-x', 'weapon-x', 'mutants'],
     origin: 'Canada / United States',
     bio: 'Mouthy mercenary swordsman transformed through surgical gene splicing into Weapon XI (The Mutant Killer) with teleportation, optic blasts, and adamantium arm blades.',
+  },
+  'walter-langkowski-sasquatch': {
+    name: 'Walter Langkowski',
+    alias: 'Sasquatch',
+    color: '#fdba74',
+    role: 'anti-hero',
+    status: 'alive',
+    factions: [],
+    bio: "Gamma scientist and Bruce Banner's college friend, who has been turning into a beast while searching for a cure. When his blue-ice machine fails, he becomes Sasquatch for good and drifts away on an iceberg.",
   },
   'war-machine': {
     name: 'James Rhodes',
@@ -2961,6 +3036,15 @@ export const characters = {
     factions: ['avengers', 'pym-technologies', 'quantum-explorers'],
     origin: 'San Francisco, California',
     bio: 'Skilled martial artist and winged size-changer.',
+  },
+  wendigo: {
+    name: 'Lone Eagle',
+    alias: 'Wendigo',
+    color: '#e7e5e4',
+    role: 'villain',
+    status: 'deceased',
+    factions: [],
+    bio: 'Warrior of the Churok people, turned into the Wendigo by a medicine man many generations ago and freed only by defeat. The Hulk beats him in a redwood forest, and his humbled spirit is set free.',
   },
   whirlwind: {
     name: 'David Cannon',
@@ -3052,6 +3136,15 @@ export const characters = {
     status: 'alive',
     factions: ['mutants'],
     bio: 'Wealthy benefactor of an orphanage in Omaha who uses his power over minds to turn its mutant children into soldiers and overthrow the governor of Nebraska, until a news crew films him burning the orphanage and he is arrested.',
+  },
+  zzzax: {
+    name: 'Mitch McCutcheon',
+    alias: 'Zzzax',
+    color: '#facc15',
+    role: 'villain',
+    status: 'alive',
+    factions: [],
+    bio: 'Worker at a Nevada nuclear plant whose experiment with Bruce Banner turns him into Zzzax, a creature of electricity. The Hulk drags him into the water below Hoover Dam, and he turns human again.',
   },
 } as const satisfies Record<string, CharacterInput>;
 
