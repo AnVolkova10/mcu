@@ -196,10 +196,11 @@ export const starVertex = /* glsl */ `
 `;
 
 export const starFragment = /* glsl */ `
+  uniform float uOpacity;
   varying vec3 vColor;
   varying float vFade;
   void main() {
     float glow = pow(max(1.0 - length(gl_PointCoord - 0.5) * 2.0, 0.0), 1.6);
-    gl_FragColor = vec4(vColor, glow * vFade);
+    gl_FragColor = vec4(vColor, glow * vFade * uOpacity);
   }
 `;

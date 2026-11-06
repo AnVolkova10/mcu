@@ -13,6 +13,13 @@ const GALAXY_RADIUS = 112;
 const WARM = new THREE.Color('#ffc99a');
 const COOL = new THREE.Color('#7a9bff');
 const PINK = new THREE.Color('#f06bd8');
+/**
+ * How bright the galaxy shows, so the worlds on it stand out: the glow keeps the shape of the arms,
+ * and the stars stay fainter and finer than the smallest world, so no star passes for one.
+ */
+const HAZE_GLOW = 0.6;
+const STAR_GLOW = 0.4;
+const STAR_SIZE = 0.8;
 
 type Random = () => number;
 
@@ -36,7 +43,7 @@ function armPoint(random: Random, scatter: number): Vec3 {
 const armColor = (color: THREE.Color, x: number, z: number) => color.copy(WARM).lerp(COOL, Math.min(1, Math.hypot(x, z) / 75));
 
 /** The center is where the arms crowd together: dimmed, so it glows instead of burning to white. */
-const coreDim = (x: number, z: number) => 0.3 + 0.7 * Math.min(1, Math.hypot(x, z) / 55);
+const coreDim = (x: number, z: number) => 0.2 + 0.8 * Math.min(1, Math.hypot(x, z) / 55);
 
 function starGeometry() {
   const random = seededRandom(42);
@@ -51,7 +58,7 @@ function starGeometry() {
     color.multiplyScalar(coreDim(x, z));
     positions.set([x, y, z], i * 3);
     colors.set([color.r, color.g, color.b], i * 3);
-    sizes[i] = 0.3 + random() ** 4 * 1.1;
+    sizes[i] = (0.3 + random() ** 4 * 1.1) * STAR_SIZE;
   }
   const geometry = new THREE.BufferGeometry();
   geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
@@ -113,12 +120,12 @@ export function Galaxy() {
   const geometry = useMemo(starGeometry, []);
   const haze = useMemo(hazeTexture, []);
   const shader = useMemo(
-    () => ({ uniforms: { uScale: { value: height * 1.3 } }, vertexShader: starVertex, fragmentShader: starFragment, transparent: true, depthWrite: false, blending: THREE.AdditiveBlending }),
+    () => ({ uniforms: { uScale: { value: height * 1.3 }, uOpacity: { value: STAR_GLOW } }, vertexShader: starVertex, fragmentShader: starFragment, transparent: true, depthWrite: false, blending: THREE.AdditiveBlending }),
     [height],
   );
 
   useFrame(({ camera }) => {
-    if (hazeMaterial.current) hazeMaterial.current.opacity = THREE.MathUtils.smoothstep(camera.position.length(), HAZE_FADE[0], HAZE_FADE[1]);
+    if (hazeMaterial.current) hazeMaterial.current.opacity = HAZE_GLOW * THREE.MathUtils.smoothstep(camera.position.length(), HAZE_FADE[0], HAZE_FADE[1]);
   });
 
   return (
