@@ -528,8 +528,7 @@ export const characters = {
     role: 'hero',
     status: 'alive',
     factions: ['avengers', 'starforce', 'us-military'],
-    origin: 'Boston, Massachusetts',
-    bio: 'Cosmic powerhouse infused with Space Stone energy after surviving an experimental light-speed engine explosion.',
+    bio: 'Air Force test pilot who absorbs the energy of an experimental light-speed engine in 1989 and, without her memory, becomes the Kree warrior Vers. In 1995 she learns who she is, unlocks her full power and leaves Earth with the Skrull refugees, leaving Nick Fury a pager for emergencies.',
     variants: {
       'earth-92131': "Ms. Marvel, whose powers and mind Rogue absorbed for good while fighting for Mystique. She lies in a coma in a Manhattan hospital, and her personality lives on inside Rogue, locked away.",
     },
@@ -1259,7 +1258,7 @@ export const characters = {
     status: 'alive',
     factions: ['flerkens', 'cosmic-entities'],
     origin: 'Cosmic',
-    bio: 'Alien Flerken resembling a ginger tabby cat that houses pocket dimensions and tentacles in its mouth.',
+    bio: "Alien Flerken that looks like a ginger cat, with tentacles in its mouth that can swallow people and objects. In 1995 it swallows the Tesseract and scratches out Nick Fury's left eye.",
   },
   gorgon: {
     name: 'Gorgon Petragon',
@@ -2044,7 +2043,7 @@ export const characters = {
     status: 'deceased',
     factions: ['us-military', 'sword'],
     origin: 'New Orleans, Louisiana',
-    bio: "Ace U.S. Air Force pilot, single mother, and Carol Danvers' closest confidante who piloted the Quadjet during the 1995 Skrull rescue and went on to establish and direct S.W.O.R.D.",
+    bio: "Ace U.S. Air Force pilot, single mother and Carol Danvers' closest friend, whose call sign is Photon. She flies the jet in the 1995 rescue of the Skrull refugees and goes on to establish and direct S.W.O.R.D.",
   },
   'mariah-crawford': {
     name: 'Mariah Crawford',
@@ -2181,7 +2180,7 @@ export const characters = {
     status: 'deceased',
     factions: ['starforce', 'kree-empire'],
     origin: 'Hala (Kree Empire)',
-    bio: 'Elite sniper and geneticist of the Kree Starforce whose disdain for Carol Danvers turned into deadly aerial combat over the Mojave Desert, where her ship was shot down by Maria Rambeau.',
+    bio: 'Sniper of the Kree Starforce who scorns Vers, and whose ship Maria Rambeau shoots down over the Mojave Desert in 1995.',
   },
   'miranda-wilson': {
     name: 'Miranda Wilson',
@@ -2934,7 +2933,11 @@ export const characters = {
     role: 'civilian',
     status: 'alive',
     factions: [],
-    bio: "Spider-Man's creator, in a reality where Spider-Man is a comic-book character. After Spider-Carnage's defeat Spider-Man visits him there and takes him web-swinging to thank him.",
+    bio: 'The creator of Spider-Man and of many other heroes, who turns up as himself.',
+    variants: {
+      'earth-616': 'In 1995 he rides a train in Los Angeles, rehearsing his lines, while Vers fights a Skrull aboard.',
+      'earth-92131': "In a reality where Spider-Man is a comic-book character, he is his creator. After Spider-Carnage's defeat Spider-Man visits him there and takes him web-swinging to thank him.",
+    },
   },
   'star-lord': {
     name: 'Peter Quill',
@@ -3024,7 +3027,7 @@ export const characters = {
     status: 'deceased',
     factions: ['kree-empire', 'artificial-intelligences'],
     origin: 'Hala (Kree Empire)',
-    bio: 'Vast organic artificial intelligence composing the greatest minds of the Kree Empire, appearing to individuals as the person they admire most to maintain imperial control.',
+    bio: 'Artificial intelligence that rules the Kree Empire and appears to each person in a shape their own mind chooses; to Vers it appears as Dr. Wendy Lawson.',
   },
   taina: {
     name: 'Taina',

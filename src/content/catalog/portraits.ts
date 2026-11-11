@@ -896,12 +896,13 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
   },
   'stan-lee-creator': {
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/5/53/Stan_Lee.jpg/revision/latest/scale-to-width-down/300?cb=20181112210422',
+    'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/5/53/Stan_Lee.jpg/revision/latest/scale-to-width-down/219?cb=20170702110336',
   },
   'star-lord': {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/6/6c/Star-Lord_Infobox.jpg/revision/latest/scale-to-width-down/230?cb=20241126002144',
   },
   'steve-rogers': {
-    'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/b/b7/Steve_Rogers_Infobox.jpg/revision/latest/scale-to-width-down/167?cb=20260712215245',
+    'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/b/b7/Steve_Rogers_Infobox.jpg/revision/latest/scale-to-width-down/167?cb=20261109175444',
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/8/87/Captain_America.jpg/revision/latest/scale-to-width-down/291?cb=20110724032205',
   },
   'storm-ororo-munroe': {
@@ -949,7 +950,7 @@ export const portraits: Partial<Record<CharacterId, CharacterPortraits>> = {
     'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/9/96/Lion_Infobox.png/revision/latest/scale-to-width-down/238?cb=20260725132546',
   },
   'the-punisher': {
-    'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/1/1c/Punisher_Infobox.png/revision/latest/scale-to-width-down/227?cb=20261015122544',
+    'earth-616': 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/1/1c/Punisher_Infobox.png/revision/latest/scale-to-width-down/227?cb=20261109132156',
     'earth-92131': 'https://static.wikia.nocookie.net/marvelanimated/images/0/0c/Punisher.jpg/revision/latest/scale-to-width-down/300?cb=20100813133921',
   },
   'the-seeker': {

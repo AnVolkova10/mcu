@@ -220,11 +220,11 @@ export const locations = {
     coords: [5.2, 35.6],
   },
   'blockbuster-video-crash-site-and-metro-transit': {
-    name: 'Blockbuster Video Crash Site & Metro Transit',
+    name: 'Blockbuster Video',
     place: 'Los Angeles, California',
     country: 'United States',
     kind: 'earth',
-    coords: [34.0522, -118.2437],
+    coords: [34.1866, -118.4487],
   },
   'blue-area-of-the-moon': {
     name: 'Blue Area of the Moon',
@@ -534,13 +534,6 @@ export const locations = {
     kind: 'earth',
     coords: [40.7471, -73.9742],
   },
-  'danvers-family-residence-and-neighborhood-speedway': {
-    name: 'Danvers Family Residence & Neighborhood Speedway',
-    place: 'Boston, Massachusetts',
-    country: 'United States',
-    kind: 'earth',
-    coords: [42.3601, -71.0589],
-  },
   'dbari-star-system': {
     name: "D'Bari Star System",
     country: 'Deep space',
@@ -805,8 +798,8 @@ export const locations = {
     coords: [36.83, -85.3],
   },
   'hala-imperial-city': {
-    name: 'Hala Imperial City',
-    place: 'Kree Imperium',
+    name: 'Hala',
+    place: 'Kree capital',
     country: 'Kree Empire',
     kind: 'space',
     node: 'hala',
@@ -1242,6 +1235,13 @@ export const locations = {
     kind: 'earth',
     coords: [51.5022, -0.1283],
   },
+  'los-angeles-train': {
+    name: 'Los Angeles Train',
+    place: 'Los Angeles, California',
+    country: 'United States',
+    kind: 'earth',
+    coords: [34.0562, -118.2365],
+  },
   'low-earth-orbit-and-exosphere-space': {
     name: 'Earth Orbit',
     kind: 'orbit',
@@ -1442,6 +1442,13 @@ export const locations = {
     kind: 'space',
     node: 'shiar-empire',
   },
+  'mojave-desert': {
+    name: 'Mojave Desert',
+    place: 'California',
+    country: 'United States',
+    kind: 'earth',
+    coords: [35.011, -115.473],
+  },
   'mojoverse-digital-dimension': {
     name: "Mojo's Broadcast Servers",
     country: 'Mojoverse',
@@ -1573,13 +1580,6 @@ export const locations = {
     country: 'United States',
     kind: 'earth',
     coords: [36.33, -114.92],
-  },
-  'new-avengers-facility-central-lab': {
-    name: 'New Avengers Facility Central Lab',
-    place: 'Upstate New York',
-    country: 'United States',
-    kind: 'earth',
-    coords: [41.35, -73.95],
   },
   'new-orleans-bayou': {
     name: 'New Orleans Bayou',
@@ -1724,6 +1724,13 @@ export const locations = {
     kind: 'earth',
     coords: [51.7548, -1.2544],
   },
+  'panchos-bar': {
+    name: "Pancho's Bar",
+    place: 'Rosamond, California',
+    country: 'United States',
+    kind: 'earth',
+    coords: [34.8642, -118.1634],
+  },
   'pennsylvania-station': {
     name: 'Pennsylvania Station',
     place: 'Chelsea, Manhattan',
@@ -1788,25 +1795,18 @@ export const locations = {
     coords: [38.885, -77.055],
   },
   'project-pegasus': {
-    name: 'Project P.E.G.A.S.U.S.',
-    place: 'Mojave Desert, California',
+    name: 'Project Pegasus',
+    place: 'Edwards Air Force Base, California',
     country: 'United States',
     kind: 'earth',
-    coords: [35.011, -115.473],
-  },
-  'project-pegasus-joint-dark-energy-facility': {
-    name: 'Project P.E.G.A.S.U.S. Joint Dark Energy Facility',
-    place: 'Mojave Desert, California',
-    country: 'United States',
-    kind: 'earth',
-    coords: [35.011, -115.473],
+    coords: [34.9054, -117.8839],
   },
   'project-pegasus-mojave-crash-range': {
-    name: 'Project P.E.G.A.S.U.S. Mojave Crash Range',
-    place: 'Mojave Desert, California',
+    name: 'Pegasus Crash Site',
+    place: 'Rogers Dry Lake, California',
     country: 'United States',
     kind: 'earth',
-    coords: [35.011, -115.473],
+    coords: [34.95, -117.8],
   },
   'prometheum-x-asteroid': {
     name: 'Asteroid',
@@ -1844,11 +1844,11 @@ export const locations = {
     coords: [26.185, 31.919],
   },
   'rambeau-residence-and-louisiana-bayou': {
-    name: 'Rambeau Residence & Louisiana Bayou',
-    place: 'New Orleans, Louisiana',
+    name: 'Rambeau House',
+    place: 'Rural Louisiana, near New Orleans',
     country: 'United States',
     kind: 'earth',
-    coords: [29.9511, -90.0715],
+    coords: [30.3135, -89.9431],
   },
   ravencroft: {
     name: 'Ravencroft',
@@ -2494,8 +2494,8 @@ export const locations = {
     coords: [40.7633, -73.9958],
   },
   'torfa-border-world-outpost': {
-    name: 'Torfa Border World Outpost',
-    place: 'Torfa System',
+    name: 'Torfa',
+    place: 'Border planet',
     country: 'Torfa',
     kind: 'space',
     node: 'torfa',

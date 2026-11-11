@@ -29,6 +29,11 @@ export const objects = {
     kind: 'technology',
     description: "Machine built by Hank McCoy that amplifies Charles Xavier's telepathy to locate mutants. The first one, at Division X, is destroyed in Sebastian Shaw's attack. In the animated series, Xavier uses it to show Bishop's memories of 2055, and Jean Grey wears one of its helmets to break into the Juggernaut's mind. With Xavier gone, Jean uses it to find a tear in the astral plane, to search for him and to calm Rogue's mind, and a portable projector shows Graydon Creed a hologram of his father. Later it picks up the signal of a Shi'ar prison ship buried under Manhattan.",
   },
+  'furys-pager': {
+    name: "Fury's Pager",
+    kind: 'technology',
+    description: 'Two-way pager that Nick Fury carries in 1995. Carol Danvers takes it at Pegasus, then upgrades it to reach her across galaxies and gives it back for emergencies only. In 2018 the Avengers find it after the Snap, and Carol answers.',
+  },
   'magneto-helmet': {
     name: "Magneto's Helmet",
     kind: 'technology',

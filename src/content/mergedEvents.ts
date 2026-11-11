@@ -96,4 +96,5 @@ export const mergedEvents: Record<string, string> = {
   'x-men-97-s1.young-en-sabah-nur-rescue': 'x-men-97-s2.en-sabah-nur-becomes-apocalypse',
   'x-men-97-s1.cyclops-jean-mother-askani': 'x-men-97-s2.forge-finds-xmen-3960',
   'x-men-97-s1.bishop-finds-forge': 'x-men-97-s2.cable-founds-x-force',
+  'captain-marvel.carol-go-kart-crash': 'captain-marvel.carol-danvers-full-power',
 };

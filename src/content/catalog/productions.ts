@@ -399,6 +399,8 @@ export const productions = {
     phase: 'Phase 3',
     universe: 'earth-616',
     status: 'audited',
+    description: "1989 and 1995: Carol Danvers absorbs a Kree engine's power and becomes the warrior Vers, then learns who she is on Earth with Nick Fury, saves the Skrull refugees and inspires the Avengers Initiative. In 2018 she answers Fury's pager.",
+    verified: true,
     tmdbId: 299537,
     poster: '/AtsgWhDnHTq68L0lLsUrCnM7TjG.jpg',
   },
