@@ -2,7 +2,7 @@ import { useCallback, useMemo } from 'react';
 import { Film } from 'lucide-react';
 import { archive } from '@/content';
 import { normalize, type ArchiveEvent } from '@/domain/archive';
-import { getUniverse, productionList, type Production } from '@/domain/catalog';
+import { getUniverse, productionList, REVIEW_LABEL, REVIEW_NOTE, reviewOf, type Production } from '@/domain/catalog';
 import { universesFromQuery } from '@/domain/filters';
 import type { UniverseId } from '@/domain/schema';
 import { navigate, useRoute, withQuery } from '@/app/router';
@@ -15,7 +15,7 @@ import { StudioBadge } from '@/shared/ui/StudioBadge';
 import { UniverseToggles } from '@/shared/ui/UniverseToggles';
 import { Poster } from './Poster';
 
-const auditedTotal = productionList.filter((p) => p.status === 'audited').length;
+const auditedTotal = productionList.filter((p) => reviewOf(p) === 'verified').length;
 
 /** On wide screens the height of a row sets the size of the poster, and that sets how many fit across. */
 const MIN_ROW = 253;
@@ -27,9 +27,11 @@ const KINDS = [
   { id: 'other', label: 'Specials & shorts' },
 ] as const;
 
+/** Audited means verified in this audit; the old `status=audited` links keep working. */
 const STATUSES = [
-  { id: 'audited', label: 'Audited' },
-  { id: 'legacy', label: 'v1 · unaudited' },
+  { id: 'audited', review: 'verified', label: 'Audited' },
+  { id: 'gemini', review: 'gemini', label: REVIEW_LABEL.gemini },
+  { id: 'legacy', review: 'legacy', label: REVIEW_LABEL.legacy },
 ] as const;
 
 const SORTS = [
@@ -78,7 +80,7 @@ export function ProductionsPage() {
       .filter(({ production: p }) => {
         if (term && !normalize(p.title).includes(term)) return false;
         if (universes.length && !universes.includes(p.universe)) return false;
-        if (status && p.status !== status) return false;
+        if (status && STATUSES.find((s) => s.id === status)?.review !== reviewOf(p)) return false;
         if (kind === 'other') return p.kind === 'special' || p.kind === 'short';
         return !kind || p.kind === kind;
       })
@@ -135,8 +137,10 @@ function ProductionCard({ row: { production: p, events } }: { row: Row }) {
       <PanelLink panel={{ kind: 'production', id: p.id }} className="group block" title={p.title}>
         <div className="relative transition duration-200 group-hover:-translate-y-1">
           <Poster production={p} className="shadow-lg shadow-black/40 ring-1 ring-line transition group-hover:ring-line-strong" />
-          {p.status === 'legacy' && (
-            <span className="absolute left-2 top-2 rounded-full bg-bg/85 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-ink-muted backdrop-blur">v1</span>
+          {reviewOf(p) !== 'verified' && (
+            <span className="absolute left-2 top-2 rounded-full bg-bg/85 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-ink-muted backdrop-blur" title={p.status === 'legacy' ? REVIEW_NOTE.legacy : REVIEW_NOTE.gemini}>
+              {p.status === 'legacy' ? 'v1' : 'v2'}
+            </span>
           )}
           {/* On a dark backing, so the badge reads over any poster. */}
           <span className="absolute bottom-1.5 left-1.5 flex max-w-[calc(100%-0.75rem)] overflow-hidden rounded-full bg-bg/85 backdrop-blur">

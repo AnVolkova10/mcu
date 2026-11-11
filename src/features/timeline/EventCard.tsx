@@ -1,6 +1,7 @@
 import { memo, useMemo, useState } from 'react';
 import { Bookmark, Check, Link2, MapPin, Skull } from 'lucide-react';
 import type { ArchiveEvent } from '@/domain/archive';
+import { REVIEW_LABEL, REVIEW_NOTE, reviewOf } from '@/domain/catalog';
 import { alpha, readableOn } from '@/domain/colors';
 import { eventHref } from '@/app/router';
 import { useLibrary } from '@/features/library/store';
@@ -32,7 +33,7 @@ export const EventCard = memo(function EventCard({ event, showDate }: EventCardP
     [event.deaths],
   );
   const cast = showAllCast ? event.characters : event.characters.slice(0, VISIBLE_CHARACTERS);
-  const legacy = event.status === 'legacy';
+  const review = reviewOf(event.production);
   const freeDeaths = event.deaths.filter((d) => !d.character);
 
   const copyLink = async () => {
@@ -47,11 +48,11 @@ export const EventCard = memo(function EventCard({ event, showDate }: EventCardP
       id={event.id}
       className={cn(
         'group relative overflow-hidden rounded-2xl border bg-surface/70 p-5 pl-6 transition-colors sm:p-6 sm:pl-7',
-        legacy ? 'border-dashed border-line' : 'border-line hover:border-line-strong',
+        review !== 'verified' ? 'border-dashed border-line' : 'border-line hover:border-line-strong',
         read && 'opacity-75 hover:opacity-100',
       )}
     >
-      <span aria-hidden className="absolute inset-y-5 left-0 w-1 rounded-r-full" style={{ backgroundColor: event.universe.color, opacity: legacy ? 0.45 : 1 }} />
+      <span aria-hidden className="absolute inset-y-5 left-0 w-1 rounded-r-full" style={{ backgroundColor: event.universe.color, opacity: review !== 'verified' ? 0.45 : 1 }} />
 
       <header className="flex flex-wrap items-center gap-2 pr-1">
         <PanelLink
@@ -66,9 +67,9 @@ export const EventCard = memo(function EventCard({ event, showDate }: EventCardP
         <StudioBadge studio={event.production.studio} />
         <UniverseBadge universe={event.universe} branch={event.branch} />
         {showDate && <span className="text-xs font-semibold text-ink-muted">{event.dateLabel}</span>}
-        {legacy && (
-          <span className="rounded-full border border-dashed border-legacy/50 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-legacy" title="Inherited from v1, not audited yet">
-            v1 · unaudited
+        {review !== 'verified' && (
+          <span className="rounded-full border border-dashed border-legacy/50 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-legacy" title={REVIEW_NOTE[review]}>
+            {REVIEW_LABEL[review]}
           </span>
         )}
         <div className="ml-auto flex items-center gap-1">

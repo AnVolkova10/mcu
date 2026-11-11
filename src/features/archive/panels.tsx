@@ -3,7 +3,7 @@ import { ArrowRight, MapPin } from 'lucide-react';
 import { archive } from '@/content';
 import { closePanel, href, readPanel, useRoute, type Panel } from '@/app/router';
 import {
-  getCharacter, getCosmosNode, getFaction, getLocation, getObject, getProduction, getStone, getUniverse, series,
+  getCharacter, getCosmosNode, getFaction, getLocation, getObject, getProduction, getStone, getUniverse, REVIEW_NOTE, reviewOf, series,
   type ArchiveObject, type Character, type Location, type Production, type Stone,
 } from '@/domain/catalog';
 import { buildTrace } from '@/domain/atlas';
@@ -211,6 +211,7 @@ function CharacterPanel({ character: c }: { character: Character }) {
 function ProductionPanel({ production: p }: { production: Production }) {
   const events = archive.byProduction.get(p.id) ?? [];
   const universe = getUniverse(p.universe)!;
+  const review = reviewOf(p);
   return (
     <>
       <PanelHeader
@@ -230,7 +231,7 @@ function ProductionPanel({ production: p }: { production: Production }) {
         // The exact channel, when it says more than the studio (Fox Kids, UPN…).
         ...(p.network !== p.studio.label ? [['Network', p.network] as [string, ReactNode]] : []),
         ['Reality', <span key="u" style={{ color: universe.color }}>{universe.name} · {universe.label}</span>],
-        ['Status', p.status === 'audited' ? 'Audited' : 'v1 · not audited yet'],
+        ['Status', review === 'verified' ? 'Audited' : REVIEW_NOTE[review]],
         ...(p.phase ? [['MCU phase', p.phase] as [string, ReactNode]] : []),
         ...(p.series ? [['Series', series[p.series].title] as [string, ReactNode]] : []),
       ]} />

@@ -81,6 +81,16 @@ export const getObject = lookup<ArchiveObject>(objects);
 
 export const universeList = Object.values(universes) as Universe[];
 export const productionList = Object.values(productions) as Production[];
+
+/** How far a production has been checked: verified in this audit, audited only by Gemini in v2, or inherited from v1 untouched. */
+export type Review = 'verified' | 'gemini' | 'legacy';
+export const reviewOf = (p: Pick<Production, 'status' | 'verified'>): Review => (p.status === 'legacy' ? 'legacy' : p.verified ? 'verified' : 'gemini');
+/** The tag of a production that is not verified, and what it means. */
+export const REVIEW_LABEL: Record<Exclude<Review, 'verified'>, string> = { gemini: 'v2 · Gemini', legacy: 'v1 · unaudited' };
+export const REVIEW_NOTE: Record<Exclude<Review, 'verified'>, string> = {
+  gemini: 'Audited in v2 with Gemini, not verified yet',
+  legacy: 'Inherited from v1, not audited yet',
+};
 export const characterList = (Object.values(characters) as Character[]).sort((a, b) => a.label.localeCompare(b.label));
 export const factionList = (Object.values(factions) as Faction[]).sort((a, b) => a.name.localeCompare(b.name));
 export const stoneList = Object.values(stones) as Stone[];

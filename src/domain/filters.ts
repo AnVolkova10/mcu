@@ -1,6 +1,6 @@
 import type { ArchiveEvent } from './archive';
 import { normalize } from './archive';
-import { characters, getUniverse } from './catalog';
+import { characters, getUniverse, reviewOf } from './catalog';
 import type { CharacterId, FactionId, ObjectId, ProductionId, StoneId, UniverseId } from './schema';
 
 export interface TimelineFilters {
@@ -34,7 +34,7 @@ export function matchesFilters(event: ArchiveEvent, f: TimelineFilters): boolean
   if (f.object && !event.objects.some((o) => o.id === f.object)) return false;
   if (f.period && event.period.id !== f.period) return false;
   if (f.deathsOnly && !event.deaths.length) return false;
-  if (f.auditedOnly && event.status !== 'audited') return false;
+  if (f.auditedOnly && reviewOf(event.production) !== 'verified') return false;
   const q = normalize(f.q.trim());
   if (q && !q.split(/\s+/).every((word) => event.searchText.includes(word))) return false;
   return true;

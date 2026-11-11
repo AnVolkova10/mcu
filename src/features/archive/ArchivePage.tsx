@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react';
 import tmdbLogo from '@/assets/tmdb-logo.svg';
 import { archive } from '@/content';
-import { characterList, locationList, productionList, universeList } from '@/domain/catalog';
+import { characterList, locationList, productionList, reviewOf, universeList } from '@/domain/catalog';
 import { periods } from '@/domain/dates';
 import { href } from '@/app/router';
 import { useLibrary } from '@/features/library/store';
@@ -10,8 +10,9 @@ import { PageHeader } from '@/shared/ui/PageHeader';
 import { PanelLink } from './PanelLink';
 
 const totalEvents = archive.events.length;
-const auditedEvents = archive.events.filter((e) => e.status === 'audited').length;
-const auditedProductions = productionList.filter((p) => p.status === 'audited').length;
+// Audited means verified in this audit: what Gemini audited in v2 does not count yet.
+const auditedEvents = archive.events.filter((e) => reviewOf(e.production) === 'verified').length;
+const auditedProductions = productionList.filter((p) => reviewOf(p) === 'verified').length;
 
 const byUniverse = universeList
   .map((universe) => ({ universe, count: archive.events.filter((e) => e.universe.id === universe.id).length }))

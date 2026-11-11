@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { ArrowUp, FilterX } from 'lucide-react';
 import { archive } from '@/content';
 import { isFiltering, matchesFilters } from '@/domain/filters';
-import { productionList, universeList } from '@/domain/catalog';
+import { productionList, reviewOf, universeList } from '@/domain/catalog';
 import { href, navigate, useRoute } from '@/app/router';
 import { foldLine, isWideScreen, useFitOnResize } from '@/shared/lib/useFitRows';
 import { DateSection } from './DateSection';
@@ -10,7 +10,7 @@ import { FilterBar } from './FilterBar';
 import { YearRail } from './YearRail';
 import { useTimelineFilters } from './useTimelineFilters';
 
-const auditedCount = productionList.filter((p) => p.status === 'audited').length;
+const auditedCount = productionList.filter((p) => reviewOf(p) === 'verified').length;
 
 /** More events than any screen fits above the fold. */
 const FIRST_EVENTS = 12;
